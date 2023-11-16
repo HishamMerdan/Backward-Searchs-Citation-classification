@@ -5,7 +5,7 @@ This project focuses on the classification of citations in academic papers. It i
 
 # File Structure
 
-data.py: Processes XML files, handles CSV file operations, and interacts with other scripts for data manipulation.
+data.py: Processes XML files, handles CSV file operations, and interacts with other scripts for data manipulation.\n
 features.py: Contains functions for parsing and extracting features from textual data using libraries like BeautifulSoup and Scikit-learn.
 read_data.py: Reads and processes data, mainly from CSV files, and performs data filtering and transformation.
 relevant_refs.py: Stores a list of relevant references used across the project.
