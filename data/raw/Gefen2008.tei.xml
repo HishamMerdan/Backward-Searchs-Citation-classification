@@ -1,0 +1,1363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">IS THE WORLD REALLY FLAT? A LOOK AT OFFSHORING AT AN ONLINE PROGRAMMING MARKETPLACE 1</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">David</forename><surname>Gefen</surname></persName>
+							<email>gefend@drexel.edu</email>
+							<affiliation key="aff0">
+								<orgName type="department">Management Department LeBow College of Business Drexel University</orgName>
+								<address>
+									<addrLine>101 North 33 rd Street/Academic Building Philadelphia</addrLine>
+									<postCode>19104-2875</postCode>
+									<region>PA</region>
+									<country key="US">U.S.A</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Erran</forename><surname>Carmel</surname></persName>
+							<email>carmel@american.edu</email>
+							<affiliation key="aff1">
+								<orgName type="department">Information Technology Department Kogod School of Business American University Washington</orgName>
+								<address>
+									<postCode>20016</postCode>
+									<region>DC</region>
+									<country key="US">U.S.A</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">IS THE WORLD REALLY FLAT? A LOOK AT OFFSHORING AT AN ONLINE PROGRAMMING MARKETPLACE 1</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="MD5">E578632D47048CBE983D173C61C69E89</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.7.3" ident="GROBID" when="2023-06-16T09:23+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>Outsourcing</term>
+					<term>offshoring</term>
+					<term>online programming</term>
+					<term>marketplace</term>
+					<term>agency theory</term>
+					<term>bidding</term>
+					<term>PPP</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>In a world that is flat, where all clients and providers can easily transact with one another, offshoring represents the proposition that information technology providers from lowwage nations can now underbid providers from high-wage nations and win contracts. We examined a particularly flat "world"-an online programming marketplace-and found that this profound tilt to low-wage nations is overstated. We analyzed the entire history of transactions at one of the major online programming marketplaces, a marketplace for outsourcing small IT projects. The data spanned 38 months and 1 This paper was recommended for acceptance by Associate Guest Editor Kate Kaiser.</p><p>included over 263,000 bids by over 31,000 providers from 70 countries on over 20,000 small IT projects requested by over 7,900 clients from 59 countries.</p><p>Contrary to the world-is-flat proposition, the data in this particular site show some client preference for domestic providers. However, the largest group of clients, the American clients, are a marked exception to clients in the rest of the world: they give relatively less preference to domestic providers. In a sense, the American clients have a higher preference for offshore providers. Among non-American clients the preference for domestic providers is mitigated when both client and provider are from an English-speaking nation. Relative bid price, often very low already, also determines the winning bid, as does the ratio of purchasing power parity (PPP) between the country of the client and the country of the provider. Nonetheless, the strongest determinant of the winning bid is client loyalty: the client gives very strong preference to a provider with whom there has been a previous relationship, regardless of whether the provider is offshore or domestic.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Introduction</head><p>The dominant narrative of globalization is that the combination of Internet technology and the newly opened international borders have created a level playing field in which companies in many countries can take advantage of their relatively lower wage rates to win new markets by under-bidding. This narrative is central to the bestseller The World Is Flat <ref type="bibr" target="#b23">(Friedman 2005</ref>).<ref type="foot" target="#foot_0">2</ref> Providers of information technology services in once-remote places like Mumbai, India, are referred to as having as much access to projects as those in London or Los Angeles. Importantly, these distant providers are said to overcome the crippling cost of distance and the higher transaction costs <ref type="bibr">(Economist 2004</ref><ref type="bibr">(Economist , 2005))</ref>. It is this world-is-flat argument that is examined in this article. This study contrasts these Adam Smith notions of absolute advantage based on cost advantage with alternative and complementary predictions based on cultural distance on a country level <ref type="bibr" target="#b13">(Contractor and Kundu 1998;</ref><ref type="bibr" target="#b39">Kogut and Singh 1988)</ref> and on prior relationships based on agency theory <ref type="bibr" target="#b20">(Eisenhardt 1989</ref>).</p><p>These alternative and complementary perspectives are examined using data from an online programming marketplace (OPM). An OPM is an online auction for IT services usually based on a reverse auction bidding process in which providers compete to offer the lowest price <ref type="bibr" target="#b15">(Dans 2002)</ref>. It is useful to think of an OPM as somewhat akin to an eBay for IT services. And like eBay, OPM clients tend to be small companies, while providers (sellers) are small companies or individual coders. Also like eBay, OPMs rely on a reputation system for both buyers and sellers. An OPM allows us to examine the offshore outsourcing questions because it uniformly handles tens of thousands of transactions that are both intra-country and intercountry. <ref type="foot" target="#foot_1">3</ref> Accordingly, the research question is: Do the clients ignore national location in an OPM and behave as in classical economics, driven entirely by absolute trade advantage, or do clients take into account also provider country and prior relationships?</p><p>Examining this OPM, and contrasting classical economics with cultural distance and agency theory, the data support the primacy of prior relationships in this market and the reluctance of clients to offshore to countries with a different national language. The study makes several contributions. The study examines a key question in offshoring by analyzing actual preferences for domestic over offshore outsourcing. <ref type="foot" target="#foot_2">4</ref>The study shows the unique role of the United States in the outsourcing market, as well as the relevance of provider language in client decisions. The study examines an emerging type of outsourcing: small-scale outsourcing. Finally, this study used a unique dataset. In contrast to other outsourcing studies that applied relatively small nonrandom samples, this dataset objectively captures all the transactions in a large market over a lengthy period and across many countries.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Theory and Hypotheses</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>The World Is Flat and Absolute Advantage to Providers in Lower PPP Nations</head><p>Our perspective on offshore outsourcing begins with a bedrock economic theory: the theory of absolute advantage introduced by Adam Smith more than 200 years ago, which predicts that work will be performed where it is less expensive to do so <ref type="bibr" target="#b55">(Samuelson 2001)</ref>. As Adam Smith said in 1776 in The Wealth of Nations:</p><p>If a foreign country can supply us with a commodity cheaper than we ourselves can make it, better buy it of them with some part of the produce of our own industry, employed in a way in which we have some advantage. <ref type="foot" target="#foot_3">5</ref>Thus, IT services, which are now "tradable,"<ref type="foot" target="#foot_4">6</ref> should migrate to low-cost nations, argues the economist <ref type="bibr" target="#b4">Blinder (2006)</ref>. Smith's notion of absolute advantage is at work here: providers in lower-cost nations are at an advantage, winning more business by being able to bid lower given their lower cost structures. This is an especially pertinent point in software and IT services, because these lower costs are made up mostly of lower labor costs.</p><p>In the context of offshore outsourcing, this cost difference between countries has become known as "global labor arbitrage" <ref type="bibr" target="#b52">(Roach 2003)</ref>. Accordingly, a client is seen as acting somewhat like an arbitrage financier who sources labor to where it is cheapest in order to use labor where it can earn the greatest return <ref type="bibr" target="#b53">(Roach 2006)</ref>. Global labor arbitrage is applied in this context because in order to examine the relative costs we need some kind of benchmark of relative costs between nations. A possible measure of this could have been GDP per capita. However, comparisons of GDP per capita are subject to volatile currency fluctuations and are therefore a somewhat weak measure when applied to country comparisons <ref type="bibr" target="#b44">(Lee and Tang 2000)</ref>. Accordingly, a better way to capture the notion of global labor arbitrage is to use purchasing power parity (PPP). PPP normalizes the cost comparison across nations to account for the purchase of a typical basket of goods and services, showing the relative local value of money. PPP is better than GDP per capita because it captures international competitiveness better than exchange rates do <ref type="bibr" target="#b44">(Lee and Tang 2000)</ref>, and determines nominal exchange rates over the long term <ref type="bibr" target="#b48">(Lothian and Taylor 1996)</ref>. Supporting this choice, PPP is also widely used as a comparative price index by the International Monetary Fund <ref type="bibr" target="#b37">(IMF 1985)</ref> and by the American government in analyzing the viability of outsourcing <ref type="bibr" target="#b30">(Greene 2006)</ref>.</p><p>Applying PPP, one can ask the compelling question: What is the impact of global labor arbitrage on offshore outsourcing? Except that here we encounter a challenge: The prices are already driven very low at the OPM we examined, due to its high global participation levels. Providers from high PPP nations compete with those from low PPP nations by lowering their bids. Therefore, it is not obvious, at first, what the relative advantage of a Romanian provider is, with a national PPP of $7,700, bidding $100 against a Canadian provider, with a PPP of $31,500, also bidding $100. After all, it would seem that the project will be completed for $100 even though the Romanian comes from a lower PPP nation and the Canadian from a higher one. In other words, given that prices for IT projects are already driven so low, why should a client prefer a provider from a relatively lower PPP country? 7</p><p>There are two answers to this question, both hinging on global labor arbitrage. The first consideration is the probability of project conclusion. This is where PPP comes in. The client may have doubts about the provider from a higher PPP nation actually completing the project given the provider's relatively high opportunity cost. The very same $100 project is actually worth about four times more for the Romanian than for the Canadian based on their respective PPP, considering that both the Canadian and the Romanian providers may have other opportunities in their respective local marketplace. The Canadian provider is more likely to be attracted by another local project that comes along that is commensurate with local pay scales, whereas the Romanian provider is less likely to be attracted by a local offer because it will likely pay much less, considering the much lower PPP in Romania. The same $100 amounts to a higher alternative wage to Romanian providers than to Canadian ones as compared to the kind of pay these providers might expect to earn in a conventional onsite software development company in their own countries. Accordingly, the Romanian providers are "hungrier" and have a greater incentive to complete the projects they bid on.</p><p>The second consideration is the potential for the next project. A client may be thinking ahead to the next project: to the advantage of engaging a provider with a lower cost structure for a subsequent larger chunk of work. When the client bids out subsequent larger projects, the same Romanian provider, with a lower PPP, is more likely to be interested in such projects at lower rates. The Canadian provider may reason that continued work at such low rates is not worthwhile.</p><p>Taken together, these two reasons mean that a provider in a lower PPP country has an advantage even when its bid price is identical to a provider from a higher PPP nation. We label this advantage as potential labor arbitrage. Using the word "potential" reflects the future benefits of contracting with a provider from a lower wage nation, which suggests that H 1 : Potential labor arbitrage will give providers an advantage in winning bids.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Beyond Labor Arbitrage: Cultural Distance, Transaction Costs and Agency Theory</head><p>Smith's classical economics describes frictionless markets.</p><p>An alternative perspective suggests that there are several dynamics that could negate the irrelevance of location: cultural distance, transaction costs, and agency theory. We introduce each one of these alternative explanations below.</p><p>In contrast to domestic outsourcing (same country), offshore outsourcing exposes the client to increased cultural distance <ref type="bibr" target="#b39">(Kogut and Singh 1988)</ref>. 8 Systems development is a loosely structured set of tasks, requiring a great deal of communication and clarification. Miscommunication in the software development process is among the greatest contributors to software development problems, resulting in bugs that are the most expensive to correct <ref type="bibr" target="#b3">(Beizer 1990)</ref>. Miscommunication 7 This raises the related question: Why is it that providers from higher PPP nations bid so low on projects-so low in fact that they will make insignificant returns on their work? In discussions with Rent A Coder we learned of several reasons: the provider wants to build a relationship with the client and get subsequent work; the provider wants to collect high ratings from clients that will bring more work; the provider (usually an individual coder) is doing it for the challenge, somewhat like working on open source projects.</p><p>8 Cultural distance in <ref type="bibr" target="#b39">Kogut and Singh (1988)</ref> and in <ref type="bibr" target="#b16">Davidson (1980)</ref> and others is based on the seminal research of <ref type="bibr" target="#b34">Hofstede (1980)</ref>, who compared national cultures among countries. Hofstede is the most widely used measure to analyze culture in MIS research <ref type="bibr" target="#b17">(Davison and Martinsons 1988)</ref>. His results came from survey data from 116,000 IBM employees in 40 countries in the 1970s. Hofstede suggested four cultural dimensions: acceptance of power distance, uncertainty avoidance, acceptance of individualism, and masculinity. To this list he added a Confucian dimension of national culture in his 1988 paper <ref type="bibr" target="#b35">(Hofstede and Bond 1988)</ref>.</p><p>is increased through cultural distance because of language barriers and linguistic subtleties <ref type="bibr" target="#b21">(Fjermestad and Saitta 2005;</ref><ref type="bibr">Gonzalez et al. 2006a</ref>). 9</p><p>Addressing such miscommunications requires greater management monitoring costs <ref type="bibr" target="#b13">(Contractor and Kundu 1998)</ref> and more lengthy and complicated contracts <ref type="bibr">(Gonzalez et al. 2006a)</ref>, 10 all of which increase transaction costs <ref type="bibr" target="#b54">(Rothaermel et al. 2006)</ref>. Transaction costs are the costs associated with making an economic exchange. These costs relate to the cost of gathering related information, bargaining costs, and enforcement costs <ref type="bibr" target="#b61">(Williamson 1998)</ref>. Arguably, by contracting with same-country providers, clients are less likely to encounter cultural misunderstandings and miscommunications (Fladmoe-Lindquist and Jacque 1995; <ref type="bibr" target="#b26">Gomes-Casseres 1989)</ref>. Also contributing to increased transaction costs when transacting across national borders is the need to contend with different commercial laws, different employee expectations, different proprietary rules <ref type="bibr" target="#b47">(Lincoln et al. 1981)</ref>, and different national values <ref type="bibr" target="#b56">(Shane 1994</ref>). Hence, a client is more likely to choose a domestic provider over an offshore provider because this reduces the transaction costs. Moreover, rationally, clients should prefer to do business within their own social circles because of the advantage of shared values and expectations <ref type="bibr" target="#b62">(Zucker 1986</ref>). This same-country preference is also in sync with observations about tribal preferences being both common <ref type="bibr" target="#b14">(Cooper et al. 2005</ref>) and effective <ref type="bibr" target="#b50">(Nevett and Perry 2001)</ref>.</p><p>Contributing to the preference for domestic choices is the fact that the client faces a selection process filled with risks. A typical client is often faced with many IT providers who might be over-selling their abilities since there may be few mechanisms for classifying providers by their quality <ref type="bibr" target="#b57">(Snir and Hitt 2004)</ref>. Summing up, due to cultural distance and transaction costs issues</p><formula xml:id="formula_0">H 2A :</formula><p>Clients will show a preference for providers from their own country.</p><p>Applying the logic of cultural distance also suggests, however, that a client's reluctance to go with an offshore provider will be smaller when dealing with less culturally distant countries <ref type="bibr" target="#b54">(Rothaermel et al. 2006)</ref>. Rephrased, there should be a preference to do business with similar cultures <ref type="bibr" target="#b16">(Davidson 1980;</ref><ref type="bibr" target="#b39">Kogut and Singh 1988)</ref> and a reluctance to invest in countries which are more culturally distant <ref type="bibr" target="#b56">(Shane 1994)</ref>. Language is a good example of this preference <ref type="bibr" target="#b0">(Ashkanasy et al. 2002)</ref>. Having a shared language with a provider is a case of reduced cultural distance, since language is a central component of culture. Hence, it is quite rational for clients to prefer providers who speak the same language as they do over providers for whom this language is a foreign language <ref type="bibr" target="#b21">(Fjermestad and Saitta 2005;</ref><ref type="bibr">Gonzalez et al. 2006a)</ref>.</p><p>Therefore, if both client and provider speak the same language, we expect the effect of H2a to be weaker.</p><p>Although country and language are sometimes not perfectly correlated (e.g., two languages in Canada), grouping nationalities by common language is not an uncommon theme in research (e.g., <ref type="bibr" target="#b0">Ashkanasy et al. 2002;</ref><ref type="bibr" target="#b46">Light et al. 2002)</ref>.</p><p>Hence,</p><formula xml:id="formula_1">H 2B :</formula><p>Clients' reluctance to contract with a foreign provider will be smaller when offshoring within the same language group.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>An Agency Perspective: Preference Based on Previous Relationships</head><p>Another way to look at the bidding process is to examine an OPM's transactions through the prism of agency theory <ref type="bibr" target="#b20">(Eisenhardt 1989)</ref>. In a typical agency relationship the principal lets out work to the agent who performs it, and then the principal pays the agent upon completion. In IT outsourcing, the client purchasing the software development is the principal and the provider, who performs the coding, is the agent <ref type="bibr" target="#b1">(Banerjee and Duflo 2000;</ref><ref type="bibr" target="#b6">Bolton and Dewatripomt 2005;</ref><ref type="bibr" target="#b38">Kalnins and Mayer 2004)</ref>.</p><p>Using agency terminology, in an OPM the principal has many agents to choose from but, not knowing much about each agent, is at risk of choosing an inadequate agent. This is adverse selection risk. Adverse selection risk can be reduced if the client chooses a provider it already knows from prior transactions (rephrased in agency theory terminology: if the principal chooses an agent it already knows <ref type="bibr" target="#b6">[Bolton and Dewatripomt 2005;</ref><ref type="bibr" target="#b57">Snir and Hitt 2004]</ref>). Previous contracts with a specific provider can give the client an idea about the provider's quality and ability to perform as the client expects.</p><p>9 Different linguistic subtleties exist even between British and American English, such as in the meaning of tabling a decision. Tabling in British English means to suggest something for discussion. Tabling in American English means to postpone dealing with it.</p><p>10 Some research has suggested that copyright/piracy concerns might be one of the factors inhibiting offshoring <ref type="bibr" target="#b21">(Fjermestad and Saitta 2005;</ref><ref type="bibr">Gonzalez et al. 2006a</ref>). However, copyright risks are minor within our data from Rent A Coder since providers usually create small custom applications that are unlikely to be of any use but to the original client. At any rate, it is unlikely that anybody would seek legal action costing thousands of dollars when the value of the average contract is $129.</p><p>If the provider performed adequately in the past,<ref type="foot" target="#foot_5">11</ref> then the client can be reasonably assured about that provider's current quality and ability, thus reducing adverse selection <ref type="bibr" target="#b6">(Bolton and Dewatripomt 2005)</ref>. Certainly, this has been the case with large outsourcing projects <ref type="bibr" target="#b29">(Gopal et al. 2003)</ref>.</p><p>Preferring providers with whom the client had previous contracts could also reduce moral hazard risks in an OPM. Typically, in agency relationships the principal knows less than the agent about the work the agent is doing after the contract has been signed, and so is exposed to the risk of being taken advantage of by the agent. This risk of moral hazard also applies in an OPM. Providers can take advantage of the black box nature of software modules and the fact that the client cannot verify the quality of the code, the quality of testing, or the amount of time invested in creating the software. <ref type="foot" target="#foot_6">12</ref> Although previous appropriate provider behavior may not guarantee appropriate future behavior, choosing a provider the client had previously employed should reasonably reassure the client of a reduced risk of moral hazard <ref type="bibr" target="#b6">(Bolton and Dewatripomt 2005)</ref>. However, whether this reasoning about large-scale software outsourcing also applies to smallscale software outsourcing remains an open question.</p><p>H3a: Clients will prefer providers with whom they had previous transactional relationships.</p><p>The next piece of the client decision-making process is that selection costs can be reduced by eliminating previously rejected providers. That is, once the client decided not to contract with a certain provider, then chances are that the client will repeat that decision in considering bids for later projects. Presumably, this client eliminated at least some previous bidding providers because of their low ratings or other cues, so this decision rule should also carry on to the next bid request as a way to reduce adverse selection risk.</p><p>Pruning the provider selection pool should also reduce the client's transaction costs <ref type="bibr" target="#b61">(Williamson 1998)</ref>, save time, reduce decision complexity (bounded rationality), and reduce the cost of learning <ref type="bibr" target="#b12">(Coase 1937)</ref>. However, the overall elimination effect should not be as strong as H3a. Arguably, at least some of the providers might have been rejected</p><p>because there were so many other contenders and not because they were incompetent.</p><p>H3b: Clients will show preference not to contract with providers they had previously avoided.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>The Data</head><p>Our data are from one of the major OPMs, Rent A Coder (see Appendix A for background on OPMs). The data we examined span all transactions from May 2001 for a period of 38 months through July 2004. These data include all client bid requests and the corresponding provider bids, over 20,000 usable project transactions. <ref type="foot" target="#foot_7">13</ref> The data are introduced in Figure <ref type="figure">1</ref>.</p><p>At Rent A Coder, a client posts a project (called a "request for bid"). In response, providers post bids. There are, on average, about 13 bids to each bid request (see examples of actual bid responses in Appendix B). While some of these projects are in the thousands of U.S. dollars, a substantial number of projects go for $100 or less. Once a bid is accepted, the mechanism for service delivery and payment is well structured: the client transfers money to Rent A Coder, which holds the payment as escrow until the client signals that the IT service has been completed satisfactorily. By 2006, Rent A Coder reported that 91 percent of its clients were repeat clients and that it had reached a pace of 10,000 completed projects per month.</p><p>The extent of globalization at Rent A Coder is of particular interest. In our data, there are providers and clients from dozens of nations, and there is considerable interaction between them as evidenced in Appendix C, which shows the distribution of the countries with the most clients and providers. Clients are primarily in the advanced industrial economies, while the providers are in both rich and poor countries. The United States is the largest player in this market on both the client and the provider sides with 68 percent of the clients and 23 percent of the providers. Other major provider nations are Romania, India, and Canada. This profile of active nations has been fairly consistent for years, in our data <ref type="bibr">(2001)</ref><ref type="bibr">(2002)</ref><ref type="bibr">(2003)</ref><ref type="bibr">(2004)</ref>, in <ref type="bibr" target="#b25">Gomes (2003)</ref> If there is any setting that can bring us relatively close to the idealized "flat world" that is envisioned in <ref type="bibr" target="#b23">Friedman (2005)</ref>, cautioned by <ref type="bibr" target="#b4">Blinder (2006)</ref>, and arbitraged in <ref type="bibr" target="#b52">Roach (2003</ref><ref type="bibr" target="#b53">Roach ( , 2006))</ref>, it is an OPM such as this one. The OPM creates the frictionless e-commerce environment through which the client-provider decision can be best examined: all transactions are in English; payments are in one currency; the interaction is standardized through templates; and there are no transport charges or taxes to worry about. In most cases legal costs (which are a form of transaction costs) would create a world that is less flat and has higher friction. But at this OPM there is only one contract type, a standardized third party escrow, and a standardized dispute resolution mechanism-all imposed by the OPM. With most transactions being under $100, most disputes do not go beyond arbitration and do not seek legal recourse. Moreover, the competition within the OPM is so fierce, and prices are driven down so low, that price differences become a minor factor-thus further isolating the interesting variables of country and provider in the outsourcing decision. Since the OPM is close to being a frictionless market, our examination of marketplace transactions should be relatively free of complications that typically confound analysis in situ.</p><p>Rent A Coder sliced its archived transactional data warehouse and sanitized it for our use by removing all names and replacing them with anonymous identity numbers. We manipulated the large dataset first in an Access database and then used SPSS. <ref type="foot" target="#foot_8">14</ref>Separately, we established the relationship variables by tallying the number of previous bids made by each provider with each specific client and how many of these bids were won. Derived from these, we calculated, for each bid, the number of previous lost bids by this provider with this specific client. Offshoring was coded as a binary 0/1 indicator. If the client outsourced to a domestic provider, it is 0; to a foreign provider it is 1. Since we assess the client's reaction to the wage arbitrage opportunities of a flat world (over and above the bid price itself), we computed the potential labor arbitrage as the PPP of the provider's country divided by the PPP of the client's. <ref type="foot" target="#foot_9">15</ref>The underlying assumption in the analyses is that the population of transactions at Rent A Coder is indicative also of transaction patterns at other such marketplaces, although obviously generalizing to other sites and time periods requires additional research. Having said this, however, the data have the advantage of capturing the entire population of transactions in a given time-period in this site, and so the analyses we present in the following sections accurately capture, rather than only estimate, the exact betas and fit indexes in this particular dataset at this time. <ref type="foot" target="#foot_10">16</ref> In these analyses, the p-values are treated as goodness of fit indicators, rather than as the probability of generalization errors.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Language Groups</head><p>Since we are interested in grouping nations by common language, we examined transaction data from countries in the main language groups (English, Spanish, etc.). The only grouping with robust data was the English-speaking, Anglophone, nations with-by far-the most clients and providers (see Appendix C). Of all the world's English-speaking nations, 17 nearly all the transactions data were in seven of these: United States, United Kingdom, Australia, Canada, New Zealand, Ireland, and India.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Controls</head><p>We captured the characteristics of the bidding process itself as a set of control variables, which we included in the analyses. We included as a control the number of bids placed on the specific bid request, because the more bids there are, the lower the chances of any one bid to win. We also included as a control the winning bid amount on each bid request, the highest bid, the lowest bid, the average bid amount, and the ratio of the amount in this bid to the average bid amount and to the winning bid amount. These characteristics represent the relative position of the bid compared with the other bids. Typically these aspects are crucial in determining the winning bid and are added here as controls to show that the hypotheses hold even when including these known determinants.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Data Analysis</head><p>To examine our hypotheses we ran a set of stepwise logistic regressions. Logistic regression was chosen because it explicitly accounts for a dichotomous dependent variable, and so is the recommended analysis method in these cases <ref type="bibr" target="#b31">(Hair et al. 1992;</ref><ref type="bibr" target="#b36">Hosmer and Lemeshow 1989)</ref>. The dependent variable was a binary indicator of whether this particular bid was the winning bid or not. The independent variables were all the other variables collected in the data as discussed in the preceding section. The analyses were done in two rounds. In the first round we examined all the data, regardless of whether the provider had previous relationships with the specific client. In this round we also examined the data more closely from a number of different angles. Since the first analysis round revealed the dominance of previous relationships (winning a previous bid with the specific client), in our second-and briefer-round of analyses we examined only those providers bidding on a specific client request who had previously won bids with that specific client.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Round 1: Analyses of All the Bidders</head><p>Table <ref type="table" target="#tab_1">1a</ref> shows the determinants of whether a specific bid was the winning bid. First, column 1 shows the analysis for clients and providers from all nationalities. The winning bid is determined correctly 69.1 percent of the time, as compared with a 7.6 percent random chance of being the winning bid. 18  The logistic regression equivalent of an R 2 is .227. As the coefficients show, the winning bid is highly correlated in our data, as expected, with transactional characteristics: mainly the ratio of the amount bid to the average amount bid and to the winning amount bid, and the total number of bids.</p><p>As shown in column 1, there is a general preference to offshore to providers in countries with lower PPP, supporting H1. <ref type="foot" target="#foot_11">19</ref> The coefficient of "offshore outsourced" in column 1 occasionally. We note several articles within the broad management disciplines that tested hypotheses with population data, and in doing so reported t-values and R 2 with population data: <ref type="bibr" target="#b2">Banerji and Sambharya (1996)</ref>, <ref type="bibr" target="#b7">Brush and Karnani (1996)</ref>, <ref type="bibr" target="#b40">Konings and Vandenbussche (2004)</ref>, <ref type="bibr" target="#b45">Lichtenberg and Siegel (1991)</ref>, and <ref type="bibr" target="#b58">Suchard and Woo (2003)</ref> all analyzed logistic regression. 17 The English-speaking countries, other than India, score closely on various cultural dimensions including high levels of being charismatic, team oriented, participative, humane, and male-dominated <ref type="bibr" target="#b0">(Ashkanasy et al. 2002)</ref>. Ashkanasy et al. label the core English-speaking nations as the Anglo cluster (including Canada, not including India). Although India, an Englishspeaking nation, is not part of this group, its elites are linked to it as a legacy of the colonial period. Nevertheless, we checked if excluding India from the English-speaking group of nations alters the pattern of significant paths. It does not. Also note that since all of these countries were once part of the British Empire, they inherited the British legal system. Coupled with other inherited common values, these countries have less cultural distance, and, consequently, less business uncertainty across them <ref type="bibr" target="#b54">(Rothaermel et al. 2006</ref>).</p><p>18 Logistic regression deals with a dichotomous dependent variable and provides the percent of correctly classified cases in addition to an equivalent of an R 2 degree of explained variance. This percentage statistic is the percent of bids classified correctly by the regression as winning bids when they were in reality the winning bids combined with the percent of bids classified correctly by the regression as non-winning bids when they were in reality non-winning bid. In column 1 of Table <ref type="table" target="#tab_1">1a</ref>, as an example, the regression classified correctly 69.1% of the bids. This is highly significant P 2 8 = 2039, indicating a good fit of the data to the model. As additional statistics, the column also shows that 83.3% of the winning bids and 67.9% of the nonwinning bids were identified correctly. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Notes:</head><p>1.</p><p>An empty cell means an insignificant coefficient; *significant at .05 level; **significant t .01 level; ***significant at .001. These values should be treated only as goodness of fit indicators because, this being a population rather than a sample, they are not generalization probability errors.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>2.</head><p>All columns indicate only bid requests with bids from at least two different countries.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>3.</head><p>Amt. ratio to winning bid. In all columns, Amount Ratio to Winning Bid is not 1. This means the lowest bid was not necessarily the winning one. An examination of the data shows that indeed only 38.2% of the winning bids were the lowest bid.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>4.</head><p>PPP. The analyses also included provider PPP and client PPP. Both were insignificant. 5.</p><p>Chi Square. The Hosmer and Lemeshow chi square test when analyzing a sample should be significant to show good fit. However, with very large datasets its value is inflated and may be insignificant <ref type="bibr" target="#b11">(Chan 2004</ref>). Generally, the chi square statistic is sensitive to sample sizes and tends to be biased with large samples <ref type="bibr" target="#b5">(Bollen 1989)</ref>. Indeed, when only a random 2,000 data point sample is chosen out of the data, the chi square becomes very significant without a change in the pattern or sign of the significant paths and with only minor changes to the coefficients.</p><p>is negative, indicating some reluctance to offshore, supporting H2a. 20 In other words, overall, clients tend to prefer domestic providers, but when they do offshore, they seem to take potential labor arbitrage into account (H1). Importantly, the coefficients show that previously winning bids with this client had a very strong effect on the chances of the current bid being won and previously losing bids with this client had a small negative effect, supporting H3a and H3b.</p><p>Taking a closer look at the data, however, suggests a somewhat more complex picture. The United States is the largest player in this market. 21 If the data analyses are conducted with only American clients, shown in Table <ref type="table" target="#tab_1">1a</ref> column 2, then the clients are actually quite positive about offshoring, not supporting H2a, with the coefficient being significant and positive. Furthermore, American clients even have a preference when they do offshore to do so to providers in relatively higher PPP countries, not even supporting H1.</p><p>We probed this surprising finding about the Americans' behavior (the positive coefficient) in more detail. Apparently, American clients preferred somewhat the relatively higher PPP Canadian providers over the lower PPP Romanian and Indian providers. American clients granted Canadian providers, with a PPP of $31,500, a total of 1,128 out of the 11,142 bids they made, a 10.1 percent win ratio. To Romanian providers, with a PPP of $7,700, American clients granted 1,674 out of the 17,725 bids they made, a 9.4 percent win ratio. And to Indian providers, with a PPP of $3,100, American clients granted 2,258 out of the 39,376 bids they made, a 5.4 percent win ratio. In comparison, American clients granted American providers, with a PPP of $40,100, a total of 3,735 out of the 44,743 bids they made, making it an 8.3 percent win ratio. This confirms that American clients did prefer to offshore, but leaned somewhat to Canadian providers over providers in lower PPP countries, to some extent contrary to H1. The unique behavior of the American clients is also evident in the coefficient for "offshore outsourced" (H2) in column 2, which is positive as we noted above. We then examined the United Kingdom, which is culturally 22 and linguistically similar to the United States-and is also the second-most active nation in this OPM. The United Kingdom (column 4) results are quite different with a negative coefficient, supporting H2; and in marked contrast to a much larger and negative result for all non-Americans in column 3.</p><p>The comparative analyses of the English-speaking nations' group is shown in Table <ref type="table" target="#tab_1">1b</ref>. If only clients from Englishspeaking countries (including the United States) are included in the analysis (column 5), then outsourcing offshore/onshore (H2a and H2b) and the effect of potential labor arbitrage (H1) become insignificant. However, this may be an American influence as well, because once U.S. clients are excluded from the English-speaking countries grouping (column 6) the coefficient of offshoring becomes significant and negative at -.379. Since this coefficient is smaller than the equivalent -.457 of the non-U.S. client population as a whole (Table <ref type="table" target="#tab_1">1a</ref> column 3), this shows that clients from English-speaking countries other than the United States are less reluctant to offshore. This indicates that clients in English-speaking countries are somewhat less reluctant to offshore than clients from non-English-speaking countries. In support of H2b, the equivalent coefficient becomes smaller -.298 (column 7) when these clients from English-speaking countries outside the United States deal with providers from other English-speaking countries, showing that there is even less reluctance to offshore when the providers are in the same language group.</p><p>The role of the English-speaking group is evident also in the percent of providers bidding locally. In all, 13.78 percent of the bids made were bid by providers in the same country as the client. Among clients outside the English group, however, this percentage was only 0.22 percent, and there were 37 countries having providers but no clients. In contrast, for clients in the English-speaking group, 10.33 percent of the bids were from the same country (but only 7.50 percent if the United States is removed from that group). Among American clients, the percent of local bidders is 24.47 percent. In all, providers in the English-speaking group accounted for 57.34 percent of the bids. Taken together, the data indicate a special role of the United States and the English-speaking group in this market.</p><p>The stronger effects of country and potential labor arbitrage among clients from non-English-speaking countries are also shown in a correlation analyses in Table <ref type="table">2</ref>. Examining all of the data shows a weak correlation between the bid amount and the winning bid amount, on the one hand, and provider PPP, client PPP, and their ratio of potential labor arbitrage, on the other hand. These correlations, however, are larger in the case of clients from non-English-speaking countries. 20 The impact of H2a can also be seen by comparing the ratio of won bids.</p><p>Altogether, on average 7.6% of provider bids won, but among offshore bids this ratio was 7.3% while among same country providers this ratio was 8.5%.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>21</head><p>Demonstrating the American numerical advantage in the offshoring market, U.S. clients posted 67% of all the bid requests and U.S. providers submitted 23% of the bids and won 24% of all the bid requests.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Round 2: Analyses of Only Providers Who Had Won Previous Bids with this Client</head><p>A consistent result in the analyses shown in Table <ref type="table" target="#tab_1">1</ref> is the predominance of previous won bids in determining the winning bid. Accordingly, as a set of post hoc analyses, we examined whether perhaps this determinant might be overshadowing the hypothesized negative effect of offshoring or the effect of potential labor arbitrage. To control for this, we redid the analyses but only with those providers who had previously won bids with the specific client on whose bid request they were currently bidding. These analyses are shown in Table <ref type="table">3</ref>. As we proceeded before, column 1 shows the analysis without differentiating between English-speaking and non-English-speaking countries. Here, H3a and H3b are supported, but H1 and H2 are not. This also holds when the clients are only from English-speaking countries (column 2) and when both providers and clients are only from Englishspeaking countries (column 3).</p><p>In other words, the data in Table <ref type="table" target="#tab_1">1a</ref>, column 1 overall support H1 and H2a, but on more detailed analyses these hypotheses are supported only when both clients and providers are not from English-speaking countries, and only when the provider is new to the client (in that the provider never tried before to bid for this specific client's projects). These results are summarized in Table <ref type="table">4</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Discussion</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Summary</head><p>Our data reveal a more nuanced landscape than the conventional narrative of globalization in which IT work is supposed to migrate offshore, taking advantage of a flatter world and obeying Adam Smith's absolute advantage theory. Before proceeding to discuss these caveats in detail, however, one should take these results with a grain of salt. As is generally the case with such data, the generalization of the results to other markets requires additional study.</p><p>Applying the classical economic dictum, one might assume that potential labor arbitrage (the ratio of provider to client purchasing power parities) should be a significant determinant of the winning bid. In the data, however, it is among the least influential determinants and is more significant outside the English-speaking group of countries. Moreover, submitting the lowest bid did not necessarily guarantee winning. Price alone does not rule this market. The data are actually quite emphatic in revealing that the most important determinant of bid selection is the previous relationships between client and provider, regardless of whether this provider is offshore or domestic. As shown in business-to-commerce/commerce-tocommerce online markets <ref type="bibr" target="#b51">(Reichheld and Schefter 2000)</ref>, here, too, previous relationships rule.</p><p>Although the data allowed us to examine H2 only with regard to the English-speaking countries group, some tentative conclusions can be drawn regarding the tendency to outsource offshore. The tendency against outsourcing offshore (H2a) is weaker when both client and provider are in the Englishspeaking group (H2b). This further qualifies the significance of potential labor arbitrage. In other words, same-country bids are at an advantage, but are of a lesser advantage when the client and provider are in the same language group (in our data, this is the English-speaking group). However, the reluctance to offshore does not apply to the United States, the leader in the offshoring trend. Most important, in the case of the United States, the sign of these hypothesized effects is reversed, being positive in the case of clients in the United States while negative with clients elsewhere, showing that, in the United States, potential labor arbitrage considerations do override same-country preferences, as argued by <ref type="bibr" target="#b23">Friedman (2005)</ref>.</p><p>To sum up, in this market, if you are a provider outside the United States and your clients are in the United States, then the world seems to be flatter. So, it is not at all surprising that a book with such a title was written by Tom Friedman, an American. But, if you are a provider outside the Englishspeaking group, then you are still at a slight disadvantage, despite the flat world, unless you have somehow previously established relationships with the clients.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Limitations</head><p>While the number of data points is very large and captures all of the transactions at this OPM during the time-period, this does not alleviate the problem of generalization to other OPMs and to other types of IT outsourcing contracts, particularly larger outsourcing contracts in application development <ref type="bibr" target="#b1">(Banerjee and Duflo 2000;</ref><ref type="bibr" target="#b29">Gopal et al. 2003;</ref><ref type="bibr" target="#b38">Kalnins and Mayer 2004)</ref>. Such contracts span from three to six orders of magnitude larger than the typical Rent A Coder contract and thus different marketplace behavior is likely. One must also bear in mind that this OPM's monetary transaction value represents only a small slice of the global outsourcing pie and is a convenience sample. We also caution that, for larger contracts, previous research suggests that different legal systems and copyright risks might be a factor inhibiting offshoring <ref type="bibr" target="#b21">(Fjermestad and Saitta 2005;</ref><ref type="bibr">Gonzalez et al. 2006a)</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Table 4. Summary of Main Results</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Hypothesis</head><p>All the Data USA Clients Only</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Including Only Providers with Previous Transactional Relationships</head><p>Table <ref type="table" target="#tab_1">1a column 1</ref> Table <ref type="table" target="#tab_1">1a column 2  Table 3</ref> H1 Potential labor arbitrage will give providers an advantage in winning bids.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Supported</head><p>Clients prefer lower PPP providers.</p><p>The opposite is true.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Clients prefer higher PPP providers</head><p>Not Supported</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>H2a</head><p>Clients will show a preference for providers from their own country.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Supported</head><p>Clients are reluctant to offshore.</p><p>The opposite is true.</p><p>Clients prefer to offshore.</p><p>Not Supported</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>H2b</head><p>Clients' reluctance to contract with a foreign provider will be smaller when offshoring within the same language group.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Supported</head><p>Clients in the English-speaking group are less reluctant to offshore within the English-speaking group than outside of it. † American Clients prefer to offshore to Canadians rather than to other nationalities.</p><p>Not Supported</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>H3a</head><p>Clients will prefer providers with whom they had previous transactional relationships.</p><p>Another limitation is that our analysis of cultural-linguistic distance was at the country level. While this is a common form of analysis (e.g., <ref type="bibr" target="#b21">Fjermestad and Saitta 2005;</ref><ref type="bibr" target="#b39">Kogut and Singh 1988</ref>), as we pointed out earlier, relying on national language is somewhat imperfect because some countries have more than one language (e.g., Canada). Additional research could examine multilingual countries, other ways of classifying and grouping countries, as well as the specific costs of miscommunication in an OPM in greater depth.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Contribution to Theory</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Additional Perspectives</head><p>Previous research has already shown that Internet commerce is ruled by loyalty, rather than by price. That is why sustaining good customer relationships is the key to the success of business-to-commerce Internet companies, even more than it is with traditional brick-and-mortar companies <ref type="bibr" target="#b51">(Reichheld and Schefter 2000)</ref>. The same apparently applies to this OPM. Among the independent variables, having previous business relationships with the client (H3a) and, to a lesser degree, the lack of such previous relationships when these could have existed (H3b) are the prominent determinants of which bid is the winning bid.</p><p>In fact, when examining only providers who already had some previous relationships with a client, it was predominantly loyalty/relationship which determined the winning bid. Labor arbitrage (H1) and varying degrees of cultural distance (H2a and H2b) were statistically insignificant. Thus, as a theoretical contradiction to agency theory, this study shows that the principal and agent develop a loyalty-based relationship (relying on trust and a long-term orientation) as suggested by <ref type="bibr">Reichfield and Schefter (2000)</ref> and as is common in many other business relationships <ref type="bibr" target="#b24">(Gefen et al. 2003;</ref><ref type="bibr">Kumar et al. 1995a</ref><ref type="bibr" target="#b42">Kumar et al. , 1995b))</ref>. In other words, once successive transactions are considered, agency theory's zero-sum world falls away and loyalty dominates over price (potential labor arbitrage) and location (reluctance to offshore).</p><p>Loyalty aside, another contribution of our study is in dissecting the reluctance to offshore (H2a). Our analysis found that even when the world is flat, this market is not frictionless. The market is made of people, and, rationally, people try to reduce business uncertainty in their transactions. Domestic outsourcing is one way of reducing this uncertainty, and hence clients choose local providers over less expensive offshore providers and these same-country preferences are less pronounced within the same language group (H2b).</p><p>Actually, the data show that our clients are somewhat reluctant to offshore even in this perfectly flat playing field of the OPM. This wariness can be explained by cultural distance and agency theory, adding a perspective somewhat overlooked in research. Going with overseas providers means more adverse selection and moral hazard risks. Related to this point, transaction costs include the costs of accounting for unforeseen contingencies, the cost of writing the contract, and the cost of enforcing it <ref type="bibr" target="#b59">(Tirole 1999)</ref>. Based on our data, we add another transaction cost to this list: the cost of cultural distance. This cost partially explains the preference to outsource within the same country.</p><p>Our research also supports the classic study of <ref type="bibr" target="#b39">Kogut and Singh (1988)</ref> in which the authors found that market entry was more likely when less national cultural distance existed between a foreign investor and a destination country. Indeed, this is one the themes of nearshoring <ref type="bibr" target="#b8">(Carmel and Abbott 2007)</ref>, in which cultural and linguistic proximity are said to ease offshoring. As our data show, providers generally have an advantage if they are from the same country-or at least if they and the clients are both from English-speaking countries.</p><p>While the data support the hypothesis derived from Kogut and Singh, the data actually expand the application of their theory. Kogut and Singh examined cultural distance as it applies to the initial transaction-when the client and the provider are new to each other. Expanding on their theory, our data suggest that once the client and the provider know each other, cultural distance matters little in subsequent contracts. Cultural distance is an important determinant in business, but, at least in our OPM, only until both sides know each other, and, tellingly, not in America. That cultural distance matters little to subsequent contracts places extrapolations that had been drawn based on cultural distance at a country level <ref type="bibr" target="#b13">(Contractor and Kundu 1998;</ref><ref type="bibr" target="#b39">Kogut and Singh 1988)</ref> into perspective.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Unique Data</head><p>In contrast to other outsourcing studies which relied on relatively small, nonrandom samples, our study used a unique dataset. This dataset objectively captures all the transactions in a very large market over an extensive period in a multicountry perspective. As a detailed literature review shows <ref type="bibr">(Gonzalez et al. 2006b)</ref>, no other study has done so.</p><p>Examining the entire set of transactions provides this study with the unique ability to actually place a number, rather than a probability, on the relative effects of the various determinants of the winning bid during this time period in this market. What the statistics show, therefore, is how well the hypotheses capture the actual, rather than probable, behavior of this market in this period. This statement of what actually happened in this market at this time-period is, therefore, a much stronger statement than samples usually provide. Accordingly, when the analysis gives the percent of correct classification, this is the actual percent in this market at this time-period, rather than the predicted percent, of correctly classified bids. This places the data in our study in a totally separate category from previous research on outsourcing.</p><p>Additionally, the dataset captures unbiased objective data: what players actually did, rather than what they say they did. This is preferable to the kind of survey data commonly used in other outsourcing studies which tend to be dependent on inaccurate memory, post hoc rationalizations, and subjective attitudinal scales.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>New Outsourcing Perspective</head><p>This study examines predominantly small transaction IT outsourcing. This is a new research focus since previous broadsample studies leaned toward larger transactions <ref type="bibr" target="#b1">(Banerjee and Duflo 2000;</ref><ref type="bibr" target="#b9">Carmel and Agarwal 2002;</ref><ref type="bibr" target="#b43">Lacity and Willcocks 1998)</ref>. We speculate that understanding these OPMs is becoming more important as the global marketplace dynamics seem to be moving toward greater diversification in sourcing (multisourcing) and smaller, more manageable, contracts <ref type="bibr" target="#b60">(TPI 2006)</ref>. Both dynamics should keep the OPMs thriving. The importance of prior contracts was shown in previous research in the case of large-scale outsourcing <ref type="bibr" target="#b1">(Banerjee and Duflo 2000;</ref><ref type="bibr" target="#b29">Gopal et al. 2003;</ref><ref type="bibr" target="#b38">Kalnins and Mayer 2004</ref>). This study confirms its importance in smallerscale outsourcing.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Implications for Practice</head><p>To the extent these conclusions are indicative of markets other than Rent A Coder, the results are especially relevant to providers. We found evidence that it is somewhat easier to sell IT services to clients in English-speaking nations. This is true for the largest cluster of clients, Americans. But this finding also holds up for all the other English-speaking countries we tested with non-trivial activity: Canada, the United Kingdom, Ireland, Australia, New Zealand, and India. This finding is consistent with the landscape of offshoring early in this decade: that the United States is far more active in offshoring than other wealthy nations, accounting for approximately 70 percent of the global offshoring market <ref type="bibr" target="#b30">(Greene 2006)</ref>. Some of the explanations posited for this are that continental European firms are more traditional (e.g., the German mittelstand), and that they have greater regulatory difficulties in laying off their own workers. But another explanation which our data support is the language barrier. A foreign provider selling to a Danish client, for example, is at a disadvantage if none of the providers' employees speak Danish because all of the relevant Danish internal documentation and web screens need to be translated into English.</p><p>Our next finding is that, on average, American clients care least about prior relationships. We examined this by looking at both sides: whether the provider had won a bid before and whether the provider lost a bid before with that client. The implication is that, all else being equal, new providers, both foreign and domestic, have a better chance selling to Americans. But-and this is also a warning-while Americans may be most open to offshoring and more open to new providers, this comes at a price. The effect of having previously won bids on winning the current bid is weaker among American clients than among other clients, suggesting American clients are also the least loyal to their current providers and most likely to switch.</p><p>Another interesting practical finding is that (excessive) bidding just to learn about this market might not be the wisest of ideas. The data demonstrate that providers who bid and lost were then at a disadvantage in subsequent bids with the same client. This finding might seem somewhat counterintuitive. After all, bidding in Rent A Coder requires relatively little effort (perhaps as little as a few minutes) and probably should garner some wins in the long run; but this is not supported by the data. Taking part in a bid should be considered more carefully beforehand because it carries a price. Losing a bid actually means lessening the chances of winning in the future.</p><p>The importance of maintaining good relationships with clients is not new and it bears out in these data too. But, here we emphasize the strength of this finding: at least in this market, by an order of magnitude relative to the other variables, some prior relationship is the key to winning future IT work. Overall, it is the most important contributor to making your bid the winning one.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Conclusion</head><p>We know that the "flat world" and offshore outsourcing are here to stay and that these have permanently changed the rules of the game <ref type="bibr">(Economist 2004</ref><ref type="bibr">(Economist , 2006;;</ref><ref type="bibr" target="#b23">Friedman 2005)</ref>, but even when the world is almost perfectly flat, as with this marketplace, it does not mean that clients act as if it were frictionless: price and potential labor arbitrage do not always matter, domestic providers continue to get some preference, common language matters, and, above all, previous relationships matter. </p></div><figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head>Profile and Statistics of the Transactional Dataset</head><label></label><figDesc>, and based on recent discussions with Rent A Coder and with other such sites.Data span all transactions over a period of 38 months from May 2001 through July 2004 at Rent A Coder, one of the most active online programming marketplaces.</figDesc><table><row><cell>•</cell><cell>Number of projects placed for bid requests: 20,202 projects by 7,907 clients</cell></row><row><cell>•</cell><cell>Number of client nationalities: 59 countries with at least one client placing at least one project for bidding</cell></row><row><cell>•</cell><cell>Number of provider bids on these bid requests: 263,572 bids by 31,024 providers.</cell></row><row><cell>•</cell><cell>Number of provider nationalities: 70 countries with at least one provider placing at least one bid in a competitive bid</cell></row><row><cell></cell><cell>against a provider from another country</cell></row><row><cell>•</cell><cell>Average bid amount: $129.02</cell></row><row><cell>•</cell><cell>Median bid amount: $49.99</cell></row><row><cell>•</cell><cell>95% of the bids were below $700</cell></row><row><cell>•</cell><cell>95% of winning bids were below $500</cell></row><row><cell>•</cell><cell>Average bids for each bid request: 13.05 (standard deviation = 13.99)</cell></row><row><cell>•</cell><cell>All projects are fixed price</cell></row><row><cell cols="2">Figure 1.</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1"><head>Table 1 . Logistic Regression Results a. Results Identifying the Winning Bid</head><label>1</label><figDesc></figDesc><table><row><cell>1</cell><cell>2</cell><cell>3</cell><cell>4</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2"><head>Results Identifying the Winning Bid Comparing English-Speaking Nations with Other Nations</head><label></label><figDesc></figDesc><table><row><cell></cell><cell></cell><cell>5</cell><cell>6</cell><cell>7</cell></row><row><cell></cell><cell>Clients</cell><cell>English-speaking only</cell><cell>English-speaking only</cell><cell>English-speaking only</cell></row><row><cell></cell><cell></cell><cell>including the USA</cell><cell>other than the USA</cell><cell>other than the USA</cell></row><row><cell></cell><cell>Providers</cell><cell>All</cell><cell>All</cell><cell>English-speaking only</cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell>except USA</cell></row><row><cell cols="2">H1 Potential labor arbitrage (provider/client PPP)</cell><cell></cell><cell></cell><cell></cell></row><row><cell cols="2">H2 Offshore outsourced</cell><cell></cell><cell>-.379***</cell><cell>-.298**</cell></row><row><cell>H3</cell><cell>A. This provider won previous bids for this client B. This provider lost previous bids for this client</cell><cell>1.196*** -.067***</cell><cell>1.656***</cell><cell>1.778**</cell></row><row><cell>Transactional Aspects</cell><cell>Num of bids on this request Lowest bid Highest bid Average bid Winning bid amount Amount bid Amt. ratio to winning bid</cell><cell>-.068*** .000**</cell><cell>-.061*** .002*** -.002*** .000*** -.969***</cell><cell>-.055*** -.002*** .001*** -1.045***</cell></row><row><cell></cell><cell>Amt. ratio to average bid</cell><cell>-1.278***</cell><cell>-.375***</cell><cell>-.340***</cell></row><row><cell></cell><cell>Constant</cell><cell>-.337***</cell><cell>.508***</cell><cell>.231*</cell></row><row><cell></cell><cell>Sample size</cell><cell>238,600</cell><cell>56,159</cell><cell>20,259</cell></row><row><cell></cell><cell>Overall correct classification</cell><cell>67.2%</cell><cell>69.1%</cell><cell>71.4%</cell></row><row><cell></cell><cell>Correct classification of winning bids</cell><cell>66.3%</cell><cell>83.2%</cell><cell>81.4%</cell></row><row><cell></cell><cell>Correct classification of non winning bids</cell><cell>77.9%</cell><cell>67.9%</cell><cell>70.7%</cell></row><row><cell></cell><cell>Chi square (df)</cell><cell>2118(8)</cell><cell>450(8)</cell><cell>169(8)</cell></row><row><cell></cell><cell>Percent winning bids in data</cell><cell>7.5%</cell><cell>7.5%</cell><cell>7.0%</cell></row><row><cell></cell><cell>Nagelkerke R 2</cell><cell>.184</cell><cell>.225</cell><cell>.223</cell></row></table></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="2" xml:id="foot_0"><p>Friedman, a New York Times columnist, made an enormous impact with this offshoring book on America's corporate and political decision makers.</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="3" xml:id="foot_1"><p>Transactions are bid requests by clients and the resulting bids submitted to these requests by providers.</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="4" xml:id="foot_2"><p>In keeping with common usage, offshoring means any sourcing to a foreign nation, whether that nation is near or far<ref type="bibr" target="#b10">(Carmel and Tjia 2005)</ref>.</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="5" xml:id="foot_3"><p>Adam Smith, The Wealth of Nations, Book IV, Section ii, page 12.</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="6" xml:id="foot_4"><p>Tradable is an economic term for goods or services that can be purchased across international borders. DVDs are tradable while haircuts are not.</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="11" xml:id="foot_5"><p>Most Rent A Coder providers performed adequately: only 8 percent of the projects received a rating below a 9 on a scale of 10 on any one project.</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="12" xml:id="foot_6"><p>Under these circumstances, providers can hide glitches, save time by writing inefficient code, only superficially debug the software, create inadequate interfaces to other programs, develop poor user interfaces, and so on, and yet charge as though these were all done at an adequate level.</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="13" xml:id="foot_7"><p>Although all these transaction are managed by one company, the transactional data are from several thousand clients and tens of thousands of providers.</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="14" xml:id="foot_8"><p>The original dataset had 23,584 bid requests by clients. After stripping bid requests that did not result in competitive bids from at least two nationalities, we were left with 20,202 bid requests.</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="15" xml:id="foot_9"><p>PPP GDP values came from the CIA World Factbook (http://www.cia.gov/ cia/publications/factbook/geos/ae.html/).</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="16" xml:id="foot_10"><p>A problem with analyzing populations is that in theory it is meaningless to assign generalization probability values to the statistics because in this case the data are the population, and so the sample statistics are also the population parameters<ref type="bibr" target="#b33">(Hand 1999</ref>). However, even when analyzing populations, statistical tools such as regression analyses are appropriate for building models of relationships in the data<ref type="bibr" target="#b32">(Hand 1998</ref>). As such, applying regression analyses to whole population data is, indeed, performed-at least</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="19" xml:id="foot_11"><p>A positive coefficient of potential labor arbitrage means preference to offshore to providers in relatively richer PPP countries, a negative one shows preference to offshore to poorer countries.</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_12"><p>MIS Quarterly Vol. 32 No. 2/June 2008</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="23" xml:id="foot_13"><p>The display shows the 13 bidders from 7 different nations bidding for a project.</p></note>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Acknowledgments</head><p>This study would not have been possible without the active interest and support of the CEO of Rent A Coder, Mr. Ian Ippolito, who provided the data and commented on the conclusions.</p></div>
+			</div>
+
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Appendix A Online Programming Marketplaces</head><p>In this article, we examine the transactions of Rent A Coder, one of the most active in a class called online programming marketplaces. OPMs emerged in the late 1990s during the first spurt of online business-to-business marketplaces. The early OPMs of the dot.com era were ITsquare and IT-radar. Both of these firms closed down soon after the dot.com collapse. At its peak in 2000, ITsquare listed 1,250 providers, but complained of a lack of clients. In hindsight it seemed too focused on large projects, rather than building a business model on many small transactions as Rent A Coder has done.</p><p>As business-to-business marketplaces, OPMs are meeting places between buyers and sellers in which transactions are made through auction mechanisms. ELance, a competitor of Rent A Coder, attracted media attention in part because it was founded on the premise of a Harvard Business Review article <ref type="bibr" target="#b49">(Malone and Laubacher 1998)</ref>. By 2004, we tallied 12 OPMs, although some of these were not very active. </p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">The Anglo Cluster: Legacy of the British Empire</title>
+		<author>
+			<persName><forename type="first">N</forename><forename type="middle">M</forename><surname>Ashkanasy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Trevor-Roberts</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Earnshaw</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of World Business</title>
+		<imprint>
+			<biblScope unit="volume">37</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="28" to="39" />
+			<date type="published" when="2002">2002</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Reputation Effects and the Limits of Contracting: A Study of the Indian Software Industry</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Banerjee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Duflo</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Quarterly Journal of Economics</title>
+		<imprint>
+			<biblScope unit="volume">115</biblScope>
+			<biblScope unit="page" from="989" to="1017" />
+			<date type="published" when="2000">2000</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Vertical Keiretsu and International Market Entry: The Case of the Japanese Automobile Ancillary Industry</title>
+		<author>
+			<persName><forename type="first">K</forename><surname>Banerji</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">B</forename><surname>Sambharya</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of International Business Studies</title>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="89" to="113" />
+			<date type="published" when="1996">1996</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<monogr>
+		<title level="m" type="main">Software Systems Techniques</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Beizer</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1990">1990</date>
+			<publisher>Van Nostrand Reinhold Company</publisher>
+			<pubPlace>New York</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Offshoring: The Next Industrial Revolution?</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">S</forename><surname>Blinder</surname></persName>
+		</author>
+		<ptr target="http://www.foreignaffairs.org/20060301faessay85209/alan-s-blinder/offshoring-the-next-industrial-revolution.html" />
+	</analytic>
+	<monogr>
+		<title level="j">Foreign Affairs</title>
+		<imprint>
+			<date type="published" when="2006-03">2006. March/April</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<monogr>
+		<title level="m" type="main">Structural Equations with Latent Variables</title>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">A</forename><surname>Bollen</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1989">1989</date>
+			<publisher>John Wiley and Sons</publisher>
+			<pubPlace>New York</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<monogr>
+		<author>
+			<persName><forename type="first">P</forename><surname>Bolton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Dewatripomt</surname></persName>
+		</author>
+		<title level="m">Contract Theory</title>
+		<meeting><address><addrLine>Cambridge, MA</addrLine></address></meeting>
+		<imprint>
+			<publisher>The MIT Press</publisher>
+			<date type="published" when="2005">2005</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Impact of Plant Size and Focus on Productivity: An Empirical Study</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Brush</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Karnani</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Science</title>
+		<imprint>
+			<biblScope unit="volume">42</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="1065" to="1081" />
+			<date type="published" when="1996">1996</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Why Nearshore Means that Distance Matters</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>Carmel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Abbott</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Communications of the ACM</title>
+		<imprint>
+			<biblScope unit="volume">50</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page" from="40" to="46" />
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">The Maturation of Offshore Sourcing of IT Work</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>Carmel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Agarwal</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quarterly Executive</title>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="65" to="78" />
+			<date type="published" when="2002">2002</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<monogr>
+		<title level="m" type="main">Offshoring Information Technology Sourcing and Outsourcing to a Global Workforce</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>Carmel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Tjia</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2005">2005</date>
+			<publisher>Cambridge University Press</publisher>
+			<pubPlace>Cambridge, UK</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Logistic Regression Analysis</title>
+		<author>
+			<persName><forename type="first">Y</forename><forename type="middle">H</forename><surname>Chan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Singapore Medical Journal</title>
+		<imprint>
+			<biblScope unit="volume">202</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="149" to="153" />
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+	<note>Biostatistics</note>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">The Nature of the Firm</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Coase</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Economica</title>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="issue">16</biblScope>
+			<biblScope unit="page" from="386" to="405" />
+			<date type="published" when="1937">1937</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Modal Choice in a World of Alliances: Analyzing Organizational Forms in the International Hotel Sector</title>
+		<author>
+			<persName><forename type="first">F</forename><forename type="middle">J</forename><surname>Contractor</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">K</forename><surname>Kundu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of International Business Studies</title>
+		<imprint>
+			<biblScope unit="volume">29</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="325" to="356" />
+			<date type="published" when="1998">1998</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Individual and Neo-tribal Consumption: Tales from the Simpsons of Springfield</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Cooper</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Mcloughlin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Keating</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Consumer Behaviour</title>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="330" to="344" />
+			<date type="published" when="2005">2005</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Existing Business Models for Auctions and Their Adaptation to Electronic Markets</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>Dans</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Electronic Commerce Research</title>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="23" to="31" />
+			<date type="published" when="2002">2002</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">The Location of Foreign Direct Investment Activity: Country Characteristics and Experience Effects</title>
+		<author>
+			<persName><forename type="first">W</forename><surname>Davidson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of International Business Studies</title>
+		<imprint>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="9" to="22" />
+			<date type="published" when="1980">1980</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Guest Editorial Cultural Issues and IT Management: Past and Present</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Davison</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Martinsons</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions On Engineering Management</title>
+		<imprint>
+			<biblScope unit="volume">50</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="3" to="7" />
+			<date type="published" when="1988">1988</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Survey: Outsourcing: A World of Work</title>
+		<ptr target="http://www.economist.com/surveys/displayStory.cfm?story_id=3351416" />
+	</analytic>
+	<monogr>
+		<title level="j">The Economist</title>
+		<imprint>
+			<date type="published" when="2004-11-11">2004. November 11</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Outsourcing in Eastern Europe: The Rise of Nearshoring</title>
+		<ptr target="http://www.economist.com/business/PrinterFriendly.cfm?story_id=5246203" />
+	</analytic>
+	<monogr>
+		<title level="j">The Economist</title>
+		<imprint>
+			<date type="published" when="2005-12-01">2005. December 1</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Agency Theory: An Assessment and Review</title>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">M</forename><surname>Eisenhardt</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Academy of Management Review</title>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="57" to="74" />
+			<date type="published" when="1989">1989</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">A Strategic Management Framework for IT Outsourcing: A Review of the Literature and the Development of a Success Factors Model</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Fjermestad</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">A</forename><surname>Saitta</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Information Technology Case and Application Research</title>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="42" to="60" />
+			<date type="published" when="2005">2005</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<author>
+			<persName><forename type="first">K</forename><surname>Fladmoe-Lindquist</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jacque</forename></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Control Modes In international Service Operations: The Propensity to Franchise</title>
+		<imprint>
+			<date type="published" when="1995">1995</date>
+			<biblScope unit="volume">41</biblScope>
+			<biblScope unit="page" from="1238" to="1249" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<monogr>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">L</forename><surname>Friedman</surname></persName>
+		</author>
+		<title level="m">The World is Flat: A Brief History of the Twenty-First Century</title>
+		<meeting><address><addrLine>New York</addrLine></address></meeting>
+		<imprint>
+			<publisher>Farrar, Straus and Giroux</publisher>
+			<date type="published" when="2005">2005</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Trust and TAM in Online Shopping: An Integrated Model</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Gefen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Karahanna</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">W</forename><surname>Straub</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="51" to="90" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">Romanians Become Latest Tech Rivals for Offshore Jobs</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Gomes</surname></persName>
+		</author>
+		<ptr target="http://www.wsj-asia.com/)" />
+	</analytic>
+	<monogr>
+		<title level="j">The Asian Wall Street Journal</title>
+		<imprint>
+			<date type="published" when="2003-11-18">2003. November 18</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Ownership Structures of Foreign Subsidiaries</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Gomes-Casseres</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Economic Behavior and Organization</title>
+		<imprint>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="1" to="25" />
+			<date type="published" when="1989">1989</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Information Systems Offshore Outsourcing; A Descriptive Analysis</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Gonzalez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Gascoa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Llopisa</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Industrial Management + Data Systems</title>
+		<imprint>
+			<biblScope unit="volume">106</biblScope>
+			<biblScope unit="issue">9</biblScope>
+			<biblScope unit="page" from="1233" to="1248" />
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">Information Systems Outsourcing: A Literature Analysis</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Gonzalez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Gascoa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Llopisa</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information &amp; Management</title>
+		<imprint>
+			<biblScope unit="volume">43</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="821" to="834" />
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<author>
+			<persName><forename type="first">A</forename><surname>Gopal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Sivaramakrishnan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">S</forename><surname>Krishnan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Mukhopadhyay</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Contracts in Offshore Software Development: An Empirical Analysis</title>
+		<imprint>
+			<date type="published" when="2003">2003</date>
+			<biblScope unit="volume">49</biblScope>
+			<biblScope unit="page" from="1671" to="1683" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">Growth in Services Outsourcing to India: Propellant or Drain on the U.S. Economy?</title>
+		<author>
+			<persName><forename type="first">W</forename><surname>Greene</surname></persName>
+		</author>
+		<ptr target="http://hotdocs.usitc.gov/docs/pubs/research_working_papers/EC200601A.pdf" />
+	</analytic>
+	<monogr>
+		<title level="m">Office of Economics Working Paper No. 2005-12-A, U.S. International Trade Commission</title>
+		<imprint>
+			<date type="published" when="2006-01">2006. January</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<monogr>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">F</forename><surname>Hair</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Jr</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">E</forename><surname>Anderson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">L</forename><surname>Tatham</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><forename type="middle">C</forename><surname>Black</surname></persName>
+		</author>
+		<title level="m">Multivariate Data Analysis with Readings</title>
+		<meeting><address><addrLine>Englewood Cliffs, NJ</addrLine></address></meeting>
+		<imprint>
+			<publisher>Prentice Hall</publisher>
+			<date type="published" when="1992">1992</date>
+		</imprint>
+	</monogr>
+	<note>th ed.</note>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Data Mining: Statistics and More?</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">J</forename><surname>Hand</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The American Statistician</title>
+		<imprint>
+			<biblScope unit="volume">52</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="112" to="118" />
+			<date type="published" when="1998">1998</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">Statistics and Data Mining: Intersecting Disciplines</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">J</forename><surname>Hand</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">ACM SIGKKD Explorations (</title>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="16" to="19" />
+			<date type="published" when="1999">1999</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<monogr>
+		<title level="m" type="main">Culture&apos;s Consequences: International Differences in Work Related Values</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Hofstede</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1980">1980</date>
+			<publisher>Sage Publications</publisher>
+			<pubPlace>London</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">The Confucius Connection: From Cultural Roots to Economic Growth</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Hofstede</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">H</forename><surname>Bond</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Organizational Dynamics</title>
+		<imprint>
+			<biblScope unit="volume">16</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="4" to="21" />
+			<date type="published" when="1988">1988</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<monogr>
+		<title level="m" type="main">Applied Logistic Regression</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">W J</forename><surname>Hosmer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Lemeshow</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1989">1989</date>
+			<publisher>John Willey &amp; Sons</publisher>
+			<pubPlace>New York</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<monogr>
+		<author>
+			<persName><surname>Imf</surname></persName>
+		</author>
+		<title level="m">International Financial Statistics</title>
+		<meeting><address><addrLine>Washington, DC</addrLine></address></meeting>
+		<imprint>
+			<publisher>International Monetary Fund</publisher>
+			<date type="published" when="1985">1985</date>
+		</imprint>
+	</monogr>
+	<note>Supplement on Exchange Rates</note>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<analytic>
+		<title level="a" type="main">Relationships and Hybrid Contracts: An Analysis of Contract Choice in Information Technology</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Kalnins</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">J</forename><surname>Mayer</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Law Economics and Organization</title>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="207" to="229" />
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<analytic>
+		<title level="a" type="main">The Effect of National Culture on the Choice of Entry Mode</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Kogut</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Singh</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of International Business Studies</title>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="411" to="432" />
+			<date type="published" when="1988">1988</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<analytic>
+		<author>
+			<persName><forename type="first">J</forename><surname>Konings</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Vandenbussche</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">The Adjustment of Financial Ratios in the Presence of Soft Budget Constraints: Evidence from Bulgaria</title>
+		<imprint>
+			<date type="published" when="2004">2004</date>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="page" from="131" to="159" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<analytic>
+		<title level="a" type="main">The Effects of Perceived Interdependence on Dealer Attitudes</title>
+		<author>
+			<persName><forename type="first">N</forename><surname>Kumar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">K</forename><surname>Scheer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J.-B</forename><forename type="middle">E M</forename><surname>Steenkamp</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Marketing Research</title>
+		<imprint>
+			<biblScope unit="issue">17</biblScope>
+			<biblScope unit="page" from="348" to="356" />
+			<date type="published" when="1995">1995</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+	<analytic>
+		<title level="a" type="main">The Effects of Supplier Fairness on Vulnerable Resellers</title>
+		<author>
+			<persName><forename type="first">N</forename><surname>Kumar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">K</forename><surname>Scheer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J.-B</forename><forename type="middle">E M</forename><surname>Steenkamp</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Marketing Research</title>
+		<imprint>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="page" from="54" to="65" />
+			<date type="published" when="1995-02">1995b. February</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b43">
+	<analytic>
+		<title level="a" type="main">An Empirical Investigation of Information Technology Sourcing Practices: Lessons from Experience</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">C</forename><surname>Lacity</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">P</forename><surname>Willcocks</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">22</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="363" to="408" />
+			<date type="published" when="1998">1998</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b44">
+	<analytic>
+		<title level="a" type="main">Productivity Levels and International Competitiveness between Canadian and U.S. Industries</title>
+		<author>
+			<persName><forename type="first">F</forename><forename type="middle">C</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Tang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The American Economic Review</title>
+		<imprint>
+			<biblScope unit="volume">90</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="176" to="179" />
+			<date type="published" when="2000">2000</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b45">
+	<analytic>
+		<author>
+			<persName><forename type="first">F</forename><forename type="middle">R</forename><surname>Lichtenberg</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Siegel</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">The Impact of R&amp;D Investment on Productivity-New Evidence</title>
+		<imprint>
+			<date type="published" when="1991">1991</date>
+			<biblScope unit="volume">29</biblScope>
+			<biblScope unit="page" from="203" to="229" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b46">
+	<analytic>
+		<author>
+			<persName><forename type="first">I</forename><surname>Light</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Kim</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Transnationalism and American Exports in an English-Speaking World</title>
+		<imprint>
+			<date type="published" when="2002">2002</date>
+			<biblScope unit="volume">36</biblScope>
+			<biblScope unit="page" from="702" to="725" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b47">
+	<analytic>
+		<title level="a" type="main">Cultural Orientation and Individual Reactions to Organizations: A Study of Employees of Japanese-Owned Firms</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">R</forename><surname>Lincoln</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Hanada</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Olson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Administrative Science Quarterly</title>
+		<imprint>
+			<biblScope unit="issue">25</biblScope>
+			<biblScope unit="page" from="93" to="115" />
+			<date type="published" when="1981">1981</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b48">
+	<analytic>
+		<title level="a" type="main">Real Exchange Rate Behavior: The Recent Float from the Perspective of the Past Two Centuries</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Lothian</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">P</forename><surname>Taylor</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Political Economy</title>
+		<imprint>
+			<biblScope unit="volume">104</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="488" to="509" />
+			<date type="published" when="1996">1996</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b49">
+	<analytic>
+		<title level="a" type="main">The Dawn of the E-Lance Economy</title>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">W</forename><surname>Malone</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">J</forename><surname>Laubacher</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Harvard Business Review</title>
+		<imprint>
+			<biblScope unit="volume">76</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="145" to="152" />
+			<date type="published" when="1998-09">1998. September-October</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b50">
+	<analytic>
+		<title level="a" type="main">Identifying an Advertisement Presenter&apos;s Tribe: The Use of Visual and Nonvisual Cues and their Effectiveness Across Media Types</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Nevett</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">M</forename><surname>Perry</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of African Business</title>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="77" to="94" />
+			<date type="published" when="2001">2001</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b51">
+	<analytic>
+		<title level="a" type="main">E-Loyalty: Your Secret Weapon on the Web</title>
+		<author>
+			<persName><forename type="first">F</forename><forename type="middle">F</forename><surname>Reichheld</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Schefter</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Harvard Business Review</title>
+		<imprint>
+			<biblScope unit="volume">78</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="105" to="113" />
+			<date type="published" when="2000">2000</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b52">
+	<monogr>
+		<title level="m" type="main">Coping with the Global Labor Arbitrage</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Roach</surname></persName>
+		</author>
+		<ptr target="http://www.morganstanley.com" />
+		<imprint>
+			<date type="published" when="2003">2003</date>
+			<publisher>Morgan Stanley Global Economic Forum</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b53">
+	<monogr>
+		<title level="m" type="main">Global: China and the Global Labor Arbitrage</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Roach</surname></persName>
+		</author>
+		<ptr target="http://www.morganstanley.com" />
+		<imprint>
+			<date type="published" when="2006">2006</date>
+			<publisher>Morgan Stanley Global Economic Forum</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b54">
+	<analytic>
+		<title level="a" type="main">International Market Entry by U.S. Internet Firms: An Empirical Analysis of Country Risk, National Culture, and Market Size</title>
+		<author>
+			<persName><forename type="first">F</forename><forename type="middle">T</forename><surname>Rothaermel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Kotha</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">K</forename><surname>Steensma</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Management</title>
+		<imprint>
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="56" to="82" />
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b55">
+	<analytic>
+		<title level="a" type="main">A Ricardo-Sraffa Paradigm Comparing Gains from Trade in Inputs and Finished Goods</title>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">A</forename><surname>Samuelson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Economic Literature</title>
+		<imprint>
+			<biblScope unit="volume">39</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="1204" to="1214" />
+			<date type="published" when="2001">2001</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b56">
+	<analytic>
+		<title level="a" type="main">The Effect of National Culture on the Choice between Licensing and Direct Foreign Investment</title>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">A</forename><surname>Shane</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Strategic Management Journal</title>
+		<imprint>
+			<biblScope unit="issue">15</biblScope>
+			<biblScope unit="page" from="627" to="642" />
+			<date type="published" when="1994">1994</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b57">
+	<analytic>
+		<title level="a" type="main">Vendor Screening in Information Technology Contracting With a Pilot Project</title>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">M</forename><surname>Snir</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">M</forename><surname>Hitt</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Organizational Computing and Electronic Commerce</title>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="61" to="88" />
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b58">
+	<analytic>
+		<title level="a" type="main">Are Hot Markets Driven by Hot Resource Shares or Hot Commodities?</title>
+		<author>
+			<persName><forename type="first">J.-A</forename><surname>Suchard</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L.-A</forename><surname>Woo</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Australian Journal of Management</title>
+		<imprint>
+			<biblScope unit="volume">28</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="319" to="344" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b59">
+	<analytic>
+		<title level="a" type="main">Incomplete Contracts: Where Do We Stand</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Tirole</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Econometrica</title>
+		<imprint>
+			<biblScope unit="volume">76</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="741" to="781" />
+			<date type="published" when="1999">1999</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b60">
+	<monogr>
+		<author>
+			<persName><surname>Tpi</surname></persName>
+		</author>
+		<ptr target="http://www.tpi.net/knowledgecenter/tpiindex/)" />
+		<title level="m">TPI Index</title>
+		<imprint>
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b61">
+	<analytic>
+		<title level="a" type="main">Transaction Cost Economics: How It Works; Where It Is Headed</title>
+		<author>
+			<persName><forename type="first">O</forename><forename type="middle">E</forename><surname>Williamson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The Economist</title>
+		<imprint>
+			<biblScope unit="volume">146</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="23" to="58" />
+			<date type="published" when="1998">1998</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b62">
+	<analytic>
+		<title level="a" type="main">Production of Trust: Institutional Sources of Economic Structure, 1840-1920</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Zucker</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Research in Organization Behavior</title>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="53" to="111" />
+			<date type="published" when="1986">1986</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

@@ -1,0 +1,2139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Buyer preferences for auction pricing rules in online outsourcing markets: fixed price vs. open price</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Zhijuan</forename><surname>Hong</surname></persName>
+							<affiliation key="aff2">
+								<orgName type="department">School of Management Science and Engineering</orgName>
+								<orgName type="institution">Shandong University of Finance and Economics</orgName>
+								<address>
+									<addrLine>East Erhuan Road</addrLine>
+									<postCode>250014</postCode>
+									<settlement>Jinan</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author role="corresp">
+							<persName><forename type="first">Ruhai</forename><surname>Wu</surname></persName>
+							<email>wuruhai@mcmaster.ca</email>
+							<affiliation key="aff3">
+								<orgName type="department">DeGroote School of Business</orgName>
+								<orgName type="institution">McMaster University</orgName>
+								<address>
+									<addrLine>1280 Main Street West</addrLine>
+									<postCode>L8S 4M4</postCode>
+									<settlement>Hamilton</settlement>
+									<country key="CA">Canada</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Yan</forename><surname>Sun</surname></persName>
+							<affiliation key="aff2">
+								<orgName type="department">School of Management Science and Engineering</orgName>
+								<orgName type="institution">Shandong University of Finance and Economics</orgName>
+								<address>
+									<addrLine>East Erhuan Road</addrLine>
+									<postCode>250014</postCode>
+									<settlement>Jinan</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Kunxiang</forename><surname>Dong</surname></persName>
+							<affiliation key="aff2">
+								<orgName type="department">School of Management Science and Engineering</orgName>
+								<orgName type="institution">Shandong University of Finance and Economics</orgName>
+								<address>
+									<addrLine>East Erhuan Road</addrLine>
+									<postCode>250014</postCode>
+									<settlement>Jinan</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff0">
+								<orgName type="department">Institute of Applied Informatics</orgName>
+								<orgName type="institution">University of Leipzig</orgName>
+								<address>
+									<postCode>2019</postCode>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff1">
+								<orgName type="institution">Zhijuan Hong</orgName>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Buyer preferences for auction pricing rules in online outsourcing markets: fixed price vs. open price</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="MD5">A9D7F65D1EBC0DD87E45056B2C9382E3</idno>
+					<idno type="DOI">10.1007/s12525-019-00378-3</idno>
+					<note type="submission">Received: 12 July 2018 / Accepted: 2 October 2019</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.7.3" ident="GROBID" when="2023-06-16T09:23+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>Pricing rule</term>
+					<term>Auction mechanism</term>
+					<term>Bid dimensionality</term>
+					<term>Online outsourcing markets</term>
+					<term>Online outsourcing</term>
+					<term>Buyer-determined auctions JEL classification L81</term>
+					<term>L86</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Fixed-price and open-price are two mechanisms with different auction pricing rules that are popularly used in online outsourcing markets. This research empirically examines the determinants of buyers' choices between the two mechanisms with secondary data from an online outsourcing market. We found that buyers tend to use open-price auctions with large size projects, while their propensity to use fixed-price auctions increases when they are more familiar with the project, have more trading experience in the market, or less trust in the service providers. Moreover, buyer experience has significant moderating effects on the impact of project size and buyer distrust. Our empirical results reveal a unique insight that incomplete information and information asymmetry, rather than the expected buyer surplus, are critical factors to buyers' preferences on bid dimensionality.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Introduction</head><p>Fast growing e-commerce enables small-and medium-sized companies as well as individuals to implement service procurement online, and fosters the prosperity of the freelancing industry. The freelance workforce has grown rapidly. In 2018, it accounted for 35% of the total workforce in the U.S. (upwork.com). <ref type="foot" target="#foot_0">1</ref> Online outsourcing markets (also known as "online labour markets") have proliferated as an intermediary to bridge buyers and service providers <ref type="bibr" target="#b44">(Hong et al. 2015)</ref>. For example, freelancer. com, a leading online marketplace, connects over 33 million employers and service providers from 247 countries, regions and territories. Online outsourcing markets have also reached a grand scale in China: epwk.com is a well-known marketplace that has listed more than eight million projects and facilitated transactions worth over $2.4 billion (¥16.9 billion) since it was founded in 2010. <ref type="foot" target="#foot_2">2</ref> Another online outsourcing marketplace, zbj. com (with witmart.com as its international version), has 13 million registered service providers and seven million clients. The site completed projects worth more than $1.1 billion by the end of 2018. <ref type="foot" target="#foot_3">3</ref>Online outsourcing markets are a digitized version of traditional marketplaces for service procurement (M. <ref type="bibr" target="#b58">Lin et al. 2016;</ref><ref type="bibr" target="#b85">Stanton and Thomas 2016)</ref>, where different types of players interact: buyers or clients who demand services; and service providers, or bidders, or freelancers, or sellers, who potentially provide services. In most online outsourcing markets, buyers award the contracts to selected bidders through multi-attribute buyer-determined auctions <ref type="bibr" target="#b44">(Hong et al. 2015)</ref>. The typical procedure is as follows: a buyer initiates a task or project by posting a Call for Bids (CFB); interested bidders submit their bids, including information on multiple attributes (e.g. price, working duration,<ref type="foot" target="#foot_4">4</ref> execution proposal, self-introduction, etc.); the buyer then selects the winning bidder and awards the contract. One critical decision the buyer needs to make when posting a CFB of an auction is to choose a pricing rule (the way the price of the auctioned good or service is determined). Specifically, the buyer can choose to use the fixed-price (FP) mechanism, or the openprice (OP) mechanism. Under the fixed-price mechanism, the buyer sets the price of the project in the CFB, and service providers bid for non-price attributes, such as working duration, execution proposal, etc. By contrast, the open-price mechanism relaxes the constraint on price, as this is not pre-set by the buyer. Service providers submit bids that include both price and nonprice information, opening an additional dimension for them to compete against. The price in the winning bid, which is determined by the buyer, is thus the project price. Consequently, under the two pricing rules, an auction can end with different outcomes. Both pricing rules are popularly used, and buyers in online outsourcing markets can choose freely between the two. It is of both academic and managerial interest to understand the outcome differences between these two rules, and how buyers should choose between them. Existing studies on auction dimensionality have used various analytical models and experiments to examine how the number of bidding attributes affects the auction outcome. Most of these studies <ref type="bibr" target="#b5">(Asker and Cantillon 2008;</ref><ref type="bibr" target="#b14">Bichler 2000;</ref><ref type="bibr" target="#b20">Chen-Ritzo et al. 2005)</ref> show that auctions with more bidding attributes result in a higher buyer surplus than those with fewer bidding attributes. Nevertheless, these theoretical studies can hardly explain why the fixed-price mechanism is still frequently used by buyers when they could choose the openprice option.</p><p>The main objective of our research is to explore the difference between the two pricing rules by examining buyers' ex ante preferences. In particular, we try to identify the contingencies where buyers prefer the open-price to the fixed-price mechanism and vice versa. Our study uses data from epwk. com, a leading Chinese online outsourcing marketplace, with 1963 fixed-price auctions and 7629 open-price auctions. We examine the impacts of a variety of factors on how buyers choose a pricing rule, including project-specific factors (e.g. project size, etc.) and buyer characteristics (e.g. experience, how familiar they are with the project, their trust in the community of service providers, etc.). These factors reflect three major concerns that potentially influence the pricing rule decision: i) the uncertainty/incomplete information that a buyer faces in evaluating the proposed project's budget; ii) the buyer's ex ante expectation of the auction outcome under the different pricing rules; and iii) the buyer's distrust in service providers due to the information asymmetry between the two parties. We use several regression models to estimate the effects of those explanatory factors, and the estimations are robust. Our empirical results show that concerns about incomplete information and information asymmetry are vital; buyers are inclined to use the open-price mechanism if they are unfamiliar with the project and more information is needed to estimate the project budgets. Meanwhile, if they distrust the service providers in the market, they tend to use the fixed-price mechanism. Interestingly, by measuring the impact of buyer experience on the pricing rule selection, we reveal that the concern about incomplete information is more dominant than that about outcome expectation, which seems less essential. In particular, past trading experience in the market helps buyers better understand the outcome difference between the two pricing rules, and provides them with an information advantage in estimating a project budget. As existing studies suggest that the auction mechanism with more bidding attributes (open-price mechanism) leads to a higher buyer surplus, an experienced buyer is supposed to learn its merits and prefer to use it when posting a CFB. On the other hand, being experienced also helps buyers estimate the project budget, and makes them more comfortable to use the fixed-price mechanism. Our research demonstrates significant evidence that when buyers are more experienced, they are more likely to adopt the fixed-price mechanism. This finding implies that the current theoretical understanding of outcome difference generated from bid dimensionality is incomplete; information plays a more critical role in auction design on bid dimensionality than existing modelling and experimental studies have assumed.</p><p>Our research contributes to two streams of literature. First, it adds to the literature on auction mechanisms. Existing studies on bid dimensionality focus on the mechanism difference in non-price attributes but have not investigated this aspect in price attribute. The findings are based on either gametheoretical models or lab experiments. As far as we know, our paper is the first empirical research that uses secondary data to examine the role of bid dimensionality. Our empirical findings provide evidence that differs from present theories and calls for further research in this field. Second, our research enriches the understanding of online outsourcing markets. Despite its increasing popularity, the extant research on this topic mainly concentrates on the bidding behaviours of service providers and the hiring decisions of buyers. Few studies have examined the buyer's ex ante selection on auction pricing rules.</p><p>The remainder of this article is structured as follows. In the section on research context, we introduce how the online outsourcing marketplace operates and elaborate on the auction procedures under the two mechanisms. We then review the relevant literature. Next, we present the theory and hypotheses development. We explain our empirical data and methodologies in the subsequent section, and then present the regression results and associated discussions, followed by the conclusion.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Research context</head><p>There are more than 100 online labour markets in China, 5 including epwk.com, zbj.com, taskcn.com, and k68.cn, to name a few. These marketplaces facilitate projects in various categories, from product design, website and app development, to advertising and promotion projects, house services, and so on. Multi-attribute buyer-determined auctions are usually adopted to match buyers and service providers. Buyers in these markets are generally individuals or firms who have a procurement need for services; service providers are self-employed individuals/teams as well as small and medium firms that have particular skills or capabilities to fulfil buyers' needs. Buyers initiate an auction by posting a CFB in which they provide a project description, set the duration of the auction, and determine the pricing rule (the fixed-price mechanism vs. the open-price mechanism). They also select guarantee options (whether participating bidders are required to submit a deposit as a guarantee of delivering the service in time, free after-sale services for three months, and that the work is original), as well as other relevant features. The pricing rule is a vital factor. Buyers can choose freely between the two mechanisms in the CFB without paying any additional charge. If they opt for the fixed-price mechanism, a specific price for the proposed project needs to be set. If they use the open-price mechanism, they need to select a budget range from several prespecified ranges ("¥100-¥1000," "¥1000-¥5000," "¥5000-¥10,000," "¥10,000-¥30,000," "¥30,000-¥50,000," "¥50,000-¥100,000," "¥100,000-¥200,000," and "over ¥200,000″). However, the selected budget range is more of a signal that implies the buyer's budget preference; service providers can offer bid prices outside the selected range.</p><p>Once the CFB is posted, interested service providers submit their bids, including information from multiple dimensions. In a fixed-price auction, they agree on the project price pre-set by the buyer, and their bids comprise the proposed working duration with an execution proposal that briefly describes their credentials and implementation plans. In an openprice auction, bidders bid on both price and non-price attributes (e.g. working duration, execution proposal).</p><p>After the auction is closed, the buyer selects a winning bidder and awards the contract. An auction can fail if the buyer cannot find a satisfactory bid from those received. If the buyer selects the winning bidder, a payment must first be deposited to the marketplace, and the chosen service provider then begins work on the project. If the service provider completes the project within the promised working duration, the buyer authorizes the marketplace to release payment. As the last step, the two parties rate each other via the marketplace platform. Figure <ref type="figure" target="#fig_0">1</ref> shows examples of two project pages (the CFBs) under the different pricing rules. Note that the one on the left is a fixed-price auction with the price pre-set at ¥680; while the one on the right is an open-price auction, with a suggestive budget range of ¥100-¥1000.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Literature review</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Literature on online outsourcing markets</head><p>In recent years, considerable academic attention has been given to online outsourcing markets as a venue to facilitate transactions between buyers and service providers. Existing studies can be classified into three streams according to research subject. The first stream focuses on the role of strategies and mechanisms of the marketplace in the process of matching buyers and service providers. Through semi-structured interviews and an online questionnaire, Caraway (2010) describes and summarizes mechanism designs that oDesk.com uses to enhance mediation. <ref type="bibr" target="#b4">Allon et al. (2012)</ref> use game theoretical models to show that the marketplace's intervention in the matching process (i.e. price screening service providers and enabling them to communicate) may result in a better market outcome in terms of equilibrium price and the marketplace's profit. <ref type="bibr" target="#b44">Hong et al. (2015)</ref> compare the sealed-bid and open-bid auction mechanisms. This empirical study shows that while the sealed-bid mechanism attracts more bidders, the open-bid mechanism generates higher buyer surplus. <ref type="bibr" target="#b45">Horton and Johari (2018)</ref> show that the device signalling buyers' vertical preferences (relative preference over price and quality) has a significant sorting effect on attracting service providers. High-quality service providers are attracted to buyers with a high preference on quality, while low-quality service providers are attracted to buyers who are more sensitive to price.</p><p>The second stream of studies consists of research that focuses on the factors that affect buyers' hiring decisions. <ref type="bibr" target="#b81">Scholz and Haas (2011)</ref> show that bid price is the predominant factor influencing how clients make selection decisions. A few studies <ref type="bibr" target="#b55">(Kokkodis et al. 2015;</ref><ref type="bibr" target="#b68">Moreno and Terwiesch 2014;</ref><ref type="bibr" target="#b81">Scholz and Haas 2011;</ref><ref type="bibr" target="#b90">Yoganarasimhan 2013)</ref> prove that as a device to alleviate information asymmetry, the service provider's reputation is another important factor. The literature has also examined other influencing factors that include service providers' work experience <ref type="bibr" target="#b1">(Agrawal et al. 2015;</ref><ref type="bibr" target="#b10">Beerepoot and Lambregts 2015;</ref><ref type="bibr" target="#b53">Kim 2009)</ref>, skills <ref type="bibr" target="#b10">(Beerepoot and Lambregts 2015)</ref>, production costs <ref type="bibr" target="#b81">(Scholz and Haas 2011)</ref>, origin (developing vs. developed countries) <ref type="bibr" target="#b1">(Agrawal et al. 2015;</ref><ref type="bibr" target="#b10">Beerepoot and Lambregts 2015)</ref>, linguistic and cultural differences between buyers and service providers <ref type="bibr">(Hong and</ref><ref type="bibr">Pavlou 2013, 2017;</ref><ref type="bibr" target="#b81">Scholz and Haas 2011)</ref>, and their historical collaboration relationship <ref type="bibr" target="#b41">(Hong and Pavlou 2013)</ref>.</p><p>The third stream of research investigates service providers' behaviours. <ref type="bibr" target="#b83">Snir and Hitt (2003)</ref> study their participation decisions and bidding strategies. This analytical model shows that while high-value projects attract more bids, the rising number of bids increases the transaction costs of both buyers and service providers, and makes these projects less awarded. <ref type="bibr" target="#b13">Benson et al. (2019)</ref> use an experimental study to reveal that projects posted by buyers with a higher reputation attract more service providers in the same unit of time. <ref type="bibr" target="#b50">Kanat et al. (2018)</ref> explore how geo-economic factors affect the "exit" behaviour of service providers. <ref type="bibr" target="#b16">Brink et al. (2019)</ref> examine how codes of conduct, monitoring, and penalties for dishonest reporting affect service providers' reporting behaviours (honest or not) in an online outsourcing market.</p><p>In sum, the literature regarding the online outsourcing market focuses on the impacts of matching mechanisms, how buyers select the winning bidder from the pool of service providers, and service providers' competition strategies. However, there is a lack of academic understanding about buyers' preferences and adoption decisions on matching mechanisms, even though in practice, many online outsourcing marketplaces provide them with such options. Our paper aims to fill this gap by empirically examining buyers' choices between the fixed-price and open-price mechanisms.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Literature on attribute setting in reverse auctions</head><p>Our study focuses on the comparison between fixed-price and the open-price mechanisms. The essence of the research question is the mechanism setting of the price attribute in reverse auctions. Concerns about auction attributes arise from two perspectives, and both attract considerable academic attention. The first is the nature of the attributes and how they should be integratively considered when awarding a contract (award rule). The other perspective focuses on which attributes should be open to bidders (bid dimensionality).</p><p>Studies on the award rule explore whether and how to formulate a scoring function of auction attributes used to evaluate bids. Most studies assume that the scoring function is quasi-linear, that is, linear in price <ref type="bibr" target="#b5">(Asker and Cantillon 2008;</ref><ref type="bibr">Che 1993;</ref><ref type="bibr" target="#b22">David et al. 2006)</ref>, except that <ref type="bibr" target="#b89">Wang and Liu (2014)</ref> consider a non-linear scoring function in price. With the setting of a quasi-linear scoring function, <ref type="bibr" target="#b88">Vulkan and Jennings (2000)</ref> argue that the optimal award rule should follow the buyer's utility function, so that buyer surplus will be maximized through the auction. However, other studies (Che 1993; <ref type="bibr" target="#b22">David et al. 2006;</ref><ref type="bibr" target="#b70">Nishimura 2015)</ref> contend that the scoring function may deviate from the buyer utility function, due to various reasons that include buyer commitment power, motivating bidders, and cost substitutability between project attributes, etc. Moreover, "buyer-determined," sometimes called "non-binding," is a special award rule used in reverse auction markets. Under a buyer-determined auction, no scoring function is specified ex ante, and the buyer freely decides the winning bid after the bidding. The buyerdetermined auction mechanism is attracting more and more academic attention <ref type="bibr" target="#b27">(Engelbrecht-wiggans et al. 2007;</ref><ref type="bibr" target="#b28">Fugger et al. 2016;</ref><ref type="bibr" target="#b38">Haruvy and Jap 2013;</ref><ref type="bibr" target="#b44">Hong et al. 2015;</ref><ref type="bibr" target="#b42">Hong and Pavlou 2017)</ref>, and our research aims to contribute to this growing literature.</p><p>Studies on bid dimensionality explore the optimal design of how many and which attributes should be open for bidders to bid. These studies compare the outcomes of the auctions with different bidding attributes, especially between those of single-and multi-attribute auctions. In prior literature, single-attribute auctions mainly refer to those where bidders only bid for price. Multi-attribute auctions allow bidders to submit a bid on both price and non-price attributes (e.g. quality, delivery time, etc.). Both theoretical-modelling <ref type="bibr" target="#b5">(Asker and Cantillon 2008)</ref> and experimental studies <ref type="bibr" target="#b14">(Bichler 2000;</ref><ref type="bibr" target="#b20">Chen-Ritzo et al. 2005)</ref> show a consistent result that the multi-attribute auction outperforms the single-attribute in terms of buyer surplus. The theoretical explanation is that more attributes allow bidders to better organize their resources, and to offer bids more favourable to the buyer. Using laboratory experiments to compare the two-vs. threeattribute auctions on logistics services, <ref type="bibr" target="#b11">Bellantuono et al. (2013)</ref> show that the attitude of bidders towards the buyer becomes more positive when they can bid on more attributes.</p><p>All these studies use either analytical models or lab experiments to develop theoretical findings. However, these findings have not been empirically tested with secondary data because the buyer's utility can hardly be measured in practice. Our research explores a unique perspectivebuyers' choices on bid dimensionalitywhich may reveal buyer surplus under auctions with different bid dimensionalities. Moreover, bid price has been proven to be the predominant factor on how buyers decide on a winning bid <ref type="bibr" target="#b81">(Scholz and Haas 2011)</ref>. Existing studies on bid dimensionality all consider price as the default bidding attribute, and investigate the outcome difference by some non-price attribute(s). Our research makes a difference by examining the impact of including an additional project price in bidding attributes.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Literature on mechanism/contract selection and comparison</head><p>In addition to the research on online outsourcing markets, intensive studies on other markets investigate the trading mechanism/contract. These provide rich economics insights, and focus on two themes: i) the determinants of trading mechanism/contract selection, and ii) the comparison between the equilibrium outcomes under different mechanisms/ contract types.</p><p>Studies that focus on the first theme have examined the various influencing factors of mechanism/contract selection, specifically those that affect choice between auctions and other trading mechanisms (e.g. negotiations, posted-price mechanism), and choice between different contract types (e.g. fixed-price contract, time-and-materials contract, performance-based contract). Project complexity is considered a major factor in determining the final trading mechanism selected between auction and negotiation <ref type="bibr" target="#b8">(Bajari et al. 2009)</ref>, and whether the contract is time-and-material or fixed-price <ref type="bibr" target="#b7">(Bajari and Tadelis 2001;</ref><ref type="bibr" target="#b30">Gefen et al. 2008)</ref>. Besides project complexity, the existing literature also explores the effect of other project characteristics that include project uncertainty <ref type="bibr" target="#b34">(Gopal et al. 2003)</ref>, project size <ref type="bibr" target="#b34">(Gopal et al. 2003)</ref>, and how important the project is to the buyer <ref type="bibr" target="#b34">(Gopal et al. 2003)</ref>. In addition to these characteristics, features of traders, such as their experience <ref type="bibr" target="#b26">(Einav et al. 2018;</ref><ref type="bibr" target="#b34">Gopal et al. 2003)</ref>, and business familiarity with the counterpart <ref type="bibr" target="#b30">(Gefen et al. 2008</ref>) also significantly influence the final choice on trading mechanism/contract type. Furthermore, extant research highlights the importance of price discovery <ref type="bibr" target="#b26">(Einav et al. 2018)</ref>, convenience <ref type="bibr" target="#b26">(Einav et al. 2018)</ref>, ex ante profit expectation <ref type="bibr" target="#b33">(Gopal and Sivaramakrishnan 2008)</ref>, and the verifiability of buyer and seller's efforts <ref type="bibr" target="#b77">(Roels et al. 2010</ref>) on the trading mechanism/ contract type chosen.</p><p>Research on the second theme falls into three classes: comparisons between auctions and other trading mechanisms (e.g. negotiations, posted-price mechanism); comparisons between auctions with different auction mechanisms; and comparisons between different contract types. Using laboratory experiments, <ref type="bibr" target="#b11">Bellantuono et al. (2013)</ref> find that sellers' profits are higher and their attitudes towards the buyer more positive with negotiations than with auctions. <ref type="bibr" target="#b26">Einav et al. (2018)</ref> use eBay data to show that compared with posted-price mechanisms, auctions generally result in a higher success rate, but lower prices. <ref type="bibr" target="#b19">Chen et al. (2007)</ref> contend that group-buying auctions outperform the postedprice mechanism when the seller is risk-seeking and economies of scale are considered. Studies on reverse auctions compare the performances of various mechanisms that differ in pricing rule (e.g. first-score vs. second-score) <ref type="bibr" target="#b15">(Branco 1997;</ref><ref type="bibr">Che 1993;</ref><ref type="bibr" target="#b22">David et al. 2006;</ref><ref type="bibr" target="#b37">Hanazono et al. 2013)</ref>, information revelation policy (e.g. open-bid vs. sealed-bid) <ref type="bibr" target="#b36">(Gwebu et al. 2012;</ref><ref type="bibr" target="#b39">Haruvy and Katok 2013;</ref><ref type="bibr" target="#b44">Hong et al. 2015;</ref><ref type="bibr" target="#b66">Millet et al. 2004;</ref><ref type="bibr" target="#b86">Strecker 2010)</ref>, award rules (e.g. price-based vs. buyer-determined) <ref type="bibr" target="#b27">(Engelbrecht-wiggans et al. 2007)</ref>, and bid dimensionality (e.g. single-attribute vs. multi-attribute) <ref type="bibr" target="#b5">(Asker and Cantillon 2008;</ref><ref type="bibr" target="#b14">Bichler 2000;</ref><ref type="bibr" target="#b20">Chen-Ritzo et al. 2005;</ref><ref type="bibr" target="#b43">Hong and Wu 2018)</ref>.</p><p>Previous literature compares the outcome of contract types between fixed-price and time-and-materials contracts. <ref type="bibr" target="#b33">Gopal and Sivaramakrishnan (2008)</ref> contend that the impacts of profit drivers can be different when the contract type changes (fixed-price vs. time-and-materials contract). <ref type="bibr" target="#b23">Dey et al. (2010)</ref> claim that a time-and-materials contract performs better than a fixed-price contract if a client has an effective and efficient process of monitoring and auditing. <ref type="bibr" target="#b32">Gopal (2010)</ref> shows that contract type (fixed-price vs. time-and-materials) predicts the service quality provided by the vendor.</p><p>In sum, existing studies explore the determinants of mechanism/contract choice and compare the performance among various auction mechanisms and contract types. Our research follows the literature to study two specific auction pricing rulesfixed-price vs. open-price mechanismand to explore the determinants of how buyers choose between them. Current research provides a theoretical background for our hypothesis development, which we will elaborate on in the next section.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Theory and hypotheses</head><p>Information, evaluation uncertainty on the project How buyers decide the pricing rules depends on how confident they are in accurately estimating project budgets. Being certain of a cost assessment would intuitively lead to a tendency to choose the fixed-price mechanism, under which a buyer ex ante determines the payment for a project. In addition, a buyer's confidence is determined by the gap between the information needed for an accurate estimation and the project information already acquired. The smaller the gap, the more confident the buyer is in budget estimation.</p><p>Empirical studies have shown that project size leads to cost estimation error <ref type="bibr" target="#b79">(Sauer and Gemino 2007;</ref><ref type="bibr" target="#b87">van Oorschot et al. 2005)</ref>. The larger the project, the greater the potential for deviation between the estimated and actual costs. <ref type="bibr" target="#b25">Dolado (2000)</ref> shows that larger-sized projects consist of more components or modules, and intuitively, to evaluate the budget, the buyer needs to estimate the cost of each individual component and sum up the total. This approach is called "bottom-up" in project management literature <ref type="bibr" target="#b40">(Heemstra 1992;</ref><ref type="bibr" target="#b48">Jørgensen 2004</ref>). The cost estimation for each component requires specific information. Hence, the more components a project contains, the greater the amount and the more comprehensive the information is needed to obtain an overall budget estimate. Moreover, multiple components in one project often interact with, and interdepend, on each other, which induces further complexity <ref type="bibr" target="#b69">(Nickerson and Zenger 2004;</ref><ref type="bibr" target="#b82">Simon 1969)</ref> and is highly related to uncertainty in cost estimation <ref type="bibr" target="#b2">(Ahmad and Minkarah 1987)</ref>. This would further discourage buyers' confidence in budget estimation. Our research, therefore, proposes the following hypothesis.</p><p>H1: Buyers prefer the OP mechanism to the FP mechanism when their projects are characterized as of a larger size.</p><p>The amount of information buyers possessaside from the total extent neededcan significantly affect their pricing rule decision. As the literature has shown, familiarity with a focal subject, considered a reflection of the amount of information individuals possess <ref type="bibr" target="#b31">(Goodman and Leyden 1991;</ref><ref type="bibr" target="#b73">Park and Lessig 2002)</ref>, is also a critical factor influencing their decisions (e.g. adoption decision of online payment systems, internet banking, purchase decision, etc.) <ref type="bibr" target="#b24">(Dimitriadis and Kyrezis 2010;</ref><ref type="bibr" target="#b29">Gefen 2000;</ref><ref type="bibr" target="#b78">Rouibah et al. 2016)</ref>. The greater the amount of information individuals have, the less uncertainty they face in accurately predicting the outcome <ref type="bibr" target="#b67">(Milliken 1987)</ref>. In an online outsourcing market, buyers with more information about the auctioned project face less uncertainty in evaluating the budget, are more confident to name their prices, and therefore are more likely to use a fixed-price auction. How much a buyer knows about a project is a critical feature impacting auction outcome, yet it has been barely investigated in previous auction literature. We propose the following hypothesis.</p><p>H2: Buyers prefer the FP mechanism to the OP mechanism when they are more familiar with the focal project.</p><p>Historical information gained from past experience with similar projects are commonly used as references for cost estimation for the project at hand <ref type="bibr" target="#b40">(Heemstra 1992;</ref><ref type="bibr" target="#b84">Stamelos and Angelis 2001)</ref>. Estimation accuracy improves when estimation experiences about past analogies are used <ref type="bibr" target="#b3">(Al-Harbi et al. 1994;</ref><ref type="bibr" target="#b49">Jørgensen 2014;</ref><ref type="bibr" target="#b60">Liu and Zhu 2007)</ref>. In online outsourcing markets, buyers accumulate experience along with their ongoing activities. By observing and comparing bids, as well as communicating with bidders on previous projects, buyers gain more understanding about market prices and project cost structures. This helps them estimate costs and set prices in the future. Consequently, buyers who are more experienced with the online freelance marketplace become better at setting the price for their projects and are more inclined to use the fixed-price mechanism. Therefore, we propose the following hypothesis.</p><p>H3a: Buyers prefer the FP mechanism to the OP mechanism when they are more experienced with this market.</p><p>In addition, experience can increase one's information processing capabilities <ref type="bibr" target="#b61">(Mao and Benbasat 2000)</ref> and it affects one's use of relevant information <ref type="bibr" target="#b76">(Perkins and Rao 1990)</ref>. In online outsourcing markets, buyers with more experience are better at absorbing and analyzing information. They are more capable of conducting accurate cost estimations on each component of a project with limited information. In other words, when handling the same-sized project, experienced buyers would need less information to give a confident cost estimate, compared to those who are inexperienced. Therefore, the positive effect of project size on the buyer's selection of openprice mechanism would be weakened. We propose the following hypothesis.</p><p>H4: Buyer experience attenuates the positive effect of project size on the selection probability of the OP mechanism.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Ex ante expectation of the auction outcome</head><p>Previous research using laboratory experiments on bid dimensionality has shown that multi-attribute auctions outperform single-attribute ones in terms of buyer surplus <ref type="bibr" target="#b14">(Bichler 2000;</ref><ref type="bibr" target="#b20">Chen-Ritzo et al. 2005)</ref>. In online outsourcing markets that use reverse auctions, bidders bid for price, working duration, and submit an execution proposal that includes their credentials and implementation plans under the open-price auction mechanism; under the fixed-price mechanism, they only bid for working duration and execution proposal. From the perspective of bid dimensionality, the difference between the fixed-price and open-price mechanisms is that the latter adds an additional attribute for bidders to compete against. Following the intuition of experimental studies, the open-price mechanism should result in a greater buyer surplus than the fixed-price mechanism, and if buyers expect this differenceand are given the optionthey should select the open-price mechanism.</p><p>With experience, buyers can predict the difference in outcome between the fixed-price and open-price auctions. A number of studies have demonstrated the presence of learning effects in auctions <ref type="bibr" target="#b51">(Kannan 2012)</ref>, as well as the learning effect on buyers in the online outsourcing market <ref type="bibr" target="#b0">(Agrawal et al. 2013)</ref>. As buyers gain experience with online outsourcing marketplaces, they become better at identifying and analysing market signals <ref type="bibr" target="#b53">(Kim 2009)</ref>, to avoid losses from opportunistic or low-quality providers <ref type="bibr" target="#b41">(Hong and Pavlou 2013)</ref>, and to understand the advantages and disadvantages of different auction mechanisms. As a result, buyers should gradually obtain the knowledge that "the open-price mechanism often brings me more gains than the fixed-price mechanism". They should then be more likely to choose the openprice mechanism, ceteris paribus. Therefore, we propose the following hypothesis.</p><p>H3b: Buyers prefer the OP mechanism to the FP mechanism when they are more experienced with this market.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Trust and distrust</head><p>Existing literature <ref type="bibr" target="#b6">(Ba and Pavlou 2002;</ref><ref type="bibr" target="#b35">Gregg and Walczak 2010;</ref><ref type="bibr" target="#b75">Pavlou and Gefen 2004</ref>) has shown that buyers' trust in sellers is a critical factor that influences outcomes in online markets. As several studies <ref type="bibr" target="#b46">(Hwang and Lee 2012;</ref><ref type="bibr" target="#b64">McKnight et al. 2002;</ref><ref type="bibr" target="#b71">Okazaki et al. 2010;</ref><ref type="bibr" target="#b80">Schlosser et al. 2006</ref>) have shown, the trust buyers place in sellers stems from three attributes: a) the sellers' integrity, e.g. whether the service providers are honest and will keep their promises; b) the sellers' ability and competence, e.g. whether the service providers have sufficient skills and are capable of completing the project in time; and c) the sellers' benevolence, e.g. whether the service providers care about and act in the buyer's interest. Information asymmetry in online outsourcing markets makes buyers' trust in service providers scarce and valuable <ref type="bibr" target="#b90">(Yoganarasimhan 2013</ref>). As service providers' capabilities, resources and cost structure are private information unobservable to buyers <ref type="bibr" target="#b9">(Bapna et al. 2016)</ref>, they may take the opport u n i t y t o e xt r a c t i n f o r m at i o n r e nt s ( G o pa l a n d Sivaramakrishnan 2008). Moreover, the intangibility of traded services and the "one-shot" or "non-repetitive" feature of online outsourcing market transactions nourish opportunistic behaviours in service providers, such as delaying the job and delivering services with lower quality than promised <ref type="bibr" target="#b21">(Chong 2004;</ref><ref type="bibr" target="#b90">Yoganarasimhan 2013</ref>). As a result, the online auction environment becomes "fraud-friendly" <ref type="bibr" target="#b21">(Chong 2004</ref>), and buyers frequently distrust service providers.</p><p>This distrust may affect a buyer's decision on pricing rule selection. Many studies <ref type="bibr" target="#b54">(Kim et al. 2008;</ref><ref type="bibr" target="#b71">Okazaki et al. 2010;</ref><ref type="bibr" target="#b75">Pavlou and Gefen 2004</ref>) contend that trust decreases perceived risk in various contexts. When buyers are sceptical of bidders' integrity, ability and benevolence, they may perceive considerable uncertainties and risks in bidders' prices and are more likely to trust their own budget estimations. Consequently, they are more inclined to select the fixedprice mechanism. In addition, distrust in service providers may also motivate them to simplify the transaction procedure.</p><p>Compared with the open-price mechanism, a buyer's decision about a winning bid becomes less complicated (with no need to consider the price factor) under the fixed-price mechanism. Therefore, we propose the following hypothesis.</p><p>H5: Buyers prefer the FP mechanism to the OP mechanism when they have less trust in the community of service providers.</p><p>As noted earlier, buyers accumulate experience with online freelance markets, and this helps them to acquire knowledge in order to properly identify and analyze credible signals <ref type="bibr" target="#b53">(Kim 2009)</ref>. Experienced buyers learn to avoid losses from opportunistic service providers <ref type="bibr" target="#b41">(Hong and Pavlou 2013)</ref> and are better at gauging the reliability and quality of bidders. With this greater awareness and screening capability, the negative effect of distrust on perceived risk in forthcoming bid prices would be mitigated. Therefore, we suggest the following hypothesis.</p><p>H6: Buyer experience attenuates the negative effect of buyer distrust on the selection probability of the OP mechanism.</p><p>In general, our research hypotheses are summarized in the framework in Fig. <ref type="figure" target="#fig_1">2</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Data and methodology</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Data and variables</head><p>The data for this research is collected from a leading online outsourcing marketplace in China. The marketplace owns more than 19 million registered service providers. Since its inception, buyers have posted over eight million projects, and the marketplace has facilitated transactions worth more than $2.4 billion (¥16.9 billion) by May 2019. We collected auction-level data from January to July 2016 and obtained observations of 9592 auctions posted by 7966 unique buyers, including 1963 FP auctions and 7629 OP auctions. The data contains project characteristics (e.g. project budget level, project category and project description), auction characteristics (e.g. auction pricing rule, auction duration, the buyer's requirement for guarantees) and buyer characteristics (e.g. buyer experience, buyer location, and buyer authentication).</p><p>Table <ref type="table" target="#tab_0">1</ref> summarizes the variables used in the empirical analysis. Table <ref type="table" target="#tab_1">2</ref> presents descriptive statistics and correlations between key variables. The detailed descriptions of major variables are as follows:</p><p>OPMech is a dummy variable of a buyer's selection between fixed-price and open-price mechanisms. It equals to 1 if the buyer selects the OP mechanism and 0 if the buyer selects the FP mechanism. ProjectSize refers the size of a project. Costs or money value is often regarded as one important dimension that reflects project size <ref type="bibr" target="#b47">(Jiang et al. 2000;</ref><ref type="bibr" target="#b62">Martin et al. 2005;</ref><ref type="bibr" target="#b65">Might and Fischer 1985;</ref><ref type="bibr" target="#b72">Papke-shields et al. 2010)</ref>. The literature often uses project budget as a proxy of project size <ref type="bibr" target="#b8">(Bajari et al. 2009;</ref><ref type="bibr" target="#b91">Zheng et al. 2016</ref>), and we use the same measure as in these previous studies. When buyers post an OP auction, they need to mark their project budget level from eight potential budget ranges levels (¥100-¥1000, ¥1000-¥5000, ¥5000-¥10,000, ¥10,000-¥30,000, ¥30,000-¥50,000, ¥50,000-¥100,000, ¥100,000-¥200,000, over ¥200,000). We code ProjectSize from 1 to 8 for the 8 project budget levels, respectively. When posting an FP auction, a buyer is required to set an exact payment amount. ProjectSize of an FP project is coded according to which budget range the exact payment amount is located in. For example, a payment amount ¥4000 of an FP project is located in the budget range of "¥1000-¥5000." Therefore, the ProjectSize of this project is 2. BuyerFami refers to the level of buyer familiarity with the project and is proxied by the length of the project description, i.e. the number of words. Project description is the result of acquiring, understanding, assimilating and expressing information related to the current project. The more familiar buyers are with the project, the more information they can disclose in the project description. Buyers always intend to elaborate on this description: clarity and detail provide potential service providers with the information they need, which attracts more bids. It also reduces communication costs for both the buyer and the service provider, demonstrates the buyer's know-how with the project, and prevents potential cheating behaviour on the part of the service provider.</p><p>The amount of project information provided reflects the buyer's familiarity with it, ceteris paribus. BuyerExp, a buyer's experience, is measured by the number of projects (including both FP and OP projects) that the buyer has posted before in this focal market.</p><p>BuyerDistrust refers to the degree of a buyer's distrust in the community of service providers. For this, we use a buyer's requirement on guarantees as a proxy. The marketplace ofguarantee options for buyers to control risks in project implementation. Service providers can offer three types of service guarantees: to guarantee the project will be completed on time, to guarantee free after-sale services for three months, and to guarantee the work is original. To claim a service guarantee, a service provider needs to place a deposit at the marketplace, which can be withdrawn after the guarantee period. When buyers post a project, they can require one or all three guarantees, and only the service providers who offer those that are required can bid for the project. These guarantee options do not incur any financial cost to buyers, so distrust in service providers is the primary, if not sole, reason for buyers to use them. Our measure differs from those used in previous studies. <ref type="bibr" target="#b6">Ba and Pavlou (2002)</ref>, <ref type="bibr" target="#b57">Li et al. (2009)</ref>, <ref type="bibr" target="#b74">Pavlou and Dimoka (2006)</ref> use reputation scores or feedback as indicators of a buyer's trust in individual sellers, because the research focuses on the impact of seller idiosyncrasy on buyer's trust. Our research considers trust as the individual buyer's psychological perception regarding the whole community of service providers. Hence, a measure that reflects the buyer's overall attitude toward the pool of the potential service providers is chosen instead.</p><p>Several control variables are also used in the analysis, including AucDuration (auction duration), BuyerLoc (buyer location dummies) and BuyerAuth (buyer authentication, whether the buyer passed identity verification).</p><p>The projects are taken from seven categories: design, web &amp; software development, writing &amp; translation, decoration, sales &amp; marketing, business services, and creative ideas. We use dummy variables (ProjectCate) to control the category effect, as well as month dummies (Month) to control time effect when the project was posted.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Empirical models and estimation methods</head><p>Equation ( <ref type="formula" target="#formula_0">1</ref>) outlines the empirical model for estimating how buyers choose between the OP and FP mechanisms. We index the project by i, the buyer of the project by u, and the time when the project was posted by t. The dependent variable is a binary indicator of whether the buyer chooses the OP mechanism. The explanatory variables include project size, buyer familiarity with the project, buyer experience and buyer distrust in service providers. We control for auction characteristics, i.e. auction duration; buyer characteristics including buyer location dummies and buyer authentication dummy; project category dummies and month dummies. We took natural logarithms of the highly skewed variables (AucDuration, BuyerExp, BuyerFami) in the estimation to address nonnormality (Y. <ref type="bibr" target="#b44">Hong et al. 2015;</ref><ref type="bibr" target="#b52">Khern-am-nuai et al. 2018;</ref><ref type="bibr" target="#b59">Lin et al. 2019</ref>). <ref type="foot" target="#foot_6">6</ref> We conduct binary logistic regression analyses to test the hypotheses, as this is a common regression model to examine agents' dichotomous choices. As only 11% of the the buyers posted more than one project during the research time window, the dataset as a panel cannot be used to consider buyers' fixed effect. The buyers in the online outsourcing market set the value of three explanatory The month when the project was posted variables (project size, buyer familiarity with the project, buyer distrust in service providers) and that of dependent variable (pricing rule) at almost the same time. However, these explanatory variables are mainly determined by either the project characteristics, or the buyers' overall perception of the online outsourcing market. They are not significantly influenced by the pricing rule of a specific auction. Moreover, the choice of pricing rule is located at the bottom of the CFB-generating page.<ref type="foot" target="#foot_7">7</ref> Or, cognitively, buyers make decisions of the explanatory variables before they decide the pricing rule. Therefore, reverse causality in this study is not considered to be a serious issue. When constructing the interaction term of project size and buyer experience, as well as the interaction of buyer distrust and buyer experience, we standardize the independent variable and the moderator to eliminate the possible multicollinearity.</p><formula xml:id="formula_0">OPMech i;u;t ¼ β 0 þ β 1 Â ProjectSize i þ β 2 Â BuyerFami i;u þ β 3 Â BuyerExp i;u þ β 4 Â BuyerDistrust i;u þ β 5 Â ProjectSize i Â BuyerExp i;u þ β 6 Â BuyerDistrust i;u Â BuyerExp i;u þ β 7 Â AuctionControls i ð Þ þ β 8-12 Â BuyerControls i;u À Á þ ProjectCate i þ Month t þ ε i;u;t<label>ð1Þ</label></formula><p>Analyses and results</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Main analysis</head><p>Table <ref type="table" target="#tab_2">3</ref> reports the logistic regression results with estimated coefficients. In Column (1), we examined the baseline model with only controls. Column (2) adds independent variables, i.e. the effect of project size, buyer familiarity with the project, buyer experience, and buyer distrust in the community of service providers on the buyer's selection of pricing rule.</p><p>Column (3) and Column (4) indicate the interaction effects separately. Column ( <ref type="formula">5</ref>) is the full model. As shown in Column (2), the coefficient of project size is significantly positive (β = 0.324, p &lt; 0.001), indicating that buyers tend to choose the OP mechanism when the project is large and complex. Thus, H1 is supported. Buyer's familiarity with the project has a strongly negative impact on the buyer's selection of the OP mechanism (β = -0.234, p &lt; 0.001), supporting H2. Buyer experience is significantly negatively related to the buyer's selection of the OP mechanism (β = -0.31, p &lt; 0.001), which indicates that buyers are more likely to choose the FP mechanism when they are more experienced in this marketplace. This is consistent with the conjecture in H3a and rejects H3b. Buyer distrust has a significantly negative influence on buyer's selection of the OP mechanism (β = -0.619, p &lt; 0.001). H5 is supported.</p><p>All the above results of the relationship between independent variables and dependent variables are further reinforced in the full model as shown in Column (5). The positive effect of project size (β = 0.333, p &lt; 0.001), the negative effect of buyer's familiarity with the current project (β = -0.228, p &lt; 0.001), the negative effect of buyer experience (β = -0.36, p &lt; 0.001), and the negative effect of buyer distrust (β = -0.643, p &lt; 0.001) on the buyer's selection of the OP mechanism are all significant.</p><p>As shown in Column (3), the interaction of project size and buyer experience has a significantly negative effect on the buyer's pricing rule choice (β = -0.088, p &lt; 0.01). H4 is supported. It means that the positive effect of project size on buyer's preference of OP mechanisms is weakened as a buyer's experience increases. Experienced buyers have a higher capability of absorbing and analyzing information, and thus are more confident in providing an accurate budget estimate when facing the same-sized project. Column (4) shows a significant positive effect of the interaction of buyer experience and buyer distrust (β = 0.071, p &lt; 0.01). H6 is supported. The negative effect of buyer distrust on the choice of OP mechanism is weakened as the buyer's experience increases. The result proves that buyer experience does help to acquire knowledge in identifying and analyzing credible signals. The significance of the two interaction effects are also supported by the full model in Column (5). Figure <ref type="figure">3</ref> elaborates on the economic meanings of two interaction terms. Figure <ref type="figure">3(a)</ref> illustrates the effect of the interaction of buyer experience and project size; Fig. <ref type="figure">3(b</ref>) demonstrates the effect the interaction of buyer experience and buyer distrust. The lines with circular points in Fig. <ref type="figure">3</ref>(a) and Fig. <ref type="figure">3(b)</ref> show how the propensity for experienced buyers (when they have posted 40 projects before) to choose the OP mechanism changes, along with project size and buyer distrust in potential service providers, respectively. The lines with square dots show the case of inexperienced buyers (when the buyer has not posted projects before). Note that "Prob" in the figure refers to the buyer's probability of choosing the open-price mechanism. In both Fig. <ref type="figure">3</ref>(a) and 3(b), the line with square dots is higher than the line with circular points, supporting H3a that experienced buyers, compared with inexperienced buyers, are more willing to use the fixed-price mechanism.</p><p>In Fig. <ref type="figure">3</ref>(a), the slopes of both lines are positive. That means the buyer's propensity to select the open-price mechanism increases with project size (H1). The difference in the slopes of the two lines represents the impact of the interaction of project size and buyer experience. The square dotted line has a larger slope than the circular dotted line, indicating that inexperienced buyers are more affected by project size compared with experienced buyers. H4 is supported. In other words, when buyers deal with large-sized projects where more information is needed for budget estimation, they are inclined to use the open-price mechanism. In this instance, service providers provide additional information on the project budget in their bids. Trading experience helps buyers reduce the anxiety of incomplete information and moderates the impact of project size on their willingness to use the open-price mechanism.</p><p>Both lines in Fig. <ref type="figure">3</ref>(b) have negative slopes, which support H5 that buyers are more likely to select the fixed-price mechanism when they trust service providers less. Furthermore, the line </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Robustness check</head><p>We test the robustness of the results in several alternative perspectives. First, we use alternative measures for some variables, with a different measure for buyer authentication. Besides identity verification, buyers on the platform can verify their contact phone number, email address and bank account. These verifications are all optional to buyers. The number of verifications a buyer has passed (BuyerAuth_All) is used to measure buyer authentication, instead of the original measure "whether the buyer has passed identification verification". The value of the new measure, BuyerAuth_All, is from the set {0, 1, 2, 3, 4}, while the original measure, BuyerAuth, is a binary variable. The estimation result with this new measure is presented in Column (1) of Table <ref type="table" target="#tab_3">4</ref>. We also replace the proxy for buyer familiarity with the number of attached documents (ProjectFami_Attach) that the buyer provided when the project was posted, and the result is presented in Column (2) of Table <ref type="table" target="#tab_3">4</ref>. Column (3) reports the estimation results when both the above measures are used, instead of those in the main analyses. Overall, the findings are consistent when using different measures. Second, we examine multicollinearity in model estimations, and this provides additional support for the robustness of the results. The collinearity diagnostics tests for all models was performed. The max variance inflation factors (VIF) is below 3 in all models, indicating multicollinearity is not a problem <ref type="bibr" target="#b56">(Kutner et al. 2004</ref>). Table <ref type="table" target="#tab_5">5</ref> presents the VIFs of the regression models. The condition index statistics (CIS) is checked for the full model and it is 21.89, less than 30, suggesting multicollinearity is not an issue in this dataset <ref type="bibr" target="#b12">(Belsley et al. 2004</ref>). In summary, the findings are robust throughout these tests.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Discussion</head><p>Table <ref type="table" target="#tab_4">6</ref> summarizes our major empirical findings.</p><p>The empirical results show that information, both the information needed (H1) and the information possessed (H2) by a buyer in evaluating a project budget, plays a critical role in the pricing rule decision. Specifically, the more information needed for accurate budget estimation, measured by the project size in regression, the more likely the buyer prefers to use the open-price mechanism. Meanwhile, the project information that the buyer possesses, reflected by the length of the project description, is negatively related to the propensity to choose the open-price mechanism. This implies that when buyers face incomplete information about a project, they are inclined to use the open-price mechanism to listen to bid prices from service providers. When they have sufficient information, they would prefer to control the project budget directly through the fixed-price mechanism.</p><p>There is also evidence that buyers are inclined to use a fixed-price mechanism when they have less trust in service providers. Compared with the fixed-price mechanism, the open-price mechanism allows service providers to bid on one additional attribute, project price. Selecting the winning bid hence becomes more comprehensive, as more information is contained in the bids. However, to find the optimal match, the buyer incurs increased transaction costs with the more comprehensive selection. When buyers have less trust in the community of service providers, they perceive more risks in the bid prices offered. Therefore, evaluating and comparing the bids with price attribute becomes more costly for buyers, so using the fixed-price mechanism and relying on their own budget estimation is preferred. With the online outsourcing market, buyer distrust in service providers mainly results from information asymmetry between the two parties. Our study suggests that when facing severe information asymmetry, buyers tend to simplify the matching process (the fixed-price mechanism rather than the open-price mechanism).</p><p>These results explore the significant role of buyer experience in deciding on pricing rules through both direct and indirect (moderating) effects. Two opposite hypotheses are proposed from two different perspectives regarding the direct effect of buyer experience. H3a, from the perspective of transaction cost theory, contends that a buyer's experience brings an information advantage in estimating the project budget, and consequently motivates the buyer to use the fixed-price mechanism. H3b presumes that experience helps a buyer better understand expected buyer surplus under the two pricing rules. As existing modelling and experimental studies have shown that the auction with more bidding attributes engenders more buyer surplus, experienced buyers should be more willing to use open-price auctions, where one more attribute (i.e. project price) is open for bidding. Our empirical results demonstrate a significantly negative impact of buyer experience on the propensity to use the open-price mechanism. This means the information advantage effect of buyer experience, or the transaction cost concern, is dominant. Opening the price attribute to bid in auctions either does not generate more buyer surplus, or the generated additional buyer surplus is so limited that its influence is much weaker than concern about incomplete information on how buyers choose pricing rule. This finding calls for further study on auction bid dimensionality. Uncertainty and risk should be introduced and carefully examined in future analytical models or experiment designs. It is possible that incomplete information influences the bidding strategies of service providers and the buyer's winning bid selection process. The expected buyer surplus might be lower when more attributes are open to bid in auctions.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Conclusion</head><p>In this paper, we empirically identified conditions under which the buyer prefers the open-price mechanism to the fixed-price mechanism. Based on a dataset from an online labour market in China, it was found that buyers tend to use the open-price mechanism when their projects are larger, while their propensity to use the fixed-price mechanism increases if they are more familiar with the project, have greater trading experience in the Hypotheses Findings H1: Buyers prefer the OP mechanism to the FP mechanism when their projects are characterized as of a larger size. S H2: Buyers prefer the FP mechanism to the OP mechanism when they are more familiar with the focal project. S H3a: Buyers prefer the FP mechanism to the OP mechanism when they are more experienced with this market. S H3b: Buyers prefer the OP mechanism to the FP mechanism when they are more experienced with this market. NS H4: Buyer experience attenuates the positive effect of project size on the selection probability of the OP mechanism. S H5: Buyers prefer the FP mechanism to the OP mechanism when they have less trust in the community of service providers. S H6: Buyer experience attenuates the negative effect of buyer distrust on the selection probability of the OP mechanism. S S is short for "supported"; NS is short for "Not Supported" market, and less trust in service providers. Moreover, buyer experience has significant moderating effects on the impact of project size and buyer distrust. Alternative measures for buyer authentication and buyer familiarity with the current project were used to check the robustness of this empirical study. The results remained consistent. Multicollinearity was also examined with VIF and CIS, which further reinforced the results.</p><p>The empirical results reveal that incomplete information and information asymmetryrather than the expected buyer surplusplay critical roles in multi-attribute buyer-determined auctions, especially on buyers' preference on bid dimensionality. Although existing analytical and experimental studies show that auctions with more bidding attributes benefit buyers more than those with less bidding attributes, our study indicates different insights. Experienced buyers, who are supposed to have more accurate ex ante expectation of auction outcomes under the two pricing rules, are not allured by the theory-suggested higher buyer surplus with the open-price mechanism. Instead, compared with inexperienced peers, experienced buyers are more willing to use the fixed-price mechanism. Based on this empirical evidence, further research is called on to investigate strategic decisions by both buyers as well as service providers in multi-attribute auctions, especially when the concerns about incomplete information and information asymmetry are considered.</p><p>This research contributes to both the literature on online labour markets and that of reverse auctions, especially on bid dimensionality. It also offers several managerial implications for online labour market platforms. By understanding the reasons behind how buyers decide on pricing rules, the marketplace can better design its matching mechanisms and provide particular incentives to enhance its activeness and sustainability.</p><p>Our analysis is subject to a few limitations. First, we use several proxies for the variables of buyer characteristics. For example, the number of words in the project description is used to proxy for a buyer's familiarity with the proposed project, and the buyer's requirement of guarantee(s) to proxy for distrust in the community of service providers. These proxies are essentially buyers' decisions, and although they are believed to be highly associated with their respective characteristics, the possibility of measurement error cannot be completely ruled out. Future research could use first-hand data to accurately measure the specific features of buyers to obtain more convincing results. Second, this research only investigated how buyer characteristics and project features (specifically project size) affect buyers' decision choice on pricing rules, but did not explore the detailed difference between the performances under the two mechanisms, which might be of more substantial meaning to both academic understanding and business practices. Future research with more accurate measures and more sophisticated econometric models could further investigate how these pricing rules affect project outcomes.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>Fig. 1</head><label>1</label><figDesc>Fig. 1 Fixed versus Open-Price Mechanisms</figDesc><graphic coords="4,51.40,53.84,492.61,177.82" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>Fig. 2</head><label>2</label><figDesc>Fig. 2 Research model</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head></head><label></label><figDesc>Fig. 3 Interactions in Predicting Buyer's Selection of the OP Mechanism</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head>Table 1</head><label>1</label><figDesc></figDesc><table><row><cell>Definition of key</cell><cell></cell><cell></cell></row><row><cell>variables</cell><cell>Variable</cell><cell>Variable Definition</cell></row><row><cell></cell><cell>OPMech</cell><cell>Equals 1 if the buyer chooses to post the project under the OP mechanism, 0 otherwise</cell></row><row><cell></cell><cell>ProjectSize</cell><cell>The level of the buyer's budget</cell></row><row><cell></cell><cell>BuyerFami</cell><cell>The buyer's familiarity with the current project; number of words in the project description</cell></row><row><cell></cell><cell>BuyerExp</cell><cell>Number of projects the buyer has posted before</cell></row><row><cell></cell><cell>BuyerDistrust</cell><cell>Equals 1 if the buyer requires any of the three types of guarantees, 0 otherwise</cell></row><row><cell></cell><cell>AucDuration</cell><cell>Number of days the auction keeps active</cell></row><row><cell></cell><cell>BuyerLoc</cell><cell>The buyer's location</cell></row><row><cell></cell><cell>BuyerAuth</cell><cell>Equals 1 if the buyer has passed identify verification, 0 otherwise</cell></row><row><cell></cell><cell>ProjectCate</cell><cell>The project category of the focal project</cell></row><row><cell></cell><cell>Month</cell><cell></cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1"><head>Table 2</head><label>2</label><figDesc>Coefficient significance level: *p &lt; 0.05. To address non-normality in the variables, we took natural logarithms of the highly skewed variables (AucDuration, BuyerExp and BuyerFami)</figDesc><table><row><cell>Descriptive statistics and</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>correlations</cell><cell>Variable</cell><cell>Mean</cell><cell>SD</cell><cell>1</cell><cell>2</cell><cell>3</cell><cell>4</cell><cell>5</cell><cell>6</cell></row><row><cell></cell><cell>1. OPMech</cell><cell>0.795</cell><cell>0.403</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell>2. ProjectSize</cell><cell>2.278</cell><cell>1.387</cell><cell>0.166*</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell>3. BuyerFami</cell><cell>4.148</cell><cell>0.767</cell><cell>-0.068*</cell><cell>0.103*</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell>4. BuyerExp</cell><cell>0.356</cell><cell>0.732</cell><cell>-0.188*</cell><cell>-0.105*</cell><cell>0.069*</cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell>5. BuyerDistrust</cell><cell>0.105</cell><cell>0.307</cell><cell>-0.093*</cell><cell>0.008</cell><cell>0.096*</cell><cell>0.031*</cell><cell></cell><cell></cell></row><row><cell></cell><cell>6. AucDuration</cell><cell>1.961</cell><cell>0.694</cell><cell>0.238*</cell><cell>0.255*</cell><cell>0.093*</cell><cell>-0.103*</cell><cell>0.061*</cell><cell></cell></row><row><cell></cell><cell>7. BuyerAuth</cell><cell>0.122</cell><cell>0.328</cell><cell>-0.129*</cell><cell>-0.051*</cell><cell>0.047*</cell><cell>0.333*</cell><cell>0.079*</cell><cell>-0.047*</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2"><head>Table 3</head><label>3</label><figDesc>Logit model to study buyers' selection of pricing rule</figDesc><table><row><cell>DV: OPMech</cell><cell>(1)</cell><cell>(2)</cell><cell>(3)</cell><cell>(4)</cell><cell>(5)</cell></row><row><cell>Constant</cell><cell>-0.426(0.111)***</cell><cell>0.454(0.18)*</cell><cell>0.451(0.18)*</cell><cell>0.453(0.18)*</cell><cell>0.45(0.179)*</cell></row><row><cell>Control Variables</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>AucDuration</cell><cell>0.782(0.037)***</cell><cell>0.723(0.038)***</cell><cell>0.72(0.038)***</cell><cell>0.724(0.038)***</cell><cell>0.721(0.038)***</cell></row><row><cell>BuyerAuth</cell><cell>-0.508(0.086)***</cell><cell>-0.331(0.088)***</cell><cell>-0.306(0.088)***</cell><cell>-0.337(0.088)***</cell><cell>-0.31(0.088)***</cell></row><row><cell>BuyerLoc_East</cell><cell>-0.303(0.283)</cell><cell>-0.133(0.288)</cell><cell>-0.141(0.287)</cell><cell>-0.128(0.288)</cell><cell>-0.138(0.287)</cell></row><row><cell>BuyerLoc_Cent</cell><cell>-0.387(0.162)*</cell><cell>-0.145(0.166)</cell><cell>-0.164(0.166)</cell><cell>-0.138(0.167)</cell><cell>-0.16(0.166)</cell></row><row><cell>BuyerLoc_West</cell><cell>-0.143(0.184)</cell><cell>0.03(0.188)</cell><cell>0.029(0.187)</cell><cell>0.022(0.187)</cell><cell>0.021(0.187)</cell></row><row><cell>BuyerLoc_NorEas</cell><cell>-0.379(0.081)***</cell><cell>-0.12(0.085)</cell><cell>-0.139(0.085)</cell><cell>-0.11(0.085)</cell><cell>-0.131(0.085)</cell></row><row><cell>Independent Variables</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>ProjectSize</cell><cell></cell><cell>0.324(0.027)***</cell><cell>0.337(0.027)***</cell><cell>0.319(0.026)***</cell><cell>0.333(0.027)***</cell></row><row><cell>BuyerFami</cell><cell></cell><cell>-0.234(0.034)***</cell><cell>-0.232(0.034)***</cell><cell>-0.23(0.034)***</cell><cell>-0.228(0.034)***</cell></row><row><cell>BuyerExp</cell><cell></cell><cell>-0.31(0.035)***</cell><cell>-0.355(0.038)***</cell><cell>-0.31(0.035)***</cell><cell>-0.36(0.038)***</cell></row><row><cell>BuyerDistrust</cell><cell></cell><cell>-0.619(0.079)***</cell><cell>-0.602(0.08)***</cell><cell>-0.653(0.08)***</cell><cell>-0.643(0.08)***</cell></row><row><cell>Interactions</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>ProjectSize*BuyerExp</cell><cell></cell><cell></cell><cell>-0.088(0.029)**</cell><cell></cell><cell>-0.1(0.029)***</cell></row><row><cell>BuyerDistrust*BuyerExp</cell><cell></cell><cell></cell><cell></cell><cell>0.071(0.024)**</cell><cell>0.08(0.024)***</cell></row><row><cell>Fixed Effects</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Project Category effect</cell><cell>Yes</cell><cell>Yes</cell><cell>Yes</cell><cell>Yes</cell><cell>Yes</cell></row><row><cell>Time (Month) effect</cell><cell>Yes</cell><cell>Yes</cell><cell>Yes</cell><cell>Yes</cell><cell>Yes</cell></row><row><cell>Pseudo R 2</cell><cell>0.082</cell><cell>0.120</cell><cell>0.121</cell><cell>0.121</cell><cell>0.122</cell></row><row><cell>VIF (Max)</cell><cell>2.85</cell><cell>2.87</cell><cell>2.87</cell><cell>2.87</cell><cell>2.87</cell></row><row><cell>VIF (Mean)</cell><cell>1.58</cell><cell>1.53</cell><cell>1.52</cell><cell>1.51</cell><cell>1.5</cell></row><row><cell>CIS</cell><cell>11.81</cell><cell>21.85</cell><cell>21.89</cell><cell>21.85</cell><cell>21.89</cell></row><row><cell>Log likelihood</cell><cell>-4460.383</cell><cell>-4279.307</cell><cell>-4274.904</cell><cell>-4275.054</cell><cell>-4269.435</cell></row><row><cell># of Buyers</cell><cell>7966</cell><cell>7966</cell><cell>7966</cell><cell>7966</cell><cell>7966</cell></row><row><cell># of Auctions</cell><cell>9592</cell><cell>9592</cell><cell>9592</cell><cell>9592</cell><cell>9592</cell></row><row><cell># of Observations</cell><cell>9592</cell><cell>9592</cell><cell>9592</cell><cell>9592</cell><cell>9592</cell></row><row><cell cols="6">Standard errors are reported in parentheses; Coefficient significance level: ***p &lt; 0.001, **p &lt; 0.01, *p &lt; 0.05,  †p &lt; 0.1; Two-tailed tests</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_3"><head>Table 4</head><label>4</label><figDesc></figDesc><table><row><cell>Robustness checks on</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>buyers' selection of pricing rule</cell><cell>DV: OPMech</cell><cell>(1)</cell><cell>(2)</cell><cell>(3)</cell></row><row><cell></cell><cell>Constant</cell><cell>0.632(0.18)***</cell><cell>-0.421(0.117)***</cell><cell>-0.148(0.119)</cell></row><row><cell></cell><cell>Control Variables</cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell>AucDuration</cell><cell>0.688(0.038)***</cell><cell>0.7(0.038)***</cell><cell>0.668(0.038)***</cell></row><row><cell></cell><cell>BuyerAuth</cell><cell></cell><cell>-0.314(0.088)***</cell><cell></cell></row><row><cell></cell><cell>BuyerAuth_All</cell><cell>-0.343(0.031)***</cell><cell></cell><cell>-0.35(0.03)***</cell></row><row><cell></cell><cell>BuyerLoc_East</cell><cell>0.352(0.292)</cell><cell>-0.121(0.287)</cell><cell>0.376(0.292)</cell></row><row><cell></cell><cell>BuyerLoc_Cen</cell><cell>0.279(0.17)</cell><cell>-0.189(0.165)</cell><cell>0.264(0.17)</cell></row><row><cell></cell><cell>BuyerLoc_West</cell><cell>0.433(0.191)*</cell><cell>0.016(0.187)</cell><cell>0.439(0.192)*</cell></row><row><cell></cell><cell>BuyerLoc_NorEast</cell><cell>0.188(0.087)*</cell><cell>-0.126(0.085)</cell><cell>0.202(0.088)*</cell></row><row><cell></cell><cell>Independent Variables</cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell>ProjectSize</cell><cell>0.316(0.027)***</cell><cell>0.317(0.027)***</cell><cell>0.301(0.027)***</cell></row><row><cell></cell><cell>BuyerFami</cell><cell>-0.206(0.034)***</cell><cell></cell><cell></cell></row><row><cell></cell><cell>BuyerFami_Attach</cell><cell></cell><cell>-0.128(0.033)***</cell><cell>-0.114(0.033)***</cell></row><row><cell></cell><cell>BuyerExp</cell><cell>-0.254(0.039)***</cell><cell>-0.365(0.038)***</cell><cell>-0.256(0.039)***</cell></row><row><cell></cell><cell>BuyerDistrust</cell><cell>-0.558(0.08)***</cell><cell>-0.663(0.08)***</cell><cell>-0.575(0.08)***</cell></row><row><cell></cell><cell>Interactions</cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell>ProjectSize*BuyerExp</cell><cell>-0.075(0.03)*</cell><cell>-0.104(0.029)***</cell><cell>-0.078(0.03)**</cell></row><row><cell></cell><cell>BuyerDistrust*BuyerExp</cell><cell>0.073(0.025)**</cell><cell>0.082(0.024)***</cell><cell>0.074(0.025)**</cell></row><row><cell></cell><cell>Fixed Effects</cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell>Project Category effect</cell><cell>Yes</cell><cell>Yes</cell><cell>Yes</cell></row><row><cell></cell><cell>Time (Month) effect</cell><cell>Yes</cell><cell>Yes</cell><cell>Yes</cell></row><row><cell></cell><cell>Pseudo R 2</cell><cell>0.133</cell><cell>0.119</cell><cell>0.131</cell></row><row><cell></cell><cell>VIF (Max)</cell><cell>2.88</cell><cell>2.87</cell><cell>2.88</cell></row><row><cell></cell><cell>VIF (Mean)</cell><cell>1.53</cell><cell>1.5</cell><cell>1.53</cell></row><row><cell></cell><cell>CIS</cell><cell>22.39</cell><cell>13.81</cell><cell>14.35</cell></row><row><cell></cell><cell>Log likelihood</cell><cell>-4212.896</cell><cell>-4284.397</cell><cell>-4225.165</cell></row><row><cell></cell><cell># of Buyers</cell><cell>7966</cell><cell>7966</cell><cell>7966</cell></row><row><cell></cell><cell># of Auctions</cell><cell>9592</cell><cell>9592</cell><cell>9592</cell></row><row><cell></cell><cell># of Observations</cell><cell>9592</cell><cell>9592</cell><cell>9592</cell></row><row><cell></cell><cell cols="4">Standard errors are reported in parentheses; Coefficient significance level: ***p &lt; 0.001, **p &lt; 0.01, *p &lt; 0.05,</cell></row><row><cell></cell><cell>†p &lt; 0.1; Two-tailed tests</cell><cell></cell><cell></cell><cell></cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_4"><head>Table 6</head><label>6</label><figDesc>Main Findings</figDesc><table /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_5"><head>Table 5</head><label>5</label><figDesc>The variance inflation factors in model estimation</figDesc><table><row><cell>DV: OPMech</cell><cell>(1)</cell><cell>(2)</cell><cell>(3)</cell><cell>(4)</cell><cell>(5)</cell></row><row><cell>Control Variables</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>AucDuration</cell><cell>1.1</cell><cell>1.15</cell><cell>1.15</cell><cell>1.15</cell><cell>1.15</cell></row><row><cell>BuyerAuth</cell><cell>1.45</cell><cell>1.49</cell><cell>1.5</cell><cell>1.5</cell><cell>1.5</cell></row><row><cell>BuyerLoc_East</cell><cell>1.04</cell><cell>1.04</cell><cell>1.04</cell><cell>1.04</cell><cell>1.04</cell></row><row><cell>BuyerLoc_Cen</cell><cell>1.1</cell><cell>1.1</cell><cell>1.1</cell><cell>1.1</cell><cell>1.1</cell></row><row><cell>BuyerLoc_West</cell><cell>1.07</cell><cell>1.08</cell><cell>1.08</cell><cell>1.08</cell><cell>1.08</cell></row><row><cell>BuyerLoc_NorEast</cell><cell>1.33</cell><cell>1.41</cell><cell>1.42</cell><cell>1.42</cell><cell>1.42</cell></row><row><cell>Independent Variables</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>ProjectSize</cell><cell></cell><cell>1.32</cell><cell>1.32</cell><cell>1.32</cell><cell>1.32</cell></row><row><cell>BuyerFami</cell><cell></cell><cell>1.05</cell><cell>1.05</cell><cell>1.05</cell><cell>1.05</cell></row><row><cell>BuyerExp</cell><cell></cell><cell>1.24</cell><cell>1.33</cell><cell>1.24</cell><cell>1.33</cell></row><row><cell>BuyerDistrust</cell><cell></cell><cell>1.04</cell><cell>1.04</cell><cell>1.05</cell><cell>1.05</cell></row><row><cell>Interactions</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>ProjectSize*BuyerExp</cell><cell></cell><cell></cell><cell>1.11</cell><cell></cell><cell>1.12</cell></row><row><cell>BuyerDistrust*BuyerExp</cell><cell></cell><cell></cell><cell></cell><cell>1.02</cell><cell>1.03</cell></row><row><cell>Fixed Effects</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Project Category effect</cell><cell>Yes</cell><cell>Yes</cell><cell>Yes</cell><cell>Yes</cell><cell>Yes</cell></row><row><cell>Time (Month) effect</cell><cell>Yes</cell><cell>Yes</cell><cell>Yes</cell><cell>Yes</cell><cell>Yes</cell></row><row><cell>VIF (Max)</cell><cell>2.85</cell><cell>2.87</cell><cell>2.87</cell><cell>2.87</cell><cell>2.87</cell></row><row><cell>VIF (Mean)</cell><cell>1.58</cell><cell>1.53</cell><cell>1.52</cell><cell>1.51</cell><cell>1.5</cell></row><row><cell>CIS</cell><cell cols="5">11.81 21.85 21.89 21.85 21.89</cell></row></table></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="1" xml:id="foot_0"><p>https://www.upwork.com/press/2018/10/31/freelancing-in-america-2018/, accessed in April</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="2019" xml:id="foot_1"><p></p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="2" xml:id="foot_2"><p>http://www.epwk.com/, accessed in May 2019.</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="3" xml:id="foot_3"><p>http://www.witmart.com/about/overview.html, accessed in April 2019.</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="4" xml:id="foot_4"><p>Working duration refers to the time the service provider plans to take to complete the project.</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="5" xml:id="foot_5"><p>https://tech.qq.com/a/20101118/000351.htm, accessed in November 2019.Buyer preferences for auction pricing rules in online outsourcing markets: fixed price vs. open price</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="6" xml:id="foot_6"><p>For variables that contain zero (BuyerExp), the lowest non-zero value (+1) was added before logarithm transformation (Y.<ref type="bibr" target="#b44">Hong et al. 2015;</ref><ref type="bibr" target="#b63">McCune and Grace 2002)</ref>.</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="7" xml:id="foot_7"><p>The CFB-generating page is a page the buyer uses to create a CFB. It is different from the "CFB" page (examples shown in Fig.1) that is displayed to service providers.</p></note>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Acknowledgements The authors would like to thank the editor as well as the reviewers for the insightful comments on the refinement of the paper. We are very grateful for the support from NSERC Strategic Partnership Grant , National Natural Science Foundation (No.: 71902097, 71572043), Natural Science Foundation of Shandong Province (No.: ZR2019PG003, ZR2019MG037), Social Science Planning and Research Project of Shandong Province (No.: 19DGLJ03), and Higher Education Research and Planning Project of Shandong Province (No.: J18RA135).</p></div>
+			</div>
+
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Publisher's note Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.</p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Does information help or hinder job applicants from less developed countries in online markets?</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Agrawal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Lacetera</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Lyons</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="s">NBER Working Paper Series</title>
+		<imprint>
+			<date type="published" when="2013">2013. 18720</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<monogr>
+		<author>
+			<persName><forename type="first">A</forename><surname>Agrawal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Horton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Lacetera</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Lyons</surname></persName>
+		</author>
+		<title level="m">Digitization and the contract labor market: A research agenda</title>
+		<editor>
+			<persName><forename type="first">A</forename><surname>Goldfarb</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">S</forename><forename type="middle">M</forename><surname>Greenstein</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">C</forename><forename type="middle">E</forename><surname>Tucker</surname></persName>
+		</editor>
+		<meeting><address><addrLine>Chicago</addrLine></address></meeting>
+		<imprint>
+			<publisher>University of Chicago Press</publisher>
+			<date type="published" when="2015">2015</date>
+			<biblScope unit="page" from="219" to="250" />
+		</imprint>
+	</monogr>
+	<note>Economic analysis of the digital economy</note>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Optimum mark-up for bidding: A preference-uncertainty trade off approach</title>
+		<author>
+			<persName><forename type="first">I</forename><surname>Ahmad</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><forename type="middle">A</forename><surname>Minkarah</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Civil Engineering Systems</title>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="170" to="174" />
+			<date type="published" when="1987">1987</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Building Constructure detailed estimating practices in Saudi Arabia</title>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">M</forename><surname>Al-Harbi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">W</forename><surname>Johnston</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Fayadh</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Construction Engineering and Management</title>
+		<imprint>
+			<biblScope unit="volume">120</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="774" to="784" />
+			<date type="published" when="1994">1994</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Large-scale service marketplaces: The role of the moderating firm</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Allon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Bassamboo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">B</forename><surname>Çil</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Science</title>
+		<imprint>
+			<biblScope unit="volume">58</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page" from="1854" to="1872" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Properties of scoring auctions</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Asker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Cantillon</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">RAND Journal of Economics</title>
+		<imprint>
+			<biblScope unit="volume">39</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="69" to="85" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Evidence of the effect of trust building Technology in Electronic Markets: Price premiums and buyer behavior</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Ba</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">A</forename><surname>Pavlou</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="243" to="268" />
+			<date type="published" when="2002">2002</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Incentives versus transaction costs: A theory of procurement contracts</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Bajari</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Tadelis</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The Rand Journal of Economics</title>
+		<imprint>
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="387" to="407" />
+			<date type="published" when="2001">2001</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Auctions versus negotiations in procurement: An empirical analysis</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Bajari</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Mcmillan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Tadelis</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Law, Economics, and Organization</title>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="372" to="399" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Research note-IT outsourcing and the impact of advisors on clients and vendors</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Bapna</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Gupta</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Ray</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">S</forename><surname>To</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="636" to="647" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<monogr>
+		<author>
+			<persName><forename type="first">N</forename><surname>Beerepoot</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Lambregts</surname></persName>
+		</author>
+		<title level="m">Competition in online job marketplaces: Towards a global labour market for outsourcing services? Global Networks</title>
+		<imprint>
+			<date type="published" when="2015">2015</date>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="page" from="236" to="255" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Multi-attribute auction and negotiation for e-procurement of logistics</title>
+		<author>
+			<persName><forename type="first">N</forename><surname>Bellantuono</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Ettorre</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">E</forename><surname>Kersten</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Pontrandolfo</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Group Decision and Negotiation</title>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="421" to="441" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<monogr>
+		<title level="m" type="main">Regression diagnostics: Identifying influential data and sources of collinearity</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">A</forename><surname>Belsley</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Kuh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">E</forename><surname>Welsch</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2004">2004</date>
+			<publisher>John Wiley &amp; Sons</publisher>
+			<pubPlace>Hoboken</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Can reputation discipline the gig economy? Experimental Evidence from An Online Labor Market</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Benson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Sojourner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Umyarov</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Science, Forthcoming</title>
+		<imprint>
+			<biblScope unit="page" from="1" to="42" />
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">An experimental analysis of multi-attribute auctions</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Bichler</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Decision Support Systems</title>
+		<imprint>
+			<biblScope unit="volume">29</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="249" to="268" />
+			<date type="published" when="2000">2000</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">The Design of Multidimensional Auctions</title>
+		<author>
+			<persName><forename type="first">F</forename><surname>Branco</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The Rand Journal of Economics</title>
+		<imprint>
+			<biblScope unit="volume">28</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="63" to="81" />
+			<date type="published" when="1997">1997</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Deterring unethical behavior in online labor markets</title>
+		<author>
+			<persName><forename type="first">W</forename><forename type="middle">D</forename><surname>Brink</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">V</forename><surname>Eaton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">H</forename><surname>Grenier</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Reffett</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Business Ethics</title>
+		<imprint>
+			<biblScope unit="volume">156</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="71" to="88" />
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Online labour markets: An inquiry into oDesk providers. Work Organisation</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Caraway</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Labour &amp; Globalisation</title>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="111" to="125" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Buyer preferences for auction pricing rules in online outsourcing markets: fixed price vs</title>
+	</analytic>
+	<monogr>
+		<title level="j">The Rand Journal of Economics</title>
+		<editor>
+			<persName><forename type="first">Y.-K</forename><surname>Che</surname></persName>
+		</editor>
+		<imprint>
+			<biblScope unit="volume">24</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="668" to="680" />
+			<date type="published" when="1993">1993</date>
+		</imprint>
+	</monogr>
+	<note>Design competition through multidimensional auctions</note>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Comparison of the group-buying auction and the fixed pricing mechanism</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Song</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Decision Support Systems</title>
+		<imprint>
+			<biblScope unit="volume">43</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="445" to="459" />
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Better, faster, cheaper: An experimental analysis of a multiattribute reverse auction mechanism with restricted information feedback</title>
+		<author>
+			<persName><forename type="first">C.-H</forename><surname>Chen-Ritzo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">P</forename><surname>Harrison</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">M</forename><surname>Kwasnica</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">J</forename><surname>Thomas</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Science</title>
+		<imprint>
+			<biblScope unit="volume">51</biblScope>
+			<biblScope unit="issue">12</biblScope>
+			<biblScope unit="page" from="1753" to="1762" />
+			<date type="published" when="2005">2005</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">How buyer experience in online auctions affects the dimensionality of Trust in Sellers : An unexpected finding</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Chong</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">ICIS 2004 Proceedings</title>
+		<imprint>
+			<date type="published" when="2004">2004</date>
+			<biblScope unit="page" from="697" to="710" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Bidding in sealedbid and English multi-attribute auctions</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>David</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Azoulay-Schwartz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Kraus</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Decision Support Systems</title>
+		<imprint>
+			<biblScope unit="volume">42</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="527" to="556" />
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Design and analysis of contracts for software outsourcing design and analysis of contracts for software outsourcing</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Dey</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Fan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Zhang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<imprint>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="93" to="114" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Linking trust to use intention for technology-enabled Bank channels: The role of trusting intentions</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Dimitriadis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Kyrezis</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Psychology &amp; Marketing</title>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="issue">8</biblScope>
+			<biblScope unit="page" from="799" to="820" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">A validation of the component-based method for software size estimation</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">J</forename><surname>Dolado</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Software Engineering</title>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page" from="1006" to="1021" />
+			<date type="published" when="2000">2000</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Auctions versus posted prices in online markets</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Einav</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Farronato</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Levin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Sundaresan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Political Economy</title>
+		<imprint>
+			<biblScope unit="volume">126</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="178" to="215" />
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">A comparison of buyer-determined and Price-based multiattribute mechanism</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Engelbrecht-Wiggans</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Haruvey</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Katok</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Marketing Science</title>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="629" to="641" />
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">Collusion in dynamic buyer-determined reverse auctions</title>
+		<author>
+			<persName><forename type="first">N</forename><surname>Fugger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Katok</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Wambach</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Science</title>
+		<imprint>
+			<biblScope unit="volume">62</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="518" to="533" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">E-commerce:The role of familiarity and trust</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Gefen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Omega</title>
+		<imprint>
+			<biblScope unit="volume">28</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="725" to="737" />
+			<date type="published" when="2000">2000</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">Business familiarity as risk mitigation in software development outsourcing contracts</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Gefen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Wyss</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Lichtenstein</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="531" to="551" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">Familiarity and group productivity</title>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">S</forename><surname>Goodman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">P</forename><surname>Leyden</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Applied Psychology</title>
+		<imprint>
+			<biblScope unit="volume">76</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="578" to="586" />
+			<date type="published" when="1991">1991</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">The role of contracts on quality and returns to quality in offshore</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Gopal</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Decision Sciences</title>
+		<imprint>
+			<biblScope unit="volume">41</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="491" to="516" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">On vendor preferences for contract types in offshore software projects: The case of fixed Price vs. time and materials contracts</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Gopal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Sivaramakrishnan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="202" to="220" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<author>
+			<persName><forename type="first">A</forename><surname>Gopal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Sivaramakrishnan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">S</forename><surname>Krishnan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Mukhopadhyay</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Contracts in offshore software development: An empirical analysis</title>
+		<imprint>
+			<date type="published" when="2003">2003</date>
+			<biblScope unit="volume">49</biblScope>
+			<biblScope unit="page" from="1671" to="1683" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">The relationship between website quality, trust and Price premiums at online auctions</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">G</forename><surname>Gregg</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Walczak</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Electronic Commerce Research</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="1" to="25" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">An experimental investigation into the effects of information revelation in multiattribute reverse auctions</title>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">L</forename><surname>Gwebu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">Y</forename><surname>Hu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">S</forename><surname>Shanker</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Behaviour &amp; Information Technology</title>
+		<imprint>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="631" to="644" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<analytic>
+		<title level="a" type="main">Procurement auctions with general price-quality evaluation</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Hanazono</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Nakabayashi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Tsuruoka</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="s">KIER Discussion Paper Series</title>
+		<imprint>
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<analytic>
+		<title level="a" type="main">Differentiated bidders and bidding behavior in procurement auctions</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>Haruvy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">D</forename><surname>Jap</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Marketing Research</title>
+		<imprint>
+			<biblScope unit="volume">50</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="241" to="258" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<monogr>
+		<title level="m" type="main">Increasing revenue by decreasing information in procurement auctions</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>Haruvy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Katok</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2013">2013</date>
+			<publisher>Production and Operations Management</publisher>
+			<biblScope unit="volume">22</biblScope>
+			<biblScope unit="page" from="19" to="35" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<analytic>
+		<title level="a" type="main">Software cost estimation models</title>
+		<author>
+			<persName><forename type="first">F</forename><forename type="middle">J</forename><surname>Heemstra</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information and Software Technology</title>
+		<imprint>
+			<biblScope unit="volume">34</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page" from="627" to="639" />
+			<date type="published" when="1992">1992</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<monogr>
+		<title level="m" type="main">Online Labor Markets: An Informal &quot;Freelancer Economy</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Hong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">A</forename><surname>Pavlou</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+	<analytic>
+		<title level="a" type="main">On buyer selection of service providers in online outsourcing platforms for IT services</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Hong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">A</forename><surname>Pavlou</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<imprint>
+			<biblScope unit="volume">28</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="547" to="562" />
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b43">
+	<monogr>
+		<title level="m" type="main">Multi-attribute auction paradigms -an empirical investigation on fixed Price vs</title>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Hong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Wu</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+	<note>Open Price Auctions in An Online Outsourcing Marketplace</note>
+</biblStruct>
+
+<biblStruct xml:id="b44">
+	<analytic>
+		<title level="a" type="main">Comparing open and sealed bid auctions: Evidence from online labor markets</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Hong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">A</forename><surname>Pavlou</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="49" to="69" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b45">
+	<monogr>
+		<title level="m" type="main">Engineering a separating equilibrium</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">J</forename><surname>Horton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Johari</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b46">
+	<analytic>
+		<title level="a" type="main">Investigating the moderating role of uncertainty avoidance cultural values on multidimensional online trust</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Hwang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">C</forename><surname>Lee</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information and Management</title>
+		<imprint>
+			<biblScope unit="volume">49</biblScope>
+			<biblScope unit="issue">3-4</biblScope>
+			<biblScope unit="page" from="171" to="176" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b47">
+	<monogr>
+		<title level="m" type="main">Project risk impact on software development team performance. Project risk impact on software development team performance</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">J</forename><surname>Jiang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Klein</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">L</forename><surname>Means</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2000">2000</date>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="page" from="19" to="26" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b48">
+	<analytic>
+		<title level="a" type="main">Top-down and bottom-up expert estimation of software development effort</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Jørgensen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information and Software Technology</title>
+		<imprint>
+			<biblScope unit="volume">46</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="3" to="16" />
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b49">
+	<analytic>
+		<title level="a" type="main">What we do and Don&apos;t know about software development effort estimation</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Jørgensen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Software</title>
+		<imprint>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="37" to="40" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b50">
+	<analytic>
+		<title level="a" type="main">Surviving and thriving in online labor markets : A Geoeconomic analysis</title>
+		<author>
+			<persName><forename type="first">I</forename><forename type="middle">E</forename><surname>Kanat</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><forename type="middle">K</forename><surname>Hong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">S</forename><surname>Raghu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<imprint>
+			<biblScope unit="volume">29</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="893" to="909" />
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b51">
+	<analytic>
+		<title level="a" type="main">Effects of information revelation policies under cost uncertainty</title>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">N</forename><surname>Kannan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="75" to="92" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b52">
+	<analytic>
+		<title level="a" type="main">Extrinsic versus intrinsic rewards for contributing reviews in an online platform</title>
+		<author>
+			<persName><forename type="first">W</forename><surname>Khern-Am-Nuai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Kannan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Ghasemkhani</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<imprint>
+			<biblScope unit="volume">29</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="871" to="892" />
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b53">
+	<analytic>
+		<title level="a" type="main">Online reverse auctions for outsourcing small software projects: Determinants of vendor selection</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">Y</forename><surname>Kim</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">e-Service. Journal</title>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="40" to="55" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b54">
+	<analytic>
+		<title level="a" type="main">A trust-based consumer decision-making model in electronic commerce: The role of trust, perceived risk, and their antecedents</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">J</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">L</forename><surname>Ferrin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">R</forename><surname>Rao</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Decision Support Systems</title>
+		<imprint>
+			<biblScope unit="volume">44</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="544" to="564" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b55">
+	<analytic>
+		<title level="a" type="main">Hiring behavior models for online labor markets</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Kokkodis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Papadimitriou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">G</forename><surname>Ipeirotis</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the Eighth ACM International Conference on Web Search and Data Mining</title>
+		<meeting>the Eighth ACM International Conference on Web Search and Data Mining</meeting>
+		<imprint>
+			<date type="published" when="2015">2015</date>
+			<biblScope unit="page" from="223" to="232" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b56">
+	<monogr>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">H</forename><surname>Kutner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">J</forename><surname>Nachtsheim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Neter</surname></persName>
+		</author>
+		<title level="m">Applied linear regression methods</title>
+		<meeting><address><addrLine>Chicago</addrLine></address></meeting>
+		<imprint>
+			<publisher>McGraw-Hill/Irwin</publisher>
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+	<note>th ed.</note>
+</biblStruct>
+
+<biblStruct xml:id="b57">
+	<analytic>
+		<title level="a" type="main">Internet auction features as quality signals</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Srinivasan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Sun</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Marketing</title>
+		<imprint>
+			<biblScope unit="volume">73</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="75" to="92" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b58">
+	<analytic>
+		<title level="a" type="main">Effectiveness of reputation in contracting for customized production: Evidence from online labor markets</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Viswanathan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Science</title>
+		<imprint>
+			<biblScope unit="volume">64</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="345" to="359" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b59">
+	<monogr>
+		<title level="m" type="main">Do electronic health records affect quality of care ?</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Lin</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+	<note>Information Systems Research: Evidence from the HITECH Act</note>
+</biblStruct>
+
+<biblStruct xml:id="b60">
+	<analytic>
+		<title level="a" type="main">Improving cost estimates of construction projects using phased cost factors</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Zhu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Construction Engineering and Management</title>
+		<imprint>
+			<biblScope unit="volume">133</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="91" to="95" />
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b61">
+	<analytic>
+		<title level="a" type="main">The use of explanations in knowledgebased systems : Cognitive perspectives and a process-tracing analysis</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Mao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Benbasat</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Management Information Systems ISSN</title>
+		<imprint>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="153" to="179" />
+			<date type="published" when="2000">2000</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b62">
+	<analytic>
+		<title level="a" type="main">IS Project Management: Size, complexity, practices and the Project Management Office</title>
+		<author>
+			<persName><forename type="first">N</forename><forename type="middle">L</forename><surname>Martin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">M</forename><surname>Pearson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">A</forename><surname>Furumo</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 38th Hawaii International Conference on System Sciences</title>
+		<meeting>the 38th Hawaii International Conference on System Sciences</meeting>
+		<imprint>
+			<date type="published" when="2005">2005</date>
+			<biblScope unit="page" from="234" to="234" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b63">
+	<monogr>
+		<title level="m" type="main">Analysis of ecological communities. Analysis of ecological communities</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Mccune</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">B</forename><surname>Grace</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2002">2002</date>
+			<publisher>MjM software design</publisher>
+			<pubPlace>Gleneden Beach</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b64">
+	<analytic>
+		<title level="a" type="main">Developing and validating trust measure for E-commerce: An integrative typology. Informatin system research</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">H</forename><surname>Mcknight</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Choudury</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Kacmar</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="334" to="359" />
+			<date type="published" when="2002">2002</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b65">
+	<analytic>
+		<title level="a" type="main">The role of structural factors in determining Project Management success</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">J</forename><surname>Might</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><forename type="middle">A</forename><surname>Fischer</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Engeineering Management</title>
+		<imprint>
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="71" to="77" />
+			<date type="published" when="1985">1985</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b66">
+	<analytic>
+		<title level="a" type="main">Metrics for managing online procurement auctions</title>
+		<author>
+			<persName><forename type="first">I</forename><surname>Millet</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">H</forename><surname>Parente</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">L</forename><surname>Fizel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">R</forename><surname>Venkataraman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Interfaces</title>
+		<imprint>
+			<biblScope unit="volume">34</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="171" to="179" />
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b67">
+	<analytic>
+		<author>
+			<persName><forename type="first">F</forename><forename type="middle">J</forename><surname>Milliken</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Three types of perceived uncertainty about the environment: State, effect, and response uncertainty</title>
+		<imprint>
+			<date type="published" when="1987">1987</date>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="page" from="133" to="143" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b68">
+	<analytic>
+		<title level="a" type="main">Doing business with strangers : Reputation in online service marketplaces</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Moreno</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Terwiesch</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="865" to="886" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b69">
+	<analytic>
+		<title level="a" type="main">A knowledge-based theory of the firm-The problem-solving perspective</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">A</forename><surname>Nickerson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">R</forename><surname>Zenger</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Organization Science</title>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="617" to="632" />
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b70">
+	<analytic>
+		<title level="a" type="main">Optimal Design of Scoring Auctions with multidimensional quality</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Nishimura</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Review of Economic Design</title>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="117" to="143" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b71">
+	<analytic>
+		<title level="a" type="main">Consumer privacy concerns and preference for degree of regulatory control</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Okazaki</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Hirose</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Advertising</title>
+		<imprint>
+			<biblScope unit="volume">38</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="63" to="77" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b72">
+	<analytic>
+		<title level="a" type="main">Do project managers practice what they preach, and does it matter to project success?</title>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">E</forename><surname>Papke-Shields</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Beise</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Quan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Project Management</title>
+		<imprint>
+			<biblScope unit="volume">28</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="650" to="662" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b73">
+	<analytic>
+		<title level="a" type="main">Familiarity and its impact on consumer decision biases and heuristics</title>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">W</forename><surname>Park</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><forename type="middle">P</forename><surname>Lessig</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Consumer Research</title>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page">223</biblScope>
+			<date type="published" when="2002">2002</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b74">
+	<analytic>
+		<title level="a" type="main">The nature and role of feedback text comments in online marketplaces: Implications for trust building, Price premiums and seller differentiation</title>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">A</forename><surname>Pavlou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Dimoka</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<imprint>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="392" to="414" />
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b75">
+	<analytic>
+		<title level="a" type="main">Building effective online marketplaces with institution-based trust</title>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">A</forename><surname>Pavlou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Gefen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="37" to="59" />
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b76">
+	<analytic>
+		<title level="a" type="main">The role of experience in information use and decision making by marketing managers</title>
+		<author>
+			<persName><forename type="first">W</forename><forename type="middle">S</forename><surname>Perkins</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">A M C</forename><surname>Rao</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Marketing Research</title>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="1" to="10" />
+			<date type="published" when="1990">1990</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b77">
+	<analytic>
+		<title level="a" type="main">Contracting for collaborative services</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Roels</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">U</forename><forename type="middle">S</forename><surname>Karmarkar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Carr</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Science</title>
+		<imprint>
+			<biblScope unit="volume">56</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="849" to="863" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b78">
+	<monogr>
+		<title level="m" type="main">The effects of perceived enjoyment and perceived risks on trust formation and intentions to use online payment systems: New perspectives from an Arab country</title>
+		<author>
+			<persName><forename type="first">K</forename><surname>Rouibah</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">B</forename><surname>Lowry</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Hwang</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2016">2016</date>
+			<publisher>Electronic Commerce Research and Applications</publisher>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="page" from="33" to="43" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b79">
+	<analytic>
+		<title level="a" type="main">The impact of size and volatility on IT Projectt performance</title>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">C</forename><surname>Sauer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Gemino</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Communications of the ACM</title>
+		<imprint>
+			<biblScope unit="volume">50</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="79" to="84" />
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b80">
+	<analytic>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">E</forename><surname>Schlosser</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">B</forename><surname>White</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">M</forename><surname>Lloyd</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Converting web site visitors into buyers: How web site investment increases consumer trusting beliefs and online purchase intentions</title>
+		<imprint>
+			<date type="published" when="2006">2006</date>
+			<biblScope unit="volume">70</biblScope>
+			<biblScope unit="page" from="133" to="148" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b81">
+	<analytic>
+		<title level="a" type="main">Determinants of Reverse Auction Results: An Empirical Examination of Freelancer.com</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Scholz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Haas</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">ECIS 2011 Proceedings</title>
+		<meeting><address><addrLine>Helsinki, Finland</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b82">
+	<monogr>
+		<title level="m" type="main">The science of artificial</title>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">A</forename><surname>Simon</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1969">1969</date>
+			<publisher>MIT Press</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b83">
+	<analytic>
+		<title level="a" type="main">Costly bidding in online markets for IT services</title>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">M</forename><surname>Snir</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">M</forename><surname>Hitt</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Science</title>
+		<imprint>
+			<biblScope unit="volume">49</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="1504" to="1520" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b84">
+	<analytic>
+		<title level="a" type="main">Managing uncertainty in project portfolio cost estimation</title>
+		<author>
+			<persName><forename type="first">I</forename><surname>Stamelos</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Angelis</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information and Software Technology</title>
+		<imprint>
+			<biblScope unit="volume">43</biblScope>
+			<biblScope unit="issue">13</biblScope>
+			<biblScope unit="page" from="759" to="768" />
+			<date type="published" when="2001">2001</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b85">
+	<analytic>
+		<title level="a" type="main">Landing the first job: The value of intermediaries in online hiring</title>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">T</forename><surname>Stanton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Thomas</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Review of Economic Studies</title>
+		<imprint>
+			<biblScope unit="volume">83</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="810" to="854" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b86">
+	<analytic>
+		<title level="a" type="main">Information revelation in multiattribute English auctions: A laboratory study</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Strecker</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Decision Support Systems</title>
+		<imprint>
+			<biblScope unit="volume">49</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="272" to="280" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b87">
+	<analytic>
+		<title level="a" type="main">Field studies into the dynamics of product development tasks</title>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">E</forename><surname>Van Oorschot</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">W M</forename><surname>Bertrand</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">G</forename><surname>Rutte</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Operations &amp; Production Management</title>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="issue">8</biblScope>
+			<biblScope unit="page" from="720" to="739" />
+			<date type="published" when="2005">2005</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b88">
+	<analytic>
+		<title level="a" type="main">Efficient mechanisms for the supply of Services in Multi-Agent Environments</title>
+		<author>
+			<persName><forename type="first">N</forename><surname>Vulkan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><forename type="middle">R</forename><surname>Jennings</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Decision Support Systems</title>
+		<imprint>
+			<biblScope unit="volume">28</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="5" to="19" />
+			<date type="published" when="2000">2000</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b89">
+	<analytic>
+		<title level="a" type="main">Equilibrium bids in practical multi-attribute auctions</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Liu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Economics Letters</title>
+		<imprint>
+			<biblScope unit="volume">123</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="352" to="355" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b90">
+	<analytic>
+		<title level="a" type="main">The value of reputation in an online freelance marketplace</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Yoganarasimhan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Marketing Science</title>
+		<imprint>
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="860" to="891" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b91">
+	<analytic>
+		<title level="a" type="main">Matching in Two-sided Platforms for IT Services : Evidence from Online Labor Markets</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">Z</forename><surname>Zheng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Hong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">A</forename><surname>Pavlou</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="s">Fox School of Business Research Paper</title>
+		<imprint>
+			<biblScope unit="issue">16-026</biblScope>
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

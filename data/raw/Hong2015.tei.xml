@@ -1,0 +1,589 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">On Service Employers&apos; Hiring Decisions in Online Labor Markets: A Perspective of Price and Quality Discovery Full papers</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Alvin</forename><forename type="middle">Zuyin</forename><surname>Zheng</surname></persName>
+							<email>zheng@temple.edu</email>
+						</author>
+						<author>
+							<persName><forename type="first">Yili</forename><surname>Hong</surname></persName>
+							<email>hong@asu.edu</email>
+						</author>
+						<author>
+							<affiliation key="aff0">
+								<orgName type="department">Price Discovery in Online Employers&apos; Hiring Decision Twenty-first Americas Conference on Information Systems</orgName>
+								<address>
+									<postCode>2015</postCode>
+									<settlement>Puerto Rico</settlement>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff1">
+								<orgName type="institution">Temple University</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff2">
+								<orgName type="institution">Arizona State University</orgName>
+							</affiliation>
+						</author>
+						<title level="a" type="main">On Service Employers&apos; Hiring Decisions in Online Labor Markets: A Perspective of Price and Quality Discovery Full papers</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="MD5">6839F795D067AA4163CAD19A65A00BB6</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.7.3" ident="GROBID" when="2023-06-16T09:23+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>Contract Decision</term>
+					<term>Price Dispersion</term>
+					<term>Quality Dispersion</term>
+					<term>Price Discovery</term>
+					<term>Online Labor Markets</term>
+					<term>Price Sensitivity</term>
+					<term>Common Value Uncertainty</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Online labor markets become increasingly important creating jobs for millions of online freelancers around the globe. However, 60% of projects fail to reach to a contract, indicating a waste of time and effort for both buyers and freelancers. Given the fact that a buyer is often uncertain about the price (common value) of a project, this paper empirically examines how this uncertainty on common valuemeasured as price dispersion--affects buyer's contract decisions and price sensitivity. We find price dispersion has a negative while quality dispersion has a positive effect on buyer's contract decisions. Meanwhile, as price dispersion increases, a buyer becomes less sensitive to prices. The paper contributes to online service market literature by focusing on buyer's uncertainty over common value and proposing the importance of price discovery in buyers' contract decisions. Managerial implications for the platform and freelancers' bidding strategies under common value uncertainty are discussed at end.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.">Introduction</head><p>Serving as transaction platforms for IT services, such as software development and website design, where buyers identify and contract with freelancers<ref type="foot" target="#foot_0">1</ref> via buyer-determined reverse auctions <ref type="bibr" target="#b13">(Hong et al. 2013)</ref>  <ref type="foot" target="#foot_1">2</ref> , online labor markets (e.g., Freelancer, Elance oDesk) have grown rapidly, creating a new source of labor for firms and generating millions of jobs for freelancers <ref type="bibr" target="#b0">(Agrawal et al. 2013)</ref>. Despite the increasingly important economic role of online labor markets, about 60% of labor auctions end up without reaching a contract <ref type="bibr">(Snir and Hitt, Carr 2003)</ref>, which means a buyer initiates the auction but doesn't contract with any freelancer in the end. Similarly, <ref type="bibr" target="#b20">Yoganarasimhan (2013)</ref> found that, on average, 44% of labor auctions fail to contract. From the perspective of buyers and freelancers, it takes time and effort for buyers to post auctions describing what they need, wait for freelancers to place a bid and evaluate the bids <ref type="bibr" target="#b2">(Carr 2003)</ref>, and for freelancers to search, review projects, prepare proposals and decide which project and how much to bid. From the perspective of the online labor market platform, low contract rate means inefficiency in matching buyers with freelancers, which finally leads to market share loss. Therefore, increasing the contract rate is critically important for all parties in online labor markets.</p><p>One explanation for the low contract rate is "choice overloading" <ref type="bibr" target="#b15">(Iyengar et al. 2000</ref><ref type="bibr" target="#b11">, Hertwig et al. 2003)</ref> since the global reach of online labor markets helps buyers obtain many more bids than they would otherwise receive offline, which demotivates them to contract. <ref type="bibr" target="#b2">Carr (2003)</ref> supported this argument from the perspective of high bid evaluation costs by arguing that bid evaluation is prohibitively costly that even desirable bids would never be evaluated. Another literature stream explains the existence of the low contract rate due to the information asymmetry between buyers and freelancers (e.g., <ref type="bibr">Yoganarasimhan 2013, Moreno and</ref><ref type="bibr" target="#b17">Terwiesch 2014)</ref>, and whether information signals, such as reputation, experience, and whether a freelancer has worked with the buyer before, help buyers reduce uncertainty over freelancers.</p><p>An important but neglected fact in literature about online labor markets is that the buyer often faces uncertainty over the common value of an auction project, defined the common cost of a project that is same to every freelancer and usually measured with the average of the different bidding prices <ref type="bibr" target="#b16">(Kagel and Levin 2009)</ref>. Specifically for a certain project, there are some common elements of cost (private value) because of differences in skills, expertise, or experience <ref type="bibr" target="#b8">(Goeree et al. 2002)</ref>. This common value acts as benchmark for a buyer to determine how much the project should cost, and certainty about this common value is likely to facilitate the buyer's contracting. In practice, a buyer has to infer the common value from the bid prices of multiple freelancers. As demonstrated in the literature (e.g., <ref type="bibr" target="#b7">Ghose 2009</ref><ref type="bibr" target="#b6">, Dimoka et al. 2012)</ref>, uncertainty over product characteristics and seller quality in online markets is one of the most important concerns for buyers. What the extant literature has ignored, however, is that in some markets, the buyer not only has uncertainty about the seller and the product (in the context of online labor markets, the seller is the freelancer and the product is the delivered software), but also the common value (cost) of the project. The buyer could be very certain that the freelancer is an excellent programmer and the software he delivers will satisfy the buyer's requirements, but the buyer may be uncertain about how much to pay for the project. This motivates us to empirically examine how buyers' uncertainty over the common value of the project, measured as price dispersion of the bids received for an auction project, affects their contracting in online labor markets. Since the buyer has to infer the common value from several freelancers' bidding prices, the more bids an auction project receives, the more information the buyer will have about the common value. We thus examine how the role of price dispersion in buyer's contracting varies with the number of bids.</p><p>Unlike auctions for standardized commodity products, buyer's contracting in online labor markets has to make tradeoffs between the freelancer's bid price and the freelancer's quality <ref type="bibr" target="#b18">(Snir and Hitt 2003)</ref>, which is rated by previous buyers using a 1 to 10 scale. Besides having to infer the common value of a project based on price bids, a buyer has to select among freelancers who vary in their quality. Quality dispersion among freelancers also imposes a challenge for buyers. In summary, we are interested in three research questions:</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>1). How does price dispersion affect buyer's contracting in online labor markets? 2). How does the number of bids moderate the effect of price dispersion on buyer's contracting? 3). How does quality dispersion affect buyer's contracting?</head><p>We define contracting as a binary variable based on whether the buyer selects a freelancer to contract with. We use Price Dispersion (PD), defined as the coefficient of variation CV (CV = ! ! , σ is the standard deviation of the bid prices for a project and µμ is the sample mean) of the freelancers' bid prices <ref type="bibr" target="#b4">(Clay et al. 2001</ref><ref type="bibr" target="#b5">, Clemons et al. 2002)</ref>, to measure uncertainty over common value. Similarly, we use Quality Dispersion (QD), defined as the standard deviation of freelancer's ratings rated by previous buyers on a 0 to 10 scale.</p><p>With a proprietary panel dataset from one of the largest online labor markets in the world (Freelancer.com), we test our hypotheses with a buyer level fixed effects model, which helps address buyer's unobserved preferences. Following the literature (e.g., <ref type="bibr" target="#b13">Hong et al. 2013</ref><ref type="bibr" target="#b20">, Yoganarasimhan 2013)</ref>, we estimate our model conditional on the buyer's experience, freelancer's average experience and quality, project characteristics (size, auction duration, project type) as well as bidding dynamics (freelancer's average arrival rate, arrival dispersion). Additionally, we use the modes ratio--the ratio of the number of price/quality modes to the total number of bids for one project--as an alternative measure for dispersion as a robustness check.</p><p>Results in different model specifications show that price dispersion has a consistent negative effect, while quality dispersion has a positive effect, on buyers' contracting. These findings imply that when bid prices are similar to each other, a buyer will be more certain about the common value of the project and thus more likely to contract. Nevertheless, when bid prices are substantially different from each other, a buyer will face high uncertainty over the common value of the project, and thus become less likely to contract. Moreover, price dispersion has a larger effect on buyer's contracting when there are fewer bids.</p><p>By introducing buyer's uncertainty over the common value of a project, this study contributes to the emerging literature on online labor markets with a new perspective to understanding buyers' contracting. While the literature focused on multi-attribute (price and non-price) contract criteria and bid evaluation costs <ref type="bibr">(Car 2003)</ref>, this study introduces price dispersion as a key predictor of buyer's contracting. Also, while the literature focused on buyer's uncertainty over the seller and product (e.g., <ref type="bibr" target="#b7">Ghose 2009</ref><ref type="bibr" target="#b6">, Dimoka et al. 2012)</ref>, this study contributes to the information asymmetry literature by introducing buyer's uncertainty over the common value of the project in the context of labor contracts in online labor markets.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.">Background and Literature Review</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.1">Online Labor Markets</head><p>Online labor markets facilitate the contracting of labor services via reverse, buyer-determined auctions <ref type="bibr" target="#b13">(Hong et al. 2013)</ref>. Specifically, the process can be described in three stages <ref type="bibr" target="#b18">(Snir and Hitt 2003)</ref>: 1) Posting: buyers post request for proposals (RFP) describing the desired project and specifying a budget range and auction duration during which freelancers can bid; 2) Searching and Bidding: freelancers search for RFPs that match their expertise. When a freelancer finds a suitable project, he will place a price bid for the project that specifies the price and proposed plans to complete the project; 3) Evaluating and Selecting: freelancers arrive randomly and their bids accumulate with time. Buyers evaluate bids anytime by trading off price and freelancers' non-price attributes (e.g., freelancers' quality, experience, etc.), and decide whether to contract with a freelancer (or not), and with which freelancer to contract with. Once a buyer selects a winning bid (freelancer), the project is frozen and others cannot bid for the project anymore. If a project is completed, then both buyers and freelancers are required to rate their satisfaction with each other based on a 10-point Likert scale.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.2">Determinants of Contract Decisions</head><p>Similar to other two-sided platforms that match buyers to sellers, the contract rate is the most important index for matching efficiency. In online labor markets, this problem is particularly salient. <ref type="bibr" target="#b2">Carr (2003)</ref> found that about 60% of the projects in online labor markets end up with no contracts. A recent study by <ref type="bibr" target="#b20">Yoganarasimhan (2013)</ref> also found that 44% projects fail to reach to a contract, and the longer a buyer waited, the more bids a project received, but the less likely a buyer would contract with a freelancer. However, the reason for the observed low contract rate in online labor markets remains elusive in practice.</p><p>One stream of literature explains this low contract rate from the perspective of "choice overloading" (e.g., <ref type="bibr" target="#b15">Iyengar et al. 2000</ref><ref type="bibr" target="#b11">, Hertwig et al. 2003)</ref> as the global reach of online labor markets helps buyers obtain many more bids than they would otherwise receive offline. As "choice overloading" theory suggests, the abundance of bids, coupled with the limited cognitive capacity could demotivate and prevent buyers from making a contract decision. <ref type="bibr" target="#b2">Carr (2003)</ref> supported this argument from the perspective of high bid evaluation costs. Distinct from auctions of standardized products where price is the major determinant of auction outcome, the buyers' contract decisions for IT services entail a complex set of decision variables, including price and freelancer's non-price attributes (i.e., quality, experience, expertise, reputation, etc.). <ref type="bibr" target="#b2">Carr (2003)</ref> further argued that high bid evaluation costs increase the possibility that even desirable bids would never be evaluated, which turns out to be one of the most important reasons for the low contract rate.</p><p>Another stream of literature focuses on different determinants that affect a buyer's contracting decisions. With observational data from one of the leading online labor markets, <ref type="bibr" target="#b20">Yoganarasimhan (2013)</ref> examines the importance of freelancers' reputation on buyer's contract decisions. Results show that buyers not only value freelancers with high average quality ratings but also value those with a large number of ratings. <ref type="bibr" target="#b17">Moreno and Terwiesch (2014)</ref> also found that a freelancer's reputation (ratings and projects completed in the labor market), capabilities (e.g., skills and abilities), and whether the freelancer has worked before with the buyer has positive effects on the buyer's contract probability. However, being a new freelancer has a negative effect on a buyer's contract decisions.</p><p>In sum, given the saliency of asymmetric information in online labor markets, previous studies have focused on how signals such as freelancers' reputation and ability on the platform affect a buyer's contract decisions while neglecting buyer's the uncertainty over the common value of a project. In this study, we seek to tackle the buyer's contract decisions from the perspective of the uncertainty over the common value of the project.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.">Hypotheses Development</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.1">Common /Private Value Framework</head><p>There are two key theoretical paradigms in the auctions literature to explain the auction value for a project: independent private value auctions and interdependent common auctions <ref type="bibr">(Goeree and</ref><ref type="bibr">Offerman 2002, 2003)</ref>. In a private value auction paradigm such as the auction of a painting, freelancers know the value of the item to themselves with certainty but there is uncertainty regarding other freelancers' values. In contrast, common-value auctions, such as the auction of an oil land refer to those where the value of the item is the same to everyone, but different freelancers have different estimates about the underlying value <ref type="bibr" target="#b16">(Kagel and Levin 2009)</ref>. While this dichotomy is convenient from a theoretical viewpoint, most real-world auctions exhibit both private and common value elements <ref type="bibr" target="#b8">(Goeree and Offerman 2002)</ref>.</p><p>In online labor markets, the contract decisions are realized through a reverse auction <ref type="bibr" target="#b13">(Hong et al. 2013)</ref>, where buyers start the auction and freelancers bid for the project. Following the definition by <ref type="bibr" target="#b8">Goeree and Offerman (2002)</ref>, we define common value as the average level of time and effort (common cost) needed to finish a project, which is the same to every freelancer and can be revealed by the population mean. Accordingly, we define private value as the time and effort (private cost) needed for a particular freelancer to finish the project, which is individual specific and differs across freelancers.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2">Uncertainty Over Common Value</head><p>In online labor markets, buyers' decision to contract is a process of identifying an appropriate freelancer (in terms of quality) at a reasonable price. The buyer-determined reverse auction mechanism enables buyers to discover the common value of a project <ref type="bibr" target="#b3">(Chen-Ritzo et al. 2005)</ref>, which practically serves as the benchmark to evaluate each price bid. Therefore, the more uncertain a buyer feels about the common value of a project, the more difficult it will be to evaluate a bid because of the uncertainty of the benchmark (common value), which finally makes a buyer uncomfortable to contract with any freelancer at all.</p><p>Uncertainty over common value comes from the complex nature of the service. On the one hand, buyers are usually less informed than freelancers in terms of cost of the project and the quality that a freelancer will deliver if a contract is signed. Meanwhile, buyers cannot observe freelancers until they bid for the project. First, each freelancer's real cost of the project in nature can be different because of different productivity, quality, expertise, and experience. Namely, for the same quality level of service, high-quality freelancers may command a higher price, while less experienced ones may offer a more reasonable low price. Second, each freelancer can adjust their price based on the quality they can deliver. Similarly a freelancer can also vary the quality of service that she is going to deliver hence bid a strategic low price to win the contract first.</p><p>Accordingly, a buyer will have to build up the benchmark (common value) to compare the price and quality based on the bids she has received for a project. If all bidding prices are consistent to each other, a buyer will be more certain about the common value of the project. Hence we use price dispersion, defined as the degree to which price is dispersed over a certain auction <ref type="bibr" target="#b1">(Bang et al. 2014)</ref>, to capture buyer's uncertainty over common value. Since projects differ in their prices and hence the standard deviation differs, we adopt the coefficient of variation (CV= ! ! ) of bid prices -defined as the standard deviation of bid prices σ over the sample mean µμ <ref type="bibr" target="#b4">(Clay et al. 2001</ref><ref type="bibr" target="#b5">, Clemons et al. 2002</ref>)--to make them comparable across projects.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.3">Price Dispersion and Contract Decision</head><p>As demonstrated in previous studies (e.g., <ref type="bibr" target="#b7">Ghose 2009</ref><ref type="bibr" target="#b6">, Dimoka et al. 2012)</ref>, uncertainty negatively affects buyer's online purchasing decisions. In online labor markets, a buyer usually have little prior knowledge about the common value (as a reasonable price) of the service thus faces great decision uncertainty. Uncertainty over common value will on the one hand make it difficult for a buyer to infer how much more or less she would need to actually pay for an IT service, and it would make buyers feel uncomfortable about contracting. In particular, if bid prices are similar to each other, namely less dispersed, a buyer will be more certain about the common value of the IT service, thus serving as a clear benchmark for a buyer to evaluate bids and therefore facilitate contract decisions. If bid prices are dramatically different from each other (highly dispersed), a buyer will face great uncertainty about the common value of the project and hence is less likely to make a contract decision. Thus, we propose:</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>H1: Price dispersion has a negative effect on a buyer's decision to contract with a freelancer.</head><p>Viewing buyer-determined reverse auctions in online labor markets as a price discovery process (Chen-Ritzo et al. 2005), it was shown that the number of bids a project receives has a significant effect on the efficiency, defined as how close the sample average is close to the true common value <ref type="bibr" target="#b8">(Goeree and Offerman 2002)</ref>. When a project receives sufficiently more bids, a buyer can infer the common value from the number of bids. Therefore, the overall price dispersion matters less in terms of price (common value) discovery. However, if a project only receives fewer bids, using part of the bids will not be enough to infer the common value. Hence the overall price dispersion matters more. We thus predict that:</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>H2: Price dispersion has a larger effect on a buyer's decision to contract with a freelancer when the auction project receives fewer bids.</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.4">Quality Dispersion and Contract Decision</head><p>Freelancers' quality is defined as the ability to deliver high quality services. In online labor markets, there are several quality indexes such as the average value of the previous buyers' ratings (based on 10 point Likert Scale), number of completed projects, etc. Given the subjective nature of freelancer's quality, a buyer often has greater uncertainty over freelancers' quality in comparison with price. Therefore, we assume a buyer would discover the common value first and then contract with the best freelancer in terms of quality.</p><p>As argued before, a buyer's contract decision will tradeoff both price and non-price (e.g., quality) attributes <ref type="bibr" target="#b18">(Snir and</ref><ref type="bibr">Hitt 2003, Moreno and</ref><ref type="bibr" target="#b17">Terwiesch 2014)</ref>. When a buyer has inferred the common value of the project, she tends to contract with a freelancer of better quality given its price. Hence the buyer would use the common value inferred from bidding prices to find a freelancer with superior quality to the rest. Hence, if those qualities were too similar to each other (less dispersed), it would be difficult to for a buyer to identify a "superior" freelancer and make a contract decision. In other words, more dispersed quality helps a buyer to identify a "best" freelancer and hence facilitate contract decisions. Therefore, we predict: H3: Quality dispersion has a positive effect on a buyer's decision to contract with a freelancer.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.">Data Methods and Results</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.1">Data and Measurement</head><p>Our dataset is obtained from a leading online labor market (Freelancer) with 13.7 million registered users (both buyers and freelancers) contracting 6.7 million projects in total since its start up in 2009. The dataset contains detailed information about buyers (e.g., registered ID, country, price/total number/budget of projects posted on the website), freelancers (e.g., registered ID, country, skills, buyer's rating on their performance, number of projects completed on the website) and their interaction (freelancer's bidding price, promised delivery date for the project). The dataset includes 1,466,178 bid level observations, and we aggregated them into 94,340 project-level observations. Table <ref type="table" target="#tab_0">1</ref> and<ref type="table" target="#tab_1">Table 2</ref> report the descriptive statistics and correlation matrix. We define contract as a binary variable indicating whether a project reach to a contract or not. If a project ends up with a contracted freelancer, then contract is denoted as 1, otherwise contract is 0. The overall contract rate in our dataset is 53.89%.</p><p>Price dispersion measures uncertainty over common value. Following <ref type="bibr" target="#b5">Clemons et al. (2002)</ref>, we used the standard deviation as the measure of price dispersion. However, perceived price difference may vary based on the magnitude of the price. For instance, a buyer may regard "$980, $1000, $1020" as very similar, and thus infer the project value as simply about $1,000, while "$30, $50, $70" may be perceived as different, and a buyer would not be able to infer the true value of the project. Therefore, we measure price dispersion with the coefficient of variation, defined as CV = ! ! (σ is the standard deviation and µμ is the sample mean). Figure <ref type="figure">3</ref> reports the distribution of price dispersion measured with the coefficient of variation.</p><p>Quality dispersion is measured as the standard deviation of all the freelancers' ratings a project receives. Since all ratings are reported on a 0~10 scale, it is comparable across freelancers.</p><p>Project Size is the maximum budget of a project. Empirically, <ref type="bibr" target="#b18">Snir and Hitt (2003)</ref> showed that projects of different sizes have a different contract rate. Theoretically, buyers tend to be more cautious about large value projects, and they would be less likely to contract with a freelancer. 9 Project Type 2 0.00 0.00 -0.14 -0.01 -0.04 -0.17 -0.07 -0.45 1 10 Project Type 3 0.10 -0.01 0.14 0.02 0.15 0.21 -0.05 -0.53 -0.27 1 11 Auction Duration -0.20 0.11 -0.04 0.05 0.16 -0.12 0.09 0.00 0.05 -0.06 1 12 Log Buyer Experience 0.14 -0.03 0.08 0.01 -0.12 0.06 -0.12 -0.01 0.01 0.03 -0.05 1 13 Log Arrival Rate -0.17 0.14 0.00 0.02 0.24 -0.13 0.10 0.04 0.06 -0.07 0.32 -0.09 1 14 Arrival Dispersion -0.25 0.11 -0.02 0.07 0.20 -0.12 0.10 0.02 0.02 -0.04 0.64 -0.07 0.39 1 15 Modes Ratio 0.02 -0.29 -0.13 0.06 -0.28 -0.17 -0.03 -0.18 0.21 -0.10 -0.06 0.07 -0.19 -0.10 1 Project Type refers to project category. In our dataset, we have more than 10 types of projects. As some subcategories of the projects are relatively rare in online labor markets, we focus specifically on four types of most common, IT related projects to control the project category effect: website design and software projects (PT1), writing and content projects (PT2), design media and architecture projects (PT3), and data entry and administrative project (PT4). We used project type 4 (PT4) as our baseline group.</p><p>Auction Duration, measured in days, is the pre-specified time window for bidding when buyers post their RFP. On the one hand, auction duration is positively correlated to the number of bids a buyer can receive.</p><p>On the other hand, the longer the auction duration, the longer a buyer may stay on the platform to check and evaluate the bids, which makes buyers extract more information, thus improving decision confidence.</p><p>Buyer Experience is measured as the total number of projects that a buyer has completed on the online labor market. The more projects a buyer has conducted in online labor market, the more she knows about the market such as freelancer's bidding strategies, arrival patters etc. This will influence the buyer's ability to evaluate bids, thus increasing her decision confidence.</p><p>Arrival Rate is measured in hours as the average arrival time (time a freelancer arrives minus the time the project posted) of each bid for a project. The longer the arrival rate, the longer a buyer waits for each freelancer and the fewer number of bids a buyer will get in a given period. This decreases the buyer's expectation about the up-coming bids in the future and the likelihood to select a winning bid.</p><p>Arrival Dispersion captures the variation in the freelancer's arrival rate. Sine arrival rate--measured in the same scale of days--is comparable across projects, we use standard deviation directly <ref type="bibr" target="#b5">(Clemons et al. 2002)</ref>.</p><p>Freelancer Experience refers to freelancers' experience on the online labor market. We use both the number of previous projects the freelancer finished and his quality rating to measure the freelancer's experience. Since these two proxies are highly correlated, we chose the number of previous projects as the measure based on its higher contribution to the overall R-square. The ratio of the number of price modes to the total number of freelancers (price/ bids)</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.2">Model Specification</head><p>The main model is a linear model with a buyer fixed effect (Equation <ref type="formula">1</ref>). Based on this base model, we tried different models to test the robustness of the results. Control variables can be grouped into three groups: (1) project-related controls (Project Size, Project Type and Auction Duration), (2) buyer-related controls (Buyer Experience, and Buyer unobserved preference on selection likelihood), and (3) bidding controls (Arrival Rate, Arrival Dispersion, Freelancer Experience, and Freelancer Quality Dispersion).  </p><formula xml:id="formula_0">𝐶𝑜𝑛𝑡𝑟𝑎𝑐𝑡 !" = 𝛽 ! + 𝛽 ! 𝑃𝑟𝑖𝑐𝑒_𝐷𝑖𝑠𝑝𝑒𝑟𝑠𝑖𝑜𝑛 !" + 𝛽 ! 𝑄𝑢𝑎𝑙𝑖𝑡𝑦_𝐷𝑖𝑠𝑝𝑒𝑟𝑠𝑖𝑜𝑛 !" + 𝛽 ! 𝑁𝑜𝐵×𝑃𝐷 !" + 𝛽 ! 𝑁𝑢𝑚𝑏𝑒𝑟_𝑜𝑓_𝐵𝑖𝑑𝑠 !" + 𝛽 ! 𝐵𝑖𝑑𝑑𝑒𝑟_𝐸𝑥𝑝𝑒𝑟𝑖𝑒𝑛𝑐𝑒 !" + 𝛽 ! 𝐵𝑖𝑑𝑑𝑒𝑟_𝑄𝑢𝑎𝑙𝑖𝑡𝑦 !" + 𝛽 ! 𝑃𝑟𝑜𝑗𝑒𝑐𝑡_𝑆𝑖𝑧𝑒 !" + 𝛽 ! 𝑃𝑟𝑜𝑗𝑒𝑐𝑡_𝑡𝑦𝑝𝑒 !" + 𝛽 ! 𝐷𝑢𝑟𝑎𝑡𝑖𝑜𝑛 !" + 𝛽 !" 𝐵𝑢𝑦𝑒𝑟_𝐸𝑥𝑝𝑒𝑟𝑖𝑒𝑛𝑐𝑒 !" + 𝛽 !! 𝐴𝑟𝑟𝑖𝑣𝑎𝑙_𝑟𝑎𝑡𝑒 !" + 𝛽 !" 𝐴𝑟𝑟𝑖𝑣𝑎𝑙_𝑑𝑖𝑠𝑝𝑒𝑟𝑠𝑖𝑜𝑛 !" + 𝛼 ! + 𝜀 !" (𝟏)</formula></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.3">Results</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.3.1">Price Dispersion and Contract Decision</head><p>In Table <ref type="table" target="#tab_4">4</ref>, Model (1) and ( <ref type="formula">3</ref>) report the results of linear probability model with/without buyer fixed effects. As is shown in linear probability model ( <ref type="formula">3</ref>) with all controls and fixed effect, if the price dispersion increase by the value of mean (namely, one unit increase of price dispersion in terms of coefficient of variation), buyer's likelihood to contract with a freelancer decreases by 4.49%. When price dispersion ranges on the interval of [0, mean+3STD.DEV.] = [0, 1.55], the marginal effect of price dispersion on selection likelihood ranges from 0 to 6.96%. Given that the overall contract rate is 53.89%, the price dispersion has the potential to account for 12.91% of buyer's contract decision likelihood. Model ( <ref type="formula">2</ref>) and ( <ref type="formula">4</ref>) report results of the logit probability model. The marginal effect of price dispersion on buyer's contract decision likelihood is 8.89%~10.26% by setting all the other covariates equal to the mean, which is quite consistent to the estimates from linear model. In conclusion, price dispersion has a statistically significant and economically influential effect on a buyer's contracting decision.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.3.2">Quality Dispersion and Contract Decision</head><p>According to Table <ref type="table" target="#tab_0">1</ref>, the mean of quality dispersion is 3 with a standard deviation of 1.1. Similarly, we focus on the intervals of [0, mean+3STD.DEV.], which is [0, 6.3]. Similarly, Model (1) and (3) report the results of linear probability model with/without buyer fixed effect. As is shown in Model (3), if the quality dispersion increases by one standard deviation, buyer's likelihood to select a winning bid increases by 0.79%. When quality dispersion ranges on the interval of [0, mean+3STD.DEV.]=[0, 4.2], the marginal effect of quality dispersion on selection ranges from 0 to 3.32%, which has the potential to account for 6.16% of buyer's contract likelihood. Model ( <ref type="formula">2</ref>) and ( <ref type="formula">4</ref>) reports the logit regression results, which is quite consistent to the estimates from linear model. In conclusion, quality dispersion has a statistically positive and economically influential effect on buyer's contract decision.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.3.3">Number of Bids and Contract Decision</head><p>One explanation in the literature about the low contract rate is choice overloading and high bid evaluation cost, which indicates the number of bids should has a negative effect on a buyer's contract decisions <ref type="bibr" target="#b15">(Iyengar and</ref><ref type="bibr">Lepper 2000, Carr 2003</ref>). According to the results in Table <ref type="table" target="#tab_4">4</ref>, a 1% increase in the number of bids will lead to 0.02% decrease in buyer's contract probability, the effect of which is qualitatively much smaller than price dispersion and quality dispersion. However, the number of bids has a negative effect on a buyer's contract decisions across different specifications, which is consistent with the literature.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.3.4">Interaction between Price Dispersion and Number of Bids</head><p>As shown in Table <ref type="table" target="#tab_4">4</ref>, there is a positive interaction effect between price dispersion and the number of bids, indicating that with an increase in the number of bids, the effect of price dispersion on buyer's contracting decreases. This interaction effect is robust across different model specifications. One explanation for this finding is that when a project receives a large number of bids, a buyer can infer the common value of the project according to a small but sufficient number of bids. Hence, the overall effect of overall price dispersion decreases.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.4">Robustness Check</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.4.1">Measuring Common Value Uncertainty with Modes Ratio</head><p>Based on the price (common value) discovery theory we propose in this study, there is a chance that buyers will exclude the extreme bidding prices (too low or too high) when building up the price benchmark of the project. This makes the overall price dispersion CV (coefficient of variation) measurement less meaningful. To further test the price discovery theory and address this concern, we use modes ratio, defined as the ratio of the number of price modes to the total number of freelancers (price/ bids) of project. The higher the modes ratio, the less uncertain a buyer will feel about the common value of a project. Hence we can predict that, modes ratio has a positive effect on buyer's contract decisions. Meanwhile, when modes are different from the average bidding price, it will lead to conflict to infer the common value. Hence, the larger the absolute difference between modes and mean, the more difficult to infer the project price. We therefore predict that mode mean difference has a negative effect on buyer's contract decisions. Practically, freelancers tend to make their price different from others by varying a little bit. Therefore, we round up the bidding prices to its near integer, which is a multiple of 5, 10 or 50 based on project size. In particular, if the project budget is less than 100, we round up the prices to its near integer that is a multiple of 5. If the price is between 100 and 500, we round up the prices to its near integer that is a multiple of 10. If the price is over 500, we round up the prices to its near integer that is a multiple of 50.</p><p>Table <ref type="table" target="#tab_5">5</ref> reports the results with modes ratio. Model (1) and model ( <ref type="formula">2</ref>) report the results with all controls and buyer fixed effects in linear probability model and logit model. Consistent with the theory predictions, modes ratio have significant positive effect while mode mean difference has a significant negative effect on buyer's contracting. Furthermore, number of bids negative moderates the effect of modes ratio on the buyer's contracting, which is consistent with the results when using price dispersion to measure uncertainty over common value.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.4.1">Results with Normal Projects</head><p>We used price dispersion of all the bidding prices of a project as the measure of buyer's uncertainty over common value. However, the price dispersion makes little sense when there are fewer than 3 bids or more than a very large number. In our dataset, the average number of bids an auction receives is 15. However, the maximum number of bids is 577. To exclude the possibility that the effect of price dispersion on buyer's contracting is driven by outliers, we run a subsample analysis with auction projects that has more than 3 bids but fewer than 88 bids, which is the 99% percentile of number of bids.</p><p>In Table <ref type="table" target="#tab_6">6</ref>, model (1) reports the results with lf linear probability model with buyer fixed effect and model (2) reports the results with Logit probability model. Consistent with the main results in Table <ref type="table" target="#tab_4">4</ref>, price dispersion has a negative on buyer's contracting, which is positively moderately by the number of bids an auction project receives. Meanwhile, quality dispersion has a positive effect on buyer's contracting. In particular, the estimated effect with normal projects is -0.0483, which is qualitatively close to the estimate (-0.0449) with whole sample in Table <ref type="table" target="#tab_4">4</ref>. In summary, the effect of price and quality dispersion on buyer's contracting is consistent and robust. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.5">Additional Analysis on Buyer's Price Sensitivity</head><p>We further investigate which freelancer in terms of bidding prices a buyer tends to contract with and thus infer buyer's price sensitivity to provide insights on freelancer' bidding strategies. If a buyer decides to contract with one of the freelancers, the next decision a buyer has to make is which one (e.g., high price vs. low price) to contract with by trading off both price and non-price attributes <ref type="bibr">(Sinir and</ref><ref type="bibr">Hitt 2003, Carr 2003)</ref>. When prices are less dispersed, a buyer feel more certain about the common value of the project.</p><p>With lower project value uncertainty, a buyer will feel comfortable to contract a freelancer who offers to finish the project at a low price, because it only slightly deviates from the common value. Therefore, a buyer is more likely to contract with a low price bid. In such cases, buyers are very price sensitive.</p><p>However, when prices are highly dispersed, a buyer faces great uncertainty about the common value. The risk that a freelancer with low price bid will deliver low actual service quality is high. Hence the buyer is less likely to contract a low price bid because of the uncertainty about the future service quality delivered. Instead, the buyer is more likely to contract a bid with bid that is closer to or higher than common value. Therefore, in such cases the buyers are less sensitive to prices. Therefore, we predict that:</p><p>Conditional on the fact that a buyer has decided to contract with one freelancer, we further explore which freelancer (in terms of price) the buyer is going to contract with when price dispersion varies. The model is specified as equation ( <ref type="formula">2</ref>): 𝐶𝑜𝑛𝑡𝑟𝑎𝑐𝑡 !" is a binary variable (1-hired, 0-not hired) indicating whether a freelancer k is contracted in project j. 𝑃𝑟𝑖𝑐𝑒 !" is freelancer k's bidding price for project j. And 𝛽 ! captures buyer's price sensitivity. The larger the 𝛽 ! , the more price sensitive the buyer is. 𝑃𝑟𝑖𝑐𝑒 !" ×𝑃𝐷 ! is the interaction term between price dispersion between project j and freelancer k's bidding price for project j.</p><p>And the interaction effect is captured by 𝛽 ! . Since the analysis is conditional on buyer's contract decision, we use project fixed effect 𝛼 ! to control any project level variation and estimate buyer's price sensitivity using within project variation only. Therefore, we don't have main effect price dispersion in model ( <ref type="formula">2</ref>) because this main effect is included in 𝛼 ! . Freelancer's experience, measured as the number of projects completed previous, is a very good signal of freelancer's ability and thus an important factor that affects buyer's decision. As suggested in literature <ref type="bibr" target="#b17">(Moreno and</ref><ref type="bibr">Terwiesch 2014, Hong et al. 2013</ref>), freelancer's nationality may influence buyer's contract decision as well. We also include an indicator to capture whether the freelancer come from the same country as the buyer. Finally, freelancers bid for the project in a chronological order, meaning that buyers have more time to review and evaluate those who arrive earlier. Hence we also include freelancer's arrival time as a control. 𝜀 !" is the error term. As is shown in Table <ref type="table" target="#tab_7">7</ref>, column (1) ~(3) report the results with price and interaction term only in linear probability, logit and conditional logit specification, while column (4)~( <ref type="formula">6</ref>) report the results with both controls and project fixed effect in the same three specifications. Consistently, price has a significant negative effect on contract probability and price dispersion positively moderate this effect. More specifically, 1% increase in the bidding price will lead to 9.6% decrease in the probability to get hired, indicating high buyer price sensitivity. However buyers become less price sensitive (more likely to select a higher price) when price dispersion is high. When price dispersion ranging from [-3STD, 3STD] ([0,2.79]), the buyer price sensitivity can range from 0.5% to 9.6%, which is a huge effect. Namely, when price dispersion is extremely high, 1% increase in bidding price will lead to only 0.5% decrease in the probability to get hired, which implies that buyers become more tolerable in accepting a higher price freelancer.</p><formula xml:id="formula_1">𝐶𝑜𝑛𝑡𝑟𝑎𝑐𝑡 !" = 𝛽 ! + 𝛽 ! 𝑃𝑟𝑖𝑐𝑒 !" + 𝛽 ! 𝑃𝑟𝑖𝑐𝑒 !" ×𝑃𝐷 ! + 𝛽 ! 𝐵𝑖𝑑𝑑𝑒𝑟_𝑒𝑥𝑝 ! + 𝛽 ! 𝐵𝑖𝑑𝑑𝑒𝑟_𝑐𝑜𝑢𝑛𝑡𝑟𝑦 ! + 𝛽 ! 𝐴𝑟𝑟𝑖𝑣𝑎𝑙 𝑡𝑖𝑚𝑒 !" + 𝛽 ! 𝑆𝑎𝑚𝑒_𝑐𝑜𝑢𝑛𝑡𝑟𝑦 !" + 𝛽 ! 𝛼 ! + 𝜀 !" (𝟐)</formula></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.">Discussion</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.1">Key Findings</head><p>Given that about half of the projects in online labor markets end up with buyers not contracting with any freelancer (e.g., <ref type="bibr" target="#b18">Snir and</ref><ref type="bibr">Hitt 2003, Yoganarasimhan 2013)</ref>, this paper proposes and empirically examines the role of buyer's uncertainty over the common value of a project, measured price dispersion, on buyer's contracting decision. Results show that, price dispersion has a negative effect on contracting decisions, while quality dispersion has a positive effect on contract decisions. Using modes ratio as a different measurement, we confirms our price discovery theory by showing that modes ratio has a positive effect while mode mean difference has a negative effect on buyer's contract decision.</p><p>Conditional on the buyer deciding to make a contract decision, we further investigated which freelancer (in terms of price) a buyer tends to contract with. We find that the effect of a freelancer's bidding price on a buyer's contract decision is larger when price dispersion is low. This indicates that a buyer has higher price sensitivity when price dispersion is low while lower price sensitivity when price dispersion is high.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.2">Theoretical Contributions and Implications</head><p>Low contract in online labor markets has attracted much attention (e.g., <ref type="bibr" target="#b18">Snir and Hitt 2003</ref><ref type="bibr" target="#b2">, Carr 2003</ref><ref type="bibr" target="#b20">, Yoganarasimhan 2013</ref>) in the literature. Previous studies focused on the bid evaluation costs <ref type="bibr" target="#b2">(Carr 2003)</ref>, and reputation signals <ref type="bibr" target="#b20">(Yoganarasimhan 2013)</ref>, but did not focus on the buyer's uncertainty over the common value of a project. By focusing on the fact that buyers usually have little knowledge of both the project price and the freelancers' quality, we focus on price dispersion (common value discovery)-to explain the low contract rate in online labor markets.</p><p>By empirically demonstrating that price dispersion affects a buyer's decision whether to contract or not and a buyer's price sensitivity in terms of which freelancer to contract with, our findings have important managerial implications for both online labor markets and freelancers' bidding strategies. It is conventionally believed that online labor markets should provide diverse choices for buyers. This study shows that the diverse prices are harmful, while diverse qualities are useful in facilitating buyers' contract decisions. Specifically, practitioners should put more constraint on bidding prices to make it less dispersed while improve the freelancer's quality rating system (say change from 10 Likert scale to 100 scale) to make it more differentiable. Furthermore, since a buyer is more price sensitive when price dispersion is low, a freelancer should bid a low price when price dispersion is low while a relatively high price when price dispersion is high to win the contract.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.3">Limitations &amp; Suggestions for Future Research</head><p>This paper has a few limitations due the accessibility of data. First, the project description serves as an important clue for freelancers to know the requirement of a buyer and decide how much to bid thus has an effect on price dispersion. Meanwhile, the project description is also related to a buyer's desire to contract with a freelancer therefore may lead to omit variable bias. The buyer fixed effect helps capture those invariant ability and preference but cannot address the time variant elements such as the desire to contract with a freelancer. It will reduce this concern if we can have more data on the description of an auction project. Second, we can neither observe buyer's offline contract decisions nor contract decisions in other online labor markets. It means those buyers who don't make a contract decision in our dataset may contract offline or in other platforms. Therefore, the contract rate is underestimated and so does the effect of price/quality dispersion on buyer's contract decisions. As the whole online labor markets dominate by a few large monopolists, we can acquire longitudinal data from different platforms to address buyer and</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head>Table 1 . Descriptive Statistics</head><label>1</label><figDesc></figDesc><table><row><cell>Variable</cell><cell>Obs.</cell><cell>Mean</cell><cell cols="2">Std. Dev. Min</cell><cell>Max</cell></row><row><cell>1 Contract</cell><cell cols="2">94340 0.539</cell><cell>0.498</cell><cell>0</cell><cell>1</cell></row><row><cell>2 Price Dispersion (PD)</cell><cell cols="2">82256 0.503</cell><cell>0.349</cell><cell>0</cell><cell>6.347</cell></row><row><cell>3 Quality Dispersion (QD)</cell><cell cols="2">82256 3.003</cell><cell>1.109</cell><cell>0</cell><cell>7.071</cell></row><row><cell>4 Log Number of Bids (NoB)</cell><cell cols="2">94340 2.059</cell><cell>1.195</cell><cell>0</cell><cell>6.358</cell></row><row><cell>5 Log Freelancer Experience</cell><cell cols="2">90807 3.119</cell><cell>1.504</cell><cell cols="2">-3.738 7.410</cell></row><row><cell>6 Project Size</cell><cell>93733</cell><cell cols="2">433.660 429.951</cell><cell>40</cell><cell>3000</cell></row><row><cell>7 Project Type 1</cell><cell cols="2">96486 0.387</cell><cell>0.487</cell><cell>0</cell><cell>1</cell></row><row><cell>8 Project Type 2</cell><cell cols="2">96486 0.160</cell><cell>0.367</cell><cell>0</cell><cell>1</cell></row><row><cell>9 Project Type 3</cell><cell cols="2">96486 0.197</cell><cell>0.398</cell><cell>0</cell><cell>1</cell></row><row><cell>10 Auction Duration</cell><cell cols="3">94340 282.433 406.251</cell><cell>24</cell><cell>1440</cell></row><row><cell>11 Log Buyer Experience</cell><cell>79134</cell><cell>1.627</cell><cell>1.483</cell><cell>0</cell><cell>7.073</cell></row><row><cell>12 Log Arrival Rate</cell><cell cols="2">94340 1.951</cell><cell>1.563</cell><cell>0.036</cell><cell>7.274</cell></row><row><cell>13 Arrival Dispersion</cell><cell cols="2">82256 41.956</cell><cell>98.236</cell><cell>0</cell><cell>5335.403</cell></row><row><cell>14 Modes Ratio</cell><cell cols="2">94340 0.534</cell><cell>0.283</cell><cell>0.077</cell><cell>1</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1"><head>Table 2</head><label>2</label><figDesc></figDesc><table><row><cell></cell><cell></cell><cell></cell><cell></cell><cell cols="4">. Correlation Matrix</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell>1</cell><cell>2</cell><cell>3</cell><cell>4</cell><cell>5</cell><cell>6</cell><cell>7</cell><cell>8</cell><cell>9</cell><cell>10</cell><cell>11</cell><cell>12</cell><cell>13 14 15</cell></row><row><cell>1 Contract</cell><cell>1</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>2 Price Dispersion (PD)</cell><cell cols="2">-0.07 1</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>3 Quality Dispersion (QD)</cell><cell cols="2">0.08 0.01</cell><cell>1</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>4 NoB × PD</cell><cell cols="4">-0.01 0.22 -0.01 1</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell cols="5">5 Log Number of Bids (NoB) -0.10 0.26 0.08 0.16</cell><cell>1</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell cols="7">6 Log Freelancer Experience 0.18 -0.08 0.26 -0.04 0.11 1</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>7 Project Size</cell><cell cols="7">-0.16 -0.19 -0.01 -0.07 0.09 0.01 1</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>8 Project Type 1</cell><cell cols="7">-0.04 -0.06 0.06 -0.06 -0.13 0.09 0.11</cell><cell>1</cell><cell></cell><cell></cell><cell></cell><cell></cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2"><head>Table 3 . Definition of Key Variables</head><label>3</label><figDesc></figDesc><table><row><cell>Variables</cell><cell>Definition</cell><cell></cell><cell></cell></row><row><cell>1 Contract</cell><cell cols="3">1-Buyer contract with one freelancer; 0 -no contract</cell></row><row><cell>2 Number of Bids (NoB)</cell><cell cols="3">Total number of freelancers who bid for the</cell></row><row><cell>3 Price Dispersion (PD)</cell><cell>Coefficient of variance (</cell><cell>! !</cell><cell>) for the bidding prices</cell></row><row><cell>4 Quality Dispersion (QD)</cell><cell cols="3">Standard deviation of freelancer's quality (1-10, reviewed by previous buyers)</cell></row><row><cell>5 Freelancer Experience</cell><cell cols="3">Number of projects a freelancer has taken before</cell></row><row><cell>6 Freelancer Quality</cell><cell cols="3">The average quality of all the freelancers' one project receives</cell></row><row><cell>7 Freelancer Experience</cell><cell cols="3">The average experience (# of projects) of all the freelancers' one project receives</cell></row><row><cell>8 Project Size</cell><cell cols="3">The budget of the project</cell></row><row><cell>9 Project Type</cell><cell cols="3">Types of project (website building/ logo design etc.)</cell></row><row><cell>10 Auction Duration</cell><cell cols="3">The pre-specified time window when freelancers can bid for the project</cell></row><row><cell>11 Buyer Experience</cell><cell cols="3">Total number of projects a buyer has on this platform</cell></row><row><cell>12 Arrival Rate</cell><cell cols="3">Average arrival time of one freelancer</cell></row><row><cell>13 Arrival Dispersion</cell><cell cols="3">Standard deviation of all the arrival time for each freelancer</cell></row><row><cell>14 Modes Ratio</cell><cell></cell><cell></cell><cell></cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_4"><head>Table 4 . Main Effect of Dispersion on Buyer's Contract Decisions</head><label>4</label><figDesc></figDesc><table><row><cell></cell><cell>(1)</cell><cell>(2)</cell><cell>(3)</cell><cell>(4)</cell></row><row><cell>VARIABLES</cell><cell>OLS</cell><cell>LOGIT</cell><cell>OLS</cell><cell>LOGIT</cell></row><row><cell>DV: Contract</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Price Dispersion (PD)</cell><cell cols="4">-0.061***(0.006) -0.268***(0.026) -0.045***(0.006) -0.227***(0.036)</cell></row><row><cell>Quality Dispersion (QD)</cell><cell>0.018***(0.001)</cell><cell cols="2">0.090***(0.008) 0.008***(0.002)</cell><cell>0.045***(0.012)</cell></row><row><cell>NoB × PD</cell><cell>0.001***(0.000)</cell><cell>0.004***(0.001)</cell><cell>0.001***(0.000)</cell><cell>0.004***(0.001)</cell></row><row><cell cols="2">Log Number of Bids (NoB) -0.023***(0.002)</cell><cell>-0.094***(0.010)</cell><cell>-0.024***(0.003)</cell><cell>-0.124***(0.015)</cell></row><row><cell>Log Freelancer Experience</cell><cell>0.045***(0.001)</cell><cell>0.204***(0.006)</cell><cell>0.024***(0.002)</cell><cell>0.138***(0.010)</cell></row><row><cell>Project Size</cell><cell>-0.001***(0.000)</cell><cell>-0.001***(0.000)</cell><cell cols="2">-0.000***(0.000) -0.002***(0.000)</cell></row><row><cell>Project Type 1</cell><cell>0.008(0.006)</cell><cell>0.045(0.029)</cell><cell>-0.042***(0.010)</cell><cell>-0.213***(0.053)</cell></row><row><cell>Project Type 2</cell><cell>0.056***(0.007)</cell><cell>0.265***(0.032)</cell><cell>0.005(0.011)</cell><cell>0.037(0.060)</cell></row><row><cell>Project Type 3</cell><cell>0.076***(0.007)</cell><cell>0.355***(0.032)</cell><cell>0.024**(0.010)</cell><cell>0.153***(0.057)</cell></row><row><cell>Auction Duration</cell><cell>-0.001***(0.000)</cell><cell>-0.001***(0.000)</cell><cell cols="2">-0.000***(0.000) -0.001***(0.000)</cell></row><row><cell>Log Buyer Experience</cell><cell>0.030***(0.001)</cell><cell>0.139***(0.006)</cell><cell>-0.071***(0.007)</cell><cell>-0.395***(0.031)</cell></row><row><cell>Arrival Rate</cell><cell>-0.013***(0.001)</cell><cell>-0.037***(0.007)</cell><cell>-0.011***(0.002)</cell><cell>-0.044***(0.001)</cell></row><row><cell>Arrival Dispersion</cell><cell cols="2">-0.001***(0.000) -0.008***(0.000)</cell><cell>-0.001***(0.000)</cell><cell>-0.010***(0.000)</cell></row><row><cell>Constant</cell><cell>0.546***(0.010)</cell><cell>0.098**(0.046)</cell><cell>0.839***(0.017)</cell><cell>--</cell></row><row><cell>Observations</cell><cell>67,334</cell><cell>67,334</cell><cell>67,334</cell><cell>44,271</cell></row><row><cell>R-square</cell><cell>0.128</cell><cell>--</cell><cell>0.086</cell><cell>--</cell></row><row><cell>Buyer FE</cell><cell>NO</cell><cell>NO</cell><cell>YES</cell><cell>YES</cell></row><row><cell>Controls</cell><cell>YES</cell><cell>YES</cell><cell>YES</cell><cell>YES</cell></row><row><cell>Interaction</cell><cell>YES</cell><cell>--</cell><cell>YES</cell><cell>YES</cell></row><row><cell>Number of buyer ID</cell><cell>--</cell><cell>--</cell><cell>21,090</cell><cell>6,408</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_5"><head>Table 5 . Measuring Uncertainty with Modes Ratio</head><label>5</label><figDesc></figDesc><table><row><cell></cell><cell>(1)</cell><cell>(2)</cell></row><row><cell>VARIABLES</cell><cell></cell><cell></cell></row><row><cell></cell><cell>OLS</cell><cell>LOGIT</cell></row><row><cell>DV: Contract</cell><cell></cell><cell></cell></row><row><cell>Modes Ratio (MR)</cell><cell>0.146***(0.030)</cell><cell>0.822***(0.165)</cell></row><row><cell>Mode Mean Difference</cell><cell>-0.001***(0.000)</cell><cell>-0.001***(0.000)</cell></row><row><cell>Quality Dispersion (QD)</cell><cell>0.007**(0.003)</cell><cell>0.037**(0.015)</cell></row><row><cell>MR × NoB</cell><cell>-0.041***(0.011)</cell><cell>-0.247***(0.065)</cell></row><row><cell>Observations</cell><cell>61,704</cell><cell>39,601</cell></row><row><cell>R-squared</cell><cell>0.082</cell><cell></cell></row><row><cell>Number of buyer ID</cell><cell>YES</cell><cell>YES</cell></row><row><cell>Buyer FE</cell><cell>YES</cell><cell>YES</cell></row><row><cell>Controls</cell><cell>YES</cell><cell>YES</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_6"><head>Table 6 . Robustness Check with Normal Projects</head><label>6</label><figDesc></figDesc><table><row><cell>VARIABLES</cell><cell>(1) OLS</cell><cell>(2) LOGIT</cell></row><row><cell>DV: Contract</cell><cell></cell><cell></cell></row><row><cell>Price Dispersion (PD)</cell><cell cols="2">-0.048***(0.007) -0.242***(0.038)</cell></row><row><cell>Quality Dispersion (QD)</cell><cell>0.007**(0.003)</cell><cell>0.036**(0.015)</cell></row><row><cell>NoB × PD</cell><cell>0.001***(0.000)</cell><cell>0.007***(0.002)</cell></row><row><cell>Observations</cell><cell>61,704</cell><cell>39,601</cell></row><row><cell>R-squared</cell><cell>0.081</cell><cell>--</cell></row><row><cell>Number of buyer ID</cell><cell>YES</cell><cell>YES</cell></row><row><cell>Buyer FE</cell><cell>YES</cell><cell>YES</cell></row><row><cell>Controls</cell><cell>YES</cell><cell>YES</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_7"><head>Table 7 Buyer's Price Sensitivity</head><label>7</label><figDesc></figDesc><table><row><cell></cell><cell>(1)</cell><cell>(2)</cell><cell>(3)</cell></row><row><cell>VARIABLES</cell><cell>OLS</cell><cell>LOGIT</cell><cell>CLOGIT</cell></row><row><cell>Ln (Bidding Price)</cell><cell cols="3">-0.096***(0.003) -1.275***(0.036) -1.275***(0.036)</cell></row><row><cell>P × PD</cell><cell>0.033***(0.003)</cell><cell cols="2">0.407***(0.044) 0.407***(0.044)</cell></row><row><cell cols="4">Ln (Freelancer Experience) 0.018***(0.000) 0.259***(0.005) 0.259***(0.005)</cell></row><row><cell>Freelancer Country</cell><cell>-0.027***(0.001)</cell><cell cols="2">-0.352***(0.017) -0.352***(0.017)</cell></row><row><cell>Ln (Arrival Time)</cell><cell>0.011***(0.000)</cell><cell cols="2">0.158***(0.006) 0.158***(0.006)</cell></row><row><cell>Same Country</cell><cell>0.022*(0.012)</cell><cell>0.226(0.138)</cell><cell>0.226(0.138)</cell></row><row><cell>Constant</cell><cell>0.419***(0.007)</cell><cell></cell><cell></cell></row><row><cell>Observations</cell><cell>235,043</cell><cell>194,941</cell><cell>194,941</cell></row><row><cell>R-squared</cell><cell>0.030</cell><cell></cell><cell></cell></row><row><cell>Number of project ID</cell><cell>25,570</cell><cell>18,737</cell><cell></cell></row><row><cell>Buyer FE</cell><cell>YES</cell><cell>YES</cell><cell>YES</cell></row><row><cell>Controls</cell><cell>YES</cell><cell>YES</cell><cell>YES</cell></row></table></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="1" xml:id="foot_0"><p>In the literature of online labor markets, freelancers are also known as bidders, online workers, or service providers.</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="2" xml:id="foot_1"><p>A general process for "buyer-determined" reversed auctions follows three steps: (1) an buyer posts an auction project with a budget, requirements description, and auction duration; (2) freelancers bid for the project with a bid price and a proposal for implementing the requested project; and (3) the buyer evaluates the bids and decides whether to contract with a specific freelancer of her choice (or not).</p></note>
+		</body>
+		<back>
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>freelancer's contracting across platforms. Third, buyer's contracting is actually a continuously dynamic process, in which the price dispersion a buyer observes at different time points is different. We only focus on the final stage however. Future research can build up a dynamic model on buyer's contracting.</p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<monogr>
+		<author>
+			<persName><forename type="first">A</forename><surname>Agrawal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Horton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Lacetera</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Lyons</surname></persName>
+		</author>
+		<title level="m">Digitization and the Contract Labor Market: A Research Agenda</title>
+		<imprint>
+			<publisher>University of Chicago Press</publisher>
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+	<note>Economics of Digitization</note>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<monogr>
+		<title level="m" type="main">Access Affordance of Mobile Technology in E-Commerce: Change of Purchase Time Dispersion</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Bang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Han</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Note on Online Auctions with Costly Bid Evaluation</title>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">M</forename><surname>Carr</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Science</title>
+		<imprint>
+			<biblScope unit="volume">49</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="1521" to="1528" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Better, Faster, Cheaper: An Experimental Analysis of a Multiattribute Reverse Auction Mechanism with Restricted Information Feedback</title>
+		<author>
+			<persName><forename type="first">C.-H</forename><surname>Chen-Ritzo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">P</forename><surname>Harrison</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">M</forename><surname>Kwasnica</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">J</forename><surname>Thomas</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Science</title>
+		<imprint>
+			<biblScope unit="volume">51</biblScope>
+			<biblScope unit="page" from="1753" to="1762" />
+			<date type="published" when="2005">2005</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Prices and Price Dispersion on the Web: Evidence from the Online Book Industry</title>
+		<author>
+			<persName><forename type="first">K</forename><surname>Clay</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Krishnan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Wolff</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The Journal of Industrial Economics</title>
+		<imprint>
+			<biblScope unit="volume">49</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="521" to="539" />
+			<date type="published" when="2001">2001</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Price Dispersion and Differentiation in Online Travel: An Empirical Investigation</title>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">K</forename><surname>Clemons</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I.-H</forename><surname>Hann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">M</forename><surname>Hitt</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management science</title>
+		<imprint>
+			<biblScope unit="volume">48</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="534" to="549" />
+			<date type="published" when="2002">2002</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">On Product Uncertainty in Online Markets: Theory and Evidence</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Dimoka</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Hong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">A</forename><surname>Pavlou</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quarterly</title>
+		<imprint>
+			<biblScope unit="issue">36</biblScope>
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Internet Exchanges for Used Goods: An Empirical Analysis of Trade Patterns and Adverse Selection</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Ghose</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Mis Quarterly)</title>
+		<imprint>
+			<biblScope unit="page" from="263" to="291" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Efficiency in Auctions with Private and Common Values: An Experimental Study</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">K</forename><surname>Goeree</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Offerman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">American Economic Review)</title>
+		<imprint>
+			<biblScope unit="page" from="625" to="643" />
+			<date type="published" when="2002">2002</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Competitive Bidding in Auctions with Private and Common Values*</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">K</forename><surname>Goeree</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Offerman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The Economic Journal</title>
+		<imprint>
+			<biblScope unit="volume">113</biblScope>
+			<biblScope unit="page" from="598" to="613" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<monogr>
+		<title level="m" type="main">Does Information Really&apos;unravel&apos;? Understanding Factors That Motivate Sellers to Seek Third-Party Certifications in an Online Labor Market</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Goes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Lin</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2012-11-01">2012. November 1, 2012</date>
+			<biblScope unit="page" from="12" to="12" />
+		</imprint>
+		<respStmt>
+			<orgName>NET Institute Working Paper</orgName>
+		</respStmt>
+	</monogr>
+	<note>Understanding Factors That Motivate Sellers to Seek Third-Party Certifications in an Online Labor Market</note>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<monogr>
+		<title level="m" type="main">Thinking: Psychological perspectives on reasoning, judgment and decision making)</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Hertwig</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">M</forename><surname>Todd</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2003">2003</date>
+			<biblScope unit="page" from="213" to="231" />
+		</imprint>
+	</monogr>
+	<note>More Is Not Always Better: The Benefits of Cognitive Limits</note>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Is the World Truly&apos;flat&apos;? Empirical Evidence from Online Labor Markets</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Hong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">A</forename><surname>Pavlou</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Empirical Evidence from Online Labor Markets</title>
+		<imprint>
+			<date type="published" when="2014-10">2014. October 2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">How Does Bid Visibility Matter in Buyer-Determined Auctions? Comparing Open and Sealed Bid Auctions in Online Labor Markets</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Hong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">A</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">A</forename><surname>Pavlou</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">How Does Bid Visibility Matter in Buyer-Determined Auctions)</title>
+		<imprint>
+			<date type="published" when="2013">2013</date>
+			<biblScope unit="page" from="13" to="15" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Open Versus Sealed Bid Auctions: Empirical Evidence from Online Labor Markets</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Hong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">A</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">A</forename><surname>Pavlou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Paul</surname></persName>
+		</author>
+		<idno>NET Institute Working Paper:13-05</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Open versus Sealed Bid Auctions: Empirical Evidence from Online Labor Markets</title>
+		<imprint>
+			<date type="published" when="2014-08-12">2014. August 12, 2014</date>
+			<biblScope unit="page" from="14" to="025" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">When Choice Is Demotivating: Can One Desire Too Much of a Good Thing?</title>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">S</forename><surname>Iyengar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">R</forename><surname>Lepper</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of personality and social psychology</title>
+		<imprint>
+			<biblScope unit="volume">79</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page">995</biblScope>
+			<date type="published" when="2000">2000</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<monogr>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">H</forename><surname>Kagel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Levin</surname></persName>
+		</author>
+		<title level="m">Common Value Auctions and the Winner&apos;s Curse</title>
+		<imprint>
+			<publisher>Princeton University Press</publisher>
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Doing business with strangers: Reputation in online service marketplaces</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Moreno</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Terwiesch</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="865" to="886" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Costly Bidding in Online Markets for It Services</title>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">M</forename><surname>Snir</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">M</forename><surname>Hitt</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Science</title>
+		<imprint>
+			<biblScope unit="volume">49</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="1504" to="1520" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">An Empirical Analysis of Price, Quality, and Incumbency in Procurement Auctions</title>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">I</forename><surname>Tunca</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Zhong</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Manufacturing &amp; Service Operations Management)</title>
+		<imprint>
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">The Value of Reputation in an Online Freelance Marketplace</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Yoganarasimhan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Marketing Science</title>
+		<imprint>
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="860" to="891" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Consumer Sequential Search: Not Enough or Too Much?</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Zwick</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Rapoport</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">K C</forename><surname>Lo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Muthukrishnan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Marketing Science</title>
+		<imprint>
+			<biblScope unit="volume">22</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="503" to="519" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

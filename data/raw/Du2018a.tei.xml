@@ -1,0 +1,1639 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Journal of Strategic Information Systems</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Derek</forename><surname>Du</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">School of Economics and Management</orgName>
+								<orgName type="institution">Beihang University</orgName>
+								<address>
+									<settlement>Beijing</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author role="corresp">
+							<persName><forename type="first">Ji-Ye</forename><surname>Mao</surname></persName>
+							<email>maojiye@rmbs.ruc.edu.cn</email>
+							<affiliation key="aff1">
+								<orgName type="department">School of Business</orgName>
+								<orgName type="institution">Renmin University of China</orgName>
+								<address>
+									<settlement>Beijing</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Y</forename><surname>Mao</surname></persName>
+						</author>
+						<title level="a" type="main">Journal of Strategic Information Systems</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="MD5">4FB9EF23147ADCFE52F894928D6B2D40</idno>
+					<idno type="DOI">10.1016/j.jsis.2018.07.001</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.7.3" ident="GROBID" when="2023-06-16T09:23+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>Digital entrepreneurship Crowdsourcing Online service market e-Commerce Trust development Trust maintenance Institutional mechanisms Process model</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Crowdsourcing intermediaries, such as Upwork and ZBJ, are powering a new force of digital entrepreneurs by creating online service markets where service providers seek contracts from clients all over the world. An important reason for this flourishing digital entrepreneurship is that the intermediaries establish institutional mechanisms (IMs) that develop clients' trust in digital entrepreneurs. However, insights into how intermediaries achieve it remain limited. Although the e-Commerce literature has generated rich findings on intermediary-based trust development, its findings are based on online product markets and thus may not be readily applicable to online service markets. More specifically, these findings are mainly focused on various IMs that facilitate initial trust formation based on variance models. However, a successful service transaction requires not only the initial trust but further development and maintenance of that trust, because it is a cooperative process between clients and vendors. By conducting an in-depth case study of ZBJ, the largest crowdsourcing intermediary in China, this study develops a three-phase process model, whereby the intermediary deploys different sets of IMs that initiate, augment, and maintain clients' trust in vendors. Our findings make important theoretical contributions to the literature on digital entrepreneurship, crowdsourcing, and e-Commerce trust development. sourcing intermediaries' digital platforms <ref type="bibr" target="#b47">(Majchrzak and Malhotra, 2013)</ref>. Second, they deliver solutions in the form of digital</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Introduction</head><p>By creating online service markets where self-employed service providers sell their services to clients all over the world, crowdsourcing intermediaries, such as Upwork and ZBJ, have been touted as a wellspring of entrepreneurial activities; the phenomenon is commonly known as the "gig economy" <ref type="bibr" target="#b16">(Dishman, 2017;</ref><ref type="bibr" target="#b61">Shadpour, 2018;</ref><ref type="bibr" target="#b63">Sundararajan, 2015)</ref>. Previously, gigs were only for musicians, while most people looked for stable jobs that offered fixed salaries. Today, more and more skilled workers are earning income from self-employment in a side gig, and some have transformed their gig into a new business venture <ref type="bibr" target="#b34">(Kaufman, 2013;</ref><ref type="bibr" target="#b61">Shadpour, 2018)</ref>. For example, ZBJ, China's largest crowdsourcing intermediary, hosts over 10 million service providers, such as computer programmers, website developers, animators, artists, and designers and small/medium-sized enterprises.</p><p>These service providers can be seen as digital entrepreneurs, who "pursue the opportunities based on the use of digital media and other information and communication technologies" <ref type="bibr">(Davidson and Vaast, 2010, p.2)</ref>. First, they pursue opportunities afforded by crowd-artifacts, such as software packages and websites <ref type="bibr" target="#b51">(Nambisan, 2017)</ref>. Digital entrepreneurship is an emerging field in information systems (IS) research. Crowdsourcing intermediary-enabled entrepreneurship falls into the subcategory of online market-enabled entrepreneurship. Studies in this subcategory have focused on the actions of individual entrepreneurs <ref type="bibr" target="#b26">(Gregg and Walczak, 2008;</ref><ref type="bibr" target="#b60">Reuber and Fischer, 2010)</ref> and entrepreneurial communities <ref type="bibr" target="#b2">(Avgerou and Li, 2013;</ref><ref type="bibr" target="#b40">Leong et al., 2016)</ref>, but have overlooked the role of intermediaries in enabling entrepreneurship.</p><p>Our study intends to fill this gap by examining how crowdsourcing intermediaries enable entrepreneurs from a trust development perspective. Trust is defined as the willingness to depend upon and make oneself vulnerable to the trustee <ref type="bibr" target="#b48">(Mayer et al., 1995)</ref>. Trust is critical to online transactions, because it is an effective mechanism for mitigating uncertainty <ref type="bibr" target="#b12">(Datta and Chatterjee, 2008;</ref><ref type="bibr" target="#b32">Jarvenpaa et al., 2000)</ref>. Uncertainty can increase clients' transaction costs and discourage them from engaging in crowdsourcing <ref type="bibr" target="#b68">(Ye and Kankanhalli, 2015)</ref>. It is difficult for individual entrepreneurs to gain clients' trust, because they have no prior interaction and lack face-to-face communication with clients. Third-party institutional mechanisms (IMs) should be put in place for trust development. The crowdsourcing literature has also recognized that intermediaries play an important role in developing clients' trust in vendors <ref type="bibr" target="#b21">(Feller et al., 2012;</ref><ref type="bibr" target="#b68">Ye and Kankanhalli, 2015;</ref><ref type="bibr" target="#b70">Zogaj et al., 2014)</ref>, but insights into how they achieve it remain limited.</p><p>The e-Commerce literature has generated rich findings on how intermediaries develop clients' trust, in particular through the deployment of IMs that punish opportunistic behaviors and engender cooperation <ref type="bibr" target="#b24">(Gefen et al., 2003)</ref>. However, these findings are derived from online product markets and may not be readily applicable to online service markets. Moreover, existing findings are mainly focused on IMs that facilitate initial trust formation only <ref type="bibr" target="#b3">(Ba and Pavlou, 2002;</ref><ref type="bibr" target="#b49">McKnight et al., 2002;</ref><ref type="bibr" target="#b55">Pavlou, 2002;</ref><ref type="bibr" target="#b56">Pavlou and Gefen, 2004)</ref>, based on variance models. Whereas initial trust can lead to a transaction in online product markets, a successful service transaction also requires further development and maintenance of that trust, because services are delivered via a cooperative process between clients and vendors <ref type="bibr" target="#b8">(Cheng et al., 2017;</ref><ref type="bibr" target="#b30">Jarvenpaa and Leidner, 1997;</ref><ref type="bibr" target="#b42">Lewicki and Bunker, 1996)</ref>. In this case, crowdsourcing intermediaries should develop and maintain clients' trust throughout the transaction, and a process model is needed. Therefore, we derive our research question as follows, "How do crowdsourcing intermediaries develop and maintain clients' trust in vendors throughout a service transaction?"</p><p>Based on an in-depth case study of ZBJ, we develop a three-phase process model, whereby the intermediary initiates, augments, and maintains clients' trust in vendors by deploying three different sets of IMs. This study makes three important theoretical contributions. First, it contributes to the digital entrepreneurship literature, in particular studies on online market-enabled entrepreneurship, by examining the enabling role of intermediaries through a trust development perspective. Second, it contributes to the crowdsourcing literature by developing a process model of how intermediaries develop and maintain clients' trust in vendors, and by explaining how intermediaries facilitate the crowdsourcing process. Third, it contributes to the e-Commerce trust development literature by extending intermediary-enabled trust development from online product markets to online service markets, and adding a process view.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Literature review</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Digital entrepreneurship and crowdsourcing</head><p>Today, digital technologies have significantly reduced the cost of starting a company and accelerated the rate of expansion, thus creating a boom in digital entrepreneurship. Digital entrepreneurship has provided IS scholars many research opportunities. According to Del <ref type="bibr" target="#b14">Giudice and Straub (2011)</ref>, "The fascinating research questions that can be asked are endless" (p. 6). These questions lie at the intersection of entrepreneurship and various digital technologies <ref type="bibr" target="#b51">(Nambisan, 2017)</ref>, such as online markets (e.g., <ref type="bibr" target="#b2">Avgerou and Li, 2013;</ref><ref type="bibr" target="#b26">Gregg and Walczak, 2008)</ref>, social media (e.g., <ref type="bibr">Fischer and</ref><ref type="bibr">Reuber, 2011, 2014)</ref>, and technology ecosystems (e.g., <ref type="bibr" target="#b6">Ceccagnoli et al., 2012;</ref><ref type="bibr" target="#b31">Jarvenpaa and Standaert, 2017;</ref><ref type="bibr" target="#b52">Nambisan and Baron, 2013)</ref>.</p><p>Because crowdsourcing intermediaries create online service markets for service providers to seek contracts from clients all over the world, intermediary-enabled entrepreneurship is subset of of online market-enabled entrepreneurship. Crowdsourcing intermediaries are similar to traditional e-Commercial platforms, such as Amazon and eBay, but intended for service exchange rather than product exchange. Crowdsourcing intermediaries may have a broader impact toward entrepreneurship than traditional online product markets, because they have further lowered the barriers to entrepreneurship. Online product transactions still require transportation and thus exclude entrepreneurs who do not have access to logistic infrastructures <ref type="bibr" target="#b40">(Leong et al., 2016)</ref>. In contrast, service transactions require no such infrastructures. For example, some marginalized communities in India have successfully started new ventures on Upwork and moved out of poverty by taking orders from western clients <ref type="bibr" target="#b0">(Agrawal et al., 2013)</ref>. As noted above, existing research on online market-enabled entrepreneurship has mainly focused on the activities of entrepreneurs and their communities, but overlooked the role of intermediaries. Our study intends to fill this gap by examining how crowdsourcing intermediaries enable entrepreneurs from a trust development perspective.</p><p>The term "crowdsourcing" was coined by <ref type="bibr">Howe (2006)</ref> to refer to the act of assigning tasks that have traditionally been performed by internal employees to a large group of undefined people outside an organization. Crowdsourcing has grown into a broader concept that encompasses four major types of arrangement: Contests, collaborative communities, complementors, and labor markets <ref type="bibr" target="#b4">(Boudreau and Lakhani, 2013)</ref>. Labor markets can also be referred to as service markets, because they"match buyers and sellers of services and employ conventional contracting for services rendered" (p. 10).</p><p>Service markets can be further divided into two types, labor-intensive versus knowledge-intensive. The former is represented by Amazon Mechanical Turk (MTurk), enabling transactions of simple, mundane tasks such as data processing and image tagging <ref type="bibr" target="#b15">(Deng et al., 2016;</ref><ref type="bibr" target="#b33">Karger et al., 2014)</ref>. For example, in MTurk, vendors complete a task at the terms proposed by clients, and clients do not communicate much with vendors except for the initial job description <ref type="bibr" target="#b7">(Chen and Horton, 2016)</ref>. In contrast, the latter is represented by Upwork, Freelancer.com, and ZBJ, transacting tasks that require domain knowledge, innovation, and collaboration between clients and vendors. Examples include website and software development, and logo and animation design <ref type="bibr" target="#b21">(Feller et al., 2012;</ref><ref type="bibr" target="#b59">Qi and Mao, 2016;</ref><ref type="bibr" target="#b68">Ye and Kankanhalli, 2015)</ref>.</p><p>The two types of markets require different approaches to developing and maintaining trust because they deal with different tasks and transaction processes. Furthermore, because digital entrepreneurship is more likely to flourish in knowledge-intensive markets than in labor-intensive ones <ref type="bibr" target="#b13">(Davidson and Vaast, 2010)</ref>, this study examines the former. Therefore, in the reminder of this paper, the term crowdsourcing specifically refers to service markets, and knowledge-intensive ones in particular.</p><p>Trust is critical to crowdsourcing, because it is effective in mitigating uncertainty, which increases clients' transaction costs and discourages them from engaging in crowdsourcing <ref type="bibr" target="#b68">(Ye and Kankanhalli, 2015)</ref>. Clients in online service markets face more uncertainty than their counterparts in online product markets. For example, unlike products, services are customized based on clients' specific requirements, and uncertainty can arise in the process of specifying these requirements and communicating them to vendors <ref type="bibr" target="#b68">(Ye and Kankanhalli, 2015)</ref>. This uncertainty is further exacerbated by the fact that many crowdsourcing clients lack domain knowledge to articulate their requirements and misunderstandings are common between geographically separated clients and vendors <ref type="bibr" target="#b59">(Qi and Mao, 2016)</ref>.</p><p>In addition, unlike products, services are produced through client-vendor cooperation, rather than by vendors independently. Uncertainty can arise from the cooperation, especially when the two parties lack face-to-face communication <ref type="bibr" target="#b30">(Jarvenpaa and Leidner, 1997)</ref>. For example, clients face uncertainty about vendors' commitment because they are unable to monitor vendors effectively. This uncertainty, if not mitigated properly, can damage trust built in earlier phases and lead to the early termination of contracts <ref type="bibr" target="#b65">(Veltri et al., 2008;</ref><ref type="bibr" target="#b67">Whitten and Leidner, 2006)</ref>.</p><p>Because of service-specific uncertainty, gaining clients' trust becomes more important. However, self-employed service providers face great difficulty in gaining clients' trust on their own, because they are geographically separated from clients and have no prior interaction with them. The crowdsourcing literature shows that intermediaries play an important role in helping vendors gain clients' trust <ref type="bibr" target="#b21">(Feller et al., 2012;</ref><ref type="bibr" target="#b68">Ye and Kankanhalli, 2015;</ref><ref type="bibr" target="#b70">Zogaj et al., 2014)</ref>. However, little is known about how the role is achieved.</p><p>In general, the majority of the crowdsourcing literature has taken either a client or vendor perspective. Few studies have taken the intermediary perspective <ref type="bibr" target="#b70">(Zogaj et al., 2014)</ref>. For example, <ref type="bibr" target="#b21">Feller et al. (2012)</ref> state that "While the commercial success of such brokerages (intermediaries) indicates the potency of arguments concerning the importance of crowds, little is known about the operation of such brokerages" (p. 218). Similarly, <ref type="bibr" target="#b68">Ye and Kankanhalli (2015)</ref> state that "Future researchers could investigate the performance of crowdsourcing platforms in facilitating the process of crowdsourcing" (p.106-107). Our study responds to the call for research by examining how crowdsourcing intermediaries develop and maintain clients' trust in vendors throughout a service transaction. To do so, we first resort to the e-Commerce literature, which has generated findings on intermediary-based trust development. These findings can guide our exploration and provide opportunities for theoretical contributions.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Intermediary-enabled trust development in e-Commerce</head><p>A major reason that small vendors can flourish in e-Commerce markets despite the inherent uncertainty is the presence of intermediaries such as eBay and Amazon, which develop clients' trust in them <ref type="bibr" target="#b12">(Datta and Chatterjee, 2008)</ref>. There are two paths by which an intermediary can develop clients' trust in vendors. First, because trust can be transferred, an intermediary can acquire clients' trust in its brand and then transfer that trust to its vendors; second, an intermediary can develop effective IMs, which reduce opportunistic behaviors and ensure successful transactions <ref type="bibr" target="#b49">(McKnight et al., 2002)</ref>. These two paths complement each other. On the one hand, trust in an intermediary underlies the perceived effectiveness of its IMs; on the other hand, effective IMs increase the trustworthiness of the intermediary <ref type="bibr" target="#b56">(Pavlou and Gefen, 2004)</ref>. Research has focused on the second path, because IMs for trust development are an area in which innovative solutions can be found <ref type="bibr" target="#b56">(Pavlou and Gefen, 2004)</ref>. In contrast, trust in an intermediary is similar to trust in any target, which comes from familiarity, reputation, and benevolent behaviors <ref type="bibr" target="#b32">(Jarvenpaa et al., 2000)</ref>. In the remainder of this paper, the term clients' trust refers to clients' trust in vendors, and we focus on examining how intermediaries enable vendors to develop and maintain that trust.</p><p>Research has identified several effective IMs, such as escrow services, credit card guarantees, monitoring services, accreditation systems, and feedback mechanisms. Escrow services allow clients to pay vendors only when they receive and approve goods. Similarly, credit card guarantees protect clients by offering recourse in cases of fraud. Many credit card companies offer clients zero liability in online fraud <ref type="bibr" target="#b56">(Pavlou and Gefen, 2004)</ref>. Monitoring services monitor vendor activities and punish activities that do not adhere to generally accepted rules <ref type="bibr" target="#b55">(Pavlou, 2002)</ref>. Some research categorizes monitoring services as part of escrow services, because escrow services involve monitoring vendors' activities and their agreements with clients and settling disputes in face of conflicts <ref type="bibr" target="#b56">(Pavlou and Gefen, 2004)</ref>. Accreditation systems attest to vendors' ability and induce cooperative behaviors by encouraging vendors to upgrade their accreditation. Accreditation can be granted by both an independent authority and an intermediary which uses it as a means of rewarding high-quality vendors and weeding out problematic ones <ref type="bibr" target="#b45">(Luo, 2002;</ref><ref type="bibr" target="#b49">McKnight et al., 2002)</ref>. Finally, a feedback mechanism allows clients to evaluate the trustworthiness of a vendor based on what other clients say about them <ref type="bibr" target="#b3">(Ba and Pavlou, 2002)</ref>.</p><p>Despite their different forms, these IMs share similarities in the approaches that they develop trust. Our review synthesizes four approaches, which can be used to guide our exploration in the crowdsourcing context. First, IMs can develop trust by providing clients with guarantees. For example, escrow services guarantee that clients do not have to pay until they receive the products in good shape; credit card guarantees ensure that clients do not lose their money in online frauds. Accreditation is also a form of guarantee, which ensures a vendor's ability and expected future behavior <ref type="bibr" target="#b45">(Luo, 2002)</ref>.</p><p>Second, IMs can develop trust by influencing trusting beliefs. Integrity trusting belief refers to the extent to which the trustee adheres to a set of principles which the trustor finds acceptable. For example, escrow services can lead to integrity trusting belief by creating incentives for vendors to refrain from opportunistic behaviors <ref type="bibr" target="#b20">(Fang et al., 2014)</ref>. Ability trusting belief refers to the extent to which the trustee has the expertise to meet the trustor's needs. For example, a feedback mechanism can lead to ability belief by providing a reputation system that reflects a vendor's ability <ref type="bibr" target="#b17">(Dou et al., 2013;</ref><ref type="bibr" target="#b27">Ho et al., 2017)</ref>. Benevolence trusting belief refers to the extent to which the trustee will act fairly and not take advantage of the trustor when given the chance <ref type="bibr" target="#b48">(Mayer et al., 1995)</ref>. Benevolence trusting belief is less relevant to the online market, because it requires trustee and trustor to have prior attachment <ref type="bibr" target="#b3">(Ba and Pavlou, 2002)</ref>.</p><p>Third, IMs can develop trust by giving clients more control, which makes vendor opportunism irrational. Legal bonds are an effective formal control in offline markets, but they are less effective in online markets <ref type="bibr" target="#b55">(Pavlou, 2002)</ref>. An important reason for this is that the legal stance of an online market is ambiguous, and executing legal enforcement is difficult <ref type="bibr" target="#b24">(Gefen et al., 2003)</ref>. Instead, intermediaries should institute rules and procedures to monitor participants' activities and punish activities that do not adhere to them. Intermediaries can also leverage market-driven informal control, such as a feedback mechanism. A feedback mechanism adds a level of control, because clients' negative comments can serve as harsh punishment that reduces vendors' future sales and price premium <ref type="bibr" target="#b3">(Ba and Pavlou, 2002)</ref>.</p><p>Fourth, IMs can develop trust by providing clients with more information. Information asymmetry is an important reason that vendors engage in opportunistic behaviors. This is a typical principal-agent issue, where vendors (agents) have more information about their characteristics, products, and practices than clients (principals), who lack effective means to monitor vendors <ref type="bibr" target="#b58">(Pavlou et al., 2007)</ref>. The literature shows that meaningful and timely information sharing between clients and vendors promotes trust <ref type="bibr" target="#b30">(Jarvenpaa and Leidner, 1997)</ref>. Feedback mechanisms and accreditation are important sources of external information that helps clients mitigate information asymmetry. More information also differentiates vendors. Such differentiation increases the sense of trustworthiness of the vendor community; failure to do so causes high-quality vendors to leave the market, leaving the lemon vendors <ref type="bibr">(Akerlof, 1970)</ref>.</p><p>Despite the rich findings about various effective IMs, existing findings are derived from online product markets and thus may not be readily applicable to online service markets, for the following two reasons. First, the extant findings are focused on IMs that facilitate initial trust formation based on variance models. However, a successful service transaction requires not only initial trust but further development and maintenance of that trust. Therefore, a process model is needed. This process model should reflect the dynamic view of trust, whereby trust starts small and gradually increases as clients and vendors get to know each other <ref type="bibr" target="#b8">(Cheng et al., 2017;</ref><ref type="bibr" target="#b30">Jarvenpaa and Leidner, 1997;</ref><ref type="bibr" target="#b42">Lewicki and Bunker, 1996)</ref>. Although some extant studies have also taken a dynamic perspective by examining trust development across multiple transactions, for example how trust in an early transaction affects a subsequent transaction <ref type="bibr" target="#b20">(Fang et al., 2014;</ref><ref type="bibr" target="#b35">Kim et al., 2009;</ref><ref type="bibr" target="#b53">Ou et al., 2014;</ref><ref type="bibr" target="#b69">Zahedi and Song, 2008)</ref>, trust development within a transaction remains obscure.</p><p>Second, the literature has mainly focused on IMs that reduce product-specific uncertainty <ref type="bibr" target="#b1">(Angelika et al., 2012;</ref><ref type="bibr" target="#b58">Pavlou et al., 2007)</ref>. As noted, clients in crowdsourcing face new types of uncertainty that are specific to service transactions, such as progress uncertainty <ref type="bibr" target="#b65">(Veltri et al., 2008;</ref><ref type="bibr" target="#b67">Whitten and Leidner, 2006)</ref>. Therefore, prior IMs are inadequate and service-specific IMs should be examined. For example, periodical evaluation is an effective IM that can be used to mitigate progress uncertainty in the cooperation phase <ref type="bibr" target="#b11">(Das and Teng, 1998)</ref>.</p><p>To fill these two gaps, our study intends to build a process model of how crowdsourcing intermediaries develop and maintain clients' trust in vendors throughout a service transaction. In constructing the process model, we pay particular attention to various types of uncertainty that are specific to service transactions and IMs that reduce them.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Methods</head><p>This research adopts a single case study methodology for three reasons. First, its research question is a "how" type and is thus better answered through an inductive method <ref type="bibr" target="#b66">(Walsham, 2006)</ref>. Second, since this study aims to break new theoretical ground, a case study method is more appropriate due to its strength in exploring new conceptual arguments <ref type="bibr" target="#b19">(Eisenhardt, 1989)</ref>. Third, a single case study provides rich narratives that allow researchers to distinguish different phases conceptually and build a process model (e.g., <ref type="bibr" target="#b29">Huang et al., 2017;</ref><ref type="bibr" target="#b50">Montealegre, 2002)</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>The case setting</head><p>We selected ZBJ as the case site. ZBJ was founded in 2006 by six former journalists who were inspired by Alibaba's success in building online product markets, such as Taobao.com and Tmall.com, and aspired to grow ZBJ into the Alibaba of the service industry. ZBJ started by organizing contests and tenders, but a major breakthrough came in 2013, when it introduced the online store model. In the online store model, every vendor was given a virtual store where they could display their skills, prior projects, and customer feedback. Clients screen these stores to select a vendor with whom to work. In 2015, more than 90% of transactions in ZBJ were made via this model. By that year, ZBJ had accumulated over 10 million service providers and over 5 million clients, and the total volume of service transactions was worth RMB¥ 7.5 billion (about US$ 1.13 billion). Popular services include website development, software development, animation development, logo design, and marketing campaign development.</p><p>Although some established companies also use ZBJ, the majority of service providers are small-scale entrepreneurs. Many are fresh college graduates who have been taking on projects via ZBJ since they were at school, skilled workers who earned selfemployment income from a side gig, and small offline service providers who intended to grow their customer base beyond their local communities. These service providers are digital entrepreneurs, because both their acquisition of new business opportunities and delivery of solutions rely on digital technologies <ref type="bibr" target="#b13">(Davidson and Vaast, 2010)</ref>. First, in terms of acquiring new business opportunities, they are enabled by the intermediary's digital platform, which not only connects them to clients all over the world but also helps them gain clients' trust through IT-enabled IMs, such as escrow services and a feedback mechanism. Second, in terms of solution delivery, they rely on digital technologies as well, because their solutions take the form of digital artifacts, such as software packages and websites, and they use digital tools such as Java and HTML to produce such solutions.</p><p>A major challenge faced by these small entrepreneurs is how to gain clients' trust. Vendors whom we interviewed all acknowledged that they struggled to gain clients' trust in the open market. Several vendors had their own sales websites, but few orders came from them. According to these vendors, closing a deal on ZBJ was much simpler than doing it on their own websites, because clients were more inclined to trust them and less concerned about payment. Clients whom we interviewed concurred. They added that were it not for ZBJ, they would not have considered working with unknown online vendors, because there was too much uncertainty involved. For ZBJ, trust development is paramount. In fact, the company's vision is to "Become China's most trustworthy online service market."</p><p>In addition to the traditional IMs such as escrow services and feedback mechanisms, the company has established IMs that are specific to service transactions. One example is the services provided by transaction counselors. Due to their lack of domain expertise, many clients lack confidence in vendors' proposals during the negotiation phase. To overcome this issue, ZBJ established transaction counseling department, whose purpose is to help clients evaluate proposals and facilitate effective negotiation. This initiative was highly successful, and ZBJ later expanded transaction counselors' services into requirements analysis and post-contract moderation. In 2016, the transaction counselor department had become one of the largest departments in ZBJ, consisting of over 100 employees. Many of the clients whom we interviewed reported that the availability of transaction counselors was an important reason why they trusted the unknown vendors.</p><p>Effective IMs for trust development also attract high-quality vendors. With the support of the transaction counselors, clients are able to better assess vendors' ability and high-quality vendors stand out. Several of the vendors whom we interviewed also had stores in Taobao, but they were shifting more attention to ZBJ. They stated that an important reason for this was that ZBJ's IMs were more specific to service transactions. High-quality vendors in turn attract more clients. Today, ZBJ is a household name in the service industry. There is a general perception among the public that: "If you buy a product, go to Taobao or Tmall; if you buy a service, go to ZBJ."</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Data collection</head><p>Data collection started in March 2015 and ended in September 2017. We paid four visits to ZBJ's headquarters. The senior managers were supportive of our research, granting us access to key employees and helping us schedule interviews with clients and vendors. We interviewed 34 informants from ZBJ, seven from clients, and eight from vendors (for the informant list, please see Appendix A). This sampling structure reflects the intermediary perspective of our research. Some informants participated in multiple interviews. Each interview lasted between 45 min and one hour (for sample interview questions, see Appendix B). Interviews were conducted till we reached the point of theoretical saturation, where information started to repeat existing findings <ref type="bibr" target="#b19">(Eisenhardt, 1989)</ref>. All interviews were recorded and transcribed. The transcripts filled 655 pages.</p><p>Informants at ZBJ included senior managers, middle managers, and line employees. This distribution eliminated elite bias <ref type="bibr" target="#b54">(Pan and Tan, 2011)</ref>. The senior managers included the Chief Operating Officer (COO) and two Vice Presidents (VP), who were also the cofounders. The middle managers and line employees came from three major departments: transaction counseling, vendor management, and recourse. These departments are directly related to vendor-client relationships and involved in ZBJ's efforts to develop clients' trust. At the end of each interview, we asked the informant to recommend other individuals who could offer important information for understanding ZBJ's role in trust development.</p><p>Interviews with clients and vendors were used to triangulate information collected from ZBJ <ref type="bibr" target="#b19">(Eisenhardt, 1989;</ref><ref type="bibr" target="#b37">Klein and Myers, 1999)</ref>. For example, some ZBJ informants highlighted that their ability to recommend capable vendors was an important reason why clients trusted vendors, but clients responded indifferently to this statement. We thus dropped it. We also paid particular attention to informants who were both clients and vendors. In an online product market, a buyer can easily become a seller by selling their personal possessions <ref type="bibr" target="#b62">(Sun, 2010)</ref>, but in an online service market, certain skills are necessary to become a service provider. Among our informants, two vendors had outsourced tasks to other vendors and thus assumed the role of both vendor and client. We analyzed their interview transcripts and found no apparent differences between their opinions and those of other interviewees regarding ZBJ's role in trust development.</p><p>Data also came from archival data and observations. Archival data included ZBJ's internal documents and public information. Examples of internal documents included progress reports, training presentation slides, and arbitration records; examples of public information included news articles and analyst reports. The public information was rich, given that ZBJ was a high-profile company that had received a great deal of media attention. The archival data amounted to 712 pages. In December 2016, one of the authors was invited to give a keynote speech at a large trade conference organized by ZBJ. At the conference, the research team attended presentations and panel discussions given by ZBJ's senior managers, clients, vendors, government officials, and industry analysts. This experience allowed us to collect more information and to develop a more in-depth understanding of the research context <ref type="bibr" target="#b37">(Klein and Myers, 1999)</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Data analysis</head><p>We used open, axial, and selective coding in the data analysis <ref type="bibr" target="#b10">(Corbin and Strauss, 1990)</ref>. For an example of data structure derived from data analysis, please refer to Fig. <ref type="figure" target="#fig_0">1</ref>. First, we started the open coding by conceptually labeling the data to capture ZBJ's efforts to develop and maintain clients' trust in vendors. The research team met regularly to review emerging concepts and ensure coding consistency <ref type="bibr" target="#b37">(Klein and Myers, 1999)</ref>. For example, when we asked ZBJ employees how they maintained clients' trust in vendors during the cooperation phase, we derived concepts such as Perspective Taking, Communication Bridge, and Alerts for Potential Conflicts.</p><p>Second, we started the axial coding by grouping similar concepts from the open coding into major themes <ref type="bibr" target="#b10">(Corbin and Strauss, 1990)</ref>. The grouping process was also informed by the literature. Continuing with the example above, the three concepts were grouped into a theme named Harmonious Conflict Resolution. This construct was proposed by <ref type="bibr" target="#b25">Goo et al. (2009)</ref> in a study on IT outsourcing relationship government. It refers to "The extent to which parties achieve mutually satisfying resolutions of their conflicts and, thus, disagreements are replaced by agreement and consensus" (p. 125). Our data suggest that in the crowdsourcing context, harmonious conflict resolution is an important IM deployed by the intermediary to maintain trust. This mechanism has not been discussed in the literature on e-Commerce trust development and is thus an extension of the literature.</p><p>Third, we started the selective coding by integrating themes from the axial coding into a coherent model. The objective was to create a model that ascertains the phenomenon theoretically. This phase was conducted by constantly comparing data, emerging themes, and the literature <ref type="bibr" target="#b10">(Corbin and Strauss, 1990)</ref>. Ultimately, we derived a three-phase process model. This emergent model was presented to key informants from ZBJ, clients and vendors, who confirmed that it was an accurate reflection of the reality and provided feedback that helped us to refine it <ref type="bibr" target="#b54">(Pan and Tan, 2011)</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Findings</head><p>Our data analysis reveals a three-phase process model whereby a crowdsourcing intermediary initiates, augments, and maintains clients' trust in vendors and, as a result, facilitates a successful transaction (see Fig. <ref type="figure" target="#fig_1">2</ref>). As shown by the literature, an intermediary develops clients' trust by developing IMs that mitigate uncertainty. Therefore, in each phase, our analysis focuses on uncertainty and the IMs that mitigate it.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Initiating trust in the vendor selection phase</head><p>A service transaction starts with the vendor selection phase, where a client screens the vendor community and selects one to work with. In this phase, clients face uncertainty about vendors' integrity and ability. Nearly all of the clients whom we interviewed raised their concern about vendors' opportunistic behaviors, for example a vendor taking their money without properly delivering the service purchased. Another major concern was whether vendors had the ability to fulfill their requirements.</p><p>To mitigate vendor uncertainty, ZBJ has deployed several IMs. The key ones include escrow services, a feedback mechanism, and an accreditation system. Clients feel more secure and comfortable about transferring money through the escrow services offered by ZBJ. In the early days, some vendors tried to persuade clients to settle payment offline so that they could avoid the commission charged by ZBJ, which was about 20% of the payment. Vendors also promised clients a share of the commission. Many of the clients whom we interviewed received such offers and most rejected them, because it was too risky to transfer money to vendors directly. Moreover, after transferring the money, clients lose control over vendors. Today, such solicitation from vendors is less common. Vendors have realized that the escrow services can help them quickly establish trust with clients. A website development vendor stated:</p><p>"You can show clients your business licenses and various certificates to demonstrate that you are legitimate, but clients still do not trust you. They trust ZBJ with their money and so it is much easier to close a deal on ZBJ." V2</p><p>The escrow services allow clients to pay vendors periodically based on vendors' performance. For a regular project, payment is broken into three installments: the initial, interim, and final payment. Initial payment is automatically paid at the beginning of the contract, but clients authorize the interim and final payments only when they are satisfied with the deliverables.</p><p>The escrow services also include a recourse service. Clients can request recourse when they are not satisfied with the final output. Simple requests are handled by the transaction counselors. Some requests are more complex, because they involve conflicts and require arbitration. For example, a client may deem that a vendor has failed to provide a service in line with prior agreements, while the vendor claims that they have. Arbitrations are handled by designated committees. The committees include members from ZBJ, the client community, and the vendor community to ensure fair verdicts. ZBJ has built a reputation for fair recourse and arbitration procedures, and this reputation has attracted both clients and vendors. Although the procedures are fair, once a client lodges a recourse request or is involved in an arbitration, they have already lost trust in the vendor. To prevent clients from reaching this stage, ZBJ attempts to resolve conflicts harmoniously before they escalate. We will describe this mechanism in the cooperation phase.</p><p>The second effective IM in the vendor selection phase is a feedback mechanism, which allows potential clients to assess a vendor's integrity. All the clients we interviewed stated that they relied heavily on previous clients' feedback in making purchase decisions. They believed that other clients had no incentive to provide inaccurate information. Many stated that they would not consider a vendor who had no feedback comments or only a few. Feedback also allows clients to assess a vendor's ability. To make assessment more effective, ZBJ links feedback comments to specific projects. According to the head of the transaction counseling department:</p><p>"A website development vendor may be known for her PHP development skills, but may not be good at H5 development. It's important to link comments to specific projects."</p><p>Z4-2</p><p>Given the importance of the feedback, there were cases where vendors created a fake client account to transact with themselves and leave positive reviews. In response, ZBJ imposed severe penalties on such fraud. A vendor's store can be shut down for several months.</p><p>Another IM deployed in this phase is the accreditation system, which ranks vendors on 81 levels. The accreditation is based on a sophisticated methodology that considers nearly all factors related to a vendor's credibility, such as the number of transactions, revenue, customer satisfaction, and number of recourses. However, despite its sophistication, clients still prefer the feedback comments. Many of the clients we interviewed stated that they were less interested in vendors' accreditation than what other clients had said about them. However, when two vendors have received similar feedback comments, clients will choose the one with the higher accreditation level.</p><p>The escrow services, feedback mechanism, and accreditation system build clients' initial trust in unknown vendors and lead clients to the negotiation phase.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Augmenting trust in the negotiation phase</head><p>In this phase, clients negotiate with the chosen vendor concerning deliverables and contract prices. Unlike products, services are customized based on clients' specific requirements and those requirements are often vague and evolving. Uncertainty thus arises. We label the uncertainty arising from vague and evolving requirements requirement uncertainty.</p><p>Several clients stated that the results of more standard services, such as translation and copy editing, were in general predictable and satisfactory. However, the results of services that required more customized requirements were less predictable. One client illustrated this by comparing two projects that he had recently completed. The first was a Quick Response (QR) code development project in which he knew exactly what he wanted and the project specifications were clear. The project was successful, and the final output even exceeded his expectations. The second project was in website development, and he was less certain about the requirements. The vendor he worked with did not help him much in clarifying the requirements, and the final output did not meet his expectations.</p><p>Most clients are not domain experts in the services they purchase. They lack the domain knowledge to clearly articulate their requirements. Many clients start negotiations with a vague requirement, such as "building an excellent website that reflects our company's vision." Because of the vague requirements, clients also find it difficult to assess vendors' proposals. Many clients suspect that the proposals they receive do not address their requirements, but are most profitable for vendors. Moreover, the inability to translate requirements into clear specifications leaves clients concerned about whether vendors have understood them and can think about the project from their perspective. In line with this, some clients prefer to work with vendors in the same city so that they can discuss the requirements in face-to-face meetings.</p><p>Some uncertainty comes from the fact that requirements evolve. For example, many software development clients only have a basic idea at the beginning and lack a clear blueprint. These clients are concerned about whether vendors will be too restrictive in their scope and charge them for every additional change beyond the initial scope. A client looking for a website development service stated:</p><p>"Vendors want us to give them everything clearly so that they can just spend 1 or 2 days to make 1 or 2 thousand RMB. But it's difficult to give all the specifications up front. If I can do so, I probably don't need their help." C2 ZBJ has deployed IMs to reduce requirements uncertainty and to facilitate transaction success. The key IMs include requirements analysis services and contract formation services. ZBJ deploys transaction counselors to help clients produce concrete requirements. Sometimes, adjustments are needed, because the requirements are unrealistic. A transaction counselor for website and software development stated that: "Last week, I was approached by a client who wanted to build an App, but only had a budget of 5 k. A vendor asked for 100 thousand, which was not unreasonable, but the client felt it was outrageous. After analyzing his requirements, I recommended a Wechat corporate account, which was sufficient for his needs and much cheaper" Z13-2</p><p>Moreover, most clients do not have the skills necessary to draft a complete service contract, in the form of a service level agreement (SLA). They do not trust SLAs drafted by vendors either. In this case, ZBJ provides SLA templates which can translate client requirements into SLAs. SLAs are critical to successful transactions. According to a vendor manager:</p><p>"Some vendors don't spend much time on scoping projects. They just rush into an agreement. But later there are all kinds of issues and they may say, 'I cannot do this or that, because you did not mention this before'."</p><p>Z26-1</p><p>Each service type has its own SLA template. The design of the templates benefits from ZBJ's experience in conflict resolution. In areas that are likely to lead to conflicts, the templates request specifications. Take website development as an example. The template requests specific information about the number of pages, the maximum number of concurrent users, the upgrade schedule, and the ownership of source codes. Many first-time clients are not aware of the issue of source code ownership, and most assume that they own the source codes. When clients claim source codes, some vendors request additional payment. This has caused many conflicts. Now, the ownership terms are included in the SLA templates. In this case, clients are better informed and there are fewer conflicts concerning this matter.</p><p>Transaction counselors are also part of the contract formation services. They play an important role in moderating prices. Because services are not standardized, two vendors can propose very different prices. For example, the price for a website development project can range from a few hundred to a few thousand RMB. This makes clients anxious about whether some vendors are taking advantage of them. Transaction counselors monitor contract prices and intervene if a vendor proposes an unreasonable price. These counselors also ensure that contracts have the flexibility to handle future changes. These flexible arrangements are often based on implicit terms, and transaction counselors act as witnesses to those terms.</p><p>The requirements analysis services and contract formation services facilitate vendors in further developing clients' initial trust in them and this augmented trust leads clients to the cooperation phase.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Maintaining trust in the cooperation phase</head><p>Unlike products, services are not readily available for shipment after the contract is signed. They require cooperation between clients and vendors. In this phase, clients face uncertainty about progress. We label this uncertainty about project status and vendor commitment progress uncertainty. Clients feel insecure when they are not aware of a project's status. Many client interviewees stated the importance of being on the same page as vendors. While established service providers have standard updating procedures, small vendors often fall short in this aspect, in particular those founded by college students or fresh college graduates. In our interviews, clients often praised these young service providers for their creativity and enthusiasm, but expressed concern about their lack of professionalism. One client stated that:</p><p>"I once worked with a college student who halted the development for two weeks, because he had an exam to prepare for … But that boy was a very good programmer. He now works for Microsoft."</p><p>C3-2</p><p>Second, clients also have concerns regarding vendors' commitment during project implementation. Several clients reported postcontract shirking. According to ZBJ employees who manage vendors, an important reason for such shirking is that vendors tend to underestimate the workload and take on projects that exceed their capacity. A client who purchased a photo editing service stated that:</p><p>"I once had over 20 pictures that needed to be edited. The first few were edited well, but then the quality started to decline. Later, I learned that the first batch were edited by the director, who then passed the project to a new employee."</p><p>C7-2</p><p>Several IMs have been deployed to reduce progress uncertainty. The key ones include periodical evaluation and harmonious conflict resolution. ZBJ provides clients with an online management tool to monitor project progress. The tool allows clients to establish check-up points and link check-up results to payment. Vendors who fail a check-up will not receive subsequent payments. If a client deems that a project is not going in the intended direction or that the vendor is unable to complete the task, they can cancel the project and stop further payment. When a vendor has failed several check-ups in its portfolio, ZBJ does not allow it to take on new projects and requests it to focus on projects already underway.</p><p>Some clients lack the domain expertise to evaluate progress. Such clients can seek help from transaction counselors. One transaction counselor stated that: "We usually step in at the middle of a project to check whether the vendor has the ability to deliver and whether the deliverables are satisfactory. Before the deadline, we may step in again to prevent issues that may cause conflicts." Z17 Moreover, conflicts are inherent in interorganizational relationships like outsourcing, given the factors of goal divergence and vendors' tendency toward opportunism. If conflicts are not resolved properly, they can damage trust and cause early termination of contracts. There are two types of conflict resolution. One is through arbitration. As mentioned above, once a client reaches this stage, they have already lost trust in the vendor. The other is through harmonious conflict resolution, which aims to form a consensus and achieve mutually a satisfactory resolution <ref type="bibr" target="#b25">(Goo et al., 2009)</ref>. The key to harmonious conflict resolution is mitigating misunderstandings and creating a shared understanding. For example, in software development projects, it is common for a client to request a seemingly trivial change which in fact requires major technical reconfigurations. It is reasonable for a vendor to refuse such a change, but the client may see it as shirking and start to doubt the vendor's commitment. In this case, transaction counselors can act as mediators to resolve the misunderstanding.</p><p>Several transaction counselors used marriage as a metaphor in referring to the cooperation phase and described their role as a marriage counselor. As a marriage counselor, a transaction counselor also encourages clients and vendors to communicate as much as possible to reach a mutual understanding and to avoid misunderstandings. For example, when a client and its vendor have not communicated for a while, a trigger is sent to the responsible transaction counselor, who will then look into it and prevent conflicts from emerging or escalating. According to one senior transaction counselor: "Based on our experience, if a client and a vendor have not talked for a while, it is not a good sign. They are usually not happy with each other, and a conflict will follow if we don't take action. " Z18</p><p>The periodical evaluation and harmonious conflict resolution enable vendors to maintain clients' trust during the cooperation phase. A trusted interorganizational relationship leads to fruitful results and a successful transaction.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Discussion</head><p>In this section, we discuss our findings in light of earlier related work. The discussion serves two purposes. First, it explains how the process model is corroborated by the literature, to show that the model can be generalized beyond this single case. Second, it explains how the process model extends the literature. This section consists of two parts. The first describes the process model of intermediary-based trust development, which consists of IMs that are specific to service transactions. Next, it describes these IMs in detail.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>A process model of intermediary-based trust development</head><p>The process model of intermediary-based trust development and maintenance involves three phases which correspond to the three phases of a service transaction: Vendor selection, negotiation, and cooperation. This model confirms our postulation that a crowdsourcing intermediary should be involved in trust development throughout the entire transaction, rather than solely in the vendor selection phase. This is a major difference between online product markets and online service markets. In online product markets, trust built in the vendor selection phase can lead to the purchasing decision <ref type="bibr" target="#b24">(Gefen et al., 2003;</ref><ref type="bibr" target="#b49">McKnight et al., 2002)</ref>, but in service markets, this initial trust needs to be further augmented before a purchasing decision can be made.</p><p>Although product transactions may also involve negotiation, the negotiation is usually about price haggling, which involves limited uncertainty <ref type="bibr" target="#b53">(Ou et al., 2014)</ref>. In contrast, negotiation in service transactions involves high requirements uncertainty. Research has shown that difficulties in requirements specification are an important source of uncertainty faced by clients <ref type="bibr" target="#b68">(Ye and Kankanhalli, 2015)</ref>. This uncertainty is further accentuated by miscommunication between clients and vendors <ref type="bibr" target="#b59">(Qi and Mao, 2016)</ref>. Also, clients face uncertainty about whether vendors will be too restrictive in the service scope and charge them excessively for changes beyond the initial requirements <ref type="bibr" target="#b38">(Koh et al., 2004)</ref>. Unlike product transactions, many requirements in service transactions are constantly evolving <ref type="bibr" target="#b9">(Conboy, 2009)</ref> and hard to specify accurately and completely upfront. Effectively mitigation of the requirements uncertainty further augments initial trust, and this augmented trust leads to the purchasing decision. Otherwise, requirements uncertainty could disrupt trust development and prevent clients from signing contracts.</p><p>After a contract is signed, clients and vendors start to cooperate. This cooperation phase does not exist in online product purchase, because products are manufactured without clients' involvement. The cooperation phase is also filled with uncertainty, especially when there is no face-to-face communications <ref type="bibr" target="#b30">(Jarvenpaa and Leidner, 1997)</ref>. Our study identifies progress uncertainty, which concerns project status and vendor commitment. This uncertainty has been discussed in the IT outsourcing literature. For example, <ref type="bibr" target="#b44">Liu et al. (2011)</ref> find that many vendors fail to keep their clients informed of progress and lose clients' trust as a result. Similarly, <ref type="bibr" target="#b67">Whitten and Leidner (2006)</ref> find that many clients feel that vendors engage in post-contract shirking and thus lose confidence in vendors' commitment. The mitigation of progress uncertainty maintains the trust built in earlier phases and ensures the final success of the transaction.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>IMs specific to service transactions</head><p>To initiate trust, ZBJ deploys escrow services, a feedback mechanism, and an accreditation system. These IMs have been the subject of prior studies on online product markets <ref type="bibr" target="#b3">(Ba and Pavlou, 2002;</ref><ref type="bibr" target="#b55">Pavlou, 2002;</ref><ref type="bibr" target="#b56">Pavlou and Gefen, 2004)</ref>. The consistency can be explained by the fact that these IMs are deployed to mitigate vendor uncertainty, which is an issue common to both online product and service markets. One nuanced difference is that escrow services are not based on lump-sum payment, as in online product markets <ref type="bibr" target="#b56">(Pavlou and Gefen, 2004)</ref>, but based on installment payment, whereby clients authorize periodical payment when they are satisfied with the periodical deliverables.</p><p>In contrast, IMs deployed in the negotiation and cooperation phases have not previously been addressed in the literature. These IMs are deployed to mitigate requirements and progress uncertainty, which are specific to service transactions. Although these IMs have not been examined in the literature, the ways in which they develop or maintain trust can be corroborated by the literature. As a result, they have the potential to be generalized beyond this single case.</p><p>To mitigate requirements uncertainty, ZBJ deploys requirements analysis services and contract formation services. Although vendors offer requirements analysis, clients may not trust the results. Research has shown that analysis by a neutral third party is considered more trustworthy <ref type="bibr" target="#b43">(Lim et al., 2011)</ref>. These ZBJ services also enable clients to articulate their requirements clearly and reduce misunderstandings between clients and vendors <ref type="bibr" target="#b59">(Qi and Mao, 2016)</ref>. Misunderstandings are a common factor that disrupts trust development <ref type="bibr" target="#b25">(Goo et al., 2009)</ref>. These requirements analysis services also reduce the information asymmetry between clients and vendors, and thus alleviate the principal-agent issue <ref type="bibr" target="#b58">(Pavlou et al., 2007)</ref>. They enable clients to uncover vendors' hidden intentions and to better assess vendors' ability. The former leads to integrity trusting belief and the latter to ability trusting belief <ref type="bibr" target="#b48">(Mayer et al., 1995)</ref>.</p><p>Contract formation services reduce requirements uncertainty by specifying requirements and vendors' responsibilities in SLAs <ref type="bibr" target="#b48">(Mayer et al., 1995)</ref>. Unlike SLAs in offline markets, these SLAs are not enforced by governmental agencies, but by the intermediary itself, which monitors vendors' activities and penalizes activities that deviate from agreements <ref type="bibr" target="#b55">(Pavlou, 2002)</ref>. This is consistent with a prior finding that traditional legal protection is not effective in online markets <ref type="bibr" target="#b56">(Pavlou and Gefen, 2004)</ref>. To ensure that contracts have flexibility and clients are not charged excessively for every change beyond the initial requirements, transaction counselors act as witnesses to the formation of flexible arrangements, which are often based on unwritten, implicit terms, known as "psychological contracts" <ref type="bibr" target="#b38">(Koh et al., 2004)</ref>. By endorsing these psychological contracts, ZBJ provides guarantees to their fulfillment <ref type="bibr" target="#b49">(McKnight et al., 2002)</ref>.</p><p>To mitigate progress uncertainty, ZBJ develops periodical evaluation and harmonious conflict resolution. ZBJ encourages clients to establish multiple check-up points and to pay vendors periodically based on the check-up results. This periodical evaluation is similar to the monitoring services used in online product markets <ref type="bibr" target="#b55">(Pavlou, 2002)</ref>, but differ in that it tracks periodical rather than final deliverables; as a result, it affords clients more control over the process <ref type="bibr" target="#b36">(Kirsch, 2004)</ref>. Transaction counselors also help clients who lack domain expertise to evaluate progress. This is similar to the mediated model of outsourcing, where clients engage thirdparty intermediaries to moderate post-contract execution <ref type="bibr" target="#b46">(Mahnke et al., 2008)</ref>. Periodical evaluation is also a means of sharing timely and meaningful information between vendors and clients. According to <ref type="bibr" target="#b30">Jarvenpaa and Leidner (1997)</ref>, such information sharing promotes trust in the interorganizational relationship.</p><p>In harmonious conflict resolution, transaction counselors serve as mediators who help clients and vendors take each other's perspective and reach a mutual understanding. Research has shown that harmonious conflict resolution promotes trust <ref type="bibr" target="#b25">(Goo et al., 2009)</ref>. This resolution is provided neither by vendors nor clients, as in the literature, but by an intermediary. ZBJ's transaction counselors are able to provide harmonious conflict resolution for two reasons. First, they are third-party referees who are trusted by both clients and vendors. Given that trust can be transferred, clients' trust in the referee can be transferred to vendors <ref type="bibr" target="#b48">(Mayer et al., 1995)</ref>. Second, transaction counselors are ambidextrous employees who have both business domain knowledge and technical knowledge. The literature has shown that these boundary spanners are effective in resolving conflicts and maintaining trust <ref type="bibr" target="#b18">(Du and Pan, 2013;</ref><ref type="bibr" target="#b41">Levina and Vaast, 2008)</ref>. Harmonious conflict resolution enables clients to gain a deeper understanding of vendors which enables them to better control vendors <ref type="bibr" target="#b5">(Carson et al., 2003)</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Conclusions</head><p>We conclude this study by highlighting the theoretical contributions and practical implications of the findings, and by discussing limitations and future research directions.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Theoretical and practical contributions</head><p>The process model of crowdsourcing intermediary-enabled trust development and maintenance is the key contribution of this study. In terms of theoretical contributions, it contributes to the digital entrepreneurship, crowdsourcing, and e-Commerce trust development literature.</p><p>First, our model contributes to the digital entrepreneurship literature by examining the enabling role of intermediaries from a trust development perspective. The literature has recognized that online markets are an important digital infrastructure that enables entrepreneurs. However, extant studies have mainly focused on the entrepreneur perspective and examined how entrepreneurs exploit opportunities afforded by online markets <ref type="bibr" target="#b2">(Avgerou and Li, 2013;</ref><ref type="bibr" target="#b26">Gregg and Walczak, 2008;</ref><ref type="bibr" target="#b40">Leong et al., 2016;</ref><ref type="bibr" target="#b60">Reuber and Fischer, 2010)</ref>, whereas the means by which intermediaries enable entrepreneurship remains obscure. Our model reveals that an intermediary can enable digital entrepreneurship by deploying IMs that initiate, augment, and maintain clients' trust in digital entrepreneurs.</p><p>Second, our model contributes to the crowdsourcing literature by examining how an intermediary develops clients' trust. The extant literature has shown that trust is a major antecedent to clients' intention to engage in crowdsourcing and that intermediaries play an important role in trust development <ref type="bibr" target="#b21">(Feller et al., 2012;</ref><ref type="bibr" target="#b68">Ye and Kankanhalli, 2015;</ref><ref type="bibr" target="#b70">Zogaj et al., 2014)</ref>. However, it is not clear how intermediaries achieve it. Our process model shows that an intermediary can develop and maintain clients' trust in vendors through a three-phase process. Each phase involves a set of IMs that address a specific type of uncertainty. Moreover, the prior literature has treated uncertainty as a unitary construct <ref type="bibr" target="#b68">(Ye and Kankanhalli, 2015)</ref>, but our model divides uncertainty into three types and examines IMs for each. Research has shown that a fine-grained understanding of uncertainty can guide better development of a digital platform <ref type="bibr" target="#b58">(Pavlou et al., 2007)</ref>. In addition, the majority of the crowdsourcing literature has taken either a client or vendor perspective, but overlooked the intermediary perspective <ref type="bibr" target="#b70">(Zogaj et al., 2014)</ref>. Our process model fills this gap. In particular, through the perspective of trust development and maintenance, our process model answers questions about how intermediaries operate <ref type="bibr" target="#b21">(Feller et al., 2012)</ref> and facilitate the crowdsourcing process <ref type="bibr" target="#b68">(Ye and Kankanhalli, 2015)</ref>.</p><p>Third, our model contributes to the e-Commerce trust development literature by extending intermediary-enabled trust development from online product markets to online service markets. Findings regarding the online product markets are mainly based on variance models and focus on IMs that facilitate initial trust formation <ref type="bibr" target="#b3">(Ba and Pavlou, 2002;</ref><ref type="bibr" target="#b24">Gefen et al., 2003;</ref><ref type="bibr" target="#b49">McKnight et al., 2002;</ref><ref type="bibr" target="#b55">Pavlou, 2002;</ref><ref type="bibr" target="#b57">Pavlou and Gefen, 2005)</ref>. They have overlooked trust development and maintenance, which are critical to service transactions. Our process model shows that to ensure successful service transactions, intermediaries initiate, augment, and maintain clients' trust throughout the transaction process. Moreover, the prior literature has mainly focused on IMs that are specific to product transactions <ref type="bibr" target="#b1">(Angelika et al., 2012;</ref><ref type="bibr" target="#b58">Pavlou et al., 2007)</ref>. Our model identifies new IMs that are specific to service transactions and that mitigate two types of uncertainty specific to service transactions. We do not claim that our process model covers all IMs for trust development and maintenance in online service markets. We suggest that an important contribution of our process model is that it offers a new process perspective to explore IMs for trust development.</p><p>In terms of practical implications, our model can benefit three categories of stakeholders in crowdsourcing: Intermediaries, clients, and vendors. First, crowdsourcing intermediaries can use our model to deploy IMs that develop and maintain clients' trust in vendors, and thus create a flourishing online service market. In light of the expanding gig economy, we expect to see more crowdsourcing intermediaries emerge. For example, in Europe, emerging crowdsourcing intermediaries such as Jovoto and Twago are gaining popularity. Also, we expect to see more intermediaries emerging in specialized service areas. One example is Catalent, a crowdsourcing intermediary for high-end management consulting services. These emerging intermediaries still lack established IMs for trust development and maintenance, and will find our model useful. Our model differs from prior trust development models in providing stepwise prescriptions and in covering not only initial trust formation but also the further development and maintenance of that trust in a transaction.</p><p>Second, clients who intend to engage in crowdsourcing can also benefit from our study. They can use our process model to evaluate online service markets and avoid those that do not have effective IMs. Such markets are likely to be filled with lemon sellers and opportunistic behaviors <ref type="bibr">(Akerlof, 1970)</ref>. In contrast to previous e-Commerce trust development studies, our model sensitizes clients to IMs beyond the initial trust formation phase.</p><p>Third and lastly, digital entrepreneurs pursuing opportunities afforded by crowdsourcing intermediaries can also benefit from our findings. Similar to clients, they can use the process model to evaluate online service markets. Joining an online market and building a professional identity within it require a significant amount of time and effort. Therefore, entrepreneurs need to choose a market carefully. Markets with effective IMs for trust development are likely to be sustainable in the long term. In addition, digital entrepreneurs can use our process model as a toolkit to analyze the dynamics of an online service market, and to devise strategies that better leverage the resources of the market <ref type="bibr" target="#b64">(Thomas and Autio, 2012)</ref>. For example, knowing that an intermediary provides contract formation services for trust development, vendors can work closely with those contract formation assistants to gain clients' trust.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Limitations and future research</head><p>Findings of this research must be considered in light of their limitations, which point to important directions for future research. First, the process model is derived from a single case study, which makes statistical generalizability impossible. A fruitful direction for future research is to verify our model across different crowdsourcing intermediaries. Nevertheless, we posit that the model is generalizable at the analytical level <ref type="bibr" target="#b39">(Lee and Baskerville, 2003)</ref>, because its constructs and arguments are corroborated by the literature. Moreover, the focus of such single case study is to generate new theoretical insights, rather than statistical generalizable conclusions.</p><p>Second, the model may not be readily applicable to labor-intensive service markets, such as MTurk. An important reason is that uncertainty in these markets is arguably smaller and different from in the knowledge-intensive markets. For example, on the one hand, clients in MTurk face little requirements uncertainty, because tasks such as data processing and image tagging have clear specifications. Therefore, IMs such as requirements analysis services are not critical, if needed at all. On the other hand, clients in MTurk face uncertainty that does not exist in the knowledge-intensive markets. For example, in image tagging, low-paid service providers often submit arbitrary answers just for the sake of collecting their fee <ref type="bibr" target="#b33">(Karger et al., 2014)</ref>. A future research could investigate how labor-intensive markets, such as MTurk, develop and maintain trust and compare the results with the findings of this study.</p><p>Third and lastly, our study has taken a client perspective on trust development. Although the client perspective dominates the e-Commerce trust development literature, the vendor perspective is also important <ref type="bibr" target="#b62">(Sun, 2010)</ref>. In fact, the vendor perspective is especially important for service transactions, because service vendors are as vulnerable as clients, if not more so. For example, creative outputs such as design and writing can be easily stolen by opportunistic clients <ref type="bibr" target="#b15">(Deng et al., 2016)</ref>; service vendors cannot resell rejected solutions like product vendors reselling returned products, because services are custom-made and not fungible. Moreover, unlike product vendors, service vendors have limited capacity and should only dedicate it to serving trustworthy clients <ref type="bibr" target="#b28">(Horton, 2017)</ref>. Therefore, future research could examine how crowdsourcing intermediaries develop vendors' trust in clients. them? -How do you manage vendors and prevent them from engaging in opportunistic behavior? -What are the major types of conflicts in the cooperation phase, and how do you help resolve them? How do you prevent conflicts from damaging trust?</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Interviews with clients</head><p>-Describe your company and the reason you chose to buy services on ZBJ.</p><p>-How many steps are there in the process of buying a service? How do you know a vendor is reliable and will not cheat you? How does ZBJ help in this regard? How do you know a vendor is capable of doing your job? How does ZBJ help in this regard? -What happens in the negotiation phase? How do you ensure vendors' trustworthiness in this phase? -How do you know vendors will maintain their commitment when the project starts? How does ZBJ help in this respect? Describe a conflict with a vendor, how it was resolved, and your feelings about the resolution.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Interviews with vendors</head><p>-Describe your business and the reason you started selling your services on ZBJ.</p><p>-How is running an offline business on ZBJ different from running an offline business (for vendors who have moved from offline to ZBJ)? How do you work with ZBJ's vendor managers? How do they enable you to gain clients' trust? -How do you develop initial trust with a client? How do you further that initial trust? How do you maintain a client's trust during the implementation phase? How does ZBJ help in each of the phases?</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>Fig. 1 .</head><label>1</label><figDesc>Fig. 1. An example of data analysis.</figDesc><graphic coords="6,59.47,54.94,425.23,231.98" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>Fig. 2 .</head><label>2</label><figDesc>Fig. 2. A process model of developing and maintaining clients' trust through IMs.</figDesc><graphic coords="7,59.47,54.94,425.23,222.62" type="bitmap" /></figure>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Acknowledgements</head><p>This research is supported by the National Natural Science Foundation of China (Project Number: 71402187, 71320107005) and by the National Key Technology R&amp;D Program of China (Project Number: 2015BAH29F00).</p></div>
+			</div>
+
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0" />			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<author>
+			<persName><forename type="first">A</forename><surname>Agrawal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Horton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Lacetera</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Lyons</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">The market for &quot;lemons&quot;: quality uncertainty and the market mechanism</title>
+		<imprint>
+			<date type="published" when="1970">2013. 1970</date>
+			<biblScope unit="volume">84</biblScope>
+			<biblScope unit="page" from="488" to="500" />
+		</imprint>
+	</monogr>
+	<note>Quart. J. Econ.</note>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">On product uncertainty in online markets: theory and evidence</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Angelika</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Hong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">A</forename><surname>Pavlou</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quart</title>
+		<imprint>
+			<biblScope unit="volume">36</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="395" to="426" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Relational and institutional embeddedness of web-enabled entrepreneurial networks: case studies of netrepreneurs in China</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Avgerou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Li</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Inform. Syst. J</title>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="329" to="350" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Evidence of the effect of trust building technology in electronic markets: price premiums and buyer behavior</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Ba</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">A</forename><surname>Pavlou</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quart</title>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="243" to="268" />
+			<date type="published" when="2002">2002</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Using the crowd as an innovation partner</title>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">J</forename><surname>Boudreau</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">R</forename><surname>Lakhani</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Harvard Bus. Rev</title>
+		<imprint>
+			<biblScope unit="volume">91</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="60" to="71" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Information processing moderators of the effectiveness of trust-based governance in interfirm R&amp;D collaboration</title>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">J</forename><surname>Carson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Madhok</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Varman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>John</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Organ. Sci</title>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="45" to="56" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Cocreation of value in a platform ecosystem: the case of enterprise software</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Ceccagnoli</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Forman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">J</forename><surname>Wu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quart</title>
+		<imprint>
+			<biblScope unit="volume">36</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="263" to="290" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Are online labor markets spot markets for tasks? a field experiment on the behavioral response to wage cuts</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Horton</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Inform. Syst. Res</title>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="403" to="423" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Trust development in globally distributed collaboration: a case of U.S. and Chinese mixed teams</title>
+		<author>
+			<persName><forename type="first">X</forename><surname>Cheng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Fu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Druckenmiller</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Manage. Inform. Syst</title>
+		<imprint>
+			<biblScope unit="volume">33</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="978" to="1007" />
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Agility from first principles: reconstructing the concept of agility in information systems development</title>
+		<author>
+			<persName><forename type="first">K</forename><surname>Conboy</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Inform. Syst. Res</title>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="329" to="354" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Grounded theory research: procedures, canons, and evaluative criteria</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">M</forename><surname>Corbin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Strauss</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Qual. Sociol</title>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="3" to="21" />
+			<date type="published" when="1990">1990</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Between trust and control: developing confidence in partner cooperation in alliances</title>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">K</forename><surname>Das</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B.-S</forename><surname>Teng</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Acad. Manage. Rev</title>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="491" to="512" />
+			<date type="published" when="1998">1998</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">The economics and psychology of consumer trust in intermediaries in electronic markets: the EM-trust framework</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Datta</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Chatterjee</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Eur. J. Inform. Syst</title>
+		<imprint>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="12" to="28" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Digital entrepreneurship and its sociomaterial enactment</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>Davidson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Vaast</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Hawaii International Conference on System Sciences</title>
+		<meeting><address><addrLine>Kauai, Hawaii</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">IT and entrepreneurism: an on-again, off-again love affair or a marriage?</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Del Giudice</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">W</forename><surname>Straub</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quart</title>
+		<imprint>
+			<biblScope unit="volume">35</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+	<note>iii-vii</note>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">The duality of empowerment and marginalization in microtask crowdsourcing: giving voice to the less powerful through value sensitive design</title>
+		<author>
+			<persName><forename type="first">X</forename><surname>Deng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">D</forename><surname>Joshi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">D</forename><surname>Galliers</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quart</title>
+		<imprint>
+			<biblScope unit="volume">40</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="279" to="302" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<monogr>
+		<title level="m" type="main">How the gig economy will change in 2017</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Dishman</surname></persName>
+		</author>
+		<ptr target="https://www.fastcompany.com/3066905/how-the-gig-economy-will-change-in-2017" />
+		<imprint>
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Engineering optimal network effects via social media features and seeding in markets for digital goods and services</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Dou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">F</forename><surname>Niculescu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">J</forename><surname>Wu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Inform. Syst. Res</title>
+		<imprint>
+			<biblScope unit="volume">24</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="164" to="185" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Boundary spanning by design: toward aligning boundary-spanning capacity and strategy in IT outsourcing</title>
+		<author>
+			<persName><forename type="first">W</forename><surname>Du</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">L</forename><surname>Pan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Trans. Eng. Manage</title>
+		<imprint>
+			<biblScope unit="volume">60</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="59" to="76" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Building theories from case study research</title>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">M</forename><surname>Eisenhardt</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Acad. Manage. Rev</title>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="532" to="550" />
+			<date type="published" when="1989">1989</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Trust, satisfaction, and online repurchase intention: the moderating role of perceived effectiveness of e-Commerce institutional mechanisms</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Fang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Qureshi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Mccole</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Ramsey</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">H</forename><surname>Lim</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quart</title>
+		<imprint>
+			<biblScope unit="volume">38</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="407" to="427" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Orchestrating&apos; sustainable crowdsourcing: a characterisation of solver brokerages</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Feller</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Finnegan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Hayes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>O'reilly</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Strat. Inform. Syst</title>
+		<imprint>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="216" to="232" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Social interaction via new social media: (how) can interactions on Twitter affect effectual thinking and behavior?</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>Fischer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">R</forename><surname>Reuber</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Bus. Ventur</title>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="1" to="18" />
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Online entrepreneurial communication: mitigating uncertainty and increasing differentiation via twitter</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>Fischer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">R</forename><surname>Reuber</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Bus. Ventur</title>
+		<imprint>
+			<biblScope unit="volume">29</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="565" to="583" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Trust and TAM in online shopping: an integrated model</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Gefen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Karahanna</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">W</forename><surname>Straub</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quart</title>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="51" to="90" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">The role of service level agreements in relational management of information technology outsourcing: an empirical study</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Goo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Kishore</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">R</forename><surname>Rao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Nam</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quart</title>
+		<imprint>
+			<biblScope unit="volume">33</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="119" to="145" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Dressing your online auction business for success: an experiment comparing two eBay businesses</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">G</forename><surname>Gregg</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Walczak</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quart</title>
+		<imprint>
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="653" to="670" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Disconfirmation effect on online rating behavior: a structural model</title>
+		<author>
+			<persName><forename type="first">Y.-C</forename><surname>Ho</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Tan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Inform. Syst. Res</title>
+		<imprint>
+			<biblScope unit="volume">28</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="626" to="642" />
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<monogr>
+		<title level="m" type="main">Buyer Uncertainty about Seller Capacity: Causes, Consequences, and a Partial Solution, Working Paper</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">J</forename><surname>Horton</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2006">2017. 2006</date>
+			<pubPlace>Howe, J.</pubPlace>
+		</imprint>
+	</monogr>
+	<note>The rise of crowdsourcing. Wired Magaz. 14, 6</note>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">Boundary permeability and online-offline hybrid organization: a case study of Suning</title>
+		<author>
+			<persName><forename type="first">J.-S</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">L</forename><surname>Pan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Liu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Inform. Manage</title>
+		<imprint>
+			<biblScope unit="volume">54</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="304" to="316" />
+			<date type="published" when="2017">2017</date>
+			<pubPlace>China</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">Communication and trust in global virtual teams</title>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">L</forename><surname>Jarvenpaa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">E</forename><surname>Leidner</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Organ. Sci</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="791" to="815" />
+			<date type="published" when="1997">1997</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">Emergent ecosystem for radical innovation: entrepreneurial probing at Formula E</title>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">L</forename><surname>Jarvenpaa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Standaert</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Hawaii International Conference on System Sciences</title>
+		<meeting><address><addrLine>Big Island, Hawaii</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Consumer trust in an Internet store</title>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">L</forename><surname>Jarvenpaa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Tractinsky</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Vitale</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Inf. Technol. Manage</title>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="45" to="71" />
+			<date type="published" when="2000">2000</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">Budget-optimal task allocation for reliable crowdsourcing systems</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">R</forename><surname>Karger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Oh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Shah</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Oper. Res</title>
+		<imprint>
+			<biblScope unit="volume">62</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="1" to="24" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<monogr>
+		<title level="m" type="main">The gig economy: the force that could save the American worker</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">F</forename><surname>Kaufman</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+	<note>Wired Mag</note>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">Trust and satisfaction, two stepping stones for successful e-Commerce relationships: a longitudinal exploration</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">J</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">L</forename><surname>Ferrin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">R</forename><surname>Rao</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Inform. Syst. Res</title>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="237" to="257" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">Deploying common systems globally: the dynamics of control</title>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">J</forename><surname>Kirsch</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Inform. Syst. Res</title>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="374" to="395" />
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<analytic>
+		<title level="a" type="main">A set of principles for conducting and evaluating interpretive field studies in information systems</title>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">K</forename><surname>Klein</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">D</forename><surname>Myers</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quart</title>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="67" to="93" />
+			<date type="published" when="1999">1999</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<analytic>
+		<title level="a" type="main">IT outsourcing success: a psychological contract perspective</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Koh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Ang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">W</forename><surname>Straub</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Inform. Syst. Res</title>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="356" to="373" />
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<analytic>
+		<title level="a" type="main">Generalizing generalizability in information systems research</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">S</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">L</forename><surname>Baskerville</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Inform. Syst. Res</title>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="221" to="243" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<analytic>
+		<title level="a" type="main">The emergence of self-organizing E-commerce ecosystems in remote villages of China: a tale of digital empowerment for rural development</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">L</forename><surname>Leong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">L</forename><surname>Pan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Newell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">L</forename><surname>Cui</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quart</title>
+		<imprint>
+			<biblScope unit="volume">40</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="475" to="484" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<analytic>
+		<title level="a" type="main">Innovating or doing as told? status differences and overlapping boundaries in offshore collaboration</title>
+		<author>
+			<persName><forename type="first">N</forename><surname>Levina</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Vaast</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quart</title>
+		<imprint>
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="307" to="332" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+	<analytic>
+		<title level="a" type="main">Developing and maintaining trust in work relationships</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">J</forename><surname>Lewicki</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">B</forename><surname>Bunker</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Trust in Organizations: Frontiers of Theory and Research</title>
+		<editor>
+			<persName><forename type="first">R</forename><forename type="middle">M</forename><surname>Kramer</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">T</forename><forename type="middle">R</forename><surname>Tyler</surname></persName>
+		</editor>
+		<meeting><address><addrLine>Sage, Thousand Oaks: CA</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="1996">1996</date>
+			<biblScope unit="page" from="114" to="139" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b43">
+	<analytic>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">T K</forename><surname>Lim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">W</forename><surname>Tan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Cyr</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">L</forename><surname>Pan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Xiao</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Advancing public trust relationships in electronic government: the Singapore e-filing journey</title>
+		<imprint>
+			<date type="published" when="2011">2011</date>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="page" from="1110" to="1130" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b44">
+	<analytic>
+		<title level="a" type="main">The effects of project uncertainty and risk management on IS development project performance: a vendor perspective</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Q</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Q</forename><surname>Ma</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Int. J. Project Manage</title>
+		<imprint>
+			<biblScope unit="volume">29</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="923" to="933" />
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b45">
+	<analytic>
+		<title level="a" type="main">Trust production and privacy concerns on the Internet: a framework based on relationship marketing and social exchange theory</title>
+		<author>
+			<persName><forename type="first">X</forename><surname>Luo</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Ind. Mark. Manage</title>
+		<imprint>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="111" to="118" />
+			<date type="published" when="2002">2002</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b46">
+	<analytic>
+		<title level="a" type="main">Offshore middlemen: transnational intermediation in technology sourcing</title>
+		<author>
+			<persName><forename type="first">V</forename><surname>Mahnke</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Wareham</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Bjorn-Andersen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Inform. Technol</title>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="18" to="30" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b47">
+	<analytic>
+		<title level="a" type="main">Towards an information systems perspective and research agenda on crowdsourcing for innovation</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Majchrzak</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Malhotra</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Strat. Inform. Syst</title>
+		<imprint>
+			<biblScope unit="volume">22</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="257" to="268" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b48">
+	<analytic>
+		<title level="a" type="main">An integrative model of organizational trust</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">C</forename><surname>Mayer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">H</forename><surname>Davis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><forename type="middle">D</forename><surname>Schoorman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Acad. Manage. Rev</title>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="709" to="734" />
+			<date type="published" when="1995">1995</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b49">
+	<analytic>
+		<title level="a" type="main">Developing and validating trust measures for e-Commerce: an integrative typology</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">H</forename><surname>Mcknight</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Choudhury</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Kacmar</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Inform. Syst. Res</title>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="334" to="359" />
+			<date type="published" when="2002">2002</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b50">
+	<analytic>
+		<title level="a" type="main">A process model of capability development: lessons from the electronic commerce strategy at Bolsa de Valores de Guayaquil</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Montealegre</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Organ. Sci</title>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="514" to="531" />
+			<date type="published" when="2002">2002</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b51">
+	<monogr>
+		<title level="m" type="main">Digital entrepreneurship: toward a digital technology perspective of entrepreneurship. Entrepreneurship Theory Pract</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Nambisan</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2017">2017</date>
+			<biblScope unit="volume">41</biblScope>
+			<biblScope unit="page" from="1029" to="1055" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b52">
+	<monogr>
+		<title level="m" type="main">Entrepreneurship in innovation ecosystems: entrepreneurs&apos; self-regulatory processes and their implications for new venture success</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Nambisan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">A</forename><surname>Baron</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2013">2013</date>
+			<biblScope unit="volume">37</biblScope>
+			<biblScope unit="page" from="1071" to="1097" />
+		</imprint>
+	</monogr>
+	<note type="report_type">Entrepreneurship Theory Pract</note>
+</biblStruct>
+
+<biblStruct xml:id="b53">
+	<analytic>
+		<title level="a" type="main">Swift guanxi in online marketplaces: the role of computer-mediated communication technologies</title>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">X</forename><surname>Ou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">A</forename><surname>Pavlou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">M</forename><surname>Davison</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quart</title>
+		<imprint>
+			<biblScope unit="volume">38</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="209" to="230" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b54">
+	<analytic>
+		<title level="a" type="main">Demystifying case research: a structured-pragmatic-situational (SPS) approach to conducting case studies</title>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">L</forename><surname>Pan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">C C</forename><surname>Tan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Inf. Organ</title>
+		<imprint>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="161" to="176" />
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b55">
+	<analytic>
+		<title level="a" type="main">Institution-based trust in interorganizational exchange relationships: the role of online B2B marketplaces on trust formation</title>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">A</forename><surname>Pavlou</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Strat. Inform. Syst</title>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="215" to="243" />
+			<date type="published" when="2002">2002</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b56">
+	<analytic>
+		<title level="a" type="main">Building effective online marketplaces with institution-based trust</title>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">A</forename><surname>Pavlou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Gefen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Inform. Syst. Res</title>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="37" to="59" />
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b57">
+	<analytic>
+		<title level="a" type="main">Psychological contract violation in online marketplaces: antecedents, consequences, and moderating role</title>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">A</forename><surname>Pavlou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Gefen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Inform. Syst. Res</title>
+		<imprint>
+			<biblScope unit="volume">16</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="372" to="399" />
+			<date type="published" when="2005">2005</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b58">
+	<analytic>
+		<title level="a" type="main">Understanding and mitigating uncertainty in online exchange relationships: a principal-agent perspective</title>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">A</forename><surname>Pavlou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Liang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Xue</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quart</title>
+		<imprint>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="105" to="136" />
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b59">
+	<analytic>
+		<title level="a" type="main">Facilitating transactions on a crowdsourcing platform: a cognitive frame perspective</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Qi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">Y</forename><surname>Mao</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">International Conference on Information Systems</title>
+		<meeting><address><addrLine>Dublin, Ireland</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b60">
+	<analytic>
+		<title level="a" type="main">Signalling reputation in international online markets</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">R</forename><surname>Reuber</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Fischer</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Strat. Entrepreneurship J</title>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="369" to="386" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b61">
+	<analytic>
+		<title level="a" type="main">The gig economy: pioneering the future</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Shadpour</surname></persName>
+		</author>
+		<ptr target="https://www.forbes.com/sites/forbesagencycouncil/2018/01/19/the-gig-economy-pioneering-the-future/&gt;" />
+	</analytic>
+	<monogr>
+		<title level="j">Forbes</title>
+		<imprint>
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b62">
+	<analytic>
+		<title level="a" type="main">Sellers&apos; trust and continued use of online marketplaces</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Sun</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Assoc. Inform. Syst</title>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="182" to="211" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b63">
+	<monogr>
+		<title level="m" type="main">The &apos;gig economy&apos; is coming. What will it mean for work? The Guardian</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Sundararajan</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b64">
+	<monogr>
+		<title level="m" type="main">Modeling the ecosystem: a meta-synthesis of ecosystem and related literatures, DRUID Conference</title>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">D W</forename><surname>Thomas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Autio</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2012">2012</date>
+			<pubPlace>Copenhagen, Denmark</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b65">
+	<analytic>
+		<title level="a" type="main">Information systems backsourcing: correcting problems and responding to opportunities</title>
+		<author>
+			<persName><forename type="first">N</forename><forename type="middle">F</forename><surname>Veltri</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">S</forename><surname>Saunders</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">B</forename><surname>Kavan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">California Manage. Rev</title>
+		<imprint>
+			<biblScope unit="volume">51</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="50" to="76" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b66">
+	<analytic>
+		<title level="a" type="main">Doing interpretive research</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Walsham</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Eur. J. Inform. Syst</title>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="320" to="330" />
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b67">
+	<analytic>
+		<title level="a" type="main">Bringing IT back: an analysis of the decision to backsource or switch vendors</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Whitten</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">E</forename><surname>Leidner</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Decis. Sci</title>
+		<imprint>
+			<biblScope unit="volume">37</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="605" to="621" />
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b68">
+	<analytic>
+		<title level="a" type="main">Investigating the antecedents of organizational task crowdsourcing</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Ye</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Kankanhalli</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Inform. Manage</title>
+		<imprint>
+			<biblScope unit="volume">52</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="98" to="110" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b69">
+	<analytic>
+		<title level="a" type="main">Dynamics of trust revision: using health infomediaries</title>
+		<author>
+			<persName><forename type="first">F</forename><surname>Zahedi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Song</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Manage. Inform. Syst</title>
+		<imprint>
+			<biblScope unit="volume">24</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="225" to="248" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b70">
+	<analytic>
+		<title level="a" type="main">Managing crowdsourced software testing: a case study based insight on the challenges of a crowdsourcing intermediary</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Zogaj</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">U</forename><surname>Bretschneider</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">M</forename><surname>Leimeister</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Bus. Econ</title>
+		<imprint>
+			<biblScope unit="volume">84</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="375" to="405" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

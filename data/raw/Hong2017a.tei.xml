@@ -1,0 +1,2212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">On Buyer Selection of Service Providers in Online Outsourcing Platforms for IT Services</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+				<date type="published" when="2017-04-20">April 20, 2017</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Yili</forename><surname>Hong</surname></persName>
+							<email>hong@asu.edu</email>
+						</author>
+						<author>
+							<persName><forename type="first">Paul</forename><forename type="middle">A</forename><surname>Pavlou</surname></persName>
+							<email>pavlou@temple.edu</email>
+							<affiliation key="aff1">
+								<orgName type="department">Fox School of Business</orgName>
+								<orgName type="institution">Temple University</orgName>
+								<address>
+									<postCode>19122</postCode>
+									<settlement>Philadelphia</settlement>
+									<region>Pennsylvania</region>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">W</forename><forename type="middle">P</forename><surname>Carey</surname></persName>
+						</author>
+						<author>
+							<affiliation key="aff0">
+								<orgName type="department">School of Business</orgName>
+								<orgName type="institution">Arizona State University</orgName>
+								<address>
+									<postCode>85287</postCode>
+									<settlement>Tempe</settlement>
+									<region>Arizona</region>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">On Buyer Selection of Service Providers in Online Outsourcing Platforms for IT Services</title>
+					</analytic>
+					<monogr>
+						<idno type="ISSN">1047-7047 (print)</idno>
+						<imprint>
+							<date type="published" when="2017-04-20">April 20, 2017</date>
+						</imprint>
+					</monogr>
+					<idno type="MD5">8951D09F9A7D11E1BDEA3DDA0CBEC2F9</idno>
+					<idno type="DOI">10.1287/isre.2017.0709</idno>
+					<note type="submission">Received: June 17, 2015 Revised: July 11, 2016; November 8, 2016 Accepted: December 19, 2016</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.7.3" ident="GROBID" when="2023-06-16T09:24+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>Il-Horn Hann, Senior Editor; Sunil Mithas, Associate Editor online outsourcing platforms</term>
+					<term>IT services</term>
+					<term>country differences</term>
+					<term>country IT development</term>
+					<term>reputation</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>The Internet has presumably created a level playing field that allows any service provider across the globe to compete for contracts on online outsourcing platforms for information technology (IT) services. In this paper, we empirically examine (a) how country (language, time zone, cultural) differences and the country's IT development affect buyers' selection of service providers in online outsourcing platforms; and (b) how the reputation of service providers moderates the proposed effects of country differences and the country's IT development. We integrated a unique data set formed by a sample of 11,541 software development projects from an online outsourcing platform matched with archival sources on the language, time zone, culture, and IT development of countries. Since price is typically endogenous in any supply demand system, we used the exogenous variation of the normalized exchange rate of the currency among countries, as a "cost-shifter" type instrumental variable (IV) for econometric identification. Our panel data analyses results (both with and without IV) show that buyers are negatively affected by country differences in terms of language, time zone, and culture, and prefer service providers from countries with higher IT development. Notably, the reputation of service providers attenuates the negative effects of language and cultural (but not time zone) differences, while it substitutes the positive effect of the country's IT development. We discuss the study's theoretical and managerial implications for understanding the global dynamics of online outsourcing platforms and better designing these platforms.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.">Introduction</head><p>Online outsourcing platforms (also known as "online labor markets") are Internet-enabled systems that bring together service providers and buyers 1 from around the world to contract information technology (IT) services, such as software development. Because of the Internet's ubiquitous access, online outsourcing platforms, such as Freelancer, eLance, and oDesk, emerged as a viable means for outsourcing IT services across the globe. As early as 1998, an article featured in the Harvard Business Review by <ref type="bibr" target="#b63">Malone and Laubacher (1998)</ref> had envisioned the "gig economy," 2 alluding to the proliferation of online outsourcing platforms. 3  Besides attracting attention from the popular media, online outsourcing platforms have also received academic attention, with a central focus on how the individual reputation of service providers offered by their feedback ratings (through the reputation system) (e.g., <ref type="bibr" target="#b60">Lin et al. 2016</ref><ref type="bibr" target="#b52">, Kokkodis and Ipeirotis 2015</ref><ref type="bibr" target="#b70">, Moreno and Terwiesch 2014</ref><ref type="bibr" target="#b100">, Yoganarasimhan 2013</ref>) affect the buyers' selection of service providers.</p><p>As the majority of online outsourcing platforms follow a buyer-determined, reverse auction mechanism <ref type="bibr" target="#b45">(Hong et al. 2016)</ref>, the buyers' selection of service providers is a major step in the outsourcing process. When making a selection, because of the geographically distributed environment, unfamiliar service providers, and the complexity of software development, buyers are unable to perfectly assess the service providers' functional competency to manage the software development process and their technical competency to ensure software quality <ref type="bibr">(Grönroos 1984, Malone and</ref><ref type="bibr" target="#b62">Crowston 1994)</ref>. While some have asserted that online outsourcing platforms provide ubiquitous access with no geographical constraints <ref type="bibr" target="#b33">(Friedman 2007)</ref>, country differences still matter in many contexts such as prosocial lending <ref type="bibr" target="#b19">(Burtch et al. 2014)</ref>, bank loans <ref type="bibr" target="#b37">(Giannetti and Yafeh 2012)</ref>, and outsourcing <ref type="bibr" target="#b72">(Nakatsu and Iacovou 2009)</ref>. In the context of this study-online outsourcing platforms for IT services-any service provider across the globe could bid to offer IT services. On one hand, like other online markets, online outsourcing platforms reduce search costs that buyers would likely incur offline (e.g., <ref type="bibr">Forman et al. 2009, Hann and</ref><ref type="bibr" target="#b41">Terwiesch 2003)</ref>. On the other hand, online outsourcing platforms inevitably lead to country differences between buyers Information Systems <ref type="bibr">Research, 2017</ref><ref type="bibr">, vol. 28, no. 3, pp. 547-562, © 2017 INFORMS</ref> and service providers (herein termed "buyer-service provider country differences"), such as language, time zone, and culture, which makes it challenging for service providers and buyers to work together <ref type="bibr" target="#b43">(Herbsleb and Grinter 1999)</ref>. This is because language, time zone, and cultural differences may undermine the service providers' functional competency to communicate and coordinate effectively in IT projects. Since service providers come from countries with different levels of IT development in terms of IT infrastructure and IT access (herein termed "country IT development"), they could be perceived to possess different levels of technical competency. This leads to a country-level IT reputation effect, such that buyers may view service providers from countries with a higher level of IT development to possess a higher technical competency. Therefore, it is not clear whether online outsourcing platforms are level playing fields where worthy service providers are denied contracts because of the IT reputation of their country <ref type="bibr" target="#b55">(Leamer 2007)</ref>. In sum, besides the factors of bid price and the individual reputation of service providers on which the literature has focused and for which we control (e.g., <ref type="bibr" target="#b9">Ba and Pavlou 2002</ref><ref type="bibr" target="#b52">, Kokkodis and Ipeirotis 2015</ref><ref type="bibr" target="#b70">, Moreno and Terwiesch 2014</ref><ref type="bibr" target="#b60">, Lin et al. 2016</ref><ref type="bibr" target="#b100">, Yoganarasimhan 2013)</ref>, we have a limited understanding of the buyerservice provider country differences and the service providers' country IT development as important determinants of the buyers' selection of service providers in online outsourcing platforms (besides price, quality, and reputation). Notably, extending prior research that has found that the individual reputation of service providers may help to address the information asymmetry that plagues online outsourcing platforms <ref type="bibr" target="#b75">(Pavlou et al. 2007)</ref>, in this study, we seek to examine whether the service providers' individual reputation moderates the proposed effects of country differences and the country's IT development on the buyers' selection of service providers. Accordingly, in this study, we seek to answer the following research questions:</p><p>(a) How do country differences-language, time zone, and cultural-between buyers and service providers affect the buyers' selection decision of service providers in online outsourcing platforms?</p><p>(</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>b) How does the service provider's level of country IT development affect the buyer's selection decision? (c) How does the service provider's individual reputation moderate the effects of country differences and the service provider's level of country IT development on the buyers' selection of service providers?</head><p>To answer these research questions and guide our empirical examination, we integrated the literature on IT outsourcing and software development services with the emerging literature on online outsourcing platforms to propose a set of hypotheses on the effects of country differences (language, time zone, cultural) and country IT development, and the moderating role of the service providers' reputation on the proposed direct effects. Utilizing a proprietary database of a leading online outsourcing platform, we directly observe buyers' selection decisions of service providers. We merged the proprietary database with a number of publicly available data sets, namely, the GeoDist Database, the CIA World Factbook, the International Telecommunication Union, the World Value Survey, the International Monetary Fund (IMF), and the World Economic Forum, to construct an integrated panel data set. To address potential endogeneity from the bid price of service providers, our econometric identification hinges on the exogenous variation of the normalized exchange rate of different currencies against the U.S. dollar as a "cost-shifter" type of instrumental variable <ref type="bibr">(IV)</ref>. With this IV approach, we estimated the effects of country differences and country IT development on the buyers' selection decision. The results show that buyers avoid all three proposed country differences (language, time zone, and cultural) with service providers, while they prefer service providers from countries with a high level of IT development. Finally, the individual reputation of service providers attenuates the negative effects of language and cultural (but not time zone) differences, while it attenuates the positive effect of country IT development on buyers' selection of service providers.</p><p>This paper makes three contributions. First, it contributes to the IT outsourcing literature by empirically evaluating whether global online outsourcing platforms are a level playing field. Second, it contributes to the emerging literature on country differences by conceptualizing that country differences undermine the service providers' functional competency and empirically showing their negative effects on buyer selection. Third, the study shows the moderating role of service providers' individual reputation to (a) attenuate the observed negative effect of language and cultural (but not time zone) differences, and (b) to attenuate the observed positive effect of the service providers' country IT development. These findings provide theoretical implications for understanding the nature and global dynamics of online outsourcing platforms and practical implications for designing effective online outsourcing platforms.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.">Background and Related Literature</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.1.">Study Context</head><p>Online outsourcing platforms for IT services, such as Freelancer (www.freelancer.com) and Upwork (www .upwork.com), serve as online intermediaries that bring together buyers and service providers for small to medium sized IT service projects, such as software development. Our corporate partner is a leading online outsourcing platform that uses buyer-determined reverse auctions, a mechanism where buyers Downloaded from informs.org by <ref type="bibr">[132.199.43.252</ref>] on 07 October 2017, at 11:57 . For personal use only, all rights reserved. solicit bids from service providers to complete an IT service for a certain price and promised quality (e.g., <ref type="bibr" target="#b8">Asker and Cantillon 2010)</ref>. When the auction ends, the buyer evaluates the service providers' bid prices and nonprice attributes, such as their prior work, feedback ratings, and residing country, and decides on which service provider to select (award the contract). The platform maintains a reputation system, which keeps track of the feedback ratings that service providers had received from buyers in previous projects. Interested readers can read a detailed description of the research site in Online Appendix 1.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.2.">Software Development Services</head><p>Research on services dates back to the 18th century <ref type="bibr" target="#b83">(Smith 1776)</ref>. Academic scholars have conjectured the everincreasing importance of services in the industrial economy (e.g., <ref type="bibr" target="#b21">Chandler 1977</ref><ref type="bibr" target="#b24">, Clark 1967</ref>). Today's economy has even been characterized as a "services economy" <ref type="bibr" target="#b97">(Vargo and Lusch 2004)</ref>, especially as productivity growth is fueled by IT services (e.g., <ref type="bibr" target="#b17">Brynjolfsson and McAfee 2011)</ref>. By reviewing the literature on services, <ref type="bibr">Chase and Apte (2007, p. 380</ref>), concluded, "service performances cannot be guaranteed since they are generally delivered by human beings who are known to be less predictable than machines." Software development services add another layer of complexity on services (e.g., <ref type="bibr" target="#b13">Banker et al. 1998, Banker and</ref><ref type="bibr" target="#b12">Slaughter 2000)</ref> because they are cocreated by service providers and buyers <ref type="bibr" target="#b53">(Kristensson et al. 2008</ref>) and typically require multiple iterations in the development process <ref type="bibr" target="#b54">(Larman and Basili 2003)</ref>. This additional layer of complexity requires that the buyer and the service provider effectively communicate and coordinate to successfully complete a project. Compared to commodity products, software development services are more idiosyncratic, complex, and intractable (e.g., <ref type="bibr" target="#b84">Snir and Hitt 2003)</ref>, noncontractible (e.g., <ref type="bibr">Brynjolfsson and</ref><ref type="bibr">Smith 2000, Mithas and</ref><ref type="bibr" target="#b69">Krishnan 2008)</ref>, with highly variable quality (e.g., <ref type="bibr" target="#b80">Rust et al. 1999)</ref>, and are often highly customized (e.g., <ref type="bibr" target="#b60">Lin et al. 2016)</ref> since they involve specific configurations to match a buyer's specific needs (e.g., <ref type="bibr" target="#b93">Susarla and Barua 2011)</ref>. Similarly, in contrast to the sales of commodity products in online markets (e.g., eBay or Amazon) that can be easily contracted on product descriptions, condition, and warranties, service quality has two distinct dimensionstechnical quality and functional quality (e.g., <ref type="bibr" target="#b39">Grönroos 1984</ref>)-which cannot be perfectly described ex ante (e.g., <ref type="bibr" target="#b85">Spence 1973)</ref>, nor easily contracted upon (e.g., <ref type="bibr" target="#b10">Bakos and Brynjolfsson 1993)</ref>. Noncontractible technical quality refers to the service providers' technical competency, such as their coding and programming skills; on the other hand, noncontractible functional quality refers to service providers' functional competency in managing the iterative development process, such as their responsiveness in communication and coordination.</p><p>Our study is also informed by the extensive information systems (IS) literature on IT outsourcing (e.g., <ref type="bibr" target="#b5">Ang and Straub 1998</ref><ref type="bibr" target="#b68">, Mithas and Jones 2007</ref><ref type="bibr" target="#b78">, Ravindran et al. 2015</ref><ref type="bibr" target="#b92">, Susarla 2012</ref><ref type="bibr" target="#b94">, Susarla et al. 2010</ref>), which has placed much emphasis on the antecedents and consequences of transaction costs and contract design. Furthermore, we rely on the literature on distributed software development (e.g., <ref type="bibr" target="#b1">Agerfalk et al. 2009</ref><ref type="bibr" target="#b25">, Cummings et al. 2009</ref><ref type="bibr" target="#b51">, King and Torkzadeh 2008)</ref>, which has primarily focused on coordination challenges in geographically distributed development teams. Thus, software development in the context of online outsourcing platforms is at the intersection of these two literatures, and provides a unique context to extend both literatures.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.3.">Emerging Literature on Online</head><p>Outsourcing Platforms The emerging literature on online outsourcing platforms has primarily focused on addressing the information asymmetry between the buyers and the service providers, as the geographical dispersion between buyers and service providers renders online outsourcing platforms susceptible to deteriorating into markets of "lemons" due to adverse selection (lack of ex ante face-to-face screening) and moral hazard (lack of ex post monitoring) <ref type="bibr" target="#b2">(Akerlof 1970)</ref>. Mechanisms that mitigate asymmetric information, such as reputation, are prevalent topics in published studies (e.g., <ref type="bibr" target="#b11">Banker and Hwang 2008</ref><ref type="bibr" target="#b52">, Kokkodis and Ipeirotis 2015</ref><ref type="bibr" target="#b70">, Moreno and Terwiesch 2014</ref><ref type="bibr" target="#b60">, Lin et al. 2016</ref><ref type="bibr" target="#b100">, Yoganarasimhan 2013)</ref> and also in working papers (e.g., <ref type="bibr" target="#b82">Scholz and</ref><ref type="bibr">Haas 2011, Mill 2011)</ref>. Other studies modeled the role of online outsourcing platforms to facilitate communication among buyers and service providers <ref type="bibr" target="#b4">(Allon et al. 2012)</ref>, enable different auction designs (e.g., <ref type="bibr" target="#b45">Hong et al. 2016)</ref>, and assess the service providers' decision to use third-party certifications (e.g., <ref type="bibr" target="#b59">Lin and Goes 2012)</ref>. Finally, since a key function of online outsourcing platforms is to match buyers with service providers <ref type="bibr" target="#b46">(Horton 2015)</ref>, conventional wisdom notes that online outsourcing platforms reduce search or transaction costs <ref type="bibr">(Friedman 2007, Malone and</ref><ref type="bibr" target="#b63">Laubacher 1998)</ref>. The global reach of these online outsourcing platforms, however, naturally creates differences across countries that may lead to practical challenges for buyers and service providers to communicate and coordinate effectively. However, extant studies largely ignored the country differences in online outsourcing platforms, which poses a literature gap that this study seeks to fill. In terms of country differences, prior research has offered fragmented evidence on their effects in various business contexts. For example, <ref type="bibr" target="#b19">Burtch et al. (2014)</ref> studied the interaction between Downloaded from informs.org by <ref type="bibr">[132.199.43.252</ref>] on 07 October 2017, at 11:57 . For personal use only, all rights reserved.</p><p>Information Systems <ref type="bibr">Research, 2017</ref><ref type="bibr">, vol. 28, no. 3, pp. 547-562, © 2017 INFORMS</ref> geographical and cultural differences in prosocial lending. Other factors, such as time zone and language differences, have also been proposed (e.g., <ref type="bibr">Gefen and</ref><ref type="bibr">Carmel 2008, Nakatsu and</ref><ref type="bibr" target="#b72">Iacovou 2009)</ref>. Country differences exacerbate impediments in requirements specification, communication, coordination, and the effective management of buyer-service provider interdependencies <ref type="bibr" target="#b62">(Malone and Crowston 1994)</ref>, which are important in predicting the success of software development projects <ref type="bibr" target="#b28">(Dibbern et al. 2008)</ref>. Extending the emerging literature on country differences, we seek to comprehensively examine three major dimensions of country differences and potential global frictions, and whether the service providers' individual reputation could overcome their negative effects on the buyers' selection of service providers.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.">Hypotheses Development</head><p>Integrating the emerging literature on country differences (e.g., <ref type="bibr" target="#b19">Burtch et al. 2014</ref><ref type="bibr" target="#b34">, Gefen and Carmel 2008</ref><ref type="bibr" target="#b37">, Giannetti and Yafeh 2012)</ref> and the literature on service quality (e.g., <ref type="bibr" target="#b39">Grönroos 1984)</ref>, we focus on two distinct dimensions of service providers' competencies that determine the buyers' selection criteria: technical competency and functional competency. 4 First, the service provider's technical competency is essential to ensure the end result (e.g., the usability of the software) to be satisfactory to the buyer, as software development services are complex and specialized. Second, the provider's functional competency in managing the iterative software development process has an impact on the service quality perceptions (e.g., <ref type="bibr" target="#b91">Surprenant and Solomon 1987</ref><ref type="bibr" target="#b16">, Bitner et al. 1994</ref><ref type="bibr" target="#b42">, Hartline and Ferrell 1996)</ref> because buyers need to expend considerable time and effort in working with the service provider during the software development process (e.g., reviewing prototypes, providing feedback), especially with agile development approaches <ref type="bibr" target="#b65">(Martin 2003)</ref>. Below, we propose how the country (language, time zone, and cultural) differences among buyers and service providers and the level of IT development of the service provider's country affect the buyers' selection of service providers in online outsourcing platforms by shaping their expectations of the service providers' functional competency and technical competency, respectively.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.1.">Buyer-Service Provider Country Differences</head><p>We now theorize the effects of buyer-service provider country differences on the buyer's selection. Following the emerging literature on country differences (e.g., <ref type="bibr" target="#b19">Burtch et al. 2014</ref><ref type="bibr" target="#b35">, Ghemawat 2013</ref><ref type="bibr" target="#b72">, Nakatsu and Iacovou 2009)</ref>, we propose three country differences: language, time zone, and culture.</p><p>First, language barriers may impose hurdles in effective communication between service providers and buyers during the software development process. Accurate and proper use of language in communications (e.g., emails, teleconferences) can eliminate ambiguity, reduce communication costs, and avoid redundant work. As the ubiquitous access of the Internet has allowed service providers from around the world to participate in the same online outsourcing platform, often service providers and buyers from different countries speak different languages. As substantial communication is involved in the iterative software development process <ref type="bibr" target="#b54">(Larman and Basili 2003)</ref> and language is the necessary medium of communication, it appears logical to propose that language difference would lead to a loss of efficiency in the software development process. The reality is that, even if the service provider does possess professional proficiency in the buyer's primary language, the language difference might still lead to a loss of the service provider's functional competency perceived by the buyer, and consequently, affect buyers' selection decision.</p><p>Second, because of geographical separation, the difference in time zones in which the service providers and the buyers physically reside may lead to expected transaction costs in the software development process <ref type="bibr" target="#b5">(Ang and Straub 1998)</ref>. As most firms have fixed working hours (e.g., 9 . . to 5 . .), time zone differences naturally impose coordination challenges for service providers and buyers because of temporal boundaries that prevent synchronized communication for integral routines of the iterative software development process, such as conference calls for updates, feedback, and sudden changes in requirements. For example, an Indian service provider cannot easily work during the same hours as a buyer in the United States, thus creating challenges for the buyer and increasing her transaction costs. Even with asynchronous communication technologies, such as email, which allow buyers and service providers to interact intermittently, coordination challenges in countries with nonoverlapping work hours cannot be easily overcome <ref type="bibr" target="#b25">(Cummings et al. 2009)</ref>. Therefore, time zone difference is likely to lead to a perceived loss of functional competency of service providers to effectively manage the coordination of the development process, thus potentially affecting a buyer's selection.</p><p>Third, because culture is typically internalized by individuals in context-specific knowledge structures <ref type="bibr" target="#b38">(Gilbert 1991</ref><ref type="bibr" target="#b71">, Morris and Fu 2001</ref><ref type="bibr" target="#b90">, Su 2015)</ref>, buyers and service providers from different cultures are likely to have challenges in effectively working together as they may not share the same practices and norms <ref type="bibr" target="#b79">(Rogers and Bhowmik 1970)</ref>. For example, compared with service providers from individualist countries, service providers from countries that promote high conformism would need the upfront requirements specifications to be very detailed; accordingly, such Downloaded from informs.org by <ref type="bibr">[132.199.43.252</ref>] on 07 October 2017, at 11:57 . For personal use only, all rights reserved. cultural differences may increase specification effort <ref type="bibr" target="#b28">(Dibbern et al. 2008)</ref>. Also, negotiation and information gathering are important aspects of precontractual activities because of the complexity of software development. Cultural differences could make negotiations more cumbersome <ref type="bibr" target="#b37">(Giannetti and Yafeh 2012)</ref> and reduce trust <ref type="bibr" target="#b76">(Rai et al. 2009)</ref> between service providers and buyers, increasing the cost of contracting and information gathering. Cultural differences are thus also likely to lead to a perceived loss of functional competency of service providers and affect buyers' selection.</p><p>In sum, these three proposed country differences (time zone, language, and cultural) between buyers and service providers could undermine the buyers' perceived functional competency of service providers, specifically in terms of their ability to effectively negotiate, communicate, and coordinate with the buyers in the software development process. Therefore, we propose the following hypothesis for testing:</p><p>Hypothesis 1 (H1). Buyers prefer service providers with small country differences, specifically (a) language difference, (b) time zone difference, and (c) cultural difference.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2.">Country IT Development</head><p>We propose that variations in the IT development of the service providers' residing countries affect the buyer's selection decisions. Adopting the World Economic Forum's conceptualization, we define the country IT development as the economic development that focuses on the country's IT infrastructure, its citizen's access to IT, and their overall IT skills <ref type="bibr" target="#b30">(Dutta et al. 2015)</ref>. Country IT development may indicate the countrylevel reputation for technical competency based on the following rationale: First, IT development at the country level reflects the country's overall IT infrastructure. Service providers in countries with higher IT development may benefit from easier access to advanced IT infrastructure, and they are expected to deliver higher quality IT services. Second, it is well known that countries have different qualities in terms of IT education and training, and countries with higher IT development generally have earlier and higher quality IT education, which enables service providers to gain better IT skills. Based on the above theorization, buyers prefer service providers from countries where IT development is higher. Accordingly, we propose the following: Hypothesis 2 (H2). Buyers prefer service providers from countries with a higher level of IT development.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.3.">Moderating Role of the Individual Reputation</head><p>of Service Providers An important function of the reputation system in online outsourcing platforms is to differentiate competent service providers from incompetent ones <ref type="bibr">(Lin et al. 2016, Moreno and</ref><ref type="bibr" target="#b70">Terwiesch 2014)</ref>. Reputation is based on the service providers' past performance <ref type="bibr" target="#b11">(Banker and Hwang 2008)</ref>, and it reflects either the service provider's technical competency to deliver a high-quality software or his functional competency to effectively manage the software development process. We argue that the service provider's reputation could substitute (or overcome the lack of) the competencies that are perceptual to the buyer.</p><p>First, as noted earlier, buyer-service provider country differences undermine the service provider's functional competency. If a service provider has a stellar reputation, the buyer's concern about his functional competency may be alleviated. Therefore, reputation may attenuate the negative effects of country differences on buyer selection of service providers, as we detail for each of the three proposed country differences. Among the proposed country differences, time zone difference is the least perceptual, and reputation could not overcome the coordination challenges due to time zone differences. Nevertheless, it is possible that the buyer may perceive the service provider with a better reputation to be more cooperative in adjusting his work schedule to accommodate the time zone difference. Language difference is relatively more perceptual, because, for example, even if a service provider is not from a country where English is the official language, he could still have full working proficiency in the English language. Thus, reputation is likely to alleviate the lack of functional competency because of language differences. Similarly, for cultural differences, the same rationale for language differences could apply. Furthermore, we posit that with greater country differences, information asymmetry between buyers and service providers is greater. Therefore, buyers may care more about individual reputation as a selection criterion. By contrast, with smaller country differences, information asymmetry may be less of an issue for buyers, and hence the service providers' individual reputation may be less important to buyers. Accordingly, we propose the following:</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Hypothesis 3A (H3A). The service provider's individual reputation attenuates the negative effects of buyer-service provider country differences on a buyer's selection probability of a service provider.</head><p>Second, as discussed earlier, country IT development could endow service providers with a higher (country-level) reputation for their technical competency. Yet, a service provider's technical competency based on their country's IT development is not factual, but rather perceptual. For example, compared with Singapore, Bangladesh has a very limited level of IT development; thus, ceteris paribus, a service provider from Bangladesh may be perceived to be less technically competent than a service provider from Singapore. Such Downloaded from informs.org by <ref type="bibr">[132.199.43.252</ref>] on 07 October 2017, at 11:57 . For personal use only, all rights reserved.</p><p>Information Systems <ref type="bibr">Research, 2017</ref><ref type="bibr">, vol. 28, no. 3, pp. 547-562, © 2017 INFORMS</ref> country-level reputation effects have been documented in the literature (e.g., <ref type="bibr" target="#b40">Han 1989)</ref>. Based on signaling theory <ref type="bibr" target="#b85">(Spence 1973)</ref>, buyers may use the IT development level of the service provider's country as an image attribute cue (e.g., <ref type="bibr" target="#b56">Lefkoff-Hagius and</ref><ref type="bibr">Mason 1993, Li and</ref><ref type="bibr" target="#b58">Wyer 1994)</ref> to infer the service provider's technical competency, particularly when other credible signals are unavailable. Such inference may lead to aggregation bias (James 1982), such that perfectly competent service providers from countries with low IT development have a lower probability of landing contracts. However, when the service provider from Bangladesh can signal his technical competency through his individual reputation based on past performance, the positive effect of country IT development will be attenuated because the buyer no longer needs to rely on the country image to infer the service provider's technical competency. Furthermore, we posit the opposite side of the same moderation effect that, when service providers are from countries with high levels of IT development, buyers' concerns for technical competency may be alleviated, and therefore individual reputation would play a less important role in buyers' selection decision. Hence, we propose the following:</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Hypothesis 3B (H3B). A service provider's individual reputation attenuates the positive effect of the country's IT development on the buyer's selection probability of a service provider.</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.">Methodology</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.1.">Data Set</head><p>We integrated a set of six archival data sources to compile our data set.</p><p>First, our main data source is the proprietary database of our corporate partner. We obtained a sample of 11,541 software development projects between August 1, 2009 and February 27, 2010. This database allows us to observe detailed information on projects, bids, buyers, and service providers. Given the scope of this study, we exclude sealed bid or time and materials contracts and only focus on open bid, fixed price projects. Also, we dropped trial projects and projects/bids submitted by spam robot agents because those projects tend to be quite different from normal projects and those bids were immediately removed by the platform after being identified as spam. An average project had a budget of $380 and received about 10 bids. The public archival data sets were preprocessed and merged with the main transaction data set. The archival data sources are summarized in Table <ref type="table" target="#tab_0">1</ref>.</p><p>Second, we drew on a data set by <ref type="bibr" target="#b66">Mayer and Zignago (2005)</ref> called the "GeoDist" database, that includes all official languages for 246 countries and independent regions, as well as an indicator of shared major languages (a binary indicator reflecting the existence of at least one language, spoken in both countries, by at least 7% of the population). We chose a binary indicator of at least one shared language. Wherever possible, additional data on language was supplemented from the CIA World Factbook to replace missing values.</p><p>Third, based on the time zone database 5 and location information of each buyer and service provider provided by the online outsourcing platform, we obtained our raw data on the time zone of the physical locations of service providers and buyers. We then computed the absolute time zone distance (in hours) for each service provider-buyer pair.</p><p>Fourth, we drew on a data set by the World Value Survey on the cultural difference. This data set was used in studies about the effects of cultural difference on lending decisions <ref type="bibr" target="#b37">(Giannetti and</ref><ref type="bibr">Yafeh 2012, Burtch et al. 2014)</ref>. We used a measure by <ref type="bibr" target="#b48">Inglehart and Welzel (2010)</ref> that captures the Euclidean distance between pairs of countries regarding two dimensions of culture: traditional/secular-rational values (whether the society emphasizes religious values versus secular values) and survival/self-expression orientations (whether the society emphasizes survival values versus self-expression).</p><p>Fifth, we obtained measures for country IT development from the Global Information Technology Report released by the World Economic Forum. Data for the composite measure for country IT development-Networked Readiness Index (NRI)-for Year 2010 was used in the analyses.</p><p>Sixth, we obtained exchange rates data from the International Monetary Fund website, 6 which we used to construct the measure of the IV. result in a buyer selection, in Online Appendix 2. Furthermore, we reported the results for an alternative dependent variable termed "contract," which measures whether the project reaches a final contract after the contract is offered to the service provider, also in Online Appendix 2. The estimated effects in these two additional analyses were qualitatively the same with those of the main analysis.</p><p>Bid Price of a service provider is an independent variable in the buyer selection model and the dependent variable in the provider pricing model. In our analysis, we use the natural logarithm of the bid price (ln(bid)), consistent with prior studies (i.e., <ref type="bibr" target="#b84">Snir and Hitt 2003</ref><ref type="bibr" target="#b11">, Banker and Hwang 2008</ref><ref type="bibr" target="#b34">, Gefen and Carmel 2008)</ref>. The distribution of log-transformed data shows low skewness, a desired property for a dependent variable.</p><p>Country Differences are measured with three variables. The first variable (language difference) measures whether the residing countries of the buyer and the service provider share any of the official languages (0) or not (1). The second variable (time zone difference) measures the absolute hour difference of the time zones between the service provider's and the buyer's cities. The third variable (cultural difference) measures the Euclidean distance between two countries on the world cultural map <ref type="bibr" target="#b48">(Inglehart and Welzel 2010)</ref>.</p><p>Country IT Development was measured with the World Economic Forum's NRI. NRI is a composite measure that comprehensively captures country-level differences of development in IT, such as the country's IT infrastructure, access to IT by the country's citizens, and citizens' IT skills of the country. The World Economic Forum is a highly regarded organization, and its Global Information Technology Report is highly cited by academic research based on Google Scholar.</p><p>Service Provider's Reputation: We use the most commonly agreed reputation signal in online outsourcing platforms: the feedback rating (e.g., <ref type="bibr" target="#b82">Scholz and Haas 2011</ref><ref type="bibr" target="#b89">, Stoll and Zöttl 2012</ref><ref type="bibr" target="#b100">, Yoganarasimhan 2013</ref><ref type="bibr" target="#b70">, Moreno and Terwiesch 2014</ref><ref type="bibr" target="#b60">, Lin et al. 2016)</ref> as it is visible, clear, credible, and differentially costly <ref type="bibr" target="#b77">(Rao and</ref><ref type="bibr">Monroe 1989, Dimoka et al. 2012)</ref>. Based on prior research, we expect buyers to prefer service providers with a higher feedback rating because it is a sanctioning device that reduces the likelihood of provider shirking <ref type="bibr" target="#b27">(Dellarocas 2006)</ref>. The feedback rating is obtained from the firm database, which is actively maintained by the platform and is shown on service providers' profile pages. As we discuss in Section 4.4.4, as a robustness check, we replaced feedback rating with service provider's project experience and repeat the analyses, and the results were consistent (Tables A2 and A3 in Online Appendix 2).</p><p>The description and measures for the control variables are provided in Table 2, and descriptive statistics of the key variables are reported in Table <ref type="table" target="#tab_1">3</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.3.">Empirical Model and Identification</head><p>4.3.1. Panel Data Structure. Our observations are at the bid level. For each project, a buyer faces multiple bids that are submitted by service providers from different countries and offer a contract to a service provider. Thus, our panel variable is the project identifier. Because of the fact that one project can only be created by one buyer, the project-level fixed effect also controls for buyer-level unobserved characteristics that are time invariant.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.3.2.">Buyer's Selection</head><p>Process. Buyer i's utility derived from a bid submitted by a service provider j for project k is given by W i j γ + Z j δ + X jk β + p jk λ + u i jk , where u i jk are unobservable characteristics affecting the buyer's selection of service providers. The buyer's expected utility is a function of a number of factors, including a service provider's functional competency, exogenously determined by buyer-service provider country (language, time zone, cultural) differences, W i j , with a common parameter vector γ; country IT development, Z j , with a parameter δ; and price p jk with a parameter λ, and providers' time variant factors, X ik , average feedback rating, and project experience with a common parameter vector β. We include c ik and u i jk in the estimation equation to capture the project-level fixed effect and individual random error, respectively. Because a project is submitted by a buyer, the project-level fixed effect also captures the buyerlevel time-invariant factors. In such an empirical setup, we do not directly observe the buyer's utility. Instead, we observe the buyer's selection of a service provider. Assuming the buyer selects a service provider to maximize her expected utility, we could have Equation (1) and estimate it using a linear probability model or logit model. We opt for the linear approach for two main reasons, first, note that in this estimation, the service providers' bidding price is potentially endogenous. To address endogeneity, two-stage least squares provides the most consistent estimator. Second, since we seek to subsequently evaluate the interaction effects, a linear approach provides straightforward and reliable methods for calculating marginal effects for interpretation, whereas interaction effects in nonlinear models are typically difficult to interpret</p><formula xml:id="formula_0">Selection i jk W i j γ + Z j δ + X jk β + p jk λ + c ik + u i jk .</formula><p>(1) 4.3.3. Service Provider's Bidding Process. For the service provider's bidding model, we control for project-level heterogeneities (e.g., project cost, number of overlapping projects) using the panel data, projectlevel fixed effects model. Such an approach allows us to look within IT projects to understand how country differences, the country's IT development, and the service provider's individual reputation may affect his bid price. With such a modeling strategy, a provider j Downloaded from informs.org by <ref type="bibr">[132.199.43.252</ref>] on 07 October 2017, at 11:57 . For personal use only, all rights reserved.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Table 2. Descriptions and Measures of Control Variables</head><p>Service Provider-Project Skill Match Whether a service provider's skills match the project requirement may affect the buyer's perceived fit uncertainty <ref type="bibr" target="#b44">(Hong and Pavlou 2014)</ref>, which affect the willingness to offer a contract. We used a text analytic approach to measure the similarity between the service provider's skill and the project requirements. For each service provider-project pair, we first obtained textual data (documents) on user profile and project description, lowercased each word, removed all punctuation marks, and tokenized the documents with the NLTK (Natural Language Processing Toolkit) in Python <ref type="bibr" target="#b15">(Bird et al. 2009</ref>). After further standard preprocessing, including removing stop words and stemming, we calculate the TF-IDF, i.e., term frequency-inverse document frequency <ref type="bibr" target="#b57">(Leskovec et al. 2014</ref>) of the documents with the Scikit-Learn package in Python. Finally, we computed the cosine similarity <ref type="bibr">(Tan et al. 2005, p. 500)</ref> between the two documents (service provider's profile and project description) for each project-service provider pair.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Service Provider's Project Experience</head><p>The service provider's project experience is measured with the number of completed projects. This variable is log transformed because of skewness. Note that although we use service provider's feedback rating as the main reputation variable as suggested by the literature, project experience could also indicate reputation. Those two variables are distinct yet conceptually and empirically related. In Online Appendix 2, we provide an additional robustness check by using the service provider's project experience on the platform as the main reputation variable.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Prior Familiarity</head><p>Familiarity is important in software development projects, especially in the outsourcing context. Prior studies showed that a prior relationship between a service provider and a buyer can increase the chance of the service provider winning a contract <ref type="bibr" target="#b34">(Gefen and Carmel 2008)</ref> because past experience helps reassure the buyer that the service provider can perform up to her expectations. Newly formed relationships may lack familiarity, such as common agreements about the requirements and work routine of the other party on the team <ref type="bibr" target="#b61">(Littlepage et al. 1997)</ref>. Familiarity between service providers and buyers also helps them become familiar with the task domain of their interactions <ref type="bibr" target="#b50">(Katz 1982)</ref>, handle complexity associated with software development effectively <ref type="bibr" target="#b31">(Espinosa et al. 2007</ref>), and develop a common knowledge base <ref type="bibr" target="#b3">(Alavi and Leidner 2001)</ref>. Thus, prior familiarity alleviates the service provider's transaction uncertainty with the buyer. With lower uncertainty, service providers are more willing to bid lower prices to buyers. We measured prior familiarity by the number of prior transactions between the provider and the buyer.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Service Provider's Hourly Rate</head><p>The service provider's hourly rate could signal his quality and thus reservation utility; therefore, it is controlled on both the buyer's hiring and service provider's pricing. In our data, the service provider's hourly rate is self-reported by the service provider and shown on the service provider's profile page.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Invited Service Provider</head><p>Buyers can invite providers to bid on their projects' call for bids (CFBs). Invited providers could have a much higher chance of winning. The invited service provider measures whether a service provider was invited by the buyer to bid on the project.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Buyer Experience</head><p>Buyer experience is captured by the number of projects completed on the platform, at the time a project was posted. This variable is log transformed because of skewness.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Bid Sequence</head><p>We also control for bid sequence, based on when the provider submitted the bid, because late bidders are likely to have more information and may have a higher probability of winning a contract. One caveat we note is that bidders can revise their bids. For those cases, the platform we work with only recorded the last bid submitted in the database. Therefore, bid submission time may not be an error-free measure. Fortunately, we were able to identify those revised bids and calculate the percentage of bids that have been revised. Overall, only 8.09% of the total bids were revised. Therefore, although not perfect, the measurement error for this variable should not be substantial. We also found that those bids that had been revised are more likely to be selected.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Preceding Bid</head><p>We control for the preceding bid for the service provider bidding model because the preceding bid could serve as an "anchor" for the current bid. For the first bid (no preceding bids), we use the project budget as the "anchor." Because of the same reason as we noted above, this may not be an error-free measure.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Service Provider Past Bidding Activity</head><p>We also computed the number of projects the service provider has bid on the platform in the past 7, 14, and 30 days. Service providers' bidding activity may be related to their bid prices because a higher level of bidding activity may suggest providers' intention to command the highest price among different projects to which they submitted bids.</p><p>would place a bid p i jk for project k that is initiated by buyer i. Similar to the buyer selection model, W i j are provider-buyer specific vector regressors (e.g., country differences); Z j is the service providers' country IT development; X jk are observed time variant vector regressors related to the service provider (e.g., the service provider's feedback rating and his project experience); α ik is the unobserved project-level fixed effect (e.g., project cost or the buyer's attributes); ε i jk is the unobserved individual random error for each bid, which are only known by the service provider but cannot be observed by us. The estimation model is shown in Equation (2). For project-level fixed effect α ik , within transformation approach is used p i jt W i j θ + Z j ϑ + X jk ϕ + α ik + ε i jk .</p><p>(2)</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.3.4.">Identification Strategy.</head><p>The key parameters to be estimated are the buyer-service provider country differences and the service providers' country IT development. We have four sets of independent variables (Equation ( <ref type="formula">1</ref>)). First, country differences (W i j ) Downloaded from informs.org by <ref type="bibr">[132.199.43.252</ref>] on 07 October 2017, at 11:57 . For personal use only, all rights reserved. and differences in the service provider's country's IT development (Z j ) is exogenous to the buyer's selection because neither the service provider nor the buyer can change from where they come. Second, the service providers' individual reputation signals (X jk ) are maintained and disclosed by the platform and not subject to any service providers' manipulation; therefore, consistent with the literature <ref type="bibr" target="#b11">(Banker and Hwang 2008)</ref>, they are considered exogenous to the buyer's selection decision as well. Third, the bid price of service providers, as a strategic decision of the service provider, is endogenous because a service provider sets his price in response to the expected probability that the buyer would select him, and buyers change their demand for the service provider in response to the provider's bid price. Therefore, given the endogeneity of price in the demand system, if no valid IV is used, the estimation could be biased. A key to addressing price endogeneity is a valid IV that would exogenously determine a service provider's bid price but has no effect on the buyers' selection decision except through its effect on the bid price. Also, given the panel nature of the data (provider-project panel), ideally, this IV should also show a reasonable variation within the project level. To address price endogeneity, the literature has suggested three types of IVs: costshifters (e.g., <ref type="bibr" target="#b73">Nevo 2000)</ref>, price in other markets <ref type="bibr" target="#b36">(Ghose et al. 2012)</ref>, and the characteristics of competing products (e.g., <ref type="bibr" target="#b14">Berry et al. 1995)</ref>. In this study, we adopted the cost-shifter approach, which is deemed to be the most appropriate for our context. We used the exchange rate of the local currency of the service provider as an IV. On most online outsourcing platforms (including our corporate partner at the time of our data collection), service providers submit bids in U.S. dollars (USD), whereas funds are paid in the local currency through financial institutions, such as banks and PayPal. The rationale behind using the exchange rate as an IV is that when the exchange rate against the U.S. dollar goes down ($1 exchanges more local currency), the service provider needs a higher compensation to have the same amount of local currency to maintain the same level of income; thus, he will bid a higher price. For example, our baseline exchange rate for the Indian Rupee (INR) against the U.S. dollar on August 27, 2009 was 48.98 INR per 1 USD; whereas the exchange rate was 46.22 INR per 1 USD on December 3, 2009. Hence, the exchange rate is a natural and exogenous factor for the cost of service providers, thereby qualifying as a "cost-shifter" type of IV <ref type="bibr" target="#b73">(Nevo 2000)</ref>. The exchange rate should not affect the buyer's preference for a given service provider since generally the fluctuation of the exchange rate will not have an impact on a country's reputation in a short time window. We constructed a standardized measure for exchange rate (xrate) to adjust for country-specific differences. First, the exchange rate is denoted as the amount of local currency needed to exchange for one U.S. dollar, on a daily basis, using exchange rate data provided by the IMF. Second, for each country, the exchange rate against the U.S. dollar is divided by its baseline exchange rate (the exchange rate against the U.S. dollar on July 31, 2009) to construct the variable xrate. Specifically, the IV normalized exchange rate is computed as per Equation ( <ref type="formula" target="#formula_1">3</ref>)</p><formula xml:id="formula_1">xrate(c, t) ex_rate_toUSD(c, t) ex_rate_toUSD(c, 7/31/2009) , (<label>3</label></formula><formula xml:id="formula_2">)</formula><p>where c indexes a currency, such as Indian Rupee, CNY, British Pound, etc., and t indexes a date.</p><p>To establish the validity of the IV, we checked for the essential assumptions (e.g., <ref type="bibr" target="#b7">Angrist et al. 1996</ref><ref type="bibr" target="#b99">, Wooldridge 2002)</ref>. First, the exchange rate variable shows a reasonable level of variation. Based on our data, for the most common currencies, there is a sufficient variation. For example, there is a 9.8% difference between the two dates when the Indian Rupee is the most expensive (December 3, 2009) and the date when the Indian Rupee is the cheapest (August 27, 2009) relative to the U.S. dollar; similarly, there is about a 12% difference with the British Pound. Second, to qualify as a valid instrument, the exchange rate should be correlated with the service providers' bid prices. In this respect, the economics literature showed evidence that exchange rates have robust power in predicting global commodity prices <ref type="bibr" target="#b23">(Chen et al. 2010)</ref>. Within our sample, we observe that there is model-free evidence that a significant correlation exists between the exchange rate with the bid price (p &lt; 0.001). <ref type="bibr" target="#b6">Angrist and Pischke (2008)</ref>, two-stage least squares (2SLS) is the most consistent and unbiased estimator for panel data with Downloaded from informs.org by <ref type="bibr">[132.199.43.252</ref>] on 07 October 2017, at 11:57 . For personal use only, all rights reserved.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.4.">Estimation Results and Hypotheses Testing 4.4.1. Main Effects. As detailed in</head><p>Information Systems <ref type="bibr">Research, 2017</ref><ref type="bibr">, vol. 28, no. 3, pp. 547-562, © 2017 INFORMS endogenous variable(s)</ref>. The standard official panel data IV estimation procedure "xtivreg" in Stata V14, a 2SLS within estimator, was used for parameter estimation, and the results are reported in column 1 of Table <ref type="table" target="#tab_2">4</ref>. The strength of the instrument was assessed with a first-stage Angrist-Pischke multivariate F test of excluded instruments (details in Table <ref type="table" target="#tab_4">6</ref>) and also the Cragg-Donald Wald F statistic and Kleibergen-Paap Wald F statistic. Based on these diagnostic statistics, we concluded with confidence that weak instrument is not a concern. We further report estimation results for a fixed effects model without instrumenting for bid price in column 2 of Table <ref type="table" target="#tab_3">5</ref>.</p><p>The key estimates are reported in column 1 of Table <ref type="table" target="#tab_2">4</ref>. Column 2 provides qualitatively similar results using a fixed effect ordinary least squares (OLS) approach without instrumenting for bid prices. Based on the sign of the estimates, we find support for H1 and H2. First, language difference (β -0.0196, p &lt; 0.01) has a negative effect on the buyer's selection decision. Time zone difference (β -0.0025, p &lt; 0.01) and cultural difference (β -0.0156, p &lt; 0.01) also negatively affect the buyer's hiring decision. By contrast, the service provider's country IT development has a positive effect on the buyer's selection decision (β 0.0406, p &lt; 0.01). Besides the estimates for the key variables reported above, as expected, we found bid price to have a negative effect on the buyer's selection, whereas the service provider-project skill match, service providerproject prior transactions, the service provider's experience, invited service provider, the service provider's self-reported hourly rate, and bid sequence have a positive relationship with the buyer's selection.</p><p>We used the delta method <ref type="bibr" target="#b20">(Cameron and Trivedi 2009)</ref> to calculate the marginal effects at the means for the key independent variables. We estimated that language difference reduces the probability of being selected by 21.60%, one-hour time difference reduces the probability of being selected by 2.51%, while onepoint (1.17 S.D.) increases on the cultural distance scale reduces the probability of being selected by 14.00%. Also, a one-point (2.08 S.D.) increase on the NRI index increases the probability of being selected by 33.74%. Finally, a one-point increase in the service provider's rating increase the probability of being selected by 4.95%.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.4.2.">Moderating Effects of the Service Provider's</head><p>Individual Reputation. We proceed to examine the moderating role of the service provider's individual reputation on the effects of country differences and the service providers' country IT development on the buyer's selection. The same approach that estimated the main effect is used to estimate the interaction effects. The key estimates are reported in column 1 of Table <ref type="table" target="#tab_3">5</ref>. Again, column 2 provides qualitatively similar results using a fixed effects OLS approach without instrumenting for bid prices. Based on the sign and significance of the estimates, we found partial support for H3A and full support for H3B.</p><p>Based on Table <ref type="table" target="#tab_3">5</ref>, first, in the interaction effects model, all direct effects of the buyer-service provider differences and service providers' country IT development are consistent in sign with the main effects model reported in Table <ref type="table" target="#tab_2">4</ref>. Second, the observed negative effect of language difference is moderated by the service provider's reputation (β 0.0015, p &lt; 0.05), and so is cultural difference (β 0.0010, p &lt; 0.01), yet the negative effect of time zone difference is not moderated by the service provider's reputation. Furthermore, the positive effect of the service provider's country IT development, measured by the NRI, is attenuated by the service provider's feedback rating (β -0.0032, p &lt; 0.01), indicating a substitution effect between the service providers' country IT development and their reputation.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.4.3.">First-Stage Estimation of Bid Price.</head><p>For the first-stage estimation, the project-level fixed effects estimation was applied with the "xtivreg" procedure. This estimation strategy has two advantages. First, project fixed effects is aligned with our data structure. As noted earlier, if a cross-sectional analysis is used, the variation in project supply could affect the service provider's bidding; whereas with a project-level fixed effects estimation, we automatically controlled for the Downloaded from informs.org by <ref type="bibr">[132.199.43.252</ref>] on 07 October 2017, at 11:57 . For personal use only, all rights reserved. number of overlapping projects that are open for bidding because the number of open projects for each bidder of a specific project is roughly the same. Second, a project fixed effects estimation effectively controlled for the common cost component since online outsourcing platforms resemble common value auctions where providers' cost is interdependent <ref type="bibr" target="#b45">(Hong et al. 2016</ref>). Specifically, cluster-correlated robust standard errors <ref type="bibr" target="#b98">(Williams 2000</ref><ref type="bibr" target="#b99">, Wooldridge 2002)</ref> were constructed for the fixed effects model. An ex post robust Hausman test for fixed effects <ref type="bibr">(Wooldridge 2002, Schaffer and</ref><ref type="bibr" target="#b81">Stillman 2006)</ref>, following the suggestion of <ref type="bibr" target="#b20">Cameron and Trivedi (2009)</ref>, rejects the null hypothesis that random effects estimation provides consistent estimates, further indicating the necessity to use the fixed effects model in the first stage. Besides normalized exchange rate, we also included the preceding bid and service providers' bidding activity in the past seven days as additional instruments. The first-stage estimation shows a significant effect for our key IV of the normalized exchange rate. Furthermore, the Angrist-Pischke multivariate F test of excluded instruments is well above 10, alleviating the weak instrument concern (e.g., <ref type="bibr">Angrist and</ref><ref type="bibr">Pischke 2008, Staiger and</ref><ref type="bibr" target="#b86">Stock 1997)</ref>, beyond the standard Stock-Yogo test statistic. Last, to evaluate instrument exogeneity, we checked the Sargan statistic from the over-identification test. The Sargan statistic is insignificant (p &gt; 0.1), indicating that the null hypothesis that the IVs are exogenous is not rejected. Please note that for the variable bidding activity, we reported the estimation results for 7 days' bidding activity, yet, replacing this measure with 14 days' bidding activity or 30 days bidding activity yields similar estimates for all variables.</p><p>Based on estimation results from Table <ref type="table" target="#tab_4">6</ref>, we first found the exchange rate to significantly predict bid price. Furthermore, we found service providers bid a lower price when they have a cultural difference from the buyer. This is likely because in equilibrium, the service provider would understand the buyer's general preferences, and because the buyer shows an aversion for cultural difference, the service provider bids a lower price to enhance his probability of being selected. This result indicates that the service provider is not sensitive to cultural differences. We do not find a significant effect for either language difference or time zone difference on bid price. We surmise that the reason could be that service providers are also negatively affected by these differences, which offsets their incentive to bid a lower price to compensate the negative effect for the buyer. Finally, we found that service providers from countries with a higher IT development bid a higher price. This is likely because, on average, service providers from countries with low levels of IT development have to rely more on price competition, whereas service providers from developed countries with higher levels of IT development may use a higher price as a signal of higher quality. However, when the service providers' individual reputation is high, they tend to lower their premium for their country's IT development since the quality signal may be delivered through their own individual reputation.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.4.4.">Robustness Checks.</head><p>Besides the main effects and interaction effects estimations reported above, we report a number of robustness checks in Online Appendix 2. Specifically, we conducted four additional analyses. First, we used an alternative dependent variable (contract) to assess the robustness of our findings. Second, we estimated the moderating role of buyer experience on buyer-service provider country differences and the service provider's country IT development. Third, we used an alternative measure for the service provider's reputation. Specifically, we replaced service providers' feedback ratings with their project experience as the main reputation variable, and we repeated the interaction effect analyses. Fourth, we reported an analysis with all projects, including those for which buyers did not select a service provider. Notably, the "xtivreg" procedure in Stata does not drop Downloaded from informs.org by <ref type="bibr">[132.199.43.252</ref>] on 07 October 2017, at 11:57 . For personal use only, all rights reserved. those observations even though there is no withinproject variation in the dependent variable. The additional analyses indicate that the estimation results we reported are stable and robust.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.">Discussion</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.1.">Key Findings</head><p>Our empirical evidence offers answers to our research questions about the role of country differences and the service providers' country IT development in the buyers' selection of service providers. The key findings are summarized in Figure <ref type="figure" target="#fig_0">1</ref>. First, despite attracting buyers and service providers from all around the world, online outsourcing platforms are still subject to challenges because of the proposed three country differences since buyers are averse to country differences with service providers, in the form of (a) language, (b) time zone, and (c) cultural differences. We attribute the negative effect of these three dyadic country differences to the buyers' expectations of the service providers' functional competency in managing the software development process. Second, the country's level of IT development has a positive effect on a buyer's selection of service providers, which suggests a positive bias toward service providers from countries with higher levels of IT development. We attribute the role of country IT development to buyers' evaluation of the service providers' technical competency in delivering quality software because of the country image cue. Third, in terms of the moderating role of reputation, we found the service provider's reputation to attenuate the negative effects of language and cultural differences (albeit not that of time zone difference). Also, we found the service provider's reputation to substitute the positive effect of country-level reputation (country IT development), that is, when a service provider signals his individual reputation, his country's IT development level plays a smaller role in determining his chances of being offered a contract by a buyer. The results imply that the reputation system could serve as a valuable tool to overcome some (albeit not all) negative effects of country differences (or global frictions), and that the reputation system also corrects the bias in a buyer's selection induced by the country's IT development.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.2.">Contributions and Implications for</head><p>Theory and Practice This study provides several contributions and implications for theory and practice, as we detail below.</p><p>First, our results provide insights on whether online outsourcing platforms are level playing fields (e.g., <ref type="bibr" target="#b33">Friedman 2007</ref><ref type="bibr" target="#b55">, Leamer 2007</ref><ref type="bibr" target="#b35">, Ghemawat 2013)</ref>. As an emerging market, online outsourcing platforms may have reduced certain transaction and search costs (e.g., <ref type="bibr">Forman et al. 2009, Hann and</ref><ref type="bibr" target="#b41">Terwiesch 2003)</ref>; however, at the same time they also inevitably created country (language, time zone, cultural) differences between buyers and service providers that may increase transaction costs. The "flat world" hypothesis is supported by the explicit rules in online outsourcing platforms that do not favor any service provider, irrespective of language, location, culture, or country of origin <ref type="bibr" target="#b55">(Leamer 2007)</ref>. However, the proposed country differences do affect how buyers select service providers. Also, contrary to results from prior work (e.g., Gefen and Carmel 2008), we show evidence that buyers are more willing to offer contracts to those service providers from countries with a higher level of IT development, most likely because of the reputation of those countries for superior IT infrastructure, and access to IT and IT skills by the country's citizens. Thus, our study indicates that in the knowledge-intensive context of IT services (such as software development), service providers may be endowed with their country's overall IT reputation.</p><p>Second, our study extends the emerging literature on the effect of country differences in various business settings (e.g., <ref type="bibr" target="#b37">Giannetti and</ref><ref type="bibr">Yafeh 2012, Burtch et al. 2014)</ref> to online outsourcing platforms. While the literature has predominantly focused on a certain type of country difference (cultural difference), we studied three Downloaded from informs.org by <ref type="bibr">[132.199.43.252</ref>] on 07 October 2017, at 11:57 . For personal use only, all rights reserved.  <ref type="bibr">et al. 2007</ref><ref type="bibr" target="#b25">et al. , Cummings et al. 2009</ref>). Third, our study extends both the literature on reputation in online platforms (e.g., <ref type="bibr" target="#b9">Ba and Pavlou 2002</ref><ref type="bibr" target="#b52">, Kokkodis and Ipeirotis 2015</ref><ref type="bibr" target="#b70">, Moreno and Terwiesch 2014</ref><ref type="bibr" target="#b60">, Lin et al. 2016</ref><ref type="bibr" target="#b100">, Yoganarasimhan 2013</ref>) and the larger literature on reputation and trust in online markets (e.g., <ref type="bibr">Dellarocas 2003, Pavlou and</ref><ref type="bibr" target="#b74">Gefen 2004)</ref>. Although prior work has provided abundant evidence on the direct effect of reputation on outcomes such as price premium, transactions, and sales volume, our study generates new insights on the moderating role of reputation in overcoming the negative effect of the proposed country differences (language and time zone). Also, attested by the clear substitution effect between the provider reputation and country IT development, we herein conclude that the service provider's individual reputation corrects for the positive bias due to the IT development level of the service provider's residing country.</p><p>Finally, we seek to offer practical recommendations for the design of online outsourcing platforms for IT services. First, as our results show, buyers are averse to country differences, particularly when individual reputation signals are not available. For example, ceteris paribus, buyers from English-speaking countries are less likely to select a Chinese service provider than a U.S. provider. Clearly, it would be unfair if the Chinese provider does have full professional proficiency in English. The online outsourcing platform could thus either encourage service providers to demonstrate their language fluency or create language tests for service providers. For time zone difference, the platform could encourage service providers to publish their willingness to work after hours or around the clock, which could partially mitigate the buyers' concerns that service providers may be unwilling to accommodate their work schedules. Similarly, it will be useful for the online outsourcing platform to allow service providers to describe their cultural flexibility. Also, given the importance of the reputation of service providers, online outsourcing platforms should protect both service providers and buyers by preventing the manipulation of the reputation system (e.g., <ref type="bibr" target="#b47">Hu et al. 2017)</ref>. Finally, since service providers' functional competency and technical competency are two distinct aspects buyers care about, online outsourcing platforms should provide multidimensional reputation systems that reflect both the functional competency and technical competency of service providers to mitigate buyers' uncertainty.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.3.">Limitations and Suggestions for</head><p>Future Research This study also has limitations, which open up several interesting opportunities for future research.</p><p>First, we solely focused on "open-bid" auctioned projects in this paper. About 10% of the total projects on the platform use "sealed bid" auctions, wherein service providers cannot observe each other's bid price or nonprice attributes when submitting their bids. Similarly, there is a small portion of projects that are based Downloaded from informs.org by <ref type="bibr">[132.199.43.252</ref>] on 07 October 2017, at 11:57 . For personal use only, all rights reserved. on time and materials contracts. Future research could study how the choice of auction format or different contract forms may have an effect on the buyers' selection criteria.</p><p>Second, two of our measures for country differences-language and culture-are based on aggregate data from archival data sources because of a lack of individual-level data (e.g., a Chinese provider could speak English at a good working proficiency). Although at first blush, the estimated effect could be biased because of ecological fallacy in terms of the unit of analyses, it would not actually jeopardize our estimates because when providers and buyers make decisions, they form a probabilistic expectation on the differences without actual interactions with each other (e.g., as English is one official language of India, a buyer would expect an Indian provider to be fluent in English; however, a buyer may not expect that from a Chinese provider). Similarly, aggregate measures for cultural differences have been used for individual-level analysis <ref type="bibr" target="#b37">(Giannetti and Yafeh 2012)</ref> or individual-level data aggregated to the country level <ref type="bibr" target="#b19">(Burtch et al. 2014)</ref>. We have shown that when the service provider's individual reputation is high, buyers tend to place less emphasis on language and cultural differences. This result implies that buyers expect some characteristics from a service provider from a certain country (e.g., a U.S. buyer expects some cultural difference with a Chinese service provider) unless the service provider signals a high reputation (e.g., when a Chinese provider can signal a high reputation, cultural difference seems to matter less for a U.S. buyer). Nevertheless, we acknowledge that using such aggregate measures is a data limitation that we are not able to address for this study. It would be interesting for future research to examine individuallevel information, such as language fluency or certifications of language exams, should such data become available in online markets.</p><p>Finally, it may appear that our results are limited in their generalizability, given that we study a type of emerging and evolving online platform. However, we first argue that the results offer insights into other markets. There are many other online markets for interpersonal or interfirm transactions that bear great risks related to country differences, for example, online peerto-peer lending markets (such as Kiva.org) <ref type="bibr" target="#b19">(Burtch et al. 2014)</ref>, where lenders decide whom to lend money to; online consumer to consumer markets (such as eBay.com), where individual buyers purchase goods from sellers; and online procurement markets (such as Alibaba.com), where firms source materials or products from other firms. Future research could use similar measures based on our study to test the role of country differences in such online markets. Second, as online outsourcing platforms evolve, new features such as the "recommended service provider" feature in some platforms recently became available. 7 We believe there are ample opportunities to theorize and empirically examine these new features to understand how platform design could affect user behaviors.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6.">Concluding Remarks</head><p>In this paper, we leveraged a unique individual-level data set by integrating proprietary data from a corporate database with a number of public data sets to empirically test our hypotheses on the effects of country differences, country IT development, and their respective interaction effects with reputation on the buyer's selection of service providers in the unique context of an online outsourcing platform. We showed the buyers' aversion for service providers from countries with language, time zone, and cultural differences, and a strong preference for service providers from countries with high levels of IT development. Furthermore, we also showed that reputation could potentially overcome the negative effect of language and cultural (albeit not time zone) differences, and individual reputation could correct for the possible positive bias toward service providers from countries with high levels of IT development, and thus help to level the playing field for all service providers around the globe. Finally, our study seeks to entice academics and practitioners to look at the broader global dynamics of online outsourcing platforms for IT services toward developing platforms that service providers can effectively compete on a level playing field.</p><p>competency to be two distinct dimensions in a principal component analysis. 5 http://www.iana.org/time-zones.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>Figure 1 .</head><label>1</label><figDesc>Figure 1. Summary of Key Findings</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head>Table 1 .</head><label>1</label><figDesc>Data Sources</figDesc><table><row><cell>Data</cell><cell>Source</cell></row><row><cell>Project, user, and bid</cell><cell>Database of our corporate partner</cell></row><row><cell>characteristics data</cell><cell></cell></row><row><cell>Language data</cell><cell>GeoDist database, CIA World Factbook</cell></row><row><cell>Time zone data</cell><cell>International Telecommunication Union</cell></row><row><cell>Cultural distance data</cell><cell>World Value Survey</cell></row><row><cell>Exchange rate data</cell><cell>International Monetary Fund</cell></row><row><cell cols="2">Country IT development: World Economic Forum's Global</cell></row><row><cell>Networked Readiness</cell><cell>Information Technology Report</cell></row><row><cell>Index</cell><cell></cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1"><head>Table 3 .</head><label>3</label><figDesc>Descriptive Statistics</figDesc><table><row><cell>Variable</cell><cell cols="3">Mean Std. dev. Min.</cell><cell>Max.</cell></row><row><cell>Selection</cell><cell>0.099</cell><cell>0.298</cell><cell>0.000</cell><cell>1.000</cell></row><row><cell>Bid Price</cell><cell cols="2">284.607 492.697</cell><cell cols="2">1.000 5,000.000</cell></row><row><cell>Language Difference</cell><cell>0.492</cell><cell>0.500</cell><cell>0.000</cell><cell>1.000</cell></row><row><cell>Time Zone Difference</cell><cell>4.921</cell><cell>3.250</cell><cell>0.000</cell><cell>12.000</cell></row><row><cell>Cultural Difference (Euclidean)</cell><cell>1.662</cell><cell>0.852</cell><cell>0.000</cell><cell>3.915</cell></row><row><cell>Provider's Country IT</cell><cell>3.969</cell><cell>0.481</cell><cell>3.318</cell><cell>5.941</cell></row><row><cell>Development</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Feedback Rating</cell><cell>3.644</cell><cell>3.456</cell><cell>0.000</cell><cell>10.000</cell></row><row><cell>Skill Match</cell><cell>0.083</cell><cell>0.086</cell><cell>0.000</cell><cell>0.773</cell></row><row><cell>Prior Transactions</cell><cell>0.221</cell><cell>6.461</cell><cell>0.000</cell><cell>341.000</cell></row><row><cell>Provider Experience</cell><cell>27.408</cell><cell>79.538</cell><cell cols="2">0.000 1,457.000</cell></row><row><cell>Buyer Experience</cell><cell cols="2">70.523 202.804</cell><cell cols="2">0.000 1,681.000</cell></row><row><cell>Invited Provider</cell><cell>0.010</cell><cell>0.101</cell><cell>0.000</cell><cell>1.000</cell></row><row><cell>Provider Hourly Rate</cell><cell>14.355</cell><cell>19.450</cell><cell>0.000</cell><cell>999.000</cell></row><row><cell>Bid Sequence</cell><cell>11.294</cell><cell>12.057</cell><cell>1.000</cell><cell>164.000</cell></row><row><cell>Provider Bidding Activity</cell><cell>24.684</cell><cell>33.594</cell><cell>1.000</cell><cell>351.000</cell></row><row><cell>(seven days)</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>XRate</cell><cell>1.020</cell><cell>0.025</cell><cell>0.827</cell><cell>1.129</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2"><head>Table 4 .</head><label>4</label><figDesc>Estimation Results for Buyer Selection of Service Providers (Main Effect)Notes. Cluster robust standard errors are reported in parentheses.<ref type="bibr" target="#b87">Stock and Yogo (2005)</ref> critical value for relative bias &gt;5% is 13.91.</figDesc><table><row><cell>Estimation method</cell><cell>(1) IV-2SLS</cell><cell>(2) OLS FE</cell></row><row><cell>DV</cell><cell>Selection</cell><cell>Selection</cell></row><row><cell>ln(bid)</cell><cell cols="2">-0.5416  *  *  *  (0.0347) -0.0722  *  *  *  (0.0019)</cell></row><row><cell>Language Difference</cell><cell cols="2">-0.0196  *  *  *  (0.0036) -0.0242  *  *  *  (0.0029)</cell></row><row><cell>Time Zone Difference</cell><cell cols="2">-0.0025  *  *  *  (0.0007) -0.0024  *  *  *  (0.0006)</cell></row><row><cell>Cultural Difference</cell><cell cols="2">-0.0156  *  *  *  (0.0028) -0.0107  *  *  *  (0.0023)</cell></row><row><cell>NRI</cell><cell>0.0406  *  *  *  (0.0031)</cell><cell>0.0206  *  *  *  (0.0022)</cell></row><row><cell>Provider Rating</cell><cell>0.0038  *  *  *  (0.0005)</cell><cell>0.0068  *  *  *  (0.0004)</cell></row><row><cell>Control variables</cell><cell></cell><cell></cell></row><row><cell>Skill Match</cell><cell>0.0740  *  *  *  (0.0154)</cell><cell>0.0888  *  *  *  (0.0114)</cell></row><row><cell>Prior Transactions</cell><cell>0.0044  *  *  *  (0.0002)</cell><cell>0.0047  *  *  *  (0.0003)</cell></row><row><cell>ln(Experience)</cell><cell>0.0296  *  *  *  (0.0013)</cell><cell>0.0154  *  *  *  (0.0007)</cell></row><row><cell>Invited Provider</cell><cell>0.4333  *  *  *  (0.0134)</cell><cell>0.4602  *  *  *  (0.0225)</cell></row><row><cell>Provider Hourly Rate</cell><cell>0.0010  *  *  *  (0.0001)</cell><cell>0.0001  *  *  *  (0.0000)</cell></row><row><cell>Bid Sequence</cell><cell>0.0013  *  *  *  (0.0001)</cell><cell>0.0010  *  *  *  (0.0001)</cell></row><row><cell>Constant</cell><cell>2.5045  *  *  *  (0.1616)</cell><cell>0.3264  *  *  *  (0.0137)</cell></row><row><cell>Project fixed effects</cell><cell>Yes</cell><cell>Yes</cell></row><row><cell>No. of observations</cell><cell>117,105</cell><cell>117,105</cell></row><row><cell>No. of projects</cell><cell>11,541</cell><cell>11,541</cell></row><row><cell>Wald Chi 2</cell><cell>12,901.32  *  *  *</cell><cell>-</cell></row><row><cell>Within R 2</cell><cell>-</cell><cell>0.0747</cell></row><row><cell>Cragg-Donald Wald F</cell><cell>144.20</cell><cell>-</cell></row><row><cell>Kleibergen-Paap Wald rk F</cell><cell>151.93</cell><cell>-</cell></row></table><note><p>* p &lt; 0.1; * * p &lt; 0.05; * * * p &lt; 0.01.</p></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_3"><head>Table 5 .</head><label>5</label><figDesc>Estimation Results for Buyer Selection of Service Provider (Interaction Effect)</figDesc><table><row><cell>Estimation method</cell><cell>(1) IV-2SLS</cell><cell>(2) OLS FE</cell></row><row><cell>DV</cell><cell>Selection</cell><cell>Selection</cell></row><row><cell>ln(bid)</cell><cell cols="2">-0.5398  *  *  *  (0.0347) -0.0723  *  *  *  (0.0019)</cell></row><row><cell>Language Difference</cell><cell cols="2">-0.0133  *  *  *  (0.0044) -0.0159  *  *  *  (0.0031)</cell></row><row><cell>Time Zone Difference</cell><cell cols="2">-0.0024  *  *  *  (0.0008) -0.0022  *  *  *  (0.0006)</cell></row><row><cell>Cultural Difference</cell><cell cols="2">-0.0192  *  *  *  (0.0032) -0.0129  *  *  *  (0.0024)</cell></row><row><cell>NRI</cell><cell>0.0500  *  *  *  (0.0039)</cell><cell>0.0242  *  *  *  (0.0025)</cell></row><row><cell>Provider Rating</cell><cell>0.0141  *  *  *  (0.0031)</cell><cell>0.0102  *  *  *  (0.0027)</cell></row><row><cell>Provider Rating ×</cell><cell>0.0015  *  *  (0.0007)</cell><cell>0.0021  *  *  *  (0.0005)</cell></row><row><cell>Language Difference</cell><cell></cell><cell></cell></row><row><cell>Provider Rating ×</cell><cell cols="2">-0.0000 (0.0001) -0.0001 (0.0001)</cell></row><row><cell>Time Zone Difference</cell><cell></cell><cell></cell></row><row><cell>Provider Rating ×</cell><cell>0.0010  *  *  (0.0005)</cell><cell>0.0006  *  (0.0004)</cell></row><row><cell>Cultural Difference</cell><cell></cell><cell></cell></row><row><cell>Provider Rating ×</cell><cell cols="2">-0.0032  *  *  *  (0.0007) -0.0013  *  *  (0.0006)</cell></row><row><cell>NRI</cell><cell></cell><cell></cell></row><row><cell>Control variables</cell><cell></cell><cell></cell></row><row><cell>Skill Match</cell><cell>0.0702  *  *  *  (0.0155)</cell><cell>0.0871  *  *  *  (0.0114)</cell></row><row><cell>Prior Transactions</cell><cell>0.0044  *  *  *  (0.0002)</cell><cell>0.0047  *  *  *  (0.0003)</cell></row><row><cell>ln(Experience)</cell><cell>0.0290  *  *  *  (0.0013)</cell><cell>0.0151  *  *  *  (0.0007)</cell></row><row><cell>Invited Provider</cell><cell>0.4337  *  *  *  (0.0133)</cell><cell>0.4602  *  *  *  (0.0226)</cell></row><row><cell>Provider Hourly Rate</cell><cell>0.0010  *  *  *  (0.0001)</cell><cell>0.0001  *  *  *  (0.0000)</cell></row><row><cell>Bid Sequence</cell><cell>0.0014  *  *  *  (0.0001)</cell><cell>0.0010  *  *  *  (0.0001)</cell></row><row><cell>Constant</cell><cell>2.4614  *  *  *  (0.1606)</cell><cell>0.3104  *  *  *  (0.0146)</cell></row><row><cell>Project fixed effects</cell><cell>Yes</cell><cell>Yes</cell></row><row><cell>No. of observations</cell><cell>117,105</cell><cell>117,105</cell></row><row><cell>No. of projects</cell><cell>11,541</cell><cell>11,541</cell></row><row><cell>Wald Chi 2</cell><cell>12,959.17  *  *  *</cell><cell>-</cell></row><row><cell>Within R 2</cell><cell>-</cell><cell>0.0750</cell></row><row><cell>Cragg-Donald Wald F</cell><cell>143.49</cell><cell>-</cell></row><row><cell>Kleibergen-Paap Wald rk F</cell><cell>151.27</cell><cell>-</cell></row><row><cell cols="3">Notes. Cluster robust standard errors are reported in parentheses.</cell></row><row><cell cols="3">Stock and Yogo (2005) critical value for relative bias &gt;5% is 13.91.</cell></row><row><cell></cell><cell></cell><cell></cell></row></table><note><p>* p &lt; 0.1; * * p &lt; 0.05; * * * p &lt; 0.01.</p></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_4"><head>Table 6 .</head><label>6</label><figDesc>First Stage Estimation Results (DV ln(Bid))</figDesc><table><row><cell>Variables</cell><cell>(1)</cell><cell>(2)</cell></row><row><cell>XRate</cell><cell>0.4658  *  *  *  (0.0903)</cell><cell>0.4853  *  *  *  (0.0905)</cell></row><row><cell>Language Difference</cell><cell>-0.0036 (0.0057)</cell><cell>-0.0060 (0.0072)</cell></row><row><cell>Time Zone Difference</cell><cell>-0.0006 (0.0011)</cell><cell>-0.0011 (0.0014)</cell></row><row><cell>Cultural Difference</cell><cell>-0.0097  *  *  (0.0043)</cell><cell>-0.0130  *  *  (0.0052)</cell></row><row><cell>NRI</cell><cell>0.0471  *  *  *  (0.0043)</cell><cell>0.0585  *  *  *  (0.0058)</cell></row><row><cell>Provider Rating</cell><cell>-0.0045  *  *  *  (0.0007)</cell><cell>0.0090  *  (0.0048)</cell></row><row><cell>Provider Rating ×</cell><cell></cell><cell>-0.0007 (0.0011)</cell></row><row><cell>Language Difference</cell><cell></cell><cell></cell></row><row><cell>Provider Rating ×</cell><cell></cell><cell>0.0001 (0.0002)</cell></row><row><cell>Time Zone Difference</cell><cell></cell><cell></cell></row><row><cell>Provider Rating ×</cell><cell></cell><cell>0.0009 (0.0008)</cell></row><row><cell>Cultural Difference</cell><cell></cell><cell></cell></row><row><cell>Provider Rating ×</cell><cell></cell><cell>-0.0038  *  *  *  (0.0011)</cell></row><row><cell>NRI</cell><cell></cell><cell></cell></row><row><cell>Skill Match</cell><cell>-0.0330 (0.0228)</cell><cell>-0.0372 (0.0228)</cell></row><row><cell>Prior Transactions</cell><cell>-0.0004  *  *  *  (0.0001)</cell><cell>-0.0004  *  *  *  (0.0001)</cell></row><row><cell>ln(Experience)</cell><cell>0.0182  *  *  *  (0.0014)</cell><cell>0.0176  *  *  *  (0.0014)</cell></row><row><cell>Invited Provider</cell><cell>-0.0511  *  *  (0.0204)</cell><cell>-0.0507  *  *  (0.0205)</cell></row><row><cell>Provider Hourly Rate</cell><cell>0.0020  *  *  *  (0.0002)</cell><cell>0.0020  *  *  *  (0.0002)</cell></row><row><cell>Bid Sequence</cell><cell>0.0004  *  *  (0.0002)</cell><cell>0.0005  *  *  (0.0002)</cell></row><row><cell>ln(Preceding Bid)</cell><cell>-0.0434  *  *  *  (0.0037)</cell><cell>-0.0434  *  *  *  (0.0037)</cell></row><row><cell>Past Bidding Activity</cell><cell>0.0011  *  *  *  (0.0001)</cell><cell>0.0011  *  *  *  (0.0001)</cell></row><row><cell>(7 days)</cell><cell></cell><cell></cell></row><row><cell>Constant</cell><cell>4.3660  *  *  *  (0.0978)</cell><cell>4.3096  *  *  *  (0.1004)</cell></row><row><cell>Project fixed effects</cell><cell>Yes</cell><cell>Yes</cell></row><row><cell>No. of observations</cell><cell>117,105</cell><cell>117,105</cell></row><row><cell>No. of projects</cell><cell>11,541</cell><cell>11,541</cell></row><row><cell>Angrist-Pischke</cell><cell>151.93  *  *  *</cell><cell>151.27  *  *  *</cell></row><row><cell>multivariate F test</cell><cell></cell><cell></cell></row><row><cell>F statistic</cell><cell>128.11  *  *  *</cell><cell>100.34  *  *  *</cell></row><row><cell cols="3">Note. Cluster robust standard errors are reported in parentheses.</cell></row><row><cell></cell><cell></cell><cell></cell></row></table><note><p>* p &lt; 0.05; * * p &lt; 0.01; * * * p &lt; 0.001.</p></note></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_0"><p>Downloaded from informs.org by[132.199.43.252] on 07 October 2017, at 11:57 . For personal use only, all rights reserved.</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_1"><p>4.2. Key MeasuresBuyer's selection was measured by the variable Selection, which is captured as a dummy variable with value one if a service provider is selected, and zero if a service provider is not selected. For all of the projects used in our main analyses, the buyer selected one service provider to contract with. Note that in the data set there are projects with no buyer selection. As a robustness check, we report an analysis that uses all projects, including those that did not Downloaded from informs.org by[132.199.43.252] on 07 October 2017, at 11:57 . For personal use only, all rights reserved.</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_2"><p>Information SystemsResearch, 2017, vol. 28, no. 3, pp. 547-562, © 2017 INFORMS   </p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="3" xml:id="foot_3"><p>See Tan (2013).</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="4" xml:id="foot_4"><p>As part of the collaboration, we conducted a user survey study with the platform in May 2010 on buyer's uncertainty about the service providers, and we found technical competency and functional Downloaded from informs.org by[132.199.43.252] on 07 October 2017, at 11:57 . For personal use only, all rights reserved.</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="6" xml:id="foot_5"><p>https://www.imf.org/external/np/fin/ert/GUI/Pages/CountryData Base.aspx.</p></note>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Acknowledgments</head><p>The authors thank the senior editor and associate editor for a constructive and developmental review process. The authors also thank the anonymous reviewers for their helpful comments and suggestions. Finally, the authors thank Matt Barrie, Pei-yu Chen, Lorin Hitt, Ni Huang, Sanat Sarkar, Sunil Wattal, and seminar participants at the University of Virginia, Nanyang Technological University, Arizona State University, University of Florida, the 2012 International Conference on Information Systems, and the 2013 Statistical Challenges in eCommerce Research for valuable feedback. The authors acknowledge financial support from CIBER (Center for International Business Education and Research) through the U.S. Department of Education and the Fox School's Young Scholar's Forum at Temple University. 7  We thank an anonymous reviewer for suggesting this point. At the time of our data collection, the platform with which we work had not implemented this feature.</p></div>
+			</div>
+
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Information Systems <ref type="bibr">Research, 2017</ref><ref type="bibr">, vol. 28, no. 3, pp. 547-562, © 2017</ref><ref type="bibr">INFORMS Information Systems Research, 2017</ref><ref type="bibr">, vol. 28, no. 3, pp. 547-562, © 2017</ref> INFORMS Endnotes 1 The papers we surveyed have used various terms for buyers (e.g., firm, client, project poster) and service providers (e.g., supplier, seller, bidder, freelancer), we herein use "buyer" and "service provider." 2 See <ref type="bibr" target="#b64">Manyika et al. (2015)</ref>.</p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Outsourcing to an unknown workforce: Exploring opensourcing as a global sourcing strategy</title>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">J</forename><surname>Agerfalk</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Fitzgerald</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quart</title>
+		<imprint>
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="385" to="409" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Flexible and distributed information systems development: State of the art and research challenges</title>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">J</forename><surname>Agerfalk</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Fitzgerald</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">A</forename><surname>Slaughter</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Inform. Systems Res</title>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="317" to="328" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<author>
+			<persName><forename type="first">G</forename><surname>Akerlof</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">The market for &quot;Lemons&quot;: Quality uncertainty and the market mechanism</title>
+		<imprint>
+			<date type="published" when="1970">1970</date>
+			<biblScope unit="volume">84</biblScope>
+			<biblScope unit="page" from="488" to="500" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Review: Knowledge management and knowledge management systems: Conceptual foundations and research issues</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Alavi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">E</forename><surname>Leidner</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quart</title>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="107" to="136" />
+			<date type="published" when="2001">2001</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Large-scale service markets: The role of the moderating firm</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Allon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Bassamboo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">B</forename><surname>Cil</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Sci</title>
+		<imprint>
+			<biblScope unit="volume">58</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page" from="1854" to="1872" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Production and transaction economies and IS outsourcing: A study of the U.S. banking industry</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Ang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Straub</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quart</title>
+		<imprint>
+			<biblScope unit="volume">22</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="535" to="552" />
+			<date type="published" when="1998">1998</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<monogr>
+		<title level="m" type="main">Mostly Harmless Econometrics: An Empiricist&apos;s Companion</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">D</forename><surname>Angrist</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">S</forename><surname>Pischke</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2008">2008</date>
+			<publisher>Princeton University Press</publisher>
+			<pubPlace>Princeton, NJ</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Identification of causal effects using instrumental variables</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">D</forename><surname>Angrist</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">W</forename><surname>Imbens</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rubin</forename><surname>Db</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Amer. Statist. Assoc</title>
+		<imprint>
+			<biblScope unit="volume">91</biblScope>
+			<biblScope unit="issue">434</biblScope>
+			<biblScope unit="page" from="444" to="455" />
+			<date type="published" when="1996">1996</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Procurement when price and quality matter</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Asker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Cantillon</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">RAND J. Econom</title>
+		<imprint>
+			<biblScope unit="volume">41</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="1" to="34" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Evidence of the effect of trust building technology in electronic markets: Price premiums and buyer behavior</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Ba</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">A</forename><surname>Pavlou</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quart</title>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="243" to="268" />
+			<date type="published" when="2002">2002</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">From vendors to partners: Information technology and incomplete contracts in buyer-supplier relationships</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">Y</forename><surname>Bakos</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Brynjolfsson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Organ. Comput. Electronic Commerce</title>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="301" to="328" />
+			<date type="published" when="1993">1993</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Importance of measures of past performance: Empirical evidence on quality of e-service providers</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Banker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Hwang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Contemporary Accounting Res</title>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="307" to="337" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">The moderating effects of structure on volatility and complexity in software enhancement</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">D</forename><surname>Banker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">A</forename><surname>Slaughter</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Inform. Systems Res</title>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="219" to="240" />
+			<date type="published" when="2000">2000</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Software development practices, software complexity, and software maintenance performance: A field study</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">D</forename><surname>Banker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">B</forename><surname>Davis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">A</forename><surname>Slaughter</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Sci</title>
+		<imprint>
+			<biblScope unit="volume">44</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="433" to="450" />
+			<date type="published" when="1998">1998</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Automobile prices in market equilibrium</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Berry</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Levinsohn</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Pakes</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Econometrica</title>
+		<imprint>
+			<biblScope unit="volume">63</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="841" to="890" />
+			<date type="published" when="1995">1995</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<monogr>
+		<author>
+			<persName><forename type="first">S</forename><surname>Bird</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Klein</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Loper</surname></persName>
+		</author>
+		<title level="m">Natural Language Processing with Python</title>
+		<meeting><address><addrLine>O&apos;Reilly Media, Sebastopol, CA</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Critical service encounters: The employee&apos;s view</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Bitner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Booms</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Mohr</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Marketing</title>
+		<imprint>
+			<biblScope unit="volume">58</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="95" to="106" />
+			<date type="published" when="1994">1994</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<monogr>
+		<author>
+			<persName><forename type="first">E</forename><surname>Brynjolfsson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Mcafee</surname></persName>
+		</author>
+		<title level="m">Race Against the Machine: How the Digital Revolution Is Accelerating Innovation Driving Productivity and Irreversibly Transforming Employment and the Economy</title>
+		<meeting><address><addrLine>Lexington, MA</addrLine></address></meeting>
+		<imprint>
+			<publisher>Digital Frontier Press</publisher>
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Frictionless commerce? A comparison of Internet and conventional retailers</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>Brynjolfsson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Smith</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Sci</title>
+		<imprint>
+			<biblScope unit="volume">46</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="563" to="585" />
+			<date type="published" when="2000">2000</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Cultural differences and geography as determinants of online pro-social lending</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Burtch</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Ghose</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Wattal</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quart</title>
+		<imprint>
+			<biblScope unit="volume">38</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="773" to="794" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<monogr>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">C</forename><surname>Cameron</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">K</forename><surname>Trivedi</surname></persName>
+		</author>
+		<title level="m">Microeconometrics Using Stata</title>
+		<meeting><address><addrLine>College Station, TX</addrLine></address></meeting>
+		<imprint>
+			<publisher>Stata Press</publisher>
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<monogr>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">D</forename><surname>Chandler</surname></persName>
+		</author>
+		<title level="m">The Visible Hand: The Managerial Revolution in American Business</title>
+		<meeting><address><addrLine>Cambridge, MA</addrLine></address></meeting>
+		<imprint>
+			<publisher>Belknap Press</publisher>
+			<date type="published" when="1977">1977</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">A history of research in service operations: What&apos;s the big idea?</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">B</forename><surname>Chase</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">U</forename><forename type="middle">M</forename><surname>Apte</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Oper. Management</title>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="375" to="386" />
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Can exchange rates forecast commodity prices? Quart</title>
+		<author>
+			<persName><forename type="first">Y</forename><forename type="middle">C</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Rogoff</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Rossi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Econom</title>
+		<imprint>
+			<biblScope unit="volume">125</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="1145" to="1194" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<monogr>
+		<title level="m" type="main">The Conditions of Economic Progress</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Clark</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1967">1967</date>
+			<publisher>Garland Publishing</publisher>
+			<pubPlace>New York</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">Crossing spatial and temporal boundaries in globally distributed projects: A relational model of coordination delay</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">N</forename><surname>Cummings</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">A</forename><surname>Espinosa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">K</forename><surname>Pickering</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Inform. Systems Res</title>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="420" to="439" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">The digitization of word of mouth: Promise and challenges of online feedback mechanisms</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Dellarocas</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Sci</title>
+		<imprint>
+			<biblScope unit="volume">49</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page" from="1407" to="1424" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Strategic manipulation of Internet opinion forums: Implications for consumers and firms</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Dellarocas</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Sci</title>
+		<imprint>
+			<biblScope unit="volume">52</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page" from="1577" to="1593" />
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">Explaining variations in buyer extra costs between software projects offshored to India</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Dibbern</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Winkler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Heinzl</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quart</title>
+		<imprint>
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="333" to="366" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">On product uncertainty in online markets: Theory and evidence</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Dimoka</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Hong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Pavlou</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quart</title>
+		<imprint>
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="395" to="426" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<monogr>
+		<author>
+			<persName><forename type="first">S</forename><surname>Dutta</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Geiger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Lanvin</surname></persName>
+		</author>
+		<ptr target="http://www3.weforum.org/docs/WEF_Global_IT_Report_2015.pdf" />
+		<title level="m">The global information technology report. World Econom. Forum</title>
+		<imprint>
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">Familiarity complexity and team performance in geographically distributed software development</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">A</forename><surname>Espinosa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">A</forename><surname>Slaughter</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">E</forename><surname>Kraut</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">D</forename><surname>Herbsleb</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Organ. Sci</title>
+		<imprint>
+			<biblScope unit="volume">18</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="613" to="630" />
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Competition between local and electronic markets: How the benefit of buying online depends on where you live</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Forman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Ghose</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Goldfarb</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Sci</title>
+		<imprint>
+			<biblScope unit="volume">55</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="47" to="57" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<monogr>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">L</forename><surname>Friedman</surname></persName>
+		</author>
+		<title level="m">The World Is Flat: A Brief History of the Twenty-First Century</title>
+		<meeting><address><addrLine>New York</addrLine></address></meeting>
+		<imprint>
+			<publisher>Picador</publisher>
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title level="a" type="main">Is the world really flat? A look at offshoring at an online programming market</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Gefen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Carmel</forename><forename type="middle">E</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quart</title>
+		<imprint>
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="367" to="384" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<monogr>
+		<title level="m" type="main">Redefining Global Strategy: Crossing Borders in a World Where Differences Still Matter</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Ghemawat</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2013">2013</date>
+			<publisher>Harvard Business Press</publisher>
+			<pubPlace>Boston</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">Designing ranking systems for hotels on travel search engines by mining user-generated and crowdsourced content</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Ghose</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">G</forename><surname>Ipeirotis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Li</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Marketing Sci</title>
+		<imprint>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="493" to="520" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<analytic>
+		<title level="a" type="main">Do cultural differences between contracting parties matter? Evidence from syndicated bank loans</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Giannetti</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Yafeh</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Sci</title>
+		<imprint>
+			<biblScope unit="volume">58</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="365" to="383" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<analytic>
+		<title level="a" type="main">How mental systems believe</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">T</forename><surname>Gilbert</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Amer. Psychologist</title>
+		<imprint>
+			<biblScope unit="volume">46</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="107" to="119" />
+			<date type="published" when="1991">1991</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<analytic>
+		<title level="a" type="main">A service quality model and its marketing implications</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Grönroos</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Eur. J. Marketing</title>
+		<imprint>
+			<biblScope unit="volume">18</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="36" to="44" />
+			<date type="published" when="1984">1984</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<analytic>
+		<title level="a" type="main">Country image: Halo or summary construct</title>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">M</forename><surname>Han</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Marketing Res</title>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="222" to="229" />
+			<date type="published" when="1989">1989</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<analytic>
+		<title level="a" type="main">Measuring the frictional costs of online transactions: The case of a name-your-own-price channel</title>
+		<author>
+			<persName><forename type="first">I</forename><forename type="middle">H</forename><surname>Hann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Terwiesch</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Sci</title>
+		<imprint>
+			<biblScope unit="volume">49</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="1563" to="1579" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+	<analytic>
+		<title level="a" type="main">The management of customer contact service employees: An empirical investigation</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Hartline</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O</forename><surname>Ferrell</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Marketing</title>
+		<imprint>
+			<biblScope unit="volume">60</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="52" to="70" />
+			<date type="published" when="1996">1996</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b43">
+	<analytic>
+		<title level="a" type="main">Splitting the organization and integrating the code: Conway&apos;s law revisited</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">D</forename><surname>Herbsleb</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">E</forename><surname>Grinter</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. 21st Internat. Conf. Software Engrg</title>
+		<meeting>21st Internat. Conf. Software Engrg<address><addrLine>New York</addrLine></address></meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="1999">1999</date>
+			<biblScope unit="page" from="85" to="95" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b44">
+	<analytic>
+		<title level="a" type="main">Product fit uncertainty in online markets: Nature effects and antecedents</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Hong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">A</forename><surname>Pavlou</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Inform. Systems Res</title>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="328" to="344" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b45">
+	<analytic>
+		<title level="a" type="main">Comparing open and sealed bid auctions: Evidence from online labor markets</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Hong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">A</forename><surname>Pavlou</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Inform. Systems Res</title>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="49" to="69" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b46">
+	<monogr>
+		<title level="m" type="main">Supply constraints as a market friction: Evidence from an online labor market</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">J</forename><surname>Horton</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2015">2015</date>
+			<pubPlace>New York University</pubPlace>
+		</imprint>
+	</monogr>
+	<note>Working paper, Stern School of Business</note>
+</biblStruct>
+
+<biblStruct xml:id="b47">
+	<analytic>
+		<title level="a" type="main">On selection biases in online product reviews</title>
+		<author>
+			<persName><forename type="first">N</forename><surname>Hu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">A</forename><surname>Pavlou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Zhang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quart</title>
+		<imprint>
+			<biblScope unit="volume">41</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="449" to="471" />
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b48">
+	<analytic>
+		<title level="a" type="main">Changing mass priorities: The link between modernization and democracy</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Inglehart</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Welzel</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Perspectives Politics</title>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="551" to="567" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b49">
+	<analytic>
+		<title level="a" type="main">Aggregation bias in estimates of perceptual agreement</title>
+		<idno>132.199.43.252</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Downloaded from informs</title>
+		<imprint>
+			<date type="published" when="1982">07 October 2017. 2017. 2017. 1982</date>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="page" from="219" to="229" />
+		</imprint>
+	</monogr>
+	<note>J. Appl. Psych.</note>
+</biblStruct>
+
+<biblStruct xml:id="b50">
+	<analytic>
+		<title level="a" type="main">The effects of group longevity on project communication and performance</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Katz</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Admin. Sci. Quart</title>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="81" to="104" />
+			<date type="published" when="1982">1982</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b51">
+	<analytic>
+		<title level="a" type="main">Information systems offshoring: Research status and issues</title>
+		<author>
+			<persName><forename type="first">W</forename><forename type="middle">R</forename><surname>King</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Torkzadeh</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quart</title>
+		<imprint>
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="205" to="225" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b52">
+	<analytic>
+		<title level="a" type="main">Reputation transferability in online labor markets</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Kokkodis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">G</forename><surname>Ipeirotis</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Sci</title>
+		<imprint>
+			<biblScope unit="volume">62</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="1687" to="1706" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b53">
+	<analytic>
+		<title level="a" type="main">Key strategies for the successful involvement of customers in the co-creation of new technology-based services</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Kristensson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Matthing</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Johansson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Internat. J. Service Indust. Management</title>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="474" to="491" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b54">
+	<analytic>
+		<title level="a" type="main">Iterative and incremental development: A brief history</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Larman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><forename type="middle">R</forename><surname>Basili</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Comput</title>
+		<imprint>
+			<biblScope unit="volume">36</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="47" to="56" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b55">
+	<analytic>
+		<title level="a" type="main">A flat world, a level playing field, a small world after all, or none of the above? A review of Thomas L. Friedman&apos;s The World is Flat</title>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">E</forename><surname>Leamer</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Econom. Literature</title>
+		<imprint>
+			<biblScope unit="volume">41</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="83" to="126" />
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b56">
+	<analytic>
+		<title level="a" type="main">Characteristic beneficial and image attributes in consumer judgments of similarity and preference</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Lefkoff-Hagius</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">H</forename><surname>Mason</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Consumer Res</title>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="100" to="110" />
+			<date type="published" when="1993">1993</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b57">
+	<monogr>
+		<author>
+			<persName><forename type="first">J</forename><surname>Leskovec</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Rajaraman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">D</forename><surname>Ullman</surname></persName>
+		</author>
+		<title level="m">Mining of Massive Data Sets</title>
+		<meeting><address><addrLine>Cambridge, UK</addrLine></address></meeting>
+		<imprint>
+			<publisher>Cambridge University Press</publisher>
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b58">
+	<analytic>
+		<title level="a" type="main">The role of country of origin in product evaluations: Informational and standard-of-comparison effects</title>
+		<author>
+			<persName><forename type="first">W</forename><forename type="middle">K</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">S</forename><surname>Wyer</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Consumer Psych</title>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="187" to="212" />
+			<date type="published" when="1994">1994</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b59">
+	<monogr>
+		<title level="m" type="main">Does information really &quot;Unravel&quot;? Understanding factors that motivate sellers to seek third-party certifications in an online labor market</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Goes</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2012">2012</date>
+			<pubPlace>Tucson</pubPlace>
+		</imprint>
+		<respStmt>
+			<orgName>University of Arizona</orgName>
+		</respStmt>
+	</monogr>
+	<note>Working paper</note>
+</biblStruct>
+
+<biblStruct xml:id="b60">
+	<analytic>
+		<title level="a" type="main">Effectiveness of reputation in contracting for customized production: Evidence from online labor markets</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Viswanathan</surname></persName>
+		</author>
+		<idno type="DOI">10.1287/mnsc.2016.2594</idno>
+		<ptr target="https://doi.org/10.1287/mnsc.2016.2594" />
+	</analytic>
+	<monogr>
+		<title level="j">Management Sci., ePub ahead of print December</title>
+		<imprint>
+			<biblScope unit="volume">16</biblScope>
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b61">
+	<analytic>
+		<title level="a" type="main">Effects of task experience and group experience on group performance member ability and recognition of expertise</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Littlepage</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Robison</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Reddington</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Organ. Behav. Human Decision Processes</title>
+		<imprint>
+			<biblScope unit="volume">69</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="133" to="147" />
+			<date type="published" when="1997">1997</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b62">
+	<analytic>
+		<title level="a" type="main">The interdisciplinary study of coordination</title>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">W</forename><surname>Malone</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Crowston</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">ACM Comput. Surveys</title>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="87" to="119" />
+			<date type="published" when="1994">1994</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b63">
+	<analytic>
+		<title level="a" type="main">The dawn of the e-lance economy</title>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">W</forename><surname>Malone</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">J</forename><surname>Laubacher</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Harvard Bus. Rev</title>
+		<imprint>
+			<biblScope unit="volume">76</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="146" to="152" />
+			<date type="published" when="1998">1998</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b64">
+	<analytic>
+		<title level="a" type="main">Connecting talent with opportunity in the digital age</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Manyika</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Lund</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Robinson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Valentino</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Dobbs</surname></persName>
+		</author>
+		<ptr target="http://www.mckinsey.com/global-themes/employment-and-growth/connecting-talent-with-opportunity-in-the-digital-age" />
+	</analytic>
+	<monogr>
+		<title level="j">McKinsey Global Institute Report</title>
+		<imprint>
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b65">
+	<monogr>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">C</forename><surname>Martin</surname></persName>
+		</author>
+		<title level="m">Agile Software Development: Principles Patterns and Practices</title>
+		<meeting><address><addrLine>Upper Saddle River, NJ</addrLine></address></meeting>
+		<imprint>
+			<publisher>Prentice Hall</publisher>
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b66">
+	<analytic>
+		<title level="a" type="main">Market access in global and regional trade</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Mayer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Zignago</surname></persName>
+		</author>
+		<ptr target="http://www.cepii.fr/PDF_PUB/wp/2005/wp2005-02.pdf" />
+	</analytic>
+	<monogr>
+		<title level="j">CEPII Report</title>
+		<imprint>
+			<date type="published" when="2005">2005</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b67">
+	<monogr>
+		<title level="m" type="main">Hiring and learning in online global labor markets. Working paper</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Mill</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2011">2011</date>
+			<pubPlace>Palo Alto, CA</pubPlace>
+		</imprint>
+		<respStmt>
+			<orgName>Stanford University</orgName>
+		</respStmt>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b68">
+	<analytic>
+		<title level="a" type="main">Do auction parameters affect buyer surplus in e-auctions for procurement?</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Mithas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">L</forename><surname>Jones</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Production Oper. Management</title>
+		<imprint>
+			<biblScope unit="volume">16</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="455" to="470" />
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b69">
+	<analytic>
+		<title level="a" type="main">Human capital and institutional effects in the compensation of information technology professionals in the United States</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Mithas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Krishnan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Sci</title>
+		<imprint>
+			<biblScope unit="volume">54</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="415" to="428" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b70">
+	<analytic>
+		<title level="a" type="main">Doing business with strangers: Reputation in online service marketplaces</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Moreno</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Terwiesch</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Inform. Systems Res</title>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="856" to="886" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b71">
+	<analytic>
+		<title level="a" type="main">How does culture influence conflict resolution: A dynamic constructivist analysis</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">W</forename><surname>Morris</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Fu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Soc. Cognition</title>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="324" to="349" />
+			<date type="published" when="2001">2001</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b72">
+	<analytic>
+		<title level="a" type="main">A comparative study of important risk factors involved in offshore and domestic outsourcing of software development projects: A two-panel Delphi study</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">T</forename><surname>Nakatsu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">L</forename><surname>Iacovou</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Inform. Management</title>
+		<imprint>
+			<biblScope unit="volume">46</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="57" to="68" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b73">
+	<analytic>
+		<title level="a" type="main">A practitioner&apos;s guide to estimation of randomcoefficients logit models of demand</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Nevo</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Econom. Management Strategy</title>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="513" to="548" />
+			<date type="published" when="2000">2000</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b74">
+	<analytic>
+		<title level="a" type="main">Building effective online marketplaces with institution-based trust</title>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">A</forename><surname>Pavlou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Gefen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Inform. Systems Res</title>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="27" to="53" />
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b75">
+	<analytic>
+		<title level="a" type="main">Understanding and mitigating uncertainty in online environments: A principal-agent perspective</title>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">A</forename><surname>Pavlou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Liang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Xue</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quart</title>
+		<imprint>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="105" to="136" />
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b76">
+	<analytic>
+		<title level="a" type="main">Offshore information systems projects success: The role of social embeddedness and cultural characteristics</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Rai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">M</forename><surname>Maruping</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Venkatesh</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quart</title>
+		<imprint>
+			<biblScope unit="volume">33</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="617" to="641" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b77">
+	<analytic>
+		<title level="a" type="main">The effect of price brand name and store name on buyers&apos; perceptions of product quality: An integrative review</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Rao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Monroe</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Marketing Res</title>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="351" to="357" />
+			<date type="published" when="1989">1989</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b78">
+	<analytic>
+		<title level="a" type="main">Social capital reputation and contract design in buyer-supplier networks for information technology outsourcing</title>
+		<author>
+			<persName><forename type="first">K</forename><surname>Ravindran</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Susarla</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Mani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Gurbaxani</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Inform. Systems Res</title>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="379" to="397" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b79">
+	<analytic>
+		<title level="a" type="main">Homophily-heterophily: Relational concepts for communication research</title>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">M</forename><surname>Rogers</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">K</forename><surname>Bhowmik</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Public Opinion Quart</title>
+		<imprint>
+			<biblScope unit="volume">34</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="523" to="538" />
+			<date type="published" when="1970">1970</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b80">
+	<analytic>
+		<title level="a" type="main">What you don&apos;t know about customer-perceived quality: The role of customer expectation distributions</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">T</forename><surname>Rust</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">J</forename><surname>Inman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Jia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Zahorik</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Marketing Sci</title>
+		<imprint>
+			<biblScope unit="volume">18</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="77" to="92" />
+			<date type="published" when="1999">1999</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b81">
+	<analytic>
+		<title level="a" type="main">XTOVERID: Stata module to calculate tests of overidentifying restrictions after xtreg, xtivreg, xtivreg2, xthtaylor</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">E</forename><surname>Schaffer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Stillman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Boston College Department of Economics</title>
+		<imprint>
+			<biblScope unit="volume">456779</biblScope>
+			<date type="published" when="2006-01-05">2006. January 5, 2016</date>
+			<pubPlace>Chestnut Hill, MA</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b82">
+	<analytic>
+		<title level="a" type="main">Determinants of reverse auction results: An empirical examination of freelancer.com</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Scholz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Haas</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. Eur. Conf. Inform. Systems</title>
+		<meeting>Eur. Conf. Inform. Systems</meeting>
+		<imprint>
+			<date type="published" when="2011">2011</date>
+			<biblScope unit="page">89</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b83">
+	<monogr>
+		<title level="m" type="main">The Wealth of Nations</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Smith</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1776">1776</date>
+			<biblScope unit="volume">14</biblScope>
+			<pubPlace>Methuen, London</pubPlace>
+		</imprint>
+	</monogr>
+	<note>Cannan E, ed. University Paperbacks</note>
+</biblStruct>
+
+<biblStruct xml:id="b84">
+	<analytic>
+		<title level="a" type="main">Costly bidding in online markets for IT services</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>Snir</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Hitt</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Sci</title>
+		<imprint>
+			<biblScope unit="volume">49</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="1504" to="1520" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b85">
+	<analytic>
+		<title level="a" type="main">Job market signaling</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Spence</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Quart. J. Econom</title>
+		<imprint>
+			<biblScope unit="volume">87</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="355" to="374" />
+			<date type="published" when="1973">1973</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b86">
+	<analytic>
+		<title level="a" type="main">Instrumental variables regression with weak instruments</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Staiger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">H</forename><surname>Stock</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Econometrica</title>
+		<imprint>
+			<biblScope unit="volume">65</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="557" to="586" />
+			<date type="published" when="1997">1997</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b87">
+	<monogr>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">H</forename><surname>Stock</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Yogo</surname></persName>
+		</author>
+		<title level="m">Testing for weak instruments in IV regression</title>
+		<imprint>
+			<date type="published" when="2005">2005</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b88">
+	<monogr>
+		<author>
+			<persName><forename type="first">Dwk</forename><surname>Andrews</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">H</forename><surname>Stock</surname></persName>
+		</author>
+		<title level="m">Identification and Inference for Econometric Models: A Festschrift in Honor of Thomas Rothenberg</title>
+		<meeting><address><addrLine>Cambridge, UK</addrLine></address></meeting>
+		<imprint>
+			<publisher>Cambridge University Press</publisher>
+			<biblScope unit="page" from="80" to="108" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b89">
+	<monogr>
+		<title level="m" type="main">Information disclosure in dynamic buyerdetermined procurement auctions: An empirical study. Working paper</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Stoll</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Zöttl</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2012">2012</date>
+			<pubPlace>Munich, Germany</pubPlace>
+		</imprint>
+		<respStmt>
+			<orgName>Department of Economics, University of Munich</orgName>
+		</respStmt>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b90">
+	<analytic>
+		<title level="a" type="main">Cultural sensemaking in offshore information technology service suppliers: A cultural frame perspective</title>
+		<author>
+			<persName><forename type="first">N</forename><surname>Su</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quart</title>
+		<imprint>
+			<biblScope unit="volume">39</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="959" to="983" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b91">
+	<analytic>
+		<title level="a" type="main">Predictability and personalization in the service encounter</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Surprenant</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Solomon</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Marketing</title>
+		<imprint>
+			<biblScope unit="volume">51</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="86" to="96" />
+			<date type="published" when="1987">1987</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b92">
+	<analytic>
+		<title level="a" type="main">Contractual flexibility rent seeking and renegotiation design: An empirical analysis of information technology outsourcing contracts</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Susarla</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Sci</title>
+		<imprint>
+			<biblScope unit="volume">58</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="1388" to="1407" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b93">
+	<analytic>
+		<title level="a" type="main">Contracting efficiency and new firm survival in markets enabled by information technology</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Susarla</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Barua</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Inform. Systems Res</title>
+		<imprint>
+			<biblScope unit="volume">22</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="306" to="324" />
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b94">
+	<analytic>
+		<title level="a" type="main">Contractual provisions to mitigate holdup: Evidence from information technology outsourcing</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Susarla</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Subramanyam</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Karhade</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Inform. Systems Res</title>
+		<imprint>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="37" to="55" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b95">
+	<analytic>
+		<title level="a" type="main">Australia&apos;s freelancer soars on IPO debut</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Tan</surname></persName>
+		</author>
+		<ptr target="http://blogs.wsj.com/moneybeat/2013/11/14/australias-freelancer-soars-on-ipo-debut/" />
+	</analytic>
+	<monogr>
+		<title level="j">Wall Street Journal</title>
+		<imprint>
+			<date type="published" when="2013-11-14">2013. November 14</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b96">
+	<monogr>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">N</forename><surname>Tan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Steinbach</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Kumar</surname></persName>
+		</author>
+		<title level="m">Introduction to Data Mining</title>
+		<meeting><address><addrLine>Boston</addrLine></address></meeting>
+		<imprint>
+			<publisher>Addison-Wesley</publisher>
+			<date type="published" when="2005">2005</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b97">
+	<analytic>
+		<title level="a" type="main">Evolving to a new dominant logic for marketing</title>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">L</forename><surname>Vargo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">F</forename><surname>Lusch</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Marketing</title>
+		<imprint>
+			<biblScope unit="volume">68</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="1" to="17" />
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b98">
+	<analytic>
+		<title level="a" type="main">A note on robust variance estimation for clustercorrelated data</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">L</forename><surname>Williams</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Biometrics</title>
+		<imprint>
+			<biblScope unit="volume">56</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="645" to="646" />
+			<date type="published" when="2000">2000</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b99">
+	<monogr>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">M</forename><surname>Wooldridge</surname></persName>
+		</author>
+		<title level="m">Econometric Analysis of Cross Section and Panel Data</title>
+		<meeting><address><addrLine>Cambridge, MA</addrLine></address></meeting>
+		<imprint>
+			<publisher>MIT Press</publisher>
+			<date type="published" when="2002">2002</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b100">
+	<analytic>
+		<title level="a" type="main">The value of reputation in an online freelance market</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Yoganarasimhan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Marketing Sci</title>
+		<imprint>
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="860" to="891" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

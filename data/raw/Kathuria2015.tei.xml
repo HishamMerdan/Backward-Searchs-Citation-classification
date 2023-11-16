@@ -1,0 +1,1491 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Strategic Intent, Contract Duration, and Performance: Evidence from Micro-Outsourcing Completed Research Paper</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Abhishek</forename><surname>Kathuria</surname></persName>
+							<email>kathuria@hku.hk</email>
+						</author>
+						<author>
+							<persName><forename type="first">Terence</forename><forename type="middle">J V</forename><surname>Saldanha</surname></persName>
+							<email>terence.saldanha@wsu.edu</email>
+						</author>
+						<author>
+							<persName><forename type="first">Jiban</forename><surname>Khuntia</surname></persName>
+							<email>jiban.khuntia@ucdenver.edu</email>
+						</author>
+						<author>
+							<persName><forename type="first">Mariana</forename><forename type="middle">G Andrade</forename><surname>Rojas</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Hyeyoung</forename><surname>Hah</surname></persName>
+							<email>hhah@emory.edu</email>
+						</author>
+						<author>
+							<affiliation key="aff0">
+								<orgName type="institution">University of Hong Kong Pokfulam</orgName>
+								<address>
+									<settlement>Hong Kong</settlement>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff1">
+								<orgName type="institution">Washington State University Pullman</orgName>
+								<address>
+									<postCode>99164</postCode>
+									<region>WA</region>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff2">
+								<orgName type="institution">University of Colorado</orgName>
+								<address>
+									<postCode>80204</postCode>
+									<settlement>Denver Denver</settlement>
+									<region>CO</region>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff3">
+								<orgName type="department">IE Business School Madrid</orgName>
+								<address>
+									<country key="ES">Spain</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff4">
+								<orgName type="institution">Emory University Atlanta</orgName>
+								<address>
+									<postCode>30322</postCode>
+									<region>GA</region>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff5">
+								<orgName type="department">Micro-Outsourcing Thirty Sixth International Conference on Information Systems</orgName>
+								<address>
+									<postCode>2015 2</postCode>
+									<settlement>Fort Worth</settlement>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Strategic Intent, Contract Duration, and Performance: Evidence from Micro-Outsourcing Completed Research Paper</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="MD5">5EED77A27C560126D175A49CFE2F5477</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.7.3" ident="GROBID" when="2023-06-16T09:23+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>Micro-outsourcing</term>
+					<term>Strategic Intent</term>
+					<term>Client Evaluation</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Micro-outsourcing is the process of sourcing work to smaller firms or individuals using online sites. Several websites provide a platform to match clients and vendors for sourcing jobs. A typical issue with micro-sourcing is information asymmetry regarding the actual expertise of vendors. Online platforms bridge this gap using vendors' prior histories and client evaluations. In this study, we examine how the strategic intents of vendors as captured by the platform play a moderating role on the relationship between project contract duration and client evaluation of vendor performance. Our empirical analysis uses project level data of over 6000 completed micro-outsourcing IT projects obtained from a leading micro-sourcing IT platform. We find that competency-focused strategic intent and goal-focused strategic intent positively moderate the relationship between project contract duration and client evaluation of vendor performance; whereas cost-focused strategic intent negatively moderates this relationship. Contributions and implications for research and practice are discussed.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Introduction</head><p>The nature of knowledge-based work and organizations is undergoing a radical transformation in the 21 st century. Due to near instantaneous and inexpensive sharing of information and data between many people in varied locations and an increase in range and reach of coordination mechanisms, small firms are increasingly challenging the centralized decision making and expensive bureaucracy based traditional business models of global enterprises. These changes are driven by increased processing power, virtually infinite storage and increasing bandwidth, which enable small firms to be lean, flexible and creative while acting as if they were a large corporation. Digital environments and digitized work provide rich contexts for the emergence of such new organizational forms and strategies (Andrade Rojas and Kathuria 2014; <ref type="bibr" target="#b57">Vitzthum, Kathuria and Konsynski 2011)</ref>. Micro-outsourcing, or Outsourcing 2.0, is an exemplar of the future of organizations and knowledge-based work and the strategies followed by micro-outsourcing vendors are harbingers of business success in future.</p><p>Outsourcing is a key driver of firm competitiveness and profitability and became an established aspect of business strategy in the late 20th and early 21st century. While early efforts at outsourcing information technology (IT) and business processes were undertaken with an objective to save costs and improve efficiencies, another major motivation driving outsourcing activities is the ability to redeploy resources and personnel towards more strategic activities. Thus, outsourcing has enabled firms to realize several strategic objectives, ranging from reduced time-to-market for innovations to improved organizational transformation outcomes <ref type="bibr" target="#b35">(Linder 2004)</ref>. Consequently, outsourcing of IT, business processes and other knowledge-based work continues to be an important subject of managerial and academic attention <ref type="bibr" target="#b17">(Gopal and Gosain 2010;</ref><ref type="bibr" target="#b31">Lacity and Willcocks 1998)</ref>. However, most prior research and practitioner literature is focused on outsourcing in the traditional sense. Under this paradigm, outsourcing refers to the use of external agents to perform activities or functions that were previously performed within the organization <ref type="bibr" target="#b56">(Varadarajan 2009)</ref>. More formally, IT outsourcing is defined as the "significant contribution by external vendors in the physical and/or human resources associated with the entire or specific components of the IT infrastructure in the user organization" <ref type="bibr" target="#b36">(Loh and Venkatraman 1992</ref>) (p. 9).</p><p>Micro-outsourcing represents a new paradigm in the outsourcing of knowledge-based work. While outsourcing previously encompassed large sized deals valued in millions of U.S. dollars, spread over a multi-year duration, it has now moved into the small and micro deal space. Such outsourcing engagements are increasing in numbers, but involve smaller chunks of work that are to be completed in days or weeks, and are valued in the range of tens, hundreds, or thousands of U.S. dollars. This movement has been facilitated by several themes and meta-trends. On one hand, the modularization and atomization of business processes has made outsourcing of smaller sized pieces of work a possibility. On the other hand, the rapid proliferation of Web 2.0 technology based project management, communication, and open source technologies have created information infrastructures that have enabled organizations to manage larger numbers of outsourced projects for development <ref type="bibr" target="#b9">(Constantinides 2012;</ref><ref type="bibr" target="#b45">Saldanha and Krishnan 2012;</ref><ref type="bibr" target="#b48">Setia, Rajagopalan, Sambamurthy and Calantone 2012)</ref>. Furthermore, the trend of smaller software applications such as enterprise mobile apps has resulted in smaller project sizes. The wide adoption of crowdsourcing and work distribution platforms such as Amazon Mechanical Turk has given an impetus to these developments and led to increasing numbers of small service firms being able to find increasing amount of economically viable 'virtual' work. Together, these have resulted in a new paradigm of Outsourcing 2.0, or micro-outsourcing.</p><p>Micro-outsourcing platforms (e.g., Amazon Mechanical Turk) are used intensively for interaction between vendors and clients for projects. Such platforms represent the use of IT to build inter-firm mechanisms and relationships for work partnerships <ref type="bibr" target="#b47">(Saraf, Langdon and Gosain 2007)</ref>. In the triad of vendor-clientproject relationships the IT-based micro-outsourcing platforms work as avenues to reduce and manage information asymmetry prevailing in the sourcing work. As such, sourcing interactions require dynamic information-and knowledge-processing and exchange for highly interdependent processes using IT <ref type="bibr" target="#b39">(Mani, Barua and Whinston 2009)</ref>. Moreover, sourcing platforms are conduits for fulfilment of the actual (and not too strict) contractual agreements between the client and vendor, with the objectives of achieving an end goal, fulfillment of psychological contracts with the client <ref type="bibr" target="#b28">(Koh, Ang and Straub 2004)</ref>, and fit between the client and provider <ref type="bibr" target="#b32">(Lee, Miranda and Kim 2004)</ref>. Although several websites provide a platform to match clients and vendors for sourcing jobs, a typical issue with micro-outsourcing platforms is the information asymmetry regarding the actual expertise of vendors. Online platforms try to bridge this gap using vendors' prior histories and client evaluations.</p><p>Vendors working through the micro-outsourcing platforms must accommodate complexities such as the dynamic exchange of knowledge and process information with clients, while managing globally distributed work, maintaining work productivity, achieving speed and agility, and accommodating cultural, administrative and geographical distance between vendors and clients <ref type="bibr" target="#b14">(Ghemawat 2001;</ref><ref type="bibr" target="#b46">Saldanha, Melville, Ramirez and Richardson 2013)</ref>. These challenges and complexities demand that vendors adopt appropriate strategies to provide quality service and outcomes in terms of client's work or project performance and subsequent evaluations by the clients.</p><p>One of the important challenges in the micro-outsourcing context is managing larger projects which can be challenging due to the nature of the vendor-client relationship, resource constraints of typical vendors in this context, the nature of tasks, and the motivation levels of vendors in such tasks <ref type="bibr" target="#b31">(Lacity and Willcocks 1998;</ref><ref type="bibr" target="#b32">Lee, Miranda and Kim 2004)</ref>. As opposed to typical large IT outsourcing contexts, the micro-outsourcing context reflects the app-sized world and requires app-sized contracts, and so the durations of these contracts can typically be measured in a few days. Such micro-outsourcing environments are more amenable to smaller tasks as vendors are able to better manage resources and smaller jobs. For instance, an example of micro-outsourcing is the use of the Amazon Mechanical Turk platform for creation of data sets for benchmarking. Larger tasks have more opportunities for failure, which can result in poor evaluations by the clients of the vendors performing the tasks. Therefore, vendors are on the lookout for better ways and strategies for managing longer projects in the microoutsourcing context. In sum, a major challenge of micro-outsourcing is the complexity arising due to the project scope. Often, scope creep results in higher than expected workload and takes longer duration to complete <ref type="bibr" target="#b60">(Xia and Lee 2005)</ref>, exposing vendors to risks such as to user requirements refinements, and planning and execution challenges <ref type="bibr" target="#b25">(Huang and Han 2008;</ref><ref type="bibr" target="#b55">Tiwana and Keil 2009)</ref>. Thus, structural complexity arising from longer duration projects is a major challenge in micro-outsourcing work. Our study focuses on this challenge. Therefore, a pertinent question is what kind of strategy vendors should follow for managing the complexity that arise out of larger projects in the micro-outsourcing context. Our research aims to help address this question. Specifically, we address the research question: "What is the relationship between contract duration and the performance in vendors in micro-outsourcing? And how can strategic intents of vendors affect this relationship?" Such an examination can make significant contributions towards current research findings and add to academic discourse on micro-outsourcing. More importantly, there is limited academic investigation of the emergent micro-outsourcing paradigm. Furthermore, most extant work has examined this phenomenon from the outsourcer perspective. Little, if any, discourse considers the strategies appropriate for outsourcing firms (vendors) to succeed under this paradigm.</p><p>The academic literature suggests mixed results for the effects of contract duration on performance of IT outsourced projects. On one hand, some scholars found that contract duration has a positive effect on performance <ref type="bibr" target="#b12">(Domberger, Fernandez and Fiebig 2000;</ref><ref type="bibr" target="#b32">Lee, Miranda and Kim 2004)</ref>. One of the reasons for this positive effect is that "it takes time for the IT service vendor to gain experience in servicing the client. Hence other things being equal, contracts of longer duration stand a better chance of being highly rated by the client" <ref type="bibr">(Domberger, Fernandez and Fiebig 2000) (p. 114)</ref>. On the other hand, other findings in the literature indicate that shorter projects have better ITO outcomes <ref type="bibr" target="#b4">(Baldwin, Irani and Love 2001;</ref><ref type="bibr" target="#b10">Currie 1998;</ref><ref type="bibr" target="#b31">Lacity and Willcocks 1998)</ref>. One of the reasons for this is that IT outsourcing is an interactive process and greater uncertainty and risk in the project increases the amount of time and effort the client has to invest in the project <ref type="bibr" target="#b31">(Lacity and Willcocks 1998)</ref>. Another reason for short-term projects performing better is that "short-term contracts motivate providers toward higher performance and allow clients to quickly recover from contractual mistakes" <ref type="bibr" target="#b31">(Lacity and Willcocks 1998;</ref><ref type="bibr" target="#b32">Lee, Miranda and Kim 2004)</ref>. Conversely, longer duration projects can increase the chance of significant disagreements occurring between vendors and clients <ref type="bibr" target="#b51">(Susarla, Subramanyam and Karhade 2010)</ref>.</p><p>The above discussion suggests that there could be other factors influencing the impact of contract duration on the performance of the vendor in the project. More pertinently, it is not very clear how contract duration may impact performance in the micro-outsourcing context. In this study, we theorize that the vendor's strategic intent, formally defined as "a [sustained] obsession with winning at all levels of the organization" <ref type="bibr">(Hamel and Prahalad 1989) (p. 64)</ref>, is one such factor that will influence the effect of contract duration on the client's evaluation of the vendor's performance in the micro-outsourcing context.</p><p>We argue that because the micro-outsourcing context is generally devoid of formal setups and procedures and because the vendors are individuals, the strategic intent of individuals serves as an important indicator to clients. Prior research argues that strategic intents for outsourcing vary. For instance, firms may focus on cost or competencies in their strategic intent <ref type="bibr" target="#b5">(Beasley, Bradford and Dehning 2009)</ref>. We draw on this literature and theorize that specific strategic intents of the vendors would have differing implications for how well micro-outsourcing vendors perform in projects that are of greater duration. Our empirical analysis of over 6000 micro-outsourcing projects sheds light on micro-outsourcing vendor strategies that help them manage longer duration projects. Our findings provide a better understanding of the strategies that would help vendors in the micro-outsourcing industry manage longer duration and more expansive projects. More broadly, by exploring the strategies underlying the success of microoutsourcing firms, we contribute towards our collective understanding of this emergent phenomenon and help take important steps towards comprehending business success in a world increasingly characterized by outsourcing of increasing numbers of small bits of work to large numbers of small firms.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Background Literature</head><p>The IT outsourcing literature provides the main basis for our theorizing. Information technology outsourcing (ITO) has been examined using several theoretical perspectives, including economics, strategy, and sociology <ref type="bibr" target="#b29">(Lacity, Khan, Yan and Willcocks 2010)</ref>. The ITO literature generally concentrates on two major types of questions -antecedents of ITO decisions and consequences of ITO. Thus the dependent variable of prior empirical studies is either the ITO decision <ref type="bibr" target="#b3">(Babbitt, Karhade and Burke 2004;</ref><ref type="bibr" target="#b36">Loh and Venkatraman 1992)</ref> or the ITO outcome <ref type="bibr" target="#b51">(Susarla, Subramanyam and Karhade 2010)</ref>. For instance, some fine-grained measures of outsourcing performance have included degree of outsourcing, outsourcing intensity, outsourcing expenditure, technological performance, partnership quality, exchange performance, and cost savings achieved <ref type="bibr" target="#b38">(Mahnke, Overby and Vang 2005)</ref>. Likewise, scholars have examined why firms make outsourcing decisions <ref type="bibr" target="#b24">(Hu, Saunders and Gebelt 1997)</ref>, using theories such as Transaction Cost Economics <ref type="bibr" target="#b22">(Hancox and Hackney 2000)</ref>, strategic management theories <ref type="bibr" target="#b7">(Cheon, Grover and Teng 1995)</ref>, and agency theory <ref type="bibr" target="#b20">(Hall 2005)</ref> to explain their findings <ref type="bibr" target="#b11">(Dibbern, Winkler and Heinzl 2008;</ref><ref type="bibr" target="#b54">Tiwana and Bush 2007)</ref>.</p><p>Research has also examined strategic intent from the perspective of client organizations and has noted that despite the rhetoric to outsource strategically, cost reduction has been the most common motive for IT outsourcing <ref type="bibr" target="#b30">(Lacity, Khan and Willcocks 2009)</ref>. Many studies examine the financial value and the determinants of financial value creation due to outsourcing activities <ref type="bibr" target="#b39">(Mani, Barua and Whinston 2009)</ref>. Overall, the literature recognizes that alignment of business strategy, contracts, infrastructure and technology, culture, strategic partnership, management support, governance committees, and economics play a salient part as critical factors for success of ITO projects <ref type="bibr" target="#b13">(Fjermestad and Saitta 2005)</ref>.</p><p>Notwithstanding these important contributions from prior research, limited research considers outsourcing issues from the perspective of the supplier firm, barring some exceptions <ref type="bibr" target="#b32">(Lee, Miranda and Kim 2004)</ref>. As noted by prior research, 49% of the articles adopted the perspective of the client firm, while only 16% assumed the perspective of the supplier firm <ref type="bibr" target="#b16">(Gonzalez, Gasco and Llopis 2006)</ref>. In particular, to the best of our knowledge, how the strategic intent of vendor firms impacts the performance outcomes of vendor firms in the micro-outsourcing context has received sparse attention in the extant literature, and our study aims to help fill this knowledge gap.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Theory and Hypotheses Development</head><p>We anchor our study on the discussions on IT outsourcing <ref type="bibr" target="#b29">(Lacity, Khan, Yan and Willcocks 2010;</ref><ref type="bibr" target="#b30">Lacity, Khan and Willcocks 2009)</ref> and strategy-process alignment literature in information systems research <ref type="bibr" target="#b52">(Tallon 2007;</ref><ref type="bibr" target="#b53">Tallon and Pinsonneault 2011)</ref>.</p><p>In this study, we examine how the strategic intent of a micro-outsourcing vendor influences its ability to manage and perform better in longer duration projects. Strategic intent, defined as "… a <ref type="bibr">[sustained]</ref> obsession with winning at all levels of the organization" <ref type="bibr" target="#b21">(Hamel and Prahalad 1989</ref>) (p. 64) represents objectives "for which one cannot plan" <ref type="bibr">(Hamel and Prahalad 1989) (p. 66)</ref>. Thus strategic intent is a proactive stance in strategizing, reflecting the corporate context <ref type="bibr" target="#b40">(Noda and Bower 1996)</ref>, which directs the accumulation of necessary competencies towards a collective purpose or common target <ref type="bibr" target="#b37">(Lovas and Ghoshal 1998)</ref>. Prior research in strategic management and information systems suggests that strategic intent encompasses its "managerial judgments" and "resulting intentions" (Rai and Tang 2013) (p. 2) with respect to its interactions with its customers, partners, and suppliers <ref type="bibr" target="#b8">(Christensen 2001)</ref>. Building on and extending prior research on these notions of strategic intent, we argue that the vendor's strategic intent plays a key role in the success of micro-outsourcing firms in longer projects. We provide a characterization of three different types of strategic intent of micro-outsourcing firms: Cost-focused strategic intent, Goal-focused strategic intent, and Competency-focused strategic intent.</p><p>We define Cost-focused Strategic Intent as the strategic intent that reflects an organizational stance of a micro-outsourcing firm (or individual vendor) to deliver information systems services that are of low cost. We define Goal-focused Strategic Intent as the strategic intent that emphasizes an organizational stance of a micro-outsourcing firm (or individual vendor) to deliver information systems services effectively with respect to prior agreed limits of time and materials. Finally, we define Competency-focused Strategic Intent as the strategic intent that emphasizes a collective goal of the firm (or individual vendor) to deliver information systems services that are based upon high technical and methodological skills. We theorize differing performance implications of these three types of strategic intent for the performance of microoutsourcing vendors in longer project duration projects. Specifically, despite divergent results in prior research, in line with prior research <ref type="bibr" target="#b31">(Lacity and Willcocks 1998)</ref>, we expect that project duration has a negative effect on the success of micro-outsourcing projects. In the case of micro-outsourcing, the context is an entity serving as a vendor-which is mostly a small or single individual, with a limited infrastructure, guidelines, process management, standardization, or even a formal set of employee management practices. However, clients may be firms with strong set ups and extensive experience on dealing with outsourcing. Although a formal vendor-client relationship exists in the micro-outsourcing environment, the preparedness of the client, and the nuances associated with fulfilling such a contract is somewhat in flux <ref type="bibr" target="#b1">(Ang, Koh, Soon and Straub 2004)</ref>. Moreover, it is apparent that in such settings, the issue of expectation-confirmation for the vendor firm to satisfy the client is a major concern <ref type="bibr" target="#b41">(Oliver 1980;</ref><ref type="bibr" target="#b42">Oliver 1993)</ref>. Due to vendors' general lack of standardization and limited infrastructures, clients' initial expectations and vendors' performance evaluation may not align if the project duration is longer and there are constant interactions between the client and the vendor. In this context, we explore how the effect of project duration on the effectiveness of the vendor's performance (as evaluated by the client) is influenced by the strategic intent of the vendor. In sum, we focus our theoretical framing and arguments to examine how vendor firms' strategy, which manifests in different dimensions of the vendor's strategic intent, moderates the influence of project duration on the performance of the vendor to meet the needs of the client (as evaluated by the client).</p><p>First, project duration, as a contractual obligation, involves interactions or encounters between clients and vendors in the micro-outsourcing context <ref type="bibr" target="#b6">(Bitner, Brown and Meuter 2000)</ref>. Longer project duration typically means more interactions, more number of contractual milestones, and more intensive and interactive relationship between the client and vendor. Intensive and interactive relationships are both hard and soft points for stringent evaluations, providing a number of opportunities to evaluate. Accordingly, when project duration is high, evaluations are stringent, and may involve a set of evaluative milestones, benchmarks, and processes. Although the project may be well completed or delivered, when it comes to evaluate multiple aspects, the scores may not be perfect or max out at their highest, as it can be with a one-shot evaluation for one aspect. Two examples will support our assertion that higher project duration may lead to a decrease in evaluations. First, consider an outsourcing project for data decoding from a textual format to an encoded database format. When the contract duration is short, the vendor takes the data, converts it into a database, and delivers it to the client. On the contrary, when the duration is long, the client would look at the data at each iteration, may find some flaws, and discover the non-efficient or non-effective aspects of the vendor. This leads to low evaluations. A second example may be for outsourcing editing work. While editing the whole project at once is a less interactive process, a longer duration of the project will involve the client scrutiny in each step of the editing process. Dealing with the nuances of the project and the lack of structure of the vendor, may make the client feel that the participation of the vendor was not necessary and that the same results could have been achieved if the work was performed by the client firm itself <ref type="bibr" target="#b33">(Levina and Ross 2003)</ref>. In addition, if the work delivered in the first iteration did not meet the client's expectations and subsequent interactions are required to fix the work, the vendor is likely to receive low evaluations. Furthermore, longer duration projects generally have greater uncertainty and less motivated vendor participation which leads to participants taking longer to recover from mistakes <ref type="bibr" target="#b31">(Lacity and Willcocks 1998)</ref>.</p><p>In line with these arguments, we posit a negative main effect of contract duration on performance of vendors, consistent the views in prior research that performance is lower in projects of longer contract duration <ref type="bibr" target="#b4">(Baldwin, Irani and Love 2001;</ref><ref type="bibr" target="#b10">Currie 1998;</ref><ref type="bibr" target="#b31">Lacity and Willcocks 1998)</ref>. Hence we hypothesize:</p><p>Hypothesis H1: There is a negative relationship between the contract duration and the client's evaluation of the vendor's performance in the micro-outsourcing project.</p><p>Our main focus in this study is on the moderating effects of strategic intents of the vendors. Our core theoretical argument (Figure <ref type="figure">1</ref>) is that the strategic intent of micro-outsourcing vendors plays a key role in helping them manage longer-duration tasks, thus affecting the impact of project duration on vendor performance. We theorize that Goal-focused strategic intent and Competency-focused strategic intent have a positive moderating effect on the relationship between project duration and client evaluation of vendor performance; and Cost-focused strategic intent has a negative moderating effect on the relationship.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Figure 1: Research Model</head><p>Three reasons underlie our arguments for a positive moderating effect of competency-focused strategic intent. First, in competency-focused strategic intent, the signals to the client are about the skills and competencies of the vendor which have been identified as an important factor in vendor-client outsourcing relationships <ref type="bibr" target="#b27">(Kishore, Rao, Nam, Rajagopalan and Chaudhury 2003)</ref>. Competency-focus strategic intent is reflected in the dealings of the vendor with each interaction between the client and the vendor. The attribute or intent that each and every delivery or milestones are 'competently done' would make the client feel that even though the vendor is taking time, the vendor is doing a good job <ref type="bibr" target="#b15">(Goles 2003)</ref>. In other words, the evaluative process associated with the longer duration of the project may not leave a dent in the mind of the client when the vendor has a higher competency-focused strategic intent. On the contrary, the client may add positive evaluations each time the 'competency' is reflected in each iteration or interaction with the vendor and its work. Thus, due to the 'additive effects of competency outcomes' on evaluations, competency-focused strategic intent is likely to improve the performance of the vendor in longer duration projects because the vendor is now more focused on applying the skills and competencies necessary to succeed in longer duration projects.</p><p>Second, competency-focused strategic intent shows that the vendor has higher technical and managerial competency. Such benchmarking motivates clients to believe that vendors with higher certifications can offer superior functional solutions to satisfy clients' needs because a competent vendor can perform complex tasks and provide more functionalities <ref type="bibr" target="#b32">(Lee, Miranda and Kim 2004)</ref>. Although a complex project will take longer time to complete, such complex tasks are appreciated by clients when they are accomplished and accompanied by displays of competencies <ref type="bibr" target="#b50">(Susarla, Barua and Whinston 2003)</ref>. A vendor managing complex functionalities competently for a project will get high evaluations from a client. Thus, a vendor's competency-focused strategic and subsequent application of such competency to execute a longer complex project will lead to higher evaluations in longer duration projects.</p><p>Third, competency strategic intent of a vendor serve as cues that the vendor is more qualified for detailed discussions on technology-, task-, or work-related aspects of the project than a less competent vendor <ref type="bibr" target="#b51">(Susarla, Subramanyam and Karhade 2010)</ref>. Such cues lead clients to interact with the vendor on higher technical, skills and expertise levels. Although long duration projects in micro-outsourcing are ridden with risks, detailed interactions help in clarification of doubts and provide clear specifications and plans for tasks to be carried out. In other words, some risks and uncertainties associated with longer projects are mitigated when the vendor signals competency, resulting in a better performing project and subsequent higher evaluation. In line with these arguments, we hypothesize:</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Hypothesis H2: Competency-focused Strategic Intent of the vendor positively moderates the relationship between the contract duration and the client's evaluation of the vendor's performance in the micro-outsourcing project.</head><p>Greater cost-focused strategic intent inherently implies that the vendor is trying to save on cost at each step of the project. This may involve reducing important procedural steps, devoting less hours, or even providing a lower quality job to the client <ref type="bibr" target="#b17">(Gopal and Gosain 2010)</ref>. For example, a cost-focused microoutsourcing vendor who is involved with cyber-help or monitoring of a set of Personal Computers or servers for a longer period of time, may not update the antivirus software regularly (which is stipulated in contract) to minimize update costs, or will not "clean up" the computers regularly (as may be expected). Cost-focused strategic intent in these cases thus leads to a poor job or poor show of effectiveness in the project. Hence for longer duration projects, cost-focused strategic intent is likely to negatively moderate the effect of contract duration on client's evaluation of the vendor performance because the client has a perception that the vendor is less concerned about customer satisfaction of the client or is less aware of the client needs, but is rather focused on minimizing its own cost through short-cut measures, lowperforming process or practices, and missing procedures <ref type="bibr" target="#b59">(Westland 2004</ref>).</p><p>The resource constraint imperative suggests that cost-focused strategic intent is inherently reflected in completing the work with limited resources. In longer projects, low priced micro-outsourcing services, constrained by limited resources would result in low performance, leading to low client evaluation. Specifically, for complex projects with longer durations, vendors may reduce important procedural steps, devote less hours to the project, adopt low-performing practices, short cut measures, and/or miss procedures <ref type="bibr" target="#b17">(Gopal and Gosain 2010;</ref><ref type="bibr" target="#b59">Westland 2004)</ref>. For example, a cost saving vendor may not update software needed to execute a project, or may not update a critical maintenance tool. Such resource saving behavior would result in a low quality service and low client evaluation.</p><p>Furthermore, cost reduction behavior may lead to a lower level of vendor willingness to commit time and resources as needed. Specifically, for a longer duration project, these commitments are building blocks to develop and establish business relationships and subsequent partnerships <ref type="bibr" target="#b23">(Haried and Ramamurthy 2009)</ref>. With lower resource commitments by the vendor, the client may perceive that the vendor is less concerned about quality of the project than about cost; which will lead to low client evaluations. Thus, cost-focused strategic intent indicates vendor's resource constraint and lack of commitment behavior. Stronger cost-focused strategic intent indicates that the vendor adopts shortcuts and low performing practices in the project, leading to low evaluation. Hence, we hypothesize:</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Hypothesis H3: Cost-focused Strategic Intent of the vendor negatively moderates the relationship between the contract duration and the client's evaluation of the vendor's performance in the micro-outsourcing project.</head><p>While competency-focused strategic intent and cost-focused strategic intent are reflective of the process by which the vendor performs the task, goal-focused strategic intent is more reflective of interim or end point goal fulfillment and the alignment of the client's expectations with final outcomes <ref type="bibr" target="#b41">(Oliver 1980;</ref><ref type="bibr" target="#b42">Oliver 1993</ref>). We contend that goal-focused strategic intent positively moderates the relationship between contract duration and client's evaluation of the vendor's performance in the project.</p><p>The effects of a higher goal-focused strategic intent manifest through three main mechanisms. First, if the client is more focused on the final result of the project rather than the process, a greater goal-focused strategic intent establishes that the vendor achieves goals and ensures that the client sees the goals accomplished and that it is satisfied with the final product. Moreover, if the client is more process-focused and wants some involvement and verification in each step of the project, goal-focused strategic intent of the vendor ensures that it has the capability of structuring a clear process map and hand-holding the client through the process to finally deliver a product or service that satisfies the expectations of the client. In both cases, clients achieve their objectives and are likely to give vendors a better evaluation. Thus, a client (whether process or product centric in its evaluation) may evaluate a longer duration project more favorably, because the prior specified goals are fulfilled by the vendor. Hence, we argue that the longer the task, the more important it is for vendors to provide a higher goal-focused strategic intent as this would provide the client with the assurance that the task has been completed successfully despite the challenges and limited resources of the outsourcer. A focus on goals provides the client the confidence that the vendor has been able to apply the prior experience of successful projects and usefully apply those learnings to the current task.</p><p>Second, in projects with a longer duration, vendors need to communicate clear deadlines and understand clients' requirements for each deadline or interim steps. Vendors with stronger goal-focused strategic intent will focus on having a high quality information exchange with their clients as a critical step towards meeting project timelines and budgets. This information shared between vendors and clients will create complementary knowledge, enabling better performance by vendors, resulting in higher evaluation <ref type="bibr" target="#b27">(Kishore, Rao, Nam, Rajagopalan and Chaudhury 2003)</ref>.</p><p>Third, goal focused vendors will cultivate their relationship with clients resulting in development of shared goals and a sense of trust <ref type="bibr" target="#b43">(Palvia, King, Xia and Palvia 2010)</ref>. As highlighted by prior literature, relationship quality and shared goals are essential factors for successful sourcing <ref type="bibr" target="#b33">(Levina and Ross 2003)</ref>. Consequently, vendors and clients are likely to maintain good communication in lengthy projects, thereby reducing uncertainty. Finally, a vendor with stronger goal-focused strategic intent is likely to handhold the client through a long duration project by following a structured reporting process. This not only enhances client's confidence on the vendor's ability to eventually meet goals, but also reduces uncertainty and anxiety during the course of the project. Thus, the client will eventually evaluate a longer duration project more favorably. Hence we posit:</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Hypothesis H4: Goal-focused Strategic Intent of the vendor positively moderates the relationship between the contract duration and the client's evaluation of the vendor's performance in the micro-outsourcing project.</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Research Design and Methodology</head><p>To test our hypotheses, we collected our data from a leading online marketplace for the outsourcing of knowledge-based work, including software development services. 1 This marketplace acts as an intermediary platform that brings together clients and vendors. Clients seek and evaluate bids from vendors on the basis of multiple criteria. Clients categorize each project into a specific area of expertise (type of work), provide a project description, and propose a budget and end time. Vendors who are registered with the marketplace read the project descriptions and place bids on the basis of price. Thus formally, this process is a buyer-determined, reverse, scoring auction <ref type="bibr" target="#b2">(Asker and Cantillon 2008)</ref>. In majority of the projects, all vendors can see the characteristics and bids of competing providers; a few follow a sealed-bid format. At the end of the auction, clients evaluate competing bids on the basis of price and vendor attributes and award projects. At the completion of a project, clients provide feedback about the vendor. A reputation system tracks all feedback ratings a provider receives from historical clients and forms a key attribute of vendors at the time of bid evaluation.</p><p>To collect our data, we adopted the following approach and criteria. First, we collected data in the summer of 2013 and thus all projects that were completed before August 2013 constituted the long-list. Second, out of this long-list, we shortlisted all projects that were categorized as web, web services, or mobile app development projects. This ensured that our dataset covered all forms of IT projects that are conducted through this mechanism. We scrapped information regarding each project in our shortlist, including the auction details, attributes of the vendor and attributes of the client. Further, for vendors for which we had scrapped information, we again collected all information regarding all projects completed by the vendor that could be categorized as IT projects. By following such a recursive process, we were able to gather information on projects that may have been incorrectly categorized as non-IT projects. Overall, our dataset covers 6452 IT projects.</p><p>For our dependent variable, we measure performance by the rating provided by the client for the task performed by the vendor. The rating is on a continuous scale of 0 to 5, where 0 is the lowest and 5 is the highest evaluation. This is consistent with prior research using single rating variables and variables measuring customer satisfaction <ref type="bibr" target="#b12">(Domberger, Fernandez and Fiebig 2000;</ref><ref type="bibr" target="#b26">Khuntia, Mithas, Agarwal and Roy 2012)</ref>. As our independent variable, we measure the contract duration of the task in terms of days <ref type="bibr" target="#b51">(Susarla, Subramanyam and Karhade 2010)</ref>. We measure competency-focused strategic intent by the number of IT and process related exams successfully completed by the vendor prior to the focal project. The number of exams completed by the vendor is visible to the clients before the vendor is selected. These exams included technical exams such as PHP and programming exams and are indicative of the competency of the vendor. We measure cost-efficiency focused strategic intent by the deviation of the bid amount from the mean bid amount for that task. We measure Goal-focused strategic intent by the product of proportion of projects completed on time and the proportion of tasks completed on-budget and the completion rates. These proportions are also visible to the clients. We control for factors which can influence performance of tasks, including vendor experience, vendor expertise, and number of vendor reviews. Table <ref type="table" target="#tab_0">1</ref> summarizes the variables and their measurements. We use Ordinary Least Squares (OLS) to estimate the following equation: .. (i)</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Construct Definition Role in Research Model</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Measure in our study</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Client's Evaluation of Vendor Performance in Project</head><p>Dependent variable Client's evaluation of the vendor's performance in the focal project. This is evaluated by the client after the project's completion on a continuous scale of 0 to 5, where 0 is the lowest and 5 is the highest evaluation.  Prior to discussing the results, we discuss the robustness and validity tests we conducted to assess the robustness of our findings. First, we performed the Harman's one-factor test and the marker variable test <ref type="bibr" target="#b34">(Lindell and Whitney 2001)</ref>. In Harman's test, no single major factor emerged, and in the marker-variable tests, the correlations among the variables did not change significantly after accounting for common method variance. Thus, results of both tests suggest that common method bias is not a significant concern. Furthermore, since our core theory pertains to interaction effects, common method variance is even less of a concern because common method variance reduces the likelihood of detecting interaction effects <ref type="bibr" target="#b58">(Wall, Jackson, Mullarkey and Parker 1996)</ref>.</p><p>Second, we checked for multicollinearity by examining the variance inflation factors (VIF). In all equations, the maximum VIF and the average VIF were well below suggested limits, indicating that multicollinearity is not a significant concern. Third, White (1980) tests for heteroskedasticity did not suggest the presence of heteroskedasticity. Nevertheless, as suggested in the literature <ref type="bibr" target="#b18">(Greene 2008)</ref>, we use robust standard errors in all our estimations. 2 Last, we performed several diagnostic checks including testing for normality of residuals, outliers, and influential observations, and found no problems or violations of assumptions <ref type="bibr" target="#b18">(Greene 2008)</ref>.</p><p>Table <ref type="table">3</ref> presents the results. Examining the main effects (column 2), we find that the main effect of Contract Duration is negative and significant (β = -0.004, p &lt; 0.01). Thus H1 is supported. This is consistent with prior research that longer duration projects perform worse compared to shorter duration projects <ref type="bibr" target="#b4">(Baldwin, Irani and Love 2001;</ref><ref type="bibr" target="#b10">Currie 1998;</ref><ref type="bibr" target="#b31">Lacity and Willcocks 1998;</ref><ref type="bibr" target="#b32">Lee, Miranda and Kim 2004;</ref><ref type="bibr" target="#b51">Susarla, Subramanyam and Karhade 2010)</ref>. Also, interestingly, only Goal-focused strategic intent has a positive and significant relationship with performance, whereas the other two types of strategic intent have no significant relationship with performance. Columns ( <ref type="formula">6</ref>) includes all the two-way interaction terms to test hypotheses H2-H4. F-tests of joint significance of the interaction terms were rejected, suggesting rejection of the null that the interaction terms are jointly zero. As shown in column (6), the interaction term (Competency x Contract Duration) is significant and positive (β = 0.001, p &lt; 0.01), thereby supporting H2. We also find support for H3 as the interaction term (Cost x Contract Duration) is significant and negative (column 6, β = -0.0034, p &lt; 0.10). Finally, the interaction term (Goal x Contract Duration) is significant and positive (β = 0.02, p &lt; 0.01), thereby supporting H4. We also ran models by including the interaction terms one at a time into the regression (columns 3-5), and found similar results.</p><p>( </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Table 3: Results</head><p>Figure <ref type="figure" target="#fig_1">2</ref> depicts the interaction plots, facilitating a graphical interpretation of the interaction effects. As the graphs suggest, the interactions and differences in slopes are substantively significant, in addition to being statistically significant. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Discussion</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Findings</head><p>In this study, we set out to explore a new type of outsourcing, which is changing the way vendors and clients interact, micro-outsourcing. Due to the nature and origins of micro-outsourcing it is usually more amenable to short duration and smaller projects. Nonetheless, vendors may face long and complex projects that require distinct strategies. In this study, we examined the types of strategies that may shape vendors ability for managing the complexity that arise out of longer duration projects.</p><p>The results shown on Table <ref type="table">3</ref> provide support for the impact of strategic intent and contract duration on client's evaluation of the vendor's performance in the project. We find support for Hypothesis H1, which argued that longer duration projects receive lower client evaluations in micro-outsourcing. Our results show support for Hypothesis 2, which postulated that vendor's competency-focused strategic intent positively influences the relationship between contract duration and client's evaluation of the vendor in the project. Hence, vendors that exhibit their skills to clients through good deliveries will receive positive evaluations despite the duration of the project. In Hypothesis 3, we proposed that vendors' with a costfocused strategic intent will receive lower evaluations in projects of a longer duration. Our analysis shows support for Hypothesis 3 and suggests that when vendors reduce the amount of resources that they deploy to undertake clients' projects with the purpose of decreasing costs, they may deliver a poor quality result to clients, showing low competencies and not meeting client expectations. These factors will lead to a poorer evaluation of the vendor. In Hypothesis 4, we examine the relationship between vendors' goalfocused strategic intent, contract duration, and client's evaluation of vendors in the project. We find support for our theory and claim that when vendors assure clients that projects will be successfully delivered despite vendors' resource constraints, a long project may culminate with a more positive evaluation for the vendor. Thus, overall, in longer duration projects, our findings suggest that in projects with higher contract duration, micro-outsourcing vendors with a higher goal-focused and competencyfocused strategic intent perform better than vendors with a higher cost-focused strategic intent.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Limitations and Future Research</head><p>Our research has limitations which can serve as starting points for future research. First, we examine performance of the vendor as evaluated by the client. Although this provides an important perspective on vendor performance, future research can extend our study to other dimensions or characterizations of performance. Second, we focused on IT outsourcing on one specific marketplace. Although this enhances internal validity of the findings, future studies can examine other kinds of outsourcing and on other platforms, in order to assess generalizability of our findings.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Contributions to Research and Practice</head><p>Our study offers several main contributions to the IS literature. First, we show that the effects of contract duration on performance of IT outsourced projects in the micro-outsourced context are contingent upon the strategic intent of the vendor. As discussed earlier, prior research has found relatively mixed results pertaining to the effects of contract duration on performance. For instance, some scholars suggest that contract duration has a positive effect on performance <ref type="bibr" target="#b12">(Domberger, Fernandez and Fiebig 2000;</ref><ref type="bibr" target="#b32">Lee, Miranda and Kim 2004)</ref> whereas other findings in the literature indicate that shorter projects have better ITO outcomes <ref type="bibr" target="#b4">(Baldwin, Irani and Love 2001;</ref><ref type="bibr" target="#b10">Currie 1998;</ref><ref type="bibr" target="#b31">Lacity and Willcocks 1998)</ref>. Our results contribute to this literature and suggest that one of the missing pieces in the puzzle, at least in the microoutsourcing context, may be the strategic intent of the vendor (supplier). Second, prior research has generally put relatively more focus on the client side of IT outsourcing. Our study focuses on the vendor factors and suggests that vendors participating in micro-outsourcing will be able to deal with complex longer-duration projects and receive positive evaluations if they establish the appropriate strategic intents.</p><p>Third, our study contributes to the academic discourse on the kind of strategy that is appropriate to ensure alignment with business and IT contexts <ref type="bibr" target="#b19">(Hah and Bharadwaj 2012;</ref><ref type="bibr" target="#b49">Setia, Venkatesh and Joglekar 2013;</ref><ref type="bibr" target="#b52">Tallon 2007;</ref><ref type="bibr" target="#b53">Tallon and Pinsonneault 2011)</ref>. Our results suggest that for micro-outsourcing firms striving to perform longer duration projects, a multi-pronged strategy comprising goal and competency focus is superior compared to a cost-focused strategy. Finally, this study also has implications for ambidextrous strategies to manage duality in the context of IT micro-outsourcing. More specifically, while IT micro-outsourcing inherently endears itself to smaller less resource-rich vendors, it is pertinent for these vendors to be ambidextrous in their strategic intent, focusing on goals and competence while also minimizing a cost-focus.</p><p>For practicing managers, our research contributes by suggesting that client firms willing to utilize microoutsourcing for longer duration and complex projects should look for vendors either a competencyfocused strategic intent or goal-focused strategic intent. Second, for vendors, our results suggest that a multi-pronged strategic intent focusing on competency and goals may be better than a single strategic focus when it comes to managing projects of a longer contract duration. Third, because success in microoutsourcing on IT platforms is often dependent on the signaling that vendors provide to potential clients, our results suggest that signaling of the appropriate strategic intent is an important component of success. The study has broader implications for how vendors may want to signal to clients their skills, capabilities, and prior records. For instance, vendors seeking to achieve success and win bids for longer duration highvalued projects, may do well to highlight in their portfolios their prior record of projects completed successfully, along with their portfolio of skills and competencies that they possess, in order to win clients and successfully compete in the highly competitive micro-outsourcing marketplace. Taken together, the findings of this study shed new light on the role of the strategic intent of vendors as an important factor in the micro-outsourcing context.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head></head><label></label><figDesc>Performance= f (Duration, Competency, Cost, Goal, Competency x Duration, Cost x Duration, Goal x Duration, control variables)</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>Figure 2 :</head><label>2</label><figDesc>Figure 2: Graphical Interpretation of Results</figDesc><graphic coords="12,72.00,71.88,467.40,316.20" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0"><head></head><label></label><figDesc></figDesc><graphic coords="6,72.00,317.76,468.00,227.16" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head>Table 1 : Variables Results Table</head><label>1</label><figDesc>2 presents the descriptive statistics and correlations.</figDesc><table><row><cell>Contract Duration</cell><cell>Independent</cell><cell>Duration (in days) of the focal project</cell></row><row><cell></cell><cell>variable</cell><cell>contract.</cell></row><row><cell>Cost-focused Strategic</cell><cell>Moderator variable</cell><cell>Deviation of winning bid amount from</cell></row><row><cell>Intent of Vendor</cell><cell></cell><cell>mean bid amount for the focal project.</cell></row><row><cell></cell><cell></cell><cell>Cost focused Strategic Intent = (Mean bid</cell></row><row><cell></cell><cell></cell><cell>amount -Vendor's bid amount)/ Mean bid</cell></row><row><cell></cell><cell></cell><cell>amount.</cell></row><row><cell>Goal-focused Strategic</cell><cell>Moderator variable</cell><cell>Product of On-Time, On-Budget, and</cell></row><row><cell>Intent of Vendor</cell><cell></cell><cell>Completion rates of the vendor prior to the</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1"><head>Table 2 : Descriptive Statistics and Correlations</head><label>2</label><figDesc></figDesc><table /></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="1" xml:id="foot_0"><p>For reasons of confidentiality, we do not disclose the name of the marketplace.</p></note>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Acknowledgements</head><p>We thank the Track Chairs, Associate Editor, and reviewers for helpful comments and suggestions, which improved this manuscript substantially.</p></div>
+			</div>
+
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Competitive Brokerage, Information Technology and Internal Resources</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Andrade Rojas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Kathuria</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the Thirty Fifth International Conference on Information Systems</title>
+		<meeting>the Thirty Fifth International Conference on Information Systems<address><addrLine>Auckland, New Zealand</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2014">2014</date>
+			<biblScope unit="page" from="1" to="19" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">It Outsourcing Success: A Psychological Contract Perspective</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Ang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Koh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Soon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">W</forename><surname>Straub</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="356" to="373" />
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Properties of Scoring Auctions</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Asker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Cantillon</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The RAND Journal of Economics</title>
+		<imprint>
+			<biblScope unit="volume">39</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="69" to="85" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">The Effect of Organizational, Worker and Project Characteristics on the It Project Outsourcing Decision</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Babbitt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Karhade</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Burke</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the Tenth Americas Conference on Information Systems)</title>
+		<meeting>the Tenth Americas Conference on Information Systems)</meeting>
+		<imprint>
+			<date type="published" when="2004">2004</date>
+			<biblScope unit="page" from="3637" to="3641" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Outsourcing Information Systems: Drawing Lessons from a Banking Case Study</title>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">P</forename><surname>Baldwin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Irani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">E</forename><surname>Love</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">European Journal of Information Systems</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="15" to="24" />
+			<date type="published" when="2001">2001</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">The Value Impact of Strategic Intent on Firms Engaged in Information Systems Outsourcing</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Beasley</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Bradford</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Dehning</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Accounting Information Systems</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="79" to="96" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Technology Infusion in Service Encounters</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">J</forename><surname>Bitner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">W</forename><surname>Brown</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">L</forename><surname>Meuter</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of the Academy of Marketing Science</title>
+		<imprint>
+			<biblScope unit="volume">28</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="138" to="149" />
+			<date type="published" when="2000">2000</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Theoretical Perspectives on the Outsourcing of Information Systems</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">J</forename><surname>Cheon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Grover</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">T C</forename><surname>Teng</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Information Technology</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page">209</biblScope>
+			<date type="published" when="1995">1995</date>
+			<pubPlace>Routledge, Ltd</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">The Past and Future of Competitive Advantage</title>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">M</forename><surname>Christensen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Sloan Management Review</title>
+		<imprint>
+			<biblScope unit="volume">42</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="105" to="109" />
+			<date type="published" when="2001">2001</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<author>
+			<persName><forename type="first">P</forename><surname>Constantinides</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">The Development and Consequences of New Information Infrastructures: The Case of Mashup Platforms</title>
+		<imprint>
+			<date type="published" when="2012">2012</date>
+			<biblScope unit="volume">34</biblScope>
+			<biblScope unit="page" from="606" to="622" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Using Multiple Suppliers to Mitigate the Risk of It Outsourcing at Ici and Wessex Water</title>
+		<author>
+			<persName><forename type="first">W</forename><forename type="middle">L</forename><surname>Currie</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Information Technology</title>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="169" to="180" />
+			<date type="published" when="1998">1998</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Explaining Variations in Client Extra Costs between Software Projects Offshored to India</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Dibbern</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Winkler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Heinzl</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="333" to="366" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Modelling the Price, Performance and Contract Characteristics of It Outsourcing</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Domberger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Fernandez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">G</forename><surname>Fiebig</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Information Technology</title>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="107" to="118" />
+			<date type="published" when="2000">2000</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">A Strategic Management Framework for It Outsourcing: A Review of the Literature and the Development of a Success Factors Model</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Fjermestad</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">A</forename><surname>Saitta</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Information Technology Case and Application Research</title>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="42" to="60" />
+			<date type="published" when="2005">2005</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Distance Still Matters</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Ghemawat</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Harvard Business Review</title>
+		<imprint>
+			<biblScope unit="volume">79</biblScope>
+			<biblScope unit="issue">8</biblScope>
+			<biblScope unit="page" from="137" to="147" />
+			<date type="published" when="2001">2001</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Vendor Capabilities and Outsourcing Success: A Resource-Based View</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Goles</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Wirtschaftsinformatik</title>
+		<imprint>
+			<biblScope unit="volume">45</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="199" to="206" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Information Systems Outsourcing: A Literature Analysis</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Gonzalez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Gasco</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Llopis</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information &amp; Management</title>
+		<imprint>
+			<biblScope unit="volume">43</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="821" to="834" />
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">The Role of Organizational Controls and Boundary Spanning in Software Development Outsourcing: Implications for Project Performance</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Gopal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Gosain</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<imprint>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="960" to="982" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<monogr>
+		<author>
+			<persName><forename type="first">W</forename><forename type="middle">H</forename><surname>Greene</surname></persName>
+		</author>
+		<title level="m">Econometric Analysis</title>
+		<imprint>
+			<publisher>Granite Hill Publishers</publisher>
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">A Multi-Level Analysis of the Impact of Health Information Technology on Hospital Performance</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Hah</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Bharadwaj</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the Thirty Third International Conference on Information Systems</title>
+		<meeting>the Thirty Third International Conference on Information Systems<address><addrLine>Orlando, FL</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2012">2012</date>
+			<biblScope unit="page" from="1" to="17" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Financial Performance, Ceo Compensation, and Large-Scale Information Technology Outsourcing Decisions</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">A</forename><surname>Hall</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Management Information Systems</title>
+		<imprint>
+			<biblScope unit="volume">22</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="193" to="221" />
+			<date type="published" when="2005">2005</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Strategic Intent</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Hamel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">K</forename><surname>Prahalad</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Harvard Business Review</title>
+		<imprint>
+			<biblScope unit="volume">67</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="63" to="76" />
+			<date type="published" when="1989">1989</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">It Outsourcing: Frameworks for Conceptualizing Practice and Perception</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Hancox</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Hackney</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Journal</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="217" to="237" />
+			<date type="published" when="2000">2000</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Evaluating the Success in International Sourcing of Information Technology Projects: The Need for a Relational Client-Vendor Approach</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Haried</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Ramamurthy</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Project Management Journal</title>
+		<imprint>
+			<biblScope unit="volume">40</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="56" to="71" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Research Report: Diffusion of Information Systems Outsourcing: A Reevaluation of Influence Sources</title>
+		<author>
+			<persName><forename type="first">Q</forename><surname>Hu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Saunders</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Gebelt</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="288" to="301" />
+			<date type="published" when="1997">1997</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">Exploring the Relationship between Software Project Duration and Risk Exposure: A Cluster Analysis</title>
+		<author>
+			<persName><forename type="first">S.-J</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W.-M</forename><surname>Han</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information &amp; Management</title>
+		<imprint>
+			<biblScope unit="volume">45</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="175" to="182" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Service Augmentation and Customer Satisfaction: An Analysis of Cell Phone Services in Base-of-the-Pyramid Markets</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Khuntia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Mithas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Agarwal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">K</forename><surname>Roy</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the Thirty Third International Conference on Information Systems</title>
+		<meeting>the Thirty Third International Conference on Information Systems<address><addrLine>Orlando, FL</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2012">2012</date>
+			<biblScope unit="page" from="1" to="17" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">A Relationship Perspective on It Outsourcing</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Kishore</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">R</forename><surname>Rao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Nam</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Rajagopalan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Chaudhury</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Communications of the ACM</title>
+		<imprint>
+			<biblScope unit="volume">46</biblScope>
+			<biblScope unit="page" from="86" to="92" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">It Outsourcing Success: A Psychological Contract Perspective</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Koh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Ang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">W</forename><surname>Straub</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="356" to="373" />
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">A Review of the It Outsourcing Empirical Literature and Future Research Directions</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">C</forename><surname>Lacity</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Khan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Yan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">P</forename><surname>Willcocks</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Information Technology</title>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="395" to="433" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">A Review of the It Outsourcing Literature: Insights for Practice</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">C</forename><surname>Lacity</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">A</forename><surname>Khan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">P</forename><surname>Willcocks</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Strategic Information Systems</title>
+		<imprint>
+			<biblScope unit="volume">18</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="130" to="146" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">An Empirical Investigation of Information Technology Sourcing Practices: Lessons from Experience</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">C</forename><surname>Lacity</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">P</forename><surname>Willcocks</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">22</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="363" to="408" />
+			<date type="published" when="1998">1998</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">It Outsourcing Strategies: Universalistic, Contingency, and Configurational Explanations of Success</title>
+		<author>
+			<persName><forename type="first">J.-N</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">M</forename><surname>Miranda</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y.-M</forename><surname>Kim</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="110" to="131" />
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">From the Vendor&apos;s Perspective: Exploring the Value Proposition in Information Technology Outsourcing</title>
+		<author>
+			<persName><forename type="first">N</forename><surname>Levina</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">W</forename><surname>Ross</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="331" to="364" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title level="a" type="main">Accounting for Common Method Variance in Cross-Sectional Research Designs</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">K</forename><surname>Lindell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">J</forename><surname>Whitney</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Applied Psychology</title>
+		<imprint>
+			<biblScope unit="volume">86</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">114</biblScope>
+			<date type="published" when="2001">2001</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">Outsourcing as a Strategy for Driving Transformation</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">C</forename><surname>Linder</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Strategy &amp; Leadership</title>
+		<imprint>
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="26" to="31" />
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">Determinants of Information Technology Outsourcing: A Cross-Sectional Analysis</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Loh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Venkatraman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Management Information Systems</title>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="7" to="24" />
+			<date type="published" when="1992">1992</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<monogr>
+		<title/>
+		<author>
+			<persName><forename type="first">B</forename><surname>Lovas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Ghoshal</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1998">1998</date>
+		</imprint>
+	</monogr>
+	<note>Strategy as Guided Evolution. INSEAD</note>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<analytic>
+		<title level="a" type="main">Strategic Outsourcing of It Services: Theoretical Stocktaking and Empirical Challenges</title>
+		<author>
+			<persName><forename type="first">V</forename><surname>Mahnke</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">L</forename><surname>Overby</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Vang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Industry &amp; Innovation</title>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="205" to="253" />
+			<date type="published" when="2005">2005</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<analytic>
+		<title level="a" type="main">The Impact of Firm Learning on Financial Value in Strategic Outsourcing Relationships</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Mani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Barua</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Whinston</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the Thirtieth International Conference on Information Systems</title>
+		<meeting>the Thirtieth International Conference on Information Systems<address><addrLine>Phoenix, AZ</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2009">2009</date>
+			<biblScope unit="page" from="1" to="16" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<analytic>
+		<title level="a" type="main">Strategy Making as Iterated Processes of Resource Allocation</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Noda</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">L</forename><surname>Bower</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Strategic Management Journal</title>
+		<imprint>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="159" to="192" />
+			<date type="published" when="1996">1996</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<analytic>
+		<title level="a" type="main">A Cognitive Model of the Antecedents and Consequences of Satisfaction Decisions</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">L</forename><surname>Oliver</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Marketing Research</title>
+		<imprint>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="460" to="469" />
+			<date type="published" when="1980">1980</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+	<analytic>
+		<title level="a" type="main">Cognitive, Affective, and Attribute Bases of the Satisfaction Response</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">L</forename><surname>Oliver</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Consumer Research</title>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="418" to="430" />
+			<date type="published" when="1993">1993</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b43">
+	<analytic>
+		<title level="a" type="main">Capability, Quality, and Performance of Offshore Is Vendors: A Theoretical Framework and Empirical Investigation</title>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">C</forename><surname>Palvia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">C</forename><surname>King</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Xia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">C J</forename><surname>Palvia</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Decision Sciences</title>
+		<imprint>
+			<biblScope unit="volume">41</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="231" to="270" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b44">
+	<analytic>
+		<title level="a" type="main">Research Commentary-Information Technology-Enabled Business Models: A Conceptual Framework and a Coevolution Perspective for Future Research</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Rai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Tang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="1" to="14" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b45">
+	<analytic>
+		<title level="a" type="main">Organizational Adoption of Web 2.0 Technologies: An Empirical Analysis</title>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">J</forename><surname>Saldanha</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">S</forename><surname>Krishnan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Organizational Computing and Electronic Commerce</title>
+		<imprint>
+			<biblScope unit="volume">22</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="301" to="333" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b46">
+	<analytic>
+		<title level="a" type="main">Information Systems for Collaborating Versus Transacting: Impact on Manufacturing Plant Performance in the Presence of Demand Volatility</title>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">J</forename><surname>Saldanha</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><forename type="middle">P</forename><surname>Melville</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Ramirez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><forename type="middle">J</forename><surname>Richardson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Operations Management</title>
+		<imprint>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="313" to="329" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b47">
+	<analytic>
+		<title level="a" type="main">Is Application Capabilities and Relational Value in Interfirm Partnerships</title>
+		<author>
+			<persName><forename type="first">N</forename><surname>Saraf</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">S</forename><surname>Langdon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Gosain</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<imprint>
+			<biblScope unit="volume">18</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="320" to="339" />
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b48">
+	<analytic>
+		<title level="a" type="main">How Peripheral Developers Contribute to Open-Source Software Development</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Setia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Rajagopalan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Sambamurthy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Calantone</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="144" to="163" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b49">
+	<analytic>
+		<title level="a" type="main">Leveraging Digital Technologies: How Information Quality Leads to Localized Capabilities and Customer Service Performance</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Setia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Venkatesh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Joglekar</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">37</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="565" to="590" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b50">
+	<analytic>
+		<title level="a" type="main">Understanding the Service Component of Application Service Provision: An Empirical Analysis of Satisfaction with Asp Services</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Susarla</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Barua</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">B</forename><surname>Whinston</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="91" to="123" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b51">
+	<analytic>
+		<title level="a" type="main">Contractual Provisions to Mitigate Holdup: Evidence from Information Technology Outsourcing</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Susarla</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Subramanyam</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Karhade</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<imprint>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="37" to="55" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b52">
+	<analytic>
+		<title level="a" type="main">A Process-Oriented Perspective on the Alignment of Information Technology and Business Strategy</title>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">P</forename><surname>Tallon</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Management Information Systems</title>
+		<imprint>
+			<biblScope unit="volume">24</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="227" to="268" />
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b53">
+	<analytic>
+		<title level="a" type="main">Competing Perspectives on the Link between Strategic Information Technology Alignment and Organizational Agility: Insights from a Mediation Model</title>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">P</forename><surname>Tallon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Pinsonneault</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">35</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="463" to="486" />
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b54">
+	<analytic>
+		<title level="a" type="main">A Comparison of Transaction Cost, Agency, and Knowledge-Based Predictors of It Outsourcing Decisions: A U.S.-Japan Cross-Cultural Field Study</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Tiwana</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">A</forename><surname>Bush</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Management Information Systems</title>
+		<imprint>
+			<biblScope unit="volume">24</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="259" to="300" />
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b55">
+	<analytic>
+		<title level="a" type="main">Control in Internal and Outsourced Software Projects</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Tiwana</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Keil</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Management Information Systems</title>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="9" to="44" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b56">
+	<analytic>
+		<title level="a" type="main">Outsourcing: Think More Expansively</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Varadarajan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Business Research</title>
+		<imprint>
+			<biblScope unit="volume">62</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="1165" to="1172" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b57">
+	<analytic>
+		<author>
+			<persName><forename type="first">S</forename><surname>Vitzthum</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Kathuria</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Konsynski</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Toys Become Tools: From Virtual Worlds to Real Commerce</title>
+		<imprint>
+			<date type="published" when="2011">2011</date>
+			<biblScope unit="volume">29</biblScope>
+			<biblScope unit="page" from="379" to="394" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b58">
+	<analytic>
+		<title level="a" type="main">The Demands-Control Model of Job Strain: A More Specific Test</title>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">D</forename><surname>Wall</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">R</forename><surname>Jackson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Mullarkey</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">K</forename><surname>Parker</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Occupational and Organizational Psychology</title>
+		<imprint>
+			<biblScope unit="volume">69</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="153" to="166" />
+			<date type="published" when="1996">1996</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b59">
+	<analytic>
+		<title level="a" type="main">The Cost Behavior of Software Defects</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">C</forename><surname>Westland</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Decision Support Systems</title>
+		<imprint>
+			<biblScope unit="volume">37</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="229" to="238" />
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b60">
+	<analytic>
+		<title level="a" type="main">Complexity of Information Systems Development Projects: Conceptualization and Measurement Development</title>
+		<author>
+			<persName><forename type="first">W</forename><surname>Xia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Lee</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Management Information Systems</title>
+		<imprint>
+			<biblScope unit="volume">22</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="45" to="83" />
+			<date type="published" when="2005">2005</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

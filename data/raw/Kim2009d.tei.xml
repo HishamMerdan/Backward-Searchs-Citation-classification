@@ -1,0 +1,873 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Online Reverse Auctions for Outsourcing Small Software Projects: Determinants of Vendor Selection</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Joung</forename><surname>Yeon</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">School of Business</orgName>
+								<orgName type="institution">Indiana University Kokomo</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">J</forename><forename type="middle">Y "</forename><surname>Kim</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">School of Business</orgName>
+								<orgName type="institution">Indiana University Kokomo</orgName>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Online Reverse Auctions for Outsourcing Small Software Projects: Determinants of Vendor Selection</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="MD5">C5C425EF5CF7AA1684D55B6520A55B26</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.7.3" ident="GROBID" when="2023-06-16T09:22+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>Electronic commerce</term>
+					<term>Online service marketplaces</term>
+					<term>IT outsourcing</term>
+					<term>Small projects</term>
+					<term>Vendor selection</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Online service marketplaces have enabled small firms to efficiently outsource small-scale IT projects by providing reduced transaction costs and increased competition among bidders. This paper presents an explanatory study that examines the vendor selection process using data from a large online service marketplace. Theories from production economics, resource dependency, and software risk management are applied in a small-firm context. The empirical results suggest that a client's utility function increases with a lower bid price, shorter lead-time, higher vendor average feedback rating, higher degree of vendor experience, and domestic (U.S.) location. There was not sufficient evidence to support strategically differentiated vendor selection behavior with respect to project value (or price). This study's findings help understand patterns of bid evaluation in online auctions, where a large percentage of transactions consist of small IT projects.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>INTRODUCTION AND MOTIVATION</head><p>Recently, online reverse auctions have become a popular means when sourcing professional services through Internet marketplaces. By maximizing competition among bidders, reverse auctions in online marketplaces offer clients lower costs and improved profitability <ref type="bibr" target="#b30">(Samuelson, 1986)</ref>. Examples of such online service marketplaces include ElanceOnline (www.elance.com), <ref type="bibr">RentACoder (www.rentacoder.com), Guru (www.guru. com)</ref>, eWork (www.eworkmarkets.com), German Contract Information Service (www. dtad.de), <ref type="bibr">NeoIT (www.neoit.com), and Smarterwork (www.smarterwork.com)</ref>. The reduced transaction costs these marketplaces provide have enabled firms to efficiently out-source small-scale IT projects and other professional services, such as marketing and legal consulting. This study focuses on the small-size IT projects. In online service marketplaces, such a project is procured as follows: A client (i.e., buyer or auctioneer) posts a request for proposal (RFP) describing the project requirements, and service providers subsequently prepare a bid package describing their capabilities and bid prices. When the auction is complete, the client evaluates the received bids and selects a winner. The selected vendor provides the service as described, and the client pays the agreed-upon amount. The goal of this explanatory study is to identify and understand vendor selection determinants for small IT projects.</p><p>Application development, Web site and database design, script writing, and system administration are commonly contracted via online marketplaces. These projects share properties, such as highly standardized or commoditized configurations, which existing literature <ref type="bibr" target="#b18">(Grover et al., 1996)</ref> suggests make them extremely attractive for outsourcing. Contract prices of IT projects transacted through online marketplaces are relatively low; the data used in this study shows an average $955.00 bid price. The high concentration of small IT projects is primarily due to the fact that the user group in these markets mainly consists of small businesses <ref type="bibr" target="#b29">(Radkevitch et al. 2006)</ref>. In general, these firms lack the resources for inhouse software development and, consequently, outsource more to leverage the providers' economies of scale <ref type="bibr" target="#b0">(Ang and Cummings, 1997;</ref><ref type="bibr" target="#b1">Ang and Straub, 1998;</ref><ref type="bibr" target="#b9">Carmel and Nicholson, 2005;</ref><ref type="bibr" target="#b27">Ono and Stango, 2005)</ref>. High searching costs and entry barriers are the biggest challenge faced by small firms in the outsourcing process <ref type="bibr" target="#b13">(Dean et al., 1998)</ref>, but in online marketplaces, both costs are far lower <ref type="bibr" target="#b29">(Radkevitch et al. 2006</ref>). These advantages in both production and transaction cost attract a critical mass of small firms to online marketplaces. Small firms' innovative entrepreneurship <ref type="bibr" target="#b13">(Dean et al., 1998)</ref> also makes them favor the online sourcing method. Given the high population of small firms sourcing small projects, it is important to apply theories in the correct context to explain the vendor selection behavior, since the strategic management literature suggests that the study of small firms requires a different model than that applied to large firms <ref type="bibr" target="#b13">(Dean et al., 1998)</ref>. In this study, theories from the general software outsourcing literature are applied to build hypotheses and careful attention is paid to verify whether they are supported in this context.</p><p>Understanding the vendor selection process in online marketplaces is essential for a better market design. Selecting a vendor for IT involves a multi-attribute auction that enables negotiation on multiple attributes of a deal. The winner in this type of auction may not necessarily be the one who bids lowest, because the client's utility is determined by a combination of the bid price and non-price attributes. Prior analytical work on designing multi-attribute auction mechanisms assumes a certain function of the buyer's utility. Despite ample analytical work <ref type="bibr" target="#b5">(Bichler, 2000;</ref><ref type="bibr" target="#b6">Bichler and Kalagnanam, 2005;</ref><ref type="bibr" target="#b11">Chen-Ritzo et al., 2005;</ref><ref type="bibr" target="#b33">Strecker and Seifert, 2004)</ref>, the actual components of a buyer's utility function have not been investigated empirically in the online software outsourcing e-Service Journal Volume 6 Issue 3 context. Identifying the vendor selection determinants also helps vendors prepare bid packages efficiently. This is now more important than ever, given the increased competitiveness and vendor participation in auctions. Empirical assessment of vendor selection behavior will fill the gap in the IS and multi-attribute auction literatures by revealing the buyer's utility function with a rich, real-world dataset.</p><p>Efficient market design for online service marketplaces is important to prevent a market failure, because the vendor selection process inherently entails severe information asymmetries. The highly intangible, highly customizable nature of IT products makes it difficult for clients to identify the cost structure or quality of vendors prior to the contract <ref type="bibr" target="#b32">(Snir and Hitt, 2004)</ref>. Severe information asymmetries may result in market failure, known as the "lemons problem" <ref type="bibr" target="#b2">(Akerlof, 1970)</ref>, where there is no credible signal for high quality products, resulting in aggressive sales of only low-quality products. Buyers naturally refrain from purchasing, and the market eventually collapses. Similarly, if online service marketplaces are not able to provide their clients with credible signals for high-quality vendors, market failure will be unavoidable. The continuous growth of these marketplaces indicates that they may have implemented credible signaling devices to mitigate severe information asymmetries. This study identifies currently implemented signal devices, such as feedback systems.</p><p>This study's theory basis is rooted in production economics, resource dependency, and software development risk management, and developed in a small firm context. The remainder of this article is organized as follows: First, the theoretical basis is presented and six major determinants of vendor selection are identified. Then, the data collected from an online service market is described. In the following sections, an explanation is given of how the discrete choice model is implemented and the test results are presented. Finally, the implications and conclusions are discussed.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>THEORETICAL BASIS AND RESEARCH HYPOTHESES</head><p>Vendor selection is a decision making process that assesses the likelihood of successful and unsuccessful outcomes of an outsourcing project for a given vendor. A successful outcome is assessed in terms of the benefits achieved, which can be categorized into economic and technological benefits <ref type="bibr" target="#b18">(Grover et al., 1996;</ref><ref type="bibr" target="#b23">Lee and Kim, 1999</ref>). An unsuccessful outcome can be predicted and assessed by examining the risks associated with a particular vendor <ref type="bibr" target="#b4">(Barki et al., 1993)</ref>. Therefore, we argue that vendor selection determinants are affected by the predicted benefits and risks associated with individual vendors. This rationale is also carefully verified from the perspective of small-firms economics.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Economic Benefits</head><p>Production economics views firms as profit-maximizing organizations trying to minimize production costs <ref type="bibr" target="#b34">(Tirole, 1988;</ref><ref type="bibr" target="#b36">Williamson, 1981)</ref>. This view suggests that firms choose outsourcing instead of internal production to seek production cost advantages provided by external IT vendors <ref type="bibr" target="#b1">(Ang and Straub, 1998;</ref><ref type="bibr" target="#b25">Loh and Venkatraman, 1992)</ref>. Such economic benefits, or production cost advantages, have been acknowledged as one of the primary benefits of outsourcing <ref type="bibr" target="#b18">(Grover et al, 1996;</ref><ref type="bibr" target="#b22">Lacity and Hirschheim, 1993;</ref><ref type="bibr" target="#b23">Lee and Kim, 1999)</ref>. Furthermore, the IT outsourcing and strategic management literatures suggest that small firms are financially motivated when they outsource IT functions because of the lack of financial slack that would allow them to invest in their internal information systems (IS) department or afford expensive vendors <ref type="bibr" target="#b0">(Ang and Cummings, 1997;</ref><ref type="bibr" target="#b1">Ang and Straub, 1998;</ref><ref type="bibr" target="#b13">Dean et al., 1998;</ref><ref type="bibr" target="#b25">Loh and Venkatraman, 1992)</ref>. Besides the challenges in production costs, small firms often face high coordination costs because they lack specialized human resources to prepare or monitor a contract <ref type="bibr" target="#b9">(Carmel and Nicholson, 2005)</ref>. Thus, small firms with these disadvantages will seriously consider a vendor who can provide cost advantages. Therefore, we posit cost advantages as a determinant of vendor selection.</p><p>There are two cost-related attributes that a client considers when evaluating bids in this type of marketplace: a service price to be paid to a vendor and time until the service is delivered. The price and lead-time are also considered as important attributes that determine costs in the physical-goods procurement literature <ref type="bibr" target="#b11">(Chen-Ritzo et al., 2005)</ref>, because clients' cost minimization is achieved through both a lower price and a shorter lead-time. The positive relationship of lower bid price and shorter lead-time is postulated as factors leading to winning a contract. Therefore, H1 and H2 are formulated to identify cost-related attributes:</p><p>H1: A lower bid price is positively related to the probability of winning a contract. H2: A shorter lead-time is positively related to the probability of winning a contract.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Technological Benefits</head><p>Grover <ref type="bibr">et al. (1996)</ref> define technological benefits as the ability of a firm to gain access to leading-edge IT from a vendor. Resource dependency theory suggests that a firm seeks external resources and capabilities that complement the firm's deficient resources in order to gain competitive advantages <ref type="bibr" target="#b16">(Grant, 1991;</ref><ref type="bibr" target="#b18">Grover et al., 1996)</ref>. Small firms typically lack technological resources because obtaining technological capabilities often requires economies of experience, i.e., learning from experience, and small firms cannot afford high costs related to learning <ref type="bibr" target="#b9">(Carmel and Nicholson, 2005;</ref><ref type="bibr" target="#b27">Ono and Stango, 2005)</ref>. Thus, small firms actively seek vendors' resources to access necessary technologies. In order to select a vendor who will provide such technological benefits, clients should first evaluate vendor quality. We refer to vendor quality in this paper as a vendor's technical and social skills accumulated through experience, as well as the ability to minimize conflicts. However, intangible characteristics of IT projects and information asymmetry e-Service Journal Volume 6 Issue 3 make it difficult to identify which vendor is capable of providing services of the desired quality level, prior to signing a contract. Furthermore, information asymmetry often motivates vendors to misrepresent their quality <ref type="bibr" target="#b31">(Snir and Hitt, 2003;</ref><ref type="bibr">Tirole, 1998)</ref>. Online auctions also increase the level of information asymmetry because many transactions on the Internet are likely to be one-shot relationships between strangers <ref type="bibr" target="#b7">(Bolton et al., 2004)</ref>, compared to traditional transactions, where sellers and buyers tend to establish long-term relationships. To overcome uncertainty augmented by the environment, many auction sites provide reputation mechanisms by which sellers' reputations are accumulated and become public <ref type="bibr" target="#b3">(Ba and Pavlou, 2002;</ref><ref type="bibr" target="#b28">Pavlou and Gefen, 2004</ref>). Among the reputation devices implemented in online service markets, there are two signaling tools for vendor quality: average feedback rating, and total number of feedback ratings. The average feedback rating systems have been acknowledged as an effective sanctioning tool against a vendor's moral hazard in online environments <ref type="bibr" target="#b14">(Dellarocas, 2005;</ref><ref type="bibr" target="#b28">Pavlou and Gefen, 2004)</ref>. This mechanism also establishes the client's trusting intention, despite a lack of interaction history with and incomplete information about the vendor, by visualizing vendors' average performance on their projects <ref type="bibr" target="#b18">(Grover et al., 1996)</ref>.</p><p>However, a client needs a tool to distinguish between two vendors with identical average rating, but different numbers of ratings. For example, the high average feedback rating of vendor A, who has completed only one or two projects, cannot be a reliable signal to decide between vendors A and B, when vendor B has similar or even slightly lower average rating but has completed hundreds of projects. Therefore, the average feedback rating system must be complemented by the vendor's accumulated history, which essentially indicates the vendor's experience level. The level of a vendor's accumulated experience can be represented by the total number of completed projects. Many online marketplaces currently publicize this information to aid clients' decision processes. Hypotheses to test the relationship of the quality-related attributes to the likelihood of winning an auction have been formulated as:</p><p>H3: A higher average feedback rating is positively related to the probability of winning a contract. H4: A higher total number of feedback ratings are positively related to the probability of winning a contract.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Software Development Risks</head><p>Besides the successful outcome expected from a potential vendor, clients should consider risks, defined as the likelihood and magnitude of an unsuccessful outcome associated with a particular vendor. Outsourcing an IT project inherits risks and has a long history of high failure rates <ref type="bibr" target="#b22">(Lacity and Hirschheim, 1993;</ref><ref type="bibr" target="#b37">Xia and Lee, 2005)</ref>. Small firms do not have sufficient resources to bear such failures because the failure would have a signifi-cant impact on the firm's finances, given the lack of economies of scale <ref type="bibr" target="#b9">(Carmel and Nicholson, 2005;</ref><ref type="bibr" target="#b13">Dean et al., 1998)</ref>. The failure would also slow down the firm's reactions to competitors, which is the essential capability by which small firms gain competitive advantages <ref type="bibr" target="#b9">(Carmel and Nicholson, 2005;</ref><ref type="bibr" target="#b10">Chen and Hambrick, 1995;</ref><ref type="bibr" target="#b13">Dean et al., 1998)</ref>. Thus, small clients are highly motivated to minimize risks, and the vendor selection process involves identifying a vendor who demonstrates fewer risk factors. Clients would also pay special attention to vendor selection if the project being procured entails considerable risk factors. To draw hypotheses in a systematic manner, we adopt the software risk management literature's definition of risk as the magnitude of the potential loss times the probability of loss <ref type="bibr" target="#b4">(Barki et al., 1993)</ref>. Thus, we propose that vendor selection is affected by these two parameters as a proxy of potential risks: probability of loss and magnitude of loss. First, probability of loss increases with the complexity of managing a project. To reduce risks, clients prefer a vendor with lower managerial complexity. Managerial complexity increases when there are high transaction (coordination) costs, which is the case in offshore outsourcing <ref type="bibr" target="#b9">(Carmel and Nicholson, 2005;</ref><ref type="bibr">19, Radkevitch et al., 2006;</ref><ref type="bibr" target="#b35">Walsham, 2001)</ref>. Managerial complexity of offshore outsourcing originates from communication difficulties due to cultural differences and language abilities <ref type="bibr" target="#b35">(Walsham, 2001)</ref>, operational difficulties due to unreliable telecommunication infrastructure <ref type="bibr" target="#b9">(Carmel and Nicholson, 2005)</ref>, uncertainty in intellectual property and legal penalties <ref type="bibr" target="#b9">(Carmel and Nicholson, 2005)</ref>, coordination difficulties due to time-zone and geographical differences <ref type="bibr" target="#b8">(Carmel, 1999)</ref>, and a lack of domain knowledge of the offshore team <ref type="bibr" target="#b21">(Krishna et al., 2004)</ref>. Therefore, the managerial risks associated with offshore outsourcing have been formulated as the following hypothesis:</p><p>H5: The geographical distance between vendor and client is negatively related to the probability of winning a contract. Second, the magnitude of a potential loss increases with project value, or project price as a proxy. Project value is determined by many factors: degree of technical complexity, difficulty in customization, project size, etc. Project size and technical complexity are two major sources of uncertainty and failure in an IT project <ref type="bibr" target="#b4">(Barki et al, 1993;</ref><ref type="bibr" target="#b26">McFarlan, 1981;</ref><ref type="bibr" target="#b38">Zmud, 1980)</ref>. If an expensive project fails, the subsequent loss becomes larger. Thus, a client with a higher-value project perceives a higher risk than those with a lower-value, standardized, commodity-like project. When the client perceives higher risk due to the nature of the project, he is more interested in determining a vendor who is likely to minimize that risk. Therefore, in the presence of higher risk, the client will weigh each determinant of vendor selection differently, in a way that minimizes the risks, even with a premium price. Thus, hypotheses to test the relationships of the risks stemming from the project value to the vendor's likelihood of winning the auction have been formulated as: e-Service Journal Volume 6 Issue 3 H6: Clients with higher value projects will consider quality-related attributes more and price-related attributes less than clients with lower value projects. H7: Clients with higher value projects will prefer US vendors over non-US vendors.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>EMPIRICAL MODEL</head><p>A discrete choice model has been implemented to estimate the clients' utility-maximizing behavior. The dependent variable is a binary variable that depends on whether client i awards a contract to bid j or not. Since a client chooses a particular bid as a winner after evaluating all bids that he receives, the empirical model must estimate the effect of each bid attribute on the probability of the client choosing the bid over the rest of the bids in the given auction. Therefore, a conditional logistic regression model has been used. The conditional logistic model is based on a random utility model <ref type="bibr" target="#b17">(Greene, 2003)</ref>. The utility of choosing bid j for client i is</p><formula xml:id="formula_0">U ij=ß Xij+e ij.</formula><p>Xij is a vector of explanatory variables for client i and bid j. Xij can be the attributes of the choices, which is specific to each bid, as well as the characteristics of the individual client, which vary across the auctions but do not vary across alternative bids, given the auction <ref type="bibr" target="#b15">(Gopal et al., 2003)</ref>. ß is a vector of estimated parameters; e ij is the random error term. It is assumed that the client i chooses bid j if its utility, U ij, is the maximum among the utilities of other bids. Then, the probability that client i will choose bid j is given by P(U ij &gt;U ik) for all other k ≠ j.</p><p>Conditional logit model assumes that the random disturbances, e ij, are independently and identically distributed with a Weibull distribution. Then, the probability that client i will award a contract to bid j is given by: . The parameters are estimated by maximizing the likelihood function for n observed auctions:</p><p>.</p><p>The conditional logit model does not allow correlation of the error terms over alternatives, and therefore imposes the independence of irrelevant alternatives (IIA) assumption <ref type="bibr" target="#b17">(Greene, 2003)</ref>. The IIA assumption implies that the odd ratio of choosing Bid A and choosing Bid B remains constant, regardless of whether other alternative bids are added or removed. The IIA assumption might or might not be a strong restriction in some brand or location choice problems <ref type="bibr">(Go and List, 2004;</ref><ref type="bibr" target="#b24">Lemon and Nowlis, 2002)</ref>. Unlike in the brand or location choice problems, where individuals face an identical and predetermined choice set such as Brand A and B, or Location A and B, auction data does  <ref type="table" target="#tab_1">1</ref> shows the details about the project distributions across the subcategories within the Soft- ware and Technology category. ElanceOnline also operates several non-IT-related professional service categories such as marketing and legal consulting, which are not included in the analysis. Website Development is another IT-related category with market liquidity similar to the Software and Technology category, with 7,494 projects posted during the same period. The Website Development category is not included in the current analysis. Each bid information shows to which project the bid belongs, whether a contract was awarded, bid price, time it would take to deliver the service if awarded, vendor's geographical location, vendor's recent six-month feedback ratings, vendor's total earnings through the particular online marketplace, and number of feedback ratings that the vendor has received regarding the projects he completed. The information about each project includes the client's experience level (the number of project awarded), and average bid amount of the project.</p><formula xml:id="formula_1">P(Y i =j)= exp(ß Xij) ∑exp(ß Xij) j =1 J exp(ß Xij) ∑exp(ß Xij) j =1 J L=∏∏ j =1 i =1 n J P(Y i =j)= exp(ß Xij) ∑exp(ß Xij) j =1 J exp(ß Xij) ∑exp(ß Xij) j =1 J L=∏∏ j =1 i =1 n J not have</formula><p>The initial data was filtered to eliminate inappropriate data for testing the hypotheses. There were only 9,224 bids with 1,583 projects remaining after deleting sealed-bid auctions, invitees-only auctions, auctions without any winner, and auctions with multiple winners. Among this filtered data, auctions that had received only one valid bid were also deleted as a client of a one-bid auction would not have any alternatives to choose from. The final data set consists of 8,936 bids with 1,295 projects. Table <ref type="table" target="#tab_1">1</ref> compares the project frequencies between the initial data and the filtered data, indicating no significant difference in terms of the distributions across subcategories.</p><p>The descriptive statistics are presented in Clients prefer U.S. vendors to foreign vendors when other parameters are equal. It suggests that U.S vendors have advantages over foreign vendors in this market and the foreign vendors may have to offer a better bid package through a price discount or a faster delivery date to compete with the U.S. vendors of the same quality. In summary, the propensity to be selected as a winning bid increases with a lower bid price, shorter time to deliver the service, higher average feedback rating, higher cumulated experience, and domestic location.</p><p>The project value hypotheses H6 and H7 were not supported; the result appears as Model 2 in Table <ref type="table" target="#tab_5">3</ref>. The reason that H6 and H7 are not supported can be explained by the market's high concentration on relatively simple, small IS development projects. The range of the project value in this market may not be broad enough to observe differentiations in clients' vendor selection strategy. From the client's perspective, most of the projects in this market may be classified as a commodity-like and inexpensive project category accompanying a small magnitude of potential risk.</p><p>The result of Model 3 shows that the control of buyer experience heterogeneity does not change the previous results. Without significant effects of buyer experience heterogeneity, the results still support H1 through H5 but do not support H6 and H7. This implies that experienced clients do not adopt the market signals differently from inexperienced ones. A possible interpretation of this result can be that this particular online marketplace (i.e., eLance.com) from which the data is collected is designed so that inexperienced clients can easily identify the market signals suggested by the marketplace. Clients keep using the same set of signals as they get experienced. For example, when a client evaluates the vendors' bids, quantifiable information available to the client include bid price, lead time, number of feedback ratings and average value of feedback rating. These measures are comparable among different vendors and easily accessible to the clients. Therefore it is likely that the clients consider using them when selecting a vendor. This result and interpretation are not limited to only the dataset used in this research, because a similar setting for similar market signal measures is observed in other online service marketplaces such as guru.com or rentacoder.com.</p><p>The negative coefficient of Vendor-Size is an interesting result. The negative coefficient implies that increases in vendor size (i.e., number of employees) reduce the chance of winning a contract. It can be explained by the fact that bargaining powers of clients increases when they select a smaller-size vendor <ref type="bibr" target="#b9">(Carmel and Nicholson, 2005;</ref><ref type="bibr" target="#b15">Gopal et al., 2003)</ref>. The clients in this market, who are mainly small size businesses, appear to strongly prefer having bargaining powers over their service providers. Another explanation is that the clients, who are mostly small businesses in this particular market, may find it costly to deal with larger vendors because larger firms tend to be more bureaucratic and have strict guidelines <ref type="bibr" target="#b13">(Dean et al., 1998)</ref>  between Vendor-Size and Price as a cause of the negative coefficient of Vendor-Size. However, this explanation is inappropriate, as there is no significant correlation between those variables, as shown in the correlation matrix in Table <ref type="table">4</ref>. The coefficients do not exhibit systematic changes after adding a series of variables to Model 1, as shown in Table <ref type="table" target="#tab_5">3</ref>, suggesting that there is no evident multicollinearity problem. To minimize potential multicollinearity problems, centered values have been used to generate the interaction terms and the project value is measured by only one measure, as in <ref type="bibr" target="#b24">Lemon and Nowlis (2002)</ref>. <ref type="bibr" target="#b20">Hocking (1996)</ref> suggests, as a rule of thumb, that if any variance inflation factor (VIF) is greater than 10, the multicollinearity problem is evident. The data in this analysis satisfies the VIF test.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>CONCLUSIONS AND DISCUSSIONS</head><p>Online service marketplaces have reduced global boundaries by facilitating communication and delivery of software, and created a venue where clients and vendors are connected globally. Reduced transaction costs and entry barriers have attracted a high population of small clients and vendors for trading small IT projects <ref type="bibr" target="#b29">(Radkevitch et al., 2006)</ref>. This paper presents an explanatory study that examines the vendor selection process using data from a large online service marketplace. Theories from production economics, resource dependency, and software risk management are applied in a small-firm context. The empirical results suggest that a client's utility function increases with a lower bid price, shorter lead-time, higher vendor average feedback rating, higher degree of vendor experience, and domestic (U.S.) location. There was not sufficient evidence to support strategically differentiated vendor selection behavior with respect to project value (or price). One of the possible explanations for this is that the scope of projects procured in this market is narrowly focused on an inexpensive, less complex, and small project category; the scope is therefore not broad enough to exhibit strategic diversity in client's vendor selection behavior.</p><p>Findings of this study can help online market designers ensure an efficient market mechanism. Designers must take care to make their signaling mechanisms accurate, so clients have correct information regarding the selection determinants. These devices should allow high-quality vendors to signal their quality effectively, in a way that lowerquality vendors cannot mimic. Market designers should ensure a healthy environment where a client can truthfully leave feedback based on their observed quality of a given vendor. If a client is afraid of any potential disadvantages by leaving negative feedback, the feedback information would be distorted, and the market would not function efficiently, unless the client disregards the feedback rating system when choosing their service providers. In addition, the results suggest that offshore vendors appear to be less attractive to U.S. clients than domestic vendors. Marketplace designers need to consider fortifying contract assistant services, legal advices, and secured payment systems throughout IT project contracting in order to promote the pool of high quality offshore vendors.</p><p>Among the factors influencing IS project success, such as the governance of contractual agreement and client-supplier relationship <ref type="bibr">(Gopal et al., 2003, Lacity and</ref><ref type="bibr">Hirschheimk, 1993)</ref>, efficient vendor selection is a prerequisite to others. To design or guide a successful IT vendor selection process, one must understand the bid evaluation process, especially the kind of market signals that clients prioritize when determining a vendor. Given the high percentage of auctions that end without achieving a contract in online service markets <ref type="bibr">(Lacity and Hirschheimk, 1993)</ref>, the IS literature calls for improving market efficiency for more contracts to be awarded. This article contributes to the online service market literature by empirically exploring vendor selection determinants for small IT projects. The present study does not aim to propose an optimal vendor selection strategy. Instead, an attempt has been made to explore important determinants, and help understand patterns of bid evaluation in online auctions, where a large percentage of transactions consist of small IT projects. Also, the focus of the study is online sourcing of small projects, and careful attention must be paid when applying the results to a large project context; the vendor selection determinants and significance of individual determinants may change when the market primarily deals with large projects.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head></head><label></label><figDesc>fixed Bid A or Bid B across auctions; each auction receives a different set of bids with different configurations. Because of this nature of the auction data applied in this work, it is hard to determine if such correlations between two irrelevant alternatives could exist in this type of data set. To confirm the IIA property, an additional test using the mixed logit regression, which is also known as random coefficient model and which relaxes the IIA assumption, has been performed. The result did not show systematic differences in terms of the significance of the variable effects.Data on recently completed projects were collected from ElanceOnline, an Internet-based services procurement intermediary for small businesses. (For larger businesses such as American Express, BP, GE, and other Fortune 500 companies, Elance used to provide ondemand Services and Contract Management solutions. In 2006 Elance sold this business to Click Commerce, another fast-growing technology company.) ElanceOnline is a large e-marketplace for services with more than 100,000 business customers.The initial data set consists of observations of 60,737 bids involved in 8,369 IT projects, closed between 4/17/2005 and 4/16/2006 from the Software and Technology category. The Software and Technology category has more than 50,000 registered software developers, and includes various subcategories of IT projects. The first column of Table</figDesc><table /><note><p>DATA</p></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1"><head>Table 1 . Project frequencies in sub-categories Software &amp; Technology sub-categories Number of projects Filtered data</head><label>1</label><figDesc></figDesc><table><row><cell></cell><cell cols="2">(Open-bid, not-invitees-only auctions with</cell><cell cols="2">Initial data</cell></row><row><cell></cell><cell cols="2">a winner and more than two bids received)</cell><cell></cell><cell></cell></row><row><cell>Application Development</cell><cell>575</cell><cell>(44.40%)</cell><cell>4121</cell><cell>(49.24%)</cell></row><row><cell>Scripts &amp; Utilities</cell><cell>234</cell><cell>(18.07%)</cell><cell>1108</cell><cell>(13.24%)</cell></row><row><cell>Database Development</cell><cell>196</cell><cell>(15.14%)</cell><cell>892</cell><cell>(10.66%)</cell></row><row><cell>Other -Software &amp; Technology</cell><cell>110</cell><cell>(8.49%)</cell><cell>919</cell><cell>(10.98%)</cell></row><row><cell>System Administration</cell><cell>55</cell><cell>(4.25%)</cell><cell>306</cell><cell>(3.66%)</cell></row><row><cell>Linux</cell><cell>45</cell><cell>(3.47%)</cell><cell>168</cell><cell>(2.01%)</cell></row><row><cell>Handhelds &amp; PDAs</cell><cell>26</cell><cell>(2.01%)</cell><cell>234</cell><cell>(2.80%)</cell></row><row><cell>Technical Support</cell><cell>24</cell><cell>(1.85%)</cell><cell>177</cell><cell>(2.11%)</cell></row><row><cell>Networking</cell><cell>13</cell><cell>(1.00%)</cell><cell>113</cell><cell>(1.35%)</cell></row><row><cell>Wireless</cell><cell>9</cell><cell>(0.69%)</cell><cell>137</cell><cell>(1.64%)</cell></row><row><cell>Security</cell><cell>8</cell><cell>(0.62%)</cell><cell>112</cell><cell>(1.34%)</cell></row><row><cell>Enterprise Systems</cell><cell>0</cell><cell>(0.00%)</cell><cell>82</cell><cell>(0.98%)</cell></row><row><cell>Total</cell><cell>1,295</cell><cell>(100%)</cell><cell>8,369</cell><cell>(100%)</cell></row></table><note><p>e-Service Journal Volume 6 Issue 3</p></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2"><head>Table 2 .</head><label>2</label><figDesc>The average bid price is $954.86 and average proposed lead-time proposed is about 18 days, indicating projects procured</figDesc><table><row><cell></cell><cell>Variable</cell><cell cols="4">Mean Std Dev Min. Max.</cell></row><row><cell></cell><cell>Bid price (US$)</cell><cell cols="3">954.86 1996.77 50</cell><cell>100000</cell></row><row><cell></cell><cell>Time to deliver (days)</cell><cell cols="2">17.62 20.42</cell><cell>1</cell><cell>270</cell></row><row><cell></cell><cell>Vendor experience (Number of projects previously completed.)</cell><cell>9.31</cell><cell>11.78</cell><cell>0</cell><cell>51</cell></row><row><cell>Bid-choice specific (N=8936)</cell><cell>Vendor feedback rating (1 is the lowest; 5 is the highest) Vendor size (Number of employees) Vendor age (Years since founded)</cell><cell cols="3">4.68 64.58 105.95 1 0.64 1 6.45 4.19 0</cell><cell>5 749.5 35</cell></row><row><cell></cell><cell>Number of prior contracts between the client and vendor during the recent one year</cell><cell>0.02</cell><cell>0.18</cell><cell>0</cell><cell>5</cell></row><row><cell></cell><cell>US vendors (1 if the vendor is from the U.S., otherwise 0.)</cell><cell>0.16</cell><cell>0.37</cell><cell>0</cell><cell>1</cell></row><row><cell>Auction specific (N=1295)</cell><cell>Client experience (Number of contracts previously awarded) Project value (Average bid, US$) Number of bids</cell><cell cols="4">9.30 954.86 1365.91 83.33 20930.2 20.60 0 298 11.09 8.61 2 62</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_3"><head>Table 2 .</head><label>2</label><figDesc>Descriptive StatisticsFEEDBACK have positive coefficients, indicating that the high values in both quality and quantity of feedback ratings are perceived as important signals of vendor quality by clients.</figDesc><table /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_4"><head></head><label></label><figDesc>. One may suspect a possible correlation</figDesc><table><row><cell></cell><cell>Variables</cell><cell>Model 1</cell><cell>Model 2</cell><cell>Model 3</cell></row><row><cell></cell><cell>ln(PRICE)</cell><cell cols="3">-0.3647 ** (0.058) -0.3561 ** (0.0623) -0.3515 ** (0.0624)</cell></row><row><cell>Cost Saving</cell><cell>ln(TIME-TO-DELIVER)</cell><cell cols="3">-0.2595 ** (0.048) -0.2604 ** (0.0481) -0.2584 ** (0.0482)</cell></row><row><cell></cell><cell>FEEDBACK</cell><cell cols="3">0.3774 ** (0.0846) 0.3759 ** (0.0859) 0.3717 ** (0.0861)</cell></row><row><cell>Adverse</cell><cell>ln(VENDOR-</cell><cell></cell><cell></cell><cell></cell></row><row><cell>selection</cell><cell>EXPERI-</cell><cell cols="3">0.0274 ** (0.00283) 0.0273 ** (0.00285) 0.0274 ** (0.00285)</cell></row><row><cell></cell><cell>ENCE)</cell><cell></cell><cell></cell><cell></cell></row><row><cell>Managerial complexity</cell><cell cols="4">USVENDOR 0.5612 ** (0.0941) 0.5582 ** (0.0947) 0.5328 ** (0.096)</cell></row><row><cell></cell><cell>ln(PRICE)* ln(PJTVALUE)</cell><cell></cell><cell>-0.0261 (0.0393)</cell><cell>-0.0225 (0.0395)</cell></row><row><cell>Interaction with project value</cell><cell>ln(TIME)* ln(PJTVALUE) FEEDBACK* ln(PJTVALUE) ln(VEXP)* ln(PJTVALUE)</cell><cell></cell><cell cols="2">0.0165 (0.0368) 0.00971 (0.0404) 0.00868 (0.0405) 0.0194 (0.0372) 0.00973 (0.0322) 0.00767 (0.0324)</cell></row><row><cell></cell><cell>USVENDOR* ln(PJTVALUE)</cell><cell></cell><cell>0.0139 (0.0406)</cell><cell>0.00291 (0.041)</cell></row><row><cell></cell><cell>ln(PRICE)*</cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell>ln(CLIENT-</cell><cell></cell><cell></cell><cell>0.0428 (0.0406)</cell></row><row><cell></cell><cell>EXP)</cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell>ln(TIME)*</cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell>ln(CLIENT-</cell><cell></cell><cell></cell><cell>0.0432 (0.0399)</cell></row><row><cell></cell><cell>EXP)</cell><cell></cell><cell></cell><cell></cell></row><row><cell>Interaction</cell><cell>FEEDBACK*</cell><cell></cell><cell></cell><cell></cell></row><row><cell>with client</cell><cell>ln(CLIENT-</cell><cell></cell><cell></cell><cell>-0.0135 (0.0427)</cell></row><row><cell>experience</cell><cell>EXP)</cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell>ln(VEXP)*</cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell>ln(CLIENT-</cell><cell></cell><cell></cell><cell>-0.0112 (0.0343)</cell></row><row><cell></cell><cell>EXP)</cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell>USVENDOR*</cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell>ln(CLIENT-</cell><cell></cell><cell></cell><cell>-0.0963 (0.0448)</cell></row><row><cell></cell><cell>EXP)</cell><cell></cell><cell></cell><cell></cell></row><row><cell>Control</cell><cell>ln(VENDOR-SIZE)</cell><cell cols="3">-0.289 ** (0.0318) -0.2897 ** (0.0318) -0.2886 ** (0.0319)</cell></row><row><cell>variables</cell><cell>PRIOR-RELA-TIONSHIP</cell><cell>17.4551 (252.2)</cell><cell>17.4452 (253)</cell><cell>17.3691 (255.4)</cell></row><row><cell></cell><cell>N</cell><cell>8936</cell><cell>8936</cell><cell>8936</cell></row><row><cell></cell><cell>AIC</cell><cell>3660.232</cell><cell>3669.611</cell><cell>3671.393</cell></row><row><cell></cell><cell>-2LogL</cell><cell>3646.232**</cell><cell>3645.611**</cell><cell>3637.393**</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_5"><head>Table 3 . Results of the Discrete Choice Model to Predict Vendor Selection Behavior</head><label>3</label><figDesc></figDesc><table /></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_0"><p>e-Service Journal Volume 6 Issue 3</p></note>
+		</body>
+		<back>
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>in this market are simple and short-term, compared to typical IT projects. The average number of bids received per project is 11, and average number of projects awarded by a client is 9, demonstrating active market liquidity.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>EMPIRICAL RESULTS</head><p>To test the proposed hypotheses, control variables were added: vendor's size in terms of number of employees, and existence of prior contracts between the given vendor and client. The model specification forms as follows, after including these control variables. Model 1 formulates hypotheses H1 through H5 and control variables:</p><p>Model 1: Prob [A vendor wins a contract] = f (Price, Time-To-Deliver, Average-Feedback, Vendor-Experience, Vendor-Distance, Vendor-Size, Prior-Relationship).</p><p>Hypotheses H6 and H7 include interaction terms of project value with each explanatory variable. The average bid price of a given project is used as a proxy for project value to test hypotheses H6 and H7, as in <ref type="bibr" target="#b31">Snir and Hitt (2003)</ref> since the client's perceived value is unavailable to measure.  </p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Strategic Response to Institutional Influences on Information Systems Outsourcing</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Ang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">L</forename><surname>Cummings</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Organization Science</title>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="235" to="256" />
+			<date type="published" when="1997">1997</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Production and Transaction Economies and IS Outsourcing: A Study of the U.S. Banking Industry</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Ang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">W</forename><surname>Straub</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">22</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="535" to="550" />
+			<date type="published" when="1998">1998</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">The Market for &apos;Lemons&apos;: Quality Uncertainty and the Market Mechanism</title>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">A</forename><surname>Akerlof</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The Quarterly Journal of Economics</title>
+		<imprint>
+			<biblScope unit="volume">84</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="488" to="500" />
+			<date type="published" when="1970">1970</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Evidence of the effect of trust building technology in electronic markets</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Ba</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">A</forename><surname>Pavlou</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="243" to="268" />
+			<date type="published" when="2002">2002</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Toward an Assessment of Software Development Risk</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Barki</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Rivard</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Talbot</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Management Information Systems</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="203" to="225" />
+			<date type="published" when="1993">1993</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">An experimental analysis of multi-attribute auction</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Bichler</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Decision Support Systems</title>
+		<imprint>
+			<biblScope unit="volume">29</biblScope>
+			<biblScope unit="page" from="249" to="268" />
+			<date type="published" when="2000">2000</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Configurable Offers and Winner Determination in Multi-attribute Auctions</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Bichler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Kalagnanam</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">European Journal of Operational Research</title>
+		<imprint>
+			<biblScope unit="issue">160</biblScope>
+			<biblScope unit="page" from="380" to="394" />
+			<date type="published" when="2005">2005</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">How Effective Are Electronic Reputation Mechanisms? An Experimental Investigation</title>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">E</forename><surname>Bolton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Katok</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Ockenfels</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Science</title>
+		<imprint>
+			<biblScope unit="volume">50</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="1587" to="1602" />
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<monogr>
+		<author>
+			<persName><forename type="first">E</forename><surname>Carmel</surname></persName>
+		</author>
+		<title level="m">Global Software Teams</title>
+		<meeting><address><addrLine>Englewood Cliffs, NJ</addrLine></address></meeting>
+		<imprint>
+			<publisher>Prentice Hall</publisher>
+			<date type="published" when="1999">1999</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Small Firms and Offshore Software Outsourcing: High Transaction Costs and Their Mitigation</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>Carmel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Nicholson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Global Information management</title>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="33" to="53" />
+			<date type="published" when="2005">2005</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Speed, Stealth, and Selective Attack: How Small Firms Differ from Large Firms in Competitive Behavior</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">C</forename><surname>Hambrick</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Academy of Management Journal</title>
+		<imprint>
+			<biblScope unit="volume">38</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="453" to="482" />
+			<date type="published" when="1995">1995</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Better, Faster, Cheaper: An Experimental Analysis of a Multi-attribute Reverse Auction Mechanism with Restricted Information Feedback</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Chen-Ritzo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">P</forename><surname>Harrison</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">M</forename><surname>Kwasnica</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">J</forename><surname>Thomas</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Science</title>
+		<imprint>
+			<biblScope unit="volume">51</biblScope>
+			<biblScope unit="issue">12</biblScope>
+			<biblScope unit="page" from="1753" to="1762" />
+			<date type="published" when="2005">2005</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Is Foreign Direct Investment Attracted to Knowledge Creators?</title>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">Y</forename><surname>Co</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">A</forename><surname>List</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Applied Economics</title>
+		<imprint>
+			<biblScope unit="issue">36</biblScope>
+			<biblScope unit="page" from="1143" to="1149" />
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Differences in Large and Small Firm Reponses to Environmental Context: Strategic Implications from a Comparative Analysis of Business Formations</title>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">J</forename><surname>Dean</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">L</forename><surname>Brown</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">E</forename><surname>Bamford</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Strategic Management Journal</title>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="issue">8</biblScope>
+			<biblScope unit="page" from="709" to="728" />
+			<date type="published" when="1998">1998</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Reputation Mechanism Design in Online Trading Environments with Pure Moral Hazard</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Dellarocas</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<imprint>
+			<biblScope unit="volume">16</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="209" to="230" />
+			<date type="published" when="2005">2005</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Contracts in Offshore Software Development</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Gopal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Sivaramakrishnan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">S</forename><surname>Krishnan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Mukhopadhyay</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Science</title>
+		<imprint>
+			<biblScope unit="volume">49</biblScope>
+			<biblScope unit="issue">12</biblScope>
+			<biblScope unit="page" from="1671" to="1683" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">The Resource-based Theory of Competitive Advantage: Implications for Strategy Formulation</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">M</forename><surname>Grant</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">California Management Review</title>
+		<imprint>
+			<biblScope unit="volume">33</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="114" to="135" />
+			<date type="published" when="1991">1991</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<author>
+			<persName><forename type="first">W</forename><forename type="middle">H</forename><surname>Greene</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Econometric Analysis</title>
+		<imprint>
+			<publisher>Prentice Hall</publisher>
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">The Effects of Service Quality and Partnership on the Outsourcing of Information Systems Functions</title>
+		<author>
+			<persName><forename type="first">V</forename><surname>Grover</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">J</forename><surname>Cheon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">T</forename><surname>Teng</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Management Information Systems</title>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="89" to="116" />
+			<date type="published" when="1996">1996</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Much Ado About Nothing: Conditional Logit vs. Random Coefficient Models for Estimating Labor Supply Elastics</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Haan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Applied Economics Letters</title>
+		<imprint>
+			<biblScope unit="issue">13</biblScope>
+			<biblScope unit="page" from="251" to="256" />
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<monogr>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">R</forename><surname>Hocking</surname></persName>
+		</author>
+		<title level="m">Methods and Applications of Linear Models</title>
+		<meeting><address><addrLine>NY</addrLine></address></meeting>
+		<imprint>
+			<publisher>John Wiley &amp; Sons</publisher>
+			<date type="published" when="1996">1996</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Managing Cross-Cultural Issues in Global Software Outsourcing</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Krishna</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Sahay</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Walsham</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Communications of the ACM</title>
+		<imprint>
+			<biblScope unit="volume">47</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="62" to="66" />
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">The Information Systems Outsourcing Bandwagon</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">C</forename><surname>Lacity</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Hirschheim</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Sloan Management Review</title>
+		<imprint>
+			<biblScope unit="volume">35</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="73" to="86" />
+			<date type="published" when="1993">1993</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Effect of Partnership Quality on IS Outsourcing: Conceptual Framework and Empirical Validation</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">N</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><forename type="middle">G</forename><surname>Kim</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Management Information Systems</title>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="29" to="61" />
+			<date type="published" when="1999">1999</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Developing Synergies between Promotions and Brands in Different Price-Quality Tiers</title>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">N</forename><surname>Lemon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">M</forename><surname>Nowlis</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Marketing Research</title>
+		<imprint>
+			<biblScope unit="volume">39</biblScope>
+			<biblScope unit="page" from="171" to="185" />
+			<date type="published" when="2002">2002</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">Determinants of Information Technology Outsourcing: A Cross-Sectional Analysis</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Loh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Venkatraman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Management Information Systems</title>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="7" to="24" />
+			<date type="published" when="1992">1992</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Portfolio Approach to Information Systems</title>
+		<author>
+			<persName><forename type="first">F</forename><forename type="middle">W</forename><surname>Mcfarlan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Harvard Business Review</title>
+		<imprint>
+			<biblScope unit="volume">59</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="142" to="150" />
+			<date type="published" when="1981">1981</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Outsourcing, Firm Size, and Product Complexity: Evidence from Credit Unions</title>
+		<author>
+			<persName><forename type="first">V</forename><surname>Ono</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Stango</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Economic Perspectives</title>
+		<imprint>
+			<biblScope unit="volume">29</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="2" to="11" />
+			<date type="published" when="2005">2005</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">Building Effective Online Marketplaces with Institution-Based Trust</title>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">A</forename><surname>Pavlou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Gefen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="37" to="60" />
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">Leveraging Offshore IT Outsourcing by SMEs Through Online Marketplaces</title>
+		<author>
+			<persName><forename type="first">U</forename><surname>Radkevitch</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">V</forename><surname>Heck</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O</forename><surname>Koppius</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of IT Case and Application</title>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="40" to="57" />
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">Bidding for Contracts</title>
+		<author>
+			<persName><forename type="first">W</forename><surname>Samuelson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Science</title>
+		<imprint>
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="issue">12</biblScope>
+			<biblScope unit="page" from="1533" to="1550" />
+			<date type="published" when="1986">1986</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">Costly Bidding in Online Markets for IT Services</title>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">M</forename><surname>Snir</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">M</forename><surname>Hitt</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Science</title>
+		<imprint>
+			<biblScope unit="volume">49</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="1504" to="1520" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Vendor Screening in Information Technology Contracting with a Pilot Project</title>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">M</forename><surname>Snir</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">M</forename><surname>Hitt</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Organizational Computing and Electronic Commerce</title>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="61" to="88" />
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">Electronic sourcing with multi-attribute auctions</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Strecker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Seifert</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 37th Annual Hawaii International Conference on System Sciences</title>
+		<meeting>the 37th Annual Hawaii International Conference on System Sciences</meeting>
+		<imprint>
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<monogr>
+		<title level="m" type="main">The Theory of Industrial Organization</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Tirole</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1988">1988</date>
+			<publisher>MIT Press</publisher>
+			<pubPlace>Cambridge, MA</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<monogr>
+		<title level="m" type="main">Making a World of Difference</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Walsham</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2001">2001</date>
+			<publisher>Wiley</publisher>
+			<pubPlace>Chichester, UK</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">The Modern Corporation: Origin, Evolution, Attributes</title>
+		<author>
+			<persName><forename type="first">O</forename><forename type="middle">E</forename><surname>Williamson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Economic Literature</title>
+		<imprint>
+			<biblScope unit="page" from="1537" to="1568" />
+			<date type="published" when="1981">19. 1981</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<analytic>
+		<title level="a" type="main">Complexity of Information Systems Development Projects: Conceptualization and measurement Development</title>
+		<author>
+			<persName><forename type="first">W</forename><surname>Xia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Lee</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Management Information Systems</title>
+		<imprint>
+			<biblScope unit="volume">22</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="45" to="83" />
+			<date type="published" when="2005">2005</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<analytic>
+		<title level="a" type="main">Management of Large Software Development Efforts</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">W</forename><surname>Zmud</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="45" to="55" />
+			<date type="published" when="1980">1980</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

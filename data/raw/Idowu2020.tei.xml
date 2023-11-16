@@ -1,0 +1,2921 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Digital Platforms of Work and the Crafting of Career Path: The Crowdworkers&apos; Perspective</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Ayomikun</forename><surname>Idowu</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">School of Business and Management</orgName>
+								<orgName type="institution">Royal Holloway University of London</orgName>
+								<address>
+									<settlement>Egham</settlement>
+									<country key="GB">UK</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff1">
+								<orgName type="department">Business School</orgName>
+								<orgName type="laboratory">Information Systems Frontiers</orgName>
+								<orgName type="institution" key="instit1">University of Sussex</orgName>
+								<orgName type="institution" key="instit2">University of Sussex</orgName>
+								<address>
+									<settlement>Falmer, Brighton</settlement>
+									<country key="GB">UK</country>
+								</address>
+							</affiliation>
+						</author>
+						<author role="corresp">
+							<persName><forename type="first">Amany</forename><surname>Elbanna</surname></persName>
+							<email>amany.elbanna@rhul.ac.uk</email>
+							<affiliation key="aff0">
+								<orgName type="department">School of Business and Management</orgName>
+								<orgName type="institution">Royal Holloway University of London</orgName>
+								<address>
+									<settlement>Egham</settlement>
+									<country key="GB">UK</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Digital Platforms of Work and the Crafting of Career Path: The Crowdworkers&apos; Perspective</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="MD5">18543759FB92AC803AED746E5E57D56E</idno>
+					<idno type="DOI">10.1007/s10796-020-10036-1</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.7.3" ident="GROBID" when="2023-06-16T09:24+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>Crowdwork</term>
+					<term>Platform employment</term>
+					<term>Career development</term>
+					<term>Bright ICT</term>
+					<term>Nigeria</term>
+					<term>Crowdsourcing</term>
+					<term>Digital platforms</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Work and Employment is a critical area that is undergoing major change influenced by the widespread connectivity and utilisation of the Internet and the rise of digital platforms. Crowdwork is an emerging new way of working that is witnessing exponential growth. It is surrounded by a fixed debate between opposite perspectives on its impact on workers. However, both perspectives adopt a static view that does not pay much attention to crowdworkers' progress in their job over time. In this study, we seek to advance this debate by adopting a dynamic view of crowdwork to explore the trajectory of workers over time based on their own accounts. Through rich qualitative data and inductive analysis, the study unravels that crowdworkers craft what could be conceptualised as a career development path. It identifies five stages in this career path and workers' efforts to mould their work demands and job-related resources to create a future for themselves. The discussion shows the fruitful insight that this approach brings to theory and practice. Limitations and future avenues for research are then discussed.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1">Introduction</head><p>Bright ICT is an important initiative founded by the Association of Information Systems (AIS) that was announced in 2015 <ref type="bibr" target="#b73">(Lee 2015)</ref>. It aims to focus both research and practice on understanding the positive and negative sides of ICT. This initiative recognises work and employment as a critical area that has been impacted by the diffusion of the Internet and is currently passing through significant changes. Hence, it invites researchers to delve into comprehensive exploration and in-depth understanding of new ways of working afforded by the Internet; the negative and positive potential they hold for many around the globe <ref type="bibr" target="#b72">(Lee and Fedorowicz 2018)</ref>. In response, this research focuses on examining crowdwork employment from crowdworkers' perspective and their lived experience.</p><p>Crowdwork is a new way of working that is gaining exponential growth benefiting from the widespread connectivity to the Internet and the rise of digital platforms. It is based on the crowdsourcing model of harnessing input from a decentralised labour force through an open call to create digital goods and services and to solve tasks <ref type="bibr" target="#b30">(Durward et al. 2016;</ref><ref type="bibr" target="#b23">De Stefano 2015)</ref>. It is one type of crowdsourcing where (1) work is paid for; (2) all exchanges of tasks takes place through the mediation of digital platforms <ref type="bibr" target="#b52">(Howcroft and Bergvall-Kåreborn 2019;</ref><ref type="bibr" target="#b48">Heeks 2017)</ref>. Companies of varying size are intensifying their adoption of crowdwork as they find it an attractive option for sourcing labour from a global pool of highly skilled workers in a quick, flexible and efficient way, with light obligations and easy termination of the employment relation <ref type="bibr" target="#b33">(Felstiner 2011;</ref><ref type="bibr" target="#b34">Flecker and Schönauer 2016)</ref>. Additionally, governments and policy makers in many countries and the International Labour Organization are accepting it as a new way of working and a possible option to reduce unemployment problems <ref type="bibr" target="#b57">(ILO 2018</ref><ref type="bibr">, European Parliament 2017;</ref><ref type="bibr" target="#b69">Kuek et al. 2015)</ref>.</p><p>The emerging literature on crowdwork is divided between considering it as an exploitative or as an empowering mode of employment. The literature that takes the exploitation perspective adopts a top-down approach focusing on job design, digital platform management and employment rights. Hence, it considers the precarious aspects of crowdwork and argues that crowdworkers are subject to digital platforms' power and the sweeping manipulating force of their algorithms <ref type="bibr" target="#b63">(Kittur et al. 2013;</ref><ref type="bibr" target="#b43">Graham et al. 2017;</ref><ref type="bibr" target="#b123">Wood et al. 2019)</ref>. The literature that takes the empowerment perspective adopts a bottom-up approach, focusing on workers' agency, to argue that the flexible and autonomous nature of this type of work provides workers with freedom to balance their work and life and enjoy the flexibility of employment <ref type="bibr">(Kost et al. 2020</ref><ref type="bibr">, Chen et al. 2019;</ref><ref type="bibr" target="#b67">Kost et al. 2018)</ref>. While in opposition, there are advocates, anecdotal evidence and theoretical propositions for each perspective. However, both perspectives provide a static view that accounts for crowdworkers' status at a point in time and does not pay much attention to their work trajectory over time. Work "trajectory (or path) can move forward, backward, or remain static, depending on the amount of effort and planning that takes place along the way" <ref type="bibr">(Oriol et al. 2015, p. 153)</ref>. Considering the trajectory of crowdworkers overtime is important in understanding this type of new work for many reasons. First, individuals' reactions to their job are shaped by how they progress in their job over time <ref type="bibr" target="#b47">(Hall and Chandler 2005)</ref>. Second, overtime, employees craft their job <ref type="bibr" target="#b124">(Wrzesniewski and Dutton 2001)</ref> moulding their work characteristics, in terms of demands and resources to best fit their needs and requirements <ref type="bibr" target="#b87">(Parker et al. 2006</ref>). Individual's needs and contextual demands are dynamic and could change over time <ref type="bibr" target="#b26">(De Vos et al. 2019)</ref>. Third, a forward trajectory or work progression is an indicator of growth and has positive impact on work satisfaction and short and long-term wellbeing <ref type="bibr" target="#b2">(Arthur et al. 1989</ref>).</p><p>To close this gap, this research aims to explore crowdworkers' work trajectory over time; what is it, how it is formed and why? It focuses on crowdworkers and what they do. Therefore, we collected rich data from different sources including interviews, website reviews, observation of crowdworkers and informal conversations in addition to observation of online blogs, social media and online discussion threads. In-depth data analysis based on aninductive approach to the inquiry was followed. In line with the Bright ICT recommendation, we collected data in Nigeria considering its high unemployment rate that reaches over 55% in Nigerian youth (National Bureau of Statistics 2018) and the ongoing programmes there to promote crowdwork as an alternative source of employment <ref type="bibr" target="#b84">(Olsen 2018)</ref>. The findings reveal that crowdworkers craft what could be conceptualised as a career trajectory. We identify five stages of their crafted career trajectory highlighting their proactive moulding of job demands with resources and relationships to create, not only their own job, but their own job-related future. The study contributes to the emerging stream of crowdwork literature in three ways. First, it focuses on crowdworkers and what they do in practice over time. In doing so, it responds to the numerous calls that invite researchers to closely consider crowdworkers' lived experience <ref type="bibr" target="#b113">(Taylor and Joshi 2019;</ref><ref type="bibr" target="#b29">Durward and Blohm 2017;</ref><ref type="bibr" target="#b25">Deng et al. 2016)</ref>. It goes beyond the existing literature to advance the ongoing debate regarding its top-down exploitation and bottom-up empowerment by providing a dynamic long-term view of crowdworkers' work trajectory overtime. It shows the agency of crowdworkers and their ability to craft their own future at work despite the absence of formal employment and structured organisational support. Second, in conceptualising crowdworkers' work development trajectory as a crowdwork career, the study sheds lights on a new aspect of crowdwork as a new type of work. It provides an explanation to the empirical findings that highlight the increasing adoption of it as a full-time employment. Hence, it contributes to the recent calls for researchers to consider the different aspects of employment and work in crowdwork <ref type="bibr" target="#b56">(Idowu and Elbanna 2020;</ref><ref type="bibr" target="#b68">Kost et al. 2019;</ref><ref type="bibr" target="#b78">Margaryan 2019)</ref>. Third, the study contributes to the Bright ICT initiative by focusing on new ways of working afforded by digital platforms, giving voice to crowdworkers in a developing country where people assert their agency as part of their everyday life (see <ref type="bibr" target="#b4">Atansah et al. 2017;</ref><ref type="bibr" target="#b116">Trovalla and Trovalla 2015;</ref><ref type="bibr" target="#b86">Osaghae 1999)</ref>. In doing so, it enriches research on new ways of working afforded by ICT and paves the way for a new stream of research that provides in-depth consideration of digital work in developing countries.</p><p>The paper consists of seven sections. Following the introduction, Section 2 reviews the current literature on crowdworking. Section 3 presents the theoretical lens of the study which has emerged from cycles of data analysis. It is presented in this section to provide scaffolding for the reader and not to reflect the order of the research process. Section 4 details the research methodology. Section 5 presents the research empirical findings. Section 6 presents the discussions and contribution and Section 7 concludes the study presenting its limitations and possible avenues for further research.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2">Literature Review</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.1">Crowdsourcing and Crowdwork</head><p>Globalisation and advances in digital technologies have influenced labour markets and employment significantly changing how people work and creating opportunities for work and livelihood <ref type="bibr" target="#b31">(Elbanna et al. 2020;</ref><ref type="bibr" target="#b51">Horton et al. 2017</ref>). Crowdsourcing has emerged as a work and labour sourcing model in which, individuals or organisations use digital platforms to harness the collective skills, knowledge, and expertise of a large group of people to accomplish a given task <ref type="bibr" target="#b13">(Brabham 2008;</ref><ref type="bibr" target="#b53">Howe 2008;</ref><ref type="bibr" target="#b127">Zhao and Zhu 2014;</ref><ref type="bibr" target="#b111">Taeihagh 2017)</ref>. Crowdsourcing has risen in popularity as it provides access to a large and diverse pool of workers and employers across geographical boundaries, anywhere in the world. Currently, the crowdsourcing model has been implemented for different purposes and forms including for open innovation and idea generation <ref type="bibr" target="#b5">(Ayaburi et al. 2019;</ref><ref type="bibr" target="#b105">Sun and Tan 2019;</ref><ref type="bibr" target="#b79">Meng et al. 2019;</ref><ref type="bibr" target="#b49">Hellström 2016;</ref><ref type="bibr" target="#b93">Poetz and Schreier 2012;</ref><ref type="bibr" target="#b81">Muhdi et al. 2011;</ref><ref type="bibr" target="#b92">Piller 2011)</ref>, solving societal problems in what is called citizen science <ref type="bibr" target="#b83">(Ogie et al. 2019;</ref><ref type="bibr" target="#b117">Tung and Jordann 2017;</ref><ref type="bibr" target="#b125">Xu et al. 2016;</ref><ref type="bibr" target="#b70">Lakhani et al. 2012;</ref><ref type="bibr" target="#b37">Gao et al. 2011)</ref>, raising capital funds in what is named crowdfunding <ref type="bibr" target="#b95">(Rashid et al. 2019;</ref><ref type="bibr" target="#b17">Brown et al. 2017;</ref><ref type="bibr" target="#b88">Paschen 2017)</ref>, engagement and collaboration with government as part of citizens empowerment <ref type="bibr" target="#b75">(Lukyanenko et al. 2019;</ref><ref type="bibr" target="#b0">Aitamurto 2018;</ref><ref type="bibr" target="#b19">Certomà and Rizzi 2017;</ref><ref type="bibr" target="#b54">Hsu et al. 2017;</ref><ref type="bibr" target="#b96">Rotich 2017)</ref> and recently for sourcing paid labour and employment in what is termed crowdwork <ref type="bibr" target="#b30">(Durward et al. 2016;</ref><ref type="bibr" target="#b48">Heeks 2017)</ref>. Hence, crowdsourcing became a broad umbrella term that covers different ways of using digital platforms for involving crowds of individuals for different purposes and providing different types of remunerations and incentives. In this regard, crowdsourcing includes, among other types, both paid and non-paid work where crowdwork presents the employment and paid form of crowdsourcing. Figure <ref type="figure">1</ref> depicts the relationships between crowdsourcing and crowdwork where the latter is a form of paid employment that follow the wider umbrella of the crowdsourcing model.</p><p>From an employment perspective, crowdwork presents the paid form of crowdsourcing that is managed through contractual agreements. It is a short-term, independent and flexible mode of work and employment <ref type="bibr" target="#b1">(Aloisi 2016;</ref><ref type="bibr" target="#b60">Kässi and Lehdonvirta 2018)</ref>. While crowdwork was initially construed to be engaged in as a way for workers to earn additional income <ref type="bibr" target="#b80">(Mo et al. 2018)</ref>, it is observed that people are increasingly venturing into crowdwork as full-time gainful employment <ref type="bibr" target="#b15">(Broughton et al. 2018;</ref><ref type="bibr" target="#b45">Green et al. 2014;</ref><ref type="bibr" target="#b55">Huws and Joyce 2016)</ref>.</p><p>Crowdwork comprises of micro and macro tasks <ref type="bibr" target="#b59">(Kalleberg and Dunn 2016)</ref>. Micro tasks are small, marginal and largely repetitive tasks that could be conducted in a short period of time, while macro tasks are typically associated with significant creative and knowledge work that usually require longer durations to complete. Through platforms such as Freelancer.com, Upwork and Fiverr, individuals with the requisite skills and expertise can complete a wide range of tasks comprising of information technology (IT) and business services to employers in different geographical locations worldwide <ref type="bibr" target="#b63">(Kittur et al. 2013)</ref>. Table <ref type="table" target="#tab_1">1</ref> provides a comparison between micro and macro-tasks crowdwork.</p><p>Research on crowdwork has adopted statistical and positivist approaches to examine the demographics of crowdworkers, classification of available jobs, motivations of work and platform design <ref type="bibr" target="#b126">(Yuan and Hsieh 2018)</ref>. Research on the demographics of crowdworkers finds that whereas some crowdworkers may be uneducated and low-skilled, the majority are educated and highly skilled <ref type="bibr" target="#b80">(Mo et al. 2018)</ref>. According to <ref type="bibr" target="#b101">(Schweissguth 2014)</ref>, over 50% of crowdworkers held bachelor degree qualifications, and 20% had a Master degree. Interestingly, crowdworkers tend to be young knowledge workers, highly specialised and knowledgeable in their area of expertise <ref type="bibr" target="#b10">(Berg 2015;</ref><ref type="bibr" target="#b61">Kazai et al. 2012)</ref>. Regarding work motivation, <ref type="bibr" target="#b69">(Kuek et al. 2015)</ref> observed that the primary motive of digital workers is income generation, followed by secondary motives such as inability to find traditional work; inability to perform traditional work for cultural or health reasons; flexibility and autonomy; reluctance to migrate away from family, and the passion of digital work and employment. <ref type="bibr" target="#b60">Kässi and Lehdonvirta (2018)</ref> analysis of four major crowdwork platforms Freelancer.com, Fiverr, Guru.com and Peopleperhour revealed the variety of jobs offered on digital platforms are technology and software development (App development, website design and software testing), creative and multimedia tasks (animation, image and video creation), professional services (product design, accounting, and legal services), clerical and data entry (data cleansing and data processing), and writing and translations <ref type="bibr" target="#b11">(Bhandari et al. 2018;</ref><ref type="bibr" target="#b65">Kohler 2018)</ref>. Research has paid little attention to the trajectory of crowdworkers overtime. This is particularly important since crowdwork is being increasingly adopted as a full-time employment and forward trajectory or progression is an indicator of growth with positive impact on work satisfaction and short and long-term wellbeing <ref type="bibr" target="#b2">(Arthur et al. 1989</ref>).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.2">Digital Platforms of Work, Rating Systems and Algorithmic Ranking</head><p>Digital platforms are regarded as the fundamental features of the digital transformation, entangled with intelligent tools and algorithms that enable and influence how we organise and live our lives and work; it has the capacity to transform economic and social life, distribution of wealth and power <ref type="bibr" target="#b128">(Zysman and Kenney 2017)</ref>. The availability of digital employment platforms reveals a number of opportunities with participation doubling year-over-year <ref type="bibr" target="#b32">(Farrell and Greig, 2017)</ref>. These platforms are developed on discovery-andmatching mechanisms between employers and jobs, contractors and clients, buyers and sellers, and advertisers, creators and consumers <ref type="bibr" target="#b129">(Zysman and Kenney 2018)</ref>. A significant feature of digital platforms is the rating and reputation systems. These systems offer algorithmic tracking, ranking and evaluation of crowdworkers based on multiple data sources that might differ from one platform to another, but in general include feedback from employers, number of tasks conducted, duration of tasks conducted, technical level of tasks conducted, punctuality or workers in delivering tasks. These systems may involve inputs from machine-learning models, self-assessment, and automated feedback <ref type="bibr" target="#b41">(Gong 2017;</ref><ref type="bibr" target="#b122">Whiting et al. 2017)</ref>  <ref type="bibr">2015;</ref><ref type="bibr" target="#b18">Cai et al. 2014</ref>). On some platforms, workers with the highest score are given a label that identifies them as proven experts. This label highlight to employers the capability of a worker and may influence their decision to award them tasks. It also benefit the platform operators as the presence of highly rated workers contribute to the legitimacy of their platform <ref type="bibr" target="#b82">(Nosko and Tadelis 2015)</ref>. The platform algorithmic feedback systems are believed to affect the chances of crowdworkers succeeding in getting more jobs on the platforms as researchers propose that, the more positive reviews workers garner and the higher their reputation score, the greater the chance of success <ref type="bibr" target="#b112">(Tarable et al. 2016;</ref><ref type="bibr" target="#b110">Tadelis 2016)</ref>. However, despite this envisaged role of the rating and reputation systems in assessing the proficiencies and expertise of workers on digital platforms, a few studies doubt its accuracy in reflecting worker's level of expertise as they may often be exaggerated <ref type="bibr" target="#b122">(Whiting et al. 2017;</ref><ref type="bibr" target="#b28">Dini and Spagnolo 2009)</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3">Theoretical Lens: Job Crafting and Career Development</head><p>In understanding the work trajectory of crowdworkers, the data analysis showed that they mould their work demands and resources and craft a work trajectory in stages. These stages resemble the career progression stages as developed by <ref type="bibr" target="#b106">Super (1953</ref><ref type="bibr" target="#b107">Super ( 1980</ref><ref type="bibr" target="#b108">Super ( 1984))</ref>. In this section, we present the theoretical grounding that resonated with our data analysis and was adopted as a synthesising device to the findings. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.1">Career Development</head><p>Work progression is a long-term path of growth and building skills. This has been encapsulated in the literature by the concept of career. Career is an individual's long-term occupation that involves learning, building skills from employment opportunities and progressing in relation to a professional future <ref type="bibr" target="#b104">(Sullivan 1999</ref>; Oxford dictionary 2019). Career development hence is the "evolving sequence of a person's work experiences over time" <ref type="bibr">(Arthur et al. 1989, p. 8)</ref>. It is the dynamic and life long process of working and learning in order to achieve the personally preferred and determined future at work <ref type="bibr" target="#b3">(Association 2011)</ref>. It encapsulates the formation of career interest, career choice selection, and the enactment and persistence in occupational pursuit <ref type="bibr" target="#b74">(Lent et al. 1994</ref>). Hence, career trajectory, also known as a career path denotes the course and pattern of an individual's career progression overtime (not necessarily advancement) during their active professional life <ref type="bibr" target="#b8">(Banks et al. 1992;</ref><ref type="bibr" target="#b62">Kim 2013)</ref>. In traditional organisations, employees follow organised career development path. In traditional work context, one's career path starts the moment one commences professional practice and the speed with which one advance up the career ladder is dependent on a combination of personal, social and organisational factors <ref type="bibr" target="#b7">(Bandura et al. 2001;</ref><ref type="bibr" target="#b85">Oriol et al. 2015</ref>). An individual who puts in more effort at work is more likely to get a promotion and career development is likely to be faster in an organisation that offers professional development opportunities, such as continuous training <ref type="bibr" target="#b38">(Garwin 1993)</ref>. Organisations play an integral role in shaping career progression in the traditional workplace as they are responsible for promotion, training, and setting career progression criteria. Hence in a traditional work environment, career counselling, career mapping, company situation and performance appraisals play a role in individuals' career development either partially or completely <ref type="bibr" target="#b94">(Rande et al. 2015)</ref>. In opposition, crowdwork is a new way of working that lacks the different organisational support mechanisms for workers to progress in their work. Digital platforms provide performance management but do not create a career progression path for workers.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2">Career Crafting and Development Process</head><p>Employment research provides series of empirical evidence that employees proactively craft their jobs, mobilising personal resources to achieve favourable outcomes while also changing elements, boundaries and relationships of the job demands to better suit their needs and increase performance <ref type="bibr" target="#b6">(Bakker et al. 2012;</ref><ref type="bibr" target="#b115">Tims et al. 2012;</ref><ref type="bibr" target="#b97">Rudolph et al. 2017)</ref>. This new perspective demonstrates that employees customise their jobs to their needs and preferences instead of reactively performing the job the organisation created. <ref type="bibr" target="#b114">Tims and Bakker (2010)</ref> argue that job crafting enables employees to fit their jobs to their knowledge, skills and abilities on the one hand and to their preferences and needs on the other hand. It entails four dimensions including increasing job resources such as opportunities for development, increasing social job resources such as increasing social support and feedback, increasing stimulating and challenging job demands such as starting new projects, and decreasing hindering job demands such as decreasing cognitive and emotional strain <ref type="bibr" target="#b115">(Tims et al. 2012)</ref>.</p><p>In terms of career trajectory, Don Super is one of the influential career development theorists. His theory of the career development process "has and continue to impact career development thinking, research and practice" <ref type="bibr">(Brown 2002, p. 5)</ref>. He initially developed his theory in the 1950s and continued to revise and refine it throughout his life in what he termed "segmented theory" as oppose to a fully integrated and comprehensive testable theory <ref type="bibr">(Super 1984, p. 194)</ref>. His theory reflects the " intentional efforts toward career development" <ref type="bibr">(Kosine and Lewis 2008, p. 228)</ref>. It describes five stages of career development namely; (1) growth; (2) exploration; (3) establishment; (4) maintenance; and (5) decline <ref type="bibr" target="#b107">(Super 1980)</ref>. While Super linked these stages to an individual's life and physical and psychological growth, we use these stages to synthesis our findings regarding crowdworkers' trajectory and their effort in crafting their own career.</p><p>The growth stage is where an individual develops awareness of their abilities, values, personality, interests and experiences, socialises their needs and starts to have a basic understanding of the world of work <ref type="bibr" target="#b102">(Smart and Peterson 1997;</ref><ref type="bibr" target="#b107">Super 1980)</ref>. At this stage, the experiences of an individual become the source of their background knowledge on the concept of work. This knowledge influences the individual's career selections <ref type="bibr" target="#b71">(Lau et al. 2013</ref>). In the exploration stage, an individual acquires the requisite training and understands their preferred occupation <ref type="bibr" target="#b102">(Smart and Peterson 1997)</ref>. This stage is often considered the heart of the career decision making process and consists of three key developmental tasks i.e. crystallization, implementation and specification of career choice <ref type="bibr" target="#b71">(Lau et al. 2013)</ref>. Crystallization involves planning and development of tentative vocational goals, specification involves firming of the selected vocational goals by paying attention to reality as one starts education, training and work. The implementation stage involves training and trying out one's career option <ref type="bibr" target="#b71">(Lau et al. 2013;</ref><ref type="bibr" target="#b42">Gothard et al. 2001)</ref>.</p><p>The establishment stage is when an individual sharpens their professional skills and abilities and pursues opportunities for further career development. It is characterised by skill development and the achievement of professional stability <ref type="bibr" target="#b106">(Super 1953;</ref><ref type="bibr" target="#b35">Freeman 1993;</ref><ref type="bibr" target="#b12">(Bingham 2001)</ref>. At this stage, individuals solidify their position, gain experience on their career choice and validate their choice through trial and error <ref type="bibr" target="#b71">(Lau et al. 2013)</ref>. They test the suitability of their career choice and secure their position within the work environment. At this point an individual works towards career advancement, and promotion, which increases their work-related responsibilities <ref type="bibr" target="#b66">(Kosine and Lewis 2008)</ref>. It involves developing a positive work attitude and productive habits necessary for work relationship development and the quest for a higher responsibility level <ref type="bibr" target="#b109">(Super and Jordaan 1973)</ref>.</p><p>The maintenance stage involves the consolidation and enhancement of a person's work position <ref type="bibr" target="#b66">(Kosine and Lewis 2008)</ref> through continuous system of change and adjustment <ref type="bibr" target="#b71">(Lau et al. 2013)</ref>. At this stage, the individual continually enhances their skills and abilities in an attempt to preserve and improve their career position <ref type="bibr" target="#b35">(Freeman 1993;</ref><ref type="bibr" target="#b89">Patton and McMahon 1999)</ref> and could explore new challenges by changing their occupation or moving to a different organisation <ref type="bibr" target="#b107">(Super 1980)</ref>. The decline stage is where an individual starts to prepare for retirement and gradually exits the workforce <ref type="bibr" target="#b35">(Freeman 1993)</ref>. It is also a stage of transitions and reflection.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4">Methods</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.1">Research Approach and Data Collection</head><p>The study adopts a qualitative and inductive research approach involving multiple data sources in order to provide detailed and deep insights on crowdworkers' work development trajectory overtime <ref type="bibr" target="#b120">(Walsham 1995;</ref><ref type="bibr" target="#b121">Walsham 2006</ref>). The research reported here is part of a larger research project and exploration of crowdwork and crowdworkers. Data collection took place in Nigeria and data sources include face-toface interviews, website reviews, observation of crowdworkers, informal conversations, online blogs, social media and online discussion threads. In this study, 35 crowdworkers (23 Male, 12 females) aged between 22 and 46 years participated in a mix of 38 unstructured and semistructured interviews in three phases of data collection. The pilot phase consists of unstructured interviews with six participants and was carried out between December 2017, and January 2018. This helped in gaining preliminary insight on the nature of crowdwork in Nigeria, crowdworkers' experience and work practices, the challenges they face and how they organise their work, self and career. This insight aided the development of the subsequent two phases of the research where questions were more focused on exploring these issues. Following the pilot, two phases of data collection took place between June -August 2018 and October -November 2018 when 18 and 14 in-depth semi-structured interviews were respectively conducted. The nature of the interviews allowed for divergence and spontaneity which gave the researchers an opportunity to gather quality and reliable data. Interviewing continued till data collection reached saturation and there was no new information or experience reported <ref type="bibr" target="#b36">(Fusch and Ness 2015;</ref><ref type="bibr" target="#b46">Guest et al. 2006;</ref><ref type="bibr" target="#b99">Saunders et al. 2018)</ref>.</p><p>The first three (3) participant were recruited through personal contacts, the following three through snowballing. Other participants were recruited from different sources including closed online groups. Participants in the study fit the inclusion criteria that they have been involved in paid full-time crowdwork for more than two years and specialised in IT and IT services crowdwork. This criteria ensures that participants have sufficient experience and knowledge in order to be able to provide sufficiently reliable insights on crowdworking <ref type="bibr" target="#b50">(Hodkinson 2008)</ref>. The interviews were triangulated with data collected through informal face-to-face conversations, informal visits to workers, observation of online blogs, social media groups, online discussion threads and workers' profiles on crowdwork platforms.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.2">Data Analysis</head><p>Interviews were transcribed verbatim and participants assigned pseudonyms. An open and inductive approach was adopted in coding followed by themes development, <ref type="bibr" target="#b14">(Braun et al. 2014</ref>). This approach focused on identifying common threads that appear throughout interviews, and themes act as essential concepts that link different essential portions of the interviews together <ref type="bibr" target="#b50">(Hodkinson 2008)</ref>.</p><p>Notes of major crowdworkers' practices, experience, motivation and aspirations, that were identified in the interviews were used to delve into more relevant concepts to form a better understanding and explanations of crowdworkers' entry and progression in crowdwork. We adopted open coding which made it possible for concepts and themes to arise from the data in a manner that depicts the actual experiences and sentiments of the participants <ref type="bibr" target="#b14">(Braun et al. 2014</ref>); <ref type="bibr" target="#b98">Saldaña 2015)</ref>. At this stage, each fragment and segment of relevant data was captured and carefully examined for analytic interpretation. After different rounds of code generation, a comparison was made between different rounds of data and data was triangulated against a wide range of data from different sources as described in Section 4.1. Themes were developed and the researchers came together to review and merge the themes that overlap, confirm the themes and modify existing themes, and develop a higher order theoretical concept based on the practices, characteristics and sequential order of progression of crowdworkers. This process was supported by crowdwork, crowdsourcing and employment literature and theories on work progression. The progression path observed in the data resonated with Super's categories of career development. We then adopted Super's career development stages as a plausible synthesising device for the analysis and a vehicle to conceptualise workers' trajectory as a career development path. To provide scaffolding for the reader, the literature on career development and in particular Super's model are presented in Section 3 of the paper. This section presents the research findings. It shows that overtime, crowdworkers craft a progression path for themselves that could be conceptualised as a career development path. We identify five interconnected and interlinked stages in the process of crafting their career path namely: Starting, Exploring, Establishing, Sustaining and Exiting. The following subsections present these different stages of crowdwork career path.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.1">Stage 1: Starting Crowdwork</head><p>Crowdworkers start crowdwork with different levels of skills, familiarity of digital platforms of work and employment experience. In terms of skills and employment experience, workers start crowdwork either without previous work experience or with work experience in traditional work context. In the first, their resources are limited to their formal education and subject skills, while in the latter, they have more knowledge of the world of work in general which they can draw inference from. In terms of familiarity of digital platforms of work and knowledge of the demands of crowdwork, workers range from being knowledgeable to unknowledgeable of this type of work and its demands when they start crowdwork. Accordingly, we identify four categories of crowdworkers as in Fig. <ref type="figure" target="#fig_1">2</ref> namely: Green, Awakened, Early Birds and Switchers. These categories differ in their work resources and understanding of the crowdwork job demands as follows.</p><p>The Green are workers who start crowdwork with skills in subject and areas but with no previous work experience and employment skills. They are not familiar with digital platforms of work, their operations and job demands and hence start from scratch, learning how to navigate through the digital platforms, the internal operations of the digital platforms and its ranking and recommendation systems and the specific demands of the job. In this regard, Ibukun summarises their starting experience as follows.</p><p>"..never done work online before but being unemployment is the main reason why I tried it out, at that time I don't know anybody else who's doing this type of work, so it took a lot of time to know my way around the platform but I persisted because I need money to take care of myself and my family"-Ibukun.</p><p>The Awakened are crowdworkers who have work experience from previous engagement in traditional organisation working. They might have been briefly introduced to crowdwork but have little knowledge of digital platforms of work; their dynamics and their job demands. The following represent the experience of workers in this category.</p><p>".. I was working for an employer…I noticed he actually sourced this work online…I never thought it was that possible, easy, so when I saw how he does it he told me" you can do it too, you can source this work yourself and then I won't have to be the middleman for you", so he introduced me to the first site, and then I registered there.. that's how I got to where I am today." -Aisha.</p><p>The Early Birds are workers who were introduced and started crowdwork while studying at the university and have never tried to join the formal labour market and traditional employment. They have skills from education but do not have work experience when they start crowdwork. While they start with a knowledge of digital platforms, this knowledge might not be hands on. They may not have worked on crowdsourcing platforms themselves but were subcontracted offline by established crowdworkers. This subcontracting allowed them to be around crowdworkers and gives them some distant knowledge of the general operation of digital platforms of work and its technical demands but they have little understanding of the dynamics of their ranking and recommendation systems. Fope presents an example of this category and she describes her entry as follows.</p><p>"It was around when I started [computer] programming, I was at the university... about 19 years old at the time The Switchers are workers who start crowdwork with work experience from working in traditional employment for fulltime. They register on digital work platforms seeking extra income, so they gain understanding of the technological demands of dealing with digital platforms; their interface and how the bidding works. However, they typically lack knowledge of digital platforms rating and recommendation systems and their dynamics. Switchers initially work part-time and gradually proceed to full time crowdwork. As they work part-time, they gain skills and knowledge of crowdwork as well as build a reputation on the platform before fully switching. This gradual entry, combined with their previous work experience make it less challenging for them to shift to full-time crowdwork. One of the full-time crowdworkers representative of this category expressed their entry to crowdsourcing saying: "..it was a side hustle for me at the beginning and I was getting lots of offer and making so much money it only made sense for me to quit my day job and focus on crowdsourcing" -Chidi.</p><p>While workers start their crowdwork with some technical skills, their experience and knowledge of the world of work differs based on their previous employment status. However, most workers start with little knowledge of digital platforms of work particularly their performance management, rating and recommendation systems dynamics.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.2">Stage 2: Exploring and Building Reputation</head><p>Following their subscribing to digital work platforms and the starting of crowdwork, workers progress to explore the digital platforms demands, dynamics, and ways of working. After acquiring the necessary technological skills to navigate the digital platform interface and functionality, workers focus on improving the initial profile they created on the digital platform. They develop an enhanced, more presentable profile for themselves and their skills. They also advance their understanding of the job performance demands of the rating and recommendation systems and the dynamics of the algorithmic scoring. As the algorithmic setup of crowdsourcing platforms necessitates that workers garner sufficient ratings and reputation on the platforms to have better chances of getting jobs, workers focus on building their reputation on the digital platform by delivering quality products to employers, on-time and to specification. They learn that every job they successfully complete at this stage adds strength to their profile and their future ability to gain more jobs and request higher fees. This is well articulated by Joseph below:</p><p>"when I started, I focused on the quality of job I delivered to my clients, so then I wasn't after a lot of money... my goal then was to make sure I deliver a good job so that I can build the five-star profile. So then I focused on getting all my jobs done completely, and on time so that my clients would be happy with my job… now that I have been able to build a profile which is very good for me, I've been able to make a bit more money from it by getting jobs with higher pay and a lot of clients will come back and employ me too…so that's the way I was able to build my profile".</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.3">Stage 3: Establishing Professional Crowdwork</head><p>Having a comfortable foothold on the digital platforms dynamics and understanding of the bidding process and the work pre-requisites, crowdworkers take steps to increase their job resources further. They seek opportunities for development in order to remain competitive and up-todate to increase their value. Hence, they engage in updating their existing skills and learning new ones. The skills they learn are driven by what is regularly advertised on the platforms. This is similar to traditional careers where workers seek additional training and certification in order to increase their value and career prospects <ref type="bibr" target="#b21">(Citrin and Smith 2003)</ref>. Segun, a full-time crowdworker eloquently summarises this stage as follows.</p><p>" my strategy to remain relevant and up-to-date in this work is to actually look at what people are posting, I usually take my time to go through the platform and see what skills are in demand, what type of task are being posted …after that I take my time to learn those skills and perfect myself, then I start bidding … I didn't do mobile App mock-up but when I saw that there are lots people who post projects for just mock-ups, I learnt it and now I've completed at least 30 in the past year" -Segun.</p><p>Workers also learn new skills outside of their specialisation and fields as a way of increasing their repertoire of job resources. For example, some workers branch out to learn different subjects and fields in order to diversify and expand the range of tasks they can apply for on crowdwork platforms. This view was expressed as follows.</p><p>"…. you can't limit yourself because there is always something you can do, I learnt how to create video tutorials because I saw that it was something people want, I've even created video tutorials on subjects like history, religion, health and geography…I don't limit the skill I learn to only tech…" -Olamide.</p><p>As they are establishing their reputation on crowdwork platforms, crowdworkers expand their different resources to acquire more social and personal job resources. They connect with other crowdworkers by joining online discussion threads and social media groups. They also connect with crowdworkers offline and form support networks. These social resources play vital roles in the success of their careers both as a means of learning and as a support system when encountering challenges. Fred sums up his experience at this stage saying:</p><p>"connection and network of other programmers has helped me immensely in this journey, I can tell you boldly that networking is definitely important because they're always there when you have issues with projects or platform, employers or whatever, you'll find someone who can help you solve it or proffer a solution to it. I have facebook, twitter, phone numbers of people I can reach out to and some I just walk to their office where I can get help". -Fred.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.4">Stage 4: Sustaining Competitiveness</head><p>Crowdworkers with a long-term career view of crowdworking at this stage opt for increasing their challenging job demands. For example, they register on different digital platforms and create different work profiles to sustain their interests and attract different types of employers. Figure <ref type="figure" target="#fig_3">3</ref> shows a crowdworker's profiles on two different digital platforms depicting a variety of skills and attracting employers to different skills sets and projects they conducted.</p><p>"…decided to do this work for a long time, it's been good to me…but I need to be competitive to make enough money so that's why I do more than one thing..[I] work on freelancer.com and Fiverr and others and specialise each profile on a specific area"-Daniel. Some crowdworkers at this stage turn into Task Entrepreneurs, working less directly on tasks while leveraging their high reputation on the platform to focus on bidding and getting as many tasks as possible, then they outsource those tasks to other workers both on and off the platform. In this regard, they promote themselves to a more managerial role which involves recruiting, managing, organising and monitoring the completion of various tasks, workers, and employers simultaneously. Their network of workers and relationship with employers plays a significant role in the success of this practice.</p><p>"I've been doing this for a long time and my profiles on all the platforms I work on have good feedback ratings, so I get a lot of work that even I can't do on my own…I get all the work and distribute it to people within my network who are software developers and they get paid from what I make from the employers…very rarely do I have to post it back online".</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.5">Stage 5: Exiting Crowdworking and Moving On</head><p>As crowdworkers keep expanding their job resources, developing support networks and increasing and diversifying their skills and experience, they find their value increases beyond the job demands of crowdwork. Hence, they venture into other areas outside the digital platforms of work. Figure <ref type="figure" target="#fig_2">4</ref> shows the crowdworkers exit and transition plan and destinations. It shows that crowdworkers utilise the skills and experience they developed in crowdwork to progress their career and move to new roles as Educators and Hybrid Entrepreneurs or continue with the new managerial role of Task Entrepreneurs as described in the previous section.</p><p>In their new role as Educators, crowdworkers write books, create blogs, and organise seminars and workshops on crowdwork to teach others how to navigate the complicated social, economic, and technological challenges of crowdwork. They also mentor new crowdworkers both online and offline. Figure <ref type="figure">5</ref> shows both a sample blog post and a book written by a crowdworker.</p><p>They also become Hybrid Entrepreneurs where they expand their career beyond digital platforms and employers on these platforms to also work off-line. In this new role, they simultaneously work both on and off the digital platforms. They engage in consulting and freelance work with organisations outside the platforms, utilising their digital platforms' history of work and tasks conducted and the high rating they achieved as part of their work resume. Lukman summarises his experience in venturing to consulting work outside the digital platforms as follows.</p><p>"What I've been doing is trying to use my work portfolio in getting work from companies, I'm trying not to over-rely on the platform by working in the real world. I've been at a number of places to pitch my software ideas to a number of companies and some have been forthcoming" -Lukman.</p><p>Other workers leverage not only the skills and experience they gained in crowdwork, but also the money they saved from crowdwork to invest in a new business (unrelated to  Crowdworkers move into this reflection and transition stage when they gain considerable earnings and excess income that allow them to transit and take career risks. The following quote is from Fred who was planning the transition to a new career at the time of the interview and executed afterwards.</p><p>"I don't think I'll be doing this work forever; I have dreams… I currently do music sometimes, when I was a student, I used to produce tracks for my friends but because I didn't have enough money to have my own production studio, I had to use my main skill, my dream is to make money from crowdsourcing and build my own studio"-Fred.</p><p>Crowdworkers also retire to become Business Entrepreneurs who plan and establish their own business. Their business is unrelated to crowdwork and they plan it, and sometimes initiate it, while doing crowdwork. So, they quit crowdwork to focus and expand on their new business venture. In this regard, Toju describes his crowdwork exit plan as follows.</p><p>"The money I'm making now, I'm using it to fund my electronic shops where I sell phones, computer, and everything electronic, so by the time I stop this job, I'll focus on it as my full-time work. I'll be a normal businessman"-Toju.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6">Discussion and Contribution</head><p>This study contributes to the understanding of crowdwork and employment which presents one of the critical areas identified by the AIS Bright ICT agenda. It goes beyond the dominant static view of crowdwork to explore crowdworkers' work trajectory over time; what is it, how it is formed and why? It examines the experience of crowdworkers in Nigeria in-depth through the gathering of rich data from multiple sources and the following of inductive research approach. The findings of the study reveal that crowdworkers who adopt crowdwork as fulltime employment craft what could be conceptualised as a career path. They mould the demands of crowdwork and the digital work platforms with different resources to create a career path that suits them. The study identified five stages in this career path namely: Starting, Exploring, Establishing, Sustaining and Exiting as presented in Fig. <ref type="figure">6</ref>. These stages are interlinked and highly connected; together they form a process for the crowdworkers' career development path.</p><p>The Starting stage to full-time crowdwork varies based on workers previous employment, skills and knowledge of digital work platforms and their demands. While some start as students, others adopt it as way out of unemployment or transition to it after years of traditional employment. In order to reflect on this diversity in the entry stage of crowdwork adoption, the study identified four categories of workers namely: Switchers, Early Birds, Awakened, and Green as presented in Fig. <ref type="figure">1</ref>. Although they differ in their understanding of the job demands and the resources they have when starting crowdwork, crowdworkers tend at this stage to focus on acquiring sufficient technological skills that allow them to navigate the digital platforms interface and understand the algorithms that rule them. In the following stage; Exploration, crowdworkers focus on the digital platform aspect of work in terms of building their reputation metrics on the digital platform and conduct work with the main objective of increasing their rating score. Hence, they tend to accept jobs Fig. <ref type="figure">5</ref> A blog post and a book, both authored by crowdworkers regardless of their monetary reward, bid for smaller jobs with shorter duration and focus their effort on speeding up the accumulation required for the digital platform algorithm to place them in a high rank and favourable recommended position. In doing so, they actively overcome one of the typical paradox of a career today and what <ref type="bibr" target="#b21">Citrin and Smith (2003)</ref> terms the career "Permission Paradox" which entails that without experience, it is nearly impossible to get the desired job, but without the job, it is impossible to gain the requisite experience. This stage resonates with the static view in the literature that highlights the potential of driving a race to the bottom in payment in crowdwork and associate it to the digital platforms exploitation and algorithmic management <ref type="bibr" target="#b43">(Graham et al. 2017;</ref><ref type="bibr" target="#b9">Beerepoot and Lambregts 2015;</ref><ref type="bibr" target="#b100">Scholz 2017)</ref>. As the study adopts a dynamic view of crowdworkers' life and career trajectory, it reveals that this stage is part of crowdworkers' efforts to climb the 'digital ranking ladder' and increase their market value. It is known that with their limited experience, education and ambition, workers typically follow what they see as a promise of gaining a potential value in the future and that "At the beginning of any new career…, perceptions of potential value often exceed actual experiential value" and that over time, experiential value increases as the career progress and workers gain experience <ref type="bibr">(Oriol et al. 2015, p. 154)</ref>. In crowdwork, once workers build a good track record in terms of the number of jobs conducted and their completion time and achieve a good standing in the digital platform rating system, they become highly recommended by the digital platform algorithm and hence have an opportunity to increase their fees.</p><p>In the Establishing stage, crowdworkers gain momentum in their digital platform work and expand their resources including their tasks skills; learning new skills and broadening the spectrum of tasks they can bid for. As having the required skills combined with the high rating on the platform attract employers <ref type="bibr" target="#b118">(Vakharia and Lease 2015)</ref>, crowdworkers gain more confidence on digital platforms and start asking for higher fees for the tasks they bid for. This resonates with traditional careers where workers seek additional training and certification in order to increase their value and career prospects <ref type="bibr" target="#b21">(Citrin and Smith 2003)</ref>. It is observed that crowdworkers' income significantly increases at this stage and their high income allows them to pursue life projects such as purchasing a new car, refurbishing a house, moving to a new higher-income neighbourhood etc. However, they also become conscious that their advancements and financial success at this stage does not guarantee future stability and hence they advance to a sustaining stage where they focus their crowdwork on achieving long-term financial stability. However, in the Establishing stage, crowdworkers also increase their resources beyond the immediate demand of the digital platforms, hence they increase their personal resources by engaging with other crowdworkers, building relationships and good support networks. This is consistent with research on careers that finds networking to be a critical factor in career development that impacts motivation, receiving mentoring, mobility and satisfaction even in highly autonomous careers <ref type="bibr" target="#b103">(Spurk et al. 2015;</ref><ref type="bibr">Wolf and Moser 2009)</ref>.</p><p>In the Sustaining stage, crowdworkers continue to build on the resources they created in the previous stages. They continue Fig. <ref type="figure">6</ref> The career trajectory full-time Macro-tasks crowdworkers to increase their social job resources connecting with other crowdworkers and joining and building further support networks online and offline. Although crowdwork is assumed to seclude workers from traditional organisational relationships and institutional support <ref type="bibr" target="#b91">(Pichault and McKeown 2019)</ref>, the crowdworkers we studied were keen on developing relationships with employers and forming social relationships with other crowdworkers not only online but also offline. They considered these social connections and relationships a valuable asset for a long-term successful career in digital platforms employment <ref type="bibr" target="#b44">(Gray et al. 2016)</ref>. These social connections serves as an anchor and 'holding environment' in the absence of institutional and organizational support that the digitality and virtuality of crowdwork uphold <ref type="bibr" target="#b90">(Petriglieri et al. 2018)</ref>. This finding negates the conventional wisdom on the individualistic nature of digital work as depicted in the literature (Deng and Joshi 2013), while empirically confirming <ref type="bibr" target="#b68">Kost et al. (2019)</ref> proposition that workers in this form of work "need to undertake collective efforts to create career opportunities" for themselves in the absence of traditional organisational HRM support. At this stage, workers also increase the breadth of opportunities by diversifying their digital platforms subscriptions and affiliations building different profiles on different digital platforms of work and/or on the same platform in order to reach out to a wide range of employers. They vigorously and persistently bid for a wide range of tasks and utilise the networks they actively engage with to sub-contract many of those tasks to other workers in their networks. This establishing stage is consistent with the literature that shows that freelancers often proceed to sub-contract others and become employers themselves <ref type="bibr" target="#b22">(Coetzer et al. 2017)</ref>.</p><p>As crowdwork is unbounded and crowdworkers craft their own career disassociated from any organisational and institutional design, crowdworkers adopt a "career pull" approach where they migrate their career to the activities, roles and environments they prefer and are most passionate about (Jen-Ruei 2011; Del Blanco 2010). Hence their exit stage is not uniform. Crowdworkers reflect and transition in the exit stage utilising the experience and skills they gained and the money they saved from crowdwork. When utilising the knowledge they gained in crowdwork, they tend to follow careers as educators or mentors or engage in entrepreneurial activities. When they exit crowdwork to also utilise the money they saved from their years of crowdwork, they either create their own business and become business entrepreneurs or pursue a long-held dream of starting another career or life project. These findings shed new light on crowdwork that highlights the importance of considering the long-term destination of crowdworkers.</p><p>In understanding the career trajectory of crowdworkers in Nigeria, the study contributes to the literature on crowdwork. First, the study goes beyond the static view that dominates the literature to bring a dynamic view of crowdwork and crowdworkers' experience. It highlights the importance of examining the dynamics of crowdwork and understanding the workers' career development trajectory overtime. Through adopting a dynamic long-term view, the study clarifies some of the previous research propositions regarding the push towards a race to the bottom in bidding and requested fees <ref type="bibr" target="#b43">(Graham et al. 2017)</ref>. It shows that adopting a dynamic view on crowdwork can be fruitful in understanding how crowdworkers engage in the process of crafting their own career trajectory and how this progresses overtime. In this regard, the study expands <ref type="bibr" target="#b25">Deng et al. (2016)</ref> argument that suggest the duality of empowerment and marginalisation in this type of work. Our study asserts the agency of crowdworkers and their ability to craft their own career, despite the absence of formal employment and structured organisational support and their efforts to increase their own job-related resources not only to meet but to also exceed and go well beyond job demands. These findings add a new perspective to the literature on crowdwork regarding crowdworkers agency and capacity to craft a career development path. This balances the view that renders agency only to digital platforms and their algorithms, and portray crowdworkers as helpless subjects who cannot but submit to the capitalist power of digital platforms <ref type="bibr" target="#b77">(Mann and Graham 2016;</ref><ref type="bibr" target="#b119">Van Belle and Mudavanhu 2018)</ref>. In this regard, our research shows the ability of crowdworkers to act and craft a future for themselves which enhance our understanding of the adoption of crowdwork as fulltime employment.</p><p>Second, in understanding the lived experiences of crowdworkers in Nigeria, the study gives voice to workers in a developing country that is rarely represented in academia. It takes seriously the meaning of crowdwork for the workers involved and their process of developing and crafting their own career. It should not be read as overlooking workers' rights for holidays, sick leave and other employment rights but it shows the agency of crowdworkers in developing countries where people assert their agency as part of their everyday life (see <ref type="bibr" target="#b4">Atansah et al. 2017;</ref><ref type="bibr" target="#b116">Trovalla and Trovalla 2015;</ref><ref type="bibr" target="#b86">Osaghae 1999</ref>). This enriches the research that examines the Bright ICT recommended topics and shows that taking the workers' perspective in developing countries could be fruitful in bringing alternative points of view that can expand and enrich the research propositions that have largely been formulated in the context of developed countries.</p><p>Third, our research contributes to the understanding of digital platform-based work in the context of macro-tasks crowdwork by showing that crowdworkers' reputation (and ranking system) on digital platforms loses its central potency as crowdworkers progress in their crowdwork career and as they gain confidence in dealing with the digital platforms and employers. Previous research focused on the role of the rating system and consider it a compulsive control mechanism that oppresses workers into algorithmic labour <ref type="bibr" target="#b40">(Gerber and Krzywdzinski 2019;</ref><ref type="bibr" target="#b76">Lustig et al. 2016)</ref>. Our study highlights that this could be a stage in the crowdworkers' career development process and that as they progress into other stages, this focus could change.</p><p>In terms of contribution to practice, this study sheds light on the career progression and life cycle of crowdworkers. This could guide government and policy makers' programs for encouraging people particularly from developing countries to adopt crowdworking. While most of the current initiatives focus on introducing crowdwork to different populations, this study shows that starting crowdwork does not guarantee longterm employment as government, International organisations and policy makers hope. Hence, the study recommends that these stakeholders support crowdworkers in crafting their own career moulding job-related resources with job demands. Programmes for networking, training and career planning could be helpful in allowing individuals to reflect on their own circumstances and in assessing their needs.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="7">Conclusion and Limitations</head><p>This study offers valuable insights on the career trajectory of macro-tasks crowdworkers in the context of Nigeria. It has the following limitations. First, while the study provides an in-depth understanding of the lived experience of participants, the findings can only be generalised to theory and not to population <ref type="bibr" target="#b120">(Walsham 1995)</ref>. Hence, the study cannot claim generalisations for the entire country or other countries. This limitation is shared with other types of interpretive research <ref type="bibr" target="#b64">(Klein and Myers 1999)</ref>. Future research can adopt the qualitative insights of this study and statistically test them employing a representative sample of the population. Second, this study focuses on the dynamic and long-term prospects and did not consider the broader institutional aspects in the context of Nigeria. Future research can adopt a broader institutional perspective to consider the socio-economic, cultural and infrastructure conditions in Nigeria. Third, our research findings show that crowdworkers gained knowledge and experience from crowdwork are transferable to other employment settings. However, as this observation was not the focus of the research, it deserves wider examination and future research. Future research can consider crowdwork's impact on skills development and its socio-economic impact. Finally, we hope that this study opens the door for further in-depth investigations on crowdwork from workers' perspective and their lived experience.</p><p>Open Access This article is licensed under a Creative Commons Attribution 4.0 International License, which permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if changes were made. The images or other third party material in this article are included in the article's Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included in the article's Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visit http://creativecommons.org/licenses/by/4.0/.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head></head><label></label><figDesc>Fig. 1 crowdwork as a type of crowdsourcing, adapted from Durward et al. (2016)</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>Fig. 2</head><label>2</label><figDesc>Fig. 2 Typology of the starting stage of crowdworkers</figDesc><graphic coords="7,337.30,88.16,206.44,193.84" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>Fig. 4</head><label>4</label><figDesc>Fig. 4 Exit and transition from Crowdwork</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head>Fig. 3</head><label>3</label><figDesc>Fig. 3 A crowdworker's three profiles on two platforms</figDesc><graphic coords="10,51.02,53.86,493.59,191.68" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0"><head></head><label></label><figDesc></figDesc><graphic coords="11,84.64,53.86,425.94,131.24" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1"><head>Table 1</head><label>1</label><figDesc>Difference between micro and macro-tasks Crowdwork</figDesc><table><row><cell>Criteria</cell><cell>Micro-tasks Crowdwork</cell><cell>Macro-tasks Crowdwork</cell></row><row><cell>Required worker skills</cell><cell>Low/ No specialised skill</cell><cell>Specialised Skills</cell></row><row><cell>Task Size and nature</cell><cell>Small repetitive</cell><cell>Large and creative</cell></row><row><cell>Wage</cell><cell>Low wage</cell><cell>Higher wage</cell></row><row><cell>Work Duration</cell><cell>Short; could last for only minutes</cell><cell>Project Based; usually longer</cell></row><row><cell>Workers Autonomy</cell><cell>Low; presence of employer oversight</cell><cell>Higher; greater autonomy on how to achieve task</cell></row><row><cell>Compensation</cell><cell>Set by employer</cell><cell>Negotiable; workers could negotiate their rate with employers</cell></row><row><cell>Example of Platforms</cell><cell>Amazon Mturk, Microworkers, LionBridge,</cell><cell>Freelancer.com, Upwork, Fiverr, PeoplePerHour,</cell></row><row><cell></cell><cell>Appen, Prolific, Figure Eight and Clickwork.com</cell><cell>DesignCrowd and 99designs</cell></row><row><cell>Example of Tasks</cell><cell>Repeated data labelling, Data entry, Image</cell><cell>Graphic design, web design, App development,</cell></row><row><cell></cell><cell>identification, survey, data rating and Data annotation</cell><cell>Software testing, product design, content creation</cell></row><row><cell></cell><cell>(Geiger and Schader 2014)</cell><cell>(Bhandari et al. 2018).</cell></row></table></figure>
+		</body>
+		<back>
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Publisher's Note Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations. </p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<monogr>
+		<title level="m" type="main">Innovation and empowerment in Finland: How citizens and technology are reshaping government through crowdsourcing</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Aitamurto</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2018">2018</date>
+			<biblScope unit="page">123</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Commoditized Workers: Case Study Research on Labor Law Issues Arising from a Set of&quot; on-Demand/Gig Economy&quot; Platforms</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Aloisi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Comparative labor law and policy journal</title>
+		<imprint>
+			<biblScope unit="volume">37</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="620" to="653" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<monogr>
+		<title level="m" type="main">Handbook of career theory</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">B</forename><surname>Arthur</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">T</forename><surname>Hall</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">S</forename><surname>Lawrence</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1989">1989</date>
+			<publisher>Cambridge University Press</publisher>
+			<pubPlace>Cambridge</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<monogr>
+		<title level="m" type="main">Career development: A policy statement of the national career development association</title>
+		<author>
+			<persName><forename type="first">N</forename><forename type="middle">C D</forename><surname>Association</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2011">2011</date>
+			<publisher>NCDA</publisher>
+			<pubPlace>Tulsa</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<monogr>
+		<title level="m" type="main">When do subsidy reforms stick? Lessons from Iran</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Atansah</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Khandan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Moss</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Mukherjee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Richmond</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2017">2017</date>
+			<publisher>Center for Global Development</publisher>
+			<pubPlace>Nigeria, and India. Washinton, DC</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Understanding crowdsourcing contest fitness strategic decision factors and performance: An expectation-confirmation theory perspective</title>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">W</forename><surname>Ayaburi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Maasberg</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Frontiers</title>
+		<imprint>
+			<biblScope unit="page" from="1" to="14" />
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Proactive personality and job performance: The role of job crafting and work engagement</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">B</forename><surname>Bakker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Tims</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Derks</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Human Relations</title>
+		<imprint>
+			<biblScope unit="volume">65</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page" from="1359" to="1378" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Self-efficacy beliefs as shapers of children&apos;s aspirations and career trajectories</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Bandura</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Barbaranelli</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">V</forename><surname>Caprara</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Pastorelli</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Child Development</title>
+		<imprint>
+			<biblScope unit="volume">72</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="187" to="206" />
+			<date type="published" when="2001">2001</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<monogr>
+		<author>
+			<persName><forename type="first">M</forename><surname>Banks</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Bates</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">M</forename><surname>Breakwell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Bynner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Emler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Jamieson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Roberts</surname></persName>
+		</author>
+		<title level="m">Careers and Identities</title>
+		<meeting><address><addrLine>Milton Keynes</addrLine></address></meeting>
+		<imprint>
+			<publisher>Open University Press</publisher>
+			<date type="published" when="1992">1992</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<monogr>
+		<author>
+			<persName><forename type="first">N</forename><surname>Beerepoot</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Lambregts</surname></persName>
+		</author>
+		<title level="m">Competition in online job marketplaces: Towards a global labour market for outsourcing services? Global Networks</title>
+		<imprint>
+			<date type="published" when="2015">2015</date>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="page" from="236" to="255" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Income security in the on-demand economy: Findings and policy lessons from a survey of crowdworkers</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Berg</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Comparative Labor Law and Policy Journal</title>
+		<imprint>
+			<biblScope unit="volume">37</biblScope>
+			<biblScope unit="page">543</biblScope>
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<monogr>
+		<title level="m" type="main">How to Avoid the Pitfalls of It Crowdsourcing to Boost Speed, Find Talent, and Reduce Costs</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Bhandari</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Chatterjee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Gupta</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Panda</surname></persName>
+		</author>
+		<ptr target="https://www.mckinsey.com/business-functions/digital-mckinsey/our-insights/how-to-avoid-the-pitfalls-of-it-crowdsourcing" />
+		<imprint>
+			<date type="published" when="2018">2018. 20/01, 2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Donald super: A personal view of the man and his work</title>
+		<author>
+			<persName><forename type="first">W</forename><forename type="middle">C</forename><surname>Bingham</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal for Educational and Vocational Guidance</title>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="issue">1-2</biblScope>
+			<biblScope unit="page" from="21" to="29" />
+			<date type="published" when="2001">2001</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Crowdsourcing as a model for problem solving: An introduction and cases</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Brabham</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Convergence</title>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="75" to="90" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Thematic Analysis</title>
+		<author>
+			<persName><forename type="first">V</forename><surname>Braun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Clarke</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Terry</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Qualitative Research in Clinical and Health Psychology</title>
+		<editor>
+			<persName><forename type="first">P</forename><surname>Rohleder</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">A</forename><forename type="middle">C</forename><surname>Lyons</surname></persName>
+		</editor>
+		<meeting><address><addrLine>London</addrLine></address></meeting>
+		<imprint>
+			<publisher>Macmillan International Higher Education</publisher>
+			<date type="published" when="2014">2014</date>
+			<biblScope unit="page" from="95" to="114" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<monogr>
+		<title/>
+		<author>
+			<persName><forename type="first">A</forename><surname>Broughton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Gloster</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Marvell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Green</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Langley</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Martin</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+	<note>The experiences of individuals in the gig economy</note>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<monogr>
+		<author>
+			<persName><forename type="first">D</forename><surname>Brown</surname></persName>
+		</author>
+		<title level="m">Career Choice and Development</title>
+		<meeting><address><addrLine>Hoboken</addrLine></address></meeting>
+		<imprint>
+			<publisher>Wiley</publisher>
+			<date type="published" when="2002">2002</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Seeking funding in order to sell: Crowdfunding as a marketing tool</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Brown</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Boon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Pitt</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Business Horizons</title>
+		<imprint>
+			<biblScope unit="volume">60</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="189" to="195" />
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Seller reputation: From word-of-mouth to centralized feedback</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Cai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">Z</forename><surname>Jin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">A</forename><surname>Zhou</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Industrial Organization</title>
+		<imprint>
+			<biblScope unit="volume">34</biblScope>
+			<biblScope unit="page" from="51" to="65" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<monogr>
+		<title level="m" type="main">Crowdsourcing processes for citizendriven governance. Citizen empowerment and innovation in the data-rich city</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Certomà</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Rizzi</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2017">2017</date>
+			<publisher>Springer</publisher>
+			<biblScope unit="page" from="57" to="77" />
+			<pubPlace>Berlin</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">The value of flexible work: Evidence from uber drivers</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">K</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">E</forename><surname>Rossi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">A</forename><surname>Chevalier</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Oehlsen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Political Economy</title>
+		<imprint>
+			<biblScope unit="volume">127</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="2735" to="2794" />
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<monogr>
+		<title level="m" type="main">The 5 patterns of extraordinary careers: The guide for achieving success and satisfaction</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">M</forename><surname>Citrin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Smith</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2003">2003</date>
+			<publisher>Currency</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">The functions of a servant leader</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">F</forename><surname>Coetzer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Bussin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Geldenhuys</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Administrative Sciences</title>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">5</biblScope>
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">The rise of the just-in-time workforce: On-demand work, crowdwork, and labor protection in the gig-economy</title>
+		<author>
+			<persName><forename type="first">V</forename><surname>De Stefano</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Comparative Labor Law &amp; Policy Journal</title>
+		<imprint>
+			<biblScope unit="volume">37</biblScope>
+			<biblScope unit="page">471</biblScope>
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<monogr>
+		<title level="m" type="main">Is crowdsourcing a source of worker empowerment or exploitation? Understanding crowd workers&apos; Perceptions of crowdsourcing career</title>
+		<author>
+			<persName><forename type="first">X</forename><forename type="middle">N</forename><surname>Deng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Joshi</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">The duality of empowerment and marginalization in microtask crowdsourcing: Giving voice to the less powerful through value sensitive design</title>
+		<author>
+			<persName><forename type="first">X</forename><surname>Deng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">D</forename><surname>Joshi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">D</forename><surname>Galliers</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">40</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="279" to="302" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<monogr>
+		<title level="m" type="main">From occupational choice to career crafting. The Routledge companion to career studies</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>De Vos</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Akkermans</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">I J</forename><surname>Van Der Heijden</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2019">2019</date>
+			<biblScope unit="page" from="128" to="142" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Reach for the stars… architecture and good governance for your personal brand</title>
+		<author>
+			<persName><forename type="first">Del</forename><surname>Blanco</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">Á</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Personal brands</title>
+		<meeting><address><addrLine>New York</addrLine></address></meeting>
+		<imprint>
+			<publisher>Springer</publisher>
+			<date type="published" when="2010">2010</date>
+			<biblScope unit="page" from="188" to="207" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">Buying reputation on eBay: Do recent changes help?</title>
+		<author>
+			<persName><forename type="first">F</forename><surname>Dini</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Spagnolo</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Electronic Business</title>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="581" to="598" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<monogr>
+		<title level="m" type="main">The rise of crowd aggregators-how individual workers restructure their own crowd</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Durward</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Blohm</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">Crowd work</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Durward</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Blohm</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">M</forename><surname>Leimeister</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Business &amp; Information Systems Engineering</title>
+		<imprint>
+			<biblScope unit="volume">58</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="281" to="286" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">The search for smartness in working, living and organising: Beyond the &apos;Technomagic&apos;</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Elbanna</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Dwivedi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Bunker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Wastell</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Frontiers</title>
+		<imprint>
+			<biblScope unit="page" from="1" to="6" />
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<monogr>
+		<title level="m" type="main">The online platform economy: Has growth peaked?</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Farrell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Greig</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2017">2017</date>
+			<publisher>JPMorgan Chase Institute</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">Working the Crowd: Employment and Labor Law in the Crowdsourcing Industry</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Felstiner</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Berkeley Journal of Employment and Labor Law</title>
+		<imprint>
+			<biblScope unit="issue">32</biblScope>
+			<biblScope unit="page">143</biblScope>
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title level="a" type="main">The production of &apos;Placelessness&apos;: Digital service work in global value chains</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Flecker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Schönauer</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Space, Place and Global Digital Work</title>
+		<meeting><address><addrLine>Berlin</addrLine></address></meeting>
+		<imprint>
+			<publisher>Springer</publisher>
+			<date type="published" when="2016">2016</date>
+			<biblScope unit="page" from="11" to="30" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">Donald Super: A perspective on career development</title>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">C</forename><surname>Freeman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Career Development</title>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="255" to="264" />
+			<date type="published" when="1993">1993</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">Are we there yet? Data saturation in qualitative research</title>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">I</forename><surname>Fusch</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">R</forename><surname>Ness</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The Qualitative Report</title>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="issue">9</biblScope>
+			<biblScope unit="page" from="1408" to="1416" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<analytic>
+		<title level="a" type="main">Promoting coordination for disaster relief-from crowdsourcing to coordination</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Gao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Barbier</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Liu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">International Conference on Social Computing, Behavioral-Cultural Modeling, and Prediction</title>
+		<meeting><address><addrLine>Berlin</addrLine></address></meeting>
+		<imprint>
+			<publisher>Springer</publisher>
+			<date type="published" when="2011">2011</date>
+			<biblScope unit="page" from="197" to="204" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<analytic>
+		<title level="a" type="main">Building a learning organization</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Garwin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Harvard Business Review</title>
+		<imprint>
+			<biblScope unit="volume">71</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="73" to="91" />
+			<date type="published" when="1993">1993</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<analytic>
+		<title level="a" type="main">Personalized task recommendation in crowdsourcing information systems-Current state of the art</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Geiger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Schader</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Decision Support Systems</title>
+		<imprint>
+			<biblScope unit="volume">65</biblScope>
+			<biblScope unit="page" from="3" to="16" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<analytic>
+		<title level="a" type="main">Brave New Digital Work? New Forms of Performance Control in Crowdwork</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Gerber</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Krzywdzinski</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Work and Labor in the Digital Age</title>
+		<meeting><address><addrLine>Bingley</addrLine></address></meeting>
+		<imprint>
+			<publisher>Emerald Publishing Limited</publisher>
+			<date type="published" when="2019">2019</date>
+			<biblScope unit="page" from="121" to="143" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<analytic>
+		<title level="a" type="main">Estimating participants for knowledge-intensive tasks in a network of crowdsourcing marketplaces</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Gong</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Frontiers</title>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="301" to="319" />
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+	<monogr>
+		<author>
+			<persName><forename type="first">B</forename><surname>Gothard</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Mignot</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Offer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Ruff</surname></persName>
+		</author>
+		<title level="m">Careers guidance in context</title>
+		<meeting><address><addrLine>Los Angeles</addrLine></address></meeting>
+		<imprint>
+			<publisher>Sage</publisher>
+			<date type="published" when="2001">2001</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b43">
+	<analytic>
+		<title level="a" type="main">Digital labour and development: Impacts of global digital labour platforms and the gig economy on worker livelihoods</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Graham</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Hjorth</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Lehdonvirta</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">European Review of Labour</title>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="135" to="162" />
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b44">
+	<analytic>
+		<title level="a" type="main">The crowd is a collaborative network</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">L</forename><surname>Gray</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Suri</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">S</forename><surname>Ali</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Kulkarni</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 19th ACM conference on computer-supported cooperative work &amp; social computing</title>
+		<meeting>the 19th ACM conference on computer-supported cooperative work &amp; social computing</meeting>
+		<imprint>
+			<date type="published" when="2016">2016</date>
+			<biblScope unit="page" from="134" to="147" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b45">
+	<analytic>
+		<title level="a" type="main">Exploratory Research on Internet-Enabled Work Exchanges and Employability. Analysis and synthesis of qualitative evidence on crowdsourcing for work, funding and volunteers</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Green</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>De Hoyos</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S.-A</forename><surname>Barnes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Baldauf</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Behle</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Report EUR</title>
+		<imprint>
+			<date type="published" when="2014">2014. 26423</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b46">
+	<analytic>
+		<title level="a" type="main">How many interviews are enough? An experiment with data saturation and variability</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Guest</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Bunce</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Johnson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Field Methods</title>
+		<imprint>
+			<biblScope unit="volume">18</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="59" to="82" />
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b47">
+	<analytic>
+		<title level="a" type="main">Psychological success: When the career is a calling</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">T</forename><surname>Hall</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">E</forename><surname>Chandler</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Organizational Behavior: The International Journal of Industrial, Occupational and Organizational Psychology and Behavior</title>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="155" to="176" />
+			<date type="published" when="2005">2005</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b48">
+	<monogr>
+		<title level="m" type="main">Decent Work and the Digital Gig Economy</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Heeks</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2017">2017</date>
+			<publisher>WP</publisher>
+			<biblScope unit="volume">7</biblScope>
+		</imprint>
+		<respStmt>
+			<orgName>Global Development Institute. University of Manchester</orgName>
+		</respStmt>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b49">
+	<analytic>
+		<title level="a" type="main">Crowdsourcing development: From funding to reporting</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Hellström</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">The Palgrave Handbook of International Development</title>
+		<meeting><address><addrLine>London</addrLine></address></meeting>
+		<imprint>
+			<publisher>Palgrave Macmillan</publisher>
+			<date type="published" when="2016">2016</date>
+			<biblScope unit="page" from="635" to="647" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b50">
+	<analytic>
+		<title level="a" type="main">Grounded theory and inductive research</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Hodkinson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Researching social life</title>
+		<imprint>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="81" to="100" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b51">
+	<analytic>
+		<title level="a" type="main">Digital labor markets and global talent flows</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Horton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><forename type="middle">R</forename><surname>Kerr</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Stanton</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">High-skilled migration to the United States and its economic consequences</title>
+		<meeting><address><addrLine>Chicago</addrLine></address></meeting>
+		<imprint>
+			<publisher>University of Chicago Press</publisher>
+			<date type="published" when="2017">2017</date>
+			<biblScope unit="page" from="71" to="108" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b52">
+	<analytic>
+		<title level="a" type="main">A typology of crowdwork platforms</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Howcroft</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Bergvall-Kåreborn</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Work, Employment and Society</title>
+		<imprint>
+			<biblScope unit="volume">33</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="21" to="38" />
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b53">
+	<monogr>
+		<title level="m" type="main">Crowdsourcing: How the Power of the Crowd Is Driving the Future of Business</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Howe</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2008">2008</date>
+			<publisher>Random House</publisher>
+			<pubPlace>New York City</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b54">
+	<analytic>
+		<title level="a" type="main">Community-empowered air quality monitoring system</title>
+		<author>
+			<persName><forename type="first">Y</forename><forename type="middle">C</forename><surname>Hsu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Dille</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Cross</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Dias</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Sargent</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Nourbakhsh</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 2017 CHI Conference on Human Factors in Computing Systems</title>
+		<meeting>the 2017 CHI Conference on Human Factors in Computing Systems</meeting>
+		<imprint>
+			<date type="published" when="2017">2017</date>
+			<biblScope unit="page" from="1607" to="1619" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b55">
+	<monogr>
+		<title level="m" type="main">Size of the Uk&apos;s &quot;Gig Economy&quot; revealed for the first time</title>
+		<author>
+			<persName><forename type="first">U</forename><surname>Huws</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Joyce</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2016">2016</date>
+			<publisher>Crowd Working Survey</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b56">
+	<monogr>
+		<title level="m" type="main">I just happen to meet y clients on the internet&apos; -Crowdworkers, their work identity and the shaping of work conduct in context</title>
+		<author>
+			<persName><forename type="first">Elbanna</forename><surname>Idowu</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+	<note>Information and Organization</note>
+</biblStruct>
+
+<biblStruct xml:id="b57">
+	<monogr>
+		<title level="m" type="main">Job quality in the platform economy. Prepared for the 2nd Meeting of the Global Commission on the Future of Work 15</title>
+		<author>
+			<persName><surname>Ilo</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2018-02-17">2018. 17 February 2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b58">
+	<analytic>
+		<title level="a" type="main">Understanding career commitment of IT professionals: Perspectives of push-pull-mooring framework and investment model</title>
+		<author>
+			<persName><forename type="first">Jen-Ruei</forename></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Information Management</title>
+		<imprint>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="279" to="293" />
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b59">
+	<analytic>
+		<title level="a" type="main">Good jobs, bad jobs in the gig economy</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">L</forename><surname>Kalleberg</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Dunn</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">LERA for Libraries</title>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="page" from="1" to="2" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b60">
+	<analytic>
+		<title level="a" type="main">Online Labour Index: Measuring the Online Gig Economy for Policy and Research</title>
+		<author>
+			<persName><forename type="first">O</forename><surname>Kässi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Lehdonvirta</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Technological forecasting and social change</title>
+		<imprint>
+			<biblScope unit="issue">137</biblScope>
+			<biblScope unit="page" from="241" to="248" />
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b61">
+	<analytic>
+		<title level="a" type="main">The face of quality in crowdsourcing relevance labels: Demographics, personality and Inf Syst Front labeling accuracy</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Kazai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Kamps</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Milic-Frayling</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 21st ACM international conference on Information and knowledge management</title>
+		<meeting>the 21st ACM international conference on Information and knowledge management<address><addrLine>New York City</addrLine></address></meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2012">2012</date>
+			<biblScope unit="page" from="2583" to="2586" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b62">
+	<analytic>
+		<title level="a" type="main">Career trajectory in high school dropouts</title>
+		<author>
+			<persName><forename type="first">K.-N</forename><surname>Kim</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The Social Science Journal</title>
+		<imprint>
+			<biblScope unit="volume">50</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="306" to="312" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b63">
+	<analytic>
+		<title level="a" type="main">The Future of Crowd Work</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Kittur</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">V</forename><surname>Nickerson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Bernstein</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Gerber</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Shaw</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Zimmerman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Lease</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Horton</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 2013 conference on Computer supported cooperative work</title>
+		<meeting>the 2013 conference on Computer supported cooperative work<address><addrLine>New York City</addrLine></address></meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2013">2013</date>
+			<biblScope unit="page" from="1301" to="1318" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b64">
+	<analytic>
+		<title level="a" type="main">A set of principles for conducting and evaluating interpretive field studies in information systems</title>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">K</forename><surname>Klein</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">D</forename><surname>Myers</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quarterly</title>
+		<imprint>
+			<biblScope unit="page" from="67" to="93" />
+			<date type="published" when="1999">1999</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b65">
+	<analytic>
+		<title level="a" type="main">How to scale crowdsourcing platforms</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Kohler</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">California Management Review</title>
+		<imprint>
+			<biblScope unit="volume">60</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="98" to="121" />
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b66">
+	<analytic>
+		<title level="a" type="main">Growth and exploration: Career development theory and programs of study</title>
+		<author>
+			<persName><forename type="first">N</forename><surname>Kosine</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Lewis</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Career and Technical Education Research</title>
+		<imprint>
+			<biblScope unit="volume">33</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="227" to="243" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b67">
+	<analytic>
+		<title level="a" type="main">Finding meaning in a hopeless place? The construction of meaningfulness in digital microwork</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Kost</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Fieseler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">I</forename><surname>Wong</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Computers in Human Behavior</title>
+		<imprint>
+			<biblScope unit="volume">82</biblScope>
+			<biblScope unit="page" from="101" to="110" />
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b68">
+	<analytic>
+		<title level="a" type="main">Boundaryless careers in the gig economy: An oxymoron?</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Kost</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Fieseler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">I</forename><surname>Wong</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Human Resource Management Journal</title>
+		<imprint>
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="page" from="100" to="113" />
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b69">
+	<monogr>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">C</forename><surname>Kuek</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Paradi-Guilford</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Fayomi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Imaizumi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Ipeirotis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Pina</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Singh</surname></persName>
+		</author>
+		<title level="m">The Global Opportunity in Online Outsourcing</title>
+		<meeting><address><addrLine>Washington, D.C.</addrLine></address></meeting>
+		<imprint>
+			<publisher>The World Bank</publisher>
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b70">
+	<monogr>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">R</forename><surname>Lakhani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">L</forename><surname>Fayard</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Levina</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">H</forename><surname>Pokrywa</surname></persName>
+		</author>
+		<title level="m">Harvard Business School Technology &amp; Operations Mgt</title>
+		<imprint>
+			<publisher>Unit Case</publisher>
+			<date type="published" when="2012">2012</date>
+			<biblScope unit="page" from="612" to="066" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b71">
+	<analytic>
+		<title level="a" type="main">Gender and work: assessment and application of Super&apos;s theory: career maturity</title>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">L</forename><surname>Lau</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">F</forename><surname>Low</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">R</forename><surname>Zakaria</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Psychology and Behavioral Sciences</title>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="36" to="42" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b72">
+	<analytic>
+		<title level="a" type="main">Identifying issues for the bright ICT initiative: a worldwide delphi study of IS journal editors and scholars</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Fedorowicz</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Communications of the Association for Information Systems</title>
+		<imprint>
+			<biblScope unit="volume">42</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">11</biblScope>
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b73">
+	<analytic>
+		<title level="a" type="main">Research framework for AIS grand vision of the bright ICT initiative</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">K</forename><surname>Lee</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quarterly</title>
+		<imprint>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page">39</biblScope>
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b74">
+	<analytic>
+		<title level="a" type="main">Toward a unifying social cognitive theory of career and academic interest, choice, and performance</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">W</forename><surname>Lent</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">D</forename><surname>Brown</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Hackett</surname></persName>
+		</author>
+		<idno>15/02</idno>
+		<ptr target="https://nigerianstat.gov.ng/download/856" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Vocational Behavior</title>
+		<imprint>
+			<biblScope unit="volume">45</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="79" to="122" />
+			<date type="published" when="1994">1994. 2018. 2019</date>
+		</imprint>
+		<respStmt>
+			<orgName>National Bureau of Statistics</orgName>
+		</respStmt>
+	</monogr>
+	<note>Labor force statistics -Volume I: Unemployment and underemployment report</note>
+</biblStruct>
+
+<biblStruct xml:id="b75">
+	<analytic>
+		<title level="a" type="main">Citizen science: An information quality research frontier</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Lukyanenko</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Wiggins</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">K</forename><surname>Rosser</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Frontiers</title>
+		<imprint>
+			<biblScope unit="page" from="1" to="23" />
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b76">
+	<analytic>
+		<title level="a" type="main">Algorithmic authority: the ethics, politics, and economics of algorithms that interpret, decide, and manage</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Lustig</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Pine</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Nardi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Irani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">K</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Nafus</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>&amp;and Sandvig</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 2016 CHI Conference Extended Abstracts on Human Factors in Computing Systems</title>
+		<meeting>the 2016 CHI Conference Extended Abstracts on Human Factors in Computing Systems</meeting>
+		<imprint>
+			<date type="published" when="2016">2016</date>
+			<biblScope unit="page" from="1057" to="1062" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b77">
+	<analytic>
+		<title level="a" type="main">The domestic turn: Business process outsourcing and the growing automation of Kenyan organisations</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Mann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Graham</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The Journal of Development Studies</title>
+		<imprint>
+			<biblScope unit="volume">52</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="530" to="548" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b78">
+	<analytic>
+		<title level="a" type="main">Workplace learning in crowdwork: Comparing microworkers&apos; and online freelancers&apos; practices</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Margaryan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Workplace Learning</title>
+		<imprint>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="250" to="273" />
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b79">
+	<analytic>
+		<title level="a" type="main">User roles in virtual community of crowdsourcing for innovation: A case study of Xiaomi MIUI in China</title>
+		<author>
+			<persName><forename type="first">Q</forename><surname>Meng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Hang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Chen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Tehnički Vjesnik</title>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="1392" to="1399" />
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b80">
+	<analytic>
+		<title level="a" type="main">Know when to run: Recommendations in crowdsourcing contests</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Mo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Sarkar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Menon</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Information Systems Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">42</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="919" to="944" />
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b81">
+	<analytic>
+		<title level="a" type="main">The crowdsourcing process: an intermediary mediated idea generation approach in the early phase of innovation</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Muhdi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Daiber</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Friesike</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Boutellier</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Entrepreneurship and Innovation Management</title>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="315" to="332" />
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b82">
+	<monogr>
+		<author>
+			<persName><forename type="first">C</forename><surname>Nosko</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Tadelis</surname></persName>
+		</author>
+		<title level="m">The limits of reputation in platform markets: An empirical analysis and field experiment</title>
+		<meeting><address><addrLine>Cambridge</addrLine></address></meeting>
+		<imprint>
+			<publisher>National Bureau of Economic Research</publisher>
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b83">
+	<monogr>
+		<title level="m" type="main">Crowdsourced social media data for disaster management: Lessons from the PetaJakarta. org project. Computers, Environment and Urban Systems</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">I</forename><surname>Ogie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">J</forename><surname>Clarke</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Forehead</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Perez</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2019">2019</date>
+			<biblScope unit="volume">73</biblScope>
+			<biblScope unit="page" from="108" to="117" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b84">
+	<monogr>
+		<title level="m" type="main">Characteristics of &quot;Walled Garden&quot; crowdsourcing platforms for global development</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Olsen</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b85">
+	<analytic>
+		<title level="a" type="main">Understanding career trajectory: A degree alone is not enough</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">D</forename><surname>Oriol</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Brannagan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">A</forename><surname>Ferguson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">F</forename><surname>Pearce</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Nursing &amp; Clinical Practices</title>
+		<imprint>
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b86">
+	<analytic>
+		<title level="a" type="main">The social protection of workers in the platform economy, Study for the Empl Committee</title>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">E</forename><surname>Osaghae</surname></persName>
+		</author>
+		<ptr target="Ip/a/Empl/2016-11" />
+	</analytic>
+	<monogr>
+		<title level="j">African Journal of Political Science/Revue Africaine de Science Politique</title>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="83" to="98" />
+			<date type="published" when="1999">1999. 2017</date>
+			<publisher>European Parliament</publisher>
+			<pubPlace>Brussels</pubPlace>
+		</imprint>
+	</monogr>
+	<note>Exiting from the State in Nigeria</note>
+</biblStruct>
+
+<biblStruct xml:id="b87">
+	<analytic>
+		<title level="a" type="main">Modeling the antecedents of proactive behavior at work</title>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">K</forename><surname>Parker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">M</forename><surname>Williams</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Turner</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Applied Psychology</title>
+		<imprint>
+			<biblScope unit="volume">91</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page">636</biblScope>
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b88">
+	<analytic>
+		<title level="a" type="main">Choose wisely: Crowdfunding through the stages of the startup life cycle</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Paschen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Business Horizons</title>
+		<imprint>
+			<biblScope unit="volume">60</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="179" to="188" />
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b89">
+	<monogr>
+		<author>
+			<persName><forename type="first">W</forename><surname>Patton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Mcmahon</surname></persName>
+		</author>
+		<title level="m">Career Development and Systems Theory: A New Relationship</title>
+		<meeting><address><addrLine>Pacific Grove</addrLine></address></meeting>
+		<imprint>
+			<publisher>Thomson Brooks/Cole Publishing Co</publisher>
+			<date type="published" when="1999">1999</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b90">
+	<analytic>
+		<title level="a" type="main">Agony and ecstasy in the gig economy: Cultivating holding environments for precarious and personalized work identities</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Petriglieri</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">J</forename><surname>Ashford</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Wrzesniewski</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Administrative Science Quarterly</title>
+		<imprint>
+			<biblScope unit="page">0001839218759646</biblScope>
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b91">
+	<analytic>
+		<title level="a" type="main">Autonomy at work in the gig economy: Analysing work status, work content and working conditions of independent professionals</title>
+		<author>
+			<persName><forename type="first">F</forename><surname>Pichault</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Mckeown</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">New Technology, Work and Employment</title>
+		<imprint>
+			<biblScope unit="volume">34</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="59" to="72" />
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b92">
+	<monogr>
+		<title level="m" type="main">Open innovation with customers: Crowdsourcing and co-creation at threadless. A guide to open innovation and crowdsourcing: Advice from leading experts</title>
+		<author>
+			<persName><forename type="first">F</forename><surname>Piller</surname></persName>
+		</author>
+		<editor>P. Sloane</editor>
+		<imprint>
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b93">
+	<analytic>
+		<title level="a" type="main">The value of crowdsourcing: can users really compete with professionals in generating new product ideas</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">K</forename><surname>Poetz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Schreier</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Product Innovation Management</title>
+		<imprint>
+			<biblScope unit="volume">29</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="245" to="256" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b94">
+	<analytic>
+		<title level="a" type="main">Factors affecting the career development of employees in secretariat office of City Samarinda</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Rande</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Rahawarin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Zacharias</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Scientific &amp; Technology Research</title>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="page">3</biblScope>
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b95">
+	<monogr>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">A</forename><surname>Rashid</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Deo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Prasad</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Singh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Chand</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Assaf</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1901.06327</idno>
+		<title level="m">TEduChain: A platform for crowdsourcing tertiary education fund using blockchain technology</title>
+		<imprint>
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b96">
+	<analytic>
+		<title level="a" type="main">Ushahidi: Empowering Citizens through Crowdsourcing and Digital Data Collection. Interview of Juliana Rotich</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Rotich</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Field Actions Science Reports. The journal of field actions</title>
+		<imprint>
+			<date type="published" when="2017">2017</date>
+			<biblScope unit="page" from="36" to="38" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b97">
+	<analytic>
+		<title level="a" type="main">Job crafting: A meta-analysis of relationships with individual differences, job characteristics, and work outcomes</title>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">W</forename><surname>Rudolph</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><forename type="middle">M</forename><surname>Katz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">N</forename><surname>Lavigne</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Zacher</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Vocational Behavior</title>
+		<imprint>
+			<biblScope unit="volume">102</biblScope>
+			<biblScope unit="page" from="112" to="138" />
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b98">
+	<monogr>
+		<title level="m" type="main">The Coding Manual for Qualitative Researchers</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Saldaña</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2015">2015</date>
+			<publisher>Sage</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b99">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">B</forename><surname>Saunders</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Sim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Kingstone</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Baker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Waterfield</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Bartlam</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Burroughs</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Jinks</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Quality &amp; quantity</title>
+		<imprint>
+			<biblScope unit="volume">52</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="1893" to="1907" />
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+	<note>Saturation in Qualitative R e s e a r c h : E x</note>
+</biblStruct>
+
+<biblStruct xml:id="b100">
+	<monogr>
+		<title level="m" type="main">Uberworked and Underpaid: How Workers Are Disrupting the Digital Economy</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Scholz</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2017">2017</date>
+			<publisher>Wiley</publisher>
+			<pubPlace>Hoboken</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b101">
+	<monogr>
+		<title level="m" type="main">Crowdsourcing industry trends: Unique ways companies are leveraging the crowd</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Schweissguth</surname></persName>
+		</author>
+		<ptr target="https://www.crowdsource.com/blog/2014/05/crowdsourcing-industry-trends-unique-ways-companies-leveraging-crowd-will-impact-future-job-markets/" />
+		<imprint>
+			<date type="published" when="2014">2014. 14/12, 2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b102">
+	<analytic>
+		<title level="a" type="main">Super&apos;s career stages and the decision to change careers</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Smart</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Peterson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Vocational Behavior</title>
+		<imprint>
+			<biblScope unit="volume">51</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="358" to="374" />
+			<date type="published" when="1997">1997</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b103">
+	<analytic>
+		<title level="a" type="main">Fostering networking behavior, career planning and optimism, and subjective career success: An intervention study</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Spurk</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Kauffeld</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Barthauer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><forename type="middle">S</forename><surname>Heinemann</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Vocational Behavior</title>
+		<imprint>
+			<biblScope unit="volume">87</biblScope>
+			<biblScope unit="page" from="134" to="144" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b104">
+	<analytic>
+		<title level="a" type="main">The changing nature of careers: A review and research agenda</title>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">E</forename><surname>Sullivan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Management</title>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="457" to="484" />
+			<date type="published" when="1999">1999</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b105">
+	<analytic>
+		<title level="a" type="main">Combining spatial optimization and multiagent temporal difference learning for task assignment in uncertain crowdsourcing</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Tan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Frontiers</title>
+		<imprint>
+			<biblScope unit="page" from="1" to="19" />
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b106">
+	<analytic>
+		<title level="a" type="main">A theory of vocational development</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">E</forename><surname>Super</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">American Psychologist</title>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page">185</biblScope>
+			<date type="published" when="1953">1953</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b107">
+	<analytic>
+		<title level="a" type="main">A life-span, life-space approach to career development</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">E</forename><surname>Super</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Vocational Behavior</title>
+		<imprint>
+			<biblScope unit="volume">16</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="282" to="298" />
+			<date type="published" when="1980">1980</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b108">
+	<analytic>
+		<title level="a" type="main">Career and life development</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">E</forename><surname>Super</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Career Cloice and Development</title>
+		<editor>
+			<persName><forename type="first">D</forename><surname>Brown</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">L</forename><surname>Brooks</surname></persName>
+		</editor>
+		<meeting><address><addrLine>San Francisco</addrLine></address></meeting>
+		<imprint>
+			<publisher>Jossey Bass</publisher>
+			<date type="published" when="1984">1984</date>
+			<biblScope unit="page" from="192" to="234" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b109">
+	<analytic>
+		<title level="a" type="main">Career development theory</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">E</forename><surname>Super</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">P</forename><surname>Jordaan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">British Journal of Guidance and Counselling</title>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="3" to="16" />
+			<date type="published" when="1973">1973</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b110">
+	<analytic>
+		<title level="a" type="main">Reputation and feedback systems in online platform markets</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Tadelis</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Annual Review of Economics</title>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="page" from="321" to="340" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b111">
+	<analytic>
+		<title level="a" type="main">Crowdsourcing, Sharing Economies and Development</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Taeihagh</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Developing Societies</title>
+		<imprint>
+			<biblScope unit="volume">33</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="191" to="222" />
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b112">
+	<analytic>
+		<title level="a" type="main">The importance of worker reputation information in microtask-based crowd work systems</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Tarable</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Nordio</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Leonardi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">A</forename><surname>Marsan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Parallel and Distributed Systems</title>
+		<imprint>
+			<biblScope unit="volume">28</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="558" to="571" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b113">
+	<analytic>
+		<title level="a" type="main">Joining the crowd: The career anchors of information technology workers participating in crowdsourcing</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Taylor</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">D</forename><surname>Joshi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Journal</title>
+		<imprint>
+			<biblScope unit="volume">29</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="641" to="673" />
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b114">
+	<analytic>
+		<title level="a" type="main">Job crafting: Towards a new model of individual job redesign</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Tims</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">B</forename><surname>Bakker</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">SA Journal of Industrial Psychology</title>
+		<imprint>
+			<biblScope unit="volume">36</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="1" to="9" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b115">
+	<analytic>
+		<title level="a" type="main">Development and validation of the job crafting scale</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Tims</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">B</forename><surname>Bakker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Derks</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Vocational Behavior</title>
+		<imprint>
+			<biblScope unit="volume">80</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="173" to="186" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b116">
+	<analytic>
+		<title level="a" type="main">Infrastructure turned suprastructure: Unpredictable materialities and visions of a Nigerian nation</title>
+		<author>
+			<persName><forename type="first">U</forename><surname>Trovalla</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Trovalla</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of material culture</title>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="43" to="57" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b117">
+	<analytic>
+		<title level="a" type="main">Crowdsourcing social network service for social enterprise innovation</title>
+		<author>
+			<persName><forename type="first">W</forename><forename type="middle">F</forename><surname>Tung</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Jordann</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Frontiers</title>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="1311" to="1327" />
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b118">
+	<analytic>
+		<title level="a" type="main">Beyond mechanical turk: An analysis of paid crowd work platforms</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Vakharia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Lease</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the iConference)</title>
+		<meeting>the iConference)</meeting>
+		<imprint>
+			<date type="published" when="2015">2015</date>
+			<biblScope unit="page" from="1" to="17" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b119">
+	<monogr>
+		<title level="m" type="main">Digital labour in Africa. SEED: Centre for Development Informatics</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">P</forename><surname>Van Belle</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Mudavanhu</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2018">2018</date>
+			<publisher>Global Development Institute</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b120">
+	<analytic>
+		<title level="a" type="main">Interpretive case studies in is research: Nature and method</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Walsham</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">European Journal of Information Systems</title>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="74" to="81" />
+			<date type="published" when="1995">1995</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b121">
+	<analytic>
+		<title level="a" type="main">Doing interpretive research</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Walsham</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">European Journal of Information Systems</title>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="320" to="330" />
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b122">
+	<analytic>
+		<title level="a" type="main">Crowd guilds: Worker-led reputation and feedback on crowdsourcing platforms</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">E</forename><surname>Whiting</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Gamage</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">N S</forename><surname>Gaikwad</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Gilbee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Goyal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Ballav</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Majeti</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Chhibber</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Richmond-Fuller</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Vargus</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 2017 ACM Conference on Computer Supported Cooperative Work and Social Computing</title>
+		<meeting>the 2017 ACM Conference on Computer Supported Cooperative Work and Social Computing<address><addrLine>New York City</addrLine></address></meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2017">2017</date>
+			<biblScope unit="page" from="1902" to="1913" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b123">
+	<analytic>
+		<title level="a" type="main">Effects of networking on career success: A longitudinal study</title>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">G</forename><surname>Wolff</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Moser</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">J</forename><surname>Wood</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Graham</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Lehdonvirta</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Hjorth</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Good gig, bad gig: Autonomy and algorithmic control in the global gig economy</title>
+		<imprint>
+			<date type="published" when="2009">2009. 2019</date>
+			<biblScope unit="volume">94</biblScope>
+			<biblScope unit="page" from="56" to="75" />
+		</imprint>
+	</monogr>
+	<note>Work, Employment and Society</note>
+</biblStruct>
+
+<biblStruct xml:id="b124">
+	<monogr>
+		<title level="m" type="main">Crafting a job: Revisioning employees as active crafters of their work</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Wrzesniewski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">E</forename><surname>Dutton</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2001">2001</date>
+			<publisher>Academy of Management Review</publisher>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="page" from="179" to="201" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b125">
+	<analytic>
+		<title level="a" type="main">Building knowledge base of urban emergency events based on crowdsourcing of social media</title>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Hu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Mei</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Xuan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">K R</forename><surname>Choo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Zhu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Concurrency and Computation: Practice and Experience</title>
+		<imprint>
+			<biblScope unit="volume">28</biblScope>
+			<biblScope unit="issue">15</biblScope>
+			<biblScope unit="page" from="4038" to="4052" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b126">
+	<analytic>
+		<title level="a" type="main">An impactful crowdsourcing intermediary design-a case of a service imagery crowdsourcing system</title>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">T D</forename><surname>Yuan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">F</forename><surname>Hsieh</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Frontiers</title>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="841" to="862" />
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b127">
+	<analytic>
+		<title level="a" type="main">Evaluation on crowdsourcing research: Current status and future direction</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Q</forename><surname>Zhu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Frontiers</title>
+		<imprint>
+			<biblScope unit="volume">16</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="417" to="434" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b128">
+	<analytic>
+		<title level="a" type="main">Intelligent tools and digital platforms: Implications for work and employment</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Zysman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Kenney</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Intereconomics</title>
+		<imprint>
+			<biblScope unit="volume">52</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="329" to="334" />
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b129">
+	<analytic>
+		<title level="a" type="main">The next phase in the digital revolution: intelligent tools, platforms, growth, employment</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Zysman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Kenney</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Communications of the ACM</title>
+		<imprint>
+			<biblScope unit="volume">61</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="54" to="63" />
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

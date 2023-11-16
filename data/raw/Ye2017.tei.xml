@@ -1,0 +1,1715 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Solvers&apos; participation in crowdsourcing platforms: Examining the impacts of trust, and benefit and cost factors</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+				<date type="published" when="2017-02-16">16 February 2017</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Jonathan</forename><surname>Ye</surname></persName>
+							<email>jonathan.ye@auckland.ac.nz</email>
+							<affiliation key="aff0">
+								<orgName type="department">Department of Information Systems and Operations Management</orgName>
+								<orgName type="institution">The University of Auckland</orgName>
+								<address>
+									<addrLine>12 Grafton Road</addrLine>
+									<postCode>1142</postCode>
+									<settlement>Auckland</settlement>
+									<country key="NZ">New Zealand</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Atreyi</forename><surname>Kankanhalli</surname></persName>
+							<email>atreyi@comp.nus.edu.sg</email>
+							<affiliation key="aff1">
+								<orgName type="department">Department of Information Systems</orgName>
+								<orgName type="institution">National University of Singapore</orgName>
+								<address>
+									<country key="SG">Singapore</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Solvers&apos; participation in crowdsourcing platforms: Examining the impacts of trust, and benefit and cost factors</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date type="published" when="2017-02-16">16 February 2017</date>
+						</imprint>
+					</monogr>
+					<idno type="MD5">A33C54CBF17AFBEE1F45A728D16BCB41</idno>
+					<idno type="DOI">10.1016/j.jsis.2017.02.001</idno>
+					<note type="submission">Received 29 January 2014 Received in revised form 29 January 2017 Accepted 6 February 2017</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.7.3" ident="GROBID" when="2023-06-16T09:24+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>Crowdsourcing Solver participation Social exchange theory Trust Costs Benefits TaskCN</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Organizations are increasingly crowdsourcing their tasks to unknown individual workers, i.e., solvers. Solvers' participation is critical to the success of crowdsourcing activities. However, challenges exist in attracting solvers to participate in crowdsourcing. In this regard, prior research has mainly investigated the influences of benefit factors on solvers' intention to participate in crowdsourcing. Thus, there is a lack of understanding of the cost factors that influence actual participation behavior, in conjunction with the benefits. Additionally, the role of trust in the cost-benefit analysis remains to be explored. Motivated thus, based on social exchange theory and context-related literature, we develop a model to explain the impacts of benefit and cost factors as well as trust on solver participation behavior in crowdsourcing. The model was tested using survey and archival data from 156 solvers on a large crowdsourcing platform. As hypothesized, monetary reward, skill enhancement, work autonomy, enjoyment, and trust were found to positively affect solvers' participation in crowdsourcing, while cognitive effort negatively affects their participation. In addition, it was found that monetary reward positively affects trust (trust partially mediates its effect on participation behavior), while loss of knowledge power negatively affects trust. The theoretical contributions and practical implications of the study are discussed.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Introduction</head><p>The large-scale interconnectivity afforded through Internet-based technologies has transformed how organizational tasks are being performed <ref type="bibr" target="#b15">(Deng et al., 2016;</ref><ref type="bibr" target="#b24">Geri et al., 2017)</ref>. Firms are increasingly leveraging the wisdom of crowds to perform a variety of tasks, e.g., to obtain market feedback about products, undertake tedious work, and collect novel ideas <ref type="bibr" target="#b51">(Piezunka and Dahlander, 2015;</ref><ref type="bibr" target="#b71">Ye and Kankanhalli, 2015)</ref>. This phenomenon of crowdsourcing is defined as the act of recruiting a large group of undefined individuals, i.e., solvers, to undertake organizational tasks through Internet-based platforms <ref type="bibr" target="#b31">(Howe, 2008)</ref>. Strategically, crowdsourcing is considered as an important opportunity by businesses to gain external expertise and lower their costs <ref type="bibr" target="#b38">(Kietzmann, 2017)</ref>. With innovation and talent management being major strategic priorities for CEOs <ref type="bibr" target="#b41">(KPMG, 2016)</ref>, crowdsourcing serves as a way to foster organizational innovation through tapping external solvers' knowledge and creativity <ref type="bibr" target="#b45">(Majchrzak and Malhotra, 2013)</ref>. Indeed, participation of solvers is critical to the viability and success of crowdsourcing <ref type="bibr" target="#b0">(Afuah and Tucci, 2012;</ref><ref type="bibr" target="#b7">Boons et al., 2015)</ref>. However, challenges exist in sustaining solver participation in crowdsourcing <ref type="bibr" target="#b7">(Boons et al., 2015;</ref><ref type="bibr" target="#b27">Greengard, 2011)</ref>, such as the difficulty of motivating solver participation with appropriate incentives <ref type="bibr" target="#b45">(Majchrzak and Malhotra, 2013)</ref>. With varied incentives being proposed <ref type="bibr" target="#b24">(Geri et al., 2017;</ref><ref type="bibr" target="#b40">Kaufman et al., 2011)</ref>, monetary reward alone may not be sufficient to motivate solvers to participate <ref type="bibr" target="#b18">(Feller et al., 2012;</ref><ref type="bibr" target="#b72">Zheng et al., 2011)</ref>. Further, the costs incurred during crowdsourcing need to be identified and addressed. Without knowledge of the antecedents of solvers' participation, the performance of crowdsourcing may be undermined <ref type="bibr" target="#b0">(Afuah and Tucci, 2012;</ref><ref type="bibr" target="#b7">Boons et al., 2015)</ref>. Thus, it is important for firms and crowdsourcing platforms to understand what motivates and inhibits solvers from participating in crowdsourcing.</p><p>To date, a few studies have examined solvers' participation in crowdsourcing conceptually (e.g., <ref type="bibr" target="#b63">Terwiesch and Xu, 2008</ref>) and empirically (e.g., <ref type="bibr" target="#b7">Boons et al., 2015;</ref><ref type="bibr" target="#b15">Deng et al., 2016;</ref><ref type="bibr" target="#b72">Zheng et al., 2011)</ref>. However, prior research has mainly focused on the influences of expected benefits (extrinsic or intrinsic motivations) on solvers' intention to participate in crowdsourcing. There is a need for theoretically-driven empirical research which investigates the influence of benefit factors on solvers' actual participation in crowdsourcing, as there could be a gap between intention and actual behavior <ref type="bibr" target="#b57">(Sheeran and Webb, 2016)</ref>. Furthermore, it has been suggested that participation in crowdsourcing may incur costs in terms of spending time and effort to understand the problems and propose solutions <ref type="bibr" target="#b0">(Afuah and Tucci, 2012)</ref>. Such costs can hinder solvers' participation in crowdsourcing, especially in the context of financially rewarded competition-based crowdsourcing <ref type="bibr" target="#b70">(Ye and Kankanhalli, 2013</ref>). Yet there is a lack of research that identifies and empirically examines the influence of cost factors on solvers' actual participation in crowdsourcing.</p><p>Additionally, solvers may encounter risks such as firms' opportunistic behaviors (e.g., rejecting their solutions to tasks and not paying them) and their ideas being revealed to peers (other solvers) <ref type="bibr" target="#b0">(Afuah and Tucci, 2012;</ref><ref type="bibr" target="#b18">Feller et al., 2012)</ref>. Such risks heighten the importance of trust during solvers' participation. Previous research suggests that in online environments, trust can encourage participation <ref type="bibr">(Jarvenpaa et al., forthcoming;</ref><ref type="bibr" target="#b39">Kim, 2014)</ref> and may mediate the relationship between environmental conditions and future participation (e.g., <ref type="bibr" target="#b53">Porter and Donthu, 2008)</ref>. However, there is a lack of research that explains the direct and mediating impacts of trust on solvers' participation in crowdsourcing. Thus, combined together, there is a need to examine the influences of costs and benefits on solvers' participation in crowdsourcing in conjunction with the effects of trust.</p><p>Motivated by these knowledge gaps, this study aims to answer the research questions: (1) How do trust, cost, and benefit factors affect solvers' participation in crowdsourcing? and (2) Does trust mediate the effects of certain benefit and cost factors on solvers' participation? Considering the plurality of crowdsourcing types, we focus on the common approach of financially rewarded competition-based crowdsourcing instead of voluntary collaboration-based crowdsourcing, which may be mainly intrinsically motivated <ref type="bibr" target="#b7">(Boons et al., 2015;</ref><ref type="bibr" target="#b70">Ye and Kankanhalli, 2013)</ref>. Based on social exchange theory <ref type="bibr" target="#b5">(Blau, 1964)</ref> and context-related literature, we develop a model to explain solvers' participation in crowdsourcing in terms of perceived costs, benefits, and trust in the crowdsourcing platform. The model is tested with survey and archival data from 156 solvers in a large crowdsourcing platform and found to be largely supported.</p><p>This study contributes to the crowdsourcing literature by examining solvers' actual participation behavior in crowdsourcing, modeling and testing the influences of cost concerns in addition to benefits on solver participation, and exploring the role of trust in this context. It also provides insights to practitioners for attracting and sustaining solvers' participation in crowdsourcing platforms.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Conceptual background</head><p>We first review existing empirical studies and theories that explain solvers' intention to participate in crowdsourcing. From the review, we identify the research gap this study seeks to address. We then describe our theoretical foundation, social exchange theory, and justify why we use it in this study. While social exchange theory provides the overarching logic for our model, we make use of other relevant literature for more specific theorizing of the constructs in our study context. We subsequently review this literature to identify relevant benefit and cost factors for solvers' participation. Last, we build on previous literature on trust in technology to identify antecedents and effects of trust in the context of crowdsourcing participation.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Review of studies on solvers' crowdsourcing participation intention</head><p>Through our literature review, we identified several theories i.e., value theory, value expectancy theory, motivation theory, social identity theory, and value sensitive design theory, that have been applied to explain solvers' participation intention or continuance in crowdsourcing (see Table <ref type="table" target="#tab_0">1</ref>). Deriving from value theory, <ref type="bibr" target="#b62">Sun et al. (2011)</ref> conducted a survey in TaskCN, a Chinese crowdsourcing website and found that hedonic value (enjoyment) enhances solvers' continuance intention. This relationship was partially mediated by satisfaction with the process of crowdsourcing. Following the previous study, <ref type="bibr" target="#b61">Sun et al. (2012)</ref> developed a model for solvers' continuance intention based on value expectancy theory. Their survey study of solvers from TaskCN reported that both extrinsic (monetary reward) and intrinsic (enjoyment) motivations enhance solvers' intention to continue participating in crowdsourcing. In a similar vein, <ref type="bibr" target="#b72">Zheng et al. (2011)</ref> used motivation theory and found that both intrinsic motivation (enjoyment) and the extrinsic motivation to gain recognition enhance solvers' participation intention in TaskCN. Based on the same theory, <ref type="bibr" target="#b24">Geri et al. (2017)</ref> conducted surveys on three different crowdsourcing platforms and reported the positive impacts of reward awareness, prestige, and reciprocity on individual's selfreported content-adding behaviors. Another survey study by <ref type="bibr" target="#b7">Boons et al. (2015)</ref> used social identity theory to explain the impact of pride on members' level of activity in a crowdsourcing platform. Other than these quantitative studies, <ref type="bibr" target="#b15">Deng et al. (2016)</ref> used value sensitive design theory to guide their interpretive field study and uncovered nine shared values of crowd workers, i.e., access, autonomy, fairness, transparency, communication, security, accountability, making an impact, and dignity.</p><p>Table <ref type="table" target="#tab_0">1</ref> shows that existing research mainly examines the impacts of potential benefits on solvers' intention to participate in crowdsourcing. In other words, there is a lack of research on: (1) the antecedents of solvers' actual participation behavior (which may differ from participation intention), (2) the identification and influences of cost concerns, and (3) the mediating effect of trust on their participation. As the theories in Table <ref type="table" target="#tab_0">1</ref> are able to explain the influences of benefits on solvers' participation, but not the impacts of costs, to address the gap, we draw on social exchange theory to explain the phenomenon.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Social exchange theory</head><p>Social exchange theory explains human behavior in social exchanges <ref type="bibr" target="#b5">(Blau, 1964)</ref> from a cost-benefit perspective <ref type="bibr" target="#b35">(Kankanhalli et al., 2005)</ref>. It posits that individuals behave in ways that maximize benefits obtained and minimize costs from an exchange <ref type="bibr" target="#b47">(Molm, 1997)</ref> and that they take part in an exchange only when they expect rewards to exceed the costs incurred <ref type="bibr" target="#b21">(Gefen and Ridings, 2002)</ref>. Social exchange is not governed by explicit rules or agreements. In such exchanges, people do others a favor with a general expectation of some future return but no clear expectation of what that return will be. This belief of future returns is central to a social exchange, because the lack of explicit rules and regulations means that people rely on this belief to justify their expected benefits from the exchange. Therefore, social exchange assumes the existence of relatively long-term relationships of interest as opposed to one-off exchanges <ref type="bibr" target="#b47">(Molm, 1997)</ref>.</p><p>These principles of social exchange, i.e., a cost/benefit analysis of exchange, have been used to understand knowledge sharing phenomena in online communities and organizations <ref type="bibr" target="#b32">(Hsu et al., 2007;</ref><ref type="bibr" target="#b65">Wasko and Faraj, 2005;</ref><ref type="bibr">Ye et al., 2015)</ref>. They suggest that members will contribute to the organization or community as long as they obtain net benefits from their contributions such as reputation, recognition, and enjoyment from helping others <ref type="bibr" target="#b35">(Kankanhalli et al., 2005)</ref>, or expect others to return their favors in the future due to reciprocity <ref type="bibr" target="#b19">(Feng and Ye, 2016;</ref><ref type="bibr" target="#b24">Geri et al., 2017)</ref>. Social exchange theory has been used to understand knowledge sharing behavior in various contexts. For example, <ref type="bibr" target="#b35">Kankanhalli et al. (2005)</ref> applied the theory to explain the usage of electronic knowledge repositories (EKRs) by employees to contribute knowledge, while <ref type="bibr">Ye et al. (2015)</ref> utilized social exchange theory to examine knowledge contribution in a variety of online communities.</p><p>In the context of crowdsourcing, solvers submit solutions (knowledge) to crowdsourced problems <ref type="bibr" target="#b71">(Ye and Kankanhalli, 2015)</ref>. Fundamentally, crowdsourcing participation is a type of knowledge contribution, though the specific costs and benefits of such contribution may depend on the context <ref type="bibr" target="#b70">(Ye and Kankanhalli, 2013;</ref><ref type="bibr" target="#b44">Leimeister et al., 2009)</ref>. Specifically, solvers are likely to base their decision on evaluating the benefits and costs of participation (e.g., money obtained vs. time and effort spent). For example, they may consider whether their solutions will win rewards and if the value of their proposals will be fairly acknowledged <ref type="bibr" target="#b0">(Afuah and Tucci, 2012)</ref>. Thus, we consider social exchange theory as an appropriate theoretical lens to explain solvers' participation in crowdsourcing since it posits that individuals will participate in such platforms based on a cost-benefit analysis of the exchange. We use social exchange theory as an overarching theory to guide our model development. However, while social exchange theory provides the general logic for the model, other context-related literature is used to ground more specific theorizing of the model constructs and relationships. Thus, we review previous crowdsourcing and knowledge management literature to identify the specific benefit and cost factors relevant to solvers' participation in crowdsourcing.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Benefits of participation in crowdsourcing</head><p>Other than the survey studies (e.g., <ref type="bibr" target="#b61">Sun et al., 2012;</ref><ref type="bibr" target="#b7">Boons et al., 2015;</ref><ref type="bibr" target="#b24">Geri et al., 2017)</ref> discussed above, a few case studies (e.g., <ref type="bibr" target="#b9">Brabham, 2008</ref><ref type="bibr" target="#b10">Brabham, , 2010;;</ref><ref type="bibr" target="#b44">Leimeister et al., 2009)</ref> have described various motivations of solvers' participation in crowdsourcing. Apart from motivations such as winning monetary awards, gaining reputation, and enjoyment, the case studies suggest that solvers may also be motivated by other benefits, such as skill enhancement <ref type="bibr" target="#b9">(Brabham, 2008)</ref> and work autonomy <ref type="bibr" target="#b10">(Brabham, 2010;</ref><ref type="bibr" target="#b15">Deng et al., 2016)</ref>. Additionally, <ref type="bibr" target="#b40">Kaufman et al. (2011)</ref>, through a survey of Mechanical Turk workers, ranked various motivations of solver participation. With a number of motivational factors being previously suggested, it is important to make sense of the salient factors through a theoretically-grounded empirical study.</p><p>Based on our review (see Table <ref type="table" target="#tab_1">2</ref>), the five expected benefits were identified and included as antecedents of solvers' participation in our model. From our review, we see that there is a lack of research identifying and examining the influences of cost factors and trust on solvers' participation in crowdsourcing. As per social exchange theory, expected costs will be considered in the cost-benefit calculation before initiating an exchange and should affect individuals' behavior <ref type="bibr" target="#b47">(Molm, 1997;</ref><ref type="bibr" target="#b65">Wasko and Faraj, 2005;</ref><ref type="bibr">Ye et al., 2015)</ref>. Further, prior research suggests that trust plays an important role in predicting people's behaviors in online environments <ref type="bibr">(Jarvenpaa et al., forthcoming)</ref>. Thus, we will investigate the influences of costs and trust in addition to benefit factors in our model of solvers' participation in crowdsourcing.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Costs of participation</head><p>Previous studies have suggested that solvers can incur costs when participating in crowdsourcing (e.g., <ref type="bibr" target="#b0">Afuah and Tucci, 2012;</ref><ref type="bibr" target="#b17">Doan et al., 2011)</ref>. From Tables <ref type="table" target="#tab_0">1</ref> and<ref type="table" target="#tab_1">2</ref>, however, we see a lack of empirical studies identifying and examining the influence of cost factors on solvers' participation in crowdsourcing. To address the gap, we draw from the knowledge management literature to identify possible cost factors. This is because solvers' contribution of solutions to crowdsourcing tasks can be perceived as a form of online knowledge contribution <ref type="bibr" target="#b44">(Leimeister et al., 2009)</ref>.</p><p>The knowledge management literature suggests that knowledge sharing could incur the costs of loss of knowledge power and cognitive effort for knowledge contributors <ref type="bibr" target="#b11">(Cillo, 2005;</ref><ref type="bibr" target="#b35">Kankanhalli et al., 2005)</ref>. These costs have been suggested to discourage individual's knowledge contribution. In the context of crowdsourcing, too, solvers are likely to expend time and effort to solve tasks and contribute their solutions <ref type="bibr" target="#b0">(Afuah and Tucci, 2012)</ref>. Also, they may perceive loss of power associated with the knowledge that they have shared. As per social exchange theory, the existence of such costs may harm exchanges and discourage individuals' future participation in such exchanges <ref type="bibr" target="#b5">(Blau, 1964)</ref>. Thus, we expect these costs i.e., loss of knowledge power and cognitive effort, to hinder solvers' participation in crowdsourcing.</p><p>In addition to the cost-benefit analysis mentioned above, participation in crowdsourcing could be determined by solvers' trust in the crowdsourcing platform <ref type="bibr" target="#b18">(Feller et al., 2012)</ref>. Thus, we include trust in the crowdsourcing platform in our model, which is explained next. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Trust in the crowdsourcing platform</head><p>There exist two main streams of literature studying trust in technology, i.e., interpersonal trust and system-like trust <ref type="bibr" target="#b43">(Lankton et al., 2015)</ref>. Since crowdsourcing platforms show a high degree of humanness, e.g., volition in solution evaluation and rewarding <ref type="bibr" target="#b18">(Feller et al., 2012)</ref>, as per <ref type="bibr" target="#b43">Lankton et al. (2015)</ref>, human-like trust in technology appears more appropriate for our context. Here, trust in the platform implies that the solver trusts that the platform will ensure fair evaluation and reward for his/her solution i.e., the platform acts as intermediary between the solver and other solvers or crowdsourcing firms. We thus define trust as a solver's implicit set of beliefs that the crowdsourcing platform will fairly evaluate solvers' solution and reward them for their work.</p><p>Past literature posits that trust matters in the face of risks and prevailing vulnerabilities (Jarvenpaa et al., forthcoming) and helps facilitate future behaviors (e.g., <ref type="bibr" target="#b39">Kim, 2014)</ref>. Trust is considered a relevant factor given the risks and vulnerabilities inherent in online activities <ref type="bibr">(Jarvenpaa et al., forthcoming)</ref>. In the context of crowdsourcing, risk concerns regarding seeker firms' opportunistic behaviors through the platform prevail <ref type="bibr" target="#b0">(Afuah and Tucci, 2012)</ref>. Thus, trust is an important factor that may affect solver participation in our study. Also, past crowdsourcing literature suggests that trust is critical for the success of crowdsourcing and may affect solvers' participation <ref type="bibr" target="#b18">(Feller et al., 2012)</ref>. However, there is a lack of research that has modeled and empirically tested its impacts. As trust reduces the need to act in a self-protective way and facilitates risk-taking behavior <ref type="bibr" target="#b33">(Jarvenpaa et al., 1998)</ref>, we posit that trust in the crowdsourcing platform will encourage solvers to participate in crowdsourcing in the face of potential risks and opportunistic behaviors.</p><p>Several studies have explored the antecedents of trust in online activities (e.g., <ref type="bibr" target="#b55">Ridings et al., 2002;</ref><ref type="bibr" target="#b53">Porter and Donthu, 2008)</ref>. <ref type="bibr">Jarvenpaa et al. (forthcoming)</ref> review prior literature and find that structural assurances (e.g., 3rd party certificates, privacy protection, and escrow services) are important antecedents of trust in e-commerce. <ref type="bibr" target="#b53">Porter and Donthu (2008)</ref> find that perceived effort to provide quality content and to foster member embeddedness (e.g., seek opinions of the members) help build trust in firm-sponsored virtual communities. In the context of crowdsourcing, past literature suggests that assuring solvers of being rewarded properly <ref type="bibr" target="#b18">(Feller et al., 2012)</ref> and mitigating the costs of participation <ref type="bibr" target="#b68">(Yang et al., 2008)</ref> should influence trust in the crowdsourcing platform. Hence, we posit that monetary reward, loss of knowledge power, and cognitive effort will affect trust. Based on the above arguments, we empirically examine the antecedents and consequence of trust in the context of crowdsourcing.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Research model and hypotheses</head><p>Drawing on social exchange theory and the context-related literature described above, we develop a model to explain solvers' participation behavior in crowdsourcing as shown in Fig. <ref type="figure" target="#fig_0">1</ref>. We propose that monetary reward, skill enhancement, peer reputation, enjoyment, work autonomy and trust in the crowdsourcing platform will enhance solvers' participation in crowdsourcing, while cognitive effort and loss of knowledge power will inhibit their participation. We also propose that monetary reward, cognitive effort, and loss of knowledge power impact trust in the crowdsourcing platform.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Monetary reward</head><p>In competition-based crowdsourcing, monetary reward is typically provided as an incentive for solvers <ref type="bibr" target="#b31">(Howe, 2008)</ref> i.e., solvers can expect to receive such reward from firms if their solutions are selected <ref type="bibr" target="#b40">(Kaufman et al., 2011)</ref>. Previous literature suggests that extrinsic motivations such as monetary reward are important drivers for individuals to undertake an action (e.g., <ref type="bibr" target="#b9">Brabham, 2008</ref><ref type="bibr" target="#b10">Brabham, , 2010;;</ref><ref type="bibr" target="#b72">Zheng et al., 2011)</ref>. For example, <ref type="bibr" target="#b63">Terwiesch and Xu's (2008)</ref> analytic study suggests that monetary rewards will stimulate solvers' participation in crowdsourcing. In crowdsourcing platforms such as TaskCN, solvers may expect to receive money from seekers if their solutions are chosen <ref type="bibr" target="#b61">(Sun et al., 2012)</ref>. As per social exchange theory, expectation of monetary reward should motivate individuals to choose to act <ref type="bibr" target="#b47">(Molm, 1997;</ref><ref type="bibr" target="#b65">Wasko and Faraj, 2005)</ref>. Following the discussion above, we propose that expectation of monetary reward will enhance solvers' participation in crowdsourcing.</p><p>H1a. Monetary reward is positively related to solvers' participation in crowdsourcing.</p><p>It is recognized that the sustainability of a crowdsourcing platform is dependent on successful solvers being rewarded properly <ref type="bibr" target="#b24">(Geri et al., 2017;</ref><ref type="bibr" target="#b18">Feller et al., 2012)</ref>. Monetary reward is arguably the most important reward in crowdsourcing <ref type="bibr" target="#b61">(Sun et al., 2012)</ref>. As argued above, expectation of monetary rewards should increase future solver participation. Indeed, the likelihood of getting a monetary reward may heighten the perception of the reliability of a platform <ref type="bibr" target="#b36">(Kankanhalli et al., 2015)</ref>, and thereby enhance solvers' trust in the efficacy and fairness of the crowdsourcing process. Thus, solvers will believe that the crowdsourcing platform will ensure that their solution is properly rewarded if it is adopted <ref type="bibr" target="#b18">(Feller et al., 2012)</ref>. Conversely, a low expectation of monetary reward can lead solvers to focus on the potential loss and decrease their perception that the platform will fairly reward their effort. Hence, solvers will show a low trust in the crowdsourcing platform if so.</p><p>H1b. Monetary reward is positively related to solvers' trust in the crowdsourcing platform.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Skill enhancement</head><p>Skill enhancement refers to the degree to which solvers expect to enhance their expertise through receiving feedback from the crowdsourcing process or by learning from others' solutions. Previous research has suggested that to avoid wasting effort, solvers will select problems that they think will add to their knowledge and benefit them in the future <ref type="bibr" target="#b49">(Nov et al., 2010;</ref><ref type="bibr" target="#b59">Stewart and Gosain, 2006)</ref>. In the context of this study, solvers are likely to participate in crowdsourcing if they think they can improve their skills or expertise through the process. Moreover, when solvers propose solutions, the staff members in the crowdsourcing platform or firms may provide feedback so that solvers can identify where their solutions fall short and what should be improved <ref type="bibr" target="#b7">(Boons et al., 2015;</ref><ref type="bibr" target="#b58">Sieg et al., 2010)</ref>. Such feedback provides guidance for solvers to improve their proposed solutions and enhance their skills in particular areas <ref type="bibr" target="#b44">(Leimeister et al., 2009;</ref><ref type="bibr" target="#b49">Nov et al., 2010)</ref>.</p><p>Consistent with the above reasoning, <ref type="bibr" target="#b9">Brabham (2008)</ref> noted that some people are motivated to participate in iStockphoto<ref type="foot" target="#foot_1">1</ref> by the opportunity to learn new photography skills. In <ref type="bibr" target="#b10">Brabham's (2010)</ref> case study of Threadless,<ref type="foot" target="#foot_2">2</ref> the opportunity to develop T-shirt design skills was found to be a factor that motivated individuals to submit designs. For photo-sharing website Flickr, <ref type="bibr" target="#b49">Nov et al. (2010)</ref> noted that self-development is positively related to individual participation. In the context of our study, solvers may be able to learn or improve skills, such as marketing their solutions to firms, communication, logo or product outlook design, programming, and writing. Such learning opportunities could motivate solvers to participate. Thus, we expect that H2. Skill enhancement is positively related to solvers' participation in crowdsourcing.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Peer reputation</head><p>Social exchange theory posits that individuals will be motivated to undertake an action if they can receive social rewards such as approvals, status, and respect from it <ref type="bibr" target="#b5">(Blau, 1964)</ref>. In the context of crowdsourcing, such social rewards can be derived from peers (other solvers) in the form of enhanced reputation <ref type="bibr" target="#b44">(Leimeister et al., 2009;</ref><ref type="bibr" target="#b49">Nov et al., 2010)</ref> where peers respect and acknowledge solvers' skills and contributions to the platform. Peer reputation is an indicator of status in a community and fulfills fundamental human needs <ref type="bibr" target="#b12">(Constant et al., 1994)</ref>. Thus, peer reputation should motivate solvers to participate in crowdsourcing. For example, in their case study of the SAPien community, <ref type="bibr" target="#b44">Leimeister et al. (2009)</ref> found that individuals' need for peer appreciation and acknowledgement of their knowledge is a motivator for their participation in crowdsourcing. A similar finding has been reported in <ref type="bibr" target="#b9">Brabham's (2008)</ref> case study of iStockphoto <ref type="bibr">and Geri et al.'s (2017)</ref> field study of a programmer Q&amp;A website. In the context of our study, successful solvers are interviewed by TaskCN to share their winning experience and their suggestions for other solvers. These interviews are shown on the winning solver webpage<ref type="foot" target="#foot_3">3</ref> of TaskCN. For each task, the winning solution is publicized for one week. Further, there are forums in TaskCN in which solvers interact with each other. Through these means, successful solvers become known to their peers. Following the reasoning above, we expect that peer reputation motivates solvers to participate in crowdsourcing.</p><p>H3. Peer reputation is positively related to solvers' participation in crowdsourcing.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Enjoyment</head><p>In general, individuals will undertake tasks if they enjoy solving them <ref type="bibr" target="#b1">(Agarwal and Karahanna, 2000)</ref>. Prior research suggests that solvers may be motivated by the enjoyment of taking up new or interesting tasks <ref type="bibr" target="#b25">(Goh et al., 2017;</ref><ref type="bibr" target="#b49">Nov et al., 2010;</ref><ref type="bibr" target="#b72">Zheng et al., 2011)</ref>. The crowdsourced tasks can arouse their interest and curiosity to explore new fields. The more enjoyment they perceive, the more likely they are to participate in future crowdsourcing. In <ref type="bibr">Sun et al.'s (2011)</ref> study, hedonic value (enjoyment) is found to positively affect solvers' continuance intention to participate in crowdsourcing. <ref type="bibr" target="#b72">Zheng et al. (2011)</ref> and <ref type="bibr" target="#b61">Sun et al. (2012)</ref> also noted that enjoyment (part of intrinsic motivation) enhances solvers' intention to participate in crowdsourcing. Thus, we hypothesize H4. Enjoyment is positively related to solvers' participation in crowdsourcing.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Work autonomy</head><p>Work autonomy refers to the degree to which the work provides freedom, independence, and discretion in determining what to do and the procedures to be used in carrying it out <ref type="bibr" target="#b29">(Hackman and Oldham, 1975)</ref>. Prior studies have found that work autonomy influences employees' perceptions of their ability to initiate, perform, and complete tasks <ref type="bibr" target="#b67">(Xie and Johns, 1995)</ref> and their performance <ref type="bibr" target="#b28">(Haas, 2010)</ref>.</p><p>In the context of this study, crowdsourcing can allow solvers autonomy in deciding which tasks to solve and how to solve them <ref type="bibr" target="#b40">(Kaufman et al., 2011)</ref>. The benefit of work autonomy should motivate them to participate in crowdsourcing. For example, <ref type="bibr">Deng et al.'s (2016)</ref> narrative analysis found that crowd workers (solvers) value autonomy in the crowdsourcing platform. <ref type="bibr" target="#b10">Brabham's (2010)</ref> case study found that the potential to take up freelance work is one of the reasons for solvers to participate in Threadless. <ref type="bibr" target="#b72">Zheng et al. (2011)</ref> also made similar observations regarding TaskCN. Hence, we hypothesize H5. Work autonomy is positively related to solvers' participation in crowdsourcing.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Cognitive effort</head><p>Cognitive effort refers to the effort required for problem solving on crowdsourcing platforms, bridging the gaps between the context of past solutions or knowledge and that of current problems. Psychologists have noted that humans have limited cognitive resources <ref type="bibr" target="#b20">(Garbarino and Edell, 1997;</ref><ref type="bibr" target="#b56">Russo and Dosher, 1983)</ref>. Cognitive effort is costly, and as per social exchange theory <ref type="bibr" target="#b47">(Molm, 1997)</ref>, humans try to conserve their efforts. In the context of crowdsourcing, solvers need to exert cognitive effort to understand the task requirements, generate ideas, and come up with solutions <ref type="bibr" target="#b8">(Boudreau and Lakhani, 2009)</ref>. In general, to solve crowdsourced tasks, they would need cognitive effort to connect their expertise with proposed problems and develop solutions for them. Solvers are not likely to participate in crowdsourcing if they perceive that high cognitive effort is required for participation. Thus, we expect H6a. Cognitive effort is negatively related to solvers' participation in crowdsourcing.</p><p>Solvers may expect the crowdsourcing platform to help reduce their cognitive effort, which can build their trust in the platform. For instance, crowdsourcing platforms can provide winning submissions as examples for other solvers <ref type="bibr" target="#b70">(Ye and Kankanhalli, 2013)</ref> and offer feedback to solvers if their submissions are not adopted <ref type="bibr" target="#b7">(Boons et al., 2015;</ref><ref type="bibr" target="#b71">Ye and Kankanhalli, 2015)</ref>. Providing past solution examples could help reduce the cognitive effort needed and thereby facilitate solvers to formulate their solutions more easily <ref type="bibr" target="#b68">(Yang et al., 2008)</ref>. Also, platform functionalities supporting seeker-solver interactions and communications (e.g., feedback seeking) can help reduce the risk of potential disputes and misunderstanding <ref type="bibr" target="#b15">(Deng et al., 2016)</ref>. This can alleviate solvers' cognitive effort needed for problem solving, which can help enhance their trust in the platform.</p><p>If high cognitive effort is perceived, this may heighten solvers' belief that the crowdsourcing platform is not helpful in facilitating their participation and lead them to lower their trust in the platform. Conversely, when less cognitive effort is seen to be needed for completing crowdsourcing tasks, solvers would believe that crowdsourcing platforms are helpful in supporting their participation and thus, they will place a higher trust in the platform. Therefore, we hypothesize H6b. Cognitive effort is negatively related to solvers' trust in the crowdsourcing platform.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Loss of knowledge power</head><p>Loss of knowledge power refers to the loss of proprietary knowledge and the sole claim to the benefits stemming from such knowledge <ref type="bibr" target="#b35">(Kankanhalli et al., 2005)</ref>. In the knowledge management literature, the loss of knowledge power is reported as a barrier to knowledge sharing <ref type="bibr" target="#b14">(Davenport and Prusak, 1998)</ref>. By sharing a part of their unique knowledge, knowledge contributors give up sole claim to the benefits stemming from such knowledge <ref type="bibr" target="#b26">(Gray, 2001;</ref><ref type="bibr" target="#b35">Kankanhalli et al., 2005)</ref>. This cost may discourage individuals to share their knowledge. In the context of crowdsourcing, knowledge can be perceived as a source of power by solvers. They may fear losing their power or value if firms and peers come to know of their ideas prior to being rewarded <ref type="bibr" target="#b0">(Afuah and Tucci, 2012)</ref>. As per social exchange theory, this may result in potential solvers not taking part in the exchange, e.g., not participating in crowdsourcing. Hence, we expect H7a. Loss of knowledge power is negatively related to solvers' participation in crowdsourcing.</p><p>Crowdsourcing platforms require solvers to reveal their proposed solutions for evaluation <ref type="bibr" target="#b71">(Ye and Kankanhalli, 2015)</ref>, resulting in a potential loss of knowledge power. Crowdsourcing firms may act opportunistically and not pay solvers once solutions are obtained <ref type="bibr" target="#b0">(Afuah and Tucci, 2012)</ref>. Solvers may believe that the crowdsourcing platform will misuse their submissions and take advantage of information asymmetries for its own benefits. As a result, this would decrease solvers' trust in the crowdsourcing platform. Further, uncertainties exist in evaluating the quality of solutions <ref type="bibr" target="#b71">(Ye and Kankanhalli, 2015)</ref>. Even if crowdsourcing firms are not opportunistic, not winning may also cause solvers to think less of crowdsourcing platform's competence in fairly evaluating their submission and hence lower their trust in the platform. Similarly, previous literature suggests that the perception of loss of knowledge power may intensify solvers' belief in the opportunistic behavior of firms and platforms <ref type="bibr" target="#b0">(Afuah and Tucci, 2012)</ref>, which will decrease trust in the platform and community <ref type="bibr" target="#b53">(Porter and Donthu, 2008)</ref>. Accordingly, we hypothesize:</p><p>H7b. Loss of knowledge power is negatively related to solvers' trust in the crowdsourcing platform.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Trust</head><p>Past research in online settings suggests that trust reduces an individual's need to act in a self-protective manner with others <ref type="bibr" target="#b53">(Porter and Donthu, 2008)</ref>, facilitates risk-taking behaviors <ref type="bibr" target="#b33">(Jarvenpaa et al., 1998)</ref> and contributes to ongoing exchanges <ref type="bibr">(Jarvenpaa et al., forthcoming)</ref>, e.g., ongoing crowdsourcing participation. In the context of this study, when solvers trust that the crowdsourcing platform will protect their knowledge, they believe that the platform will reward them fairly and would not misuse their solutions <ref type="bibr" target="#b18">(Feller et al., 2012)</ref>. Hence, they will increase their participation. In contrast, low trust reflects the belief that solvers' efforts will not be fairly rewarded and the crowdsourcing firms and platforms may take advantage of solvers for their own benefits. As a result, solvers will decrease their participation.</p><p>H8. Trust in the crowdsourcing platform is positively related to solvers' participation in crowdsourcing.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Research methodology</head><p>Survey methodology was used to test our research model. To eliminate common method variance caused by a single data source <ref type="bibr" target="#b52">(Podsakoff et al., 2003)</ref>, we employed a survey to collect the independent variables, but used archival data from the platform for the dependent variable (actual solver participation behavior in crowdsourcing). Also, to better assess causality <ref type="bibr" target="#b48">(Neuman, 2005)</ref>, we collected archival data for the dependent variable three months after the survey for the independent variables. This ensures that the independent variables temporally precede the dependent variable.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Instrument development and conceptual validation</head><p>Since several constructs were adapted to the study context, we conducted a systematic procedure of instrument development <ref type="bibr" target="#b16">(DeVellis, 2003)</ref> i.e., item creation and scale development, conceptual validation, and instrument testing. As far as possible, we adapted existing scales to our study context. Other than that, new items were developed as per the construct definitions shown in Table <ref type="table" target="#tab_2">3</ref> or through interviews with solvers. Next, items for each construct were conceptually validated through unlabeled and labeled sorting exercises. In each exercise, two sets of four judges were used. The inter-judge agreement (i.e., Cohen's Kappa and agreement level) and item placement hit ratio were used to assess the conceptual reliability and validity of the instrument. Our analysis shows that in both rounds of item sorting, the Kappa score agreement level and hit ratios for all items were greater than 0.8, suggesting sufficient item reliability and validity <ref type="bibr" target="#b33">(Jarvenpaa et al., 1998)</ref>. Last, the validated items were combined together into the overall questionnaire and tested in a pilot study, which will be described next.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Pilot study</head><p>A pilot study was conducted to assess the reliability and validity and to identify any potential problems with the instrument, as indicated by the respondents. We pilot tested the instrument in zhubajie.com, a crowdsourcing platform similar to, but smaller than TaskCN that was used for our main study. To pilot test the instrument, we surveyed 106 solvers in zhubajie.com. Based on the pilot test results, one item each for Monetary Reward and Skill Enhancement were removed due to their low loadings. After removing these items, the exploratory factor analysis demonstrated sufficient instrument validity. We also edited item wordings in the instrument according to the feedback from the pilot test and follow-up interviews. The final instrument is shown in Table <ref type="table" target="#tab_3">4</ref>. All items were measured on 7 point Likert scales anchored from Strongly Disagree to Strongly Agree.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Data collection</head><p>Subsequently, we collected data from solvers in TaskCN.com to test the model. TaskCN is a third party platform founded in 2005 to host crowdsourcing tasks. It is considered as one of the most popular and established crowdsourcing websites in China. By the end of 2016, TaskCN hosted over 3.6 million registered solvers and over 61 thousand tasks. <ref type="foot" target="#foot_4">4</ref> This platform has been featured not only in the media, but also in IS research (e.g., <ref type="bibr" target="#b61">Sun et al., 2012;</ref><ref type="bibr" target="#b72">Zheng et al., 2011)</ref>. The selection of this platform allows us a sufficiently large pool of solvers to test our model. Furthermore, the existence of previous studies on this platform allows us to compare our results with prior work.</p><p>We invited solvers in TaskCN to participate in our survey by sending emails to them through the internal messaging tool. As a token of appreciation for their participation, a $10 voucher was given to each respondent. A total of 165 responses were received of which 156 valid responses remained after removing incomplete data. We used the survey instrument to measure the independent variables. For the dependent variable (solvers' participation in crowdsourcing), we collected data on the number of submissions by the solver in the three months after the survey. We tested for non-response bias by comparing early and late respondents <ref type="bibr" target="#b3">(Armstrong and Overton, 1997)</ref>. T-tests of the differences between the earliest 10% and the last 10% respondents in terms of demographics revealed no systematic differences. Thus, there is no evidence of non-response bias in this study.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Control variables</head><p>We also included demographic and background information of the solvers as control variables in our model. These variables include solvers' age, gender, education, tenure, past experience, and previous performance in the crowdsourcing platform. Past experience refers to the number of tasks that solvers have participated in before. Previous performance refers to the number of times solvers have won rewards on the platform in the past. Also, the status of solvers and type of tasks may affect their participation in crowdsourcing. Status of solvers refers to whether they are professionals (status 1) or amateurs The degree to which the work provides substantial freedom and discretion in determining the choice of task type and the procedures to be used in carrying it out <ref type="bibr" target="#b29">Hackman and Oldham (1975)</ref> and <ref type="bibr" target="#b2">Ahuja et al. (2006)</ref> </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Cognitive effort</head><p>The efforts required for solvers to link their expertise with firms' problems and formulate their solutions</p><p>Adapted from <ref type="bibr" target="#b20">Garbarino and Edell (1997)</ref> </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Loss of knowledge power</head><p>The perception of power and unique value lost due to submitting solutions to tasks on the crowdsourcing platform that others may see or copy Adapted from <ref type="bibr" target="#b26">Gray (2001)</ref> Trust in the crowdsourcing platform</p><p>The belief in the good intent, competence, and reliability of the crowdsourcing platform with respect to solution evaluation and reward Adapted from <ref type="bibr" target="#b54">Putnam (1993)</ref> Solvers' participation in crowdsourcing</p><p>The number of tasks solvers have participated in a given time period Adapted from <ref type="bibr" target="#b72">Zheng et al. (2011)</ref> (status 0). Professional solvers who mainly rely on TaskCN for their income may be more likely to actively participate in crowdsourcing than amateur solvers. The types of tasks were classified according to the TaskCN task categories and were included as dummy variables. Since the difficulty of each type of task differs, this may affect solvers participation in crowdsourcing <ref type="bibr" target="#b70">(Ye and Kankanhalli, 2013)</ref>. The respondent demographics and background are summarized in Table <ref type="table" target="#tab_4">5</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Data analysis and results</head><p>For the analysis, structural equation modeling (SEM) was chosen over linear regression, because SEM can simultaneously analyze all paths with latent variables in one analysis <ref type="bibr" target="#b22">(Gefen et al., 2011)</ref>. Within SEM, Partial Least Squares (PLS) was chosen over co-variance based SEM for two reasons. First, the dependent variable (i.e., solvers' participation in crowdsourcing) is measured with archival data, which may not conform to the proportionality constraints and uncorrelated measurement errors of co-variance based SEM <ref type="bibr" target="#b22">(Gefen et al., 2011)</ref>. Second, PLS is a suitable choice for a multi-stage model <ref type="bibr" target="#b22">(Gefen et al., 2011;</ref><ref type="bibr" target="#b66">Wetzels et al., 2009)</ref>. We used SmartPLS 2.0 to analyze the data.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Instrument validity</head><p>To validate our survey instrument, convergent and discriminant validity tests were conducted <ref type="bibr" target="#b30">(Hair et al., 2009)</ref>.</p><p>Convergent validity was assessed by examining the Cronbach's a (CA) (&gt;0.7), composite reliability (&gt;0.7), average extracted variance (AVE) (&gt;0.5), and factor analysis results <ref type="bibr" target="#b60">(Straub et al., 2004)</ref>. Table <ref type="table">6</ref> shows that the values of CA, CR, and AVE for each model construct (all are reflective) satisfy the thresholds. Also, the factor loadings of each item on the intended   <ref type="formula">2005</ref>) TRU2: I believe that the platform will not misuse my solutions TRU3: I believe that the platform guarantees the rewards if solutions were adopted TRU4: I believe that the platform protects solvers' interests construct were larger than 0.7 (see Table <ref type="table" target="#tab_5">7</ref>). All the criteria are satisfied, suggesting sufficient convergent validity of the model constructs <ref type="bibr" target="#b60">(Straub et al., 2004)</ref>.</p><p>Discriminant validity was assessed by examining the indicator-factor loadings and comparing the construct AVEs with inter-construct correlations <ref type="bibr" target="#b23">(Gefen and Straub, 2005)</ref>. The results in Table <ref type="table" target="#tab_5">7</ref> show that all indicators load more strongly on their corresponding constructs than on other constructs in the model and the item loadings on unintended constructs were lower than 0.4. The results in Table <ref type="table">8</ref> also show that the square root of AVE is larger than the corresponding interconstruct correlations. Thus, the model constructs demonstrate sufficient discriminant validity. Also, we did not observe high correlations among predictors in the table, indicating the absence of multicollinearity.</p><p>Since we collected data for our independent variables and dependent variable from two independent sources, common method variance (CMV) should not be an issue in our study <ref type="bibr" target="#b52">(Podsakoff et al., 2003)</ref>. Nevertheless, Harman's single factor test was conducted by running an exploratory factor analysis with all variables included <ref type="bibr" target="#b52">(Podsakoff et al., 2003)</ref>. The factor analyses produced neither a single factor nor one general factor that accounted for the majority of the variance (&gt;50%). This suggests that common method bias is not a problem in this study.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Results of hypotheses testing</head><p>We tested our hypotheses using PLS-SEM with bootstrapping of 5000 samples <ref type="bibr" target="#b30">(Hair et al., 2009)</ref>. Table <ref type="table" target="#tab_6">9</ref> shows the hypothesis testing results. The model explains 45% of the variance in solvers' participation in crowdsourcing. As the results in Table <ref type="table" target="#tab_6">9</ref> show, among the control variables, previous performance and status are significantly related to solvers' participation in crowdsourcing. This suggests that professional solvers and those who performed better in the past tend to be more active participants.</p><p>As hypothesized, monetary reward, skill enhancement, enjoyment, work autonomy, and trust were positively related to solvers' participation in crowdsourcing (H1a, H2, H4, H5 and H8 are supported), while cognitive effort was negatively related to the DV (H6a is supported). In addition, consistent with our hypotheses, monetary reward was positively related to trust, while loss of knowledge power negatively affected trust (H1b and H7b are supported). However, contrary to our hypotheses, peer reputation and loss of knowledge power were not related to solvers' participation in crowdsourcing, while cognitive effort was not related to trust (H3, H6b, and H7a are not supported). </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Post hoc tests</head><p>To obtain a more comprehensive view of the phenomenon and enrich our understanding <ref type="bibr" target="#b64">(Venkatesh et al., 2013)</ref>, we post hoc tested for the mediating effect of trust. Following <ref type="bibr" target="#b4">Baron and Kenny's (1986)</ref> steps, we also conducted the Sobel test to detect the mediating effect. Since loss of knowledge power had no significant effect on the DV and cognitive effort had no significant effect on trust, we only tested the mediating effect of trust on the relationship between monetary reward and solver participation. We found that trust partially mediates the relationship between monetary reward and solver participation (T value = 2.45, p &lt; 0.05).</p><p>Further, since professional solvers may perceive trust, benefit, and cost factors differently from amateur solvers, we also post hoc tested the model separately for professional vs. amateur solvers. There were 122 amateur solvers and 34 professional solvers in our sample. Following the procedure described in <ref type="bibr" target="#b37">Keil et al. (2000)</ref>, we divided the sample into the two groups and compared the importance of each factor. The results in Table <ref type="table" target="#tab_0">10</ref> show that professional solvers pay more attention to trust and cognitive effort while amateur solvers place more importance on work autonomy. No significant differences were found in the importance of monetary reward, skill enhancement, peer reputation, enjoyment, and loss of knowledge power between professional and amateur solvers.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Discussion</head><p>To succeed in creating value for firms, crowdsourcing platforms should maintain a significant pool of skilled solvers for organizational tasks. It is however, challenging for crowdsourcing platforms to publicize themselves and establish a network of talented solvers. Therefore, researchers and practitioners are interested to understand how to encourage solvers'  participation in crowdsourcing <ref type="bibr" target="#b0">(Afuah and Tucci, 2012;</ref><ref type="bibr" target="#b45">Majchrzak and Malhotra, 2013)</ref>. Based on social exchange theory and context-related literature, we developed and tested a model to explain solvers' participation in crowdsourcing. Our study found that monetary reward, skill enhancement, enjoyment, work autonomy, trust, and cognitive effort are significantly related to solvers' participation in crowdsourcing. Also, monetary reward was positively related, and loss of knowledge power negatively related to trust. Contrary to our prediction, peer reputation was not related to solvers' participation in crowdsourcing. To understand why this relationship was not significant, following the guidelines from <ref type="bibr" target="#b64">Venkatesh et al. (2013)</ref>, we interviewed three successful solvers in TaskCN. They pointed out that peer reputation may not be desired, as peers are perceived as competitors on the platform. Peers learn from others' successful solutions. Thus, a higher peer reputation may attract others to imitate the solver's work.</p><p>Additionally, loss of knowledge power was not related to solvers' participation in crowdsourcing, but was related to trust. High loss of knowledge power resulted in low trust in the platform, and thereby low participation in crowdsourcing. Thus, loss of knowledge did not directly affect solver participation, but did so indirectly through trust. This result can be explained by the presence of plagiarism detection mechanisms in TaskCN <ref type="bibr" target="#b68">(Yang et al., 2008)</ref>. These mechanisms reduce solvers' perceptions of the loss of knowledge power in TaskCN and thus solvers tend to trust the platform more. Regarding the insignificant relationship observed between cognitive effort and trust, this could happen when cognitive effort is perceived more as a personally determined factor <ref type="bibr" target="#b20">(Garbarino and Edell, 1997)</ref> rather than being related to the external environment -in this case, the crowdsourcing platform. As a result, it may not affect trust.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Limitations and future research</head><p>The findings of this study should be interpreted in light of its limitations. First, our study focuses on one type of crowdsourcing platform i.e., a financially rewarded competition-based and third party hosted crowdsourcing platform. Future research could explore other crowdsourcing platforms to test if the results of this study hold. For example, the model could be tested in collaboration-based voluntary crowdsourcing platforms such as Wikipedia. Also, future research can examine crowdsourcing platforms for complex tasks. For example, in platforms like InnoCentive, complex tasks require considerable effort and solvers' specialized knowledge for task solving. This may change solvers' perceptions of certain costs and benefits of participation, such as enjoyment and cognitive effort.</p><p>Second, while we studied the influences of perceived costs and benefits on solvers' participation in crowdsourcing, future work can explore the process of task solving and solvers' performance outcomes in crowdsourcing. For instance, researchers can investigate the factors that influence the process of task solving and as a result impact performance in crowdsourcing. Future research could investigate how crowdsourcing platforms and IT artefacts can facilitate solvers' participation in crowdsourcing <ref type="bibr" target="#b13">(Cui et al., 2015)</ref>. Furthermore, we measured general trust towards the platform. There are different kinds of trusting beliefs (e.g., competence, benevolence and integrity), which could have distinct impacts <ref type="bibr" target="#b46">(McKnight et al., 2002)</ref>. Future research could study the impact of the separate trusting beliefs. In addition, future studies can compare the importance of costs and benefits in driving solver participation, i.e., the different weighting of benefit and cost factors.</p><p>Third, this study explored the influences of costs and benefits on solvers' participation, based on social exchange theory and context-related literature. Future research could examine other determinants of solvers' participation in crowdsourcing. For example, researchers can explore the effects of external environmental conditions (e.g., anonymity) <ref type="bibr" target="#b19">(Feng and Ye, 2016)</ref> on solvers' participation in crowdsourcing. Additionally, studies can examine the influences of network structures between individual solvers on their participation in crowdsourcing.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Theoretical contributions</head><p>This study offers several important contributions by modeling the influences of trust and both benefit and cost factors on solvers' actual participation in crowdsourcing. First, we add to the literature by developing a comprehensive model to explain the antecedents of solvers' actual participation in crowdsourcing and empirically validating it using survey and archival data. Our findings suggest that the antecedents of solvers' participation in crowdsourcing may differ from those of the intention to participate, i.e., peer reputation significantly drives solvers' intention to participate in crowdsourcing (cf. <ref type="bibr" target="#b72">Zheng et al., 2011)</ref> but not their actual participation, while cognitive effort inhibits their participation. The reasons behind the differences require further investigation.</p><p>Second, this paper draws on the knowledge management literature, but also differentiates from it. Unlike knowledge sharing in previously studied contexts, crowdsourcing has sometimes been taken on by freelancers as a way to increase their income and improve their skills <ref type="bibr" target="#b40">(Kaufman et al., 2011;</ref><ref type="bibr" target="#b70">Ye and Kankanhalli, 2013)</ref>. Here, monetary reward, work autonomy, and skill enhancement are identified as important contextual factors that motivate solvers to participate in crowdsourcing. Thus, this paper contributes to the literature by identifying and empirically validating unique contextual motivators for crowdsourcing participation.</p><p>Third, previous studies mainly examined the influences of benefit factors on solvers' intention to participate in crowdsourcing (e.g., <ref type="bibr" target="#b61">Sun et al., 2012;</ref><ref type="bibr" target="#b72">Zheng et al., 2011)</ref>, while the cost antecedents have rarely been explored. Our study examined the cost antecedents and found that cognitive effort negatively relates to solvers' participation in crowdsourcing. In this way, we contribute to the literature (e.g., <ref type="bibr" target="#b7">Boons et al., 2015;</ref><ref type="bibr" target="#b24">Geri et al., 2017;</ref><ref type="bibr" target="#b15">Deng et al., 2016;</ref><ref type="bibr" target="#b61">Sun et al., 2012;</ref><ref type="bibr" target="#b72">Zheng et al., 2011)</ref> by modeling and empirically testing the influences of cost factors i.e., cognitive effort, on solvers' participation in crowdsourcing. The findings enrich our understanding of solvers' participation in crowdsourcing by showing that cost factors should be considered when encouraging solvers' participation.</p><p>Fourth, we examined the role of trust in determining solvers' participation in crowdsourcing. As hypothesized, trust was positively related to solver participation in the context of crowdsourcing. This finding contributes to the crowdsourcing literature (e.g., <ref type="bibr" target="#b18">Feller et al., 2012)</ref> by quantitatively validating its effects and to the trust literature by extending the application of trust in the context of crowdsourcing. Furthermore, we found that monetary reward and loss of knowledge power influence trust in the crowdsourcing platform. This result adds to the literature by identifying the cost and benefit antecedents of trust in the context of crowdsourcing. The finding of a mediating effect of trust also adds to prior literature on trust (e.g., <ref type="bibr">Jarvenpaa et al., forthcoming;</ref><ref type="bibr" target="#b53">Porter and Donthu, 2008)</ref> by demonstrating that trust mediates the effect of monetary reward on solvers' participation in crowdsourcing.</p><p>Fifth, this study contributes to the literature on social exchange theory. Social exchange theory has mainly been applied to understand knowledge contribution in organizations (e.g., <ref type="bibr" target="#b35">Kankanhalli et al., 2005)</ref> and online communities (e.g., <ref type="bibr">Ye et al., 2015)</ref>. Here, we extend the application of social exchange theory to explain solvers' participation in the context of crowdsourcing. Indeed, the explanatory power of the model indicates that social exchange theory is an appropriate lens to explain solvers' actual participation in crowdsourcing. Furthermore, this study adds to the social exchange literature by identifying new relationships, i.e., the impacts of monetary reward and loss of knowledge power on trust.</p><p>Last but not the least, our study contributes to the strategic IS literature on crowdsourcing (e.g., <ref type="bibr" target="#b45">Majchrzak and Malhotra, 2013;</ref><ref type="bibr" target="#b18">Feller et al., 2012;</ref><ref type="bibr" target="#b46">McKnight et al., 2002;</ref><ref type="bibr" target="#b55">Ridings et al., 2002)</ref>. It does so by explicating the drivers and inhibitors for solvers' participation in crowdsourcing, which is a prerequisite for seeker firms to benefit from crowdsourcing their tasks. In this way it suggests salient conditions needed for seeker organizations to be able to leverage this strategic business opportunity and thereby lower their innovation costs through access to external expertise.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Practical implications</head><p>From a pragmatic perspective, we offer insights to firms and crowdsourcing platform administrators on how to encourage solvers to participate in crowdsourcing. Specifically, this study contributes to practice in three ways.</p><p>First, it provides suggestions for encouraging solvers to participate in crowdsourcing through enhancing various benefits. Specifically, the results suggest that firms and crowdsourcing platforms should heighten the perceptions of monetary reward, enjoyment, skill enhancement, and work autonomy in order to promote solvers' participation in crowdsourcing. On the one hand, crowdsourcing platforms should create workable business models and monetization strategies to encourage solvers' participation in crowdsourcing. They should also reconsider their profit sharing policies. Currently, in TaskCN, the crowdsourcing platform retains 20% of the rewards for each task as its commission. Thus, TaskCN may reduce its commission fee to attract more solvers to participate in crowdsourcing. On the other hand, firms and crowdsourcing platforms can communicate the notion that participation in crowdsourcing is fun and enjoyable. For this purpose, platforms could create an experience-sharing webpage for solvers to broadcast their enjoyable and fun crowdsourcing experiences. Also, platforms could establish virtual reward systems (e.g., badges or points for collection) to enhance enjoyment in crowdsourcing <ref type="bibr" target="#b25">(Goh et al., 2017)</ref>. Additionally, they can highlight the work autonomy achievable in such platforms. This could be done by advertising to solvers that they have the autonomy to realize the value of their skills through crowdsourcing i.e., by freely choosing the type of tasks they want to solve and the methods for solving them. Last, platforms could communicate the message that solvers can improve their skills through participating in crowdsourcing contests. They could inform solvers that participation in crowdsourcing is an effective way for solvers to acquire and hone their skills in specific areas.</p><p>Second, crowdsourcing platforms could attempt to alleviate the costs for solvers to participate in crowdsourcing. To reduce cognitive effort, platforms could assist solvers to better understand seekers' problems and support them in proposing solutions. Further, platforms can work with seekers to better define problems in a way that can be clearly understood by solvers. Tools and mechanisms should also be provided to facilitate the communication between solvers and seekers so that task requirements can be better understood, hence reducing solvers' cognitive effort requirement.</p><p>Third, crowdsourcing platforms should note that solvers' trust promotes their participation in crowdsourcing and partially mediates the effect of monetary reward. Thus, it is important for the platform to cultivate trust in solvers. Specifically, they should take care in ensuring that solvers obtain appropriate rewards if their submissions have been adopted. They should also be reliable and keep their commitments to solvers. Last, we note that the crowdsourcing model has been challenging the understanding of traditional organizational boundaries, i.e., blurring the boundary between employees and nonemployees <ref type="bibr" target="#b24">(Geri et al., 2017;</ref><ref type="bibr" target="#b38">Kietzmann, 2017)</ref>. In future, firms can better tap on crowdsourcing for their strategic initiatives, e.g., they can not only crowdsource tasks once performed by employees, but also use the crowd to work on innovative tasks that have never been considered before.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Conclusion</head><p>Solvers' participation in crowdsourcing platforms is critical to these platforms' survival and to achieving beneficial outcomes for seeker firms (e.g., <ref type="bibr" target="#b0">Afuah and Tucci, 2012;</ref><ref type="bibr" target="#b7">Boons et al., 2015)</ref>. To understand how to encourage solver participation, we have developed and tested a model based on social exchange theory and context-related literature to explain the influences of trust and both benefit and cost factors on solvers' actual participation behavior in crowdsourcing. Our findings indicate that monetary reward, skill enhancement, work autonomy, enjoyment, and trust positively influence solvers' actual participation in crowdsourcing, while cognitive effort deters solvers from participating in crowdsourcing. Further, we find that monetary reward positively influences, and loss of knowledge power negatively influences trust. These findings add to the growing body of research on crowdsourcing. They also provide suggestions for practitioners regarding what incentives should be provided, what costs should be reduced, and the role of trust in promoting solvers' participation in crowdsourcing.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>Fig. 1 .</head><label>1</label><figDesc>Fig. 1. Research model for solvers' participation.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head></head><label></label><figDesc>expect to receive monetary rewards in return for my submission Adapted from Bock et al. (2005) MON2: I expect to receive monetary rewards for my submission MON3: I will be financially rewarded by firms for my submission Skill enhancement SKL1: Participating in solving problems in the platform helps me improve my own skills in a particular area Developed from Nov et al. (2010) SKL2: I can enhance my skills in a particular area through participation SKL3: Solving tasks in the platform helps improve my skills in an area Peer reputation REP1: I will earn respect from peers by winning the task in the platform Kankanhalli et al. (2005) and Wasko and Faraj (2005) REP2: I feel that winning the tasks improves my reputation among peers in the platform REP3: Winning rewards in the platform will improve my reputation among peers in the community REP4: Winning the tasks helps improve my image among peers Enjoyment ENJ1: I enjoy solving novel tasks proposed in the platform Kankanhalli et al. (2005) and Wasko and Faraj (2005) ENJ2: The challenge of solving novel tasks proposed in the platform is enjoyable for me ENJ3: I feel good when solving the tasks from the platform ENJ4: I enjoy taking up the tasks from the platform Work autonomy AUT1: I can select the type of tasks I work on in the platform Ahuja et al. (2006) AUT2: I have freedom to decide how I perform the chosen task in the platform AUT3: I can freely choose any approach to perform tasks in the platform AUT4: I have the authority to choose any task in the platform Cognitive effort COG1: I try very hard to understand task requirements in the platform Developed from Petty et al. (1980) and Garbarino and Edell (1997) COG2: I need to put in effort into understanding firms' task requirements COG3: I need to input much time and effort to solve tasks in the platform COG4: I need to put in time into solving firms' problems Loss of knowledge power LOS1: Providing my solutions through the platform makes me lose my unique value Adapted from Kankanhalli et al. (2005) LOS2: Providing my solutions through the platform makes me lose my power base LOS3: Providing my solutions through the platform makes me lose my knowledge that makes me stand out with respect to others LOS4: Providing my solutions through the platform makes me lose my knowledge that no one else has Trust in the crowdsourcing platform TRU1: I believe that the platform gives credit for solvers' solutions Adapted from Kankanhalli et al. (</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head>Table 1</head><label>1</label><figDesc>Theories used to explain solvers' participation in crowdsourcing.</figDesc><table><row><cell>Theories</cell><cell>Proposition</cell><cell>Results</cell><cell>Reference</cell></row><row><cell>Value theory</cell><cell>People are motivated to act by judging the value of the action.</cell><cell>Hedonic value ? satisfaction; Hedonic</cell><cell>Sun et al. (2011)</cell></row><row><cell></cell><cell>There are two types of value, i.e., utilitarian and hedonic</cell><cell>value, satisfaction ? continuance</cell><cell></cell></row><row><cell></cell><cell>(enjoyment)</cell><cell>intention</cell><cell></cell></row><row><cell>Value expectancy</cell><cell>Individuals' actions are related to their subjective value of</cell><cell>Extrinsic motivation (monetary</cell><cell>Sun et al. (2012)</cell></row><row><cell>theory</cell><cell>behavioral outcomes and the expectancy or probability to</cell><cell>reward), intrinsic motivation</cell><cell></cell></row><row><cell></cell><cell>conduct the behavior successfully and achieve outcomes. As</cell><cell>(enjoyment) ? continuance intention</cell><cell></cell></row><row><cell></cell><cell>expectancy increases, effect of value on behavioral intention</cell><cell></cell><cell></cell></row><row><cell></cell><cell>increases</cell><cell></cell><cell></cell></row><row><cell>Motivation theory</cell><cell>People are driven to achieve their goals by their motivations.</cell><cell>Extrinsic motivation to gain</cell><cell>Zheng et al. (2011)</cell></row><row><cell></cell><cell>Motivation can be intrinsic and extrinsic</cell><cell>recognition, intrinsic motivation</cell><cell></cell></row><row><cell></cell><cell></cell><cell>(enjoyment) ? participation intention</cell><cell></cell></row><row><cell></cell><cell></cell><cell>Awareness of rewards, prestige,</cell><cell>Geri et al. (2017)</cell></row><row><cell></cell><cell></cell><cell>reciprocity ? content-adding</cell><cell></cell></row><row><cell>Social identity theory</cell><cell>Individuals' identity is based on their group membership. The</cell><cell>Pride ? level of member activity</cell><cell>Boons et al. (2015)</cell></row><row><cell></cell><cell>group which an individual belongs to is an important source</cell><cell></cell><cell></cell></row><row><cell></cell><cell>of pride and self-esteem</cell><cell></cell><cell></cell></row><row><cell>Value sensitive design</cell><cell>Human values should be accounted for in the design of</cell><cell>Nine values shared by solvers on</cell><cell>Deng et al. (2016)</cell></row><row><cell>theory</cell><cell>computer technologies</cell><cell>Amazon's Mechanical Turk are</cell><cell></cell></row><row><cell></cell><cell></cell><cell>uncovered</cell><cell></cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1"><head>Table 2</head><label>2</label><figDesc>Benefits of solvers' participation from prior studies.</figDesc><table><row><cell>Constructs</cell><cell>Context (Study Nature: Platform)</cell><cell>Reference</cell></row><row><cell>Monetary reward (reward or</cell><cell>Case study: Istockphoto</cell><cell>Brabham (2008)</cell></row><row><cell>its awareness)</cell><cell>Case study: Threadless</cell><cell>Brabham (2010)</cell></row><row><cell></cell><cell>Field study: Mechanical turk (ranking of motivations)</cell><cell>Kaufman et al. (2011)</cell></row><row><cell></cell><cell>Field study: TaskCN</cell><cell>Sun et al. (2012)</cell></row><row><cell></cell><cell>Field study: 3 platforms</cell><cell>Geri et al. (2017)</cell></row><row><cell>Skill enhancement (human</cell><cell>Case study: Istockphoto</cell><cell>Brabham (2008)</cell></row><row><cell>capital advancement)</cell><cell>Case study: Threadless</cell><cell>Brabham (2010)</cell></row><row><cell></cell><cell>Case study: SAPien community</cell><cell>Leimeister et al. (2009)</cell></row><row><cell></cell><cell>Field study: Mechanical turk (ranking of motivations)</cell><cell>Kaufman et al. (2011)</cell></row><row><cell>Peer reputation (acknowledgement/</cell><cell>Case study: Istockphoto</cell><cell>Brabham (2008)</cell></row><row><cell>prestige from peers)</cell><cell>Case study: SAPien community</cell><cell>Leimeister et al. (2009)</cell></row><row><cell></cell><cell>Field study: 3 platforms</cell><cell>Geri et al. (2017)</cell></row><row><cell>Enjoyment</cell><cell>Case study: Istockphoto</cell><cell>Brabham (2008)</cell></row></table><note><p>Field study: Mechanical turk (ranking of motivations) Kaufman et al. (2011) Field study: TaskCN Sun et al. (2011, 2012) and Zheng et al. (2011) Work autonomy Case study: Threadless Brabham (2010) Field study: Mechanical turk (ranking of motivations) Kaufman et al. (2011) Field study: TaskCN Zheng et al. (2011) Field study: Mechanical turk (narrative analysis) Deng et al. (2016)</p></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2"><head>Table 3</head><label>3</label><figDesc>Definitions of constructs in the proposed model.</figDesc><table><row><cell>Constructs</cell><cell>Definition</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_3"><head>Table 4</head><label>4</label><figDesc>Items of constructs in the proposed model.</figDesc><table /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_4"><head>Table 5</head><label>5</label><figDesc>Respondents' background.    </figDesc><table><row><cell cols="2">Control variables</cell><cell>Frequency</cell><cell>Percentage</cell><cell>Control variables</cell><cell></cell><cell></cell><cell></cell><cell>Frequency</cell><cell>Percentage</cell></row><row><cell></cell><cell></cell><cell>(N = 156)</cell><cell>(%)</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>(N = 156)</cell><cell>(%)</cell></row><row><cell>Gender</cell><cell>Male</cell><cell>106</cell><cell>67.95</cell><cell>Status</cell><cell>Amateur</cell><cell></cell><cell></cell><cell>122</cell><cell>78.21</cell></row><row><cell></cell><cell>Female</cell><cell>50</cell><cell>32.05</cell><cell></cell><cell>Professional</cell><cell></cell><cell></cell><cell>34</cell><cell>21.79</cell></row><row><cell>Age</cell><cell>16-20</cell><cell>19</cell><cell>12.18</cell><cell>Task type</cell><cell cols="3">Website design and programming</cell><cell>15</cell><cell>9.62</cell></row><row><cell></cell><cell>21-25</cell><cell>87</cell><cell>55.77</cell><cell></cell><cell cols="3">Logo, benchmark, and product outlook</cell><cell>49</cell><cell>31.41</cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>design</cell><cell></cell><cell></cell></row><row><cell></cell><cell>26-30</cell><cell>29</cell><cell>18.59</cell><cell></cell><cell cols="2">Writing and translation</cell><cell></cell><cell>47</cell><cell>30.13</cell></row><row><cell></cell><cell>31-35</cell><cell>12</cell><cell>7.69</cell><cell></cell><cell cols="2">Laborious tasks (e.g., Post Ads in</cell><cell></cell><cell>27</cell><cell>17.31</cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>communities)</cell><cell></cell><cell></cell></row><row><cell></cell><cell>36-40</cell><cell>5</cell><cell>3.21</cell><cell></cell><cell>Others</cell><cell></cell><cell></cell><cell>18</cell><cell>11.54</cell></row><row><cell></cell><cell>&gt;40</cell><cell>4</cell><cell>2.56</cell><cell>Previous</cell><cell>0</cell><cell></cell><cell></cell><cell>97</cell><cell>62.18</cell></row><row><cell>Education</cell><cell>High</cell><cell>18</cell><cell>11.54</cell><cell>performance</cell><cell>1-3</cell><cell></cell><cell></cell><cell>26</cell><cell>16.67</cell></row><row><cell>level</cell><cell>school</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell cols="2">Bachelors 124</cell><cell>79.49</cell><cell></cell><cell>4-6</cell><cell></cell><cell></cell><cell>19</cell><cell>12.18</cell></row><row><cell></cell><cell>Masters</cell><cell>9</cell><cell>5.77</cell><cell></cell><cell>&gt;6</cell><cell></cell><cell></cell><cell>14</cell><cell>8.97</cell></row><row><cell></cell><cell cols="2">Doctorate 5</cell><cell>3.21</cell><cell>Past experience</cell><cell>0</cell><cell></cell><cell></cell><cell>9</cell><cell>5.77</cell></row><row><cell>Tenure</cell><cell>3-6</cell><cell>19</cell><cell>12.18</cell><cell></cell><cell>1-5</cell><cell></cell><cell></cell><cell>74</cell><cell>47.43</cell></row><row><cell>(Months)</cell><cell>7-9</cell><cell>34</cell><cell>21.79</cell><cell></cell><cell>6-10</cell><cell></cell><cell></cell><cell>53</cell><cell>33.97</cell></row><row><cell></cell><cell>10-12</cell><cell>22</cell><cell>14.10</cell><cell></cell><cell>&gt;10</cell><cell></cell><cell></cell><cell>20</cell><cell>25.64</cell></row><row><cell></cell><cell>&gt;12</cell><cell>81</cell><cell>51.92</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Table 6</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell cols="3">Descriptive statistics and convergent validity.</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Construct</cell><cell></cell><cell></cell><cell>Min</cell><cell>Max</cell><cell>Mean</cell><cell>STD</cell><cell>AVE</cell><cell>CR</cell><cell>CA</cell></row><row><cell cols="2">Work Autonomy (AUT)</cell><cell></cell><cell>1</cell><cell>7</cell><cell>5.71</cell><cell>1.30</cell><cell>0.79</cell><cell>0.94</cell><cell>0.91</cell></row><row><cell cols="2">Monetary Reward (MON)</cell><cell></cell><cell>3.67</cell><cell>7</cell><cell>6.07</cell><cell>1.29</cell><cell>0.78</cell><cell>0.91</cell><cell>0.86</cell></row><row><cell cols="2">Skill Enhancement (SKL)</cell><cell></cell><cell>2</cell><cell>7</cell><cell>5.53</cell><cell>1.56</cell><cell>0.78</cell><cell>0.92</cell><cell>0.86</cell></row><row><cell cols="2">Enjoyment (ENJ)</cell><cell></cell><cell>2.5</cell><cell>7</cell><cell>5.57</cell><cell>1.37</cell><cell>0.59</cell><cell>0.85</cell><cell>0.77</cell></row><row><cell cols="2">Peer Reputation (REP)</cell><cell></cell><cell>1</cell><cell>7</cell><cell>4.91</cell><cell>1.72</cell><cell>0.70</cell><cell>0.90</cell><cell>0.86</cell></row><row><cell cols="2">Cognitive Effort (COG)</cell><cell></cell><cell>1</cell><cell>7</cell><cell>5.37</cell><cell>1.49</cell><cell>0.76</cell><cell>0.93</cell><cell>0.90</cell></row><row><cell cols="3">Loss of Knowledge Power (LOS)</cell><cell>1</cell><cell>7</cell><cell>2.89</cell><cell>1.77</cell><cell>0.74</cell><cell>0.92</cell><cell>0.93</cell></row><row><cell>Trust (TRU)</cell><cell></cell><cell></cell><cell>1.75</cell><cell>7</cell><cell>5.05</cell><cell>1.51</cell><cell>0.71</cell><cell>0.91</cell><cell>0.88</cell></row><row><cell cols="2">Solvers' participation a</cell><cell></cell><cell>0</cell><cell>64</cell><cell>7.25</cell><cell>13.32</cell><cell>-</cell><cell>-</cell><cell>-</cell></row></table><note><p>a Single item construct measured by number of tasks participated within three months.</p></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_5"><head>Table 7</head><label>7</label><figDesc>Exploratory factor analysis results.</figDesc><table><row><cell></cell><cell>1</cell><cell>2</cell><cell></cell><cell>3</cell><cell></cell><cell>4</cell><cell></cell><cell>5</cell><cell></cell><cell>6</cell><cell></cell><cell></cell><cell>7</cell><cell></cell><cell>8</cell></row><row><cell>AUT1</cell><cell>0.09</cell><cell cols="2">À0.01</cell><cell>0.11</cell><cell></cell><cell cols="2">À0.01</cell><cell>0.11</cell><cell></cell><cell cols="2">0.90</cell><cell></cell><cell>0.08</cell><cell></cell><cell cols="2">À0.09</cell></row><row><cell>AUT2</cell><cell>0.08</cell><cell cols="2">À0.09</cell><cell cols="2">À0.03</cell><cell>0.06</cell><cell></cell><cell>0.15</cell><cell></cell><cell cols="2">0.89</cell><cell></cell><cell>0.04</cell><cell></cell><cell cols="2">0.04</cell></row><row><cell>AUT3</cell><cell>0.13</cell><cell cols="2">À0.11</cell><cell>0.07</cell><cell></cell><cell cols="2">À0.03</cell><cell>0.10</cell><cell></cell><cell cols="2">0.93</cell><cell></cell><cell>0.15</cell><cell></cell><cell cols="2">0.09</cell></row><row><cell>AUT4</cell><cell>0.06</cell><cell>0.00</cell><cell></cell><cell>0.16</cell><cell></cell><cell>0.02</cell><cell></cell><cell>0.10</cell><cell></cell><cell cols="2">0.87</cell><cell></cell><cell>0.17</cell><cell></cell><cell cols="2">À0.17</cell></row><row><cell>MON1</cell><cell>À0.06</cell><cell cols="2">À0.05</cell><cell>0.12</cell><cell></cell><cell>0.17</cell><cell></cell><cell cols="2">À0.06</cell><cell cols="2">À0.16</cell><cell></cell><cell>0.14</cell><cell></cell><cell cols="2">0.91</cell></row><row><cell>MON2</cell><cell>0.00</cell><cell cols="2">À0.05</cell><cell>0.07</cell><cell></cell><cell>0.07</cell><cell></cell><cell>0.11</cell><cell></cell><cell cols="2">0.06</cell><cell></cell><cell>À0.05</cell><cell></cell><cell cols="2">0.90</cell></row><row><cell>MON3</cell><cell>0.04</cell><cell cols="2">0.11</cell><cell>0.22</cell><cell></cell><cell>0.20</cell><cell></cell><cell>0.16</cell><cell></cell><cell cols="2">À0.04</cell><cell></cell><cell>0.12</cell><cell></cell><cell cols="2">0.84</cell></row><row><cell>SKL1</cell><cell>0.20</cell><cell cols="2">À0.16</cell><cell>0.09</cell><cell></cell><cell cols="2">À0.01</cell><cell>0.88</cell><cell></cell><cell cols="2">0.15</cell><cell></cell><cell>À0.04</cell><cell></cell><cell cols="2">0.07</cell></row><row><cell>SKL2</cell><cell>0.30</cell><cell cols="2">À0.03</cell><cell>0.07</cell><cell></cell><cell cols="2">À0.02</cell><cell>0.90</cell><cell></cell><cell cols="2">0.10</cell><cell></cell><cell>0.04</cell><cell></cell><cell cols="2">À0.01</cell></row><row><cell>SKL3</cell><cell>0.12</cell><cell cols="2">0.02</cell><cell>0.04</cell><cell></cell><cell>0.04</cell><cell></cell><cell>0.85</cell><cell></cell><cell cols="2">0.17</cell><cell></cell><cell>0.31</cell><cell></cell><cell cols="2">0.10</cell></row><row><cell>ENJ1</cell><cell>0.06</cell><cell cols="2">À0.02</cell><cell>0.13</cell><cell></cell><cell>0.18</cell><cell></cell><cell>0.11</cell><cell></cell><cell cols="2">0.08</cell><cell></cell><cell>0.75</cell><cell></cell><cell cols="2">0.01</cell></row><row><cell>ENJ2</cell><cell>0.15</cell><cell cols="2">À0.01</cell><cell>0.12</cell><cell></cell><cell cols="2">À0.08</cell><cell>0.16</cell><cell></cell><cell cols="2">0.08</cell><cell></cell><cell>0.75</cell><cell></cell><cell cols="2">0.04</cell></row><row><cell>ENJ3</cell><cell>0.36</cell><cell cols="2">À0.15</cell><cell>0.09</cell><cell></cell><cell>0.13</cell><cell></cell><cell>0.17</cell><cell></cell><cell cols="2">0.23</cell><cell></cell><cell>0.74</cell><cell></cell><cell cols="2">0.13</cell></row><row><cell>ENJ4</cell><cell>0.30</cell><cell cols="2">À0.05</cell><cell cols="2">À0.06</cell><cell>0.04</cell><cell></cell><cell>0.12</cell><cell></cell><cell cols="2">0.24</cell><cell></cell><cell>0.82</cell><cell></cell><cell cols="2">0.08</cell></row><row><cell>REP1</cell><cell>0.15</cell><cell cols="2">0.09</cell><cell cols="2">0.87</cell><cell>0.02</cell><cell></cell><cell>0.02</cell><cell></cell><cell cols="2">0.08</cell><cell></cell><cell>0.16</cell><cell></cell><cell cols="2">0.11</cell></row><row><cell>REP2</cell><cell>0.09</cell><cell cols="2">À0.02</cell><cell cols="2">0.76</cell><cell>0.19</cell><cell></cell><cell>0.25</cell><cell></cell><cell cols="2">0.03</cell><cell></cell><cell>0.03</cell><cell></cell><cell cols="2">0.04</cell></row><row><cell>REP3</cell><cell>0.18</cell><cell cols="2">0.06</cell><cell cols="2">0.81</cell><cell>0.03</cell><cell></cell><cell>0.05</cell><cell></cell><cell cols="2">0.08</cell><cell></cell><cell>0.07</cell><cell></cell><cell cols="2">0.07</cell></row><row><cell>REP4</cell><cell>0.06</cell><cell cols="2">0.09</cell><cell cols="2">0.89</cell><cell>0.04</cell><cell></cell><cell>0.02</cell><cell></cell><cell cols="2">0.11</cell><cell></cell><cell>0.04</cell><cell></cell><cell cols="2">0.19</cell></row><row><cell>COG1</cell><cell>0.06</cell><cell cols="2">0.08</cell><cell cols="2">À0.08</cell><cell>0.84</cell><cell></cell><cell cols="2">À0.02</cell><cell cols="2">0.09</cell><cell></cell><cell>À0.09</cell><cell></cell><cell cols="2">0.08</cell></row><row><cell>COG2</cell><cell>0.01</cell><cell cols="2">0.09</cell><cell>0.12</cell><cell></cell><cell>0.93</cell><cell></cell><cell cols="2">À0.10</cell><cell cols="2">À0.02</cell><cell></cell><cell>À0.01</cell><cell></cell><cell cols="2">0.02</cell></row><row><cell>COG3</cell><cell>0.00</cell><cell cols="2">0.04</cell><cell>0.11</cell><cell></cell><cell>0.84</cell><cell></cell><cell>0.24</cell><cell></cell><cell cols="2">0.01</cell><cell></cell><cell>0.15</cell><cell></cell><cell cols="2">0.11</cell></row><row><cell>COG4</cell><cell>0.00</cell><cell cols="2">0.07</cell><cell>0.10</cell><cell></cell><cell>0.88</cell><cell></cell><cell>0.00</cell><cell></cell><cell cols="2">À0.04</cell><cell></cell><cell>0.15</cell><cell></cell><cell cols="2">0.20</cell></row><row><cell>LOS1</cell><cell>0.01</cell><cell cols="2">0.94</cell><cell>0.01</cell><cell></cell><cell>0.06</cell><cell></cell><cell cols="2">À0.16</cell><cell cols="2">À0.03</cell><cell></cell><cell>À0.02</cell><cell></cell><cell cols="2">À0.07</cell></row><row><cell>LOS2</cell><cell>0.00</cell><cell cols="2">0.84</cell><cell cols="2">À0.02</cell><cell>0.05</cell><cell></cell><cell cols="2">À0.06</cell><cell cols="2">À0.05</cell><cell></cell><cell>0.02</cell><cell></cell><cell cols="2">À0.04</cell></row><row><cell>LOS3</cell><cell>À0.19</cell><cell cols="2">0.91</cell><cell>0.17</cell><cell></cell><cell>0.05</cell><cell></cell><cell>0.06</cell><cell></cell><cell cols="2">À0.10</cell><cell></cell><cell>À0.09</cell><cell></cell><cell cols="2">0.02</cell></row><row><cell>LOS4</cell><cell>À0.16</cell><cell cols="2">0.75</cell><cell>0.06</cell><cell></cell><cell>0.12</cell><cell></cell><cell>0.03</cell><cell></cell><cell cols="2">À0.03</cell><cell></cell><cell>À0.06</cell><cell></cell><cell cols="2">0.10</cell></row><row><cell>TRU1</cell><cell>0.84</cell><cell>0.00</cell><cell></cell><cell>0.04</cell><cell></cell><cell>0.10</cell><cell></cell><cell>0.18</cell><cell></cell><cell cols="2">0.14</cell><cell></cell><cell>0.21</cell><cell></cell><cell cols="2">0.04</cell></row><row><cell>TRU2</cell><cell>0.90</cell><cell cols="2">À0.10</cell><cell>0.19</cell><cell></cell><cell>0.02</cell><cell></cell><cell>0.18</cell><cell></cell><cell cols="2">0.06</cell><cell></cell><cell>0.20</cell><cell></cell><cell cols="2">À0.01</cell></row><row><cell>TRU3</cell><cell>0.87</cell><cell cols="2">À0.13</cell><cell>0.14</cell><cell></cell><cell cols="2">À0.02</cell><cell>0.06</cell><cell></cell><cell cols="2">0.08</cell><cell></cell><cell>0.02</cell><cell></cell><cell cols="2">À0.03</cell></row><row><cell>TRU4</cell><cell>0.90</cell><cell cols="2">À0.10</cell><cell>0.10</cell><cell></cell><cell cols="2">À0.02</cell><cell>0.07</cell><cell></cell><cell cols="2">0.07</cell><cell></cell><cell>0.12</cell><cell></cell><cell cols="2">À0.03</cell></row><row><cell>Eigenvalue</cell><cell>9.32</cell><cell cols="2">4.15</cell><cell>3.42</cell><cell></cell><cell>2.16</cell><cell></cell><cell>1.81</cell><cell></cell><cell cols="2">1.56</cell><cell></cell><cell>1.44</cell><cell></cell><cell cols="2">1.29</cell></row><row><cell>% of variance</cell><cell>25.88</cell><cell cols="2">11.54</cell><cell>9.49</cell><cell></cell><cell>7.99</cell><cell></cell><cell>6.01</cell><cell></cell><cell cols="2">5.33</cell><cell></cell><cell>5.00</cell><cell></cell><cell cols="2">4.03</cell></row><row><cell>Cumulative%</cell><cell>25.88</cell><cell cols="2">37.42</cell><cell cols="2">46.91</cell><cell cols="2">54.90</cell><cell cols="2">60.91</cell><cell cols="2">66.24</cell><cell></cell><cell>71.24</cell><cell></cell><cell cols="2">75.27</cell></row><row><cell>Table 8</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Correlations.</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell>1</cell><cell>2</cell><cell>3</cell><cell>4</cell><cell>5</cell><cell>6</cell><cell>7</cell><cell>8</cell><cell>9</cell><cell>1 0</cell><cell>1 1</cell><cell>1 2</cell><cell>1 3</cell><cell>1 4</cell><cell>1 5</cell><cell>1 6</cell></row><row><cell>1. AUT</cell><cell>0.90</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>2. MON</cell><cell>0.25</cell><cell>0.88</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>3. SKL</cell><cell>0.42</cell><cell>0.52</cell><cell>0.88</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>4. ENJ</cell><cell>0.41</cell><cell>0.32</cell><cell>0.28</cell><cell>0.76</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>5. REP</cell><cell>0.30</cell><cell>0.18</cell><cell>0.18</cell><cell>0.36</cell><cell>0.84</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>6. COG</cell><cell cols="2">À0.08 0.07</cell><cell cols="2">À0.11 0.10</cell><cell>0.16</cell><cell>0.87</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>7. LOS</cell><cell cols="5">À0.14 À0.12 À0.05 À0.20 0.14</cell><cell>0.16</cell><cell>0.86</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>8. TRU</cell><cell>0.07</cell><cell>0.21</cell><cell>0.09</cell><cell>0.35</cell><cell cols="2">À0.09 0.06</cell><cell cols="2">À0.13 0.88</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>9. Solvers' participation</cell><cell>0.45</cell><cell>0.24</cell><cell>0.27</cell><cell>0.38</cell><cell>0.16</cell><cell cols="3">À0.22 À0.20 0.35</cell><cell>a</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>10. Tenure</cell><cell>0.04</cell><cell cols="3">À0.10 À0.08 0.02</cell><cell>0.02</cell><cell cols="2">À0.04 0.08</cell><cell cols="3">À0.22 0.22 a</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>11. Gender</cell><cell>0.08</cell><cell cols="3">À0.13 À0.01 0.11</cell><cell>0.07</cell><cell>0.13</cell><cell>0.08</cell><cell cols="4">À0.04 0.10 0.10 a</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>12. Age</cell><cell>0.09</cell><cell>0.10</cell><cell>0.00</cell><cell>0.10</cell><cell>0.07</cell><cell>0.22</cell><cell>0.09</cell><cell cols="4">À0.11 0.09 0.26 0.09</cell><cell>a</cell><cell></cell><cell></cell><cell></cell></row><row><cell>13. Education</cell><cell>0.11</cell><cell>0.10</cell><cell>0.01</cell><cell>0.12</cell><cell cols="2">À0.05 0.08</cell><cell>0.09</cell><cell cols="4">À0.25 0.07 0.16 0.06</cell><cell cols="2">0.16 a</cell><cell></cell><cell></cell></row><row><cell>14. Status</cell><cell>0.10</cell><cell>0.21</cell><cell>0.07</cell><cell>0.13</cell><cell>0.09</cell><cell>0.13</cell><cell>0.01</cell><cell>0.04</cell><cell cols="6">0.13 0.09 À0.12 0.13 0.09 a</cell><cell></cell></row><row><cell cols="2">15. Previous performance 0.12</cell><cell>0.01</cell><cell>0.01</cell><cell>0.19</cell><cell>0.01</cell><cell cols="3">À0.05 À0.12 0.06</cell><cell cols="3">0.28 0.01 0.07</cell><cell cols="4">0.09 0.17 0.21 a</cell></row><row><cell>16. Past experience</cell><cell>0.13</cell><cell>0.10</cell><cell>0.20</cell><cell>0.07</cell><cell>0.12</cell><cell>0.02</cell><cell>0.01</cell><cell>0.11</cell><cell cols="3">0.09 0.20 0.01</cell><cell cols="5">0.12 0.11 0.21 0.43 a</cell></row><row><cell>Notes</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell cols="7">+ Diagonal elements are the square root of average variance extracted (AVE).</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell cols="7">À Dummy variables are not included in the correlation table, i.e., task type.</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell cols="4">a Excluded because construct has a single measure.</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_6"><head>Table 9</head><label>9</label><figDesc>Results of hypotheses testing.</figDesc><table><row><cell></cell><cell cols="2">DV = Solvers' participation</cell><cell></cell><cell>DV = Trust</cell></row><row><cell></cell><cell>1</cell><cell>2</cell><cell>Result</cell><cell>3</cell><cell>Result</cell></row><row><cell>Age</cell><cell>0.04</cell><cell>0.09</cell><cell>N.S.</cell><cell></cell></row><row><cell>Gender</cell><cell>À0.06</cell><cell>À0.02</cell><cell>N.S.</cell><cell></cell></row><row><cell>Education level</cell><cell>À0.07</cell><cell>À0.04</cell><cell>N.S.</cell><cell></cell></row><row><cell>Tenure</cell><cell>0.06</cell><cell>0.05</cell><cell>N.S.</cell><cell></cell></row><row><cell>Status</cell><cell>0.15 *</cell><cell>0.10 *</cell><cell>Sig.</cell><cell></cell></row><row><cell>Task type (baseline others)</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Website design and programming</cell><cell>0.03</cell><cell>0.01</cell><cell>N.S.</cell><cell></cell></row><row><cell>Logo design</cell><cell>0.04</cell><cell>0.02</cell><cell>N.S.</cell><cell></cell></row><row><cell>Writing and translation</cell><cell>0.03</cell><cell>0.05</cell><cell>N.S.</cell><cell></cell></row><row><cell>Laborious tasks</cell><cell>À0.12</cell><cell>À0.02</cell><cell>N.S.</cell><cell></cell></row><row><cell>Previous performance</cell><cell>0.27 *</cell><cell>0.20 *</cell><cell>Sig.</cell><cell></cell></row><row><cell>Past experience</cell><cell>0.02</cell><cell>0.05</cell><cell>N.S.</cell><cell></cell></row><row><cell>Monetary reward</cell><cell></cell><cell>0.17 **</cell><cell>H1a supported</cell><cell>0.16 *</cell><cell>H1b supported</cell></row><row><cell>Skill enhancement</cell><cell></cell><cell>0.13 *</cell><cell>H2 supported</cell><cell></cell></row><row><cell>Peer reputation</cell><cell></cell><cell>À0.01</cell><cell>H3 not supported</cell><cell></cell></row><row><cell>Enjoyment</cell><cell></cell><cell>0.11 *</cell><cell>H4 supported</cell><cell></cell></row><row><cell>Work autonomy</cell><cell></cell><cell>0.23 **</cell><cell>H5 supported</cell><cell></cell></row><row><cell>Cognitive effort</cell><cell></cell><cell>À0.21 *</cell><cell>H6a supported</cell><cell>0.08</cell><cell>H6b not supported</cell></row><row><cell>Loss of knowledge power</cell><cell></cell><cell>À0.07</cell><cell>H7a not supported</cell><cell>À0.15 *</cell><cell>H7b supported</cell></row><row><cell>Trust</cell><cell></cell><cell>0.14 *</cell><cell>H8 supported</cell><cell></cell></row><row><cell>R 2</cell><cell>0.16</cell><cell>0.45</cell><cell></cell><cell>0.08</cell></row><row><cell>Observations</cell><cell>156</cell><cell></cell><cell></cell><cell></cell></row><row><cell>*** p &lt; 0.001.</cell><cell></cell><cell></cell><cell></cell><cell></cell></row></table><note><p>* p &lt; 0.05. ** p &lt; 0.01.</p></note></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_0"><p>H.(J.) Ye, A. Kankanhalli / Journal of Strategic Information Systems 26 (2017) 101-117</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="1" xml:id="foot_1"><p>http://www.istockphoto.com/.</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="2" xml:id="foot_2"><p>http://www.threadless.com/.</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="3" xml:id="foot_3"><p>http://news.taskcn.com/gongzuozhefangwenxinde/8053.html. H.(J.) Ye, A. Kankanhalli / Journal of Strategic Information Systems 26 (2017) 101-117</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="4" xml:id="foot_4"><p>www.taskcn.com.</p></note>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Acknowledgement</head><p>We thank the editor-in-chief Sirkka Jarvenpaa and three anonymous reviewers for their helpful comments and suggestions. This study is developed from part of the first author's Phd thesis.</p></div>
+			</div>
+
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Crowdsourcing as a solution to distant search</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Afuah</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Tucci</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Acad. Manage. Rev</title>
+		<imprint>
+			<biblScope unit="volume">37</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="355" to="375" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Time flies when you&apos;re having fun: cognitive absorption and beliefs about information technology usage</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Agarwal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Karahanna</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quart</title>
+		<imprint>
+			<biblScope unit="volume">24</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="665" to="694" />
+			<date type="published" when="2000">2000</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">IT road warriors: balancing work-family, conflict, job autonomy, and work overload to mitigate turnover intentions</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">K</forename><surname>Ahuja</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Chudoba</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">J</forename><surname>Kacmar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">H</forename><surname>Mcknight</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">F</forename><surname>George</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quart</title>
+		<imprint>
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="1" to="17" />
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Estimating non-response bias in mail surveys</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">S</forename><surname>Armstrong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">S</forename><surname>Overton</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Mark. Res</title>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="396" to="402" />
+			<date type="published" when="1997">1997</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">The moderator-mediator variable distinction in social psychological research: conceptual, strategic and statistical considerations</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">M</forename><surname>Baron</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Kenny</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Pers. Soc. Psychol</title>
+		<imprint>
+			<biblScope unit="volume">51</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="1173" to="1182" />
+			<date type="published" when="1986">1986</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<monogr>
+		<title level="m" type="main">Exchange and Power in Social Life</title>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">M</forename><surname>Blau</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1964">1964</date>
+			<publisher>John Wiley</publisher>
+			<pubPlace>New York</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Behavioral intention formation in knowledge sharing: examining the roles of extrinsic motivators, socialpsychological forces, and organizational climate</title>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">W</forename><surname>Bock</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">W</forename><surname>Zmud</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><forename type="middle">G</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">N</forename><surname>Lee</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quart</title>
+		<imprint>
+			<biblScope unit="volume">29</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="87" to="111" />
+			<date type="published" when="2005">2005</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Feelings of pride and respect as drivers of ongoing member activity on crowdsourcing platforms</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Boons</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Stam</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">G</forename><surname>Barkema</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Manage. Stud</title>
+		<imprint>
+			<biblScope unit="volume">52</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="717" to="741" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">How to manage outside innovation</title>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">J</forename><surname>Boudreau</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">R</forename><surname>Lakhani</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIT Sloan Manage. Rev</title>
+		<imprint>
+			<biblScope unit="volume">50</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="69" to="76" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Moving the crowd at iStockphoto: the composition of the crowd and motivations for participation in a crowdsourcing application</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">C</forename><surname>Brabham</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">First Monday</title>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Moving the crowd at Threadless: motivations for participation in a crowdsourcing application</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">C</forename><surname>Brabham</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Inform., Commun. Soc</title>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="issue">8</biblScope>
+			<biblScope unit="page" from="1122" to="1145" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Foster market knowledge use in innovation: the role of internal brokers</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Cillo</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Eur. Manage. J</title>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="404" to="412" />
+			<date type="published" when="2005">2005</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">What&apos;s mine is ours or is it? A study of attitudes about information sharing</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Constant</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Kiesler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Sproull</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Inform. Syst. Res</title>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="400" to="421" />
+			<date type="published" when="1994">1994</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Information technology and open innovation: a strategic alignment perspective</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Cui</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Ye</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">H</forename><surname>Teo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Li</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Inform. Manage</title>
+		<imprint>
+			<biblScope unit="volume">52</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="348" to="358" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<monogr>
+		<title level="m" type="main">Working Knowledge: How Organizations Manage What They Know</title>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">H</forename><surname>Davenport</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Prusak</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1998">1998</date>
+			<publisher>Harvard Business School Press</publisher>
+			<pubPlace>Boston</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">The duality of empowerment and marginalization in microtask crowdsourcing: giving voice to the less powerful through value sensitive design</title>
+		<author>
+			<persName><forename type="first">X</forename><surname>Deng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">D</forename><surname>Joshi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">D</forename><surname>Galliers</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quart</title>
+		<imprint>
+			<biblScope unit="volume">40</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="279" to="302" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<monogr>
+		<title level="m" type="main">Scale Development: Theory and Applications</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">F</forename><surname>Devellis</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2003">2003</date>
+			<pubPlace>Sage, Thousand Oaks, CA</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Crowdsourcing systems on the World-Wide Web</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Doan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Ramakrishnan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">Y</forename><surname>Halevy</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Commun. ACM</title>
+		<imprint>
+			<biblScope unit="volume">51</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="86" to="96" />
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Orchestrating&apos; sustainable crowdsourcing: a characterisation of solver brokerages</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Feller</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Finnegan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Hayes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>O'reilly</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Strateg. Inform. Syst</title>
+		<imprint>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="216" to="232" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Why do you return the favor in online knowledge communities? A study of the motivations of reciprocity</title>
+		<author>
+			<persName><forename type="first">Y</forename><forename type="middle">Y</forename><surname>Feng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Ye</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Comput. Hum. Behav</title>
+		<imprint>
+			<biblScope unit="volume">63</biblScope>
+			<biblScope unit="page" from="342" to="349" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Cognitive effort, affect, and choice</title>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">C</forename><surname>Garbarino</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">A</forename><surname>Edell</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Consum. Res</title>
+		<imprint>
+			<biblScope unit="volume">24</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="147" to="158" />
+			<date type="published" when="1997">1997</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Implementation team responsiveness and user evaluation of customer relationship management: a quasi-experimental design study of social exchange theory</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Gefen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">M</forename><surname>Ridings</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Manage. Inform. Syst</title>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="47" to="69" />
+			<date type="published" when="2002">2002</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">An update and extensions to SEM guidelines for administrative and social science research</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Gefen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">E</forename><surname>Rigdon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">W</forename><surname>Straub</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quart</title>
+		<imprint>
+			<biblScope unit="volume">35</biblScope>
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+	<note>iii-xiv</note>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">A practical guide to factorial validity using PLS-Graph: tutorial and annotated example</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Gefen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">W</forename><surname>Straub</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Commun. Assoc. Inform. Syst</title>
+		<imprint>
+			<biblScope unit="volume">16</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="91" to="109" />
+			<date type="published" when="2005">2005</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Crowdsourcing as a business model: extrinsic motivations for knowledge sharing in user-generated content websites</title>
+		<author>
+			<persName><forename type="first">N</forename><surname>Geri</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Gafni</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Bengov</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Global Oper. Strateg. Sourc</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">Perceptions of virtual reward systems in crowdsourcing games</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Goh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Than</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">S</forename><surname>Lee</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Comput. Hum. Behav. &lt;wwwsciencedirect</title>
+		<imprint>
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">The impact of knowledge repositories on power and control in the workplace</title>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">H</forename><surname>Gray</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Inform. Technol. People</title>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="368" to="384" />
+			<date type="published" when="2001">2001</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Following the crowd</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Greengard</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Commun. ACM</title>
+		<imprint>
+			<biblScope unit="volume">54</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="20" to="22" />
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">The double-edged swords of autonomy and external knowledge: analyzing team effectiveness in a multinational company</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">R</forename><surname>Haas</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Acad. Manage. J</title>
+		<imprint>
+			<biblScope unit="volume">53</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="989" to="1008" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">Development of the job diagnostic survey</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Hackman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Oldham</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Appl. Psychol</title>
+		<imprint>
+			<biblScope unit="volume">60</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="159" to="170" />
+			<date type="published" when="1975">1975</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<monogr>
+		<author>
+			<persName><forename type="first">J</forename><surname>Hair</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><forename type="middle">C</forename><surname>Black</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">J</forename><surname>Babin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">E</forename><surname>Anderson</surname></persName>
+		</author>
+		<title level="m">Multivariate Data Analysis</title>
+		<imprint>
+			<publisher>Pearson</publisher>
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<monogr>
+		<title level="m" type="main">Crowdsourcing: why the power of the crowd is driving the future of business</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Howe</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2008">2008</date>
+			<publisher>Crown Bus</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Knowledge sharing behavior in virtual communities: the relationship between trust, self-efficacy, and outcome expectations</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">H</forename><surname>Hsu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">L</forename><surname>Ju</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">H</forename><surname>Yen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">M</forename><surname>Chang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Int. J. Hum Comput Stud</title>
+		<imprint>
+			<biblScope unit="volume">65</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="153" to="169" />
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">Is anybody out there? Antecedents of trust in global virtual teams</title>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">L</forename><surname>Jarvenpaa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Knoll</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">E</forename><surname>Leidner</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Manage. Inform. Syst</title>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="29" to="64" />
+			<date type="published" when="1998">1998</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<monogr>
+		<title level="m" type="main">The Wiley Blackwell Handbook of the Psychology of the Internet at Work</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Jarvenpaa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">Y</forename><surname>Lim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Cantu</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Rvenpaa</surname></persName>
+		</author>
+		<editor>Hertel, G., Stone, D., Johnson, R., Passmore, J.</editor>
+		<imprint>
+			<publisher>Wiley-Blackwell</publisher>
+			<pubPlace>Chichester</pubPlace>
+		</imprint>
+	</monogr>
+	<note>forthcoming. Trust in virtual online environments. forthcoming</note>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">Contributing knowledge to electronic knowledge repositories: an empirical investigation</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Kankanhalli</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">C Y</forename><surname>Tan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">K</forename><surname>Wei</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quart</title>
+		<imprint>
+			<biblScope unit="volume">29</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="113" to="143" />
+			<date type="published" when="2005">2005</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">Comparing potential and actual innovators: an empirical study of mobile data services innovation</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Kankanhalli</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Ye</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">H</forename><surname>Teo</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quart</title>
+		<imprint>
+			<biblScope unit="volume">39</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="667" to="682" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<analytic>
+		<title level="a" type="main">Why software projects escalate: an empirical analysis and test of four theoretical models</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Keil</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Mann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Rai</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quart</title>
+		<imprint>
+			<biblScope unit="volume">24</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="631" to="664" />
+			<date type="published" when="2000">2000</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<analytic>
+		<title level="a" type="main">Crowdsourcing: a revised definition and introduction to new research</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">H</forename><surname>Kietzmann</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Bus. Horiz. &lt;wwwsciencedirect</title>
+		<imprint>
+			<date type="published" when="2017">2017. 0007681316301215</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<analytic>
+		<title level="a" type="main">A study of the multilevel and dynamic nature of trust in e-commerce from a cross-stage perspective</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">J</forename><surname>Kim</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Int. J. Electron. Commer</title>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="11" to="64" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<analytic>
+		<title level="a" type="main">More than fun and money: worker motivation in crowdsourcing-a study on Mechanical Turk</title>
+		<author>
+			<persName><forename type="first">N</forename><surname>Kaufman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Schulze</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Veit</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Americas Conference on Information Systems</title>
+		<meeting><address><addrLine>Detroit, Michigan</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<monogr>
+		<title level="m" type="main">Global CEO Outlook</title>
+		<author>
+			<persName><surname>Kpmg</surname></persName>
+		</author>
+		<ptr target="&lt;https://home.kpmg.com/xx/en/home/media/press-releases/2016/06/2016-ceo-outlook-next-3-years-more-critical-than-previous-50.html&gt;" />
+		<imprint>
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+	<analytic>
+		<title level="a" type="main">Why hackers do what they do: understanding motivation and effort in free/open source projects</title>
+		<author>
+			<persName><forename type="first">K</forename><surname>Lakhani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Wolf</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Perspectives on Free and Open Source Software</title>
+		<editor>
+			<persName><forename type="first">J</forename><surname>Feller</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">D</forename><surname>Fitzgerald</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">S</forename><surname>Hissam</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">K</forename><surname>Lakhani</surname></persName>
+		</editor>
+		<meeting><address><addrLine>Cambridge, MA</addrLine></address></meeting>
+		<imprint>
+			<publisher>MIT Press</publisher>
+			<date type="published" when="2005">2005</date>
+			<biblScope unit="page" from="3" to="21" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b43">
+	<analytic>
+		<title level="a" type="main">Humanness, and trust: rethinking trust in technology</title>
+		<author>
+			<persName><forename type="first">N</forename><forename type="middle">K</forename><surname>Lankton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">H</forename><surname>Mcknight</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Tripp</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Assoc. Inform. Syst</title>
+		<imprint>
+			<biblScope unit="volume">16</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page" from="880" to="918" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b44">
+	<analytic>
+		<title level="a" type="main">Leveraging crowdsourcing -theory-driven design, implementation and evaluation of activation-supporting components for IT-based idea competitions</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">M</forename><surname>Leimeister</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Huber</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">U</forename><surname>Bretschneider</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Krcmar</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Manage. Inform. Syst</title>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="197" to="224" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b45">
+	<analytic>
+		<title level="a" type="main">Towards an information systems perspective and research agenda on crowdsourcing for innovation</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Majchrzak</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Malhotra</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Strateg. Inform. Syst</title>
+		<imprint>
+			<biblScope unit="volume">22</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="257" to="268" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b46">
+	<analytic>
+		<title level="a" type="main">The impact of initial consumer trust on intentions to transact with a web site: a trust building model</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Mcknight</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Choudhury</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Kacmar</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Strateg. Inform. Syst</title>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="page" from="297" to="323" />
+			<date type="published" when="2002">2002</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b47">
+	<monogr>
+		<title level="m" type="main">Coercive Power in Social Exchange</title>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">D</forename><surname>Molm</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1997">1997</date>
+			<publisher>Cambridge University Press</publisher>
+			<pubPlace>New York</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b48">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">L</forename><surname>Neuman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Social Research Methods: Qualitative and Quantitative Approaches. Allyn and Bacon</title>
+		<imprint>
+			<date type="published" when="2005">2005</date>
+			<pubPlace>Boston, MA</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b49">
+	<analytic>
+		<title level="a" type="main">Analysis of participation in an online photo-sharing community: a multidimensional perspective</title>
+		<author>
+			<persName><forename type="first">O</forename><surname>Nov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Naaman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Ye</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Am. Soc. Inform. Sci. Technol</title>
+		<imprint>
+			<biblScope unit="volume">61</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="555" to="566" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b50">
+	<analytic>
+		<title level="a" type="main">The effects of group diffusion of cognitive effort on attitudes: an information-processing view</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">E</forename><surname>Petty</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">G</forename><surname>Harkins</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">D</forename><surname>Williams</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Pers. Soc. Psychol</title>
+		<imprint>
+			<biblScope unit="volume">38</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="81" to="92" />
+			<date type="published" when="1980">1980</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b51">
+	<analytic>
+		<title level="a" type="main">Distant search, narrow attention: how crowding alters organizations&apos; filtering of suggestions in crowdsourcing</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Piezunka</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Dahlander</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Acad. Manage. J</title>
+		<imprint>
+			<biblScope unit="volume">58</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="856" to="880" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b52">
+	<analytic>
+		<title level="a" type="main">Common method biases in behavioral research: a critical review of the literature and recommended remedies</title>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">M</forename><surname>Podsakoff</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Mackenzie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><forename type="middle">P</forename><surname>Podsakoff</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Appl. Psychol</title>
+		<imprint>
+			<biblScope unit="volume">88</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="879" to="903" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b53">
+	<analytic>
+		<title level="a" type="main">Cultivating trust and harvesting value in virtual communities</title>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">E</forename><surname>Porter</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Donthu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Manage. Sci</title>
+		<imprint>
+			<biblScope unit="volume">54</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="113" to="128" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b54">
+	<analytic>
+		<title level="a" type="main">The prosperous community: social capital and public life</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">D</forename><surname>Putnam</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Am. Prospect</title>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="issue">13</biblScope>
+			<date type="published" when="1993">1993</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b55">
+	<analytic>
+		<title level="a" type="main">Some antecedents and effects of trust in virtual communities</title>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">M</forename><surname>Ridings</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Gefen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Arinze</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Strateg. Inform. Syst</title>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="271" to="295" />
+			<date type="published" when="2002">2002</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b56">
+	<analytic>
+		<title level="a" type="main">Strategies for multiattribute binary choice</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">E</forename><surname>Russo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Dosher</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Exp. Psychol. Learn. Mem. Cogn</title>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="676" to="696" />
+			<date type="published" when="1983">1983</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b57">
+	<analytic>
+		<title level="a" type="main">The intention-behavior gap</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Sheeran</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">L</forename><surname>Webb</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Soc. Pers. Psychol. Compass</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">9</biblScope>
+			<biblScope unit="page" from="503" to="518" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b58">
+	<analytic>
+		<title level="a" type="main">Managerial challenges in open innovation: a study of innovation intermediation in the chemical industry</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">H</forename><surname>Sieg</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Wallin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Krogh</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">R&amp;D Manage</title>
+		<imprint>
+			<biblScope unit="volume">40</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="281" to="291" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b59">
+	<analytic>
+		<title level="a" type="main">The impact of ideology on effectiveness in open source software teams</title>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">J</forename><surname>Stewart</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Gosain</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quart</title>
+		<imprint>
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="291" to="314" />
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b60">
+	<analytic>
+		<title level="a" type="main">Validating guidelines for IS positivist research</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">W</forename><surname>Straub</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">J</forename><surname>Boudreau</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Gefen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Commun. Assoc. Inform. Syst</title>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="380" to="427" />
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b61">
+	<analytic>
+		<title level="a" type="main">Understanding sustained participation in transactional virtual communities</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Fang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">H</forename><surname>Lim</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Decis. Support Syst</title>
+		<imprint>
+			<biblScope unit="volume">53</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="12" to="22" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b62">
+	<analytic>
+		<title level="a" type="main">Working for one penny: understanding why people would like to participate in online tasks with low payment</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Peng</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Comput. Hum. Behav</title>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="page" from="1033" to="1041" />
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b63">
+	<analytic>
+		<title level="a" type="main">Innovation contests, open innovation, and multiagent problem solving</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Terwiesch</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Xu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Manage. Sci</title>
+		<imprint>
+			<biblScope unit="volume">54</biblScope>
+			<biblScope unit="issue">9</biblScope>
+			<biblScope unit="page" from="1529" to="1543" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b64">
+	<analytic>
+		<title level="a" type="main">Bridging the qualitative-quantitative divide: guidelines for conducting mixed methods research in information systems</title>
+		<author>
+			<persName><forename type="first">V</forename><surname>Venkatesh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">A</forename><surname>Brown</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Bala</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quart</title>
+		<imprint>
+			<biblScope unit="volume">37</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="21" to="54" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b65">
+	<analytic>
+		<title level="a" type="main">Why should I share? Examining social capital and knowledge contribution in electronic networks of practice</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">M</forename><surname>Wasko</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Faraj</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quart</title>
+		<imprint>
+			<biblScope unit="volume">29</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="35" to="57" />
+			<date type="published" when="2005">2005</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b66">
+	<analytic>
+		<title level="a" type="main">Using PLS path modeling for assessing hierarchical construct models: guidelines and empirical illustration</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Wetzels</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Odekerken-Schröder</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Van-Oppen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quart</title>
+		<imprint>
+			<biblScope unit="volume">33</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="177" to="195" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b67">
+	<analytic>
+		<title level="a" type="main">Job scope and stress: Can job scope be too high?</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">L</forename><surname>Xie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Johns</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Acad. Manage. J</title>
+		<imprint>
+			<biblScope unit="volume">38</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="1288" to="1309" />
+			<date type="published" when="1995">1995</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b68">
+	<analytic>
+		<title level="a" type="main">Competing to share expertise: the TaskCn knowledge sharing community</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Admic</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Ackerman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of International Conference on Weblogs and Social Media</title>
+		<meeting>International Conference on Weblogs and Social Media<address><addrLine>Seattle, WA</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b69">
+	<analytic>
+		<title level="a" type="main">Understanding knowledge contribution in online communities from the perspective of community support and leader support</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Ye</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Feng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Choi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Electron. Commer. Res. Appl</title>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="34" to="45" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b70">
+	<analytic>
+		<title level="a" type="main">Leveraging crowdsourcing for organizational value co-creation</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Ye</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Kankanhalli</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Commun. Assoc. Inform. Syst</title>
+		<imprint>
+			<biblScope unit="volume">33</biblScope>
+			<biblScope unit="page" from="225" to="244" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b71">
+	<analytic>
+		<title level="a" type="main">Investigating the antecedents of organizational task crowdsourcing</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Ye</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Kankanhalli</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Inform. Manage</title>
+		<imprint>
+			<biblScope unit="volume">52</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="98" to="110" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b72">
+	<analytic>
+		<title level="a" type="main">Task design, motivation, and participation in crowdsourcing contests</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Zheng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Hou</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Int. J. Electron. Commer</title>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="57" to="88" />
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

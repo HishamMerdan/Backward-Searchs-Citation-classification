@@ -1,0 +1,839 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Role of Communication in Online Platforms Completed Research</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Yili</forename><surname>Hong</surname></persName>
+							<email>hong@asu.edu</email>
+							<affiliation key="aff0">
+								<orgName type="institution">Arizona State University</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Jing</forename><surname>Peng</surname></persName>
+							<email>jing.peng@uconn.edu</email>
+							<affiliation key="aff1">
+								<orgName type="institution">University of Connecticut</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Gord</forename><surname>Burtch</surname></persName>
+							<email>gburtch@umn.edu</email>
+							<affiliation key="aff2">
+								<orgName type="institution">University of Minnesota</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Ni</forename><surname>Huang</surname></persName>
+							<email>ni.huang@asu.edu</email>
+							<affiliation key="aff3">
+								<orgName type="institution">Arizona State University</orgName>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Role of Communication in Online Platforms Completed Research</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="MD5">0BA187C8F0AA44C5140B040FF4CA55AA</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.7.3" ident="GROBID" when="2023-06-16T09:22+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>Communication</term>
+					<term>online platforms</term>
+					<term>online labor markets</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Online labor markets facilitate matching of workers and employers in a borderless virtual environment. Much of the attraction of these markets for employers derives from access to a large, geographically dispersed pool of workers. However, recent literature highlights that these markets are subject to issues such as employer biases against hiring distant workers and against new workers who lack reputation information. We examine the often-ignored role of pre-contract communication between workers and employers (via the platform-hosted private messaging system), which holds the potential to enhance workers' probability of being hired while mitigating these biases. Based on private messaging activities between workers and employers from nearly half a million job applications on Freelancer.com, we quantify the causal impact on hiring outcomes from workers' outreach to employers via private messaging. We find that initiating private messaging with a potential employer lifts a worker's probability of being hired by roughly 29% over baseline. Moreover, these beneficial effects are amplified when workers reside at a distance, lack reputation, or bear negative reputation, demonstrating that private messaging can in fact attenuate the aforementioned hiring biases. The effects are also magnified when employers lack platform hiring experience, likely because such employers bear higher uncertainty and are more risk-averse.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Introduction</head><p>Online labor markets, defined as online platforms that enable employment of on-demand workers, have thrived in recent years, attracting significant attention from both practitioners and researchers. The value of these markets to workers and employers stems from the access they provide to a large pool of geographically dispersed, virtual transaction partners. However, due to the lack of formal interactive screening processes (e.g., job interviews), which characterize hiring in offline labor markets, participants in online labor markets bear a great deal information asymmetry. Most platforms attempt to mitigate information asymmetry and thereby facilitate efficient, well-informed hiring decisions by incorporating various IT-enabled mechanisms, such as online reputation systems <ref type="bibr" target="#b21">(Moreno and Terwiesch 2014)</ref>. However, recent work demonstrates that employers nonetheless exhibit strong biases against hiring certain workers, such as those who reside at a distance <ref type="bibr" target="#b12">(Hong and Pavlou 2017)</ref> and those who are new to the market <ref type="bibr" target="#b26">(Pallais 2014)</ref>. Importantly, employer home-bias in online labor markets is substantially motivated by taste-based (and not statistical) discrimination <ref type="bibr">(Liang et al.2017</ref>) and the bias toward workers holding prior evaluations has been shown to impede market efficiency <ref type="bibr" target="#b26">(Pallais 2014)</ref>.</p><p>In this work, we investigate the potential of a platform-hosted private messaging system that enables communication between the worker and the employer to overcome these issues, to facilitate improved hiring outcomes for distant or new workers. Private messages, typically initiated by a worker via a webbased text messaging system after he or she submits an application to a job posted by a prospective employer, are a common feature of online labor markets. Private messages can enable workers to connect with potential employers directly to convey a variety of pertinent information, such as the worker's interest in the job, his or her available bandwidth to take on the work, a more detailed accounting of the worker's skills and experience, and evidence of the worker's communication skills. Yet, despite the potential value of private messaging, our data indicates that workers, upon initiating a job application, frequently opt not to initiate direct communication with the potential employer. This is perhaps because private messaging has potential downsides for workers as well. A worker may unintentionally reveal a piece of information that dissuades the employer from offering the job, such as exhibiting a relatively poor grasp of written English, or the worker may take on a tone that does not sit well with the employer.</p><p>Although pre-contract communication factors prominently into recruitment in online labor markets (approximately 60% of all job applicants initiated private messages in our dataset), we are aware of no prior work studying its influence on hiring outcomes, likely due to a lack of publicly-available data on private messaging between workers and employers. For the purpose of this study, we obtained a proprietary dataset from a leading global online labor market. In analyzing the impacts of workers' private message initiation, we construct plausible instruments that account for workers' selection into this decision, to achieve causal identification. In addition, we incorporate the information on the profile and platform activities of workers and employers. For the workers, we observe their platform experience, ratings by prior employers (if any), spatial distance with the employer, and evidence for English ability; for the employer, we observe prior platform hiring experience. This additional information allows us to analyze the potential mechanisms that drive the causal effects from pre-contract communication that we initially observe. Our dataset also includes detailed information pertaining to each private message exchanged between workers and employers in the recruiting process, such as the timestamp of the message, the textual content, and whether the message was opened by the receiving party. Delving into this information, we subsequently explore what kind of messages are more likely to persuade employers.</p><p>Stated more formally, this paper seeks to: (a) quantify the effect of a worker initiating a private message with an employer on hiring outcomes (worker selection); (b) evaluate situational factors that shift the relative efficacy of private communication, e.g., the availability of workers' prior reputation, workers' geographic proximity to the employer, and workers' English ability.</p><p>To answer these questions, we leverage the following data: the pre-contract private messaging, each employer's consideration set (the set of workers who applied for a given job), and the employer's ultimate choice of worker for a given job. We arrive at a number of interesting findings. First, a worker's initiation of private messages substantially increases his or her probability of being hired, even after accounting for self-selection. On average, the initiation of private messages increases the probability of a worker being hired by 2.2%, which translates to a 29% increase over the baseline. Second, we find that the positive effect of private messaging is attenuated when the worker has received prior employer ratings, when he or she has a poorer grasp of English, or when he or she resides closer to the employer. Further, these findings reveal a degree of substitutability between private communication and reputation or proximity, which suggests that the entry barriers and inefficiency resulting from the cold-start problem and home bias can perhaps be partially addressed by encouraging workers to reach out to employers directly during the job application process.</p><p>Our work makes several important contributions to the literature. First, we extend prior work on direct messaging features in online retail settings <ref type="bibr" target="#b22">(Ou et al. 2014</ref><ref type="bibr" target="#b23">, Ou et al. 2016</ref><ref type="bibr" target="#b29">, Tan et al. 2016)</ref> to the context of online labor markets. We contribute to that stream of literature by causally identifying the effects of message initiation on transaction, as well as by examining the role of message content and style. Second, we demonstrate the potential of private communication as a novel approach to addressing the problems of reputation "cold-start" <ref type="bibr" target="#b26">(Pallais 2014</ref>) and home bias <ref type="bibr" target="#b18">(Liang et al. 2017</ref>) in online employment. Finally, we contribute more broadly to an emerging stream of research on hiring decisions in online labor markets <ref type="bibr">(Lin et al. 2017, Moreno and</ref><ref type="bibr" target="#b21">Terwiesch 2014)</ref>. We have identified a previously unconsidered factor that has a statistically and economically significant effect on employers' hiring decisions, beyond wage, reputation and distance, which have been explored in prior literature.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Literature</head><p>Communication in online platforms adds a personal touch to online transactions. The information systems literature has recently begun to examine the effects of buyer-seller communication in recent years. Of particular relevance to our study is the paper by <ref type="bibr" target="#b22">Ou et al. (2014)</ref>, who draw on survey data to show that pre-transaction communications on Taobao (an online electronic commerce platform) can build "Guanxi," a type of swift trust between the buyer and seller, which in turn impacts intention to purchase. In a more recent paper, <ref type="bibr" target="#b29">Tan et al. (2016)</ref> also demonstrate that live chat between a buyer and a seller on Taobao has a positive effect on a buyer's purchase decision. Moreover, they show that a buyer is more likely to initiate a live chat when a seller bears poor reputation.</p><p>One can draw some analogy between electronic commerce platforms and online labor markets. Both types of platforms facilitate semi-anonymous transactions among geographically dispersed individuals, and thus are characterized by significant information asymmetry. In any online platform, it is crucial that market operators take steps to mitigate information asymmetry <ref type="bibr">(Einav et al. 2016)</ref>. Platforms employ a combination of features and policies to achieve this, with perhaps the best-known example being the online reputation system. Ambiguity and uncertainty is problematic because it can lead market participants to employ heuristics and exhibit biases in decision-making. Unfortunately, despite platforms' best efforts to address the problem, recent studies have found that employers in online labor markets frequently exhibit biases in favor of local workers <ref type="bibr" target="#b12">(Hong and Pavlou 2017)</ref> and workers who have received prior ratings <ref type="bibr" target="#b26">(Pallais 2014)</ref>. Importantly, home bias and a bias toward rated individuals (a form of ambiguity aversion) are frequently not rooted in economic rationale, and thus often cause decisionmakers to suffer a loss or discount <ref type="bibr">(Ellsberg 1961, French and</ref><ref type="bibr" target="#b9">Poterba 1991)</ref>. Notably, recent work in online labor markets has shown results consistent with this notion. Work has reported that employers' home bias is attributable, at least in part, to taste-based, rather than statistical discrimination <ref type="bibr" target="#b18">(Liang et al. 2017)</ref>, and that many overlooked workers who lack prior ratings would in fact be preferable candidates for employment <ref type="bibr" target="#b26">(Pallais 2014)</ref>.</p><p>Based on the related literature, we consider three major extensions. First, we are interested in examining whether, when and to what degree worker-initiated private messaging increases workers' likelihood of being hired. Second, we examine the degree to which private communication can alleviate issues of "coldstart" and home bias, bearing in mind prior work which has found that direct messaging tools can facilitate increased purchase propensity in electronic commerce settings, via information transfer (thereby alleviating ambiguity), and that it can induce a greater perception of familiarity and proximity among communicating parties <ref type="bibr" target="#b24">(O'Leary and Cummings 2007)</ref>. Third, we explore the textual content of private messages, identifying features that associate most strongly with a positive hiring outcome. A worker's initiation of private messaging with a prospective employer may affect the employer's decision by creating a good impression and by conveying useful information. In terms of making a good impression, initiating private communication can convey to the employer that the worker has a particular interest in the posted position, that the worker is pro-active nature, and perhaps most concretely that the worker is willing to engage in regular communication with the employer. Communication frequency and responsiveness have notably been found to foster perceptions of proximity or co-location (O'Leary et al. 2014), as noted above. Perceived proximity has, in turn, been found to associate with a greater willingness to engage and interact with others (Goel et al. 2013), a finding that parallels the extensive literature in economics and finance on home bias <ref type="bibr">(French and Porterba 1991)</ref>. A worker's initiation of private messages to a potential employer can also convey useful situational information, such as the worker's available bandwidth to take on new work at a given point in time. <ref type="bibr" target="#b14">Horton (2017)</ref> argues that employers' lack of insight into worker bandwidth can lead to wasted time and effort; a worker who applies for the job and is subsequently selected may ultimately turn down the position due to a lack of availability. Employers, perceiving that higher capacity workers are more likely to engage in private messaging (both because they have the slack resources to engage in these conversations, and also because they have an interest in increasing their utilization rate), can infer available capacity and factor this into their hiring decisions, making it more efficient.</p><p>Of particular interest in this study is the potential that private messaging can also serve as a primary source of information about new workers, who lack prior ratings and thus typically suffer from a reputation "cold-start" problem <ref type="bibr" target="#b26">(Pallais 2014)</ref>. As mentioned earlier, individuals tend to exhibit ambiguity aversion, to the point that they may prefer a known quantity to an ambiguous one, even when the latter has a relatively greater return in expectation <ref type="bibr" target="#b8">(Ellsberg 1961)</ref>. Workers who lack prior evaluations are an unknown quantity. Thus, a logical mode of overcoming the problem is to eliminate the ambiguity. Private messaging affords new workers an opportunity to elaborate on themselves, their experience outside the focal online platform, and to highlight information of particular relevance to the posted job. Workers might supply links to external resources documenting their work and skills, operating in a capacity similar to platform certifications. Workers' initiation of private messaging could also help to convey technical competency and communication ability, thus mitigating the employers' concerns about these important aspects of the worker.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Methodology</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Research Context</head><p>Our proprietary dataset is supplied by Freelancer.com, a leading online labor market that connects workers and employers from around the world. The data pertains to all posted jobs between Jan 1, 2010 and May 31, 2010 that resulted in an employment contract. Our sample excludes 'trial jobs', jobs deleted by the employer or the platform, jobs where application was restricted to 'gold members', jobs where the employer invited workers, as well as jobs deemed to be 'spam'. We construct our estimation sample as a panel of job-application pairs. Each observation incorporates associated applicant (worker) information, including time-invariant (e.g., country of origin, etc.) and time-variant (e.g., total number of reviews, completion rate, etc.) characteristics, as well as associated employer information, such as employer experience. We exclude job applications that were ultimately retracted before the time of contracting (note that these comprise a small portion of the original sample, and their inclusion does not influence our results). A unique feature of our data set is that we observe the entire history of communication at the keystroke level. Each message exchange is tied to a particular job posting. We observe the raw text of each message, the identity of the transmitting party and that of the receiving party. We also observe whether a specific message was opened by the receiving party. For each job-application pair, we divide the communication between the worker and the employer into pre-and post-contract communications, based on the timing of employer awarding a contract. Our analyses focus on pre-contract communication because post-contract communication, by definition, cannot have an effect on employer hiring decisions. We consider multiple identification strategies that enable us to estimate the causal impact of pre-contract worker-initiated private messages on hiring outcomes.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Data and Measures</head><p>In this section, we provide some descriptive statistics about our dataset. We distinguish between private messages initiated by the worker and those initiated by the employer, keeping in mind that employerinitiated communication is likely an indication that the employer has a pre-established interested in the target worker. We thus construct dummies reflecting each of three mutually scenarios: no communication (37.90% of worker-employer pairs), employer-initiated communication (5.18%), and worker-initiated communication (56.92%). Because employer-initiated communication is notably quite rare, we primarily focus on workers' initiation of communication in our analyses (reflected by the workerMessage dummy). To construct measures that allow us to assess the impact of textual content on the hiring outcome, for each job-application pair, we concatenate the text of all messages sent by the worker who applied for the focal job. We then employ Linguistic Inquiry and Word Count, or LIWC <ref type="bibr" target="#b27">(Pennebaker et al. 2015)</ref>, to construct measures of workers' linguistic style. Notably, LIWC has seen extensive application in the Information Systems literature of late <ref type="bibr" target="#b15">(Huang et al. 2017</ref><ref type="bibr" target="#b33">, Yin et al. 2014)</ref>. We provide a short definition for each variable in Table <ref type="table">1</ref> and corresponding descriptive statistics for all variables in Table <ref type="table" target="#tab_0">2</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Table 1. Variable Definitions</head><p>Dependent Variable: Hired measures whether the worker's job application resulted in a job offer. Key Independent Variables: Worker Initiation of Private Messaging (workerMessage) measures whether the worker initiated at least one private message with the employer in the pre-contract stage.</p><p>Reputation Volume (log(numReviews)) measures the number of completed jobs on which the worker has received reviews from the employers, at the time of submitting a job application. Spatial Distance (log(spatialDistance)) measures the distance between the employer and the worker based on the longitude and latitude of their locations. Percentage of Messaging Workers (pctWorkersMessaging) measures the percentage of workers who initiated a private communication with the employer of a focal job. Control Variables: Bid Amount (log(bidAmount)) is the amount of payment in dollars the worker requested in the job application (or bid). Bid Sequence (log(bidSequence)) represents the sequence of the focal worker's application, among all applications for the same job. Insignia (hasInsignia) measures whether the worker has any platform awarded insignia. For example, workers may be awarded a PHP expert insignia if s/he scores very high in the PHP exam. Exam (hasExam) measures whether the worker has passed any platform-hosted exams (e.g., English Level 1). Worker-Job Fit (workerJobFit) measures the similarity between the worker's profile and the job's description. Following standard pre-processing of the text of the worker's profile description and the job description, namely tokenization, stemming, and removal of stop words, we calculate the cosine similarity between their vector space representation under the TF-IDF weighting scheme. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Model Specifications</head><p>Following past literature that estimates employer preferences in online labor markets <ref type="bibr">(Ghani et al. 2014, Hong and</ref><ref type="bibr" target="#b12">Pavlou 2017)</ref>, we employ a linear probability model to analyze hiring outcomes. Alternative estimations using conditional logistic models yield similar results and are reported as robustness checks.</p><p>To alleviate the concern that hiring outcomes are jointly determined across workers for any given job, we impose a job-level fixed effect, which accounts for any observed or unobserved time-invariant job-specific characteristic that may affect the hiring decision. Let , , and index workers, jobs, and employers, respectively, and let represent the employer of job . And is job fixed effects. Because a job can only be posted by an employer and an employer can post one or many jobs, also subsumes any employer-level unobserved characteristics. The model specification also controls for observable worker characteristics. Equation 1 represents the most parsimonious specification, in which the coefficient associated with the focal independent variable, workerMessage, quantifies the effect of worker-initiated private messaging on the hiring outcome.</p><p>Of course, the worker's decision to initiate communication is subject to self-selection, and is thus endogenous. In an effort to establish causality, we consider a number of plausible instruments. We begin by considering factors that influence the propensity of a worker to initiate a message, yet at the same time are not observed by employers. Such variables are likely to be valid instruments as they should have no direct effect on the employer's hiring decision. In this regard, we consider the worker's historical experience in prior attempts to initiate private messages with potential employers, around prior job applications, most notably whether said messages were opened by the target employer. The rationale behind this instrument is that the worker is less likely to initiate a message to the current employer if prior attempts were ignored. However, whether a prior employer opened the worker's message is not observed by the current employer, therefore it should have little to no bearing on whether the current employer will hire the worker for the current job.</p><p>Next, having established the main effect of private message initiation on the probability of a worker being hired, we conduct a few additional analyses to understand the situational factors that magnify or attenuate the effect of private communication, which in turn can shed light on the possible mechanisms for the observed main effect of private message initiation, as well as the value of private messaging for overcoming the employer biases detailed earlier. Finally, we also seek to explore the effect of message content, e.g., linguistic style, on hiring.</p><p>We thus explore worker level heterogeneous effects. Specifically, we consider worker reputation, spatial distance, and English ability as moderators. As discussed earlier, these variables are likely to regulate the effect of message initiation on the hiring outcome. The model specification incorporating the interaction terms with workerMessage is shown in Equation <ref type="formula">2</ref>. Here, worker reputation is captured by three measures: number of reviews, average valence of ratings and completion rate.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Results</head><p>In this section, we report the key results, followed by a series of robustness checks. For the main analyses, we begin by reporting the main effects of workers' initiation of communication with prospective employers. And we then assess possible endogeneity of communication initiation with an instrumental variable estimation. After alleviating the endogeneity concern, we provide a number of heterogeneity effects (both worker-and employer-level) analyses that aimed at providing insights on the possible mechanisms. We then provide an exploratory analysis on the effect of the textual content of the private messages. For the robustness check, we first report an alternative identification for the effect of communication, by leveraging our observations on whether the private messages have been read by the employers. Second, we employ an alternative model specification (conditional logistic) to assess the robustness of the findings. Third, we control for additional worker-level fixed effects. We conclude the section by analyzing a highly homogenous sample.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Main Effect of Communication Initiation</head><p>Table <ref type="table" target="#tab_1">3</ref> presents the results of our baseline model for the main effect of workers' initiation of private communications. As we can see, the effect of worker initiated private messaging increases hiring probability by 2.2%, which translates to around 29% lift over the baseline hiring probability (i.e., 7.6%), indicating that the effect of worker-initiated private messages is not just statistically significant, it is also economically meaningful. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Worker-Level Heterogeneous Effects</head><p>We next explore heterogeneity around the effects of workers' initiation of private messaging with employers. We begin by examining the degree to which initiating a private message can overcome home bias, a lack of reputation, i.e., the "cold-start" problem <ref type="bibr" target="#b26">(Pallais 2014)</ref>, as well as negative reputation. We then explore the moderating role of English ability, measured in terms of a worker's historical typographical error rates and the similarity of the commonly spoken language in the worker's country of residence to that of UK English (results are consistent if we use US English). For reputation, we consider three measures as discussed in the Method section. Because we only observe workers' completion rates when a worker has at least some work history, we set these values to 0 for workers who lack history, and we incorporate an additional dummy variable to capture any systematic difference in hiring outcomes attributable to a complete absence of work history. The results of these moderation tests are reported in Table <ref type="table" target="#tab_2">4</ref>.</p><p>We observe a number of interesting effects consistent with our expectations. First, message initiation provides outsized benefit when the worker lacks prior reputation (i.e., new workers in the eye of employers), consistent with our expectation that private communication can alleviate ambiguity aversion. Second, we observe that the benefit of private communication is higher for workers who bear negative reputation, as reflected by a relatively lower completion rate or lower than average rating valence, perhaps because workers can leverage private messages to place their prior (poor) work performance in context. Third, consistent with the literature <ref type="bibr">(Burtch et al. 2013, Hong and</ref><ref type="bibr" target="#b12">Pavlou 2017)</ref>, we observe evidence of home bias, in that the probability of being hired is negatively related to geographic distance between the worker and the employer. Moreover, again consistent with our expectations, we find that this negative effect is attenuated by worker-initiated private messages. This may be attributable to an increased perception of co-location on the part of the employer (O'Leary and Cumming 2007), or the worker's evidenced ability to communicate well with the employer. Fourth, the benefit of worker-initiated communication is stronger when the worker's native spoken language is English, the official language of the platform. Moreover, if the worker has a lower overall English ability as reflected by a greater percentage of typos in his or her text, the effect of a worker-initiated private message decreases, and may even become negative. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Discussion</head><p>The observed heterogeneous effects also provide some insights into the mechanisms by which private communication would have a positive effect on the probability that a worker is offered the job. First, the number of reviews indicates a worker's platform experience, while completion rate and average review valence indicate a worker's quality. Given that the initiation of private messages is most effective when the worker has little platform experience or low reputation, a likely explanation is that the messages shift the employers' perception of workers' in terms of their competency, making them less concerned about workers who lack platform experience or who have low reputation. Second, worker-initiated private messages are more effective when a worker has a better grasp of English. This indicates that private messages influence employer perceptions of workers' communication ability (e.g., language skills). Third, we observe that the negative effect of spatial distance is attenuated by worker initiation of private messages. Bearing in mind that spatial distance may drive employer concerns about a potential inability to synchronize with workers <ref type="bibr" target="#b12">(Hong and Pavlou 2017)</ref>, it makes sense that employers would react positively to a worker taking the initiative by starting a private communication. Moreover, as described above, it is also likely the initiation of communication conveys information about the worker's interest or bandwidth, because when other workers also initiate a private message with the employer for the same job, the effect of each message becomes much smaller.</p><p>We examine the impact on hiring outcomes from worker-initiated private messaging to potential employers, in the context of an online labor market, Freelancer.com. First, we argue and demonstrate that workers, by initiating a private message to a potential employer, can enhance their probability of obtaining employment. Second, we show that the effectiveness of private message initiation varies with worker characteristics. In particular, initiating a private message is more effective for workers who lack platform experience or who have poorer reputation. At the same time, worker initiated private messages appear to reinforce the positive effects of language capability, while attenuating the negative effect of geographic distance (home bias).</p><p>Our work makes several important contributions to the literature. First, by examining workers' initiation of private messages with employers, this paper extends prior work on the role of direct messaging in online retail environments <ref type="bibr" target="#b22">(Ou et al. 2014</ref><ref type="bibr" target="#b23">, Ou et al. 2016</ref><ref type="bibr" target="#b29">, Tan et al. 2016)</ref>, into the domain of online labor markets. We build on past research, considering not only contextual moderators on the effect of private messaging, such as worker reputation (or lack thereof) and worker's geographic distance from employers, but also message content. Second, our study contributes to the literature on the "cold-start" problem related to platform reputation and experience <ref type="bibr" target="#b26">(Pallais 2014</ref><ref type="bibr" target="#b18">, Liang et al. 2017)</ref>. Our estimates indicate a degree of substitutability between worker-initiated private messages and worker reputation, both in terms of volume and valence. Specifically, we find that use of private messaging is particularly beneficial when workers lack reputation, or when workers' reputation is poor. These finding suggest that the entry barriers and inefficiency typically associated with the "cold-start" problem <ref type="bibr" target="#b26">(Pallais 2014</ref>) and home biases <ref type="bibr" target="#b18">(Liang et al. 2017)</ref> can perhaps be partially addressed by encouraging workers to take the initiative to reach out to employers directly during the job application process, which could effectively mitigate employers' uncertainty about workers' interest, bandwidth, and trustworthiness. We have identified workers' initiation of communication with potential employers as a significant yet under-studied factor that has a substantial effect on employers' hiring choices, beyond factors such as wage, reputation, language, certification, and spatial distance.</p><p>This study of course has a few limitations, which we believe constitute opportunities for future research. One notable limitation is that we are unable to account for the endogenous nature of textual content that workers incorporate into their messages. Conceivably, workers who exhibit a higher rate of typographical errors may be systematically weaker in their presentation in other, unobserved, respects, such as in crafting a worker profile, which can lead to spurious associations between these unobserved factors and hiring probability. Going forward, scholars might look to engage in randomized experimentation to identify textual content features conducive to hiring. Additionally, our analyses do not assess whether these shifts in hiring probability are to the employer's or platform's benefit, and thus the implications for welfare. It is possible that, although these factors induce increased hiring probability, it may come at a cost for employers. This would be particularly true if these hiring shifts are not in response to improved inferences about worker quality or the worker's intentions. For example, it remains possible that hiring biases and cold-start problems in fact benefit employers. In this regard, we provided an exploratory analysis, to test our expectation that if the rationality of these biases is supported statistically, jobs with pre-contract communication between the worker and the employer should yield better job outcomes. Future work can further assess the causal relationship between worker-initiated private messaging and other job-related outcomes, such as the price a worker can command, job completion and the quality of job delivery. Given our objective to establish the baseline effects of private communication and our attempt to understand the underlying mechanisms of these effects, we have not delved deeply into textual features. We leave more advanced analyses of textual content for future work, where scholars might employ, for example, topic modeling techniques, to identify subjects of discussion that workers should or should not broach to employers in the pre-contracting stage. Finally, we have focused on pre-contract communication in this work, given the outcome we focus upon is the employer's choice of the worker. Nevertheless, private communication is potentially just as important in the post-contract stage, when the worker and the employer continue forward with their collaboration. This medium is key for communicating changes in job requirements, etc. Future research can examine the role of post-contract communication in this regard.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head>Table 2 . Descriptive Statistics</head><label>2</label><figDesc></figDesc><table><row><cell>Variable</cell><cell>Mean</cell><cell>Std.</cell><cell>Min</cell><cell>Max</cell></row><row><cell></cell><cell></cell><cell>Dev.</cell><cell></cell><cell></cell></row><row><cell>hired</cell><cell>0.076</cell><cell>0.264</cell><cell>0.000</cell><cell>1.000</cell></row><row><cell>workerMessage</cell><cell>0.601</cell><cell>0.490</cell><cell>0.000</cell><cell>1.000</cell></row><row><cell>log(numReviews)</cell><cell>1.534</cell><cell>1.884</cell><cell>0.000</cell><cell>7.230</cell></row><row><cell>avgRating</cell><cell>9.791</cell><cell>0.427</cell><cell>1.000</cell><cell>10.000</cell></row><row><cell>compRate</cell><cell>0.338</cell><cell>0.373</cell><cell>0.000</cell><cell>1.000</cell></row><row><cell>log(spatialDistance)</cell><cell>7.804</cell><cell>2.300</cell><cell>0.000</cell><cell>9.415</cell></row><row><cell>pctWorkersMessaging</cell><cell>0.580</cell><cell>0.233</cell><cell>0.000</cell><cell>1.000</cell></row><row><cell>log(jobsCompleted)</cell><cell>1.372</cell><cell>1.342</cell><cell>0.000</cell><cell>7.024</cell></row><row><cell>log(jobsNotCompleted)</cell><cell>2.058</cell><cell>1.53</cell><cell>0.000</cell><cell>7.433</cell></row><row><cell>log(bidAmount)</cell><cell>4.689</cell><cell>1.153</cell><cell>0.000</cell><cell>13.816</cell></row><row><cell>log(bidSequence)</cell><cell>2.363</cell><cell>1.122</cell><cell>0.000</cell><cell>5.635</cell></row><row><cell>hasInsignia</cell><cell>0.339</cell><cell>0.473</cell><cell>0.000</cell><cell>1.000</cell></row><row><cell>hasExam</cell><cell>0.114</cell><cell>0.318</cell><cell>0.000</cell><cell>1.000</cell></row><row><cell>workerJobFit</cell><cell>0.073</cell><cell>0.082</cell><cell>0.000</cell><cell>0.869</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1"><head>Table 3 . Private Messaging and Hiring Outcome</head><label>3</label><figDesc></figDesc><table><row><cell></cell><cell>(1) Hired</cell></row><row><cell>workerMessage</cell><cell>0.022***(0.001)</cell></row><row><cell>log(numReviews)</cell><cell>0.018***(0.000)</cell></row><row><cell>englishSimilarity</cell><cell>0.034***(0.002)</cell></row><row><cell>log(spatialDistance)</cell><cell>-0.003***(0.000)</cell></row><row><cell>log(bidAmount)</cell><cell>-0.051***(0.001)</cell></row><row><cell>log(bidSequence)</cell><cell>0.003***(0.000)</cell></row><row><cell>hasInsignia</cell><cell>0.012***(0.001)</cell></row><row><cell>hasExam</cell><cell>0.007***(0.002)</cell></row><row><cell>workerJobFit</cell><cell>0.077***(0.005)</cell></row><row><cell>Observations</cell><cell>442,606</cell></row><row><cell>R-squared</cell><cell>0.178</cell></row><row><cell>Job FE</cell><cell>Yes</cell></row><row><cell># Jobs</cell><cell>29535</cell></row><row><cell cols="2">Notes: 1. Standard errors clustered on jobs; 2. *** p&lt;0.001, ** p&lt;0.01, * p&lt;0.05</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2"><head>Table 4 . Heterogeneous Effects of Message Initiation</head><label>4</label><figDesc></figDesc><table><row><cell>(1) Hired</cell><cell>(2) Hired</cell></row></table></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_0"><p>Twenty-fourth Americas Conference on Information Systems, New Orleans, 2018</p></note>
+		</body>
+		<back>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">The market for&quot; lemons&quot;: Quality uncertainty and the market mechanism</title>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">A</forename><surname>Akerlof</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Quarterly Journal of Economics</title>
+		<imprint>
+			<biblScope unit="volume">84</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="488" to="500" />
+			<date type="published" when="1970">1970</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Procurement when price and quality matter</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Asker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Cantillon</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">RAND Journal of Economics</title>
+		<imprint>
+			<biblScope unit="volume">41</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="1" to="34" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Importance of measures of past erformance: Empirical evidence on quality of essers</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">D</forename><surname>Banker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Hwang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Contemporary Accounting Research</title>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="307" to="337" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Cultural differences and geography as determinants of online prosocial lending</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Burtch</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Ghose</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Wattal</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">38</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="773" to="794" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Hiring preferences in online labor markets: Evidence of a female hiring bias</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Chan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Wang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Science. Articles in Advance</title>
+		<imprint>
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Strategic information transmission</title>
+		<author>
+			<persName><forename type="first">V</forename><forename type="middle">P</forename><surname>Crawford</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Sobel</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Econometrica</title>
+		<imprint>
+			<biblScope unit="volume">50</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="1431" to="1451" />
+			<date type="published" when="1982">1982</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Optimal aggregation of consumer ratings: An application to Yelp.com</title>
+		<author>
+			<persName><forename type="first">W</forename><surname>Dai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Jin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Luca</surname></persName>
+		</author>
+		<ptr target="https://ssrn.com/abstract=2183028" />
+	</analytic>
+	<monogr>
+		<title level="m">NBER Working Paper No. w18567</title>
+		<imprint>
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">On product uncertainty in online markets: Theory and evidence</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Dimoka</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Hong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">A</forename><surname>Pavlou</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">36</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="395" to="426" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Risk, ambiguity, and the savage axioms</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Ellsberg</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The Quarterly Journal of Economics</title>
+		<imprint>
+			<biblScope unit="volume">75</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="643" to="669" />
+			<date type="published" when="1961">1961</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Investor diversification and international equity markets</title>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">R</forename><surname>French</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">M</forename><surname>Poterba</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">American Economic Review</title>
+		<imprint>
+			<biblScope unit="volume">81</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="222" to="226" />
+			<date type="published" when="1991">1991</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Diasporas and outsourcing: evidence from oDesk and India</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>Ghani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><forename type="middle">R</forename><surname>Kerr</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Stanton</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Science</title>
+		<imprint>
+			<biblScope unit="volume">60</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="1677" to="1697" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Uncertainty, hiring, and subsequent performance: The NFL draft</title>
+		<author>
+			<persName><forename type="first">W</forename><surname>Hendricks</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Debrock</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Koenker</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Labor Economics</title>
+		<imprint>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="857" to="886" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">On buyer selection of service providers in online outsourcing platforms for IT services</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Hong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">A</forename><surname>Pavlou</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<imprint>
+			<biblScope unit="volume">28</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="547" to="562" />
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Comparing open and sealed bid auctions: Evidence from online labor markets</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Hong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">A</forename><surname>Pavlou</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="49" to="69" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Buyer uncertainty about seller capacity: Causes, consequences, and partial solution</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Horton</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Science</title>
+		<imprint>
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Reputation inflation: Evidence from an online labor market. New York University Working Paper</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Horton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Golden</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Hong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Burtch</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">41</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="1035" to="1058" />
+			<date type="published" when="2015">2015. 2017</date>
+		</imprint>
+	</monogr>
+	<note>Social network integration and user content generation: Evidence from natural experiments</note>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Reputation transferability in online labor markets</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Kokkodis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">G</forename><surname>Ipeirotis</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Science</title>
+		<imprint>
+			<biblScope unit="volume">62</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="1687" to="1706" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<monogr>
+		<title level="m" type="main">Effects of IT-enabled monitoring on labor contracting in online platforms: Evidence from a natural experiment</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Liang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Hong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Gu</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2016">2016</date>
+			<biblScope unit="page" from="16" to="17" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<monogr>
+		<title level="m" type="main">Home bias in global employment</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Liang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Hong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Gu</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2017">2017</date>
+			<biblScope unit="page" from="17" to="23" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Effectiveness of reputation in contracting for customized production: Evidence from online labor markets</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Viswanathan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Science. Forthcoming</title>
+		<imprint>
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Native language, spoken language, translation and trade</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Melitz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Toubal</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of International Economics</title>
+		<imprint>
+			<biblScope unit="volume">93</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="351" to="363" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Doing business with strangers: Reputation in online service marketplaces</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Moreno</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Terwiesch</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="865" to="886" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Swift Guanxi in online marketplaces: the role of computer-mediated communication technologies</title>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">X</forename><surname>Ou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">A</forename><surname>Pavlou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">M</forename><surname>Davison</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">38</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="209" to="230" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">The role of swift relationship and institutional structures in uncertainty reduction</title>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">X</forename><surname>Ou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">M</forename><surname>Davison</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the International Conference on Information Systems (ICIS)</title>
+		<meeting>the International Conference on Information Systems (ICIS)<address><addrLine>Dublin, Ireland</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">The spatial, temporal, and configurational characteristics of geographic dispersion in teams</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">B</forename><surname>O'leary</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">N</forename><surname>Cummings</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="433" to="452" />
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">Beyond being there: The symbolic role of communication and identification in perceptions of proximity to geographically dispersed colleagues</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">B</forename><surname>O'leary</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">M</forename><surname>Wilson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Metiu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">38</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="1219" to="1243" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Inefficient hiring in entry-level labor markets</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Pallais</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">American Economic Review</title>
+		<imprint>
+			<biblScope unit="volume">104</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="3565" to="3599" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">The effect of price, brand name, and store name on buyers&apos; perceptions of product quality: An integrative review</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">W</forename><surname>Pennebaker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">L</forename><surname>Boyd</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Jordan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Blackburn</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">R</forename><surname>Rao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">B</forename><surname>Monroe</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Marketing Research</title>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="351" to="357" />
+			<date type="published" when="1989">2015. 1989</date>
+			<pubPlace>Austin, TX</pubPlace>
+		</imprint>
+		<respStmt>
+			<orgName>University of Texas at Austin</orgName>
+		</respStmt>
+	</monogr>
+	<note>The Development and Psychometric Properties of LIWC2015</note>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<monogr>
+		<title level="m" type="main">Reconceptualizing the determinants of risk behavior</title>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">B</forename><surname>Sitkin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">L</forename><surname>Pablo</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1992">1992</date>
+			<publisher>Academy of Management Review</publisher>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="page" from="9" to="38" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">The value of live chat on online purchase</title>
+		<author>
+			<persName><forename type="first">X</forename><surname>Tan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Tan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the International Conference on Information Systems (ICIS)</title>
+		<meeting>the International Conference on Information Systems (ICIS)<address><addrLine>Dublin, Ireland</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<monogr>
+		<title level="m" type="main">Discrete choice methods with simulation</title>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">E</forename><surname>Train</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2009">2009</date>
+			<publisher>Cambridge university press</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">Buyer uncertainty and information search</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">E</forename><surname>Urbany</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">R</forename><surname>Dickson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><forename type="middle">L</forename><surname>Wilkie</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Consumer Research</title>
+		<imprint>
+			<biblScope unit="volume">16</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="208" to="215" />
+			<date type="published" when="1989">1989</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Multinomial response models</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Wooldridge</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Econometric Analysis of Cross Section and Panel Data</title>
+		<meeting><address><addrLine>Cambridge, MA</addrLine></address></meeting>
+		<imprint>
+			<publisher>MIT Press</publisher>
+			<date type="published" when="2001">2001</date>
+			<biblScope unit="page" from="497" to="504" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">Anxious or angry? Effects of discrete emotions on the perceived helpfulness of online reviews</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Yin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Bond</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Zhang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">38</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="539" to="560" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

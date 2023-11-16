@@ -1,0 +1,1379 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Facts vs. Stories -Assessment and Conventional Signals as Predictors of Freelancers&apos; Performance in Online Labor Markets</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author role="corresp">
+							<persName><forename type="first">Christian</forename><surname>Holthaus</surname></persName>
+							<email>christian.holthaus@stock-homburg.de</email>
+						</author>
+						<author>
+							<persName><forename type="first">T</forename><forename type="middle">U</forename><surname>Darmstadt</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Ruth</forename><forename type="middle">M</forename><surname>Stock</surname></persName>
+						</author>
+						<title level="a" type="main">Facts vs. Stories -Assessment and Conventional Signals as Predictors of Freelancers&apos; Performance in Online Labor Markets</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="MD5">7EA10835070621BE0220B310FEF6FEF4</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.7.3" ident="GROBID" when="2023-06-16T09:24+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>This paper investigates how freelancers' use of signals predicts earnings in online labor markets.</head><p>Extant literature has questioned the usefulness of some assessment signals to evaluate a freelancer's quality. We find that conventional signals -signals based on non-verifiable information -can be predictors of higher revenue, when they are based on anecdotes of positive past events (self-promotion). However, mere kindness and flattery towards the customer (ingratiation) is negatively associated with a freelancers' earnings in OLM. Moreover, we find evidence that the number of tests performed on the platform is significantly associated with higher earnings -with each test that is added to the profile a freelancer's revenue increases by 4.1 %. We base our analysis on a sample of 1065 freelancers using objective financial earnings data, independent codings and survey data.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.">Introduction</head><p>There has been a growing number of research on "online labor markets" (OLM), online platforms for individuals and organizations "to quickly identify short-term workers who have skills required for particular, often one-time, tasks" <ref type="bibr" target="#b1">[1]</ref>. However, as contracts are negotiated very quickly, independent of time and space and with minimized personal contact, increased information asymmetry yields insecurity regarding the hiring process. Thus, clients have to rely on diverse factors and cues to judge if a particular freelancer is likely to perform well.</p><p>A prominent factor are signals visible on a freelancer's profile page. Signaling is a process in which "one party (termed the agent) credibly conveys some information about itself [through different signals] to another party (the principal)" <ref type="bibr" target="#b2">[2]</ref>. This information in the form of signals is costly. Costs associated with sending the signal outweigh the benefits of sending if the sender does not possess the respective qualities <ref type="bibr" target="#b3">[3]</ref>. In turn, costly signals may reduce information asymmetry and are assumed to be beneficial for forming contractual relationships thus resulting in higher earnings and revenue for the freelancer.</p><p>Accordingly, signaling literature has focused on the performance impact of signals in different markets and contexts, such as markets of public goods <ref type="bibr" target="#b4">[4]</ref>, the job market <ref type="bibr" target="#b3">[3]</ref>, the stock market <ref type="bibr" target="#b5">[5]</ref> and the consumer market <ref type="bibr" target="#b6">[6]</ref>. There are some studies in extant literature that have applied signaling theory to online labor markets. Signals assessed by this literature stream include the number of portfolio items <ref type="bibr" target="#b7">[7]</ref>, and the presence of a top rated status <ref type="bibr">[8 -9]</ref>. However, for some signals, such as ratings, literature mentions an upward bias and the ability to reduce information asymmetry is questionable <ref type="bibr">[10 -11]</ref>.</p><p>To date, extant literature in online labor markets has focused on "assessment signals" -verifiable and costly information, that can be directly validated by the receiver, such as ratings, tests and portfolio-items <ref type="bibr" target="#b12">[12]</ref>. However, in highly competitive environments like online labor markets, freelancers do not solely rely on these types of signals to attract customers and stand out from the crowd.</p><p>In fact, freelancers make extensive use of so called "conventional signals" <ref type="bibr" target="#b12">[12]</ref> that express intentions, anecdotes and opinions of the sender, such as self-promotion -an individual's claims to possess certain qualities. In contrast to assessment signals, these signals are not costly and cannot be directly validated. Surprisingly, literature on online labor markets has largely neglected conventional signals and their implications. Additionally, recent studies on assessment signaling neglect the fact that there might be other factors involved in signaling such as character traits and skills. To fill this gap, this study addresses the following research question: </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>How do assessment signals and conventional signals affect freelancers' performance?</head><p>We assess the financial dimension of buyer supply exchangesa freelancer's total earnings in USD for a period of one yearto reflect freelancers' performance <ref type="bibr" target="#b13">[13]</ref><ref type="bibr" target="#b14">[14]</ref>. Measuring the earnings as a proxy of freelancing success has major benefits compared to other success measures, e.g., a natural unit that is easily interpreted, less bias than single source or dyadic data and the approximation of many dimensions of success in a single measure (customer satisfaction as well as successful management and sales activities) <ref type="bibr" target="#b15">[15]</ref>. Additionally, we go beyond the level of visible signals and assess individual character traitshabitual patterns of behavior that are stable over time <ref type="bibr" target="#b16">[16]</ref> and key skills / individual differences that might affect performance in OLM. Moreover, we add other variables that are likely to influence a freelancer's earnings, such as a freelancer's availability, past project experience, education level and english verbal proficiency.</p><p>Our study contributes to extant literature in three ways. First, this study is the first to contrast conventional signals with assessment signals in online labor markets and shows that their performance implications differ. Thus, the research broadens the spectrum of signaling theory and opens up new avenues for OLM research. It helps to better understand the complexity of signaling behavior in OLM and offers various new signaling types future research could use to better assess performance in OLM. At the same time, we enable clients to infer crucial job related factors and improve their hiring decisions.</p><p>Second, we build our analysis on earnings, an outcome measure that is largely neglected in OLM research. Accordingly, we extend literature by pointing to possible differences between hiring decisions and financial outcomes as a proxy for performance in OLM.</p><p>Third, stressing the differences between signaling types contributes to research and practice on the design of OLM platforms, e.g., the optimal position of signaling spots (e.g., test scores, self-descriptions) on profile pages according to their relevance.</p><p>We obtain self-report measures of character traits, objective measures of performance and various assessment signals as well as measures of conventional signals as perceived by third raters. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.">Online labor markets and related fields</head><p>In information science, particularly in economics and accounting, there is an emerging body of literature on online labor markets, defined as online "tool for individuals and organizations to quickly identify short-term workers [-freelancers -] who have skills required for particular, often one-time, tasks." <ref type="bibr" target="#b1">[1]</ref>.</p><p>Thus, freelancing in the light of this study is the completion of major or minor business tasks by an individual in an online market placethe online labor market. The most important pillars of freelancing in online labor markets are the online representation of the freelancer by a profile page and the creation of an online reputation (e.g., via reviews and past jobs). Valuable candidates are virtually assessed and interviewed to work on jobs and complete project milestones. Thus, the activities within the entire project value chain are conducted digitally <ref type="bibr" target="#b14">[14]</ref>. Some examples for major online labor markets are freelancer.com and upwork.com. A closely related concept is crowdsourcing, the "act of a company or institution taking a function once performed by employees and outsourcing it to an undefined (and generally large) network of people in the form of an open call" <ref type="bibr" target="#b17">[17]</ref>. However, crowdsourcing emphasizes collaboration and problem-solving, often through "contests" <ref type="bibr" target="#b18">[18]</ref> or "micro tasks" <ref type="bibr">[19 -20]</ref>.</p><p>There has been a growing body of literature in the field of online labor markets. Studies in this field have focused on the differences regarding classical, "offline" labor markets, such as female hiring biases <ref type="bibr" target="#b21">[21]</ref>, country preferences <ref type="bibr" target="#b22">[22]</ref>, language, time-zone and cultural differences <ref type="bibr" target="#b23">[23]</ref>, and auction preferences, such as the influence of bid formatsealed and closed bids -on buyer surplus <ref type="bibr" target="#b24">[24]</ref>. There has been some literature on signaling in online labor markets, which we will review in the following chapters. We will organize the review by the type of signalnamely assessment and conventional signals and review studies on both antecedents and outcomes of signals.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.2.">Signaling in online labor markets</head><p>Recall that signaling is defined as a process in which "one party (termed the agent) credibly conveys some information about itself [through different signals] to another party (the principal)" <ref type="bibr" target="#b2">[2]</ref>. Central to the concept of signaling is the cost associated with a signal. Spence <ref type="bibr" target="#b3">[3]</ref> discussed an individual's education as a reliable signal because low performing individuals are not able to (successfully) obtain higher education and thus lack the ability to successfully send it. In other words, in the case of education, the costs associated with the signal outweigh the benefits for individuals that are not likely to succeed. The same is true for tests that can be taken on freelancing sites and are displayed publicly. Tests are a costly signal, because producing the signal without having the skills to take the test would not have benefits for the sender (a bad result is displayed on the page). We term these types of signals "assessment signals"signals that are "reliable, because producing the signal requires possessing the indicated quality" <ref type="bibr" target="#b12">[12]</ref>. The same is true for a freelancer's ratings and portfolio items. Showing portfolio itemssamples of past projectswould not be beneficial for the client if he or she has not been able to successfully perform his tasks in the past. If past projects did not end successfully or did not produce any outcome, showing portfolio items would not be beneficial or impossible. In general, portfolio items are directly verifiable as they are connected to a certain contract in the past. For an overview of assessment signals used in our study, see table 1 below. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Rating</head><p>Average review score of all projects completed, range 1-5.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.85">Stars</head><p>In contrast to assessment signals, conventional signals do not require the sender to possess the quality signaled, rather, "the link between signal and quality is arbitrary, a matter of social convention" <ref type="bibr" target="#b12">[12]</ref>. In other words, anyone could use e.g., his self-description to tell people about positive past events and his desirable qualities (self-promotion) or act like a favorable person by using flattery and being overly polite (ingratiation). Another conventional signal often used in OLM is the price of a productonly social mores or conventions prohibit freelancers to demand a higher price for their services. For an overview of the conventional signals used in our study, see table <ref type="table" target="#tab_1">2</ref>.  <ref type="bibr" target="#b27">[27]</ref>, market threats and market concentration <ref type="bibr" target="#b28">[28]</ref>, contract type, motives <ref type="bibr" target="#b1">[1]</ref> and various demographics <ref type="bibr">[29 -30]</ref>. To date, research has not assessed the role of character traits regarding assessment signaling in online labor markets. There are already some studies in extant literature that have applied signaling theory to explain online platform outcomes. Some of these studies have assessed the influence of assessment signals on performance outcomes such as consumers' willingness to transact <ref type="bibr" target="#b31">[31]</ref> and perceptions of product quality <ref type="bibr" target="#b32">[32]</ref>. An outcome studied widely in OLM literature are hiring decisions. Assessment signals addressed by this literature stream include the presence of an agency affiliation <ref type="bibr" target="#b33">[33]</ref>, the number of portfolio pieces <ref type="bibr" target="#b7">[7]</ref>, and the presence of a top rated status <ref type="bibr">[8]</ref><ref type="bibr" target="#b9">[9]</ref>. However, to our knowledge, there is no study assessing financial performance outcomes of signals in online labor markets.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.2.2.">Conventional signals in OLM literature</head><p>We have described earlier that conventional signals are not based on verifiable information and thus cannot be directly validated. These signals have been the subject of studies on impression management in an offline environment such as hiring, interviews and evaluations <ref type="bibr">[34 -37]</ref>. Research on antecedents of conventional signals in information science literature is scarce. However, a few articles indirectly referring to the use of conventional signals are concerned with outcome measures such as "envy" <ref type="bibr" target="#b38">[38]</ref>, "first impression bias" <ref type="bibr" target="#b39">[39]</ref>, "online isomorphism" <ref type="bibr" target="#b40">[40]</ref> and "swift guanxi"the creation of intimacy perceptions <ref type="bibr" target="#b41">[41]</ref>. This stream does not differentiate between certain tactics and thus applies a unidimensional approach to conventional signaling. Research regarding the outcomes of conventional signals includes the effect of viewing social media profiles on subjective well-being and self-esteem <ref type="bibr">[42 -43]</ref> or evaluations of others <ref type="bibr">[44 -45]</ref>. In summary, it still remains unclear how conventional signaling in social media, particularly in online labor markets, is linked to individual work-related success measures.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.">Hypotheses</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.1.">Performance implications of signals</head><p>According to signaling theory, information asymmetry between two parties can be reduced by sending costly market-related signals, which in turn, makes an existing contractual relationship more viable and helps to attract new customers <ref type="bibr" target="#b46">[46]</ref><ref type="bibr" target="#b47">[47]</ref>. Specifically, the freelancer needs to decide whether and how to provide relevant information toward a customer, who in turn interprets these signals <ref type="bibr" target="#b48">[48]</ref>.</p><p>Recall that assessment signals are difficult to be imitated by competitors and are only beneficial for the sender if he or she possesses the qualities to be signaled. Assessment signals require high costs and risks from the freelancer to transfer the signal in absence of authenticity <ref type="bibr" target="#b49">[49]</ref>. Thus, these signals reduce information asymmetry through credible information such as portfolio items and tests and positively affect the freelancerclient relationship. Signals assessed within this category, are the increase of CEOs' ownership stakes to promote diversification strategies <ref type="bibr" target="#b50">[50]</ref>, the stack of a firm's board with prominent directors to signal legitimacy <ref type="bibr" target="#b51">[51]</ref> and the establishment of heterogeneous boards to signal compliance with social values <ref type="bibr" target="#b52">[52,</ref><ref type="bibr" target="#b48">48]</ref>.</p><p>In our case, the OLM provides some opportunities to engage in assessment signaling: References in the form of portfolio items, a quality rating provided by past customers and tests to showcase a freelancer's knowledge. In the light of signaling theory, all these signals should be costly and "hard to fake" and thus reliable indicators of true positive qualities. Thus, information asymmetry should be decreased which is beneficiary for sales and ultimately increases a freelancer's overall success measured by his earnings <ref type="bibr" target="#b14">[14]</ref>. Thus, we hypothesize the following:</p><p>H1a: There is a positive association of the number of portfolio items with earnings.</p><p>H1b: There is a positive association of a freelancer's rating displayed on the page with earnings.</p><p>H1c: The number of tests displayed on the profile page is positively associated with a freelancer's earnings.</p><p>Unlike assessment signals, conventional signals are not directly linked to specific qualities, high costs and verifiable information. In contrast, only social conventions and mores (e.g., terms of conduct) may prevent the sender from providing exaggerated or false information. However, these "costs" are not high enough to guarantee honesty of the sender <ref type="bibr" target="#b12">[12]</ref>. Consequently, research has assumed that these signals may be less reliable concerning the true qualities of the signaling-subject <ref type="bibr" target="#b49">[49]</ref>.</p><p>However, this rationale may not be universally true for all types of conventional signals. In contrast, consumer studies have shown that some conventional signals may increase short term sales performance.</p><p>Advertising industry tries to convince potential customers by telling "success stories" including brand and store information <ref type="bibr" target="#b53">[53]</ref>. Thus, we propose that some conventional signals might increase earnings if the customer associates them with beneficial facts about the freelancer. One such signal is a product's price, where a higher price incorporates notions of higher quality <ref type="bibr" target="#b53">[53]</ref>. Likewise, selfpromotiontactics that are used to create positive associations through anecdotes of past achievements may also lead to a reduction of information asymmetry and increase credibility. We base this proposition on the fact that anecdotes of past achievementsespecially in a freelancing environment that is mainly concerned with knowledge work -require at least some knowledge about the underlying techniques and thus incorporate reliable elements. In other words, freelancers with insufficient knowledge about the underlying techniques may not be able to form suitable anecdotes.</p><p>However, for freelancers engaging strongly in Ingratiation tactics -flattery behavior towards the customerwe do not expect a reduction in information asymmetry. In contrast, credibility is likely to decrease as a customer might get suspicious that the freelancer is trying to cover his negative qualities. This can be explained by attribution theory that deals with "how the social perceiver uses information to arrive at causal explanations for events" <ref type="bibr" target="#b54">[54]</ref>. Attribution theory's discounting principle states that contractors in OLM are likely to accurately discount ingratiation for the presence of plausible ulterior motives in the situation (e.g., trying to sell services). This discounting for ulterior motives ultimately results in lower perceptions of the trustworthiness of the freelancer <ref type="bibr" target="#b55">[55]</ref>. Thus, we hypothesize the following:</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>H2a: The amount of ingratiation tactics use is negatively associated with a freelancer's earnings.</head><p>H2b: There is a positive association of the amount of self-promotion tactics with earnings.</p><p>H2c: The price is positively associated with a freelancer's earnings.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2.">Other factors affecting earnings</head><p>Besides the signals described before, other factors are likely to affect earnings in OLM. One such factor are specific character traits that are correlated with entrepreneurial behavior and innovativeness. These traits have been shown to affect peoples' behavior <ref type="bibr" target="#b56">[56]</ref>. Five "cardinal traits"also called the "Big Five"have been defined in extant literature: extraversion, agreeableness, neuroticism, conscientiousness and openness to experience <ref type="bibr" target="#b56">[56]</ref>. Among these five traits, two have been shown to be good proxies for entrepreneurial behavior and innovativeness -extraversion and openness <ref type="bibr" target="#b57">[57]</ref>. Moreover, the configuration of these traits might also affect how conventional signals are sent, e.g. research on social networks has shown that extroverted people tend to transfer their behavior from real to virtual life by providing information on profile pages differently and more extensive <ref type="bibr">[42 -45]</ref>. Thus, we will assess these traits as a moderator of the conventional signal earnings relationship. Besides the influence of traits, the individual skill and experience set of the freelancer such as the level of verbal proficiency in english, the educational level, level of availability on the platform and past project experience -the number of past projects -might be an important determinant of earnings and are included as control measures.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.">Method</head><p>To assess the proposed relationships, we gather three types of datasurvey data of traits, objective data of earnings, assessment signals and the price gained directly from a freelancing platform and independent codings of self-promotion and ingratiation.</p><p>As a first step, we used web crawling technology to generate a list of 56.000 freelancers from a major freelancing platform. To ensure random sampling, the crawler used each of more than 3,000 fine grained skill-tags gathered from the platform to search for candidates and saved each freelancers' publicly accessible information in an SQL database. To ensure that no duplicates are saved, respective code was added to the crawler. As a result, we were able to obtain a random database of over 56.000 unique freelancer profiles.</p><p>In a second step, we drew a random sub-sample from the original list to generate candidates that received an invitation to take part in the survey. An incentive of $5 was given to reduce non-response bias. This procedure resulted in 1174 completed questionnaires. We repeated the crawling process for the earnings measure after one year and were able to gain earnings data from all past projects a freelancer engaged in for the period of one year after the first measurement. This procedure enabled us to spot inactive users or fake profiles.</p><p>After merging survey and objective data, we obtained independent codings from three judges that rated each freelancer's signaling behavior based on their self-descriptions posted on the profile page. Our obtained dataset was reduced as we excluded (a) inactive users (b) suspended / deleted users (c) users lacking a rating (d) users with incomplete information. The final dataset included 1065 users.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.1.">Sample</head><p>Our final sample of 1,065 freelancers contains 29% females and 71 % males. The major proportion -39% -of freelancers contained in the sample were located in the indian subcontinent (India, Pakistan, Bangladesh etc.), the second largest proportion was Asia (22%) while 16% accounted for developed countries (Western Europe, Australia, USA) and 15% for Eastern Europe (Russia, Ukraine, Poland, Baltic States etc.), 9% were freelancers from other regions. Regarding the educational level, 52% of the freelancers had an undergraduate degree, 32 % hold a graduate degree with 1.4 % holding a postgraduate and 7.9 % holding high school or lower degree, 6.5% had another type of degree. Descriptive statistics of other variables included in our model are depicted in table <ref type="table" target="#tab_3">3</ref>. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.2.">Measures</head><p>To assess earnings, we collected the job history of each freelancer in our final sample containing jobs started from January 2015 -January 2016. In a second step we aggregated the earnings over each freelancer, thus transforming wide project level to individual level data. Accordingly, we were able to collect earnings information for each freelancer for the year after the signaling information and all other measures were collected.</p><p>Moreover, we collected the project experience in terms of the number of projects completed on the platform for each freelancer and the self-rated availability of the freelancer on the platform (likert scale ranging from 1-5 with 5 referring to the highest measure of availability on the site).</p><p>The trait measures reflect existing scales developed in prior research and were assessed on the basis of the big five personality traits-openness to experience and extraversion. For this purpose, we used the non-reverse coded items of the standard IPIP scale for extraversion (5 items) and openness (7 items) <ref type="bibr" target="#b56">[56]</ref>. Sample items include "I am the life of the party." (extraversion) and "I have a vivid imagination." (openness). Subjects were asked how well these items described them on a 7 point likert scale ranging from "(1) strongly disagree" to "(7) strongly agree". Cronbach's alpha was above .7 for all items.</p><p>Self-promotion and Ingratiation signals were measured through independent coding of the selfdescriptions present on each freelancer's profile page. The coding is conducted by three independent coders applying the consensual assessment technique described by Amabile <ref type="bibr" target="#b58">[58]</ref>. Building on the respective definitions (see Table <ref type="table" target="#tab_1">2</ref>), coders were trained to rate each self-description regarding the intensity of the form of signaling behavior from ( <ref type="formula">1</ref>) not at all to (7) very intense. Thus, we gained each coder's scores for each freelancer. We calculated the respective average ICC measure. All ICC values were above the value of .6 suggesting good overall consistency of the codings allowing us to average them to a single measure. The number of tests, the rating, the number of portfolio items and the price are obtained directly from the profile pages as objective measures.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.3.">Analysis</head><p>As we had to deal with a count outcome variable, parametric tests, such as linear regression are not sufficient. In contrast, poisson regression models and negative binomial models better approximate a right skewed distribution as present in count outcomes. As the dispersion parameter exceeded the value of 0 in all our models and deviance exceeded critical cut off levels, we concluded that negative binomial regression is more sufficient to test our hypotheses than poisson regression. To better interpret our findings we calculated the Exp(b) coefficients. The latter represent odds-ratios that can be interpreted by multiplying them with the DV to approximate the effect of a one-unit IV increase. Thus, any value &gt;1.00 represents a positive impact and every value &lt;1.00 indicates a negative impact on the outcome variable.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.">Results</head><p>The results of our regression model can be found in Table <ref type="table" target="#tab_4">4</ref>. As expected, we can observe significant positive effects of individual differences such as english verbal proficiency (english level) and number of completed projects. The degree of availability of the freelancer on the site was also significantly related to higher earnings. Moreover, we observed significant country differences for freelancers from Asia (Exp(b) = 2.739, p= .000) and India (Exp(b) = 1.675, p=.029). However, we observed no direct effect of traits and no moderating effects leading us to discard the moderation model. Inspection of the -2LL ratio deltas reveals that signals add explanative value compared to Model 1.</p><p>However, H1a and H1b could not be confirmed in our analysis. Besides an initially (weak) positive correlation (r=.061, p=.04), portfolio items had a slightly negative significant impact on earnings. At the same time the variable was correlated with past experience (r=.354, p&lt;.01). Thus, we assume a suppression effect of past experience. Moreover, we find no significant influence of the rating on a freelancer's earnings. However, as seen in table <ref type="table" target="#tab_3">3</ref> (mean rating = 4.84), a possible explanation of this non-finding could be upward biases present in OLM we will elaborate further on that in the discussion section.</p><p>H1c was confirmed showing a significant positive effect of adding tests on earnings. Accordinglyas shown by the odds ratio in Table <ref type="table" target="#tab_4">4</ref>, adding one test to the profile increases earnings by 4.1 %.</p><p>For H2athe negative influence of ingratiationwe can observe a significant negative effect, leading us to accept the hypothesis. H2b and H2c were confirmed: Self-promotion tactics and increased price showed a significant positive association with earnings.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6.">Discussion</head><p>Our analysis shows that self-promotion, price and the number of tests taken by a freelancer are valid predictors of a freelancer's performance in terms of 1-year earnings in OLM. For ingratiation tacticsflattery behavior towards the customerwe see a negative effect on earnings. We find no significant earnings impact of the freelancers' rating. Prior research on hiring decisions has pointed to a potential upward bias in ratings reducing their effect on information asymmetry and ultimately their predictive validity in terms of performance. We can particularly confirm this finding through our analysis. Before risking a bad rating and potential reputation flaws, freelancers may offer their clients to reduce the charge in exchange for a good rating. Thus, its ability to reduce information asymmetry decreases. However, we find other signals to be positively associated with earnings.</p><p>First, we propose that customers should more carefully look at less structured signals that freelancers send via their profile pages, especially in self-descriptions. In fact, the use of self-promotion tacticsa conventional signalshows a significant positive impact on performance in terms of 1-year earnings. With every unit increase of self-promotion, the odds-ratio suggests earnings to rise by 27%.</p><p>However, if conventional signaling is based on ingratiation tactics, such as flattery, we find a negative association with earnings -a unit increase in ingratiation lowers the earnings by 13%. In a supplementary analysis, we let three independent coders judge each freelancer according to their overall impression of credibility on a 7-point scale using consensual assessment as described in the method section ("According to your impression, how credible do you think this freelancer is?", ICC &gt; .6). We found that credibility showed a significant positive correlation with self-promotion (r= .38, p= .000). These findings support our argument that the way people describe themselves seems to matter in OLM, particularly for the successful formation of contracts and freelancing successeven if these descriptions are not directly verifiable. Thus, in search for suitable freelancers, customers should pay attention to self-descriptions and the conventional signaling tactics employed.</p><p>Second, the suppression effect of experience on portfolio items shows that the project experience on the platform is a driver of earnings rather than references shown on the profile page.</p><p>Third, we find that the number of tests taken by a freelancer is significantly associated with higher earnings -adding a test score to the profile is associated with a 4.1% increase in earnings. This finding points to the number of knowledge tests performed by a freelancer as a viable measure for assessment.</p><p>The finding that a higher price is associated with higher earnings could be interpreted twofold: On the one hand, price is a natural driver of higher earnings. On the other hand, in our dataset, price was explicitly measured as a signal (the price displayed on top of the page). This price is identical to the average price of past projects. This opens up avenues for further research on the role of price as a signal in OLM.</p><p>Moreover, future studies could include the assessment of long term financial data through methods such as time series and add dyadic performance evaluations of customers to capture a broader variety of performance measures. It was not the focus of the current study to assess the influence of character traits on the choice of signals. However, it might be promising for future research to extend the set of character trait and skill variables that might affect how freelancers send signals in OLM. Regarding the role of character traits, we propose that future research might apply different assessment techniques apart from self-rated measures. Though we used a major freelancing platform with a high market share, we were restricted to a single platform to assess our model. Future research could extend the model to other platforms or combine multiple platforms. Last but not least, the assessment of self-descriptions did not allow us to assess defensive or reactive signals, such as disclaimers. Thus, future research could extend the range of conventional signals and assessment signals to include defensive signaling tactics.</p><p>Our research leads to different implications: We enable freelancers to better market their services by showing the potential and bandwidth of various types of signalsespecially conventional signals. At the same time, clients may infer crucial job-related factors from signaling activities to improve their hiring decisions. Last but not least, our research has implications for the design of OLM platforms in terms of optimizing the positioning of signaling opportunities on the site according to their relevance.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="7.">Conclusion</head><p>In this study, we assessed alternative predictors of performance in OLM. In summary, we show, that both forms of signals -assessment as well as conventional signalsshow the potential to reduce information asymmetry in OLM. Among others, the number of knowledge tests passed by the freelancer and the amount of self-promotion seem to predict performance in terms of increased 1-year earnings and may guide customers' decisions for hiring freelancers in online labor markets. In contrast, we find initial evidence that ingratiation tactics, such as flattery towards the customer, are negatively associated with earnings.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>Proceedings of the 51 st</head><label>51</label><figDesc>Hawaii International Conference on System Sciences | 2018 URI: http://hdl.handle.net/10125/50326 ISBN: 978-0-9981331-1-9 (CC BY-NC-ND 4.0)</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>Figure 1</head><label>1</label><figDesc>Figure 1: Conceptual Framework</figDesc><graphic coords="2,338.20,95.00,197.35,80.80" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head>Table 1 . Assessment signals, definitions and examples from our dataset</head><label>1</label><figDesc></figDesc><table><row><cell>Signal</cell><cell>Definition</cell><cell>Example</cell></row><row><cell>Tests</cell><cell>The number of passed</cell><cell>Number of</cell></row><row><cell></cell><cell>knowledge tests as</cell><cell>passed tests for</cell></row><row><cell></cell><cell>displayed on each profile</cell><cell>different</cell></row><row><cell></cell><cell>site.</cell><cell>Levels of PHP.</cell></row><row><cell>Portfolio</cell><cell>Number of work</cell><cell>Links to</cell></row><row><cell>items</cell><cell>samples displayed on the</cell><cell>webpages, etc.</cell></row><row><cell></cell><cell>profile page.</cell><cell></cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1"><head>Table 2 . Conventional signals, definitions and examples from our dataset</head><label>2</label><figDesc></figDesc><table><row><cell>Signal</cell><cell>Definition</cell><cell>Example</cell></row><row><cell>Self-</cell><cell>Self-promotion</cell><cell>"In the past, I</cell></row><row><cell>Promotion</cell><cell>signals aim to show</cell><cell>have</cell></row><row><cell></cell><cell>that the subject/</cell><cell>successfully</cell></row><row><cell></cell><cell>actor has desirable</cell><cell>finished many</cell></row><row><cell></cell><cell>qualities necessary</cell><cell>projects based</cell></row><row><cell></cell><cell>for the job through</cell><cell>on Pearl, Java</cell></row><row><cell></cell><cell>anecdotes of past</cell><cell>and PHP, e.g.,</cell></row><row><cell></cell><cell>events [25].</cell><cell>X, Y, Z."</cell></row><row><cell>Ingratiation</cell><cell>Ingratiation is a</cell><cell>"I am always</cell></row><row><cell></cell><cell>signal intended to</cell><cell>available to</cell></row><row><cell></cell><cell>evoke interpersonal</cell><cell>find ways we</cell></row><row><cell></cell><cell>liking and</cell><cell>can effectively</cell></row><row><cell></cell><cell>attraction between</cell><cell>achieve your</cell></row><row><cell></cell><cell>the freelancer and</cell><cell>desired goals."</cell></row><row><cell></cell><cell>the client [26].</cell><cell></cell></row><row><cell>Price</cell><cell>The average price</cell><cell>65 $ / hr</cell></row><row><cell></cell><cell>freelancers display</cell><cell></cell></row><row><cell></cell><cell>on their profile</cell><cell></cell></row><row><cell></cell><cell>page.</cell><cell></cell></row><row><cell>2</cell><cell></cell><cell></cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2"><head>.2.1. Assessment signals in OLM literature Recall</head><label></label><figDesc></figDesc><table /><note><p>that we have defined assessment signals as reliable, costly signals that can be directly validated by the receiver. We have pointed out earlier that we already observe a broad variety of literature on different types of assessment signals. Some studies have assessed the antecedents of assessment signals, such as skills</p></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_3"><head>Table 3 : Descriptive Statistics</head><label>3</label><figDesc></figDesc><table><row><cell></cell><cell>Mean</cell><cell>SD</cell><cell>N</cell></row><row><cell>Earnings</cell><cell>2383.66</cell><cell>4930.35</cell><cell>1065</cell></row><row><cell>Tests</cell><cell>3.04</cell><cell>4.74</cell><cell>1065</cell></row><row><cell>Rating</cell><cell>4.84</cell><cell>.32</cell><cell>1065</cell></row><row><cell>Price</cell><cell>14.42</cell><cell>11.96</cell><cell>1065</cell></row><row><cell>Ingratiation</cell><cell>2.04</cell><cell>1.02</cell><cell>1065</cell></row><row><cell cols="2">Self-promotion 3.08</cell><cell>.92</cell><cell>1065</cell></row><row><cell cols="2">Portfolio items 7.39</cell><cell>13.64</cell><cell>1065</cell></row><row><cell>Project</cell><cell></cell><cell></cell><cell></cell></row><row><cell>Experience</cell><cell>22.84</cell><cell>29.15</cell><cell>1065</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_4"><head>Table 4 : Effect of skills, traits and signals on freelancers' 1-year earnings in USD -negative binomial regression. 1</head><label>4</label><figDesc></figDesc><table><row><cell></cell><cell>Model 1</cell><cell>Model 2</cell><cell>Model 3</cell></row><row><cell>Controls</cell><cell></cell><cell></cell><cell></cell></row><row><cell>Availability</cell><cell>1.356***</cell><cell>1.375***</cell><cell>1.545***</cell></row><row><cell>Experience</cell><cell>1.020***</cell><cell>1.020**</cell><cell>1.020***</cell></row><row><cell>Education</cell><cell></cell><cell></cell><cell></cell></row><row><cell cols="2">[No Degree] .134</cell><cell>.119</cell><cell>.190</cell></row><row><cell cols="2">[High School] 1.080</cell><cell>1.004</cell><cell>1.143</cell></row><row><cell cols="2">[Bachelor] .845</cell><cell>.822</cell><cell>.778</cell></row><row><cell cols="2">[Master] 1.094</cell><cell>1.095</cell><cell>.889</cell></row><row><cell cols="2">[Doctorate] .692</cell><cell>.576</cell><cell>.485</cell></row><row><cell>Country</cell><cell></cell><cell></cell><cell></cell></row><row><cell cols="2">[India] 1.315</cell><cell>1.272</cell><cell>1.675*</cell></row><row><cell cols="2">[Asia] 1.992**</cell><cell>1.949**</cell><cell>2.739***</cell></row><row><cell cols="2">[Developed] 1.637</cell><cell>1.621</cell><cell>1.220</cell></row><row><cell cols="2">[East Europe] 1.862*</cell><cell>1.748*</cell><cell>1.590</cell></row><row><cell>Gender</cell><cell>.806</cell><cell>.809</cell><cell>1.021</cell></row><row><cell>English Level</cell><cell>1.575**</cell><cell>1.582**</cell><cell>1.557**</cell></row><row><cell>Traits</cell><cell></cell><cell></cell><cell></cell></row><row><cell>Extraversion</cell><cell></cell><cell>.933</cell><cell>.921</cell></row><row><cell>Openness</cell><cell></cell><cell>.921</cell><cell>1.009</cell></row><row><cell>Signals</cell><cell></cell><cell></cell><cell></cell></row><row><cell>Portfolio</cell><cell></cell><cell></cell><cell>.991*</cell></row><row><cell>Rating</cell><cell></cell><cell></cell><cell>.978</cell></row><row><cell>Tests</cell><cell></cell><cell></cell><cell>1.041**</cell></row><row><cell>Ingratiation</cell><cell></cell><cell></cell><cell>.873*</cell></row><row><cell>Self-Promotion</cell><cell></cell><cell></cell><cell>1.277***</cell></row><row><cell>Price</cell><cell></cell><cell></cell><cell>1.047***</cell></row><row><cell>N</cell><cell>1,065</cell><cell>1,065</cell><cell>1,065</cell></row><row><cell>Dispersion P..</cell><cell>3.591</cell><cell>3.580</cell><cell>3.412</cell></row><row><cell>df</cell><cell>13</cell><cell>2</cell><cell>6</cell></row><row><cell>delta -2LL</cell><cell cols="2">120.76*** 4.68 (n.s)</cell><cell>74.14 ***</cell></row><row><cell cols="4">Significance levels: ***p&lt;.001 ** p &lt; .01 * p&lt; .05</cell></row><row><cell cols="4">1 Exp(B) values are displayed. Education, Country and</cell></row><row><cell cols="4">Gender are dummy coded, baseline groups: Other</cell></row><row><cell cols="3">education, other country and male.</cell><cell></cell></row></table></figure>
+		</body>
+		<back>
+
+			<div type="availability">
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Availability 4.51 .75 1065</p></div>
+			</div>
+
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<monogr>
+		<title/>
+		<author>
+			<persName><surname>References</surname></persName>
+		</author>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Scoundrels or stars? Theory and evidence on the quality of workers in online labor markets</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">M</forename><surname>Farrell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">H</forename><surname>Grenier</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Leiby</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The Accounting Review</title>
+		<imprint>
+			<biblScope unit="volume">92</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="93" to="114" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Reducing congestions in decentralized matching by using preference signaling</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Matsubara</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Kagifuku</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 18th Annual International Conference on Electronic Commerce: e-Commerce in Smart connected World</title>
+		<meeting>the 18th Annual International Conference on Electronic Commerce: e-Commerce in Smart connected World</meeting>
+		<imprint>
+			<date type="published" when="2016">2016. 2016</date>
+			<biblScope unit="page" from="38" to="38" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Job market signaling</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Spence</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Quarterly Journal of Economics</title>
+		<imprint>
+			<biblScope unit="volume">87</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="355" to="374" />
+			<date type="published" when="1973">1973</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">A signaling explanation for charity</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Glazer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">A</forename><surname>Konrad</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The American Economic Review</title>
+		<imprint>
+			<biblScope unit="volume">86</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="1019" to="1028" />
+			<date type="published" when="1996">1996</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Informational asymmetries, financial structure, and financial intermediation</title>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">E</forename><surname>Leland</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">H</forename><surname>Pyle</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The journal of Finance</title>
+		<imprint>
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="371" to="387" />
+			<date type="published" when="1977">1977</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Does Information Undermine Brand? Information Intermediary Use and Preference for Branded Web Retailers</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Waldfogel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Chen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Industrial Economics</title>
+		<imprint>
+			<biblScope unit="volume">54</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="425" to="449" />
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Effectiveness of reputation in contracting for customized production: Evidence from online labor markets</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Viswanathan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Science</title>
+		<imprint>
+			<date type="published" when="2016-12-16">16 Dec 2016</date>
+		</imprint>
+	</monogr>
+	<note>Published online in articles in advance</note>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Provider feedback information and customer choice decisions on crowdsourcing marketplaces: Evidence from two discrete choice experiments</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Assemi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Schlagwein</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Decision Support Systems</title>
+		<imprint>
+			<biblScope unit="volume">82</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="1" to="11" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Importance of Measures of Past Performance: Empirical Evidence on Quality of e-Service Providers</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">D</forename><surname>Banker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Hwang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Contemporary Accounting Research</title>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="307" to="337" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Doing business with strangers: Reputation in online service marketplaces</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Moreno</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Terwiesch</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="865" to="886" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Costly bidding in online markets for IT services</title>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">M</forename><surname>Snir</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">M</forename><surname>Hitt</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Science</title>
+		<imprint>
+			<biblScope unit="volume">49</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="1504" to="1520" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Signals in social supernets</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Donath</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Computer-Mediated Communication</title>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="231" to="251" />
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Relationship performance dimensions of buyer-supplier exchanges</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>O'toole</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Donaldson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">European Journal of Purchasing and Supply Management</title>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="197" to="207" />
+			<date type="published" when="2002">2002</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Performance and Trait Implications of Signaling in Online Labor Markets</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Holthaus</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">M</forename><surname>Stock</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Research in Progress Report</title>
+		<imprint>
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+	<note>unpublished</note>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Does corporate performance improve after mergers?</title>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">M</forename><surname>Healy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">G</forename><surname>Palepu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">S</forename><surname>Ruback</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Financial Economics</title>
+		<imprint>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="135" to="175" />
+			<date type="published" when="1992">1992</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Autistic traits and autism spectrum disorders: The clinical validity of two measures presuming a continuum of social communication skills</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Bölte</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Westerwald</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Holtmann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Freitag</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Poustka</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Autism and Developmental Disorders</title>
+		<imprint>
+			<biblScope unit="volume">41</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="66" to="72" />
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Towards a characterization of crowdsourcing practices</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>Schenk</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Guittard</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Innovation Economics and Management</title>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="93" to="107" />
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<monogr>
+		<title level="m" type="main">Moving the crowd at iStockphoto: The composition of the crowd and motivations for participation in a crowdsourcing application</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">C</forename><surname>Brabham</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2008">2008</date>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="page" from="1" to="1" />
+		</imprint>
+	</monogr>
+	<note>First Monday</note>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Crowdsourcing graphical perception: using mechanical turk to assess visualization design</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Heer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Bostok</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 28th International Conference on Human Factors in Computingsystems</title>
+		<meeting>the 28th International Conference on Human Factors in Computingsystems</meeting>
+		<imprint>
+			<date type="published" when="2010">2010. 2010</date>
+			<biblScope unit="page" from="203" to="212" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Turkalytics: analytics for human computation</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Heymann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Garcia-Molina</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 20th International Conference on World Wide Web (2011:1)</title>
+		<meeting>the 20th International Conference on World Wide Web (2011:1)</meeting>
+		<imprint>
+			<date type="published" when="2011">2011</date>
+			<biblScope unit="page" from="477" to="486" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Hiring preferences in online labor markets: Evidence of a female hiring bias</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Chan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Wang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Science</title>
+		<imprint>
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Is the world really flat? A look at offshoring at an online programming marketplace</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Gefen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Carmel</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="367" to="384" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">On Buyer Selection of Service Providers in Online Outsourcing Platforms for IT Services</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Hong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">A</forename><surname>Pavlou</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<imprint>
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Comparing open and sealed bid auctions: Evidence from online labor markets</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Hong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">A</forename><surname>Pavlou</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="49" to="69" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">Development of a self-presentation tactics scale</title>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">J</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">M</forename><surname>Quigley</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">S</forename><surname>Nesler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">B</forename><surname>Corbett</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">T</forename><surname>Tedeschi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Personality and Individual Differences</title>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="701" to="722" />
+			<date type="published" when="1999">1999</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">The use of impression management tactics in structured interviews: a function of question type?</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">P</forename><surname>Ellis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">J</forename><surname>West</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">M</forename><surname>Ryan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">P</forename><surname>Deshon</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Applied Psychology</title>
+		<imprint>
+			<biblScope unit="volume">87</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="1200" to="1208" />
+			<date type="published" when="2002">2002</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">How Employers Use Signals of Cognitive and Noncognitive Skills at Labour Market Entry: Insights from Field Experiments</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Protsch</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Solga</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">European Sociological Review</title>
+		<imprint>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="521" to="532" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<monogr>
+		<title level="m" type="main">Language and Competition: Exploring the Antecedents and Consequences of Firm Verbal Signals</title>
+		<author>
+			<persName><forename type="first">W</forename><surname>Guo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Gimeno</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2014">2014. 2014</date>
+			<publisher>Academy of Management Proceedings</publisher>
+			<biblScope unit="page">17326</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<monogr>
+		<title level="m" type="main">Hiring and Learning in Online Global Labor Markets</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Mill</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2011">2011</date>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="page" from="1" to="34" />
+		</imprint>
+		<respStmt>
+			<orgName>NET Institute Working Papers</orgName>
+		</respStmt>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">Running experiments on Amazon Mechanical Turk</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Paolacci</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Chandler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">G</forename><surname>Ipeirotis</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Judgment and Decision Making</title>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="411" to="419" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">Dressing your online auction business for success: An experiment comparing two eBay businesses</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">G</forename><surname>Gregg</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Walczak</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="653" to="670" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">What signal are you sending? How website quality influences perceptions of product quality and purchase intentions</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">D</forename><surname>Wells</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">S</forename><surname>Valacich</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">J</forename><surname>Hess</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">35</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="373" to="396" />
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">Landing the first job: The value of intermediaries in online hiring</title>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">T</forename><surname>Stanton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Thomas</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Review of Economic Studies</title>
+		<imprint>
+			<biblScope unit="volume">83</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="810" to="854" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title level="a" type="main">Impression management and influence in the organization</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">T</forename><surname>Tedeschi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Melburg</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Research in the sociology of organizations</title>
+		<editor>
+			<persName><forename type="first">S</forename><forename type="middle">D</forename><surname>Bachrach</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">E</forename><forename type="middle">J</forename><surname>Lawler</surname></persName>
+		</editor>
+		<imprint>
+			<date type="published" when="1984">1984</date>
+			<biblScope unit="page" from="31" to="58" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">Social power, selfpresentation, and the self</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">T</forename><surname>Tedeschi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Norman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">The Self and Social Life</title>
+		<editor>
+			<persName><forename type="first">B</forename><forename type="middle">R</forename></persName>
+		</editor>
+		<imprint>
+			<date type="published" when="1985">1985</date>
+			<biblScope unit="page" from="293" to="322" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">Effects of impression management on performance ratings: A longitudinal study</title>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">J</forename><surname>Wayne</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">C</forename><surname>Liden</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Academy of Management Journal</title>
+		<imprint>
+			<biblScope unit="volume">38</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="232" to="260" />
+			<date type="published" when="1995">1995</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<analytic>
+		<title level="a" type="main">Effectiveness of Impression Management Tactics across Human Resource Situations</title>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">M</forename><surname>Kacmar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">S</forename><surname>Carlson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Applied Social Psychology</title>
+		<imprint>
+			<biblScope unit="volume">29</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="1293" to="1311" />
+			<date type="published" when="1999">1999</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<analytic>
+		<title level="a" type="main">Research note-why following friends can hurt you: an exploratory investigation of the effects of envy on social networking sites among college-age users</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Krasnova</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Widjaja</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Buxmann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Wenninger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Benbasat</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="585" to="605" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<analytic>
+		<title level="a" type="main">The role of multimedia in changing first impression bias</title>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">H</forename><surname>Lim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Benbasat</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">M</forename><surname>Ward</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="115" to="136" />
+			<date type="published" when="2000">2000</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<analytic>
+		<title level="a" type="main">Web footprints of firms: Using online isomorphism for competitor identification</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Pant</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O</forename><forename type="middle">R</forename><surname>Sheng</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="188" to="209" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<analytic>
+		<title level="a" type="main">Swift guanxi in online marketplaces: The role of computermediated communication technologies</title>
+		<author>
+			<persName><forename type="first">Xiaojuan</forename><surname>Ou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">A</forename><surname>Pavlou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Davison</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">38</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="209" to="230" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+	<analytic>
+		<title level="a" type="main">Mirror, mirror on my Facebook wall: Effects of exposure to Facebook on self-esteem</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">L</forename><surname>Gonzales</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">T</forename><surname>Hancock</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Cyberpsychology, Behavior, and Social Networking</title>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="issue">1-2</biblScope>
+			<biblScope unit="page" from="79" to="83" />
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b43">
+	<analytic>
+		<title level="a" type="main">The Facebook paths to happiness: Effects of the number of Facebook friends and selfpresentation on subjective well-being</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Lee</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Cyberpsychology, Behavior, and Social Networking</title>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="359" to="364" />
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b44">
+	<analytic>
+		<title level="a" type="main">Too much of a good thing? The relationship between number of friends and interpersonal impressions on Facebook</title>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">T</forename><surname>Tong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Van Der Heide</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Langwell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">B</forename><surname>Walther</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Computer-Mediated Communication</title>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="531" to="549" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b45">
+	<analytic>
+		<title level="a" type="main">The role of friends&apos; appearance and behavior on evaluations of individuals on Facebook: Are we known by the company we keep?</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">B</forename><surname>Walther</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Van Der Heide</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">Y</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Westerman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">T</forename><surname>Tong</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Human Communication Research</title>
+		<imprint>
+			<biblScope unit="volume">34</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="28" to="49" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b46">
+	<analytic>
+		<title level="a" type="main">Signaling theory and information asymmetry in online commerce</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Mavlanova</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Benbunan-Fich</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Koufaris</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information and Management</title>
+		<imprint>
+			<biblScope unit="volume">49</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="240" to="247" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b47">
+	<analytic>
+		<title level="a" type="main">Corporate financing and investment decisions when firms have information that investors do not have</title>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">C</forename><surname>Myers</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><forename type="middle">S</forename><surname>Majluf</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Financial Economics</title>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="187" to="221" />
+			<date type="published" when="1984">1984</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b48">
+	<analytic>
+		<title level="a" type="main">Signaling theory: A review and assessment</title>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">L</forename><surname>Connelly</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">T</forename><surname>Certo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">D</forename><surname>Ireland</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">R</forename><surname>Reutzel</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Management</title>
+		<imprint>
+			<biblScope unit="volume">37</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="39" to="67" />
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b49">
+	<analytic>
+		<title level="a" type="main">Making sense of strangers&apos; expertise from signals in digital artifacts</title>
+		<author>
+			<persName><forename type="first">N</forename><forename type="middle">S</forename><surname>Shami</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Ehrlich</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Gay</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">T</forename><surname>Hancock</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the SIGCHI Conference on Human Factors in Computing Systems</title>
+		<meeting>the SIGCHI Conference on Human Factors in Computing Systems</meeting>
+		<imprint>
+			<date type="published" when="2009">2009. 2009</date>
+			<biblScope unit="page" from="69" to="78" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b50">
+	<analytic>
+		<title level="a" type="main">Managerial ownership and corporate diversification: A longitudinal view</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Goranova</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">M</forename><surname>Alessandri</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Brandes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Dharwadkar</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Strategic Management Journal</title>
+		<imprint>
+			<biblScope unit="volume">28</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="211" to="225" />
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b51">
+	<monogr>
+		<title level="m" type="main">Influencing initial public offering investors with prestige: Signaling with board structures</title>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">T</forename><surname>Certo</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2003">2003</date>
+			<publisher>Academy of Management Review</publisher>
+			<biblScope unit="volume">28</biblScope>
+			<biblScope unit="page" from="432" to="446" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b52">
+	<analytic>
+		<title level="a" type="main">Demographic diversity in the boardroom: Mediators of the board diversity-firm performance relationship</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Miller</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">D</forename><surname>Triana</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Management Studies</title>
+		<imprint>
+			<biblScope unit="volume">46</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="755" to="786" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b53">
+	<analytic>
+		<title level="a" type="main">Effects of price, brand, and store information on buyers&apos; product evaluations</title>
+		<author>
+			<persName><forename type="first">W</forename><forename type="middle">B</forename><surname>Dodds</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">B</forename><surname>Monroe</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Grewal</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Marketing Research</title>
+		<imprint>
+			<biblScope unit="volume">28</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="307" to="319" />
+			<date type="published" when="1991">1991</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b54">
+	<analytic>
+		<title level="a" type="main">McGraw-Hill series in social psychology</title>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">T</forename><surname>Fiske</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">E</forename><surname>Taylor</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Social cognition</title>
+		<imprint>
+			<date type="published" when="1991">1991</date>
+			<publisher>McGraw-Hill Book Company</publisher>
+			<pubPlace>New York</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b55">
+	<monogr>
+		<title level="m" type="main">Consumer responses to flattery during sales transactions: Empirical evidence of the sinister attribution error</title>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">J</forename><surname>Main</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2004">2004</date>
+		</imprint>
+		<respStmt>
+			<orgName>Doctoral dissertation, University of British Columbia</orgName>
+		</respStmt>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b56">
+	<analytic>
+		<title level="a" type="main">Four ways five factors are basic</title>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">T</forename><surname>Costa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">R</forename><surname>Mccrae</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Personality and Individual Differences</title>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="653" to="665" />
+			<date type="published" when="1992">1992</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b57">
+	<analytic>
+		<title level="a" type="main">An empirical investigation into the impact of personality on individual innovation behaviour in the workplace</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Yesil</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Sozbilir</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Procedia -Social and Behavioral Sciences</title>
+		<imprint>
+			<biblScope unit="volume">81</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="540" to="551" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b58">
+	<analytic>
+		<title level="a" type="main">A consensual assessment technique</title>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">M</forename><surname>Amabile</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Personality and Social Psychology</title>
+		<imprint>
+			<biblScope unit="volume">43</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="997" to="1013" />
+			<date type="published" when="1982">1982</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

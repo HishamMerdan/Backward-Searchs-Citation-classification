@@ -1,0 +1,598 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">AN EMPIRICAL INVESTIGATION ON PROVIDER PRICING IN ONLINE CROWDSOURCING MARKETS FOR IT SERVICES Completed Research Paper</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Yili</forename><surname>Hong</surname></persName>
+							<email>hong@temple.edu</email>
+							<affiliation key="aff0">
+								<orgName type="institution">Temple University Philadelphia</orgName>
+								<address>
+									<postCode>19122</postCode>
+									<region>PA</region>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Paul</forename><forename type="middle">A</forename><surname>Pavlou</surname></persName>
+							<email>pavlou@temple.edu</email>
+							<affiliation key="aff1">
+								<orgName type="institution">Temple University Philadelphia</orgName>
+								<address>
+									<postCode>19122</postCode>
+									<region>PA</region>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">AN EMPIRICAL INVESTIGATION ON PROVIDER PRICING IN ONLINE CROWDSOURCING MARKETS FOR IT SERVICES Completed Research Paper</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="MD5">A3FD9437E2B61DEF9F2DEBA85AD7B164</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.7.3" ident="GROBID" when="2023-06-16T09:22+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>Crowdsourcing</term>
+					<term>pricing</term>
+					<term>participant behavior</term>
+					<term>IT services</term>
+					<term>information signals</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Pricing in online markets has been of much interest to academics and practitioners, particularly for unique IT services. In this paper, we theorize and empirically examine three primary factors that affect provider pricing of outsourced IT services: production cost, competitive dynamics (accounting for competitors' attributes) and frictional cost (accounting for buyers' information). We test the respective role of each of these three complementary pricing strategies with archival data from a leading global online market that specializes in the outsourcing of IT services. The results from our econometric analyses confirm that, besides production cost, service providers also account for the information signals about competing providers' quality when pricing their services, reflecting the rule of market competition and dynamics. Furthermore, service providers also adjust their prices for different service outsourcers with varying perceived frictional costs, which indicates, although online markets are vaunted to reduce transaction costs that outsourcers would otherwise incur offline, they creates new types of frictional costs between providers and outsourcers.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Introduction</head><p>The classic economics literature on pricing has focused on production costs, market dynamics (competition), and transaction cost. Recent emergence of online markets has provided great opportunities to understand how different factors play out in such near perfect competition markets. However, empirical attempts to comprehensively examine the three pricing factors are scant. Understanding pricing behavior in online markets is economically important, as manifested by the increasingly popular phenomenon known as "freelancing to sell services". As early as 1998, an article featured in Harvard Business Review by Malone and Laubacher observed that by changing the way work is done, online markets may lead to a new kind of economy centered on the individual (Malone and Laubacher 1998), known as the "e-lance economy". These markets often follow a reverse auction mechanism where service outsourcers post their requirements in the form of a request for proposal (RFP) and providers place bids on these RFPs. Individual economic entities (service providers) make their decisions on what prices to set for unique services. Due to the significant participation in such markets from the supply side (up to September 2012, www.freelancer.com has 4 million professional providers), these markets offers a perfect context to understand pricing when the market has near perfect competition. Today, the availability of micro-level data in online markets on both buyers and sellers offers the opportunity for a better understanding of pricing strategies and prescribing appropriate recommendations for policy makers and proper mechanisms for the marketplaces. The fact that very little research exists on service providers' pricing strategies is surprising, particularly as bidding to offer services by providers (sellers) is increasingly common in online markets for services, such as elance.com, rent-a-coder.com, and guru.com.</p><p>Several studies attempted to understand the dynamics of online markets. Studies focus on what factors affect the service outsourcers' decision to award contracts to service providers <ref type="bibr">(Banker and Hwang 2008;</ref><ref type="bibr">Gefen and Carmel 2008)</ref>. Other studies in online markets focus on buyer behavior <ref type="bibr" target="#b2">(Ba and Pavlou 2002;</ref><ref type="bibr" target="#b13">Roth and Ockenfels 2002;</ref><ref type="bibr" target="#b18">Stafford and Stern 2002)</ref>; however, there is relatively little work on seller (pricing) strategies. The literature may have overlooked, however, that for an average service provider, different outsourcers may be associated with different levels of transaction frictions, and accordingly service providers might charge a premium for uncertain outsourcers, even for the same service. The literature may have also overlooked that in open auctions in online markets (such as www.freelancer.com), not only do providers observe their competitors' bid prices, but it may also be of their best interest to observe and take into account their competitors' attributes when placing their bids. Therefore, when providers signal their quality to each other, the useful information signals may be picked up by providers to make pricing decisions. Pricing in online markets is further complicated by the idiosyncratic nature of IT services, namely specificity, complexity <ref type="bibr" target="#b16">(Snir and Hitt 2003)</ref> and non-contractibility <ref type="bibr">(Brynjolfsson and Smith 2000)</ref>. These attributes suggest that services are for a specific purpose, they are difficult to price because of their complexity. With panel data observations from a leading online crowdsourcing market, we aim to answer the following research question:</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>How do service providers price their services in online crowdsourcing markets?</head><p>To answer this research question, we draw upon information signaling theory and uncertainty theory (while accounting for production costs) to propose testable hypotheses to predict a service provider's pricing. Using detailed archival dataset from a global online market for services, we test three hypotheses about production costs, market dynamics (accounting for competitors' attributes) and perceived frictions (accounting for buyers' information). The results show that besides cost considerations, information signals regarding the service provider's quality and the service provider's expected uncertainty of transacting with the outsourcer also predicts a service provider's price. This paper makes four key contributions. First, it tries to empirically understand seller bidding as a pricing strategy in online markets with reverse auctions, to fill the research void in this context. Second, it theorizes and validates market dynamics and perceived frictional cost as two sources of price dispersion in service emarkets. Third, it shows that service providers competitively set their bid prices when they are able to signal their quality, which is largely overlooked by the literature. Fourth, it contributes to the IT outsourcing literature by showing that there is double-sided uncertainty in outsourcing. We show that service providers do account for this uncertainty in their observed price decisions.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Literature Review</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Online Crowdsourcing Markets for IT Services</head><p>The online auction literature has extensively covered factors that affect the final price of auctions, such as seller <ref type="bibr" target="#b2">(Ba and Pavlou 2002)</ref>, auction <ref type="bibr" target="#b6">(Pavlou and Dimoka 2006)</ref>, and buyer <ref type="bibr" target="#b7">(Pavlou and Gefen 2005)</ref> attributes. Literally speaking, auctions for services are different from commodity auctions and physical reverse auctions <ref type="bibr">(Jap 2003)</ref> in at least for four aspects: specificity, complexity, non-contractibility <ref type="bibr">(Brynjolfsson and Smith 2000)</ref> and intractability <ref type="bibr" target="#b16">(Snir and Hitt 2003)</ref>. First, services are complex and highly specific to a purpose (such as a software to manage inventory), which requires specialized skills. Specificity and complexity require that the right service provider is chosen. Second, non-contractibility implies that many aspects of the service depend on the outsourcer's efforts that cannot be easily contracted. Third, the intractability of service project implies that there is potential for moral hazard -providers may shirk after they are awarded the contract since their efforts cannot be monitored. Moreover, providers in service auctions are also the producers of the service, while in online commodity auctions, sellers are often agents that fulfill the delivery of products they procured elsewhere <ref type="bibr" target="#b8">(Pavlou et al. 2007</ref>). This aspect implies that service outsourcers cannot separate their decisions for service quality from the provider's own quality. Therefore, the uncertainty of service is not separable from the provider, unlike commodity markets <ref type="bibr">(Dimoka et al. 2011)</ref>. Finally, bid prices in online markets for services are observable to all providers in the market. This aspect also affects pricing because the valuation of the service is publicly available.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Information Signaling Theory</head><p>Information signaling theory has been applied to pre-contractual information asymmetry problems, such as adverse selection <ref type="bibr" target="#b0">(Akerlof 1970;</ref><ref type="bibr" target="#b8">Pavlou et al. 2007)</ref>. Online markets for services are prime examples of markets with asymmetric information due to the service outsourcer's inability to be fully informed of the provider's quality. Information signals can serve as tools for service outsourcers to infer the quality of service providers. Information signaling is particularly relevant for strategic pricing because when a service provider views certain quality signals to be effective in signaling their quality, he may charge a higher price should he perceive himself to be of higher quality than his competitors. An information signal is seen as effective when it is visible, clear, credible and differentially costly <ref type="bibr">(Dimoka et al. 2012;</ref><ref type="bibr" target="#b11">Rao and Monroe 1989)</ref>. Among the four attributes of effective information signals, differential cost is the most important attribute. Signals that are differentially costly can lead to a "separating equilibrium", where only the high quality type providers can afford to transmit such a signal (while low quality providers would prefer not to transmit such a signal).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Hypotheses Development</head><p>We follow <ref type="bibr" target="#b16">Snir and Hitt (2003)</ref>'s context set up. For a given project, the outsourcer first initiates a project (as a post) on the marketplace with a budget range, bidding end time and a project description (call for bids/proposals). Providers can bid for the project at any given time before the end time, with a price (and an optional message to the outsourcer). Outsourcer can end the project by contracting with a provider who bids for the project. If no provider is picked, the process ends at the bidding end time.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Production Cost-based Pricing</head><p>One way of pricing that is widely employed by sellers is base on production cost (or a "markup" above marginal production cost). With this pricing strategy, providers only consider their production cost when submitting a price bid. Since IT services involved knowledge intensive labor and are difficult to be precisely associated with production costs, we use two proxies for production cost: project scale and project complexity. We also include the provider's purchasing power and control for their type (firm vs. individual) to capture the relative cost of different providers and discuss their effects on pricing.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Project Scale and Project Complexity</head><p>It is hard to ex ante define the exact cost of each service project due to ambiguity and complexity of requirements. Each project has idiosyncratic attributes that may have an effect on each provider's production cost. Similar to most products, unique attributes define a service project's intrinsic costs. Projects posted in online markets for services are usually highly customized for a specific purpose, imposing a difficulty for providers to understand all aspects of a project before contracting with an outsourcer. First, project scale, measured by a provider's estimated number of days to complete the project, indicates the standard workload of a service provider. Second, project complexity, measured by the number of skills required to conduct a project, indicates the skills needed from the service provider. More required skills usually mean a more complex project, indicating a higher production cost. Thus, project scale and project complexity add to the project's production cost and may positively affect the service provider's bid price.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Provider's Relative Purchasing Power</head><p>Different people's valuation of $1 dollar differs. The utility a service provider can derive from the dollar amount largely depends on its purchasing power in the provider's locale. Since online markets are global and services are "tradable" across borders, offshoring comprises of a large portion of outsourcing projects. A related argument is made by <ref type="bibr">Gefen and Carmel (2008)</ref> who examined potential global labor arbitrage from the service outsourcer's perspective to find that providers from countries with lower purchasing power are more likely to be chosen because they are likely to value the same amount of dollars more than providers from countries with higher purchasing power. In the same vein, providers from poorer countries incur less cost in finishing a project of certain quality. Purchasing power is usually measured with purchasing power parity (PPP) adjusted GDP per capita. There is a need for adjustment of the PPP to normalize the cost comparison across countries to account for the relative local value of money (Gefen and Carmel 2008).<ref type="foot" target="#foot_0">1</ref> In sum, using PPP adjusted GDP per capita as a measure for purchasing power, ceteris paribus, service providers from poorer countries incur lower production cost, and they are thus able to underbid providers from richer countries with higher purchasing power.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Hypothesis 1: A service provider's cost of producing the service -(a) project scale, (b) project complexity, and (c) purchasing power is positively correlated with his bid price.</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Market Dynamics-based (Competitive) Pricing</head><p>One insight that derives from utility theory is that service providers will only bid an amount over their own reserved utility (also termed "outside option"), conforming to the principle of individual rationality.</p><p>To achieve the same level of utility, high ability type providers rationally require higher compensation than low ability type providers (incentive compatibility). Service providers transmit information signals of their quality (such as ability, honesty and reliability), including education, certification, reputation, experience, tenure and hourly rate. These signals are also available to other service providers, and can be leveraged by the service providers to bid competitively. Competitive pricing is herein defined as the case that each service provider observes other providers' quality attributes to form her bids.</p><p>A service provider's reputation is similar to a product's brand name. <ref type="bibr">Brynjolfsson and Smith (2000)</ref> found that in online markets for homogeneous goods (books, CDs), price dispersion exists since brand still matters. For similar products, a better brand name can induce higher prices and reduce product uncertainty. The literature has shown that reputable sellers (of commodities) enjoy price premiums <ref type="bibr" target="#b2">(Ba and Pavlou 2002;</ref><ref type="bibr">Ghose 2009)</ref> because buyers have lower seller uncertainty when transacting with reputable sellers. The literature also showed that product uncertainty also reduces buyer willingness to pay <ref type="bibr">(Dimoka et al. 2012</ref>). Yet, in online markets, service provider uncertainty is more complicated. Due to asymmetric information, outsourcers not only cannot observe the provider's ability (probable cause of adverse selection), but they are also not able to monitor their efforts (probable cause of moral hazard). The provider's reputation, manifested by the average rating of his past projects that captures his past performance in the market, is an effective information signal that can differentiate high quality providers from low quality ones. Based on expectation confirmation theory <ref type="bibr" target="#b5">(Oliver 1977)</ref>, outsourcers expect a higher service level if the provider transmits a signal indicating that he is of higher quality. <ref type="bibr">Banker and Hwang (2008)</ref> sampled accounting projects in online markets to show that an accounting professional's past performance measures, such as reputation, have a significant positive effect on his chance of winning a project, while his bid price is likely to reduce his chance of winning. Therefore, rationally, high quality providers will charge a higher price. There are several visible information signals for providers. A provider with higher feedback ratings and project experience is generally considered to be of higher quality <ref type="bibr">(Banker and Hwang 2008)</ref>. Thus, they will be penalized more if they do not deliver satisfactory service because the outsourcers would be more likely to be dissatisfied and pursue post-purchase actions (such as dispute the transaction or post negative feedback). Therefore, these information signals are visible, credible, clear and differentially costly, satisfying Spence-Mirrlees' condition of single crossing property <ref type="bibr">(Mirrlees 1971;</ref><ref type="bibr" target="#b11">Rao and Monroe 1989;</ref><ref type="bibr" target="#b17">Spence 1973</ref>). Hence, they serve as useful information signals of provider quality. We argue that high-type service providers (indicating higher reserve utility) would rely on these information signals to bid higher<ref type="foot" target="#foot_1">2</ref> .</p><p>Hypothesis 2: A service provider who transmits information signals of higher quality -(a) average feedback ratings, (b) project experience is positively correlated with his bid price.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Transaction-Frictions (Uncertainty)-based Pricing</head><p>We take the lens of uncertainty to understand perceived provider-outsourcer frictions. Providers offer different prices for different outsourcers based on the degree of uncertainty outsourcers face when transacting with them. It is well established that imperfectly informed buyers discount their prices <ref type="bibr">(Milgrom and Weber 1982)</ref>. A service provider's uncertainty is reflected in three aspects: (1) geographical and language barriers, (2) prior dyadic transactions, and (3) the service outsourcer's quality signals.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Geographical and Language Barriers</head><p>A key function of online markets is to match service outsourcers with providers <ref type="bibr" target="#b3">(Bakos 1998)</ref>. Conventional wisdom is that global online markets can reduce search and transaction costs for both service outsourcers and providers (Friedman 2007). Still, geographical distance increases uncertainty and expected contract costs. Thus, potential frictions may reflect in the service provider's pricing strategy. Prior research showed that geographical distance and language barrier in offshoring IT services could impose uncertainty on outsourcers <ref type="bibr" target="#b1">(Ang and Straub 1998;</ref><ref type="bibr">Gefen and Carmel 2008)</ref>. The nature of geographical distance and language barriers implies that the uncertainty goes both ways. Language barrier could impose difficulty on effective communication. Even when both parties speak the same language, geographical distance and difference in time zones could lead to higher uncertainty. While the Internet has presumably made the world "flat" (Friedman 2007), information asymmetry exacerbates when the two parties are from different countries, leading to higher uncertainty. Therefore, ceteris paribus, providers are likely to give lower prices to outsourcers from the same country.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Prior Dyadic Transactions</head><p>Prior studies show that a prior relationship between a provider and an outsourcer can increase the chance of the provider winning the contract (Gefen and Carmel 2008) because positive past experience helps reassure the outsourcer that the provider can perform up to her expectations. We argue that positive prior dyadic transaction alleviates the service provider's uncertainty with the outsourcer. With lower ex ante uncertainty, providers would be more likely to offer lower prices to outsourcers.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Outsourcer's Information Signals</head><p>IS research has identified transaction uncertainty as a major barrier to online markets <ref type="bibr">(Pavlou and Gefen 2004;</ref><ref type="bibr" target="#b8">Pavlou et al. 2007)</ref>. While online markets expose providers to numerous outsourcers and reduce the cost of searching for jobs, the uncertainty of transacting with an outsourcer in any given project cannot be dismissed. Prior studies focused on pre-purchase uncertainty for the buyer (outsourcer) that elicits adverse selection. In a similar vein, we argue that providers also face high uncertainty due to the fact that the successful completion of a project requires involvement from both parties.</p><p>Uncertainty about the outsourcer affects the provider's bid price since they cannot predict the outsourcer's actions. Because services are generally complex <ref type="bibr" target="#b16">(Snir and Hitt 2003)</ref> and non-contractible <ref type="bibr">(Brynjolfsson and Smith 2000)</ref>, service contracts are usually incomplete. Outsourcers may not be cooperative and may request unreasonable services after they contract on a service. Second, providers also face uncertainty about outsourcers because they incur search and bidding costs <ref type="bibr" target="#b16">(Snir and Hitt 2003)</ref> for posting a bid (usually with a brief proposal) for a service project. Furthermore, outsourcers may post projects merely to discover price so that they can outsource to local providers at the right price. Thus if the outsourcer cancels the project after finding the "right price", the provider's bidding cost is sunk. Therefore, providers are likely to charge a premium from outsourcers with higher uncertainty in order to shield themselves from such uncertainty.</p><p>Uncertainty of outsourcers is alleviated by information signals outsourcers transmit to providers. These information signals include outsourcer rating, gold member status, outsourcer tenure, and profile depth. These information signals about outsourcer quality are visible, credible, clear and differentially cost, and thus can differentiate high quality outsourcers from low quality ones. The detailed justification of effective signals is similar to those signals for providers in Section 3.3.1. When a service provider perceives the outsourcer to be less uncertain, he is likely to offer the service at a lower price. We propose: Hypothesis 3: A service provider's perceived online transaction frictions with a service outsourcer -(a) same country, (b) prior transactions, (c) outsourcer rating, (d) outsourcer gold member status, (e) outsourcer tenure, and (f) outsourcer profile depth -is negatively correlated with his bid price.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Project Category and Control Variables</head><p>We control for the following variables on the study's dependent variables (Table <ref type="table">1</ref>):</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Table 1. Control Variables</head><p>Project Category: Different categories of projects could have different levels of price and bid-ask spread, e.g., on average, an IT project would involve more work, specifically mental work, than a data entry project. Thus we would expect the price and bid-ask spread to be higher for IT projects. Notably, <ref type="bibr" target="#b16">Snir and Hitt (2003)</ref> controlled for project subcategories when analyzing factors affecting number of bids.</p><p>Provider Type: Providers in service e-markets are either individuals or firms. As an economic entity that accumulates and efficiently utilize skills and talents, firms can achieve economies of scale and scope with professionals specializing in different aspects, thus reducing costs in providing services and underbidding individuals. Firms are also able to work on many projects at the same time, thus being able to underbid an individual provider to reach a required quantity of work to avoid idle labor. Therefore, individual providers are likely to charge higher prices than firm providers.</p><p>Provider's Search Cost: Providers incur cost when bidding on projects. Bidding cost is a form of search cost, and it is similar to the job market search model extensively used in the economics literature. Job search is shown to increase returns at a decreasing rate <ref type="bibr">(Chirinko 1982)</ref>. On the one hand, job search increases the possibility of a better fit with job descriptions; thus, service provider would request higher wages; on the other hand, even though the search cost is "sunk cost" for the service provider, he would still try to amend the sunk cost by increasing future earnings (raising bid prices). Since service providers incur a cost when bidding on projects, the number of unsuccessful bids until winning a bid also comprises the provider's search cost.</p><p>Total Bids: Given the competitive nature of online auctions, more bids from the supply side would drive down the average price and winning bid, similar to the logic in <ref type="bibr" target="#b2">Ba and Pavlou (2002)</ref>.</p><p>Outsourcer Purchasing Power can have an impact on the provider's pricing since the provider may perceive the outsourcer to be able to afford a higher price if he is from a richer country <ref type="bibr">(Gefen and Carmel (2008)</ref>.</p><p>Outsourcer Type might have an impact on provider pricing because the provider may perceive that the outsourcer can afford a higher price if he is a firm.</p><p>Non-public Project is likely to be associated with higher average prices because it rules out the low quality bids as <ref type="bibr" target="#b16">Snir and Hitt (2003)</ref> described, which are likely to be lower.</p><p>Featured Project may increase provider pricing, first because featured project is highlighted in the marketplace, thus ceteris paribus, it draws more providers than non-featured projects. Similar to advertising effects, featured projects draws more labor supply and reduce average price <ref type="bibr">(Dimoka et al. 2012;</ref><ref type="bibr">Milgrom and Roberts 1986)</ref>.</p><p>Project Description Depth can be either positively or negatively associated with provider price. On one hand, longer description could be related to higher production cost since it might be associated with more tasks; on the other hand, more detailed descriptions mitigate the follow-up communication costs.</p><p>Auction Duration: We control for the role of auction duration on average price and winning bid. The literature has shown a positive association between auction duration and final prices in commodity forward auctions <ref type="bibr">(Lucking Reiley et al. 2007;</ref><ref type="bibr">Melnik and Alm 2005)</ref>. The longer an auction lasts, the more likely it is viewed by more providers, thus more supply drives down average price and possibly the winning bid amount.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Methodology</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Research Context</head><p>Web-based, globally distributed online markets are major venues for outsourcing IT services. Nowadays, a growing trend in outsourcing today is the use of online markets for services, such as systems development. We collected data from a global market for services outsourcing that began operating in 2004 and quickly evolved into a leading reverse auction type market for IT services. The services mainly include IT projects, such as software development, website design, database administration, and graphics design. Until 2011, over 3 million service providers competed for over 1.3 million jobs ($113 million in transaction volume).</p><p>Notably, this global online market, similar to most online markets for services crowdsourcing, follows a reverse auction call for bids (CFP) mechanism <ref type="bibr" target="#b16">(Snir and Hitt 2003)</ref> 3 . The outsourcer initiates a project description and invites submissions of bids. Interested providers bid their prices to offer the required services. Therefore, the providers' pricing strategies are tied to the competitive bidding process. Accordingly, various sources of information are at play here, such as project attributes, auction attributes, provider's own attributes, other providers' attributes and the outsourcer's attributes. We specified the above econometric models to test our hypotheses. Our main identification strategy is to control for project level heterogeneities using fixed effects. We further use random coefficients model as a robustness check. For Equation (4), with project fixed effects, a provider i would place a bid yij for project j, Xij are the observed vector regressors, ci is the unobserved project-level fixed effect (project and outsourcer characteristics, etc.), uij is the unobserved individual random error for each bid. uij could represent unobserved factors, such as a provider's private communication with an outsourcer or some of the provider specific information, such as demographic traits that cannot be readily measured. The detailed estimation model is presented in Equation <ref type="formula" target="#formula_0">6</ref>:</p><formula xml:id="formula_0">y ij = X ij * λ + c i + u ij ; E u ij | X i , c i ( ) = 0, j = 1, 2, ... , J<label>(6)</label></formula><p>We tried to elicit the set of parameters λ. With project-level fixed effects model, to get rid of the project invariant effect, a within transformation method is applied.</p><p>The parameter estimators are then calculated as:</p><formula xml:id="formula_1">λFE = xij ' xij j J ∑ i N ∑ " # $ $ % &amp; ' ' -1 xij ' ŷij j J ∑ i N ∑ (7)</formula><p>Model ( <ref type="formula">5</ref>) is estimated with ordinary least squares with heteroskedasticity-robust standard errors.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Hypotheses Testing</head><p>The fixed effects model is suitable to elicit the within-variance for each project, i.e., the effect of the conceptualized constructs on the bid price within each project. Cluster correlated standard error <ref type="bibr" target="#b24">(Williams 2000;</ref><ref type="bibr" target="#b25">Wooldridge 2002</ref>) is constructed for the fixed effects model. Even though pooled OLS and random effects models are also possible in this scenario and the estimations yield comparable level of coefficients, for robustness, ex-post we test whether the fixed effects model should be preferred over pooled OLS and random effects model. We employ the Hausman test (Hausman 1978) to identify whether a fixed effect is required to obtain consistent estimates. Since we observe the difference between the cluster-robust standard errors and the default standard errors of the random effects estimators, we fear that the crucial assumption that α i and u it being i.i.d may be invalid. Therefore, we correct the shortcoming of standard Hausman test by employing the approach suggested by <ref type="bibr" target="#b25">Wooldridge (2002)</ref> to construct a robust Hausman test. We use the user-written command <ref type="bibr" target="#b14">(Schaffer and Stillman 2006)</ref> following the suggestion of <ref type="bibr">Cameron and Trivedi (2009)</ref>. Since both Hausman test and the robust Hausman test for fixed effects strongly reject the null hypothesis that random effects estimation provides consistent estimates, we are obliged to interpret the results based on the fixed effects estimations. As attested in Model 1 (Table <ref type="table" target="#tab_0">3</ref>), the results in the first block indicate that provider's costs, reflected in project and provider attributes, such as project scale (β=0.0058, p&lt;0.01) and provider purchasing power (β=0.004, p&lt;0.01), and provider type (organization or individual) (β=0.159, p&lt;0.01), significantly predict the bid price. Notably, on average, a firm provider places a bid 10% lower than an individual provider, while 10 more days of estimated project finish time would increase the bid price by 5.8%, a $1,000 increase in PPP adjusted GDP per capita would increase the bid price by 0.5%. Therefore, H1 about the provider's production cost-based pricing is supported.</p><p>Second, out of the three hypothesized provider quality signals -rating (β=0.013, p&lt;0.01) and project experience (β=0.0452, p&lt;0.01), are shown to be significant in determining his bid price. What merits particular mention here is that we did observe that as new entrants gain more project experience in the market, they charge a higher premium for their services. Thus, Hypothesis 2 about competitive pricing is supported. One alternative thought is that providers do not price their service with a specific price offer, but use a benchmark (such as average bid price, or the outsourcer's ask price), to price their services, thus an analysis with price relative to average and the bid-ask spread may be more appropriate, and we provide additional analysis with these other two models. The analyses serve as robustness checks for alternative explanations, and the estimates are generally comparable. Notably, all coefficients bear the same sign and statistical significance with Model 1.</p><p>Third, Hypothesis 3 about frictional transaction cost is partially supported, as the provider and the outsourcer are in the same country (β=-0.0025, p&gt;0.1) does not show a significant effect, while prior positive experience (β=-0.0548, p&lt;0.01) shows significant effect on the provider's price.</p><p>Since there is large heterogeneity in projects that are posted on the site and service providers who bid for these projects, the bidding strategies of small/individual providers are likely to be very different from that of large providers and similarly, selection criteria used by large outsourcers are likely to be very different from that of small outsourcers. Therefore, to test whether we can pool all providers together in the analysis, we performed additional analysis with random coefficients model, to look at the different bidding strategies of the variable provider_type (company vs. individual), and estimate of the variation (sd) of provider_type in bidding strategies is small (95% confidence interval of 1.86e-07 to 5.60e-07). To explain the variance of the provider's bid price across projects, particularly for transaction frictions, we estimated one model for the average bid and another model for all winning bids. The project level data are appropriate to estimate the impact of project level attributes on the provider's pricing, such as project and outsourcer attributes. As shown in Table <ref type="table" target="#tab_1">4</ref>, the provider's costs, reflected in the project's attributes, i.e., complexity of project (β=0.0529, p&lt;0.01) and project budget (β=1.152, p&lt;0.01), significantly increased the average bid and winning bid. Thus, evidence for supporting Hypothesis 1 is further provided. We also found evidence for the salient effect of online transaction frictions; specifically, the outsourcer's rating (β=-0.01, p&lt;0.01), gold member status (β=-0.148, p&lt;0.01), outsourcer's tenure (β=-0.0003, p&lt;0.1), and outsourcer's profile depth (β=-0.05, p&lt;0.01) are all negatively associated with average and winning bid. Thus H3 is further supported. Also, writing, design and data entry projects all have a lower average price than purely IT projects; evidentially IT projects require more technical skills, commanding higher prices despite controlling for project scale (complexity and budget). We drew further implications by sampling the winning bids and look at how winners price their services. As Table <ref type="table" target="#tab_1">4</ref> attests, the coefficients for all independent variables are at similar significance level and size, except outsourcer's tenure. Experienced outsourcers are likely to choose a higher priced bid, while the average price for experienced outsourcers is lower on average. Overall, the additional sample for winners supports our hypotheses and robustness of the estimations.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Discussions</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Implications for Understanding Pricing Behavior in Emerging Markets</head><p>Our theoretical framework and empirical evidence answer our posted research questions about service provider pricing strategy in online markets. First, production costs are still salient in predicting bid prices. Second, we find evidence for competitive pricing. Providers price their services based on competitive information they observe from other providers. Third, we also show evidence of salient transaction frictions. Contrary to conventional thinking that cost and uncertainty lie on the demand side <ref type="bibr" target="#b1">(Ang and Straub 1998)</ref>, we show that service providers also experience uncertainty from outsourcers, and they incur frictional costs and service providers charge a premium for perceived transaction frictions to shield themselves from uncertainty. In such case, providers are willing to discount their bid prices for high-quality outsourcers, such as those with high reliability and reputation. These findings jointly show that a service provider's strategic pricing mechanism is more comprehensive than production cost based pricing.</p><p>We also find evidence that providers not only consider their own purchasing power in posting their prices, but they tailor their prices for different outsourcers. is evidenced by the consistent significant effect of the outsourcer's PPP-adjusted GDP per capita in shaping providers' prices. For example, ceteris paribus, the same provider will offer a higher price for a provider from the US (high PPP) than China (low PPP). Besides, for the same project, ceteris paribus, a provider from China will offer a lower price than the US. In this way, the market is naturally becoming a market with global labor arbitrage, thus becoming an outsourcing channel from rich to poor countries. The results first imply that unless providers from richer countries are able to signal higher quality, they are likely to either win contracts at a sub-optimal price, or fail to win any contract. Second, the results indicate that it is not in the best interest of outsourcers of richer countries to show country information. Therefore, the online market might as well remove outsourcer country information to enhance consumer surplus for outsourcers from richer countries.</p><p>Besides, we found that outsourcers who have more project experience tend to attract lower bids but they finally contract with a higher priced one. This empirical finding indicates that experienced outsourcers are more likely to select not only based on price (and they are less price sensitive), they will have higher budget to attract bidding, and winning bids will come from high quality bidders (rather than the lowest ones). Therefore, competitive pricing could be an equilibrium market behavior.</p><p>In sum, we find evidence for all three theories that determine pricing (production cost, market dynamics and transaction frictions). The evidence for the salient effect of frictional cost shows the existence of thirddegree price discrimination as providers do segment the outsourcers based on reputation, status, tenure, and related attributes. This suggests that when micro level data are available particularly due to the digital revolution, sellers (outsourcers) might be able to identify the characteristics of buyers (providers), segment them, and accordingly charge different (differentiating) prices to maximize their profits.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Practical Implications for Online Crowdsourcing Markets</head><p>By analyzing the providers' pricing strategies, we draw some practical inferences for the design of online markets for IT services. First, the market's general goal is to ensure that the right outsourcer award the contract to the right provider at an appropriate price. Therefore, to maintain an effective market, it is important to encourage provider pricing strategies that are compatible with their incentives. As our results show, project outsourcers with a higher rating, gold member status, and a more comprehensive profile are likely to get better deals -lower average prices and lower contract prices. Thus, the market should enhance these information signals of the outsourcers and ensure that they are credible. The market can also add a new information signal, such as "featured" outsourcer as a comprehensive measure that integrates rating, gold member status, tenure, and profile that could reduce the provider's efforts in evaluating outsourcers.</p><p>Second, we observe that providers with higher quality (e.g., ability, reliability and experience) are more likely to bid higher than their lower quality competitors. However, this could be detrimental to their success in the market if these information signals are not effectively transmitted to and understood by outsourcers. For a market to function effectively, it is important for outsourcers to self-select providers that meet their expectations (incentive compatibility). Thus, it is important for online markets to effectuate these information signals for providers, ensuring that they are differentially costly, visible, clear, and credible <ref type="bibr" target="#b11">(Rao and Monroe 1989)</ref>. Perhaps a similar measure proposed above (a comprehensive information signal) could be devised and prominently displayed on the provider profile page. Third, our results point out a potential problem of labor attrition, also known as "shake-out", a situation when a disproportionately large percentage of providers engaged in a market are forced to withdraw from the competition within a relatively short period of time <ref type="bibr" target="#b23">(Willard and Cooper 1985)</ref>. In our study, it was observed that providers with higher reputation and project experience are more likely to win a contract and command a higher price. Since reputation and project experience are indicators that can only be built over time, the market mechanism is biased against new (albeit potentially high-quality) providers. Operating at sub-optimum profit may force them out of the market <ref type="bibr">(Banker et al. 2011)</ref>. Therefore, besides incentive mechanisms for outsourcers, the market may publish unbiased information signals to prevent shake-outs and ensure competitive pricing (such as a performance measure to take into account the provider's tenure). Besides, we observe that providers actually price their services with some private information that is not observable to other providers and outsourcers, such as their own bid success rate. This hidden signal inflates their price, and thus it may be detrimental to their success. Hence, the market could take actions to publish such private information of providers to help outsourcers make better pricing decisions.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Limitations and Suggestions for Future Research</head><p>This study has several limitations, which opens up interesting opportunities for future research.</p><p>First, as prior research showed that outsourcers rely on the service providers' quality signals <ref type="bibr">(Banker and Hwang 2008)</ref> and frictional costs <ref type="bibr">(Gefen and Carmel 2008)</ref> in making their selections, we do not observe any effect of country-related frictional costs on provider's prices. The non-significant effect of the variable "same country" implies that, on average, service providers do not care about whether the outsourcer is from the same country (or not) when placing bids. It is possible that whether the providers and outsourcers are from the same country may not capture the frictional cost, and maybe "English speaking" or "common language" or a more nuanced coding of the data may be needed.</p><p>Second, although provider pricing strategies are the focus of this research, we did not comprehensively examine bidding dynamics, such as the effect of bidding sequence on the provider's pricing decision. It will be interesting to see whether bidding dynamics have an effect on the bid price, and how they affect the chance of winning a contract.</p><p>Third, given that the data has two levels, as individual bids are nested in projects, hence more analysis can be done with the dataset, such as hierarchical linear modeling (HLM), which is suitable for multi-level modeling and yield mixed effects estimators. Besides, HLM takes interaction effects into account, and may shed light on interesting questions such as whether providers will offer a lower price for higher quality outsourcers in a more complex (or higher value) project.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Concluding Remark</head><p>Indeed, pricing of unique services is anything but easy. <ref type="bibr">Hayek (1945, p. 528)</ref> has noted that "the price system is one of those formations which man has learned to use after he had stumbled upon it without understanding it". Drawing upon production costs, information signaling theory, and uncertainty theory, this paper developed a theoretical framework of three complementary pricing strategies of service providers in online crowdsourcing markets. This paper shows that the providers price there services not only based on cost considerations but also on competitor characteristics and outsourcer characteristics, thus aiming to reap the maximum expected surplus. Our empirical study invites IS scholars to look at strategic aspects of pricing of IT services in online markets.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head>Table 3 . Fixed Effects Estimations (N=83,067)</head><label>3</label><figDesc></figDesc><table><row><cell>Coefficients</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1"><head>Table 4 . Models for Average/Final Bid Price</head><label>4</label><figDesc></figDesc><table><row><cell>Coefficients</cell></row></table></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="1" xml:id="foot_0"><p>Lee and Tang (2000)  andLothian and Taylor (1996)  provided similar arguments in support of using PPP over other indices, such as GDP and exchange rates.</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="2" xml:id="foot_1"><p>There are other signals such as provider self-reported hourly rate and gold member status. These signals may not be effective because self-reported hourly rate is like "cheap talk" and providers do not incur cost in posting his hourly rate; and although gold member status is costly, the cost is same across providers (about $25 per month).</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="3" xml:id="foot_2"><p>Examples include eLance.com, rentacoder.com and freelancer.com at utilize a request for proposals and reverse auction model (bidding on projects). For further discussion please see Malone and Laubacher (1998) and<ref type="bibr" target="#b16">Snir and Hitt (2003)</ref>.</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="4" xml:id="foot_3"><p>CIA World Factbook (https://www.cia.gov/library/publications/the-world-factbook/index.html).</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="5" xml:id="foot_4"><p>International Monetary Fund, World Economic Outlook Database. Data for 2010.</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="6" xml:id="foot_5"><p>World Development Indicators database, World Bank -29 September 2010.</p></note>
+		</body>
+		<back>
+
+			<div type="availability">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Data</head><p>We relied on two data sources. Our first data source is from www.freelancer.com, one of the leading global online markets for services crowdsourcing. We drew a random sample between June 1, 2004 -September 20, 2010 from the firm's database. The data were retrieved with MySQL queries and analyzed with STATA V11. Additionally, we drew three other random samples using MySQL random procedures, and the descriptive statistics are comparable, indicating that the random procedure is reliable and consistent.</p></div>
+			</div>
+
+
+			<div type="funding">
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>the ACM (41:8), pp 35-42.  Banker, R.D., and Hwang, I. 2008. "Importance of Measures of Past Performance: Empirical Evidence on Quality of E-Service Providers," Contemporary Accounting Research (25:2), pp 307-337. Banker, R.D., Wattal, S., and Hwang, I. 2011. "Determinants of Firm Survival in E-Markets: An Analysis with Software Service Providers," Hawaii International Conference on Information Systems: IEEE Computer Society, pp. 1-7. Brynjolfsson, E., Hu, Y.J., and Smith, M.D. 2003. "Consumer Surplus in the Digital Economy: Estimating the Value of Increased Product Variety at Online Booksellers," Management Science (49:11), pp 1580-1596. Brynjolfsson, E., and Smith, M.D. 2000. "Frictionless Commerce? A Comparison of Internet and Conventional Retailers," Management Science (46:4), pp 563-585. Cameron, A.C., and Trivedi, P.K. 2009. Microeconometrics Using Stata. Stata Press College Station, TX. Chirinko, R.S. 1982. "An Empirical Investigation of the Returns to Job Search," The American Economic Review (72:3), pp 498-501. Choudhary, V., Ghose, A., Mukhopadhyay, T., and Rajan, U. 2005. "Personalized Pricing and Quality Differentiation," Management Science (51:7), pp 1120-1130. Dimoka, A., Hong, Y., and Pavlou, P. 2012. "On Product Uncertainty in Online Markets: Theory and Evidence," MIS Quarterly (32), p Forthcoming. Friedman, T.L. 2007. The World Is Flat: A Brief History of the Twenty-First Century. Picador USA. Gefen, D., and Carmel, E. 2008. "Is the World Really Flat? A Look at Offshoring at an Online Programming Marketplace," MIS Quarterly (32:2), pp 367-384. Ghose, A. 2009. "Internet Exchanges for Used Goods: An Empirical Analysis of Trade Patterns and Adverse Selection," MIS Quarterly (33:2), pp 263-291. Hausman, J.A. 1978. "Specification Tests in Econometrics," Econometrica: Journal of the Econometric Society), pp 1251-1271. Hayek, F.A. 1945. "The Use of Knowledge in Society," The American Economic Review (35:4), pp 519-530. Holmes, T.J. 1989. "The Effects of Third-Degree Price Discrimination in Oligopoly," The American Economic Review (79:1), pp 244-250. Jap, S.D. 2003. "An Exploratory Study of the Introduction of Online Reverse Auctions," Journal of Marketing (67:3), pp 96-107. Katz, M.L. 1987. "The Welfare Effects of Third-Degree Price Discrimination in Intermediate Good Markets," The American Economic Review (77:1), pp 154-167. Lee, F.C., and Tang, J. 2000. "Productivity Levels and International Competitiveness between Canadian and Us Industries," American Economic Review (90:2), pp 176-179. Lothian, J.R., and Taylor, M.P. 1996. "Real Exchange Rate Behavior: The Recent Float from the Perspective of the Past Two Centuries," Journal of Political Economy (104:3), pp 488-509. Lucking Reiley, D., Bryan, D., Prasad, N., and Reeves, D. 2007. "Pennies from Ebay: The Determinants of Price in Online Auctions," The Journal of Industrial Economics (55:2), pp 223-233. Malone, T.W., and Laubacher, R.J. 1998. "The Dawn of the E-Lance Economy," Harvard Business Review (76). Melnik, M.I., and Alm, J. 2005. "Seller Reputation, Information Signals, and Prices for Heterogeneous Coins on Ebay," Southern Economic Journal (72:2), pp 305-328. Milgrom, P., and Roberts, J. 1986. "Price and Advertising Signals of Product Quality," The Journal of Political Economy (94:4), pp 796-821. Milgrom, P.R., and Weber, R.J. 1982. "A Theory of Auctions and Competitive Bidding," Econometrica: Journal of the Econometric Society (50:5), pp 1089-1122. Mirrlees, J.A. 1971. "An Exploration in the Theory of Optimum Income Taxation," The Review of Economic Studies (38:2), pp 175-208.</p></div>
+			</div>
+
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Second, we obtained the GDP and PPP indices from the CIA World Factbook. 4 We also obtained PPP data from the International Monetary Fund 5 and World Bank 6 for countries not included in the CIA World Factbook. We ensured that the indices from the three data sources were consistent with each other.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Measurement Operationalization</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Dependent Variables</head><p>Bid price of service provider is our first dependent variable. Bid price is the price at which a service provider is willing to exchange his services for. It is a binding contract. In the subsequent empirical analysis, we use natural logarithms of the bid prices. First, it is consistent with prior studies, which also use with logs. Second, the distributions of logs are closer to normal. Third, logs are more homoscedastic (noted as ln(Bid)).</p><p>Average Bid is calculated with the following equation:</p><p>Winning Bid is the price of the bid of a service auction chosen by the service outsourcer.</p><p>Price Premium (over average price) is defined as the difference between the service provider's bid price and the average bid relative to the average bid. It is a ratio scale measuring the relative rent of a service provider for the project. Price Premium is calculated with the following equation:</p><p>Bid-Ask Spread is defined as the difference between the service provider's bid price and the service outsourcer's ask price (proxied by her specified budget), relative to the service outsourcer's ask price. It is also a ratio scale measuring the rent of a service provider for the project. Bid-ask spread is used to elicit both provider -and -outsourcer specific factors that affect the provider's pricing decision. Spread is calculated with the following equation:</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Independent Variables</head><p>Provider's Cost is measured with three variables: project scale, project complexity, and provider purchasing power. The first set of variables captures the objective project profile that signals the cost of production: project scale and project complexity. Project scale is measured with a continuous variable that captures the service provider's estimated days of finishing the project. Project complexity is measured with number of skills required (such as SQL, Python, Java etc.) on a discrete 1-5 scale. The second dimension is provider's purchasing power. Following the work of <ref type="bibr">Gefen and Carmel (2006)</ref>, we use PPP adjusted GDP per capita of the residing country of the service provider as a measure for purchasing power. The unit is in $1,000.</p><p>Relative provider's quality is measured with five variables that capture quality in the market. First, provider's average feedback rating (continuous scale 1-10) captures the average ratings outsourcers from all previous transactions posted by the provider. Second, whether a provider has a certification or not (binary) measures his expertise in a given area. Third, the provider's project experience is measured with 3 variables: tenure in the marketplace, number of completed projects, and cumulative earnings. As these three variables are highly correlated, we used the logarithmic transformation of cumulated earnings as a proxy for the provider's project experience because it captures both the number of projects and the scale of projects the provider has performed in the marketplace.</p><p>Provider's transaction uncertainty is measured with two dimensions. The first set of two dummy variables captures the dimension that points to the uncertainty pertaining to the interaction between the provider and Thirty Third International Conference on Information Systems, Orlando 2012 9</p><p>the outsourcer: whether the outsourcer and provider are from the same country (or region) and whether the provider and the outsourcer have prior satisfactory transactions. The second dimension measures the provider's transaction uncertainty with an outsourcer based on the outsourcer's information signals. These information signals include the service outsourcer's quality rating, gold member status, tenure on the marketplace and marketplace profile. Outsourcer quality rating is similar to the provider's quality rating, a continuous discrete scale from 1-10. Outsourcer quality rating captures the overall quality of the outsourcer. Gold member status is a dummy variable that captures the outsourcer's standing and reliability in the emarket. Outsourcer tenure is the number of days the outsourcer has been in the e-market until the focal project, and it captures the outsourcer's seniority in the e-market. Finally, outsourcer profile depth is measured with the logarithmic transformation of the number of words in the outsourcer's public profile, which captures the outsourcer's richness and detail of profile information.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Table 2. Measurement of Project Category and Control Variables</head><p>Project category is coded into three dummy variables. Writing, Design and Data Entry. We set IT projects as the base group, and the effects of all three variables are therefore relative to IT projects.</p><p>Total Bids is measured with a continuous variable capturing number of bids in an auction.</p><p>Outsourcer's Purchasing Power is measured with the PPP adjusted GDP per capita of his residing country (region).</p><p>Firm Outsourcer is measured with a binary variable indicating whether an outsourcer is a firm (1) or an individual (0).</p><p>Non-public Project is measured with a binary variable indicating if a project is private (only open to certain providers at the outsourcer's discretion).</p><p>Featured Project is measured with a binary variable indicating if a project is featured (with a "featured" highlight in the RFP list).</p><p>Project Description Depth is measured with the number of words for a project description in an RFP.</p><p>Auction Duration is measured with the number of days the auction was alive.</p><p>Provider gold member in the marketplace measures his reliability and commitment as acquiring gold member status incurs a monthly fee, and members need to meet certain performance standards to maintain a gold member status.</p><p>Hourly rate in US dollars is used directly as a measure for outside option.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Econometric Specification and Estimation</head><p>ln average _ bid j ( ) / ln winning _ bid j ( ) = γ 0 + γ 1 * project _ complexity j ( ) + γ 2 * ln budget j ( ) + γ 3 * outsourcer _ rating j ( ) +γ 4 * outsourcer _ gold ( ) + γ 5 * outsourcer _ tenure j ( ) + γ 6 * ln outsourcer _ profile j ( ) + γ 7-9 * sub _ categories j +γ 10-16 * Controls j + ε j 5</p><p>( )</p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">A</forename><surname>References Akerlof</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">The Market for&quot; Lemons&quot;: Quality Uncertainty and the Market Mechanism</title>
+		<imprint>
+			<date type="published" when="1970">1970</date>
+			<biblScope unit="volume">84</biblScope>
+			<biblScope unit="page" from="488" to="500" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Production and Transaction Economies and Is Outsourcing: A Study of the Us Banking Industry</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Ang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">W</forename><surname>Straub</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">22</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="535" to="552" />
+			<date type="published" when="1998">1998</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<author>
+			<persName><forename type="first">S</forename><surname>Ba</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">A</forename><surname>Pavlou</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Evidence of the Effect of Trust Building Technology in Electronic Markets: Price Premiums and Buyer Behavior</title>
+		<imprint>
+			<date type="published" when="2002">2002</date>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="page" from="243" to="268" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">The Emerging Role of Electronic Marketplaces on the Internet</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">Y</forename><surname>Bakos</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Communications</title>
+		<imprint>
+			<date type="published" when="1998">1998</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Privacy, Economics, and Price Discrimination on the Internet</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Odlyzko</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 5th international conference on Electronic commerce : ACM</title>
+		<meeting>the 5th international conference on Electronic commerce : ACM</meeting>
+		<imprint>
+			<date type="published" when="2003">2003</date>
+			<biblScope unit="page" from="355" to="366" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Effect of Expectation and Disconfirmation on Postexposure Product Evaluations: An Alternative Interpretation</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">L</forename><surname>Oliver</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Applied Psychology</title>
+		<imprint>
+			<biblScope unit="volume">62</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="480" to="486" />
+			<date type="published" when="1977">1977</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">The Nature and Role of Feedback Text Comments in Online Marketplaces: Implications for Trust Building, Price Premiums, and Seller Differentiation</title>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">A</forename><surname>Pavlou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Dimoka</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<imprint>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="392" to="414" />
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Psychological Contract Violation in Online Marketplaces: Antecedents, Consequences, and Moderating Role</title>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">A</forename><surname>Pavlou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Gefen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<imprint>
+			<biblScope unit="volume">16</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="372" to="399" />
+			<date type="published" when="2005">2005</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Understanding and Mitigating Uncertainty in Online Exchange Relationships: A Principal-Agent Perspective</title>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">A</forename><surname>Pavlou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Liang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Xue</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="105" to="136" />
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<monogr>
+		<title level="m" type="main">The Economics of Price Discrimination</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Phlips</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1983">1983</date>
+			<publisher>Cambridge Univ Pr</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<monogr>
+		<title level="m" type="main">The Economics of Welfare</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">C</forename><surname>Pigou</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1952">1952</date>
+		</imprint>
+	</monogr>
+	<note>Transaction Publishers</note>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">The Effect of Price, Brand Name, and Store Name on Buyers&apos; Perceptions of Product Quality: An Integrative Review</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">R</forename><surname>Rao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">B</forename><surname>Monroe</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Marketing Research</title>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="351" to="357" />
+			<date type="published" when="1989">1989</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<monogr>
+		<title level="m" type="main">The Economics of Imperfect Competition</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Robinson</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1933">1933</date>
+			<publisher>Macmillan and Co</publisher>
+		</imprint>
+	</monogr>
+	<note>ltd</note>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Last-Minute Bidding and the Rules for Ending Second-Price Auctions: Evidence from Ebay and Amazon Auctions on the Internet</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">E</forename><surname>Roth</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Ockenfels</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">American Economic Review</title>
+		<imprint>
+			<biblScope unit="volume">92</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="1093" to="1103" />
+			<date type="published" when="2002">2002</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Xtoverid: Stata Module to Calculate Tests of Overidentifying Restrictions after Xtreg, Xtivreg, Xtivreg2, Xthtaylor</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">E</forename><surname>Schaffer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Stillman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Statistical Software Components)</title>
+		<imprint>
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Output and Welfare Implications of Monopolistic Third-Degree Price Discrimination</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Schmalensee</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The American Economic Review</title>
+		<imprint>
+			<biblScope unit="volume">71</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="242" to="247" />
+			<date type="published" when="1981">1981</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Costly Bidding in Online Markets for It Services</title>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">M</forename><surname>Snir</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">M</forename><surname>Hitt</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Science</title>
+		<imprint>
+			<biblScope unit="volume">49</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="1504" to="1520" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Job Market Signaling</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Spence</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The quarterly journal of Economics</title>
+		<imprint>
+			<biblScope unit="volume">87</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="355" to="374" />
+			<date type="published" when="1973">1973</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Consumer Bidding Behavior on Internet Auction Sites</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Stafford</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Stern</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Electronic Commerce</title>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="135" to="150" />
+			<date type="published" when="2002">2002</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<monogr>
+		<title level="m" type="main">The Theory of Industrial Organization</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Tirole</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2000">2000</date>
+			<publisher>MIT press</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<monogr>
+		<author>
+			<persName><forename type="first">H</forename><surname>Varian</surname></persName>
+		</author>
+		<title level="m">Microeconomic Analysis</title>
+		<meeting><address><addrLine>Norton New York</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="1992">1992</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Price Discrimination and Social Welfare</title>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">R</forename><surname>Varian</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The American Economic Review</title>
+		<imprint>
+			<biblScope unit="volume">75</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="870" to="875" />
+			<date type="published" when="1985">1985</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Differential Pricing and Efficiency</title>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">R</forename><surname>Varian</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">First Monday</title>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="page" from="2" to="5" />
+			<date type="published" when="1996">1996</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Survivors of Industry Shake Outs: The Case of the Us Color Television Set Industry</title>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">E</forename><surname>Willard</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">C</forename><surname>Cooper</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Strategic Management Journal</title>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="299" to="318" />
+			<date type="published" when="1985">1985</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">A Note on Robust Variance Estimation for Cluster-Correlated Data</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">L</forename><surname>Williams</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Biometrics</title>
+		<imprint>
+			<biblScope unit="volume">56</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="645" to="646" />
+			<date type="published" when="2000">2000</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<monogr>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">M</forename><surname>Wooldridge</surname></persName>
+		</author>
+		<title level="m">Econometric Analysis of Cross Section and Panel Data</title>
+		<imprint>
+			<publisher>The MIT press</publisher>
+			<date type="published" when="2002">2002</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

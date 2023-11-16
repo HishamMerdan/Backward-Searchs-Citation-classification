@@ -1,0 +1,2169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Surviving in Global Online Labor Markets for IT Services: A Geo-Economic Analysis</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+				<date type="published" when="2018-05-30">May 30, 2018</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Irfan</forename><surname>Kanat</surname></persName>
+							<email>kanat@ohio.edu</email>
+							<affiliation key="aff0">
+								<orgName type="department">College of Business</orgName>
+								<orgName type="institution">Ohio University</orgName>
+								<address>
+									<postCode>45701</postCode>
+									<settlement>Athens</settlement>
+									<region>Ohio</region>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Yili</forename><surname>Hong</surname></persName>
+							<email>hong@asu.edu</email>
+							<affiliation key="aff1">
+								<orgName type="department">W. P. Carey School of Business</orgName>
+								<orgName type="institution">Arizona State University</orgName>
+								<address>
+									<postCode>85287</postCode>
+									<settlement>Tempe</settlement>
+									<region>Arizona</region>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">T</forename><forename type="middle">S</forename><surname>Raghu</surname></persName>
+							<affiliation key="aff1">
+								<orgName type="department">W. P. Carey School of Business</orgName>
+								<orgName type="institution">Arizona State University</orgName>
+								<address>
+									<postCode>85287</postCode>
+									<settlement>Tempe</settlement>
+									<region>Arizona</region>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Surviving in Global Online Labor Markets for IT Services: A Geo-Economic Analysis</title>
+					</analytic>
+					<monogr>
+						<idno type="ISSN">1047-7047 (print)</idno>
+						<imprint>
+							<date type="published" when="2018-05-30">May 30, 2018</date>
+						</imprint>
+					</monogr>
+					<idno type="MD5">AB45D0781D7B4E1FC85513F6A75A1D1A</idno>
+					<idno type="DOI">10.1287/isre.2017.0751</idno>
+					<note type="submission">Received: February 22, 2016 Revised: December 17, 2016; July 26, 2017 Accepted: September 13, 2017</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.7.3" ident="GROBID" when="2023-06-16T09:24+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>Vĳay Mookerjee, Senior Editor; Anjana Susarla, Associate Editor global online labor markets</term>
+					<term>IT services</term>
+					<term>international labor</term>
+					<term>survival models</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Global online labor markets (OLMs) lower the barriers to entry and enable global competition for information technology (IT) services from providers around the world. Although the prior OLM literature predominantly found systematic advantages for IT service providers from developed countries because of their higher perceived quality, the reality is that most service providers in OLM are from developing countries. This phenomenon requires a robust analysis of how OLMs are evolving. In this study, we conduct a geo-economic analysis on IT service providers' survival utilizing a unique longitudinal panel data set from an OLM, which comprises 40,874 IT service providers from different countries over a period of more than four years (2006 to 2010). Based on results from Survival models and a series of robustness checks, we were able to decipher how geoeconomic factors (specifically the country development level) and reputation interact to determine service providers' survival. Our findings provide a different perspective from the prior literature on OLM by showing a systematic advantage for IT service providers from developing countries in terms of survival, especially when providers from developing countries were able to signal their individual quality through reputation. We explain and discuss the mechanisms underlying these effects, and highlight implications for OLMs for IT services.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.">Introduction</head><p>Global online labor markets (OLMs) are matching platforms that bring together employers and ondemand service providers <ref type="bibr">(Chen and</ref><ref type="bibr">Horton 2016, Hong et al. 2016)</ref>. The role of OLMs in today's economy is rapidly growing as OLMs are projected to provide some 72 million full-time-equivalent positions by 2025 <ref type="bibr" target="#b64">(Manyika et al. 2015)</ref>. Beyond matching employers with service providers, the OLMs also bring service providers head on with their competition from around the world. OLMs flatten market hierarchies, reduce transaction costs, and open up tasks and services that were once local jobs to global competition <ref type="bibr" target="#b63">(Malone et al. 1987</ref><ref type="bibr">, The Economist 2010</ref><ref type="bibr" target="#b42">, Hong and Pavlou 2017)</ref>. The advancement of technology and reduction in transaction costs make moving jobs to places with cost advantages more viable <ref type="bibr" target="#b68">(Moreno and Terwiesch 2014)</ref>. As the jobs move to developing countries, developed countries will face pressure on wages and jobs in OLM <ref type="bibr" target="#b14">(Blinder 2006</ref><ref type="bibr" target="#b15">, Bottini et al. 2007</ref>). The implication of jobs movement is that, as the market evolves, the proportion of providers from developed versus developing countries (herein referred to as "market participation") may change. Yet, relatively little is known about the mechanisms that affect market participation from developed versus developing countries in OLM.</p><p>OLM is a disruptive force in labor markets as it allows small firms and even individuals to outsource information technology (IT) jobs and IT services worldwide, and they allow any IT service provider 1 to compete for those jobs <ref type="bibr" target="#b68">(Moreno and</ref><ref type="bibr">Terwiesch 2014, Manyika et al. 2015)</ref>. Despite the growing importance of OLMs, especially because of their ability to bring together employers and providers from around the globe, research that addresses the geo-economic mechanisms in terms of market participation in OLMs is lacking. The existing studies on OLMs have primarily focused on reputation and signaling mechanisms to study the employers' hiring decisions when they receive quotes from providers with different reputations, different genders, or from different countries <ref type="bibr" target="#b66">(Mill 2011</ref><ref type="bibr" target="#b79">, Scholz and Haas 2011</ref><ref type="bibr" target="#b42">, Hong and Pavlou 2017</ref><ref type="bibr" target="#b16">, Chan and Wang 2014</ref><ref type="bibr" target="#b58">, Lin et al. 2018)</ref>. This line of inquiry has identified systematic hiring biases benefiting providers from developed countries, because those providers may be perceived to have higher quality <ref type="bibr" target="#b66">(Mill 2011</ref><ref type="bibr" target="#b1">, Agrawal et al. 2016</ref><ref type="bibr" target="#b42">, Hong and Pavlou 2017)</ref>. However, these studies have largely focused on the employers' perspective in making hiring decisions, ignoring that the evolving nature of the interplay between individual reputation and geo-economic factors such as economic development may also determine the providers' survival. In this study, we aim to address this research gap by focusing on how individual reputation and economic development interact to affect market participation in OLM. Specifically, our study looks at systematic differences in survival for providers from developed and developing countries, and we investigate the economic (developing country providers have a lower living cost) and perceptual (developed country providers are perceived as more capable) drivers of this difference and how providers' individual reputation overcomes the perceptual bias. The survival of providers is a key performance indicator and the driver of the evolution of online labor markets. If there are systemic mechanisms that favor providers from certain countries, we would expect the distribution of labor to shift as more providers from these countries flock to and remain in the market. The survival of providers in OLM, while important, has received relatively little attention from the information systems (IS) community <ref type="bibr" target="#b10">(Banker et al. 2011)</ref>. One possible reason for this void in the literature is the difficulty of reliably measuring providers' survival in the market, since such data are usually proprietary and difficult to observe on scale. We overcome this hurdle by utilizing a proprietary data set from a leading OLM that allows us to observe users' complete platform activities and their time stamps, including their last logins, bids, and transactions. Users' comprehensive activities help us reliably measure survival based on market exit. We further combine this proprietary data set with data from publicly available archival sources, including exchange rate data from the International Monetary Fund (IMF), and gross domestic product (GDP) data for the providers' countries of residence from the World Bank (WB), among others. We construct a longitudinal provider-month panel data set comprising 40,874 providers from various countries in a leading global OLM over a period of four years and nine months between 2006 and 2010. We used a timevariant survival model to estimate the interaction effect of the country's development level 2 and provider reputation on provider survival <ref type="bibr" target="#b90">(Thomas and Reyes 2014)</ref>. We found that (1) providers from developing countries are more likely to survive; and (2) reputation has a stronger effect on the survival of providers from developing countries, compared with providers from developed countries.</p><p>This paper makes several important contributions. To our knowledge, our study is the first to examine the survival of IT service providers in the global context with a novel data set from a major OLM. This study extends prior IS literature on provider survival <ref type="bibr">(Banker et al. 2011, Susarla and</ref><ref type="bibr" target="#b83">Barua 2011)</ref> by looking at the joint effect of country economic development and providers' individual reputation on provider survival in an OLM. We found evidence for systematic advantages to developing country providers, and further, compared with providers from developed countries, providers from developing countries benefit more from a better individual reputation for their survival. Second, this study expands the emerging IS literature on OLM. While a majority of the current studies of online labor markets use an employers' perspective by squarely focusing on the employers' hiring decisions <ref type="bibr" target="#b62">(Malone and Laubacher 1999</ref><ref type="bibr" target="#b12">, Banker and Hwang 2008</ref><ref type="bibr" target="#b87">, Tambe and Hitt 2010</ref><ref type="bibr" target="#b79">, Scholz and Haas 2011</ref><ref type="bibr" target="#b68">, Moreno and Terwiesch 2014</ref><ref type="bibr" target="#b98">, Yoganarasimhan 2013)</ref>, that is, factors that determine which provider will land a contract, our study expands this line of research by conducting a provider-level analysis of survival in OLM.</p><p>This paper proceeds as follows. Section 2 describes the background and related literature. Section 3 develops our hypotheses. Section 4 provides a description of our data, the estimation models, and our results. Section 5 discusses the contributions and implications of this study for theory and practice and Section 6 concludes.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.">Related Literature</head><p>There is a stream of research on outsourcing in the IS field <ref type="bibr" target="#b4">(Ang and Straub 1998</ref><ref type="bibr" target="#b85">, Susarla et al. 2010</ref><ref type="bibr" target="#b82">, Susarla 2012</ref><ref type="bibr" target="#b60">, Loh and Venkatraman 1992</ref><ref type="bibr" target="#b39">, Grover et al. 1996</ref><ref type="bibr" target="#b45">, Hu et al. 1997</ref><ref type="bibr" target="#b74">, Ravindran et al. 2015)</ref>. Traditionally, the outsourcing of jobs to geographically distant locations was only possible for firms that manufactured shippable goods <ref type="bibr" target="#b14">(Blinder 2006)</ref>, and manufacturing jobs were outsourced to offshore factories to leverage cheaper labor. With the development of the Internet and virtual collaboration technologies, we are now in an era when noncommodity service jobs, such as software development, call center, or radiology diagnosis are being outsourced offshore <ref type="bibr" target="#b14">(Blinder 2006)</ref>. In general, the jobs flow from the developed countries to the developing countries, leading to a pattern where the employers reside in developed countries, and the workers reside in developing countries <ref type="bibr" target="#b66">(Mill 2011)</ref>. IT services were among the first to be outsourced, thanks to the impersonal and digital nature of the work <ref type="bibr" target="#b48">(Koh et al. 2004</ref><ref type="bibr" target="#b7">, Aspray et al. 2006</ref><ref type="bibr" target="#b87">, Tambe and Hitt 2010</ref><ref type="bibr" target="#b82">, Susarla 2012)</ref>. IS researchers have investigated various dimensions of outsourcing: effects on workers skill composition and job displacement <ref type="bibr">(Tambe and</ref><ref type="bibr">Hitt 2010, 2012)</ref>, role of contracts in relation management <ref type="bibr" target="#b34">Goo et al. (2009)</ref>, strategic considerations in outsourcing <ref type="bibr" target="#b52">(Lee et al. 2004</ref>), Downloaded from informs.org by <ref type="bibr">[194.221.86.126</ref>] on 04 June 2018, at 07:20 . For personal use only, all rights reserved. success factors of outsourcing <ref type="bibr" target="#b48">(Koh et al. 2004)</ref>, and more. Early on, it was noted that cost saving was a major part of the puzzle of outsourcing <ref type="bibr" target="#b4">(Ang and Straub 1998</ref>), yet the big picture was much more complex <ref type="bibr">(Lee and</ref><ref type="bibr">Kim 1999, Levina and</ref><ref type="bibr" target="#b54">Ross 2003)</ref>. Our study extends this line of work by looking at IT outsourcing beyond cost savings from a geo-economic perspective.</p><p>The emergence of online labor markets that match providers to employers took offshore outsourcing from the domain of the Fortune 500 companies and large application service provider firm and brought it to the mass market <ref type="bibr" target="#b62">(Malone and Laubacher 1999</ref><ref type="bibr" target="#b68">, Moreno and Terwiesch 2014</ref><ref type="bibr">, Hong et al. 2016</ref><ref type="bibr" target="#b84">, Susarla et al. 2003)</ref>. Now, small firms and even individuals can outsource their IT jobs to providers home and abroad. This is evident in the sharp increase in the number of providers from developing countries (and employers from developed countries), and the significant growth of online labor market platforms <ref type="bibr" target="#b2">(Agrawal et al. 2013</ref><ref type="bibr" target="#b49">, Kokkodis 2014)</ref>.</p><p>OLMs reduce the transaction costs of contracting IT work, allowing providers from all over the world to compete for IT contracts <ref type="bibr" target="#b1">(Agrawal et al. 2016</ref>). However, the spatial and temporal distances between employers and providers make global online labor markets susceptible to adverse selection because of a lack of ex ante face-to-face screening <ref type="bibr" target="#b42">(Hong and Pavlou 2017)</ref> and moral hazard because of lack of effective ex post monitoring <ref type="bibr" target="#b56">(Liang et al. 2016)</ref>. Mechanisms to mitigate asymmetric information in OLM has been of interest to researchers from economics, management, and IS. These mechanisms mainly involve the signals employers receive regarding the individual providers' past performance or reputation in the OLM. Below we highlight a few of the signals that past research has focused on. <ref type="bibr" target="#b12">Banker and Hwang (2008)</ref> investigated the effect of past performance (bids, contracts, etc.) on accounting service providers' compensation. <ref type="bibr" target="#b98">Yoganarasimhan (2013)</ref>, using a structural model to address the underestimation of reputation effects, found that reputation increased the likelihood of providers getting hired and having higher earnings. Using two natural experiments, <ref type="bibr" target="#b33">Goes and Lin (2012)</ref> investigated the effect of certifications on providers' ability to obtain contracts and the drivers of providers' certification seeking behavior. In summary, previous research primarily investigated employers' hiring choice as the dependent variable. Our study extends this line of research by adopting the lens of provider survival in the OLM.</p><p>Survival has been an area that has received scant attention in the OLM context <ref type="bibr" target="#b10">(Banker et al. 2011)</ref>, and IS research on outsourcing in general <ref type="bibr" target="#b83">(Susarla and Barua 2011</ref>), yet survival is crucial in uncovering market participation mechanisms <ref type="bibr" target="#b55">(Li et al. 2010</ref><ref type="bibr" target="#b94">, Wang et al. 2013</ref><ref type="bibr" target="#b91">, Ugur et al. 2016)</ref>. Survival studies often use methods originally developed to estimate life expectancy, hence the name survival. The survival models measure time to the occurrence of a welldefined event such as death, mechanical failure, or exit from the market (as is the case with firm survival) and are being used in a broad range of disciplines. Building on the body of research on firm survival in broader IS contexts <ref type="bibr" target="#b55">(Li et al. 2010</ref><ref type="bibr" target="#b83">, Susarla and Barua 2011</ref><ref type="bibr" target="#b74">, Ravindran et al. 2015)</ref>, we extend previous literature to focus on the unique dynamics in the OLM context. One key difference between our study and prior firm survival studies is that the majority of service providers in OLM are individuals rather than firms, making the individual reputation easier to build and particularly important. 3  Related to this study, other scholars have noted the employers' preferences and biases in hiring in OLMs <ref type="bibr" target="#b42">(Hong and Pavlou 2017</ref><ref type="bibr" target="#b32">, Ghani et al. 2014</ref><ref type="bibr" target="#b16">, Chan and Wang 2014</ref>). Our study does not directly address hiring preferences in OLMs, yet we are interested in such systematic biases (based on the country of origin) as these biases affect providers' survival in OLMs. There has been some research on the effects of country of origin in OLM. For example, <ref type="bibr" target="#b30">Gefen and Carmel (2008)</ref> provide a look at employers' preferences toward providers in OLM. They analyze rent-a-coder data with logistic regressions. Their findings suggest that there are location effects such that non-American employers prefer domestic providers and American employers have a preference toward offshore providers. <ref type="bibr" target="#b66">Mill (2011)</ref> argues that a lack of cues forces employers in OLM to use indirect cues to infer the quality of providers. He also demonstrates learning effects in buyer preferences through repeat hires from the same country after a successful transaction. <ref type="bibr" target="#b32">Ghani et al. (2014)</ref>, in a study of the Indian diaspora, found that ethnic Indians were more likely to outsource to India in OLM than non-Indians. The geography and ethnicity effect is just one of many international effects in OLM markets. The geographic biases in provider selection have been comprehensively assessed in <ref type="bibr" target="#b42">Hong and Pavlou (2017)</ref>. The authors found that language, time zone, and cultural differences hinder employers' contracting a provider. Their results also indicate that when cost is controlled for, there is a clear preference toward providers from countries with a lower IT development, possibly because of negative perceptions of the work quality of service providers from those countries.</p><p>In summary, the findings from extant prior studies indicate an inconclusiveness on whether developed or developing country providers have a systematic advantage in OLM. This line of literature has traditionally focused on employers' choice in granting contracts by estimating their hiring preferences. We argue that, while important, buyer's choice is insufficient to fully Downloaded from informs.org by <ref type="bibr">[194.221.86.126</ref>] on 04 June 2018, at 07:20 . For personal use only, all rights reserved.</p><p>Information Systems Research, Articles in <ref type="bibr">Advance, pp. 1-17, © 2018 INFORMS</ref> understand mechanisms shaping market participation. Instead, we investigate providers' survival as an alternative perspective of market participation because it indicates who remains in the market <ref type="bibr" target="#b47">(Jacquemin 1972)</ref>. Therefore, our study extends this line of research by investigating the systematic biases due to the joint role of geo-economic factors (e.g., development level of the providers' country of origin) and reputation in determining provider survival in the OLM context.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.">Hypotheses Development</head><p>As we summarized earlier, the focus of prior literature on employers' hiring preference obfuscates the macrolevel effects of career viability of providers in OLM. With our focus on the effect of geo-economics on providers' survival, we are better able to observe the overall effect. In this section, we will seek to propose a set of hypotheses regarding the survival of providers. The offshoring literature has highlighted displacement of labor from developed countries to developing countries as a key outcome of offshore outsourcing <ref type="bibr" target="#b26">(Feenstra and Hanson 1999</ref><ref type="bibr" target="#b38">, Grossman and Rossi-Hansberg 2008</ref><ref type="bibr" target="#b14">, Blinder 2006</ref>). Our study revisits the key findings of offshoring literature in the OLM context with a focus on geo-economics, shedding some light on a nascent area of inquiry in IS.</p><p>We theorize the survival of providers in OLM from two perspectives: (1) production cost, and (2) perceptions of quality. As <ref type="bibr" target="#b75">Roach (2004)</ref> highlights, the cost differences between countries will lead to "global labor arbitrage," as providers from developing countries offer lower prices for the same service. The employers will procure labor where it is cheaper to increase their returns <ref type="bibr" target="#b4">(Ang and Straub 1998</ref><ref type="bibr" target="#b14">, Blinder 2006</ref><ref type="bibr" target="#b38">, Grossman and Rossi-Hansberg 2008)</ref>. The arbitrage seeking behavior, in turn, offers providers from developing countries some endowed advantage.</p><p>As the OLMs are open for all participants with low barriers to entry, providers from developing countries are able to leverage the global labor arbitrage because of both long-term and short-term geo-economic conditions. First, providers from countries with long-term living cost advantages will be able to bid lower prices because of lower production costs. Citing an example used by <ref type="bibr" target="#b30">Gefen and Carmel (2008)</ref>, a $100 bid does not mean the same amount to a provider residing in a developing country as it does to a provider residing in a developed country. Because of lower living costs, providers from a developing country can maintain the same living standard with a lower income from OLMs <ref type="bibr" target="#b26">(Feenstra and Hanson 1999</ref><ref type="bibr" target="#b7">, Aspray et al. 2006</ref><ref type="bibr" target="#b38">, Grossman and Rossi-Hansberg 2008</ref><ref type="bibr" target="#b18">, Clemens et al. 2008</ref>). Hence, despite employers' preference for providers from developed countries conditional on bid prices <ref type="bibr">(Agrawal et al. 2016, Hong and</ref><ref type="bibr" target="#b42">Pavlou 2017)</ref>, with the ability to bid lower prices, providers from a developing country may still be able to land more contracts. Second, providers from developed countries face higher opportunity costs. The traditional labor markets in developed countries may provide a more gainful employment environment compared to OLM. Because of this dual mechanism, the providers from developing countries will be more likely to survive in OLM.</p><p>Hypothesis 1. Service providers from developing countries are more likely to survive in OLM, compared with those from developed countries.</p><p>Providers from countries with a favorable short-term exchange rate can leverage this arbitrage effect. Prior research found that the depreciation of currency often leads to an increase in exports <ref type="bibr" target="#b8">(Auboin and Ruta 2013)</ref>. This phenomenon is even more pronounced in developing country economies, because their currencies are, on average, undervalued by 20% <ref type="bibr" target="#b28">(Freund and Pierola 2008)</ref>, a consequence of the well-known "Balassa-Samuelson" effect <ref type="bibr" target="#b9">(Balassa 1964</ref>). 4 Certain developing countries have been known to use currency devaluation as a tool to boost exports <ref type="bibr" target="#b13">(Bird 1983</ref>). An increase in exports has been attributed to the reallocation of resources to export industries, as the resources are moved from production for domestic consumption to the more profitable exports <ref type="bibr" target="#b77">(Roberts and Tybout 1997)</ref>.</p><p>Bearing this in mind, we expect providers in developing countries to move to OLMs to offer their services to foreign employers and leverage benefits of weaker currencies. Leveraging arbitrage in this fashion will manifest itself in providers' from those countries undercutting prices to obtain more contracts. In both dimensions, there should be an increase in activity as the providers leverage the exchange rate effects. As demonstrated in <ref type="bibr" target="#b42">Hong and Pavlou (2017)</ref>, providers from developing countries do bid lower prices (in U.S. dollars) when the currency of their residing country devalues, providing support for the first dimension. Both effects would indicate that providers from countries with weaker currencies will survive longer for the same amount earned in dollars.</p><p>Hypothesis 2. Providers from countries with weaker currencies are more likely to survive in the OLM, compared with those from developed countries.</p><p>We proceed to discuss how the perception of quality as a function of the development level of the providers' country of origin will affect their survival in OLM. The literature has shown that price differentials result from the differences in perceived quality between countries <ref type="bibr" target="#b40">(Hallak and Schott 2011)</ref>. Previous research has shown that when customers are unable to perfectly scrutinize a product's quality, they use the country's development level to infer the product's quality <ref type="bibr" target="#b41">(Han 1989)</ref>. Signaling theory has been used to explain this "country Downloaded from informs.org by <ref type="bibr">[194.221.86.126</ref>] on 04 June 2018, at 07:20 . For personal use only, all rights reserved. of origin effect" <ref type="bibr">(Verlegh and Steenkamp 1999, p. 521)</ref>. The employers use the country development level as an image-based signal when they have insufficient information on the products' quality. In a sense, the image reputation of the country spills over to the perception of product quality. As an example, employers may perceive products "made in Singapore" to have a higher quality than products "made in Myanmar." The country image spillover effect is not limited to products; similar effects of reputation transfer have been highlighted in offline <ref type="bibr" target="#b57">(Lin and Chen 2006)</ref> and online <ref type="bibr" target="#b49">(Kokkodis 2014</ref>) service contexts.</p><p>We expect "country of origin effects" to also exist in the context of OLM for several reasons. 5 The service quality of a provider is difficult to gauge without actual dyadic experience <ref type="bibr">(Nelson 1970)</ref>. Without a reliable signal, employers will use heuristics such as country image to infer the quality of service providers. Specifically, the providers from developed countries are viewed as having higher quality because of better country-level infrastructure <ref type="bibr" target="#b1">(Agrawal et al. 2016</ref>) and education <ref type="bibr" target="#b42">(Hong and Pavlou 2017)</ref>. Therefore, when the provider lacks any individual signals (e.g., reputation), employers are left with group level cues (country image based on development) to infer the quality of providers <ref type="bibr" target="#b66">(Mill 2011</ref><ref type="bibr" target="#b42">, Hong and Pavlou 2017</ref><ref type="bibr" target="#b12">, Banker and Hwang 2008)</ref>.</p><p>However, this country image-based reputation is perceptual and may be substituted with providers' individual reputation. As providers start building their individual reputation, the role of country of origin fades because the employers no longer need to rely on a coarse, group-level information cue to infer the quality of a specific provider; but they can directly estimate the providers' quality based on the reputation earned from their past performance. Therefore, the individual reputation will have a more significant effect for developing country providers' survival as it alleviates employers' concern that they would not perform as well as providers from developed countries. Thus, bearing the above discussion in mind, we expect that individual reputation will moderate perceived country reputation on provider survival.</p><p>Hypothesis 3. The effect of individual reputation on survival in OLM is higher for providers from developing countries, compared to providers from developed countries.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.">Empirical Methodology</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.1.">Data</head><p>The data for this study was obtained from three archival sources. First, we obtained proprietary transaction data from a leading OLM 6 for the period between January 2006 and October 2010. The partner OLM is one of the largest online labor markets with providers all over the world. For this study, we are focusing on providers in this platform who have logged in at least twice and have placed at least one bid after registering at the website. After including those users who we can match with the variables of interest, we ended up with 475,503 observations of 40,874 providers from 72 countries. India, the United States, the Philippines, Pakistan, and Canada, respectively, were the countries with the largest groups of providers in the observation period.</p><p>In OLMs, employers post projects for the providers to bid on. The project specifies the budget, task, and skills necessary to complete the job before a deadline. Most OLMs follow a reverse, buyer-determined auction mechanism <ref type="bibr" target="#b6">(Asker and</ref><ref type="bibr">Cantillon 2008, Hong et al. 2016</ref>) in which the employer will select a provider to maximize his expected utility. In online labor markets, the moral hazard and adverse selection are risks any OLM needs to address <ref type="bibr" target="#b68">(Moreno and Terwiesch 2014)</ref>. The partner OLM provides a reputation system wherein the employers can rate and comment on the service provided, as well as an arbitration system to resolve any disputes. When a contract is granted, the buyer places the money in escrow until the buyer reports completion of the project.</p><p>Provider-level data were augmented with a number of important country-level variables. We obtained country-level economic indicators (total unemployment rate, GDP, gross national product (GNP), education index, number of Internet servers) from the World Bank, the United Nations, and the World Economic Forum databases, and matched the data onto the transaction data. We obtained the currency units per Special Drawing Right (SDR) from the IMF to construct the exchange rates measures. Finally, we obtained the percentage of the population speaking English in any given country from <ref type="bibr" target="#b65">(Melitz and Toubal 2014)</ref>.</p><p>Survival models estimate the duration of time to an event. In our models, the event was the provider's exit from the market. Hence our dependent variable is closely linked to the event of exit. In our main model (presented in Section 4.2.3), we use the time to market exit to determine the survival duration of providers in the market.</p><p>In this study, we use two data sets at different levels of aggregation. For the baseline results obtained through logistic regression and linear probability models, we use a cross section of the provider-level data with entry and exit dates and cumulative averages of provider level variables (such as completed projects). For the time-variant survival model that makes up the main model of interest, we use monthly aggregation at the provider level. Definitions of variables in our data set are presented in Table <ref type="table" target="#tab_0">1</ref> and descriptive statistics are presented in Table <ref type="table" target="#tab_1">2</ref>.</p><p>Below, we describe the measures of our dependent variables and independent variables used in timevariant survival. Since we observe provider's registration date, billing address, and login to the website (last Downloaded from informs.org by <ref type="bibr">[194.221.86.126</ref>] on 04 June 2018, at 07:20 . For personal use only, all rights reserved. login time and login IP address), we constructed a measure for market exit based on these observations. 7 We define the key variables used in the study in Table <ref type="table" target="#tab_0">1</ref> and report the descriptive statistics and correlation matrix in Table <ref type="table" target="#tab_1">2</ref> (for descriptives of all variables, please refer to Online Appendix A). The data set presented below is at the provider-month level for the entire observation period. Note that, albeit generated from the same underlying data, this panel data set is used for timevariant survival analysis and is distinct from the crosssectional data set used in logistic regression and linear probability models in the data structure.</p><p>Exit. The provider's exit from the market is defined as no login activity in the three-month period before our last observation date. It is operationalized as a binary variable (1 exit; 0 no exit). Using market exit as a proxy for the end of a relationship in the survival analysis has been a standard approach <ref type="bibr">(Agarwal and</ref><ref type="bibr">Gort 2002, Susarla and</ref><ref type="bibr" target="#b83">Barua 2011)</ref>. We repeated all our analyses using a six-month window as well and all of the results remain qualitatively similar in terms of signs, significance levels, and effect sizes.</p><p>While exit is the event we study, we are mainly interested in the duration of survival in the market before exit. Hence, when we measure survival, our focus is on the length of the active period in the market and not in what comes next (see Online Appendix G). That said, note that the majority of the providers (87%) exit the market because of their inability to survive. There are cases wherein providers exit the OLM with success, which likely means that they obtained better employment in offline job markets (for details, please see Online Appendix G). Our study tries to uncover the geo-economic factors that determine the period in which the providers are active in OLM.</p><p>Developed. Low and middle income-level countries are often called developing countries <ref type="bibr">(World Bank 2015)</ref>. The country income level, based on gross national income (GNI) per capita above or below $12,736, is used by the World Bank as guidelines for classifying developed versus developing countries. We also used the continuous GDP_PPP (purchasing power parity) as a robustness check. GDP_PPP refers to the purchasing power parity adjusted GDP per capita of the provider's country of residence (see Online Appendix D). GDP_PPP is an economic measure of the relative value of per capita income after adjusting for the purchasing power of the country's currency. This concept has been widely considered in the IS <ref type="bibr" target="#b30">(Gefen and</ref><ref type="bibr">Carmel 2008, Hong et al. 2016</ref>) and economics literature <ref type="bibr" target="#b61">(Lothian and</ref><ref type="bibr">Taylor 1996, Lee and</ref><ref type="bibr" target="#b50">Tang 2000)</ref>. To obtain data on GDP_PPP and GNI per capita, we first needed a reliable source of data on the provider's country of residence. We matched the IP addresses to the IP2Location Database V11 Database 8 to obtain the providers' country of residence based on the providers' login IP addresses. We also verified this data with the self-reported billing addresses of the providers in this marketplace and observed almost identical results. In our data set, 31% of our observations came from developed countries. As the country development level is proposed to measure country-level perceived quality, we use a few alternative measures, such as the manufacturing quality estimates from <ref type="bibr" target="#b40">Hallak and Schott (2011)</ref>, as reported in Online Appendix F.</p><p>Provider Reputation is measured by the ratio of successfully completed projects to all projects contracted (completion rate) between the provider and any outsourcing firm. The completion rate is an objective measure of the provider's reputation. During our observation period, the focal OLM used ratings as public reputation, they later revised the website design and now display the project completion rate along with ratings as a measure of provider reputation, indicating that employers do consider completion rate as an important measure for provider reputation. We also ran robustness checks using the average rating of the provider in any given month as a measure of reputation; the results are consistent with the main results using completion rate (see Online Appendix E).</p><p>Tech Jobs. Provider's technical ability is the portion of technical jobs in all jobs completed by the provider. The focal OLM at the time provided 9 broad categories for projects. We labeled the categories "Websites," "Data Entry," "Engineering and Science," and "Mobile computing" as technical jobs. The job categories that Downloaded from informs.org by <ref type="bibr">[194.221.86.126</ref>] on 04 June 2018, at 07:20 . For personal use only, all rights reserved. were not considered to be technical included "Writing," "Design," "Sales and Marketing," "Business, Accounting, HR, Legal," and "Product Sourcing and Manufacturing." Considering the literature on cultural differences in OLM, our expectation is that projects in technical jobs will be subject to a lesser degree of intercultural barriers <ref type="bibr" target="#b79">(Scholz and</ref><ref type="bibr">Haas 2011, Hong and</ref><ref type="bibr" target="#b42">Pavlou 2017)</ref>. Tech Jobs as a control variable is continuous; Online Appendix J presents details for a split sample analysis based on this variable as further evidence.</p><p>In our time-variant survival model, many control variables (Won Projects, Completed Projects) and other provider-level variables evolve over time. They reflect and effectively control for changes in the providers' quality over time.</p><p>Online Appendix B provides more insights into the evolution of market participation by presenting descriptive evidence of the number of providers and earnings.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.2.">Analysis</head><p>We estimate three models to evaluate provider survival in the OLM (the inverse of "exit"): (1) a logistic regression model, (2) a linear probability model, and (3) a time-variant Cox proportional hazards survival model. The first two models focus on a binary exit event as the dependent variable. We expand on these two basic analyses by investigating the duration of survival in the market with the third model. The first two models form a baseline, and the survival model expands on this baseline by investigating our focal variable of interestsurvival/hazard probability. Congruent findings from all three models present strong confirmation of our hypotheses.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.2.1.">Baseline Results from Logistic Regression.</head><p>First, we use a logistic regression model to estimate the effect of our key independent variables on IT provider survival. Logistic regression is a commonly used approach to estimate binary outcome variables. The logistic regression model estimates the probability of a binary event conditional on a vector of independent variables. The model is useful in the case of binary variables as the probability is constrained between 0 and 1. For this analysis, we created a cross-sectional data set, having one observation for each provider for the entire observation period. The same data set is also used in linear probability models. Because of the crosssectional nature of these models, it is not possible to control for individual-level fixed effects. We caution the readers to keep in mind that this cross-sectional data set, while being generated from the same data set, is not the exact same data set presented in Table <ref type="table" target="#tab_1">2</ref>.</p><p>We used R's glm function to estimate logistic regression models (R Core Team 2014). Table <ref type="table" target="#tab_3">3</ref> reports the parameter estimates, odds ratios, relevant statistics, and model fit indices for the logistic regression with registration year-month fixed effects that controls for when the engagement with the OLM started. In estimating the logistic model, we iteratively added our variables of interest to the model in the order of our hypotheses. As the results were consistent across models and likelihood ratio tests indicated that each model was an improvement over the previous model in terms of variance explained (model fit) the use of Model 4 was acceptable. Furthermore, we ran the models with year-month-date level fixed effects as a robustness check and the results were consistent across all models in terms of the sign and the statistical significance of the parameter estimates. Equation (1) shows the Model 4 for logistic regression. With this equation, the model estimates a provider i's probability to drop out (inverse of survival) of this OLM (three months of inactivity) given a vector of covariates X i , controlling for the time of registration t.  </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.2.2.">Linear Probability Models.</head><p>While logistic regression is a robust model as a baseline, the difficulties inherent in interpreting interaction terms of logistic regression are well documented <ref type="bibr" target="#b3">(Ai and Norton 2003)</ref>. The linear probability models provide an alternative that is easier to interpret than logit and probit models <ref type="bibr">(Greenwood and Agarwal 2016)</ref>. While the consistency and biases in Linear Probability Model (LPM) estimates have been noted <ref type="bibr" target="#b44">(Horrace and Oaxaca 2006)</ref>, it is well known that with large sample sizes, such as ours, the results are qualitatively identical   across models <ref type="bibr" target="#b35">(Gordon et al. 1994)</ref>. While out of bound predictions are often touted as a downside of LPM, this is not a problem for marginal effects estimates <ref type="bibr">(Wooldridge 2002, p. 455)</ref>. Our results show that less than 3% of predicted probabilities were out of bounds of [0, 1]. We dropped these out-of-bound observations and reestimated the models to reduce biases noted in previous literature <ref type="bibr" target="#b44">(Horrace and Oaxaca 2006)</ref>. This reduced our final sample size to 44,021. Table <ref type="table" target="#tab_4">4</ref> provides the results of LPM estimates obtained after dropping the 3% observations. The dependent variable for this model is probability to exit the market. Note that all models yield comparable results.</p><p>Because of different assumptions of the two models, a direct comparison of logistic regression and LPM results is not viable. It is, however, evident that the results of the LPM are consistent with logistic regression analysis in terms of direction and relative effect Downloaded from informs.org by <ref type="bibr">[194.221.86.126</ref>] on 04 June 2018, at 07:20 . For personal use only, all rights reserved. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.2.3.">Time-Variant Survival Analysis.</head><p>A shortcoming of logistic regression and linear probability analyses is that these methods do not take into account the duration of the active period when the providers have not exited the market. Furthermore, these methods do not take right censoring into account. The survival models provide natural remedies for such shortcomings.</p><p>Hence, we restructure and analyze the data using a survival analysis as our main analysis. For the survival analysis, we used the Cox proportional hazards model for estimation <ref type="bibr" target="#b19">(Cox 1972)</ref>. Compared with other survival models, the Cox proportional hazards model stands out as having fewer assumptions on the underlying survival distribution, and being robust under a wider variety of conditions. Survival analysis estimates the probability of a subject experiencing the event (exit market) at each observation point conditional on the independent variables, given that the subject survived so far. The advantage of 2 0 0 6 -0 4 -0 1 2 0 0 6 -0 7 -0 1 2 0 0 6 -1 0 -0 1 2 0 0 7 -0 1 -0 1 2 0 0 7 -0 4 -0 1 2 0 0 7 -0 7 -0 1 2 0 0 7 -1 0 -0 1 2 0 0 8 -0 1 -0 1 2 0 0 8 -0 4 -0 1 2 0 0 8 -0 7 -0 1 2 0 0 8 -1 0 -0 1 2 0 0 9 -0 1 -0 1 2 0 0 9 -0 4 -0 1 2 0 0 9 -0 7 -0 1 2 0 0 9 -1 0 -0 1 2 0 1 0 -0 1 -0 1 2 0 1 0 -0 4 -0 1 2 0 1 0 -0 7 -0 1 2 0 1 0 -1 0 -0 1 the Cox proportional hazards model over the logistic regression model is that it takes into account information on the duration to exit. The specific estimation approach we used in this study allows for time-variant covariates. Hence, we aggregated data into monthly periods and estimated service providers' market exit probability at the end of each period.</p><p>The time-variant Cox proportional hazards model is an extension of the regular Cox proportional hazards model <ref type="bibr" target="#b19">(Cox 1972)</ref> as discussed in detail by <ref type="bibr" target="#b90">Thomas and Reyes (2014)</ref>. The model predicts the probability of survival given the covariates <ref type="bibr" target="#b89">(Therneau et al. 2016)</ref>. The indicator N i (t) takes the value 1 if the event occurs, and 0 otherwise. Y i (t) indicates whether the ith subject is at risk at time t. X are covariates observed over time.</p><p>x * (t) is a known function specifying values of X over time. The survival probability is then</p><formula xml:id="formula_0">Ŝ(t | X(t)) exp n i 1 ∫ t 0 exp{ βx * (u)} dN i (u) j Y j (u) exp{ βX j (u)} . (2)</formula><p>In this time-variant survival model, we tackle two issues to achieve proper econometric identification. First, right censoring is expected because there may be observations in the data set that have not yet dropped out at the end of the observational window. We created a censoring variable based on a cutoff of threemonths before the end of the observation period to address this issue. Figure <ref type="figure" target="#fig_1">1</ref> provides a graphical illustration of the survival data with observations of six selected providers for a three-month censoring window. Providers whose last login dates were before September 22, 2010 (more than three months being inactive) are depicted in solid shaded bars and are defined to have dropped out of this labor market. Providers that have login activities after the cutoff mark (depicted in striped bars) are assumed to be active. We analyzed the data using different cutoff points (e.g., six months before the last observational Downloaded from informs.org by <ref type="bibr">[194.221.86.126]</ref>   date), and the results are consistent with the three month cutoff in terms of sign and significance level of the parameter estimates (see Online Appendix C for the results). Therefore, we safely conclude that the results are not sensitive to the cutoff points. Since each interval is investigated independently, the individuallevel correlations are not an issue for this type of model <ref type="bibr" target="#b89">(Therneau et al. 2016</ref>). 9 Second, providers enter the OLM at different points in time, creating additional heterogeneity. For example, it is likely that providers who enter the market early survive longer because of less intensive competition. The CoxPH model assumes proportional hazards, and such heterogeneity is a threat to this assumption <ref type="bibr" target="#b36">(Grambsch and Therneau 1994)</ref>. We tested for the proportional hazards and found that our models satisfied this assumption. Table <ref type="table" target="#tab_9">6</ref> reports the maximum likelihood coefficient estimates and hazard ratio estimates of the survival analysis using a Cox proportional hazards model in R <ref type="bibr" target="#b88">(Therneau 2014)</ref>. We added the variables of interest into the models in the order we present our hypotheses. We started with a model with just the control variables derived from the literature on OLM. Then, we integrated the country development level to evaluate Hypothesis 1. We proceeded to add the exchange rate in the third model, and finally added the hypothesized interactions. The likelihood ratio tests indicate that each model is a significant improvement over the previous model. Since the results are qualitatively the same across the models, we are presenting the estimation results of the full model with all independent variables, interaction effects, and the control variables. Please refer to Equation (2) for the estimation equation. The model estimates the probability of a provider i to drop out at time t given that he has not yet dropped out.</p><p>Note that the results of the survival analysis provide support for our hypotheses. First, the country's development level has a significant effect such that the developing country providers survive a longer period of time, and the developed country providers survive a shorter period of time as seen in Model 3. This effect is moderated by individual reputation (Model 4), thus lending support to Hypotheses 1 and 3. Second, we found that while the exchange rate does not have a direct effect, it moderates the effect of earnings, such that providers from countries with less valuable currencies were more likely to survive whereas those from countries with more valuable currencies were less likely to survive for the same amount of earnings, supporting Hypotheses 2.</p><p>It is usually easier to achieve statistical significance in large sample analyses such as ours. Therefore, based on suggestions from recent IS literature <ref type="bibr" target="#b59">(Lin et al. 2013)</ref>, we also assess the economic significance of the key determinants using their estimated effect sizes. As a standard practice <ref type="bibr">(Wooldridge 2002, Angrist and</ref><ref type="bibr" target="#b5">Pischke 2008)</ref>, we use predicted probabilities for interpretation. We visualize both the main effects and interaction effects in Figures <ref type="figure">2</ref> and<ref type="figure" target="#fig_3">3</ref>, respectively.</p><p>First, we plotted the predicted risk for development level in Figure <ref type="figure">2</ref> by fixing all other variables at mean levels and manipulating the development level. The providers from developed countries had a 21% higher dropout risk than those from developing countries (Figure <ref type="figure">2</ref>).</p><p>Second, we plotted the predicted risk of hypothesized interaction effects in Figure <ref type="figure" target="#fig_3">3</ref>. Plots of reputation and development level can be seen in Figure <ref type="figure" target="#fig_3">3(a)</ref>. At the mean level of reputation (0.33), the predicted risk of dropping out for developing countries was 0.94, whereas it was 1.16 for developed countries. Downloaded from informs.org by <ref type="bibr">[194.221.86.126</ref>] on 04 June 2018, at 07:20 . For personal use only, all rights reserved. displays the effect of exchange rates for various income levels. It can be seen that in countries with less valuable currencies, earnings decrease the risk of dropping out of the market. On the other hand, the benefits of earnings were weakened for the more valuable currencies, and for the few countries with extremely valuable currencies, earnings increased the risk of dropout. To clarify with an example, when all other variables are fixed at mean levels, a provider earning income in Indian Rupee's (INR ≈ 0.01 SDR) has a predicted dropout risk of 1.02, in American dollars (USD ≈ 0.66 SDR) the risk will be 1.07, in Kuwaiti Dinar (KWD ≈ 2.45 SDR) the risk would be 1.215. The findings are consistent with the logistic regression and LPM results. This reversal in effect may reflect the differing nature of employment in these countries. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.3.">Robustness Checks</head><p>In this section, we report a set of additional analyses to evaluate the robustness of our key findings. Specifically, we report (a) adding additional countrylevel variables and (b) coarsened exact matching. These additional analyses indicate that the results from our main analyses were robust. 10 4.3.1. Adding Additional Country-Level Variables. The variable "Developed" by itself may be a reflection of many country-level factors. Below we report estimation results that include various additional country-level control variables. 11 The data for additional countrylevel covariates for this analysis comes from the World Bank (WB), the World Economic Forum (WEF), and <ref type="bibr" target="#b65">Melitz and Toubal (2014)</ref>. TotUnemp is the total unemployment in the country (WB), IServers is the number of Internet servers in the country (WB). High-erEd is the education index score of the country from the World Economic Forum's Global Competitiveness Index. CSpokLang is the percentage of the population in the focal country speaking English <ref type="bibr" target="#b65">(Melitz and Toubal 2014)</ref>. Table <ref type="table" target="#tab_11">7</ref> represents a replication of our time-variant survival analysis with the inclusion of said countrylevel variables. Note that the analysis is conducted on different subsets, depending on the missingness in the variable; hence the results are not directly comparable. Still, the hypothesized relations remain qualitatively unaffected by the inclusion of additional control variables.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.3.2.">Coarsened Exact Matching.</head><p>One common problem with any statistical analysis is model dependence. One way of getting around this problem is to preprocess the data to reduce model-induced bias. Coarsened exact matching (CEM) is a method of preprocessing Downloaded from informs.org by <ref type="bibr">[194.221.86.126]</ref>   the data to remove any observations that are not closely matched with another observation differing by a treatment variable (in our case, country development level) <ref type="bibr" target="#b46">(Iacus et al. 2009</ref>). CEM has seen increasing popularity in the IS research community <ref type="bibr" target="#b81">(Subramanian and Overby 2016)</ref>, as matching observations with this approach significantly reduces model dependence and bias in estimations. Rather than finding exact matches (the same values on all variables except for treatment and dependent variables) or matching based on propensity scores <ref type="bibr" target="#b22">(Dehejia and Wahba 2002)</ref>, CEM works by creating bins/ranges in each variable. Values that are sufficiently close (if not exactly the same) will fall into the same bin and be classified as a match. Compared to exact matching, CEM discards fewer observations; hence it is more efficient. In our study, by matching providers from developed and developing countries through CEM, we are able to show that the findings are robust and are not likely because of either idiosyncrasies of model assumptions or outlier observations. Another possible benefit of this approach is the possibility of causal inference under the assumption of ignorability.</p><p>To carry out this complementary analysis, we preprocessed the data with the CEM package in R <ref type="bibr" target="#b46">(Iacus et al. 2009)</ref>. We initially sought to match providers from developed countries with providers from developing countries on their bidding on open and sealed bid auctions, number of projects won, number of completed projects, reputation, registration date, and exchange rate. We used a k2k matching scheme that made sure we had an equal number of observations in each strata from both groups to avoid needing to use weighting in analysis. The resulting data set had 295,886 monthly observations and 17,332 exits from the market. Multivariate imbalance tests suggest that the data set is not balanced (L 0.97, where L 0 is perfect balance, and L 1 is perfectly imbalanced) but most of this imbalance is caused by a single variable-exchange rate. When the exchange rate was excluded from balance calculation, the imbalance tests were acceptable (L 0.28). Considering the nature of exchange rate is that it is highly dependent on the country development level and it exhibits limited variation over time, we excluded exchange rate from the CEM matching process.</p><p>We analyzed the resulting matched data set with time variant survival models. The results are reported in Table <ref type="table" target="#tab_12">8</ref>. As can be seen, the results remain qualitatively unchanged between the full data set and the matched subset, lending further credibility to our findings.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.">Discussion</head><p>In this study, we investigated the joint impact of country of origin and provider reputation in shaping the OLM market participation in terms of provider survival. To our knowledge, our paper is one of the first studies to investigate geo-economic dynamics of labor participation in OLMs from a survival standpoint. Below we discuss the key findings, as well as their implications for the literature and practice.</p><p>Leveraging a unique data set combining a proprietary database from a global online labor market and data from the World Bank and International Monetary Fund, we first identified several key determinants of provider's survival. Note that we found that country development had an effect on provider survival. The Downloaded from informs.org by <ref type="bibr">[194.221.86.126</ref>] on 04 June 2018, at 07:20 . For personal use only, all rights reserved. providers from developing countries who had a comparative cost advantage were more likely to survive. On other hand, country development also provides an image-based signal that could affect providers' survival. 12 Our results also revealed that providers from developing countries benefited more from a better individual reputation. Once providers from developing countries overcome the initial perception of having low quality by establishing a solid reputation, they are more likely to survive in OLMs.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.1.">Implications</head><p>This paper provides important implications for both theory and practice. In terms of theoretical implications, this study advances multiple streams of literature. First, this study advances the understanding of provider (seller) survival in online markets. It has been shown that reputation <ref type="bibr" target="#b10">(Banker et al. 2011</ref>) and organizational capabilities <ref type="bibr" target="#b93">(Wang et al. 2011</ref>) are important for online providers' (or sellers') survival and success. Additionally, it is important to note the differences in the impact of internationalization on provider survival and growth (please refer to Online Appendix K for supplementary evidence on earning growth) <ref type="bibr" target="#b78">(Sapienza et al. 2006</ref>). This study contributes to the literature by investigating the interplay between development level and provider reputation. We found that reputational benefit is more salient for providers from developing countries.</p><p>Second, this study also relates to the emerging IS literature on OLM. While most of the current studies on OLM focus on the outsourcing employers' hiring choices by examining the factors that determine which provider receives a contract <ref type="bibr" target="#b62">(Malone and Laubacher 1999</ref><ref type="bibr" target="#b12">, Banker and Hwang 2008</ref><ref type="bibr" target="#b87">, Tambe and Hitt 2010</ref><ref type="bibr" target="#b79">, Scholz and Haas 2011</ref><ref type="bibr" target="#b42">, Hong and Pavlou 2017</ref><ref type="bibr" target="#b68">, Moreno and Terwiesch 2014)</ref>, we focus on provider survival. Utilizing a proprietary data set, we were able to identify the key determinants of the provider's survival in online labor markets. Our findings dispel some common misconceptions, while at the same time shedding light on the evolution of market participation.</p><p>Third, our findings support and extend the literature that challenges the well-known flat world hypothesis <ref type="bibr" target="#b31">(Gerth and Rothman 2007</ref><ref type="bibr" target="#b30">, Gefen and Carmel 2008</ref><ref type="bibr" target="#b42">, Hong and Pavlou 2017)</ref>. <ref type="bibr" target="#b67">Mithas and Whitaker (2007)</ref> and <ref type="bibr" target="#b86">Tambe and Hitt (2012)</ref> have shown that not all jobs were impacted the same way by this flat world phenomena. Beyond the job requirements, the previous literature has identified language, cultural similarities, and distance as factors that influence international competition beyond just cost advantages <ref type="bibr" target="#b41">(Han 1989</ref><ref type="bibr" target="#b66">, Mill 2011</ref><ref type="bibr" target="#b32">, Ghani et al. 2014)</ref>. We extended this literature by examining country development level as a significant predictor of international competition. Our results complement the findings that the employers in OLMs consider the development level of the providers' country of origin in their hiring decisions <ref type="bibr" target="#b42">(Hong and Pavlou 2017)</ref>.</p><p>Finally, this study also contributes to online reputation and reputation transfer in the IS literature. Previous studies on reputation in online markets have mainly focused on individual firms' or individual providers' reputation in a marketplace, such as Amazon <ref type="bibr" target="#b69">(Mudambi and Schuff 2010)</ref>, eBay <ref type="bibr" target="#b23">(Dimoka et al. 2012)</ref>, online labor markets <ref type="bibr">(Banker and</ref><ref type="bibr">Hwang 2008, Yoganarasimhan 2013)</ref>, etc. Emerging literature has begun to study transference of reputation for a single provider over multiple job categories <ref type="bibr" target="#b49">(Kokkodis 2014)</ref>. <ref type="bibr" target="#b41">Han (1989)</ref> has found that the country's reputation was implicit in evaluations of products. We extended the literature on online reputation by bringing country effects into the equation. Our investigation revealed that country reputation can spill over to providers, especially when the providers have not established a stellar reputation in a platform. The moderating effect of individual reputation indicated Downloaded from informs.org by <ref type="bibr">[194.221.86.126</ref>] on 04 June 2018, at 07:20 . For personal use only, all rights reserved. that providers from developing countries benefited more from a better individual reputation. Therefore, to some extent, the reputation systems correct the endowed disadvantages of providers from developing countries.</p><p>The practical implications of our study will be of interest to different stakeholders of online labor markets: platform owners, employers, and providers. First, we observe that providers from developed countries are less likely to flourish in OLMs. The developing country providers can earn a living and perhaps build a career in OLMs, but OLMs are not as favorable to country providers. Yet, we still see continued participation from developed country providers, even in job categories dominated by developing country providers. Furthermore, inexperienced providers from developed countries have a slight advantage over similar providers in the developing world, as they are perceived to be of higher quality. This observation suggests OLM may serve different roles for developed and developing country providers. As found in the context of source projects, providers may use OLM performance as a signaling mechanism in traditional labor markets <ref type="bibr" target="#b76">(Roberts et al. 2006</ref>). As such, OLMs may want to consider targeting inexperienced and less experienced providers from developed countries as a way to diversify their portfolio of providers. Additionally, OLMs can help these providers stay in the market by helping them get started with providing services, which later may enable them to signal quality for full-time opportunities. Our findings on country-level reputations indicate that employers care about providers' location, and the platform owners should make this information more prominent when displaying the bids. Despite our findings that suggest provider selection decisions may be the result of a broad selection of criteria that may not necessarily be in the control of the provider, providers can still improve their chances of survival by offering better services to enhance their reputation.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6.">Concluding Remarks</head><p>Information technology and, more specifically, platform technologies and other related business models <ref type="bibr">(Parker and</ref><ref type="bibr">Van Alstyne 2005, Eisenmann et al. 2006)</ref>, have been leading a shift toward a higher reliance on markets rather than hierarchies to coordinate economic activities <ref type="bibr" target="#b63">(Malone et al. 1987)</ref>. As <ref type="bibr" target="#b62">Malone and Laubacher (1999)</ref> correctly predicted over a decade ago, the "e-lance" economy has taken off in recent years and millions of providers are competing on global online labor markets. A successful and healthy labor market relies on the survival and success of market participants, and in particular, a healthy supply of highquality labor. Leveraging a unique data set composed of proprietary data from a global online labor market matched with a number of publicly available archival data sources, we provide a first effort to identify the key determinants of providers' survival to uncover the underlying mechanisms. Our study calls for a deeper understanding of online labor in the platform economy <ref type="bibr" target="#b71">(Parker et al. 2016)</ref>, and how providers in different countries could build their competitive advantage to survive.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head></head><label></label><figDesc>2329 (0.0088) * * * -0.2296 (0.0088) * * * -0.1320 (0.0086) * * * -0.1165 (0.0086) * * * TechJobs -0.0326 (0.0047) * * * -0.0160 (0.0048) * * * -0.0208 (0.0046)</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>Figure 1 .</head><label>1</label><figDesc>Figure 1. (Color online) Illustration of Survival Data with Lifelines for Six-Month Cutoff</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>Figure</head><label></label><figDesc>Figure 2. Country Development</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head>Figure 3 .</head><label>3</label><figDesc>Figure 3. Interaction Effects in the Survival Model-Predicted Risk</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head>Table 1 .</head><label>1</label><figDesc>Variables</figDesc><table><row><cell>Variable</cell><cell>Description</cell></row><row><cell>Exit</cell><cell>Binary indicator for the month of exit from</cell></row><row><cell></cell><cell>the market, set to 1 for exit.</cell></row><row><cell>Developed</cell><cell>World Bank binary development measure.</cell></row><row><cell></cell><cell>0 for developing countries.</cell></row><row><cell>Provider Reputation</cell><cell>Ratio of successfully completed projects to</cell></row><row><cell></cell><cell>all projects attempted thus far by the</cell></row><row><cell></cell><cell>provider.</cell></row><row><cell>Won Projects</cell><cell>Rolling average of projects won in the last</cell></row><row><cell></cell><cell>three months for the individual provider.</cell></row><row><cell>Completed Projects</cell><cell>Rolling average of projects completed by the</cell></row><row><cell></cell><cell>provider in the last three months.</cell></row><row><cell>Earning</cell><cell>Rolling average of the provider's earnings</cell></row><row><cell></cell><cell>in the last three months in dollars.</cell></row><row><cell>XRate</cell><cell>Average exchange rate for a country in a</cell></row><row><cell></cell><cell>month.</cell></row><row><cell>Tech Jobs</cell><cell>Proportion of technical jobs in a provider's</cell></row><row><cell></cell><cell>portfolio.</cell></row><row><cell>TotUnemp</cell><cell>Total unemployment rate reported by the</cell></row><row><cell></cell><cell>World Bank.</cell></row><row><cell>IServers</cell><cell>Number of Internet servers reported by the</cell></row><row><cell></cell><cell>World Bank.</cell></row><row><cell>CSpokLang</cell><cell>Common spoken language as per Melitz</cell></row><row><cell></cell><cell>and Toubal (2014).</cell></row><row><cell>HigherED</cell><cell>World Economic Forum B05 higher</cell></row><row><cell></cell><cell>education score.</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1"><head>Table 2 .</head><label>2</label><figDesc>Descriptive Statistics and Correlation Matrix</figDesc><table><row><cell></cell><cell>µ</cell><cell>σ</cell><cell>1</cell><cell>2</cell><cell>3</cell><cell>4</cell><cell>5</cell><cell>6</cell><cell>7</cell></row><row><cell>Developed</cell><cell>0.41</cell><cell>0.49</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Exit</cell><cell>0.05</cell><cell>0.22</cell><cell>0.01  *  *  *</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Reputation</cell><cell>0.34</cell><cell cols="3">0.38 -0.02  *  *  *  -0.09  *  *  *</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Won Projects</cell><cell>0.48</cell><cell cols="3">1.92 -0.10  *  *  *  -0.04  *  *  *</cell><cell>0.12  *  *  *</cell><cell></cell><cell></cell><cell></cell></row><row><cell>Cmp Projects</cell><cell>0.25</cell><cell cols="3">1.34 -0.08  *  *  *  -0.04  *  *  *</cell><cell>0.15  *  *  *</cell><cell>0.94  *  *  *</cell><cell></cell><cell></cell></row><row><cell>Earning</cell><cell cols="4">68.03 424.48 -0.07  *  *  *  -0.03  *  *  *</cell><cell>0.12  *  *  *</cell><cell>0.48  *  *  *</cell><cell>0.46  *  *  *</cell><cell></cell></row><row><cell>XRate</cell><cell>0.28</cell><cell>0.33</cell><cell>0.90  *  *  *</cell><cell cols="5">0.01  *  *  *  -0.01  *  *  *  -0.09  *  *  *  -0.08  *  *  *  -0.07  *  *  *</cell></row><row><cell>Tech Jobs</cell><cell>0.57</cell><cell cols="4">0.43 -0.15  *  *  *  -0.01  *  *  *  -0.03  *  *  *</cell><cell>0.00  *  *</cell><cell>-0.01  *  *  *</cell><cell cols="2">0.03  *  *  *  -0.15  *  *  *</cell></row><row><cell>*  p &lt; 0.05;</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row></table><note><p>* * p &lt; 0.01; * * * p &lt; 0.001.</p></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2"><head></head><label></label><figDesc>Downloaded from informs.org by[194.221.86.126] on 04 June 2018, at 07:20 . For personal use only, all rights reserved.</figDesc><table><row><cell>Other control variables included in this model are won projects, completed projects, and proportion of technical jobs in portfolio p(y it 1 | x) e Xβ+α t +e it 1 + e Xβ+α t +e it , (1) where X Information Systems Research, Articles in Advance, pp. 1-17, © 2018 INFORMS</cell></row></table><note><p><p>i (Developed i , Reputation i , Reputation i × Developed i , Earning i , Earning i × XRate i , Controls).</p>The model is significant at the 0.001 level according to the Model χ 2 test statistic and the explanatory variables explained 0.222 of the variance according to McFadden's pseudo R 2 . Key variables of interest are all significant at the p &lt; 0.05 level. The baseline results</p></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_3"><head>Table 3 .</head><label>3</label><figDesc>Logistic Regression Results</figDesc><table><row><cell></cell><cell>Model 1</cell><cell>Model 2</cell><cell>Model 3</cell><cell>Model 4</cell></row><row><cell>Developed</cell><cell></cell><cell>0.461 (0.023)  *  *  *</cell><cell>0.338 (0.030)  *  *  *</cell><cell>0.397 (0.061)  *  *  *</cell></row><row><cell>Reputation</cell><cell></cell><cell></cell><cell>-1.920 (0.043)  *  *  *</cell><cell>-1.793 (0.043)  *  *  *</cell></row><row><cell>Developed × Reputation</cell><cell></cell><cell></cell><cell>0.684 (0.062)  *  *  *</cell><cell>0.610 (0.062)  *  *  *</cell></row><row><cell>Earning</cell><cell></cell><cell></cell><cell></cell><cell>-0.003 (0.000)  *  *  *</cell></row><row><cell>XRate</cell><cell></cell><cell></cell><cell></cell><cell>-0.127 (0.087)</cell></row><row><cell>Earning × XRate</cell><cell></cell><cell></cell><cell></cell><cell>0.003 (0.000)  *  *  *</cell></row><row><cell>Intercept</cell><cell>1.109 (0.261)  *  *  *</cell><cell>0.807 (0.262)  *  *</cell><cell>1.074 (0.265)  *  *  *</cell><cell>1.056 (0.264)  *  *  *</cell></row><row><cell>Won Projects</cell><cell>0.206 (0.018)  *  *  *</cell><cell>0.208 (0.018)  *  *  *</cell><cell>0.085 (0.017)  *  *  *</cell><cell>0.194 (0.020)  *  *  *</cell></row><row><cell>Comp Projects</cell><cell>-1.381 (0.062)  *  *  *</cell><cell>-1.370 (0.062)  *  *  *</cell><cell>-0.715 (0.057)  *  *  *</cell><cell>-0.668 (0.060)  *  *  *</cell></row><row><cell>TechJobs</cell><cell>-0.171 (0.024)  *  *  *</cell><cell>-0.085 (0.024)  *  *  *</cell><cell>-0.115 (0.026)  *  *  *</cell><cell>-0.095 (0.026)  *  *  *</cell></row><row><cell>McFadden R 2</cell><cell>0.162</cell><cell>0.170</cell><cell>0.217</cell><cell>0.222</cell></row><row><cell>AIC</cell><cell>49,613.377</cell><cell>49,206.926</cell><cell>46,422.562</cell><cell>46,087.703</cell></row><row><cell>Log likelihood</cell><cell>-24,723.689</cell><cell>-24,519.463</cell><cell>-23,125.281</cell><cell>-22,954.852</cell></row><row><cell>Deviance</cell><cell>49,447.377</cell><cell>49,038.926</cell><cell>46,250.562</cell><cell>45,909.703</cell></row><row><cell>Num. obs.</cell><cell>44,021</cell><cell>44,021</cell><cell>44,021</cell><cell>44,021</cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row></table><note><p>* p &lt; 0.05; * * p &lt; 0.01; * * * p &lt; 0.001. confirm our hypothesized relationships. The logistic regression results with time fixed effects provide evidence on the dependent variable "Exit" without further information on the providers' duration of stay in the market, which we analyze in Section 4.2.3 with a time-variant Cox proportional hazard survival model.</p></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_4"><head>Table 4 .</head><label>4</label><figDesc>Linear Probability Model Results</figDesc><table><row><cell>Model 1</cell><cell>Model 2</cell><cell>Model 3</cell><cell>Model 4</cell></row><row><cell>Developed</cell><cell>0.0877 (0.0044)  *  *  *</cell><cell>0.0533 (0.0051)  *  *  *</cell><cell>0.0631 (0.0106)  *  *  *</cell></row><row><cell>Reputation</cell><cell></cell><cell cols="2">-0.4230 (0.0081)  *  *  *  -0.3985 (0.0082)  *  *  *</cell></row><row><cell>Developed × Reputation</cell><cell></cell><cell>0.1816 (0.0117)  *  *  *</cell><cell>0.1669 (0.0117)  *  *  *</cell></row><row><cell>Earning</cell><cell></cell><cell></cell><cell>-0.0005 (0.0000)  *  *  *</cell></row><row><cell>XRate</cell><cell></cell><cell></cell><cell>-0.0208 (0.0153)</cell></row><row><cell>Earning × Xrate</cell><cell></cell><cell></cell><cell>0.0004 (0.0000)  *  *  *</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_6"><head>Table 5 .</head><label>5</label><figDesc>LPM Coefficients Compared with Logit Marginal Effects</figDesc><table><row><cell></cell><cell>LPM</cell><cell>Logit ME</cell></row><row><cell>Developed</cell><cell>0.063</cell><cell>0.070</cell></row><row><cell>Reputation</cell><cell>-0.399</cell><cell>-0.314</cell></row><row><cell>Developed × Reputation</cell><cell>0.167</cell><cell>0.107</cell></row><row><cell>Earning</cell><cell>-0.001</cell><cell>0.000</cell></row><row><cell>XRate</cell><cell>-0.021</cell><cell>-0.022</cell></row><row><cell>Earning × XRate</cell><cell>0.000</cell><cell>0.000</cell></row><row><cell>Won Projects</cell><cell>0.034</cell><cell>0.034</cell></row><row><cell>Comp Projects</cell><cell>-0.117</cell><cell>-0.117</cell></row><row><cell>TechJobs</cell><cell>-0.018</cell><cell>-0.017</cell></row><row><cell cols="3">sizes. Table 5 presents the LPM coefficient estimates</cell></row><row><cell cols="3">and logistic regression average of sample marginal</cell></row><row><cell cols="3">effects obtained by bootstrapping (Fernihough 2011)</cell></row><row><cell>side-by-side.</cell><cell></cell><cell></cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_8"><head></head><label></label><figDesc>on 04 June 2018, at 07:20 . For personal use only, all rights reserved. Systems Research, Articles in Advance, pp. 1-17, © 2018 INFORMS</figDesc><table><row><cell>Information</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_9"><head>Table 6 .</head><label>6</label><figDesc>Time-Variant Survival Model Results    </figDesc><table><row><cell></cell><cell>Model 1</cell><cell>Model 2</cell><cell>Model 3</cell><cell>Model 4</cell></row><row><cell>Reputation</cell><cell>-0.939 (0.021)  *  *  *</cell><cell>-0.942 (0.021)  *  *  *</cell><cell>-0.941 (0.021)  *  *  *</cell><cell>-1.199 (0.030)  *  *  *</cell></row><row><cell>Earning</cell><cell>-0.001 (0.000)  *  *  *</cell><cell>-0.001 (0.000)  *  *  *</cell><cell>-0.001 (0.000)  *  *  *</cell><cell>-0.002 (0.000)  *  *  *</cell></row><row><cell>Developed</cell><cell></cell><cell>0.094 (0.013)  *  *  *</cell><cell>0.130 (0.030)  *  *  *</cell><cell>0.023 (0.031)</cell></row><row><cell>XRate</cell><cell></cell><cell></cell><cell>-0.060 (0.045)</cell><cell>-0.077 (0.045)</cell></row><row><cell>Reputation × Developed</cell><cell></cell><cell></cell><cell></cell><cell>0.525 (0.041)  *  *  *</cell></row><row><cell>Earning × XRate</cell><cell></cell><cell></cell><cell></cell><cell>0.002 (0.000)  *  *  *</cell></row><row><cell>Won Projects</cell><cell>0.304 (0.009)  *  *  *</cell><cell>0.307 (0.009)  *  *  *</cell><cell>0.307 (0.009)  *  *  *</cell><cell>0.307 (0.009)  *  *  *</cell></row><row><cell>Comp Projects</cell><cell>-2.874 (0.081)  *  *  *</cell><cell>-2.865 (0.081)  *  *  *</cell><cell>-2.866 (0.081)  *  *  *</cell><cell>-2.821 (0.081)  *  *  *</cell></row><row><cell>Tech Jobs</cell><cell>-0.093 (0.015)  *  *  *</cell><cell>-0.075 (0.015)  *  *  *</cell><cell>-0.076 (0.015)  *  *  *</cell><cell>-0.075 (0.015)  *  *  *</cell></row><row><cell>AIC</cell><cell>440,725.278</cell><cell>440,677.141</cell><cell>440,677.350</cell><cell>440,447.038</cell></row><row><cell>R 2</cell><cell>0.018</cell><cell>0.018</cell><cell>0.018</cell><cell>0.018</cell></row><row><cell>Max. R 2</cell><cell>0.611</cell><cell>0.611</cell><cell>0.611</cell><cell>0.611</cell></row><row><cell>Num. events</cell><cell>24,221</cell><cell>24,221</cell><cell>24,221</cell><cell>24,221</cell></row><row><cell>Num. obs.</cell><cell>475,503</cell><cell>475,503</cell><cell>475,503</cell><cell>475,503</cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row></table><note><p>* p &lt; 0.05; * * p &lt; 0.01; * * * p &lt; 0.001.</p></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_10"><head></head><label></label><figDesc>on 04 June 2018, at 07:20 . For personal use only, all rights reserved.</figDesc><table><row><cell>Information Systems Research, Articles in Advance, pp. 1-17, © 2018 INFORMS</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_11"><head>Table 7 .</head><label>7</label><figDesc>Country-Level Variables p &lt; 0.05; * * p &lt; 0.01; * * * p &lt; 0.001.</figDesc><table><row><cell></cell><cell>Model 1</cell><cell>Model 2</cell><cell>Model 3</cell><cell>Model 4</cell><cell>Model 5</cell><cell>Model 6</cell></row><row><cell>Reputation</cell><cell>-1.199 (0.030)  *  *  *</cell><cell>-1.202 (0.030)  *  *  *</cell><cell>-1.207 (0.030)  *  *  *</cell><cell>-1.194 (0.030)  *  *  *</cell><cell>-1.205 (0.030)  *  *  *</cell><cell>-1.190 (0.030)  *  *  *</cell></row><row><cell>Tech Jobs</cell><cell>-0.075 (0.015)  *  *  *</cell><cell>-0.074 (0.015)  *  *  *</cell><cell>-0.074 (0.015)  *  *  *</cell><cell>-0.071 (0.015)  *  *  *</cell><cell>-0.075 (0.015)  *  *  *</cell><cell>-0.070 (0.015)  *  *  *</cell></row><row><cell>Developed</cell><cell>0.023 (0.031)</cell><cell>0.022 (0.031)</cell><cell>-0.111 (0.049)  *</cell><cell>-0.177 (0.043)  *  *  *</cell><cell>-0.104 (0.041)  *</cell><cell>-0.128 (0.053)  *</cell></row><row><cell>Won Prj</cell><cell>0.307 (0.009)  *  *  *</cell><cell>0.306 (0.009)  *  *  *</cell><cell>0.306 (0.009)  *  *  *</cell><cell>0.306 (0.009)  *  *  *</cell><cell>0.306 (0.009)  *  *  *</cell><cell>0.304 (0.009)  *  *  *</cell></row><row><cell>CompPrj</cell><cell>-2.821 (0.081)  *  *  *</cell><cell>-2.818 (0.081)  *  *  *</cell><cell>-2.813 (0.081)  *  *  *</cell><cell>-2.817 (0.081)  *  *  *</cell><cell>-2.810 (0.081)  *  *  *</cell><cell>-2.810 (0.081)  *  *  *</cell></row><row><cell>Earning</cell><cell>-0.002 (0.000)  *  *  *</cell><cell>-0.002 (0.000)  *  *  *</cell><cell>-0.002 (0.000)  *  *  *</cell><cell>-0.002 (0.000)  *  *  *</cell><cell>-0.002 (0.000)  *  *  *</cell><cell>-0.002 (0.000)  *  *  *</cell></row><row><cell>XRate</cell><cell>-0.077 (0.045)</cell><cell>-0.094 (0.047)  *</cell><cell>-0.107 (0.046)  *</cell><cell>-0.055 (0.048)</cell><cell>-0.089 (0.046)</cell><cell>-0.077 (0.051)</cell></row><row><cell>Reputation × Developed</cell><cell>0.525 (0.041)  *  *  *</cell><cell>0.527 (0.041)  *  *  *</cell><cell>0.535 (0.041)  *  *  *</cell><cell>0.533 (0.041)  *  *  *</cell><cell>0.534 (0.041)  *  *  *</cell><cell>0.522 (0.041)  *  *  *</cell></row><row><cell>Earning × XRate</cell><cell>0.002 (0.000)  *  *  *</cell><cell>0.002 (0.000)  *  *  *</cell><cell>0.002 (0.000)  *  *  *</cell><cell>0.002 (0.000)  *  *  *</cell><cell>0.002 (0.000)  *  *  *</cell><cell>0.002 (0.000)  *  *  *</cell></row><row><cell>TotUnemp</cell><cell></cell><cell>0.004 (0.003)</cell><cell></cell><cell></cell><cell></cell><cell>0.008 (0.003)  *  *</cell></row><row><cell>ln(IServers)</cell><cell></cell><cell></cell><cell>0.025 (0.007)  *  *  *</cell><cell></cell><cell></cell><cell>-0.026 (0.011)  *</cell></row><row><cell>CSpokLang</cell><cell></cell><cell></cell><cell></cell><cell>0.284 (0.041)  *  *  *</cell><cell></cell><cell>0.283 (0.051)  *  *  *</cell></row><row><cell>HigherEd</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>0.084 (0.017)  *  *  *</cell><cell>0.062 (0.025)  *</cell></row><row><cell>AIC</cell><cell>440,447.038</cell><cell>440,270.946</cell><cell>440,177.944</cell><cell>438,621.632</cell><cell>439,575.033</cell><cell>437,935.637</cell></row><row><cell>R 2</cell><cell>0.018</cell><cell>0.018</cell><cell>0.018</cell><cell>0.019</cell><cell>0.018</cell><cell>0.019</cell></row><row><cell>Max. R 2</cell><cell>0.611</cell><cell>0.611</cell><cell>0.611</cell><cell>0.612</cell><cell>0.612</cell><cell>0.612</cell></row><row><cell>Num. events</cell><cell>24,221</cell><cell>24,212</cell><cell>24,208</cell><cell>24,136</cell><cell>24,179</cell><cell>24,103</cell></row><row><cell>Num. obs.</cell><cell>475,503</cell><cell>475,402</cell><cell>475,273</cell><cell>473,031</cell><cell>473,994</cell><cell>471,638</cell></row><row><cell>Missings</cell><cell>0</cell><cell>101</cell><cell>230</cell><cell>2,472</cell><cell>1,509</cell><cell>3,865</cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row></table><note><p>*  </p></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_12"><head>Table 8 .</head><label>8</label><figDesc>Time-Variant Survival Model Results with CEM Sample p &lt; 0.05; * * p &lt; 0.01; * * * p &lt; 0.001.</figDesc><table><row><cell></cell><cell>Model 1</cell><cell>Model 2</cell><cell>Model 3</cell><cell>Model 4</cell></row><row><cell>Reputation</cell><cell>-0.794 (0.024)  *  *  *</cell><cell>-0.795 (0.024)  *  *  *</cell><cell>-0.795 (0.024)  *  *  *</cell><cell>-0.952 (0.036)  *  *  *</cell></row><row><cell>Won Projects</cell><cell>0.406 (0.011)  *  *  *</cell><cell>0.407 (0.011)  *  *  *</cell><cell>0.407 (0.011)  *  *  *</cell><cell>0.409 (0.011)  *  *  *</cell></row><row><cell>Completed Projects</cell><cell>-3.032 (0.109)  *  *  *</cell><cell>-3.023 (0.109)  *  *  *</cell><cell>-3.023 (0.109)  *  *  *</cell><cell>-2.957 (0.108)  *  *  *</cell></row><row><cell>Earning</cell><cell>-0.001 (0.000)  *  *  *</cell><cell>-0.001 (0.000)  *  *  *</cell><cell>-0.001 (0.000)  *  *  *</cell><cell>-0.003 (0.000)  *  *  *</cell></row><row><cell>Tech Jobs</cell><cell>-0.072 (0.017)  *  *  *</cell><cell>-0.053 (0.017)  *  *</cell><cell>-0.053 (0.017)  *  *</cell><cell>-0.051 (0.017)  *  *</cell></row><row><cell>Developed</cell><cell></cell><cell>0.106 (0.015)  *  *  *</cell><cell>0.098 (0.038)  *  *</cell><cell>0.043 (0.039)</cell></row><row><cell>XRate</cell><cell></cell><cell></cell><cell>0.012 (0.057)</cell><cell>-0.012 (0.057)</cell></row><row><cell>Reputation × Developed</cell><cell></cell><cell></cell><cell></cell><cell>0.301 (0.048)  *  *  *</cell></row><row><cell>Earning × XRate</cell><cell></cell><cell></cell><cell></cell><cell>0.004 (0.000)  *  *  *</cell></row><row><cell>AIC</cell><cell>301,027.571</cell><cell>300,982.582</cell><cell>300,984.534</cell><cell>300,871.307</cell></row><row><cell>R 2</cell><cell>0.014</cell><cell>0.014</cell><cell>0.014</cell><cell>0.014</cell></row><row><cell>Max. R 2</cell><cell>0.643</cell><cell>0.643</cell><cell>0.643</cell><cell>0.643</cell></row><row><cell>Num. events</cell><cell>17,332</cell><cell>17,332</cell><cell>17,332</cell><cell>17,332</cell></row><row><cell>Num. obs.</cell><cell>295,886</cell><cell>295,886</cell><cell>295,886</cell><cell>295,886</cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row></table><note><p>*  </p></note></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_0"><p>Information Systems Research, Articles inAdvance, pp. 1-17, © 2018 INFORMS   </p></note>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Acknowledgments</head><p>The authors thank the senior editor, the associate editor, and three anonymous reviewers for a most constructive and developmental review process. The paper has benefited from discussions with Prasanna Tambe, Chadwick Miller, and participants at the 2015 Workshop of Information Systems and Economics.</p></div>
+			</div>
+
+
+			<div type="funding">
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Yili Hong acknowledges financial support from the Robert Wood Johnson Foundation [Grant 74503].</p></div>
+			</div>
+
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.2.">Limitations and Suggestions for</head><p>Future Research This study has several limitations, which opens up opportunities for future research.</p><p>First, our results indicate that the providers from developed countries are at a serious disadvantage in survival, yet we still see a significant number of active providers from these countries (Online Appendix B). We observe developing and developed countries do different types of jobs on OLMs. Sixty percent of all jobs completed by developing country providers were technical, whereas the same figure for developed country developers was 45%. We believe there may be project types and specialized niches where providers from developed countries may still have an advantage, especially in segments such as writing and design where cultural and linguistic differences create nonnegligible transaction costs (Section 4.3.1). While this question is outside the scope of the current research, future research is needed to better understand how these providers continue to survive despite the inherent disadvantages that they face.</p><p>Second, in our study, we interpret exit as a failure on the OLM's part to retain the provider by providing an attractive enough work environment. Hence, whether the provider exits because of finding full-time employment in the traditional labor market, or not earning enough to justify their presence in the market, we treat it the same. Some providers may exit because of being successful rather than being unable to survive. To lay to rest any lingering concerns with regards to exit, we conducted additional robustness checks excluding providers successful prior to their exit from analysis. The results of robustness checks (please refer to Online Appendix G) reveal that the results are consistent across the complete data set, just the unsuccessful providers, and just the successful providers. One interesting hypothesis for future research is that the providers from developing countries may see OLMs as a replacement for traditional employment, whereas providers from developed countries may see it as complementary employment or as a learning opportunity, a stepping stone to a better job <ref type="bibr" target="#b80">(Singh and Tan 2010)</ref>.</p><p>Third, our study primarily focused on country development level as one important geo-economic indicator. While we tried to control for other variables such as unemployment rate, the availability of data made our inquiry cursory at best. Future research could extend the study by looking at other aspects, such as local economic conditions (unemployment rate) or local business patterns to examine how offline economic characteristics would affect the supply and demand in OLM. Also, while we investigate some measures of country of origin, there are other dimensions such as language, culture, and time zones, which are beyond the scope of our geo-economic perspective. Despite the comprehensive nature of our research, we believe it would be beneficial for future research to take some of these aspects of OLMs into consideration.</p><p>Finally, our study has squarely focused on survival. This allowed us to provide an alternative perspective to prior work, such as hiring preferences, as we provide different insights into biases developed/ developing countries identified in the literature <ref type="bibr" target="#b66">(Mill 2011</ref><ref type="bibr" target="#b1">, Agrawal et al. 2016</ref><ref type="bibr" target="#b42">, Hong and Pavlou 2017)</ref>. Survival is not the only important measure in OLM, and future research could look at other understudied dimensions, such as the total revenue generated and provider project completion. Such research would be valuable in addressing gaps in current OLM research. Downloaded from informs.org by <ref type="bibr">[194.221.86.126</ref>] on 04 June 2018, at 07:20 . For personal use only, all rights reserved.</p><p>Endnotes 1 We refer to IT service providers as "providers" in this paper.</p><p>2 In this paper, we use development level to refer to the World Bank classification of countries as developed and developing countries. The exact criteria is discussed in Section 4.1. We checked the robustness of the results with continuous PPP-adjusted GDP per capita data and the results are consistent (Online Appendix D). 3 Note that the scope of this research is individual service providers. These entities are quite different from the application service providers depicted in traditional outsourcing research that focus on firms <ref type="bibr" target="#b84">(Susarla et al. 2003)</ref>. To alleviate any concerns that our results are confounded by having firms among our service providers we took a multitude of steps that are discussed in Online Appendix H. 4 The developing country economies will have higher productivity growth, yet the wage growth may end up being lower. Depending on the exchange rate policy, either the prices (fixed rate) or the exchange rate (floating rate) will appreciate, which leads to exchange rate differentials. 5 Note that our arguments do not take into account the differences in horizontal versus vertical differentiation, which may also affect product quality perceptions. 6 Because of a nondisclosure agreement with the corporate partner, we are not able to disclose the name of the OLM platform. We herein refer to this focal OLM as "the partner OLM" or "the OLM." 7 At the time of data collection, we were unable to observe the intermittent login information. Therefore, we base our duration figures on registration and last login dates.</p><p>8 The database can be found at http://www.ip2location.com/data bases. 9 Unfortunately, this also means events that are uniform across subjects in a given time period (such as economic crises) cannot be estimated with this kind of model. Since our observation period covers the 2008 economic crisis, we demonstrate robustness of our results to this major shock. See Online Appendix I for the results. 10 Besides the three main robustness checks, we have provided numerous additional robustness checks in the online appendices. 11 Note that we left these variables out of the main analysis because of some missingness of country-level variables primarily concentrated in developing countries. Introducing this type of missingness may potentially bias the results by excluding the developing countries systematically. We have also found that these country-level variables are highly correlated with each other and also with the variable Developed, which likely have led to multicollinearity and is responsible for the negative signs of the variable Developed in Models (3)-( <ref type="formula">6</ref>) of Table <ref type="table">7</ref>. 12 We also found that there were spillover reputation effects between the providers from the same country (see Online Appendix F for more insights).</p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Firm and product life cycles and firm survival</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Agarwal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Gort</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Amer. Econom. Rev</title>
+		<imprint>
+			<biblScope unit="volume">92</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="184" to="190" />
+			<date type="published" when="2002">2002</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Does standardized information in online markets disproportionately benefit job applicants from less developed countries?</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Agrawal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Lacetera</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Lyons</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Internat. Econom</title>
+		<imprint>
+			<biblScope unit="volume">103</biblScope>
+			<biblScope unit="page" from="1" to="12" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<monogr>
+		<author>
+			<persName><forename type="first">A</forename><surname>Agrawal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Horton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Lacetera</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Lyons</surname></persName>
+		</author>
+		<title level="m">Digitization and the Contract Labor Market: A Research Agenda</title>
+		<meeting><address><addrLine>Chicago</addrLine></address></meeting>
+		<imprint>
+			<publisher>University of Chicago Press</publisher>
+			<date type="published" when="2013">2013</date>
+			<biblScope unit="page" from="219" to="250" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Interaction terms in logit and probit models</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Ai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">C</forename><surname>Norton</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Econom. Lett</title>
+		<imprint>
+			<biblScope unit="volume">80</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="123" to="129" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Production and transaction economies and IS outsourcing: A study of the U.S. banking industry</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Ang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">W</forename><surname>Straub</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quart</title>
+		<imprint>
+			<biblScope unit="volume">22</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="535" to="552" />
+			<date type="published" when="1998">1998</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<monogr>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">D</forename><surname>Angrist</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">S</forename><surname>Pischke</surname></persName>
+		</author>
+		<title level="m">Mostly Harmless Econometrics: An Empiricist&apos;s Companion</title>
+		<meeting><address><addrLine>Princeton, NJ</addrLine></address></meeting>
+		<imprint>
+			<publisher>Princeton University Press</publisher>
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Properties of scoring auctions</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Asker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Cantillon</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">RAND J. Econom</title>
+		<imprint>
+			<biblScope unit="volume">39</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="69" to="85" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<monogr>
+		<title level="m" type="main">Globalization and offshoring of software</title>
+		<author>
+			<persName><forename type="first">W</forename><surname>Aspray</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Mayadas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">Y</forename><surname>Vardi</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2006">2006</date>
+			<publisher>Association for Computing Machinery</publisher>
+			<pubPlace>New York</pubPlace>
+		</imprint>
+	</monogr>
+	<note type="report_type">Technical report</note>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">The relationship between exchange rates and international trade: A literature review</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Auboin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Ruta</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">World Trade Rev</title>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="577" to="605" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">The purchasing-power parity doctrine: A reappraisal</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Balassa</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Political Econom</title>
+		<imprint>
+			<biblScope unit="volume">72</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="584" to="596" />
+			<date type="published" when="1964">1964</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<monogr>
+		<title level="m" type="main">Determinants of firm survival in e-markets: An analysis with software service providers</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Banker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Wattal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Hwang</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+	<note>44th</note>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title/>
+	</analytic>
+	<monogr>
+		<title level="j">Hawaii Internat. Conf. System Sci. (HICSS)</title>
+		<imprint>
+			<biblScope unit="page" from="1" to="7" />
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Importance of measures of past performance: Empirical evidence on quality of e-service providers</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">D</forename><surname>Banker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Hwang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Contemporary Accounting Res</title>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="307" to="337" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Should developing countries use currency depreciation as a tool of balance of payments adjustment? A review of the theory and evidence, and a guide for the policy maker</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Bird</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Development Stud</title>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="461" to="484" />
+			<date type="published" when="1983">1983</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Offshoring: The next industrial revolution?</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">S</forename><surname>Blinder</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Foreign Affairs</title>
+		<imprint>
+			<biblScope unit="volume">85</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="113" to="128" />
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<monogr>
+		<author>
+			<persName><forename type="first">N</forename><surname>Bottini</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Ernst</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Luebker</surname></persName>
+		</author>
+		<title level="m">Offshoring and the labour market: What are the issues? Report</title>
+		<meeting><address><addrLine>Geneva</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2007">2007</date>
+		</imprint>
+		<respStmt>
+			<orgName>International Labour Office</orgName>
+		</respStmt>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Hiring biases in online labor markets: The case of gender stereotyping. Thirty Fifth Internat</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Chan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Wang</surname></persName>
+		</author>
+		<idno>194.221.86.126] on 04</idno>
+	</analytic>
+	<monogr>
+		<title level="m">07:20 . For personal use only, all rights reserved. Information Systems Research, Articles in Advance</title>
+		<imprint>
+			<date type="published" when="2014-06">2014. June 2018. 2018</date>
+			<biblScope unit="page" from="1" to="17" />
+		</imprint>
+	</monogr>
+	<note>Conf. Inform. Systems (AIS)</note>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Research note-Are online labor markets spot markets for tasks? A field experiment on the behavioral response to wage cuts</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">L</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">J</forename><surname>Horton</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Inform. Systems Res</title>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="403" to="423" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<monogr>
+		<title level="m" type="main">The place premium: Wage differences for identical workers across the U.S. border. Working paper</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">A</forename><surname>Clemens</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">E</forename><surname>Montenegro</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Pritchett</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2008">2008</date>
+			<publisher>World Bank Policy Research</publisher>
+			<pubPlace>Washington, DC</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Regression models and life-tables</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">R</forename><surname>Cox</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Roy. Statist. Soc. Ser. B</title>
+		<imprint>
+			<biblScope unit="volume">34</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="187" to="220" />
+			<date type="published" when="1972">1972</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<monogr>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">B</forename><surname>Dahl</surname></persName>
+		</author>
+		<ptr target="http://CRAN" />
+		<title level="m">xtable: Export tables to LaTeX or HTML</title>
+		<imprint>
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<monogr>
+		<title level="m">R-project.org/package xtable, R package version 1</title>
+		<imprint>
+			<biblScope unit="page" from="7" to="11" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Propensity score-matching methods for nonexperimental causal studies</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">H</forename><surname>Dehejia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Wahba</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Rev. Econom. Statist</title>
+		<imprint>
+			<biblScope unit="volume">84</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="151" to="161" />
+			<date type="published" when="2002">2002</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">On product uncertainty in online markets: Theory and evidence</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Dimoka</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Hong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">A</forename><surname>Pavlou</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quart</title>
+		<imprint>
+			<biblScope unit="volume">36</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="395" to="426" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">The (2010) Work in the digital age: A clouded future</title>
+	</analytic>
+	<monogr>
+		<title level="j">Economist</title>
+		<imprint>
+			<biblScope unit="volume">395</biblScope>
+			<biblScope unit="issue">8682</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">Strategies for twosided markets</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Eisenmann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Parker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">W</forename><surname>Van Alstyne</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Harvard Bus. Rev</title>
+		<imprint>
+			<biblScope unit="volume">84</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page" from="92" to="101" />
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">The impact of outsourcing and hightechnology capital on wages: Estimates for the United States, 1979-1990</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">C</forename><surname>Feenstra</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">H</forename><surname>Hanson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Quart. J. Econom</title>
+		<imprint>
+			<biblScope unit="volume">114</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="907" to="940" />
+			<date type="published" when="1999">1999</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<monogr>
+		<author>
+			<persName><forename type="first">A</forename><surname>Fernihough</surname></persName>
+		</author>
+		<ptr target="https://ideas.repec.org/p/ucn/wpaper/201122.html" />
+		<title level="m">Simple logit and probit marginal effects in r</title>
+		<imprint>
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<monogr>
+		<title level="m" type="main">Export surges: The power of a competitive currency. Working paper</title>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">L</forename><surname>Freund</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">D</forename><surname>Pierola</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2008">2008</date>
+			<publisher>World Bank Policy Research</publisher>
+			<pubPlace>Washington, DC</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<monogr>
+		<title level="m" type="main">simPH: Tools for simulating and plotting quantities of interest estimated from Cox proportional hazards models. r package version 1</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Gandrud</surname></persName>
+		</author>
+		<ptr target="http://CRAN.R-project.org/packagesimPH" />
+		<imprint>
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">Is the world really flat? A look at offshoring at an online programming marketplace</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Gefen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Carmel</forename><forename type="middle">E</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quart</title>
+		<imprint>
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="367" to="384" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">The future IS organization in a flat world</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">B</forename><surname>Gerth</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Rothman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Inform. Systems Management</title>
+		<imprint>
+			<biblScope unit="volume">24</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="103" to="111" />
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Diasporas and outsourcing: Evidence from odesk and India</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>Ghani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><forename type="middle">R</forename><surname>Kerr</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Stanton</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Sci</title>
+		<imprint>
+			<biblScope unit="volume">60</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="1677" to="1697" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<monogr>
+		<title level="m" type="main">Does information really &quot;unravel&quot;? Understanding factors that motivate sellers to seek third-party certifications in an online labor market</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Goes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Lin</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+	<note>Working paper, NET Institute</note>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title level="a" type="main">The role of service level agreements in relational management of information technology outsourcing: An empirical study</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Goo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Kishore</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">R</forename><surname>Rao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nam</forename><forename type="middle">K</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quart</title>
+		<imprint>
+			<biblScope unit="volume">33</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="119" to="145" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">Predicting probabilities: Inherent and sampling variability in the estimation of discretechoice models</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">V</forename><surname>Gordon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Osberg</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Phipps</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Oxford Bull. Econom. Statist</title>
+		<imprint>
+			<biblScope unit="volume">56</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="13" to="31" />
+			<date type="published" when="1994">1994</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">Proportional hazards tests and diagnostics based on weighted residuals</title>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">M</forename><surname>Grambsch</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">M</forename><surname>Therneau</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Biometrika</title>
+		<imprint>
+			<biblScope unit="volume">81</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="515" to="526" />
+			<date type="published" when="1994">1994</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<analytic>
+		<title level="a" type="main">Matching platforms and HIV incidence: An empirical investigation of race, gender, and socioeconomic status</title>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">N</forename><surname>Greenwood</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Agarwal</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Sci</title>
+		<imprint>
+			<biblScope unit="volume">62</biblScope>
+			<biblScope unit="issue">8</biblScope>
+			<biblScope unit="page" from="2281" to="2303" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<analytic>
+		<title level="a" type="main">Trading tasks: A simple theory of offshoring</title>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">M</forename><surname>Grossman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Rossi-Hansberg</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Amer. Econom. Rev</title>
+		<imprint>
+			<biblScope unit="volume">98</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="1978" to="1997" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<analytic>
+		<title level="a" type="main">The effect of service quality and partnership on the outsourcing of information systems functions</title>
+		<author>
+			<persName><forename type="first">V</forename><surname>Grover</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">J</forename><surname>Cheon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">T</forename><surname>Teng</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Management Inform. Systems</title>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="89" to="116" />
+			<date type="published" when="1996">1996</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<analytic>
+		<title level="a" type="main">Estimating cross-country differences in product quality</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">C</forename><surname>Hallak</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">K</forename><surname>Schott</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Quart. J. Econom</title>
+		<imprint>
+			<biblScope unit="volume">126</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="417" to="474" />
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<analytic>
+		<title level="a" type="main">Country image: Halo or summary construct</title>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">M</forename><surname>Han</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Marketing Res</title>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="222" to="229" />
+			<date type="published" when="1989">1989</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+	<monogr>
+		<title level="m" type="main">On buyer selection of service providers in online outsourcing platforms for IT services</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Hong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">A</forename><surname>Pavlou</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2017">2017</date>
+			<biblScope unit="volume">28</biblScope>
+			<biblScope unit="page" from="547" to="562" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b43">
+	<analytic>
+		<title level="a" type="main">Comparing open and sealed bid auctions: Evidence from online labor markets</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Hong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">A</forename><surname>Pavlou</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Inform. Systems Res</title>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="49" to="69" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b44">
+	<analytic>
+		<title level="a" type="main">Results on the bias and inconsistency of ordinary least squares for the linear probability model</title>
+		<author>
+			<persName><forename type="first">W</forename><forename type="middle">C</forename><surname>Horrace</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">L</forename><surname>Oaxaca</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Econom. Lett</title>
+		<imprint>
+			<biblScope unit="volume">90</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="321" to="327" />
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b45">
+	<analytic>
+		<title level="a" type="main">Research report: Diffusion of information systems outsourcing: A reevaluation of influence sources</title>
+		<author>
+			<persName><forename type="first">Q</forename><surname>Hu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Saunders</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Gebelt</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Inform. Systems Res</title>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="288" to="301" />
+			<date type="published" when="1997">1997</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b46">
+	<analytic>
+		<title level="a" type="main">Software for coarsened exact matching</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Iacus</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>King</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Porro</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Statist. Software</title>
+		<imprint>
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="issue">9</biblScope>
+			<biblScope unit="page" from="1" to="27" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b47">
+	<analytic>
+		<title level="a" type="main">Market structure and the firm&apos;s market power</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">P</forename><surname>Jacquemin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Indust. Econom</title>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="122" to="134" />
+			<date type="published" when="1972">1972</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b48">
+	<analytic>
+		<title level="a" type="main">IT outsourcing success: A psychological contract perspective</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Koh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Ang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">W</forename><surname>Straub</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Inform. Systems Res</title>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="356" to="373" />
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b49">
+	<analytic>
+		<title level="a" type="main">Online labor markets: Reputation transferability, career development paths and hiring decisions</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Kokkodis</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Conf. Human Computation Crowdsourcing (HCOMP) (AAAI)</title>
+		<imprint>
+			<date type="published" when="2014">2014</date>
+			<biblScope unit="page" from="1" to="5" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b50">
+	<analytic>
+		<title level="a" type="main">Productivity levels and international competitiveness between Canadian and U.S. industries</title>
+		<author>
+			<persName><forename type="first">F</forename><forename type="middle">C</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Tang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Amer. Econom. Rev</title>
+		<imprint>
+			<biblScope unit="volume">90</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="176" to="179" />
+			<date type="published" when="2000">2000</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b51">
+	<analytic>
+		<title level="a" type="main">Effect of partnership quality on IS outsourcing success: Conceptual framework and empirical validation</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">N</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><forename type="middle">G</forename><surname>Kim</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Management Inform. Systems</title>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="29" to="61" />
+			<date type="published" when="1999">1999</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b52">
+	<analytic>
+		<title level="a" type="main">IT outsourcing strategies: Universalistic, contingency, and configurational explanations of success</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">N</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">M</forename><surname>Miranda</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><forename type="middle">M</forename><surname>Kim</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Inform. Systems Res</title>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="110" to="131" />
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b53">
+	<analytic>
+		<title level="a" type="main">texreg: Conversion of statistical model output in R to LaTeX and HTML tables</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Leifeld</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Statist. Software</title>
+		<imprint>
+			<biblScope unit="volume">55</biblScope>
+			<biblScope unit="issue">8</biblScope>
+			<biblScope unit="page" from="1" to="24" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b54">
+	<analytic>
+		<title level="a" type="main">From the vendor&apos;s perspective: Exploring the value proposition in information technology outsourcing</title>
+		<author>
+			<persName><forename type="first">N</forename><surname>Levina</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">W</forename><surname>Ross</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quart</title>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="331" to="364" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b55">
+	<analytic>
+		<title level="a" type="main">Why do software firms fail? Capabilities, competitive actions, and firm survival in the software industry from 1995 to</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Shang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">A</forename><surname>Slaughter</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Inform. Systems Res</title>
+		<imprint>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="631" to="654" />
+			<date type="published" when="2007">2010. 2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b56">
+	<analytic>
+		<title level="a" type="main">Effects of IT-enabled monitoring systems in online labor markets</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Liang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Hong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Gu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. Internat. Conf. Inform. Systems</title>
+		<meeting>Internat. Conf. Inform. Systems</meeting>
+		<imprint>
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b57">
+	<analytic>
+		<title level="a" type="main">The influence of the country-of-origin image, product knowledge and product involvement on consumer purchase decisions: An empirical study of insurance and catering services in Taiwan</title>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">Y</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">S</forename><surname>Chen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Consumer Marketing</title>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="248" to="265" />
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b58">
+	<analytic>
+		<title level="a" type="main">Effectiveness of reputation in contracting for customized production: Evidence from online labor markets</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Viswanathan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Sci</title>
+		<imprint>
+			<biblScope unit="volume">64</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="345" to="359" />
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b59">
+	<analytic>
+		<title level="a" type="main">Research commentary-Too big to fail: Large samples and the p-value problem</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lucas</forename><surname>Hc</surname><genName>Jr</genName></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Shmueli</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Inform. Systems Res</title>
+		<imprint>
+			<biblScope unit="volume">24</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="906" to="917" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b60">
+	<analytic>
+		<title level="a" type="main">Determinants of information technology outsourcing: A cross-sectional analysis</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Loh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Venkatraman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Management Inform. Systems</title>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="7" to="24" />
+			<date type="published" when="1992">1992</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b61">
+	<analytic>
+		<title level="a" type="main">Real exchange rate behavior: The recent float from the perspective of the past two centuries</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">R</forename><surname>Lothian</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">P</forename><surname>Taylor</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Political Econom</title>
+		<imprint>
+			<biblScope unit="volume">104</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="488" to="509" />
+			<date type="published" when="1996">1996</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b62">
+	<analytic>
+		<title level="a" type="main">The dawn of the e-lance economy</title>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">W</forename><surname>Malone</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">J</forename><surname>Laubacher</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Electronic Business Engineering</title>
+		<meeting><address><addrLine>Heidelberg, Germany</addrLine></address></meeting>
+		<imprint>
+			<publisher>Springer</publisher>
+			<date type="published" when="1999">1999</date>
+			<biblScope unit="page" from="13" to="24" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b63">
+	<analytic>
+		<title level="a" type="main">Electronic markets and electronic hierarchies</title>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">W</forename><surname>Malone</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Yates</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">I</forename><surname>Benjamin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Comm. ACM</title>
+		<imprint>
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="484" to="497" />
+			<date type="published" when="1987">1987</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b64">
+	<monogr>
+		<title level="m" type="main">A labor market that works: Connecting talent with opportunity in the digital age</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Manyika</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Lund</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Robinson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Valentino</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Dobbs</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2015">2015</date>
+			<publisher>McKinsey Global Institute</publisher>
+			<pubPlace>New York</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b65">
+	<analytic>
+		<title level="a" type="main">Native language, spoken language, translation and trade</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Melitz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Toubal</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Internat. Econom</title>
+		<imprint>
+			<biblScope unit="volume">93</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="351" to="363" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b66">
+	<monogr>
+		<title level="m" type="main">Hiring and learning in online global labor markets. Working paper</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Mill</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2011">2011</date>
+		</imprint>
+		<respStmt>
+			<orgName>NET Institute</orgName>
+		</respStmt>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b67">
+	<analytic>
+		<title level="a" type="main">Is the world flat or spiky? Information intensity, skills, and global service disaggregation</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Mithas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Whitaker</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Inform. Systems Res</title>
+		<imprint>
+			<biblScope unit="volume">18</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="237" to="259" />
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b68">
+	<analytic>
+		<title level="a" type="main">Doing business with strangers: Reputation in online service marketplaces</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Moreno</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Terwiesch</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Inform. Systems Res</title>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="865" to="886" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b69">
+	<analytic>
+		<title level="a" type="main">What makes a helpful review? A study of customer reviews on amazon</title>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">M</forename><surname>Mudambi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Schuff</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quart</title>
+		<imprint>
+			<biblScope unit="volume">34</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="185" to="200" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b70">
+	<analytic>
+		<title level="a" type="main">For personal use only, all rights reserved. Nelson P (1970) Information and consumer behavior</title>
+		<idno>07:20</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Downloaded from informs</title>
+		<imprint>
+			<date type="published" when="2018-06">June 2018</date>
+			<biblScope unit="volume">78</biblScope>
+			<biblScope unit="page" from="311" to="329" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b71">
+	<monogr>
+		<title level="m" type="main">Platform Revolution: How Networked Markets are Transforming the Economy and How to Make Them Work for You</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Parker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Van Alstyne</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">P</forename><surname>Choudary</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2016">2016</date>
+			<publisher>W.W. Norton</publisher>
+			<pubPlace>New York</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b72">
+	<analytic>
+		<title level="a" type="main">Two-sided network effects: A theory of information product design</title>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">G</forename><surname>Parker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">W</forename><surname>Van Alstyne</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Sci</title>
+		<imprint>
+			<biblScope unit="volume">51</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page" from="1494" to="1504" />
+			<date type="published" when="2005">2005</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b73">
+	<analytic>
+		<title level="a" type="main">R: A language and environment for statistical computing</title>
+		<author>
+			<persName><forename type="first">Team</forename><surname>Core</surname></persName>
+		</author>
+		<ptr target="http://www.R-project.org/" />
+	</analytic>
+	<monogr>
+		<title level="m">R Foundation for Statistical Computing</title>
+		<meeting><address><addrLine>Vienna</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b74">
+	<analytic>
+		<title level="a" type="main">Social capital and contract duration in buyer-supplier networks for information technology outsourcing social capital and contract duration in buyer-supplier networks for information technology outsourcing</title>
+		<author>
+			<persName><forename type="first">K</forename><surname>Ravindran</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Susarla</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Mani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Gurbaxani</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Inform. Systems Res</title>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="379" to="397" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b75">
+	<monogr>
+		<title level="m" type="main">How global labour arbitrage will shape the world economy</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Roach</surname></persName>
+		</author>
+		<ptr target="http://ecocritique.free.fr/roachglo.pdf" />
+		<imprint>
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b76">
+	<analytic>
+		<title level="a" type="main">Understanding the motivations, participation, and performance of open source software developers: A longitudinal study of the Apache projects</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">A</forename><surname>Roberts</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><forename type="middle">H</forename><surname>Hann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">A</forename><surname>Slaughter</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Sci</title>
+		<imprint>
+			<biblScope unit="volume">52</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="984" to="999" />
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b77">
+	<monogr>
+		<title level="m" type="main">What makes exports boom?</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">J</forename><surname>Roberts</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">R</forename><surname>Tybout</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1997">1997</date>
+			<publisher>World Bank</publisher>
+			<pubPlace>Washington, DC</pubPlace>
+		</imprint>
+	</monogr>
+	<note type="report_type">Report</note>
+</biblStruct>
+
+<biblStruct xml:id="b78">
+	<analytic>
+		<title level="a" type="main">A capabilities perspective on the effects of early internationalization on firm survival and growth</title>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">J</forename><surname>Sapienza</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Autio</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>George</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">A</forename><surname>Zahra</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Acad. Management Rev</title>
+		<imprint>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="914" to="933" />
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b79">
+	<analytic>
+		<title level="a" type="main">Determinants of reverse auction results: An empirical examination of freelancer.com</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Scholz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Haas</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">ECIS 2011 Proc. (AIS)</title>
+		<imprint>
+			<date type="published" when="2011">2011</date>
+			<biblScope unit="page" from="1" to="13" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b80">
+	<analytic>
+		<title level="a" type="main">Developer heterogeneity and formation of communication networks in open source software projects</title>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">V</forename><surname>Singh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Tan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Management Inform. Systems</title>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="179" to="210" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b81">
+	<analytic>
+		<title level="a" type="main">Electronic commerce, spatial arbitrage, and market efficiency</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Subramanian</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Overby</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Inform. Systems Res</title>
+		<imprint>
+			<biblScope unit="volume">28</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="97" to="116" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b82">
+	<analytic>
+		<title level="a" type="main">Contractual flexibility, rent seeking, and renegotiation design: An empirical analysis of information technology outsourcing contracts</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Susarla</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Sci</title>
+		<imprint>
+			<biblScope unit="volume">58</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="1388" to="1407" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b83">
+	<analytic>
+		<title level="a" type="main">Contracting efficiency and new firm survival in markets enabled by information technology</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Susarla</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Barua</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Inform. Systems Res</title>
+		<imprint>
+			<biblScope unit="volume">22</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="306" to="324" />
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b84">
+	<analytic>
+		<title level="a" type="main">Understanding the service component of application service provision: Empirical analysis of satisfaction with ASP services</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Susarla</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Barua</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">B</forename><surname>Whinston</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quart</title>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="91" to="123" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b85">
+	<analytic>
+		<title level="a" type="main">Contractual provisions to mitigate holdup: Evidence from information technology outsourcing</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Susarla</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Subramanyam</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Karhade</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Inform. Systems Res</title>
+		<imprint>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="37" to="55" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b86">
+	<analytic>
+		<title level="a" type="main">Now it&apos;s personal: Offshoring and the shifting skill composition of the U.S. information technology workforce</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Tambe</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">M</forename><surname>Hitt</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Sci</title>
+		<imprint>
+			<biblScope unit="volume">58</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="678" to="695" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b87">
+	<analytic>
+		<title level="a" type="main">How offshoring affects IT workers</title>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">B</forename><surname>Tambe</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">M</forename><surname>Hitt</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Comm. ACM</title>
+		<imprint>
+			<biblScope unit="volume">53</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page" from="62" to="70" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b88">
+	<monogr>
+		<title level="m" type="main">A package for survival analysis in S. r package version 2</title>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">M</forename><surname>Therneau</surname></persName>
+		</author>
+		<ptr target="http://CRAN.R-project.org/packagesurvival" />
+		<imprint>
+			<date type="published" when="2014">2014</date>
+			<biblScope unit="volume">37</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b89">
+	<monogr>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">M</forename><surname>Therneau</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Crowson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Atkinson</surname></persName>
+		</author>
+		<ptr target="https://cran.r-project.org/web/packages/survival/vignettes/timedep.pdf" />
+		<title level="m">Using time dependent covariates and time dependent coefficients in the Cox model</title>
+		<imprint>
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b90">
+	<analytic>
+		<title level="a" type="main">Survival estimation for Cox regression models with time-varying coefficients using</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Thomas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">M</forename><surname>Reyes</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">SAS and R. J. Statist. Software</title>
+		<imprint>
+			<biblScope unit="volume">61</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="1" to="23" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b91">
+	<analytic>
+		<title level="a" type="main">Inverted-U relationship between R&amp;D intensity and survival: Evidence on scale and complementarity effects in UK data</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Ugur</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Trushin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Solomon</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Res. Policy</title>
+		<imprint>
+			<biblScope unit="volume">45</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="1474" to="1492" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b92">
+	<analytic>
+		<title level="a" type="main">A review and meta-analysis of country-of-origin research</title>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">W</forename><surname>Verlegh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jbe</forename><surname>Steenkamp</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Econom. Psych</title>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="521" to="546" />
+			<date type="published" when="1999">1999</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b93">
+	<analytic>
+		<title level="a" type="main">Modeling the success of small and medium sized online vendors in business to business electronic marketplaces in China: A motivation-capability framework</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Hong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Archer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Wang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Global Inform. Management</title>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="45" to="75" />
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b94">
+	<analytic>
+		<title level="a" type="main">Store survival in online marketplace: An empirical investigation</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Fang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pyk</forename><surname>Chau</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Decission Support Systems</title>
+		<imprint>
+			<biblScope unit="volume">56</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="482" to="493" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b95">
+	<monogr>
+		<author>
+			<persName><forename type="first">H</forename><surname>Wickham</surname></persName>
+		</author>
+		<title level="m">Elegant Graphics for Data Analysis</title>
+		<meeting><address><addrLine>New York</addrLine></address></meeting>
+		<imprint>
+			<publisher>Springer</publisher>
+			<date type="published" when="2009">2009</date>
+			<biblScope unit="volume">2</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b96">
+	<monogr>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">M</forename><surname>Wooldridge</surname></persName>
+		</author>
+		<title level="m">Econometric Analysis of Cross Section and Panel Data</title>
+		<meeting><address><addrLine>Cambridge, MA</addrLine></address></meeting>
+		<imprint>
+			<publisher>MIT Press</publisher>
+			<date type="published" when="2002">2002</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b97">
+	<monogr>
+		<ptr target="http://data.worldbank.org/about/country-and-lending-groups" />
+		<title level="m">Country and lending groups</title>
+		<imprint>
+			<publisher>World Bank</publisher>
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b98">
+	<analytic>
+		<title level="a" type="main">The value of reputation in an online freelance marketplace</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Yoganarasimhan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Marketing Sci</title>
+		<imprint>
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="860" to="891" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b99">
+	<monogr>
+		<idno>194.221.86.126] on 04</idno>
+		<title level="m">Downloaded from informs</title>
+		<imprint>
+			<date type="published" when="2018-06">June 2018</date>
+		</imprint>
+	</monogr>
+	<note>at 07:20 . For personal use only, all rights reserved</note>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

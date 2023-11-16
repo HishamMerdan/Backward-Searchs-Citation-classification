@@ -1,0 +1,1957 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Unemployment and Worker Participation in the Gig Economy: Evidence from an Online Labor Market</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+				<date type="published" when="2020-06-12">June 12, 2020</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Ni</forename><surname>Huang</surname></persName>
+							<email>ni.huang@asu.edu</email>
+						</author>
+						<author>
+							<persName><forename type="first">Gordon</forename><surname>Burtch</surname></persName>
+							<email>gburtch@umn.edu</email>
+							<affiliation key="aff1">
+								<orgName type="department">Carlson School of Management</orgName>
+								<orgName type="institution">University of Minnesota</orgName>
+								<address>
+									<postCode>55455</postCode>
+									<settlement>Minneapolis</settlement>
+									<region>Minnesota</region>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Yili</forename><surname>Hong</surname></persName>
+							<email>hong@asu.edu</email>
+						</author>
+						<author>
+							<persName><forename type="first">Paul</forename><forename type="middle">A</forename><surname>Pavlou</surname></persName>
+							<email>pavlou@bauer.uh.edu</email>
+							<affiliation key="aff2">
+								<orgName type="institution" key="instit1">Bauer College of Business</orgName>
+								<orgName type="institution" key="instit2">University of Houston</orgName>
+								<address>
+									<postCode>77204</postCode>
+									<settlement>Houston</settlement>
+									<region>Texas</region>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">W</forename><forename type="middle">P</forename><surname>Carey</surname></persName>
+						</author>
+						<author>
+							<affiliation key="aff0">
+								<orgName type="department">School of Business</orgName>
+								<orgName type="institution">Arizona State University</orgName>
+								<address>
+									<postCode>85287</postCode>
+									<settlement>Tempe</settlement>
+									<region>Arizona</region>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Unemployment and Worker Participation in the Gig Economy: Evidence from an Online Labor Market</title>
+					</analytic>
+					<monogr>
+						<idno type="ISSN">1047-7047 (print)</idno>
+						<imprint>
+							<date type="published" when="2020-06-12">June 12, 2020</date>
+						</imprint>
+					</monogr>
+					<idno type="MD5">C359C20B8A0965EADBC01A0DE33F45F1</idno>
+					<idno type="DOI">10.1287/isre.2019.0896</idno>
+					<note type="submission">Received: October 24, 2017 Revised: December 7, 2018; July 17, 2019; September 8, 2019 Accepted: September 16, 2019</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.7.3" ident="GROBID" when="2023-06-16T09:22+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>Yong Tan, Senior Editor; Prasanna Tambe, Associate Editor gig economy</term>
+					<term>online labor markets</term>
+					<term>unemployment</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>The gig economy has low barriers to entry, enabling flexible work arrangements and allowing workers to engage in contingent employment, whenever, and in some cases, such as online labor markets, wherever, workers desire. The growth of the gig economy has been partly attributed to technological advancements that enable flexible work environments. In this study, we consider the role of an alternative driver, economic downturns, and associated financial stressors in the offline economy, for example, unemployment. As the exact nature of the relationship between online labor supply and offline unemployment is not immediately clear, in this work, we seek to quantify the relationship, exploring heterogeneity across a variety of county-specific characteristics. We study these relationships in the context of a leading online labor market, combining data on the participation of workers residing in counties across the United States with county-level data on unemployment from the Bureau of Labor Statistics. Our results demonstrate a positive and significant association between local (county) unemployment in the traditional offline labor market and the supply of online workers residing in the same county, as well as significantly larger volumes of online project bidding activity from workers in the same county. Specifically, we estimate that a 1% increase in county unemployment is associated with a 21.8% increase in the volume of county residents actively working online at the platform. Furthermore, our results suggest significant heterogeneity in the relationship, such that a significantly larger supply of online labor manifests when unemployment occurs in counties characterized by better internet access, younger and more educated populations, and populations whose social ties are dispersed over a wider geographic area. We discuss the theoretical and practical implications for workers, online labor markets, and policy makers.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.">Introduction</head><p>The gig economy, defined as digital, service-based, and on-demand platforms that enable flexible work arrangements <ref type="bibr">(Greenwood et al. 2017)</ref>, has grown greatly in recent years <ref type="bibr">(K ässi and Lehdonvirta 2018)</ref>. Platforms like Uber, Thumbtack, and Freelancer, the focus of this study, offer novel forms of digitally enabled, flexible, and (in some cases) remote work arrangements, which have attracted millions of workers globally. According to recent industry surveys, approximately one-third of the U.S. workforce now participates in the gig economy <ref type="bibr" target="#b74">(Soergel 2016)</ref>. A natural question arises as to what drives workers' participation in online markets. 1 One common explanation is that these digital platforms have low barriers to entry and provide workers with flexible employment, enabling workers to work whenever and from wherever they like <ref type="bibr">(Chen et al. 2017, Mas and</ref><ref type="bibr" target="#b62">Pallais 2017)</ref>. This line of reasoning suggests that recent growth in gig-economy participation can be attributed in part to technological advancements that enable this sort of flexibility <ref type="bibr">(Pacific Standard 2016;</ref><ref type="bibr" target="#b40">Hall and Krueger 2018</ref>). However, despite potential improvements in working arrangements that may arise with novel technologies and systems, it is important to recognize that employment in the gig economy also comes with a number of drawbacks that directly countervail such benefits. These drawbacks range from the high competition from low-income countries <ref type="bibr" target="#b47">(Kanat et al. 2018</ref>) and likely discomfort associated with semianonymous transactions involving complete strangers <ref type="bibr" target="#b78">(Sundararajan 2016)</ref> to economic vulnerability <ref type="bibr" target="#b14">(Bergman and Jean 2016)</ref> and a lack of employer retirement and health benefits or legal protections <ref type="bibr" target="#b83">(White 2015</ref><ref type="bibr" target="#b73">, Schor 2016)</ref>, the latter of which have been argued to contribute toward "a Dickensian world" of labor exploitation and social injustice <ref type="bibr" target="#b25">(Das 2016)</ref>. 2 These debates have recently led lawmakers to pass to the California Assembly Bill 5 to protect the welfare of gig workers.</p><p>Given these apparent drawbacks associated with gig work, we turn here to an alternative, complementary explanation for worker entry into the gig economy, namely, the presence of a weak traditional (offline) labor market. Unemployment in the traditional labor market is likely to have a significant impact on the supply of labor in online markets because associated financial stressors (i.e., loss of income) provide sufficient incentive for unemployed and underemployed workers to engage in or experiment with a new form of employment <ref type="bibr" target="#b68">(Reinhart and Rogoff 2009)</ref>. In economic downturns, firms are often required to lay off employees <ref type="bibr" target="#b28">(Elsby et al. 2010)</ref>, and the resulting unemployed workers tend to face difficulties finding new jobs <ref type="bibr" target="#b71">(Rothstein 2011</ref>). In the past, in a typical economic downturn, workers would increase their local job search efforts or migrate to a different locale to identify new employment opportunities. With the advent of digitally enabled, online job options, however, workers are now presented with a new alternative <ref type="bibr">(Katz and</ref><ref type="bibr">Stark 1986, Zhao 1999)</ref>. Formally, we seek to address the following research questions: To what extent is workers' participation in the gig economy, and in online labor markets in particular, driven by unemployment in the local, offline labor market? What factors amplify or attenuate this relationship?</p><p>To answer our research questions, we draw on data from multiple archival sources, combining proprietary data from a leading online labor market with county-level data from various publicly available sources, including data on unemployment (from the Bureau of Labor Statistics, or BLS), population demographics (from the National Bureau of Economic Research and the U.S. Department of Agriculture Economic Research Service), broadband internet access (from the Federal Communications Commission), and geographic dispersion of social connections (from Facebook Research). We consider the relationship between plausibly exogenous variation in county unemployment and the volume of workers residing in the same county who participate on the platform, measured in terms of active workers and the total number of associated bids.</p><p>Online labor markets, such as Freelancer and Upwork, offer an ideal context for studying our research questions, for a number of reasons. First, online labor markets are prime examples of platforms that comprise the gig economy. The barriers to entry on these platforms are low: to participate in an online labor market, workers need only register an account to begin bidding on projects posted by employers. Second, these platforms offer flexible working arrangements: if a contract is awarded, the worker can complete the work on their own schedule. Perhaps most importantly, online labor markets, unlike some gig-economy platforms that are rooted in the physical world (e.g., Uber), are truly borderless, enabling the matching of workers and employers across the globe, from any location. This last characteristic, the purely virtual nature of online labor markets, makes them ideal for our study, because a lack of employment opportunities in a local, offline economy, for example, does not necessarily correspond to a lack of global employment opportunities in the online labor market.</p><p>We attempt to identify plausibly exogenous variation in county-level unemployment rates using a standard instrument variable approach from the labor economics literature, the Bartik shift-share-type instrument <ref type="bibr" target="#b12">(Bartik 1991</ref><ref type="bibr" target="#b10">, Autor and Duggan 2003</ref><ref type="bibr" target="#b15">, Bertrand et al. 2015)</ref>. The Bartik instrument is constructed by interacting the distribution of industry shares across locations (counties in this case), from an initial reference period, with national industry growth rates. Our results show a positive relationship between local unemployment and labor supply on the online gig economy platform, such that a 1% increase in a county unemployment rate is associated with a 21.8% increase in the volume of active workers and a 14.9% increase in the number of project bids posted on the platform. If we aggregate these estimates to the scale of the entire United States, a 1% increase in the U.S. unemployment rate would translate to approximately $1.8 million in additional annual wages earned on the platform. Although superficially small, such an effect is in fact quite meaningful when we consider that (i) the online market we study was relatively small at the time of our observation, and online labor markets have grown substantially in recent years, suggesting the effects have likely grown in turn, and (ii) our estimates pertain to a single online gig platform, and workers may seek online work at a wide variety of online venues, for example, Upwork, Fiverr, Guru, PeoplePerHour, etc. Given the above, our estimates of the unemployment-online gig work relationship are likely to be very conservative.</p><p>When it comes to understanding factors that moderate the relationship between offline unemployment and the supply of labor in online gig economy, we consider key features that characterize the workers in the local labor market (e.g., population demographics and geographic dispersion of county residents' social connections) and those characterizing the geographic context (e.g., internet connectivity). These moderating factors help us to better understand heterogeneity in the relationship between unemployment and participation in the online labor markets. We further consider the nature of the work enabled by the platform. Online labor markets involve work that is easily outsourced and delivered online, such as software development and data entry. Accordingly, workers recently laid off from positions in information technology (IT)-related industries-who we would expect can perform virtual work that does not require physically being on site and that also requires relatively little interpersonal interaction-should be particularly likely to move online when faced with job loss <ref type="bibr" target="#b79">(Tambe and</ref><ref type="bibr">Hitt 2010, 2012)</ref>.</p><p>Our work contributes to prior research on the gig economy in several notable ways. First, and most directly, we examine the potential role of gig-economy platforms in absorbing offline unemployment shocks, as these digital platforms offer a novel alternative for workers who might otherwise experience lengthier spells of unemployment, or who might have to migrate to another location in search of job opportunities <ref type="bibr" target="#b2">(Agrawal et al. 2013</ref><ref type="bibr" target="#b17">, Burtch et al. 2018)</ref>. Whereas prior research on the gig economy has focused on the value of flexibility (e.g., <ref type="bibr">Chen et al. 2017, Mas and</ref><ref type="bibr" target="#b62">Pallais 2017)</ref>, particularly across genders <ref type="bibr" target="#b23">(Cook et al. 2018)</ref>, this study considers how the strength of the local labor market corresponds to worker participation in the gig economy and what factors moderate that relationship, in terms of various population characteristics (going beyond gender, to age, education, etc.) as well as aspects of the local context (e.g., internet access).</p><p>Our results also contribute to the growing stream of literature on online labor markets and the interplay between online and offline channels of employment. The prior literature has largely focused on the role of information asymmetry as a driver of employer preferences (e.g., <ref type="bibr" target="#b51">Kokkodis and Ipeirotis 2015</ref><ref type="bibr" target="#b57">, Lin et al. 2016</ref><ref type="bibr" target="#b18">, Chan and Wang 2018)</ref> and how platform design can enhance market efficiency <ref type="bibr" target="#b44">(Hong et al. 2016</ref><ref type="bibr" target="#b45">, Horton 2017)</ref>. Our work offers a first effort to understand how activity in the offline labor market corresponds to online occurrences. In this sense, our work contributes to prior literature on the interplay between online and offline channels in the context of labor, which has heretofore focused on implications for retail <ref type="bibr" target="#b30">(Forman et al. 2009)</ref>, advertising <ref type="bibr" target="#b34">(Goldfarb and Tucker 2011)</ref>, and financial services <ref type="bibr" target="#b4">(Alyakoob et al. 2018)</ref>. Our study suggests that worker migration to online labor markets may substitute for traditional, physical labor migration <ref type="bibr" target="#b86">(Zhao 1999)</ref> because online labor markets are borderless and have low barriers to entry.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.">Related Literature</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.1.">The Gig Economy</head><p>Research on the gig economy has recently advanced on several fronts. Some studies consider the ethical and moral aspects of employment in the gig economy <ref type="bibr" target="#b60">(Malhotra and</ref><ref type="bibr">Van Alstyne 2014, Westerman 2016)</ref>, noting that these business models have their downsides-for example, the elimination of worker benefits and regulatory protection. Others have explored the behavior of consumers <ref type="bibr" target="#b27">(Edelman and Luca 2014</ref><ref type="bibr" target="#b69">, Rhue 2015</ref><ref type="bibr" target="#b56">, Liang et al. 2016</ref>) and issues of market design <ref type="bibr" target="#b31">(Fradkin 2013</ref><ref type="bibr" target="#b26">, Deng at al. 2016</ref><ref type="bibr">, Hong et al. 2016)</ref>. However, perhaps the largest body of work has examined the socioeconomic impacts of the gig economy (e.g., <ref type="bibr" target="#b24">Cramer and Krueger 2016</ref><ref type="bibr" target="#b85">, Zervas et al. 2017</ref><ref type="bibr" target="#b17">, Burtch et al. 2018)</ref>, demonstrating various benefits of gig-economy digital platforms for society, such as reductions in alcohol-related motor vehicle accidents <ref type="bibr" target="#b39">(Greenwood and Wattal 2017</ref>) and traffic congestion <ref type="bibr" target="#b55">(Li et al. 2016)</ref>.</p><p>Some nascent work has started to consider the supply of workers in online labor markets, examining where they come from and their potential motives. Research on labor supply in the gig economy is meaningful and important because worker characteristics and motives can have direct implications for the long-term growth and sustainability of these markets. Early work in this domain has largely taken the form of industry surveys, reports, and case studies (e.g., <ref type="bibr" target="#b63">Milkman and Ott 2014</ref><ref type="bibr" target="#b61">, Manyika et al. 2016</ref><ref type="bibr" target="#b70">, Rosenblat 2016)</ref>. As one example, <ref type="bibr" target="#b61">Manyika et al. (2016)</ref> report descriptive statistics on who participates in the gig economy, documenting that an estimated 160+ million individuals participate in this sector across the United States and European Union, broadly classifying them within a two-by-two matrix of willing versus unwilling participants and those who rely on gig work for primary versus secondary (supplemental) income. They note that a substantial fraction (30%) of workers earn income via gig work out of necessity (because of a lack of better employment options). Notably, however, a smaller set of recent studies have adopted econometric approaches to examine, specifically, the relationship between wages and labor supply in the gig economy <ref type="bibr">(Chen and</ref><ref type="bibr">Sheldon 2015, Angrist et al. 2017)</ref>.</p><p>Perhaps the most closely related prior work is that of <ref type="bibr" target="#b17">Burtch et al. (2018)</ref>, who study the arrival of gigeconomy employment options in a local market and the effect their arrival has on local entrepreneurial activity. Those authors found that the gig economy siphons off individuals who would otherwise have engaged in entrepreneurship out of necessity, presumably because of a lack of better employment options. Our research extends this work in a number of ways. First, whereas <ref type="bibr" target="#b17">Burtch et al. (2018)</ref> theorize a connection between gig-economy participation and a lack of traditional job options, that relationship is the direct focus of the present work. Second, whereas <ref type="bibr" target="#b17">Burtch et al. (2018)</ref> examine gig-economy services for relatively unskilled labor (drivers), our study shows that these relationships also generalize to highly skilled, IT-related workers (e.g., software development, graphic design), who, we might expect, would have an easier time locating a new employer (perhaps in a different city). Third, we explore a number of moderating factors that characterize the local labor pool or work environment that amplify or attenuate the relationship-namely, population demographics (i.e., age, gender, education attainment), social structure (i.e., geographical dispersion of the social connections), and technological infrastructure (i.e., broadband internet access), which provide a more nuanced understanding of the association between unemployment and online gig work.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.2.">Online Labor Markets</head><p>Online labor markets offer several benefits to employers, relative to traditional offline markets <ref type="bibr" target="#b2">(Agrawal et al. 2013)</ref>. Online markets generally lower the cost of search and contracting, enabling access to a larger pool of workers. Given the generally larger volume of potential transaction partners, a central focus of market operators is on managing employer-worker matching. Matching is typically a two-step process wherein workers engage in search to identify a project of interest and then compete for the job in a reverse auction against other workers <ref type="bibr">(Asker and</ref><ref type="bibr">Cantillon 2008, 2010)</ref>. Employers evaluate the pool of bidders and select a winner based on price, reputation, experience, and skills (e.g., <ref type="bibr" target="#b51">Kokkodis and</ref><ref type="bibr">Ipeirotis 2015, Lin et al. 2016)</ref>. Information asymmetry between employers and workers is generally higher online, given the semianonymous nature of transactions. Accordingly, these platforms leverage various IT-based mechanisms to facilitate trust and mitigate asymmetries, such as reputation systems and employee monitoring technologies <ref type="bibr" target="#b51">(Kokkodis and Ipeirotis 2015</ref><ref type="bibr" target="#b56">, Liang et al. 2016</ref><ref type="bibr" target="#b57">, Lin et al. 2016)</ref>.</p><p>Although remote work has grown more prevalent in recent years, in traditional (offline) employment, geography remains a particularly significant impediment to a job search <ref type="bibr" target="#b87">(Zimmermann 2009)</ref>. Depending on the life stage of the worker, relocation may involve selling and buying a house, a spousal job search, moving children to a new school, and so on <ref type="bibr">(Todaro 1969, Katz and</ref><ref type="bibr" target="#b49">Stark 1986)</ref>. These are actions that are costly from both financial and social perspectives. As a result, offline migration is likely to take place only when the expected benefit of taking a new job outweighs the combined financial and social costs. With online labor markets, however, entering the market is relatively costless, as this entails simply creating a user account. Moreover, placing bids on posted projects requires little additional effort. Work is typically performed in an on-demand fashion, typically remotely <ref type="bibr" target="#b43">(Hong and Pavlou 2017)</ref>, implying a great deal of flexibility relative to offline employment alternatives. Indeed, <ref type="bibr" target="#b20">Chen et al. (2017)</ref> showed that an Uber-style arrangement offers workers flexibility in both setting a customized work schedule and also adjusting that schedule throughout the day. Specifically, <ref type="bibr" target="#b20">Chen et al. (2017)</ref> examine the ways in which drivers utilize this real-time flexibility and estimate the driver surplus that flexibility generates. In another related paper, <ref type="bibr" target="#b62">Mas and Pallais (2017)</ref> estimate that workers are willing to sacrifice 20% of their wages to avoid a schedule that allows employers to request them to work on short notice. <ref type="bibr" target="#b62">Mas and Pallais (2017)</ref> also estimate that workers would be willing to sacrifice 8% of their wages to work from home. Many employers now accept working from home as a viable work arrangement, because field evidence has shown that work-from-home policies can improve employee productivity and retention <ref type="bibr" target="#b16">(Bloom et al. 2014)</ref>.</p><p>Given the relatively low barriers of entry and participation in online labor markets, faced with a sudden lack of traditional employment, many individuals might seek work online, at least in the short term. However, because this online work lacks fringe benefits, such as health insurance, and because it does not hold the promise of long-term job security, workers may ultimately choose to return to the offline labor market once new employment opportunities in the local economy can be identified. Notably, this intuition has been proposed by the McKinsey Global Institute, which reports that the majority of workers in online labor markets tend to treat the work as temporary and as a supplement to traditional employment <ref type="bibr" target="#b61">(Manyika et al. 2016</ref>). Bearing the above in mind, it is also possible that unemployment shocks could conceivably lead to a decline in online labor supply. Again, many workers operate in the gig economy to derive only supplemental, secondary income. Accordingly, when faced with the loss of a primary income source, these workers may reduce their participation in the online labor market as they refocus their efforts on identifying new primary (offline) employment. Thus, unemployment shocks may have a variety of effects on the supply of online labor, operating at either the intensive or extensive margins-that is, in terms of the number of active workers or their bidding activities, respectively.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.">Data, Identification, and</head><p>Model Specifications</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.1.">Data and Measures</head><p>We analyzed a unique data set combining proprietary data from a leading online labor market with countylevel data on unemployment and mass layoffs from the Bureau of Labor Statistics, as well as a variety of county-level measures drawn from other publicly available data sources. The data from the online gig economy platform span 2004 through 2010. We obtained records of all users (workers and employers) residing in the United States during this period, including users' self-reported locations based on their billing addresses as well as the records of all workers' project bids along with associated employer and project details. The constructed data contain the complete information of each user in the observation window, as well as time stamps associated with every bid and project posting on the platform. We mapped user addresses to counties, our geographic unit of analysis, based on zip code to county crosswalk files supplied by the U.S. Census Bureau. Upon observing any bidding activity, we flagged a worker as active within a given year on the platform. We thus constructed a countyyear panel of active worker and bid volumes on the platform.</p><p>Our key independent variables are based on countylevel annual unemployment rate measures, obtained from the BLS. The BLS reports historical, seasonally adjusted unemployment statistics for public use for each county and year-the Local Area Unemployment Statistics. 3 The key dependent variables (active workers and number of bids) in our estimations are intended to capture the extent and intensity of participation on the gig economy platform, over time, t, across counties, c. We also calculated the total volume of projects posted by employers located in a county, c, at time t. 4 Descriptive statistics are reported in Table <ref type="table" target="#tab_0">1</ref>. The average number of bids submitted by workers in a county-year over our period of observation is approximately 48, and the average number of active workers is around five. Given that a typical project in our sample is valued at around $750, the total dollar value associated with worker bids in a given year is over $100 million across the entirety of the United States.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2.">Empirical Strategy</head><p>The goal of the empirical analysis is to quantify the relationship between offline unemployment and the supply of online labor on the platform. Empirical identification in this context is clearly a challenge, given the various possible sources of potential confounding. First, relatively stable features of a county (e.g., proximity to industry clusters, labor market, local industry characteristics) may systematically affect both unemployment and participation in the gig economy. Second, online labor supply and offline employment may be jointly subject to unobserved temporal trends and macro socioeconomic factors. For example, these measures may be affected by seasonality or media coverage of the particular platform. Third, unobserved dynamic factors that are specific to a county may play a role-for example, access to financial resources.</p><p>We can reasonably address the former two categories of potential confounders with the inclusion of location and time fixed effects. The last concern, dynamic unobservable confounds, is more challenging. We tackle this in two ways. First, we consider relevant dynamic controls. Second, we draw on a plausibly exogenous instrumental variable, namely a Bartik instrument <ref type="bibr" target="#b12">(Bartik 1991</ref><ref type="bibr" target="#b10">, Autor and Duggan 2003</ref><ref type="bibr" target="#b15">, Bertrand et al. 2015)</ref>. Bartik shift-share instruments are a common approach to identifying unemployment effects in the labor economics literature. The intuition behind the shift-share instrument is that it isolates local labor demand from changes in local labor supply by forecasting local industry employment growth solely based on employment growth across industries at the national level <ref type="bibr" target="#b35">(Goldsmith-Pinkham et al. 2018)</ref>. Many studies adopt this instrument (e.g., <ref type="bibr" target="#b10">Autor and Duggan 2003</ref><ref type="bibr" target="#b3">, Aizer 2010</ref><ref type="bibr" target="#b15">, Bertrand et al. 2015)</ref>. For example, <ref type="bibr" target="#b50">Katz and Murphy (1992)</ref> leverage shift-share instruments to show that changes in the relative wages earned by females (versus males) and the educated (versus uneducated) can be related to exogenous variation in the demand for workers of a particular gender or education level and, conversely, a decline in demand for workers who lack those characteristics. More recently, Schaller (2016) leveraged shift-share instruments to identify exogenous variation in the demand for male versus female workers and to estimate the effect of each on local birth rates. She demonstrated that the former causes increased birth rates, whereas the latter causes a decline. <ref type="bibr">Page et al. (2017)</ref> employ shift-share instruments in a similar fashion to identify the effect on child health in a location.</p><p>We construct our shift-share measure as an instrument for county-level unemployment rates. Specifically, as detailed in Equation ( <ref type="formula">1</ref>), the instrument is a forecast of the expected variation in aggregate labor market demand for county c in year t, based on a combination of preexisting industry shares in county c, within a prior reference period (2003, in this case, before our panel begins), and observed year-overyear national employment growth for each industry (excluding the focal county). This forecast reflects the expected natural variation in labor demand across industries in a particular county, as distinct from any shifts in industry-specific labor supply-for example, because of labor migration, government investments, or any other local factors. In Equation (1), µ c,i,t 0 is the employment share of industry i in county c for the base year ( <ref type="formula">2003</ref>), and Emp -c,i,t is the national employment level for industry i in year t, excluding employment from county c. Thus,</p><formula xml:id="formula_0">Emp -c,i,t -Emp -c,i,t-1 Emp -c,i,t-1</formula><p>captures the year-over-year national employment growth (excluding county c) in industry i, year t. Summing over the industry-specific multiples of the reference period share in county c and national year-over-year growth, we arrive at an aggregate forecast for county c's employment rate based on presumably exogenous national trends in industry labor demand:</p><formula xml:id="formula_1">DemandShock c,t ∑ I i 1 µ c,i,t 0 ( Emp -c,i,t -Emp -c,i,t-1 Emp -c,i,t-1</formula><p>)</p><p>.</p><p>(1)</p><p>We construct the instrument using data from the U.S. Census, which maintains a searchable database of industry-specific employment measures at the countyyear level. 5 Our first-stage regression shows a high correlation between our instrument and a county's unemployment rate, indicating that the instrument relevance criterion is clearly met (ρ = -0.52, p &lt; 0.001).</p><p>Note that the instrument is based on exogenous forecasts of expected employment, in lieu of the unemployment, hence the negative correlation between the instrument and the unemployment rate.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.3.">Econometric Specification</head><p>We estimate a two-stage least squares (2SLS) regression, as reflected by Equations ( <ref type="formula" target="#formula_2">2</ref>) and (3). Here, Equation (2) reflects our first-stage regression, wherein Unemploy-mentRate c,t is instrumented by ShiftShare c,t . Equation (3) reflects the second-stage regression. The raw count measures for active users and bids are incremented by one unit and log transformed-that is, ln(x + 1):</p><formula xml:id="formula_2">UnemploymentRate c,t β 0 + β 1 × ShiftShare c,t + β 2 × log Population c,t + β 3 × log Projects c,t + α c + τ t + ε c,t ,<label>(2)</label></formula><p>LaborSupply c,t</p><formula xml:id="formula_3">β 0 + β 1 × ÛnemploymentRate c,t + β 2 × log Population c,t + β 3 × log Projects c,t + α c + τ t + ε c,t .<label>(3)</label></formula><p>.</p><p>Here, LaborSupply reflects our outcome measures (active users or number of bids, which we analyze in separate regressions), c indexes counties, t indexes years, α c is a vector of county fixed effects, and τ t is a vector of time fixed effects. Because online labor markets are primarily demand driven (job postings from employers), besides the common demand captured by τ t , we may expect project availability from a local area to have an effect on the volume of bids submitted by workers in the same area, because of home bias <ref type="bibr" target="#b43">(Hong and Pavlou 2017)</ref>. Accordingly, we incorporate a control for the volume of posted projects from employers located in the same county, in a given year. Finally, we include a control for the log county-level population over time, with ε c,t being the idiosyncratic error term. Note that the estimates are robust to the exclusion of project and population controls.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.">Results</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.1.">Instrumental Variable Regression</head><p>We employ a panel two-stage least squares estimator <ref type="bibr" target="#b5">(Angrist and Pischke 2008)</ref>  <ref type="table" target="#tab_4">4</ref> provides the definitions), which we merged with our panel of worker activity on the platform and unemployment rates. Note that data on some of these variables are not available for the entirety of our study period, and some measures are not available for the entire set of counties. We provide descriptive statistics for these variables in Table <ref type="table" target="#tab_5">5</ref>.</p><p>Specifically, we consider the moderating influence of a number of county-level demographic characteristics (age, gender, educational attainment), geographic dispersion of social connections held by residents of a county, and local infrastructure (broadband internet access). In terms of the demographic characteristics, we first consider worker age, noting that the digital divide literature has found that older citizens are less likely to adopt and use the internet <ref type="bibr" target="#b1">(Agarwal et al. 2009</ref><ref type="bibr" target="#b81">, Wattal et al. 2011)</ref>. Second, we consider worker gender, because recent work suggests that women are systematically more likely to prefer flexible working arrangements (Ciarniene and Vienazindiene 2018), and there is anecdotal evidence that a greater proportion of workers in online labor markets are female <ref type="bibr" target="#b32">(Gandia 2012)</ref>. Third, we adopt education, which reflects the percentage of a county's population holding at least a bachelor's degree in the year 2012. The rationale for this moderator is that, unlike many gigeconomy platforms offering basic services, such as Uber or Lyft, online labor markets like Freelancer and Upwork focus on skilled labor (e.g., software development, graphical design, writing and content, and data management). Thus, posted jobs typically require knowledge and education beyond the high school level. We expect that counties with a more educated workforce will exhibit stronger gig-economy participation rates. Fourth, we examine the role of broadband internet access because it is essential to participating in the gig economy. We expect greater internet access to amplify the unemployment to gigeconomy participation relationship. We consider a measure of internet access, based on data from the Federal Communications Commission, which is the count of the total number of residential broadband internet service providers in a county.</p><p>Finally, we consider the role of geographic dispersion of county residents' social connections, measured as the proportion of Facebook friend connections that reside nearby versus at a distance <ref type="bibr" target="#b11">(Bailey et al. 2018)</ref>. Prior work on social network theory suggests that there is a positive relationship between workers' social connections and their ability to find work in the offline labor market <ref type="bibr" target="#b59">(Lin 2002</ref><ref type="bibr" target="#b65">, Mouw 2003)</ref>. Previous literature notes that social connections are particularly important in job search <ref type="bibr" target="#b37">(Granovetter 1977</ref><ref type="bibr" target="#b58">, Lin 1999</ref>). However, the viability of resulting job opportunities depends on their geographic accessibility; that is, the value of social connections for job acquisition will depend on whether the jobs they facilitate are housed in locations accessible via a reasonable commute. Prior work has determined that the likelihood of workers engaging in telework is a direct function of commuting distance <ref type="bibr">(Helminen and Ristim äki 2007)</ref>.   <ref type="bibr">(Helminen and Ristim äki 2007)</ref>, we focus on the proportion of social connections residing within 50 miles. Note that we observe similar results using a wider radius of 100 miles.</p><p>We incorporate these moderation effects into our instrumental variable specification as interaction terms with the unemployment variable. Note that for education, broadband access, and share of friendship ties that are local, the main effects are omitted because our measures are captured at only a single point in time. In these new models, because the unemployment rate and its interaction with any moderator will both be endogenous, we follow the approach detailed by <ref type="bibr" target="#b84">Wooldridge (2010)</ref>. Specifically, we use the original shift-share instrument noted earlier, as well as its interaction with each moderator, to instrument for both the unemployment rate and the respective interaction terms. To enable a straightforward interpretation of the main and interaction effects, we first mean centered all moderating variables before constructing the interaction terms.</p><p>Tables <ref type="table" target="#tab_6">6</ref> and<ref type="table" target="#tab_7">7</ref> report the findings for the moderation effects, for both outcomes of interest, respectively. We observe that the positive effects of unemployment in a county on both the number of active workers residing in that county and bids submitted by workers in that county are attenuated by population age, such that the connection between offline unemployment and gigeconomy participation is weaker when the average age is higher. Next, we find that counties with a higher ratio of female workers exhibit a stronger relationship between unemployment and gig-economy participation. When it comes to education, we find a positive interaction effect, such that counties with a more educated workforce exhibit a stronger tendency to go online in response to unemployment. Furthermore, we observe that broadband internet access positively moderates the relationship, such that workers in counties with greater internet access are more likely to actively participate in online labor markets in response to local unemployment. Finally, and most notably, in line with the social network theory, we observe that the proximity of the county residents' social connections attenuates the effect of unemployment, such that local unemployment shocks exhibit a weaker association with the supply of online labor arising from the same location, when the worker has a higher share of social connections who are local residents.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.3.">Robustness Checks</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.3.1.">Additional Controls and State/Year Fixed Effects.</head><p>We assessed the robustness of our instrumental variable regressions to the inclusion of additional control variables, as well as to the inclusion of state/year fixed effects. The additional control variables are introduced only as robustness checks, primarily because many of the variables are characterized by a significant degree of missingness because they are available for only a subset of time periods and counties. These control variables include factors like household debt measures and proxies for access to home equity, which reflect the extent of financial pressure residents of a county might experience as a result of unemployment  (home equity, e.g., often serves as a financial cushion for a typical household in times of distress). The inclusion of state/year fixed effects has the benefit of controlling for market-wide temporal trends at the subnational (state) level. The results of these additional analyses are reported in Online Appendix A, where we observe results largely consistent with our focal estimations.</p><p>4.3.2. Unemployment due to Mass Layoff Events. We next sought to establish the robustness of our instrumental variable results through alternative empirical strategies. Our first effort in this regard leveraged data on mass layoff events, defined as single-firm layoffs of at least 50 individuals, which the BLS reported up until 2013. 7 Mass layoffs have been argued to provide plausibly exogenous variation in local unemployment rates because they typically arise unexpectedly, at least from the perspective of local business operators <ref type="bibr" target="#b29">(Fackler et al. 2018)</ref>. In support of this claim, <ref type="bibr" target="#b13">Bates (2005)</ref> and <ref type="bibr" target="#b41">Headd (2003)</ref> reported that fully one-third of firms experiencing a mass layoff event in their sample were viewed as successful by their operators immediately preceding a mass layoff. <ref type="bibr" target="#b29">Fackler et al. (2018)</ref> further point out that if the associated business failures or stressors were anticipated or salient to business owners, they would likely respond with more gradual layoffs prior to a complete shutdown of an operating location. However, in the majority of mass layoff instances, such anticipatory downsizing is rarely observed. The Mass Layoff Statistics (MLS) data include yearly, countylevel counts of the number of individuals filing for unemployment insurance as a result of a verified mass layoff event. Based on the county-level measure, we construct a mass layoff-specific unemployment measure-the volume of individuals who experience job loss specifically because of a mass layoff (in the 1,000s)-which we merge into our focal panel.</p><p>The MLS program also provides records of industryspecific mass layoff events on a monthly basis, though only at the state level. This robustness check is useful, not only as a secondary validation of our primary findings, but also because it allows us to explore heterogeneity in the relationship between unemployment and gig-economy participation across offline industries. Online labor markets, and the one we study in particular, typically enable work in IT-related services, such as software development, content development, and graphical design. Therefore, whereas we might expect mass layoff events in IT-related industries to associate with online labor market participation, we would expect smaller or null associations with mass layoffs in non-IT industries, such as construction, manufacturing, and food. The MLS data are available at only the state level, and thus the analysis is less granular in a geographic sense. We leverage this data to construct a second, separate panel of freelancer activity by state, which we then merge with industryspecific counts of state-year-month mass layoff events. We estimate the relationship between our countylevel mass layoff unemployment measure (count of people in 1,000s) and our two outcome measures, active users and project bids from workers residing in a county-year. This measure captures an assumedly exogenous subset of the actual unemployment observed in a county. We estimate the specification reflected by Equation (4). We then leverage our statemonth panel of IT-specific mass layoff events, reporting separate sets of regressions, by industry, for our two outcome measures of worker activity. We estimate the relationship with a similar regression specification, controlling for county and time (i.e., year/month) fixed effects:</p><formula xml:id="formula_4">LaborSupply c,t β 0 + β 1 × log MLUnemployed c,t + β 2 × log Population c,t + β 3 × log Projects c,t + α c + τ t + ε c,t .<label>(4)</label></formula><p>The results of our county-level mass layoff regressions are reported in Table <ref type="table" target="#tab_8">8</ref>, where we observe results consistent with those reported in our instrumental variable regressions earlier. Specifically, we observe that the number of individuals claiming unemployment insurance because of mass layoffs is positively associated with the number of active workers residing in the same county, as well as the number of bids submitted by those workers. A onestandard-deviation change in MLUnemployed is associated with a 0.44% increase in the number of active users residing in the same location and a 0.66% increase in the number of total bids submitted by workers in the same location. Although the estimated coefficients are small, it must be kept in mind that workers who are laid off will have been employed in a variety of industries that require skills not particularly amenable to work on the particular platform, for example, construction.</p><p>The results of our state-level, industry-specific mass layoff event regressions are presented below in Tables 9 and 10, where we see that the mass layoff events for IT-related industries are positively associated with the number of active workers and volume of bids submitted by those workers, originating from the same state, on the gig economy platform. However, we find insignificant associations between online gig work and mass layoffs in non-IT industries, including construction, manufacturing, and food. Again, these results are collectively consistent with our main findings reported earlier.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.3.3.">Difference in Differences: 2008 Financial Crisis.</head><p>We conducted one other robustness check, based on the major financial crisis of 2008 (reported in Online Appendix B). In that analysis, we treat the financial crisis as a natural experiment, which drove heterogeneous increases in county-level unemployment rates across the United States. Because the 2008 financial crisis was, in fact, a one-time cross-sectional shock, to which all counties in the Unites States were exposed, we have no natural treatment-control group that we can leverage for the analysis. Instead, we employ an approach analogous to that used by <ref type="bibr" target="#b53">Kummer et al. (2020)</ref>, defining a treatment group retrospectively, based on observed increases in county unemployment following the onset of the crisis (i.e., we somewhat arbitrarily define the treatment group to be the top quintile of counties, in terms of exhibited increases in unemployment between 2007 and 2009, and we take the remaining counties as a control).</p><p>The primary value of this analysis is that, conditional on validating the parallel trends assumption by estimating period-by-period dynamic difference-indifference coefficients, it enables us to assess the dynamics of changes in unemployment rates following the onset of the crisis. Notably, upon estimating the dynamic difference-in-differences model, we observed no violation of the assumption of parallel trends. At the same time, post-financial-crisis dynamics in unemployment rate differences initially grew and then reverted downward after a time. This latter observation is notable because it suggests that a substantial portion of workers who migrated online with the financial crisis began to revert to traditional offline employment once the economy began to improve. Of course, this interpretation should be taken with a great deal of caution. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.3.4.">Alternative Explanation-Cannibalization of</head><p>Competitor Market Share. We assessed the possibility that our results may have been driven by a spurious correlation due to confounded cannibalization of market share from competitors (most notably oDesk/ Upwork) over the years, especially after the financial crisis. To shed light on this possibility, we looked at national trends in indicated interest in the focal platform and Upwork, as demonstrated by Google Search Trends. We recovered the time-series interest in two topics, between 2004 and 2010, namely, the topic associated with "Upwork" and the topic associated with the focal platform's web address. Note that the notion of a topic on Google Trends is distinct from a keyword or query. A topic reflects interest in a subject based on the aggregation of many queries, all of which are semantically linked to the topic name. Moreover, topics are useful because they aggregate over semantically related terms, such as the names of other companies associated with the topic, for example, firms that were acquired by either company. Below, we draw a comparison of trends in interest for the focal platform and Upwork across the United States over our period of study. As can be seen, 8 Upwork experienced a fairly consistent trend of growth in interest over the period of study (including a spike in 2008, perhaps due to the  financial crisis), yet interest in the focal platform did not grow in the same fashion. This observation is inconsistent with the idea that new registrations on the focal platform, or participation on the platform among preexisting users, were cannibalized from oDesk/ Upwork. To the contrary, it appears the reverse may have been taking place.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.">Discussion</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.1.">Key Findings</head><p>Online labor markets, a substantial component of the gig economy, have contributed significantly to the U.S. economy in recent years <ref type="bibr" target="#b57">(Lin et al. 2016</ref><ref type="bibr" target="#b61">, Manyika et al. 2016)</ref>. Adding to the prior literature that explores the drivers of gig-economy growth in recent years, we consider the additional role of financial stressors, which may provide sufficient incentive for workers to engage with the online gig economy as a means of supplementing their income. Thus, our work examines the degree to which local unemployment shocks drive participation in the gig economy and, more specifically, the supply of labor on a leading online labor market. We offer evidence in support of the hypothesis that links county-level unemployment rates to county-level worker participation on the focal platform. Based on econometric analyses of the unique archival data set, we demonstrate a consistent set of results that confirm our expectations. Specifically, we estimate that, on average, a 1% increase in a county's reported unemployment rate is associated with an approximate 21.8% increase in the number of residents active on the platform and an approximate 15% increase in the total volume of bids submitted by those residents, translating to approximately $1.8 million in additional annual wages earned on the platform. Beyond the main relationship, we also report on various sources of heterogeneity, related to the features of the local labor pool and internet infrastructure. First, our examination of moderating factors highlights that the tendency of workers to shift online when faced with local unemployment shocks also varies with demographic features and aspects of the local infrastructure. Specifically, counties with better internet access, with residents that have a lower proportion of geographically proximate social connections, and with a younger, more female, and more educated population are most likely to experience gig-economy opt-in following local unemployment shocks. Importantly, whereas some of these factors may be influenced by policy makers (e.g., education levels may be increased via training initiatives, and internet access may be improved through investment in internet infrastructure), other factors are not (e.g., the gender mix and age of the local population, or the proximity of the residents' social connections). This finding suggests that downstream divisions in other respects are likely to manifest, in terms of which populations are more or less likely to engage in labor migration following local unemployment shocks.</p><p>Our first robustness check, involving mass layoff events at the local county level, showed that unemployment events, specifically in the information, data, and technical services sectors, were most strongly associated with increases in online labor market participation. This finding speaks to the significant heterogeneity in the attractiveness of various gigeconomy services, which is intuitively tied to the fit between industry requirements and a worker's skill set. Accordingly, it is reasonable to expect that other gig markets, such as Uber or Thumbtack, may attract different sets of workers, and thus that the associations we observe depend on a clear alignment between the online labor market and the offline industry experiencing a downturn. Another important distinction, of course, is that Uber, for example, requires that service providers have access to tangible assets, that is, cars. This differential aspects of certain gig-economy services would also likely influence which workers are more or less likely to opt into the online labor market when faced with financial stressors in the offline world.</p><p>Finally, our difference-in-differences estimation, related to the 2008 financial crisis (Online Appendix B) provides us with some insights into the dynamics of the relationship between offline unemployment and participation in online gig work. Those dynamic estimates indicate that, to some degree, gig-economy participation contracted in tandem with recovery from the financial crisis. Accordingly, it seems that some workers become less active in online labor markets once financial stressors dissipate, perhaps returning to traditional offline employment, which is likely to be more secure. This finding is consistent with the results of <ref type="bibr" target="#b17">Burtch et al. (2018)</ref>, who conclude that many workers who opt into driving for Uber do so primarily because they have no better alternative. Once a better alternative eventually presents itself, workers revert to offline employment. At the same time, we do not observe a complete contraction, suggesting that for a substantial portion of workers, exposure and experience with the gig economy are sufficient to maintain their engagement in the longer term, even in the context of improvements in the local economy. Of course, future work is needed to better understand the dynamics of gig-economy participation, particularly with regard to churn and exit. 5.2. Contributions and Implications 5.2.1. Contributions to Research. This paper makes a number of contributions to the emerging information systems (IS) literature on online labor markets and, more broadly, the gig economy. First, this study contributes to related prior work by providing empirical evidence in support of the hypothesis that growth in the gig economy is at least partially attributable to economic downturns <ref type="bibr" target="#b2">(Agrawal et al. 2013</ref><ref type="bibr" target="#b46">, Horton 2019)</ref>. Our work suggests that the gig economy offers a novel alternative for workers who might otherwise physically migrate to a new location in search of traditional offline work. This is important because when local economic conditions worsen, geographic migration is not always an option-relocating is costly, and in the case of international migration, it may be very difficult to obtain a foreign work permit <ref type="bibr" target="#b36">(Gong et al. 2018)</ref>. Beyond the prior literature relating IT access to firm employment <ref type="bibr" target="#b9">(Atasoy et al. 2016)</ref>, our results show that the ability to conduct work in the gig economy provides opportunities to earn income through online labor markets. Although one might expect that those counties most struck by financial downturns would not be those likely to host online workers, our findings demonstrate that this is not the case. As IT-related jobs typically require less interpersonal interaction and often do not require workers to be physically on site, workers in the information, data, and technical services sectors are well positioned to enter online labor markets <ref type="bibr" target="#b79">(Tambe and</ref><ref type="bibr">Hitt 2010, 2012)</ref>. Also, whereas flexibility <ref type="bibr">(Chen et al. 2017, Mas and</ref><ref type="bibr" target="#b62">Pallais 2017)</ref> and its consequences <ref type="bibr" target="#b23">(Cook et al. 2018)</ref> have been a common theme of extant related research, this study focuses on how local economic conditions drive participation in the gig economy. Furthermore, extending prior work <ref type="bibr" target="#b1">(Agarwal et al. 2009)</ref>, our moderation results suggest a potential digital divide, in that internet access is critical to participation. That said, following our period of observation (i.e., post-2010), internet infrastructure has improved in much of the United States, which would suggest that this particular digital divide may be shrinking with time.</p><p>Second, our work extends prior research on online labor markets, most of which has tended to focus on one of two subjects: (1) the role of information asymmetry in determining employer preferences and job matching outcomes, for example, gender <ref type="bibr" target="#b18">(Chan and Wang 2018)</ref>, geographical distance <ref type="bibr" target="#b33">(Gefen and</ref><ref type="bibr">Carmel 2008, Hong and</ref><ref type="bibr" target="#b43">Pavlou 2017)</ref>, and worker reputation <ref type="bibr" target="#b64">(Moreno and Terwiesch 2014</ref><ref type="bibr" target="#b51">, Kokkodis and Ipeirotis 2015</ref><ref type="bibr" target="#b57">, Lin et al. 2016)</ref>; and (2) the importance of platform and feature design in enhancing platform efficiency, for example, bid visibility <ref type="bibr" target="#b44">(Hong et al. 2016)</ref>, worker capacity <ref type="bibr" target="#b45">(Horton 2017)</ref>, and ITenabled monitoring systems <ref type="bibr" target="#b56">(Liang et al. 2016)</ref>. Our work expands the scope of the literature, going beyond the microlevel dynamics within a specific online labor market, to study the role of off-platform, local economic conditions as an important driver of worker participation. Notably, our work thereby addresses recent calls for research into the digitization of labor to consider connecting online labor data with data on the characteristics of the offline local economy <ref type="bibr" target="#b2">(Agrawal et al. 2013)</ref>.</p><p>Third, this study contributes to the literature on online-offline channel interactions. For example, prior research in IS has considered the interaction between online and offline channels in the contexts of retailing <ref type="bibr" target="#b30">(Forman et al. 2009)</ref>, advertising <ref type="bibr" target="#b34">(Goldfarb and Tucker 2011)</ref>, and consumer financial services <ref type="bibr" target="#b4">(Alyakoob et al. 2018)</ref>. Our work presents an important consideration of an analogous interaction in the context of online labor and traditional (offline) employment. The labor economics literature has yet to devote adequate attention to the interaction between offline and online labor markets <ref type="bibr" target="#b2">(Agrawal et al. 2013)</ref>. Although the literature has considered a variety of factors that affect geographic labor migration decisions <ref type="bibr" target="#b80">(Todaro 1969</ref><ref type="bibr" target="#b49">, Katz and Stark 1986</ref><ref type="bibr" target="#b86">, Zhao 1999</ref><ref type="bibr" target="#b54">, Kunovich 2013</ref>), the factors considered-for example, worker safety, family separation, etc.-generally play no role in the case of borderless online platforms. Rather, the primary factors influencing a shift to the online workforce are those related to accessing and experimenting with new web-based technologies. Barriers to entry, which are relatively lower, are largely tied to internet connectivity and a willingness to build trust and bear the initial discomfort of purely computermediated transactions with semianonymous peers. Our findings indicate that there is a clear overlap of the support for the set of counties that saw job loss and the support for those counties that supplied workers to the online gig work platforms. This finding speaks to a broadening in the scope of potential paths of labor migration in the future, and thus the need to consider a broader set of determinants and impediments to labor mobility in the presence of the gig economy.</p><p>Our demonstration that unemployment shocks associate with many workers navigating toward the gig economy and online employment suggest at least two secondary effects worthy of future study. First, we might expect a reduction in offline, occupationrelated geographic labor migration. In the extreme, our results imply that the continued growth of online labor markets may lead to a decline in physical migration tied to job searches (e.g., rural to urban migration) and could even drive a reversal. Second, and relatedly, with the ability to find online work from anywhere, we might also expect a reduction in international remittances <ref type="bibr" target="#b0">(Adams and Page 2005)</ref>, a common practice among members of the diaspora, who relocate to take advantage of better employment opportunities in other locations.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.2.2.">Implications for Public Policy and</head><p>Practice. This study also holds both policy and managerial implications. With the advent of the internet and web technologies, when local economic conditions worsen and workers experience unemployment shocks, rather than reentering the traditional labor market, many workers now migrate to the gig economy, especially online labor markets. Failure to account for gigeconomy employment is an acknowledged blind spot of the BLS at the moment. The BLS first attempted to track temporary employment activity with the "Contingent and Alternative Employment Arrangements" supplement to the Current Population Survey in 1996. After a series of four survey executions over the following decade, funding for the supplement was eliminated. The BLS is now actively undertaking efforts to improve its measurement of these activities, having reintroduced the Current Population Survey supplement in May 2017. Monitoring these types of employment arrangements is of critical importance, because failure to do so may result in underestimation of true employment numbers. Given current estimates that one in three workers are now employed in the gig economy <ref type="bibr" target="#b74">(Soergel 2016)</ref> and the observation that between 54 million and 68 million independent workers are now operating in the United States <ref type="bibr" target="#b61">(Manyika 2016)</ref>, it would perhaps be beneficial for government reporting agencies to coordinate directly with the largest online labor platforms to arrive at an accurate accounting of the labor market and the current state of the economy, both federally and locally.</p><p>Finally, our findings indicate that digital platform operators, for example, online labor markets, should be attentive to shifts in the offline economy. Increases in online labor supply are desirable, but perhaps only to a point. A well-known downside of excessive geographic labor mobility is that it can lead to a glut in labor supply in certain locations. In online labor markets, this may translate to digital unemployment, price competition (and thus poorer wages), and a possible decline in general worker/user satisfaction. The degree of interconnectedness and complexity that now characterizes our economy and society enables rapid swings in the health of labor markets. As a downswing occurs in a particular region, digital platform operators, particularly those who operate purely virtual, borderless markets like Freelancer and Upwork, might seek to control the influx of new workers, perhaps instituting filters and prescreening tests to ensure that workers hold desirable, valuable skill sets, so that their bids will not merely add noise and inefficiency to the online labor market. Similarly, the quality of matching and recommendation algorithms is likely to grow more important if groups of new, inexperienced workers shift into the online labor market en masse.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.3.">Limitations and Future Research</head><p>This work is, of course, subject to some limitations. First, given that the data have been drawn from one particular gig-economy platform that hosts transactions of skilled labor, it is not clear to what degree our results directly generalize to other gig-economy platforms. Although it seems plausible that our estimates would generalize to other online labor markets such as Upwork, many platforms, such as Uber, Lyft, and Thumbtack, are not purely virtual in nature and may require quite different skill sets. That said, the findings of <ref type="bibr" target="#b17">Burtch et al. (2018)</ref>, that even geographically constrained gig markets absorb some unemployed and underemployed workers from local geographies, suggest a degree of commonality across gig-economy platforms in this regard. This makes sense when one considers that even geographically constrained gig-economy platforms facilitate efficient matching, reduced job search frictions, and flexible work schedules. Nonetheless, future work should explore the effects of local economic conditions on labor supply on a variety of gig-economy platforms, accounting for variation in worker and market characteristics. A related issue is that it is not clear to what degree our estimates could be appropriately scaled up, were we to consider the entirety of the gig economy.</p><p>Second, our analyses focused on the association between unemployment and participation in online labor markets, in terms of active workers and the number of bids submitted by those workers (an analog for the size of the labor pool and active job search), because these are typical economic indicators of interest in labor economics (e.g., <ref type="bibr" target="#b21">Chetty et al. 2011)</ref>. However, workers' migration to online platforms may occur in multiple ways. On the one hand, as the opportunity cost of an individual's time falls (because of a lack of paid remuneration), the individual may begin to spend more time online, not just for the purposes of job search or employment seeking, but for other reasons, for example, entertainment seeking through social media or streaming services. Alternatively, individuals may move online with the explicit goal of recouping lost wages. These alternative scenarios pose drastically different implications for the extent to which the online market is capable of absorbing offline unemployment shocks.</p><p>It is relatively well established that unemployed individuals do indeed spend more time online, generally <ref type="bibr">(Krueger and</ref><ref type="bibr">Mueller 2012). Indeed, Stevenson (2008)</ref> reports that internet use is associated with a greater likelihood of job switching and changes in the nature of job search, implying that some portion of this additional time spent online is quite likely attributable to job seeking or, perhaps, to online gig work. However, it remains unclear to what degree gig work is a purposeful focus versus a simple spillover effect of the additional time that unemployed individuals spend online. The magnitude of our wage estimates suggests that gig work is, indeed, a focus for at least a portion of the individuals who migrate online. Future research is needed to understand how these aspects are related to the entry into online gig work.</p><p>Third, it is important to bear in mind that any causal interpretation of our results depend on the validity of our shift-share instrument. Although it seems reasonable to believe that national trends in labor demand across industries should be independent of dynamic unobservable factors at the local county level, for example, trends in the shift toward internet use and online work, it remains possible that this may not be the case. Accordingly, our results should be interpreted with a degree of caution, and future research should further assess the causal nature of the relationships we have reported in this paper.</p><p>Finally, our study has focused on the role of local economic conditions in driving the supply of labor in the gig economy. One interesting question for future research is how the development of the gig economy and the remote, flexible working arrangements it affords may affect the local offline labor market. Although the scale of the gig economy was still relatively small in our period of study, recent growth among online labor options suggests that they may have produced material effects on traditional labor markets in recent years. In this vein, future work might consider, for example, how the entry of gig-economy platforms may influence offline labor supply and offline wages in particular industries.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6.">Concluding Remark</head><p>We quantify the relationship between local unemployment shocks and worker participation in an online labor market. Our results suggest that local unemployment shocks are associated with significant increases in online labor market participation. This relationship is stronger when unemployment derives from industries related to information, data, and technical services, and when it occurs in counties characterized by a younger, more female, more educated workforce, with better broadband internet access and a larger proportion of geographically distant social connections. This study makes a pioneering effort toward understanding the offline-online interactions in gig-economy participation and provides evidence that gig-economy platforms are integral components of the broader labor market. Ultimately, this implies that gig-economy platforms warrant careful and more extensive considerations in future research and policy making.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head>Table 1 .</head><label>1</label><figDesc>Descriptive Statistics of Variables in the Main Analysis</figDesc><table><row><cell>Variable</cell><cell>Mean</cell><cell>Std. dev.</cell><cell>Min</cell><cell>Max</cell></row><row><cell>UnemploymentRate</cell><cell>6.58</cell><cell>2.93</cell><cell>1.32</cell><cell>28.84</cell></row><row><cell>ShiftShare</cell><cell>0.00</cell><cell>0.03</cell><cell>-0.13</cell><cell>0.08</cell></row><row><cell>Active Workers</cell><cell>5.08</cell><cell>21.87</cell><cell>0.00</cell><cell>1065.00</cell></row><row><cell>Number of Bids</cell><cell>47.63</cell><cell>247.42</cell><cell>0.00</cell><cell>10792.00</cell></row><row><cell>Population</cell><cell cols="4">51,931.94 160,140.60 226.00 4,928,961.00</cell></row><row><cell>Projects</cell><cell>14.89</cell><cell>110.25</cell><cell>0.00</cell><cell>6580.00</cell></row></table><note><p>Note. Std. dev., Standard deviation.</p></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2"><head>Table 2 .</head><label>2</label><figDesc>Relationship Between Unemployment and Online Work (2SLS) Standard errors are clustered on counties. LM, Langrange multiplier.</figDesc><table><row><cell></cell><cell>(1) ln(Active workers)</cell><cell>(2) ln(Number of bids)</cell></row><row><cell>UnemploymentRate</cell><cell>0.218*** (0.032)</cell><cell>0.149*** (0.054)</cell></row><row><cell>log(Population)</cell><cell>2.132*** (0.205)</cell><cell>1.623*** (0.359)</cell></row><row><cell>log(Projects)</cell><cell>0.289*** (0.008)</cell><cell>0.409*** (0.015)</cell></row><row><cell>2005</cell><cell>0.111*** (0.013)</cell><cell>0.250*** (0.027)</cell></row><row><cell>2006</cell><cell>0.489*** (0.026)</cell><cell>0.849*** (0.047)</cell></row><row><cell>2007</cell><cell>0.647*** (0.028)</cell><cell>0.987*** (0.049)</cell></row><row><cell>2008</cell><cell>0.708*** (0.015)</cell><cell>1.225*** (0.028)</cell></row><row><cell>2009</cell><cell>0.099(0.113)</cell><cell>0.886*** (0.194)</cell></row><row><cell>2010</cell><cell>0.011(0.119)</cell><cell>0.728*** (0.205)</cell></row><row><cell>County fixed effects</cell><cell>Yes</cell><cell>Yes</cell></row><row><cell>Observations</cell><cell>20,288</cell><cell>20,288</cell></row><row><cell>R 2</cell><cell>0.543</cell><cell>0.405</cell></row><row><cell>Number of counties</cell><cell>2,900</cell><cell>2,900</cell></row><row><cell>Cragg-Donald Wald F</cell><cell>251.94</cell><cell>251.94</cell></row><row><cell>Kleibergen-Paap rk LM</cell><cell>107.54</cell><cell>107.54</cell></row><row><cell>Note.</cell><cell></cell><cell></cell></row></table><note><p>***p &lt; 0.01.</p></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_3"><head>Table 3 .</head><label>3</label><figDesc>First-Stage Results on this logic, when larger portions of county residents' social connections reside at a distance, we would expect to see a greater propensity for workers to opt into the online gig economy, as the offline job opportunities sourced through those connections are unlikely to be sustainable. To analyze this moderation effect, we obtained data on geographic dispersion of county residents' social connections on Facebook from Facebook Research. Because prior work has found that commuting distances in excess of 100 kilometers (~62 miles) typically result in workers' acquisition of additional job-proximate lodging</figDesc><table><row><cell>UnemploymentRate</cell></row></table><note><p><p>Note. Standard errors are clustered on counties. ***p &lt; 0.01.</p>Based</p></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_4"><head>Table 4 .</head><label>4</label><figDesc>Descriptions of Additional Variables This data set is not publicly available. Interested researchers may request data access via a research proposal to Facebook Research.</figDesc><table><row><cell>Variable</cell></row></table><note><p><p>c</p>See https://www.fcc.gov/general/form-477-county-data-internet-access-services. d</p></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_5"><head>Table 5 .</head><label>5</label><figDesc>Descriptive Statistics of Moderation Variables</figDesc><table><row><cell>Variable</cell><cell>Mean</cell><cell>Std. dev.</cell><cell>Min</cell><cell>Max</cell></row><row><cell>Avg_county_age</cell><cell>40.02</cell><cell>3.00</cell><cell>27.89</cell><cell>56.65</cell></row><row><cell>Female_ratio</cell><cell>0.50</cell><cell>0.02</cell><cell>0.30</cell><cell>0.57</cell></row><row><cell>Bachelor_or_higher</cell><cell>20.98</cell><cell>9.30</cell><cell>4.94</cell><cell>80.21</cell></row><row><cell>Broadband_providers</cell><cell>7.71</cell><cell>3.16</cell><cell>0.00</cell><cell>22.00</cell></row><row><cell>Share_friends_local</cell><cell>0.54</cell><cell>0.13</cell><cell>0.03</cell><cell>0.82</cell></row></table><note><p>Note. Std. dev., Standard deviation.</p></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_6"><head>Table 6 .</head><label>6</label><figDesc>Moderating Effects for Active Workers (2SLS)</figDesc><table><row><cell></cell><cell>(1)</cell><cell>(2)</cell><cell>(3)</cell><cell>(4)</cell><cell>(5)</cell></row><row><cell>UnemploymentRate</cell><cell>0.227***</cell><cell>0.215***</cell><cell>0.163***</cell><cell>0.173***</cell><cell>0.247***</cell></row><row><cell></cell><cell>(0.035)</cell><cell>(0.034)</cell><cell>(0.026)</cell><cell>(0.030)</cell><cell>(0.043)</cell></row><row><cell>UnemploymentRate × Avg_county_age</cell><cell>-0.011***</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell>(0.001)</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>UnemploymentRate × Female_ratio</cell><cell></cell><cell>0.517***</cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell>(0.170)</cell><cell></cell><cell></cell><cell></cell></row><row><cell>UnemploymentRate × Bachelor_or_higher</cell><cell></cell><cell></cell><cell>0.007***</cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell></cell><cell>(0.000)</cell><cell></cell><cell></cell></row><row><cell>UnemploymentRate × Broadband_providers</cell><cell></cell><cell></cell><cell></cell><cell>0.018***</cell><cell></cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell>(0.001)</cell><cell></cell></row><row><cell>UnemploymentRate × Share_friends_local</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>-0.239***</cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>(0.065)</cell></row><row><cell>Avg_county_age</cell><cell>-0.015</cell><cell cols="4">-0.115*** -0.092*** -0.087*** -0.134***</cell></row><row><cell></cell><cell>(0.023)</cell><cell>(0.022)</cell><cell>(0.017)</cell><cell>(0.018)</cell><cell>(0.024)</cell></row><row><cell>Female_ratio</cell><cell>5.557***</cell><cell>3.889**</cell><cell>6.508***</cell><cell>7.437***</cell><cell>6.704***</cell></row><row><cell></cell><cell>(1.784)</cell><cell>(1.688)</cell><cell>(1.523)</cell><cell>(1.562)</cell><cell>(1.997)</cell></row><row><cell>log(Population)</cell><cell>1.767***</cell><cell>1.965***</cell><cell>1.220***</cell><cell>1.541***</cell><cell>1.989***</cell></row><row><cell></cell><cell>(0.207)</cell><cell>(0.203)</cell><cell>(0.144)</cell><cell>(0.179)</cell><cell>(0.213)</cell></row><row><cell>log(Projects)</cell><cell>0.280***</cell><cell>0.286***</cell><cell>0.267***</cell><cell>0.270***</cell><cell>0.279***</cell></row><row><cell></cell><cell>(0.008)</cell><cell>(0.007)</cell><cell>(0.008)</cell><cell>(0.007)</cell><cell>(0.009)</cell></row><row><cell>2005</cell><cell>0.134***</cell><cell>0.136***</cell><cell>0.131***</cell><cell>0.132***</cell><cell>0.151***</cell></row><row><cell></cell><cell>(0.016)</cell><cell>(0.016)</cell><cell>(0.014)</cell><cell>(0.014)</cell><cell>(0.018)</cell></row><row><cell>2006</cell><cell>0.545***</cell><cell>0.542***</cell><cell>0.520***</cell><cell>0.522***</cell><cell>0.577***</cell></row><row><cell></cell><cell>(0.033)</cell><cell>(0.033)</cell><cell>(0.027)</cell><cell>(0.029)</cell><cell>(0.041)</cell></row><row><cell>2007</cell><cell>0.722***</cell><cell>0.723***</cell><cell>0.696***</cell><cell>0.695***</cell><cell>0.765***</cell></row><row><cell></cell><cell>(0.038)</cell><cell>(0.038)</cell><cell>(0.031)</cell><cell>(0.033)</cell><cell>(0.046)</cell></row><row><cell>2008</cell><cell>0.793***</cell><cell>0.809***</cell><cell>0.844***</cell><cell>0.827***</cell><cell>0.833***</cell></row><row><cell></cell><cell>(0.018)</cell><cell>(0.018)</cell><cell>(0.017)</cell><cell>(0.016)</cell><cell>(0.019)</cell></row><row><cell>2009</cell><cell>0.186</cell><cell>0.234**</cell><cell>0.472***</cell><cell>0.393***</cell><cell>0.188</cell></row><row><cell></cell><cell>(0.114)</cell><cell>(0.109)</cell><cell>(0.081)</cell><cell>(0.098)</cell><cell>(0.128)</cell></row><row><cell>2010</cell><cell>0.113</cell><cell>0.166</cell><cell>0.401***</cell><cell>0.333***</cell><cell>0.108</cell></row><row><cell></cell><cell>(0.119)</cell><cell>(0.114)</cell><cell>(0.086)</cell><cell>(0.103)</cell><cell>(0.136)</cell></row><row><cell>County FEs</cell><cell>Yes</cell><cell>Yes</cell><cell>Yes</cell><cell>Yes</cell><cell>Yes</cell></row><row><cell>Observations</cell><cell>20,288</cell><cell>20,288</cell><cell>20,288</cell><cell>20,288</cell><cell>20,288</cell></row><row><cell>R 2</cell><cell>0.541</cell><cell>0.548</cell><cell>0.602</cell><cell>0.587</cell><cell>0.530</cell></row><row><cell>Number of Counties</cell><cell>2,900</cell><cell>2,900</cell><cell>2,900</cell><cell>2,900</cell><cell>2,900</cell></row><row><cell>Cragg-Donald Wald F</cell><cell>113.06</cell><cell>108.26</cell><cell>158.95</cell><cell>116.53</cell><cell>85.43</cell></row><row><cell>Kleibergen-Paap rk LM</cell><cell>47.94</cell><cell>45.36</cell><cell>67.57</cell><cell>48.96</cell><cell>30.33</cell></row><row><cell cols="6">Notes. Standard errors are clustered on counties. FEs, Fixed effects; LM, Langrange multiplier.</cell></row></table><note><p>**p &lt; 0.05; ***p &lt; 0.01.</p></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_7"><head>Table 7 .</head><label>7</label><figDesc>Moderating Effects for the Number of Bids (2SLS) Standard errors are clustered on counties. FEs, Fixed effects. LM, Langrange multiplier.</figDesc><table><row><cell></cell><cell>(1)</cell><cell>(2)</cell><cell>(3)</cell><cell>(4)</cell><cell>(5)</cell></row><row><cell>UnemploymentRate</cell><cell>0.146**</cell><cell>0.139**</cell><cell>0.120**</cell><cell>0.119**</cell><cell>0.148**</cell></row><row><cell></cell><cell>(0.058)</cell><cell>(0.059)</cell><cell>(0.051)</cell><cell>(0.056)</cell><cell>(0.068)</cell></row><row><cell>UnemploymentRate × Avg_county_age</cell><cell>-0.006***</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell>(0.002)</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>UnemploymentRate × Female_ratio</cell><cell></cell><cell>0.312</cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell>(0.348)</cell><cell></cell><cell></cell><cell></cell></row><row><cell>UnemploymentRate × Bachelor_or_higher</cell><cell></cell><cell></cell><cell>0.003***</cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell></cell><cell>(0.001)</cell><cell></cell><cell></cell></row><row><cell>UnemploymentRate × Broadband_providers</cell><cell></cell><cell></cell><cell></cell><cell>0.009***</cell><cell></cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell>(0.002)</cell><cell></cell></row><row><cell>UnemploymentRate × Share_friends_local</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>-0.062</cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>(0.105)</cell></row><row><cell>Avg_county_age</cell><cell>0.011</cell><cell>-0.049</cell><cell>-0.043</cell><cell>-0.037</cell><cell>-0.058</cell></row><row><cell></cell><cell>(0.042)</cell><cell>(0.039)</cell><cell>(0.035)</cell><cell>(0.037)</cell><cell>(0.040)</cell></row><row><cell>Female_ratio</cell><cell>10.359***</cell><cell>9.346***</cell><cell>11.181***</cell><cell cols="2">11.516*** 11.307***</cell></row><row><cell></cell><cell>(2.920)</cell><cell>(3.166)</cell><cell>(2.940)</cell><cell>(2.865)</cell><cell>(3.159)</cell></row><row><cell>log(Population)</cell><cell>1.372***</cell><cell>1.491***</cell><cell>1.216***</cell><cell>1.290***</cell><cell>1.492***</cell></row><row><cell></cell><cell>(0.353)</cell><cell>(0.355)</cell><cell>(0.282)</cell><cell>(0.342)</cell><cell>(0.351)</cell></row><row><cell>log(Projects)</cell><cell>0.401***</cell><cell>0.405***</cell><cell>0.398***</cell><cell>0.397***</cell><cell>0.404***</cell></row><row><cell></cell><cell>(0.015)</cell><cell>(0.015)</cell><cell>(0.016)</cell><cell>(0.015)</cell><cell>(0.017)</cell></row><row><cell>2005</cell><cell>0.261***</cell><cell>0.262***</cell><cell>0.261***</cell><cell>0.261***</cell><cell>0.267***</cell></row><row><cell></cell><cell>(0.031)</cell><cell>(0.031)</cell><cell>(0.030)</cell><cell>(0.030)</cell><cell>(0.033)</cell></row><row><cell>2006</cell><cell>0.876***</cell><cell>0.874***</cell><cell>0.867***</cell><cell>0.866***</cell><cell>0.886***</cell></row><row><cell></cell><cell>(0.058)</cell><cell>(0.059)</cell><cell>(0.055)</cell><cell>(0.057)</cell><cell>(0.068)</cell></row><row><cell>2007</cell><cell>1.024***</cell><cell>1.025***</cell><cell>1.016***</cell><cell>1.012***</cell><cell>1.038***</cell></row><row><cell></cell><cell>(0.065)</cell><cell>(0.067)</cell><cell>(0.061)</cell><cell>(0.064)</cell><cell>(0.077)</cell></row><row><cell>2008</cell><cell>1.277***</cell><cell>1.287***</cell><cell>1.301***</cell><cell>1.296***</cell><cell>1.296***</cell></row><row><cell></cell><cell>(0.034)</cell><cell>(0.034)</cell><cell>(0.034)</cell><cell>(0.033)</cell><cell>(0.035)</cell></row><row><cell>2009</cell><cell>0.966***</cell><cell>0.995***</cell><cell>1.082***</cell><cell>1.070***</cell><cell>0.984***</cell></row><row><cell></cell><cell>(0.188)</cell><cell>(0.188)</cell><cell>(0.159)</cell><cell>(0.183)</cell><cell>(0.203)</cell></row><row><cell>2010</cell><cell>0.817***</cell><cell>0.849***</cell><cell>0.935***</cell><cell>0.928***</cell><cell>0.834***</cell></row><row><cell></cell><cell>(0.196)</cell><cell>(0.196)</cell><cell>(0.168)</cell><cell>(0.191)</cell><cell>(0.216)</cell></row><row><cell>County FEs</cell><cell>Yes</cell><cell>Yes</cell><cell>Yes</cell><cell>Yes</cell><cell>Yes</cell></row><row><cell>Observations</cell><cell>20,288</cell><cell>20,288</cell><cell>20,288</cell><cell>20,288</cell><cell>20,288</cell></row><row><cell>R 2</cell><cell>0.406</cell><cell>0.407</cell><cell>0.411</cell><cell>0.410</cell><cell>0.407</cell></row><row><cell>Number of Counties</cell><cell>2,900</cell><cell>2,900</cell><cell>2,900</cell><cell>2,900</cell><cell>2,900</cell></row><row><cell>Cragg-Donald Wald F</cell><cell>113.06</cell><cell>108.26</cell><cell>158.95</cell><cell>116.53</cell><cell>85.43</cell></row><row><cell>Kleibergen-Paap rk LM</cell><cell>47.94</cell><cell>45.36</cell><cell>67.57</cell><cell>48.96</cell><cell>30.33</cell></row><row><cell>Note.</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row></table><note><p>**p &lt; 0.05; ***p &lt; 0.01.</p></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_8"><head>Table 8 .</head><label>8</label><figDesc>Association Between Mass Layoffs and Online Labor Supply (Poisson Pseudo Maximum Likelihood, or PPML) Note. Standard errors are clustered on counties. FEs, Fixed effects.</figDesc><table><row><cell></cell><cell>(1) Active users</cell><cell>(2) Number of bids</cell></row><row><cell>MLUnemployed</cell><cell>0.002*** (0.000)</cell><cell>0.003*** (0.001)</cell></row><row><cell>log(Population)</cell><cell>0.200 (0.135)</cell><cell>-0.772 (0.589)</cell></row><row><cell>log(Projects)</cell><cell>0.066*** (0.008)</cell><cell>0.227*** (0.058)</cell></row><row><cell>2005</cell><cell>0.779*** (0.034)</cell><cell>0.641*** (0.091)</cell></row><row><cell>2006</cell><cell>2.111*** (0.039)</cell><cell>1.286*** (0.125)</cell></row><row><cell>2007</cell><cell>2.403*** (0.039)</cell><cell>1.120*** (0.131)</cell></row><row><cell>2008</cell><cell>3.007*** (0.041)</cell><cell>1.496*** (0.136)</cell></row><row><cell>2009</cell><cell>3.248*** (0.042)</cell><cell>1.620*** (0.141)</cell></row><row><cell>2010</cell><cell>3.168*** (0.041)</cell><cell>1.514*** (0.144)</cell></row><row><cell>County FEs</cell><cell>Yes</cell><cell>Yes</cell></row><row><cell>Observations</cell><cell>20,288</cell><cell>20,288</cell></row><row><cell>Wald χ 2</cell><cell>23,317.31*** (9)</cell><cell>716.45*** (9)</cell></row><row><cell>Number of counties</cell><cell>2,900</cell><cell>2,900</cell></row></table><note><p>***p &lt; 0.01.</p></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_9"><head>Table 9 .</head><label>9</label><figDesc>Industry Specific Mass Layoff Events-Active Workers (PPML)</figDesc><table><row><cell></cell><cell>(1)</cell><cell>(2)</cell><cell>(3)</cell><cell>(4)</cell><cell>(5)</cell><cell>(6)</cell></row><row><cell>Information</cell><cell>0.003***</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell>(0.001)</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Technical</cell><cell></cell><cell>0.003***</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell>(0.001)</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Data</cell><cell></cell><cell></cell><cell>0.026***</cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell></cell><cell>(0.008)</cell><cell></cell><cell></cell><cell></cell></row><row><cell>Construction</cell><cell></cell><cell></cell><cell></cell><cell>0.000</cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell>(0.000)</cell><cell></cell><cell></cell></row><row><cell>Manufacturing</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>0.000</cell><cell></cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>(0.000)</cell><cell></cell></row><row><cell>Food</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>-0.001</cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>(0.001)</cell></row><row><cell>State FEs</cell><cell>Yes</cell><cell>Yes</cell><cell>Yes</cell><cell>Yes</cell><cell>Yes</cell><cell>Yes</cell></row><row><cell>Year-month FEs</cell><cell>Yes</cell><cell>Yes</cell><cell>Yes</cell><cell>Yes</cell><cell>Yes</cell><cell>Yes</cell></row><row><cell>Observations</cell><cell>3,060</cell><cell>3,060</cell><cell>3,060</cell><cell>3,060</cell><cell>3,060</cell><cell>3,060</cell></row><row><cell>Number of states</cell><cell>51</cell><cell>51</cell><cell>51</cell><cell>51</cell><cell>51</cell><cell>51</cell></row><row><cell cols="3">Note. Standard errors are clustered on counties.</cell><cell></cell><cell></cell><cell></cell><cell></cell></row></table><note><p>***p &lt; 0.01.</p></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_10"><head>Table 10 .</head><label>10</label><figDesc>Industry Specific Mass Layoff Events-Number of Bids (PPML)</figDesc><table><row><cell></cell><cell>(1)</cell><cell>(2)</cell><cell>(3)</cell><cell>(4)</cell><cell>(5)</cell><cell>(6)</cell></row><row><cell>Information</cell><cell>0.004</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell>(0.004)</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Technical</cell><cell></cell><cell>0.007***</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell>(0.003)</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Data</cell><cell></cell><cell></cell><cell>0.036**</cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell></cell><cell>(0.017)</cell><cell></cell><cell></cell><cell></cell></row><row><cell>Construction</cell><cell></cell><cell></cell><cell></cell><cell>-0.001</cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell>(0.001)</cell><cell></cell><cell></cell></row><row><cell>Manufacturing</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>0.000</cell><cell></cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>(0.001)</cell><cell></cell></row><row><cell>Food</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>-0.002</cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>(0.002)</cell></row><row><cell>State FEs</cell><cell>Yes</cell><cell>Yes</cell><cell>Yes</cell><cell>Yes</cell><cell>Yes</cell><cell>Yes</cell></row><row><cell>Year-month FEs</cell><cell>Yes</cell><cell>Yes</cell><cell>Yes</cell><cell>Yes</cell><cell>Yes</cell><cell>Yes</cell></row><row><cell>Observations</cell><cell>3,060</cell><cell>3,060</cell><cell>3,060</cell><cell>3,060</cell><cell>3,060</cell><cell>3,060</cell></row><row><cell>Number of states</cell><cell>51</cell><cell>51</cell><cell>51</cell><cell>51</cell><cell>51</cell><cell>51</cell></row></table><note><p>Note. Standard errors are clustered on counties. **p &lt; 0.05; ***p &lt; 0.01.</p></note></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_0"><p>Information SystemsResearch, 2020, vol. 31, no. 2, pp. 431-448, © 2020 INFORMS   </p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="1" xml:id="foot_1"><p>Broadly, gig-economy platforms may include any platform that involves on-demand labor (either online or offline). The focus of this study is online labor markets (digital gig-economy platforms).</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="2" xml:id="foot_2"><p>Uber, a prominent example of gig-economy platforms, has been the target of multiple lawsuits trying to classify Uber drivers as employees rather than independent contractors<ref type="bibr" target="#b77">(Streitfeld 2017)</ref>.</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="3" xml:id="foot_3"><p>3 For Local Area Unemployment Statistics, see https://www.bls.gov/ lau</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="4" xml:id="foot_4"><p>/.4 Although workers can bid on any posted projects, regardless of the employer's physical location, we include a control for geographically proximate projects (from employers residing in the same county), as prior research has demonstrated evidence of a home bias in online labor markets-that is, that workers and employers prefer colocated transaction partners. Note that our results are robust to the exclusion of this measure from our</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="5" xml:id="foot_5"><p>regression. 5 For the U.S. Census Bureau Longitudinal Employer-Household Dynamics program, see https://ledextract.ces.census.gov/static</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="6" xml:id="foot_6"><p>/ data.html. 6 These are substantial numbers for the period of 2004 to 2010, as the gig-economy platforms were relatively small during that</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="7" xml:id="foot_7"><p>period of time.7  On March 1, 2013, President Obama ordered across-the-board spending cuts (commonly referred to as sequestration) required by the Balanced Budget and Emergency Deficit Control Act, as amended. Under the order, the Bureau of Labor Statistics eliminated the Mass Layoff Statistics program (https:</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="8" xml:id="foot_8"><p>//www.bls.gov/mls/). 8 Interested readers can refer to the Google Search Trends page for a comparison: https://tinyurl.com/gigeconomyISR.</p></note>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Acknowledgments</head><p>The authors thank the senior editor, associate editor, and three anonymous reviewers for their helpful comments and suggestions during the review process. The authors also thank the participants at the International Conference on Information Systems (ICIS) and Conference on Information Systems and Technology (CIST) for valuable feedback.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Endnotes</head></div>
+			</div>
+
+
+			<div type="funding">
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>This work was funded by the Robert Wood Johnson Foundation [Grant 74503].</p></div>
+			</div>
+
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Do international migration and remittances reduce poverty in developing countries?</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">H</forename><surname>Adams</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Page</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">World Development</title>
+		<imprint>
+			<biblScope unit="volume">33</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page" from="1645" to="1669" />
+			<date type="published" when="2005">2005</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Research note-Social interactions and the &quot;digital divide</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Agarwal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Animesh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Prasad</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Inform. Systems Res</title>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="277" to="294" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+	<note>Explaining variations in internet use</note>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<monogr>
+		<author>
+			<persName><forename type="first">A</forename><surname>Agrawal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Horton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Lacetera</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Lyons</surname></persName>
+		</author>
+		<title level="m">Digitization and the Contract Labor Market: A Research Agenda</title>
+		<meeting><address><addrLine>Chicago</addrLine></address></meeting>
+		<imprint>
+			<publisher>University of Chicago Press</publisher>
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">The gender wage gap and domestic violence</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Aizer</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Amer. Econom. Rev</title>
+		<imprint>
+			<biblScope unit="volume">100</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="1847" to="1859" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<monogr>
+		<title level="m" type="main">Where you live matters: The impact of local financial market competition in managing online peer-to-peer loans</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Alyakoob</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Rahman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Wei</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2018">2018</date>
+			<pubPlace>Los Angeles</pubPlace>
+		</imprint>
+		<respStmt>
+			<orgName>University of Southern California</orgName>
+		</respStmt>
+	</monogr>
+	<note>Working paper</note>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<monogr>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">D</forename><surname>Angrist</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">S</forename><surname>Pischke</surname></persName>
+		</author>
+		<title level="m">Mostly Harmless Econometrics: An Empiricist&apos;s Companion</title>
+		<meeting><address><addrLine>Princeton, NJ</addrLine></address></meeting>
+		<imprint>
+			<publisher>Princeton University Press</publisher>
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Uber vs. taxi: A driver&apos;s eye view</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">D</forename><surname>Angrist</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Caldwell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">V</forename><surname>Hall</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">National Bureau of Economic Research</title>
+		<imprint>
+			<date type="published" when="2017">2017</date>
+			<pubPlace>Cambridge, MA</pubPlace>
+		</imprint>
+	</monogr>
+	<note type="report_type">NBER Working Paper No. w23891</note>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Properties of scoring auctions</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Asker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Cantillon</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">RAND J. Econom</title>
+		<imprint>
+			<biblScope unit="volume">39</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="69" to="85" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Procurement when price and quality matter</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Asker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Cantillon</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">RAND J. Econom</title>
+		<imprint>
+			<biblScope unit="volume">41</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="1" to="34" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">On the longitudinal effects of IT use on firm-level employment</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Atasoy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">D</forename><surname>Banker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">A</forename><surname>Pavlou</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Inform. Systems Res</title>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="6" to="26" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">The rise in the disability rolls and the decline in unemployment</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">H</forename><surname>Autor</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">G</forename><surname>Duggan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Quart. J. Econom</title>
+		<imprint>
+			<biblScope unit="volume">118</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="157" to="206" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Social connectedness: Measurement, determinants, and effects</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Bailey</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Cao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Kuchler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Stroebel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Wong</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Econom. Perspect</title>
+		<imprint>
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="259" to="280" />
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<monogr>
+		<title level="m" type="main">Who Benefits from State and Local Economic Development Policies?</title>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">J</forename><surname>Bartik</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1991">1991</date>
+			<publisher>W. E. Upjohn Institute for Employment Research</publisher>
+			<pubPlace>Kalamazoo, MI</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Analysis of young, small firms that have closed: Delineating successful from unsuccessful closures</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Bates</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Bus. Venturing</title>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="343" to="358" />
+			<date type="published" when="2005">2005</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Where have all the &quot;workers&quot; gone? A critical analysis of the unrepresentativeness of our samples relative to the labor market in the industrial-organizational psychology literature</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">E</forename><surname>Bergman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><forename type="middle">A</forename><surname>Jean</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Indust. Organ. Psych</title>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="84" to="113" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Gender identity and relative income within households</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Bertrand</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Kamenica</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Pan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Quart. J. Econom</title>
+		<imprint>
+			<biblScope unit="volume">130</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="571" to="614" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Does working from home work? Evidence from a Chinese experiment</title>
+		<author>
+			<persName><forename type="first">N</forename><surname>Bloom</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Liang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Roberts</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><forename type="middle">J</forename><surname>Ying</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Quart. J. Econom</title>
+		<imprint>
+			<biblScope unit="volume">130</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="165" to="218" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Can you gig it? An empirical examination of the gig-economy and entrepreneurial activity</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Burtch</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Carnahan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">N</forename><surname>Greenwood</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Sci</title>
+		<imprint>
+			<biblScope unit="volume">64</biblScope>
+			<biblScope unit="issue">12</biblScope>
+			<biblScope unit="page" from="5497" to="5520" />
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Hiring preferences in online labor markets: Evidence of a female hiring bias</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Chan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Wang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Sci</title>
+		<imprint>
+			<biblScope unit="volume">64</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="2973" to="3468" />
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<monogr>
+		<title level="m" type="main">Dynamic pricing in a labor market: Surge pricing and flexible work on the Uber platform</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">K</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Sheldon</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2015">2015</date>
+			<pubPlace>University of California, Los Angeles, Los Angeles</pubPlace>
+		</imprint>
+	</monogr>
+	<note>Working paper</note>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">The value of flexible work: Evidence from Uber drivers</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">K</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">A</forename><surname>Chevalier</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">E</forename><surname>Rossi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Oehlsen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">National Bureau of Economic Research</title>
+		<imprint>
+			<date type="published" when="2017">2017</date>
+			<pubPlace>Cambridge, MA</pubPlace>
+		</imprint>
+	</monogr>
+	<note type="report_type">NBER Working Paper No. 23296</note>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Are micro and macro labor supply elasticities consistent? A review of evidence on the intensive and extensive margins</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Chetty</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Guren</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Manoli</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Weber</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Amer. Econom. Rev</title>
+		<imprint>
+			<biblScope unit="volume">101</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="471" to="475" />
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Flexible work arrangements from generation and gender perspectives: Evidence from Lithuania</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Ciarniene</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Vienazindiene</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Engrg. Econom</title>
+		<imprint>
+			<biblScope unit="volume">29</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="84" to="92" />
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<monogr>
+		<title level="m" type="main">The gender earnings gap in the gig economy: Evidence from over a million rideshare drivers</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Cook</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Diamond</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Hall</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">A</forename><surname>List</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Oyer</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2018">2018</date>
+			<pubPlace>Stanford, CA</pubPlace>
+		</imprint>
+		<respStmt>
+			<orgName>Working paper, Stanford University</orgName>
+		</respStmt>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Disruptive change in the taxi business: The case of Uber</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Cramer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">B</forename><surname>Krueger</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Amer. Econom. Rev</title>
+		<imprint>
+			<biblScope unit="volume">106</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="177" to="182" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">The sharing economy is creating a Dickensian world</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Das</surname></persName>
+		</author>
+		<ptr target="http://www.marketwatch.com/story/the-sharing-economy-is-creating-a-dickensian-world-2016-10-20" />
+	</analytic>
+	<monogr>
+		<title level="j">MarketWatch</title>
+		<imprint>
+			<date type="published" when="2016-10-20">2016. October 20</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">The duality of empowerment and marginalization in microtask crowdsourcing: Giving voice to the less powerful through value sensitive design</title>
+		<author>
+			<persName><forename type="first">X</forename><surname>Deng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">D</forename><surname>Joshi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">D</forename><surname>Galliers</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quart</title>
+		<imprint>
+			<biblScope unit="volume">40</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="279" to="302" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<monogr>
+		<title level="m" type="main">Digital discrimination: The case of Airbnb</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Edelman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Luca</surname></persName>
+		</author>
+		<idno>14-054</idno>
+		<imprint>
+			<date type="published" when="2014">2014</date>
+			<pubPlace>Harvard Business School; Boston</pubPlace>
+		</imprint>
+	</monogr>
+	<note type="report_type">com. Working Paper</note>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">The labor market in the Great Recession</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">W</forename><surname>Elsby</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Hobijn</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Sahin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Brookings Papers Econom. Activity</title>
+		<imprint>
+			<biblScope unit="volume">41</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="1" to="69" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">Plant-level employment development before collective displacements: comparing mass layoffs, plant closures and bankruptcies</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Fackler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Müller</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Stegmaier</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Appl. Econom</title>
+		<imprint>
+			<biblScope unit="volume">50</biblScope>
+			<biblScope unit="issue">50</biblScope>
+			<biblScope unit="page" from="5416" to="5435" />
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">Competition between local and electronic markets: How the benefit of buying online depends on where you live</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Forman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Ghose</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Goldfarb</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Sci</title>
+		<imprint>
+			<biblScope unit="volume">55</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="47" to="57" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<monogr>
+		<title level="m" type="main">Search frictions and the design of online marketplaces</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Fradkin</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2013">2013</date>
+			<pubPlace>Cambridge, MA</pubPlace>
+		</imprint>
+		<respStmt>
+			<orgName>Massachusetts Institute of Technology</orgName>
+		</respStmt>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<monogr>
+		<title level="m" type="main">The 2012 freelance industry report: Data and analysis of freelancer demographics, earnings, habits and attitudes</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>Gandia</surname></persName>
+		</author>
+		<ptr target="https://s3.amazonaws.com/ifdconference/2012report/Freelance+Industry+Report+2012+updated.pdf" />
+		<imprint>
+			<date type="published" when="2012-05-01">2012. May 1, 2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">Is the world really flat? A look at offshoring at an online programming marketplace</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Gefen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Carmel</forename><forename type="middle">E</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quart</title>
+		<imprint>
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="367" to="384" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title level="a" type="main">Substitution between offline and online advertising markets</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Goldfarb</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Tucker</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Competition Law Econom</title>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="37" to="44" />
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<author>
+			<persName><forename type="first">P</forename><surname>Goldsmith-Pinkham</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Sorkin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Swift</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Bartik instruments: What, when, why, and how. Working Paper w24408</title>
+		<meeting><address><addrLine>Cambridge, MA</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">Role of monetary incentives in the digital and physical inter-border labor flows</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Gong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Hong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Zentner</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Management Inform. Systems</title>
+		<imprint>
+			<biblScope unit="volume">35</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="866" to="899" />
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<analytic>
+		<title level="a" type="main">The strength of weak ties</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">S</forename><surname>Granovetter</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Soc. Networks</title>
+		<imprint>
+			<biblScope unit="volume">78</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="347" to="367" />
+			<date type="published" when="1977">1977</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<analytic>
+		<title level="a" type="main">Unknowns of the gigeconomy</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Greenwood</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Burtch</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Carnahan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Comm. ACM</title>
+		<imprint>
+			<biblScope unit="volume">60</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="27" to="29" />
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<analytic>
+		<title level="a" type="main">Show me the way to go home: An empirical investigation of ride sharing and alcohol related motor vehicle homicide</title>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">N</forename><surname>Greenwood</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Wattal</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quart</title>
+		<imprint>
+			<biblScope unit="volume">41</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="163" to="187" />
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<analytic>
+		<title level="a" type="main">An analysis of the labor market for Uber&apos;s driver-partners in the United States. Indust</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">V</forename><surname>Hall</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">B</forename><surname>Krueger</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Labor Relations Rev</title>
+		<imprint>
+			<biblScope unit="volume">71</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="705" to="732" />
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<analytic>
+		<title level="a" type="main">Redefining business success: Distinguishing between closure and failure</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Headd</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Small Bus. Econom</title>
+		<imprint>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="51" to="61" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+	<analytic>
+		<title level="a" type="main">Relationships between commuting distance, frequency and telework in Finland</title>
+		<author>
+			<persName><forename type="first">V</forename><surname>Helminen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Ristimäki</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Transport Geography</title>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="331" to="342" />
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b43">
+	<analytic>
+		<title level="a" type="main">On buyer selection of service providers in online outsourcing platforms for IT services</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Hong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">A</forename><surname>Pavlou</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Inform. Systems Res</title>
+		<imprint>
+			<biblScope unit="volume">28</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="547" to="562" />
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b44">
+	<analytic>
+		<title level="a" type="main">Comparing open and sealed bid auctions: Evidence from online labor Markets</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Hong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">A</forename><surname>Pavlou</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Inform. Systems Res</title>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="49" to="69" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b45">
+	<analytic>
+		<title level="a" type="main">The effects of algorithmic labor market recommendations: Evidence from a field experiment</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">J</forename><surname>Horton</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Labor Econom</title>
+		<imprint>
+			<biblScope unit="volume">35</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="345" to="385" />
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b46">
+	<analytic>
+		<title level="a" type="main">Buyer uncertainty about seller capacity: Causes, consequences, and a partial solution</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">J</forename><surname>Horton</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Sci</title>
+		<imprint>
+			<biblScope unit="volume">65</biblScope>
+			<biblScope unit="issue">8</biblScope>
+			<biblScope unit="page" from="3518" to="3540" />
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b47">
+	<analytic>
+		<title level="a" type="main">Surviving in global online labor markets for IT services: A geo-economic analysis</title>
+		<author>
+			<persName><forename type="first">I</forename><surname>Kanat</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Hong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">S</forename><surname>Raghu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Inform. Systems Res</title>
+		<imprint>
+			<biblScope unit="volume">29</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="893" to="909" />
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b48">
+	<analytic>
+		<title level="a" type="main">Online labour index: Measuring the online gig economy for policy and research</title>
+		<author>
+			<persName><forename type="first">O</forename><surname>Kässi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Lehdonvirta</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Tech. Forecasting Soc. Change</title>
+		<imprint>
+			<biblScope unit="volume">137</biblScope>
+			<biblScope unit="page" from="241" to="248" />
+			<date type="published" when="2018-12">2018. December</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b49">
+	<analytic>
+		<title level="a" type="main">Labor migration and risk aversion in less developed countries</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>Katz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O</forename><surname>Stark</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Labor Econom</title>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="134" to="149" />
+			<date type="published" when="1986">1986</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b50">
+	<analytic>
+		<title level="a" type="main">Changes in relative wages, 1963-1987: Supply and demand factors</title>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">F</forename><surname>Katz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">M</forename><surname>Murphy</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Quart. J. Econom</title>
+		<imprint>
+			<biblScope unit="volume">107</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="35" to="78" />
+			<date type="published" when="1992">1992</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b51">
+	<analytic>
+		<title level="a" type="main">Reputation transferability in online labor markets</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Kokkodis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">G</forename><surname>Ipeirotis</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Sci</title>
+		<imprint>
+			<biblScope unit="volume">62</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="1687" to="1706" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b52">
+	<analytic>
+		<title level="a" type="main">Time use, emotional well-being, and unemployment: Evidence from longitudinal data</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">B</forename><surname>Krueger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">I</forename><surname>Mueller</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Amer. Econom. Rev</title>
+		<imprint>
+			<biblScope unit="volume">102</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="594" to="599" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b53">
+	<analytic>
+		<title level="a" type="main">Economic downturn and volunteering: Do economic crisis affect content generation on Wikipedia?</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Kummer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O</forename><surname>Slivko</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><forename type="middle">M</forename><surname>Zhang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Inform. Systems Res. Forthcoming</title>
+		<imprint>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b54">
+	<analytic>
+		<title level="a" type="main">Labor market competition and anti-immigrant sentiment: Occupations as contexts</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">M</forename><surname>Kunovich</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Internat. Migration Rev</title>
+		<imprint>
+			<biblScope unit="volume">47</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="643" to="685" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b55">
+	<monogr>
+		<title level="m" type="main">Do ride-sharing services affect traffic congestion? An empirical study of Uber entry</title>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Hong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Zhang</surname></persName>
+		</author>
+		<ptr target="https://ssrn.com/abstract=2838043" />
+		<imprint>
+			<date type="published" when="2016-09-14">2016. September 14</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">Preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b56">
+	<monogr>
+		<title level="m" type="main">Effects of IT-enabled monitoring on labor contracting in online platforms: Evidence from a natural experiment</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Liang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Hong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Gu</surname></persName>
+		</author>
+		<idno>16-01</idno>
+		<imprint>
+			<date type="published" when="2016">2016</date>
+			<pubPlace>New York</pubPlace>
+		</imprint>
+		<respStmt>
+			<orgName>NET Institute</orgName>
+		</respStmt>
+	</monogr>
+	<note type="report_type">Working Paper</note>
+</biblStruct>
+
+<biblStruct xml:id="b57">
+	<analytic>
+		<title level="a" type="main">Effectiveness of reputation in contracting for customized production: Evidence from online labor markets</title>
+		<author>
+			<persName><surname>Huang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">© 2020 INFORMS</title>
+		<imprint>
+			<date type="published" when="2016">2020. 2016</date>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="page" from="345" to="359" />
+		</imprint>
+	</monogr>
+	<note>Unemployment and Participation in the Gig Economy Information Systems Research</note>
+</biblStruct>
+
+<biblStruct xml:id="b58">
+	<analytic>
+		<title level="a" type="main">Social networks and status attainment</title>
+		<author>
+			<persName><forename type="first">N</forename><surname>Lin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Annual Rev. Sociol</title>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="467" to="487" />
+			<date type="published" when="1999">1999</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b59">
+	<monogr>
+		<author>
+			<persName><forename type="first">N</forename><surname>Lin</surname></persName>
+		</author>
+		<title level="m">Social Capital: A Theory of Social Structure and Action</title>
+		<meeting><address><addrLine>Oxford, UK</addrLine></address></meeting>
+		<imprint>
+			<publisher>Cambridge University Press</publisher>
+			<date type="published" when="2002">2002</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b60">
+	<analytic>
+		<title level="a" type="main">The dark side of the sharing economy. . . and how to lighten it</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Malhotra</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Van Alstyne</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Comm. ACM</title>
+		<imprint>
+			<biblScope unit="volume">57</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="24" to="27" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b61">
+	<monogr>
+		<title level="m" type="main">Independent work: Choice, necessity, and the gig economy</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Manyika</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Lund</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Bughin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Robinson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Mischke</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Mahajan</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2016">2016</date>
+			<publisher>McKinsey Global Institute</publisher>
+			<pubPlace>New York</pubPlace>
+		</imprint>
+	</monogr>
+	<note type="report_type">Report</note>
+</biblStruct>
+
+<biblStruct xml:id="b62">
+	<analytic>
+		<title level="a" type="main">Valuing alternative work arrangements</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Mas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Pallais</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Amer. Econom. Rev</title>
+		<imprint>
+			<biblScope unit="volume">107</biblScope>
+			<biblScope unit="issue">12</biblScope>
+			<biblScope unit="page" from="3722" to="3759" />
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b63">
+	<monogr>
+		<author>
+			<persName><forename type="first">R</forename><surname>Milkman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Ott</surname></persName>
+		</author>
+		<title level="m">New Labor in New York: Precarious Workers and the Future of the Labor Movement</title>
+		<meeting><address><addrLine>Ithaca, NY</addrLine></address></meeting>
+		<imprint>
+			<publisher>Cornell University Press</publisher>
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b64">
+	<analytic>
+		<title level="a" type="main">Doing business with strangers: Reputation in online service marketplaces</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Moreno</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Terwiesch</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Inform. Systems Res</title>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="865" to="886" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b65">
+	<analytic>
+		<title level="a" type="main">Social capital and finding a job: Do contacts matter? Amer</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Mouw</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Sociol. Rev</title>
+		<imprint>
+			<biblScope unit="volume">68</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="868" to="898" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b66">
+	<monogr>
+		<title level="m" type="main">Are technology companies really driving the gig economy</title>
+		<ptr target="https://psmag.com/news/are-technology-companies-really-driving-the-gig-economy" />
+		<imprint>
+			<date type="published" when="2016-05-01">2016. May 1, 2019</date>
+			<publisher>Pacific Standard</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b67">
+	<analytic>
+		<title level="a" type="main">The effects of aggregate and gender-specific labor demand shocks on child health</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Page</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Schaller</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Simon</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Human Resources</title>
+		<imprint>
+			<biblScope unit="volume">54</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="37" to="78" />
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b68">
+	<analytic>
+		<title level="a" type="main">The aftermath of financial crises</title>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">M</forename><surname>Reinhart</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">S</forename><surname>Rogoff</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">National Bureau of Economic Research</title>
+		<imprint>
+			<date type="published" when="2009">2009</date>
+			<pubPlace>Cambridge, MA</pubPlace>
+		</imprint>
+	</monogr>
+	<note type="report_type">NBER Working Paper No. 14656</note>
+</biblStruct>
+
+<biblStruct xml:id="b69">
+	<monogr>
+		<title level="m" type="main">Who gets started on Kickstarter? Demographic variations in fundraising success. Working paper</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Rhue</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2015">2015</date>
+			<pubPlace>Winston-Salem, NC</pubPlace>
+		</imprint>
+		<respStmt>
+			<orgName>Wake Forest University</orgName>
+		</respStmt>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b70">
+	<analytic>
+		<title level="a" type="main">What motivates gig economy workers</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Rosenblat</surname></persName>
+		</author>
+		<ptr target="https://hbr.org/2016/11/what-motivates-gig-economy-workers" />
+	</analytic>
+	<monogr>
+		<title level="j">Harvard Bus. Rev</title>
+		<imprint>
+			<date type="published" when="2016-11-17">2016. November 17</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b71">
+	<analytic>
+		<title level="a" type="main">Unemployment insurance and job search in the Great Recession</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Rothstein</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">National Bureau of Economic Research</title>
+		<imprint>
+			<date type="published" when="2011">2011</date>
+			<pubPlace>Cambridge, MA</pubPlace>
+		</imprint>
+	</monogr>
+	<note type="report_type">NBER Working Paper No. w17534</note>
+</biblStruct>
+
+<biblStruct xml:id="b72">
+	<analytic>
+		<title level="a" type="main">Booms, busts, and fertility testing the Becker model using gender-specific labor demand</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Schaller</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Human Resources</title>
+		<imprint>
+			<biblScope unit="volume">51</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="1" to="29" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b73">
+	<analytic>
+		<title level="a" type="main">Debating the sharing economy</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Schor</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Self-Governance Management Econom</title>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="7" to="22" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b74">
+	<analytic>
+		<title level="a" type="main">1 in 3 workers employed in gig economy, but not all by choice</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Soergel</surname></persName>
+		</author>
+		<ptr target="https://www.usnews.com/news/articles/2016-10-11/1-in-3-workers-employed-in-gig-economy-but-not-all-by-choice./jrn" />
+	</analytic>
+	<monogr>
+		<title level="j">U.S. News and World Report</title>
+		<imprint>
+			<date type="published" when="2016-10-11">2016. October 11</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b75">
+	<analytic>
+		<title level="a" type="main">NBER Working Paper No. w13886</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">A</forename><surname>Stevenson B ; Cambridge</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">H</forename><surname>Stock</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Yogo</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Testing for weak instruments in IV regression</title>
+		<imprint>
+			<date type="published" when="2005">2008. 2005</date>
+		</imprint>
+	</monogr>
+	<note>The internet and job search</note>
+</biblStruct>
+
+<biblStruct xml:id="b76">
+	<monogr>
+		<author>
+			<persName><forename type="first">Dwk</forename><surname>Andrews</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">H</forename><surname>Stock</surname></persName>
+		</author>
+		<title level="m">Identification and Inference for Econometric Models: A Festschrift in Honor of Thomas Rothenberg</title>
+		<meeting><address><addrLine>Cambridge, UK</addrLine></address></meeting>
+		<imprint>
+			<publisher>Cambridge University Press</publisher>
+			<biblScope unit="page" from="80" to="108" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b77">
+	<analytic>
+		<title level="a" type="main">Uber drivers win preliminary class-action status in labor case</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Streitfeld</surname></persName>
+		</author>
+		<ptr target="https://www.nytimes.com/2017/07/12/business/uber-drivers-class-action.html?mcubz=3" />
+	</analytic>
+	<monogr>
+		<title level="j">New York Times</title>
+		<imprint>
+			<date type="published" when="2017-07-12">2017. July 12</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b78">
+	<analytic>
+		<title level="a" type="main">The Sharing Economy: The End of Employment and the Rise of Crowd-Based Capitalism</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Sundararajan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Tambe PB, Hitt LM (2010) How offshoring affects IT workers</title>
+		<meeting><address><addrLine>Cambridge, MA</addrLine></address></meeting>
+		<imprint>
+			<publisher>MIT Press</publisher>
+			<date type="published" when="2016">2016</date>
+			<biblScope unit="volume">53</biblScope>
+			<biblScope unit="page" from="62" to="70" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b79">
+	<analytic>
+		<title level="a" type="main">Now IT&apos;s personal: Offshoring and the shifting skill composition of the us information technology workforce</title>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">B</forename><surname>Tambe</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">M</forename><surname>Hitt</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Sci</title>
+		<imprint>
+			<biblScope unit="volume">58</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="678" to="695" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b80">
+	<analytic>
+		<title level="a" type="main">A model of labor migration and urban unemployment in less developed countries</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">P</forename><surname>Todaro</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Amer. Econom. Rev</title>
+		<imprint>
+			<biblScope unit="volume">59</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="138" to="148" />
+			<date type="published" when="1969">1969</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b81">
+	<analytic>
+		<title level="a" type="main">Technology diffusion in the society: Analyzing digital divide in the context of social class</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Wattal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Hong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Mandviwalla</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Jain</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Hawaii Internat. Conf. System Sci</title>
+		<imprint>
+			<date type="published" when="2011">2011</date>
+			<publisher>Institute of Electrical and Electronics Engineers</publisher>
+			<pubPlace>Piscataway, NJ</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b82">
+	<analytic>
+		<title level="a" type="main">Why digital transformation needs a heart</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Westerman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIT Sloan Management Rev</title>
+		<imprint>
+			<biblScope unit="volume">58</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">19</biblScope>
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b83">
+	<monogr>
+		<title level="m" type="main">In the sharing economy, no one&apos;s an employee. The Atlantic</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>White</surname></persName>
+		</author>
+		<ptr target="https://www.theatlantic.com/business/archive/2015/06/in-the-sharing-economy-no-ones-an-employee/395027" />
+		<imprint>
+			<date type="published" when="2015-06-08">2015. June 8</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b84">
+	<monogr>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">M</forename><surname>Wooldridge</surname></persName>
+		</author>
+		<title level="m">Econometric Analysis of Cross Section and Panel Data</title>
+		<meeting><address><addrLine>Cambridge, MA</addrLine></address></meeting>
+		<imprint>
+			<publisher>MIT Press</publisher>
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b85">
+	<analytic>
+		<title level="a" type="main">The rise of the sharing economy: Estimating the impact of Airbnb on the hotel industry</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Zervas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Proserpio</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Byers</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Marketing Res</title>
+		<imprint>
+			<biblScope unit="volume">54</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="687" to="705" />
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b86">
+	<analytic>
+		<title level="a" type="main">Labor migration and earnings differences: the case of rural china</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Zhao</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Econom. Development Cultural Change</title>
+		<imprint>
+			<biblScope unit="volume">47</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="767" to="782" />
+			<date type="published" when="1999">1999</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b87">
+	<analytic>
+		<title level="a" type="main">Labor mobility and the integration of European labor markets</title>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">F</forename><surname>Zimmermann</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Discussion Paper</title>
+		<imprint>
+			<biblScope unit="volume">862</biblScope>
+			<date type="published" when="2009">2009</date>
+			<publisher>German Institute for Economic Research</publisher>
+			<pubPlace>Berlin</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

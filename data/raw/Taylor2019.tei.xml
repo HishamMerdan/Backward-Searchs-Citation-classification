@@ -1,0 +1,1747 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Joining the crowd: The career anchors of information technology workers participating in crowdsourcing</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author role="corresp">
+							<persName><forename type="first">Joseph</forename><surname>Taylor</surname></persName>
+							<email>joseph.taylor@csus.edu</email>
+							<affiliation key="aff0">
+								<orgName type="department">College of Business Administration</orgName>
+								<orgName type="institution">California State University</orgName>
+								<address>
+									<settlement>Sacramento, Sacramento</settlement>
+									<country>California</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">|</forename><forename type="middle">K D</forename><surname>Joshi</surname></persName>
+							<affiliation key="aff1">
+								<orgName type="department">Department of Management, Information Systems and Entrepreneurship</orgName>
+								<orgName type="institution" key="instit1">Carson College of Business</orgName>
+								<orgName type="institution" key="instit2">Washington State University</orgName>
+								<address>
+									<settlement>Pullman</settlement>
+									<region>Washington</region>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff2">
+								<orgName type="department">College of Business Administration</orgName>
+								<orgName type="institution">California State University</orgName>
+								<address>
+									<addrLine>Tahoe Hall</addrLine>
+									<postCode>95820</postCode>
+									<settlement>Sacramento, Sacramento</settlement>
+									<region>CA</region>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Joining the crowd: The career anchors of information technology workers participating in crowdsourcing</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="MD5">57470805CDF945B99F1CE57A42225CFD</idno>
+					<idno type="DOI">10.1111/isj.12225</idno>
+					<note type="submission">Received: 8 June 2016 Revised: 8 August 2018 Accepted: 30 August 2018</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.7.3" ident="GROBID" when="2023-06-16T09:23+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>As technology platforms and online communities evolve, the nature of the relationship between workers and firms is changing. Crowdsourcing is an emerging phenomenon that exemplifies the changing relationship between workers and firms. Although significant research has been conducted on worker motivation within the traditional firm-worker relationship, relatively little work has examined motivation in crowdsourcing engagements. This study utilizes the revealed causal mapping methodology to conduct an exploratory analysis of the motivations and career outcomes of technology workers based in the United States who participate in compensation-based technology crowdsourcing platforms such as oDesk or Rent-a-coder. The findings reveal ways in which the career anchors of technology workers participating in crowdsourcing are evolving in the face of the emerging dynamics in the information technology (IT) employment marketplace KEYWORDS career anchors, crowd workers, digital platforms, human cloud, microsourcing, revealed causal mapping</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1">| INTRODUCTION</head><p>The steady rise of the on-demand or gig economy is drawing attention to issues surrounding the crowdworkers who participate in this emerging marketplace <ref type="bibr" target="#b22">(Florentine, 2015;</ref><ref type="bibr" target="#b32">Kaganer, Carmel, Hirschheim, &amp; Olsen, 2013)</ref>. Researchers have already estimated that nearly 0.5% of workers already participate as workers in online crowdsourcing platforms <ref type="bibr" target="#b20">(Farrell &amp; Greig, 2016;</ref><ref type="bibr" target="#b33">Katz &amp; Krueger, 2016)</ref>, and participation rates are forecasted to continue to grow <ref type="bibr" target="#b17">(Eichhorst, Hinte, Rinne, &amp; Tobsch, 2016)</ref>. The on-demand-labour economy that uses workers from the general public (crowd) to complete a task is steadily growing <ref type="bibr" target="#b6">(Bergvall-Kåreborn &amp; Howcroft, 2013)</ref>. This economy heavily rests on the availability of workers (referred to as crowdworkers) who willingly participate in this new work form of open sourcing mediated by digital marketplaces, which we refer to as crowdsourcing. While many of the most popular platforms for facilitating technology-focused crowdsourcing have existed for more than 15 years, the popularity of this contemporary form of work as a career option is growing, as evident from the millions of crowdworkers who are registered to work on various crowdsourcing platforms <ref type="bibr" target="#b24">(Freelancer, 2015;</ref><ref type="bibr" target="#b63">Topcoder, 2015)</ref>.</p><p>Superficially, the growing interest in crowdsourcing as a career pathway is perplexing because of the lack of job security, the unpredictable work schedules, the lack of a guaranteed steady income, the absence of insurance and pension benefits through employment, and the ambiguity regarding safeguards afforded by key labour laws designed to protect the workers <ref type="bibr" target="#b37">(Kittur et al., 2013)</ref>. Some argue that workers are temporally engaging in these crowdsourcing employment options because workers lack traditional employment opportunities <ref type="bibr" target="#b17">(Eichhorst et al., 2016)</ref>; however, this rationale does not fully explain crowdworkers' willingness-and even eagerness-to participate in information technology (IT) crowdsourcing (ITCS), where technology workers often enjoy many employment privileges owing to the talent shortage <ref type="bibr" target="#b2">(Amato, 2013)</ref>. Decreasing numbers of students studying technology-related fields, coupled with poor career retention compounded by pending retirements in the existing IT workforce, create a confluence of forces that is expected to make it difficult for IT organizations to meet staffing requirements over the next 10 years, <ref type="bibr" target="#b7">(Bosworth, Lyonette, Wilson, Bayliss, &amp; Fathers, 2013)</ref>. While companies are increasingly challenged to meet their staffing needs, <ref type="bibr" target="#b35">(Khan &amp; Sikes, 2014;</ref><ref type="bibr" target="#b64">Trost, 2014)</ref>, IT workers are likely to benefit from the low IT unemployment rate <ref type="bibr" target="#b38">(Kolakowski, 2015)</ref> as employers aggressively compete to attract workers to meet the demands for IT services.</p><p>Despite the instability of contract work, crowdsourcing-based freelancing platforms such as oDesk, Elance (now Upwork), and Freelancer continue to attract workers, with more than eight million crowdworker accounts established. <ref type="foot" target="#foot_0">1</ref> Why do these platforms that lack many of the protections available through traditional IT employment continue to attract participants?</p><p>The following two literature-driven premises motivate this study to address the aforementioned perplexing employment behaviour. First, scholars in vocational behaviour are challenging the use of traditional objective benchmarks, such as salary growth, job security, and promotions, as indicators to make sense of people's career motivations and preferences in the contemporary world <ref type="bibr" target="#b55">(Rodrigues, Guest, &amp; Budjanovcanin, 2013)</ref>. Instead, they are advocating for the use of subjective criteria to capture the "idiosyncratic needs, values, and goals underpinning people's" careers <ref type="bibr">(Rodrigues et al., 2013, p. 1)</ref>. Second, career preferences are context specific <ref type="bibr" target="#b9">(Chang, Chen, Klein, &amp; Jiang, 2011)</ref>, and the changing nature of work environments, generally, and the contemporary forms of employment made popular by the gig economy, specifically, necessitate the need for examining the people's motivations in the context of ITCS. Some experts speculate that contract workers will make up half of the workforce within the next decade <ref type="bibr" target="#b50">(Noguchi, 2018)</ref>. As an expanding number of professionals transition to contract-related work, it will be critical for organizations to develop an understanding of how to motivate and engage with new classifications of workers. This study's objective is to reveal crowdworkers' motivations to participate in ITCS through the perspective of <ref type="bibr" target="#b56">Schein's (1990)</ref> career anchors. Specifically, the following research questions are addressed: What is the nature of ITCS crowdworker's career anchors and their consequences? More specifically, what kinds of values, needs, and skills drive crowdworkers' participation in the ITCS work environment? Schein's career anchors provide a theoretical perspective for revealing subjective values, needs, and abilities that drive people's career decisions. Such a lens would help elucidate elements of crowdworkers' career preferences that are peculiar to the context of ITCS. The career anchors were theorized, in part, to describe worker motivations as technology diffusion within enterprises began to change work processes, and previous researchers have examined the career anchors of IT workers and their evolution over time <ref type="bibr" target="#b9">(Chang et al., 2011)</ref>. As a greater percentage of the workforce transitions to contract-based relationships <ref type="bibr" target="#b50">(Noguchi, 2018)</ref>, the motivations and attitudes of workers may continue to evolve. New types of work relationships that are marked by contract-based deliverables, rather than traditional employment, may change the ways in which worker motivations are anchored. Our analysis extends career anchors theory (CAT) to the contemporary types of worker relationships supported by crowdsourcing.</p><p>The remainder of the paper is organized as follows. We next summarize the existing literature on crowdsourcing and highlight gaps that are addressed in this research. We then present CAT and use it to examine and describe the motivations of IT crowdworkers. Subsequently, we present our research methodology and results, followed by a discussion of the implications of our results. We finally present emerging research themes that are revealed in our analysis and our research contributions.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2">| RESEARCH BACKGROUND-TYPES OF CROWDSOURCING</head><p>Crowdsourcing has been defined in a variety of ways. Common themes among crowdsourcing definitions include the utilization of labour from the crowd through an open call to complete a task mediated or enabled by an online platform <ref type="bibr" target="#b13">(Deng, Joshi, &amp; Galliers, 2016)</ref>. In some instances, the contributions of the crowd are uncompensated, such as contributors to the website Wikipedia, and at other times, the contributions are compensated, such as through Amazon's Mechanical Turk <ref type="bibr" target="#b16">(Doan, Ramakrishnan, &amp; Halevy, 2011)</ref>. While some crowdsourcing research focuses on open innovation <ref type="bibr" target="#b43">(Lichtenthaler, 2011)</ref>, crowdfunding <ref type="bibr" target="#b5">(Belleflamme, Lambert, &amp; Schwienbacher, 2014)</ref>, or ideas competitions <ref type="bibr" target="#b42">(Leimeister, Huber, Bretschneider, &amp; Krcmar, 2009)</ref>, this paper specifically examines how crowdsourcing may be applied as a means of outsourcing IT services. Outsourcing-based crowdsourcing communities provide a mechanism by which small IT jobs are conducted through "microsourcing" engagements that afford various levels of support, guidance, and compensation to crowdsourcing participants <ref type="bibr" target="#b51">(Oshri, Kotlarsky, &amp; Willcocks, 2011)</ref>; we refer to such work arrangements as ITCS. <ref type="bibr" target="#b51">Oshri et al. (2011)</ref> posited a framework for organizing these "microsourcing" engagements into three categories: directories, marketplaces, and communities. They categorized the types of platforms on the basis of their focus, structure of deals, role in facilitating buyer-seller interaction, and revenue model (see Table <ref type="table" target="#tab_0">1</ref>).</p><p>"Directory" online sourcing environments unite buyers of IT services-or job requestors-and crowdworkers.</p><p>Directories do not provide transaction-processing capabilities; instead, they serve only as a virtual job board to facilitate introductions that lead to work engagement whose terms are set outside the platform. Marketplace environments, which are the focus of this paper, involve crowdworkers' selecting and finishing posted jobs in exchange for payment. Crowdworkers perform and deliver these jobs according to prespecified work instructions and a predetermined compensation rate. The marketplace platform provides tools and support for buyers and workers throughout the transaction. "Community" environments provide a framework for the engagement and development of crowdworkers, and they often structure jobs as contests, where not all the participants are financially compensated. Indeed, in such contests, only the winning participants often receive monetary awards. Therefore, community-based environments position themselves as wellsprings of learning where participants' visibility and growth are the salient benefits instead of compensation.</p><p>This research focuses on compensation-based marketplaces within the IT sourcing environment. Within marketplace platforms, ITCS workers complete defined tasks for specific monetary compensation. For example, a developer may be contracted through the platforms to build a website or a database. Within marketplace platforms, an individual or organization interested in procuring IT services uses the platform to post a description of the project that the organization is attempting to complete. Developers, as either individuals or small groups, can bid on the project through the platform. When completing projects, individual or small groups of developers work within the platform to track time or project milestones, and the platform facilitates contract management and payment protections between the buyers and sellers. In contrast with community and directory crowdsourcing platforms, marketplace platforms are designed to facilitate financial transactions. By focusing on these platforms, we are able to isolate the factors that drive IT crowdworkers to purse ITCS as a career (ie, for monetary reasons.) In these work environments, exemplified by platforms such as Elance, Rent-a-coder, Freelancer, and oDesk, job requestors contract with IT workers through online marketplaces, and crowdworkers expect to be paid for the delivery of specific services.</p><p>While substantial attention has been directed at open innovation contests (eg, <ref type="bibr" target="#b62">Terwiesch &amp; Xu, 2008;</ref><ref type="bibr" target="#b44">Majchrzak &amp; Malhotra, 2013;</ref><ref type="bibr" target="#b49">Nevo &amp; Kotlarsky, 2014)</ref>, marketplace crowdsourcing is still an emerging phenomenon. Therefore, scholarly work on marketplace crowdsourcing in general is limited, and for ITCS in particular, it is nonexistent. While some work has been done to examine the viability of marketplace crowdsourcing as an alternative to traditional employment <ref type="bibr" target="#b15">(Deng &amp; Joshi, 2013)</ref>, to our knowledge, crowdsourcing as a career path alternative to traditional employment specifically within IT has not yet been explored. We therefore do not know whether IT workers' perceptions of crowdsourcing opportunities differ from those of less specialized workers. As a larger share of the workforce begins to participate in ITCS opportunities <ref type="bibr" target="#b24">(Freelancer, 2015)</ref>, it is critical that we develop our understanding of how to make crowdsourcing arrangements beneficial for both workers and the companies who utilize them. We posit that the implications for crowdsourcing workers will be particularly acute in marketplace crowdsourcing work environments; as such, workers participate in jobs for defined monetary compensation. While the business implications of various forms of crowdsourcing are beginning to be addressed, questions concerning the worker implications of crowdsourced environments are arising <ref type="bibr" target="#b37">(Kittur et al., 2013)</ref>. Business leaders may be intrigued by the possibilities of crowdsourcing, and worker advocates may fear the ramifications of a crowd-based workforce <ref type="bibr" target="#b60">(Schmidt, 2013)</ref>. However, little work has been done to determine what crowdworkers themselves think of ITCS career pathways. Our study is thus designed to capture the crowdworkers' perspectives regarding their motivations to participate in ITCS.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.1">| Crowdsourcing and the changing nature of work</head><p>While the phenomenon of crowdsourcing continues to grow and while a growing number of studies have examined the behaviours and motivations of crowdworkers <ref type="bibr" target="#b8">(Brabham, 2010;</ref><ref type="bibr" target="#b15">Deng &amp; Joshi, 2013;</ref><ref type="bibr" target="#b34">Kaufmann, Schulze, &amp; Veit, 2011)</ref>, little is understood about whether IT-focused crowdworkers are similar to or differ from crowdworkers in other domains or traditional IT workers. The relatively high-skill levels required to participate in ITCS may result in anchors that differ from those in lower skill work activities. Although significant theoretical contributions have been made regarding how workers are motivated in traditional organizations <ref type="bibr" target="#b1">(Amabile, 1993;</ref><ref type="bibr" target="#b21">Feldman &amp; Bolino, 1996)</ref>, many of these theories address worker development from the perspective of the employer <ref type="bibr" target="#b4">(Beecham, Baddoo, Hall, Robinson, &amp; Sharp, 2008)</ref>. Nonetheless, the crowdsourcing work environment places much greater emphasis on workers managing their own career development. CAT provides a lens through which to examine why some IT professionals participate in ITCS when traditional employment opportunities are plentiful. While many crowdworkers on platforms such as Mechanical Turk may work for far less than minimum wage <ref type="bibr" target="#b15">(Deng &amp; Joshi, 2013)</ref>, crowdworkers on compensation-based platforms such as oDesk may have the potential to earn far more than minimum wage rates.</p><p>To the extent that IT crowdworkers see their involvement in crowdsourcing as "work," CAT <ref type="bibr" target="#b56">(Schein, 1990)</ref> can help uncover the salient anchors of crowdworkers in order to reveal the work values that motivate their participation in ITCS and thus provide insight into why they choose to participate in this seemingly unattractive work environment.</p><p>Crowdsourcing may provide new types of career paths, and it may attract additional talent to IT careers. With a better understanding of the motivations and interests of crowdworkers, scholars, practitioners, and regulators may be better positioned to expand worker opportunities through crowdsourcing. While crowdsourcing may become disruptive to many professions, the distributed nature of the work may make the phenomenon especially relevant to IT workers. Substantial literature has examined how distributed IT professionals work together <ref type="bibr" target="#b26">(Goodman &amp; Darr, 1998;</ref><ref type="bibr" target="#b52">Oshri, Van Fenema, &amp; Kotlarsky, 2008;</ref><ref type="bibr" target="#b65">Vlaar, van Fenema, &amp; Tiwari, 2008)</ref>. Unlike tasks reliant on physical assets, such as transportation or hospitality, IT artefacts can be easily shared in a distributed manner. Given the potential impacts of crowdsourcing on the knowledge-based tasks and the virtual task deliverables of IT workers, the study of crowdsourcing motivations is particularly relevant to the study of IT careers.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3">| THEORETICAL FRAMEWORK: CAREER ANCHORS</head><p>In conducting our preliminary analysis of crowdsourcing, we considered several theories and frameworks for evaluating worker motivations. As crowdsourcing provides workers with the opportunity to self-select the work projects in which they are engaged, we initially considered theories related to worker choice, such as self-efficacy <ref type="bibr" target="#b18">(Endres, Endres, Chowdhury, &amp; Alam, 2007)</ref> or job crafting <ref type="bibr" target="#b66">(Wrzesniewski &amp; Dutton, 2001)</ref>. Previous crowdsourcing research has found crowdworkers to value high levels of flexibility <ref type="bibr">(Deng et al., 2016)</ref>; thus, we also considered work-life integration theory <ref type="bibr" target="#b27">(Greenhaus &amp; Powell, 2006)</ref>. While each of these theoretical lenses may add value for developing our understanding of crowdsourcing and may be valuable in future studies on the impact of crowdsourcing on IT workforce development, this research focuses on career anchors to examine ITCS crowdworkers' motivations. We chose the career anchors framework because it is applicable at an individual level and because it provides a comprehensive framework through which the wide variety of crowdworker motivations that we identified in our analysis may be interpreted.</p><p>Schein's CAT <ref type="bibr" target="#b59">(Schein &amp; Schein, 1978;</ref><ref type="bibr" target="#b56">Schein, 1990;</ref><ref type="bibr" target="#b57">Schein, 1996)</ref>  autonomy/independence, and (5) entrepreneurial creativity <ref type="bibr" target="#b59">(Schein &amp; Schein, 1978)</ref>. As the relationship between workers and employers has become more fluid with the growth of technology and outsourcing, the following three additional anchors have been identified: (6) lifestyle integration, (7) pure challenge, and ( <ref type="formula">8</ref>) sense of service <ref type="bibr" target="#b56">(Schein, 1990)</ref>.</p><p>Within CAT, anchors are characterized as an ability, a value, or a need. Abilities relate to anchors that enable the use of competency as part of tasks, and they are exemplified by the anchors of technical and general managerial competence. Values relate to anchors that are associated with workers' interests and desires and are exemplified by the anchors of autonomy, entrepreneurial creativity, pure challenge, and sense of service. Needs relate to anchors that are associated with employment characteristics that workers must have to facilitate workforce participation; they are exemplified by the anchors of security/stability and lifestyle integration. As we present our findings, we will discuss how our results relate to the career anchors component of ability, value, or need.</p><p>The technical competence career anchor refers to the extent to which workers value the perception of their technical and functional competence as a motivation for professional activities. Maintaining this competence in today's rapidly changing technical environments requires continual skill development <ref type="bibr" target="#b57">(Schein, 1996)</ref>. In contrast, the general managerial competence career anchor refers to the motivation of a worker to take on managerial responsibilities-or "climb the ladder" of organizational leadership positions. For these workers, the ability to develop professionally motivates work activities <ref type="bibr" target="#b57">(Schein, 1996)</ref>. The security/stability career anchor initially referred to employment security-or the likelihood that the worker would be able to continue in their current employment <ref type="bibr" target="#b59">(Schein &amp; Schein, 1978)</ref>. However, as employment markets and employee expectations of long-term employment with an employer have changed, workers have become more focused on "employability" security, meaning that workers motivated by this career anchor have become more focused on developing and maintaining marketable skills <ref type="bibr" target="#b57">(Schein, 1996)</ref>.</p><p>The autonomy/independence career anchor refers to the extent to which a worker values self-reliance and individual decision-making about work activities <ref type="bibr" target="#b56">(Schein, 1990)</ref>. The entrepreneurial creativity anchor refers to the extent to which a worker is drawn to the idea that they can develop their own business or contribute to new products or services that will create value in the economy <ref type="bibr" target="#b57">(Schein, 1996)</ref>. The lifestyle integration career anchor refers to the extent to which a worker is motivated by integrating their personal and professional activities into a balanced life. To such workers, managing lifestyle-related activities may dictate the professional opportunities that they would be willing to pursue <ref type="bibr" target="#b57">(Schein, 1996)</ref>. The pure challenge career anchor refers to the extent to which a worker is motivated by addressing challenges and problems that have not been solved previously; these workers are motivated by using their intellect and creativity to develop new solutions to challenges <ref type="bibr" target="#b57">(Schein, 1996)</ref>. The sense of service career anchor refers to the extent to which a worker is motivated by a desire to do something meaningful for society, as well as to earn an income <ref type="bibr" target="#b57">(Schein, 1996)</ref>. For these workers, balancing work demands with the ability to serve in ways that they find meaningful anchors their employment activities.</p><p>While the concepts presented by the career anchors framework are applicable to a broad range of professional endeavours, the framework has been particularly instructive in the examination of IT careers. IT careers can be marked by rapidly changing skill requirements and wide-ranging options for career path development. Career anchors have been used to examine and explain the career motivations of information system (IS) workers and to describe the variability of worker expectations that can be applied to human resource planning <ref type="bibr" target="#b12">(Crepeau, Crook, Goslar, &amp; McMurtrey, 1992)</ref>. This variability can lead to changes in anchors over time. The age and experience of IT workers have been found to predict a preference for security and stability associated with the ability to pursue work opportunities within a specific geography <ref type="bibr" target="#b30">(Igbaria, Meredith, &amp; Smith, 1995)</ref>. The study by <ref type="bibr" target="#b30">Igbaria et al. (1995)</ref> also showed that IS experience is positively associated with the career anchor of autonomy. IT workers have been found to have dual career options, as they can pursue either managerial or supervisory positions or technical roles <ref type="bibr" target="#b3">(Baroudi, 1988)</ref>. Career values have been used to examine individual differences among women in technology, which demonstrate the limits of "one-size-fits-all" approaches to career interventions <ref type="bibr" target="#b54">(Quesenberry &amp; Trauth, 2012)</ref>. The differing nature of available technical career paths has also led some researchers to propose that workers will align with different anchors at different stages of their career on different career paths <ref type="bibr" target="#b0">(Agarwal &amp; Ferratt, 2000)</ref>. Examining how career anchors change over time, <ref type="bibr" target="#b9">Chang et al. (2011)</ref> found that IT workers who remain in technology-related positions at traditional firms become more interested in managerial positions and in geographic security and that they value higher levels of autonomy. It is nevertheless unclear whether and, if so, how these findings apply to ITCS, where the work, careers, and organizational boundaries are more fluid than those in traditional employment. By addressing the research question posited in this study, we extend the application of CAT to the ITCS space.</p><p>Crowdsourcing represents a work environment that in many ways substantially differs from traditional employment. Crowdsourcing platforms do not consider crowdworkers to be employees, and workers perform without any oversight from traditional managers. Within the crowdsourcing environment, traditional career anchors such as general management competence, security, and stability largely do not exist. Further, other anchors, such as entrepreneurial creativity and pure challenge, may be far more prevalent in crowdsourcing than within traditional employment. As crowdwork continues to grow as a percentage of the workforce (Grewal-Carr, Howard, Bates, &amp;</p><p>Lewis, 2016), the concepts of career anchors may need to evolve to address new workplace structures.</p><p>A qualitative approach, revealed causal mapping (RCM), is used to evaluate the emerging crowdsourcing phenomenon and address the underlying research questions, which centre on "why" workers participate in ITCS, particularly when traditional employment options are available. A special issue of Organizational Science on managerial cognition included examples of causal mapping methodologies <ref type="bibr" target="#b39">(Laukkanen, 1994;</ref><ref type="bibr" target="#b45">Meindl, Stubbart, &amp; Porac, 1994;</ref><ref type="bibr" target="#b53">Priem, 1994)</ref>. As our research questions focus on the underlying motivations for ITCS worker participation, we use the RCM method <ref type="bibr" target="#b46">(Narayanan &amp; Armstrong, 2005)</ref>. This approach enables researchers to examine the underlying characteristics of ITCS tasks and platforms that motivate ITCS workers. The methodology was introduced to the IS discipline through the work of <ref type="bibr" target="#b48">Nelson, Nadkarni, Narayanan, &amp; Ghods (2000)</ref>, who expanded causal mapping techniques to a method they called "revealed causal mapping." More recently, the methodology has been used to examine the motivations of workers who participate in general purpose crowdsourcing activities through Amazon's</p><p>MTurk platform <ref type="bibr">(Deng &amp; Joshi, 2016)</ref>. The methodology of causal mapping allows researchers to make inferences about the true motivations and cognitions instigating actions through the linkages between observed causes and effects among study participants <ref type="bibr" target="#b19">(Fahey &amp; Narayanan, 1989)</ref>.</p><p>RCM is completed using a four-step process: data elicitation, construction of causal maps, validation of the causal maps, and analysis. During data elicitation, informants are identified, and interview questions are administered. For this purpose, the RCM approach utilizes open-ended questions to elicit feedback from study participants. We used an online survey that gives respondents the opportunity to provide text responses. Once the data are collected, the text is analysed to identify cause-effect relationships, which are identified in part by the structure of the questions in the survey (see Appendix A) and also by key phases in the text, such as "if," "then," "since," and "so." After cause-effect relationships are identified, causal maps are constructed through analysis of the raw text of survey responses to identify common themes and commonly related concepts in crowdwork motivations and outcomes.</p><p>Causal maps represent the frequency at which cause-effect relationships are identified in the data. The causal concepts identified in the first wave of analysis are then used to create construct-level causal maps that identify common themes across participants. Subsequently, the raw data are aggregated on the basis of common themes and concepts, and the relative frequency of each cause-effect relationship identified in the raw data is calculated. Once the causal maps have been created, they are validated by experts as representative of the data collected. In this study, participants in multiple crowdsourcing platforms responded to questions regarding motivations and outcomes. The size of the sample was determined by the number of participants required to reach a level of saturation for the causeeffect relationships. Once the point of redundancy in the information was identified, the number of responses was doubled to ensure that full saturation had been reached.</p><p>The RCM methodology is well suited for addressing our research questions because it enables exploratory research into crowdworkers' motivations while providing a measure of reliability for the results. The model creates a framework that can be applied in future quantitative work to develop a deeper understanding of the implications of crowdsourcing for workers' well-being.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.1">| Data collection</head><p>We collected the data in two steps. First, we conducted a pilot study in which we invited IT crowdworkers to complete a survey on their work motivations. Invitations to complete the survey were extended through the online crowdsourcing platforms of oDesk, Elance, 2 and Rent-a-coder. The survey was not posted publicly, and only workers who were explicitly invited to participate were included. Workers were identified by browsing ITCS workers who complete technical tasks. Within crowdsourcing platforms, many different types of tasks are presented to workers (eg, designers and accounting customer services). In this study, we limited our sample to workers who participate in technical tasks, specifically described within the platforms as programmers or developers. Participants were randomly selected from each platform's list of ITCS workers. The response rate of workers invited to complete the survey was approximately 90%. While some of our respondents may have also participated in nontechnical tasks on each platforms, only those with accounts associated with programmer or developer tasks were included in our sample. The survey was presented as a task, and respondents were compensated $20 for their time to complete the survey. After the pilot data were collected, minor modifications were made to the survey in order to better focus on revealing workers' career anchors, and a second wave of data collection was then completed. A total of 25 responses were collected. This research is focused on understanding why workers participate in ITCS when traditional employment options are available. As labour conditions may vary greatly by country, we restricted our sample to US-based workers to remove such variability from our analysis. US-based workers were identified by the location of their account on the platform, as well as through a screen out question prior to the administration of the survey. Only tunities ITCS provides that attracts them to that platform, their career goals, how ITCS helps fulfil their personal and professional priorities, and whether they would consider doing ITCS as their full-time job) and demographic questions (such as their employment status, age, gender, occupation, and household income). The average time required to complete the survey was just less than 1 hour. The survey questions are provided in Appendix A.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.2">| Sample characteristics</head><p>Our sample comprises 25 IT crowdworkers. The number of participants is roughly double the number of responses required for information saturation (refer to the validation of revealed causal maps section below for more details).</p><p>A summary of the demographics of the sample is provided in Table <ref type="table" target="#tab_2">2</ref>, and further details of the sample are provided in Appendix B.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.3">| Revealed causal mapping process</head><p>We applied a multiple-step approach to develop the revealed causal maps. In the first step, data are elicited from the informants participating in the study. In the second step, once data have been collected, the responses are coded and consolidated to produce the revealed causal maps. In the third step, the revealed causal maps are validated. In the final step, the results are then analysed and interpreted. These steps are described below.</p><p>Step 1: Data elicitation</p><p>The survey was provided to workers of three major ITCS platforms: Elance, oDesk, and Rent-a-coder. The use of participants from multiple platforms reduces the risk of respondent bias with respect to issues that may be unique to one crowdsourcing development platform. The purpose of this research is to examine worker motivations and career outcomes that are achieved through participation in crowdsourcing opportunities. Given the high levels of variation in motivations and career outcomes among IT workers in different parts of the world and the high levels of variation among global wage rates, this study focuses on workers in the United States. Responses for 25 crowdworkers are included in the analysis. The responses to the survey generated a substantial number of written data points regarding workforce motivations, and the analysis of responses resulted in the identification of 486 raw cause-effect relationships. As part of the survey, respondents were provided with the opportunity to select one dominant career anchor from a list of anchor descriptions based on <ref type="bibr" target="#b58">Schein's (2006)</ref> Career Orientation Inventory; however, their career anchors were also inferred through their answers to the questions in the survey.</p><p>Step 2: Construction of revealed causal maps</p><p>The responses to the survey were analysed to identify cause-effect relationships from the informants. A review of the responses revealed 486 raw cause-effect relationships, which were aggregated into common themes, for a total of 17 constructs comprising career anchor constructs, career anchors, and work outcomes (see Table <ref type="table" target="#tab_3">3</ref>). The aggregate results revealed six major causes affecting six of the nine career anchors posited in CAT, which in turn resulted in five outcome effects. Interrater reliability was not computed because one author did all the coding iteratively. At each iteration, both the authors discussed the coding, and the discrepancies were all resolved through  discussion. While ITCS workers were motivated by anchors such as autonomy/independence and technical competency, they were not motivated by factors associated with traditional employment, such as the opportunity to assume managerial responsibilities, organizational identity, or a sense of service. To identify causal relationships in the ITCS worker responses, we focused on identifying keywords associated with causes and effects, such as "because," "while," or "if-then." This approach has been further described in previous literature <ref type="bibr">(Deng &amp; Joshi, 2016;</ref><ref type="bibr" target="#b48">Nelson et al., 2000)</ref>. When reviewing the text of the survey responses, we considered repeated words and themes in the data provided from each respondent and grouped these ideas into constructs. This approach allowed us to identify common outcomes that were motivated by differing values. For example, some respondents may find that the ability to set their own work hours, flexibility, leads to work enjoyment. The ability to set their own work hours may be considered important by some respondents because it gives them autonomy in decision-making, while</p><p>for other workers, it may be important because they need to be able to pick up a child from school. In the first case, the raw cause/effect relationship was mapped to the career anchor of autonomy/independence, while in the second case, the raw cause/effect relationship was mapped to the career anchor of lifestyle integration. A summary of the constructs is provided in Table <ref type="table" target="#tab_3">3</ref>.</p><p>Step 3: Validation of the revealed causal maps</p><p>The maps in our analysis were informed by CAT <ref type="bibr" target="#b56">(Schein, 1990)</ref>. Career anchors provided the backdrop through which we could describe differences between motivations across workers citing similar concepts and outcomes within the cause-effect relationships described within their survey responses. Once the causal maps were developed, the results of the analysis were shared and validated with several workers who participate in ITCS projects. As recommended in the IS RCM literature, we identified a point of redundancy for evaluating the convergence of responses <ref type="bibr" target="#b48">(Nelson et al., 2000)</ref>. Saturation is achieved when no new constructs or outcomes are identified through the inclusion of additional respondents. In our analysis, the saturation of career anchors occurred at the ninth response, and saturation of the observed outcomes of IT crowdwork participation occurred at the fourth response. This point of redundancy indicates a sample size that is sufficiently large to identify the important constructs in our target group.</p><p>To ensure that additional effects were not missed, we collected 25 responses, roughly six times the number required for information saturation. A summary of the saturation of responses is shown in Figure <ref type="figure" target="#fig_1">1</ref>. In the graph, the Y-axis represents the number of career anchors and outcomes observed in the sample, while the X-axis represents the number of individuals included in the sample to reach that number of anchors or constructs identified.</p><p>Step 4: Analysis of the revealed causal maps After the raw cause-effect relationships were identified, we developed aggregate maps on the basis of the weighted frequency of the raw relationships in the aggregate data. The relationships that occurred more frequently were weighted higher than those that occurred less frequently. Causal maps are developed during the analysis of the frequencies between cause-effect relationships, and the frequency of linkages between two constructs is calculated as a percentage of the total linkage between two constructs and reported in the causal map <ref type="bibr" target="#b23">(Ford &amp; Hegarty, 1984)</ref>. This approach allows causal maps to be created at the individual level or to be aggregated into maps of groups of individuals who share common traits. The process of completing the revealed causal maps is further described in Appendix C. We examined the constructs and linkages uncovered in the maps (see Figure <ref type="figure" target="#fig_2">2</ref>). The constructs and their associations reveal career anchors and the resulting outcomes that collectively drive crowdworkers' participation in ITCS.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5">| RESULTS-CAREER ANCHORS DRIVING CROWDWORKERS' PARTICIPATION IN ITCS</head><p>Our data analysis revealed 12 constructs. Seven constructs represent worker motivations, in terms of their abilities, values, and needs, for ITCS participation, whereas five constructs represent outcomes to workers that resulted from ITCS participation. Of the seven motivation constructs revealed in our analysis, security/stability, technical/functional competence, autonomy/independence, entrepreneurial creativity, pure challenge, and lifestyle integration are represented in the career anchors that have been defined by <ref type="bibr" target="#b56">Schein (1990)</ref>. One anchor defined by Schein, sense of purpose, was not revealed in our analysis. Our analysis did reveal that some ITCS workers valued the schedule flexibility that crowdwork provides to enable personal participation in philanthropic activities;</p><p>however, ITCS participation merely allows such service to happen; it was not the work participation itself that provided a sense of purpose. Our analysis also revealed one motivation for ITCS participation that was not related to Schein's career anchors, which we have labelled employment access. Some ITCS workers do not feel that they would be able to participate in the IT workforce without the opportunities afforded by ITCS platforms.</p><p>These workers participate in ITCS projects because they do not feel that there is a reasonable alternative to find IT employment.</p><p>In addition to career anchors, our analysis revealed several outcomes that were associated with participation in </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.1">| Autonomy/independence</head><p>This construct refers to value that workers place on the opportunity to choose jobs and operate without oversight from others afforded by ITCS platforms. Workers on ITCS platforms note that autonomy and independence are important values that motivate their participation. Within crowdsourcing work environments, workers have been found to be motivated by work situations that provide high levels of autonomy <ref type="bibr">(Deng &amp; Joshi, 2016)</ref>. ITCS work environments free workers from organizational constraints and allow then to exercise greater control of when, where, and how they work. For all of the crowdworkers in our study, autonomy was a major reason driving their involvement in ITCS. Specifically, our analysis revealed three concepts that contributed to workers perceptions of autonomy and independence within the ITCS environment: escape from workplace norms, job crafting, and schedule flexibility.</p><p>Escape from workplace practices and norms refers to the value that workers place on an ITCS work environment that are perceived to have better psychological and social conditions (eg, absence of office politics). With the opportunity to work outside the physical and organizational confines of traditional employment, these workers perceived greater levels of autonomy. They valued this autonomy and were thereby motivated to participate in ITCS. Job crafting refers to the value that ITCS workers place on having the control over the tasks, clients, and coworkers that they choose when selecting which jobs to apply for on platforms. The diverse variety of the jobs available on the platforms allow workers to select jobs of differing properties (eg, duration or complexity) to match their skills, availability, and interests, thereby increasing their job satisfaction. These workers value the power to determine their experience portfolio by bidding on the type of tasks that best fit their needs at a given time. The bidding process of the platforms also allows workers to choose whom they work with and whom they work for. The nature of the ITCS platform allows these workers to craft their work activities in ways that are not supported in traditional employment. Schedule flexibility refers to the value that ITCS workers place on setting their own schedule and establishing their own pace of work <ref type="bibr" target="#b21">(Feldman &amp; Bolino, 1996;</ref><ref type="bibr" target="#b57">Schein, 1996)</ref>. Being able to choose when to participate in work-related tasks is important to most of the crowdworkers who participated in this study. Crowdwork provides these workers with the ability to choose when they complete their tasks, outside traditional office work structures. Schedule flexibility highlights the value that workers place on autonomy, as demonstrated by respondent 17's quote below. The term "love" as used by the respondent conveys a value derived from having control over her schedule. We coded workers' responses as a desire for autonomy through schedule flexibility when workers described their motivation to seek work on ITCS platforms in terms of their work values. This flexibility allows workers to expand or contract their workload based on time availability. The ability to choose when work is completed also allows workers to schedule their ITCS tasks around other less flexible professional or personal commitments.</p><formula xml:id="formula_0">I</formula><formula xml:id="formula_1">I</formula><p>[I like that] I can find work that fits my availability and skillset, when I have gaps in my schedule to fill.</p><p>( <ref type="bibr">Respondent 15,</ref><ref type="bibr">female,</ref><ref type="bibr">unmarried,</ref><ref type="bibr">no</ref>  </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.2">| Entrepreneurial creativity</head><p>Crowdworkers who value entrepreneurial creativity are motivated by their desire to create new social or economic outcomes or new businesses that are entirely their own <ref type="bibr" target="#b21">(Feldman &amp; Bolino, 1996;</ref><ref type="bibr" target="#b57">Schein, 1996)</ref>. Crowdworkers realize that ITCS platforms not only allow them to be entrepreneurial but also provide a mechanism for developing skills that can bolster their entrepreneurial creativity. While traditional CAT describes entrepreneurial creativity as a value, our findings reveal that within the ITCS environment, this career anchor reveals itself in a variety of ways. Specifically, our analysis revealed that entrepreneurial creativity manifests as an ability (eg, learning new business skills and preparing oneself for future workplaces), as a value (eg, deriving fulfilment by contributing to entrepreneurial activities), and as a need (eg, fulfilling a financial need). The multitude of ways in which entrepreneurial creativity expresses itself is unique to the ITCS environment and is not evident in other kinds of work examined in the literature.</p><p>Developing business skills refers to the ability that ITCS provides for workers to develop skills that are necessary to manage a business. To effectively participate in ITCS, workers need to have certain business skills. Future work preparedness refers to the crowdworkers' desire to gain experiences that will enhance their employability in future labour markets. The ITCS workers believe that the nature of the work is changing and that participation in crowdsourcing represents a new and emerging work practice. These workers feel that the "gig" economy will continue to grow; therefore, gaining experience in the ITCS market will help them prepare for future work opportunities. Our analysis revealed that for some crowdworkers, the motivation to participate in the ITCS environment is necessitated by their beliefs about the shifting labour marketplace.</p><p>Employers are no longer looking for the long-term employee due to benefit requirements, or they are looking for someone else to cover the insurance requirements; this is where employment of the future is going, and I want to be on board and established before it takes off. (Respondent 1, female, unmarried, two or more children, associates degree, household income less than $25 000, 44 years of age)</p><p>Contributing to "others'" entrepreneurial creativity allows crowdworkers to vicariously experience the pleasure of value creation. This deviates from the traditional definition of this anchor, where fulfilment is derived through products or services that are entirely their own. By helping other entrepreneurs who have posted jobs on ITCS platforms, some workers felt the joy of entrepreneurial creativity.</p><p>[ Transition income helps fulfil a financial need as crowdworkers follow their desire to create new social or economic outcomes or new businesses that are entirely their own. Through ITCS, workers can meet their income needs while pursuing their entrepreneurial dreams. Participation in ITCS provides high levels of flexibility on when and where work is completed, which allows crowdworkers to earn some income that provides a bridge of support while they develop their own businesses.</p><p>(ITCS helps me) to remain independent and manage and develop my own business, to be creative, and to travel while maintaining a business income. (Respondent 12, male, unmarried, no children, bachelor's degree, household income of $25 000 to $49 999, 44 years of age)</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.3">| Lifestyle integration</head><p>For crowdworkers motivated by lifestyle integration, the capabilities that ITCS platforms afford them for balancing their career with their lifestyle provide a motivation for ongoing participation. These workers are concerned with issues such as paternity/maternity leave and day-care options. For some workers, the ITCS work environment fulfils their need for better integration of their work responsibilities with their personal life. Our analysis revealed two concepts that contribute to lifestyle integration: location flexibility and supplemental income.</p><p>Location flexibility refers to the need for ITCS to satisfy workers ability to choose where they perform their work tasks. Unlike schedule flexibility as a dimension of the autonomy anchor where merely the autonomy provided by flexibility is valued, this type of flexibility fulfils the need for ITCS workers to adjust their work location and time commitments in order to meet their lifestyle responsibilities. Such flexibility allows workers to live in locations that meet their personal family needs, even if clients and coworkers live in other locations. By eliminating the time required for commuting, these workers also have more time to pursue personal interests. Supplemental income refers to the financial need that ITCS fulfils. For some workers, lifestyle responsibilities, such as family or community needs or school schedules, make traditional full-time employment challenging. The flexibility provided through ITCS allows these workers to earn some income to supplement their household needs.</p><p>[ITCS] helps me to make ends meet. <ref type="bibr">(Respondent 5,</ref><ref type="bibr">female,</ref><ref type="bibr">married,</ref><ref type="bibr">no</ref>  </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.4">| Pure challenge</head><p>Some crowdworkers on ITCS platforms are motivated by the challenge of solving technical problems. Their involvement in crowdsourcing allows them to take on and solve challenging problems through which they derive fulfilment.</p><p>Our analysis revealed one factor, ie, problem solving, that contributed to pure challenge motivations.</p><p>Problem solving refers to the value that ITCS affords workers by enabling them to select tasks that allow them to solve new and unique problems. By self-selecting the jobs for which they apply, ITCS allows workers to seek out challenges that will stretch their technical abilities. In addition, by providing workers with the opportunity to challenge themselves with new types of technical problems, ITCS can provide an outlet for some workers who do not feel challenged in their traditional jobs. </p><formula xml:id="formula_2">I</formula></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.5">| Security/stability</head><p>ITCS workers' fulfilment in part depends on the extent to which they have complete financial security and work stability.</p><p>Their security and stability is both supported and constrained by the availability of work through ITCS. Our analysis revealed that the following two concepts contributed to security and stability: payment security and work dependability. While the workers found value in some of the services that platforms provide-notably payment protections-they also expressed concerns with some needs that the platforms could not meet, such as work availability.</p><p>Payment security refers to the technological capabilities of platforms that provide workers with support that is not available in traditional freelance work. Platforms enable workers to see the ratings of perspective employers and provide a means to verify that perspective employers have the funds available to pay for the work that they are requesting. These ITCS platform features provide workers with assurances that they are working with reputable clients and that they will be compensated upon the completion of their work. Our analysis revealed that for experienced freelancers, payment protection capabilities provide security that is not available in traditional freelancing.</p><p>I particularly like that working with <ref type="bibr">[an ITCS platform]</ref>  </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.6">| Technical competence</head><p>The crowdworkers' participation in crowdsourcing has allowed them to maintain existing or develop new technical skills. The primary concept of ITCS in allowing workers the ability to develop technical competence was the technical skill development opportunities that ITCS participation affords.</p><p>Technical skill development has been afforded through the variety of jobs that are available in ITCS platforms.</p><p>Workers are able to select tasks that use their existing technical skills and that provide opportunities to practice new skills that the workers were willing to develop.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>I have had the wonderful opportunity to learn new things for many of my projects. I have improved from novice to average WordPress development, and many of my projects involve serious debugging challenges</head><p>for JavaScript and CSS. One of the biggest skills I bring to a project is the ability to research and evaluate possible solutions, and then, I even try my hand at implementing them. <ref type="bibr">(Respondent 5,</ref><ref type="bibr">female,</ref><ref type="bibr">married,</ref><ref type="bibr">no children,</ref><ref type="bibr">bachelor's degree,</ref><ref type="bibr">household</ref>  </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.7">| Employment access</head><p>Our analysis revealed one group of motivations for ITCS crowdwork that was not considered by CAT. ITCS provides access to crowdwork for high-skill IT jobs. These jobs can provide relatively high wages and flexibility that allows workers to integrate life responsibilities without sacrificing the opportunity for cash flow. Our analysis revealed that for some ITCS workers, traditional IT employment is out of reach. For these workers, ITCS platforms provide access to IT employment opportunities that are not available through traditional means, and it fulfils the need of employment for these workers. Our analysis revealed two concepts that contribute to employment access: opportunity to work and platform enablement.</p><p>Opportunity to work refers to the extent to which workers view the platform as a means to stay engaged in IT work when other options are not available. For some workers, ITCS provides a means to work in circumstances where their health, educational, or professional background may limit their employment opportunities. For these workers, ITCS fulfils their employment needs: (Respondent 22, male, one child, some college, household income less than $25 000, 52 years of age)</p><formula xml:id="formula_3">I</formula><p>Platform enablement refers to the extent to which workers view the features afforded by the platform as a means to engage in IT work that would otherwise not be available to the worker. The capabilities provided by ITCS platform features fulfil the workers' need to stay connected to the workforce. For these workers, the availability of ITCS platforms is a critical link to employment opportunities. Without the access to technical employment opportunities, these workers would likely drop out of the IT workforce.</p><p>[ Next, we discuss the remaining five constructs that characterize the work outcomes influenced by the career anchors discussed above. Our analysis of the data reveals that when crowdworkers achieve congruency between their career anchors and ITCS, they are more likely to achieve positive work outcomes.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.8">| Persistence in IT occupations</head><p>Our analysis revealed that participation in ITCS fulfilled workers' needs for employment in ways that broadened participation in the IT workforce. The work value of employment access resulted in ITCS workers finding jobs, and the use of platforms enabled workers to complete and receive payment for those jobs, even when the participating workers considered themselves unable to find traditional employment. For these workers, ITCS platforms provide a valuable service that lets them stay engaged in the IT workforce. Without this outlet, some of these workers would simply leave the IT workforce.</p><p>[ </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.9">| Skill development</head><p>Our analysis revealed that participation in ITCS provides workers with the ability to develop skills, and such skill development was achieved in both business and technical domains. By providing an outlet for entrepreneurial creativity, ITCS participation enabled workers to develop business management skills. Further, by providing a variety of tasks requiring technical competence, ITCS platforms afforded workers with the ability to maintain and develop technical skills. Workers motivated by pure challenge are able to find tasks that stretched their technical abilities and developed their technical skills. By providing IT workers with the ability to develop both technical and business skills, ITCS platforms are perceived by participating workers to expand their career opportunities.</p><p>Over the past four years, I've learned countless technical and business skills that I feel I'd be far less marketable without. Simply by being on the job, having to find resources and apply them immediately, dealing with responsibilities and deadlines while at the same time given the space to creatively approach a problem, [ITCS platforms have] bettered my professional skills. (Respondent 18, male, unmarried, no children, some high school, household income less than $25 000, 18 years of age)</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.10">| Work satisfaction</head><p>Our analysis revealed that participation in ITCS provided workers with satisfaction in their work activities. Work satisfaction was achieved through a variety of career anchors. Through ITCS, workers were able to integrate work activities into their lifestyle. Completing ITCS jobs provided workers not only with the autonomy that comes through crowdsourcing but also with a sense of satisfaction from completing tasks. Participation in ITCS provided workers with the ability to use entrepreneurial creativity in helping address client needs. This direct visibility to client needs provides satisfaction in work completion. ITCS also provides workers with the ability to develop both their technical and business skills. Through providing workers with the ability to continuously learn through their employment, ITCS participation enabled workers to enjoy completing tasks. There is also a personal reward knowing that I have helped to solve a problem or fix a bug or develop a whole new product. One of my priorities was to be able to create useful things and add knowledge to people all over the world. Doing projects on (an ITCS platform) has made that priority a possibility.</p><formula xml:id="formula_4">I</formula><p>( <ref type="bibr">Respondent 11,</ref><ref type="bibr">male,</ref><ref type="bibr">unmarried,</ref><ref type="bibr">no children,</ref><ref type="bibr">bachelor's degree,</ref><ref type="bibr">household</ref>  </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.11">| Work frustration</head><p>Our analysis has revealed that participation in ITCS resulted in frustration resulting from the lack of dependability or stability of crowdwork. Many workers who participate in ITCS also have traditional IT employment. For these workers, ITCS can be a creative outlet or a means of generating supplemental income. However, many of these workers who participate in ITCS part time expressed interest in abandoning traditional full-time employment and instead pursuing ITCS full time. Unfortunately, for some of these workers, the lack of a steady flow of work available through ITCS platforms has prevented them from engaging in ITCS work full time because it does not meet their stability and security needs. These workers expressed frustration with the relative lack of available jobs on ITCS platforms that would be required to sustain their views regarding full-time employment. </p><formula xml:id="formula_5">I</formula></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.12">| Earning an income</head><p>Our analysis revealed that participation in ITCS has fulfilled workers' need to generate financial income. We found that for workers who participate in compensation-based ITCS platforms, the ability to earn income is a common motivation. For these workers, participation in ITCS is not a hobby or recreational activity; rather, it is a means to generate income.</p><p>I'd like to build some web properties or apps that bring in passive, consistent income so that I can work less hours, enabling me to do better work for the hours that I am working. … I'm also working on raising my rate so that, again, I can work less hours (rather than make more money for the sake of making more money).</p><p>( <ref type="bibr">Respondent 15,</ref><ref type="bibr">female,</ref><ref type="bibr">unmarried,</ref><ref type="bibr">no children,</ref><ref type="bibr">bachelor's degree,</ref><ref type="bibr">household</ref>   </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6.1">| ITCS crowdworker archetypes</head><p>Our findings demonstrate that ITCS workers are not a monolithic work group. Preliminary review of our results indicates that respondents' differences in their current work milieu have segregated them into four groups. As illustrated in Figure <ref type="figure">3</ref>, the two work milieu dimensions that separate these four groups include (1) the extent to which respondents identify as being IT crowdworkers and ( <ref type="formula">2</ref>) whether the respondents are part of the traditional IT workforce existing before ITCS markets were created or whether they were part of the nontraditional IT workforce created by ITCS. Group no. 1 comprises individuals who already are freelance IT workers, but the emergence of ITCS platforms provides functionalities that advances their ability to effectively secure clients and manage their business.</p><p>Group no. 2 consists of individuals who are already working as IT professionals in an organizations outside ITCS but who work as crowdworkers as hobbyist. Group no. 3 consists of individuals who are trained in IT but who are either unable or unwilling to participate in the traditional IT workforce because of their life circumstances, even if they deeply appreciate the opportunities provided by ITCS participation as IT crowdworkers. Group no. 4 consists of individuals who do not view themselves as IT professionals, but they engage in ITCS to make money while they purse their other non-IT passions. There appears to be differences in motivations among these four groups that require further investigation. By developing our understanding of what types of workers participate in ITCS and why each type of worker continues to participate, we can facilitate better platform design and more effective regulatory oversight of crowdsourcing employment. In addition, an understanding of these differences could enable ITCS work environments to attract, retain, and develop their ITCS workforce.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6.2">| ITCS career anchor orientation</head><p>Our findings illustrate that for ITCS workers, career anchors may evolve as the worker faces various life stages.</p><p>Previous research has identified that IT workers not only turn over from IT positions but also turn away from IT careers <ref type="bibr" target="#b31">(Joia &amp; Mangia, 2017)</ref>. Past research on the career anchors of IT workers reveals that as workers grow older, the anchors of security and stability around work location become more important <ref type="bibr" target="#b9">(Chang et al., 2011)</ref>, potentially changing the ways in which workers engage with their careers. In addition, as workers become more experienced, some may take on less technical roles, instead opting to fulfil managerial positions and moving away from purely technical delivery roles <ref type="bibr" target="#b9">(Chang et al., 2011)</ref>. However, as <ref type="bibr" target="#b3">Baroudi (1988)</ref>  </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6.4">| Regulatory and worker protection requirements on ITCS</head><p>Future research on understanding the ITCS work environment and conditions from crowdworkers' perspective could help in the design of effective regulatory regimes and worker protections <ref type="bibr">(Deng et al., 2016)</ref>. Researchers and policymakers are struggling to understand the potential implications of these emerging work practices on employment markets and worker protections <ref type="bibr" target="#b29">(Harris &amp; Krueger, 2015)</ref>. As firms and regulatory agencies assess how crowdsourcing is transforming labour markets, the role of ITCS in facilitating employment access should be considered in developing regulatory frameworks. Crowdworkers' interest in and excitement around ITCS presents IT workforce development opportunities by providing a mechanism for increasing the overall available IT talent in the marketplace. As more workers engage in the "gig" economy <ref type="bibr" target="#b25">(Friedman, 2014)</ref>, it is becoming increasingly important to understand the interests and desires of workers. While regulatory discussions of the nature of "jobs" continue, deepening our understanding of the career anchors of crowdworkers adds richness and depth to the scholarly dialogue regarding the future of work. Our results could have implications for other components of the contingent IT workforce, such as temporary employees and other forms of contractors. The findings of this research are consistent with previous research on crowdsourcing that demonstrates the high value that crowdworkers place on flexibility and autonomy <ref type="bibr" target="#b15">(Deng &amp; Joshi, 2013)</ref>; however, ITCS workers place additional emphasis on skill development through both technical and business-oriented tasks. In addition, unlike many crowdsourcing environments, such as Mechanical Turk or Uber, ITCS marketplaces dedicated to ITCS provide a lucrative avenue for workers to earn a substantial income while maintaining and developing skills necessary to compete in the digital economy. Nearly a third of the respondents in our sample had household incomes of more than $100 000 per year. The high earning potential of crowdworkers through ITCS may allow crowdwork to develop into a viable mainstream alternative to traditional IT employment.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6.5">| ITCS platform design</head><p>While overall our participants were very happy with the opportunities that ITCS provided, many of our respondents expressed concerns regarding the rigidity of ITCS platforms and the relative lack of work availability. Our findings begin to uncover how the technical features of ITCS can either promote certain career anchors (eg, virtualization of IT tasks on digital platforms support work flexibility that affords autonomy and lifestyle integration) or obstruct them (eg, the lack of a guarantee of steady income affects work security). Future research could thus offer more an effective ITCS platform design by adding features that advance positive outcomes (eg, work satisfaction) and mitigate negative outcomes (eg, work frustration). In addition, we call for further research from the perspective of organizations that post ITCS work to fulfil participants' IT sourcing needs. Perhaps, through better design of platforms, more organizations will be willing to participate in ITCS <ref type="bibr" target="#b61">(Taylor, 2015)</ref>. Moreover, additional work availability through greater participation from work providers could help extend the income potential of crowdsourcing to a larger number of ITCS workers.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6.6">| Extending CAT-ITCS perspective</head><p>CAT provides a valuable means for describing worker motivation within an organization. The concepts of CAT have refined over time to reflect the evolving nature of work <ref type="bibr" target="#b58">(Schein, 2006)</ref>. The growth of contract-based labour in general and crowdsourcing platforms <ref type="bibr" target="#b50">(Noguchi, 2018)</ref> in particular presents potential challenges to our understanding of how worker motivations are manifest in rapidly growing nontraditional work structures. By the unearthing values, needs, and skills that drive participation in ITCS, this study extends CAT in a contemporary work environment. Future research could also further test and refine the concepts underlying each career anchor and their relationships revealed in our RCM analysis as a variance model. Using the revealed causal map that inductively emerged from our data analysis (Figure <ref type="figure" target="#fig_2">2</ref>), we can deduce myriad variance models that can help explain and predict the nature (eg, positive or negative) and magnitude (strength) of the effects of these factors on crowdworkers' participation in ITCS. Figure <ref type="figure" target="#fig_3">4</ref> illustrates one such variance model that emerged from our causal map.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="7">| CONTRIBUTIONS</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="7.1">| Contribution to research</head><p>Technology is enabling fundamental changes to the way in which work is distributed, the way in which workers are compensated, and the relationship between companies and their employees. Traditional theories regarding workforce development, work design, and collaborative development will need to evolve in order to address these changing relationships. This research provides a small view of the way in which changes in the company-employee relationship are perceived in one group of specialized knowledge workers. Such insights can help illuminate the changing work environment from the perspective of the worker and provide constructs for future research examining how crowdwork can be designed in ways that are beneficial to crowdworkers.</p><p>This research contributes to CAT by extending the anchors in the framework to new types of employment relations.</p><p>Our research demonstrates that in crowdsourcing environments, the career anchors defined in <ref type="bibr" target="#b56">Schein's (1990)</ref> framework are still relevant, although the way in which the anchors manifest is evolving. Stability and security are increasingly focused on skill development, while other anchors, such as autonomy/independence and lifestyle integration, are amplified. In addition to the career anchor motivations described by Schein, our analysis reveals that some workers are motivated to participate in ITCS in order to maintain access to IT employment. The concepts provided by CAT do provide a framework for understanding the new types of firm-worker relationships that are emerging in the "gig" economy; however, further refinement may be required as the traditional definition of the "firm" and "employment" blurs.</p><p>This research contributes to the IT workforce literature by identifying how technology-enabled ITCS platforms may provide a means to expand the available IT workforce. Technology-mediated outsourcing may provide a means to engage a more distributed workforce, reducing location-based challenges to IT staffing. Our findings also revealed that work satisfaction joined skill development as a common outcome. Crowdsourcing provides a mechanism by which individuals are able to self-direct their skill development activities. Further research could examine the unique attributes of skill development in the ITCS context that may be contributing to workers satisfaction. In a workforce environment in which some are forecasting resource constraints <ref type="bibr" target="#b2">(Amato, 2013)</ref>, research that identifies new ways to potentially expand the available talent pool provides a potential avenue for future research.</p><p>This research also contributes to the growing stream of crowdsourcing research by addressing the similarities and differences between crowdworkers who participate in IT jobs and those who perform less complex tasks. While IT workers appear to participate in crowdsourcing for reasons of flexibility and autonomy, similar to those expressed by other crowdworkers <ref type="bibr" target="#b15">(Deng &amp; Joshi, 2013)</ref>, our research demonstrates that the higher levels of income available through technology delivery can attract workers motivated primarily by income and that the complexity of IT-related jobs can attract workers looking for cognitive challenges. While these motivations may be similar, ITCS may have the capacity to attract workers who would not be interested in participating in other types of crowdsourcing.</p><p>Because of the isolating structure of crowdsourcing contracts, crowdworkers who participate in completing IT tasks through crowdsourcing platforms are afforded little opportunity to collaborate with others their work. This research highlights the fulfilment that can be gained through individual IT work-rather than through collaborative teams.</p><p>Crowdsourcing is a rapidly evolving phenomenon, and the relationships between workers, firms, and regulators are still adapting to new types of relationships. This study examines a subset of workers, those completing IT tasks, within work for hire in "marketplace" platforms. The findings of this study support the development of a research agenda in two ways: further examination of the implications of ITCS for workers and further examination of the crowdsourcing ecosystem. Future research can further examine the implication of crowdsourcing for workers by expanding on the parameters of the study. This study explicitly focuses on US-based workers as respondents. Previous research has found differences between IT professionals in the United States and those in other cultures <ref type="bibr" target="#b11">(Couger, 1986;</ref><ref type="bibr" target="#b10">Couger, Halttunen, &amp; Lyytinen, 1991;</ref><ref type="bibr" target="#b47">Navarrete &amp; Pick, 2003)</ref>. The anchors identified thus may not extend to crowdworkers in other cultural contexts. Future research could thus examine how the motivations of ITCS workers compare across global labour markets. The advent of crowdsourcing has dramatically reduced geographic boundaries in completing work <ref type="bibr" target="#b41">(Lehdonvirta, 2016)</ref>, and understanding the motivations of ITCS workers engaged in global project delivery could thus enhance our understanding of workforce management in an increasingly globalized world. Second, this research is focused only on the workers engaged in ITCS projects. For a crowdsourcing market to exist, workers must interact with service buyers within the platform. Future research on the crowdsourcing ecosystem could therefore examine the involvement of both buyers of ITCS services and the platforms that support such transactions.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="7.2">| Contribution to practice</head><p>Competition for quality information among IT workers is expected continue to grow in the next decade. For both internal company IT organizations and IT service providers, finding ways to continue to attract the talent necessary to complete IT projects will therefore be critical. This research will help practitioners better understand how to design digital platforms that are attractive to crowdworkers and to determine how to encourage skill development within crowdworker communities. Crowdsourcing may fundamentally alter the ways in which firms attract, retain, and develop employees. Future research may thus further examine how the anchors of ITCS workers can help firms develop collaborative partnerships with a broad range of IT professionals. By using ITCS IT Managers may be able to better match worker skills to IT workforce needs. This research is also of value to the crowdworkers. A better understanding of crowdworkers' motivations and the career outcomes of their crowdsourcing opportunities may offer them additional opportunities for worker skill development and success.</p><p>As the volume of the "gig" economy continues to grow, it can be expected that regulators will become increasingly involved in defining acceptable policies and procedures. Regulators evaluating low-skill instantiations of crowdsourcing such as Amazon's MTurk or Uber's contract drivers should consider that high-skill crowdsourcing activities might provide unique opportunities to workers. Our ITCS workers expressed high levels of job satisfaction, as well as gratitude for the opportunities provided through crowdsourcing. IT workers who participate in crowdsourcing can earn meaningful income, and they express high levels of satisfaction. This research demonstrates that a one-size-fits-all approach to regulatory protections of crowdworkers may harm the IT workers who currently benefit from crowdsourcing practices.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="8">| CONCLUSION</head><p>The focus of this research on ITCS may limit the generalizability of results to other types of crowdworkers, as the motivations and outcomes of work may be inconsistent with the experience of crowdworkers in unspecialized work</p><p>types. The research is also limited by its focus on respondents in the United States, as many active participants in ITCS reside in other countries. The 25-respondent sample further limits the generalizability of the results, and a broader quantitative survey would provide a further theoretical contribution. The sample represents individuals currently pursuing crowdsourcing opportunities, which may introduce a convenience bias. Our analysis is also limited by selection bias as we are only focused on technical workers. This approach limits the insights that can be gained from workers who have become inactive in the platforms included in the evaluation. The RCM approach can be an effective tool for exploratory analysis; however, further analysis may be required to validate any relationships identified from the causal maps. Future research on the topic could include a quantitative study on crowdworker motivations and career outcomes, longitudinal assessments of the impact of crowdwork participation on worker skill development, and analysis of whether motivations and outcomes for crowdworkers vary across geographic or economic conditions. In addition, future research could examine whether motivations and career outcomes in crowdsourcing participation hold constant for workers in other countries.</p><p>As the prevalence of IT continues to grow, crowdsourcing is poised to become a growing source of talent for IT service providers <ref type="bibr" target="#b36">(Kim, Altinkemer, &amp; Bisi, 2012)</ref>. While crowdsourcing has the potential to rapidly increase the speed of IT delivery <ref type="bibr" target="#b16">(Doan et al., 2011)</ref>, it also runs the risk of disenfranchising IT workers and limiting opportunities for ongoing skill development as technology evolves. This research addresses both the promise and the challenges of crowdsourcing from the perspective of the crowdworker. The RCM approach provides meaningful constructs that can be applied in future research on the emerging phenomenon of crowdsourcing.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>ORCID</head><p>Joseph Taylor http://orcid.org/0000-0003-1220-058X</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head></head><label></label><figDesc>workers who are currently based in the United States (regardless of national origin) were allowed to take the survey; however, we did not exclude workers on the basis of the location of their clients. In other words, a US-based developer who is working on developing mobile applications for a company based in India could be included in our study, whereas a Pakistan-based developer who is working on developing payroll applications for a US-based firm would not be included in our study. The online survey comprised open-ended questions regarding work values and outcomes (such as what types of jobs they usually take, what they like about doing ITCS, what they dislike, what oppor-</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>FIGURE 1</head><label>1</label><figDesc>FIGURE 1 Saturation graph [Colour figure can be viewed at wileyonlinelibrary.com]</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>Figure 2</head><label>2</label><figDesc>Figure2provides a summary of the mapping of the revealed causal relationships that are described above. The figure represents the aggregate representation of the 486 cause-effect relationships identified in the analysis of the survey results. In order to simplify the figure, relationships that occurred less than 0.025 have been trimmed from the diagram. The values associated with a linkage reflect the percentage of that linkage over all the linkages identified(Deng &amp; Joshi, 2016). Overall, the crowdworkers feel satisfied professionally through their participation in ITCS; however, the underlying causes of their career development and satisfaction outcomes vary across individuals.Conversely, causes resulting in the "work frustration" and "ability to earn an income" outcomes do not vary across individuals. Work frustration stems from a lack of enough work on ITCS platforms. In contrast, the ability to persist in IT occupations has helped in workers ability to achieve stable cash flow for crowdwork that otherwise would have been pushed out of the IT workforce because of life circumstances.In summary, within this work environment, individuals have the flexibility to juggle the various work demands placed upon them by ITCS to achieve their career and life goals. Overall, crowdworkers view their participation on ITCS platforms very favourably, primarily because of the nature and magnitude of the flexibility afforded by this work environment. These crowdworkers are willing to potentially sacrifice overall income in order to maintain the higher levels of work pattern flexibility afforded by ITCS, where the workers have the freedom to choose what they work on and where, how, and when they work. The flexibility provisioned by ITCS allows workers to experience fewer role conflicts between work demands and personal life demands. This mitigation of role conflicts is achieved through work adjustments facilitated by multiple career anchors. For example, two workers may report that participating in ITCS allows them flexibility. However, for some workers, flexibility is important because it allows them to choose the tasks that they work on, associated with the career anchor autonomy/independence, while for other workers, flexibility is important because it allows them to pick up their children from school, associated with the career anchor of lifestyle integration. Interestingly, crowdworkers' unfavourable views of ITCS primarily result from their inability to be on ITCS full time. The primary source of work frustration expressed by the interviewed crowdworkers is the insufficient number of projects available, which adversely affects their need for security and stability in their work.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head>FIGURE 4</head><label>4</label><figDesc>FIGURE 4 One potential theoretical model: determinants of crowdworker participation in information technology (IT) crowdsourcing [Colour figure can be viewed at wileyonlinelibrary.com]</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head>TABLE 1</head><label>1</label><figDesc>Characteristics of sourcing environments</figDesc><table><row><cell>Characteristics</cell><cell>Directory</cell><cell>Marketplace</cell><cell>Community</cell></row><row><cell>Main focus</cell><cell>Provides a list of available</cell><cell>Provides buyers with a platform</cell><cell>Supports professional skill</cell></row><row><cell></cell><cell>freelance contractors to</cell><cell>on which to post available work</cell><cell>development</cell></row><row><cell></cell><cell>perspective buyers</cell><cell></cell><cell></cell></row><row><cell cols="2">Structure of deals Deals are offline; no</cell><cell>Deals are done online; the</cell><cell>Deals are done online and</cell></row><row><cell></cell><cell>platform involvement</cell><cell>platform is involved in legal and</cell><cell>usually structured as contests.</cell></row><row><cell></cell><cell></cell><cell>financial aspects of deals</cell><cell>The platform is involved in</cell></row><row><cell></cell><cell></cell><cell></cell><cell>legal and financial aspects</cell></row><row><cell></cell><cell></cell><cell></cell><cell>of deals</cell></row><row><cell>Platform's role in</cell><cell>No buyer-supplier</cell><cell>The platform facilitates</cell><cell>The platform facilitates</cell></row><row><cell>facilitating</cell><cell>interaction facilitated,</cell><cell>buyer-supplier interaction</cell><cell>buyer-supplier interaction</cell></row><row><cell>buyer-seller</cell><cell>merely introductions</cell><cell>throughout the project</cell><cell>with a focus on learning and</cell></row><row><cell>interaction</cell><cell></cell><cell></cell><cell>community building</cell></row><row><cell>Revenue model</cell><cell>Advertising and</cell><cell>Project commission paid by</cell><cell>Project commission paid by</cell></row><row><cell></cell><cell>sponsorship</cell><cell>suppliers. Premium</cell><cell>buyers</cell></row><row><cell></cell><cell></cell><cell>membership fees</cell><cell></cell></row></table><note><p>Platform examples Infolancer and Chinasourcing Elance, oDesk, and Freelancer Topcoder and Kaggle Source: Adapted from Oshri et al., 2011.</p></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2"><head>TABLE 2</head><label>2</label><figDesc>Sample demographics</figDesc><table><row><cell>No. of participants</cell><cell>25</cell></row><row><cell>Gender</cell><cell></cell></row><row><cell>Men</cell><cell>14</cell></row><row><cell>Women</cell><cell>11</cell></row><row><cell>Age average (SD)</cell><cell>36.16 (12.55)</cell></row><row><cell>Range</cell><cell>18-60</cell></row><row><cell>Frequency</cell><cell></cell></row><row><cell>18-24</cell><cell>16%</cell></row><row><cell>25-30</cell><cell>24%</cell></row><row><cell>31-40</cell><cell>28%</cell></row><row><cell>41-50</cell><cell>16%</cell></row><row><cell>50+</cell><cell>16%</cell></row><row><cell>Household income</cell><cell></cell></row><row><cell>&lt;$25 000 per year</cell><cell>28%</cell></row><row><cell>$25 000-$49 999</cell><cell>16%</cell></row><row><cell>$50 000-$74 999</cell><cell>20%</cell></row><row><cell>$75 000-$99 999</cell><cell>4%</cell></row><row><cell>$100 000 or more</cell><cell>32%</cell></row><row><cell>ITCS experience</cell><cell></cell></row><row><cell>&lt;3 months</cell><cell>8%</cell></row><row><cell>&gt;3 to &lt;6 months</cell><cell>12%</cell></row><row><cell>&gt;6 months to &lt;1 year</cell><cell>8%</cell></row><row><cell>&gt;1 to &lt;3 years</cell><cell>48%</cell></row><row><cell>&gt;3 to &lt;5 years</cell><cell>4%</cell></row><row><cell>&gt;5 years</cell><cell>20%</cell></row><row><cell>Education level</cell><cell></cell></row><row><cell>Some high school</cell><cell>4%</cell></row><row><cell>High school graduate</cell><cell>4%</cell></row><row><cell>Some college but no degree</cell><cell>16%</cell></row><row><cell>Associate's degree</cell><cell>4%</cell></row><row><cell>Bachelor's degree</cell><cell>48%</cell></row><row><cell>Graduate degree</cell><cell>24%</cell></row><row><cell cols="2">Abbreviations: ITCS, information technology crowdsourcing; SD, standard deviation.</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_3"><head>TABLE 3</head><label>3</label><figDesc>Revealed concepts and constructs of information technology crowdsourcing</figDesc><table><row><cell>Construct</cell><cell>Definition</cell><cell>Concept</cell></row><row><cell>Career anchors</cell><cell></cell><cell></cell></row><row><cell cols="2">(1) Autonomy/independence The extent to which workers value the</cell><cell>-Escape from workplace norms: The extent</cell></row><row><cell></cell><cell>ability to set their own jobs,</cell><cell>to which workers are motivated by the</cell></row><row><cell></cell><cell>schedules, and locations for work</cell><cell>ability to avoid the location and</cell></row><row><cell></cell><cell></cell><cell>organizational constraints typically</cell></row><row><cell></cell><cell></cell><cell>associated with traditional employment</cell></row><row><cell></cell><cell></cell><cell>(derived from the study)</cell></row><row><cell></cell><cell></cell><cell>-Job crafting: The extent to which workers</cell></row><row><cell></cell><cell></cell><cell>are motivated by the ability to choose</cell></row><row><cell></cell><cell></cell><cell>the type, duration, and domain of jobs</cell></row><row><cell></cell><cell></cell><cell>completed (Deng &amp; Joshi, 2016)</cell></row><row><cell></cell><cell></cell><cell>-Schedule flexibility: The extent to which</cell></row><row><cell></cell><cell></cell><cell>workers are motivated by the ability to</cell></row><row><cell></cell><cell></cell><cell>work where and when they want without</cell></row><row><cell></cell><cell></cell><cell>supervision (Schein, 1990)</cell></row><row><cell cols="2">(2) Entrepreneurial creativity The extent to which workers value the</cell><cell>-Developing business skills: The extent to</cell></row><row><cell></cell><cell>ability to pursue entrepreneurial</cell><cell>which workers are motivated by the</cell></row><row><cell></cell><cell>activities</cell><cell>ability to develop business-related skills,</cell></row><row><cell></cell><cell></cell><cell>such as negotiation, billing, and project</cell></row><row><cell></cell><cell></cell><cell>management (derived from the study)</cell></row><row><cell></cell><cell></cell><cell>-Future work preparedness: The extent to</cell></row><row><cell></cell><cell></cell><cell>which workers are motivated by the</cell></row><row><cell></cell><cell></cell><cell>feeling that participation in crowdsourcing</cell></row><row><cell></cell><cell></cell><cell>work environments prepares them for</cell></row><row><cell></cell><cell></cell><cell>changes in the employment market</cell></row><row><cell></cell><cell></cell><cell>(Deng &amp; Joshi, 2016)</cell></row><row><cell></cell><cell></cell><cell>-Contributing to "others'" entrepreneurial</cell></row><row><cell></cell><cell></cell><cell>creativity: The extent to which workers are</cell></row><row><cell></cell><cell></cell><cell>motivated by the ability to find fulfilment</cell></row><row><cell></cell><cell></cell><cell>through the completion of projects for</cell></row><row><cell></cell><cell></cell><cell>clients (derived from the study)</cell></row><row><cell></cell><cell></cell><cell>-Transition income: The extent to which</cell></row><row><cell></cell><cell></cell><cell>workers are motivated by the need to</cell></row><row><cell></cell><cell></cell><cell>generate income through participation in</cell></row><row><cell></cell><cell></cell><cell>crowdsourcing while they develop their</cell></row><row><cell></cell><cell></cell><cell>entrepreneurial projects (derived from</cell></row><row><cell></cell><cell></cell><cell>the study)</cell></row><row><cell>(3) Lifestyle integration</cell><cell>The extent to which workers value the</cell><cell>-Location flexibility: The extent to which</cell></row><row><cell></cell><cell>ability to integrate lifestyle and work</cell><cell>workers are motivated by the need to</cell></row><row><cell></cell><cell>activities</cell><cell>choose when and where they work in</cell></row><row><cell></cell><cell></cell><cell>order to accommodate requirements of</cell></row><row><cell></cell><cell></cell><cell>their lifestyle (Schein, 1990)</cell></row><row><cell></cell><cell></cell><cell>-Supplemental income: The extent to which</cell></row><row><cell></cell><cell></cell><cell>workers need the income provided by</cell></row><row><cell></cell><cell></cell><cell>ITCS participation to achieve household</cell></row><row><cell></cell><cell></cell><cell>financial objectives (derived from</cell></row><row><cell></cell><cell></cell><cell>the study)</cell></row><row><cell>(4) Pure challenge</cell><cell>The extent to which workers value the</cell><cell>-Problem solving: The extent to which workers</cell></row><row><cell></cell><cell>intellectual challenge of solving</cell><cell>are motivated by the ability that ITCS</cell></row><row><cell></cell><cell>technical challenges</cell><cell>provides to challenge themselves with</cell></row><row><cell></cell><cell></cell><cell>obstacles that stretch individual skill</cell></row><row><cell></cell><cell></cell><cell>(Schein, 1990)</cell></row><row><cell>(5) Security/stability</cell><cell>The extent to which workers value the</cell><cell>-Payment security: The extent to which</cell></row><row><cell></cell><cell>ability to have stable and secure</cell><cell>workers need the payment protection</cell></row><row><cell></cell><cell>employment opportunities</cell><cell>capabilities provided by ITCS platforms to</cell></row><row><cell></cell><cell></cell><cell>enable freelance IT work participation</cell></row><row><cell></cell><cell></cell><cell>(derived from the study)</cell></row><row><cell></cell><cell></cell><cell>-Work dependability: The extent to which</cell></row><row><cell></cell><cell></cell><cell>workers need dependable access to</cell></row><row><cell></cell><cell></cell><cell>(Continues)</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_4"><head>TABLE 3 (</head><label>3</label><figDesc>Continued)    </figDesc><table><row><cell>Construct</cell><cell>Definition</cell><cell>Concept</cell></row><row><cell></cell><cell></cell><cell>employment opportunities to consider</cell></row><row><cell></cell><cell></cell><cell>crowdwork to be a viable career</cell></row><row><cell></cell><cell></cell><cell>alternative to traditional employment</cell></row><row><cell></cell><cell></cell><cell>(Schein, 1990)</cell></row><row><cell>(6) Technical competence</cell><cell>The extent to which workers value being</cell><cell>-Technical skill development: The extent to</cell></row><row><cell></cell><cell>challenged by work activities</cell><cell>which workers are motivated by the</cell></row><row><cell></cell><cell></cell><cell>ability to use ITCS participation to</cell></row><row><cell></cell><cell></cell><cell>maintain existing and develop new IT</cell></row><row><cell></cell><cell></cell><cell>skills (Lee, Trauth, &amp; Farwell, 1995;</cell></row><row><cell></cell><cell></cell><cell>Schein, 1990)</cell></row><row><cell>(7) Employment access</cell><cell>The extent to which worker value the</cell><cell>-Opportunity to work: The extent to which</cell></row><row><cell></cell><cell>opportunity to remain engaged in IT</cell><cell>ITCS participants felt that platforms</cell></row><row><cell></cell><cell>employment</cell><cell>provide access to work opportunities even</cell></row><row><cell></cell><cell></cell><cell>when the workers perceive that their life</cell></row><row><cell></cell><cell></cell><cell>circumstances would not allow them to</cell></row><row><cell></cell><cell></cell><cell>participate in traditional employment</cell></row><row><cell></cell><cell></cell><cell>(derived from the study)</cell></row><row><cell></cell><cell></cell><cell>-Platform enablement: The extent to which</cell></row><row><cell></cell><cell></cell><cell>workers need the capabilities afforded by</cell></row><row><cell></cell><cell></cell><cell>ITCS platforms to identify and access job</cell></row><row><cell></cell><cell></cell><cell>opportunities (derived from the study)</cell></row><row><cell>Work outcomes</cell><cell></cell><cell></cell></row><row><cell>(8) Outcome persistence</cell><cell>The extent to which ITCS participation</cell><cell>-Outcome persistence in IT occupations:</cell></row><row><cell>in IT occupation</cell><cell>allows workers to participate in</cell><cell>The degree to which crowdworkers are</cell></row><row><cell>employment</cell><cell>technical roles</cell><cell>able to find and maintain employment in</cell></row><row><cell></cell><cell></cell><cell>IT work (derived from the study)</cell></row><row><cell>(9) Skill development</cell><cell>The extent to which workers are able to</cell><cell>-Skill development: The degree to which</cell></row><row><cell></cell><cell>maintain existing and develop new</cell><cell>crowdworkers were able to develop and</cell></row><row><cell></cell><cell>technical and business skills by</cell><cell>maintain IT and business skills through</cell></row><row><cell></cell><cell>participating in ITCS</cell><cell>participation in ITCS work</cell></row><row><cell></cell><cell></cell><cell>(Lee et al., 1995)</cell></row><row><cell>(10) Work satisfaction</cell><cell>The enjoyment of engaging in ITCS work</cell><cell>-Work satisfaction: The degree to which</cell></row><row><cell></cell><cell>activities</cell><cell>crowdworkers' experiences in ITCS bring</cell></row><row><cell></cell><cell></cell><cell>enjoyment through participation</cell></row><row><cell></cell><cell></cell><cell>(derived from the study)</cell></row><row><cell>(11) Work frustration</cell><cell>The frustration with ITCS work</cell><cell>-Work frustration: The degree to which</cell></row><row><cell></cell><cell>environment or work availability</cell><cell>crowdworkers experience frustration with</cell></row><row><cell></cell><cell></cell><cell>the lack of security and stability in ITCS</cell></row><row><cell></cell><cell></cell><cell>work (derived from the study)</cell></row><row><cell>(12) Earning an income</cell><cell>Receiving monetary compensation in</cell><cell>-Earning an income: The degree to which</cell></row><row><cell></cell><cell>exchange for work activities</cell><cell>crowdworkers are able to generate</cell></row><row><cell></cell><cell></cell><cell>income through ITCS participation</cell></row><row><cell></cell><cell></cell><cell>(derived from the study)</cell></row></table><note><p>Abbreviations: IT, information technology; ITCS, IT crowdsourcing.</p></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_5"><head></head><label></label><figDesc>Aggregated revealed causal map of crowdworkers (based on 486 linkages identified from 25 information technology [IT] crowdworkers; the number associated with a linkage reflects the percentage of that linkage over all the linkages identified)</figDesc><table /><note><p><p>ITCS. While career anchors describe the motivation of individual workers for participation in work activities, work outcomes describe the personal and professional results that workers achieved through work participation. The respondents reported that the constructs result in five work outcomes: persistence in IT occupation employment, work satisfaction, skill development, work frustration, and earning an income.</p>FIGURE 2</p></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_11"><head></head><label></label><figDesc>It allows me to have time for my kids, take them to school, pick them up, and spend time with them while still financially provide for them. (Respondent 2, male, unmarried, two or more children, bachelor's degree, household income of $25 000 to $49 000, 27 years of age) With such a flexible schedule, and no commute to work, I have the time and energy to volunteer with my local animal shelter, perform errands during non-rush hours in my city, and so much more for my personal</figDesc><table><row><cell>life. (Respondent 5, female, married, no children, bachelor's degree, household income of $100 000 to</cell></row><row><cell>$149 999, 27 years of age)</cell></row><row><cell>I have a disabled daughter who is confined to a wheelchair and requires extensive care. oDesk allows me a</cell></row><row><cell>flexible schedule where I can attend to family matters when needed without having to call in sick or take a</cell></row><row><cell>day off. (Respondent 22, male, one child, some college, household income less than $25 000, 52 years of age)</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_13"><head></head><label></label><figDesc>have accepted jobs that were challenging, and I have researched and improved my skills in order to fulfill</figDesc><table><row><cell>the job, so I continue to learn new and interesting things. (Respondent 17, female, married, two or more</cell></row><row><cell>children, graduate degree, household income of $50 000 to $74 999, 43 years of age)</cell></row><row><cell>I know that might sound snobby, but really, trying to figure out how to look busy at work is killing my brain.</cell></row><row><cell>I need to constantly solve complex problems, research solutions, and just use my brain. (Respondent 25,</cell></row><row><cell>female, married, two or more children, graduate degree, 36 years of age)</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_14"><head></head><label></label><figDesc>allows me the freedom to find jobs that I enjoy with the protection of coverage for payment, terms and conditions, as well as employer/employee verification so that I know that the projects I take on are legitimate and will offer pay. (Respondent 21, female, married, graduate degree, household income of $150 000 or more, 32 years of age) Work dependability refers to the fluctuations in their workload on ITCS. Limited availability of work through ITCS platforms frustrates workers. Without dependable access to work, some ITCS workers expressed concern regarding their ability to use crowdsourcing as a viable alternative to traditional employment. Within the current work environment, ITCS participation has sometimes failed to meet these workers' needs for stability.</figDesc><table /><note><p><p><p><p><p>It would be nice to have more consistent work every week, but I've learned to deal with the "feast or famine" aspect of the work load.</p>(Respondent 19, female, unmarried, two  </p>or more children, bachelor's degree, household income of $25 000 to $49 000, 55 years of age) I haven't made it to the point where I can depend on this as my main source of income. I do think of it as being more risky than a "normal job", but even when I had a job, I would still work on (an ITCS platform) on the weekends as a side job.</p>(Respondent 10, male, unmarried, no children, bachelor's degree, household    </p>income less than $25 000, 31 years of age)</p></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_16"><head></head><label></label><figDesc>became a freelance worker because I was sick with Crohns Disease and a blood clot and no one else would hire me when I was perfectly capable.(Respondent 6, female, unmarried, no children, bachelor's   degree, household income of $25 000 to $49 999, 30 years of age)    </figDesc><table /><note><p>I spent 19 years in prison. For the last 12 years, I worked as an assistant to the MIS Officer doing setup and maintenance of computers, light networking task, etc. During my downtime, I learned Visual Basic Programming using MS office and Visual Studio.net. Thus, when I was released a few months ago, I began looking for work in the computer field because it's something I am good at and like doing.</p></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_18"><head></head><label></label><figDesc>Without access to ITCS platforms,] I would probably work at a minimum wage job. (Respondent 9, male, unmarried, no children, some college, household income of $75 000 to $99 999, 18 years of age)</figDesc><table><row><cell>[Without access to ITCS platforms,] I'd probably just [spend my time] on non-paying stuff like household</cell></row><row><cell>chores. (Respondent 4, male, unmarried, no children, bachelor's degree, household income of $25 000 to</cell></row><row><cell>$49 999, 55 years of age)</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_21"><head></head><label></label><figDesc>have been close at least 3 times to quitting my 9 to 5 and just going to full-time freelancing. Each time, my employer has made it too lucrative for me to leave. It is something that I consider all of the time, but I am hesitant, as the security of a paycheck every two weeks is nice.(Respondent 16, male, unmarried, no    </figDesc><table><row><cell>children, graduate degree, household income of $150 000 or more, 39 years of age)</cell></row><row><cell>I still feel that I need to work on building a reliable client base. I do think that it takes some time to do so.</cell></row><row><cell>(Respondent 10, male, unmarried, no children, bachelor's degree, household income less than $25 000,</cell></row><row><cell>31 years of age)</cell></row><row><cell>[I] t would be my full-time job if I had full-time employment offers through the site-which is not</cell></row><row><cell>guaranteed and fluctuates quite a bit based on a wide number of variables outside my control, primarily</cell></row><row><cell>competition. (Respondent 12, male, unmarried, no children, bachelor's degree, household income of</cell></row><row><cell>$25 000 to $49 999, 44 years of age)</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_23"><head></head><label></label><figDesc>Our findings reveal that ITCS can attract additional workers to broaden the IT workforce. Despite concerns regarding fluctuations in work availability and security, ITCS platforms are considered a gateway to employment access that traditional IT employment does not provide. Our analysis has demonstrated that by fulfilling the needs that some workers have for lifestyle integration and autonomy, ITCS can attract and retain workers trained in IT who would otherwise have exited the IT workforce because they are either unwilling or unable to manage the demanding and inflexible nature of traditional IT employment. Our findings indicate that work flexibility is especially critical to workers who are facing inflexible life circumstance, ie, those who are older, are in poor health, and/or have primary family care responsibilities, and who are thus unable to thrive in the traditional model of an IT worker.In addition to the flexibility provided by crowdsourcing, our analysis illustrates that ITCS acts as a training platform for workers who are looking to develop skills that advance their employability. The skill development capabilities of crowdsourcing have attracted nontraditional workers to the IT workforce, such as those who are self-taught or, as demonstrated by respondent 22, who have learned IT skills while incarcerated. As IS scholars continue to look for ways to broaden the IT workforce, ITCS could provide a mechanism for attracting workers for whom traditional employment options are not available. Future research could examine how ITCS could contribute to a more diverse and socially inclusive IT workforce.</figDesc><table /><note><p>has noted, not all IT career paths lead to managerial positions; some workers remain in technical career paths. Perhaps, ITCS is providing a mechanism by which workers who wish to remain in technical roles can expand their career opportunities without being required to change locations. This IT enablement through platforms that seems to provide job opportunities that were not previously available to traditional workers requires further investigation. FIGURE 3 ITCS crowdworker archetypes. IT, information technology; ITCS, IT crowdsourcing 6.3 | Broadening participation in IT</p></note></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="1" xml:id="foot_0"><p>http://www.elance-odesk.com/, accessed 8/10/2015</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="2" xml:id="foot_1"><p>The data were collected prior to the announcement that oDesk and Elance would merge.</p></note>
+		</body>
+		<back>
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>APPENDIX C : AN EXAMPLE OF THE FIVE-STEP PROCEDURE FOR CONSTRUCTING CAUSAL MAPS</head><p>Step Step 4: Recast raw causal maps into concept-level revealed causal maps Concept-level revealed causal map</p><p>Step 5: Create construct-level revealed causal maps</p><p>Construct-level revealed causal map</p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Retention and the career motives of IT professionals</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Agarwal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">W</forename><surname>Ferratt</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 2000 ACM SIGCPR Conference on Computer Personnel Research: ACM</title>
+		<meeting>the 2000 ACM SIGCPR Conference on Computer Personnel Research: ACM</meeting>
+		<imprint>
+			<date type="published" when="2000">2000</date>
+			<biblScope unit="page" from="158" to="166" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Motivational synergy: Toward new conceptualizations of intrinsic and extrinsic motivation in the workplace</title>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">M</forename><surname>Amabile</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Human Resource Management Review</title>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="185" to="201" />
+			<date type="published" when="1993">1993</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Talent scarcity threatens growth</title>
+		<author>
+			<persName><forename type="first">N</forename><surname>Amato</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">CGMA</title>
+		<imprint>
+			<date type="published" when="2013-02-20">2013. February 20, 2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">The career needs of IS personnel: Does the dual career ladder work</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">J</forename><surname>Baroudi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the Twenty-First Annual Hawaii International Conference</title>
+		<meeting>the Twenty-First Annual Hawaii International Conference</meeting>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="1988">1988. 1988</date>
+			<biblScope unit="page" from="171" to="180" />
+		</imprint>
+	</monogr>
+	<note>System Sciences</note>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Motivation in software engineering: A systematic literature review</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Beecham</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Baddoo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Hall</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Robinson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Sharp</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information and Software Technology</title>
+		<imprint>
+			<biblScope unit="volume">50</biblScope>
+			<biblScope unit="issue">9</biblScope>
+			<biblScope unit="page" from="860" to="878" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Crowdfunding: Tapping the right crowd</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Belleflamme</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Lambert</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Schwienbacher</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Business Venturing</title>
+		<imprint>
+			<biblScope unit="volume">29</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="585" to="609" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<monogr>
+		<title level="m" type="main">The Future&apos;s Bright, the Future&apos;s Mobile&apos;: A study of Apple and Google mobile application developers</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Bergvall-Kåreborn</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Howcroft</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2013">2013</date>
+			<publisher>Work, Employment &amp; Society</publisher>
+			<biblScope unit="page">0950017012474709</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">The supply of and demand for high-level STEM skills</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Bosworth</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Lyonette</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Wilson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Bayliss</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Fathers</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Evidence Report</title>
+		<imprint>
+			<biblScope unit="volume">77</biblScope>
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Moving the crowd at Threadless: Motivations for participation in a crowdsourcing application</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">C</forename><surname>Brabham</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information, Communication &amp; Society</title>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="issue">8</biblScope>
+			<biblScope unit="page" from="1122" to="1145" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Information system personnel career anchor changes leading to career changes</title>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">L</forename><surname>Chang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">-H</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Klein</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Jiang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">J</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">European Journal of Information Systems</title>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="103" to="117" />
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Evaluating the motivating environment in Finland compared to the United States-A survey</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Couger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Halttunen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Lyytinen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">European Journal of Information Systems</title>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="107" to="112" />
+			<date type="published" when="1991">1991</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Effect of cultural differences on motivation of analysts and programmers: Singapore vs. the United States</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">D</forename><surname>Couger</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="page" from="189" to="196" />
+			<date type="published" when="1986">1986</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Career anchors of information systems personnel</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">G</forename><surname>Crepeau</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">W</forename><surname>Crook</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">D</forename><surname>Goslar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">E</forename><surname>Mcmurtrey</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Management Information Systems</title>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="page" from="145" to="160" />
+			<date type="published" when="1992">1992</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">The duality of empowerment and marginalization in microtask crowdsourcing: Giving voice to the less powerful through value sensitive design</title>
+		<author>
+			<persName><forename type="first">X</forename><surname>Deng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Joshi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">D</forename><surname>Galliers</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">40</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="279" to="302" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Why individuals participate in micro-task crowdsourcing work environment: Revealing crowdworkers&apos; perceptions</title>
+		<author>
+			<persName><forename type="first">X</forename><forename type="middle">N</forename><surname>Deng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Joshi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of the Association for Information Systems</title>
+		<imprint>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page" from="648" to="673" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Is crowdsourcing a source of worker empowerment or exploitation? Understanding crowd workers&apos; perceptions of crowdsourcing career</title>
+		<author>
+			<persName><forename type="first">X</forename><forename type="middle">N</forename><surname>Deng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">D</forename><surname>Joshi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">International Conference on Information Systems</title>
+		<meeting><address><addrLine>Milan, Italy</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2013-12">2013. December 2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Crowdsourcing systems on the World-Wide Web</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Doan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Ramakrishnan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">Y</forename><surname>Halevy</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Communications of the ACM</title>
+		<imprint>
+			<biblScope unit="volume">54</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="86" to="96" />
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<monogr>
+		<title level="m" type="main">How big is the gig? Assessing the preliminary evidence on the effects of digitalization on the labor market</title>
+		<author>
+			<persName><forename type="first">W</forename><surname>Eichhorst</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Hinte</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">U</forename><surname>Rinne</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Tobsch</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+	<note>Institute for the Study of labor (IZA</note>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Tacit knowledge sharing, self-efficacy theory, and application to the open source community</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">L</forename><surname>Endres</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">P</forename><surname>Endres</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">K</forename><surname>Chowdhury</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Alam</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Knowledge Management</title>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="92" to="103" />
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Linking changes in revealed causal maps and environmental change: An empirical study</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Fahey</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><forename type="middle">K</forename><surname>Narayanan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Management Studies</title>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="361" to="378" />
+			<date type="published" when="1989">1989</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<monogr>
+		<title level="m" type="main">The online platform economy: What is the growth trajectory?</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Farrell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Greig</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2016-03">2016. March 2016b</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Careers within careers: Reconceptualizing the nature of career anchors and their consequences</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">C</forename><surname>Feldman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">C</forename><surname>Bolino</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Human Resource Management Review</title>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="89" to="112" />
+			<date type="published" when="1996">1996</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<monogr>
+		<title level="m" type="main">Crowdsource your way to a better IT team</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Florentine</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Decision makers&apos; beliefs about the causes and effects of structure: An exploratory study</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">D</forename><surname>Ford</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><forename type="middle">H</forename><surname>Hegarty</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Academy of Management Journal</title>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="271" to="291" />
+			<date type="published" when="1984">1984</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<monogr>
+		<author>
+			<persName><surname>Freelancer</surname></persName>
+		</author>
+		<title level="m">Retrieved from freelancer.com October 15</title>
+		<imprint>
+			<date type="published" when="2015">2015. 2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">Workers without employers: Shadow corporations and the rise of the gig economy</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Friedman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Review of Keynesian Economics</title>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="page" from="171" to="188" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Computer-aided systems and communities: Mechanisms for organizational learning in distributed environments</title>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">S</forename><surname>Goodman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">D</forename><surname>Darr</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">22</biblScope>
+			<biblScope unit="page" from="417" to="440" />
+			<date type="published" when="1998">1998</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<monogr>
+		<title level="m" type="main">When work and family are allies: A theory of work-family enrichment</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">H</forename><surname>Greenhaus</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">N</forename><surname>Powell</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2006">2006</date>
+			<publisher>Academy of Management Review</publisher>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="page" from="72" to="92" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">The three billion enterprise crowdsourcing and the growing fragmentation of work</title>
+		<author>
+			<persName><forename type="first">V</forename><surname>Grewal-Carr</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Howard</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Bates</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Lewis</surname></persName>
+		</author>
+		<ptr target="https://www2.deloitte.com/content/dam/Deloitte/de/Documents/Innovation/us-cons-enterprise-crowdsourcing-and-growing-fragmentation-of-work%20" />
+	</analytic>
+	<monogr>
+		<title level="j">Deloitte</title>
+		<imprint>
+			<biblScope unit="volume">18</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<date type="published" when="2016">2016. 2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<monogr>
+		<title level="m" type="main">A proposal for modernizing labor laws for twenty-first-century work: The &quot;Independent Worker</title>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">D</forename><surname>Harris</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">B</forename><surname>Krueger</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+	<note>The Hamilton project, Discussion paper</note>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">Career orientations of information systems employees in South Africa</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Igbaria</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Meredith</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">C</forename><surname>Smith</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The Journal of Strategic Information Systems</title>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="319" to="340" />
+			<date type="published" when="1995">1995</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">Career transition antecedents in the information technology area</title>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">A</forename><surname>Joia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">U</forename><surname>Mangia</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Journal</title>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="31" to="57" />
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Managing the human cloud</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>Kaganer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Carmel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Hirschheim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Olsen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MITSloan Management Review</title>
+		<imprint>
+			<biblScope unit="volume">54</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="23" to="32" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">The rise and nature of alternative work arrangements in the United States</title>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">F</forename><surname>Katz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">B</forename><surname>Krueger</surname></persName>
+		</author>
+		<ptr target="http://scholar.harvard.edu/files/lkatz/files/katz_krueger_cws_v3.pdf" />
+	</analytic>
+	<monogr>
+		<title level="j">NBER</title>
+		<imprint>
+			<date type="published" when="1995">2016. 1995-2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title level="a" type="main">More than fun and money. Worker motivation in crowdsourcing-A study on Mechanical Turk</title>
+		<author>
+			<persName><forename type="first">N</forename><surname>Kaufmann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Schulze</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Veit</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">AMCIS</title>
+		<imprint>
+			<biblScope unit="page" from="1" to="11" />
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<monogr>
+		<title level="m" type="main">IT under pressure</title>
+		<author>
+			<persName><forename type="first">N</forename><surname>Khan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Sikes</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2014">2014</date>
+			<publisher>McKinsey Global Survey resultsMcKinsey &amp; Company</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">Yield management of workforce for IT service providers</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">Y</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Altinkemer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Bisi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Decision Support Systems</title>
+		<imprint>
+			<biblScope unit="volume">53</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="23" to="33" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<analytic>
+		<title level="a" type="main">The future of crowd work</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Kittur</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">V</forename><surname>Nickerson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Bernstein</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Gerber</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Shaw</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Zimmerman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Horton</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 2013 conference on Computer supported cooperative work</title>
+		<meeting>the 2013 conference on Computer supported cooperative work</meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2013">2013</date>
+			<biblScope unit="page" from="1301" to="1318" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<monogr>
+		<author>
+			<persName><forename type="first">N</forename><surname>Kolakowski</surname></persName>
+		</author>
+		<ptr target="https://insights.dice.com/employer-resource-center/tech-hiring-trends-q1-2015-unemployment-dips-again/" />
+		<title level="m">Tech hiring trends Q1 2015: Unemployment dips (again). DICE retrieved from</title>
+		<imprint>
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<analytic>
+		<title level="a" type="main">Comparative cause mapping of organizational cognitions</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Laukkanen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Organization Science</title>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="322" to="343" />
+			<date type="published" when="1994">1994</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<analytic>
+		<title level="a" type="main">Critical skills and knowledge requirements of IS professionals: A joint academic/industry investigation</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">M</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">M</forename><surname>Trauth</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Farwell</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="page" from="313" to="340" />
+			<date type="published" when="1995">1995</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<analytic>
+		<title level="a" type="main">Vili Lehdonvirta</title>
+		<author>
+			<persName><forename type="first">V</forename><surname>Lehdonvirta</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Isis Hjorth: Online labour markets-Leveling the playing field for international service markets? Policy</title>
+		<meeting><address><addrLine>Helena Barnard, Mark Graham</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2012">2016. 2014. 2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+	<analytic>
+		<title level="a" type="main">Leveraging crowdsourcing: Activation-supporting components for IT-based ideas competition</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">M</forename><surname>Leimeister</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Huber</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">U</forename><surname>Bretschneider</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Krcmar</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Management Information Systems</title>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="197" to="224" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b43">
+	<analytic>
+		<title level="a" type="main">Open innovation: Past research, current debates, and future directions</title>
+		<author>
+			<persName><forename type="first">U</forename><surname>Lichtenthaler</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The Academy of Management Perspectives</title>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="75" to="93" />
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b44">
+	<analytic>
+		<title level="a" type="main">Towards an information systems perspective and research agenda on crowdsourcing for innovation</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Majchrzak</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Malhotra</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The Journal of Strategic Information Systems</title>
+		<imprint>
+			<biblScope unit="volume">22</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="257" to="268" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b45">
+	<analytic>
+		<title level="a" type="main">Cognition within and between organizations: Five key questions</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">R</forename><surname>Meindl</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Stubbart</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">F</forename><surname>Porac</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Organization Science</title>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="289" to="293" />
+			<date type="published" when="1994">1994</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b46">
+	<monogr>
+		<title level="m" type="main">Causal mapping for research in information technology</title>
+		<author>
+			<persName><forename type="first">V</forename><forename type="middle">K</forename><surname>Narayanan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">J</forename><surname>Armstrong</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2005">2005</date>
+			<publisher>Idea Group Publishing</publisher>
+			<pubPlace>Hershey, PA</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b47">
+	<analytic>
+		<title level="a" type="main">Cross-cultural telecommuting evaluation in Mexico and the United States</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Navarrete</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Pick</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">The Electronic Journal of Information Systems in Developing Countries</title>
+		<imprint>
+			<date type="published" when="2003">2003</date>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="page" from="1" to="14" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b48">
+	<analytic>
+		<title level="a" type="main">Understanding software operations support expertise: A revealed causal mapping approach</title>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">M</forename><surname>Nelson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Nadkarni</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Narayanan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Ghods</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">24</biblScope>
+			<biblScope unit="page" from="475" to="507" />
+			<date type="published" when="2000">2000</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b49">
+	<monogr>
+		<title level="m" type="main">Primary vendor capabilities in a mediated outsourcing model: Can it service providers leverage crowdsourcing?</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Nevo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Kotlarsky</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+	<note>Decision Support Systems</note>
+</biblStruct>
+
+<biblStruct xml:id="b50">
+	<analytic>
+		<title level="a" type="main">Rise of the contract workers: Work is different now</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Noguchi</surname></persName>
+		</author>
+		<ptr target="https://www.npr.org/2018/01/22/578825135/rise-of-the-contract-workers-work-is-different-now" />
+	</analytic>
+	<monogr>
+		<title level="m">National Public Radio retrieved from</title>
+		<imprint>
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b51">
+	<monogr>
+		<author>
+			<persName><forename type="first">I</forename><surname>Oshri</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Kotlarsky</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">P</forename><surname>Willcocks</surname></persName>
+		</author>
+		<title level="m">The handbook of global outsourcing and offshoringPalgrave Macmillan</title>
+		<imprint>
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b52">
+	<analytic>
+		<title level="a" type="main">Knowledge transfer in globally distributed teams: The role of transactive memory</title>
+		<author>
+			<persName><forename type="first">I</forename><surname>Oshri</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Van Fenema</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Kotlarsky</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Journal</title>
+		<imprint>
+			<biblScope unit="volume">18</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="593" to="616" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b53">
+	<analytic>
+		<title level="a" type="main">Executive judgment, organizational congruence, and firm performance</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">L</forename><surname>Priem</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Organization Science</title>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="421" to="437" />
+			<date type="published" when="1994">1994</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b54">
+	<analytic>
+		<title level="a" type="main">The (dis) placement of women in the IT workforce: An investigation of individual career values and organisational interventions</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">L</forename><surname>Quesenberry</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">M</forename><surname>Trauth</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Journal</title>
+		<imprint>
+			<biblScope unit="volume">22</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="457" to="473" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b55">
+	<analytic>
+		<title level="a" type="main">From anchors to orientations: Towards a contemporary theory of career preferences</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Rodrigues</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Guest</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Budjanovcanin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Vocational Behavior</title>
+		<imprint>
+			<biblScope unit="volume">83</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="142" to="152" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b56">
+	<monogr>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">H</forename><surname>Schein</surname></persName>
+		</author>
+		<title level="m">Career anchors: Discovering your real valuesUniversity Associates San Diego</title>
+		<imprint>
+			<date type="published" when="1990">1990</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b57">
+	<analytic>
+		<title level="a" type="main">Career anchors revisited: Implications for career development in the 21st century</title>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">H</forename><surname>Schein</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The Academy of Management Executive</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="80" to="88" />
+			<date type="published" when="1996">1996</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b58">
+	<monogr>
+		<title/>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">H</forename><surname>Schein</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+	<note>Career anchorsPfeiffer</note>
+</biblStruct>
+
+<biblStruct xml:id="b59">
+	<monogr>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">H</forename><surname>Schein</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Schein</surname></persName>
+		</author>
+		<title level="m">Career dynamics: Matching individual and organizational needs</title>
+		<meeting><address><addrLine>MA</addrLine></address></meeting>
+		<imprint>
+			<publisher>Addison-Wesley Reading</publisher>
+			<date type="published" when="1978">1978</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b60">
+	<monogr>
+		<author>
+			<persName><forename type="first">F</forename><forename type="middle">A</forename><surname>Schmidt</surname></persName>
+		</author>
+		<title level="m">The good, the bad and the ugly: Why crowdsourcing needs ethics. Cloud and Green Computing (CGC), 2013 Third International Conference</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2013">2013</date>
+			<biblScope unit="page" from="531" to="535" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b61">
+	<analytic>
+		<title level="a" type="main">Crowdsourcing IT work: A three-fold perspective from the workers, buyers, and platform providers</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Taylor</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 2015 ACM SIGMIS Conference on Computers and People Research</title>
+		<meeting>the 2015 ACM SIGMIS Conference on Computers and People Research</meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2015">2015</date>
+			<biblScope unit="page" from="1" to="2" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b62">
+	<analytic>
+		<title level="a" type="main">Innovation contests, open innovation, and multiagent problem solving</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Terwiesch</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Xu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Science</title>
+		<imprint>
+			<biblScope unit="volume">54</biblScope>
+			<biblScope unit="issue">9</biblScope>
+			<biblScope unit="page" from="1529" to="1543" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b63">
+	<monogr>
+		<author>
+			<persName><surname>Topcoder</surname></persName>
+		</author>
+		<title level="m">Retrieved from topcoder.com October 15</title>
+		<imprint>
+			<date type="published" when="2015">2015. 2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b64">
+	<analytic>
+		<title level="a" type="main">Talent relationship management: Competitive recruiting strategies in times of talent shortageSpringer</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Trost</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Science &amp; Business</title>
+		<imprint>
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b65">
+	<analytic>
+		<title level="a" type="main">Cocreating understanding and value in distributed work: How members of onsite and offshore vendor teams give, make, demand, and break sense</title>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">W</forename><surname>Vlaar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">C</forename><surname>Van Fenema</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Tiwari</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="227" to="255" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b66">
+	<monogr>
+		<title level="m" type="main">Crafting a job: Revisioning employees as active crafters of their work</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Wrzesniewski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">E</forename><surname>Dutton</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2001">2001</date>
+			<publisher>Academy of Management Review</publisher>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="page" from="179" to="201" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b67">
+	<monogr>
+		<title level="m" type="main">He received his PhD from Washington State University and an MBA in International Management from Thunderbird. Before completing his PhD, Joseph worked extensively in industry focusing on IT strategy, innovation, and governance. His academic research interests focus on crowdsourcing and the use of technology to create business value. Joseph&apos;s work has been published in leading journals such as the Journal of Strategic Information Systems</title>
+		<imprint>
+			<pubPlace>Sacramento</pubPlace>
+		</imprint>
+		<respStmt>
+			<orgName>Joseph Taylor is Assistant Professor of Information Systems in the College of Business Administration at California State University ; Information Systems Management, Corporate Social Responsibility and Environmental Management, and the Journal of Organizational Computing and Electronic Commerce</orgName>
+		</respStmt>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b68">
+	<monogr>
+		<title level="m" type="main">Joshi is the Philip L. Kays Distinguished Professor of Information Systems at Washington State University</title>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">D</forename><surname>Dr</surname></persName>
+		</author>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b69">
+	<analytic>
+		<title level="a" type="main">s research interests focus on IT Workforce Issues, Knowledge Management, Crowdsourcing, IT-Enabled Innovation, Value Sensitive Designs, and Health IT. Her research has appeared in journals such as MIS Quarterly, Information Systems Research, and Decision Support Systems. How to cite this article</title>
+		<author>
+			<persName><forename type="first">Dr</forename><surname>Joshi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">;</forename><surname>Taylor</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Joshi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">D</forename></persName>
+		</author>
+		<idno type="DOI">10.1111/isj.12225</idno>
+		<ptr target="https://doi.org/10.1111/isj.12225" />
+	</analytic>
+	<monogr>
+		<title level="j">Info Systems J</title>
+		<imprint>
+			<biblScope unit="page" from="1" to="33" />
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+	<note>Joining the crowd: The career anchors of information technology workers participating in crowdsourcing</note>
+</biblStruct>
+
+<biblStruct xml:id="b70">
+	<monogr>
+		<title level="m" type="main">QUESTIONS INCLUDED IN ONLINE SURVEY 1. What types of jobs do you usually take? The following lists the eight categories of freelance jobs on Elance. Please indicate the extent to</title>
+		<author>
+			<persName><surname>Appendix A</surname></persName>
+		</author>
+		<imprint/>
+	</monogr>
+	<note>which you work on them</note>
+</biblStruct>
+
+<biblStruct xml:id="b71">
+	<monogr>
+		<title level="m" type="main">What do you like about doing freelance jobs on Elance? And why? Please illustrate with examples</title>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b72">
+	<monogr>
+		<title level="m" type="main">What skills are required to perform the jobs you have identified above on Elance? Please describe both the technical skills and the nontechnical skills</title>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b73">
+	<monogr>
+		<title level="m" type="main">What would you like to change about doing freelance jobs on Elance? And why?</title>
+		<imprint/>
+	</monogr>
+	<note>Please provide examples</note>
+</biblStruct>
+
+<biblStruct xml:id="b74">
+	<monogr>
+		<title level="m" type="main">What opportunities does Elance provide that attracts you to this platform?</title>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b75">
+	<monogr>
+		<title level="m" type="main">Please read the descriptions listed below and identify what you value the most in your career. How important it is to you to have this factor in your work life such that you are not willing to give it up and you feel strongly about retaining it</title>
+		<imprint/>
+	</monogr>
+	<note>Pick one</note>
+</biblStruct>
+
+<biblStruct xml:id="b76">
+	<monogr>
+		<title level="m" type="main">What are your career goals? Describe the career pathway that is most attractive to you and most suitable to your worklife needs</title>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b77">
+	<monogr>
+		<title level="m" type="main">Does Elance help you fulfil your professional priorities, if so which ones and why</title>
+		<imprint/>
+	</monogr>
+	<note>Please explain</note>
+</biblStruct>
+
+<biblStruct xml:id="b78">
+	<monogr>
+		<title level="m" type="main">Does Elance help you fulfil your personal priorities, if so which ones and why</title>
+		<imprint/>
+	</monogr>
+	<note>Please explain</note>
+</biblStruct>
+
+<biblStruct xml:id="b79">
+	<monogr>
+		<title level="m" type="main">How does the work that you are completing on Elance help you develop professional skills?</title>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b80">
+	<monogr>
+		<title level="m" type="main">how satisfied are you with your freelancing jobs on Elance</title>
+		<author>
+			<persName><surname>Overall</surname></persName>
+		</author>
+		<imprint/>
+	</monogr>
+	<note>Please explain</note>
+</biblStruct>
+
+<biblStruct xml:id="b81">
+	<monogr>
+		<title level="m" type="main">Would you consider doing freelancing work as your full-time job? Why or why not?</title>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b82">
+	<monogr>
+		<title level="m" type="main">If you could not participate in a crowdsourcing marketplace like Elance, what would you do with the time that you currently spend doing freelance work?</title>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b83">
+	<monogr>
+		<title level="m" type="main">Please explain how you become a freelance worker</title>
+		<imprint/>
+	</monogr>
+	<note>And why?</note>
+</biblStruct>
+
+<biblStruct xml:id="b84">
+	<monogr>
+		<title level="m" type="main">Do you participate in other crowdsourcing platforms such as oDesk, Rent-a-coder, Mechanical Turk, Kaggle, and Topcoder? If so which platforms do you participate in?</title>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b85">
+	<monogr>
+		<title level="m" type="main">Do you contribute to any open source development projects? If so, what type of projects do you participate in? 17. When do you usually schedule to work on the freelancing jobs? And why? 18. What is your gender?</title>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b86">
+	<monogr>
+		<title level="m" type="main">Describe your family responsibilities (eg, childcare and elder care)</title>
+		<imprint/>
+	</monogr>
+	<note>How much time do you spend on these responsibilities?</note>
+</biblStruct>
+
+<biblStruct xml:id="b87">
+	<monogr>
+		<title level="m" type="main">What is your age?</title>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b88">
+	<monogr>
+		<title level="m" type="main">Where do you live? (City, state/province</title>
+		<imprint/>
+	</monogr>
+	<note>and country</note>
+</biblStruct>
+
+<biblStruct xml:id="b89">
+	<monogr>
+		<title level="m" type="main">Which of the following best describes your highest achieved education level?</title>
+		<imprint/>
+	</monogr>
+	<note>Select one</note>
+</biblStruct>
+
+<biblStruct xml:id="b90">
+	<monogr>
+		<title level="m" type="main">For your highest education degree identified above, what is your field of study? 26. What is the total income of your household?</title>
+		<imprint/>
+	</monogr>
+	<note>Select one</note>
+</biblStruct>
+
+<biblStruct xml:id="b91">
+	<monogr>
+		<title level="m" type="main">How much do you earn doing freelance work per month? 28. What is your current employment status?</title>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b92">
+	<monogr>
+		<title level="m" type="main">Please identify your primary occupation</title>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b93">
+	<monogr>
+		<title level="m" type="main">How long have you worked in technology?</title>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b94">
+	<monogr>
+		<title level="m" type="main">On average, how many jobs do you usually take a year on Elance?</title>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b95">
+	<monogr>
+		<title level="m" type="main">On average, how many hours in a week do you spend working on noncompensated tasks, eg, reviewing projects and preparing bids on Elance?</title>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

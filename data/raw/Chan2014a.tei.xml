@@ -1,0 +1,790 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">HIRING BIASES IN ONLINE LABOR MARKETS: THE CASE OF GENDER STEREOTYPING</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Jason</forename><surname>Chan</surname></persName>
+						</author>
+						<author role="corresp">
+							<persName><forename type="first">Jing</forename><surname>Wang</surname></persName>
+							<email>jwang@ust.hk</email>
+						</author>
+						<author>
+							<affiliation key="aff0">
+								<orgName type="department">Carlson School of Management</orgName>
+								<orgName type="institution">University of Minnesota</orgName>
+								<address>
+									<addrLine>321 19 th Ave South</addrLine>
+									<postCode>55455</postCode>
+									<settlement>Minneapolis</settlement>
+									<region>MN</region>
+									<country key="US">United States</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff1">
+								<orgName type="department">School of Business and Management</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff2">
+								<orgName type="department">HKUST Lee Shau Kee Business Building</orgName>
+								<address>
+									<addrLine>Clear Water Bay</addrLine>
+									<settlement>Kowloon, Hong Kong</settlement>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">HIRING BIASES IN ONLINE LABOR MARKETS: THE CASE OF GENDER STEREOTYPING</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="MD5">F4E8019F294AEB45BBB1459420BD945C</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.7.3" ident="GROBID" when="2023-06-16T09:22+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>Online Labor Markets</term>
+					<term>Hiring Bias</term>
+					<term>Gender Stereotypes</term>
+					<term>Matching</term>
+					<term>Quasiexperiment</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Online labor marketplaces facilitate the efficient matching of employers and workers across geographical boundaries. The exponential growth of this nascent online phenomenon holds important social and economic implications. Despite this importance, limited effort has been devoted to understand whether potential hiring biases exist in online labor platforms and how they affect hiring outcomes. Using a novel proprietary dataset from a leading online labor platform, we investigate the impact of gender-based stereotypes on hiring outcomes. After accounting for endogeneity via a matched sample approach and quasi-experimental technique, we find evidence of a positive hiring bias towards female workers at the aggregate level. Sub-category analyses show that women are preferred in female-dominated occupations, while men are preferred in male-dominated occupations. Interestingly, women also gain an advantage in genderneutral jobs. We find that the observed hiring bias diminishes as employers gain more hiring experience on the platform. Managerial and practical implications are discussed.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Introduction</head><p>Online labor marketplaces have grown rapidly in recent years. The industry has experienced a great increase in both the number of participants and transaction volume. Over the last four years, workers on Elance and oDesk have earned close to $2 billion through over 8 million jobs posted on these online platforms. 1 On oDesk alone, the number of employers billing on the site has increased by over 800% between 2009 and 2013, accounting for almost a 900% gain in quarterly wage bill <ref type="bibr" target="#b0">(Agrawal et al. 2013)</ref>. Not only do these online platforms serve as an intermediary for the buyers and providers of labor, they also host a myriad of jobs ranging from software and web development to administrative support and multimedia design, which in turn, attracts and retains a large pool of global workers. It is projected that online labor marketplaces will grow to a $5 billion industry by 2018. 2 Given the enormous scale of the online labor market, hiring decisions made by online employers have significant social and economic consequences, as these actions implicate the incomes of millions of workers worldwide. In particular, it is imperative to understand whether online workers are being treated fairly in terms of job opportunities awarded and how discriminatory biases, if any, affect the hiring decisions made by online employers.</p><p>Job discrimination pertains to the phenomenon where groups of workers are denied access, or have limited access to jobs. Workers can be discriminated based on innate attributes such as gender, race, disability or age that are unrelated to worker productivity <ref type="bibr" target="#b5">(Arrow 1973)</ref>. Discriminatory hiring is an issue of concern not only because it results in the inefficient allocation of resources, it also contributes to inequitable distribution of wealth and income among the population. As such, regulations and legislations such as the Civil Rights Act of 1964 (US) and the Sex Discrimination Act of 1975 (UK) are erected to prevent market failures that arise from discriminatory labor practices. While governmental interventions are in place to protect against unfair treatment of workers in traditional labor markets, these laws lapse in their coverage for online platforms due to the cross-national nature of working relationships forged in these marketplaces. Greater awareness and better understanding of the hiring practices in online labor markets is a necessary first step for deriving effective policy interventions to address the inadequacies of existing anti-discriminatory laws.</p><p>While extant studies on online labor markets have focused on the reputational signals <ref type="bibr" target="#b9">(Lin and Goes 2012;</ref><ref type="bibr" target="#b32">Yoganarasimhan 2013</ref>), geographical differences <ref type="bibr" target="#b1">(Agrawal et al. 2012;</ref><ref type="bibr">Hong and Pavlou 2012)</ref>, and bidding strategies <ref type="bibr">(Hong et al. 2013;</ref><ref type="bibr" target="#b27">Snir and Hitt 2003)</ref> of workers, we attempt to examine a more fundamental aspect of worker characteristics in this nascent labor marketplace. In particular, we aim to assess whether worker's gender can lead to hiring biases, and how gender stereotypes can affect the hiring decisions in online labor markets. Gender stereotypes create a predisposition towards negativity that precludes the recognition of a worker's skill and ability. The importance of gender stereotypes on hiringrelated outcomes has led academics from diverse fields including economics, psychology, management, and sociology to examine its antecedents and consequences (e.g., <ref type="bibr">Darity and Mason 1998;</ref><ref type="bibr">Gorman 2005;</ref><ref type="bibr">Ibarra 1992;</ref><ref type="bibr" target="#b15">Olian et al. 1988;</ref><ref type="bibr" target="#b29">Swim et al., 1989)</ref>. In addition, the study of gender biases in online labor platforms is particularly crucial for understanding whether the presence of such stereotypes would eliminate the very benefits that online labor markets bring to workers who are disadvantaged due to gender-related discrimination in offline settings. 3   In the present study, we focus on examining the impact of workers' gender on hiring outcomes in one of the largest online labor marketplaces. The unusually rich dataset from the online platform allows us to observe all attributes that employers see in the job applicants' profiles. Thus, the threat of omitted variable bias is greatly reduced in our estimation as our models are able to account for all observable worker characteristics that hirers take into consideration when making hiring decisions. Moreover, we have multiple observations across job categories and employers, allowing us to account for heterogeneous hiring preferences in our estimations. Using highly detailed observations of worker and job characteristics, we first assess the effects of gender identity on hiring outcomes using a matched sample approach. To further account for potential endogeneity issues, we deploy a quasi-experiment design to validate the relationship between workers' gender and their likelihood of being hired. Contrary to expectations in traditional labor studies, results from various model specifications indicate that online hiring bias tends to act in favor of female workers in general. Several additional tests are used to assess the robustness of the results. We further investigate the moderating effect of platform-specific experience on hiring bias.</p><p>Our study aims to make a few contributions to the literature. First, this paper contributes broadly to the literature related to the social and economic implications of online platforms (e.g., <ref type="bibr">Brynjolfsson et al. 2003;</ref><ref type="bibr">Chan and Ghose 2014;</ref><ref type="bibr">Zhang and Liu 2012)</ref> by shedding light on whether hiring biases prevail in online labor markets. The awareness of stereotyping behavior in online hiring decisions allows policy makers and platform owners to gain macro-level insights towards the need for specialized policies and guidelines to regulate these online markets. Second, by demonstrating the nature of gender stereotypes in online markets, our study illustrates the important point of whether outcomes in online contexts are consistent with that from the traditional marketplaces (e.g., <ref type="bibr">Brynjolfsson and Smith 2000;</ref><ref type="bibr">Chellappa et al. 2011)</ref>. Not only does this finding have crucial implications towards policy design, it also serves to benefit managers and employers at the microlevel by providing managerial inputs that inform them of the peculiar biases that can potentially affect their hiring decisions in online environments. Likewise, workers from the disadvantaged group may gain from the study findings by taking steps to rectify the undue biases that are imposed on them in online settings. Third, we attempt to provide deeper insights into this phenomenon by unraveling the specific conditions under which gender stereotypes will have a stronger impact on hiring outcomes. The moderating effect of platform-specific experience provides inroads for academics in understanding the potential mechanism that underlie the decision making process in uncertain environments <ref type="bibr" target="#b10">(Lipshitz and Strauss 1997;</ref><ref type="bibr" target="#b26">Simon 1979)</ref>. Furthermore, by pinpointing the conditions under which hiring biases are most acute, various stakeholders of the online labor marketplaces can make appropriate adjustments to mollify the potential market inefficiencies.</p><p>Finally, we make a potential methodological contribution to the labor discrimination literature by introducing a quasi-experiment approach in the online context to identify the effect of stereotypes on hiring outcomes. Past work has largely relied on audit and correspondence studies to examine the extent of hiring bias <ref type="bibr" target="#b25">(Riach and Rich 2002)</ref>. While these methods may perform well in identifying the causal impact of stereotypes on hiring outcomes, they are generally expensive, time consuming, and tedious to execute. Consequently, implementation of these field experiments is restricted to few specific jobs openings at one time, affecting the external validity of such approaches. Using quasi-experimental approaches to study hiring biases on large number of online hiring outcomes is not only less tedious to execute, it also provides the opportunity to examine the effect of stereotyping across multiple job categories and openings. Furthermore, the quasi-experimental approach along with the full set of worker covariates observed from the online platform produces estimation results that are similar or better than that achieved in field experiments. The remainder of this paper proceeds as follows. In the following section, we provide a review of the literatures relevant to online labor markets, occupational discrimination and gender stereotypes. Next, we describe the context of our study and our data, while formulating econometric models to assess the impact of gender identity on hiring outcomes in the subsequent section. Following that, we present the main results of our model estimations as well as further evaluations of the role of gender stereotyping on hiring likelihood. Finally, we conclude with a discussion of our results and their implications for various stakeholders.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Literature Review</head><p>Online labor marketplaces differ from the traditional counterpart in several important aspects. First, the global reach of online platforms provides a larger set of choices than is generally available in the offline markets <ref type="bibr">(Brynjolfsson et al. 2003)</ref>, thereby allowing employers to access a larger pool of workers than before. The flexibility and freedom afforded by Internet telecommunications can also induce individuals who are previously out of the labor market to participate through this online marketplace (Dettling 2013). As such, the increased access and diversity of choices may contribute positively towards lower search costs and better matching efficiency in online markets <ref type="bibr" target="#b6">(Autor 2001;</ref><ref type="bibr" target="#b17">Overby and Jap 2009)</ref>. Second, online communications facilitated by the platform eliminate the need for employers and workers to meet face-toface during the job recruitment and fulfillment phases. While online communications may have ushered in greater convenience and accessibility, it can also exacerbate information asymmetry issues that underlie the job hiring process <ref type="bibr">(Akerlof 1979;</ref><ref type="bibr">Horton 2010)</ref>. Third, jobs posted on online labor markets are largely short term contracts. The transient working relationships formed in online labor markets are neither governed by career advancement incentives nor employee benefits requirements, which consequently leads to incentive misalignment issues that can intensify principal-agent problems. Therefore, the trustworthiness of the involved parties are more important in online markets than in offline ones <ref type="bibr" target="#b8">(Bakos 1997;</ref><ref type="bibr" target="#b20">Pavlou and Gefen 2004)</ref>.</p><p>Given the critical differences that online platforms possess, it is unclear whether hiring outcomes in online labor markets would follow the expectations from traditional markets. On the one hand, the enhanced matching efficiency of online platforms coupled with the comprehensive listing of standardized worker information (e.g., online ratings, number of past jobs, and wage rate) can reduce the amount of uncertainty inherent in the hiring process (cf. <ref type="bibr" target="#b8">Bakos 1997;</ref><ref type="bibr">Brynjolfsson and Smith 2000)</ref>, by allowing employers to locate appropriate candidates and proficiently comparing them on common measures of ability and credentials. This in turn eliminates the need for employers to rely on heuristics that are based on workers' physical traits when making hiring decisions. On the other hand, the lack of non-verbal cues in online communications may exacerbate information asymmetry issues in the hiring process <ref type="bibr">(Akerlof 1979;</ref><ref type="bibr">Dennis et al. 2008;</ref><ref type="bibr">Horton 2010)</ref>. Given that subtle personal information such as work attitudes and professionalism are less readily available in the online environment, the reliance on gender stereotypes in making hiring decisions may be more prevalent online <ref type="bibr" target="#b31">(Terborg 1977)</ref>. The theoretical tension therein produces an ambiguous understanding of the uncertainty faced by employers as a result of the affordances in the online labor platform.</p><p>Past studies on online labor markets have indirectly demonstrated this theoretical tension. Using Elance.com data, <ref type="bibr">Banker and Hwang (2008)</ref> show that measures of past worker performance, such as online ratings and cumulative earnings, hold positive relationships with the worker's probability of being hired. Hong and Pavlou (2012) also find that platform measures such as feedback rating, number of completed projects, gold member status, and project completion rates can positively influence employer's hiring decisions on Freelancer.com. These results demonstrate that the informational affordances of platform can help reduce uncertainty in online labor markets. Not only do employers utilize the informational features in the online marketplaces, they exhibit strong reactions to these affordances. For instance, by randomly hiring and providing feedback to oDesk workers, <ref type="bibr">Pallais (2014)</ref> demonstrates that even minimal amount of positive information can help to increase a worker's future earnings drastically. <ref type="bibr" target="#b28">Stanton and Thomas (2012)</ref> find that inexperienced workers affiliated with an agency have substantially higher job-finding probabilities at the beginning of their careers on oDesk. The heavy reliance on these informational features suggests that employers are faced with high levels of uncertainty in the hiring process due to acute information asymmetry issues that are inherent in the online context.</p><p>The ambiguous effect on hiring uncertainty in online settings produces an unclear understanding on whether gender stereotypes are involved in hiring decisions. In the case where hiring biases are indeed present, a follow-up question is how gender stereotypes would affect hiring outcomes in online environment. While there is a long history of literature delineating the impact of discriminatory hiring in traditional labor contexts, the existing theory and evidence on the effect of gender stereotyping in online environments are largely non-existent. We discuss the various streams of literatures pertinent to our study context next.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Occupational Discrimination</head><p>Scholars have identified two types of occupational discrimination at work. In statistical discrimination, the difference in the treatment of men and women arise from the expectation that these two groups have different levels of productivity <ref type="bibr" target="#b22">(Phelps 1972;</ref><ref type="bibr" target="#b5">Arrow 1973)</ref>. In contrast, taste-based discrimination stems from an animus towards one group <ref type="bibr">(Becker 1957)</ref>. Though it is hard to distinguish between the two types of discrimination, several studies have consistently demonstrated that gender discrimination holds a significant impact on hiring outcomes.</p><p>Under the audit study method, researchers use matched pairs of individuals of different gender to masquerade as job hunters to solicit for hiring responses. Using this method, <ref type="bibr" target="#b13">Neumark et al. (1996)</ref> and <ref type="bibr">Goldin and Rouse (1997)</ref> found that women faced hiring discrimination at high-price restaurants and symphony orchestras, respectively. In correspondence studies, pairs of fake resumes with similar characteristics but with different names signaling disparate gender are sent to job evaluators. Results from some correspondence studies revealed that female candidates are universally discriminated against (e.g., <ref type="bibr" target="#b24">Riach and Rich 1987)</ref>, while others found support for occupational segregation, a situation where hirers prefer hiring male workers for masculine jobs and female workers for feminine jobs (e.g., <ref type="bibr">Booth and Leigh 2010;</ref><ref type="bibr">Glick et al. 1988;</ref><ref type="bibr">Jawahar and Mattsson 2005)</ref>. Under a separate study technique of tracing applicants <ref type="bibr">' referral network, Fernandez and Sosa (2005)</ref> find that female applicants are in fact favored over males for an entry-level customer service job at a large bank. The lack of consensus across study findings in traditional labor markets suggests that the process of occupational discrimination is a complicated one that has varying effects on hiring decisions, and is temporally and contextually dependent.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Gender Differences</head><p>It is well recognized that males differ from females in various aspects. Women are generally perceived as warm, gentle and kind, whereas men are viewed as tough and aggressive (Huddy and Terkildsen 1993). Studies have also shown that women are being seen as more trustworthy, helpful, reciprocal and altruistic than men <ref type="bibr" target="#b4">(Andreoni and Petrie 2008;</ref><ref type="bibr">Buchan et al. 2008;</ref><ref type="bibr">Eckel and Grossman 1998;</ref><ref type="bibr" target="#b16">Orbell et al. 1994</ref>). These perceptual gender differences are found to manifest as differential treatment of males and females in situations that involve trusting strangers. Evidence of such has been reported in the online peer-to-peer credit markets, among others. For instance, <ref type="bibr">Ravina (2008)</ref> found that female borrowers were rated as more trustworthy and were more likely to get loans than male borrowers. Similarly, <ref type="bibr" target="#b23">Pope and Sydnor (2009)</ref> revealed that female borrowers have a higher likelihood of being funded and received lower interest rates on loans compared to their male counterparts. As such, perceptions of gender differences can play important roles in affecting hiring outcomes, particularly in contexts where trust is a crucial enabling factor in relations where there is uncertainty and fear of opportunism <ref type="bibr">(Gefen et al. 2003;</ref><ref type="bibr" target="#b11">Mayer et al. 1995)</ref>.</p><p>From a social role perspective, men are expected to demonstrate independence from others through successful individual performances, while women are seen to be more communally oriented which manifests through behaviors of interpersonal cooperation, relationship formation and maintenance <ref type="bibr" target="#b30">(Tannen 1990)</ref>. At the same time, men are attracted to competition, while women are inclined to avoid competitive situations <ref type="bibr">(Gneezy et al. 2003;</ref><ref type="bibr" target="#b14">Niederle and Vesterlund 2007)</ref>. Taken jointly, these gender traits explain why women avoid negotiation situations, and are more likely to accept lower offers than men <ref type="bibr" target="#b7">(Babcock and Laschever 2003;</ref><ref type="bibr">Eckel and Grossman 2001;</ref><ref type="bibr">Kray et al. 2002)</ref>. This gender difference is pertinent to employment situations as aggressive negotiation styles are found to affect the likelihood with which agreements are reached <ref type="bibr">(Hamner 1974)</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Data</head><p>To address our research questions related to online hiring biases, we use a novel proprietary dataset from a large online labor market which consists of highly detailed job posting information between August 2012 and December 2013. 4 We limit our study sample to jobs that are filled with one hired applicant, so that definite hiring outcomes can be observed. We focus our analyses on hiring outcomes for jobs that are paid hourly as opposed to those paid on the basis of fixed prices to abstract from the differences in project sizes and durations. Job applications from India, Bangladesh, Philippines, Pakistan, and United States represent over 85% of all applications on the platform. We further restrict our dataset to job applications from these top five countries so that results would be free from the influence of outlier effects. Based on the screening steps, our resultant dataset contains a total of 194,596 job postings.</p><p>For each job application, we have information on whether the contractor has been previously hired by the current employer who posted the job, the job category, whether the employer invited the worker to send a job application, and the hourly wage proposed by the worker. On top of the job-specific information, we also have a rich set of worker attributes including first and last name, worker type (i.e., independent or agency contractor), English proficiency, country of residence, education attainment, employment history, overall feedback score, number of portfolio items, number of certifications obtained, number of tests passed, number of jobs completed, and whether a profile photo is posted. Among these worker attributes, some of the worker's credentials are self-reported, while others are verified by the platform. The key outcome variable in this study is whether a worker is hired.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Gender Inference</head><p>In preventing discriminatory behaviors and privacy breaches, the platform does not collect demographic information such as age, gender, race, and religion from its workers. Despite this precautionary step, employers are likely able to infer the gender identity of workers from either their names and/or profile photos. We make a similar inference of the worker's gender through the application of machine-learning approaches on the names and photos found on workers' profiles.</p><p>The platform requires all workers to use real and verifiable first names on their profiles. Several studies demonstrated the possibility of inferring gender identity from first names (e.g., Gallagher and Chen 2008). In particular, Tang et al. ( <ref type="formula">2011</ref>) constructed a comprehensive list of first names with annotated gender probabilities based on data from public Facebook profile pages of 1.67 million users. Using the namegender probability estimates from Tang et al. ( <ref type="formula">2011</ref>), we match the worker's name in our sample to that in the list, and inferred the worker's gender using a cutoff confidence value of 95%. In cases where the probability is less than 95%, we label the gender of the worker as unknown.</p><p>Furthermore, a large proportion of workers (85.88%) in our dataset posted a photo on their profile page. Compared to names, photos convey more direct and salient information about one's gender. Advances in the computer vision and machine learning have produced mature techniques for the automatic extraction of facial features such as pupil-to-nose vertical distance, chin radii, eyebrow thickness, and hair for gender prediction (e.g., <ref type="bibr">Gutta et al. 1998;</ref><ref type="bibr">Yang et al. 2006;</ref><ref type="bibr">Gao and Ai 2009)</ref>. We developed a programming script that makes use of a facial recognition package to perform gender classification on profile photos of workers in our dataset. 5 A minimum accuracy of 95% confidence was imposed on the facial recognition exercise. 5 Not all the workers posted photos of their own faces. Gender is not identified for those workers who post photos of sceneries, pets, etc. We note that non-human photos represent a small proportion of our sample. Using the two approaches described above, we are able to infer the gender information of 168,500 contractors. To check the overall accuracy level of our labels, we cross-validate the inferred genders for workers under the two approaches. We find that the agreement rate is 95.20% for female workers and 97.10% for male workers. Observations with mismatched genders from the two approaches are omitted from our analysis. Given the high agreement in the predicted gender across independent sources of information (i.e., name and photo), we believe our cross-validation approach has yielded a dataset with highly accurate gender labels. A summary of all variables in our dataset and its respective descriptive statistics is presented in Table <ref type="table" target="#tab_0">1</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Empirical Methodology</head><p>To examine the question on whether gender identity affects hiring outcome, we employ a conditional logistic specification <ref type="bibr" target="#b12">(McFadden 1973)</ref>. The conditional logit model is often used to understand how choices are made among a set of products with varying characteristics such that the consumer maximizes utility from his/her choice (e.g., Guadagni and Little 1983). In our setting of online hiring, the employer can be seen as a consumer who makes a choice among the set of applicants (products). The systematic component of utility includes the set of observable attributes listed on the worker's profile ‫ݔ(‬ ) at the time of application, the gender of the applicant (݃ ), and a unique dummy variable for each job posting for capturing unobserved job-specific effects (ߛ ). The utility that the employer can derive from hiring worker j is given by:</p><formula xml:id="formula_0">‫ݑ‬ = ‫ݔ‬ β + ݃ α + γ + ε , ∀݅ ϵ ሾ1, 2, … , ܰሿ, ∀݆ ϵ ሾ1, 2, … , ‫ܬ‬ ሿ.</formula><p>Under this utility function, the error term ε is assumed to follow a type I extreme value distribution, N represents the total number of job postings, and ‫ܬ‬ represents the number of applicants for job posting ݅.</p><p>In the conditional logit model, the probability that an applicant ݆ is hired for a job ݅ is:</p><formula xml:id="formula_1">ܲ൫ܻ = 1ห‫ݔ‬ ଵ , ‫ݔ‬ ଶ , ⋯ , ‫ݔ‬ , ݃ ଵ , ݃ ଶ , ⋯ , ݃ ൯ = exp൫‫ݔ‬ ߚ + ݃ α൯ ∑ exp ‫ݔ(‬ ߚ + ݃ α) ୀଵ (1)</formula><p>where ܻ is an indicator for whether applicant ݆ is hired. The coefficients β (a vector of utility weights reflecting the importance of non-gender attributes, ‫ݔ‬ ), α (the utility weight reflecting the importance of worker's gender, ݃ ) are to be estimated. The estimation of the gender identity parameter (ߙ) is our primary concern. Utility ‫ݑ(‬ ) is an unobserved latent variable that is revealed through an employer's choice of worker ݆ for a particular job posting ݅. A repeated cross sectional dataset at the job level is used for this analysis, in which applications for each job form multiple observations for each unit of analysis. It should be noted that job related characteristics are not used in this specification as the job-level fixed effects are in place. Non-gender attributes ‫ݔ(‬ ) include the worker characteristics listed in Table <ref type="table" target="#tab_0">1</ref>.</p><p>Though a complete set of observable worker attributes along with unobserved heterogeneity job effects are accounted for in the conditional logit model, endogeneity issues may still exist in the estimation of gender effects on hiring outcome. As observed from past studies on labor discrimination, a potential source of endogeneity may arise from selection effects, which involve systematic differences in both observed and unobserved abilities of male and female applicants for each job <ref type="bibr" target="#b18">(Pager et al. 2009;</ref><ref type="bibr" target="#b25">Riach and Rich 2002)</ref>. Ideally in our analyses, we would like each job candidate to be contrasted with a comparable individual of the opposite gender such that hiring outcomes are not driven by differences in workers' ability but by their gender identity. While it is impossible to find perfect counterfactuals in field settings or to control for all ability differences using observable traits, we are able to mitigate this source of endogeneity by employing a matched sampling approach. A propensity score matching strategy is used to find the closest match for every female applicant in the dataset to derive a sample of job applicants with comparable counterparts of the opposite gender. The matching exercise also helps to remove job postings that do not contain comparable applicants from both genders, thereby reducing estimation biases generated by postings that have exceptional strong (weak) candidates that have very high (low) probability of being hired.</p><p>To further rule out concerns on endogeneity, we employ a quasi-experiment technique to address potential estimation biases that arise from unobserved differences in workers' ability levels. Having access to rich observations of a large number of worker profiles over time, we are able to isolate a pool of workers whose gender identities are unclear to hirers. We achieve that by identifying workers whose names are uncommon and are not informative of gender identity. As a default, we define uncommon names to be those that appeared ten times or less in the annotated name list that was used to identify worker's gender.<ref type="foot" target="#foot_0">6</ref> Among these gender-anonymous workers, we further identify a sub-population of workers who did not have a profile photo at the beginning of the study period but have added a photo to their profile before the end of the study period. We restrict the timeframe of consideration to 1.5 years so that any changes in workers' abilities and qualifications will be minimal.</p><p>Based on the selection criteria, the resultant dataset comprises of a panel of workers whose gender identities are ambiguous initially but are clarified later via the information conveyed in their posted profile photos. By comparing the hiring outcomes of each worker before and after the posting of photos, we are able to identify the impact of gender on hiring likelihood. This identification strategy addresses estimation issues from differences in workers' abilities by having each worker to be his/her own counterfactual when his/her gender identity is unknown to hirers. We estimate the model of the following utility specification:</p><formula xml:id="formula_2">‫ݑ‬ = ‫ݔ‬ β + ݃ α ଵ + ‫‬ α ଶ + ݃ . ‫‬ α ଷ + γ + ε , ∀݅ ϵ ሾ1, 2, … , ܰሿ, ∀݆ ϵ ሾ1, 2, … , ‫ܬ‬ ሿ</formula><p>Consequently, the probability that an applicant ݆ is hired for a job posting ݅ is:</p><formula xml:id="formula_3">ܲ൫ܻ = 1ห‫ݔ‬ ଵ , ‫ݔ‬ ଶ , ⋯ , ‫ݔ‬ , ݃ ଵ , ݃ ଶ , ⋯ , ݃ , ‫‬ ଵ , ‫‬ ଶ , ⋯ , ‫‬ ൯ = exp൫‫ݔ‬ ߚ + ݃ α ଵ + ‫‬ α ଶ + ݃ . ‫‬ α ଷ ൯ ∑ exp ‫ݔ(‬ ߚ + ݃ α ଵ + ‫‬ α ଶ + ݃ . ‫‬ α ଷ ) ୀଵ (2)</formula><p>where β (a vector of utility weights reflecting the importance of non-gender attributes, ‫ݔ‬ ), ߙ ଵ (the utility weight reflecting the importance of worker's gender, ݃ ), ߙ ଶ (the utility weight reflecting the importance of photo's presence, ‫‬ ), and ߙ ଷ (the utility weight reflecting the importance of the worker's gender revealed through the photo, ݃ . ‫‬ ) are to be estimated. The parameter for gender identity revealed via posted photo (ߙ ଷ ) provides us with the effect of the hiring bias within the quasi-experiment set up. We note that the gender main effect (ߙ ଵ ) under this specification represents differential ability and quality across workers of different sex.</p><p>In the specifications above, we examine the overall hiring probability across all job categories to understand whether gender discrimination exists at the aggregate level. To further understand the nature of gender stereotype that is prevalent in the online setting, we perform subsample analyses by repeating our estimations on observations for three specific job categories: female-dominated occupations, maledominated occupations and gender-neutral occupations. We rely on two sources of information to classify jobs into each of categories. First, we tabulate the proportion of male to female applicants for each job category and determine if they fall above or below the average male-female ratio of workers on the platform. Second, we rely on the occupation gender composition information provided by the Bureau of Labor Statistics (BLS; see http://www.bls.gov) to identify gender-dominated jobs. Under these two categorizations, we find that "Administrative Support" jobs consistently fall under female-dominated occupations; "Software Development" is categorized as male-dominated occupations; "Design &amp; Multimedia" belongs to gender-neutral occupations. By examining the effect of gender on hiring outcomes across these job categories, we can assess whether the directionality of the hiring bias is dependent on occupational stereotypes.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Results</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Main results</head><p>We present the regression results from Equation 1 in Table <ref type="table" target="#tab_2">2</ref>. In column 1, we estimate a basic model where no matching is used. Columns 2 to 5 show the regression estimates derived under matched samples. More specifically in columns 2 and 4, the observations are made up of workers who are matched within the same job category, while those in columns 3 and 5 are obtained by matching workers within each job posting. Within each job category and posting, we require exact matching on employer invitation, previously hired, and agency contractor, and perform propensity score matching on other attributes. The caliper size used is 0.01 in columns 2 and 3, and a caliper size of 0.001 is used in columns 4 and 5. All matching is performed without replacement, under common support. A balance check indicated that the standardized bias after matching is below 5%, suggesting that the matching process has resulted in a balanced sample of male and female workers <ref type="bibr">(Caliendo et al. 2008)</ref>.</p><p>In column 1, we see that female variable holds a positive coefficient that is significant at the 1% level, suggesting that female workers enjoy a higher likelihood of getting hired compared to their male counterparts. The gender estimates under the matched sample are also positive and significant at the 1% level, thereby affirming the relationship observed in the unmatched sample. That means that after accounting for differences in worker ability via one-to-one matching, a hiring bias in favor of female candidates is still present. In particular, the strictest matching strategy (column 5) suggests that the odds of a female applicant being hired are 21.7% higher than that of a male applicant. Estimates of the control variables are informative of how various job-related and worker-specific attributes affect the likelihood of being hired. Job specific characteristics such as whether the employer invited the candidate for the focal job, whether worker sent his/her CV and whether the worker was previously hired by the employer have positive influence on hiring likelihood. As expected, the hourly rate charged by the worker correlates negatively with the likelihood of hiring. We further find that selfdeclared characteristics by the worker generally do not affect the likelihood of hiring, with the exception of number of offline jobs performed and English proficiency. In contrast, platform-verified information of the workers holds significant relationships with hiring likelihood. This result is similar to those found in studies of online reputation, illustrating that online signals have an impact on market outcomes <ref type="bibr">(Dellarocas 2003;</ref><ref type="bibr" target="#b19">Pallais 2012)</ref>.</p><p>We ran further robustness checks which involve the use of alternative dependent variables that indicate employer's interest and willingness to hire prospective job applicants. The dataset allows us to know whether the employer has invited workers to apply for the posted job and whether the employer has initiated an interview with prospective candidates. Regression results based on job invitations and candidate interviews as dependent variables provide qualitatively similar conclusions in that female workers are more likely to receive job invitations and job interviews than male workers. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Results from quasi-experiment setup</head><p>Next, we report the results that are derived under the quasi-experimental strategy. Under this setup, the hiring bias effect is observed when employers make their hiring decisions based on the gender identities inferred from the posted photos of workers. The effect of hiring bias is captured by the Female × Has Photo variable in Table <ref type="table" target="#tab_3">3</ref>. In column 1, we observe that the interaction term is positive and significant at the 1% level, suggesting that hiring bias is present and its effect works in favor of female applicants. Specifically, when no photo is available, the odds of a female applicant being hired are 36.6% lower than that of a male applicant. This negative main effect from the Female variable suggests that male applicants may have stronger abilities and job-fit compared to female candidates. Next, the positive coefficient on the Photo variable indicates that all job applicants benefit from the posting of photos. However, the magnitude of the benefit differs between the two genders in that the odds of being hired increases by 113.8% for female applicants but only by 22.3% for male applicants. Furthermore, the odds of females with photos being hired are 10.8% higher compared to males with photos. Therefore, the revelation of gender gives a disproportionate advantage to female workers. To evaluate the robustness of this result, we repeated the analysis in column 1 using more stringent criteria. In columns 2 and 3, we tighten the criteria of uncommon names by selecting workers whose names appear five times or less, and did not appear at all in our annotated list, respectively. Results in columns 2 and 3 show that the interaction term continues to hold a positive and significant coefficient, signifying that the previous result is robust to stricter definitions of name commonality. Next, we assess the robustness of the result with respect to outliers. Within this panel of workers, there are workers who posted their photos late (early) resulting in few (many) instances of job application with exposed gender identity. To account for these outliers, we remove applicants who have few job applications with or without posted photos. Columns 4 and 5 report the results for which the minimum number of applications with or without photos is 3 and 5, respectively. The regression results derived under these samples remain qualitatively similar to that in column 1, suggesting that the findings in this quasiexperiment setup is robust.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Nature of gender bias in hiring</head><p>To examine the nature of gender bias in our setting, we investigate the hiring outcomes for various job categories on the platform, split by feminine, masculine and gender-neutral occupations. In Table <ref type="table" target="#tab_4">4</ref>, we report the regression results of the samples matched by job category and job posting, using various matching criteria. <ref type="foot" target="#foot_2">7</ref> The results are consistent across different model specifications for gender-dominated occupations, so we only discuss the effect sizes using the first specification. From column 1, we see that the odds of females being hired are 41.6% higher for administrative support positions (i.e., feminine occupation). In addition to that, column 3 shows that females are 19.1% less likely to get hired in software development jobs (masculine occupation), in terms of odds ratio. <ref type="foot" target="#foot_3">8</ref> This set of results provides evidence in support of occupational segregation in online hiring decisions, that is, employers prefer hiring female workers for female-dominated occupations and male workers for male-dominated occupations.</p><p>Interestingly, we note that female workers are more likely to be hired in jobs posted under the design and multimedia category (gender-neutral occupation). More specifically from column 2, we note that the odds of female workers being hired is 16.4% higher for jobs posted under the design and multimedia category (gender-neutral occupation). While the coefficients in columns 2, 5, 8, and 11 are not always significant, the direction of the coefficient is highly consistent in showing a positive bias towards female workers for gender-neutral jobs.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Moderating effect of employer experience</head><p>It is plausible that the hiring bias may change over time, particularly so when employers gain experience in hiring workers on the online platform. To assess this possibility, we run the conditional logit regressions on different samples of employers, split by their hiring experience on the platform. In particular, we split the sample of employers into upper and lower quartiles of the number of workers hired.</p><p>In Table <ref type="table" target="#tab_5">5</ref>, we see that the gender coefficients from the "low experience" employers are positive and significant, while the gender coefficients for "high experience" employers are non-significant. This set of results indicates that hiring bias mainly exists in new employers who have few hiring experiences on the labor marketplace, and the bias diminishes as employers make more hires on the platform. We also note that this effect is consistent across different stringency in matching criteria, suggesting that the observed trend is rather robust.  </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Discussion and Implications</head><p>This study is among the first empirical effort to investigate the presence of gender bias in the context of online hiring. We use a rich set of controls, along with a matched sample approach to account for endogeneity issues that arise from individual differences across job applicants. We further address estimation biases through the use of a quasi-experiment strategy which sets each applicant up as his/her own counterfactual when his/her gender identity is unknown to hirers. Our results provide evidence for the presence of a hiring bias that is in favor of female applicants. In addition, our analyses suggest that employers are influenced by the perception of sex-typed jobs, in that they are more likely to hire women for feminine jobs and men for masculine jobs. Females are also likely to enjoy a greater hiring likelihood in gender-neutral jobs. Lastly, our results demonstrate that the hiring bias dissipates with increased hiring experience on the platform.</p><p>This study provides several important insights for academics, policy makers, online platform owners, and hiring managers. First, the discovery of a gender bias in the online hiring decisions is counterintuitive to our understanding as anonymity is a major defining characteristic of online environments. In online contexts where personal identities can be easily concealed and manipulated, we would expect biases based on personal characteristics to be minimal or non-existent. Yet, in the effort to promote authenticity and trust in the online labor marketplace, user provided information such as real names and photos have the unintended consequence of facilitating opportunities for hiring biases to take place. The presence of a gender bias implies the need to implement policies and regulations in the online labor market to curb such unwarranted behaviors. While platform owners should still collect real names for identity authentication, they could consider using pseudonyms or screen names for worker profiles. In addition, platform owners should encourage workers to use avatars and screen names that are not informative of workers' demographic characteristics, so that hiring biases based on stereotypes can be minimized.</p><p>Second, the directionality of the hiring bias demonstrates the important point that online mediums can bring about drastic differences to phenomenon that occur in offline contexts. Though gender occupational segregation exists in both offline and online environments, the hiring biases in online labor markets tend to manifest as a preference for female workers in general. This trend operates in an opposite fashion to observations in traditional labor markets where hiring biases work against female workers. Such an outcome may be surprising to labor economists but is not unexpected to IS academics, as a multitude of extant IS studies has consistently show that trust is a crucial factor in enabling relationships and transactions in online markets <ref type="bibr">(Gefen et al. 2003;</ref><ref type="bibr" target="#b21">Pavlou et al. 2007</ref>). As hirers face risks and uncertainty in the online environment, they are prone to rely on cues signaling that the applicant is not a bad worker (e.g., workers who intentionally delays the duration of the project to get larger earnings under the hourly payment, negotiating project deliverables with employers after the start of the contract, and asking for payment bonuses prior to starting a project). To this effect, females gain an advantage from the general perception that they are more honest, trustworthy, cooperative, and less inclined to negotiate working terms with their employers.</p><p>With the aim to provide evidence that the lack of trust is a potential underlying reason leading to hiring bias, we examine the moderating effect of employer experience on the relationship between gender stereotype and hiring outcomes. Under this test, we found that the hiring bias favoring women dissipates as employers make more hires on the online platform. We theorize that repeated usage of the online marketplace allows the employer to learn and build up confidence in the efficacy of the institutional measures for addressing agency problems (e.g., time tracker which monitors worker's actual working hours, online procedures to dispute the work quality and charges incurred). After gaining trust in the online labor platform, employers' reliance on inherent biases to make hiring decisions is likely reduced. As such, the hiring bias in online labor market presents an interesting situation for policy makers and platform owners, as it is largely motivated by a trust inertia inherent in all inexperienced employers. The traditional strategies used for reducing discriminatory hiring may not be fully effective in this online context. Potential remedies for such bias in online environments involve platform owners providing assurance to new employers through indicators and measures of the worker innate qualities such as worker's timeliness, integrity, attitudes and professionalism.</p><p>Finally, results in the quasi-experiment design suggest that females are hired even when male applicants are more effective for the posted job. The hiring bias induced by an unfounded preference for female produces market inefficiencies for the online labor market. The gender bias obfuscates and overwhelms the consideration of applicants' ability and job-fit, which results in the rejection of well-suited candidates over less-qualified applicants. This finding is particularly relevant to hiring managers as it serves to inform them of the inherent biases that they may have when making hiring decisions in online marketplaces. As such, practitioners hiring workers in online marketplaces should be cautious about making hiring decisions based on undue influence from stereotypes. Admittedly, this hiring bias might arise unintentionally and unwillingly, which is why platform owners bear the ultimate weight of providing relevant site infrastructure to reduce information asymmetry present in the online context.</p><p>Our study is not without limitations, some of which may serve as research agendas for future studies. First, our study findings are confined to the observations from one online labor marketplace. Given that different online labor markets may differ and have peculiar characteristics (i.e., types of job offered, worker composition, quality assurance mechanisms), it may be plausible that the results on hiring bias in this study may not generalize to other online platforms. However, we are less worried about this as our study site represents one of the largest labor marketplaces in the Internet which hosts a significant number of active projects and workers. Regardless, future efforts to cross-validate our findings will strengthen the external validity of our study.</p><p>Second, by focusing our study on hiring bias from gender stereotypes, our study is unable to provide insights related to biases that arise from other types of discriminative hiring (e.g., racial, age). Future studies may want to delve into the equally crucial issue of how other stereotyping perceptions of race and age may affect hiring outcomes. In particular, the combination of multiple stereotyping traits (i.e., male workers from India vs. female workers in India, Chinese male workers from China vs. Chinese male workers in Indonesia) can prove to hold interesting and meaningful relationships with hiring outcomes.</p><p>Third, a related point to the previous point is that this study examines stereotyping behavior from the perspective of hiring decisions. Labor discriminatory practices may also exhibit through wage differentials across disparate groups of individuals (e.g., <ref type="bibr" target="#b3">Altonji and Pierret 2001)</ref>. It is possible that females may receive an advantage in terms of higher hiring likelihood but suffer a penalty in their wages received in the online market. Insights into the multi-aspects of labor discriminatory practices will help decision makers arrive at holistic interventions and policies to tackle stereotyping behaviors in its entirety.</p><p>Finally, we reasoned that the overarching preference in hiring female workers lies on the perception that women are generally seen as more trustworthy and cooperative than men. While this trend has received much theoretical support from extant studies on perceptual differences in genders, future research may contribute to this literature by providing empirical validation of this relationship in the online context via surveys, interviews and anecdotal evidence.</p><p>As online labor marketplaces continues to grow in its size and reach, a greater proportion of the world's employers and workers would be transacting through this online intermediary. Though the benefits of reduced search costs and efficient matching are largely welcomed by parties from both the demand and supply end, the expansion of online labor markets also ushers in similar social and economic issues that are observed in traditional marketplaces. While such issues are carefully monitored and regulated in offline markets, these practices have not been thoroughly and widely applied to online labor markets, as the rise of these intermediaries represents a relatively nascent phenomenon that has not been fully understood. Our study fills this gap by shedding light on the prevalence and nature of hiring bias in online labor markets. The implications for future research and policy are important, as the understanding of stereotyping behaviors in online contexts is a critical first step towards the effective design of guidelines and policies to improve market efficiency and to enforce labor equality.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head>Table 1 . All the Variables and Descriptive Statistics Variable Description Mean Std. Dev Min Max Key Explanatory Variable:</head><label>1</label><figDesc></figDesc><table><row><cell>Female</cell><cell>Whether the worker is a female</cell><cell>0.316</cell><cell>0.465</cell><cell>0</cell><cell>1</cell></row><row><cell cols="2">Job-Specific Variables:</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Log(Hourly Wage)</cell><cell>The log of the hourly wage proposed by the worker</cell><cell>1.390</cell><cell>0.962</cell><cell cols="2">-4.61 10.009</cell></row><row><cell>Employer Invitation</cell><cell>Whether the employer invited worker to submit a job application</cell><cell>0.071</cell><cell>0.257</cell><cell>0</cell><cell>1</cell></row><row><cell>Sent Cover Letter</cell><cell>Whether one sends cover letter for the application</cell><cell>0.130</cell><cell>0.336</cell><cell>0</cell><cell>1</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2"><head>Table 2 : Gender and Hiring Probability</head><label>2</label><figDesc>All models are conditional logistic regressions with job posting fixed effects. * significance at 10% level, ** significance at 5% level and *** significance at 1% level. Due to the large sample size, we adopt a cut-off point of 1% significance level in all the specifications.</figDesc><table><row><cell></cell><cell>No</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell>Matching</cell><cell cols="2">Caliper Size = 0.01</cell><cell cols="2">Caliper Size = 0.001</cell></row><row><cell></cell><cell>(1)</cell><cell>(2)</cell><cell>(3)</cell><cell>(4)</cell><cell>(5)</cell></row><row><cell>Female</cell><cell>0.117*** (0.01)</cell><cell>0.078*** (0.01)</cell><cell>0.203*** (0.02)</cell><cell>0.081*** (0.01)</cell><cell>0.196*** (0.06)</cell></row><row><cell>Job-Specific Controls:</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Log (Hourly Rate)</cell><cell>-0.338*** (0.01)</cell><cell>-0.419*** (0.01)</cell><cell>-0.722*** (0.03)</cell><cell>-0.425*** (0.01)</cell><cell>-0.829*** (0.08)</cell></row><row><cell>Employer Invitation</cell><cell>1.660*** (0.02)</cell><cell>1.695*** (0.03)</cell><cell>1.137*** (0.19)</cell><cell>1.717*** (0.03)</cell><cell>0.943 (0.75)</cell></row><row><cell>Sent Cover Letter</cell><cell>0.252*** (0.01)</cell><cell>0.286*** (0.02)</cell><cell>0.321*** (0.04)</cell><cell>0.283*** (0.02)</cell><cell>0.343*** (0.09)</cell></row><row><cell>Previously Hired</cell><cell>2.246*** (0.04)</cell><cell>2.102*** (0.07)</cell><cell>-14.348 (694.38)</cell><cell>2.117*** (0.09)</cell><cell>-11.882 (863.17)</cell></row><row><cell>Worker-Declared Attributes:</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Education</cell><cell>0.010*** (0.00)</cell><cell>0.007 (0.01)</cell><cell>-0.002 (0.01)</cell><cell>0.006 (0.01)</cell><cell>0.008 (0.03)</cell></row><row><cell>No. of Certificates</cell><cell>-0.012*** (0.00)</cell><cell>-0.013** (0.01)</cell><cell>-0.029** (0.01)</cell><cell>-0.012* (0.01)</cell><cell>-0.034 (0.03)</cell></row><row><cell>Past Employment</cell><cell>0.017*** (0.00)</cell><cell>0.023*** (0.00)</cell><cell>0.029*** (0.01)</cell><cell>0.022*** (0.00)</cell><cell>0.016 (0.02)</cell></row><row><cell>English Proficiency</cell><cell>0.140*** (0.01)</cell><cell>0.182*** (0.02)</cell><cell>0.162*** (0.05)</cell><cell>0.193*** (0.02)</cell><cell>0.030 (0.11)</cell></row><row><cell>No. of Portfolio Items</cell><cell>0.000 (0.00)</cell><cell>0.001 (0.00)</cell><cell>0.002 (0.00)</cell><cell>0.001** (0.00)</cell><cell>0.010** (0.01)</cell></row><row><cell>Platform-Verified Attributes:</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>No. of Tests</cell><cell>0.008*** (0.00)</cell><cell>0.009*** (0.00)</cell><cell>0.010** (0.00)</cell><cell>0.010*** (0.00)</cell><cell>0.021* (0.01)</cell></row><row><cell>Feedback Score</cell><cell>0.142*** (0.00)</cell><cell>0.146*** (0.00)</cell><cell>0.215*** (0.01)</cell><cell>0.147*** (0.00)</cell><cell>0.250*** (0.02)</cell></row><row><cell>No. of Online Jobs</cell><cell>0.004*** (0.00)</cell><cell>0.004*** (0.00)</cell><cell>0.008*** (0.00)</cell><cell>0.004*** (0.00)</cell><cell>0.009*** (0.00)</cell></row><row><cell>Agency Contractor</cell><cell>-0.401*** (0.01)</cell><cell>-0.353*** (0.02)</cell><cell>-0.445*** (0.05)</cell><cell>-0.367*** (0.02)</cell><cell>-0.167 (0.15)</cell></row><row><cell>Worker Country Fixed Effects</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row></table><note><p>Notes:</p></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_3"><head>Table 3 : Estimates under Quasi-Experiment Approach</head><label>3</label><figDesc></figDesc><table><row><cell></cell><cell>(1)</cell><cell>(2)</cell><cell>(3)</cell><cell>(4)</cell><cell>(5)</cell></row><row><cell>Female</cell><cell>-0.456** (0.18)</cell><cell>-0.495** (0.21)</cell><cell>-0.709** (0.33)</cell><cell>-0.465** (0.21)</cell><cell>-0.423* (0.23)</cell></row><row><cell>Has Photo</cell><cell>0.201* (0.11)</cell><cell>0.281** (0.13)</cell><cell>-0.094 (0.20)</cell><cell>0.305** (0.14)</cell><cell>0.349** (0.15)</cell></row><row><cell>Female × Has Photo</cell><cell>0.559*** (0.20)</cell><cell>0.526** (0.24)</cell><cell>0.882** (0.37)</cell><cell>0.596** (0.24)</cell><cell>0.639** (0.27)</cell></row><row><cell>Controls</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Worker Country Fixed Effects</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>No. of Name Occurrences</cell><cell>≤10</cell><cell>≤ 5</cell><cell>0</cell><cell>≤ 10</cell><cell>≤ 10</cell></row><row><cell>No. of Applications with or without posted photos</cell><cell>≥ 1</cell><cell>≥ 1</cell><cell>≥ 1</cell><cell>≥ 3</cell><cell>≥ 5</cell></row><row><cell>Log Likelihood</cell><cell>-1253.90</cell><cell>-874.96</cell><cell>-407.82</cell><cell>-759.79</cell><cell>-588.76</cell></row><row><cell>Observations</cell><cell>4672</cell><cell>3216</cell><cell>1537</cell><cell>2744</cell><cell>2128</cell></row><row><cell>No. of Applicants</cell><cell>1293</cell><cell>1002</cell><cell>567</cell><cell>749</cell><cell>573</cell></row><row><cell cols="6">Notes: All models are conditional logistic regressions with job posting fixed effects. * significance at 10% level, **</cell></row><row><cell cols="2">significance at 5% level and *** significance at 1% level.</cell><cell></cell><cell></cell><cell></cell><cell></cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_4"><head>Table 4 : Estimates in Gender-Dominated Job Categories</head><label>4</label><figDesc>All models are conditional logistic regressions with job posting fixed effects. Control variables are the same as those used in Table2. * significance at 10% level, ** significance at 5% level and *** significance at 1% level.</figDesc><table><row><cell></cell><cell></cell><cell>No Matching</cell><cell></cell><cell cols="3">Matched by Job Category, Caliper Size 0.01</cell></row><row><cell></cell><cell>Feminine</cell><cell>Neutral</cell><cell>Masculine</cell><cell>Feminine</cell><cell cols="2">Neutral Masculine</cell></row><row><cell></cell><cell>(1)</cell><cell>(2)</cell><cell>(3)</cell><cell>(4)</cell><cell>(5)</cell><cell>(6)</cell></row><row><cell>Female</cell><cell>0.348*** (0.02)</cell><cell>0.152*** (0.03)</cell><cell>-0.212*** (0.08)</cell><cell>0.426*** (0.03)</cell><cell>0.043 (0.04)</cell><cell>-0.218 (0.14)</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_5"><head>Table 5 : Comparison of Gender Bias across Employers</head><label>5</label><figDesc>All models are conditional logistic regressions with job posting fixed effects. Control variables are the same as those used in Table2. * significance at 10% level, ** significance at 5% level and *** significance at 1% level.</figDesc><table><row><cell>Lower Quartile (Low Experience</cell><cell>No Matching</cell><cell cols="2">Caliper Size = 0.01</cell><cell cols="2">Caliper Size = 0.001</cell></row><row><cell>Employers)</cell><cell>(1)</cell><cell>(2)</cell><cell>(3)</cell><cell>(4)</cell><cell>(5)</cell></row><row><cell></cell><cell>0.170***</cell><cell>0.128***</cell><cell>0.249***</cell><cell>0.136***</cell><cell>0.223**</cell></row><row><cell>Female</cell><cell>(0.02)</cell><cell>(0.02)</cell><cell>(0.04)</cell><cell>(0.02)</cell><cell>(0.10)</cell></row><row><cell>Matched Workers by Job</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Category</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Matched Workers by Job Posting</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Log Likelihood</cell><cell>-54555.41</cell><cell>-20189.22</cell><cell>-4388.36</cell><cell>-19259.89</cell><cell>-577.84</cell></row><row><cell>Observations</cell><cell>417888</cell><cell>119542</cell><cell>29400</cell><cell>114026</cell><cell>3109</cell></row><row><cell>Upper Quartile (High Experience</cell><cell>No Matching</cell><cell cols="2">Caliper Size = 0.01</cell><cell cols="2">Caliper Size = 0.001</cell></row><row><cell>Employers)</cell><cell>(1)</cell><cell>(2)</cell><cell>(3)</cell><cell>(4)</cell><cell>(5)</cell></row><row><cell></cell><cell>0.015</cell><cell>-0.028</cell><cell>0.064</cell><cell>-0.011</cell><cell>0.074</cell></row><row><cell>Female</cell><cell>(0.02)</cell><cell>(0.03)</cell><cell>(0.05)</cell><cell>(0.03)</cell><cell>(0.11)</cell></row><row><cell>Matched Workers by Job</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Category</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Matched Workers by Job Posting</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Log Likelihood</cell><cell>-34186.20</cell><cell>-13264.88</cell><cell>-3613.22</cell><cell>-12902.27</cell><cell>-583.04</cell></row><row><cell>Observations</cell><cell>363530</cell><cell>108061</cell><cell>33371</cell><cell>104807</cell><cell>4400</cell></row><row><cell>Notes:</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row></table></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="6" xml:id="foot_0"><p>Some uncommon names found in the platform include Gias, Kundan, Shan, and Younis. We perform further robustness checks later to see if our results are sensitive to the name frequency used.</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_1"><p>Thirty Fifth International Conference on Information Systems, Auckland 2014</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="7" xml:id="foot_2"><p>Matching workers by job posting under a caliper size of 0.001 is not possible, as there are too few matched observations, resulting in non-convergence in the conditional logit regression.</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="8" xml:id="foot_3"><p>The coefficient in column 6 is marginally significant at 13% level. This drop in significance is largely due to the reduction in sample size after matching is imposed.</p></note>
+		</body>
+		<back>
+
+			<div type="funding">
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>2 Prediction is provided by Staffing Industry Analysts. Available at http://www.staffingindustry.com/site/Research-Publications/Daily-News/US-What-will-happen-to-staffing-in-2018-24891. 3  In some countries, female candidates may not be selected for a job on the basis that they are pregnant or are likely to be pregnant in the near future. In other cases, a female worker may have trouble re-entering the corporate world after periods of maternity leave. For instances of these cases, see http://www.globaltimes.cn/content/877000.shtml and http://www.telegraph.co.uk/news/9871623/I-was-rejected-for-job-because-I-was-pregnant-says-lawyer-suingfirm.html.</p></div>
+			</div>
+
+
+			<div type="funding">
+<div xmlns="http://www.tei-c.org/ns/1.0"> Science, 43(12), 1676-1692.  Banker, R. D., &amp; Hwang, I. (2008)<p>. Importance of Measures of Past Performance: Empirical Evidence on Quality of e-Service Providers*. Contemporary Accounting Research, 25(2), 307-337.  Becker, G. (1957). The Economics of Discrimination. Chicago: University of Chicago Press. Booth, A. L., &amp; Leigh, A. (2010). Do employers discriminate by gender? A field experiment in femaledominated occupations. Economic Letters, 107(2), 236-238.  Brynjolfsson, E., Hu, Y., &amp; Smith, M. D. (2003). Consumer Surplus in the Digital Economy: Estimating the Value of Increased Product Variety at Online Booksellers. Management Science, 49(11), 1580-1596. Brynjolfsson, E., &amp; Smith, M. D. (2000). Frictionless Commerce? A Comparison of Internet and Conventional Retailers. Management Science, 46(4), 563-585. Buchan, N. R., Croson, R. T. A., &amp; Solnick, S. (2008). Trust and gender: An examination of behavior and beliefs in the Investment Game. Journal of Economic Behavior &amp; Organization, 68(3-4), 466-476. Caliendo, M., &amp; Kopeinig, S. (2008). Some Practical Guidance for the Implementation of Propensity Score Matching. Journal of Economic Surveys, 22(1), 31-72. Chan, J., &amp; Ghose, A. (2014). Internet's Dirty Secret: Assessing the Impact of Online Intermediaries on HIV Transmission. MIS Quarterly, forthcoming. Chellappa, R. K., Sin, R. G., &amp; Siddarth, S. (2011). Price Formats as a Source of Price Dispersion: A Study of Online and Offline Prices in the Domestic U.S. Airline Markets. Information Systems Research, 22(1), 83-98. Darity, W. A., &amp; Mason, P. L. (1998). Evidence on Discrimination in Employment: Codes of Color, Codes of Gender. Journal of Economic Perspectives, 12(2), 63-90. Dettling, L. (2013). Opting Back In: Home Internet Use and Female Labor Supply: Working Paper. Eckel, C. C., &amp; Grossman, P. J. (1998). Are Women Less Selfish Than Men?: Evidence from Dictator Experiments. The Economic Journal, 108(448), 726-735. Eckel, C. C., &amp; Grossman, P. J. (2001). Chivalry and solidarity in ultimatum games. Economic Inquiry, 39(2), 171-188. Gefen, D., Karahanna, E., &amp; Straub, D. W. (2003). Trust and TAM in online shopping: an integrated model. MIS Quarterly, 27(1), 51-90. Glick, P., Zion, C., &amp; Nelson, C. (1988). What mediates sex discrimination in hiring decisions? Journal of Personality and Social Psychology, 55(2), 178-186. Gneezy, U., Niederle, M., &amp; Rustichini, A. (2003). Performance in Competitive Environments: Gender Differences. Quarterly Journal of Economics, 118(3), 1049-1074. Goldin, C., &amp; Rouse, C. (2000). Orchestrating Impartiality: The Impact of "Blind" Auditions on Female Musicians. American Economic Review, 90(4), 715-741. Gorman, E. H. (2005). Gender Stereotypes, Same-Gender Preferences, and Organizational Variation in the Hiring of Women: Evidence from Law Firms. American Sociology Review, 70(4), 702-728. Guadagni, P. M., &amp; Little, J. D. C. (1983). A Logit Model of Brand Choice Calibrated on Scanner Data. Marketing Science, 2(3), 203-238. Hamner, W. C. (1974). Effects of bargaining strategy and pressure to reach agreement in a stalemated negotiation. Journal of Personality and Social Psychology, 30(4), 458-467. Hong, Y., &amp; Pavlou, P. A. (2012). Are Global Online Labor Markets Truly 'Flat'? Global Frictions and Global Labor Arbitrage. Working Paper. Available at http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2371748. Hong, Y., Wang, C., &amp; Pavlou, P. A. (2013). How does Bid Visibility Matter in Buyer-Determined Auctions? Comparing Open and Sealed Bid Auctions in Online Labor Markets., NET Institute working paper. Available at: http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2335669. Horton, J. (2010). Online Labor Markets. Paper presented at the Proceedings of the 6th Workshop on Internet and Network Economics. Huddy, L., &amp; Terkildsen, N. (1993). Gender Stereotypes and the Perception of Male and Female Candidates. American Journal of Political Science, 37(1), 119-147. Ibarra, H. (1992). Homophily and Differential Returns: Sex Differences in Network Structure and Access in an Advertising Firm. Administrative Science Quarterly, 37(3), 422-447. Jawahar, I. M., &amp; Mattsson, J. (2005). Sexism and Beautyism Effects in Selection as a Function of Self-Monitoring Level of Decision Maker. Journal of Applied Psychology, 90(3), 563-573. Kray, L. J., Galinsky, A. D., &amp; Thompson, L. (2002). Reversing the Gender Gap in Negotiations: An Exploration of Stereotype Regeneration. Organizational Behavior and Human Decision Processes,</p></div>
+			</div>
+
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<author>
+			<persName><forename type="first">A</forename><surname>Agrawal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Horton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Lacetera</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Lyons</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Digitization and the Contract Labor Market: A Research Agenda</title>
+		<imprint>
+			<date type="published" when="2013">2013. 19525</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<monogr>
+		<title level="m" type="main">Does Information Help Or Hinder Job Applicants from Less Developed Countries in Online Markets?</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">K</forename><surname>Agrawal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Lacetera</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Lyons</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2012">2012</date>
+			<publisher>NBER Working Paper</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">The Market for &quot;Lemons&quot;: Quality Uncertainty and the Market Mechanism</title>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">A</forename><surname>Akerlof</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Quarterly Journal of Economics</title>
+		<imprint>
+			<biblScope unit="volume">84</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="488" to="500" />
+			<date type="published" when="1970">1970</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Employer Learning and Statistical Discrimination</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">G</forename><surname>Altonji</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">R</forename><surname>Pierret</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Quarterly Journal of Economics</title>
+		<imprint>
+			<biblScope unit="volume">116</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="313" to="350" />
+			<date type="published" when="2001">2001</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Beauty, gender and stereotypes: Evidence from laboratory experiments</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Andreoni</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Petrie</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Economic Psychology</title>
+		<imprint>
+			<biblScope unit="volume">29</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="73" to="93" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">The Theory of Discrimination</title>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">J</forename><surname>Arrow</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Discrimination in Labor Markets</title>
+		<editor>
+			<persName><forename type="first">O</forename><surname>Ashenfelter</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">A</forename><surname>Rees</surname></persName>
+		</editor>
+		<meeting><address><addrLine>Princeton, NJ</addrLine></address></meeting>
+		<imprint>
+			<publisher>Princeton University Press</publisher>
+			<date type="published" when="1973">1973</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Wiring the Labor Market</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">H</forename><surname>Autor</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Economic Perspectives</title>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="25" to="40" />
+			<date type="published" when="2001">2001</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<monogr>
+		<title level="m" type="main">Women Don&apos;t Ask: Negotiation and the Gender Divide</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Babcock</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Laschever</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2003">2003</date>
+			<publisher>Princeton University Press</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Reducing Buyer Search Costs: Implications for Electronic Marketplaces</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">Y</forename><surname>Bakos</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management</title>
+		<imprint>
+			<biblScope unit="volume">87</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="386" to="410" />
+			<date type="published" when="1997">1997</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<monogr>
+		<author>
+			<persName><forename type="first">M</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Goes</surname></persName>
+		</author>
+		<title level="m">Does Information Really &quot;Unravel&quot;? Understanding Factors That Motivate Sellers to Seek Third-Party Certifications in an</title>
+		<imprint>
+			<date type="published" when="2012">2012</date>
+		</imprint>
+		<respStmt>
+			<orgName>Online Labor Market. University of Arizona working paper</orgName>
+		</respStmt>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Coping with Uncertainty: A Naturalistic Decision-Making Analysis</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Lipshitz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O</forename><surname>Strauss</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Organizational Behavior and Human Decision Processes</title>
+		<imprint>
+			<biblScope unit="volume">69</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="149" to="163" />
+			<date type="published" when="1997">1997</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<monogr>
+		<title level="m" type="main">An integrative model of organizational trust</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">C</forename><surname>Mayer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">H</forename><surname>Davis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><forename type="middle">D</forename><surname>Schoorman</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1995">1995</date>
+			<publisher>Academy of Management Review</publisher>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="page" from="709" to="734" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Conditional logit analysis of qualitative choice behavior</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Mcfadden</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Frontiers in Econometrics</title>
+		<imprint>
+			<date type="published" when="1973">1973</date>
+			<biblScope unit="page" from="105" to="142" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Sex Discrimination in Restaurant Hiring: An Audit Study</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Neumark</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">J</forename><surname>Bank</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">D</forename><surname>Van Nort</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Quarterly Journal of Economics</title>
+		<imprint>
+			<biblScope unit="volume">111</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="915" to="941" />
+			<date type="published" when="1996">1996</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Do Women Shy Away From Competition? Do Men Compete Too Much?</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Niederle</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Vesterlund</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Quarterly Journal of Economics</title>
+		<imprint>
+			<biblScope unit="volume">122</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="1067" to="1101" />
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">The impact of applicant gender compared to qualifications on hiring recommendations: A meta-analysis of experimental studies</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">D</forename><surname>Olian</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">P</forename><surname>Schwab</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Haberfeld</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Organizational Behavior and Human Decision Processes</title>
+		<imprint>
+			<biblScope unit="volume">41</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="180" to="195" />
+			<date type="published" when="1988">1988</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Trust, social categories, and individuals: The case of gender</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Orbell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Dawes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Schwartz-Shea</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Motivation and Emotion</title>
+		<imprint>
+			<biblScope unit="volume">18</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="109" to="128" />
+			<date type="published" when="1994">1994</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Electronic and Physical Market Channels: A Multiyear Investigation in a Market for Products of Uncertain Quality</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>Overby</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Jap</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Science</title>
+		<imprint>
+			<biblScope unit="volume">55</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="940" to="957" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Discrimination in a Low-Wage Labor Market: A Field Experiment</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Pager</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Western</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Bonikowski</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">American Sociology Review</title>
+		<imprint>
+			<biblScope unit="volume">74</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="777" to="799" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<monogr>
+		<author>
+			<persName><forename type="first">A</forename><surname>Pallais</surname></persName>
+		</author>
+		<title level="m">Inefficient Hiring in Entry-Level Labor Markets: Working Paper</title>
+		<imprint>
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Building Effective Online Marketplaces with Institution-Based Trust</title>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">A</forename><surname>Pavlou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Gefen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="37" to="59" />
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Understanding and mitigating uncertainty in online exchange relationships: a principal-agent perspective</title>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">A</forename><surname>Pavlou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Liang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Xue</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="105" to="136" />
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">The Statistical Theory of Racism and Sexism</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>Phelps</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The American Economic Review</title>
+		<imprint>
+			<biblScope unit="volume">62</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="659" to="661" />
+			<date type="published" when="1972">1972</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">What&apos;s in a Picture?: Evidence of Discrimination from Prosper.com</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">G</forename><surname>Pope</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">R</forename><surname>Sydnor</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Human Resources</title>
+		<imprint>
+			<biblScope unit="volume">46</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="53" to="92" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Testing for Sexual Discrimination in the Labour Market</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Riach</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Rich</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Australian Economic Papers</title>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="issue">49</biblScope>
+			<biblScope unit="page" from="165" to="178" />
+			<date type="published" when="1987">1987</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">Field Experiments of Discrimination in the Market Place</title>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">A</forename><surname>Riach</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Rich</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The Economic Journal</title>
+		<imprint>
+			<biblScope unit="volume">112</biblScope>
+			<biblScope unit="issue">483</biblScope>
+			<biblScope unit="page" from="480" to="F518" />
+			<date type="published" when="2002">2002</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Rational Decision Making in Business Organizations</title>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">A</forename><surname>Simon</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The American Economic Review</title>
+		<imprint>
+			<biblScope unit="volume">69</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="493" to="513" />
+			<date type="published" when="1979">1979</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Costly Bidding in Online Markets for IT Services</title>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">M</forename><surname>Snir</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">M</forename><surname>Hitt</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Science</title>
+		<imprint>
+			<biblScope unit="volume">49</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="1504" to="1520" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<monogr>
+		<title level="m" type="main">Landing the First Job: The Value of Intermediaries in Online Hiring</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Stanton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Thomas</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">Working Paper</note>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">Joan McKay Versus John McKay: Do Gender Stereotypes Bias Evaluations?</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Swim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Borgida</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Maruyama</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">G</forename><surname>Myers</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Psychological Bulletin</title>
+		<imprint>
+			<biblScope unit="volume">105</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="409" to="429" />
+			<date type="published" when="1989">1989</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<monogr>
+		<title level="m" type="main">You Just Don&apos;t Understand: Women and Men in Conversation</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Tannen</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1990">1990</date>
+			<publisher>Ballantine</publisher>
+			<pubPlace>New York</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">Women in management: A research review</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">R</forename><surname>Terborg</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Applied Psychology</title>
+		<imprint>
+			<biblScope unit="volume">62</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="647" to="664" />
+			<date type="published" when="1977">1977</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">The Value of Reputation in an Online Freelance Marketplace</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Yoganarasimhan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Marketing Science</title>
+		<imprint>
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="860" to="891" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

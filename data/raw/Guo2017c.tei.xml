@@ -1,0 +1,1750 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Call for Bids to Improve Matching Efficiency: Evidence from Online Labor Markets Short Paper</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Xue</forename><surname>Guo</surname></persName>
+							<email>xueguo@temple.edu</email>
+							<affiliation key="aff0">
+								<orgName type="institution">Temple University</orgName>
+								<address>
+									<addrLine>1801 N Broad St</addrLine>
+									<postCode>19122</postCode>
+									<settlement>Philadelphia</settlement>
+									<region>PA</region>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Jing</forename><surname>Gong</surname></persName>
+							<email>gong@temple.edu</email>
+							<affiliation key="aff1">
+								<orgName type="institution">Temple University</orgName>
+								<address>
+									<addrLine>1801 N Broad St</addrLine>
+									<postCode>19122</postCode>
+									<settlement>Philadelphia</settlement>
+									<region>PA</region>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Paul</forename><surname>Pavlou</surname></persName>
+							<email>pavlou@temple.edu</email>
+							<affiliation key="aff2">
+								<orgName type="institution">Temple University</orgName>
+								<address>
+									<addrLine>1801 N Broad St</addrLine>
+									<postCode>19122</postCode>
+									<settlement>Philadelphia</settlement>
+									<region>PA</region>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Call for Bids to Improve Matching Efficiency: Evidence from Online Labor Markets Short Paper</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="MD5">1B241D6C17A91D5330BE6AA3B80FF00E</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.7.3" ident="GROBID" when="2023-06-16T09:23+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>Online Labor Markets</term>
+					<term>Call for Bids</term>
+					<term>Codifiability</term>
+					<term>Requirements</term>
+					<term>Flexibility</term>
+					<term>Matching Efficiency</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>In online labor markets, a Call for Bids (CFB) serves as a form of contracts with the description of services required from service providers. It helps service providers understand and perform the project by reducing the uncertainty about the required services. In this study, we (1) theorize the nature of description uncertainty in CFBs from three dimensions-codifiability, requirements, and flexibility, and (2) examine their respective role in matching efficiency between employers and service providers. We use content analysis and deep learning algorithms to analyze unstructured textual data and test our model using archival data from a major online labor platform. The preliminary results show that different dimensions of description uncertainty have different empirical effects on a project's matching outcome. Our findings provide rich implications for employers, service provider, and platform owners. Also, our text mining approach can be applied in other fields that involve analyzing large-scale textual data.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Introduction</head><p>Online labor markets have profoundly changed the way people work and employers hire workers. These markets serve as intermediaries to connect potential employers and service providers. In 2016, more than 55 million Americans participated in the freelance economy, which accounts for 35% of the total workforce, thus creating more than $1 trillion in revenues; these numbers have been steadily increasing every year (Freelancers Union 2016). However, one of the biggest challenges faced by labor markets is how to increase the matching efficiency between employers and service providers. Studies find that more than 60% of the projects failed to reach a contract (e.g., <ref type="bibr" target="#b65">Snir and Hitt 2003;</ref><ref type="bibr" target="#b12">Carr 2003;</ref><ref type="bibr" target="#b77">Zheng et al 2015)</ref>, which is a great waste of time and effort. Hence, it is important to explore the reasons of the low matching efficiency on labor markets.</p><p>While prior studies found that the matching efficiency of online labor markets depends on project size <ref type="bibr" target="#b65">(Snir and Hitt 2003)</ref>, bid evaluation cost <ref type="bibr" target="#b12">(Carr 2003)</ref>, reputation <ref type="bibr" target="#b76">(Yoganarasimhan 2013)</ref>, and auction format <ref type="bibr" target="#b35">(Hong et al. 2015)</ref>, this study focuses on the role of the Call For Bids (CFB), or the project descriptions, in affecting matching efficiency. In online labor markets, CFBs are created by employers to elicit bids from service providers who offer to perform the project. Generally, a CFB contains the required procedures, deliverables, acceptable standards, and flexibility provisions as specified by the employer who posted the project. The main goal of our study is to analyze the content of CFBs and examine its role in the matching efficiency in online labor markets.</p><p>A CFB plays an important role in determining employers' and service providers' behaviors during the matching process. It serves as a contract to regulate the behaviors of both sides. In the focal context of online labor markets where a reverse auction mechanism is used for the procurement of services, the detailed process is as follows: 1) an employer posts a CFB to describe the required services, deliverables, and duration; 2) potential service providers browse the website to find suitable CFBs that match their skills and propose bids by entering a reverse auction; 3) the employer (the buyer of the project) decides whether to award a winner from the set of bidding service providers; 4) if a winner is chosen, the winning service provider finishes the project, and the employer and provider then give feedback to each other. As shown in Figure <ref type="figure">1</ref>, the entire process is completed online without face-to-face communication. Employers thereby mainly rely on CFBs to describe their required services and attract bids from potential service providers who can perform the required services. Service providers also rely on CFBs to learn about the project requirements and evaluate whether their skills match the project requirements. Accordingly, the extent to which service providers cannot assess the nature of the CFBs, which we broadly refer to as description uncertainty in the CFBs, may affect matching efficiency. Description uncertainty comes from individuals' inability to foresee all possible future states and all costs associated with stating all possible outcomes (e.g., <ref type="bibr">Hart and Moore, 1988;</ref><ref type="bibr" target="#b63">Segal 1999;</ref><ref type="bibr">Simon 1981)</ref>. Specifically, we define description uncertainty as the extent to which providers cannot accurately predict the detailed procedures and final outcomes based on the CFBs. Building on the literature on IT contracts (e.g., <ref type="bibr" target="#b13">Chen and Bharadwaj 2009;</ref><ref type="bibr" target="#b17">Fitoussi and Gurbaxani 2012)</ref>, we propose and analyze three dimensions of description uncertainty-codifiability <ref type="bibr" target="#b52">(Mithas and Whitaker 2007;</ref><ref type="bibr">Liu and Aron, 2015)</ref>, requirements <ref type="bibr" target="#b39">(Jensen and Meckling 1992;</ref><ref type="bibr" target="#b26">Goo et al, 2009)</ref>, and flexibility <ref type="bibr" target="#b67">(Susarla 2012</ref>) (Table <ref type="table" target="#tab_1">1</ref>). Accordingly, we ask the following research questions:</p><p>• What is the nature of description uncertainty (i.e., codifiability, requirements, and flexibility) in Call for Bids (CFBs) in online labor markets? • How do the proposed dimensions of description uncertainty affect matching efficiency?</p><p>To answer these two research questions, we theorize the nature of the description uncertainty in CFBs, and how the proposed dimensions of description uncertainty affect the contract success rate (matching efficiency). Specifically, the first dimension of description uncertainty, codifiability, is the extent to which a CFB contains detailed procedures. CFBs with high codifiability helps service providers better understand the necessary procedures required for the project before they propose bids <ref type="bibr" target="#b45">(Mani et al. 2012)</ref>. The second dimension of description uncertainty, requirements, is the extent to which a CFB contains clear deliverables and specific quality and quantity standards. Clear deliverables and standards could help employers and service providers establish common goals for the project <ref type="bibr" target="#b14">(Choudhury and Sabherwal 2003;</ref><ref type="bibr" target="#b72">Viswesvaran and Ones 2000)</ref>. The third dimension of description uncertainty, flexibility, is the extent to which a CFB contains provisions that permit changes in project requirements <ref type="bibr" target="#b47">(Masten and Crocker 1985</ref>;</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Figure 1. The Matching Process in Online Labor Markets</head><p>Buyer posts a project description with requirements, budget, etc.</p><p>Provider browses websites and bids the suitable CFBs that match their skill.</p><p>Employer awards a winner from a set of bidding providers.</p><p>The winner provider finished the project. Employer and provider give feedbacks to each other.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Stage 1 Before Contract</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Stage 2 Bidding</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Stage 3 Contracting</head><p>Stage 4 Post Contract <ref type="bibr">Joskow 1988)</ref>. Flexibility provisions provide service providers renegotiation opportunities during project execution <ref type="bibr" target="#b67">(Susarla 2012)</ref>.</p><p>Then, we theorize separately how each of these three dimensions of description uncertainty in the CFBs may affect the final contract success rate. In general, description uncertainty may affect matching efficiency from two perspectives. First, description uncertainty due to low codifiability and a lack of clear requirements may execrate the information asymmetry between employers and service providers, thus reducing the matching efficiency <ref type="bibr" target="#b23">(Golan 2005;</ref><ref type="bibr">Liu and Aron 2015)</ref>. Specifically, low codifiability and a lack of specific requirements in CFBs may increase the unforeseen risks associated with the project, which may deter service providers from proposing bids. In addition, these two types of description uncertainty may increase the difficulty of conducting the project, thus preventing bids. Thus, service providers may choose to bid on projects that they have a high probability of accomplishing, which lead to low matching efficiency.</p><p>Second, description uncertainty related to flexibility may affect matching efficiency in both directions. The nature of IT service is complex and constantly changing. Flexibility provisions in CFBs offer both employers and providers the opportunity to update contract terms during the execution process. Thus, flexibility provisions reduce employer's cost of specifying each possible outcome during the execution process <ref type="bibr" target="#b4">(Bajari and Tadelis 2001)</ref>. It is often an economic choice by the employer to choose whether allows the flexibility or not. On the one hand, flexibility reduces the ex-post bargaining cost of service providers <ref type="bibr" target="#b67">(Susarla 2012</ref>) and the possibility of being locked in the relationship <ref type="bibr" target="#b70">(Tadelis 2002)</ref>. Hence, flexibility provisions in CFBs may attract better bids and thus lead to higher matching efficiency. On the other hand, flexibility also increases the ex-post risks for service providers by the requirements instability <ref type="bibr" target="#b54">(Nidumolu 1995;</ref><ref type="bibr" target="#b5">Banerjee and Duflo 2000)</ref>. In this case, employers can modify the project requirements under changed circumstances, which cause unexpected work or investment for providers. Therefore, the flexibility provisions may lead to lower contract success rate. The detailed research framework in shown in Figure <ref type="figure">2</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Figure 2. Research Framework</head><p>To capture the three dimensions of description uncertainty in CFBs, i.e., codifiability, requirements, and flexibility, we integrate content analysis, state-of-the-art deep learning algorithms, and supervised learning to analyze the textual content of CFBs. First, we use content analysis <ref type="bibr" target="#b10">(Berelson, 1952;</ref><ref type="bibr" target="#b31">Holsti, 1969)</ref> to classify each word in our training set into different levels of codifiability, requirements, and flexibility. Second, we use a deep learning algorithm called Word2Vec <ref type="bibr">(Mikolov et al. 2013a)</ref>, which is used to learn vector representation of words and documents, to convert each word in the CFBs into a vector that best predicts each word's occurrence in certain context. Third, we use the vectors to train a binary classifier and predict the categories for all words in our dataset.</p><p>Our research context is Freelancer.com, one of the largest online labor/freelancing platforms in the world, which has more than 8 million registered users in total, earning 229 million gross payment volume in 2016. Our unique and rich data set contains all projects posted on the platform from March 2, 2014 to March 31, 2014. The dataset includes detailed characteristics at the project, employer, and service provider levels. These data features allow us to empirically test our hypotheses.</p><p>By treating each CFB in our dataset as a unique document for text analysis, our deep learning algorithm, Word2Vec <ref type="bibr">(Mikolov 2013a)</ref>, achieves high accuracy of classifying each document into the right level of codifiability, requirements, and flexibility. Our preliminary results confirm our hypotheses on the This study makes several contributions. First, our research theorizes the nature of description uncertainty into three dimensions, i.e., codifiability, requirements, and flexibility, and analyzes their effects on matching efficiency. Although considerable research has been devoted to studying the factors that affect matching efficiency in online labor markets (e.g., <ref type="bibr" target="#b65">Snir and Hitt 2003;</ref><ref type="bibr">Pallia, 2014;</ref><ref type="bibr" target="#b35">Hong et al, 2015)</ref>, few studies have examined the nature of CFBs in terms of description uncertainty. Extending the IT contracting literature (e.g., <ref type="bibr" target="#b13">Chen and Bharadwaj 2009;</ref><ref type="bibr" target="#b69">Susarla et al 2010)</ref>, we developed three dimensions of CFBs (codifiability, requirements, and flexibility) and empirically tested their corresponding effects on matching efficiency. Second, we measured the three dimensions of description uncertainty using textual data. Our methodology that uses deep learning algorithms to extract features from large-scale textual data is relatively new in the IS literature. The deep learning algorithm that we use in this study, Word2Vec, provides us more accurate measurements than traditional N-gram models by considering the word context and multiple degrees of similarity <ref type="bibr" target="#b49">(Mikolov et al. 2011;</ref><ref type="bibr">Mikolov et al. 2013a;</ref><ref type="bibr">Mikolov et al. 2013b)</ref>. Our method can be easily combined with other supervised methods such as classification or unsupervised methods such as clustering models and applied to many other fields that require analyzing large scaled textual information.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Control Variables</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Related Literature</head><p>The first stream of literature relates to uncertainty in online markets. There is a rich body of literature that examines the antecedents and consequences of seller and product uncertainty in the context of online markets. <ref type="bibr">Pavlou et al. (2007)</ref> defines (buyer's) perceived uncertainty as "the degree to which the outcomes of a transaction cannot be accurately predicted by the buyer due to the seller-and productrelated factors." In terms of antecedents of buyer's perceived uncertainty, studies find that feedback systems <ref type="bibr" target="#b15">(Dellarocas 2003)</ref>, third party structures <ref type="bibr" target="#b59">(Pavlou and Gefen 2004</ref>) and textual reviews <ref type="bibr" target="#b58">(Pavlou and Dimoka 2006</ref>) affect buyer's perceived uncertainty about sellers, and online product descriptions (Dimoka 2012) affect buyer's perceived uncertainty about sellers and products. These factors provide information about the sellers and products, which reduces the uncertainty that buyers perceive. In terms of the consequences of buyer's perceived uncertainty, studies find that it is related to trust building <ref type="bibr" target="#b1">(Ba and Pavlou 2002)</ref>, price premium (Dimoka et al. 2012), and product returns <ref type="bibr" target="#b33">(Hong and Pavlou 2014)</ref>. For instance, <ref type="bibr">Dimoka et al. (2012)</ref> found that reducing uncertainty enables seller differentiation, which helps sellers attract more bids. In our study, extending the literature, we focus on description uncertainty in the CFBs that may affect service providers' ability to assess the requirements of the projects, which may affect their bidding behavior and contract success rate.</p><p>The second stream of literature relates to online labor markets. On the one hand, transaction cost theory suggests that online labor markets facilitate the exchange of labor and service by reducing search costs <ref type="bibr" target="#b18">(Freund and Weinhold 2002)</ref>, which increases matching efficiency <ref type="bibr" target="#b65">(Snir and Hitt 2003)</ref>. On the other hand, according to information asymmetry theory, online markets and the complexity of IT services increase the degree of information asymmetry. The nature of transacting with strangers on online markets may increase the risk of opportunism behaviors, which will lower matching efficiency. With the aim of improving the matching efficiency of online labor markets, previous literature has analyzed various factors that affect employers' hiring decisions, including service providers' uncertainty <ref type="bibr" target="#b6">(Banker et al. 2002;</ref><ref type="bibr" target="#b56">Pallais 2014</ref>) and employers' evaluation cost <ref type="bibr" target="#b65">(Snir and Hitt 2003)</ref>. For example, the reputation scores of service providers <ref type="bibr" target="#b53">(Moreno and Terwiesch 2014)</ref>, prior working interactions <ref type="bibr" target="#b20">(Gefen and Carmel 2008)</ref>, and provider location <ref type="bibr" target="#b52">(Mithas and Whitaker 2007;</ref><ref type="bibr">Hong at el. 2017;</ref><ref type="bibr">Gong 2017</ref>) may affect the service providers' probability of being hired. However, we have limited understanding of how CFBs may play a role in affecting the service providers' bidding behaviors. CFBs serve as a form of contracts that specify the services and deliverables required by employers, thus provide a guideline for potential service providers.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Hypotheses</head><p>We theorize the role of description uncertainty in matching efficiency by examining three dimensions of CFBs: codifiability, requirements, and flexibility. The detailed definitions of the three dimensions are presented in Table <ref type="table" target="#tab_1">1</ref>. The extent to which a CFB contains detailed procedures.</p><p>1. Increase easiness and accuracy of process execution <ref type="bibr" target="#b45">(Mani et al 2012)</ref>.</p><p>2. Facilitate cost evaluation process and reduce search cost <ref type="bibr" target="#b65">(Snir and Hitt 2003)</ref>. Requirements The extent to which a CFB contains clear deliverables and specific quality and quantity standards.</p><p>1. Establish common goals <ref type="bibr" target="#b26">(Goo et al 2009)</ref>.</p><p>2. Facilitate cost evaluation process and reduce search cost <ref type="bibr" target="#b65">(Snir and</ref><ref type="bibr">Hitt 2003, Carr 2003</ref>).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Flexibility</head><p>The extent to which a CFB contains provisions that permit changed circumstances in the project requirements.</p><p>1. Reduce ex-post bargaining cost (Susarla 2012).</p><p>2. Reduce risk of being locked in a specific relationship (e.g., <ref type="bibr" target="#b70">Tadelis 2002)</ref>.</p><p>3. Increase risk of requirements instability (e.g., <ref type="bibr" target="#b27">Gopal and Koka 2012)</ref> In the literature on IT contracts, codifiability has been used to describe the ability to create a set of task execution rules for how a process is to be executed <ref type="bibr">(Liu and Aron 2015)</ref>. In our context, we define codifiability as the extent to which a CFB contains detailed procedures. Codifiability may affect matching efficiency from two perspectives. First, describing tasks in steps increases the ease and accuracy of contract execution <ref type="bibr" target="#b45">(Mani et al. 2012</ref>). Thus, CFBs with high codifiability are more likely to attract suitable providers and have higher probability to contract with a service provider than those with low codifiability. Specifying detailed procedures also reduces the unforeseen risk during the execution process. Without specific procedures, service providers may misunderstand the project requirements and perform the task differently from what is expected by the employer. Second, it helps service providers better evaluate the cost of task execution and whether their skills match the project. Therefore, a project with high codifiability can attract more suitable bids, resulting in higher matching efficiency. Thus, we hypothesize:</p><p>Hypothesis 1: Codifiability is positively associated with the contract success rate.</p><p>Another important dimension of description uncertainty is the presence or lack of detailed requirements in a CFB. We define requirements from three perspectives-deliverables, quality, and quantity. Specifically, we define requirements as the extent to which a project description contains clear deliverables and specific quality and quantity standards. Requirements provide information about a project final goals and detailed standards. First, project with clear requirements are more likely to attract bids since it reduces the service providers' search costs (e.g., <ref type="bibr" target="#b65">Snir and Hitt 2003;</ref><ref type="bibr" target="#b12">Carr 2003)</ref> and help them evaluate their cost and match their skills faster. Second, requirements regulate providers' bidding behaviors by providing outcome control <ref type="bibr" target="#b26">(Goo et al 2009)</ref>. If a provider cannot achieve the specific standard, the provider is unlikely to bid on the project. Therefore, the CFBs are more likely to attract bids from qualified service providers, which reduces the employers' evaluation cost. For these two reasons, CFBs that contain detailed requirements about deliverables, quality, and quantity will deter unqualified bids and reduce employers' bid evaluation costs, which leads to higher matching efficiency. In sum, we hypothesize:</p><p>Hypothesis 2: Requirements are positively associated with the contract success rate.</p><p>The third dimension of CFBs on which we focus is flexibility. Flexibility is an essential part of formal contract structures <ref type="bibr" target="#b13">(Chen and Bharadwaj 2009)</ref>. Its main role is to provide renegotiation opportunities about the contract terms, which include provisions about price adjustments <ref type="bibr">(Joskow 1988b</ref>) and quantity changes <ref type="bibr" target="#b71">(Tsay 1999)</ref>. Building on previous literature (e.g., Susarla 2012), we define flexibility as the extent to which a CFB contains provisions that permit changed circumstances in the project requirements. The existence of flexibility provisions efficiently reduces the contingencies needed to be written in the CFBs, which reduce the employers' cost of writing the CFBs. Thus, it may be an economic choice for employers to determine whether include this provision or not.</p><p>Flexibility affects the matching efficiency from both directions. On the one hand, flexibility reduces the expost bargaining cost <ref type="bibr" target="#b67">(Susarla 2012</ref>) and ex-post risk of being locked in a specific relationship <ref type="bibr" target="#b70">(Tadelis 2002)</ref>. It provides necessary solutions to the unexpected changes during the service execution process. Service providers could update or terminate the contract based on environment change. Thus, projects with flexibility provisions in the CFB are more likely to result in a contract. On the other hand, flexibility increases the risks of requirement instability (e.g., <ref type="bibr" target="#b54">Nidumolu 1995;</ref><ref type="bibr">Wallace et al 2004)</ref>. It increases unforeseen ex-post risks by allowing potential rent-seeking behaviors of service employers (e.g., <ref type="bibr" target="#b3">Bahli and Rivard 2005;</ref><ref type="bibr" target="#b67">Susarla 2012</ref>). For instance, employers can update the project requirements under changed circumstances, which entail costs for providers such as require rework <ref type="bibr" target="#b27">(Gopal and Koka 2012)</ref> or specific investment <ref type="bibr">(Nidomolu 1995;</ref><ref type="bibr">Pressman 2005)</ref>. Hence, potential providers are less likely to bid the CFB with flexibility provisions to avoid potential risks, which lead to lower contract success rate. Therefore, we hypothesize that:</p><p>Hypothesis 3a: Flexibility is positively associated with the contract success rate. Hypothesis 3b: Flexibility is negatively associated with the contract success rate.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Measurement Development</head><p>To measure the three dimensions of description uncertainty in CFBs, i.e., codifiability, requirements, and flexibility, we combine content analysis and newly-developed deep learning algorithms to develop our measurements. Our approach contains three steps: 1) manual coding, 2) using deep learning for feature extraction, and 3) binary classification, as elaborated below.</p><p>First, we employed manual content analysis methods to classify words in our dataset. We adapted the measurements from literature for codifiability <ref type="bibr">(Liu and Aron 2015)</ref>, requirements (e.g., <ref type="bibr">Krisch et al 2002;</ref><ref type="bibr" target="#b26">Goo et al. 2009;</ref><ref type="bibr" target="#b13">Chen and Bharadwaj 2009;</ref><ref type="bibr" target="#b27">Gopal and Koka 2012)</ref>, and flexibility <ref type="bibr" target="#b67">(Susarla 2012)</ref>. Our dataset contains 59,054 CFBs, with 2,541,354 words<ref type="foot" target="#foot_0">1</ref> , and 7,560 unique words with frequency above 20.</p><p>We randomly selected 20% of the unique words from our dataset and manually coded each word into one of the two levels (high or low) for each dimension (i.e., codifiability, requirements, and flexibility). We used the labeled data as the training set for the binary classifier, which we describe later. The first column of Table <ref type="table">3</ref> presents some results of the coded word for high codifiability, high requirements, or high flexibility.</p><p>The second step was to use a deep learning algorithm, i.e., Word2Vec <ref type="bibr">(Mikolov et al. 2013a</ref>) to extract textual features of each CFB, which are later used as inputs to build classifiers that learn the relationship between these textual features of a CFB and the three dimensions of description uncertainty. Word2Vec is a machine learning technology that converts each word into a dense vector that best predicts context words in the document. This method is developed from neural networks to mimic the process of the human brain to relationships between words automatically. It outperforms other text mining algorithms (e.g., bag of words and skip gram) by considering the order and meaning of the context words and becomes the new state-of-the-art <ref type="bibr">(Mikolov et al. 2013a;</ref><ref type="bibr">Mikolov et al. 2013b</ref>).</p><p>The intuition of Word2Vec is that words with similar syntactic and semantic meanings tend to occur in the same context. The algorithm mainly takes two steps. First, it maps each word and document into a unique vector using unsupervised training. Second, it assigns random probabilities to each vector and updates the probabilities to maximize the ability of context and documents to predict the word in the context. The algorithm iterates for every word and document in the data until the maximum conditional probability is achieved. Thus, the word and document with similar features move towards each other in a multi-dimensional feature space. We utilized this algorithm to capture the textual features with high accuracy and efficiency. Following <ref type="bibr" target="#b66">Socher et al. (2013)</ref>, we used 300-feature dimensionality and 10 context words to train the model, and we iterated the algorithm 20 times to achieve the best accuracy. In this step, each word is represented by a vector that captures its syntactic and semantic meanings.</p><p>Third, we used the labeled data to train a binary classifier. From the deep learning algorithm, we turned each word into a 300-dimensional vector. We used the coding sample (20% of the unique words) as a training set for a binary classifier and then used the classifier to predict the level of codifiability, requirements, and flexibility of the remaining words in the dataset. We utilized three commonly used classifiers-Naïve Bayes, logistic regression, and support vector machine (SVM). The three classifiers are trained and tested on the coded results. The corresponding cross-validation accuracies are shown in Table <ref type="table" target="#tab_2">2</ref>. Based on the accuracy results, we chose the logistic classifier in our final analysis. Thus, we predicted the level (high or low) of codifiability, requirements, and flexibility for all unique words in the dataset.</p><p>The second column of Table <ref type="table">3</ref> presents some examples of the predicted words that are associated with high codifiability, high requirements, or high flexibility. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Empirical Model</head><p>Empirically, we used a logistic regression to analyze the role of description uncertainty in matching efficiency (contract success rate). Our unit of analysis is at the CFB level. The main dependent variable is ‫,݀݁ݐܿܽݎݐ݊ܥ‬ a binary variable indicating whether a project resulted in a contract. The main independent variables are the frequency of the words in the CFB that are related to high codifiability, requirements, and flexibility. In addition, we also controlled for other textual features, such as word count. Lastly, we controlled for buyer-, provider-, and project-specific characteristics, including category fixed effects ‫)ܧܨݕݎ݃݁ݐܽܥ(‬ in the model. Equation (1) outlines our detailed empirical model. To address the withinemployer variations, we also included employer fixed effects ‫)ܧܨݎ݁ݕ݈݉ܧ(‬ in the model.</p><formula xml:id="formula_0">Pr ‫݀݁ݐܿܽݎݐ݊ܥ(‬ = 1) = ‫ߚ(ܿ݅ݐݏ݅݃ܮ‬ + ߚ ଵ ‫ݕݐ݈ܾ݂݅݅ܽ݅݅݀ܥ‬ + ߚ ଶ ‫ݏݐ݊݁݉݁ݎ݅ݑݍܴ݁‬ + ߚ ଷ ‫ݕݐ݈ܾ݅݅݅ݔ݈݁ܨ‬ + ߚ ସ ‫ݐ݊ݑܥ݀ݎܹ‬ + ߚ ‫݈ݎݐ݊ܥ‬ ‫ݏ݈ܾ݁ܽ݅ݎܽݒ‬ + ‫ܧܨݕݎ݃݁ݐܽܥ‬ + ‫ܧܨݎ݁ݕ݈݉ܧ‬ + ߝ)<label>(1)</label></formula><p>Table <ref type="table" target="#tab_4">5</ref> shows the results from the logistic regression. Model 1 is the base model with only controls, Model 2 shows the model include the three dimensions of description uncertainty, and Model 3 includes the employer fixed effects. From three models, we find relative consistent and statistically significant results.</p><p>To interpret the results, a one-unit increase in the frequency of words related to codifiability, requirements, and flexibility, on average, is associated with 0.33%, 1.59%, and 0.80% higher probability of contract success rate, respectively. To compare the effects among three dimensions, requirements have the largest magnitude on the contract success rate. The results are consistent with our hypotheses that description uncertainty due to low codifiability and requirements is negatively associated with the contract success rate<ref type="foot" target="#foot_1">2</ref> , while description uncertainty related to flexibility is positively associated with the contract success rate. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Manuscript Status and Future Work</head><p>Currently, we have analyzed the textual data at the word level. Our text mining methods show high accuracy and the results are promising. In the next steps, we plan to conduct document-level analysis to capture richer textual information. Specifically, we have designed the coding instructions and training samples for the manually coding, and have conducted several pilot studies to revise the coding instructions. We are in the process of recruiting workers from Amazon Mechanical Turk (AMT) to code a subset of the CFBs into two levels (high or low) for the three dimensions of description uncertainty. The AMT workers will be asked to code 5,000 descriptions, which we will later use as the training set for training a binary classifier. Next, we plan to train the deep learning algorithm (Doc2Vec) at the document level, which will represent each CFB using a vector. Third, we plan to use the vectors to train a binary classifier and predict the levels of description uncertainty for the remaining CFBs. Fourth, we plan to analyze the role of the dimensions of description uncertainty in CFBs, as measured using document level analysis, in contract success.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Contributions</head><p>This study aims to make the following contributions to the IS literature. First, our research theorizes the nature of description uncertainty in CFBs into three dimensions, i.e., codifiability, requirements, and flexibility, and analyzes their respective role in matching efficiency between employers and service providers in the context of online labor markets. While there is limited knowledge about the underlying role of description uncertainty embedded in CFBs and how the nature of the CFBs may affect matching efficiency, this study contributes to this nascent body of research on online labor markets by focusing in the inherent nature of CFBs and the key underlying dimensions embedded in CFBs.</p><p>Second, the methodology that we propose in this research, i.e., the use of deep learning algorithms to extract features from large-scale textual data, is relatively new in the IS literature. Different from other classic text mining algorithms, deep learning algorithms aim to mimic the process of the human brain to capture the sequence and semantic meanings of each word in the text. Thus, it provides a more accurate and meaningful measurement than other classic algorithms such as traditional N-gram models (e.g., <ref type="bibr" target="#b9">Bengio et al. 2003;</ref><ref type="bibr" target="#b63">Schwenk 2007;</ref><ref type="bibr" target="#b49">Mikolov et al. 2011)</ref>. Our method can be easily combined with other classification or clustering models and applied in other fields that involve analyzing large scaled textual information.</p><p>Third, our research provides practical implications. For employers, the findings shed light on how to write CFBs to attract more qualified bids and increase the probability of finding qualified service providers. For service providers, the findings help them better understand the structure of CFBs which facilitate their cost evaluation process and reduce research cost. For the platform owners, our results help them design guidelines and regulations for CFBs to assist employers to write CFBs to reduce uncertainty, which may increase matching efficiency. In addition, the platform takes 13% (3% from employer and 10% from freelancer) of payments for matched project as an introduction fee. Thus, the increased matching efficiency directly lead to higher platform revenue.<ref type="foot" target="#foot_2">3</ref> </p></div><figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head></head><label></label><figDesc>First, high codifiability and clear requirements of a CFB are positively associated with the contract success rate. Second, the presence of flexibility provisions in CFBs is positively associated with the contract success rate. Our study shows that different dimensions of description uncertainty have different empirical effects on a project's matching outcome.</figDesc><table><row><cell cols="2">dimensions of description uncertainty.</cell><cell></cell><cell></cell></row><row><cell cols="2">Description Uncertainty</cell><cell cols="2">Matching Efficiency</cell></row><row><cell>•</cell><cell>Codifiability</cell><cell>•</cell><cell>Contract success rate</cell></row><row><cell>•</cell><cell>Requirements</cell><cell></cell><cell></cell></row><row><cell>•</cell><cell>Flexibility</cell><cell></cell><cell></cell></row><row><cell></cell><cell>•</cell><cell>Project characteristics</cell><cell></cell></row><row><cell></cell><cell>•</cell><cell>Employer characteristics</cell><cell></cell></row><row><cell></cell><cell cols="2">• Provider characteristics</cell><cell></cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1"><head>Table 1 . Dimensions of CFBs and Definition Dimension Definition Proposed Effects Codifiability</head><label>1</label><figDesc></figDesc><table /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2"><head>Table 2 . Cross-Validation Accuracy</head><label>2</label><figDesc>Our data come from Freelancer.com, one of the largest freelancing platforms that bring together buyers and service providers of IT services and other professional services. By August 2016, there are more than 20 million registered users and 9 million jobs posted on Freelancer.com. Our dataset includes all the projects posted between March 2, 2014 and March 31, 2014 on the platform. The detailed definitions and statistics of the key variables are shown in Table4.</figDesc><table><row><cell>Dimension</cell><cell>Naïve Bayes</cell><cell>Logistic</cell><cell>Support Vector Machine</cell></row><row><cell>Codifiability</cell><cell>0.82</cell><cell>0.83</cell><cell>0.81</cell></row><row><cell>Requirements</cell><cell>0.93</cell><cell>0.95</cell><cell>0.93</cell></row><row><cell>Flexibility</cell><cell>0.94</cell><cell>0.96</cell><cell>0.95</cell></row><row><cell></cell><cell cols="3">Table 3. Examples of Words</cell></row><row><cell>Dimension</cell><cell cols="2">Input Examples</cell><cell>Output Examples</cell></row><row><cell>Codifiability</cell><cell cols="2">procedures, guidelines, rules, steps</cell><cell>instructions, criteria, followed,</cell></row><row><cell></cell><cell></cell><cell></cell><cell>outlines, explanations</cell></row><row><cell cols="3">Requirements deliverables, goals, milestones, guarantee,</cell><cell>output, aim, achieve, assurance,</cell></row><row><cell></cell><cell>quality, quantity</cell><cell></cell><cell>amount, standards</cell></row><row><cell>Flexibility</cell><cell cols="2">flexible, negotiable, adjustable, updated,</cell><cell>negotiation, modifiable, changeable,</cell></row><row><cell></cell><cell>change, options</cell><cell></cell><cell>remuneration, charges, urgency</cell></row><row><cell>Data</cell><cell></cell><cell></cell><cell></cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_3"><head>Table 4 . Definition and Summary Statistics of Key Variables</head><label>4</label><figDesc></figDesc><table><row><cell>Variable</cell><cell>Variable Definition</cell><cell>Mean</cell><cell>SD</cell><cell cols="2">Min Max</cell></row><row><cell>Codifiability</cell><cell>Frequency of words belong to high codifiability</cell><cell>1.32</cell><cell>3.15</cell><cell>0</cell><cell>101</cell></row><row><cell>Requirements</cell><cell>Frequency of words belong to high requirements</cell><cell>2.77</cell><cell>4.50</cell><cell>0</cell><cell>118</cell></row><row><cell>Flexibility</cell><cell>Frequency of words belong to high flexibility</cell><cell>2.31</cell><cell>3.59</cell><cell>0</cell><cell>57</cell></row><row><cell>Number of Bids</cell><cell>Total number of bids received in an auction</cell><cell>17.01</cell><cell>20.01</cell><cell>0</cell><cell>303</cell></row><row><cell cols="2">Contract success rate Whether a contract is reached</cell><cell>0.37</cell><cell>0.48</cell><cell>0</cell><cell>1</cell></row><row><cell>Word count</cell><cell>Word count of the CFB</cell><cell>85.74</cell><cell>96.60</cell><cell>2</cell><cell>1289</cell></row><row><cell>Control Variables</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Number of skills</cell><cell>The number of skills a project requires</cell><cell>3.28</cell><cell>1.43</cell><cell>1</cell><cell>8</cell></row><row><cell>Project min budget</cell><cell>The lower bound of the buyer's budget</cell><cell>214.71</cell><cell cols="2">662.87 0</cell><cell>30000</cell></row><row><cell>Project max budget</cell><cell>The upper bound of the buyer's budget</cell><cell>508.96</cell><cell>1913.15</cell><cell>10</cell><cell>200000</cell></row><row><cell>Auction duration</cell><cell>Number of days an auction was active</cell><cell>17.59</cell><cell>17.76</cell><cell>0</cell><cell>101</cell></row><row><cell>Buyer experience</cell><cell>Number of reviews the buyer has received</cell><cell>16.09</cell><cell>50.83</cell><cell>0</cell><cell>1682</cell></row><row><cell>Avg buyer rating</cell><cell>The average rating of a buyer</cell><cell>2.92</cell><cell>2.42</cell><cell>0</cell><cell>5</cell></row><row><cell>Is quickly hired</cell><cell>Whether the project is quickly hired</cell><cell>0.12</cell><cell>0.33</cell><cell>0</cell><cell>1</cell></row><row><cell>Budget fixed</cell><cell>Whether the project has fixed budget</cell><cell>0.86</cell><cell>0.35</cell><cell>0</cell><cell>1</cell></row><row><cell>Urgent</cell><cell>Whether the project is urgent</cell><cell>0.02</cell><cell>0.12</cell><cell>0</cell><cell>1</cell></row><row><cell>Feature</cell><cell>Whether the project is featured</cell><cell>0.03</cell><cell>0.17</cell><cell>0</cell><cell>1</cell></row><row><cell>Project categories</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>PC1</cell><cell>Websites, IT&amp; Software</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>PC2</cell><cell>Mobile Phones &amp; Computing</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>PC3</cell><cell>Data Entry &amp; Admin</cell><cell></cell><cell></cell><cell></cell><cell></cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_4"><head>Table 5 . Regression Results</head><label>5</label><figDesc>These variables are included in the regression models but not reported in the table because of page limitation.</figDesc><table><row><cell>VARIABLES</cell><cell>(1) Contracted</cell><cell>(2) Contracted</cell><cell>(3) Contracted</cell></row><row><cell>Codifiability</cell><cell></cell><cell>0.0243***</cell><cell>0.0191***</cell></row><row><cell></cell><cell></cell><cell>(0.00447)</cell><cell>(0.00643)</cell></row><row><cell>Requirements</cell><cell></cell><cell>0.0254**</cell><cell>0.0988***</cell></row><row><cell></cell><cell></cell><cell>(0.0116)</cell><cell>(0.0274)</cell></row><row><cell>Flexibility</cell><cell></cell><cell>0.0366**</cell><cell>0.04163**</cell></row><row><cell></cell><cell></cell><cell>(0.00287)</cell><cell>(0.0153)</cell></row><row><cell>Word count</cell><cell>0.00277***</cell><cell>0.00403***</cell><cell>0.00495***</cell></row><row><cell></cell><cell>(0.000353)</cell><cell>(0.000489)</cell><cell>(0.000571)</cell></row><row><cell>Word count square</cell><cell>-3.81e-06***</cell><cell>-3.89e-06***</cell><cell>-4.30e-06***</cell></row><row><cell></cell><cell>(7.54e-07)</cell><cell>(8.40e-07)</cell><cell>(9.38e-07)</cell></row><row><cell>Number of skills</cell><cell>-0.0287***</cell><cell>-0.0264***</cell><cell>-0.0202</cell></row><row><cell></cell><cell>(0.00999)</cell><cell>(0.0100)</cell><cell>(0.0138)</cell></row><row><cell>ln (Project max budget)</cell><cell>0.117***</cell><cell>0.119***</cell><cell>0.0809***</cell></row><row><cell></cell><cell>(0.0267)</cell><cell>(0.0267)</cell><cell>(0.0297)</cell></row><row><cell>ln (Avg buyer rating)</cell><cell>0.986***</cell><cell>0.985***</cell><cell>1.427***</cell></row><row><cell></cell><cell>(0.0171)</cell><cell>(0.0171)</cell><cell>(0.0306)</cell></row><row><cell>Constant</cell><cell>0.545***</cell><cell>0.545***</cell><cell></cell></row><row><cell></cell><cell>(0.0704)</cell><cell>(0.0706)</cell><cell></cell></row><row><cell>Observations</cell><cell>59,054</cell><cell>59,054</cell><cell>59,054</cell></row><row><cell>Category FE</cell><cell>YES</cell><cell>YES</cell><cell>YES</cell></row><row><cell>Buyer FE</cell><cell>No</cell><cell>No</cell><cell>YES</cell></row><row><cell>Number of buyer_id</cell><cell>37,481</cell><cell>37,481</cell><cell>37,481</cell></row><row><cell>Pseudo R 2</cell><cell>0.5442</cell><cell>0.5452</cell><cell>0.5492</cell></row><row><cell>Notes: *p&lt;0.1, **p&lt;0.05, ***p&lt;0.01</cell><cell></cell><cell></cell><cell></cell></row><row><cell cols="3">Other control variables include is quickly hired, auction duration, urgent, featured.</cell><cell></cell></row></table></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="1" xml:id="foot_0"><p>Before content analysis, we pre-processed the documents and removed stop words.</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="2" xml:id="foot_1"><p>Higher frequency of words related to codifiability and requirements represent lower description uncertainty.</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="3" xml:id="foot_2"><p>https://www.freelancer.com/feesandcharges/</p></note>
+		</body>
+		<back>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Management Control for Market Transactions</title>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">W</forename><surname>Anderson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">C</forename><surname>Dekker</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Science</title>
+		<imprint>
+			<biblScope unit="volume">51</biblScope>
+			<biblScope unit="page" from="1734" to="1752" />
+			<date type="published" when="2005">2005</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Evidence of the Effect of Trust Building Technology in Electronic Markets</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Ba</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">A</forename><surname>Pavlou</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quarterly</title>
+		<imprint>
+			<biblScope unit="page" from="243" to="268" />
+			<date type="published" when="2002">2002</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">The Concept of Project Complexity-a Review</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Baccarini</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Project Management</title>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="201" to="204" />
+			<date type="published" when="1996">1996</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Validating Measures of Information Technology Outsourcing Risk Factors</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Bahli</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Rivard</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Omega</title>
+		<imprint>
+			<biblScope unit="volume">33</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="175" to="187" />
+			<date type="published" when="2005">2005</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Incentives versus Transaction Costs</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Bajari</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Tadelis</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Rand Journal of Economics</title>
+		<imprint>
+			<biblScope unit="page" from="387" to="407" />
+			<date type="published" when="2001">2001</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Reputation Effects and the Limits of Contracting</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">V</forename><surname>Banerjee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Duflo</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The Quarterly Journal of Economics</title>
+		<imprint>
+			<biblScope unit="volume">115</biblScope>
+			<biblScope unit="page" from="989" to="1017" />
+			<date type="published" when="2000">2000</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Product Costing and Pricing under Long-Term Capacity Commitment</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">D</forename><surname>Banker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Hwang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">K</forename><surname>Mishra</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Management Accounting Research</title>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="79" to="97" />
+			<date type="published" when="2002">2002</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Research Commentary-Cooperation, Coordination, and Governance in Multisourcing</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Bapna</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Barua</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Mani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Mehra</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<imprint>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="785" to="795" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Toward an Assessment of Software Development Risk</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Barki</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Rivard</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Talbot</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Management Information Systems</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="203" to="225" />
+			<date type="published" when="1993">1993</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">A Neural Probabilistic Language Model</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Bengio</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Ducharme</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Vincent</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Jauvin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Machine Learning Research</title>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="page" from="1137" to="1155" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<monogr>
+		<author>
+			<persName><forename type="first">B</forename><surname>Berelson</surname></persName>
+		</author>
+		<ptr target="http://pubman.mpdl.mpg.de/pubman/item/escidoc:2281462/component/escidoc:2283003/Berelson_1952_content_analysis.pdf" />
+		<title level="m">Content Analysis in Communications Research</title>
+		<imprint>
+			<date type="published" when="1952">1952</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Software Risk Management</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Boehm</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">ESEC&apos;89</title>
+		<imprint>
+			<date type="published" when="1989">1989</date>
+			<biblScope unit="page" from="1" to="19" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Note on Online Auctions with Costly Bid Evaluation</title>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">M</forename><surname>Carr</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Science</title>
+		<imprint>
+			<biblScope unit="volume">49</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="1521" to="1528" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">An Empirical Analysis of Contract Structures in IT Outsourcing</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Bharadwaj</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="484" to="506" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Portfolios of Control in Outsourced Software Development Projects</title>
+		<author>
+			<persName><forename type="first">V</forename><surname>Choudhury</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Sabherwal</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="291" to="314" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">The Digitization of Word of Mouth</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Dellarocas</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Science</title>
+		<imprint>
+			<biblScope unit="volume">49</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page" from="1407" to="1424" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Adverse Selection in Electronic Markets</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Dewan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Hsu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The Journal of Industrial Economics</title>
+		<imprint>
+			<biblScope unit="volume">52</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="497" to="516" />
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">IT Outsourcing Contracts and Performance Measurement</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Fitoussi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Gurbaxani</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="129" to="143" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<author>
+			<persName><forename type="first">C</forename><surname>Freund</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Weinhold</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">The Internet and International Trade in Services</title>
+		<imprint>
+			<date type="published" when="2002">2002</date>
+			<biblScope unit="volume">92</biblScope>
+			<biblScope unit="page" from="236" to="240" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<monogr>
+		<author>
+			<persName><forename type="first">Freelancers</forename><surname>Union</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Elance-O</forename><surname>Desk</surname></persName>
+		</author>
+		<title level="m">Freelancing in America. A National Survey of the New Workforce</title>
+		<meeting><address><addrLine>New York</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Is the World Really Flat?</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Gefen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Carmel</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quarterly</title>
+		<imprint>
+			<biblScope unit="page" from="367" to="384" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Internet Exchanges for Used Goods</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Ghose</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Mis Quarterly</title>
+		<imprint>
+			<biblScope unit="page" from="263" to="291" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Governance Value Analysis and Marketing Strategy</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Ghosh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>John</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The Journal of Marketing</title>
+		<imprint>
+			<biblScope unit="page" from="131" to="145" />
+			<date type="published" when="1999">1999</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Counteroffers and Efficiency in Labor Markets with Asymmetric Information</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Golan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Labor Economics</title>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="373" to="393" />
+			<date type="published" when="2005">2005</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<monogr>
+		<title level="m" type="main">A Structural Two-Sided Matching Model of Online Labor Markets</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Gong</surname></persName>
+		</author>
+		<ptr target="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2745450)" />
+		<imprint>
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">An Investigation of Factors That Influence the Duration of IT Outsourcing Relationships</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Goo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Kishore</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Nam</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">R</forename><surname>Rao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Song</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Decision Support Systems</title>
+		<imprint>
+			<biblScope unit="volume">42</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="2107" to="2125" />
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">The Role of Service Level Agreements in Relational Management of Information Technology Outsourcing</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Goo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Kishore</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">R</forename><surname>Rao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nam</forename></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quarterly</title>
+		<imprint>
+			<biblScope unit="page" from="119" to="145" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">The Asymmetric Benefits of Relational Flexibility</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Gopal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">R</forename><surname>Koka</surname></persName>
+		</author>
+		<ptr target="http://aisel.aisnet.org/cgi/viewcontent.cgi?article=3035&amp;context=misq" />
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">36</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">The Impact of Information Systems on Organizations and Markets</title>
+		<author>
+			<persName><forename type="first">V</forename><surname>Gurbaxani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Whang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Communications of the ACM</title>
+		<imprint>
+			<biblScope unit="volume">34</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="59" to="73" />
+			<date type="published" when="1991">1991</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">On Lying and Being Lied To</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">T</forename><surname>Hancock</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">E</forename><surname>Curry</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Goorha</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Woodworth</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Discourse Processes</title>
+		<imprint>
+			<biblScope unit="volume">45</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="1" to="23" />
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">Foundations of Incomplete Contracts</title>
+		<author>
+			<persName><forename type="first">O</forename><surname>Hart</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Moore</surname></persName>
+		</author>
+		<ptr target="http://www.nber.org/papers/w6726" />
+	</analytic>
+	<monogr>
+		<title level="j">National bureau of economic research</title>
+		<imprint>
+			<date type="published" when="1998">1998</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<monogr>
+		<author>
+			<persName><forename type="first">O</forename><forename type="middle">R</forename><surname>Holsti</surname></persName>
+		</author>
+		<ptr target="http://admn502awiki.pbworks.com/Content-and-Discourse-Analysis)" />
+		<title level="m">Content Analysis for the Social Sciences and Humanities</title>
+		<imprint>
+			<date type="published" when="1969">1969</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Online Labor Markets: An Informal Freelancer Economy</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Hong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">A</forename><surname>Pavlou</surname></persName>
+		</author>
+		<ptr target="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2132869" />
+	</analytic>
+	<monogr>
+		<title level="j">IBIT Report</title>
+		<imprint>
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">Product Fit Uncertainty in Online Markets</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Hong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">A</forename><surname>Pavlou</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="328" to="344" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title level="a" type="main">On Buyer Selection of Service Providers in Online Outsourcing Platforms for IT Services</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Hong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">A</forename><surname>Pavlou</surname></persName>
+		</author>
+		<idno type="DOI">10.1287/isre.2017.0709)</idno>
+		<ptr target="http://pubsonline.informs.org/doi/abs/10.1287/isre.2017.0709)" />
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<imprint>
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">Comparing Open and Sealed Bid Auctions</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Hong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">A</forename><surname>Pavlou</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="49" to="69" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">Online Labor Markets</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">J</forename><surname>Horton</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-3-642-17572-5_45</idno>
+		<ptr target="http://link.springer.com/chapter/10.1007/978-3-642-17572-5_45" />
+	</analytic>
+	<monogr>
+		<title level="m">International Workshop on Internet and Network Economics</title>
+		<imprint>
+			<publisher>Springer</publisher>
+			<date type="published" when="2010">2010</date>
+			<biblScope unit="page" from="515" to="522" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<analytic>
+		<title level="a" type="main">On the Efficiency of Matching and Related Models of Search and Unemployment</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">J</forename><surname>Hosios</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The Review of Economic Studies</title>
+		<imprint>
+			<biblScope unit="volume">57</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="279" to="298" />
+			<date type="published" when="1990">1990</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<analytic>
+		<title level="a" type="main">Quality Management on Amazon Mechanical Turk</title>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">G</forename><surname>Ipeirotis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Provost</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Wang</surname></persName>
+		</author>
+		<ptr target="http://dl.acm.org/citation.cfm?id=1837906)" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the ACM SIGKDD Workshop on Human Computation, ACM</title>
+		<meeting>the ACM SIGKDD Workshop on Human Computation, ACM</meeting>
+		<imprint>
+			<date type="published" when="2010">2010</date>
+			<biblScope unit="page" from="64" to="67" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<monogr>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">C</forename><surname>Jensen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><forename type="middle">H</forename><surname>Meckling</surname></persName>
+		</author>
+		<ptr target="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6658)" />
+		<title level="m">Specific and General Knowledge and Organizational Structure</title>
+		<imprint>
+			<date type="published" when="1992">1992</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<analytic>
+		<title level="a" type="main">Asset Specificity and the Structure of Vertical Relationships</title>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">L</forename><surname>Joskow</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Law, Economics, &amp; Organization</title>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="95" to="117" />
+			<date type="published" when="1988">1988</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<analytic>
+		<title level="a" type="main">Price Adjustment in Long-Term Contracts</title>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">L</forename><surname>Joskow</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The Journal of Law and Economics</title>
+		<imprint>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="47" to="83" />
+			<date type="published" when="1988">1988</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+	<analytic>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">J</forename><surname>Kirsch</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Sambamurthy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D.-G</forename><surname>Ko</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">L</forename><surname>Purvis</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Controlling Information Systems Development Projects</title>
+		<imprint>
+			<date type="published" when="2002">2002</date>
+			<biblScope unit="volume">48</biblScope>
+			<biblScope unit="page" from="484" to="498" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b43">
+	<analytic>
+		<title level="a" type="main">Organizational Control, Incentive Contracts, and Knowledge Transfer in Offshore Business Process Outsourcing</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Aron</forename></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="81" to="99" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b44">
+	<analytic>
+		<title level="a" type="main">When Is a Liability Not a Liability?</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Loughran</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Mcdonald</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The Journal of Finance</title>
+		<imprint>
+			<biblScope unit="volume">66</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="35" to="65" />
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b45">
+	<analytic>
+		<title level="a" type="main">An Empirical Analysis of the Contractual and Information Structures of Business Process Outsourcing Relationships</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Mani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Barua</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">B</forename><surname>Whinston</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="618" to="634" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b46">
+	<analytic>
+		<title level="a" type="main">Conducting Behavioral Research on Amazon&apos;s Mechanical Turk</title>
+		<author>
+			<persName><forename type="first">W</forename><surname>Mason</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Suri</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Behavior Research Methods (</title>
+		<imprint>
+			<biblScope unit="volume">44</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="1" to="23" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b47">
+	<analytic>
+		<title level="a" type="main">Efficient Adaptation in Long-Term Contracts</title>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">E</forename><surname>Masten</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">J</forename><surname>Crocker</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The American Economic Review</title>
+		<imprint>
+			<biblScope unit="volume">75</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="1083" to="1093" />
+			<date type="published" when="1985">1985</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b48">
+	<analytic>
+		<title level="a" type="main">Seller Reputation, Information Signals, and Prices for Heterogeneous Coins on EBay</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">I</forename><surname>Melnik</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Alm</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Southern Economic Journal</title>
+		<imprint>
+			<biblScope unit="page" from="305" to="328" />
+			<date type="published" when="2005">2005</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b49">
+	<analytic>
+		<title level="a" type="main">Empirical Evaluation and Combination of Advanced Language Modeling Techniques</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Mikolov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Deoras</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Kombrink</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Burget</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Černockỳ</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Twelfth Annual Conference of the International Speech Communication Association</title>
+		<imprint>
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b50">
+	<monogr>
+		<title level="m" type="main">Efficient Estimation of Word Representations in Vector Space</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Mikolov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Corrado</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Dean</surname></persName>
+		</author>
+		<idno>ArXiv:1301.3781</idno>
+		<ptr target="https://arxiv.org/abs/1301.3781" />
+		<imprint>
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">Preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b51">
+	<analytic>
+		<title level="a" type="main">Distributed Representations of Words and Phrases and Their Compositionality</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Mikolov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Sutskever</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">S</forename><surname>Corrado</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Dean</surname></persName>
+		</author>
+		<ptr target="http://papers.nips.cc/paper/5021-distributed-representations-of-words-and-phrases-and-their-compositionality" />
+	</analytic>
+	<monogr>
+		<title level="m">Advances in Neural Information Processing Systems</title>
+		<imprint>
+			<date type="published" when="2013">2013</date>
+			<biblScope unit="page" from="3111" to="3119" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b52">
+	<analytic>
+		<title level="a" type="main">Is the World Flat or Spiky?</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Mithas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Whitaker</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<imprint>
+			<biblScope unit="volume">18</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="237" to="259" />
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b53">
+	<analytic>
+		<title level="a" type="main">Doing Business with Strangers</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Moreno</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Terwiesch</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="865" to="886" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b54">
+	<analytic>
+		<title level="a" type="main">The Effect of Coordination and Uncertainty on Software Project Performance</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Nidumolu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="191" to="219" />
+			<date type="published" when="1995">1995</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b55">
+	<analytic>
+		<title level="a" type="main">Deep Sentence Embedding Using Long Short-Term Memory Networks</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Palangi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Deng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Shen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Gao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>He</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Song</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Ward</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE/ACM Transactions on Audio, Speech and Language Processing (TASLP)</title>
+		<imprint>
+			<biblScope unit="volume">24</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="694" to="707" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b56">
+	<analytic>
+		<title level="a" type="main">Inefficient Hiring in Entry-Level Labor Markets</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Pallais</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The American Economic Review</title>
+		<imprint>
+			<biblScope unit="volume">104</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="3565" to="3599" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b57">
+	<monogr>
+		<title level="m" type="main">Running Experiments on Amazon Mechanical Turk</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Paolacci</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Chandler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">G</forename><surname>Ipeirotis</surname></persName>
+		</author>
+		<ptr target="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1626226)" />
+		<imprint>
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b58">
+	<analytic>
+		<title level="a" type="main">The Nature and Role of Feedback Text Comments in Online Marketplaces</title>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">A</forename><surname>Pavlou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Dimoka</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<imprint>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="392" to="414" />
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b59">
+	<analytic>
+		<title level="a" type="main">Building Effective Online Marketplaces with Institution-Based Trust</title>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">A</forename><surname>Pavlou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Gefen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="37" to="59" />
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b60">
+	<monogr>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">A</forename><surname>Pavlou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Liang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Xue</surname></persName>
+		</author>
+		<ptr target="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2380164)" />
+		<title level="m">Understanding and Mitigating Uncertainty in Online Environments</title>
+		<imprint>
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b61">
+	<analytic>
+		<title level="a" type="main">Testing Altermative Theories of the Firm</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Poppo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Zenger</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Strategic Management Journal</title>
+		<imprint>
+			<biblScope unit="page" from="853" to="877" />
+			<date type="published" when="1998">1998</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b62">
+	<analytic>
+		<title level="a" type="main">Effects of Ownership and Performance on Executive Tenure in US Corporations</title>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">R</forename><surname>Salancik</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Pfeffer</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Academy of Management Journal</title>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="653" to="664" />
+			<date type="published" when="1980">1980</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b63">
+	<analytic>
+		<title level="a" type="main">Continuous Space Language Models</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Schwenk</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Segal</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The Review of Economic Studies</title>
+		<imprint>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="57" to="82" />
+			<date type="published" when="1999">2007. 1999</date>
+		</imprint>
+	</monogr>
+	<note>Computer Speech &amp; Language</note>
+</biblStruct>
+
+<biblStruct xml:id="b64">
+	<analytic>
+		<title level="a" type="main">Bounded Rationality and Organizational Learning</title>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">A</forename><surname>Simon</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Organization Science</title>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="125" to="134" />
+			<date type="published" when="1991">1991</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b65">
+	<analytic>
+		<title level="a" type="main">Costly Bidding in Online Markets for IT Services</title>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">M</forename><surname>Snir</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">M</forename><surname>Hitt</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Science</title>
+		<imprint>
+			<biblScope unit="volume">49</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="1504" to="1520" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b66">
+	<analytic>
+		<title level="a" type="main">Recursive Deep Models for Semantic Compositionality over a Sentiment Treebank</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Socher</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Perelygin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">Y</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Chuang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">D</forename><surname>Manning</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">Y</forename><surname>Ng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Potts</surname></persName>
+		</author>
+		<idno>1631</idno>
+		<ptr target="http://www.anthology.aclweb.org/D/D13/D13-1170.pdf" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the Conference on Empirical Methods in Natural Language Processing (EMNLP)</title>
+		<meeting>the Conference on Empirical Methods in Natural Language Processing (EMNLP)</meeting>
+		<imprint>
+			<date type="published" when="2013">2013</date>
+			<biblScope unit="page">1642</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b67">
+	<analytic>
+		<title level="a" type="main">Contractual Flexibility, Rent Seeking, and Renegotiation Design</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Susarla</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Science</title>
+		<imprint>
+			<biblScope unit="volume">58</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="1388" to="1407" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b68">
+	<analytic>
+		<title level="a" type="main">A Transaction Cost Perspective of the</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Susarla</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Barua</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">B</forename><surname>Whinston</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Management Information Systems</title>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="205" to="240" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+	<note>Software as a Service&quot; Business Model</note>
+</biblStruct>
+
+<biblStruct xml:id="b69">
+	<analytic>
+		<title level="a" type="main">Contractual Provisions to Mitigate Holdup</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Susarla</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Subramanyam</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Karhade</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<imprint>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="37" to="55" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b70">
+	<analytic>
+		<author>
+			<persName><forename type="first">S</forename><surname>Tadelis</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Complexity, Flexibility, and the Make-or-Buy Decision</title>
+		<imprint>
+			<date type="published" when="2002">2002</date>
+			<biblScope unit="volume">92</biblScope>
+			<biblScope unit="page" from="433" to="437" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b71">
+	<analytic>
+		<title level="a" type="main">The Quantity Flexibility Contract and Supplier-Customer Incentives</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">A</forename><surname>Tsay</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Science</title>
+		<imprint>
+			<biblScope unit="volume">45</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page" from="1339" to="1358" />
+			<date type="published" when="1999">1999</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b72">
+	<analytic>
+		<title level="a" type="main">Perspectives on Models of Job Performance</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Viswesvaran</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">S</forename><surname>Ones</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Selection and Assessment</title>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="216" to="226" />
+			<date type="published" when="2000">2000</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b73">
+	<monogr>
+		<title level="m" type="main">Markets and Hierarchies</title>
+		<author>
+			<persName><forename type="first">O</forename><forename type="middle">E</forename><surname>Williamson</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1975">1975</date>
+			<biblScope unit="page" from="26" to="30" />
+			<pubPlace>New York</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b74">
+	<analytic>
+		<title level="a" type="main">Credible Commitments</title>
+		<author>
+			<persName><forename type="first">O</forename><forename type="middle">E</forename><surname>Williamson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The American Economic Review</title>
+		<imprint>
+			<biblScope unit="volume">73</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="519" to="540" />
+			<date type="published" when="1983">1983</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b75">
+	<analytic>
+		<title level="a" type="main">Complexity of Information Systems Development Projects</title>
+		<author>
+			<persName><forename type="first">W</forename><surname>Xia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Lee</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Management Information Systems</title>
+		<imprint>
+			<biblScope unit="volume">22</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="45" to="83" />
+			<date type="published" when="2005">2005</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b76">
+	<analytic>
+		<title level="a" type="main">The Value of Reputation in an Online Freelance Marketplace</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Yoganarasimhan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Marketing Science</title>
+		<imprint>
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="860" to="891" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b77">
+	<monogr>
+		<author>
+			<persName><forename type="first">A</forename><surname>Zheng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Hong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Pavlou</surname></persName>
+		</author>
+		<title level="m">Value Uncertainty and Buyer Contracting</title>
+		<imprint>
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">Working Paper</note>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

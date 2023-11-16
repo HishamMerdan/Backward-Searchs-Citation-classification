@@ -1,0 +1,1273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Home Bias in Hiring: Evidence from an Online Labor Market Completed Research Paper</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Chen</forename><surname>Liang</surname></persName>
+							<email>chen.liang.4@asu.edu</email>
+							<affiliation key="aff0">
+								<orgName type="institution">Arizona State University Tempe</orgName>
+								<address>
+									<settlement>Arizona</settlement>
+									<region>US</region>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Yili</forename><surname>Hong</surname></persName>
+							<email>hong@asu.edu</email>
+							<affiliation key="aff1">
+								<orgName type="institution">Arizona State University Tempe</orgName>
+								<address>
+									<settlement>Arizona</settlement>
+									<region>US</region>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Bin</forename><surname>Gu</surname></persName>
+							<email>bin.gu@asu.edu</email>
+							<affiliation key="aff2">
+								<orgName type="institution">Arizona State University Tempe</orgName>
+								<address>
+									<settlement>Arizona</settlement>
+									<region>US</region>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Home Bias in Hiring: Evidence from an Online Labor Market Completed Research Paper</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="MD5">91869B2992C2333A320AD1B79DA88915</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.7.3" ident="GROBID" when="2023-06-16T09:22+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>Home bias</term>
+					<term>employment</term>
+					<term>discrimination</term>
+					<term>quasi-natural experiment</term>
+					<term>gig economy</term>
+					<term>online labor market</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>We study the nature of home bias in online employment, wherein the employers prefer workers from their own home countries. Using a unique large-scale dataset from a major online labor market containing employers' consideration set of workers and their ultimate selection of workers, we first estimate employers' home bias in their online employment decisions. Moreover, we find that employers from countries with high traditional values, lower diversity, and smaller user base (or population size), tend to have a stronger home bias. Further, we disentangle two types of home bias, i.e., statistical and taste-based, using a quasi-natural experiment wherein the platform introduces a monitoring system to facilitate employers to easily observe workers' progress in time-based projects. After matching comparable fixed-price projects as a control group using coarsened exact matching, our difference-in-difference estimations show that the home bias in online employment is primarily driven by statistical discrimination.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Introduction</head><p>and <ref type="bibr" target="#b38">Saint-Paul 2000)</ref>. Hiring uncertainty leads employers to rely on heuristics to infer workers' capability and diligence <ref type="bibr" target="#b34">(Hendricks et al. 2003;</ref><ref type="bibr">Fryer and Jackson 2008)</ref>, leading to potential discrimination. Two commonly-examined discriminations in the literature include race <ref type="bibr" target="#b10">(Bertrand and Mullainathan 2004;</ref><ref type="bibr" target="#b26">Ge et al. 2016</ref>) and gender <ref type="bibr" target="#b13">(Chan and Wang 2017;</ref><ref type="bibr" target="#b9">Bertrand and Duflo 2017;</ref><ref type="bibr" target="#b29">Goldin and Rouse 2000)</ref>. The recent development of online employment has created employment arrangements that the employer and the worker may come from either the same country or different parts of the world <ref type="bibr" target="#b35">(Hong and Pavlou 2017)</ref>, leading to the potential for another form of discriminationemployers might prefer hiring workers who are geographically closer to them. Anecdotes have suggested that this form of discrimination even exists in offline employment. For example, managers at Oracle were recently involved in a lawsuit because of their discrimination against qualified white workers and in favor of applicants who mostly immigrated to US from Asian countries.</p><p>The literature has documented this phenomenon as home bias, an observation that individuals prefer conducting financial or trading transactions with counterparts of shorter geographic distance <ref type="bibr" target="#b36">(Hortaçsu et al. 2009;</ref><ref type="bibr" target="#b41">Lin and Viswanathan 2015)</ref>. Home bias has been extensively documented, in areas such as portfolio management <ref type="bibr" target="#b16">(Coval and Moskowitz 1999)</ref>, peer to peer lending <ref type="bibr" target="#b41">(Lin and Viswanathan 2015)</ref>, and product purchases <ref type="bibr" target="#b36">(Hortaçsu et al. 2009)</ref>. While not formally studied, the existence of home bias in employment settings is potentially harmful to the platforms because it decreases the potential for global labor arbitrage <ref type="bibr" target="#b51">(Roach 2003;</ref><ref type="bibr" target="#b27">Gefen and Carmel 2008)</ref> and thus leads to significant inefficiency costs <ref type="bibr" target="#b30">(Gong et al. 2018)</ref>. Further, home bias adds friction to the labor markets and serves as one type of unconscious biases that makes the employment decisions unfair to some workers <ref type="bibr" target="#b8">(Bertrand et al. 2005)</ref>. Important as the question is, there is little academic evidence documenting home bias in employment. The lack of evidence is primarily because researchers have squarely focused on offline settings when studying employment. In offline employment settings, geographic homogeneity is typically quite high. Further, even when there is ample variation in workers' home country, the recruiting data is typically unavailable, due to the proprietary and confidential nature of recruiting. And oftentimes the recruiters are not employers who will directly work with the prospective workers, further compounding the challenges in using offline employment data. However, owing to the global nature of online labor markets, fine-grained worker data made possible by web-based information technology, and direct observations of the employers' consideration sets and hiring choices, the online employment context allows us to explore and identify home bias in employment.</p><p>Due to the heterogeneous nature of different countries, home bias could also be heterogeneous. Since workers' locations (countries) are highlighted in many leading global online labor markets (e.g. Upwork, Freelancer), such geographic information might serve as a salient cue for social categorization when employers evaluate the workers. Employers may also overvalue local workers and place more trust in them due to in-group favoritism <ref type="bibr" target="#b14">(Chen and Li 2009)</ref>. While the literature regarding in-group favoritism is generally found to be positive, the magnitude of such bias may vary with multiple contingent factors, such as the group norms <ref type="bibr" target="#b54">(Sagiv and Schwartz 1995)</ref>, within-group similarity (or lack of diversity) <ref type="bibr" target="#b43">(Luijters et al. 2008)</ref>, and group size <ref type="bibr" target="#b11">(Brewer and Kramer 1986;</ref><ref type="bibr" target="#b53">Simon and Hamilton 1994)</ref>. In a similar vein, the strength of employers' home bias may also depend on contingent factors such as norms in the country (e.g., traditional values or national pride), diversity of ethnicity or culture, and size of country population (or platform user base).</p><p>It is also important to understand the mechanisms that cause home bias in online employment. The literature has offered explanations for the home bias, in particular, for investment portfolios and international trade <ref type="bibr" target="#b46">(Obstfeld and Rogoff 2000)</ref>. Generally, home bias is based on the heuristic cue of nationality instead of individual-level productivity-related attributes <ref type="bibr" target="#b5">(Becker 2010)</ref>. And home bias could be driven by either the statistical/rational discrimination mechanism <ref type="bibr" target="#b15">(Cooper and Kaplanis 1994;</ref><ref type="bibr" target="#b33">Helliwell 2000</ref>) or the taste-based discrimination mechanism <ref type="bibr" target="#b40">(Lewis 1999;</ref><ref type="bibr" target="#b41">Lin and Viswanathan 2015)</ref>. For example, in the investment example, statistical discrimination refers to investors' higher preference for domestic portfolios or trade because of the associated higher expected returns based on signal extraction from the group-level signal and the product-specific signal <ref type="bibr" target="#b48">(Phelps 1972;</ref><ref type="bibr" target="#b2">Arrow 1973)</ref>. In other words, investors tend to expect that the domestic portfolios or trade will have a better performance than those foreign ones with the same observable characteristics due to the higher group mean performance of domestic ones. In contrast, taste-based discrimination comes from the pre-existing liking for domestic portfolios or trade, which is not related to the signal extraction or utility function <ref type="bibr" target="#b5">(Becker 2010)</ref>. This line of literature suggests that home bias could be driven by the statistical discrimination for rational reasons, such as established institutional factors and the possibility of direct contract enforcement <ref type="bibr" target="#b25">(French and Poterba 1991;</ref><ref type="bibr" target="#b36">Hortaçsu et al. 2009)</ref> or the taste-based discrimination for irrational reasons, such as individuals' reluctance to share risks with foreigners <ref type="bibr" target="#b40">(Lewis 1999)</ref>. Home bias in employment bears similarity to international trade in terms of the potential mechanisms. It is also distinct because of the additional hidden action issues in employment decisions. Specifically, unlike the trade decisions for which standardized products or commodity are sold, online employment involves non-contractible elements of labor, and thus impose severe information asymmetry between the workers and employers <ref type="bibr" target="#b35">(Hong and Pavlou 2017)</ref>. On the one hand, information asymmetry and consequence thereof, e.g., unpredictable project performance, may render employers to contemplate more on the potential economic outcomes and be less likely to solely rely on simple heuristics. On the other hand, asymmetric information might render the employment decision more effortful and resourceconsuming, and thus exacerbate the employers' reliance on pre-existing systematic or idiosyncratic taste. Therefore, it is not clear which mechanism would primarily drive home bias in online employment settings. Bearing the above in mind, we seek to extend the previous literature in home bias by examining employment decisions in online labor markets <ref type="bibr" target="#b13">(Chan and Wang 2017;</ref><ref type="bibr" target="#b28">Ghani et al. 2014)</ref>, and specifically, we address the following three research questions:</p><p>•Q1 (existence): Does home bias exist in employment decisions in online labor markets?</p><p>•Q2 (heterogeneity): How does the strength of home bias vary with social-environmental factors across countries?</p><p>•Q3 (mechanism): Which mechanism (statistical versus taste-based) drives home bias in online labor markets?</p><p>To answer these questions, we obtained a unique, large-scale data set from an online labor market, wherein we are able to reliably observe both the employer and workers' countries (and other attributes), the employers' consideration set of workers who applied for the jobs, and the employers' hiring choices. The research setting allows us to examine home bias in online employment because online labor markets are global, resulting in the desired variation in the workers' country (or city) of origin. We first quantify home bias in our sample and explore the heterogeneity of home bias by examining a few contingency factors. We then disentangle the mechanisms for home bias by leveraging a natural experiment --the implementation of a monitoring system in Freelancer.com. This event serves as an exogenous shock to the level of information asymmetry by reducing worker hidden actions. By contrasting the theoretical predictions of the statistical versus the taste-based mechanism, we identify the underlying mechanism of the observed home bias. Specifically, because the monitoring system lower employers' reliance on group-specific signal extraction by alleviating the ex post individual-specific information, the implementation of the monitoring system should lower the home bias driven by statistical discrimination. At the same time, taste-based home bias should not be affected by the change in the availability of individual-level information and remain constant. Our econometric identification also hinges on the fact that the monitoring system is only applicable to time-based contracts but not to fixedprice contracts, which allows us to use a difference-in-differences (DID) framework for causal analyses. Based on our analyses, we observe three key findings. First, there is a robust observation of the existence of home bias, even after we control for language, time-zone and currency differences. Second, we find that employers from countries with high traditional values, lower diversity, and smaller user base (or population size), tend to have a stronger home bias. Lastly, after the coarsened exact matching of comparable fixed-price projects as a control group for the time-based projects that received the exogenous information shock, our difference-in-difference estimations show that the home bias in online employment is primarily driven by statistical discrimination.</p><p>Our paper contributes to several related streams of literature. First, our study contributes to the home bias literature, as it is among the first to investigate the existence of home bias in the employment setting that explored the mechanisms with a quasi-natural experiment. It extends previous equity or trade home bias research, which mainly focuses on decisions under ex ante information asymmetry, to the employment decision threatened by both ex ante and ex post information asymmetry. Also, given that the online employment context provides us an ideal opportunity to examine home bias with precise data about the employer's consideration set and sufficient variation in workers' home, this paper advances the employment discrimination research by demonstrating the impact of the home country affiliation between the employers and workers. Additionally, our study not just only broadly confirms the existence of home bias, but highlight the cross-country heterogeneity in home bias from the perspective of traditional values, group size, ethnic and cultural diversity as well. Second, our paper adds to our understanding of discrimination in online gig economy. During the last few years, gig economy platforms provide the digital infrastructure that connects demand and on-demand service providers, creating significant social welfare. However, even though the gig economy seems to provide a frictionless avenue of low entry barrier for the two-sided matching, some emerging research suggests that it also develops into a breeding ground of discrimination <ref type="bibr" target="#b26">(Ge et al. 2016)</ref>, which is legally prohibited yet not enforced in anti-discrimination laws <ref type="bibr" target="#b56">(Todisco 2014;</ref><ref type="bibr" target="#b19">Edelman et al. 2017)</ref>. Our study showcases the existence of another type of discrimination due to home bias, and suggests that platforms' information policies such as monitoring could help to alleviate the statistical home bias.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Theoretical Background</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Home Bias</head><p>Home bias is a phenomenon well-documented in the literature on financial markets <ref type="bibr" target="#b23">(Forman et al. 2009</ref><ref type="bibr" target="#b24">(Forman et al. , 2012;;</ref><ref type="bibr" target="#b41">Lin and Viswanathan 2015)</ref> and international trade <ref type="bibr" target="#b28">(Ghani et al. 2014;</ref><ref type="bibr" target="#b33">Helliwell 2000;</ref><ref type="bibr" target="#b36">Hortaçsu et al. 2009</ref>). Studies on home bias have focused on offline contexts <ref type="bibr">(Obstfeld and Rogoff 2001)</ref>. For instance, <ref type="bibr" target="#b40">Lewis (1999)</ref> finds that the reluctance to share the international risk helps to explain the observed equity-home-bias. Moreover, <ref type="bibr" target="#b16">Coval and Moskowitz (1999)</ref> suggest that the home bias phenomenon is not just limited to the preference for the equity at the home country, but also can be presented as the preference for within-city equity in a shorter geographic distance.</p><p>As online trade and online financial markets emerge, recent work starts to explore the geography-based preference in online settings. Specifically, most the related studies focus on how rational explanations and irrational factors might lead to home bias. On the one hand, studies have observed the preference for shorter geographic distance because of rational considerations. For instance, <ref type="bibr" target="#b36">Hortaçsu et al. (2009)</ref> find that the possibility of contract enforcement and localized consumption of the goods jointly contribute to the concentration of local trade on eBay. Other rational explanations found in the previous literature regarding home bias in traditional financial markets include established institutional factors <ref type="bibr" target="#b33">(Helliwell 2000)</ref> and investors' rational desire to hedge specific sources of risk <ref type="bibr" target="#b15">(Cooper and Kaplanis 1994)</ref>. On the other hand, recent studies on the online markets suggest that the geography-based preference is more consistent with taste-based preference. For example, <ref type="bibr" target="#b42">Lin and Viswanathan (2016)</ref> explore the home bias in online peer-to-peer markets and find that at least part of home bias is driven by borrows' taste-based preference. <ref type="bibr" target="#b28">Ghani et al. (2014)</ref> find that Indians show ethnical discrimination when making the outsourcing decisions and such ethnical discrimination is also more consistent with the prediction of taste-based preference. Overall, the evidence regarding the mechanisms of home bias is mixed <ref type="bibr" target="#b36">(Hortaçsu et al. 2009;</ref><ref type="bibr" target="#b28">Ghani et al. 2014;</ref><ref type="bibr" target="#b41">Lin and Viswanathan 2015)</ref>. Additionally, given the rich literature on home bias in the online and offline financial markets and trade, no research has explored home bias in the employment setting.</p><p>Regarding the methodology for the identification of home bias, scholars tend to employ different methods according to their levels of analysis. When the available data is at the macro-level (country pairs or city pairs), a typical test would be the gravity equation <ref type="bibr" target="#b7">(Bergstrand 1985)</ref>. Similar to a Cobb-Douglas production function, the gravity equation is a power function of the distance between two parties, the economy volume traded between two parties and other related factors. When micro-level data is accessible, alternative methods such as choice models <ref type="bibr" target="#b28">(Ghani et al. 2014)</ref> or the potential-dyads approach (Lin and Viswanathan 2015) have been used. When the decision makers' consideration sets are well specified, choice models are typically preferred. When the decision makers' consideration sets are not well specified, potential-dyads analysis enables the inclusion of all available alternatives in the model to explore whether decision makers have a stronger preference for partners from home countries.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>In-group Favoritism</head><p>The home bias phenomenon is also in line with in-group favoritism <ref type="bibr" target="#b14">(Chen and Li 2009)</ref>, wherein individuals prefer in-group members over out-group members <ref type="bibr" target="#b20">(Efferson et al. 2008;</ref><ref type="bibr" target="#b18">DiDonato et al. 2011)</ref>. In-group favoritism takes a few forms, including in-group bias <ref type="bibr" target="#b14">(Chen and Li 2009)</ref>, in-group altruism <ref type="bibr" target="#b11">(Brewer and Kramer 1986)</ref>, in-group trust (Falk and Zehnder 2013), and out-group comparison <ref type="bibr" target="#b50">(Reynolds et al. 2000)</ref>. In the context of online labor markets, workers' residing countries are typically public information. Therefore, residing country, as a group characteristic of workers, is expected to be a salient basis for social categorization. In particular, employers might consider local workers as ingroup members and show a significant preference for them compared to foreign workers with similar experience and reputation. Moreover, despite that the literature regarding in-group favoritism is generally found to be positive, the magnitude of such favoritism may vary with multiple group-level contingent factors, including the group norms <ref type="bibr" target="#b54">(Sagiv and Schwartz 1995)</ref>, within-group similarity (or lack of diversity) <ref type="bibr" target="#b43">(Luijters et al. 2008)</ref>, and group size <ref type="bibr" target="#b53">(Simon and Hamilton 1994)</ref>. In the same vein, the degree of employers' bias towards local workers (in-group members) may also vary with several country-level contingent factors, such as norms within the country (e.g., traditional values or national pride), national diversity of ethnicity or culture, and size of country population (or platform user base). Therefore, building on the literature regarding in-group favoritism <ref type="bibr" target="#b14">(Chen and Li 2009)</ref>, we intend to explore the potential heterogeneity of home bias across different employer countries with various strength of norms, diversities, and population sizes.</p><p>First, in-group social norms encourage in-group collaboration and discourage contacts with out-group members. According to <ref type="bibr" target="#b54">Sagiv and Schwartz (1995)</ref>, the in-group favoritism is positively related to the conformity with norms and the importance of traditional value. Following this logic, in the context of online labor markets, employers from countries with deep-rooted nationalistic mindsets and a strong tendency of conformity to cultural norms are more likely to show in-group favoritism and a preference for workers from the same group (country). Therefore, we expect that employers residing in countries that emphasize traditional and nationalistic values tend to hold a home bias as they are subject to strong social norms and national identity. To measure the emphasis of social norms and nationalistic mindset across countries, we employ the traditional values reported in the World Values Survey (WVS).</p><p>Second, within-group diversity tends to weaken the importance of the shared social identity, and reduce in-group favoritism. As <ref type="bibr" target="#b43">Luijters et al. (2008)</ref> suggests, the level of similarity in terms of cultural values individuals perceive is correlated with their level of identification with the group. As a result, we expect that employers from countries with greater diversity would exhibit less home bias. To measure the diversity among residents within each country, we use the country-specific ethnic fractionalization and cultural diversity <ref type="bibr" target="#b21">(Fearon 2003;</ref><ref type="bibr" target="#b22">Fearon and Laitin 2003)</ref>. Specifically, ethnic fractionalization measures the probability that every two individuals, randomly drawn from a country, belong to the same ethnic group <ref type="bibr" target="#b21">(Fearon 2003)</ref>, and cultural diversity measures the probability that every two individuals, randomly drawn from a country, speak a similar language <ref type="bibr" target="#b21">(Fearon 2003)</ref>. High ethnic fractionalization or cultural diversity implies the potential low resemblance between employers and workers from this country and the lower home bias.</p><p>Third, the in-group favoritism may be influenced by the group size. The literature has documented evidence that as the group size decreases, individuals tend to be more prosocial and generous in their transactional relationships with other in-group members <ref type="bibr" target="#b11">(Brewer and Kramer 1986;</ref><ref type="bibr" target="#b53">Simon and Hamilton 1994)</ref>, which implies a stronger in-group favoritism. Along with this line, home bias is likely weaker for employers from more populous countries. To construct the measure of group size, we use two different variables to represent the group size, including population size of each country in 2014 and the number of workers from the same country on this platform.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Mechanisms of Discrimination</head><p>Given the limited information about workers, employers usually rely on the observable signals or some heuristics to extrapolate the individual workers' capability and effort, which tends to result in discrimination. Here, discrimination means that employers systematically treat workers differently based on their characteristics which are not directly related to productivity <ref type="bibr" target="#b2">(Arrow 1973)</ref>, such as race <ref type="bibr" target="#b10">(Bertrand and Mullainathan 2004;</ref><ref type="bibr" target="#b26">Ge et al. 2016)</ref>, gender <ref type="bibr" target="#b13">(Chan and Wang 2017;</ref><ref type="bibr" target="#b29">Goldin and Rouse 2000;</ref><ref type="bibr" target="#b19">Edelman et al. 2017)</ref>, or other heuristics (e.g. the immigrant identity) <ref type="bibr">(Åslund et al. 2014)</ref>. A few mechanisms have been proposed to explain the sources of discrimination. Based on its mechanism, discrimination can be classified as rational/statistical discrimination and taste-based discrimination <ref type="bibr" target="#b10">(Bertrand and Mullainathan 2004)</ref>. Specifically, rational or statistical discrimination assumes that employers are profit maximizing, who use the group-specific signal to infer the quality of individual workers <ref type="bibr" target="#b2">(Arrow 1973)</ref>. For instance, if the employer learns that local workers are more skillful and diligent based on his or her private information, the employer might use the country as a signal to infer the quality of subsequent workers, given the limited information and cognitive resource. Conversely, taste-based discrimination is based on employers' pure preference, which does not involve any rational inference of worker quality that will determine utility for the employer <ref type="bibr" target="#b5">(Becker 2010)</ref>.</p><p>A key challenge in this research stream is to empirically disentangle statistical discrimination from taste-based discrimination. In general, there are two types of predictions for identifying the mechanism of discrimination, namely, the static and dynamic predictions <ref type="bibr" target="#b52">(Rubineau and Kang 2012)</ref>. First, the static predictions are about the static difference across between-group pairs after accounting for other observable productivity characteristics <ref type="bibr" target="#b9">(Bertrand and Duflo 2017)</ref>. Statistical discrimination would be diminished among between-group parties when there are more information or stronger signals on the observable productivity characteristics <ref type="bibr" target="#b9">(Bertrand and Duflo 2017)</ref>. However, as suggested by <ref type="bibr" target="#b32">Heckman and Siegelman (1993)</ref>, the differences among between-group parties are likely to be not well measured or controlled for. As such, the static predictions are usually plagued with omitted variable bias and rely heavily on assumptions about the distribution of unobservable characteristics.</p><p>Second, the dynamic prediction refers to the prediction about when and how the discrimination between-group pairs will change after market changes or information shocks <ref type="bibr" target="#b52">(Rubineau and Kang 2012)</ref>. In particular, when there is a significant information change, individuals will update their beliefs that lead to statistical discrimination. <ref type="bibr" target="#b52">Rubineau and Kang (2012)</ref> expect that the medical training should help students learn to obtain more hard-to-observe characteristics and lower statistical discrimination. However, they observe that students tend to show a strong discrimination after a year of training, which suggests that it is not statistical discrimination that drives racial disparities <ref type="bibr" target="#b52">(Rubineau and Kang 2012)</ref>.</p><p>Based on dynamic predictions, information changes such as the removal of gender information <ref type="bibr" target="#b29">(Goldin and Rouse 2000)</ref> or criminal background information (Doleac and Hansen 2016) will lead to a change in the magnitude of statistical discrimination. In summary, verifying whether the pattern of observations is consistent with dynamic predictions is a reliable way to identify statistical discrimination.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Online Labor Markets</head><p>Online labor markets facilitate the procurement of on-demand labor services across the borders of cities or countries <ref type="bibr" target="#b35">(Hong and Pavlou 2017)</ref>. Recently, online labor markets have experienced a tremendous growth and are projected to play a prominent role in the US labor market. Due to the low barrier to entry for workers from various countries and well-established arbitration systems, online labor markets enable employers to access a broad set of prospective workers by reducing transaction costs. That being said, online labor markets are also limited because of its impersonal nature. Specifically, unlike traditional labor markets wherein employers can acquire and verify workers' characteristics and capability through field interviews, due to spatial and temporal separations, online labor markets have a higher information asymmetry between workers and employers. In many cases, employers make a hiring decision based on the limited information provided by the platform, such as workers' countries, reputation, expected wages. For now, reputation and expected wages have been found to be effective signals to categorize high-quality workers from low-quality ones in online labor markets. For instance, <ref type="bibr" target="#b47">Pallais (2014)</ref> suggests that employers' screening behavior based on reputation leads to a high entry barrier. Given that the worker country is a salient information cue as reputation, it is likely that employers may deem it as the cue for social categorization to facilitate their hiring decisions. Employers may overvalue local workers and show home bias due to in-group favoritism <ref type="bibr" target="#b14">(Chen and Li 2009)</ref>.</p><p>Home bias in online labor markets could be driven by either statistical or taste-based mechanism. Specifically, the taste-based mechanism is due to employers' inherent taste or stereotypes rooted in the cultural environment, whereas the statistical mechanism is mostly owing to the aforementioned lack of information on worker quality or effort. Since employers' taste-based home bias tends to be stable and persistent <ref type="bibr" target="#b5">(Becker 2010</ref>), a feasible way to reduce the inefficiency costs of home bias is to target employers' statistical home bias with information shocks. We expect that, when more detailed information about each individual worker is available, employers' statistical home bias should be decreased but not taste-based home bias. In our context, we observe the implementation of the monitoring system, which provides employers for time-based projects (but not fixed-price projects) direct observations of procedural progress information, effectively alleviating employers' uncertainty about workers' shirking <ref type="bibr" target="#b49">(Pierce et al. 2015)</ref>. Therefore, this major event provides us an information experiment to identify and quantify statistical home bias in online labor markets.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Research Context and Data</head><p>To hire workers in online labor markets, an employer first posts a project on a web-based platform such as Upwork, Freelancer, or Guru. Detailed information about the project such as requirements and budget are provided on the dedicated webpage for the project. Workers who are interested in this job opportunity then bid for this project. After that, the employer makes a hiring decision based on the bid prices and workers' characteristics (e.g., reputation, country). Finally, a contract is reached when the selected worker accepts the offer. Specifically, we obtained a dataset from Freelancer (www.freelancer.com), one of the largest online labor market platforms. On Freelancer, the employer may specify the project as a fixed-price project or a time-based project in which he/she pays hourly wages to the hired worker. Workers could browse the active or ongoing projects on the website and selectively bid for some of them. Due to the limit on the number of bids each worker can submit each month,<ref type="foot" target="#foot_0">1</ref> it is in the interest of the works to bid for projects that maximize their expected total rewards on the projects they are likely to be hired.</p><p>To rule out the effect of the auction format on employers' choices, we limit our analysis to projects using the most common public, open-bid auction format.<ref type="foot" target="#foot_1">2</ref> Further, to construct a sample of homogenous projects, we focus on projects in the most popular category, i.e., "IT, Software &amp; Website". The definition and basic statistics of the key variables in our final sample are provided in Tables 1. A dummy variable (0,1), =1 if the employer's primary language is the same as that of the worker on this platform 0.76 0.43 0.00 1.00</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Same time zone</head><p>A dummy variable (0,1), =1 if the time zone wherein the employer live is the same as that of the worker inferred based on the IP address 0.45 0.50 0.00 1.00</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Same currency</head><p>A dummy variable (0,1), =1 if the employer's primary currency is the same as that of the worker on this platform 0.02 0.14 0.00 1.00</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Empirical Evidence of Home Bias</head><p>Identifying the Existence of Home Bias</p><p>Following <ref type="bibr" target="#b28">Ghani et al. (2014)</ref> and <ref type="bibr" target="#b42">Lin et al. (2016)</ref>, we estimate the extent of home bias with a conditional logit model, as well as a linear probability model (LPM) with project-level fixed-effects.</p><p>Taking the conditional logit model as an example, the utility that the employer of project i obtains from hiring bidder j is constructed as follows:</p><formula xml:id="formula_0">U (𝑃𝑟𝑜𝑗𝑒𝑐𝑡 𝑖 _𝑏𝑦_𝑏𝑖𝑑𝑑𝑒𝑟 𝑗 ) = 𝛼 𝑖 + 𝛽 1 𝐻𝑜𝑚𝑒country 𝑖𝑗 + 𝑐𝑜𝑛𝑡𝑟𝑜𝑙𝑠(𝐵𝑖𝑑𝑑𝑒𝑟 𝑗 ) + 𝜀 𝑖𝑗 (1)</formula><p>where 𝛼 𝑖 represents the project-level fixed effect, which nests the employer-level fixed effects as every project has only one employer. The focal variable, 𝐻𝑜𝑚𝑒country 𝑖𝑗 , denotes whether the employer of project i and bidder j are from the same country. 𝑐𝑜𝑛𝑡𝑟𝑜𝑙𝑠(𝐵𝑖𝑑𝑑𝑒𝑟 𝑗 ) include various bidders' related characteristics. <ref type="foot" target="#foot_3">4</ref> 𝜀 𝑖𝑗 is assumed to follow the type-I extreme value distribution. A significant positive effect of 𝐻𝑜𝑚𝑒country 𝑖𝑗 (captured by 𝛽 ̂1) suggests that employers hold a home bias.</p><p>As mentioned before, there are two potential threats to our identification of the above model. First, there might be time-invariant differences across countries. For example, some workers from some countries may be more competitive or acquire lower wage on average. In response to this issue, we include 25 dummies for the 25 selected countries and one dummy for all the rest worker countries. Second, the productivity of workers might suffer from the difference in languages and time-zones, which may result in a spurious home bias. To alleviate this concern, we use additional dummies to control for whether employers and workers use the same primary language, currency, and time zone.</p><p>As Model (1) in Table <ref type="table" target="#tab_1">2</ref> suggests, without controlling for the "closeness" or "similarity" in language, currency and time zone, employers show a preference for local workers. Though employers' home bias slightly decreases after controlling for the language, currency and time zone effect (see model 3), the magnitude of home bias is still not negligible. To better understand the impact of home bias, we monetarize its value using Equation ( <ref type="formula">2</ref>), in a similar way with previous studies <ref type="bibr" target="#b39">(Leung 2017;</ref><ref type="bibr" target="#b17">Dahl and Sorenson 2010)</ref>. According to result estimated by the Conditional Logit Model in Model (3) of Table <ref type="table" target="#tab_1">2</ref>, employers are willing to pay local workers 24.97% more than an alien worker.<ref type="foot" target="#foot_4">5</ref> </p><formula xml:id="formula_1">Δ𝐵𝑖𝑑𝑝𝑟𝑖𝑐𝑒 = 𝑒𝑥𝑝 𝛽 ℎ𝑜𝑚𝑒𝑐𝑜𝑢𝑛𝑡𝑟𝑦 𝛽 𝑙𝑜𝑔𝑏𝑖𝑑𝑝𝑟𝑖𝑐𝑒</formula><p>(2)   Even after controlling for the effect of language, currency, and time zone, employers still show a significant positive preference for local workers. This is in line with the in-group favoritism <ref type="bibr" target="#b14">(Chen and Li 2009)</ref>, which emphasizes the importance of group or category in people's perception and behaviors <ref type="bibr" target="#b20">(Efferson et al. 2008;</ref><ref type="bibr" target="#b18">DiDonato et al. 2011</ref>). Moreover, it has been found that the magnitude of in-group bias may vary by multiple contingent factors, such as the group norms <ref type="bibr" target="#b54">(Sagiv and Schwartz 1995)</ref>, within-group similarity (diversity) <ref type="bibr">(Luijters et al.2008)</ref>, and group size <ref type="bibr" target="#b53">(Simon and Hamilton 1994)</ref>.</p><p>Under the implication of such context-contingent nature of in-group favoritism, we will further explore whether and how employers' home bias might vary by these contingent factors of each group (country).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Heterogeneity of Home Bias</head><p>Based on the literature of in-group favoritism, the preference of employers toward workers from home countries tends to vary across countries. However, since the model-free evidence might be confounded by multiple existing differences across worker countries (e.g. lower labor costs), whether there exists heterogeneity of home bias still need to be formally tested. Therefore, we further investigate how the strength of home bias may be associated with the traditional value, diversity and population size of the employer country in both the LPM and the Conditional Logit Model. As Table <ref type="table" target="#tab_3">3</ref> shows, the strength of employers' home bias 1) is positively related to the traditional value of the employer country which represents the importance of a nationalistic outlook among residents <ref type="bibr" target="#b37">(Inglehart and Welzel 2010)</ref>; 2) is negatively related to the user (population) size of the employer country; 3) is negatively associated with the country-specific ethnic fractionalization and cultural diversity <ref type="bibr" target="#b22">(Fearon and Laitin 2003)</ref>. The result is highly consistent after controlling for the competition within workers from the same country.  </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Exploring the Mechanisms for Home Bias</head><p>A Quasi-Natural Experiment with Information Shock On February 5 th , 2014, Freelancer rolled out its monitoring system for the first time, which enables employers to conveniently monitor the progress of time-based projects. Such a monitoring system automatically takes screenshots and keeps track of workers' effort input. This monitoring system could affect employers in the following two ways: 1) monitoring system can ensure and improve production of quality work, especially when hiring foreign workers. The monitoring system automatically takes a screenshot every few minutes and enables employers to provide detailed instructions or comments regarding any step of work. As such, the monitoring system improves the efficiency for employers to collaborate with freelancers. 2) the monitoring system enables employers to keep track of each individual worker's work, so that employers could have more verified information about individual worker's capability and effort. Owing to such information change driven by the exogenous shock---the implementation of the monitoring system,<ref type="foot" target="#foot_5">6</ref> employers would less rely on the signal extraction based on workers' country. Since the monitoring system is mandatory for all time-based projects and is not applicable for fixed-price projects, we use the fixed-price projects as the control group to study the treatment effect of monitoring system on time-based projects. According to the previous literature on statistical discrimination <ref type="bibr" target="#b2">(Arrow 1973</ref>) and taste-based discrimination <ref type="bibr" target="#b5">(Becker 2010)</ref>, we can make two distinct predictions about the underlying mechanisms of home bias after the implementation of the monitoring system. First, since statistical discrimination is contingent on the availability of individual-specific information, monitoring might lower the need for information extraction based on group-specific signals and hence lower the extent of statistical home bias <ref type="bibr" target="#b0">(Altonji and Blank 1999;</ref><ref type="bibr" target="#b52">Rubineau and Kang 2012)</ref>. For one thing, the implementation of the monitoring system, as a vital change in technology applied to online labor markets, has altered the effects of physical or cultural closeness on producing <ref type="bibr" target="#b0">(Altonji and Blank 1999;</ref><ref type="bibr" target="#b4">Autor 2003)</ref>. In other words, the monitoring system smooths the collaboration between employers and workers, especially when they are spatially separated. It increases the average productivity of foreign workers relative to local workers. Thus, the implementation of the monitoring system tends to decrease the productivity difference and reduce employers' statistical home bias. For another, the monitoring system effectively provides more individual-level information and lowers employers' reliance on group-level signal extraction. Therefore, employers will tend to lower their weight on the group (country) signal and emphasize more on workers' individual signals based on the reputation and monitoring system. As such, employers' statistical home bias based on the rational signal extraction tends to be decreased. The information change brought by the monitoring system will decrease employers' statistical home bias.</p><p>For another, given that taste-based discrimination is merely based on preference, which is irrelevant to the availability of information and the expected productivity <ref type="bibr" target="#b5">(Becker 2010;</ref><ref type="bibr" target="#b52">Rubineau and Kang 2012)</ref>. Models of taste-based discrimination usually assume that employers show a constant distaste for foreign workers irrelevant to their unobservable characteristics <ref type="bibr">(Becker 1971)</ref>. Therefore, the implementation of the monitoring system might affect statistical discrimination but not taste-based discrimination <ref type="bibr" target="#b5">(Becker 2010)</ref>. If statistical discrimination is at work, we may observe a significant decrease in the level of home bias. Therefore, we proposed the following predictions (Table <ref type="table">4</ref>):</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Table 4. Types of Stereotyping Discrimination and Predictions</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Forms of Discrimination Dynamic Predictions about the Change in Home Bias</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Statistical discrimination</head><p>After the implementation of the monitoring system, employers' home bias decreases in the treatment group, as compared to the control group Taste-based discrimination After the implementation of the monitoring system, employers' home bias remains unchanged in the treatment group, as compared to the control group</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>DID Estimation Results</head><p>To measure the decrease in employers' home bias after the implementation of the monitoring system, we construct the Differences-in-Differences estimation in both the Conditional Logit Model and the Linear Probability Model with the project-specific fixed-effects. Taking the Logit model as an example, the DID specification is given by: U (𝑃𝑟𝑜𝑗𝑒𝑐𝑡 𝑖 _𝑎𝑤𝑎𝑟𝑑_𝑏𝑖𝑑𝑑𝑒𝑟 𝑗 ) = 𝛼 𝑖 + 𝛽 1 𝐻𝑜𝑚𝑒country 𝑖𝑗 + 𝛽 2 𝐻𝑜𝑚𝑒country 𝑖𝑗 × 𝑇𝑖𝑚𝑒_𝑏𝑎𝑠𝑒𝑑 𝑖 + 𝛽 3 𝐴𝑓𝑡𝑒𝑟 𝑖 × 𝐻𝑜𝑚𝑒country 𝑖𝑗 + 𝛽 4 𝐴𝑓𝑡𝑒𝑟 𝑖 × 𝐻𝑜𝑚𝑒country 𝑖𝑗 × 𝑇𝑖𝑚𝑒_𝑏𝑎𝑠𝑒𝑑 𝑖 + 𝑐𝑜𝑛𝑡𝑟𝑜𝑙𝑠(𝐵𝑖𝑑𝑑𝑒𝑟 𝑗 ) + 𝜀 𝑖𝑗 (3) A significantly positive effect of 𝐻𝑜𝑚𝑒country 𝑖𝑗 prior to the implementation of monitoring systems (captured by 𝛽 ̂1 + 𝛽 ̂2) suggests that employers hold home bias previously. Moreover, if 𝛽 ̂4 is significantly negative, it is likely that employers adjust their home bias according to available information provided by monitoring systems, which is known as statistical discrimination.</p><p>As expected, the coefficient of the 𝐴𝑓𝑡𝑒𝑟 𝑖 × 𝐻𝑜𝑚𝑒country 𝑖𝑗 × 𝑇𝑖𝑚𝑒_𝑏𝑎𝑠𝑒𝑑 𝑖 (𝛽 ̂4 ) is significantly negative, which suggests that, for time-based projects, employers' additional preference for bidders from their home countries decreases as more ex post individual-specific information is accessible through the monitoring system. The decrease in employers' home bias due to the implementation of the monitoring system suggests that employers' home bias cannot be attributed to taste-based discrimination. This lends support to the role of the statistical discrimination mechanism in shaping employers' home bias. To better understand the strength and the economic value of home bias, next we examine the sizes of related coefficients based on the full sample. Specifically, we focus on the coefficients in the Logit model due to the nature of the decision process. Before the implementation of the monitoring system, the total effect of 𝐻𝑜𝑚𝑒country 𝑖𝑗 is 0.953 ( 𝛽 ̂1 + 𝛽 ̂2 = 0.218 + 0.735 = 0.953)while the coefficient of log (bid price) is -1.735. In this sense, the change in the bid price required to reach parity in workers' likelihood of winning projects from foreign employers to local employers is 1.732 (exp(0.953/1.735)=1.732). Given that the average hourly wage of foreign workers in time-based contracts is 19.44 dollars, the effect of home bias translates to a premium of 14.23<ref type="foot" target="#foot_7">8</ref> dollars for domestic workers. However, after the deployment of the monitoring system, the effect of 𝐻𝑜𝑚𝑒country 𝑖𝑗 reduces to 0.063, implying that domestic workers can only charge a lower price premium after the implementation of the monitoring system, all else equal. In other words, the economic value of 𝐻𝑜𝑚𝑒country 𝑖𝑗 decreases to 0.719 dollars.<ref type="foot" target="#foot_8">9</ref> Since only the level of statistical discrimination may decrease due to the availability of ex post individual-specific information, our bootstrap result suggests that roughly 89.94%<ref type="foot" target="#foot_9">10</ref> of home bias is driven by statistical discrimination. Given that monitoring is very likely to be imperfect and it could not help to alleviate the ex ante information asymmetry, the statistical discrimination is not likely to be completely gone after the implementation of the monitoring system. Therefore, this number is a conservative estimate.  </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Table 5. DID Estimation of Employers' Home Bias</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Robustness Checks and Additional Analysis</head><p>To further check the robustness of our conclusions, we conduct additional analyses which are suppressed because of the limitation of length. First, we explicitly test the parallel trend assumption of the DID model <ref type="bibr" target="#b1">(Angrist and Pischke 2008)</ref> by checking whether the control group (fixed-price projects) has the same trend as the treatment group (time-based projects). We find that a pre-existing downward trend is unlikely to exist prior to the implementation of monitoring systems. Second, we rerun the model with a shorter range of observational window (six months before and after) and still find a consistent result based on the full sample and matched sample. Third, to ensure the workers are comparable and similar between the treatment and control group, we limit our sample to the bids which are submitted by those workers who bid for both fixed-price and time-based projects. The result of the restricted sample is still highly consistent. Four, we employ Propensity Score Matching (PSM) to regenerate a matching sample and still find a consistent result. Five, we control for the time-varying or project specific contingent factors influencing home bias, such as number of workers; the average rating of workers from each country within the employer's specific consideration set; the country-month twoway fixed effect. Overall, all robustness checks are consistent with our main finding.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Concluding Remark</head><p>Using a unique large-scale data set from one of the prevalent online labor markets, we document the existence of home bias in the online employment setting for the first time. Moreover, owing to the quasinatural experiment design, we conclude that the home bias in online employment is primarily driven by statistical discrimination. Our result suggests that when information is limited, employers might employ statistical discrimination and prefer to hire workers from their home countries. This kind of discrimination could be alleviated without the loss of market efficiency if the platform makes some changes to its information policies and reduces the ex ante or ex post information asymmetry. Overall, our study provides support for the existence of statistical home bias in the context of online employment.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head></head><label></label><figDesc>: a) We include different proxies of cultural heterogeneity which are highly correlated in our model respectively. Due to the length limitation, the coefficients of other control variables are omitted. b) R-square in the Logit model is calculated based on the Maximum Likelihood R-square. c)* p&lt;0.1, ** p&lt;0.05, *** p&lt;0.01.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>Figure 1 .</head><label>1</label><figDesc>Figure 1. Screenshots of the Monitoring System 7According to the previous literature on statistical discrimination<ref type="bibr" target="#b2">(Arrow 1973</ref>) and taste-based discrimination<ref type="bibr" target="#b5">(Becker 2010)</ref>, we can make two distinct predictions about the underlying mechanisms of home bias after the implementation of the monitoring system. First, since statistical discrimination is contingent on the availability of individual-specific information, monitoring might lower the need for information extraction based on group-specific signals and hence lower the extent of statistical home bias<ref type="bibr" target="#b0">(Altonji and Blank 1999;</ref><ref type="bibr" target="#b52">Rubineau and Kang 2012)</ref>. For one thing, the implementation of the monitoring system, as a vital change in technology applied to online labor markets, has altered the effects of physical or cultural closeness on producing<ref type="bibr" target="#b0">(Altonji and Blank 1999;</ref><ref type="bibr" target="#b4">Autor 2003)</ref>. In other words, the monitoring system smooths the collaboration between employers and workers, especially when they are spatially separated. It increases the average productivity of foreign workers relative to local workers. Thus, the implementation of the monitoring system tends to decrease the productivity difference and reduce employers' statistical home bias. For another, the monitoring system effectively provides more individual-level information and lowers employers' reliance on group-level signal extraction. Therefore, employers will tend to lower their weight on the group (country) signal and emphasize more on workers' individual signals based on the reputation and monitoring system. As such, employers' statistical home bias based on the rational signal extraction tends to be decreased. The information change brought by the monitoring system will decrease employers' statistical home bias.</figDesc><graphic coords="10,214.28,72.00,166.80,122.93" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head></head><label></label><figDesc>***(0.077) 0.016***(0.006) 0.294** (0.141) 0.041** (0.016) Time-based×Homecountry 0.735***(0.176) 0.088***(0.020) 0.680***(0.224) 0.077***(0.027) After×Homecountry 0.230***(0.084) 0.021***(0.007) 0.170 (0.154) 0.016 (0.018) Time-based*After×Homecountry -1.120***(0.232) -0.119***(0.025) -1.062***(0.290) -0.126***(0</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head>Table 1 . Definitions and Summary Statistics of Key Variables</head><label>1</label><figDesc></figDesc><table><row><cell>Variable</cell><cell>Variable definition</cell><cell>Mean</cell><cell>SD</cell><cell>Min</cell><cell>Max</cell></row><row><cell>Bid Price</cell><cell>The bid price posted by the worker</cell><cell cols="2">306.70 491.00</cell><cell cols="2">2.00 5000.00 3</cell></row><row><cell>Milestone percentage</cell><cell>A feature provided by Freelancer, it denotes the during the project percentage of controlled payments paid to the worker</cell><cell>73.72</cell><cell>33.31</cell><cell>0.00</cell><cell>100.00</cell></row><row><cell>Bidder tenure</cell><cell>the worker's tenure at Freelancer measured in months</cell><cell>31.60</cell><cell>28.70</cell><cell>0.00</cell><cell>183.00</cell></row><row><cell>Homecountry</cell><cell>A dummy variable (0,1), =1 if the worker and the employer live in the same country</cell><cell>0.05</cell><cell>0.22</cell><cell>0.00</cell><cell>1.00</cell></row><row><cell>Bid order rank</cell><cell>The sequence order of the worker's bid</cell><cell>19.63</cell><cell>20.07</cell><cell>1.00</cell><cell>263.00</cell></row><row><cell>Preferred freelancer</cell><cell>A dummy variable (0,1), =1 if the worker won the "Preferred Freelancer Badge"</cell><cell>0.21</cell><cell>0.41</cell><cell>0.00</cell><cell>1.00</cell></row><row><cell>Review count</cell><cell>The number of reviews entered by previous employers</cell><cell>81.67</cell><cell>175.14</cell><cell cols="2">0.00 3937.00</cell></row><row><cell>Same language</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1"><head>Table 2 . Estimation Results of Employers' Home Bias</head><label>2</label><figDesc></figDesc><table><row><cell>Sample</cell><cell>Full sample</cell><cell></cell><cell>Full sample</cell><cell></cell></row><row><cell>Model</cell><cell>FE-Logit</cell><cell>FE-LPM</cell><cell>FE-Logit</cell><cell>FE-LPM</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_3"><head>Table 3 . Estimation Results of Heterogeneity regarding Traditional Values</head><label>3</label><figDesc></figDesc><table><row><cell>Sample</cell><cell></cell><cell>Full sample</cell><cell></cell><cell>Full sample</cell></row><row><cell>Model</cell><cell>FE-Logit</cell><cell>FE-LPM</cell><cell>FE-Logit</cell><cell>FE-LPM</cell></row><row><cell>Homecountry</cell><cell cols="4">1.170***(0.113) 0.104***(0.011) 0.831***(0.090) 0.072***(0.008)</cell></row><row><cell cols="3">Ethnic Fractionalization×homecountry -1.447***(0.191) -0.133***(0.019)</cell><cell></cell><cell></cell></row><row><cell>Cultural Diversity×homecountry</cell><cell></cell><cell></cell><cell cols="2">-1.176***(0.204) -0.107***(0.019)</cell></row><row><cell>Homecountry</cell><cell cols="4">0.650***(0.064) 0.055***(0.006) 2.789***(0.392) 0.259***(0.038)</cell></row><row><cell>User perc×homecountry</cell><cell cols="2">-1.912***(0.321) -0.173***(0.029)</cell><cell></cell><cell></cell></row><row><cell>Log popu size×homecountry</cell><cell></cell><cell></cell><cell cols="2">-0.191***(0.031) -0.018***(0.003)</cell></row><row><cell>Homecountry</cell><cell cols="2">0.670***(0.070) 0.060***(0.008)</cell><cell></cell><cell></cell></row><row><cell>Trad value×Homecountry</cell><cell cols="2">0.440***(0.090) 0.044***(0.011)</cell><cell></cell><cell></cell></row><row><cell>Bidder country dummy</cell><cell>yes</cell><cell>yes</cell><cell>yes</cell><cell>yes</cell></row><row><cell>Project fixed effects</cell><cell>yes</cell><cell>yes</cell><cell>yes</cell><cell>yes</cell></row><row><cell>Observations</cell><cell>371,968</cell><cell>371,968</cell><cell>371,968</cell><cell>371,968</cell></row><row><cell>Number of projects</cell><cell>23,943</cell><cell>23,943</cell><cell>23,943</cell><cell>23,943</cell></row><row><cell>Notes</cell><cell></cell><cell></cell><cell></cell><cell></cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_4"><head></head><label></label><figDesc>Robust standard errors clustered by projects are reported in parentheses. b) R-square in the Logit model is calculated based on the Maximum Likelihood R-square. c)* p&lt;0.1, ** p&lt;0.05, *** p&lt;0.01.</figDesc><table><row><cell>Project fixed effects</cell><cell>yes</cell><cell>yes</cell><cell>yes</cell><cell>yes</cell></row><row><cell>Observations</cell><cell>371,968</cell><cell>371,968</cell><cell>86,840</cell><cell>86,840</cell></row><row><cell>R-squared</cell><cell>0.494</cell><cell>0.048</cell><cell>0.495</cell><cell>0.079</cell></row><row><cell>Number of projects</cell><cell>23,943</cell><cell>23,943</cell><cell>9,028</cell><cell>9,028</cell></row><row><cell>Notes: a)</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell>**(0.003)</cell></row><row><cell>Bidder country dummy</cell><cell>yes</cell><cell>yes</cell><cell>yes</cell><cell>yes</cell></row></table></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="1" xml:id="foot_0"><p>Free members could submit 8 bids per month. Golden members could submit more. However, the percentage of golden members in our dataset is less than 0.1%.</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="2" xml:id="foot_1"><p>In such a case, projects like special contracts with NDA, featured projects, sealed projects, fulltime jobs, those using the non-dollar currency, those written in non-English are dropped from our sample.</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="3" xml:id="foot_2"><p>Because there are unreasonable large values in the maximum of bid prices and the win rate of these bids are all zeros, we dropped the top 1%. The result of our main analysis is consistent if we keep all the bids.</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="4" xml:id="foot_3"><p>Within data, a worker's average rating is almost constant during our observational period. Therefore, we didn't treat the worker rating as a time-variant variable here.</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="5" xml:id="foot_4"><p>Exp(0.387/1.736)-100%=24.97%</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="6" xml:id="foot_5"><p>We confirm with employees of Freelancer that the implementation of the monitoring system is not publicly preannounced.</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="7" xml:id="foot_6"><p>https://www.freelancer.com/community/articles/what-you-need-to-make-remote-collaboration-work</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="8" xml:id="foot_7"><p>19.44*[exp(0.953/1.735)-1]=14.23</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="9" xml:id="foot_8"><p>19.44*[exp(0.063/1.735)-1]=0.719</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="10" xml:id="foot_9"><p>We calculate the percentage of statistical home bias for each bootstrap sample. Based on 1,000 bootstrap samples, we find that on average the statistical bias percentage is 89.94%, which implies that at least 89.94% of home bias is driven by statistical discrimination.</p></note>
+		</body>
+		<back>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<monogr>
+		<title level="m" type="main">Race and gender in the labor market. Handbook of labor economics</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">G</forename><surname>Altonji</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">M</forename><surname>Blank</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1999">1999</date>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="page" from="3143" to="3259" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<monogr>
+		<title level="m" type="main">Mostly harmless econometrics: An empiricist&apos;s companion</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">D</forename><surname>Angrist</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">S</forename><surname>Pischke</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2008">2008</date>
+			<publisher>Princeton university press</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">The theory of discrimination</title>
+		<author>
+			<persName><forename type="first">K</forename><surname>Arrow</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Discrimination in labor markets</title>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page" from="3" to="33" />
+			<date type="published" when="1973">1973</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Seeking similarity: How immigrants and natives manage in the labor market</title>
+		<author>
+			<persName><forename type="first">O</forename><surname>Åslund</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Hensvik</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O</forename><forename type="middle">N</forename><surname>Skans</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Labor Economics</title>
+		<imprint>
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="405" to="441" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">The economics of discrimination theory</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">H</forename><surname>Autor</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Lecture Note of Labor Economics</title>
+		<imprint>
+			<date type="published" when="2003">2003</date>
+			<biblScope unit="page">14</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<monogr>
+		<title level="m" type="main">The economics of discrimination</title>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">S</forename><surname>Becker</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2010">2010</date>
+			<publisher>University of Chicago press</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">The new public accommodations: race discrimination in the platform economy</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Belzer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Leong</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Geo. LJ</title>
+		<imprint>
+			<biblScope unit="volume">105</biblScope>
+			<biblScope unit="page">1271</biblScope>
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">The gravity equation in international trade: Some microeconomic foundations and empirical evidence</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Bergstrand</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Rev. Econom. Statist</title>
+		<imprint>
+			<biblScope unit="volume">67</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="474" to="481" />
+			<date type="published" when="1985">1985</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Implicit discrimination</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Bertrand</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Chugh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Mullainathan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The American Economic Review</title>
+		<imprint>
+			<biblScope unit="page" from="94" to="98" />
+			<date type="published" when="2005">2005</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Field experiments on discrimination</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Bertrand</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Duflo</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Handbook of Economic Field Experiments</title>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="page" from="309" to="393" />
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Are Emily and Greg more employable than Lakisha and Jamal? A field experiment on labor market discrimination</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Bertrand</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Mullainathan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The American Economic Review</title>
+		<imprint>
+			<biblScope unit="volume">94</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="991" to="1013" />
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Choice behavior in social dilemmas: Effects of social identity, group size, and decision framing</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">B</forename><surname>Brewer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">M</forename><surname>Kramer</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of personality and social psychology</title>
+		<imprint>
+			<biblScope unit="volume">50</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page">543</biblScope>
+			<date type="published" when="1986">1986</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<monogr>
+		<title level="m" type="main">Institutional Obstacles to Doing Business: Region-byregion Results from a Worldwide Survey of the Private Sector</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Brunetti</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Kisunko</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Weder</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1997">1997</date>
+			<publisher>World Bank Publications</publisher>
+			<biblScope unit="page">1759</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Hiring preferences in online labor markets: Evidence of a female hiring bias</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Chan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Wang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Science</title>
+		<imprint>
+			<biblScope unit="page" from="1" to="22" />
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Group identity and social preferences</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">X</forename><surname>Li</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The American Economic Review</title>
+		<imprint>
+			<biblScope unit="volume">99</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="431" to="457" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Home bias in equity portfolios, inflation hedging, and international capital market equilibrium</title>
+		<author>
+			<persName><forename type="first">I</forename><surname>Cooper</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Kaplanis</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Review of Financial Studies</title>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="45" to="60" />
+			<date type="published" when="1994">1994</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Home bias at home: Local equity preference in domestic portfolios</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">D</forename><surname>Coval</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">J</forename><surname>Moskowitz</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The Journal of Finance</title>
+		<imprint>
+			<biblScope unit="volume">54</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="2045" to="2073" />
+			<date type="published" when="1999">1999</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">The Social Attachment to Place</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">S</forename><surname>Dahl</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O</forename><surname>Sorenson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Social Forces</title>
+		<imprint>
+			<biblScope unit="volume">89</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="633" to="658" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Social perception as induction and inference: an integrative model of intergroup differentiation, ingroup favoritism, and differential accuracy</title>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">E</forename><surname>Didonato</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Ullrich</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">I</forename><surname>Krueger</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of personality and social psychology</title>
+		<imprint>
+			<biblScope unit="volume">100</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">66</biblScope>
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Racial discrimination in the sharing economy: Evidence from a field experiment</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Edelman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Luca</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Svirsky</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">American Economic Journal: Applied Economics</title>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="1" to="22" />
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">The coevolution of cultural groups and ingroup favoritism</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Efferson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Lalive</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Fehr</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Science</title>
+		<imprint>
+			<biblScope unit="volume">321</biblScope>
+			<biblScope unit="issue">5897</biblScope>
+			<biblScope unit="page" from="1844" to="1849" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Ethnic and cultural diversity by country</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">D</forename><surname>Fearon</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of economic growth</title>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="195" to="222" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Ethnicity, insurgency, and civil war</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">D</forename><surname>Fearon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">D</forename><surname>Laitin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">American political science review</title>
+		<imprint>
+			<biblScope unit="volume">97</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="75" to="90" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Competition between local and electronic markets: How the benefit of buying online depends on where you live</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Forman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Ghose</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Goldfarb</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management science</title>
+		<imprint>
+			<biblScope unit="volume">55</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="47" to="57" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">The Internet and local wages: A puzzle</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Forman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Goldfarb</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Greenstein</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The American Economic Review</title>
+		<imprint>
+			<biblScope unit="volume">102</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="556" to="575" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<monogr>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">R</forename><surname>French</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">M</forename><surname>Poterba</surname></persName>
+		</author>
+		<title level="m">Investor diversification and international equity markets (No. w3609)</title>
+		<imprint>
+			<publisher>National Bureau of Economic Research</publisher>
+			<date type="published" when="1991">1991</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<monogr>
+		<title level="m" type="main">Racial and gender discrimination in transportation network companies (No. w22776)</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Ge</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">R</forename><surname>Knittel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Mackenzie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Zoepf</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2016">2016</date>
+			<publisher>National Bureau of Economic Research</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Is the world really flat? A look at offshoring at an online programming marketplace</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Gefen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Carmel</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS quarterly</title>
+		<imprint>
+			<biblScope unit="page" from="367" to="384" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">Diasporas and outsourcing: evidence from oDesk and India</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>Ghani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><forename type="middle">R</forename><surname>Kerr</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Stanton</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Science</title>
+		<imprint>
+			<biblScope unit="volume">60</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="1677" to="1697" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">Orchestrating impartiality: The impact of &apos;blind&apos; auditions on female musicians</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Goldin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Rouse</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">American Economic Review</title>
+		<imprint>
+			<biblScope unit="volume">90</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="715" to="741" />
+			<date type="published" when="2000">2000</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">Vanishing Borders in the Internet Age: The Income Elasticity of the Supply of Foreign Labor in Virtual versus Physical Markets</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Gong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Hong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Zentner</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 51st Hawaii International Conference on System Sciences</title>
+		<meeting>the 51st Hawaii International Conference on System Sciences</meeting>
+		<imprint>
+			<date type="published" when="2018-01">2018. January</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">Valuation of new goods under perfect and imperfect competition</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">A</forename><surname>Hausman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">The economics of new goods</title>
+		<imprint>
+			<publisher>University of Chicago Press</publisher>
+			<date type="published" when="1996">1996</date>
+			<biblScope unit="page" from="207" to="248" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<monogr>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">J</forename><surname>Heckman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Siegelman</surname></persName>
+		</author>
+		<title level="m">The Urban Institute audit studies: Their methods and findings</title>
+		<imprint>
+			<date type="published" when="1993">1993</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<monogr>
+		<title level="m" type="main">How much do national borders matter?</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">F</forename><surname>Helliwell</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2000">2000</date>
+			<publisher>Brookings Institution Press</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title level="a" type="main">Uncertainty, hiring, and subsequent performance: The NFL draft</title>
+		<author>
+			<persName><forename type="first">W</forename><surname>Hendricks</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Debrock</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Koenker</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Labor Economics</title>
+		<imprint>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="857" to="886" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">On Buyer Selection of Service Providers in Online Outsourcing Platforms</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Hong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">A</forename><surname>Pavlou</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<imprint>
+			<biblScope unit="volume">28</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="547" to="562" />
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">The geography of trade in online transactions: Evidence from eBay and mercadolibre</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Hortaçsu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Martínez-Jerez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Douglas</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">American Economic Journal: Microeconomics</title>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="53" to="74" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<analytic>
+		<title level="a" type="main">Changing Mass Priorities: The Link between Modernization and Democracy</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Inglehart</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Welzel</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Perspectives on Politics</title>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="551" to="567" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<monogr>
+		<title level="m" type="main">Hiring and firing costs, adverse selection and long-term unemployment</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">D</forename><surname>Kugler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Saint-Paul</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2000">2000</date>
+		</imprint>
+	</monogr>
+	<note>IZA</note>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<monogr>
+		<title level="m" type="main">Learning to Hire? Hiring as a Dynamic Experiential Learning Process in an Online Market for Contract Labor</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">D</forename><surname>Leung</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+	<note>Management Science, forthcoming</note>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<analytic>
+		<title level="a" type="main">Trying to explain home bias in equities and consumption</title>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">K</forename><surname>Lewis</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of economic literature</title>
+		<imprint>
+			<biblScope unit="volume">37</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="571" to="608" />
+			<date type="published" when="1999">1999</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<analytic>
+		<title level="a" type="main">Home bias in online investments: An empirical study of an online crowdfunding market</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Viswanathan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Science</title>
+		<imprint>
+			<biblScope unit="volume">62</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="1393" to="1414" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+	<analytic>
+		<title level="a" type="main">Effectiveness of reputation in contracting for customized production: Evidence from online labor markets</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Viswanathan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Science</title>
+		<imprint>
+			<biblScope unit="volume">64</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="345" to="359" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b43">
+	<analytic>
+		<title level="a" type="main">Cultural diversity in organizations: Enhancing identification by valuing differences</title>
+		<author>
+			<persName><forename type="first">K</forename><surname>Luijters</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">I</forename><surname>Van Der Zee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Otten</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.ijintrel.2007.09.003</idno>
+		<ptr target="http://dx.doi.org/10.1016/j.ijintrel.2007.09.003" />
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Intercultural Relations</title>
+		<imprint>
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="page" from="154" to="163" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b44">
+	<analytic>
+		<title level="a" type="main">Searching for common threads: Understanding the multiple effects of diversity in organizational groups</title>
+		<author>
+			<persName><forename type="first">F</forename><surname>Milliken</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Martins</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The Academy of Management Review</title>
+		<imprint>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="page" from="402" to="433" />
+			<date type="published" when="1996">1996</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b45">
+	<analytic>
+		<title level="a" type="main">A Practitioner&apos;s Guide to Estimation of Random-coefficients Logit Models of Demand</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Nevo</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Economics &amp; Management Strategy</title>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="513" to="548" />
+			<date type="published" when="2000">2000</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b46">
+	<analytic>
+		<title level="a" type="main">The six major puzzles in international macroeconomics: is there a common cause?</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Obstfeld</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Rogoff</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">NBER macroeconomics annual</title>
+		<imprint>
+			<date type="published" when="2000">2000</date>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="page" from="339" to="390" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b47">
+	<analytic>
+		<title level="a" type="main">Inefficient hiring in entry-level labor markets</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Pallais</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The American Economic Review</title>
+		<imprint>
+			<biblScope unit="volume">104</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="3565" to="3599" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b48">
+	<analytic>
+		<title level="a" type="main">The statistical theory of racism and sexism</title>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">S</forename><surname>Phelps</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The American Economic Review</title>
+		<imprint>
+			<biblScope unit="volume">62</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="659" to="661" />
+			<date type="published" when="1972">1972</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b49">
+	<analytic>
+		<title level="a" type="main">Cleaning house: The impact of information technology monitoring on employee theft and productivity</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Pierce</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">C</forename><surname>Snow</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Mcafee</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Science</title>
+		<imprint>
+			<biblScope unit="volume">61</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page" from="2299" to="2319" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b50">
+	<analytic>
+		<title level="a" type="main">When are we better than them and they worse than us? A closer look at social discrimination in positive and negative domains</title>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">J</forename><surname>Reynolds</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">C</forename><surname>Turner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">A</forename><surname>Haslam</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of personality and social psychology</title>
+		<imprint>
+			<biblScope unit="volume">78</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">64</biblScope>
+			<date type="published" when="2000">2000</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b51">
+	<monogr>
+		<title level="m" type="main">Coping with the global labor arbitrage</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Roach</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2003">2003</date>
+			<publisher>Morgan Stanley Global Economic Forum</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b52">
+	<analytic>
+		<title level="a" type="main">Bias in white: A longitudinal natural experiment measuring changes in discrimination</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Rubineau</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Kang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Science</title>
+		<imprint>
+			<biblScope unit="volume">58</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="660" to="677" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b53">
+	<analytic>
+		<title level="a" type="main">Self-stereotyping and social context: The effects of relative ingroup size and in-group status</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Simon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">L</forename><surname>Hamilton</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of personality and social psychology</title>
+		<imprint>
+			<biblScope unit="volume">66</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page">699</biblScope>
+			<date type="published" when="1994">1994</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b54">
+	<analytic>
+		<title level="a" type="main">Value priorities and readiness for out-group social contact</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Sagiv</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">H</forename><surname>Schwartz</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of personality and social psychology</title>
+		<imprint>
+			<biblScope unit="volume">69</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page">437</biblScope>
+			<date type="published" when="1995">1995</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b55">
+	<analytic>
+		<title level="a" type="main">Interindividual behaviour and intergroup behaviour</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Tajfel</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Differentiation between groups: Studies in the social psychology of intergroup relations</title>
+		<editor>
+			<persName><forename type="first">H</forename><surname>Tajfel</surname></persName>
+		</editor>
+		<meeting><address><addrLine>London</addrLine></address></meeting>
+		<imprint>
+			<publisher>Academic Press</publisher>
+			<date type="published" when="1978">1978</date>
+			<biblScope unit="page" from="27" to="60" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b56">
+	<analytic>
+		<title level="a" type="main">Share and Share Alike: Considering Racial Discrimination in the Nascent Room-Sharing Economy</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Todisco</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Stan. L. Rev. Online</title>
+		<imprint>
+			<biblScope unit="volume">67</biblScope>
+			<biblScope unit="page">121</biblScope>
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

@@ -1,0 +1,1231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Estimating participants for knowledge-intensive tasks in a network of crowdsourcing marketplaces</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+				<date type="published" when="2016-07-18">18 July 2016</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author role="corresp">
+							<persName><forename type="first">Yiwei</forename><surname>Gong</surname></persName>
+							<email>yiweigong@whu.edu.cn</email>
+							<affiliation key="aff0">
+								<orgName type="department">School of Information Management</orgName>
+								<orgName type="institution">Wuhan University</orgName>
+								<address>
+									<postCode>430072</postCode>
+									<settlement>Wuhan</settlement>
+									<region>Hubei</region>
+									<country>People&apos;s Republic of China</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Estimating participants for knowledge-intensive tasks in a network of crowdsourcing marketplaces</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date type="published" when="2016-07-18">18 July 2016</date>
+						</imprint>
+					</monogr>
+					<idno type="MD5">2749C9543486FC68F5EF56D38A99C1F2</idno>
+					<idno type="DOI">10.1007/s10796-016-9674-6</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.7.3" ident="GROBID" when="2023-06-16T09:22+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>Knowledge-intensive crowdsourcing</term>
+					<term>Flexibility</term>
+					<term>Search friction</term>
+					<term>Estimation algorithm</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Crowdsourcing has become an increasingly attractive practice for companies to abstain on-demand workforce and higher level of flexibility in open contexts. While knowledge-intensive crowdsourcing is expected to be prosperous, most current crowdsourcing calls are still about general and low-priced tasks. An obstacle of conducing knowledge-intensive crowdsourcing is the lack of diversity of expertise and the small scale of crowd in isolated crowdsourcing marketplaces. In this paper, a network of crowdsourcing marketplaces is envisioned for efficient knowledge-intensive crowdsourcing and engagement of massive and diverse participants across different marketplaces. Based on an algorithm for estimating participants for knowledge-intensive crowdsourcing tasks, an experiment with 100 simulations indicates that conducting crowdsourcing tasks in a network of crowdsourcing marketplaces results in higher customer satisfaction than doing that in isolated marketplaces. This finding advocates the development of a network of crowdsourcing marketplaces to open up the potential of knowledge-intensive crowdsourcing.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1">Introduction</head><p>The concept of crowdsourcing is first coined in 2006 and simply means outsourcing certain tasks and problem formulations to an undefined (and generally large) network of people in the form of open calls <ref type="bibr" target="#b18">(Howe, 2006)</ref>. In a dynamic and globalized business environment where companies have to constantly advance and satisfy the needs of the customer and to remain competitive, it is not enough to respond the growing complexity of their environment with just their own capabilities or those of their partners. As a result, an increasing number of companies, ranging from small startups to those listed in Fortune 500, are trying to make use of crowdsourcing to access knowledge and skills that previously unavailable to them and to solve parts of business processes formerly executed in-house <ref type="bibr" target="#b1">(Afuah and Tucci, 2012;</ref><ref type="bibr" target="#b38">Satzger et al., 2013)</ref>. In this way, companies can have an on-demand workforce and higher knowledge absorptive capacity and business processes can be adapted, which results in higher level of flexibility <ref type="bibr" target="#b15">(Gong and Janssen, 2012)</ref>.</p><p>A typical form of crowdsourcing is publishing the request for proposals through an online marketplace with the details of the needed service and its expected duration and (a range of) cost. Then potential participants bid on the task by submitting their proposals. If more than one proposals were received for a task, only one candidate would be selected to carry out the task. At the end, company can decide to accept and pay for the work, or refuse it if it does not fulfil the expectation. There are many crowdsourcing marketplaces isolated to each other on the Internet, such as Amazon Mechanical Turk <ref type="bibr">(AMT, www. mturk.com), Crowd Flower (www.crowdflower.com)</ref>, <ref type="bibr">Upwork (www.upwork.com)</ref>, etc. AMT is a popular example of online crowdsourcing marketplaces. Most tasks on AMT typically involve basic computer and language skills, such as tagging photos according to their contents, rewriting sections of prose, transcribing audio, choosing representative screenshots from a short video clip, or responding to survey questions <ref type="bibr" target="#b0">(Abascal-Mena et al., 2014)</ref>. Those tasks are often priced between 0 and 0.1 US dollar <ref type="bibr" target="#b8">(Difallah et al., 2015)</ref>. In fact, today's most tasks in crowdsourcing are very simple tasks <ref type="bibr" target="#b38">(Satzger et al., 2013)</ref> which are also called 'micro-tasks' in literature.</p><p>Crowdsourcing can be considered as an online and distributed problem-solving model <ref type="bibr" target="#b3">(Brabham, 2008)</ref>. It is suggested that engaging crowds can help companies develop solutions to a variety of business challenges. As the business challenges and tasks vary, so do the knowledge and skills that crowdsourcing participants have. Unlike simple and lowpriced tasks that commonly require general skills, challenging and valuable tasks, such as IT services <ref type="bibr" target="#b9">(Ford et al., 2015;</ref><ref type="bibr" target="#b31">Nevo and Kotlarsky, 2014;</ref><ref type="bibr" target="#b27">Lu et al., 2015)</ref>, are often knowledge intensive and require crowdsourcing participants with special skills and knowledge. Knowledge-intensive crowdsourcing is regarded as one of the most promising areas of crowdsourcing in the future, given the critical role it can play in today's knowledge-based economy <ref type="bibr" target="#b24">(Kittur et al., 2013)</ref>. Despite its importance, the technology that has turbocharged knowledge-intensive crowdsourcing's potency and application is still relatively new <ref type="bibr" target="#b25">(Lakhani, 2013)</ref>, and limited work so far optimizes knowledge-intensive crowdsourcing <ref type="bibr" target="#b36">(Roy et al., 2015;</ref><ref type="bibr" target="#b46">Yang et al., 2015)</ref>. This impedes the implementation of knowledge intensive-crowdsourcing and the understanding of the depth and reach of knowledge crowds across the economy.</p><p>On the way to fully unlock the potential of knowledgeintensive crowdsourcing, a challenge is the identification of suitable participants considering their skills and knowledge <ref type="bibr" target="#b38">(Satzger et al., 2013;</ref><ref type="bibr" target="#b46">Yang et al., 2015;</ref><ref type="bibr" target="#b36">Roy et al., 2015)</ref>, especially across different isolated crowdsourcing platforms. Matching skills to tasks often relays on sophisticated online crowdsourcing platforms to manage distributed workers and support task providers <ref type="bibr" target="#b25">(Lakhani, 2013)</ref>. However, prior research on crowdsourcing takes the online crowdsourcing platforms and their functionalities as given <ref type="bibr" target="#b29">(Majchrzak and Malhotra, 2013)</ref>, not even considering the isolated platform issue. In this paper, a network of marketplaces for knowledgeintensive crowdsourcing is envisioned. An algorithm of AHP-TOPSIS based on Grey Relation Analysis (GRA) is employed to enable the estimation of crowdsourcing participants in both isolated and networked situations. AHP is an abbreviation of Analytical Hierarchical Process, while TOPSIS stands for Technique for Order Preference by Similarity to Ideal Solution. In the previous work of this study which is presented in <ref type="bibr" target="#b14">(Gong, 2015)</ref>, the accuracy and efficiency of this algorithm on identifying best-fit knowledge-intensive crowdsourcing participant has been validated by using real-world log data of 348 completed crowdsourcing tasks. This paper extends the previous work by involving an environment of networked crowdsourcing marketplaces. An experiment with 100 simulations is then used to create another dataset which allows for a comparison between the customer satisfaction rates of tasks deployed in a network of crowdsourcing marketplace and the customer satisfaction rates of tasks deployed in isolated marketplaces. The main goal of this paper is to prove that knowledge-intensive crowdsourcing performs better in an open and networked environment than on isolated platforms and to advocate the development of a network of crowdsourcing marketplaces to open up the potential of knowledge-intensive crowdsourcing across different online crowdsourcing marketplaces.</p><p>The remainder of this paper is structured as follows. Section 2 envisions a network of crowdsourcing marketplaces. In Section 3 related work is discussed. Section 4 describes the design of an algorithm of AHP-TOPSIS based on GRA, including its validation. Then, Section 5 presents the conducted simulation and discusses their results. Section 6 concludes the paper, discusses its limitations and points to future work.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2">Envisioning a network of crowdsourcing marketplaces</head><p>Crowdsourcing is one of the emerging Web 2.0 based phenomenon and a connective and collaborative social-technical environment that enables individuals to get involved in internet-mediated social participation, communication, and collaboration <ref type="bibr" target="#b49">(Zhao and Zhu, 2014)</ref>. With a rapid development recently, online crowdsourcing marketplaces have become more and more sophisticated, making it simpler to manage and support distributed general tasks. Some crowdsourcing marketplaces provide simple text searching, ranking or commenting applications for helping tasks providers or participants. Given this, online marketplaces are foreseen to expand continually, unlocking an incredible number of opportunities for careers and skilled work <ref type="bibr" target="#b24">(Kittur et al., 2013)</ref>. While the demand for using crowdsourcing marketplaces for knowledge-intensive tasks is climbing, there are some obstacles that hinder task providers from expected results. Matching between knowledge-intensive tasks and crowdsourcing participants is a long-standing challenge of this kind. Implementing a mechanism for a task-participant matching concerning the requirement of knowledge and skills is not an easy job. For example, 10 years after its launch, it is still difficult to conduct knowledge-intensive crowdsourcing on AMT because of the lack of worker profiles indicating skills or experience, inability to post worker or employer ratings and reviews, minimal infrastructure for effectively managing workers or collecting analytics, etc. <ref type="bibr" target="#b44">(Vakharia and Lease, 2015)</ref>. Many scholars and experts have tried to address this challenge by the design and development of appropriate crowdsourcing systems (eg <ref type="bibr" target="#b13">Geiger and Schader, 2014;</ref><ref type="bibr" target="#b36">Roy et al., 2015;</ref><ref type="bibr" target="#b47">Yuen et al., 2015)</ref>. Although those studies are respectably realistic and contribute to current practice and research on crowdsourcing marketplaces, they focus on standalone crowdsourcing platform.</p><p>However, a closed single crowdsourcing marketplace environment often fails in fulfilling the expectation of companies which would like to access a large crowd for their problem-solving. It has been reported that most crowdsourcing platforms for conducting knowledge-intensive tasks obtain relatively few submissions from potential solvers and the majority of these submissions do not meet the expectation of task providers <ref type="bibr" target="#b28">(Mahr et al., 2015)</ref>. A limitation of current crowdsourcing marketplaces is the lack of domain-specific expertise <ref type="bibr" target="#b17">(Heimerl et al., 2012)</ref>. Many crowdsourcing marketplaces do not provide much skill variety <ref type="bibr" target="#b24">(Kittur et al., 2013)</ref>. When a task requires specific (level of) knowledge and skills, it becomes relevantly difficult to access the required expertise by only one marketplace. It is reported that a company had to deploy similar tasks on different crowdsourcing platforms in order to reach different online communities <ref type="bibr" target="#b16">(Guittard et al., 2015)</ref>. Furthermore, some crowdsourcing marketplaces have a domestic focus, for example, local crowdsourcing marketplaces in China and Russia or other non-English speaking countries. And some others have a preference on different kinds of tasks, for example the majority of tasks on AMT is micro-task, while the majority of tasks on InnoCentive (www. innocentive.com) is innovation-oriented. From a task providers' perspective, the above evidences indicate that conducting knowledge-intensive crowdsourcing in a standalone marketplace results in limited customer satisfaction.</p><p>Although current crowdsourcing marketplaces are isolated with each other, this isolation is expected to be broken up along with the development of crowdsourcing technology and economy. The advancement of new information and communication technologies and the evolution of the internet have a profound impact on the structure of business <ref type="bibr" target="#b10">(Garrigos-Simon et al., 2012)</ref>, and companies are responding by implementing more and more flexible business models <ref type="bibr" target="#b42">(Sommer, 2003)</ref>. While firstly in the past century the integration of multinational companies, and later in recent decades the business model of outsourcing, the advances in new technologies and the globalized environment keep shaping the horizon of business and the boundary of companies <ref type="bibr" target="#b48">(Zenger et al., 2011)</ref>. For knowledge-intensive business, the creation of multinational companies and outsourcing can be explained by the knowledge-based view (KBV) of the firm. The KBV considers knowledge as the most strategically significant resource of a firm and the source of competitive advantage resides <ref type="bibr" target="#b2">(Alavi and Leidner, 2001)</ref>. In the past, a critical success factor of many companies consist of the creation of multinational partnerships network in the form of outsourcing or co-investment was that they could work together to achieve or retain competitive advantage by exchange and complementation of knowledge and skills. However, the consolidation of the networks of companies means the consolidation of their own rigidity. In the new socioeconomic arena where the crowd has a great diversity of knowledge and skills, crowdsourcing can overcome the advantages of the networks of companies by its higher level of flexibility <ref type="bibr" target="#b11">(Garrigos-Simon and Narangajavana, 2015)</ref>. From multinational companies to outsourcing and to crowdsourcing, it is a process of decentralization and the expansion of the boundary of companies. As innovative companies that have a high knowledge absorptive capacity will keep looking for better mechanisms for efficient information and knowledge aggregation and the boundary of companies will be dynamic, given high-powered incentives from the market and appropriate value-creating coordination <ref type="bibr" target="#b48">(Zenger et al., 2011)</ref>. We can therefore envision that the decentralization will continue in the development of crowdsourcing and the business model of crowdsourcing will evolve from relying on a single marketplace to deploying knowledge-intensive tasks in a network of crowdsourcing marketplaces.</p><p>Another support of this envisioning is the theory of Search Friction which is a term developed in the economics of the labor market <ref type="bibr" target="#b35">(Pissarides, 2011)</ref>. The theory of Search Friction is typically used to explain the frictional unemployment phenomenon where unemployment and vacant jobs exist at the same time because both workers and jobs are heterogeneous, and a mismatch can happen between the characteristics of supply and demand, because of different expectations on prices and wages, staggered contracts, location, time etc. <ref type="bibr" target="#b7">(Diamond, 1982)</ref>. The presence of search and matching cost has important and general implication for how markets perform their function of allocating supply and demand. The cost of search and matching is regarded as a hindrance to the process of efficient allocation <ref type="bibr" target="#b30">(Mortensen, 2011)</ref>. A satisfied jobworker matching is the outcome of an information gathering process in which workers look for the content of available jobs while employers engage in complementary recruiting activities to broadcast job information. The limitations of cognitive as well as the available resource and time put bounds on the information that the workers or employers can access and process at one time <ref type="bibr" target="#b45">(Williamson, 2002)</ref>. Crowdsourcing marketplace can play an important role in reduce search and matching cost in such a job-worker matching process by facilitating information gathering and processing for both sides. For this reason crowdsourcing has drawn the attention of economic and management science research on search including the studies of broadcast search <ref type="bibr" target="#b23">(Jeppesen and Lakhani, 2010;</ref><ref type="bibr" target="#b5">Corvello and Iazzolino, 2013)</ref> and distant search <ref type="bibr" target="#b1">(Afuah and Tucci, 2012)</ref>. The study on using crowdsourcing for conducting broadcast search for problem-solving indicates that the greater diversity of the crowd expertise-the increasing distance between the problem and the solvers' field of expertise leads to a higher probability of developing of a winning solution <ref type="bibr" target="#b23">(Jeppesen and Lakhani, 2010)</ref>. At the same time, the study on using crowdsourcing for conducting distant search for problem-solving indicates that the larger scale of the crowd-the more pervasive the problem-solving knowhow in a crowd, the higher the likelihood there will be someone in the crowd who will participate in solving the problem <ref type="bibr" target="#b1">(Afuah and Tucci, 2012)</ref>. In summary, the research on Search Friction implies that diversity and scale of crowd influence the probability of having a satisfying match between knowledgeintensive tasks and their participants. A network of crowdsourcing marketplaces can have a greater diversity of expertise and a larger scale of crowd. It is therefore expected to have the potential of a higher satisfaction in conducting knowledge-intensive crowdsourcing.</p><p>From the above discussion on the limitations of current standalone crowdsourcing marketplaces, the demand of flexibility and dynamic boundary of companies, and the implications of search literature, the following hypothesis can be made.</p><p>Hypothesis Conducting knowledge-intensive tasks in a network of crowdsourcing marketplaces results in higher customer satisfaction than doing so in isolated marketplaces.</p><p>This hypothesis is made from a task providers' perspective. Based on the finding that companies gain limited satisfaction in their knowledge-intensive crowdsourcing in a standalone crowdsourcing marketplace, this hypothesis uses customer satisfaction as a criteria to reflect the efficiency of knowledge-intensive crowdsourcing. Investigating this hypothesis is the first step to reveal the value of a network of crowdsourcing marketplaces.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3">Related works</head><p>In literature, there has been a considerable amount of work towards developing appropriate platforms and suggesting frameworks for efficient crowdsourcing, but only limited studies focus on mechanisms that facilitate matching between tasks and participants. There are mainly two directions in those studies on matching: either from a crowdsourcing participant's perspective and recommending tasks to participants, or from a task provider's perspective and estimating participants for tasks.</p><p>From a participant's perspective, task recommendation is the main topic under research. For example, <ref type="bibr" target="#b13">Geiger and Schader (2014)</ref> proposed a systematic design of personalized task recommendation approaches based on literature study. <ref type="bibr" target="#b47">Yuen et al. (2015)</ref> proposed a task recommendation framework based on a unified probabilistic matrix factorization, aiming to recommend tasks to workers in dynamic scenarios with a focus on solving the cold start problem.</p><p>From a task provider's perspective, a little bit more studies can be found in literature. For example, <ref type="bibr" target="#b36">Roy et al. (2015)</ref> presented a framework for optimizing participant-to-task assignment in knowledge-intensive crowdsourcing. This framework relies on a set of pre-computed indexes and maintains them adaptively to enable effective task assignment. Human factors, such as expertise, minimum wage requirements, and acceptance ratio, are integrated into the assignment process. Other scholars discuss crowdsourcing from a business process management point of view. Mechanisms for estimating crowdsourcing participants for business process execution can be found in the research of BPEL4People in social networks <ref type="bibr" target="#b39">(Schall et al., 2014)</ref>, in which a ranking method based on Hyperlink-Induced Topic Search (HITS) algorithm is provided to estimate the expertise of crowdsourcing works in a social network. In this method, a certain skill, its expected level and the importance of a task are used as input, and the ranking result presents a list of all the suitable crowdsourcing works in a social network. The underlying concept of BPEL4People is that the flexibility of traditional SOA-based business process systems can be enhanced by enabling human-based services with very the same API used by software-based Web services. In this way, tasks would be able to match to suitable workers that are registered and active on the crowdsourcing social platform <ref type="bibr" target="#b38">(Satzger et al., 2013)</ref>. The interesting idea of social network crowdsourcing introduced by Schall et al. ( <ref type="formula">2014</ref>) is a different vision of the future of crowdsourcing. The authors assumed that, on a global scale, Ba clique in a social network is more likely to efficiently work on collaborative tasks than a group of random workers <ref type="bibr">( Schall et al., 2014, p. 13)</ref>. In a comparison with the social network vision, the one presented in this paper is based on the commonest marketplace form of crowdsourcing where the size of tasks is well designed for assigning them to individuals. In a knowledge-intensive crowdsourcing situation, the consideration on selecting participants with an appropriate level of knowledge and skills has a higher priority than the consideration on the collaboration between crowdsourcing participants.</p><p>Selecting the best-fit crowdsourcing participant from a group of candidates is a typical Multiple Attribute Decision Making (MADM) problem <ref type="bibr" target="#b19">(Hwang and Yoon, 1985)</ref> in which decision-making is for selecting the most appropriate one from many feasible solutions. Algorithms for decision-making have a rich literature in management and operations research, economics, and several areas of computer science including machine learning, theory of algorithms, and artificial intelligence. Analytical Hierarchical Process (AHP) <ref type="bibr" target="#b37">(Saaty, 1980)</ref> is one of the most outstanding MADM methods, which first estimates the relationship among criteria weight and then the total value of each choice based on the obtained weight <ref type="bibr" target="#b32">(Ngai and Chan, 2005)</ref>. Essentially, the calculation process using AHP comprises of three stages: <ref type="bibr" target="#b40">(Sekhar et al., 2015)</ref> 1. Hierarchical structure creation of the decision problem. 2. Pair wise judgments via a structured questionnaire that yield relative priorities (local weights) on the identified criteria. 3. Synthesis of the relative priorities (local weights) into the global priorities (global weights) that lead to the selection of the final decision.</p><p>The Technique for Order of Preference by Similarity to Ideal Solution (TOPSIS) is another outstanding MADM method, which is based on the concept that the best choice should have the shortest Euclidean distances from the positive ideal and the farthest from the negative ideal <ref type="bibr" target="#b19">(Hwang and Yoon, 1985)</ref>. The ranking of alternatives is based on the shortest distance from the positive ideal solution (PIS) and the farthest from the negative ideal solution (NIS). The calculation process of TOPSIS comprises of the following steps: <ref type="bibr" target="#b21">(Jamali and Tooranloo, 2009)</ref> 1. Compute the normalized decision matrix. 2. Calculate the weighted normalized decision matrix. 3. Determine the PIS and NIS. 4. Calculate the separation measures, using the ndimensional Euclidean distance. 5. Calculate the relative closeness to the ideal solution. 6. Rank the preference order.</p><p>AHP and TOPSIS can be used in combination <ref type="bibr" target="#b34">(Patil and Kant, 2014;</ref><ref type="bibr" target="#b26">Lin et al., 2008)</ref> where AHP is used to calculate the weights of the parameters and these weights are later used in TOPSIS. A drawback of TOPSIS method is its linear variation of each alternatives, which cannot provide an accurate ranking between two alternatives that have the same distances to the ideal. This problem can be solved by Grey Relational Analysis (GRA) which is an effective method to solve decision making problems by generalizing estimates under limited samples and uncertain conditions <ref type="bibr" target="#b6">(Deng, 1989)</ref>. GRA is a kind of flexible measurement of curve similarity. By using GRA, the nonlinear relationship between the sequences of each alternative can be well reflected, which can compensate the inaccuracy problem of TOPSIS method. AHP-TOPSIS based on GRA has been proved to be useful in solving MADM problems (eg <ref type="bibr" target="#b4">Chen, 2004;</ref><ref type="bibr" target="#b33">Oztaysi, 2014)</ref>.</p><p>Despite the vast scope of the existing work on algorithms for decision-making, crowdsourcing brings an array of domain-specific challenges that require novel solutions. Formulating an algorithm with well-specified objectives, allowing researchers to propose novel solutions and techniques that can be easily compared, leading to a deeper understanding of the underlying issues <ref type="bibr" target="#b41">(Slivkins and Vaughan, 2013)</ref>. In this study, an AHP-TOPSIS based on GRA algorithm is employed for estimating crowdsourcing participants for given tasks on both isolated platforms and a network of marketplaces to allow for a comparison on their efficiency.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4">Estimation algorithm for knowledge-intensive crowdsourcing</head><p>In this section an algorithm of AHP-TOPSIS based on GRA is proposed for estimating crowdsourcing participants. This algorithm is specified for the decision-making in selecting participants for knowledge-intensive tasks. The final output of this algorithm is a ranking of participants for a certain tasks. The accuracy and efficiency of this algorithm is validated by testing it on a Chinese crowdsourcing marketplace's log data of 5 years.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.1">Overview of the estimation algorithm</head><p>This algorithm has the following three phases.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.1.1">Phases 1: identifying estimation parameters</head><p>The estimation parameters used by an algorithm should be quantitative, otherwise they cannot be calculated. In addition, the data of parameters should be public accessible, otherwise the information aggregation will have a high cost. In the use of this estimation algorithm, there are two underlying assumptions. The first one is that task providers and candidate participants do not know each other in their actual life. This means that a task provider makes his or her decision of selection only based on the related candidate participants' information that is publicly available online. The second one is that task providers will insist on looking for the best-fit participant rather than shifting to other strategy like choosing the first acceptable candidate. This means that all related candidate participants should be involved in the consideration during the decision-making. In a typical marketplace crowdsourcing model, participants' online information comes from either their online profiles or the proposals that they submitted to the task. Both these two sources of information are involved in the formulation of the estimation parameters in this study. Afterwards, the parameters that cannot be quantitated has to be ignored, and the parameters that reflect the same aspect should be merged. At the end, parameters are categorized into benefit parameters (the larger the value is, the better the solution is) and cost parameters (the smaller the value is, the better the solution is).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.1.2">Phase 2: using AHP to calculate the weight of parameters</head><p>In AHP, the multi-attribute weight measurement is calculated via pair-wise comparison of the relative importance of two factors. Assuming that there are N number of decision parameters, denoted as (P 1 , P 2 , ⋯, P n ), its judgment matrix would be A = [a n ], in which a n represents the relative importance of P 1 and P 2 . Using the row vector average normalization proposed by <ref type="bibr" target="#b37">Saaty (1980)</ref>, the weight of P i is calculated as:</p><formula xml:id="formula_0">W i ¼ ∏ n j¼1 a i j !1 n X n i¼1 ∏ n j¼1 a i j !1 n i; j-1; 2; ⋯; n 4.1.</formula></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3">Phase 3: using GRA-based TOPSIS to estimate participants</head><p>In this phase the algorithm has the following ten steps.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.">Normalizing of Initial decision matrix</head><formula xml:id="formula_1">X = (x ij ) m × n , get the normalization matrix Z = (z ij ) m × n . (i = 1, 2, ⋯, m; j = 1, 2, ⋯ n)For benefit parameters: Z i j ¼ x i j -min i x i j max i x i j -min i x i j<label>ð1Þ</label></formula><p>For cost parameters:</p><formula xml:id="formula_2">Z i j ¼ max i x i j -x i j max i x i j -min i x i j<label>ð2Þ</label></formula><p>2. Calculating the weighted decision matrix</p><formula xml:id="formula_3">S = (s ij ) m × n , (i = 1, 2, ⋯, m; j = 1, 2, ⋯ n). S i j ¼ w i j z i j</formula><p>3. Calculating the positive ideal solution S + and negative ideal solution</p><formula xml:id="formula_4">S - S þ ¼ s þ 1 ; s þ 2 ; ⋯; s þ n À Á ; S -¼ s - 1 ; s - 2 ; ⋯; s - n À Á Where s þ j ¼ max i s i j ¼ w j ; s - j ¼ min i s i j ¼ 0; i = 1, 2, ⋯, m; j = 1, 2, ⋯, n. 4.</formula><p>Calculating the Euclidean distance between each solution and positive/negative ideal solution d i</p><formula xml:id="formula_5">+ , d i - d þ i ¼ ffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffi X n j¼1 s i j -s þ j 2 v u u t ; d - i ¼ ffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffi ffi X n j¼1 s i j -s - j 2 v u u t</formula><p>Where i = 1, 2, ⋯, m; j = 1, 2, ⋯, n. 5. Calculating the grey relation coefficient matrix of each solution and positive/negative ideal solution L + , L -:</p><formula xml:id="formula_6">L þ ¼ l þ i j mÂn ; L -¼ l - i j mÂn Where l þ i j ¼ min i min j s þ j -s i j þ θ max i max j s þ j -s i j s þ j -si j j jþθ max i max j s þ j -s i j l - i j ¼ min i min j s - j -s i j þ θ max i max j s - j -s i j s - j -s i j þ θ max i max j s - j -s i j</formula><p>Where θ ∈ (0, 1), is distinguishing coefficient, Here the value of θ is set to be 0.5.Then the formulas can be simplified as</p><formula xml:id="formula_7">L þ i j ¼ θ z i j -1 j j þθ; L - i j ¼ θ z i j þ1 j j þθ 6.</formula><p>Calculating the grey relation grade of each solution and positive/negative ideal solution l i</p><formula xml:id="formula_8">+ , l i - : l þ i ¼ 1 n X n j¼1 l þ i j ; l - i ¼ 1 n X n j¼1 l - i j 7. Applying nondimensionalization to d i + , d i - , l i + and l i - D þ i ¼ d þ i max i d þ i ; D - i ¼ d - i max i d - i L þ i ¼ l þ i max i l þ i ; L - i ¼ l - i max i l - i</formula><p>Where i = 1, 2, ⋯, m 8. Calculating the relative closeness degree:</p><formula xml:id="formula_9">P þ i ¼ D þ i D þ i þ D - i ; U þ i ¼ L þ i L þ i þ L - i 9. Combining P i + and U i + : Q i + = v 1 P i + + v 2 U i +</formula><p>Where v 1 and v 2 reflect the degree of preference of decision makers, v 1 + v 2 = 1, and v 1 = v 2 = 0.5 Sorting solutions by the value of Q i + . The better Q i + is, the better the solution is, and vice versa. max(Q i + ) is the final decision.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.2">Identifying and weighing parameters</head><p>Phase 1 in applying the proposed estimation algorithm is to identify the parameters that are used in the algorithm. This study extends the previous work presented in <ref type="bibr" target="#b14">(Gong, 2015)</ref> by taken the divers settings of many crowdsourcing marketplaces into account. Crowdsourcing marketplaces on the Internet are countless. There is no a global ranking or index of online crowdsourcing marketplaces, and it is not possible to exhaustively investigate every crowdsourcing marketplace around the world. Therefore, it is very difficult to capture all pertinent aspects of participants and their proposals in a single coherent model <ref type="bibr" target="#b41">(Slivkins and Vaughan, 2013)</ref>. Instead of proposing a novel model, an analysis on a list of sustainable crowdsourcing marketplaces allows for the identification of a core subset of those aspects. This study chooses 8 sustainable crowdsourcing marketplaces as a sample, including 4 marketplaces with an English user interface and the rest with a Chinese user interface. Those marketplaces are AMT, InnoCentive, Crowd Flower, Upwork (merged from oDesk and Elance), TaskCN (www.taskcn.com), Epweike (www. epweike.com), Zhubajie (www.zhubajie.com), and 680 (www.680.com). They are considered to be sustainable as they have bee existing for a considerable long period of time and they are still running at the time of writing this paper.</p><p>An analysis on what information each of the 8 crowdsourcing marketplaces use in the description of candidates and their proposals to a task results in 12 distinct aspects. This analysis also indicates the common information that is available to task providers in their decision-making for selecting crowdsourcing participants. The following table provides an overview of these 12 aspects and the number of marketplaces which use them in the description of participants and proposals.</p><p>In Table <ref type="table">1</ref>, 7 common aspects are identified, as they are used by more than half of the 8 marketplaces. These aspects are more likely to be found in the public assessable information provided by a crowdsourcing marketplace. Focusing on these aspects would ease the information aggregation among a network of crowdsourcing marketplaces. At the same time, the rest 5 aspects are considered to be less representative. The 7 common aspects are therefore selected for formulating the parameters in the application of the proposed algorithm.</p><p>However, not all the 7 aspects can be directly used as parameters for the estimation algorithm. 4 of them need to be operationalized and preprocessed. First of all, task providers are able to give a customer satisfaction rate to each completed task. A customer satisfaction rate can only indicate the quality of a certain completed task. To reflect the general level of quality of tasks that are completed by a crowd worker, a 'mean value of customer satisfaction rate' should be used. Secondly, the total volume of trade cannot reflect the actual capability in completing a knowledge-intensive task in some situations. For example, a candidate who has completed 1000 general tasks of 1 US dollar will have a higher total volume of trade than someone who has finished 5 knowledge-intensive tasks of 100 US dollar. Therefore, the 'mean value of trade' would be a more precise indicator of a crowd worker's experience in completing knowledge-intensive tasks. It is easy to calculate the mean value of trade, given the total volume of trade and the number of completed tasks are available. Thirdly, the proposed price only reflects the expectation of a candidate. Research on biding in and knowledge-intensive crowdsourcing has indicated that proposed price itself did not contribute to crowdsourcing task success <ref type="bibr" target="#b12">(Gefen et al., 2015)</ref>. A decision-making on selecting the participant for a complex and valuable knowledge-intensive task has a concern on the quality assurance. For example, the task provider might not choose a candidate whose bidding price is very much lower than his expectation, as such a low proposed price causes his worry on the task delivery. It is meaningless to directly compare the proposed prices from different candidates without a consideration on the expected price from the task provider. Instead, the difference between the proposed price from a candidate and the expected price given by the task provider is more important in the decision-making. Therefore, the proposed price should be processed into 'discrepancy rate between the proposed price and task provider's expectation'. Finally, for the same reason, proposed duration should also be processed into the 'discrepancy rate between the proposed duration and task provider's expectation'.</p><p>An explanation of all the parameters and their units of measurement (if necessary) is given in the following list. discrepancy between the proposed price from a candidate and the expected price from the task provider in a form of percentage. &amp; P7-discrepancy rate between the proposed duration and the task provider's expectation (in percentage): The discrepancy between the proposed duration from a candidate and the expected duration from the task provider in a form of percentage.</p><p>Within these 7 parameters, it is easy to recognize that P1 to P5 are benefit parameters and P6 and P7 are cost parameters.</p><p>To be able to weight those identified parameters with the AHP method in the next phase, a hieratical relationship between the parameters needs to be built. The 7 parameters are derived from 7 most common aspects mentioned in Table <ref type="table">1</ref> and they reflect different attributes of a candidate. 'Skill matching rate' and 'skill test score' are the indicators to the level of required skills of a candidate, while 'mean value of trade', 'number of completed tasks' and 'mean value of customer satisfaction rate' actually reflect the crowdsourcing experience of a candidate. 'Discrepancy rate between the proposed price and the task provider's expectation' and 'discrepancy rate between the proposed duration and the task provider's expectation' are apparently about the proposal that is submitted by a candidate. A hieratical model of the parameters is able to be created (see Fig. <ref type="figure">1</ref>).</p><p>With the above hieratical relationship of the 7 parameters, it is able to move to the second phase: weighting those identified parameters with the AHP method. To simplify the discussion, the three parameters on the second level in the above figure are assumed to be equally important in the decision-making for selecting a candidate. This assumption can be formulated as:</p><formula xml:id="formula_10">Weight Skill ð Þ: Weight Experience ð Þ: Weight Proposal ð Þ¼1 : 1 : 1</formula><p>For the same reason, the leaf parameters that are under the same patent are also assumed to be equally important with each other. This assumption can be formulated as:</p><formula xml:id="formula_11">Weight P1 ð Þ : Weight P2 ð Þ ¼ 1 : 1; Weight P3 ð Þ : Weight P4 ð Þ : Weight P5 ð Þ ¼ 1 : 1 : 1; Weight P6 ð Þ : Weight P7 ð Þ ¼ 1 : 1</formula><p>Supporting these two assumptions requires further investigation and scientific research on the process and impact factors of decision-making, and it is out of the scope of this study. It is worth to mention that this subjective setting on the importance of the second and third level of parameters will not influence the algorithm itself but the accuracy of the computation result. An evaluation of the algorithm in a later stage indicates that these assumptions are reasonably acceptable.</p><p>Based on the above setting of importance, we are able to build the initial AHP judgment matrix of each parameter (see Table <ref type="table" target="#tab_1">2</ref>).</p><p>By using the above matrix, the weight of P1 to P7 can be achieved: ωi ¼ 0:159776593; 0:159776593; 0:120297876; 0:120297876; 0:120297876; 0:159776593; 0:159776593 ð Þ</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.3">Validation of the algorithm</head><p>In order to evaluate the proposed algorithm on its accuracy and efficiency in estimating crowdsourcing participants, an experiment was carried out on data from a popular Chinese crowdsourcing marketplace, Epweike. This experiment used the proposed algorithm to estimate crowdsourcing participants of certain tasks, and then the estimation result was compared with the actual selection decision made by the task provider. This comparison allows for an analysis on the accuracy of the method and the impact of the number of candidates on the actual decision-making which reflects the efficiency of this method.</p><p>In this experiment, a dataset of 348 valid and completed tasks between 2010 and 2015 for IT services crowdsourcing is used. The content of those task includes software/mobile application development, website construction, database and system design, server maintenance, etc. In those tasks the number of openly visible proposals is more than 3. Tasks that have less than 4 proposals were ignored, because the GRAbased TOPSIS method does not return a meaningful ranking result when the number of candidates is less than 4.</p><p>To demonstrate how the third phase of this algorithm is implemented, the calculation of Task X is given as an example. This task has 23 candidate participants and 18 openly available proposals. The other 5 proposals are closed and only visible to the task provider, and therefore those 5 participants are not taken into account in the experiment. The best one is identified from the rest 18 candidates by using the GRA-based TOPSIS method. Through the calculation, the final value of Q i + of Task X is presented in Table <ref type="table" target="#tab_2">3</ref>. By descending the order of Q i + , a ranking of participants of Task X can be achieved.</p><p>According to the result presented in Table <ref type="table" target="#tab_3">4</ref>, the best candidate for Task X, by the proposed method of estimation, is Participant 10. The values of each of its parameters are: P 10 ¼ 0:93; 100; 0:86; 10; 8000; 0%; 0% ð Þ But the subjective choice made by the task provider is Participant 1, and the values of its parameters are: P 1 ¼ 0:82; 100; 0:6; 2; 4500; 1%; 5% ð Þ</p><p>In this example, the estimation result is not matchable with the actual selection result.</p><p>In this experiment, Phase 3 was repeated on all the 348 tasks. Then the result of the estimation was compared with the actual selection made by the task provider to find out whether they are matchable. A metric of matching rate is used to indicate the percentages of matchable tasks. In this experiment, the overall matching rate is 87 % (303 out of 348 tasks). The matching rates under different number of participants are presented in Table <ref type="table" target="#tab_4">5</ref>.</p><p>The matching rates presented in Table <ref type="table" target="#tab_4">5</ref> indicate that the proposed method has a high accuracy when the number of participants is between 4 and 10. There are 248 tasks (71.26 % of the total 348 tasks) fall into this range and the matching rates are above 90 %. Specially, in the simplest situation where only 4 participants competing a task, the estimation result is 100 % matched with the manual decisionmaking. This means the proposed method can achieve an estimation result that is very similar with the manual decision-making, when the manual decision-making is simple and the information overload problem does not appear.</p><p>Technically speaking, the accuracy of this method will not be influenced by the number of participants. However, the matching rates generally declines along with the increase of participants (see Fig. <ref type="figure" target="#fig_0">2</ref>). A possible explanation is that when the number of participants increase, it is more difficult to manually identify the bestfit participant. The task provider might have to rely on its own experience or even instinct in the decisionmaking for participant selection rather than an objective comparison between candidates. When the number of participants is more than 60, manually identifying the best-fit participant becomes very difficult and the actual selection result deviates very much from the estimation result, which results in matching rates below 33 %. The following curve demonstrates the decline of the matching rate. Under the assumption that the accuracy of manual decision-making is mainly and negatively  influenced by information overload, the proposed method could solve this problem and improve the decisionmaking for crowdsourcing tasks with a large number of participants. To solidly prove this statement, investigation on the factors that impact manual decision-making for selecting crowdsourcing participants is desired in the future.</p><formula xml:id="formula_12">P1 P2 P3 P4 P5 P6 P7 P1 1 1 3/2 3/2 3/2 1 1 P2 1 1 3/2 3/2 3/2 1 1 P 3 2 / 3 2 / 3 1 1 1 2 / 3 2 / 3 P 4 2 / 3 2 / 3 1 1 1 2 / 3 2 / 3 P 5 2 / 3 2 / 3 1 1 1 2 / 3 2 / 3 P6 3/2 3/2 3/2 3/2 3/2 1 1 P7 3/2 3/2 3/2 3/2 3/2 1 1</formula><p>By using real-world data, the experiment on the proposed algorithm of AHP-TOPSIS based on GRA demonstrate its effectiveness and accuracy in the decisionmaking for selecting the best-fit crowdsourcing participant. This algorithm is useful especially in a situation with a large number of candidates. Although this algorithm is tested on in a standalone marketplace environment, it can also be used in a network of crowdsourcing marketplaces environment, if the information of candidates can be aggregated from different marketplaces. This algorithm provides a technical tool that allows for a further study on the proposed hypothesis in a network of marketplaces environment.</p><p>However, accessing data of the 7 parameters on different crowdsourcing marketplace platforms require a sufficient level of interoperability between those marketplaces. IEEE defines interoperability as Bthe ability of two or more systems or components to exchange information and to use the information that has been exchanged^( <ref type="bibr">IEEE, 1990, p. 114)</ref>. The interoperability in a network of crowdsourcing marketplace is essential to ensure the openness of data and operation across platforms. According to the maturity levels of interoperability that is defined by <ref type="bibr" target="#b22">Janssen et al. (2014)</ref>, aggregation of information of the 7 parameters requires a semantic interoperability-interpreting information of those parameters in the same way even if they named differently in different marketplace, while the distribution and manage of tasks (including commenting and evaluating completed tasks) on different marketplaces requires pragmatic interoperability-organizational and collaborative aspects of quality and trust.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5">Participants estimation in a network of crowdsourcing marketplaces</head><p>This study aims at investigating the hypothesis that Bconducting knowledge-intensive tasks in a network of crowdsourcing marketplaces results in higher customer satisfaction than doing so in isolated marketplaces^. At the time when conducting this study, a network of interoperable crowdsourcing marketplaces was not yet available to perform tests with real data. Therefore, a synthetic dataset that represents a network of crowdsourcing marketplaces situation is generated for the study on the proposed hypothesis. Based on generated dataset, situations of conducting tasks in isolated crowdsourcing marketplaces and situation of conducting tasks in a network of crowdsourcing marketplaces can be simulated. In the experiment presented in this section, the algorithm of AHP-TOPSIS based on GRA is used as a tool to explore different situation. And then the comparison of the results from different situation can verify the hypothesis.  </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.1">A dataset for simulating a network of crowdsourcing marketplaces</head><p>In order to simulate a network of crowdsourcing marketplaces that allows for an application of the proposed algorithm, a dataset is generated using Matlab according to the following arrangements.</p><p>&amp; Assume that there is a network consisting 10 crowdsourcing marketplaces. &amp; In each simulation, the number of tasks within the network is randomly generated between 1 and 500. &amp; In each task, the number of candidates is randomly generated between 1 and 500. &amp; For each candidate, the value of P1, P2, P6 and P7 is randomly generated between 0 and 100 %. &amp; For each candidate, the initiate value of P3 is randomly generated between 0 and 100 %. &amp; For each candidate, the initiate value of P4 is randomly generated between 1 and 100. &amp; For each candidate, the initiate value of P5 is randomly generated between 0 and 1000. &amp; For each task, an instant customer satisfaction rate (SCR) is randomly generated between 0 and 100 %.</p><p>In total, this experiment contains 100 simulations. It is worth to mention that although the value of P1, P2, P6 and P7 is randomly generated in each simulation, starting from the second simulation, the value of P3, P4, and P5 of the participant selected in the last simulation will be changed by the superposition of the current value and the data generated by the last simulation. For example, if a participant Y was selected to complete the task and the task has its SCR, then in the next simulation, the value of P3 of Y is a superposition of the initiate value of P3 and the SCR that Y received in the last simulation. This allows for a simulation of the development and growing up of crowd workers. The more simulations are conducted, the better the dataset is.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.2">Estimation of participant</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.2.1">Initial matrix of isolated marketplaces</head><p>In this experiment, an assumption is that all participants are working in only one marketplace. This means a participant will not submit more than one proposal. In reality, a candidate might try to submit multiple proposal (often by using different IDs) to increase the chance of win. This situation is not taken into account in this experiment. By the AHP-TOPSIS based on GRA algorithm, the local best-fit participant of each task on each isolated marketplace can be estimated and selected, and the SCR for the task can be generated. Through the calculation, a matrix of crowdsourcing participants on all the marketplaces can be created:</p><formula xml:id="formula_13">M i T j ¼ P i j ; Q þ i j ; SCR i j</formula></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Where</head><p>Mi is the marketplace i, i = 1,......,10. Tj is the task j, j = 1,......,n. Pij is the selected participant in task j, marketplace i.</p><formula xml:id="formula_14">Q + ij</formula><p>is the value Q + of the selected participant in task j, marketplace i. SCRij is the customer satisfaction rate of the selected participant in task j, marketplace i. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.2.2">Matrix of a network of marketplaces</head><p>In order to simulate the situation of a network of marketplaces, this experiment transforms the data from the matrix of isolated marketplaces into the one of a networked marketplaces. The transformation progress is described as the following: Based on the matrix transformation above, the matrix of a network of marketplaces is:</p><formula xml:id="formula_15">MT j ¼ P J ; MaxQ þ j ; SCR j</formula><p>For example, for Task1 in 5 different marketplaces (i = 1,…,5, j = 1), the initial matrix of isolated marketplaces are: M 1 T 1 = (11, 0.504601337,73.33 %) M 2 T 1 = (8, 0.863986991,72 %) M 3 T 1 = (23, 0.507368043,65.25 %) M 4 T 1 = (5, 0.501450868,64 %) M 5 T 1 = (32, 0.621388498,61.11 %)</p><p>The maxQ + ij is 0.863986991 in M 2 T 1 . So the Pij = 8 and SCRij = 72 % are chosen from M 2 T 1 and combined the maxQ + ij as the new matrix representing a network of those marketplaces: MT 1 = (8, 0.863986991,72 %)</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.3">Result analysis</head><p>There are in total 100 the simulation in this experiment. The number of tasks in a simulation are between 10 and 500. In each simulation there is a comparison between the situation of isolated marketplaces and the situation of networked marketplace. For space reason, only the details in Simulation 1 is given as an example.</p><p>In Simulation 1, there are 10 marketplaces from M 1 to M 10 and 500 tasks from T 1 to T 500 .</p><p>Thus,</p><formula xml:id="formula_16">M i T j = (P ij , Q + ij , SCR ij ), i = 1, … …, 10; j = 1, … …, 500</formula><p>The best participant of each task on every marketplace is known by applying the estimation algorithm. Based on the initial matrix of isolated marketplaces and the matrix of a network of marketplaces, by selecting the maxQ + ij , the best participant of each task in a network of marketplaces can also be identified. In order to verify the hypothesis that deploying task in a network of marketplaces results in higher customer satisfaction than in isolate marketplaces, the SCR is employed to measure the efficiency. SCR reflects the customer satisfaction rate of task provider, and it indicates to what extend a crowdsourcing task has been successfully completed. A high SCR also means the task provider made a right decision in selecting the crowdsourcing participate.</p><p>%For matrix MT j , first find the maximal value of Q + ij in different marketplaces, and choose it as the Q + j in the new matrix; then find the matrix which has the maxQ + ij , and choose the value 'P ij ' and 'SCR ij ' as the value 'P j ' and 'SCR j ' in the new matrix.% For j=1:n MT j =(P j , Q + j , SCR j ) % MT j is the matrix of network marketplace.% For i=1:10</p><formula xml:id="formula_17">Q + j =maxQ + ij % Get the maximal Q + ij</formula><p>among different marketplaces and assign its value to the Q + j in the network marketplace.%</p><p>Find M i T j =(P ij ,maxQ + ij ,SCR ij ) %Find the matrix which has the maxQ</p><formula xml:id="formula_18">+ ij If Q + j =maxQ + ij P j =P ij SCR j =SCR ij</formula></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>End</head><p>For the whole 500 tasks in this example, the higher the mean value of SCR is, the better the quality of selection is, while the lower the variance of SCR is, the higher the stability of selection is.</p><p>To allow for a focus on SCR, the matrix MT j can be simplified by the following operation.</p><p>For this example experiment, the calculation results are listed as the following: R i = (0.493651418 0.480351667 0.489786131 0.514644481 0.488365109 0.500576404 0.485454964 0.479718389 0.505378207 0.507681448) R1 = 0.494560822 R2 = 0.500565276 V i = (0.080410458 0.079033747 0.085378209 0.079256614 0.085445299 0.082321288 0.086333093 0.08560183 0.082304576 0.084790464) V1 = 0.083087558 V2 = 0.07958054 In a comparison between R1 and R2, and between V1 and V2: R1 &lt; R2, it means the quality of selection in a network of marketplaces is better than that in isolated marketplaces; V1 &gt; V2, it means the stability of selection in a network of marketplaces is better than that in isolated marketplaces.</p><p>The above description is the data analysis for one simulation. The same process of calculation is repeated in the rest simulation, and the matrix of results from all the 100 simulations is created (see Table <ref type="table" target="#tab_6">6</ref>).</p><p>To be more intuitional on the mean difference between R1 and R2, a statistical chart of it is given in Fig. <ref type="figure" target="#fig_1">3</ref>. Out of the 100 simulations, positive difference between R1 and R2 (R2 &gt; R1) is accounted for 89 %. This means that the participant who is selected from a network of marketplaces is more likely to get a higher customer satisfaction rate than the one who is selected from isolated marketplaces.</p><p>Another statistical chart can also be created for showing the difference between V1 and V2 (see Fig. <ref type="figure" target="#fig_2">4</ref>). Negative difference between V1 and V2 (V2 &lt; V1) is accounted for 93 % out of the 100 simulations. It means that the participant who is selected from a network of marketplaces is more likely to have a higher stability of customer satisfaction than the one who is selected from isolated marketplaces.</p><p>The above statistical analysis on the mean and variance difference indicates that estimating and selecting participants for knowledge-intensive tasks from a network of crowdsourcing marketplaces is more likely to have a higher customer satisfaction in a comparison with doing that in isolated crowdsourcing marketplaces by using the same algorithm and parameters. This finding support the hypothesis proposed in Section 2 that Bdeploying knowledge-intensive tasks in a network of crowdsourcing marketplaces results in higher customer satisfaction than doing so in isolated marketplaces^.  </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6">Conclusion and discussion</head><p>The focal point of this study is a network of crowdsourcing marketplaces that enables prosperous knowledge-intensive crowdsourcing in the future. Networked crowdsourcing marketplaces are expected to provide a greater diversity of expertise and a larger scale of crowd. Although such a network of crowdsourcing marketplaces is not currently existing at the time of doing this research, a hypothesis that it is better in supporting knowledge-intensive crowdsourcing than current isolated marketplaces environment has led to a discussion of the limitations of current knowledge-intensive crowdsourcing and a envision of the future crowdsourcing marketplaces.</p><p>Based on prior research on a standalone crowdsourcing marketplace, an algorithm for estimating crowdsourcing task participants has been redesigned to adapt to networked marketplaces environment. A synthetic dataset that represents the situation of a network of crowdsourcing marketplaces is generated to allow for an application of the algorithm to explore the efficiency of conducting knowledge-intensive crowdsourcing tasks in this network. The analysis on the experiment results supports the hypothesis and indicates that conducing knowledge-intensive tasks in a network of marketplaces would have a higher customer satisfaction. This study is novel, and to the knowledge of the author, it is the first one towards to the situation of a network of crowdsourcing marketplaces. The finding of this study advocates the development of a network of crowdsourcing marketplaces to fully open up the potential of knowledge-intensive crowdsourcing.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6.1">Practical and theoretical implications</head><p>Conducting knowledge-intensive crowdsourcing often relays on sophisticated online crowdsourcing platforms, no matter in a standalone marketplace or in a network of marketplaces. Current online platforms provide general and basic functions and services for task providers to manage request for proposals, selection of task participants and the communication with selected participants in later stages. In a network of crowdsourcing marketplaces, task providers still need the similar functions and services from their crowdsourcing platforms. This study indicates that manual estimation of candidates for knowledge-intensive tasks will encounter the problem of information overload. In a network of crowdsourcing marketplaces environment where the number of candidate participants is expected to be larger, pure manual estimation would hardly work. Therefore, software agents that automatically rank the participants of a task would be indispensable for task providers in selecting suitable participants. In this study the same algorithm is used in both isolated and networked environment. In addition to the verification of hypothesis, the approach of this study also suggests that well designed estimation algorithms that are useful in single crowdsourcing marketplace could be reused in a networked marketplaces environment. From this point of view, sophisticated online crowdsourcing platforms and their intelligent decision support tools and services are the enabler of creating a network of crowdsourcing marketplaces. Crowdsourcing platform is an important factor influencing companies' decision to adopt crowdsourcing <ref type="bibr" target="#b43">(Thuan et al., 2016)</ref>. From practical view, this study provides insight for online crowdsourcing marketplace designers and developers to create more intelligent tools and services for task providers. This research is also valuable to companies interested in expanding their business boundaries by seeking the help of outside experts. The finding indicates that employing multiple crowdsourcing marketplaces is more likely to have task success and consequently higher satisfaction. However, broadcasting request of proposal does not guarantee the success of the task. The statistical analysis of the experiment results also indicates the chance of dissatisfaction to appear. Extant research suggests that many crowdsourcing participants do not  know the identity of task providers and underinvest the time needed to complete a successful task <ref type="bibr" target="#b28">(Mahr et al., 2015)</ref>. This calls for further investigation on the mechanisms for successful task deployment from both task provider and participant perspectives.</p><p>From theoretical view, online crowdsourcing marketplace platforms, and more specifically, intelligent software agents for estimating crowdsourcing participants play a role of mediator. In economy theories of Search Friction, the presence of search and matching cost has important and general implication for how online marketplaces perform their function of allocating supply and demand <ref type="bibr" target="#b30">(Mortensen, 2011)</ref>. This search and matching cost in online crowdsourcing is considered to be caused by information accessing and processing that is required in decision-making <ref type="bibr" target="#b1">(Afuah and Tucci, 2012)</ref>, such as selecting suitable crowdsourcing participants. Another contribution of this study is its attempts to reduce the information accessing cost by the creation of networked marketplaces and to limit information processing cost by using estimation algorithm. In essential, both of these two attempts require a sufficient level of interoperability between marketplaces.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6.2">Limitations</head><p>Coordinating the knowledge-intensive crowdsourcing work in a network of crowdsourcing marketplaces is undoubtedly very complicated. To allow for the simulations of such an environment, this study has greatly simplified the situation. It is inevitable to have limitations caused by this simplification. First of all, this study only discusses crowdsourcing from a task provider's perspective. A network of crowdsourcing marketplaces can also be studied from a crowd worker's perspective and have different insights to this environment. Second, only a one-to-one manner of task-participant matching is taken into account in this study. The search and matching process between tasks and the crowd can have many other forms. For example, matching the work of a whole knowledge-intensive business process to a group of crowd workers will be far more challenging. Third, in the application of the AHP method, this study equally treats the parameters on the same level in the hieratical relationship model. Whether it is optimal to equally assign the weights of parameters turns out to be a need in further investigation into the decision-making process of selecting task participants. Last but not least, this study relies on an underlying assumption that a network of crowdsourcing marketplaces has a sufficient level of interoperability between those marketplaces. There is a great need in addressing the interoperability issues between marketplaces to allow a network of marketplaces to be created. Future research is desired to have more insights into the issues mentioned above.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6.3">Future research</head><p>This study discusses a network of crowdsourcing marketplaces from a task provider's perspective. The main concerns of a task provider are how to disseminate task information to as much potential crowdsourcing participants as possible, and how to evaluate and select suitable participants or even the best-fit one from the candidates who are willing to carry out the task by submitting a proposal. To be addressed in future research, there are many challenges in coordinating the deployment of knowledge-intensive tasks in a network of crowdsourcing marketplaces, including: &amp; Mechanisms that allow for distributing task information among different marketplaces and manage the distribution conveniently; &amp; Identification of a crowd worker in a network of crowdsourcing marketplaces; &amp; Collection of the submission and also the profile (such as skills and experience) of candidates from different marketplaces; &amp; Mechanisms that enable the breakdown of a knowledgeintensive business process into interrelated crowdsourcing tasks and coordinate them in a network of crowdsourcing marketplaces, and so on.</p><p>Alternatively, future research could be conducted from a crowdsourcing participant's perspective. The main concerns of a knowledge worker in a network of crowdsourcing marketplaces are how to find out suitable tasks and how to manage their submissions in different marketplaces. The challenges to be addressed in future research can include the following aspects:</p><p>&amp; Mechanisms that allow for searching tasks in a network of crowdsourcing marketplaces; &amp; Coordination of different submissions distributed in a network of crowdsourcing marketplaces; especially, those tasks exclusive with each other due to the limited availability of the crowdsourcing participant; &amp; Mechanisms that enable/stimulate knowledge workers to participate cross-domain tasks to enable higher level of innovation, and so on.</p><p>Overcoming the above challenges need advanced mediation and analytical tools, while creating openness and interoperability of each marketplace to share and distribute data is another key issue. We are in a very far distance from achieving an open and frictionless network of crowdsourcing marketplaces. The study presented in this paper makes the first attempt to point out research directions of a network of crowdsourcing marketplaces and share the ideas with the Information Systems research community.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>Fig. 2</head><label>2</label><figDesc>Fig. 2 Decline of matching rates along with the increase of participants</figDesc><graphic coords="11,178.02,60.32,366.41,176.43" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>Fig. 3</head><label>3</label><figDesc>Fig. 3 Difference between R1 and R2</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>Fig. 4</head><label>4</label><figDesc>Fig. 4 Difference between V1 and V2</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1"><head>Table 2</head><label>2</label><figDesc>Initial AHP judgment matrix of each parameter</figDesc><table><row><cell>Fig. 1 A hieratical relationship</cell><cell>First Level</cell><cell>Second Level</cell><cell>Third Level</cell></row><row><cell>model of the 7 parameters</cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell></cell><cell>P1: Skill matching rate</cell></row><row><cell></cell><cell></cell><cell>Skill</cell><cell></cell></row><row><cell></cell><cell></cell><cell></cell><cell>P2: Skill test score</cell></row><row><cell></cell><cell></cell><cell></cell><cell>P3: Mean value of customer satisfaction rate</cell></row><row><cell></cell><cell>Parameters</cell><cell>Experience</cell><cell>P4: Number of completed tasks</cell></row><row><cell></cell><cell></cell><cell></cell><cell>P5: Mean value of trade</cell></row><row><cell></cell><cell></cell><cell></cell><cell>P6: Discrepancy rate between the proposed price</cell></row><row><cell></cell><cell></cell><cell></cell><cell>and the task provider's expectation</cell></row><row><cell></cell><cell></cell><cell>Proposal</cell><cell></cell></row><row><cell></cell><cell></cell><cell></cell><cell>P7: Discrepancy rate between the proposed duration</cell></row><row><cell></cell><cell></cell><cell></cell><cell>and the task provider's expectation</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2"><head>Table 3</head><label>3</label><figDesc>Value of Q i + for each participant of Task X</figDesc><table><row><cell>Participants</cell><cell>Q i +</cell><cell>Participants</cell><cell>Q i +</cell></row><row><cell>1</cell><cell>0.504601337</cell><cell>6</cell><cell>0.459536143</cell></row><row><cell>2</cell><cell>0.507368043</cell><cell>7</cell><cell>0.487222997</cell></row><row><cell>3</cell><cell>0.463986991</cell><cell>8</cell><cell>0.499194489</cell></row><row><cell>4</cell><cell>0.521388498</cell><cell>9</cell><cell>0.575854617</cell></row><row><cell>5</cell><cell>0.501450868</cell><cell>10</cell><cell>0.613623483</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_3"><head>Table 4</head><label>4</label><figDesc>A ranking of participants of Task X</figDesc><table><row><cell>Order</cell><cell>Participants</cell><cell>Order</cell><cell>Participants</cell></row><row><cell>1</cell><cell>1 0</cell><cell>6</cell><cell>5</cell></row><row><cell>2</cell><cell>9</cell><cell>7</cell><cell>8</cell></row><row><cell>3</cell><cell>4</cell><cell>8</cell><cell>7</cell></row><row><cell>4</cell><cell>2</cell><cell>9</cell><cell>3</cell></row><row><cell>5</cell><cell>1</cell><cell>10</cell><cell>6</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_4"><head>Table 5</head><label>5</label><figDesc></figDesc><table><row><cell>Matching rates under</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>different number of participants</cell><cell>Number of</cell><cell>Number</cell><cell>Number</cell><cell>Matching</cell><cell>Number of</cell><cell>Number</cell><cell>Number of</cell><cell>Matching</cell></row><row><cell></cell><cell>Participants</cell><cell>of Tasks</cell><cell>of Matched</cell><cell>Rate</cell><cell>Participants</cell><cell>of Tasks</cell><cell>Matched</cell><cell>Rate</cell></row><row><cell></cell><cell></cell><cell></cell><cell>tasks</cell><cell></cell><cell></cell><cell></cell><cell>tasks</cell><cell></cell></row><row><cell></cell><cell>4</cell><cell>65</cell><cell>65</cell><cell>100 %</cell><cell>31</cell><cell>11</cell><cell>7</cell><cell>64 %</cell></row><row><cell></cell><cell>5</cell><cell>55</cell><cell>55</cell><cell>100 %</cell><cell>32</cell><cell>11</cell><cell>8</cell><cell>73 %</cell></row><row><cell></cell><cell>6</cell><cell>24</cell><cell>23</cell><cell>96 %</cell><cell>37</cell><cell>8</cell><cell>5</cell><cell>63 %</cell></row><row><cell></cell><cell>7</cell><cell>18</cell><cell>16</cell><cell>89 %</cell><cell>38</cell><cell>3</cell><cell>2</cell><cell>67 %</cell></row><row><cell></cell><cell>8</cell><cell>61</cell><cell>58</cell><cell>95 %</cell><cell>39</cell><cell>5</cell><cell>3</cell><cell>60 %</cell></row><row><cell></cell><cell>9</cell><cell>15</cell><cell>14</cell><cell>93 %</cell><cell>40</cell><cell>4</cell><cell>2</cell><cell>50 %</cell></row><row><cell></cell><cell>10</cell><cell>10</cell><cell>9</cell><cell>90 %</cell><cell>42</cell><cell>2</cell><cell>1</cell><cell>50 %</cell></row><row><cell></cell><cell>11</cell><cell>5</cell><cell>4</cell><cell>80 %</cell><cell>44</cell><cell>2</cell><cell>1</cell><cell>50 %</cell></row><row><cell></cell><cell>12</cell><cell>7</cell><cell>5</cell><cell>71 %</cell><cell>47</cell><cell>2</cell><cell>1</cell><cell>50 %</cell></row><row><cell></cell><cell>15</cell><cell>4</cell><cell>3</cell><cell>75 %</cell><cell>52</cell><cell>3</cell><cell>2</cell><cell>67 %</cell></row><row><cell></cell><cell>17</cell><cell>5</cell><cell>4</cell><cell>80 %</cell><cell>57</cell><cell>3</cell><cell>1</cell><cell>33 %</cell></row><row><cell></cell><cell>22</cell><cell>5</cell><cell>4</cell><cell>80 %</cell><cell>60</cell><cell>1</cell><cell>0</cell><cell>0 %</cell></row><row><cell></cell><cell>23</cell><cell>4</cell><cell>3</cell><cell>75 %</cell><cell>62</cell><cell>3</cell><cell>1</cell><cell>33 %</cell></row><row><cell></cell><cell>29</cell><cell>8</cell><cell>5</cell><cell>63 %</cell><cell>63</cell><cell>4</cell><cell>1</cell><cell>25 %</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_6"><head>Table 6</head><label>6</label><figDesc></figDesc><table><row><cell>(continued)</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Number of</cell><cell>Isolated</cell><cell></cell><cell>Networked</cell><cell></cell><cell>Mean Difference</cell><cell>VAR Difference</cell></row><row><cell>Tasks</cell><cell>MEAN</cell><cell>VAR</cell><cell>MEAN</cell><cell>VAR</cell><cell>(R2-R1)</cell><cell>(V2-V1)</cell></row><row><cell></cell><cell>(R1)</cell><cell>(V1)</cell><cell>(R2)</cell><cell>(V2)</cell><cell></cell><cell></cell></row><row><cell>353</cell><cell>0.8675</cell><cell>0.0452</cell><cell>0.8015</cell><cell>0.0387</cell><cell>-0.066</cell><cell>-0.0065</cell></row><row><cell>447</cell><cell>0.4142</cell><cell>0.0792</cell><cell>0.5143</cell><cell>0.0343</cell><cell>0.1001</cell><cell>-0.0449</cell></row><row><cell>480</cell><cell>0.5202</cell><cell>0.0457</cell><cell>0.6213</cell><cell>0.0288</cell><cell>0.1011</cell><cell>-0.0169</cell></row><row><cell>278</cell><cell>0.568</cell><cell>0.0828</cell><cell>0.6764</cell><cell>0.0608</cell><cell>0.1084</cell><cell>-0.022</cell></row><row><cell>78</cell><cell>0.7918</cell><cell>0.078</cell><cell>0.989</cell><cell>0.0676</cell><cell>0.1972</cell><cell>-0.0104</cell></row><row><cell>83</cell><cell>0.4388</cell><cell>0.044</cell><cell>0.4938</cell><cell>0.0175</cell><cell>0.055</cell><cell>-0.0265</cell></row><row><cell>136</cell><cell>0.8188</cell><cell>0.0294</cell><cell>0.9133</cell><cell>0.0385</cell><cell>0.0945</cell><cell>0.0091</cell></row><row><cell>422</cell><cell>0.4194</cell><cell>0.0811</cell><cell>0.7869</cell><cell>0.0253</cell><cell>0.3675</cell><cell>-0.0558</cell></row><row><cell>135</cell><cell>0.6258</cell><cell>0.0954</cell><cell>0.7749</cell><cell>0.0174</cell><cell>0.1491</cell><cell>-0.078</cell></row><row><cell>409</cell><cell>0.5146</cell><cell>0.0395</cell><cell>0.6712</cell><cell>0.0195</cell><cell>0.1566</cell><cell>-0.02</cell></row><row><cell>129</cell><cell>0.657</cell><cell>0.0704</cell><cell>0.8564</cell><cell>0.0228</cell><cell>0.1994</cell><cell>-0.0476</cell></row><row><cell>465</cell><cell>0.6892</cell><cell>0.0495</cell><cell>0.8148</cell><cell>0.025</cell><cell>0.1256</cell><cell>-0.0245</cell></row><row><cell>181</cell><cell>0.4724</cell><cell>0.085</cell><cell>0.9374</cell><cell>0.0659</cell><cell>0.465</cell><cell>-0.0191</cell></row><row><cell>106</cell><cell>0.7537</cell><cell>0.0792</cell><cell>0.9291</cell><cell>0.0616</cell><cell>0.1754</cell><cell>-0.0176</cell></row><row><cell>133</cell><cell>0.5357</cell><cell>0.0251</cell><cell>0.5672</cell><cell>0.0147</cell><cell>0.0315</cell><cell>-0.0104</cell></row><row><cell>312</cell><cell>0.6308</cell><cell>0.0876</cell><cell>0.8042</cell><cell>0.0638</cell><cell>0.1734</cell><cell>-0.0238</cell></row><row><cell>242</cell><cell>0.4786</cell><cell>0.0991</cell><cell>0.7498</cell><cell>0.0756</cell><cell>0.2712</cell><cell>-0.0235</cell></row><row><cell>182</cell><cell>0.3699</cell><cell>0.0563</cell><cell>0.5511</cell><cell>0.0764</cell><cell>0.1812</cell><cell>0.0201</cell></row><row><cell>417</cell><cell>0.8336</cell><cell>0.0896</cell><cell>0.5743</cell><cell>0.0157</cell><cell>-0.2593</cell><cell>-0.0739</cell></row><row><cell>297</cell><cell>0.675</cell><cell>0.0874</cell><cell>0.7703</cell><cell>0.0629</cell><cell>0.0953</cell><cell>-0.0245</cell></row><row><cell>279</cell><cell>0.5592</cell><cell>0.0941</cell><cell>0.6619</cell><cell>0.0239</cell><cell>0.1027</cell><cell>-0.0702</cell></row><row><cell>459</cell><cell>0.8946</cell><cell>0.0986</cell><cell>0.9381</cell><cell>0.028</cell><cell>0.0435</cell><cell>-0.0706</cell></row><row><cell>150</cell><cell>0.7464</cell><cell>0.0873</cell><cell>0.9896</cell><cell>0.0466</cell><cell>0.2432</cell><cell>-0.0407</cell></row><row><cell>381</cell><cell>0.7515</cell><cell>0.0807</cell><cell>0.8381</cell><cell>0.0774</cell><cell>0.0866</cell><cell>-0.0033</cell></row><row><cell>379</cell><cell>0.6063</cell><cell>0.0843</cell><cell>0.9086</cell><cell>0.0562</cell><cell>0.3023</cell><cell>-0.0281</cell></row><row><cell>196</cell><cell>0.7504</cell><cell>0.0811</cell><cell>0.8736</cell><cell>0.026</cell><cell>0.1232</cell><cell>-0.0551</cell></row><row><cell>288</cell><cell>0.4647</cell><cell>0.0387</cell><cell>0.7249</cell><cell>0.0259</cell><cell>0.2602</cell><cell>-0.0128</cell></row><row><cell>47</cell><cell>0.4689</cell><cell>0.0581</cell><cell>0.9438</cell><cell>0.0721</cell><cell>0.4749</cell><cell>0.014</cell></row><row><cell>36</cell><cell>0.506</cell><cell>0.0181</cell><cell>0.9278</cell><cell>0.0128</cell><cell>0.4218</cell><cell>-0.0053</cell></row><row><cell>270</cell><cell>0.9262</cell><cell>0.0201</cell><cell>0.8907</cell><cell>0.0145</cell><cell>-0.0355</cell><cell>-0.0056</cell></row><row><cell>392</cell><cell>0.3686</cell><cell>0.0523</cell><cell>0.5564</cell><cell>0.0371</cell><cell>0.1878</cell><cell>-0.0152</cell></row><row><cell>468</cell><cell>0.6684</cell><cell>0.0711</cell><cell>0.7566</cell><cell>0.0366</cell><cell>0.0882</cell><cell>-0.0345</cell></row><row><cell>74</cell><cell>0.4135</cell><cell>0.0546</cell><cell>0.4592</cell><cell>0.04</cell><cell>0.0457</cell><cell>-0.0146</cell></row><row><cell>289</cell><cell>0.6552</cell><cell>0.0271</cell><cell>0.9861</cell><cell>0.022</cell><cell>0.3309</cell><cell>-0.0051</cell></row><row><cell>240</cell><cell>0.5876</cell><cell>0.0546</cell><cell>0.8133</cell><cell>0.0483</cell><cell>0.2257</cell><cell>-0.0063</cell></row><row><cell>16</cell><cell>0.4969</cell><cell>0.0233</cell><cell>0.6753</cell><cell>0.0123</cell><cell>0.1784</cell><cell>-0.011</cell></row><row><cell>175</cell><cell>0.5073</cell><cell>0.0149</cell><cell>0.6562</cell><cell>0.0358</cell><cell>0.1489</cell><cell>0.0209</cell></row></table></figure>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Acknowledgments This work is supported by the National Natural Science Foundation of China (Grand No. 71501145).</p></div>
+			</div>
+
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Worker-community: using crowdsourcing to link informal workers with potential clients</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Abascal-Mena</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>López-Ornelas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">S</forename><surname>Zepeda-Hernández</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">E</forename><surname>Gómez-Torrero</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>León-Martagón</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Morales-Franco</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">the 6th International Conference on Social Computing and Social Media</title>
+		<meeting><address><addrLine>Heraklion, Crete, Greece</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+	<note>Paper presented at the</note>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Crowdsourcing as a solution to distant search</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Afuah</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">L</forename><surname>Tucci</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Academy of Management Review</title>
+		<imprint>
+			<biblScope unit="volume">37</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="355" to="375" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Review: knowledge management and knowledge management systems: conceptual foundations and research issues</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Alavi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">E</forename><surname>Leidner</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="107" to="136" />
+			<date type="published" when="2001">2001</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Crowdsourcing as a model for problem solving</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">C</forename><surname>Brabham</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Convergence: The International Journal of Research into New Media Technologies</title>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="75" to="90" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Combining grey relation and TOPSIS concepts for selecting an expatriate host country</title>
+		<author>
+			<persName><forename type="first">M.-F</forename><surname>Chen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Mathematical and Computer Modelling</title>
+		<imprint>
+			<biblScope unit="volume">40</biblScope>
+			<biblScope unit="issue">13</biblScope>
+			<biblScope unit="page" from="1473" to="1490" />
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Factors affecting the practices of external problem solvers in broadcast search</title>
+		<author>
+			<persName><forename type="first">V</forename><surname>Corvello</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Iazzolino</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Technology Management &amp; Innovation</title>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="166" to="177" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Introduction to grey system</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Deng</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Grey System</title>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="1" to="24" />
+			<date type="published" when="1989">1989</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Aggregate demand management in search equilibrium</title>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">A</forename><surname>Diamond</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Political Economy</title>
+		<imprint>
+			<biblScope unit="volume">90</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="881" to="894" />
+			<date type="published" when="1982">1982</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">The dynamics of micro-task crowdsourcing: the case of Amazon MTurk</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">E</forename><surname>Difallah</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Catasta</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Demartini</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">G</forename><surname>Ipeirotis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Cudré-Mauroux</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">24th International Conference on World Wide Web</title>
+		<meeting><address><addrLine>Florence, Italy</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+	<note>Paper presented at the the</note>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Crowdsourcing: a new way of employing non-employees?</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">C</forename><surname>Ford</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Richard</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">P</forename><surname>Ciuchta</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Business Horizons</title>
+		<imprint>
+			<biblScope unit="volume">58</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="377" to="388" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Social networks and Web 3.0: their impact on the management and marketing of organizations</title>
+		<author>
+			<persName><forename type="first">F</forename><forename type="middle">J</forename><surname>Garrigos-Simon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">L</forename><surname>Alcamí</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">B</forename><surname>Ribera</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Decision</title>
+		<imprint>
+			<biblScope unit="volume">50</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page" from="1880" to="1890" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">From crowdsourcing to the use of masscapital: the common perspective of the success of Apple</title>
+		<author>
+			<persName><forename type="first">F</forename><forename type="middle">J</forename><surname>Garrigos-Simon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Narangajavana</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Facebook</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Google</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tripadvisor</forename><surname>Lego</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zara</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Advances in crowdsourcing</title>
+		<editor>
+			<persName><forename type="first">F</forename><forename type="middle">J</forename><surname>Garrigos-Simon</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">I</forename><surname>Gil-Pechuán</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">&amp;</forename><forename type="middle">S</forename><surname>Estelles-Miguel</surname></persName>
+		</editor>
+		<meeting><address><addrLine>Switzerland</addrLine></address></meeting>
+		<imprint>
+			<publisher>Springer</publisher>
+			<date type="published" when="2015">2015</date>
+			<biblScope unit="page" from="1" to="13" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">How project description length and expected duration affect bidding and project success in crowdsourcing software development</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Gefen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Gefen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Carmel</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Systems and Software</title>
+		<imprint>
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Personalized task recommendation in crowdsourcing information systems -current state of the art</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Geiger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Schader</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Decision Support Systems</title>
+		<imprint>
+			<biblScope unit="volume">65</biblScope>
+			<biblScope unit="page" from="3" to="16" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Enabling flexible IT services by crowdsourcing: a method for estimating crowdsourcing participants</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Gong</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Open and big data management and innovation</title>
+		<title level="s">Lecture Notes in Computer Science</title>
+		<editor>
+			<persName><forename type="first">M</forename><surname>Janssen</surname></persName>
+		</editor>
+		<imprint>
+			<publisher>Springer</publisher>
+			<date type="published" when="2015">2015</date>
+			<biblScope unit="volume">9373</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">From policy implementation to business process management: principles for creating flexibility and agility</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Gong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Janssen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Government Information Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">29</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="61" to="71" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Crowdsourcing and the evolution of a business ecosystem</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Guittard</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Schenk</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Burger-Helmchen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Advances in crowdsourcing</title>
+		<editor>
+			<persName><forename type="first">F</forename><forename type="middle">J</forename><surname>Garrigos-Simon</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">I</forename><surname>Gil-Pechuán</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">&amp;</forename><forename type="middle">S</forename><surname>Estelles-Miguel</surname></persName>
+		</editor>
+		<meeting><address><addrLine>Switzerland</addrLine></address></meeting>
+		<imprint>
+			<publisher>Springer</publisher>
+			<date type="published" when="2015">2015</date>
+			<biblScope unit="page" from="49" to="60" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Communitysourcing: engaging local crowds to perform expert work via physical kiosks</title>
+		<author>
+			<persName><forename type="first">K</forename><surname>Heimerl</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Gawalt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">S</forename><surname>Parikh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Hartmann</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">The ACM SIGCHI Conference on Human Factors in Computing Systems</title>
+		<meeting><address><addrLine>Austin, Texas, USA</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<monogr>
+		<title level="m" type="main">The rise of crowdsourcing</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Howe</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+	<note>Wired Magazine</note>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Multiple attribute decision making: methods and applications a state-of-the-art survey</title>
+		<author>
+			<persName><forename type="first">C.-L</forename><surname>Hwang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Yoon</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="s">Lecture Notes in Economics and Mathematical Systems</title>
+		<imprint>
+			<date type="published" when="1985">1985</date>
+			<publisher>Springer-Verlag</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<monogr>
+		<title level="m" type="main">Interoperability. IEEE standard computer dictionary: a compilation of IEEE standard computer glossaries</title>
+		<author>
+			<persName><surname>Ieee</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1990">1990</date>
+			<publisher>Institute of Electrical and Electronics Engineers</publisher>
+			<pubPlace>New York, USA</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Prioritizing academic library service quality indicators using fuzzy approach: case study: libraries of Ferdowsi university</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Jamali</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">S</forename><surname>Tooranloo</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Library Management</title>
+		<imprint>
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="issue">4/5</biblScope>
+			<biblScope unit="page" from="319" to="333" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Interoperability in big, open, and linked data-organizational maturity, capabilities, and data portfolios</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Janssen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Estevez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Janowski</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Computer</title>
+		<imprint>
+			<biblScope unit="volume">47</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page" from="44" to="49" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Marginality and problem solving effectiveness in broadcast search</title>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">B</forename><surname>Jeppesen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">R</forename><surname>Lakhani</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Organization Science</title>
+		<imprint>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="1016" to="1033" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<monogr>
+		<author>
+			<persName><forename type="first">A</forename><surname>Kittur</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">V</forename><surname>Nickerson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">S</forename><surname>Bernstein</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">M</forename><surname>Gerber</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Shaw</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Zimmerman</surname></persName>
+		</author>
+		<title level="m">The 16th ACM Conference on Computer Supported Cooperative Work and Social Computing (CSCW 2013)</title>
+		<meeting><address><addrLine>San Antonio, Texas, USA</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+	<note>The Future of Crowd Work</note>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">Using the crowd as an innovation partner</title>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">R</forename><surname>Lakhani</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Harvard Business Review</title>
+		<imprint>
+			<biblScope unit="volume">91</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="60" to="69" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Using AHP and TOPSIS approaches in customer-driven product design process</title>
+		<author>
+			<persName><forename type="first">M.-C</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C.-C</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M.-S</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">A</forename><surname>Chang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Computers in Industry</title>
+		<imprint>
+			<biblScope unit="volume">59</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="17" to="31" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Examining the antecedent factors of online microsourcing</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Lu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Hirschheim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Schwarz</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Frontiers</title>
+		<imprint>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="601" to="617" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">Enhancing crowdsourcing success: the role of creative and deliberate problemsolving styles</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Mahr</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Rindfleisch</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">J</forename><surname>Slotegraaf</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Customer Needs and Solutions</title>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="209" to="221" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">Towards an information systems perspective and research agenda on crowdsourcing for innovation</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Majchrzak</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Malhotra</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Strategic Information Systems</title>
+		<imprint>
+			<biblScope unit="volume">22</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="257" to="268" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">Markets with search friction and the DMP model</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">T</forename><surname>Mortensen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The American Economic Review</title>
+		<imprint>
+			<biblScope unit="volume">101</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="1073" to="1091" />
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<monogr>
+		<title level="m" type="main">Primary vendor capabilities in a mediated outsourcing model: can IT service providers leverage crowdsourcing? Decision Support Systems</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Nevo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Kotlarsky</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2014">2014</date>
+			<biblScope unit="volume">65</biblScope>
+			<biblScope unit="page" from="17" to="27" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Evaluation of knowledge management tools using AHP</title>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">W T</forename><surname>Ngai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">W C</forename><surname>Chan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Expert Systems with Applications</title>
+		<imprint>
+			<biblScope unit="volume">29</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="889" to="899" />
+			<date type="published" when="2005">2005</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">A decision model for information technology selection using AHP integrated TOPSIS-Grey: The case of content management systems</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Oztaysi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Knowledge-Based Systems</title>
+		<imprint>
+			<biblScope unit="volume">70</biblScope>
+			<biblScope unit="page" from="44" to="54" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title level="a" type="main">A fuzzy AHP-TOPSIS framework for ranking the solutions of Knowledge Management adoption in Supply Chain to overcome its barriers</title>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">K</forename><surname>Patil</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Kant</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Expert Systems with Applications</title>
+		<imprint>
+			<biblScope unit="volume">41</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="679" to="693" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">Equilibrium in the labor market with search frictions</title>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">A</forename><surname>Pissarides</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The American Economic Review</title>
+		<imprint>
+			<biblScope unit="volume">101</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="1092" to="1105" />
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">Task assignment optimization in knowledgeintensive crowdsourcing</title>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">B</forename><surname>Roy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Lykourentzou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Thirumuruganathan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Amer-Yahia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Das</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The VLDB Journal</title>
+		<imprint>
+			<biblScope unit="volume">24</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="467" to="491" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<monogr>
+		<title level="m" type="main">The analytic hierarchy process: planning, priority setting, resource allocation</title>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">L</forename><surname>Saaty</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1980">1980</date>
+			<publisher>Mcgraw-Hill</publisher>
+		</imprint>
+	</monogr>
+	<note>Decision Making Series</note>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<analytic>
+		<title level="a" type="main">Auction-based crowdsourcing supporting skill management</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Satzger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Psaier</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Schall</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Dustdar</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems</title>
+		<imprint>
+			<biblScope unit="volume">38</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="547" to="560" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<analytic>
+		<title level="a" type="main">Crowdsourcing tasks to social networks in BPEL4</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Schall</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Satzger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Psaier</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s11280-012-0180-6</idno>
+	</analytic>
+	<monogr>
+		<title level="j">People. World Wide Web</title>
+		<imprint>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="1" to="32" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<analytic>
+		<title level="a" type="main">A delphi-AHP-TOPSIS based framework for the prioritization of intellectual capital indicators: a SMEs perspective</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Sekhar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Patwardhan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Vyas</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Procedia -Social and Behavioral Sciences</title>
+		<imprint>
+			<biblScope unit="volume">189</biblScope>
+			<biblScope unit="page" from="275" to="284" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<analytic>
+		<title level="a" type="main">Online decision making in crowdsourcing markets: theoretical challenges</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Slivkins</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">W</forename><surname>Vaughan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">ACM SIGecom Exchanges</title>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="4" to="23" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+	<analytic>
+		<title level="a" type="main">Business process flexibility: a driver for outsourcing</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">A</forename><surname>Sommer</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Industrial Management &amp; Data Systems</title>
+		<imprint>
+			<biblScope unit="volume">103</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="177" to="183" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b43">
+	<analytic>
+		<title level="a" type="main">Factors influencing the decision to crowdsource: a systematic literature review</title>
+		<author>
+			<persName><forename type="first">N</forename><forename type="middle">H</forename><surname>Thuan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Antunes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Johnstone</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Frontiers</title>
+		<imprint>
+			<biblScope unit="volume">18</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="47" to="68" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b44">
+	<monogr>
+		<title level="m" type="main">Beyond AMT: an analysis of crowd work platforms</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Vakharia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Lease</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2015">2015. 2015</date>
+			<pubPlace>Newport Beach, CA, USA</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b45">
+	<analytic>
+		<title level="a" type="main">The theory of the firm as governance structure: from choice to contract</title>
+		<author>
+			<persName><forename type="first">O</forename><forename type="middle">E</forename><surname>Williamson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The Journal of Economic Perspectives</title>
+		<imprint>
+			<biblScope unit="volume">16</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="171" to="195" />
+			<date type="published" when="2002">2002</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b46">
+	<analytic>
+		<title level="a" type="main">Knowledge crowdsourcing acceleration</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Bozzon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G.-J</forename><surname>Houben</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">15th International Conference on Web Engineering (ICWE 2015)</title>
+		<meeting><address><addrLine>Rotterdam, the Netherlands</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+	<note>Paper presented at the the</note>
+</biblStruct>
+
+<biblStruct xml:id="b47">
+	<analytic>
+		<title level="a" type="main">TaskRec: a task recommendation framework in crowdsourcing systems</title>
+		<author>
+			<persName><forename type="first">M.-C</forename><surname>Yuen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>King</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K.-S</forename><surname>Leung</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Neural Processing Letters</title>
+		<imprint>
+			<biblScope unit="volume">41</biblScope>
+			<biblScope unit="page" from="223" to="238" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b48">
+	<analytic>
+		<title level="a" type="main">Theories of the firm-market boundary</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Zenger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Felin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">S</forename><surname>Bigelow</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Academy of Management Annals</title>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="89" to="133" />
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b49">
+	<analytic>
+		<title level="a" type="main">Evaluation on crowdsourcing research: current status and future direction</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Q</forename><surname>Zhu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Frontiers</title>
+		<imprint>
+			<biblScope unit="volume">16</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="417" to="434" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b50">
+	<analytic>
+		<title level="a" type="main">Yiwei Gong is an associate professor at the School of Information Management at Wuhan University and a guest researcher at the Faculty of Technology, Policy, and Management at Delft University of Technology. Yiwei serves as a reviewer for prestigious international journals and conferences in the field of Information Systems, and he is an editorial board member of Government Information Quarterly</title>
+		<author>
+			<persName><surname>Dr</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="s">His expertise and research interests include Business Process Management, Enterprise Architecture and Service Innovation</title>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

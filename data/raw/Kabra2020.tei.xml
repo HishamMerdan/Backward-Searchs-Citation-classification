@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Hiring in Online Labor Markets: The Role of Jobspecific Experience Completed Research Paper</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Ashish</forename><surname>Kabra</surname></persName>
+							<email>akabra@rhsmith.umd.edu</email>
+							<affiliation key="aff0">
+								<orgName type="institution">University of Maryland</orgName>
+								<address>
+									<postCode>7621, 20742</postCode>
+									<settlement>Mowatt Ln College Park</settlement>
+									<region>MD</region>
+									<country key="US">United States</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Qingchen</forename><surname>Wang</surname></persName>
+							<email>qcwang@hku.hk</email>
+							<affiliation key="aff1">
+								<orgName type="institution">University of Hong</orgName>
+								<address>
+									<addrLine>Kong K.K. Leung Building Pok Fu Lam Rd Hong Kong SAR</addrLine>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Hiring in Online Labor Markets: The Role of Jobspecific Experience Completed Research Paper</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="MD5">884106B413192FF507827A97CA58EBEF</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.7.3" ident="GROBID" when="2023-06-16T09:24+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>Online labor markets</term>
+					<term>labor economics</term>
+					<term>job-specific experience</term>
+					<term>text mining</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>This paper investigates the role of workers' job-specific experience on employers' hiring decisions in online labor markets. Relying on textual descriptions of job postings and natural language processing techniques, we design a novel metric that measures how well a worker's past experience fits the requirements of a specific job. We show that our job-specific experience metric is a significant predictor of whether the employee will be hired for each specific job, even when accounting for observable worker-and job-level idiosyncratic factors and overall market competition.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Introduction</head><p>With the rise of technology, the workplace is shifting from office to home, and the 9-to-5 job is being shunned in favor of freelancing. According to a 2018 survey by Freelancing In America, 35% of workers in the U.S. are freelancing, contributing more than $1.4 trillion to the economy. The rise in freelancing is mirrored by a rise in online labor markets (OLMs), which, as an online marketplace, facilitates the matching of supply and demand for freelance labor. Similar to most other online marketplaces, OLMs support freelancing by providing information about buyers and sellers through verifying profiles and serving as a third-party mediator for disputes. However, unlike other marketplaces such as ride-hailing and room-sharing, there is considerably more heterogeneity in the buyers' needs and the sellers' offerings, leading to significant challenges in obtaining satisfactory matches for both sides. In a marketplace for exact services such as ride-hailing or manufactured products such as e-commerce, buyers know exactly what they need (e.g., a ride from location A to location B) and sellers know exactly whether or not they are able to satisfy buyers' needs. Consequently, finding the right price is all that is necessary to satisfy both sides. However, in markets for freelancing labor, buyers and sellers are not clear about their needs and offerings, thus significant effort is required to consult additional information and infer the quality of potential matches.</p><p>By better understanding the drivers of matches, OLMs can design new mechanisms and improved recommendation systems to boost match quality and efficiency. This is important because match rates for OLMs are often low--the fraction of job postings by the buyer side that ends up in selecting a seller is only around 40%, despite the fact that there exist many sellers who can be good matches for the job. We posit that this is due to the high search costs incurred from the uncertain requirements, open-ended job posts and the resulting inability for sellers to identify and meet such requirements. A number of papers have studied various aspects of OLMs and identified a number of drivers that play a role in matches, including availability <ref type="bibr">(Horton 2018)</ref>, gender (Wang 2017), nationality/geography <ref type="bibr">(Ghani et al 2014, Hong and</ref><ref type="bibr" target="#b8">Pavlou 2017)</ref>, reputation <ref type="bibr" target="#b13">(Yoganarasimhan 2013</ref><ref type="bibr">, Moreno and Terwisch 2014</ref><ref type="bibr" target="#b10">, Kokkodis and Ipeirotis 2015)</ref>, and price <ref type="bibr" target="#b14">(Yoganarasimhan 2015)</ref>. However, to the best of our knowledge, no papers have investigated the effect of factors that reduce the uncertainty buyers have about sellers' ability to satisfy their needs.</p><p>In this paper we aim to reduce labor market friction by identifying a new driver of successful matches--workers' job-specific experience. This driver helps buyers reduce the uncertainty of sellers' abilities to satisfy their needs and thus increases the likelihood of a quality match. Because buyers' needs are heterogeneous, workers that are experienced and fit for one job may not be suitable for another job. Although it is natural for jobs of different categories or from different industries to have dissimilar needs (OLMs solve this problem by having job categories), buyers' needs may significantly differ even for jobs of the same category and from the same industry. To capture the nuances of jobs within the same category and industry and thus identify workers' job-specific experience, we design a novel metric based on textual descriptions of job postings.</p><p>Labor economists have proposed that job-, or task-specific human capital plays a major role in the labor market <ref type="bibr">(Gibbons and</ref><ref type="bibr">Waldman 2004, 2006)</ref>. Indeed, subsequent papers have found that workers with job-specific experience tend to perform better <ref type="bibr" target="#b2">(Clement et al 2007</ref><ref type="bibr">, Cook and Mansfield 2014</ref><ref type="bibr">, Ahn et al 2020)</ref> and also have increased wages <ref type="bibr" target="#b4">(Gathmann and</ref><ref type="bibr">Schonberg 2010, Stinebrickner et al 2019)</ref>. However, the job-specific experience used in existing papers are often at the industry level, and thus may be too broad to be of use for operational purposes. In particular, one would not expect an accountant to apply for, or win a job in software development.</p><p>Another aspect of job-specific human capital unexplored by labor economists are employers' responses. While previous papers have panel datasets that allow workers to be tracked over time across jobs, it is not observed when a worker applied to another job but failed. If the failed job application is for a job that offers higher wages and future prospects, then previous effects of job-specific human capital on wages are underestimated. OLMs offer the unique opportunity to observe employers' responses and estimate the effect of job-specific human capital on being hired. In this paper we find that indeed employers view greater job-specific experience positively and is more likely to hire experienced workers.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Institutional Background</head><p>We are in collaboration with a large North American online labor market. This OLM hosts millions of buyers and sellers and facilitates over one million matches each year. Jobs are posted on this OLM across over 10 industries (e.g., software development, marketing, translation) and over 50 categories (e.g., web development, lead generation, graphics and design). Job matches are facilitated in the following order:</p><p>1. Buyer posts a job with a written title and description, selects the category and expertise level of the job, and the expected duration;</p><p>2. Sellers apply for the job after finding it from a list of search results based on a self-specified query; the application consists of a written cover letter, price the seller is charging, and the seller's profile and past job performance is visible to the buyer;</p><p>3. Buyer selects sellers to conduct an interview, and eventually selects one or more sellers to work on this job and contracts are formed; most hires are made within 48 hours of when the job is posted.</p><p>Beyond organic job applications from sellers, buyers may also directly invite specific sellers to apply. It is also possible for buyers to offer private jobs to specific sellers without going through the public application process. After a contract is formed, sellers work for the buyer on the agreed-on project, and the buyer pays sellers based on the agreed-upon price. At the termination of the contract both parties may provide a review and rating of the experience.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Data</head><p>Our data comes directly from our industry partner, the North American OLM. In aggregate we combine data from three sources: a table with information about freelancers (i.e., sellers), a table with information about job postings (including which freelancer won the job), and a table with information about job applications (including the charged price). For this paper we analyze job applications that were made for jobs posted between February 1 st , 2018 and July 31 st , 2018 (inclusive). We filter the jobs to include only those that are open for public applications, are in the Web Development category, and pay an hourly wage (as compared to a fixed price). In total, we have 109,020 job postings and 2,525,585 job applications made across 174,282 freelancers. In order to measure freelancers' job-specific experience we also obtain all job postings of jobs that each in our sample won from January 1 st , 2015 to February 1 st , 2018.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Empirical Analysis</head><p>In this section we describe how job-specific experience is measured for each freelancer, and provide the empirical specification used to analyze the effect of job-specific experience on freelancers' likelihood of being hired.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Measuring Job-specific Experience</head><p>We define Job-specific experience as the amount of experience that a freelancer has with respect to the job that he is applying to. Naturally, the exact components of each job (both the freelancer has completed and is currently applying to) cannot be digitized, but the textual descriptions of each job posting do present an overview of what the buyer expects. Therefore, we can rely on the body of textual descriptions of freelancers' completed jobs to capture his prior experience on the OLM. Finally, to measure job-specific experience we use natural language processing to compute the similarity between freelancers' past body of work with the textual description of the current job he is applying to.</p><p>To compute similarities between text data, we must first transform the free text into numerical vectors. This is done via the bag-of-words model, which treats a body of text (document) as a row vector, and occurrences of each word from a dictionary as a specific element in the vector. All documents share the same word dictionary and therefore a word may appear in one document (positive value for the respective element in that row) and not another (zero value for the respective element in that row). After converting the free text into numerical vectors via the bag-of-words model, we take an additional step of processing: term frequency-inverse document frequency (tf-idf) transformation. The tf-idf transformation takes the count of occurrences of each word in each document and multiply it by the logged inverse document frequency of that word (i.e., log(#𝑡𝑜𝑡𝑎𝑙𝑑𝑜𝑐𝑢𝑚𝑒𝑛𝑡𝑠 #𝑑𝑜𝑐𝑢𝑚𝑒𝑛𝑡𝑠𝑐𝑜𝑛𝑡𝑎𝑖𝑛𝑖𝑛𝑔𝑡ℎ𝑒𝑤𝑜𝑟𝑑) ⁄ ). This reduces the relative weights of commonly occurring words. After obtaining numerical vectors of each text, we compute the similarity between each freelancer's past body of work and the job he is applying to using cosine similarity, defined as:</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>cos(𝐀, 𝐁) = 𝐀 • 𝐁 ‖𝐀‖‖𝐁‖</head><p>where A is the vector representation of the words in the freelancer's past body of work, and B is the vector representation of the words in the description of the job he is applying for. Cosine similarity measures the angular difference between two vectors, with a value of 1 if the two vectors are exactly the same and a value of 0 if the two vectors are completely different (i.e., orthogonal). An advantage of using cosine similarity instead of simply comparing absolute word overlaps or differences is that cosine similarity normalizes the lengths of the documents during comparison. This is important because freelancers have different amounts of total experience (i.e., number of previously completed jobs), and job descriptions can be of different lengths.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Regression Specification</head><p>To estimate the effect of job-specific experience, we use the following empirical specification: 𝑊𝑖𝑛 𝑖𝑗 = 𝛽 0 + 𝛽 1 𝑃𝑟𝑖𝑐𝑒 𝑖𝑗 + 𝛽 2 𝐽𝑆𝐸 𝑖𝑗 + 𝛽 3 𝑁𝑢𝑚𝐴𝑝𝑝𝑠 𝑗 + 𝜷𝑪𝒐𝒏𝒕𝒓𝒐𝒍𝒔 𝒊𝒋 + 𝜀 𝑖𝑗 <ref type="bibr">(1)</ref> where 𝑊𝑖𝑛 𝑖𝑗 equals 1 if freelancer 𝑖 wins job 𝑗, 𝑃𝑟𝑖𝑐𝑒 𝑖𝑗 is the price freelancer 𝑖 charges per hour of working on job 𝑗 , 𝐽𝑆𝐸 𝑖𝑗 is the level of job-specific experience that freelancer 𝑖 has for job 𝑗 , 𝑁𝑢𝑚𝐴𝑝𝑝𝑠 𝑗 is the number of applications that job 𝑗 received, and 𝑪𝒐𝒏𝒕𝒓𝒐𝒍𝒔 𝒊𝒋 is a set of freelancer and job control variables. In total we have 32 control variables, including (but not limited to):</p><p>• time delay of the freelancer's application • responsiveness of the freelancer • past feedback of the freelancer • past success rate of the freelancer • expertise tier of the job posting • whether the freelancer and buyer are based in the same country • fraction of overlap between the freelancer's and the job's requested skills • whether the freelancer was invited to apply • etc.</p><p>We use the logit model to estimate the coefficients of the above specification.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Fixed Effects Model</head><p>A concern with the above regression specification is the possibility of endogeneity via omitted variable bias. Specifically, there may be other unobserved factors that are correlated with a freelancer's jobspecific experience that are not captured by our control variables. To alleviate this endogeneity concern we introduce freelancer-week level fixed effects. The idea is that a freelancer is unlikely to have unobserved changes to his profile within the period of a week. However, during that week freelancers will apply to multiple different jobs, resulting in variations in price, job-specific experience, and the number of applications the job received. Therefore, we have the following empirical specification: 𝑊𝑖𝑛 𝑖𝑗 = 𝛽 0 + 𝛽 1 𝑃𝑟𝑖𝑐𝑒 𝑖𝑗 + 𝛽 2 𝐽𝑆𝐸 𝑖𝑗 + 𝛽 3 𝑁𝑢𝑚𝐴𝑝𝑝𝑠 𝑗 + 𝜷 𝟒 𝑪𝒐𝒏𝒕𝒓𝒐𝒍𝒔 𝒊𝒋 + 𝜷 𝟓 𝐹𝑙 𝑖 • 𝑊𝑒𝑒𝑘 𝑘 + 𝜀 𝑖𝑗 (2) Note that many of the freelancer and job control variables removed as they are specific to the freelancer and do not vary over time.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Results</head><p>Table <ref type="table" target="#tab_0">1</ref> below presents the regression estimates from both specifications. As expected, we see that buyers respond negatively to higher prices, and the freelancer's likelihood of winning decreases with increased numbers of applicants (i.e., greater competition). We also find that freelancers with greater job-specific experience are more likely to win a job. Specifically, an increase of 0.1 unit of task-specific experience results in an increase of 16.5% and 10.3% based on the reduced form and fixed effects models, respectively. This is economically significant as there is often a 0.2 unit difference in taskspecific experience between more experienced and less experienced freelancers. </p></div><figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head>Table 1 . Drivers of Winning Jobs</head><label>1</label><figDesc></figDesc><table><row><cell></cell><cell>Logit</cell><cell>Logit with FE</cell></row><row><cell>Price</cell><cell>-0.0016*** (0.0004)</cell><cell>-0.0145***(0.0015)</cell></row><row><cell>Job-specific experience</cell><cell>1.5310*** (0.0517)</cell><cell>0.9770*** (0.0118)</cell></row><row><cell>Number of applications</cell><cell>-0.0286*** (0.0003)</cell><cell>-0.0214*** (0.0003)</cell></row><row><cell>FE</cell><cell>N</cell><cell>Y</cell></row></table></figure>
+		</body>
+		<back>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Auditor Task-Specific Expertise: The Case of Fair Value Accounting</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Ahn</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Hoitash</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">U</forename><surname>Hoitash</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The Accounting Review, forthcoming</title>
+		<imprint>
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Hiring Preferences in Online Labor Markets: Evidence of a Female Hiring Bias</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Chan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Wang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Science</title>
+		<imprint>
+			<biblScope unit="volume">64</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="2973" to="2994" />
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">The Roles of Task-specific Forecasting Experience and Innate Ability in Understanding Analyst Forecasting Performance</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">B</forename><surname>Clement</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Koonce</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">J</forename><surname>Lopez</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Accounting and Economics</title>
+		<imprint>
+			<biblScope unit="volume">44</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="378" to="398" />
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Task-specific Experience and Task-specific Talent: Decomposing the Productivity of High School Teachers</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">B</forename><surname>Cook</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">K</forename><surname>Mansfield</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Public Economics</title>
+		<imprint>
+			<biblScope unit="issue">140</biblScope>
+			<biblScope unit="page" from="51" to="72" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">How General is Human Capital? A Task-based Approach</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Gathmann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">U</forename><surname>Schönberg</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Labor Economics</title>
+		<imprint>
+			<biblScope unit="volume">28</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="1" to="49" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Task-specific Human Capital</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Gibbons</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Waldman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">American Economic Review</title>
+		<imprint>
+			<biblScope unit="volume">94</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="203" to="207" />
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Enriching a Theory of Wage and Promotion Dynamics Inside Dirms</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Gibbons</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Waldman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Labor Economics</title>
+		<imprint>
+			<biblScope unit="volume">24</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="59" to="107" />
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Diasporas and Outsourcing: Evidence from oDesk and India</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>Ghani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><forename type="middle">R</forename><surname>Kerr</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Stanton</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Science</title>
+		<imprint>
+			<biblScope unit="volume">60</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="1677" to="1697" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">On Buyer Selection of Service Providers in Online Outsourcing Platforms for IT Services</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Hong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">A</forename><surname>Pavlou</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<imprint>
+			<biblScope unit="volume">28</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="547" to="562" />
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Buyer Uncertainty About Seller Capacity: Causes, Consequences, and a Partial Solution</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">J</forename><surname>Horton</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Science</title>
+		<imprint>
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Reputation Transferability in Online Labor Markets</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Kokkodis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Ipeirotis</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Science</title>
+		<imprint>
+			<biblScope unit="volume">62</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="1687" to="1706" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Doing Business with Strangers: Reputation in Online Service Marketplaces</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Moreno</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Terwiesch</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="865" to="886" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Job Tasks, Time Allocation, and Wages</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Stinebrickner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Stinebrickner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Sullivan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Labor Economics</title>
+		<imprint>
+			<biblScope unit="volume">37</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="399" to="433" />
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">The Value of Reputation in an Online Freelance Marketplace</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Yoganarasimhan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Marketing Science</title>
+		<imprint>
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="860" to="891" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Estimation of Beauty Contest Auctions</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Yoganarasimhan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Marketing Science</title>
+		<imprint>
+			<biblScope unit="volume">35</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">287915</biblScope>
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+	<note>N</note>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

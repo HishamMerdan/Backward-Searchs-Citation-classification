@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Effect of Auction Design on Bidder Entry: Evidence from An Online Labor Market</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Kevin</forename><surname>Hong</surname></persName>
+							<email>hong@asu.edu</email>
+							<affiliation key="aff0">
+								<orgName type="institution">Arizona State University</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Benjamin</forename><surname>Shao</surname></persName>
+							<email>benjamin.shao@asu.edu</email>
+							<affiliation key="aff0">
+								<orgName type="institution">Arizona State University</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Pei-Yu</forename><surname>Chen</surname></persName>
+							<email>peiyu.chen@asu.edu</email>
+							<affiliation key="aff1">
+								<orgName type="institution">Arizona State University</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Chen</forename><surname>Liang</surname></persName>
+							<email>cliang29@asu.edu</email>
+							<affiliation key="aff2">
+								<orgName type="institution">Arizona State University</orgName>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Effect of Auction Design on Bidder Entry: Evidence from An Online Labor Market</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="MD5">E8D93613E0E9214D6147881317D03429</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.7.3" ident="GROBID" when="2023-06-16T09:23+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>We propose that auction duration and auction description are two important auction design parameters that could serve as screening mechanisms for quality in online auctions. Using data from an online labor matching platform that connects buyers with IT service vendors, we examine the effects of auction duration and auction descriptions on auction outcomes (i.e., number of bids, bidder quality, bidding price) and project outcomes (i.e., project being contracted and being completed). Our empirical analyses show that, in buyer-determined reverse auctions of online labor matching, auctions with a longer duration and a longer description attract more bids, but they also attract more low quality bidders with less experience and lower completion rate, and hence result in a lower probability of successful contracting and completion of software service projects. Our research provides empirical evidence highlighting the strategic roles of auction design parameters like auction duration and descriptions as a potential screening mechanism for online labor matching platforms.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.">Introduction</head><p>Advanced information and communications technologies have enabled global online labor matching that facilitates the pairing of buyers with service providers across the globe with low search and transaction costs. These markets usually operate in the form of reverse auctions, where buyers post "Call for Bids" (CFB) and service providers submit bids to compete for contracts and offer services. Online labor matching platforms have been expanding at an astounding pace since its inception. The Bureau of Labor Statistics estimates that more than 30 million people now work as independent professionals in the US alone. Due to their significant impact on economy, online labor matching platforms have also drawn much attention in the academic literature <ref type="bibr" target="#b1">[1]</ref><ref type="bibr" target="#b2">[2]</ref><ref type="bibr" target="#b3">[3]</ref><ref type="bibr" target="#b4">[4]</ref><ref type="bibr" target="#b5">[5]</ref><ref type="bibr" target="#b6">[6]</ref>. Most of the extant literature focuses on the rules governing the selection of winning providers <ref type="bibr" target="#b1">[1,</ref><ref type="bibr" target="#b4">4,</ref><ref type="bibr" target="#b7">7]</ref>. While the selection of winning bid is important, it is only half the story, both because how bidders are attracted to the auctions (i.e., auction outcome) reveals important implications for who the buyers could contract and because whether a project is successfully carried out (i.e., project outcome) is very important from the buyers' perspective. As noted in the extant literature, different auction designs could significantly alter the strategic behavior of bidders <ref type="bibr" target="#b3">[3]</ref>. Surprisingly, there are very few empirical papers that examine the role of auction design parameters in affecting auction outcomes and project outcomes. This paper seeks to provide a new lens of screening to understand the role of two auction design factors: auction duration and auction description.</p><p>Among different auction design parameters of online labor matching platforms, prior research has squarely focused on bid visibility <ref type="bibr" target="#b3">[3]</ref>. Similar to other auction settings, auctions in online labor matching platforms allow buyers to vary multiple design parameters (e.g., project category, project budget, auction duration, auction description), among which project category is exogenous (e.g., software development, web design, etc.). Although buyers also set the project budget, it is largely determined by the complexity of the project. Buyers have the most degree of freedom in setting auction duration and providing auction descriptions. Therefore, auction duration and descriptions are the key design parameters when launching an auction by a buyer. Intuitively, one would expect longer auctions and more detailed auction descriptions to benefit the buyers, as they can help attract more bidders and reduce project uncertainty for the bidders. Therefore, auctions with longer duration and more detailed descriptions are presumed to produce better auction outcomes and project outcomes <ref type="foot" target="#foot_0">1</ref> . However, this is yet to be empirically corroborated. Especially, the relationship with respect to project outcomes has not been studied much but are arguably the most important to buyers.</p><p>Therefore, our first research question is: does longer auction duration lead to better or worse auction outcomes and project outcomes for online labor matching platforms? Auction duration is an essential aspect of online auction design. Unlike traditional English auctions held in auction houses where bidders gather in a room to bid for a product within a few minutes, online auctions usually last for days, sometimes even months. Duration of the auction is generally a decision of the buyer, and it may have a significant impact on the bidders' decision to enter the auction. Haruvy and Leszczyc <ref type="bibr">[8]</ref> have provided a comprehensive review of the literature that looks at auction duration's impact. In highlighting important results related to auction duration from the literature, we summarize the key findings in Table <ref type="table">1</ref>. As can be seen, the context of most of these studies is ordinary forward auction, in which price is the outcome variable and tends to go up as the auction continues. Our research, instead, focuses on reverse auction in the context of online labor matching market where price tends to go down when bidders compete with each other in order to win the bid. The conventional view is that longer auctions would perform better, as they attract more bidders and bids, which in turn would result in better outcomes. On the other hand, an opposing and unconventional view is that while longer duration attracts more bids, it may drive away impatient bidders or bidders who can afford to forego the opportunity by taking on other shorter-duration auctions, therefore inadvertently resulting in adverse selection and negatively impacting project outcomes. Therefore, while seemingly intuitive, the effect of auction duration on project outcomes is not as straightforward and clearcut as one might think and warrants an in-depth empirical investigation.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Table 1. Related Studies on Auction Duration</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Authors (Year)</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Context and Method</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Key insights</head><p>Cox <ref type="bibr" target="#b9">[9]</ref> Forward auction (Observational)</p><p>Longer auctions attract more bids.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Ariely and</head><p>Simonson <ref type="bibr" target="#b10">[10]</ref> Forward auction (Observational)</p><p>Auction duration negatively affects final price. Bapna et al. <ref type="bibr" target="#b11">[11]</ref> eBay, forward auctions (Observational) Longer auction negatively affects price dynamics. Mithas et al. <ref type="bibr" target="#b12">[12]</ref> Reverse auctions (Observational)</p><p>Auction duration has no effect on buyer surplus. Haruvy and Leszczyc <ref type="bibr">[8]</ref> eBay and a local auction site, forward auctions (Experiments) On eBay, longer duration leads to more bids and a higher price; no effect is found at the local site. Bapna et al. <ref type="bibr" target="#b12">[12]</ref> Overlapping auctions (Observational)</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Longer auction leads to higher bid prices</head><p>Auction description, on the other hand, has not been studied as much. An intuitive view is that detailed descriptions reduce bidder uncertainty as longer descriptions help bidders better understand project requirements, and hence they can help achieve better outcomes. This also implies that projects should have fairly detailed descriptions. However, anecdotal observations suggest that there is huge variation in auction descriptions even for the same type of projects (e.g., build a website). This variation allows us to study and understand the effect of auction descriptions on auction outcomes. Our second research question is: does longer auction description in an auction lead to better or worse auction and project outcomes for online labor matching platforms? Given that project contracts and the actual details are only provided after a winning bidder has been chosen, auction descriptions may not be as essential as one assumes in the bidder's decision to submit a bid or the buyer's selection of the eventual service provider. By the same token, capable bidders may be less dependent on description details, but novice bidders would be more receptive to the requirements of projects. If this is indeed the case, then auction descriptions may serve (unknowingly) as a screening mechanism for bidder quality. In essence, since longer auction descriptions provide more details and hence successfully completed, conditionally on a service provider being selected. reduces bidder's uncertainty about the project, one would presume that longer auction descriptions lead to greater performance. However, more experienced and capable bidders may be less sensitive to such project uncertainty than less experienced and capable bidders, so longer auction descriptions may in fact attract a larger proportion of low quality bidders, thus hurting performance. We are interested in knowing whether detailed project information provided early at the beginning of the auction helps or hurts auction outcomes and project outcomes.</p><p>In summary, we argue that the true effects of auction duration and auction description go beyond simply attracting more bids, as they can potentially act as screening mechanisms for bidder quality that affect the composition of bidders attained in an auction and consequently the outcomes of the project. This paper aims to provide a comprehensive examination linking auction design to auction outcomes (i.e., number of bids, bidder quality, bidding price) and consequently to project outcomes (i.e., project being contracted and being completed).</p><p>Based on a unique dataset from an online labor matching platform, we empirically examine several aspects of bidder entry and auction outcomes to consider the following factors: number of bids, bidder quality, bidding price, whether a project reaches a contract, and project final completion (conditional on contract). Our empirical analyses show that, in buyer-determined reverse auctions of online labor matching, auctions with longer duration and longer description indeed attract more bids but they also attract more low quality bidders with less experience and lower prior completion rate, and in turn lead to a lower probability of successful completion of software service projects. Our research provides empirical evidence regarding the strategic roles of auction duration and auction description as a potential screening mechanism for quality on online labor matching platforms. Shorter duration and shorter description actually help screen out less experienced and less capable bidders, and in turn result in higher contract probability and completion rate. This finding helps explain why many online labor matching platforms have now placed a duration limit on their auctions.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.">Study Context</head><p>The context of our study is online labor matching platforms. Besides the rich data this context provides us, online labor matching platform is economically important in its own right. As cited by Hong et al. <ref type="bibr" target="#b3">[3]</ref>, both Elance and Freelancer host millions of registered 2 Please note that the marketplace has changed its reputation system after our observational period from a 1-10 scale system to a 1-5 scale system, in October 2010. services providers and have billions of dollars' worth of transactions, boasting a "Freelancer Economy" and becoming an exemplar for the emerging gig economy.</p><p>Our empirical data is obtained from the proprietary database of a large online labor matching platform, which employs the mechanism of buyer-determined reverse auction <ref type="bibr" target="#b1">[1,</ref><ref type="bibr" target="#b3">3,</ref><ref type="bibr" target="#b5">5,</ref><ref type="bibr" target="#b6">6,</ref><ref type="bibr" target="#b13">13]</ref>. Buyers initiate "call for bids" by posting projects in the marketplace. To post a project, a buyer needs to specify auction parameters such as auction duration and project-related information such as project category, description, and budget.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Figure 1. Screenshot of One Project on the Marketplace</head><p>2 Figure <ref type="figure">1</ref> shows an example of call for bids by a project to build a website. There is no fee for posting auctions with different auction durations, and the buyer could end the auction early at any time (i.e., the buyer does not need to wait until the full auction duration elapses). After a project is posted to the marketplace website, the bidders (i.e., vendors or service providers) start bidding on the project. The buyer could close the auction with or without selecting a bidder to contract with. The auction automatically closes for bidding after the auction duration expires (e.g., 7 days). Specifically, we are interested in two main parameters: Auction Duration: To post a project, the buyer needs to specify the duration of the auction in days, but the buyer could terminate the auction anytime during the auction duration and award the contract to a particular vendor. However, since bidders have no idea whether a buyer will end an auction early or not, the preset auction duration would influence bidders' behaviors when they submit their bids.</p><p>Auction Description: To post a project, the buyer needs to provide a description of the project. The description does not need to be a full contract but instead is meant to inform potential bidders of the project requirements to some extent. The buyer could specify contract details of the project after selecting a bidder.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.">Literature Review</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.1.">Reverse Auction Design</head><p>Reverse auctions mean those auction processes starting with the buyers' announcement regarding the requirement and auction parameters. Then the bidders bid for the contract or product <ref type="bibr" target="#b12">[12,</ref><ref type="bibr" target="#b14">14]</ref>. Nowadays, reverse auctions are prevalent in online labor markets <ref type="bibr" target="#b3">[3]</ref>, B2B procurements <ref type="bibr" target="#b12">[12]</ref>, and C2C commerce <ref type="bibr" target="#b15">[15]</ref>.</p><p>Given the burgeoning use of online reverse auctions in various online platforms, very little empirical research explores the reverse auction design strategy, specifically the auction design regarding information revelation and duration. With regard to information revelation, Kannan <ref type="bibr" target="#b16">[16]</ref> found that whether the Complete Information Setting (CIS) leads to a higher buyer surplus than Incomplete Information Setting (IIS) or not is still an inconclusive question. However, his study merely focuses on the competition information revelation instead of the task requirement or demand information. In terms of auction duration, the results are also mixed and inconclusive. Lucking-Reiley <ref type="bibr" target="#b15">[15]</ref> suggested that longer auction duration might lead to a higher transaction price while Miltas and Jones <ref type="bibr" target="#b12">[12]</ref> found that auction duration doesn't influence buyer surplus. Haruvy and Leszczyc <ref type="bibr">[8]</ref>, instead, found that long auction duration leads to a lower auction price in local websites. However, these studies mainly explore the auction outcome based on the single-attribute (price) and ignore the bidders' quality and other attributes. As Choudhury, Hartzel, and Konsynski <ref type="bibr">[8]</ref> pointed out, it is quality instead of price that plays the important role in choosing providers of Inventory Locator Service (ILS) in the aircraft parts industry and hence the quality of bidders may be of more interest to buyers. In this paper, we focus on investigating how two non-price auction design parameters (i.e., auction duration and auction description) may influence the auction outcomes (e.g., the number of bids, the bidders' quality, etc.) through the varied information amount and waiting time. Moreover, instead of examining the auction performance in terms of price, we explore how the buyers can provide project information and set auction duration appropriately to attract more bidders, especially high-quality bidders, to improve auction outcomes and project outcomes.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2.">Information, Duration and Behavior Decisions</head><p>Based on the Behavior Decision Making theory <ref type="bibr" target="#b17">[17]</ref>, information representation influences the uncertainty assessment process in one or more phases including the followings: 1) information acquisition; 2) uncertainty evaluation; 3) action and implement choices; and 4) learning or feedback. In the context of online labor matching, information revelation parameters influence bidders' information advantage and uncertainty assessment. Meanwhile, auction duration influences bidders' opportunity cost of bidding actions and learning behavior.</p><p>In particular, the information asymmetry between bidders and buyers is partially dependent on the task description design. According to the auction theory, when bidders are faced with the auction decision, they need to cope with three types of information, namely, private information, public information and uncertainty <ref type="bibr" target="#b18">[18]</ref>, as shown in Table <ref type="table">2</ref>. The length or completeness of task description increases the public information and lowers the uncertainty generally. As such, longer description tends to attract more bids. In addition, the task description influences the importance of bidderspecific private information and cost uncertainty, which influence the competitive advantage of high-capability bidders. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Table 2. Types of Information Cues in Auction Decisions</head><note type="other">Subcategory</note></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Project cost uncertainty</head><p>Information which is common or specific across all the bidders but known to no bidder Uncertainties regarding the projects' value to the employers, the variation of the production cost (Schwartz and Moon 2000), and the possibility that a catastrophic event may occur before the project is completed.</p><p>In addition, auction duration has an impact on not only bidders' opportunity costs related to the bid decision but also their learning processes. Even though it has been found that auction duration enhances the probability of attracting more bidders at different time zones <ref type="bibr" target="#b12">[12]</ref>, it may also increase the waiting time and discourage some bidders' entry decision. Further, the longer duration might have different impacts on highcapability and lower-capability bidders <ref type="bibr" target="#b11">[11]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.">Hypotheses development</head><p>According to the Behavior Decision Making theory, auction description may influence a provider's bid decision during the stages of information acquisition and uncertainty evaluation, while auction duration may be more related to the action and implementation of choices as well as the learning and feedback processes. Moreover, both auction description and auction duration may have a heterogeneous effect on bidders depending on their capability and experience.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.1.">Auction Description and Bid Decision</head><p>We use the following setup to explicate and explore how auction description affects bidder entry and shifts bidder quality distribution. The buyer could describe the project in more or less detail when the buyer posts an auction. Detailed auction description provides more public information for all the bidders to help them to understand the project requirements and construct their expectations about the production difficulties. Furthermore, longer auction description indicates that the employer has a clearer idea about the project requirements and may be able to provide more useful and specific instructions about the project implementation. The pre-contract auction description hence can alleviate bidders' uncertainty about the project's cost and valuation. Therefore, longer auction description lowers the information asymmetry between the employer and the bidders regarding the task, decreases the general uncertainty, and attracts more bidders.</p><p>As an illustration of the potential effects of auction descriptions, consider two types of bidders: low quality and high quality. Low quality bidders are characterized by low project experience and/or low technical capability; vice versa for high quality bidders. On the other hand, high quality bidders have more private information because of their project experience and technical capability (e.g., project requirements analysis). So they are better at inferring a project's value than less experienced bidders <ref type="bibr" target="#b19">[19]</ref>. Since high quality bidders are more capable of implementing the project and avoiding the risks during the production process, they tend to have less cost uncertainty than low quality bidders. Especially when the description is short, highcapability bidders are more competent to cope with the uncertainty and make a better bid decision. Therefore, shorter auction description could potentially (either intentionally or unintentionally) help screen out less experienced and capable bidders. In other words, although longer auction description might lead to more bids, it likely ends up attracting more inexperienced bidders. Therefore, we propose:</p><p>H1a: Longer auction description leads to more bids in total.</p><p>H1b: Longer auction description leads to lower average bidder quality (in terms of seller win rate and seller success rate).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.2.">Auction Duration and Bid Decision</head><p>Apart from auction description, auction duration may also have an impact on auction outcomes (i.e., number of bids and bidder quality). First, it is intuitive to assume that an auction with longer duration should result in more bids because longer auction would be exposed to more service providers, everything else being equal. Longer duration increases the probability of the project being discovered and considered when vendors browse through the directory of open auctions for projects on the website. Further, an interesting follow-up question is to explore how auction duration affects bidder quality. For one thing, auction duration influences bidders' actions or their implementation of choices because of the opportunity costs involved in the waiting stage. Especially for high-quality bidders, they tend to have high reservation wage and high opportunity costs, which discourages them from spending too much time waiting for the buyers' pending choices. For another thing, high-quality contractors, compared to low-quality contractors, tend to have stronger market power and be less susceptible to the price dynamics through the whole auction duration <ref type="bibr" target="#b11">[11]</ref>. Therefore, low-quality contractors are more likely to bid for auctions with longer duration so that they could have enough time to learn from previous bids and to infer the project value and uncertainty. Additionally, when the buyer posts an auction with a longer duration (regardless intentionally or unintentionally), bidders may interpret this as a signal that the buyer is trying to minimize contractor surplus by encouraging the competition among contractors. This signal in turn may drive away high-quality contractors as they are more likely to find another project whose buyer is more munificent and discreet and they are more likely to earn a higher surplus. Therefore, we propose:</p><p>H2a: Longer auction duration leads to more bids in total.</p><p>H2b: Longer auction duration leads to lower average bidder quality (in terms of seller win rate and seller success rate).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.">Empirical Methodology</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.1.">Data</head><p>We obtained our data from the proprietary database of one large online labor matching platform, which connects buyers with IT service providers, from August 2008 to April 2010. This unique data set allows us to observe every aspect of the project, bidders, auction outcomes and project outcomes free of error. In our observational period, we have a random sample of 69,323 projects, which attracted 1084,884 bids. Out of the 69,323 projects, 41,822 reached a contract. We focus on the most common, free to post open-bid projects, which account for more than 80% of all the projects. Special projects such as featured projects, trial projects and long term projects are not included in this data set. Focusing on the most common form of auctions allows us to have a better estimate of the effects of auction duration and auction description without being influenced by other confounding factors. Table <ref type="table" target="#tab_1">3</ref> defines our variables and the corresponding measures, Table <ref type="table" target="#tab_2">4</ref> presents the descriptive statistics of key variables.  </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Figure 2. The Distribution of Bids During the Auction Duration</head><p>Notes: In the X axis, the bar within the interval between 0 and 1 means the number of bids submitted at the same day when the project was posted. The second bar represents the number of bids submitted when the number of bids submitted at the first day after the project was posted. The percentage of bids submitted from the project submission time to the first day occupies 81.8% of total bids.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.2.">Model-free Evidence</head><p>Before we estimate the effects of auction duration and auction description on auction outcomes and project outcomes using econometric methods, we provide some model-free evidence based on visualization of the distributions and non-parametric tests. Figure <ref type="figure">2</ref> shows the distribution of bids during the auction duration. We also present the overlaid histograms in Figure <ref type="figure">3</ref> to exhibit the differences in the distributions of both bidder </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Figure 3. Overlaid Histograms</head><p>We also run non-parametric tests for distributional inequality. Two-sample Kolmogorov-Smirnov tests determine whether the two independent samples have been drawn from the same populations with the same distribution or from populations with different distributions. Kolmogorov-Smirnov tests shows that the bidder experience distributions are significantly different for auctions with different auction duration and descriptions (p&lt;0.001).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6.">Empirical Models</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6.1.">Project-level Empirical Analysis</head><p>We follow extant studies <ref type="bibr" target="#b3">[3]</ref> that examined auctions in online labor matching markets to set up the empirical model. Equation (1) outlines our empirical model for estimating the effects of auction format on the number of bids received in an auction. This empirical model includes the main variables "Auction Duration" and "Auction Description", buyer fixed effects 𝛿 " , project category fixed effects 𝜆 $ , time fixed effects 𝜓 &amp; , as well as auction/project-level control variables, such as project budge. In Equation ( <ref type="formula">1</ref>), parameter i is used to index projects, j is used to index project categories, q is used to index buyers, and t is used to index time periods (year-month pairs). A similar econometric specification is used for Equations ( <ref type="formula">2</ref>) -(4). We take natural log transformation for the following variables: number of bids (ln(num_bids)), buyer experience (ln(experience+1)) and auction duration (ln(duration)), considering that the distributions for these variables are skewed. The log-transformation also allows percentage interpretations of the model estimates.</p><p>𝑩𝒊𝒅𝒅𝒆𝒓 𝑬𝒏𝒕𝒓𝒚 𝒊𝒋𝒒𝒕 = 𝛽 5 + 𝛽 7 × 𝐴𝑢𝑐𝑡𝑖𝑜𝑛𝐷𝑢𝑟𝑎𝑡𝑖𝑜𝑛</p><formula xml:id="formula_0">C$"&amp; + 𝛽 D × 𝑃𝑟𝑜𝑗𝑒𝑐𝑡𝐷𝑒𝑠𝑐𝑟𝑖𝑝𝑡𝑖𝑜𝑛 C$"&amp; + 𝛽 J 𝐴𝑢𝑐𝑡𝑖𝑜𝑛𝐶𝑜𝑛𝑡𝑟𝑜𝑙𝑠 C + 𝛿 " + 𝑡 &amp; * 𝛼 &amp;</formula><p>Tables <ref type="table">5</ref> and<ref type="table" target="#tab_3">6</ref> report the main findings of the effects of auction design variables on the number of bids and bidder quality, respectively.</p><p>In Table <ref type="table">5</ref>, our main dependent variable of interest is the number of bids. As Column (1) shows, not surprisingly both auction duration and auction description have a positive and significant effect on the number of bids. Specifically, 10% increase in auction duration (on average, 1 day) leads to 2.22% more bids, and 10% increase in description length (on average, 10 words) leads to 3.58% more bids. Therefore, H1a and H2a are both supported.  In Table <ref type="table" target="#tab_3">6</ref>, the dependent variables of interest are measures of bidder quality, as defined and measured in Table <ref type="table" target="#tab_1">3</ref>. Interestingly, we find consistent effects across all measures. The estimations show that auctions with a longer duration attract more low quality bidders, and auctions with longer descriptions also attract more low quality bidders. For example, as Column (1) shows, 10% increase (1 day) in auction duration reduces average win rate by approximately 0.06%<ref type="foot" target="#foot_3">3</ref> , and 10% increase (10 words) in auction description decreases average success rate by 0.13% <ref type="foot" target="#foot_4">4</ref> . Altogether, these findings provide empirical support that shorter duration and shorter description influence bidder behaviors and can help screen out inexperienced and less capable bidders. In essence, H1b and H2b are both supported.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Table 5. Results for Auction Outcomes</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6.2.">Bidder-level Empirical Analysis</head><p>In order to further explore how auction design characteristics influence bidders' bid choice, we construct a list of active bidders and open projects on the market for each day during our study period. We define active bidders as those who at least bid for one project at that day. We recover active bidders' consideration sets by narrowing down to the other projects that are in the same category and submitted at a similar time as the project(s) they bid. Assuming that bidders are rational and make their optimal bid decision by evaluating those open projects within their consideration sets based on project characteristics, employer characteristics, etc., the econometric model at the bidder level is specified as: 𝐏𝐫 (𝑩𝒊𝒅𝒅𝒆𝒓 𝒊 _𝒃𝒊𝒅𝒔_𝒐𝒏_𝒑𝒓𝒐𝒋𝒆𝒄𝒕 𝒋 ) = 𝛼 + 𝛽 7 × 𝐷𝑒𝑠𝑐𝑟𝑖𝑝𝑡𝑖𝑜𝑛 $ + 𝛽 D ×𝐷𝑢𝑟𝑎𝑡𝑖𝑜𝑛 $ + 𝛽 J ×𝐷𝑢𝑟𝑎𝑡𝑖𝑜𝑛 $ × 𝐵𝑖𝑑𝑑𝑒𝑟_𝑄𝑢𝑎𝑙𝑖𝑡𝑦 C&amp; + 𝛽 e ×𝐷𝑒𝑠𝑐𝑟𝑖𝑝𝑡𝑖𝑜𝑛 $ × 𝐵𝑖𝑑𝑑𝑒𝑟_𝑄𝑢𝑎𝑙𝑖𝑡𝑦 C&amp; + 𝐶𝑜𝑛𝑡𝑟𝑜𝑙𝑠 $ + 𝛿 &amp; + 𝜀 C&amp; <ref type="bibr" target="#b3">(3)</ref> We limit our sample to bids that are submitted within the first day for the following reasons. First, the bids within the first day include most bids. There are on average around 75% of bids submitted within the first day for an open project. Second, since the average bidder quality decreases as the auction progresses, our estimated results based on the bid choice at the first day serve as a conservative estimate. Third, by ruling out those bids submitted in the later days, we avoid the contamination of those bidders who make the bid decision by herding, mimicking or learning from other bidders' bid decisions. Further, to show the robustness of our result, we estimate our model with both the Conditional Logit Model and Linear Probability Model with bidders-day pair level fixed effects<ref type="foot" target="#foot_5">5</ref> (Table <ref type="table" target="#tab_4">7</ref>). Moreover, the result is consistent when we rerun the analysis by including all the submitted bids into our sample.</p><p>As Table <ref type="table" target="#tab_4">7</ref> shows, the main effect of project description and auction duration are significantly positive. In other words, the longer project description or the longer auction duration, the higher number of bids the project will attract, which lends to support H1a and H2a.</p><p>However, the interaction between project description and the bidder's win rate is significantly negative. Moreover, the interaction between project duration and the bidder's success rate is also significantly negative. As such, if bidders are of highquality, such as those who tend to have a high probability to win the auction or those who usually actually complete projects in time, they are less likely to bid for projects with the longer description or longer auction duration. In other words, bidders with a higher win rate or success rate are less likely to bid for a project with long auction description or auction duration. As such, projects with long description or auction duration tend to disproportionately attract low-quality bidders. Therefore, both H1b and H2b are supported. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="7.">General Discussion</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="7.1.">Discussion</head><p>This paper aims to investigate how auction design parameters, namely auction duration and auction description, affect auction outcomes and project outcomes. Our research provides empirical evidence regarding the strategic roles of auction duration and auction description as a potential screening mechanism for online labor matching platforms. Shorter duration and shorter description help screen out less experienced and capable bidders, and in turn lead to higher contractor quality and greater likelihood of project success. This research contributes to the literature by showing how auction design can potentially serve as a screening mechanism, and how they affect bidder quality and auction outcomes. Our finding also helps explain why many online labor matching platforms have now placed a limit on auction duration.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="7.2">Implications</head><p>The implications from our findings are offered as follows. On the practical side, buyers of IT software services interested in using the online labor matching platform have to understand that their intuition may work against expectations, as longer auction duration and more detailed auction description, while receiving more bids, may actually end up attracting more low quality contractors and also lead to more contract indecision and project incompletion. Apparently, each auction for software projects is different and hence requires unique auction design specifics, but in general, buyers are advised to keep the duration and description short to the extent possible. On the research side, auction design is found to be more complex than one may think. Our paper presents the evidence based on both the project-level analysis and the bidder decision level analysis and suggests that auction design parameters like duration and description, as straightforward as they look, deserve more in-depth analysis that may lead to other interesting and perhaps even counter-intuitive findings.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="7.3">Limitations</head><p>As with all observational research, our study is not free of limitations. One limitation of this study is that the auction design parameters examined here are choices of the buyers, so these auction design parameters potentially suffer from a selection effect. In this paper, we have controlled for project characteristics such as project category and project budget, and hence the selection effect related to unobserved buyer choice of design parameter is not serious. However, future research could seek to randomize such design features with field experimentations in these markets. Besides, to ensure similarity across projects, double postings may be needed and hence impose additional challenges.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="7.4">Conclusion</head><p>In this study, we assess the effects of two auction design parameters, namely duration and description, on auction outcomes (i.e., number of bids and bidder quality) and project outcomes (i.e., project being contracted and being completed). Our empirical results reveal that auctions with longer duration and longer description receive more bids, but they also attract more low-quality contractors with lower win rate and lower completion rate. Our findings suggest that auction duration and auction description can be employed as a potential screening mechanism for bidder quality on the online labor matching platforms. Overall, our study makes a contribution to the related literature by providing new insights into the effective design of auctions on these platforms. Implications are also drawn from our findings for both practice and research.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head></head><label></label><figDesc>Proceedings of the 51 st Hawaii International Conference on System Sciences | 2018 URI: http://hdl.handle.net/10125/50321 ISBN: 978-0-9981331-1-9 (CC BY-NC-ND 4.0)</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head></head><label></label><figDesc><ref type="bibr" target="#b11">11</ref> 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 dayratings and bidder experience with regard to different auction durations and different auction descriptions. For auction duration, 5 days and 30 days are shown, and for auction descriptions, long description (&gt; average length) versus short description (&lt; average length) are shown.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head></head><label></label><figDesc>robust standard errors in parentheses; *** p&lt;0.001, ** p&lt;0.01, * p&lt;0.05, + p&lt;0.1</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1"><head>Table 3 . Definitions and Measures of Key Variables</head><label>3</label><figDesc></figDesc><table><row><cell>Auction Design Variables</cell><cell></cell></row><row><cell>Auction Duration:</cell><cell>Number of days the auction is</cell></row><row><cell></cell><cell>active</cell></row><row><cell>Auction Description:</cell><cell>Number of words in the auction</cell></row><row><cell></cell><cell>description</cell></row><row><cell cols="2">Auction Outcome Variables</cell></row><row><cell>Number of Bids:</cell><cell>Total number of bids received by</cell></row><row><cell></cell><cell>the auction</cell></row><row><cell>Average Bidder Win</cell><cell>Average of a bidder's auction</cell></row><row><cell>Rate:</cell><cell>winning rate</cell></row><row><cell>Average Bidder Success</cell><cell>Average of a bidder's awarded</cell></row><row><cell>Rate:</cell><cell>project success rate</cell></row><row><cell>Control Variables</cell><cell></cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2"><head>Table 4 . Descriptive Statistics</head><label>4</label><figDesc></figDesc><table><row><cell>Variable</cell><cell>Mean</cell><cell>Std.</cell><cell>Min</cell><cell>Max</cell></row><row><cell></cell><cell></cell><cell>Dev.</cell><cell></cell><cell></cell></row><row><cell>Contracted</cell><cell>0.602</cell><cell>0.489</cell><cell>0.000</cell><cell>1.000</cell></row><row><cell>Completed</cell><cell>0.426</cell><cell>0.494</cell><cell>0.000</cell><cell>1.000</cell></row><row><cell>Auction</cell><cell>10.273</cell><cell>15.597</cell><cell>1.000</cell><cell>60.000</cell></row><row><cell>Duration</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Auction</cell><cell>101.550</cell><cell cols="2">131.378 1.000</cell><cell>7944.000</cell></row><row><cell>description</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell cols="2">Project Budget 339.955</cell><cell cols="3">192.058 250.000 750.000</cell></row><row><cell>Number of</cell><cell>13.367</cell><cell>14.670</cell><cell>1.000</cell><cell>89.000</cell></row><row><cell>Bids</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Average Bid</cell><cell>164.310</cell><cell cols="2">168.366 29.000</cell><cell>1515.625</cell></row><row><cell>Price</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Avg(bidder</cell><cell>0.076</cell><cell>0.093</cell><cell>0.000</cell><cell>1.000</cell></row><row><cell>win rate)</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Avg(bidder</cell><cell>0.417</cell><cell>0.290</cell><cell>0.000</cell><cell>1.000</cell></row><row><cell>success rate)</cell><cell></cell><cell></cell><cell></cell><cell></cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_3"><head>Table 6 . Results for Contractor Quality</head><label>6</label><figDesc></figDesc><table><row><cell></cell><cell>(1)</cell><cell>(2)</cell></row><row><cell>VARIABLES</cell><cell>avg(win_rate)</cell><cell>avg(success_rate)</cell></row><row><cell>ln(duration)</cell><cell>-0.006***</cell><cell>-0.025***</cell></row><row><cell></cell><cell>(0.001)</cell><cell>(0.001)</cell></row><row><cell>ln(description)</cell><cell>-0.013***</cell><cell>-0.036***</cell></row><row><cell></cell><cell>(0.001)</cell><cell>(0.001)</cell></row><row><cell>project budget</cell><cell>-0.001***</cell><cell>-0.005***</cell></row><row><cell></cell><cell>(0.000)</cell><cell>(0.000)</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_4"><head>Table 7 . Results for Bidders' Auction Choices</head><label>7</label><figDesc></figDesc><table><row><cell>(1)</cell><cell>(2)</cell><cell>(3)</cell></row></table><note><p>Note: a. Robust standard errors clustered by bidder-day pair are reported in parentheses; b. p&lt;0.1, ** p&lt;0.05, *** p&lt;0.01</p></note></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="1" xml:id="foot_0"><p>Auction outcomes include number of bids attained and overall bidder quality in an auction, while project outcomes refer to whether a service provider is awarded the contract and whether the project is</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_1"><p>&amp; + 𝑐 $ * 𝛾 $ $ + 𝜀 C$"&amp;(1) 𝑨𝒖𝒄𝒕𝒊𝒐𝒏 𝑶𝒖𝒕𝒄𝒐𝒎𝒆 𝒊𝒋𝒒𝒕 = 𝛽 5 + 𝛽 7 ×</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_2"><p>&amp; + 𝑐 $ * 𝛾 $ $ + 𝜀 C$"&amp;(2)</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="3" xml:id="foot_3"><p>If we increase project duration by 10%, avg(win_rate) decreases 0.006*0.1=0.06%.</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="4" xml:id="foot_4"><p>If we increase project description by 10%, avg(success_rate) decreases 0.013*0.1=0.13%</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="5" xml:id="foot_5"><p>Estimation Results of Linear Probability Model are suppressed for brevity.</p></note>
+		</body>
+		<back>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<monogr>
+		<title/>
+		<author>
+			<persName><surname>References</surname></persName>
+		</author>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Importance of Measures of Past Performance: Empirical Evidence on Quality of e-Service Providers</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">D</forename><surname>Banker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Hwang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Contemporary Accounting Research</title>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="307" to="337" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Is the world really flat? A look at offshoring at an online programming marketplace</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Gefen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Carmel</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS quarterly</title>
+		<imprint>
+			<biblScope unit="page" from="367" to="384" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Comparing open and sealed bid auctions: evidence from online labor markets</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Hong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">A</forename><surname>Pavlou</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="49" to="69" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Doing business with strangers: Reputation in online service marketplaces</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Moreno</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Terwiesch</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="865" to="886" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Costly bidding in online markets for IT services</title>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">M</forename><surname>Snir</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">M</forename><surname>Hitt</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Science</title>
+		<imprint>
+			<biblScope unit="volume">49</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="1504" to="1520" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">The value of reputation in an online freelance marketplace</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Yoganarasimhan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Marketing Science</title>
+		<imprint>
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="860" to="891" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Inefficient hiring in entry-level labor markets</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Pallais</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The American Economic Review</title>
+		<imprint>
+			<biblScope unit="volume">104</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="3565" to="3599" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">The impact of online auction duration</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>Haruvy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">T P</forename><surname>Leszczyc</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Decision Analysis</title>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="99" to="106" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<monogr>
+		<title level="m" type="main">Optimal reservation prices and superior information in auctions with common-value elements: Evidence from field data</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">G</forename><surname>Cox</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2005">2005</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Buying, bidding, playing, or competing? Value assessment and decision dynamics in online auctions</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Ariely</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Simonson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Consumer psychology</title>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="issue">1-2</biblScope>
+			<biblScope unit="page" from="113" to="123" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Price formation and its dynamics in online auctions</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Bapna</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Jank</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Shmueli</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Decision Support Systems</title>
+		<imprint>
+			<biblScope unit="volume">44</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="641" to="656" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<monogr>
+		<title level="m" type="main">Do Auction Parameters Affect Buyer Surplus in E-Auctions for Procurement?</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Mithas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">L</forename><surname>Jones</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2007">2007</date>
+			<publisher>Production and Operations Management</publisher>
+			<biblScope unit="volume">16</biblScope>
+			<biblScope unit="page" from="455" to="470" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Diasporas and outsourcing: evidence from oDesk and India</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>Ghani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><forename type="middle">R</forename><surname>Kerr</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Stanton</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Science</title>
+		<imprint>
+			<biblScope unit="volume">60</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="1677" to="1697" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">The landscape of electronic market design</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Anandalingam</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">W</forename><surname>Day</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Raghavan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Science</title>
+		<imprint>
+			<biblScope unit="volume">51</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="316" to="327" />
+			<date type="published" when="2005">2005</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<monogr>
+		<title level="m" type="main">Auctions on the Internet: What&apos;s being auctioned, and how? The journal of industrial economics</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Lucking-Reiley</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2000">2000</date>
+			<biblScope unit="volume">48</biblScope>
+			<biblScope unit="page" from="227" to="252" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<monogr>
+		<title level="m" type="main">Effects of information revelation policies under cost uncertainty. information systems Research</title>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">N</forename><surname>Kannan</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2012">2012</date>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="page" from="75" to="92" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<monogr>
+		<title level="m" type="main">Behavioral decision theory: Processes of judgement and choice. Annual review of psychology</title>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">J</forename><surname>Einhorn</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">M</forename><surname>Hogarth</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1981">1981</date>
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="page" from="53" to="88" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Secondprice common value auctions with uncertainty, private and public information: experimental evidence</title>
+		<author>
+			<persName><forename type="first">I</forename><surname>Brocas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">D</forename><surname>Carrillo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Castro</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Behavioral and Experimental Economics</title>
+		<imprint>
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Expert judgment about uncertainty: Bayesian decision making in realistic settings</title>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">H</forename><surname>Beach</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Organizational Behavior and Human Performance</title>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="10" to="59" />
+			<date type="published" when="1975">1975</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

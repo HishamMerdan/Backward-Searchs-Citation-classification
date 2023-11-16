@@ -1,0 +1,816 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Vanishing Borders in the Internet Age: The Income Elasticity of the Supply of Foreign Labor in Virtual versus Physical Markets</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Jing</forename><surname>Gong</surname></persName>
+							<email>gong@temple.edu</email>
+							<affiliation key="aff0">
+								<orgName type="institution">Temple University</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Yili</forename><surname>Hong</surname></persName>
+							<email>hong@asu.edu</email>
+							<affiliation key="aff1">
+								<orgName type="institution">Arizona State University</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Alejandro</forename><surname>Zentner</surname></persName>
+							<email>azentner@utdallas.edu</email>
+							<affiliation key="aff2">
+								<orgName type="institution">University of Texas at Dallas</orgName>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Vanishing Borders in the Internet Age: The Income Elasticity of the Supply of Foreign Labor in Virtual versus Physical Markets</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="MD5">8FA11529300AF8F80B37B79A578A1E61</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.7.3" ident="GROBID" when="2023-06-16T09:22+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>This study investigates how the supply of foreign labor in virtual versus physical markets responds to monetary incentives using information on digital labor flows from a major global online labor platform for IT services in conjunction with data on physical labor flows into the United States. We use exogenous changes in the exchange rate as a source of identification: a depreciation of a country's currency against the US dollar exogenously increases the incentives of its workers to seek employment in the United States. Our results suggest that monetary incentives, measured as a depreciation of a country's currency against the US dollar, have a substantial impact on the supply of foreign labor in virtual markets. However, we do not find that monetary incentives have a statistically significant impact on the supply of foreign labor in physical markets, which might be expected since physical migration faces substantial bureaucratic restrictions and transaction costs.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.">Introduction</head><p>Legal barriers to migration block massive efficiency enhancing migration flows from poor to rich countries, and arguably represent one of the greatest inefficiencies in the global economy. The economic losses due to migration restrictions have been estimated to range between 20 and 60 percent of the global GDP, a magnitude that is one or two orders of magnitude larger than the combined economic losses due to the barriers to trade and capital flows <ref type="bibr" target="#b1">[1]</ref>. The sheer size of these inefficiencies reveals that even small migration flows are capable of having significant efficiency gains.</p><p>Online markets often escape the rules of traditional markets and have their own alternate reality. For instance, consumers can avoid paying sales taxes when they make online purchases from websites that do not have a physical store in their states, and international workers and firms can sometimes circumvent the legal barriers to physical migration and engage in remote working relationships with foreign partners. Our primary objective in this paper is to investigate how elastic the supply of foreign labor in the digital world is to changes in income. Since foreigners can work for American employers either by engaging in virtual working relationships with American employers or by physically immigrating into the United States, we also study how the income elasticity of the labor supply in virtual markets compares with the income elasticity of physical labor flows into the United States.</p><p>Addressing these questions requires the use of data on both the supply of labor in virtual markets and physical labor flows, and the existence of an exogenous shock affecting the pecuniary incentives of foreigners to seek employment from American employers. In this paper, we use just such a data set on virtual and physical labor flows into the United States, and we employ the change in the exchange rate as an exogenous shock affecting workers' virtual labor supply functions and physical migration incentives. Specifically, a depreciation of a country's exchange rate against the US dollar increases foreign workers' incentives to engage in virtual working relationships with employers in the United States, since a depreciation of a foreign country's exchange rate implies that a given monetary compensation denominated in US dollars represents a higher monetary compensation measured in the foreign worker's domestic currency. Similarly, a depreciation of the of a country's exchange rate against the US dollar increases foreign workers' incentives to physically migrate and seek employment in the United States, since transfers of money to migrants' own countries (i.e., remittances) and wealth accumulation for the return (i.e., return savings) are known to drive physical migration <ref type="bibr" target="#b2">[2]</ref><ref type="bibr" target="#b3">[3]</ref><ref type="bibr" target="#b4">[4]</ref>.</p><p>Although there has been a substantial amount of research and political controversy regarding how traditional physical migration and offshoring activities to other countries affect local labor markets. On the one hand, both hiring immigrants and offshoring can reduce the demand for domestic workers via a direct substitution effect <ref type="bibr" target="#b5">[5]</ref><ref type="bibr" target="#b6">[6]</ref><ref type="bibr">[7]</ref>. On the other hand, hiring immigrants and offshoring may reduce production costs and increase production efficiency, leading to an increase in the demand for domestic workers <ref type="bibr" target="#b8">[8,</ref><ref type="bibr" target="#b9">9]</ref>. While the academic research as well as the political controversy on this topic has focused on traditional physical migration flows, the fast growth in virtual migration that is currently taking place will shortly bring online labor markets under scrutiny.</p><p>Early research focusing on online labor markets predicted that the Internet facilitates the exchange of labor by reducing search and transaction costs <ref type="bibr" target="#b10">[10]</ref> and increasing both labor demand and supply, which may result in increased match quality and efficiency <ref type="bibr" target="#b11">[11]</ref>. It has been, however, more recent that the proliferation of online labor platforms (e.g., Upwork, Freelancer, Zhubajie/Witmart) has given birth to an actively growing literature empirically studying online labor markets. Our paper contributes most directly to this empirical literature on online labor markets. Some studies in this empirical literature focus on analyzing how various types of information, quality signals, and worker characteristics affect employers' hiring decisions (e.g., Gefen and Carmel <ref type="bibr" target="#b12">[12]</ref>, Lin et al. <ref type="bibr" target="#b13">[13]</ref>, Moreno and Terwiesch <ref type="bibr" target="#b14">[14]</ref>, and Pallais <ref type="bibr" target="#b15">[15]</ref> focused on the role of reputation systems; Agrawal et al. <ref type="bibr" target="#b16">[16]</ref> and Pallais <ref type="bibr" target="#b15">[15]</ref> on the role of worker experience; Stanton and Thomas <ref type="bibr" target="#b17">[17]</ref> on agency affiliation; Chan and Wang <ref type="bibr" target="#b18">[18]</ref> on the role of gender; and Ghani et al. <ref type="bibr" target="#b19">[19]</ref> on the role of ethnicity).</p><p>Another stream of papers in this literature analyzes worker behavior in online labor platforms (e.g., Chen and Horton <ref type="bibr" target="#b20">[20]</ref> found that workers respond to wage cuts by quitting; Snir and Hitt <ref type="bibr" target="#b21">[21]</ref> found excessive bidding; and Moreno and Terwiesch <ref type="bibr" target="#b14">[14]</ref> found that workers increase their reservation wages when their reputation scores improve).</p><p>Finally, some studies analyze the role of geographic and cultural differences in online labor markets (e.g., Gefen and Carmel <ref type="bibr" target="#b12">[12]</ref> analyzed employer behavior in online labor markets finding that employers prefer domestic workers; Agrawal et al. <ref type="bibr" target="#b16">[16]</ref> found that freelancers from developing countries have a lower winning probability compared with similar freelancers from developed countries; Hong and Pavlou <ref type="bibr" target="#b22">[22]</ref> examined how differences in language, culture, and time zone affect employers' hiring choices; and Gong <ref type="bibr" target="#b23">[23]</ref> examined the role of geographic and economic differences in the matching between workers and employers). Our paper contributes to this empirical literature by studying global digital labor flows and comparing the differences in how pecuniary motivation affects virtual versus physical labor flows.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.">Background and hypotheses</head><p>Although world-wide surveys report that vast numbers of people express desire to physically migrate from poor to rich countries, only approximately 220 million people (accounting for 3.3 percent of the world's population) lived outside their countries of origin in 2015 <ref type="bibr" target="#b24">[24]</ref>.</p><p>Prior research shows that policy barriers to global physical labor mobility play a critical role in restricting the migration of labor across borders, and that the restrictions to physical migration from lowwage to high-wage countries are a contender for the title of creating the single greatest economic inefficiency in the global economy <ref type="bibr" target="#b1">[1]</ref>. Because virtual labor flows are not accounted for when estimating the size of these inefficiencies, and virtual labor flows have the potential to alleviate the massive costs due to the restrictions to physical migration <ref type="bibr" target="#b25">[25]</ref>, measuring the size of the income elasticity of the supply of foreign labor in virtual versus physical markets is important. Moreover, our study is also timely, owing to the current political controversy in the United States concerning immigration.</p><p>Our study focuses on studying immigration into the United States, which adopts an employer-driven program to regulate the employment of foreign workers <ref type="bibr" target="#b3">[3,</ref><ref type="bibr" target="#b25">25]</ref>. For example, the H-1B nonimmigrant visa program allows U.S. employers to temporally recruit foreign workers in "specialty occupations," defined as positions that typically require specialized knowledge and attainment of a bachelor's or higher degree. In addition, in an attempt to protect domestic workers, employers are required to pay the foreign worker the higher of the actual or prevailing wage for the position. Since 2004, the statutory cap is 65,000 new visas per year, in addition to 20,000 visas under the advanced degree exemption. However, compared to the annual cap, the number of H-1B petitions filed each year is much higher. For the 2018 fiscal year, USCIS received 199,000 H-1B petitions, and the annual cap was filled within the first week of the filing period.</p><p>Due to these policy barriers to physical labor mobility, we expect that the supply of labor in the physical world to be relatively inelastic to intertemporal variations in monetary incentives.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Specifically, due to the policy restrictions that the United States imposes on its employment-based immigration programs (e.g., the H-1B visa program) and the lengthy process it takes for a foreign worker to obtain a work visa permit, we expect that the supply of foreign labor into the United States would be relatively inelastic to inter-temporal variations in monetary incentives.</head><p>Conversely, our expectation is that online labor platforms can circumvent the policy barriers to physical migration <ref type="bibr" target="#b25">[25]</ref> and reduce search and transaction costs <ref type="bibr" target="#b10">[10]</ref>. On online labor platforms such as Upwork and Freelancer, foreign workers can engage in virtual working relationships with American employers without the need to acquire temporary work visa permits from the U.S. government. Therefore, we expect that, virtual labor flows are more elastic to inter-temporal variations in monetary incentives, and more specifically, to fluctuations in bilateral exchange rates.</p><p>Comparing the size of the elasticities of the supply of foreign labor in physical versus virtual markets provides information about the stringency of the restrictions to physical and virtual labor flows. These estimates also serve as ingredients to measure the inefficiency costs due to the restrictions to physical migration and to gauge the extent to which virtual labor flows can alleviate these inefficiencies.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.">Data and context</head><p>In our empirical analysis, we use a proprietary database from a major global online labor platform for IT services containing information on labor flows in the digital world. <ref type="foot" target="#foot_0">1</ref> The focal online labor platform serves as an intermediary that connects employers and potential workers for IT service projects, which are typically small or medium sized projects. The platform uses a reverse auction mechanism, where employers solicit bids by posting project descriptions and workers submit bids by specifying a dollar amount to complete the project. <ref type="foot" target="#foot_1">2</ref> When the bidding period ends, employers evaluate all the bids and choose a winning worker to complete the project. Employers choose the winning worker based on the dollar amount and other factors such as experience, certification, or prior ratings.</p><p>The raw dataset includes data on all projects posted between February 2004 and September 2010. Specifically, we observe detailed information on all projects: employers who posted those projects, bids, workers, and winning workers. In this study, we focus on employers located in the United States, since it is where the majority of the employers are located. Using the raw data, we construct a panel dataset that includes information on counts of monthly country-level "digital" labor flows into to the Unites States, which we measured by counting the country-level number of workers' bids to job postings by employers in the United States. Our database includes information on monthly virtual country-level labor flows into the United States from 91 countries (7,280 country-month level observations).</p><p>Our examination of how the virtual labor supply responds to changes in monetary incentives leverages exogenous changes in the exchange rate as a source of identification. The rationale behind using the exchange rate as a source of identification is that changes in the exchange rate are likely to affect workers' labor supply decisions. For example, when the US dollar appreciates relative to Indian Rupee, Indian workers may have higher incentives to work for U.S. employers since they would now receive a higher monetary compensation. Moreover, changes in the exchange rate are unlikely to be affected by the virtual labor supply (i.e., exogenous). For our study, we obtained information on the nominal exchange rates from the International Monetary Fund. <ref type="foot" target="#foot_2">3</ref> Because we are interested in measuring the effect of a currency devaluation while holding workers' countries price levels fixed, we need information on the evolution of the price index, which we also obtained from the International Monetary Fund. 4  In addition to examining how virtual labor flows respond to changes in monetary compensation, we are interested in studying how changes in monetary compensation affect physical migration flows. There are a few important data challenges in studying this question. For example, a fraction of the immigration into the United States is illegal and data on illegal immigration into the United States by country of origin are not available. In our empirical analysis, we use data on the number of temporary nonimmigrant workers 5 into the United States by country of origin from the Yearbook of Immigration Statistics published by the Department of Homeland Security. 6 We believe using data on temporary nonimmigrant workers is preferred to using data on permanent immigrants 4 http://data.imf.org/?sk=5DABAFF2-C5AD-4D27-A175-1253419C02D1 5 The Department of Homeland Security defines the following classifications as temporary nonimmigrant workers: E1 to E3, H1B, H1B, H1C, H2A, H2B, H2R, H3, H4, I1, L1, L2, O1 to O3, P1 to P4, Q1, R1, R2, TD, and TN. 6 https://www.dhs.gov/immigration-statistics/yearbook because temporary workers are more likely to respond quickly to a change in monetary compensation (e.g., obtaining a permanent resident status takes a long time and is unlikely to respond quickly to a change in the exchange rate). Further, our data on physical migration are not as granular as our digital migration data and are only available at the country-year level instead of the country-month level.</p><p>Table <ref type="table" target="#tab_0">1</ref> presents summary statistics for our data on digital labor flows. Our data on digital labor flows contain a total of 7,280 observations, but our regressions below use a subsample sample of 4,910 observations which have complete information on the exchange rate and price level. <ref type="foot" target="#foot_3">7</ref> The mean number of bids amounts to 532.1 in the entire sample and 729.9 in the regression subsample. The standard deviations in Table <ref type="table" target="#tab_0">1</ref> reveal wide variation in the number of bids across observations. This wide variation in the data is driven by variation both within and between countries. Table <ref type="table" target="#tab_0">1</ref> also shows wide variations in the exchange rate and CPI, but the variation in these variables is mostly driven by variation in the data between countries. However, some countries in the sample experienced large fluctuations in the exchange rate. For example, the South African currency (the ZAR) experienced a sudden appreciation in 2008, from 8.06 ZAR per USD in October 2008 to 9.74 ZAR per USD in November 2008 (a 21% increase within a month). Figure <ref type="figure">1</ref> presents two examples of countries experiencing large fluctuations in the exchange rate. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.">Model</head><p>Our objective in this paper is to study the sensitivity of the supply of labor in virtual and physical markets to monetary compensation changes. One empirical identification strategy to investigate the elasticity of the supply of labor in virtual markets is to examine the behavior of workers who reside abroad and seek to engage in working relationships with employers in the United States. Specifically, we can use the following fixed effects model: (2) which assumes that the monetary incentive to offer labor services to employers in the United States for a worker living in country i increases with an increase in the nominal exchange rate between country i and the United States (i.e., an increase in the number of units of the worker's domestic currency per US dollar). Therefore, our model hypothesizes that the incentives of a worker in any given country to work for an employer located in the United States would increase when the US dollars paid by the employer can buy more units of the foreign worker's domestic currency.</p><formula xml:id="formula_0">Number</formula><p>Substituting ( <ref type="formula">2</ref>) into (1) we get an expression that we can estimate with our available data: Number of Bids i,USA,t =β 0 +π 1 Nominal Exchange Rate i,USA,t +αPrice Index it +σ i,USA +ω t +ε i,USA,t</p><p>(3) Note that our model controls for the evolution of the price index in the worker's country. This is important because it implies that the coefficient π 1 in Model (3) measures the effect of a devaluation of the worker's domestic currency (an increase in the number of units of the worker's domestic currency per US dollar), holding fixed the price level in the worker's country. Thus, the coefficient π 1 in Model (3) measures the effect of a real increase in the worker's purchasing power.</p><p>In our empirical analysis below, we present regression results excluding and including fixed effects by worker country and year-month. Model (3) does not include additional covariates. This is in part because there is a practical data availability limitation of finding data at the monthly level for a large number of countries. More importantly, when our model includes worker country fixed effects 𝜎 𝑖,𝑈𝑆𝐴 , these fixed effects account for time-invariant country level unobservable characteristics such country sizes, language, or cultural traits. The inclusion of worker country fixed effects in our model also controls for worker-employer country-pair (country i and the USA) time invariant factors such as the geographical proximity, the proximity in cultural traits (e.g., language, religion), and the time difference between the worker's country and the United States. The yearmonth fixed effects ω t in our model account for nonparametric time trends in the number of bids.</p><p>In this paper, we are also interested in comparing the sensitivity of the supply of labor to monetary compensation changes in virtual versus physical markets. We study physical migration by using the following model: Number of Temp Workers i,USA,y =β 0 +π 1 Nominal Exchange Rate i,USA,y +αPrice Index iy +σ i,USA +ω y +ε i,USA,y (4) which is similar to Model (3) but has two notable differences. First, in Model (4), the dependent variable measures the number of temporary workers from country i into the United States per year. Second, the data availability limitations restrict our analysis to the yearly level for physical migration.</p><p>The dependent variables in our model are count variables that have a substantial proportion of zeros. In our setting, the advantages of using Poisson regression over using OLS regression with a log-transformed dependent variable are well known <ref type="bibr" target="#b26">[26]</ref>. As pointed out by O'Hara and Kotze <ref type="bibr" target="#b27">[27]</ref>, an OLS estimator with log-transformed dependent variable would result in severely biased estimates, especially when in the presence of heteroscedasticity <ref type="bibr" target="#b28">[28]</ref>. Because our model contains fixed effects, we use a Poisson pseudomaximum likelihood (PPML) estimator <ref type="bibr" target="#b28">[28,</ref><ref type="bibr" target="#b29">29]</ref> that has been widely used in studies with count panel data <ref type="bibr" target="#b30">[30]</ref><ref type="bibr" target="#b31">[31]</ref><ref type="bibr" target="#b32">[32]</ref>, and offers several benefits over other estimators such as a fixed effect negative binomial <ref type="bibr" target="#b33">[33]</ref>. An additional advantage of the PPML estimator is that it does not impose an equi-dispersion condition (a condition that is imposed by the standard Poisson estimator <ref type="bibr" target="#b34">[34]</ref>), making the estimator suitable even in the presence of over-dispersion. The use of PPML also facilitates a valid inference because it allows the estimation of clustered standard errors allowing for heteroskedasticity across countries and serial correlation within workers' countries.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.">Empirical results</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.1.">Digital labor flows</head><p>Table <ref type="table" target="#tab_2">3</ref> presents estimation results of our empirical model measuring digital labor flows, excluding (Column 1) and including (Column 2) fixed effects by worker-country and year-month. The number of workers' bids is measured as a count variable and the exchange rate is measured in logarithms. Because our regressions control for the evolution of the price index within workers' countries, the coefficient estimate on the exchange rate variable measures how currency devaluations in workers' countries affect digital labor flows while holding fixed the price levels within workers' countries. The standard errors are clustered at the worker country level to allow for heteroskedasticity across countries and for serial correlation within workers' countries. As we explained before, in our regressions, we control for the evolution of the price index within workers' countries because we are interested in measuring the effect of a currency devaluation while holding workers' countries price levels fixed. The estimated coefficient on the price index variable itself is positive, which may be due to income effects since high inflation is known to be positively correlated with poor conditions in the labor market <ref type="bibr" target="#b35">[35]</ref>. Workers from countries facing poor labor market conditions may be forced to seek employment opportunities abroad.</p><p>We explained before that our model does not include additional covariates because fixed effects regression models do not allow for the inclusion of time-invariant country-level control variables (e.g., country sizes, language, or cultural traits). 9 We also explained, however, that the inclusion of fixed effects by worker-country controls for all these country-level time invariant factors and worker-employer countrypair time invariant factors such as the geographic or cultural proximity between the worker and employer countries. We also explained before how the inclusion of fixed effects by year-month accounts for time trends (note that the pseudo R-squared amounts to 0.995). Thus, we believe our model serves our goal of identifying how sensitive the supply of labor in virtual markets is to changes in the monetary compensation. The results in both Columns 1 and 2 of Table <ref type="table" target="#tab_3">4</ref> suggest a devaluation of a country's currency does not have a statistically significant impact on physical labor flows into the United States as measured by the number of temporary nonimmigrant workers. In terms of size, the estimated effects in Table <ref type="table" target="#tab_3">4</ref> are also smaller compared to the estimated effects in Table <ref type="table" target="#tab_2">3</ref>. This might be expected since, as explained before, physical labor mobility faces more substantial practical restrictions compared to digital labor flows. Similar to 9 Fixed effects regressions also limit the inclusion of variables with little variation during our study period (e.g., population). In addition, The regressions in Table <ref type="table" target="#tab_3">4</ref> control for the evolution of the price index within workers' countries to facilitate the comparison between the results in Tables <ref type="table" target="#tab_4">3</ref> and<ref type="table" target="#tab_3">4</ref>. Similar to the results in Table <ref type="table" target="#tab_2">3</ref>, the estimated coefficient on the price index variable in Table <ref type="table" target="#tab_3">4</ref> is positive, which supports the conclusion that workers there is a practical limitation arising from the limited data availability at the monthly level. from countries facing poor labor market conditions are more likely to seek employment abroad.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.2.">Physical labor flows</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6.">Conclusion</head><p>In this paper, we investigate how digital and physical labor flows respond to monetary incentives using information on online labor exchanges between workers and employers from a major global online labor platform for IT services, in conjunction with information on physical labor flows into the United States from the Department of Homeland Security. Our empirical analysis uses exogenous changes in the exchange rate as a source of identification. We argue that a depreciation of a country's currency against the US dollar increases the incentives of its workers to seek employment from employers based in the United States.</p><p>Our empirical results suggest that monetary incentives, measured as a depreciation of the exchange rate of a country's currency against the US dollar, have a substantial impact on the supply of labor in virtual markets: in our most comprehensive regressions that include fixed effects by country and month, we have found that the estimated elasticity of the labor supply in virtual markets amounts to 0.89. Conversely, we do not find that monetary incentives have a statistically significant impact on the physical labor flows into the United States, which might be expected since physical migration faces substantial bureaucratic restrictions and transaction costs.</p><p>Prior empirical estimates show that restrictions to physical labor migration generate massive inefficiency costs, and our results in this study suggest that online labor markets have the potential to reduce these deadweight losses. Specifically, online labor markets have the potential to reduce the inefficiency costs imposed by the legal restrictions to physical migration because in online labor markets workers and employers can circumvent the bureaucratic deterrents to mutually beneficial working relationships. Despite the importance of investigating and quantifying the elasticity of the labor supply in online markets and of examining how digital labor markets can help reduce the costs imposed by bureaucratic restrictions to physical migration, there is surprisingly little research on this topic. There is obviously a need for more research to be in a position to accurately predict the degree to which Internet labor markets can ameliorate the inefficiency costs generated by the bureaucratic restrictions to physical labor migration, and we believe our paper is a first step in that direction.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head></head><label></label><figDesc>migration indisputably increases global economic efficiency, migration flows can also create winners and losers. It is therefore not surprising that Proceedings of the 51 st Hawaii International Conference on System Sciences | 2018 URI: http://hdl.handle.net/10125/50533 ISBN: 978-0-9981331-1-9 (CC BY-NC-ND 4.0)</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head>Table 1 .</head><label>1</label><figDesc>Digital migration: summary statistics</figDesc><table><row><cell>Variable</cell><cell>Obs</cell><cell>Mean</cell><cell>SD</cell><cell>Min</cell><cell>Max</cell></row><row><cell cols="2">Full Sample</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Number of Bids</cell><cell>7,280</cell><cell cols="2">532.101 3230.209</cell><cell>0</cell><cell>54536</cell></row><row><cell>log (Worker Country Currency per USD)</cell><cell>6,852</cell><cell>1.289</cell><cell>2.123</cell><cell cols="2">-2.077 9.380</cell></row><row><cell>log (Worker Country CPI)</cell><cell>5,292</cell><cell>4.475</cell><cell>0.140</cell><cell>3.696</cell><cell>4.674</cell></row><row><cell cols="3">Estimation Sample</cell><cell></cell><cell></cell><cell></cell></row><row><cell>Number of Bids</cell><cell>4,910</cell><cell cols="2">729.934 3901.180</cell><cell>0</cell><cell>54536</cell></row><row><cell>log (Worker Country Currency per USD)</cell><cell>4,910</cell><cell>1.605</cell><cell>2.270</cell><cell cols="2">-2.077 9.380</cell></row><row><cell>log (Worker Country CPI)</cell><cell>4,910</cell><cell>4.477</cell><cell>0.143</cell><cell>3.696</cell><cell>4.674</cell></row><row><cell cols="4">Table 2. Physical migration: summary statistics</cell><cell></cell><cell></cell></row><row><cell>Variable</cell><cell>Obs</cell><cell>Mean</cell><cell>SD</cell><cell>Min</cell><cell>Max</cell></row><row><cell cols="2">Full Sample</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Number of Temporary Workers</cell><cell>361</cell><cell cols="2">21508.900 53363.250</cell><cell>3</cell><cell>360903</cell></row><row><cell>log (Worker Country Currency per USD)</cell><cell>355</cell><cell>1.662</cell><cell>2.328</cell><cell cols="2">-1.314 9.249</cell></row><row><cell>log (Worker Country CPI)</cell><cell>341</cell><cell>4.478</cell><cell>0.123</cell><cell>3.883</cell><cell>4.680</cell></row><row><cell cols="3">Estimation Sample</cell><cell></cell><cell></cell><cell></cell></row><row><cell>Number of Temporary Workers</cell><cell>330</cell><cell cols="2">22679.240 55523.390</cell><cell>3</cell><cell>360903</cell></row><row><cell>log (Worker Country Currency per USD)</cell><cell>330</cell><cell>1.656</cell><cell>2.333</cell><cell cols="2">-1.314 9.249</cell></row><row><cell>log (Worker Country CPI)</cell><cell>330</cell><cell>4.479</cell><cell>0.124</cell><cell>3.883</cell><cell>4.680</cell></row><row><cell>Table 2 presents information on physical labor</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>flows. The mean number of temporary workers</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>entering the United States amounts to 21,508.9 in the</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>entire sample and 22,679.2 in the regression</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1"><head></head><label></label><figDesc>The independent variable Price Index it represents the price level in the worker's country i in month t. The variable σ i,USA represents a worker country fixed effect, ω t represents a month fixed effect, and ε i,USA,t represents the error.</figDesc><table><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>jobs postings from employers in the United States in</cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>month t. While Model (1) cannot be estimated because the</cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>monetary incentive to offer labor services for workers</cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>in country i to the United States is unobservable, we</cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>can assume the following relationship:</cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>Monetary Incentive to Offer Labor Services i,USA,t</cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>=a 1 Nominal Exchange Rate i,USA,t</cell></row><row><cell></cell><cell cols="2">of Bids i,USA,t</cell><cell></cell><cell></cell><cell></cell></row><row><cell>=β 0</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell cols="6">+β 1 Monetary Incentive to Offer Labor Services i,USA,t</cell></row><row><cell cols="2">+αPrice Index it</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell cols="3">+σ i,USA +ω t +ε i,USA,t</cell><cell></cell><cell></cell><cell>(1)</cell></row><row><cell cols="6">where i represents a country, and t represents a month.</cell></row><row><cell cols="6">The dependent variable Number of Bids i, USA,t</cell></row><row><cell cols="6">represents the number of bids from workers in country</cell></row><row><cell cols="6">i to job postings from employers in the United States</cell></row><row><cell>in</cell><cell>month</cell><cell>t.</cell><cell>The</cell><cell>independent</cell><cell>variable</cell></row><row><cell cols="6">Monetary Incentive to Offer Labor Services i,USA,t</cell></row><row><cell cols="6">represents the monetary incentive to virtually offer</cell></row><row><cell cols="6">their labor services for workers living in country i to</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2"><head>Table 3 .</head><label>3</label><figDesc>How Poisson regression model and we measure the exchange rate variable in logarithms, the estimated coefficient on the exchange rate variable (approximately) represents an elasticity. While the results in Column 1 of Table 3 suggest that a devaluation of 100% of a country's currency increases digital labor flows by approximately 19%, the more reliable results in Column 2 of Table 3, including fixed effects by worker-country and year-month, suggest that a 100% devaluation of a country's currency increases digital labor flows by approximately 89%.</figDesc><table><row><cell cols="3">monetary incentives affect digital migration</cell></row><row><cell></cell><cell>(1)</cell><cell>(2)</cell></row><row><cell>VARIABLES</cell><cell>Number of Bids</cell><cell>Number of Bids</cell></row><row><cell>log (Worker Country Currency per USD)</cell><cell>0.190**</cell><cell>0.894*</cell></row><row><cell></cell><cell>(0.0812)</cell><cell>(0.538)</cell></row><row><cell>log (Worker Country CPI)</cell><cell>0.418</cell><cell>0.898**</cell></row><row><cell></cell><cell>(0.951)</cell><cell>(0.369)</cell></row><row><cell>Observations</cell><cell>4,910</cell><cell>4,909</cell></row><row><cell>(Pseudo) R-squared</cell><cell>0.0502</cell><cell>0.995</cell></row><row><cell>Worker Country FE</cell><cell>No</cell><cell>Yes</cell></row><row><cell>Year-Month FE</cell><cell>No</cell><cell>Yes</cell></row><row><cell cols="3">Robust standard errors clustered at the worker-country level in parentheses</cell></row><row><cell cols="2">*** p&lt;0.01, ** p&lt;0.05, * p&lt;0.1</cell><cell></cell></row><row><cell>The results in both Columns 1 and 2 suggest that a</cell><cell cols="2">the size of the estimated digital migration effect.</cell></row><row><cell>devaluation of a country's currency increases the</cell><cell cols="2">Because we estimate a</cell></row><row><cell>number of bids from its domestic workers to job</cell><cell></cell><cell></cell></row><row><cell>postings from employers in the United States (i.e.,</cell><cell></cell><cell></cell></row><row><cell>digital labor flows into the United States), as expected.</cell><cell></cell><cell></cell></row><row><cell>The estimation results in Columns 1 and 2, however,</cell><cell></cell><cell></cell></row><row><cell>have substantially different implications in terms of</cell><cell></cell><cell></cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_3"><head>Table 4</head><label>4</label><figDesc>presents estimation results of our empirical model measuring physical labor flows, excluding (Column 1) and including (Column 2) fixed effects by worker-country and year. Note that our data on physical labor flows are more limited than our data on digital labor flows because physical labor flows are measured at the year and not at the month level. Similar to Table3, Table4measures the number of temporary workers moving to the United States as a count variable and the exchange rate in logarithms, and thus the coefficient on the exchange rate variable (approximately) represents an elasticity. Also, similar to Table3, the standard errors in Table4are clustered at the worker country level.</figDesc><table><row><cell cols="3">Table 4. How monetary incentives affect physical migration</cell></row><row><cell></cell><cell>(1)</cell><cell>(2)</cell></row><row><cell>VARIABLES</cell><cell>Number of</cell><cell>Number of</cell></row><row><cell></cell><cell>Temporary Workers</cell><cell>Temporary Workers</cell></row><row><cell>log (Worker Country Currency per USD)</cell><cell>0.0728</cell><cell>0.770</cell></row><row><cell></cell><cell>(0.0864)</cell><cell>(0.613)</cell></row><row><cell>log (Worker Country CPI)</cell><cell>1.487</cell><cell>1.055*</cell></row><row><cell></cell><cell>(2.293)</cell><cell>(0.554)</cell></row><row><cell>Observations</cell><cell>330</cell><cell>293</cell></row><row><cell>(Pseudo) R-squared</cell><cell>0.0133</cell><cell>0.982</cell></row><row><cell>Worker Country FE</cell><cell>No</cell><cell>Yes</cell></row><row><cell>Year FE</cell><cell>No</cell><cell>Yes</cell></row><row><cell cols="3">Robust standard errors clustered at the worker-country level in parentheses</cell></row><row><cell cols="2">*** p&lt;0.01, ** p&lt;0.05, * p&lt;0.1</cell><cell></cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_4"><head>Table 3 ,</head><label>3</label><figDesc>it is not surprising that including fixed effects increases the pseudo R-squared in Table 4 from 0.0133 to 0.982, since fixed effects control for a large number of unobserved factors.</figDesc><table /></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="1" xml:id="foot_0"><p>www.Freelancer.com</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="2" xml:id="foot_1"><p>Sellers submit bids in reverse auctions, unlike ordinary auctions where buyers submit bids. Note that in our context workers are the sellers and employers are the buyers.</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="3" xml:id="foot_2"><p>https://www.imf.org/external/np/fin/ert/GUI/Pages/CountryDataBa se.aspx</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="7" xml:id="foot_3"><p>This estimation sample contains information from 70 countries, including United Arab Emirates, Austria, Belgium, Bahrain, Brazil,</p></note>
+		</body>
+		<back>
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Brunei, Bhutan, Botswana, Canada, Switzerland, Chile, Colombia, Cyprus, Czech Republic, Germany, Denmark, Algeria, Ecuador, Spain, Estonia, Finland, France, UK, Greece, Haiti, Hungary, Indonesia, India, Ireland, Iran, Iceland, Israel, Italy, Japan, Kuwait, Sri Lanka, Lesotho, Lithuania, Luxembourg, Latvia, Mexico, Malta, Mauritius, Malaysia, Namibia, Netherlands, Norway, Nepal, Oman, Pakistan, Panama, Peru, Philippines, Poland, Portugal, Qatar, Russia, Saudi Arabia, Singapore, El Salvador, San Marino, Slovenia, Sweden, Thailand, Trinidad &amp; Tobago, Tunisia, Uruguay, United States, Venezuela, and South Africa. subsample. 8 Similar to the data in digital labor flows, the data on physical labor flows in Table <ref type="table">2</ref> show wide variation across observations. 8 This estimation sample contains information from 69 countries, including United Arab Emirates, Australia, Austria, Belgium, Bahrain, Brazil, Brunei, Bhutan, Botswana, Canada, Switzerland, Chile, Colombia, Cyprus, Czech Republic, Germany, Denmark, Algeria, Ecuador, Spain, Estonia, Finland, France, UK, Greece, Haiti, Hungary, Indonesia, India, Ireland, Iran, Iceland, Israel, Italy, Japan, Kuwait, Sri Lanka, Lesotho, Lithuania, Luxembourg, Latvia, Mexico, Malta, Mauritius, Malaysia, Namibia, Netherlands, Norway, Nepal, Oman, Pakistan, Panama, Peru, Philippines, Poland, Portugal, Qatar, Russia, Saudi Arabia, Singapore, El Salvador, Slovenia, Sweden, Thailand, Trinidad &amp; Tobago, Tunisia, Uruguay, Venezuela, and South Africa.</p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<monogr>
+		<title/>
+		<author>
+			<persName><surname>References</surname></persName>
+		</author>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Economics and Emigration: Trillion-Dollar Bills on the Sidewalk?</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">A</forename><surname>Clemens</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Economic Perspectives</title>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="83" to="106" />
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Migrants&apos; savings, the probability of return migration and migrants&apos; performance</title>
+		<author>
+			<persName><forename type="first">O</forename><surname>Galor</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O</forename><surname>Stark</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Economic Review</title>
+		<imprint>
+			<biblScope unit="page" from="463" to="467" />
+			<date type="published" when="1990">1990</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">High-Skilled Migration and Agglomeration</title>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">P</forename><surname>Kerr</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Kerr</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ç</forename><surname>Özden</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Parsons</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Annual Review of Economics</title>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="201" to="234" />
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Migrant Remittances</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Yang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The Journal of Economic Perspectives</title>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="129" to="151" />
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">The China syndrome: Local labor market effects of import competition in the United States</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">H</forename><surname>Autor</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Dorn</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">H</forename><surname>Hanson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The American Economic Review</title>
+		<imprint>
+			<biblScope unit="volume">103</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="2121" to="2168" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Estimating the impact of trade and offshoring on American workers using the current population surveys</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Ebenstein</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Harrison</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Mcmillan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Phillips</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Review of Economics and Statistics</title>
+		<imprint>
+			<biblScope unit="volume">96</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="581" to="595" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Offshoring jobs? Multinationals and US manufacturing employment</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Harrison</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Mcmillan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Review of Economics and Statistics</title>
+		<imprint>
+			<biblScope unit="volume">93</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="857" to="875" />
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">The effect of immigration on productivity: Evidence from US states</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Peri</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Review of Economics and Statistics</title>
+		<imprint>
+			<biblScope unit="volume">94</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="348" to="358" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Immigration, offshoring, and American jobs</title>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">I</forename><surname>Ottaviano</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Peri</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">C</forename><surname>Wright</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The American Economic Review</title>
+		<imprint>
+			<biblScope unit="volume">103</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="1925" to="1959" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">The Internet and international trade in services</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Freund</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Weinhold</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The American Economic Review</title>
+		<imprint>
+			<biblScope unit="volume">92</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="236" to="240" />
+			<date type="published" when="2002">2002</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Wiring the labor market</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">H</forename><surname>Autor</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The Journal of Economic Perspectives</title>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="25" to="40" />
+			<date type="published" when="2001">2001</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Is the world really flat? A look at offshoring at an online programming marketplace</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Gefen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Carmel</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS quarterly</title>
+		<imprint>
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="367" to="384" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Effectiveness of reputation in contracting for customized production: Evidence from online labor markets</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Viswanathan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Science, Forthcoming</title>
+		<imprint>
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Doing business with strangers: Reputation in online service marketplaces</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Moreno</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Terwiesch</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="865" to="886" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Inefficient hiring in entry-level labor markets</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Pallais</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The American Economic Review</title>
+		<imprint>
+			<biblScope unit="volume">104</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="3565" to="3599" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Does standardized information in online markets disproportionately benefit job applicants from less developed countries?</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Agrawal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Lacetera</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Lyons</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of International Economics</title>
+		<imprint>
+			<biblScope unit="volume">103</biblScope>
+			<biblScope unit="page" from="1" to="12" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Landing the first job: The value of intermediaries in online hiring</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Stanton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Thomas</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The Review of Economic Studies</title>
+		<imprint>
+			<biblScope unit="volume">83</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="810" to="854" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Hiring Preferences in Online Labor Markets: Evidence of a Female Hiring Bias</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Chan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Wang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Science</title>
+		<imprint>
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+	<note>Forthcoming</note>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Diasporas and outsourcing: evidence from oDesk and India</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>Ghani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><forename type="middle">R</forename><surname>Kerr</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Stanton</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Science</title>
+		<imprint>
+			<biblScope unit="volume">60</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="1677" to="1697" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Research Note-Are Online Labor Markets Spot Markets for Tasks? A Field Experiment on the Behavioral Response to Wage Cuts</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">L</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">J</forename><surname>Horton</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="403" to="423" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Costly bidding in online markets for IT services</title>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">M</forename><surname>Snir</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">M</forename><surname>Hitt</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Science</title>
+		<imprint>
+			<biblScope unit="volume">49</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="1504" to="1520" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">On Buyer Selection of Service Providers in Online Outsourcing Platforms for IT Services</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Hong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">A</forename><surname>Pavlou</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<imprint>
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<monogr>
+		<title level="m" type="main">A Structural Two-Sided Matching Model of Online Labor Markets</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Gong</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">Working Paper</note>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title/>
+		<ptr target="http://www.unfpa.org/migration" />
+	</analytic>
+	<monogr>
+		<title level="j">United Nations Population Fund</title>
+		<imprint>
+			<date type="published" when="2015-08-30">2015. August 30, 2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">Global Talent Flows</title>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">P</forename><surname>Kerr</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Kerr</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ç</forename><surname>Özden</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Parsons</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The Journal of Economic Perspectives</title>
+		<imprint>
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="83" to="106" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Further Simulation Evidence on the Performance of the Poisson Pseudo-Maximum Likelihood Estimator</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">S</forename><surname>Silva</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Tenreyro</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Economics Letters</title>
+		<imprint>
+			<biblScope unit="volume">112</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="220" to="222" />
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Do Not Log-Transform Count Data</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">B</forename><surname>O'hara</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">J</forename><surname>Kotze</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Methods in Ecology and Evolution</title>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="118" to="122" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">The Log of Gravity</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">S</forename><surname>Silva</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Tenreyro</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The Review of Economics and Statistics</title>
+		<imprint>
+			<biblScope unit="volume">88</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="641" to="658" />
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<monogr>
+		<title level="m" type="main">Stata Code for Robust Standard Errors in the Fixed Effects Poisson</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Simcoe</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">Structural gravity and fixed effects</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Fally</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of International Economics</title>
+		<imprint>
+			<biblScope unit="volume">97</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="76" to="85" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">Cultural differences and geography as determinants of online prosocial lending</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Burtch</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Ghose</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Wattal</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">38</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="773" to="794" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Show Me the Way to Go Home: An Empirical Investigation of Ride Sharing and Alcohol Related Motor Vehicle Fatalities</title>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">N</forename><surname>Greenwood</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">41</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="163" to="187" />
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">Fixed-Effects Methods for the Analysis of Non-Repeated Events</title>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">D</forename><surname>Allison</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><forename type="middle">A</forename><surname>Christakis</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Sociological Methodology</title>
+		<imprint>
+			<biblScope unit="volume">36</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="155" to="172" />
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<monogr>
+		<title level="m" type="main">Quasi-Likelihood Methods for Count Data (Handbook of Applied Econometrics)</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Wooldridge</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1997">1997</date>
+			<publisher>Blackwell</publisher>
+			<pubPlace>Oxford</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">Warning: Inflation may be harmful to your growth</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Ghosh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Phillips</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IMF Economic Review</title>
+		<imprint>
+			<biblScope unit="volume">45</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page">672</biblScope>
+			<date type="published" when="1998">1998</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

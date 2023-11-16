@@ -1,0 +1,2369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Ethical norms and issues in crowdsourcing practices: A Habermasian analysis</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author role="corresp">
+							<persName><forename type="first">Daniel</forename><surname>Schlagwein</surname></persName>
+							<email>schlagwein@sydney.edu.au</email>
+							<affiliation key="aff0">
+								<orgName type="department">Discipline of Business Information Systems</orgName>
+								<orgName type="institution" key="instit1">The University of Sydney Business School</orgName>
+								<orgName type="institution" key="instit2">The University of Sydney</orgName>
+								<address>
+									<settlement>Sydney</settlement>
+									<region>NSW</region>
+									<country key="AU">Australia</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">|</forename><surname>Dubravka Cecez-Kecmanovic</surname></persName>
+							<affiliation key="aff1">
+								<orgName type="department" key="dep1">School of Information Systems and Technology Management</orgName>
+								<orgName type="department" key="dep2">UNSW Business School</orgName>
+								<orgName type="institution">UNSW</orgName>
+								<address>
+									<settlement>Sydney</settlement>
+									<region>NSW</region>
+									<country key="AU">Australia</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">|</forename><forename type="middle">Benjamin</forename><surname>Hanckel</surname></persName>
+							<affiliation key="aff2">
+								<orgName type="department">School of Population Health and Environmental Sciences</orgName>
+								<orgName type="institution">King&apos;s College London</orgName>
+								<address>
+									<settlement>London</settlement>
+									<country key="GB">UK</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff3">
+								<orgName type="department">School of Social Sciences</orgName>
+								<orgName type="institution">The University of Tasmania</orgName>
+								<address>
+									<settlement>Hobart</settlement>
+									<region>TAS</region>
+									<country key="AU">Australia</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff4">
+								<orgName type="department" key="dep1">Discipline of Business Information Systems</orgName>
+								<orgName type="department" key="dep2">Business School</orgName>
+								<orgName type="institution" key="instit1">The University of Sydney</orgName>
+								<orgName type="institution" key="instit2">The University of Sydney</orgName>
+								<address>
+									<postCode>2006</postCode>
+									<settlement>Sydney</settlement>
+									<region>NSW</region>
+									<country key="AU">Australia</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Ethical norms and issues in crowdsourcing practices: A Habermasian analysis</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="MD5">3A30E41D1A61A450479B72696E94B4C8</idno>
+					<idno type="DOI">10.1111/isj.12227</idno>
+					<note type="submission">Received: 8 October 2016 Revised: 14 September 2018 Accepted: 17 September 2018</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.7.3" ident="GROBID" when="2023-06-16T09:22+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>critical theory</term>
+					<term>crowdsourcing</term>
+					<term>discourse ethics</term>
+					<term>fairness</term>
+					<term>freelancing</term>
+					<term>Habermas</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Crowdsourcing practices have generated much discussion on their ethics and fairness, yet these topics have received little scholarly investigation. Some have criticized crowdsourcing for worker exploitation and for undermining workplace regulations. Others have lauded crowdsourcing for enabling workers' autonomy and allowing disadvantaged people to access previously unreachable job markets. In this paper, we examine the ethics in crowdsourcing practices by focusing on three questions: (a) What ethical issues exist in crowdsourcing practices? (b) are ethical norms emerging or are issues emerging that require ethical norms? and, more generally, (c) how can the ethics of crowdsourcing practices be established? We answer these questions by engaging with Jürgen Habermas' discourse ethics theory to interpret findings from a longitudinal field study (from 2013 to 2016) involving key crowdsourcing participants (workers, platform organizers, and requesters) of three crowdsourcing communities. Grounded in this empirical study, we identify ethical concerns and discuss the ones for which ethical norms have emerged as well as others which remain unresolved and problematic in crowdsourcing practices. Furthermore, we provide normative considerations of how ethical concerns can be identified, discussed, and resolved based on the principles of discourse ethics.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1">| INTRODUCTION</head><p>The term "crowdsourcing" refers to work practices based on crowd-based innovation and freelancing platforms, such as InnoCentive or UpWork <ref type="bibr" target="#b54">(Jeppesen &amp; Lakhani, 2010;</ref><ref type="bibr" target="#b79">Nickerson, Sundararajan, &amp; Teigland, 2016)</ref>; open innovation platforms of large organizations, such as LEGO or NASA (eg, <ref type="bibr" target="#b65">Lakhani, Lifshitz-Assaf, &amp; Tushman, 2013;</ref><ref type="bibr" target="#b93">Schlagwein &amp; Bjørn-Andersen, 2014)</ref>; and crowd-based local marketplaces, such as TaskRabbit or Uber <ref type="bibr" target="#b101">(Sundararajan, 2016)</ref>. At times, the term is also used to refer to noncommercial peer production communities including those around Linux or Wikipedia <ref type="bibr" target="#b10">(Benkler, 2006;</ref><ref type="bibr" target="#b102">Tapscott &amp; Williams, 2006)</ref>. However, in this paper, we use the term in the former sense. In crowdsourcing, work is allocated based on requesters' open calls placed on information technology (IT) platforms that enable them to access widely distributed "crowds" of workers, their skills, and their ideas (eg, <ref type="bibr" target="#b2">Afuah &amp; Tucci, 2012;</ref><ref type="bibr" target="#b28">Estellés-Arolas &amp; González-Ladrón-de-Guevara, 2012;</ref><ref type="bibr" target="#b71">Majchrzak &amp; Malhotra, 2013)</ref>. These IT-enabled work practices, such as crowdsourcing and freelancing, are becoming increasingly important and are expected to seriously compete with fixed employment over the coming decade (see further <ref type="bibr">McKinsey Global Institute, 2015;</ref><ref type="bibr" target="#b101">Sundararajan, 2016;</ref><ref type="bibr">The Economist, 2015)</ref>.</p><p>Crowdsourcing is not without its critics and controversies. In particular, crowdsourcing practices have been questioned repeatedly on ethical grounds <ref type="bibr">(eg, Bergvall-Kåreborn &amp; Howcroft, 2014;</ref><ref type="bibr" target="#b30">Felstiner, 2011;</ref><ref type="bibr" target="#b64">Kleemann, Voß, &amp; Rieder, 2008;</ref><ref type="bibr" target="#b97">Silberman, Irani, &amp; Ross, 2010)</ref>. Two opposing views on the ethics of crowdsourcing are apparent <ref type="bibr" target="#b32">(Fish &amp; Srinivasan, 2012)</ref>. On the one hand, crowdsourcing has been criticized, for example, for providing cheap labour and global arbitrage that circumvents workplace regulations <ref type="bibr">(eg, Bergvall-Kåreborn &amp; Howcroft, 2014;</ref><ref type="bibr" target="#b30">Felstiner, 2011;</ref><ref type="bibr" target="#b94">Scholz, 2017)</ref>. Similarly, others consider crowdsourcing practices as "digital sweatshops" <ref type="bibr" target="#b110">(Zittrain, 2009)</ref> that create a "share-the-scraps economy" <ref type="bibr" target="#b86">(Reich, 2015)</ref>. On the other hand, crowdsourcing has been defended, for example, as a work arrangement that increases workers' autonomy and learning, matching workers and requesters without need of a "middle man" corporation and helping workers from disadvantaged backgrounds to access wider job markets (eg, <ref type="bibr" target="#b7">Barnes, Green, &amp; Hoyos, 2015;</ref><ref type="bibr" target="#b24">Dawson &amp; Bynghall, 2011;</ref><ref type="bibr" target="#b37">Fung, 2013)</ref>. It has been proposed that crowdsourcing is efficient <ref type="bibr" target="#b74">(Miller, 2011)</ref>, fair <ref type="bibr" target="#b47">(Horton, 2011)</ref>, and a model for the future of work <ref type="bibr" target="#b101">(Sundararajan, 2016)</ref>. In this view, fairness is ensured through process openness and transparency <ref type="bibr" target="#b0">(Abrahamson, Ryder, &amp; Unterberg, 2013)</ref>. While these two very different views of the fairness and ethics of and in crowdsourcing have been publicly voiced, it is rare to find systematic scholarly investigations of the ethical questions of crowdsourcing. In line with this special issue's aim, a critical-theoretical analysis of the actual ethical issues in crowdsourcing is warranted.</p><p>In this paper, inspired by and engaged with <ref type="bibr">Habermas' discourse ethics (1990</ref><ref type="bibr">Habermas' discourse ethics ( , 1993))</ref>, we seek to investigate the extant ethical issues in crowdsourcing practices. While many critical-theoretical perspectives on ethics and business (eg, <ref type="bibr" target="#b13">Boje, 2008;</ref><ref type="bibr" target="#b35">French &amp; Granrose, 1995;</ref><ref type="bibr" target="#b61">Karmasin, 2002;</ref><ref type="bibr" target="#b106">Ulrich, 2008)</ref> might be considered, our choice of Habermas' discourse ethics is motivated by three major arguments.* Firstly, grounded in his theory of communicative action, <ref type="bibr" target="#b38">Habermas (1984</ref><ref type="bibr" target="#b39">Habermas ( , 1987))</ref>, through his discourse ethics, presents one of the most prominent critical-theoretical perspectives on ethics that may overcome mutually exclusionary positions of what could be called universalistic and particularist (relativist) perspectives (to be discussed later) <ref type="bibr" target="#b92">(Scherer &amp; Patzer, 2011)</ref>. Secondly, Habermas, in his discourse ethics, is concerned with situations characterized by culturally heterogeneous values and norms often present in crowdsourcing as it crosses national and cultural boundaries. Thirdly, in his discourse ethics, Habermas proposes practical discourse and standards for making ethical judgements that are highly relevant for exploring the fairness and ethics of crowdsourcing.</p><p>The purpose of this paper is to contribute to a better understanding of ethical issues within crowdsourcing practices (explanatory analysis) and then to propose normative-ethical guidance on how to address the current and future ethical issues (normative considerations). In particular, we seek to answer the following research questions: (a) What *We note here that crowdsourcing and its ethics could be approached differently by focusing on global-capitalist and neoliberal economic issues. This perspective could reveal how crowdsourcing of labour emerged in the context of neoliberal economic ideology, created global labour market competition and contributing to new modes and norms of employment. This perspective is adopted elsewhere <ref type="bibr" target="#b11">(Bergvall-Kåreborn &amp; Howcroft, 2014;</ref><ref type="bibr" target="#b64">Kleemann et al., 2008;</ref><ref type="bibr" target="#b94">Scholz, 2017)</ref>. ethical issues exist in crowdsourcing practices? (b) are ethical norms emerging or are issues emerging that require ethical norms? and, more generally, (c) how can the ethics of crowdsourcing practices be established?</p><p>To develop answers to these difficult but important questions, we designed, conducted, and interpreted a longitudinal field study of three crowdsourcing communities, <ref type="bibr">LocalCrowd, CreativeCrowd, and GlobalCrowd (from 2013</ref> to 2016; these are pseudonyms). These cases are all located in the wider context of late-capitalistic and neoliberal economic organization and predominantly "Western" cultures. The study design and analysis were informed by Jürgen Habermas' discourse ethics <ref type="bibr" target="#b40">(Habermas, 1990</ref><ref type="bibr">(Habermas, , 1993;;</ref><ref type="bibr" target="#b75">Mingers &amp; Walsham, 2010)</ref>. We collected first-hand accounts through 34 interviews with workers, requesters, and platform organizers, in addition to observation of and actual participation in crowdsourcing practices in these communities. A thematic analysis of the empirical data enabled us to identify five major themes of ethical issues and norms. Four themes (payment fairness; openness, transparency, and social feedback; meritocracy; and autonomy) relate to the "contents" of ethical norms and issues. A fifth theme (boundaries and institutions of crowdsourcing) concerns the "scope" of ethical norms and who has legitimate "say" on these norms. Based on the analysis of crowdsourcing and Habermas' general principles of discourse ethics, we then propose normative suggestions to address the remaining and future ethical issues in crowdsourcing.</p><p>The paper is organized as follows. Section 2 briefly reviews the prior work on crowdsourcing; Section 3 introduces discourse ethics. Section 4 and Section 5 present the research method and the field sites. Section 6 discusses the findings and explanatory analysis. Section 7 adds normative considerations. Section 8 discusses the contributions of this paper to the literature and to practice. The paper concludes with a brief summary.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2">| PRIOR WORK ON CROWDSOURCING</head><p>Reviews of the prior research on crowdsourcing show that considerations of ethics (questions on what is good, fair, or just) are largely absent. Researchers, to date, have been primarily concerned with managerial, behavioural, and technological questions (for reviews, <ref type="bibr" target="#b4">Aguinis &amp; Lawal, 2013;</ref><ref type="bibr" target="#b26">Doan, Halevy, &amp; Ramakrishnan, 2011;</ref><ref type="bibr" target="#b48">Hossain &amp; Kauranen, 2015;</ref><ref type="bibr" target="#b82">Pedersen et al., 2013;</ref><ref type="bibr" target="#b90">Saxton, Oh, &amp; Kishore, 2013;</ref><ref type="bibr" target="#b103">Tavakoli, Schlagwein, &amp; Schoder, 2017;</ref><ref type="bibr" target="#b111">Zuchowski, Posegga, Schlagwein, &amp; Fischbach, 2016)</ref>. Even though many have raised ethical concerns and the need to research ethical aspects of crowdsourcing has been repeatedly suggested <ref type="bibr">(eg, Bergvall-Kåreborn &amp; Howcroft, 2014;</ref><ref type="bibr" target="#b30">Felstiner, 2011;</ref><ref type="bibr" target="#b64">Kleemann et al., 2008;</ref><ref type="bibr" target="#b97">Silberman et al., 2010)</ref>, the existing crowdsourcing literature provides little in terms of relevant empirical studies and is very limited in debating ethical issues theoretically.</p><p>Information systems (IS) and management research on crowdsourcing has been primarily concerned with its organizational and business use. This research focuses on the use of crowdsourcing as an alternative innovation or production model within diverse business models (eg, <ref type="bibr" target="#b3">Ågerfalk &amp; Fitzgerald, 2008;</ref><ref type="bibr" target="#b9">Bayus, 2013;</ref><ref type="bibr" target="#b68">Leimeister, Huber, Bretschneider, &amp; Krcmar, 2009)</ref>. The analysis is typically focused on the role and meaning of crowdsourcing for the focal organization <ref type="bibr" target="#b2">(Afuah &amp; Tucci, 2012;</ref><ref type="bibr" target="#b54">Jeppesen &amp; Lakhani, 2010;</ref><ref type="bibr" target="#b93">Schlagwein &amp; Bjørn-Andersen, 2014)</ref> or for the industry in which it operates <ref type="bibr" target="#b5">(Aitamurto &amp; Lewis, 2013;</ref><ref type="bibr" target="#b81">Orlikowski &amp; Scott, 2015;</ref><ref type="bibr" target="#b95">Scott &amp; Orlikowski, 2014)</ref>. Although these studies contribute substantially to our conceptual understanding of crowdsourcing, they offer no focal consideration of ethical concerns.</p><p>Behavioural and psychological research on crowdsourcing has been primarily concerned with individual-level cognitions and actions. For example, studies have been conducted on the motivations of individuals to participate in various forms of crowdsourcing (eg, <ref type="bibr" target="#b36">Frey, Lüthje, &amp; Haag, 2011;</ref><ref type="bibr" target="#b53">Jeppesen &amp; Frederiksen, 2006;</ref><ref type="bibr" target="#b66">Lakhani &amp; Wolf, 2005;</ref><ref type="bibr" target="#b68">Leimeister et al., 2009)</ref>. Although these studies at times include considerations of underlying values, they only investigate these values in relation to how they motivate crowds <ref type="bibr" target="#b23">(Choy &amp; Schlagwein, 2016)</ref>. While these studies help us to better understand workers' motivations (for a recent review, <ref type="bibr" target="#b99">Spindeldreher &amp; Schlagwein, 2016)</ref>, they typically are not concerned with ethical issues.</p><p>The engineering and computer science literature on crowdsourcing has generally focused on the underlying IT systems, algorithms, and human-computer interaction (HCI) aspects of crowdsourcing. The typical purpose is to identify efficient designs <ref type="bibr">(eg, Tran-Thanh, Stein, Rogers, &amp; Jennings, 2014;</ref><ref type="bibr" target="#b107">von Ahn, Maurer, McMillen, Abraham, &amp; Blum, 2008)</ref> with limited or no consideration of cultural, ethical, or social implications <ref type="bibr" target="#b50">(Irani, 2015)</ref>. Crowdsourcing is sometimes conceptualized as a form of "human computation" <ref type="bibr" target="#b67">(Law &amp; von Ahn, 2011;</ref><ref type="bibr" target="#b85">Quinn &amp; Bederson, 2011</ref>) using people (ie, "men in the machine") as part of algorithms or HCI systems for problems that cannot be efficiently solved by computer. The name of Amazon's "Mechanical Turk" crowdsourcing platform reflects this view. While innovative prototypes of crowdsourcing systems have been produced, this stream of research has not focused on ethical aspects of crowdsourcing.</p><p>However, some exceptions exist in which several broader ethical concerns about crowdsourcing have been discussed. Notably, these include studies based on a view of (microwork) crowdsourcing as ethically problematic <ref type="bibr" target="#b52">(Irani &amp; Silberman, 2014;</ref><ref type="bibr" target="#b97">Silberman et al., 2010)</ref>, with <ref type="bibr" target="#b51">Irani and Silberman (2013)</ref> providing tools such as Turkopticon and Dynamo <ref type="bibr" target="#b89">(Salehi et al., 2015)</ref> to support crowd workers. Some studies have raised issues from an external, political-economic view and are concerned with the neoliberal conditions that underlie crowdsourcing <ref type="bibr" target="#b11">(Bergvall-Kåreborn &amp; Howcroft, 2014;</ref><ref type="bibr" target="#b64">Kleemann et al., 2008;</ref><ref type="bibr" target="#b94">Scholz, 2017)</ref>. Others have suggested that crowdsourcing leads to "management at a distance" and, in its very approach, potentially embodies male <ref type="bibr" target="#b50">(Irani, 2015)</ref> and Western values <ref type="bibr" target="#b32">(Fish &amp; Srinivasan, 2012)</ref>. These concerns correspond to the findings of a survey study that identified a range of "unfair" issues from the worker perspective <ref type="bibr" target="#b25">(Deng, Joshi, &amp; Galliers, 2016)</ref>. On the other hand, another survey of the same platform reported that workers rated requesters as "fair" <ref type="bibr" target="#b47">(Horton, 2011)</ref>. Other more positive views, while not focused on ethics, are that workers stand to benefit from crowdsourcing through learning and achieving work-life balance <ref type="bibr" target="#b7">(Barnes et al., 2015)</ref> as well as a level of autonomy by becoming entrepreneurs rather than employees <ref type="bibr" target="#b101">(Sundararajan, 2016)</ref>.</p><p>Despite these early research efforts and interesting and useful contributions, the debate on ethical issues rests on shaky grounds empirically and hardly scratches the surface theoretically. We agree that "theoretical and intellectual work on [crowdsourcing] must take an ethical turn" <ref type="bibr">(Fish &amp; Srinivasan, 2012, p. 150)</ref>. We note that many of the above studies are not empirical, judging crowdsourcing exclusively on conceptual grounds, despite the newness and indeterminacy of the phenomenon. Those that are empirical typically investigate only one participant group, such as workers <ref type="bibr" target="#b25">(Deng et al., 2016;</ref><ref type="bibr" target="#b47">Horton, 2011)</ref> or platform organizers <ref type="bibr" target="#b32">(Fish &amp; Srinivasan, 2012)</ref>.</p><p>Given the limitations of prior research, we conducted an empirical study of a variety of crowdsourcing practices, focusing on all key participants (workers, platform organizers, and requesters), and drawing from Habermas' criticaltheoretical perspective on ethics. Based on this study, we answer the following research questions: (a) What ethical issues exist in crowdsourcing practices? (b) are ethical norms emerging or are issues emerging that require ethical norms? and, more generally, (c) how can the ethics of crowdsourcing practices be established? We note that we are interested in the "internal" view on norms and issues in crowdsourcing practices as held by actual participants, not the economic/societal perspective or "external" views on these practices.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3">| THEORETICAL APPROACH: DISCOURSE ETHICS</head><p>Ethical questions are concerned with fundamental values and questions such as what is good, fair, or just and, hence, what should or should not be done? These questions, of course, are more fundamental than operational questions such as how something can be done more efficiently. Growing interest is being shown by IS researchers in the ethics of IT and information flows <ref type="bibr" target="#b21">(Chatterjee &amp; Sarker, 2013;</ref><ref type="bibr" target="#b22">Chatterjee, Sarker, &amp; Fuller, 2009;</ref><ref type="bibr" target="#b75">Mingers &amp; Walsham, 2010)</ref>. Ethics are a central concern for critical IS research <ref type="bibr" target="#b18">(Cecez-Kecmanovic, Klein, &amp; Brooke, 2008;</ref><ref type="bibr" target="#b100">Stahl, 2008)</ref>.</p><p>The different theoretical approaches proposed for studies of ethics and morality are sometimes classified into two basic approaches <ref type="bibr" target="#b92">(Scherer &amp; Patzer, 2011)</ref>. The first approach involves establishing universal morals that are used as a foundation to guide rules, actions, and judgements. Often referred to in business ethics scholarship <ref type="bibr" target="#b8">(Baron, Pettit, &amp; Slote, 1997;</ref><ref type="bibr" target="#b14">Bowie, 1999)</ref> is Kantian ethics, which centre on "categorical imperative(s)" <ref type="bibr" target="#b56">(Kant, 1785;</ref><ref type="bibr" target="#b58">Kant, 1788;</ref><ref type="bibr" target="#b60">Kant, 1797)</ref>. The most widely cited version of Kant's categorical imperatives (found in variations throughout his work) is: "act only according to that maxim whereby you can at the same time will that it should become a universal law without contradiction." Religious rules (eg, the Torah) and the constitutions of nation states (eg, the Constitution for the United States) can be viewed as manifestations of the universalist approach. In most practical business and societal situations, this approach is problematic as people tend to disagree about even the most basic values and ethical norms. Whose religion, values, or moral ideals are right and, hence, who is in a position to define these universals? The second approach proposes the development of local ethical considerations. Here, the particularities of the situation, not universals, take priority <ref type="bibr" target="#b70">(MacIntyre, 1981;</ref><ref type="bibr" target="#b87">Reinecke &amp; Ansari, 2015)</ref>. This approach recognizes that all situations are indeterminate and nonrepeatable <ref type="bibr" target="#b80">(Nussbaum, 2001)</ref>. A problem with this particularistic approach is that it makes ethics and morals relative, fluid and, potentially, even arbitrary. Ultimately, who is to judge anybody on anything without reference to shared universals? Deliberative and discursive approaches to ethical theory have been suggested as a "third way" out of the impasse <ref type="bibr" target="#b12">(Beschorner, 2006;</ref><ref type="bibr" target="#b92">Scherer &amp; Patzer, 2011)</ref>. These approaches bridge the universalist and particularistic approaches by focusing on the (democratic) process through which ethical norms are to be established, which, in most situations, involves both universal and particular arguments <ref type="bibr" target="#b87">(Reinecke &amp; Ansari, 2015)</ref>. Most notable among the existing approaches is discourse ethics theory by <ref type="bibr" target="#b40">Habermas (1990</ref><ref type="bibr">Habermas ( , 1993))</ref>, the prime exponent of the second generation critical theory <ref type="bibr" target="#b27">(Edward &amp; Willmott, 2013)</ref>.</p><p>As "the most integrative and flexible position" <ref type="bibr">(Kettner, 2006, p. 3008)</ref> discourse ethics is based on a democratic process of discourse and communicatively reached agreement. It neither assumes an a priori set of valid universal values nor concede the idea of any universals. Habermas argues that, in modern pluralistic societies, we cannot assume that all people share the same values, nor can we consider that our group's values are "right" and those of other groups are "wrong." Instead of starting from a predetermined set of values, we need a due discursive process to arrive at shared values and valid ethical norms. All affected actors need to participate in a process of "rational discourse" and articulate freely, without coercion, their specific values and interests in what Habermas calls an "ideal speech situation." The purpose of rational discourse is to achieve intersubjective understanding and resolve mutual differences and thus establish agreed-upon values and ethical norms. Without such communicatively achieved agreement, it is not possible to claim any norms as ethical or moral. It has been argued that this approach has strong explanatory and normative power in relation to new and complex organizational and social phenomena including those arising in a digitalized society <ref type="bibr" target="#b19">(Cecez-Kecmanovic &amp; Marjanovic, 2015;</ref><ref type="bibr" target="#b44">Heng &amp; De Moor, 2003;</ref><ref type="bibr" target="#b75">Mingers &amp; Walsham, 2010;</ref><ref type="bibr" target="#b87">Reinecke &amp; Ansari, 2015;</ref><ref type="bibr" target="#b91">Scherer &amp; Palazzo, 2007)</ref>.</p><p>Here, it is useful to introduce a distinction between ethics and morals. However, we note that this distinction is not consistently shared among philosophers and social theorists but, nevertheless, Habermas distinguishes between morals and ethics <ref type="bibr" target="#b31">(Finlayson, 2005)</ref>. In line with Habermas' theory, by "morals," we mean universally accepted principles of goodness. For example, most people would consider respecting basic human rights to be a universal moral norm. However, few morals reach this status. By "ethics," we mean norms (or values) of goodness applicable to and agreed by a specific group of affected people. Ethical norms, according to Habermas, are specific to a group or community and need to be agreed by all affected people. For example, it is "unethical" to eat pork within vegan or Muslim communities. This ethical norm legitimately applies to these specific communities. However, this is not a universal moral norm, and hence, it is not applicable to other communities (because they have not been consulted and have not agreed). In cases where universal agreement needs to be reached on certain matters (eg, for legal purposes) but ethical norms cannot be agreed upon, a form of political process, such as democratic voting, is the "last ditch" form of legitimation. This makes the law legitimate but not necessarily ethical (according to discourse ethics). In this paper, we are not interested in morals or the political/legal mechanism but in ethics, to be specific, ethical norms within a community of people practising crowdsourcing.</p><p>Discourse ethics is grounded in <ref type="bibr" target="#b38">Habermas' (1984</ref><ref type="bibr" target="#b39">Habermas' ( , 1987) )</ref> theory of communicative action that provides a critical theory of society from the perspective of communicative processes <ref type="bibr" target="#b78">(Ngwenyama &amp; Lee, 1997)</ref>. Like other critical theorists of the Frankfurt School, Habermas critiques "instrumental rationality" (seeking the most efficient means to achieve the given ends) and "strategic rationality" (achieving the given ends by influencing others) as driving forces responsible for many problems in modern societies <ref type="bibr" target="#b38">(Habermas, 1984</ref><ref type="bibr" target="#b39">(Habermas, , 1987))</ref>. However, unlike his fellow critical theorists, Habermas does not consider these forms of rationality inevitable, proposing an alternative, "communicative rationality," as a more fundamental and comprehensive form of rationality <ref type="bibr" target="#b109">(White, 1995)</ref>. While instrumentally and strategically rational actors are solely oriented to success (achieving ends), communicatively rational actors are oriented to understanding and achieving ends by developing intersubjective interpretation of a situation through social interaction <ref type="bibr" target="#b17">(Cecez-Kecmanovic, Janson, &amp; Brown, 2002)</ref>. The use of language to express views (as justifiable validity claims) and to present and respond to arguments is critical to building mutual understanding and a shared interpretation of a situation as a basis for reaching agreement and coordinating actions. In Habermas' words, "[The] concept of communicative rationality carries with it connotations based ultimately on the central experience of the unconstrained, unifying, consensus-bringing force of argumentative speech, in which different participants overcome their merely subjective views and, owing to the mutuality of rationally motivated conviction, assure themselves of both the unity of the objective world and the intersubjectivity of their lifeworld" <ref type="bibr">(Habermas, 1984, p. 10)</ref>.</p><p>Argumentative speech or, more specifically, ideal speech situations enable participants to raise, accept, or dispute validity claims (ie, claims to truth, legitimacy, normative rightness, and authenticity) and their reasons in a free and open dialogue of equals. Underpinned by communicative rationality such argumentative speech implies a mode of raising, disputing, arguing, rejecting, and accepting validity claims in which the power of the better argument wins.</p><p>In other words, in rational discourse argumentation process by free and equal subjects is "the sole arbiter of the validity claims that we associate with our reason-backed judgements …. All involved in such argumentation rationally should want certain proprieties of mutual recognition and symmetrical situatedness to be the norm for everyone actually involved and anyone possibly involved, which would ideally regulate the discursive commitments" <ref type="bibr">(Kettner, 2006, p. 302-303)</ref>.</p><p>Discourse ethics are concerned validity claims that pertain to values, social goods, rights, norms, legitimacy, and so forth. The differences in values and norms that underlie disputed actions can only be resolved by moving from an action plain to a discursive plain <ref type="bibr" target="#b38">(Habermas, 1984)</ref>. Ethical validity claims are questioned, defended, agreed upon, and justified through argumentation in a due discursive process. <ref type="bibr" target="#b40">Habermas (1990</ref><ref type="bibr">Habermas ( , 1993) )</ref> defines a due discursive process, that is, a rational discourse, as being characterized by freedom of access, equal rights to participate, truthfulness on the part of participants, and the absence of coercion. A rational discourse implies not only freedom of expression of specific (potentially conflicting) validity claims but also obligations to provide reasons (arguments) for one's position, to seek Verständigung (mutual understanding) and to achieve reasonable agreement.</p><p>Habermas summarizes the rules of rational discourse for establishing ethical norms in two principles:</p><p>1 Principle of discourse: "Only those <ref type="bibr">[ethical]</ref> norms are valid to which all possibly affected persons could agree as participants in rational discourse" <ref type="bibr">(Habermas, 1996, p. 102)</ref>.</p><p>2 Principle of universalization: "[A] norm is valid if and only if the foreseeable consequences and side effects of its general observance for the interests and value-orientation of each individual could be freely and jointly accepted by all affected" <ref type="bibr">(Habermas, 1998, p. 42)</ref>.</p><p>In summary, for ethical norms to be valid, according to Habermas, they must be upheld through a rational discourse involving all affected parties. Valid ethical norms are neither established upfront, nor are they to be decided upon by an individual actor. Instead, ethical norms can only be arrived at and justified through free, open, honest, and noncoercive communication between the affected parties. † † While we have presented the key ideas of discourse ethics in a suitably summarized form, interested readers are encouraged to engage with Habermas <ref type="bibr">' (1990, 1993)</ref> original writings and the treatises thereof <ref type="bibr" target="#b31">(Finlayson, 2005;</ref><ref type="bibr" target="#b75">Mingers &amp; Walsham, 2010;</ref><ref type="bibr" target="#b109">White, 1995)</ref>.</p><p>Habermas' discourse ethics was critiqued on several grounds. The discourse ethics approach assumes individual "moral agents" capable and willing to engage in rational discourse and seek consensus, typical in Western culture. These assumptions are not universally shared in all cultures, arguably limiting the appropriateness of discourse ethics in such settings <ref type="bibr" target="#b98">(Solomon &amp; Higgins, 1993)</ref>. However, on the other hand, and partly in response to such criticism, <ref type="bibr" target="#b92">Scherer and Patzer (2011)</ref> show that the discourse ethics approach is actually sensitive towards cultural differences. It offers useful insights for "engagement in questions of intercultural conflicts in organization studies and international management," and that it has been "employed in the justification of an intercultural business ethics" <ref type="bibr">(Scherer &amp; Patzer, 2011, p. 160)</ref>.</p><p>We agree with the later view: Habermas' discourse ethics is relatively better positioned (compared with alternative ethical frameworks such as those of Kant or Rawls) to appropriately account for different values between different cultures.</p><p>Habermas' discourse ethics and its founding concepts of communicative rationality and ideal speech situation have also been subjected to critique from different quarters <ref type="bibr" target="#b27">(Edward &amp; Willmott, 2013)</ref>. <ref type="bibr" target="#b45">Honneth (1999)</ref> questioned Habermas' location of normative deliberation in social interaction and communicative rationality as linguistic conditions for achieving mutual understanding free of domination. What is missing, in Honneth's view, is recognition of lived experiences of social injustice, and feelings of lack of self-respect and self-esteem that motivate human subjects to engage in a struggle for social recognition and fairer social order. A fairer social order, <ref type="bibr" target="#b46">Honneth (2003)</ref> argues, is aspired to not because it assumes an ideal speech situation, but because "it is only under these conditions (i.e. in a 'just social order') that subjects can attain the most undamaged possible self-relation, and thus individual autonomy" (p. 259). <ref type="bibr" target="#b46">Honneth's (2003)</ref> argument thus is that motivation for social change (and participation in discourse seeking ethical deliberation) comes from feelings of unrecognition or disrespect and that normative potential of social interaction (discourse) can be realized if conceived as a struggle for recognition and respect. However, in a more balanced view, <ref type="bibr" target="#b20">Chambers (1993)</ref> proposed a modification and extension of Habermas' discourse ethics in order to make it more applicable to "real practical discourses" (p. 231). Chambers explains that Habermas' ideal speech situation is exactly that, an "ideal" that is not meant to reflect or be fully realized in a real-life discourse. Rather, the ideal speech situation makes sense and is useful as a standard to measure the degree to which an actual discourse approximates the ideal speech situation. Any practical discourse seeking ethical deliberation and consensus is open ended, emergent, and fallible and thus requires careful support and moderation <ref type="bibr" target="#b20">(Chambers, 1993)</ref>. Our view aligns with the later position: Habermas' discourse ethics provides an ideal to be aspired.</p><p>For a study on the ethics of crowdsourcing, we find Habermasian discourse ethics both conceptually relevant and practically applicable. We share the view that Habermas' work is useful for the study of ethical issues around new IT-based practices, especially in contexts characterized by diverse values and social norms <ref type="bibr" target="#b44">(Heng &amp; De Moor, 2003;</ref><ref type="bibr" target="#b75">Mingers &amp; Walsham, 2010;</ref><ref type="bibr" target="#b88">Ross &amp; Chiasson, 2011)</ref>. Reflecting on the criticism and debates, summarized above, was helpful in recognizing potential pitfalls in applying Habermas' discourse ethics in examining the ethics of crowdsourcing. Given the novelty and global reach of crowdsourcing practices, we contend that it would not be possible to establish a set of values upfront that readily applies to and across crowdsourcing practices. The remaining option is to communicate, seek mutual understanding, and agree upon shared values and ethical norms in crowdsourcing practices themselves. Habermasian discourse ethics theory therefore provides a plausible critical-theoretical foundation from which to study the ethics of crowdsourcing practices.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4">| RESEARCH METHOD</head><p>With our concern being the ethics of crowdsourcing practices, we conducted this study that was sensitized and informed by Habermasian discourse ethics <ref type="bibr" target="#b40">(Habermas, 1990</ref><ref type="bibr">(Habermas, , 1993) )</ref> in the selection of both its empirical design and its theoretical analysis. Consequently, the study belongs to the category of critical social research <ref type="bibr" target="#b1">(Adler, Forbes, &amp; Willmott, 2007;</ref><ref type="bibr" target="#b6">Alvesson &amp; Deetz, 2000)</ref> and, more specifically, to critical IS research <ref type="bibr" target="#b18">(Cecez-Kecmanovic et al., 2008;</ref><ref type="bibr" target="#b49">Howcroft &amp; Trauth, 2005;</ref><ref type="bibr" target="#b100">Stahl, 2008)</ref>. Following the principles of critical IS research methodology <ref type="bibr" target="#b16">(Cecez-Kecmanovic, 2001;</ref><ref type="bibr" target="#b76">Myers &amp; Klein, 2011)</ref>, we focused on the three key elements of critical field research: insight, critique, and transformation <ref type="bibr" target="#b6">(Alvesson &amp; Deetz, 2000)</ref>. We developed insights into crowdsourcing practices in relation to emerging ethical norms. We critiqued the status quo by pointing out unresolved issues. We proposed, normatively, how the ethics of crowdsourcing could be established, and existing practices transformed.</p><p>We examined the ethics of crowdsourcing in a qualitative, longitudinal field study <ref type="bibr" target="#b33">(Flyvbjerg, 2001;</ref><ref type="bibr" target="#b34">Flyvbjerg, 2004;</ref><ref type="bibr" target="#b108">Walsham, 1995)</ref>. With the field study taking place within the context of a larger program on crowdsourcing, the purpose of this specific study (and paper) is to provide an in-depth, empirically grounded understanding of the critical ethical norms and issues within crowdsourcing practices. We examined the ethical norms and issues in three major crowdsourcing communities over a period of 3 years (from 2013 to 2016). We selected these communities based on variety in two theoretical dimensions: (a) one-to-one interaction versus competition models of crowdsourcing and (b) co-location versus global distribution of workers and requesters. These communities cover two of the most common forms of crowdsourcing, broadly falling into the "facilitator" (requesters selecting workers from a freelancer crowd) and "arbitrator" (idea and innovation competitions) categories <ref type="bibr" target="#b55">(Kaganer, Carmel, Hirschheim, &amp; Olsen, 2013)</ref>. While various other types of crowdsourcing exist, the selected communities provide a relevant variety of crowdsourcing practices that allow our research questions to be answered. The three communities, the sites of our study, are described in detail in the next section.</p><p>We collected data from these three study sites, with this including the conducting of 34 formal interviews (and about 50 informal discussions). Fifteen interviews were conducted in person; 19 interviews were conducted via Skype audio or video calls. In line with Habermasian discourse ethics theory, we sought to collect first-hand views on the ethics and fairness of crowdsourcing from the people most directly involved in and affected by crowdsourcing.</p><p>It stands to reason that these people would be (a) workers; (b) organizers (crowdsourcing platform staff); and (c) requesters. While others may also claim to be involved or affected, this tends to be only indirectly and to a significantly lesser extent (see further in Section 8). Interview participants were encouraged to genuinely speak their mind and to openly and reflectively articulate their views and concerns in the interviews. To ensure that our study approximated the conditions of an ideal speech situation and to eliminate any possibility of negative personal or business consequences for our participants, we kept our promise to use pseudonyms for individuals and for the three study sites <ref type="bibr">(LocalCrowd, CreativeCrowd, and GlobalCrowd)</ref> to ensure the ethicality of our research. The benefit of the one-to-one interview format was that we were able to obtain an in-depth understanding of the person's views, without having to consider power relationships in a group situation. On the other hand, of course, the interview design did not allow for conversations and discussions between participants (at least not as part of this study). In addition to the interviews, we wrote field notes and memos, traced forum discussions on the crowdsourcing platforms, collected various documents (eg, press releases, newsletters, and reports), and visited the headquarters of two platforms (CreativeCrowd and LocalCrowd). We also engaged in crowdsourcing in two of the communities (LocalCrowd and GlobalCrowd), which allowed for a wide range of informal and first-hand experiences. Table <ref type="table" target="#tab_0">1</ref> summarizes the data collection.</p><p>Data analysis started early during data collection and continued throughout the empirical study. The analysis involved multiple readings of interview transcripts, field notes, and other documents. We aimed to achieve a holistic understanding of the cases, primarily relying on first-hand narrative accounts <ref type="bibr" target="#b83">(Pettigrew, 1990)</ref>. To support this aim, we used the thematic analysis technique <ref type="bibr" target="#b29">(Ezzy, 2002;</ref><ref type="bibr" target="#b77">Neuman, 2014)</ref>, which started with open coding of interview transcripts and field notes (133 open codes). The codes were then revised through several iterations and grouped into 11 aggregated codes of a higher abstraction. The aggregated codes were further grouped into five themes of ethical issues, considerations, and concerns (see Figure <ref type="figure">1</ref>). The five themes were grounded in the data and in what interview participants talked about in their open-ended, narrative accounts, as well as in their responses to our probing questions. We paid attention to ethical issues and emerging norms, their explicit and implicit justifications, the processes and communications about ethical issues and norms (if any), and the attributed scope of norms and issues.</p><p>We used NVivo 11 to support this coding process (QSR International, 2017).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5">| DESCRIPTION OF STUDY SITES</head><p>The first study site was "LocalCrowd," which featured a one-to-one crowdsourcing and freelancing model, with worker and requester co-located in the same region.</p><p>LocalCrowd's context was that of a federal country in the Asia-Pacific region that is predominantly Anglo-West- forum and discouraged revealing "private information" in "public places" of the site.</p><p>The second study site was "CreativeCrowd," which was based on a competitive crowdsourcing design (open innovation contests), with clients and workers located internationally.</p><p>CreativeCrowd's context was a predominantly Germanic, market-capitalist, democratic, federal country in Europe. Founded in 2007, CreativeCrowd operated primarily in this country where also its headquarters were located. However, the crowd workers and particularly the clients were international. During the time of our study, a formal extension to the North American market was considered but did not come into effect. The number of crowd workers was approaching 100,000 at the time of our study. Public opinion in the country was rather sceptical of crowdsourcing and sharing economy models, based on concerns about the removal of worker protections and deunionization of work. These concerns were particularly shared in the politically left capital city in which CreativeCrowd had its headquarters. Some crowdsourcing and sharing economy models (notably Uber) were shut down in the country due to public, legal, and political pressures. CreativeCrowd's platform staff and management said they were sensitive to the issues and worked closely with the "community" (workers) to make sure their interests, including fair pay (see below), were considered.</p><p>CreativeCrowd focused on competitions for concepts or ideas to solve requesters' problems (under the banner of "open innovation"). Requesters could be individuals, but typically were larger corporations and organizations. Competitions were organized, as in the other case, via an Internet platform (web only, no mobile app). Ideas sought from the crowd included marketing approaches, sustainability solutions, interior designs, concept designs, and so forth.</p><p>CreativeCrowd sought the solutions from its "resident crowd" of creative workers. The crowd members were typically design freelancers, employees working after hours, or newcomers such as students aiming to build a portfolio of projects. Few members made a full-time living from CreativeCrowd. Requesters (individuals or organizations)</p><p>approached the platform organizers in regard to a proposed competition. Together, they developed the framing for the requester's needs (eg, how to describe the task; how much to pay). An open call was then issued via the platform.</p><p>The crowd workers then responded to the open call. A response consisted of a concept proposal. The workers needed to decide how to develop their proposals. Some crowd workers helped each other or worked in teams, while others preferred to work on their solutions in isolation from the community. The requester then selected a winning concept/solution, often using voting or expert jury selection. The requester paid the competition prize money to the winner. Typically, projects were one-off in nature, and payments were individually negotiated between platform organizers and requesters. The payment amount depended on the nature of the task and on other criteria, such as whether the project was commercial or charitable. The technology platform was supportive on frequent interactions between community members and allowed for numerous ways of exchange and discussion, including forum, discussions of design, and links to external web and social media profiles of users. Real names were used on the platform.</p><p>The third study site was "GlobalCrowd," which was based on one-to-one crowdsourcing with both requesters and workers globally distributed.</p><p>GlobalCrowd's context was a predominantly Anglo-Western, market-capitalist, democratic, federal-presidential country. This country was where three of its four offices, including its headquarters, were located, while the fourth office was in a Nordic-European country. with the open call for work that is typical of crowdsourcing. The requester specified a task and a price. Workers, who could see the requester's profile and track record, submitted a response proposal via the platform or asked questions.</p><p>The requester often invited specific workers to apply for their tasks based on workers' profile information or on prior experience with those workers. The requester then selected an applicant based on the proposals. The actual work was undertaken remotely and digitally. For larger work tasks, intermediate submission and payment for deliverables were common. Evidence of hours worked was provided through a screenshot tool on the worker's side. At the end of the transaction, ratings and reviews were left for each party on their respective online profile (visible after both had rated). The technology platform provided a mechanism to help resolve disputes. Payments were made upfront, held in escrow (by the platform), and then released to workers. The platform experimented with different payment designs and introduced a minimum wage that was dependent on the task category. The platform charged a fee for its intermediary services (as did the other two platforms). The platform provided a forum; however, last names of workers were generally withheld, and there was little integration with social media (compared with CreativeCrowd), given the platform's less community aspects.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6">| FINDINGS AND ANALYSIS</head><p>This section discusses the five themes that we identified through the study. Themes 1 to 4 are about the centrally important aspects and concerns within crowdsourcing in relation to ethics and fairness. Theme 5 differs in that it is about the scope of crowdsourcing practices and hence the scope of ethical norms. While discussing the themes, we highlight differences between the cases where necessary.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6.1">| Theme 1: payment fairness</head><p>When asked about fairness in crowdsourcing, most participants, and particularly the workers, immediately turned to the question of payments. The level and split of payments and the power to determine payments were a major "fairness" concern to most participants. The workers felt that crowdsourced work was, in most cases, underpaid, especially for workers without substantial experience or positive social ratings. Positive social ratings (by prior requesters) were held to be crucial for selection for "higher paying jobs" (LocalCrowd and GlobalCrowd) or for receiving recognition in the community (CreativeCrowd). Workers also claimed that requesters, at times, underestimated the amount of work. For example, Craig, a crowd worker on LocalCrowd, related that in his job immediately prior to our interview, the requester had not considered when describing the task in question (garden landscaping) that large potted plants would first have to be moved, which added several hours to the work. However, the requester would not increase the agreed-upon price, pointing to the fact that the agreement was already in place. Workers felt that, for most tasks, crowdsourcing markets were "buyers' markets" where they were forced to compete on price.</p><p>They generally attributed these problems to the platform design, the organizers, or the requesters but not, for example, to a lack of organizing among themselves (eg, in unions or similar structures, a theme that was notably absent from the data). Workers often exhibited "cost-based" (not supply-demand) ideas on fair pricing (how much time, work, and materials were used). They suggested that unpaid "speculative work" was acceptable only as far as it was necessary for a proposal, but not if part of that work was used by the requester.</p><p>Most requesters felt that lower prices for crowdsourced work were fair (ie, lower compared with other ways of getting the work done). Prices were set by "supply and demand" in the same way that prices of goods in other markets were set, with this considered to legitimize the price. Requesters also mentioned the high risk of low-quality workers that they faced, and pointed to workers' benefits (no taxes, opportunities for learning, increased freedom, etc.) as a justification for low prices. Other requesters considered that they had to set prices in accord with the "typ- Requesters noted that the quality of crowd work in several cases did not meet their expectations but that they would still need to pay as workers had "technically met the conditions." They typically felt obliged to pay workers even if they were not happy with the work. Some felt that social conventions often prevented them from rating workers negatively. Hence, they preferred not to rate at all rather than to rate negatively. However, the vast majority of projects were completed to the mutual satisfaction of the worker and the requester. Both workers and requesters accepted the necessity of the platforms taking a share of the price but, at the same time, felt that the fees were too high. Many workers and requesters said they "took work offline" (ie, continuing the work in direct interaction with each other without going through the crowdsourcing platforms). The justification for taking work offline was typically the high fees. Amy, a worker, found that "from the fee standpoint, to make it feel a lot fairer … I think 15% [platform fee] is a huge slice … the whole income part for the participants needs to be sort of revisited."</p><p>The platform organizers were generally concerned with the fairness of the payments and thought that the payments should to be based on the type of work. They stated their aim as being to ensure that a payment was made if the worker completed the work to a reasonable standard. As the creators of the platform, the organizers felt that they were responsible for its design. While they would be "listening to customers" (workers and requesters), they did not feel an obligation to directly involve them in design decisions, including payment and pricing mechanisms.</p><p>Platform organizers were concerned that, in a few instances, crowd members exercised pressure by publicly naming platform organizers (eg, via social media) or contacted requesters seeking their positive rating. Organizers responded to concerns about the fairness of payments through various changes to the crowdsourcing platforms (some of which we observed during our study period). LocalCrowd developed minimum and maximum amounts of payment per category. GlobalCrowd introduced a minimum hourly rate. CreativeCrowd expanded their payments so runners-up were also rewarded. The cofounder of CreativeCrowd explained that this measure was in response not only to criticism from "the community" but was also in alignment with the platform's original purpose. As the cofounder said, this purpose was to provide workers with direct access to clients, circumventing agencies and other companies as "middle men" (with the ideal being to empower workers, not to exploit them). Regarding their share of transactions, platform organizers generally emphasized their legitimate need to maintain and grow as a business (all the studied crowdsourcing platforms were for-profit businesses); hence, they found it questionable that requesters and workers would cut them out through taking work offline.</p><p>From our analysis, it appears that the crowdsourcing practices were underpinned by implicit agreement that prices need to be negotiated relative to the work performed and that ethical pricing should not be left to pure market supply-demand (ie, not the lowest rate globally). Participants also expressed their agreement that payment needs to be made if the work was performed at a reasonable level of quality. Changes to payment arrangements should not be decided by only one side of the transaction. However, some aspects were disputed and continued to be points of disagreement that were not fully resolved. These included the exact degree to which prices should be made dependent on factors other than supply-demand; what exact factors should be considered (quality of work, types of work, worker-side costs, type of requesters such as commercial vs. charitable, etc.); and who was to make design decisions about pricing mechanisms.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6.2">| Theme 2: openness, transparency, and social feedback</head><p>Participants across the study sites agreed that major factors in negotiations and in achieving fairness were public exposure on the platform and social feedback. Many considered that "openness and transparency" created a standard of fairness that made crowdsourcing different from other work environments. All participants considered that "social pressure" was a factor in reaching mutually agreeable terms as negative ratings, through being permanently visible, on the Internet would hurt both parties.</p><p>Requesters said that they strongly relied on social feedback from previous requesters to assess a worker.</p><p>Workers found it important to be able to see the ratings of requesters as well as the requesters' prior ratings of other workers. Some participants emphasized that crowdsourcing was intended to be open (inclusive), for example, allowing people who were disabled, unemployed, or socially isolated to equally participate in digital work.</p><p>The open and transparent availability of social feedback had both positive and negative implications. Many participants considered that the public availability of social feedback and public dialogue "makes people nicer" (as one participant put it) and created trust. For example, one requester on LocalCrowd said, based on social feedback, that she would trust workers: "I hand out credit cards and I hand out keys … I don't ever want [workers] to feel like they're in a [lower] position ethically … yes, there's a high level of trust." On the other hand, negative feedback had a very damaging effect on workers. A crowd worker, May, reported that one negative rating, from her perspective, was entirely unjustified: When things escalated, she said the platform sided with the requester, suspending her account for some time. Other workers said that a consequence of transparency was "nowhere to hide" and that negative feedback would "stick" permanently to accounts. Frank, for example, told us: "I had cases [in which] I had really 'bad clients' [requesters] who instructed me [to do] one thing and wanted the other. Some gave me low feedback that I had [needed] about a year to recover it-[to] recover my feedback."</p><p>Overall, it can be said that wide agreement was expressed about openness, transparency, and social feedback being appropriate for and a constitutive component of crowdsourcing. An emerging, widely accepted norm was that openness, transparency, and social feedback are necessary to ensure "fair" crowdsourcing. Disagreements occurred not only on specific ratings and reviews but also on the precise designs (eg, should social feedback be blinded, nonblinded, immediate, time delayed, etc.?) and the procedures used to address conflicts, including those on disputed negative comments and ratings. Openness and social expectations were criticized for making it problematic for commentators to leave negative comments and, in relation to workers, for making it difficult to recover from the negative feedback obtained and not being able to dispute such feedback.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6.3">| Theme 3: meritocracy</head><p>Participants of all three stakeholder groups considered that crowdsourcing treated everyone equally and that its way of working was primarily or exclusively based on merit. Terms such as "equal footing," "level playing field," or "perfect meritocracy" were used. Participants considered that workers should have equal access to requesters and that performance and conduct should be evaluated based on equality for both workers and requesters. A common example was that crowdsourcing created equal chances for developing world citizens to compete for developed world jobs.</p><p>Generally, crowdsourcing helped previously disadvantaged workers to access job markets that otherwise may not be available to them. For example, May, from the rural Philippines, said, "I have clients [requesters] in the US, I have clients <ref type="bibr">[requesters]</ref> in Australia; it opens up jobs to me that I wouldn't know were available and people get to discover me who wouldn't know that I exist. So, in that way, it's very good. There is not that much going on locally."</p><p>According to all of the participants with whom we spoke, factors such as nationality, ethnic background, gender, and disabilities were of no importance to them, and they were clear that they should not matter in crowdsourcing. In contrast, factors such as experience and social feedback were considered legitimate criteria for being awarded work and for commanding respect in the community. At the same time, the focus on merit (in the sense of the best performers) created a level of competition between workers. A tension was present between competition and solidarity, with Amy summarizing this as "Yes, we do support each other. That's right … but, we're definitely competitors."</p><p>Most platform organizers, requesters, and workers considered that the focus on merit makes crowdsourcing inherently fair. However, some workers were concerned that crowdsourcing devalued their professionalism and would replace it to a degree with "social agreeability." As Drew, a LocalCrowd worker, stated:</p><formula xml:id="formula_0">"[crowdsourcing]</formula><p>makes everything a beauty contest, rather than evaluating the degree of professionalism [quality standard] of the work."</p><p>In our interpretation of the study's data, the different participant groups implicitly or explicitly accepted that the chances of benefiting from crowdsourcing (such as getting jobs, getting paid, working from home, running a business, and reselling work for a profit) for both requesters and workers were dependent, or should depend, on merit, and only on merit. Individual differences, even substantial differences, in the benefits acquired were acceptable only if based on merit, while other factors such as gender, ethnicity, and nationality were held to be unacceptable for determining differences in benefits or opportunities. Merit was considered as being based on creative abilities, intellectual abilities, and, to a degree, on sociability. However, it remained contentious if and how "weaker" members would be protected in crowdsourcing. No notion of protectionism or nationalism (albeit LocalCrowd restricted access to its country of operation) was raised, neither was the notion of general egalitarianism or communitarianism mentioned by interview participants.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6.4">| Theme 4: autonomy</head><p>All stakeholder groups emphasized the importance of the autonomy afforded to workers by crowdsourcing. Workers considered that crowdsourcing provided less spatial and temporal restrictions compared with other work forms such as traditional "brick-and-mortar" employment. Crowdsourcing provided greater freedom in terms of the choice of work location (eg, choosing a café over a cubicle). Some workers referred to themselves or to others as "locationindependent workers" or "digital nomads." They enjoyed the ability to work away from, instead of being bound to, the location of their employer. Tatjana told us that she preferred crowdsourcing: "the obvious reason is that you can work anywhere. Now, I'm in Switzerland; last month, I was in Serbia; next month … I will be in Dubai …</p><p>[crowdsourcing] gives more flexibility … I don't need to be at this desk from 9 until 5, which I hate."</p><p>Other workers found that a particular benefit of crowdsourcing was that they could work from home (eg, taking care of children as single parents).</p><p>Workers also referred to temporal freedom, considering that the crowdsourcing model allowed them to work to their own timing, hence allowing them to "escape 9 to 5." Others referred to the ability to scale the time spent on work up or down. On the other hand, workers said that traditionally protected family or leisure times (weekends, evenings) and locations (home) were now more often used for work. Caitlin said, "there's no time limit or there's no time that you need to work. Like writing, if you want to write, you can do it any time of the day."</p><p>Workers also said that, with crowdsourcing, they had greater freedom of choice in the work that they agreed to do. For example, a worker could choose to do only one kind of task and become a specialist or could select a greater variety of tasks for wider learning opportunities. Based on the content of the work or the requester (eg, commercial or noncommercial, or prior reviews given or received), workers would sometimes decide not to submit a bid, to drop projects, or to vary the bid upwards or downwards. Mary, for example, related that she turned down a well-paying proofreading job due to her disagreement with the views presented: "[t]he last couple of things I'd proofread for [a requester] were just very, very religious, and very sexist, and very-just all the things that I think are bad about religion … and I was not interested in doing it." However, several workers emphasized that the opportunities for this degree of autonomy were determined by their successful performance in the crowdsourcing model (such as having strong profiles and track records).</p><p>Requesters were largely laissez faire about the way in which the workers worked, focusing instead on deadlines, outcomes, and deliverables. Almost no reference was made to fixed times (eg, 9-5) in which the work was expected be performed. Only the work's scope and final deadline were commonly specified. Requesters considered that crowdsourcing provided them with more flexibility in their work compared with the commitment that would be involved as employers. This higher level of autonomy manifested both in business aspects (having a "scalable workforce") and, depending on the type of requester, in personal aspects (greater temporal or spatial freedom). A typical view was expressed by Niall: "My graphic designer is in India. I can give him stuff to do. I can assign him tasks and he can be working on it while I'm sleeping, which is very handy for me, especially because I work a full-time job … He's a contractor so he's not an employee … he's essentially a team member."</p><p>Likewise, platform organizers highlighted the options of spatial and temporal flexibility for both workers and Due to its nature, certain types of crowd work (ie, most of the work on LocalCrowd) required the worker and the requester to actually meet in person at a mutually agreed space and time. As this was justified by the nature of the work itself, this was fully accepted. In other words, time and location limits were accepted only if required by the content of the task. Some concerns were expressed that evenings or weekends were no longer protected from work.</p><p>Based on these data, we can say that it is a widely accepted norm in crowdsourcing that work can be performed at a time and place chosen by workers within the requirements of the task. The absence of the traditional norms of being present at a particular time in a particular space and "showing up at work" was seen as part of crowdsourcing.</p><p>Requests for a particular time and space were only acceptable if justified by the nature of the work or necessary interpersonal communication. Participants indicated that such restrictive arrangements would be "unfair" or "imposing" if introduced without being justified by the nature of the work. At the same time, the dissolution of the workfree time boundary was considered an issue by some participants.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6.5">| Theme 5: boundaries and scope</head><p>In response to a question about the fairness of crowdsourcing in relation to wider society, several participants immediately expressed their opposition to the norms of ethics and fairness being imposed on or imported to crowdsourcing from other domains. The general argument was that the forms of organizing and working in crowdsourcing were not well understood outside crowdsourcing communities. Participants generally considered that the nature of work changed so substantially in crowdsourcing that any "imports" of norms and rules from traditional employment were not appropriate. The arguments related to the various ways that crowdsourcing is modifying the nature of work.</p><p>Several workers considered crowdsourcing as a "way out" from the "trap" of employment, being more akin to entrepreneurship. Full-time crowd workers were typically very happy with their choice of crowdsourcing over traditional employment. They found that the key benefits were working as their own boss in the locations and at the times they chose and doing the type of work they wished to do (see theme 4). The case of Drew, a worker who uses LocalCrowd to run an independent business, illustrates the expanded work opportunities via crowdsourcing. While lacking the business skills (as recounted by him) to set up a traditional company, Drew found that the crowdsourcing platform enabled him to start an independent business and to quit employment. The shift from traditional employment to crowdsourcing made him much happier: "oh yes, I work longer hours ... but I am so much happier than doing a job that I don't like for a boss [that] I don't like." In an informal manner, Drew hired two other workers to perform tasks that he organized, thus actually becoming a microentrepreneur. This suggests that the boundaries between workers and entrepreneurs may not be as clearly defined in crowdsourcing as they are in employment.</p><p>In comparing crowdsourcing to other forms of work, workers raised concerns about crowdsourcing devaluing work (in terms of price or respect), devaluing professionalism (such as their professional qualifications), and offering no career path and progression. Concerns were also raised that crowdsourcing provided no job security or workplace protection and that it was outside the insurance and taxation systems. To illustrate the latter point, one LocalCrowd worker pulled up his shirt during the interview, revealing a recent large scar, the result of an accident while performing a crowd job. He said that both he and the requester were shocked at the accident-not only by the wound and the blood but also by the lack of clarity in relation to the nontaxed, nonregulated, and nonprotected work situation, such as "the insurance situation."</p><p>Participants generally defended crowdsourcing arrangements and considered that outside parties, such as "the government," were not to "meddle" with crowdsourcing. This indicated a widely accepted view that parties not actu- In their open-ended narratives, most participants made little or no reference to wider society when asked about the fairness and ethics of crowdsourcing. When they were specifically asked if crowdsourcing was a fair and ethical practice in relation to wider society, participants considered some actual or potential positive and negative consequences for society. They referred to the potential of crowdsourced jobs to take regular jobs away from professionals. One worker referred to the "Americanization" and standardization (commodification) of work. Some workers referred to the potential for requesters to use global arbitrage (considered unfair for workers in higher cost regions). Requesters, at the same time, considered that workers took advantage of global arbitrage (moving to lowcost locations, especially on GlobalCrowd). Some participants reflected that "powerless" people (without skills, with poor English, or with low ratings on the platform) "may have a hard time" in crowdsourcing and may not participate.</p><p>As stated above, some workers considered that the value of professional qualifications, such as trade certificates and university degrees, might be damaged and, in some cases, "professional ethics" may be undermined.</p><p>Some participants reported that they had been confronted by accusations of "free riding" on local infrastructure and of, in many cases, not paying taxes. They generally rejected such claims as either wrong, disputing their applicability, or considered that they had no practical option to do so. For instance, Frank said: "I would like to point this out to you. a freelancer [worker] because when you file for taxes, they will be requiring you [to have] business permits and other permits and we can't provide them, so we can't apply for income taxes here as a freelancer <ref type="bibr">[worker]</ref>."</p><p>Many participants in crowdsourcing expressed the view that crowdsourcing was a legitimate way to work in their chosen profession and that the regulatory frameworks (including taxation rules) have to expand to take this form of work into account.</p><p>Several platform organizers commented on views on the ethics of crowdsourcing being expressed by people not involved in crowdsourcing, such as politicians, trade unions, or the professional design community. While open to different viewpoints (and some sought active engagement), they indicated they were primarily concerned with, and listening to, requesters and workers. Platform organizers highlighted that crowdsourcing generally was contributing to economic and social progress in ways that were potentially more efficient than many traditional bureaucratic firms and employment-based forms of work. They considered it a central part of their developing value proposition for workers and requesters to offer "functions and services" such as escrow services, insurance arrangements, and tracking tools that would enable and advance this new form of work guided by the emerging norms.</p><p>They were continuing to actively develop these new technical and organizational functions throughout the period of this study.</p><p>In bringing these viewpoints together, it can be said that the parties transacting in crowdsourcing were seen as having the legitimacy to define ethical norms. This, in itself, can be seen as an ethical norm on the scope of having the legitimate "say" in the practice of crowdsourcing. For almost all ethical issues including ethics and fairness, most study participants considered that the scope for discussion was "within crowdsourcing" and that "outside parties" did not have a legitimate say. Based on these accounts, within crowdsourcing communities, it is an accepted norm that the applicable rules of fairness and ethics are to be developed within the respective community, and not to be imposed from the outside. However, concerns and disagreements were evident within the crowdsourcing communities about which institutional arrangements in crowdsourcing were needed, how they should be implemented, and if they should or should not rely on institutions of the nation state (concrete items mentioned included taxes, insurances, trade unions, professional qualifications, currencies, bank accounts, warranties, work regulations, etc.).</p><p>Table 2 below summarizes the above findings and our analysis and interpretation. The table is structured along the five themes, focusing on emerging ethical norms as well as unresolved concerns.</p><p>It is worth repeating that the data collection and, hence, the development of the above themes are based on participants in crowdsourcing practices. They reveal norms and issues existing within these practices. The views of nonparticipants in crowdsourcing practices may be, and in some other respects presumably are, different (see also Section 8).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="7">| NORMATIVE CONSIDERATIONS</head><p>The above findings and thematic analysis provide answers to the first two research questions (regarding what ethical issues exist and if ethical norms have emerged or whether the issues remain disputed and still require ethical norms).</p><p>In this section, we answer the remaining question: How can the ethics of crowdsourcing practices be established?</p><p>This question is not answered based on empirical data, but the answer is, instead, based on engagement with</p><p>Habermas' discourse ethics theory.</p><p>The analysis reveals that the different crowdsourcing participant groups largely agree that the norms for crowdsourcing's fair conduct need to be established primarily "within crowdsourcing" (practices), and not be imposed or judged from outside crowdsourcing. Workers, requesters, and platform organizers accepted each other's views as being the views of legitimate stakeholders, despite not necessarily agreeing with each other. Considering the views of stakeholders as legitimate participants in debating and determining the norms that govern crowdsourcing is conceptually in agreement with Habermasian discourse ethics <ref type="bibr" target="#b40">(Habermas, 1990</ref><ref type="bibr">(Habermas, , 1993))</ref>. However, in the studied examples of crowdsourcing practices, no systematic due processes were established for addressing and resolving conflicting views and, potentially, for agreeing on valid norms that should govern crowdsourcing work.</p><p>In this regard, Habermasian discourse ethics theory provides further normative guidance <ref type="bibr" target="#b31">(Finlayson, 2005)</ref>. Application of its general principles for conducting a discourse would result in norms of fairness and ethics, and the resolution of issues in a legitimate way. These principles can and have been applied in different business and social contexts (eg, <ref type="bibr" target="#b19">Cecez-Kecmanovic &amp; Marjanovic, 2015;</ref><ref type="bibr" target="#b73">Meisenbach, 2006;</ref><ref type="bibr" target="#b75">Mingers &amp; Walsham, 2010)</ref>. Given the abstract nature of Habermas' generic principles, they needed to be interpreted and instantiated in these concrete situations. Here, too, in the context of crowdsourcing practices, it is necessary to "translate" Habermas' principles to the specific crowdsourcing situation.</p><p>Based on Habermas' two principles for creating an ideal speech situation as a condition for rational discoursethe discourse principle and the universalization principle as presented above-we propose specific principles for conducting debates about the ethical issues involved in crowdsourcing and for ensuring that the agreed norms of conduct are valid <ref type="bibr">(Habermas, 1996</ref><ref type="bibr" target="#b43">(Habermas, , 1998))</ref>. Creating conditions approximating an ideal speech situation allows for rational discursive due process to take place that involves all affected groups. If agreement is reached in this process, the resulting norms have to be accepted and can be said to be valid ethical norms.</p><p>In Table <ref type="table" target="#tab_4">3</ref>, we relate Habermas' discourse principles to crowdsourcing. Central to his principles is the view that only the norms developed through rational discourse and an ideal speech situation can be accepted as valid. This is possible through the direct involvement of all legitimate participants or the use of genuine representatives of these participants. Crowdsourcing practices conducted in accord with the resulting norms are then to be considered as ethical.</p><p>In the middle column of Table <ref type="table" target="#tab_4">3</ref>, we "translate" Habermas' general principles to the crowdsourcing context. This translation is needed due to the situatedness and idiosyncrasies of crowdsourcing and, for pragmatic reasons, as most crowdsourcing practitioners will not be familiar with Habermas' work. The points suggested in the columns are concerned with the necessity for rational discourse within crowdsourcing (necessary for establishing ethical and fair conduct); the conduct of such discourse itself (such as ensuring truly ideal speech situation); and the validity of the ethical norms thus generated. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Boundaries and scope</head><p>The parties transacting in crowdsourced work are seen as the primary legitimate actors in establishing ethical norms governing work and relationships between the actors. Influences on ethical norms by parties not actually transacting in crowdsourced work were mostly seen as imposing.</p><p>Ethical issues regarding taxes, insurances, workers' protection, and so forth remained unresolved; no agreement was evident on whether and how crowdsourcing should replicate or rely on nation state institutions.</p><p>Conflicting views were expressed on the degree to which wider society was affected.</p><p>In the final column of Table <ref type="table" target="#tab_4">3</ref>, we propose how crowdsourcing communities might practically realize the suggestions, given today's technological possibilities. In particular, social media tools-preferably not directly on the platforms where the work is done-may be used as "neutral territory" to create ideal-speech conditions in which to conduct discussions on particular ethical issues. Industry-wide arrangements, such as industry advisory groups or similar bodies, might be engaged to facilitate discussion and to ensure due process for the entire industry. Of course, a</p><p>Habermasian ideal speech situation is a normative ideal that is difficult to fully achieve. The suggestions are meant to approximate this ideal.</p><p>We note that, in practice, discourses have taken place across various platforms and in various forms. For example, many (but not all) crowdsourcing platforms have created functions such as "community managers" to actively respond to participants' concerns. However, the resulting dialogues are typically ad hoc and dispersed, do not involve all affected people in a systematic and equal manner, and/or do not lead to a broad agreement by all involved. For these dialogues to qualify as a rational discourse, the discourse and universalization principles need to be upheld.</p><p>In other words, these principles would need to be applied to crowdsourcing (as presented in Table <ref type="table" target="#tab_4">3</ref>) for such dialogues to qualify as rational discourse. In this research, we have engaged the different types of crowdsourcing participants, but with the lack of a full, direct, and interactive discourse, the research can reveal but not resolve the remaining ethical issues.</p><p>By adopting Habermasian discourse ethics as a foundation for developing practical principles for conducting rational discourse, we provide a theoretically grounded, normative model for establishing the ethics of crowdsourcing practice. The model may be useful for designing and implementing due processes that assist participants in crowdsourcing to develop ethical norms and rules in a consensual and legitimizing manner, based on ideal speech conditions.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="8">| DISCUSSION</head><p>The ethics in and of crowdsourcing are a hotly contested issue in practice. While the ethics of crowdsourcing have been suggested as an important research problem <ref type="bibr">(eg, Bergvall-Kåreborn &amp; Howcroft, 2014;</ref><ref type="bibr" target="#b30">Felstiner, 2011;</ref><ref type="bibr" target="#b64">Kleemann et al., 2008)</ref>, few attempts have been made to empirically investigate and theoretically analyse the ethics of crowdsourcing practices. As discussed in the literature review above, prior work has rarely empirically examined crowdsourcing practices or, if it has, the focus has remained on a single participant group only (eg, <ref type="bibr" target="#b25">Deng et al., 2016;</ref><ref type="bibr" target="#b32">Fish &amp; Srinivasan, 2012;</ref><ref type="bibr" target="#b47">Horton, 2011)</ref>. No study, to our knowledge, has examined the ethics of crowdsourcing through using a particular theory of ethics. In this study, we have based our empirical study design and the theoretical analysis on Habermasian discourse ethics theory <ref type="bibr" target="#b40">(Habermas, 1990</ref><ref type="bibr">(Habermas, , 1993;;</ref><ref type="bibr" target="#b75">Mingers &amp; Walsham, 2010)</ref> particularly relevant for crowdsourcing because its platform designs and business models often emerged spontaneously without the explicit consideration of ethics. It is only in the practice of crowdsourcing work that the norms built into the software code become visible and consequential. This code then however becomes "digital law" and configures how people (can) act <ref type="bibr" target="#b69">(Lessig, 1999)</ref>. Transformation is relatively easily achievable because the software code is malleable and can be easily modified allowing the actors in crowdsourcing to change the design that shapes their work and their mutual relationships. Therefore, careful ethical consideration of particular designs and implications for work practices and the different actors is in order.</p><p>The above analysis contributes to the emerging literature and theoretical considerations regarding the ethics of crowdsourcing. Prior analyses tended to focus on particular aspects of crowdsourcing and hence came to overall negative <ref type="bibr">(eg, Bergvall-Kåreborn &amp; Howcroft, 2014;</ref><ref type="bibr" target="#b64">Kleemann et al., 2008;</ref><ref type="bibr" target="#b94">Scholz, 2017)</ref> or positive assessments (eg, <ref type="bibr" target="#b7">Barnes et al., 2015;</ref><ref type="bibr" target="#b47">Horton, 2011;</ref><ref type="bibr" target="#b101">Sundararajan, 2016)</ref> in regard to fairness or ethicality. As suggested by others (eg, <ref type="bibr" target="#b25">Deng et al., 2016;</ref><ref type="bibr" target="#b30">Felstiner, 2011;</ref><ref type="bibr" target="#b32">Fish &amp; Srinivasan, 2012)</ref>, the study presented here provides a more balanced analysis of ethical concerns, accepted resolutions, and remaining issues so to give a more nuanced picture of the ethics of and in crowdsourcing. The paper also adds the idea of using Habermas' universal principles of ethical as procedural guidelines to develop ethical norms (rather than taking already developed norms as a prior starting point and then assessing crowdsourcing from this vantage point). This also has implications for studying ethical questions in related domains, including gig and sharing economy models, or offshoring and outsourcing approaches (e, call centres or software development teams). While the contexts are different, the scenarios share that they are emergent, technology-driven practices for which ethical norms are disputed or need to be developed.</p><p>The results of our critical analysis and the normative model for the ethics of crowdsourcing practices have at least two important practical implications. Firstly, the emerging ethical norms identified in the three crowdsourcing cases provide an initial set of potential ethical norms and "fair" standards for crowdsourcing practices. Readers may consider this initial set of ethical norms and critical concerns in discussions between different stakeholder groups and for their own analysis of different cases of crowdsourcing. Secondly, based on our model (as described in Section 7), readers active in crowdsourcing may seek to develop due processes for the establishment of appropriate ethical norms for crowdsourcing practices.</p><p>To illustrate the implications of our study beyond the investigated cases, we discuss one additional concrete example, Amazon's Mechanical Turk crowdsourcing platform, based on another study <ref type="bibr" target="#b25">(Deng et al., 2016)</ref>. This instance of crowdsourcing allows requesters to rate workers but does not allow workers to rate requesters. This may be questioned with respect to the norm that crowdsourcing practices should involve mutual, transparent feedback (an emerging norm within theme 2, "openness, transparency, and social feedback"). While this emerging norm comes from the three studied crowdsourcing cases, it seems to also be relevant to Amazon's Mechanical Turk. <ref type="bibr" target="#b25">Deng et al. (2016)</ref> report that "to improve transparency and job feedback in the [crowdsourcing] marketplace, some crowd workers urged [Amazon's Mechanical Turk] to establish a requester screening/evaluation system. Because of the lack of a systematic reputation mechanism for requesters on [Amazon's Mechanical Turk], workers relied on off-site, third party reputation systems" (p. A9).</p><p>Some reputation systems have been developed precisely due to this ethical concern <ref type="bibr" target="#b51">(Irani &amp; Silberman, 2013;</ref><ref type="bibr" target="#b52">Irani &amp; Silberman, 2014;</ref><ref type="bibr" target="#b97">Silberman et al., 2010)</ref>.</p><p>Furthermore, payment at Amazon's Mechanical Turk could be rejected by requesters even if the work was done (no appeal process of any kind was available). The workers in the study by <ref type="bibr" target="#b25">Deng et al. (2016)</ref> raised ethical concerns about payment fairness: "our respondents voiced concerns regarding payments and compensation that did not dignify their work efforts ... there were no payment guarantees upon task completion in certain instances" (p. A18). This issue relates to an emerging ethical norm in our study that requires the agreed-upon amount to be paid if the agreedupon work is performed to a reasonable standard (an emerging norm within theme 1, "payment fairness"). It is not ethical for payment to be renegotiated only by one party.</p><p>However, we note that <ref type="bibr" target="#b25">Deng et al. (2016)</ref> only spoke to workers in that study. They did not speak to requesters and platform organizers who are also legitimate participants in crowdsourcing (a broadly agreed norm discussed in our theme 5, "boundaries and institutions of crowdsourcing"). Therefore, they have to be included as equal participants to voice their views in ethical judgements. The authors of that study certainly acknowledge this: "[value-sensi-</p><p>tive design] instructs the use of direct stakeholders (in our case, crowd workers, requesters, [organizers]) ... while conducting design investigations. Given our study's focus on crowd workers' views, we propose future research that is based on this perspective" (p. A15). In practice, however, Amazon Mechanical Turk seems to have been unresponsive to worker requests and concerns <ref type="bibr" target="#b50">(Irani, 2015)</ref>, indicating that this case lacks a suitable discursive process (the cases we studied had a partial discursive process through community managers).</p><p>The Amazon Mechanical Turk example illustrates how our paper's analysis of the ethics of crowdsourcing practices can be useful for understanding ethical issues in crowdsourcing (insight); for assessing the status quo of specific crowdsourcing issues or instances (critique); and, with its normative considerations, for helping to address and resolve unresolved ethical issues in a legitimate way (transformation). Overall, we hope these insights will be useful for managers and decision makers to understand how to strengthen their and their organizations' ethical conduct; for other stakeholders to demand and engage in ethical discourse; and possibly for regulators and governments to develop general rules, laws, and regulations for new IT-enabled practices through appropriate inclusive and contextualized processes.</p><p>While still requiring further research, the prima facie cross-platform applicability of our analysis suggests that crowdsourcing practices seem to be sufficiently related to each other enabling us to speak of one larger social practice and work type for which discourse may take place beyond individual communities and platforms. Norms seem to be shared across communities (including those studied here); thus, despite the importance of individual case context, we organized the findings by themes, not cases. This is not the least due to individual workers and requesters switching platforms and participating in multiple crowdsourcing communities. Our study's interview participants generally saw "crowdsourcing" as one larger space and often referred to other crowdsourcing platforms to explain or justify their views. This suggests that crowdsourcing may be treated as one larger phenomenon and as a particular way of working underpinned by some shared values and ethical norms. Hence, we suggest that cross-platform rational discourses and due processes to establish the ethics of crowdsourcing would bring further benefits to crowdsourcing communities more widely (see Table <ref type="table" target="#tab_4">3</ref>). While such discourses and due processes at the industry level will be more complex and difficult to implement compared to within single platform crowdsourcing communities, we recommend this as an important topic for future research and practice. Future studies will be able to apply the critical-theoretical foundation based on Habermasian discourse ethics that we developed and implemented in this paper.</p><p>This study, as with any study, has several (de-)limitations that raise questions for future research. We studied a limited number of crowdsourcing types and cases and involved a limited number of participants. While the selection of cases and participants was supported by theoretical argument, and the breadth and depth of our empirical investigation were sufficient for our study's purpose, we would suggest that similar studies be conducted in different and newly emerging crowdsourcing settings. Due to the close relations between culture and ethics, such studies could examine how cultural and regional differences create tensions in regard to the content, validity, and appropriateness of ethical norms. As above, a certain level of inscription of Western cultural values in crowdsourcing technologies has been suggested <ref type="bibr" target="#b50">(Irani, 2015)</ref>. "Crowdsourcing" is a very dynamic and fast-changing space, with its platforms and practices changing, and new platforms emerging. Even the meaning of the word "crowdsourcing" changes with, for example, different press coverage (Brabham, 2012; Sheehan &amp; Pittman, in press ). Consequently, the ethical issues identified in our paper are not stable over time and are not necessarily applicable to all instances and understandings of crowdsourcing. However, we consider it particularly important to provide critical-theoretic, principle-based, and "future-oriented" normative considerations in addition to "past-oriented" explanatory analysis. ‡</p><p>Note that, together with Habermas, we are not saying that rational discourse leads to agreement and ethical norms in all, or even in most, cases. What we are saying is that claims of "ethical" or "unethical" crowdsourcing practices can only be established through such a legitimizing process. Otherwise, without due process, such ethical judgements cannot be substantiated (despite the claims by many commentators on crowdsourcing that they apply "ethical" judgements) (see also <ref type="bibr" target="#b75">Mingers &amp; Walsham, 2010)</ref>.</p><p>This paper focuses on a "within-crowdsourcing practices" analysis. It focuses on the ethical norms and issues in crowdsourcing practices based on the quasi-ideal speech statements of the stakeholders affected. If it can be demonstrated that nonparticipants are substantially affected by crowdsourcing-one might think of crowdsourcing's impact on the hospitality industry <ref type="bibr" target="#b95">(Scott &amp; Orlikowski, 2014)</ref>, the taxi industry <ref type="bibr" target="#b94">(Scholz, 2017)</ref>, journalism (Aitamurto ‡ For this future, more far-reaching proposals exist, including Trebor Scholz's arguments for replacing proprietary digital labour platforms with community-based, cooperative platform models <ref type="bibr" target="#b94">(Scholz, 2017)</ref>.</p><p>&amp; Lewis, 2013), or, more broadly, "the nation state"-then an extension of the discourse may be necessary. This relates to the question of the "external" ethicality (or morality) of crowdsourcing in the wider societal context. Given the emerging nature and expansion of crowdsourcing in different social domains, we recommend this broadening of scope in assessing and establishing the ethicality of crowdsourcing in future research studies. Hence, we believe a complementary study is warranted on the judgement of crowdsourcing ethicality from societal, economic, and political perspectives. This must include considerations of crowdsourcing's labour market implications and the potentially diminishing role of the nation state's institutions (eg, government, regulation, taxation, and unions) for forms of digital work such as crowdsourcing. This connects to wider questions of ethical implications of "globalized" digital work.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="9">| CONCLUSION</head><p>In summary, this paper considers the difficult but important topic of the ethical norms and issues in crowdsourcing practices. In so doing, the paper responds to various calls to improve our understanding of the ethics of crowdsourcing <ref type="bibr">(eg, Bergvall-Kåreborn &amp; Howcroft, 2014;</ref><ref type="bibr" target="#b25">Deng et al., 2016;</ref><ref type="bibr" target="#b30">Felstiner, 2011;</ref><ref type="bibr" target="#b32">Fish &amp; Srinivasan, 2012)</ref>. The argument of the paper is grounded in a study of three cases of crowdsourcing practices over the period from 2013 to 2016 and is informed by Habermasian discourse ethics <ref type="bibr" target="#b40">(Habermas, 1990</ref><ref type="bibr">(Habermas, , 1993))</ref>. Based on the empirical study, the paper identifies five themes in total: four themes concerning the "content" of ethical norms (emerging or needed in practice) and one theme concerning the "scope" of such ethical norms (who has a legitimate "say"). By identifying these critical ethical themes, the emerging norms and where such norms are missing, the paper provides insights into, and a critical assessment of, the ethical norms and issues in crowdsourcing practices that were largely missing in the literature. Furthermore, the paper proposes the critical-theoretical framework of Habermasian discourse ethics as a normative foundation to foreground ethical concerns and establish the ethics of crowdsourcing practices. The paper proposes a set of principles for addressing ethical concerns in rational discourse in which all affected crowdsourcing parties participate. While the ideal speech situation and rational discourse may not be fully achievable in practice, they provide a benchmark to work towards and a conceptual foundation from which to assess fairness and ethics.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>ORCID</head><p>Daniel Schlagwein http://orcid.org/0000-0002-1591-4660</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head></head><label></label><figDesc>ical" or "standard" prices for such work and expressed their wish to provide fair payments. Requesters primarily exhibited "market-based" ideas of fair pricing (ie, market equilibrium-based pricing) but acknowledged the legitimacy of other approaches to pricing, including the notion of "fair pay." Requesters sought reference frameworks to determine fair payment such as recommendations of appropriate payment by other requesters or the actual payments of previous comparable transactions. For example, Andrea said, "I think I said 'I'm prepared to kind of pay up to $30 an hour or something like that' but the only reason I had mentioned that specific price point was because it was based on what my colleague had told me [that was what] she had paid for this [worker] ... It was because I had been recommended this price point."</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head></head><label></label><figDesc>requesters. Christian contrasted CreativeCrowd's crowd work to employment: "Like, varied people, [if] they work in the creative industry, like in agencies, [then] they give all their time and all their creativity to one person or to one agency and they work there like 60 hours a week. And they have no freedom to choose on what they have to work, and they have little choice in how to distribute their time."</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head></head><label></label><figDesc>ally involved in crowdsourcing are not legitimate participants in establishing valid norms and in regulating work. It was felt that decisions about how crowdsourcing should be organized, and which norms should govern crowdsourcing work, should be left to the people actually involved. Conflicts were often resolved through internal community mechanisms. In an illustrative example, when faced with an abusive comment, Amy told us: "I contacted [LocalCrowd organizers]-Oh, actually [a worker] first came to my defence, "that kind of abuse is uncalled for and awful" … it's obvious that they weren't being fair to me. I contacted [LocalCrowd organizers] and asked them to take [the abusive comments] off[line].[LocalCrowd]  is quite good as a community."</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head></head><label></label><figDesc>With me, doing freelancing, working with [requesters] abroad or virtually, I and my fellow freelancers [workers] are not paying taxes in my country right now … And we're waiting for a law or decree from the Internal Revenue [office] on how to handle freelancers [workers] like us ... in my country [Asian country], we usually do not file for taxes when we work as</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head>TABLE 1</head><label>1</label><figDesc>Data collection</figDesc><table><row><cell>Study Site</cell><cell>Interviews</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>(Pseudonym)</cell><cell>Workers</cell><cell>Organizers</cell><cell>Requesters</cell><cell>Total</cell><cell>Other Data</cell></row><row><cell>LocalCrowd</cell><cell>3</cell><cell>1</cell><cell>4</cell><cell>8</cell><cell>Author participation, digital traces on</cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>platform, on-site visit, informal</cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>interviews, press releases/newsletter.</cell></row><row><cell>CreativeCrowd</cell><cell>2</cell><cell>7</cell><cell>-</cell><cell>9</cell><cell>Digital</cell></row></table><note><p>trace on platform, third-party books/reports, on-site visit, informal interviews, press releases/newsletter. GlobalCrowd 11 2 4 17 Author participation, digital traces on platform, third-party reports, informal interviews, press releases/newsletter.</p></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1"><head></head><label></label><figDesc>Aggregated codes and themes the country. At the same time, LocalCrowd faced criticism from trade unions over alleged safety and licensing breaches in the work facilitated. National public opinion tended to favour crowd and sharing economy businesses for their low cost to requesters (clients) and their flexibility for workers. However, concerns were also raised in public discourse that workers' protection, regulation of work practices, and contractual relationships of the "traditional economy" were bypassed.LocalCrowd facilitated local crowd work such as gardening, handyman repairs, administrative tasks, housekeeping, pet sitting, running errands, house cleaning, moving services, and similar tasks. The matching of requesters and workers was organized and mediated via a technology platform, which in the backend included several machine learning and artificial intelligence algorithms (eg, to categorize work tasks and hence support matching). Users could access the platform through an Internet platform (mobile app and Internet portal). The requester issued an open call describing the work (task) he/she needed done and suggested a price. Workers then applied with proposals (eg, what they would or could do) suggesting potentially higher or lower prices. The platform also allowed workers to comment on the task without necessarily applying for it, such as offering advice, asking questions, or proposing other ways of going about the work. The requester then allocated the work to one of the applicants (if any). This usually happened within a few hours. The requester and worker then typically met in person, and the work was performed locally. Both parties publicly left ratings for and reviews about the transaction on the Internet platform. The technology platform did not show the other person's rating until both had rated. This design was intended to avoid revenge ratings. The platform provided different options to get support from platform staff but did not provide an open user discussion</figDesc><table /><note><p><p>ern, market-capitalist, and de facto democratic (while being a constitutional monarchy). Founded in 2012, LocalCrowd initially operated in its local market, a major metropolitan region. At the time of our study (from 2013 to 2016), it was gradually extending its national reach and was approaching 500,000 users. It grew from start-up to considerable size during the study period. At the time of writing (2018), it was extending internationally and was approaching two million users. LocalCrowd was heralded as one of the great technology start-up successes in FIGURE</p>1</p></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2"><head></head><label></label><figDesc>GlobalCrowd was based on the merger of two very similar crowdsourcing and freelancing platforms, which took place during our study(announced in 2013, fully integrated in 2015). The original platform that we studied was founded in 2005. Both premerger and postmerger, GlobalCrowd aimed for global market dominance and was widely used internationally, with approximately 10 million users (registered, not necessarily active) at the time of the study (and about 15 million users at the time of writing). Public opinion in its home country was generally favourable to liberal and freelancing models of work and, in contrast to other crowdsourcing platforms, GlobalCrowd faced relatively less criticism. GlobalCrowd introduced a minimum hourly rate, largely in response to discussion on the platform itself (see below).GlobalCrowd focused on the mediation of electronic freelancing crowd work. The matching of requesters and workers, as well as the actual conduct of the crowd work, were, as in the other cases, based on an online technology platform (accessible for users through a mobile app and an Internet platform). In almost all work scenarios, the worker and requester did not meet in person. Instead, the work was conducted via digital means, and communication</figDesc><table /><note><p>occurred through digital channels (eg, email, Skype, and Dropbox). Typical tasks involved virtual assistance, graphic design work, or software development among many other types. Work on GlobalCrowd, as in the other cases, started</p></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_3"><head>TABLE 2</head><label>2</label><figDesc>Emerging ethical norms and unresolved ethical concerns in crowdsourcing</figDesc><table><row><cell>Theme</cell><cell>Emerging Ethical Norms</cell><cell>Unresolved Ethical Concerns</cell></row><row><cell cols="2">Payment fairness Crowd work for commercial ends should be "fairly"</cell><cell>No agreement was evident on which aspects, and</cell></row><row><cell></cell><cell>paid. Payment should be individually negotiated</cell><cell>to what extent specific aspects, should be</cell></row><row><cell></cell><cell>relative to the work performed (including, but</cell><cell>considered for fair payment (different frames</cell></row><row><cell></cell><cell>not exclusively based on, supply-demand);</cell><cell>of reference were used, such as worker costs,</cell></row><row><cell></cell><cell>payment must be made if acceptable work is</cell><cell>requester's value, and the need for the</cell></row><row><cell></cell><cell>performed.</cell><cell>platform to sustain a business)</cell></row><row><cell>Openness,</cell><cell>Crowd work should be open (accessible to all),</cell><cell>Permanently visible feedback raised concerns for</cell></row><row><cell>transparency,</cell><cell>transparent (publicly visible) with social</cell><cell>all stakeholders (eg, pressure for requesters to</cell></row><row><cell>and social</cell><cell>feedback provided; openness, transparency, and</cell><cell>rate positively; or damage for workers if rated</cell></row><row><cell>feedback</cell><cell>social feedback are believed to lead to fairness</cell><cell>negatively); the current mechanisms for social</cell></row><row><cell></cell><cell>in crowdsourcing.</cell><cell>feedback were disputed.</cell></row><row><cell>Meritocracy</cell><cell>Opportunities in crowdsourced work are to be</cell><cell>It remained unclear how "weaker" workers could</cell></row><row><cell></cell><cell>based on merit and quality of work (not gender,</cell><cell>or should be protected.</cell></row><row><cell></cell><cell>ethnicity, nationality, etc.).</cell><cell></cell></row><row><cell>Autonomy</cell><cell>Crowd work should be performed at a time and</cell><cell>Some concerns were expressed about the</cell></row><row><cell></cell><cell>place chosen by the worker, within the</cell><cell>erosion of time protected from work (evenings,</cell></row><row><cell></cell><cell>requirements inherent to a particular task.</cell><cell>weekends).</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_4"><head>TABLE 3</head><label>3</label><figDesc>Suggestions from Habermasian discourse and universalization principles for rational discourse to develop ethical norms in crowdsourcing practices</figDesc><table><row><cell></cell><cell>Application to Crowdsourcing</cell><cell>Possible Practical Realizations</cell></row><row><cell>Habermas' discourse</cell><cell>■ Rational discourse is needed to establish</cell><cell>■ Social media (eg, social networking sites</cell></row><row><cell>principle</cell><cell>ethical norms and fairness of conduct in</cell><cell>and forums) provide appropriate technical</cell></row><row><cell></cell><cell>crowdsourcing (including IT designs that</cell><cell>means for allowing focused discourses on</cell></row><row><cell></cell><cell>shape such conduct).</cell><cell>ethical issues and may act as a neutral,</cell></row><row><cell></cell><cell>■ All affected (by crowdsourcing, at least all</cell><cell>independent space. Conferences, fairs and</cell></row><row><cell></cell><cell>participants) and interested parties should</cell><cell>meetings provide offline opportunities to</cell></row><row><cell></cell><cell>be included as legitimate participants in</cell><cell>engage in face-to-face discourse.</cell></row><row><cell></cell><cell>such rational discourse.</cell><cell>■ Representatives of crowdsourcing</cell></row><row><cell></cell><cell>■ All participants in the discourse should</cell><cell>stakeholders may present the views and</cell></row><row><cell></cell><cell>have an equal voice, need to be free to</cell><cell>interests of their groups. Shared or neutral</cell></row><row><cell></cell><cell>express their views without deception and</cell><cell>facilitation of the discursive process itself</cell></row><row><cell></cell><cell>coercion, and should agree to seek mutual</cell><cell>needs to ensure fairness and avoid power</cell></row><row><cell></cell><cell>understanding and accept a</cell><cell>struggles. Discourse should take the form</cell></row><row><cell></cell><cell>communicatively reached agreement.</cell><cell>of agreed rules in terms of form and</cell></row><row><cell></cell><cell></cell><cell>content.</cell></row><row><cell></cell><cell></cell><cell>■ To avoid the negative implications of</cell></row><row><cell></cell><cell></cell><cell>participating in the discourse, appropriate</cell></row><row><cell></cell><cell></cell><cell>measures need to be taken (eg, allowing</cell></row><row><cell></cell><cell></cell><cell>anonymous contributions, disconnecting</cell></row><row><cell></cell><cell></cell><cell>work profiles from the discussion).</cell></row><row><cell>Habermas'</cell><cell>■ Ethical norms of crowdsourcing need to be</cell><cell>■ Ethical discourse should be scoped</cell></row><row><cell>universalization principle</cell><cell>agreed by all participants in crowdsourcing</cell><cell>appropriately for those affected, which</cell></row><row><cell></cell><cell>by due process; ethical norms for</cell><cell>may be the individual case, the</cell></row><row><cell></cell><cell>crowdsourcing are only valid if agreed in</cell><cell>community or crowdsourcing in total.</cell></row><row><cell></cell><cell>this way.</cell><cell>■ Crowdsourcing industry-level</cell></row><row><cell></cell><cell>■ Norms imposed by one participant group</cell><cell>organizations (interest groups, professional</cell></row><row><cell></cell><cell>are to be considered invalid.</cell><cell>organizations, industry advisory groups, or</cell></row><row><cell></cell><cell>■ Norms imposed from outside</cell><cell>similar neutral bodies) can be engaged in</cell></row><row><cell></cell><cell>crowdsourcing are to be considered invalid,</cell><cell>the process of establishing (and monitoring)</cell></row><row><cell></cell><cell>unless it is clearly shown how</cell><cell>ethical norms across the industry.</cell></row><row><cell></cell><cell>nonparticipants are affected, in which case,</cell><cell>■ The established norms are to be respected</cell></row><row><cell></cell><cell>these groups need to be included as</cell><cell>and implemented, which, in some cases,</cell></row><row><cell></cell><cell>legitimate participants in the discourse.</cell><cell>may require the redesign of platforms and</cell></row><row><cell></cell><cell></cell><cell>practices.</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_5"><head></head><label></label><figDesc>, examining crowdsourcing across varied cases with the key participant groups. The study makes three contributions in response to the research questions: (a) We identify emerging ethical norms in crowdsourcing practices; (b) we identify problematic issues for which ethical norms have not been developed; and (c) we propose a normative model for establishing such ethical norms in practice and, more generally, for judging the ethics within crowdsourcing. These three contributions reflect our critical methodology with its focus on insight, critique, and transformation (Alvesson &amp; Section 7 of this paper, we have provided a model based on Habermasian discourse ethics theory to address the remaining and future issues in crowdsourcing. Actively engaging with and establishing ethical norms may lead to a transformation of crowdsourcing practices.Ethical questions in regard to crowdsourcing are not purely "social" or "political" questions; they are closely related to IS and IT design. Ethical norms in crowdsourcing are reflected in, and can be shaped by, particular designs of the underlying technology platforms (eg, as mentioned above, the user interfaces allowing or not allowing social interactions or the particular design and algorithmic workings of user feedback). Certain technology configurations may invite or prohibit (un)ethical behaviours or what is seen as such. Transformation based on critical discourse is</figDesc><table><row><cell>In</cell></row></table><note><p><p><p><ref type="bibr" target="#b6">Deetz, 2000;</ref><ref type="bibr" target="#b76">Myers &amp; Klein, 2011)</ref></p>, respectively.</p>Across the five themes created through our analysis (ie, payment fairness; openness, transparency, and social feedback; meritocracy; autonomy; and boundaries and institutions of crowdsourcing), we identified several emerging ethical norms as well as issues calling for ethical norms. Emerging ethical norms include the following: Crowd work should be fairly paid (not the lowest possible market rate); crowdsourcing should be open to all and transparent in its feedback; opportunities should be based on achievements and talents; and conduct of work should be free from temporal and spatial restrictions, except when justified by the nature of the task. We also found several critical issues for which ethical norms were missing or disputed. Important ethical issues that were still unresolved in practice include fairness regarding the factors considered for determining the level of payments and how payments are split; the mechanisms of social feedback; the protection of weaker workers; and the relationship of crowdsourcing to wider society. The parties transacting in crowdsourced work were seen as the primary legitimate actors in establishing ethical norms governing this work. Influences on ethical norms by parties not actually transacting in crowdsourced work were mostly seen as imposing (see further below).</p></note></figure>
+		</body>
+		<back>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<monogr>
+		<title level="m" type="main">Crowdstorm: The future of innovation, ideas and problem solving</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Abrahamson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Ryder</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Unterberg</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2013">2013</date>
+			<publisher>John Wiley &amp; Sons</publisher>
+			<pubPlace>New York</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Critical management studies</title>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">S</forename><surname>Adler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">C</forename><surname>Forbes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Willmott</surname></persName>
+		</author>
+		<idno type="DOI">10.5465/078559808</idno>
+		<ptr target="https://doi.org/10.5465/078559808" />
+	</analytic>
+	<monogr>
+		<title level="j">Academy of Management Annals</title>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="119" to="179" />
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Crowdsourcing as a solution to distant search</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Afuah</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">L</forename><surname>Tucci</surname></persName>
+		</author>
+		<idno type="DOI">10.5465/amr.2010.0146</idno>
+		<ptr target="https://doi.org/10.5465/amr.2010.0146" />
+	</analytic>
+	<monogr>
+		<title level="j">Academy of Management Review</title>
+		<imprint>
+			<biblScope unit="volume">37</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="355" to="375" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Outsourcing to an unknown workforce: Exploring opensourcing as a global sourcing strategy</title>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">J</forename><surname>Ågerfalk</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Fitzgerald</surname></persName>
+		</author>
+		<idno type="DOI">10.2307/25148845</idno>
+		<ptr target="https://doi.org/10.2307/25148845" />
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page">385</biblScope>
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">eLancing: A review and research agenda for bridging the science-practice gap</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Aguinis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">O</forename><surname>Lawal</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.hrmr.2012.06.003</idno>
+		<ptr target="https://doi.org/10.1016/j.hrmr.2012.06.003" />
+	</analytic>
+	<monogr>
+		<title level="j">Human Resource Management Review</title>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="6" to="17" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Open innovation in digital journalism: Examining the impact of open APIs at four news organizations</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Aitamurto</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">C</forename><surname>Lewis</surname></persName>
+		</author>
+		<idno type="DOI">10.1177/1461444812450682</idno>
+		<ptr target="https://doi.org/10.1177/1461444812450682" />
+	</analytic>
+	<monogr>
+		<title level="j">New Media &amp; Society</title>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="314" to="331" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<monogr>
+		<author>
+			<persName><forename type="first">M</forename><surname>Alvesson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Deetz</surname></persName>
+		</author>
+		<idno type="DOI">10.4135/9781849208918</idno>
+		<ptr target="https://doi.org/10.4135/9781849208918" />
+		<title level="m">Doing critical management researchSage</title>
+		<imprint>
+			<date type="published" when="2000">2000</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Crowdsourcing and work: Individual factors and circumstances influencing employability</title>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">A</forename><surname>Barnes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Green</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Hoyos</surname></persName>
+		</author>
+		<idno type="DOI">10.1111/ntwe.12043</idno>
+		<ptr target="https://doi.org/10.1111/ntwe.12043" />
+	</analytic>
+	<monogr>
+		<title level="j">New Technology, Work and Employment</title>
+		<imprint>
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="16" to="31" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<monogr>
+		<title level="m" type="main">Three methods of ethics: A debate</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">W</forename><surname>Baron</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Pettit</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Slote</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1997">1997</date>
+			<publisher>Wiley-Blackwell</publisher>
+			<pubPlace>Oxford</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Crowdsourcing new product ideas over time: An analysis of the Dell IdeaStorm community</title>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">L</forename><surname>Bayus</surname></persName>
+		</author>
+		<idno type="DOI">10.1287/mnsc.1120.1599</idno>
+		<ptr target="https://doi.org/10.1287/mnsc.1120.1599" />
+	</analytic>
+	<monogr>
+		<title level="j">Management Science</title>
+		<imprint>
+			<biblScope unit="volume">59</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="226" to="244" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<monogr>
+		<title level="m" type="main">The wealth of networks</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Benkler</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2006">2006</date>
+			<publisher>Yale University Press</publisher>
+			<pubPlace>New Haven</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Amazon Mechanical Turk and the commodification of labour</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Bergvall-Kåreborn</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Howcroft</surname></persName>
+		</author>
+		<idno type="DOI">10.1111/ntwe.12038</idno>
+		<ptr target="https://doi.org/10.1111/ntwe.12038" />
+	</analytic>
+	<monogr>
+		<title level="j">New Technology, Work and Employment</title>
+		<imprint>
+			<biblScope unit="volume">29</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="213" to="223" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Ethical theory and business practices: The case of discourse ethics</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Beschorner</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s10551-006-9049-x</idno>
+		<ptr target="https://doi.org/10.1007/s10551-006-9049-x" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Business Ethics</title>
+		<imprint>
+			<biblScope unit="volume">66</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="127" to="139" />
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<monogr>
+		<title level="m" type="main">Critical theory ethics for business and public administration</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">M</forename><surname>Boje</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2008">2008</date>
+			<publisher>Information Age Press</publisher>
+			<pubPlace>Charlotte, NC</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<monogr>
+		<title level="m" type="main">Business ethics: A Kantian perspective</title>
+		<author>
+			<persName><forename type="first">N</forename><forename type="middle">E</forename><surname>Bowie</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1999">1999</date>
+			<publisher>Wiley-Blackwell</publisher>
+			<pubPlace>New York</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">The myth of amateur crowds: A critical discourse analysis of crowdsourcing coverage</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">C</forename><surname>Brabham</surname></persName>
+		</author>
+		<idno type="DOI">10.1080/1369118X.2011.641991</idno>
+		<ptr target="https://doi.org/10.1080/1369118X.2011.641991" />
+	</analytic>
+	<monogr>
+		<title level="j">Information, Communication &amp; Society</title>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="394" to="410" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Doing critical IS research: The question of methodology</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Cecez-Kecmanovic</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Qualitative Research in IS: Issues and Trends</title>
+		<editor>
+			<persName><forename type="first">E</forename><forename type="middle">M</forename><surname>Trauth</surname></persName>
+		</editor>
+		<meeting><address><addrLine>Hershey, PA</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2001">2001</date>
+			<biblScope unit="page" from="141" to="162" />
+		</imprint>
+		<respStmt>
+			<orgName>Idea Group</orgName>
+		</respStmt>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">The rationality framework for a critical study of information systems</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Cecez-Kecmanovic</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Janson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Brown</surname></persName>
+		</author>
+		<idno type="DOI">10.1080/0268396022000017752</idno>
+		<ptr target="https://doi.org/10.1080/0268396022000017752" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Information Technology</title>
+		<imprint>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="215" to="227" />
+			<date type="published" when="2002">2002</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Exploring the critical agenda in information systems research</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Cecez-Kecmanovic</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">K</forename><surname>Klein</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Brooke</surname></persName>
+		</author>
+		<idno type="DOI">10.1111/j.1365-2575.2008.00295.x</idno>
+		<ptr target="https://doi.org/10.1111/j.1365-2575.2008.00295.x" />
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Journal</title>
+		<imprint>
+			<biblScope unit="volume">18</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="123" to="135" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">IS serving the community: The pragmatic, the ethical and the moral questions</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Cecez-Kecmanovic</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O</forename><surname>Marjanovic</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">International Conference on Information Systems (ICIS)</title>
+		<imprint>
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Talking about rights: Discourse ethics and the protection of rights</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Chambers</surname></persName>
+		</author>
+		<idno type="DOI">10.1111/j.1467-9760.1993.tb00011.x</idno>
+		<ptr target="https://doi.org/10.1111/j.1467-9760.1993.tb00011.x" />
+	</analytic>
+	<monogr>
+		<title level="j">The Journal of Political Philosophy</title>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="229" to="249" />
+			<date type="published" when="1993">1993</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Infusing ethical considerations in knowledge management scholarship: Toward a research agenda</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Chatterjee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Sarker</surname></persName>
+		</author>
+		<idno type="DOI">10.17705/1jais.00339</idno>
+		<ptr target="https://doi.org/10.17705/1jais.00339" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal of the Association for Information Systems</title>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="issue">8</biblScope>
+			<biblScope unit="page" from="452" to="481" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">A deontological approach to designing ethical collaboration</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Chatterjee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Sarker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">A</forename><surname>Fuller</surname></persName>
+		</author>
+		<idno type="DOI">10.17705/1jais.00214</idno>
+		<ptr target="https://doi.org/10.17705/1jais.00214" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal of the Association of Information Systems</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="787" to="815" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Crowdsourcing for a better world: On the relation between IT affordances and donor motivations in charitable crowdfunding</title>
+		<author>
+			<persName><forename type="first">K</forename><surname>Choy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Schlagwein</surname></persName>
+		</author>
+		<idno type="DOI">10.1108/ITP-09-2014-0215</idno>
+		<ptr target="https://doi.org/10.1108/ITP-09-2014-0215" />
+	</analytic>
+	<monogr>
+		<title level="j">Information Technology &amp; People</title>
+		<imprint>
+			<biblScope unit="volume">29</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="221" to="247" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<monogr>
+		<title level="m" type="main">Getting results from crowds: The definitive guide to using crowdsourcing to grow your business</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Dawson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Bynghall</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2011">2011</date>
+			<publisher>Advanced Human Technologies</publisher>
+			<pubPlace>San Francisco, CA</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">The duality of empowerment and marginalization in microtask crowdsourcing: Giving voice to the less powerful through value sensitive design</title>
+		<author>
+			<persName><forename type="first">X</forename><surname>Deng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">D</forename><surname>Joshi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">D</forename><surname>Galliers</surname></persName>
+		</author>
+		<idno type="DOI">10.25300/MISQ/2016/40.2.01</idno>
+		<ptr target="https://doi.org/10.25300/MISQ/2016/40.2.01" />
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">40</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="279" to="322" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Crowdsourcing systems on the world-wide web</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Doan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">Y</forename><surname>Halevy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Ramakrishnan</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/1924421.1924442</idno>
+		<ptr target="https://doi.org/10.1145/1924421.1924442" />
+	</analytic>
+	<monogr>
+		<title level="j">Communications of the ACM</title>
+		<imprint>
+			<biblScope unit="volume">54</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="86" to="96" />
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Discourse and normative business ethics</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Edward</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Willmott</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Handbook of the philosophical foundations of business ethics</title>
+		<editor>
+			<persName><forename type="first">C</forename><surname>Luetge</surname></persName>
+		</editor>
+		<imprint>
+			<publisher>Springer</publisher>
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">Towards an integrated crowdsourcing definition</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>Estellés-Arolas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>González-Ladrón-De-Guevara</surname></persName>
+		</author>
+		<idno type="DOI">10.1177/0165551512437638</idno>
+		<ptr target="https://doi.org/10.1177/0165551512437638" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Information Science</title>
+		<imprint>
+			<biblScope unit="volume">38</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="189" to="200" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<monogr>
+		<title level="m" type="main">Qualitative analysis: Practice and innovationRoutledge</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Ezzy</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2002">2002</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">Working the crowd: Employment and labor law in the crowdsourcing industry</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Felstiner</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Berkeley Journal of Employment and Labor Law</title>
+		<imprint>
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="143" to="143" />
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<monogr>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">G</forename><surname>Finlayson</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/actrade/9780192840950.001.0001</idno>
+		<ptr target="https://doi.org/10.1093/actrade/9780192840950.001.0001" />
+		<title level="m">Habermas: A very short introductionOxford University Press</title>
+		<imprint>
+			<date type="published" when="2005">2005</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Digital labor is the new killer app</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Fish</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Srinivasan</surname></persName>
+		</author>
+		<idno type="DOI">10.1177/1461444811412159</idno>
+		<ptr target="https://doi.org/10.1177/1461444811412159" />
+	</analytic>
+	<monogr>
+		<title level="j">New Media &amp; Society</title>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="137" to="152" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<monogr>
+		<title level="m" type="main">Making social science matter: Why social inquiry fails and how it can succeed againCambridge</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Flyvbjerg</surname></persName>
+		</author>
+		<idno type="DOI">10.1017/CBO9780511810503</idno>
+		<ptr target="https://doi.org/10.1017/CBO9780511810503" />
+		<imprint>
+			<date type="published" when="2001">2001</date>
+			<publisher>University Press</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title level="a" type="main">Five misunderstandings about case-study research</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Flyvbjerg</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="s">Qualitative research practice. Sage</title>
+		<editor>
+			<persName><forename type="first">C</forename><surname>Seale</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">G</forename><surname>Gobo</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">J</forename><forename type="middle">F</forename><surname>Gubrium</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">D</forename><surname>Silverman</surname></persName>
+		</editor>
+		<imprint>
+			<biblScope unit="page" from="420" to="434" />
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<monogr>
+		<title/>
+		<author>
+			<persName><forename type="first">W</forename><forename type="middle">A</forename><surname>French</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Granrose</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1995">1995</date>
+		</imprint>
+	</monogr>
+	<note>Practical business ethicsPrentice Hall</note>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">Whom should firms attract to open innovation platforms? The role of knowledge diversity and motivation</title>
+		<author>
+			<persName><forename type="first">K</forename><surname>Frey</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Lüthje</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Haag</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.lrp.2011.09.006</idno>
+		<ptr target="https://doi.org/10.1016/j.lrp.2011.09.006" />
+	</analytic>
+	<monogr>
+		<title level="j">Long Range Planning</title>
+		<imprint>
+			<biblScope unit="volume">44</biblScope>
+			<biblScope unit="issue">5/6</biblScope>
+			<biblScope unit="page" from="397" to="420" />
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<monogr>
+		<title level="m" type="main">The pros and cons of crowdsourcing</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Fung</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+	<note>The Australian</note>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<monogr>
+		<title level="m" type="main">The theory of communicative action, volume I, reason and the rationalization of society [German original: Theorie des Kommunikativen Handelns, band 1, Handlungsrationalität und gesellschaftliche Rationalisierung, Suhrkamp</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Habermas</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1981">1984. 1981</date>
+			<publisher>Beacon Press</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<analytic>
+		<title level="a" type="main">The theory of communicative action, volume II, lifeworld and system, a critique of functionalist reason [German original: Theorie des Kommunikativen Handelns</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Habermas</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Zur Kritik der funktionalistischen Vernunft</title>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<date type="published" when="1981">1987. 1981</date>
+			<publisher>Beacon Press</publisher>
+			<pubPlace>Suhrkamp</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<monogr>
+		<title level="m" type="main">Moral consciousness and communicative action [German original: Moralbewusstsein und kommunikatives Handeln, Suhrkamp</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Habermas</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1990">1990. 1993</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<monogr>
+		<title level="m" type="main">Justification and application, remarks on discourse ethics [German original: Erläuterungen zur Diskursethik, Suhrkamp</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Habermas</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1991">1993. 1991</date>
+			<publisher>The MIT Press</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+	<monogr>
+		<title level="m" type="main">Between facts and norms [German Original: Faktizität und Geltung, Suhrkamp</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Habermas</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1992">1996. 1992</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b43">
+	<monogr>
+		<title level="m" type="main">The inclusion of the other [German Original: Die Einbeziehung des Anderen: Studien zur politischen Theorie</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Habermas</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1996">1998. 1996</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b44">
+	<analytic>
+		<title level="a" type="main">From Habermas&apos;s communicative theory to practice on the internet</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">S H</forename><surname>Heng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>De Moor</surname></persName>
+		</author>
+		<idno type="DOI">10.1046/j.1365-2575.2003.00144.x</idno>
+		<ptr target="https://doi.org/10.1046/j.1365-2575.2003.00144.x" />
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Journal</title>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="331" to="352" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b45">
+	<analytic>
+		<title level="a" type="main">The struggle for recognition: The moral grammar of social conflicts</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Honneth</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Polity</title>
+		<imprint>
+			<date type="published" when="1999">1999</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b46">
+	<monogr>
+		<title level="m" type="main">Redistribution or recognition? A political-philosophical exchange</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Honneth</surname></persName>
+		</author>
+		<editor>N. Fraser &amp; A. Honneth</editor>
+		<imprint>
+			<date type="published" when="2003">2003</date>
+			<publisher>Verso</publisher>
+			<pubPlace>New York</pubPlace>
+		</imprint>
+	</monogr>
+	<note>The point of recognition: The rejoinder to the rejoinder</note>
+</biblStruct>
+
+<biblStruct xml:id="b47">
+	<monogr>
+		<title level="m" type="main">The condition of the turking class: Are online employers fair and honest?</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">J</forename><surname>Horton</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.econlet.2010.12.007</idno>
+		<ptr target="https://doi.org/10.1016/j.econlet.2010.12.007" />
+		<imprint>
+			<date type="published" when="2011">2011</date>
+			<biblScope unit="volume">111</biblScope>
+			<biblScope unit="page" from="10" to="12" />
+		</imprint>
+	</monogr>
+	<note>Economic Letters</note>
+</biblStruct>
+
+<biblStruct xml:id="b48">
+	<analytic>
+		<title level="a" type="main">Crowdsourcing: A comprehensive literature review</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Hossain</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Kauranen</surname></persName>
+		</author>
+		<idno type="DOI">10.1108/SO-12-2014-0029</idno>
+		<ptr target="https://doi.org/10.1108/SO-12-2014-0029" />
+	</analytic>
+	<monogr>
+		<title level="j">Strategic Outsourcing</title>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="2" to="22" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b49">
+	<monogr>
+		<author>
+			<persName><forename type="first">D</forename><surname>Howcroft</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">M</forename><surname>Trauth</surname></persName>
+		</author>
+		<idno type="DOI">10.4337/9781845426743</idno>
+		<ptr target="https://doi.org/10.4337/9781845426743" />
+		<title level="m">Handbook of critical information systems research: Theory and applicationEdward Elgar</title>
+		<imprint>
+			<date type="published" when="2005">2005</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b50">
+	<analytic>
+		<title level="a" type="main">The cultural work of microwork</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Irani</surname></persName>
+		</author>
+		<idno type="DOI">10.1177/1461444813511926</idno>
+		<ptr target="https://doi.org/10.1177/1461444813511926" />
+	</analytic>
+	<monogr>
+		<title level="j">New Media &amp; Society</title>
+		<imprint>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="720" to="739" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b51">
+	<analytic>
+		<title level="a" type="main">Turkopticon: Interrupting worker invisibility in Amazon mechanical Turk</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Irani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Silberman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">ACM SIGCHI Conference on Human Factors in Computing Systems (CHI)</title>
+		<imprint>
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b52">
+	<analytic>
+		<title level="a" type="main">From critical design to critical infrastructure</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Irani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Silberman</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/2627392</idno>
+		<ptr target="https://doi.org/10.1145/2627392" />
+	</analytic>
+	<monogr>
+		<title level="j">Lessons from turkopticon. Interactions</title>
+		<imprint>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="32" to="35" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b53">
+	<analytic>
+		<title level="a" type="main">Why do users contribute to firm-hosted user communities? The case of computer-controlled music instruments</title>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">B</forename><surname>Jeppesen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Frederiksen</surname></persName>
+		</author>
+		<idno type="DOI">10.1287/orsc.1050.0156</idno>
+		<ptr target="https://doi.org/10.1287/orsc.1050.0156" />
+	</analytic>
+	<monogr>
+		<title level="j">Organization Science</title>
+		<imprint>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="45" to="63" />
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b54">
+	<analytic>
+		<title level="a" type="main">Marginality and problem-solving effectiveness in broadcast search</title>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">B</forename><surname>Jeppesen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">R</forename><surname>Lakhani</surname></persName>
+		</author>
+		<idno type="DOI">10.1287/orsc.1090.0491</idno>
+		<ptr target="https://doi.org/10.1287/orsc.1090.0491" />
+	</analytic>
+	<monogr>
+		<title level="j">Organization Science</title>
+		<imprint>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="1016" to="1033" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b55">
+	<analytic>
+		<title level="a" type="main">Managing the human cloud</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>Kaganer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Carmel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Hirschheim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Olsen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIT Sloan Management Review</title>
+		<imprint>
+			<biblScope unit="volume">54</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="23" to="32" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b56">
+	<monogr>
+		<title level="m" type="main">Grundlegung zur Metaphysik der Sitten [groundwork of the metaphysic of morals]</title>
+		<author>
+			<persName><forename type="first">I</forename><surname>Kant</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1785">1785</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b57">
+	<monogr>
+		<title/>
+		<author>
+			<persName><forename type="first">Johann</forename><surname>Friedrich</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Harknoch</forename></persName>
+		</author>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b58">
+	<monogr>
+		<title level="m" type="main">Kritik der praktischen Vernunft</title>
+		<author>
+			<persName><forename type="first">I</forename><surname>Kant</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1788">1788</date>
+		</imprint>
+	</monogr>
+	<note>critique of practical reason</note>
+</biblStruct>
+
+<biblStruct xml:id="b59">
+	<monogr>
+		<title/>
+		<author>
+			<persName><forename type="first">Johann</forename><surname>Friedrich</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Harknoch</forename></persName>
+		</author>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b60">
+	<monogr>
+		<title level="m" type="main">Die Metaphysik der Sitten [Metaphysics of Morals</title>
+		<author>
+			<persName><forename type="first">I</forename><surname>Kant</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1797">1797</date>
+		</imprint>
+	</monogr>
+	<note>Friedrich Ricolosius</note>
+</biblStruct>
+
+<biblStruct xml:id="b61">
+	<monogr>
+		<author>
+			<persName><forename type="first">M</forename><surname>Karmasin</surname></persName>
+		</author>
+		<title level="m">Medien und Ethik [media and ethics</title>
+		<imprint>
+			<date type="published" when="2002">2002</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b62">
+	<monogr>
+		<title/>
+		<author>
+			<persName><surname>Reclam</surname></persName>
+		</author>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b63">
+	<analytic>
+		<title level="a" type="main">Discourse ethics: Apel, Habermas and beyond</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Kettner</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Bioethics in cultural context: Reflections on methods and finitude</title>
+		<editor>
+			<persName><forename type="first">C</forename><surname>Rehmann-Sutter</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">M</forename><surname>Düwell</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">D</forename><surname>Mieth</surname></persName>
+		</editor>
+		<imprint>
+			<date type="published" when="2006">2006</date>
+			<biblScope unit="page" from="299" to="318" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b64">
+	<analytic>
+		<title level="a" type="main">Un(der)paid innovators: The commercial utilization of consumer work through crowdsourcing</title>
+		<author>
+			<persName><forename type="first">F</forename><surname>Kleemann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">G</forename><surname>Voß</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Rieder</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Technology &amp; Innovation Studies</title>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="5" to="26" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+	<note>Science</note>
+</biblStruct>
+
+<biblStruct xml:id="b65">
+	<analytic>
+		<title level="a" type="main">Open innovation and organizational boundaries: Task decomposition, knowledge distribution and the locus of innovation</title>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">R</forename><surname>Lakhani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Lifshitz-Assaf</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">L</forename><surname>Tushman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Handbook of economic organization: Integrating economic and organization theory</title>
+		<editor>
+			<persName><forename type="first">A</forename><surname>Grandori</surname></persName>
+		</editor>
+		<imprint>
+			<publisher>Edward Elgar Publishing</publisher>
+			<date type="published" when="2013">2013</date>
+			<biblScope unit="page" from="355" to="382" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b66">
+	<analytic>
+		<title level="a" type="main">Why hackers do what they do: Understanding motivation and effort in free/open source software projects</title>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">R</forename><surname>Lakhani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">G</forename><surname>Wolf</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Perspectives on free and open source software</title>
+		<editor>
+			<persName><forename type="first">J</forename><surname>Feller</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">B</forename><surname>Fitzgerald</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">S</forename><forename type="middle">A</forename><surname>Hissam</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">K</forename><forename type="middle">R</forename><surname>Lakhani</surname></persName>
+		</editor>
+		<meeting><address><addrLine>Cambridge, MA</addrLine></address></meeting>
+		<imprint>
+			<publisher>MIT Press</publisher>
+			<date type="published" when="2005">2005</date>
+			<biblScope unit="page" from="3" to="23" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b67">
+	<analytic>
+		<title level="a" type="main">Human computation</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>Law</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Von Ahn</surname></persName>
+		</author>
+		<idno type="DOI">10.2200/S00371ED1V01Y201107AIM013</idno>
+		<ptr target="https://doi.org/10.2200/S00371ED1V01Y201107AIM013" />
+	</analytic>
+	<monogr>
+		<title level="j">Synthesis Lectures on Artificial Intelligence and Machine Learning</title>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="1" to="121" />
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b68">
+	<analytic>
+		<title level="a" type="main">Leveraging crowdsourcing: Activation-supporting components for IT-based ideas competition</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">M</forename><surname>Leimeister</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Huber</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">U</forename><surname>Bretschneider</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Krcmar</surname></persName>
+		</author>
+		<idno type="DOI">10.2753/MIS0742-1222260108</idno>
+		<ptr target="https://doi.org/10.2753/MIS0742-1222260108" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Management Information Systems</title>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="197" to="224" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b69">
+	<monogr>
+		<title level="m" type="main">Code and other laws of cyberspaceBasic Books</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Lessig</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1999">1999</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b70">
+	<monogr>
+		<title level="m" type="main">After virtue: A study in moral theory</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Macintyre</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1981">1981</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b71">
+	<analytic>
+		<title level="a" type="main">Towards an information systems perspective and research agenda on crowdsourcing for innovation</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Majchrzak</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Malhotra</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.jsis.2013.07.004</idno>
+		<ptr target="https://doi.org/10.1016/j.jsis.2013.07.004" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Strategic Information Systems</title>
+		<imprint>
+			<biblScope unit="volume">22</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="257" to="268" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b72">
+	<monogr>
+		<title level="m">A labor market that works: Connecting talent with opportunity in the digital age</title>
+		<imprint>
+			<publisher>McKinsey Global Institute</publisher>
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b73">
+	<analytic>
+		<title level="a" type="main">Habermas&apos; discourse ethics and principle of universalization as a moral framework for organizational communication</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">J</forename><surname>Meisenbach</surname></persName>
+		</author>
+		<idno type="DOI">10.1177/0893318906288277</idno>
+		<ptr target="https://doi.org/10.1177/0893318906288277" />
+	</analytic>
+	<monogr>
+		<title level="j">Management Communication Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="39" to="62" />
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b74">
+	<monogr>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Miller</surname></persName>
+		</author>
+		<title level="m">TradeStream your way to profits: Building a killer portfolio in the age of social mediaJohn</title>
+		<imprint>
+			<publisher>Wiley &amp; Sons</publisher>
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b75">
+	<analytic>
+		<title level="a" type="main">Toward ethical information systems: The contribution of discourse ethics</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Mingers</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Walsham</surname></persName>
+		</author>
+		<idno type="DOI">10.2307/25750707</idno>
+		<ptr target="https://doi.org/10.2307/25750707" />
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">34</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="833" to="854" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b76">
+	<analytic>
+		<title level="a" type="main">A Set of principles for conducting critical research in information systems</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">D</forename><surname>Myers</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">K</forename><surname>Klein</surname></persName>
+		</author>
+		<idno type="DOI">10.2307/23043487</idno>
+		<ptr target="https://doi.org/10.2307/23043487" />
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">35</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="17" to="39" />
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b77">
+	<monogr>
+		<author>
+			<persName><forename type="first">W</forename><forename type="middle">L</forename><surname>Neuman</surname></persName>
+		</author>
+		<title level="m">Social research methods: Qualitative and quantitative approaches (7e)</title>
+		<meeting><address><addrLine>Harlow</addrLine></address></meeting>
+		<imprint>
+			<publisher>Pearson Education</publisher>
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b78">
+	<analytic>
+		<title level="a" type="main">Communication richness in electronic mail: Critical social theory and the contextuality of meaning</title>
+		<author>
+			<persName><forename type="first">O</forename><forename type="middle">K</forename><surname>Ngwenyama</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">S</forename><surname>Lee</surname></persName>
+		</author>
+		<idno type="DOI">10.2307/249417</idno>
+		<ptr target="https://doi.org/10.2307/249417" />
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="145" to="167" />
+			<date type="published" when="1997">1997</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b79">
+	<analytic>
+		<title level="a" type="main">Call for papers, track on &apos;crowdsourcing, crowdfunding, blockchain and the sharing economy</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">V</forename><surname>Nickerson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Sundararajan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Teigland</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">International Conference on Information Systems (ICIS)</title>
+		<imprint>
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b80">
+	<monogr>
+		<title level="m" type="main">The fragility of goodness: Luck and ethics in Greek tragedy and philosophy</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">C</forename><surname>Nussbaum</surname></persName>
+		</author>
+		<idno type="DOI">10.1017/CBO9780511817915</idno>
+		<ptr target="https://doi.org/10.1017/CBO9780511817915" />
+		<imprint>
+			<date type="published" when="2001">2001</date>
+			<publisher>Cambridge University Press</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b81">
+	<analytic>
+		<author>
+			<persName><forename type="first">W</forename><forename type="middle">J</forename><surname>Orlikowski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">V</forename><surname>Scott</surname></persName>
+		</author>
+		<idno type="DOI">10.25300/MISQ/2015/39.1.09</idno>
+		<ptr target="https://doi.org/10.25300/MISQ/2015/39.1.09" />
+	</analytic>
+	<monogr>
+		<title level="m">The Algorithm and the Crowd: Considering the Materiality of Service Innovation</title>
+		<imprint>
+			<date type="published" when="2015">2015</date>
+			<biblScope unit="volume">39</biblScope>
+			<biblScope unit="page" from="201" to="216" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b82">
+	<monogr>
+		<author>
+			<persName><forename type="first">J</forename><surname>Pedersen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Kocsis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Tripathi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Tarrell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Weerakoon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Tahmasbi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G.-J</forename><surname>De Vreede</surname></persName>
+		</author>
+		<title level="m">Conceptual foundations of crowdsourcing: A review of IS research, Hawaii International Conference on System Sciences (HICSS)</title>
+		<imprint>
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b83">
+	<analytic>
+		<title level="a" type="main">Longitudinal Field Research on Change: Theory and Practice</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">M</forename><surname>Pettigrew</surname></persName>
+		</author>
+		<idno type="DOI">10.1287/orsc.1.3.267</idno>
+		<ptr target="https://doi.org/10.1287/orsc.1.3.267" />
+	</analytic>
+	<monogr>
+		<title level="j">Organization Science</title>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="267" to="292" />
+			<date type="published" when="1990">1990</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b84">
+	<monogr>
+		<title level="m" type="main">NVivo: The #1 software for qualitative data analysis</title>
+		<ptr target="http://www.qsrinternational.com/nvivo-product" />
+		<imprint>
+			<date type="published" when="2017">2017</date>
+			<publisher>QSR International</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b85">
+	<analytic>
+		<title level="a" type="main">Human computation: A survey and taxonomy of a growing field</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">J</forename><surname>Quinn</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">B</forename><surname>Bederson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">ACM Conference on Human Factors in Computing Systems (CHI)</title>
+		<imprint>
+			<date type="published" when="2011">2011</date>
+			<biblScope unit="page" from="1403" to="1412" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b86">
+	<monogr>
+		<title level="m" type="main">The share-the-scraps economy</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Reich</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+	<note>robertreich.org</note>
+</biblStruct>
+
+<biblStruct xml:id="b87">
+	<analytic>
+		<title level="a" type="main">What is a &apos;fair&apos; price? Ethics as sensemaking</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Reinecke</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Ansari</surname></persName>
+		</author>
+		<idno type="DOI">10.1287/orsc.2015.0968</idno>
+		<ptr target="https://doi.org/10.1287/orsc.2015.0968" />
+	</analytic>
+	<monogr>
+		<title level="j">Organization Science</title>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="867" to="888" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b88">
+	<monogr>
+		<author>
+			<persName><forename type="first">A</forename><surname>Ross</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Chiasson</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.infoandorg.2011.06.001</idno>
+		<ptr target="https://doi.org/10.1016/j.infoandorg.2011.06.001" />
+		<title level="m">Habermas and information systems research: New directions. Information and Organization</title>
+		<imprint>
+			<date type="published" when="2011">2011</date>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="page" from="123" to="141" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b89">
+	<analytic>
+		<title level="a" type="main">We are dynamo: Overcoming stalling and friction in collective action for crowd workers</title>
+		<author>
+			<persName><forename type="first">N</forename><surname>Salehi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">C</forename><surname>Irani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">S</forename><surname>Bernstein</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Alkhatib</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Ogbe</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Milland</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">ACM SIGCHI Conference on Human Factors in Computing Systems (CHI)</title>
+		<imprint>
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b90">
+	<analytic>
+		<title level="a" type="main">Rules of crowdsourcing: Models, issues and systems of control</title>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">D</forename><surname>Saxton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O</forename><surname>Oh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Kishore</surname></persName>
+		</author>
+		<idno type="DOI">10.1080/10580530.2013.739883</idno>
+		<ptr target="https://doi.org/10.1080/10580530.2013.739883" />
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Management</title>
+		<imprint>
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="2" to="20" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b91">
+	<analytic>
+		<title level="a" type="main">Toward a political conception of corporate responsibility: Business and society seen from a Habermasian perspective</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">G</forename><surname>Scherer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Palazzo</surname></persName>
+		</author>
+		<idno type="DOI">10.5465/amr.2007.26585837</idno>
+		<ptr target="https://doi.org/10.5465/amr.2007.26585837" />
+	</analytic>
+	<monogr>
+		<title level="j">Academy of Management Review</title>
+		<imprint>
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="1096" to="1120" />
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b92">
+	<analytic>
+		<title level="a" type="main">Beyond universalism and relativism: Habermas&apos;s contribution to discourse ethics and its implications for intercultural ethics and organization theory</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">G</forename><surname>Scherer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Patzer</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Philosophy and organization theory</title>
+		<editor>
+			<persName><forename type="first">H</forename><surname>Tsoukas</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">R</forename><surname>Chia</surname></persName>
+		</editor>
+		<meeting><address><addrLine>Bingley, UK</addrLine></address></meeting>
+		<imprint>
+			<publisher>Emerald</publisher>
+			<date type="published" when="2011">2011</date>
+			<biblScope unit="page" from="155" to="180" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b93">
+	<analytic>
+		<title level="a" type="main">Organizational learning with crowdsourcing: The revelatory case of LEGO</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Schlagwein</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Bjørn-Andersen</surname></persName>
+		</author>
+		<idno type="DOI">10.17705/1jais.00380</idno>
+		<ptr target="https://doi.org/10.17705/1jais.00380" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal of the Association for Information Systems</title>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="754" to="778" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b94">
+	<monogr>
+		<title level="m" type="main">Uberworked and underpaid: How workers are disrupting the digital economy</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Scholz</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2017">2017</date>
+			<publisher>Polity</publisher>
+			<pubPlace>Cambridge, UK</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b95">
+	<analytic>
+		<title level="a" type="main">Entanglements in practice: Performing anonymity through social media</title>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">V</forename><surname>Scott</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><forename type="middle">J</forename><surname>Orlikowski</surname></persName>
+		</author>
+		<idno type="DOI">10.25300/MISQ/2014/38.3.11</idno>
+		<ptr target="https://doi.org/10.25300/MISQ/2014/38.3.11" />
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">38</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="873" to="893" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b96">
+	<analytic>
+		<title level="a" type="main">Straight from the source? Media framing of creative crowd labor and resultant ethical concerns</title>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">B</forename><surname>Sheehan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Pittman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Business Ethics</title>
+		<imprint/>
+	</monogr>
+	<note>in press</note>
+</biblStruct>
+
+<biblStruct xml:id="b97">
+	<analytic>
+		<title level="a" type="main">Ethics and tactics of professional crowdwork</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">S</forename><surname>Silberman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Irani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Ross</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/1869086.1869100</idno>
+		<ptr target="https://doi.org/10.1145/1869086.1869100" />
+	</analytic>
+	<monogr>
+		<title level="j">XRDS</title>
+		<imprint>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="39" to="43" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b98">
+	<monogr>
+		<title level="m" type="main">The age of German idealism</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">C</forename><surname>Solomon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">M</forename><surname>Higgins</surname></persName>
+		</author>
+		<idno type="DOI">10.4324/9780203065525</idno>
+		<ptr target="https://doi.org/10.4324/9780203065525" />
+		<imprint>
+			<date type="published" when="1993">1993</date>
+			<publisher>Routledge</publisher>
+			<pubPlace>London</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b99">
+	<analytic>
+		<title level="a" type="main">What drives the crowd? A meta-analysis of the motivation of participants in crowdsourcing</title>
+		<author>
+			<persName><forename type="first">K</forename><surname>Spindeldreher</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Schlagwein</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Pacific Asia Conference on Information Systems (PACIS)</title>
+		<imprint>
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b100">
+	<analytic>
+		<title level="a" type="main">The ethical nature of critical research in information systems</title>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">C</forename><surname>Stahl</surname></persName>
+		</author>
+		<idno type="DOI">10.1111/j.1365-2575.2007.00283.x</idno>
+		<ptr target="https://doi.org/10.1111/j.1365-2575.2007.00283.x" />
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Journal</title>
+		<imprint>
+			<biblScope unit="volume">18</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="137" to="163" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b101">
+	<monogr>
+		<title level="m" type="main">The sharing economy: The end of employment and the rise of crowd-based capitalism. Cambridge, Massachusetts and London</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Sundararajan</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2016">2016</date>
+			<publisher>MIT Press</publisher>
+			<pubPlace>England</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b102">
+	<monogr>
+		<title level="m" type="main">Wikinomics: How mass collaboration changes everything</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Tapscott</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">D</forename><surname>Williams</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2006">2006</date>
+			<publisher>Penguin</publisher>
+			<pubPlace>New York</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b103">
+	<analytic>
+		<title level="a" type="main">Open strategy: Literature review, re-analysis of cases and conceptualisation as a practice</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Tavakoli</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Schlagwein</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Schoder</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.jsis.2017.01.003</idno>
+		<ptr target="https://doi.org/10.1016/j.jsis.2017.01.003" />
+	</analytic>
+	<monogr>
+		<title level="j">The Journal of Strategic Information Systems</title>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="163" to="184" />
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b104">
+	<analytic>
+		<title level="a" type="main">Reinventing the company: Entrepreneurs are redesigning the basic building block of capitalism</title>
+	</analytic>
+	<monogr>
+		<title level="j">The Economist</title>
+		<imprint>
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+	<note>The Economist</note>
+</biblStruct>
+
+<biblStruct xml:id="b105">
+	<analytic>
+		<title level="a" type="main">Efficient crowdsourcing of unknown experts using bounded multi-armed bandits</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Tran-Thanh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Stein</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Rogers</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><forename type="middle">R</forename><surname>Jennings</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.artint.2014.04.005</idno>
+		<ptr target="https://doi.org/10.1016/j.artint.2014.04.005" />
+	</analytic>
+	<monogr>
+		<title level="j">Artificial Intelligence</title>
+		<imprint>
+			<biblScope unit="volume">214</biblScope>
+			<biblScope unit="issue">9</biblScope>
+			<biblScope unit="page" from="89" to="111" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b106">
+	<monogr>
+		<title level="m" type="main">Integrative economic ethics: Foundations of a civilized market economy</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Ulrich</surname></persName>
+		</author>
+		<idno type="DOI">10.1017/CBO9780511488658</idno>
+		<ptr target="https://doi.org/10.1017/CBO9780511488658" />
+		<imprint>
+			<date type="published" when="2008">2008</date>
+			<publisher>Cambridge University Press</publisher>
+			<pubPlace>New York, NY, US</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b107">
+	<analytic>
+		<title level="a" type="main">reCAPTCHA: Human-based character recognition via web security measures</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Von Ahn</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Maurer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Mcmillen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Abraham</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Blum</surname></persName>
+		</author>
+		<idno type="DOI">10.1126/science.1160379</idno>
+		<ptr target="https://doi.org/10.1126/science.1160379" />
+	</analytic>
+	<monogr>
+		<title level="j">Science</title>
+		<imprint>
+			<biblScope unit="volume">321</biblScope>
+			<biblScope unit="issue">5895</biblScope>
+			<biblScope unit="page" from="1465" to="1468" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b108">
+	<analytic>
+		<title level="a" type="main">Interpretive case studies in IS research: Nature and method</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Walsham</surname></persName>
+		</author>
+		<idno type="DOI">10.1057/ejis.1995.9</idno>
+		<ptr target="https://doi.org/10.1057/ejis.1995.9" />
+	</analytic>
+	<monogr>
+		<title level="j">European Journal of Information Systems</title>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="74" to="81" />
+			<date type="published" when="1995">1995</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b109">
+	<monogr>
+		<title level="m" type="main">The Cambridge companion to Habermas</title>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">K</forename><surname>White</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1995">1995</date>
+			<publisher>Cambridge University Press</publisher>
+			<pubPlace>Cambridge</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b110">
+	<monogr>
+		<author>
+			<persName><forename type="first">J</forename><surname>Zittrain</surname></persName>
+		</author>
+		<title level="m">The internet creates a new kind of sweatshop</title>
+		<imprint>
+			<publisher>Newsweek</publisher>
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b111">
+	<analytic>
+		<title level="a" type="main">Internal crowdsourcing: Conceptual framework, structured review and research agenda</title>
+		<author>
+			<persName><forename type="first">O</forename><surname>Zuchowski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O</forename><surname>Posegga</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Schlagwein</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Fischbach</surname></persName>
+		</author>
+		<idno type="DOI">10.1057/jit.2016.14</idno>
+		<ptr target="https://doi.org/10.1057/jit.2016.14" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Information Technology</title>
+		<imprint>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="166" to="184" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

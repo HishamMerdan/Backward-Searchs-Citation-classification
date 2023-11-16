@@ -1,0 +1,810 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Understanding Relational Antecedents to Ratings Inflation in Online Labor Markets Short Paper</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author role="corresp">
+							<persName><forename type="first">Hatim</forename><forename type="middle">A</forename><surname>Rahman</surname></persName>
+							<email>harahman@stanford.edu</email>
+							<affiliation key="aff0">
+								<orgName type="laboratory">Relational Antecedents to Ratings Inflation Thirty Ninth International Conference on Information Systems</orgName>
+								<address>
+									<postCode>2018 1</postCode>
+									<settlement>San Francisco</settlement>
+								</address>
+							</affiliation>
+							<affiliation key="aff1">
+								<orgName type="institution">Stanford University</orgName>
+								<address>
+									<addrLine>475 Via Ortega</addrLine>
+									<postCode>94305</postCode>
+									<settlement>Stanford</settlement>
+									<region>CA</region>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Understanding Relational Antecedents to Ratings Inflation in Online Labor Markets Short Paper</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="MD5">9239EFC9BC428655E1CB51339EC75955</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.7.3" ident="GROBID" when="2023-06-16T09:23+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>Ratings</term>
+					<term>Online Markets</term>
+					<term>Relational</term>
+					<term>Inductive</term>
+					<term>Inflation</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Existing literature and theory suggest that efficient transactions in online markets are undergirded by reliable reputational signals. This assumption is especially true for online markets such as Amazon, Uber, and Upwork, which function at a global scale and facilitate trust between millions of people with little more than public ratings as a representation for explicitly codified reputation. These ratings are assumed to provide transparency and accountability into past behavior. However, recent studies are beginning to show rampant ratings inflation in online markets, threatening the foundation of these markets. Current explanations have almost exclusively looked at ratings inflation after ratings have already been given. In this paper, however, I examine what occurs before ratings are entered to better understand the relational antecedents that lead to ratings inflation. Through an inductive analysis of client-contractor interactions in one of the largest online labor markets, my findings show that ratings can be inflated when the relationship between clients and contractors is going well and also when the relationship and project is struggling.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Introduction</head><p>Online marketplaces-ranging from Amazon and eBay to Airbnb and Upwork-are used by billions of people around the world and continue to burgeon in their size and scope. Although online markets continue to grow, they represent a relatively novel theoretical and empirical phenomenon. Theoretically, why would people interact and transact in relatively anonymous, distributed markets characterized by a low-likelihood of repeat interaction, little to no existing social ties, and weak formal institutional oversight? Previous research has shown that these conditions engender mistrust and encourage opportunistic behavior in markets <ref type="bibr" target="#b0">(Akerlof 1970;</ref><ref type="bibr" target="#b32">Tadelis 2016)</ref>. Despite the challenges in facilitating interactions in online marketplace settings, scholars have credited their growth and use, in part, to reputation systems most commonly encapsulated in ratings <ref type="bibr" target="#b5">(Dellarocas &amp; Wood 2008;</ref><ref type="bibr" target="#b18">Li et al. 2016;</ref><ref type="bibr">Masum &amp; Tovey 2011;</ref><ref type="bibr" target="#b30">Resnick et al. 2000)</ref>.</p><p>A small but growing stream of research has highlighted, however, rampant rating inflation in online marketplaces. Rating inflation occurs when there is an overall increase in the ratings people receive, contributing to a decrease in the informative power of a rating. For example, <ref type="bibr" target="#b26">Nosko and Tadelis (2015)</ref> show that the mean positive score for eBay sellers is 99.7% and the median score is 100%, despite multiple changes to the way in which ratings are left by buyers and sellers to encourage more transparent feedback. Similar patterns have been documented on other online marketplaces, such as Amazon, oDesk, Airbnb, and Elance <ref type="bibr" target="#b11">(Filippas et al. 2018;</ref><ref type="bibr" target="#b12">Fradkin et al. 2017;</ref><ref type="bibr" target="#b26">Nosko and Tadelis 2015)</ref>. Ratings inflation is especially pernicious in online markets because users lack existing social ties, formal institutional oversight, and other similar factors that are used in traditional markets to facilitate trust between people <ref type="bibr" target="#b6">(Diekmann and Przepiorka 2017;</ref><ref type="bibr" target="#b32">Tadelis 2016</ref>). As a result, online markets and their users heavily rely on ratings as a signal for reputation to facilitate transactions and interactions. However, if ratings are inflated in online markets, they could quickly lose credibility as an informative reputation signal. For instance, if everyone on a market has a 5.0 out of 5.0, the rating ceases to convey the quality of a perfect score. Without credible, informative reputation signals, online markets risk driving out quality market actors, thereby becoming a "market for lemons" (Akelof 1970). Thus, understanding the theoretical and practical conditions that lead to ratings inflation is crucial to ensuring online market efficiency and growth.</p><p>In this paper, I depart from previous studies by examining the practices that occur before a rating is given. Drawing upon unique qualitative data of client and contractor actions during a project, I uncover the relational antecedents and conditions that lead to perfect ratings which ultimately contributes to rating inflation. My findings show that ratings can be inflated when the relationship between clients and contractors is going well and also when the relationship and project is struggling. By shifting our perspective to examine how ratings are enacted in practice, this paper advances a relational, practice-based perspective of ratings inflation. More broadly, my findings add to our current understanding of what leads to reputation inflation in online markets and challenges us to think more broadly about how reputation is measured and communicated in emerging online settings.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Relevant Literature</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Reputation in Online Markets</head><p>Despite the challenges in facilitating interactions in online labor markets, scholars have credited their growth and use, in part, to reputation systems <ref type="bibr" target="#b2">(Bolton et al. 2013;</ref><ref type="bibr" target="#b30">Resnick et al. 2000;</ref><ref type="bibr" target="#b32">Tadelis 2016</ref>). In online markets, reputation<ref type="foot" target="#foot_0">1</ref> is encapsulated in the ability to leave public ratings, allowing users to rate their experience of interacting and transacting with each other. These reputational ratings are then aggregated in online markets, becoming a reflection of a user's past behavior (i.e., "shadow of the past) that others can use to gauge whether they should trust each other <ref type="bibr" target="#b31">(Resnick et al. 2006;</ref><ref type="bibr" target="#b32">Tadelis 2016)</ref>.</p><p>A growing group of scholars have highlighted limitations to current rating and reputation systems, particularly rampant ratings inflation <ref type="bibr" target="#b3">(Bolton et al. 2017;</ref><ref type="bibr" target="#b5">Dellarocas and Wood 2008;</ref><ref type="bibr" target="#b11">Filippas et al. 2018;</ref><ref type="bibr" target="#b15">Hu et al. 2009;</ref><ref type="bibr" target="#b20">Li and Hitt 2008)</ref>. Ratings inflation in online markets is problematic for several reasons. First, if most users have high-ratings, ratings convey less information, as people are unable to use ratings to differentiate the best quality users. In other words, ratings cease to become a reliable reputation signal. Second, as noted earlier, online markets actively use ratings in their algorithms to organize and structure online markets to facilitate trust between millions of people <ref type="bibr" target="#b6">(Diekmann and Przepiorka 2017;</ref><ref type="bibr" target="#b14">Hannak et al. 2017;</ref><ref type="bibr" target="#b33">Tanz 2014)</ref>. That is, many online markets are designed assuming ratings are a reliable measure of reputation; however, increasingly studies have shown that when this assumption breaks down, it can not only lead to rating inflation, but also to bias and discrimination on online platforms <ref type="bibr" target="#b4">(Chan and Wang 2017;</ref><ref type="bibr" target="#b21">Luca 2016)</ref>.</p><p>To address ratings inflation, particularly the possibility of retaliation, scholars have advocated a doubleblind rating structure that reduces the incentive or cost of retaliation and other similar behaviors <ref type="bibr" target="#b5">(Dellarocas &amp; Wood 2008;</ref><ref type="bibr" target="#b32">Tadelis 2016</ref>). In such a system, neither user can see each other's rating until both have entered a rating after an interaction is completed. Additionally, because market actors are unlikely to interact again in online markets, there are theoretically fewer barriers to leave ratings that are reflective of a users' experience. However, the online market I studied implemented this rating design, yet I still observed users actively engaging in practices that inflated their rating in ways that were obscured on the market. This suggests merely changing the incentive and cost structures does not fully account for how ratings are used in practice.</p><p>We lack data on what occurs before a rating is given, in part because observing these interactions is extremely difficult, especially in online market settings. In these settings, users are distributed and work or interact for relatively shorter periods of time, making observations of their work particularly difficult. To understand the situations and practices that lead to ratings inflation in situ, I leverage unique empirical data capturing the raw interactions between clients and contractors on an online labor market from the beginning of their interactions to before a rating is formally given.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Methods</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Research Setting</head><p>In this study, I examined ratings inflation in one of the world's largest online labor markets-StarWorks (a pseudonym). <ref type="foot" target="#foot_2">2</ref> In 2015, StarWorks had over 9 million registered users spread over 100 countries. There were almost three times as many contractors as clients on the platform. At the time of this research, StarWorks differentiated itself from other online labor markets by marketing itself as a platform which employers (i.e., clients) could hire contractors to complete administrative as well as complex, high-skilled work.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Ratings on StarWorks</head><p>Ratings on StarWorks were designed as a double-blind process. Once the contract ended, the client and contractor were both prompted to provide feedback on their experience of working together. The client rated the contractor along six dimensions on a scale from 1 to 5: availability, communication, cooperation, adherence to schedule, quality of work, and skills. Contractors rated clients on the same dimensions, except 'quality of work' was replaced with 'quality of requirement,' and 'adherence to schedule' was replaced with 'set reasonable deadlines.' After clients and contractors entered ratings for each other, the ratings were averaged and formed the contractor's and the client's overall feedback for the project, respectively. Similarly, ratings for projects were aggregated and made up the total feedback score. Client's and contractor's profiles displayed their overall feedback score. When clients searched or viewed a contractor's initial profile, the overall contractor's rating was prominently displayed. Note, only the total aggregated rating score was shown and featured by StarWorks; in order to see detailed ratings of the six dimensions, a user had to click on the contractor's profile and then click an additional link (i.e., "see all work history and feedback") to view detailed ratings.</p><p>Clients and contractors could not see the feedback they provided until both completed the feedback process. Each person had 14 days to enter numerical ratings as well as optional written feedback. If only one person entered feedback, this information would be posted after the 14-day time-period ended. Once feedback had been entered and posted, neither the client nor contractor could change the feedback that had been provided unless they received permission from the other. StarWorks enabled clients and contractors to search and sort the data and also featured specific clients and contractors based on their aggregate ratings. Despite having a state-of-the-art reputation system, including double-blind, simultaneously revealed ratings, StarWorks observed ratings inflation on its platform. Over 90% of contractors had a 4.0 or above rating out of 5.0 stars.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Data Collection: Theoretical Sampling from Case Studies</head><p>To study ratings inflation, I inductively analyzed 60 anonymized client-contractor project communication records provided by StarWorks. Although StarWorks forbade clients and contractors from discussing ratings before a project ended, they relied on clients and contractors to self-report whether these types of discussions occurred. These 60 cases StarWorks provided contained evidence of ratings being discussed before a project ended, but were not reported to StarWorks as attempts to influence how ratings were entered. These cases were apt to theorize what leads to ratings inflation because "the process of interest is 'transparently observable'" <ref type="bibr">(Eisenhardt 1989: 537)</ref>. More formally, selecting and analyzing cases containing the central phenomenon of interest is referred to as "theoretical sampling," which "involves the selection of cases based on their ability to illuminate and extend relationships among constructs or develop deeper understanding of processes" <ref type="bibr" target="#b9">(Eisenhardt et al. 2016</ref><ref type="bibr">(Eisenhardt et al. : 1114) )</ref> <ref type="foot" target="#foot_3">3</ref> . As such, these cases represent an opportune sample to build grounded theory about the conditions that lead to ratings inflation in a way that other data and methods are not.</p><p>These records included the messages sent using StarWorks' shared messaging system that captured ongoing communication. Clients and contractors used this common messaging service to exchange instructions, files, project information, discussions, thoughts, small talk, updates, or negotiations. The data included messages between clients and contractors through the entire duration of the project, including situations when a project was suspended and later resumed. Each communication history began with the first conversation that took place between a client and contractor (which can, and often did, occur before a client hired a contractor) to the last message that occurred between the two, even after the contract ended. Importantly, the communication records were private between the client and contractor.</p><p>Additionally, to my knowledge, this data provides the first undertaking to study the interactions that occur during a project in an online labor market, shedding light onto what happens between clients and contractors before a rating or outcome is recorded. Previous online labor market research has largely examined the impact of project outcomes after a project has ended. For example, <ref type="bibr" target="#b16">Kokkodis and Ipeirotis (2016)</ref> and <ref type="bibr" target="#b17">Leung (2014)</ref>, analyzed contractors' ratings on online labor market projects after they had been completed. Their analysis provides valuable insight into aggregate outcomes and trends; however, this type of data misses out on the interactions and processes that leads to each outcome, generally, and ratings inflation, specifically.</p><p>Because of the sensitivity of the data, StarWorks' user agreement, and legal terms and conditions, a thirdparty firm was hired to anonymize and remove any identifying information from the conversation histories before it was shared. This requirement included removing any identifying information in the content of the messages. Additionally, to protect the anonymity of the clients and contractors, StarWorks did not provide any information that could potentially link the conversations with clients' and contractors' identities, including their public profile information. The length of the projects for each communication record were, however, provided. On average, projects lasted 3 months (90.31 days). Taken together, the data provides an unvarnished view into the conditions and strategies that lead to ratings inflation.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Data Analysis</head><p>I followed an inductive approach to analyze the qualitative communication records between clients and contractors <ref type="bibr">(Charmaz 2006</ref><ref type="bibr">, Corbin &amp; Strauss 2014</ref><ref type="bibr" target="#b9">, Eisenhardt et al. 2016)</ref>. I treated each communication record as an independent case (i.e., 60 cases) since each involved a distinct clientcontractor project that was unrelated to the other cases or projects I analyzed. The data was first opencoded to explore emerging themes using Nvivo software. While open-coding the communication records, it became clear that clients and contractors discussed ratings throughout their interaction. Initially, I flagged all instances in which clients and contractors discussed ratings before clients and contractors ended a project.</p><p>In the second round of coding, I closely examined the circumstances and identified common patterns that led to the occasion when ratings were first brought up in conversation, and thereafter the dynamics between the clients and contractors that eventually led to issuing a rating. For example, I coded which user initiated the discussion of ratings (client or contractor) and the project event that led to the client or contractor discussing the rating before the project ended. This final step initially led to first ordered codes to describe the situations and practices that contributed to inflated ratings.</p><p>After going through each communication stream and developing first-ordered codes, I began to compare and contrast the codes and the corresponding data to identify similarities and differences in the data. This step enabled me to create higher-ordered codes, which abstracted the data beyond the particular circumstances in each project and identified common patterns <ref type="bibr">(Charmaz 2006)</ref>. As a result, I identified four situations and corresponding strategies that ultimately led to the contractor receiving or preserving a high rating.</p><p>Table <ref type="table" target="#tab_0">1</ref> summarizes the analysis and the findings presented below. The table details the circumstances that leads to the discussion of ratings, what tactic is used that leads to five-star rating being issued, and who initiates the rating discussion before the project ends. Additionally, the table shows how often each situation was found in the cases analyzed. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Findings</head><p>To illustrate the relational antecedents that led to contractors receiving a perfect rating, I present one of the relational antecedents I identified in the data, in depth.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Clients' Empathy and Altruism Leads to Cordial Exiting</head><p>When clients and contractors encountered unexpected situations that were not directly related to the project work, such as the contractor experiencing personal problems. In these situations, contractors were not able to complete the work for which they were hired, but clients still gave them a high rating as a means of dissolving the relationship in a cordial manner. Clients sometimes initiated this tactic because contractors had previously demonstrated commitment to the project, because clients felt empathy towards a contractor, or because they wanted to encourage the contractor to return for future work with the client upon resolution of their unforeseen circumstances. Consider the following case when a client hired a contractor to complete a data entry task. The contractor performed the initial tasks proficiently, but later in the project, the contractor became unresponsive because of personal and family health complications.</p><p>When the contractor did respond to let the client know that she was struggling to keep up with the tasks on the project, the client responded:</p><p>I will make a determination as to whether or not to close the contracted agreement. Too much to do to focus on that now. If when things become a bit more manageable for you and you decide that you would like to work for me again...please feel free to reach out. I will not leave a negative rating for you as I wish you much success. Things happen in life...and unfortunately, they are not always the things that we can manage the best. I'll continue to pray for you and your family.</p><p>The client explicitly indicated that he did not want to hurt the contractor's reputation on StarWorks and potentially imperil the contractor's chances to land subsequent projects on the market. The client additionally urged the contractor to "reach out" if her situation improved and she wanted to resume working with the client.</p><p>Other clients went further and communicated that they would leave positive ratings, even though the project was not completed. For instance, a client hired a contractor to transcribe interview clips for an administrative support project. After reviewing the contractor's transcriptions, the client was pleased with the contractor's work and completion speed, "Thanks for the speedy turn around on the last few interviews. I have more interviews [to transcribe]." Later, while working on transcripts for the client, the contractor updated the client regarding an impediment to his progress: "I just wanted to apologize for taking so long with the files this week. I took on more than I can handle between my physical job and my online work and I got sick in the middle of the week." After not hearing back from the contractor, the client reached out to the contractor:</p><p>"I haven't heard from you for quite some time, so I hope all is well in your world. I know that you were getting exceedingly busy. At this time, I'm going to go ahead and end this contract so you can have a really good rating. Let's keep in touch, as I may reach out to you for future work."</p><p>The contractor did not finish the latest transcripts due to extenuating personal circumstances, but the client was still willing to provide a positive rating, indicating that he would like to work with the contractor in the future. Providing a high rating and cordially ending the contract left the door open to work again with the contractor. Taken together, clients willingly provided high ratings, even though in these circumstances the relationship and project ended prematurely. This reputational ploy, in particular, reflected clients' awareness that the ratings they provided had significant ramifications for contractors. Especially for clients who had positive experiences with contractors, but let go of the contractor for some unexpected reason, proactively ending the contract and leaving a high rating left the door open to resume working with contractors in the future.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Discussion</head><p>Ratings ostensibly signal the reputation and quality of an increasing array of goods, services, organizations, interactions, and even intimate relationships. In past studies and in practice, there is an assumption that ratings can provide an objective measure of reputation <ref type="bibr" target="#b16">(Kokkodis and Ipeirotis 2016;</ref><ref type="bibr" target="#b30">Resnick et al. 2000;</ref><ref type="bibr" target="#b32">Tadelis 2016</ref>). As a result, as long as reputation can easily be measured, aggregated, and shared, scholars have posited that ratings provide greater transparency and accountability as they become the "shadow of the past" <ref type="bibr" target="#b32">(Tadelis 2016)</ref>. This "shadow of the past" provides markets and users the ability to track and observe ratings from previous projects. Indeed, online markets have relied on ratings and other similar measures of reputation in their search algorithms and even to determine whether users should remain on the platform <ref type="bibr" target="#b6">(Diekmann and Przepiorka 2017;</ref><ref type="bibr" target="#b14">Hannak et al. 2017;</ref><ref type="bibr" target="#b33">Tanz 2014)</ref>.</p><p>Increasingly, however, emerging research has shown several flaws with online rating systems, particularly widespread ratings inflation <ref type="bibr" target="#b11">(Filippas et al. 2018;</ref><ref type="bibr" target="#b26">Nosko and Tadelis 2015;</ref><ref type="bibr" target="#b32">Tadelis 2016)</ref>. Past research has examined what contributes to ratings inflation after rating have been given. In this paper, by examining the interactions during a project, I theorized the relational antecedents leading to ratings inflation. Taken together, this paper highlights the importance of understanding how ratings are constituted in practice and advances a relational, practice-based perspective of ratings, wherein the circumstances between people drive the way in which tools like ratings are enacted on a micro-level <ref type="bibr" target="#b1">(Barley and Kunda 2004;</ref><ref type="bibr" target="#b27">Orlikowski 2007)</ref>.</p><p>For instance, my findings showed ratings could be inflated when projects are going well and also when clients are disappointed in the way the project unfolded. When projects went well, contractors attempted to split a project into multiple contracts so that they could receive many five-star ratings for a single project. Contractors, however, could not employ this tactic at any time. My results, rather, show that contractors had to ensure clients were pleased with their progress and clients' dependence on the contractor to complete the project had increased such that the client going back to the market, searching, hiring, and starting over with a new contractor would be cumbersome. As a result, to understand what causes ratings inflation, we must also understand the social, relational circumstances that market actors are entangled in. This understanding is just as important as considering the self-interests of market actors. Cordial exiting, in particular, highlighted the importance of understanding the social and relational circumstances that leads to ratings inflation. Contractors did not complete the project they were hired for in these instances, but clients still provided high ratings without requesting refunds or leaving low ratings. Clients' empathy, altruism, and desire to work with contractors in the future led them to provide high ratings in projects that would otherwise be deemed as unsuccessful.</p><p>My findings are not meant to exhaust all of the circumstances and tactics that could lead to ratings inflation. In fact, even if StarWorks were to implement certain systems to guard against what these findings show, clients and contractors could easily move their communication about ratings to third-party channels or devise alternative means to inflate readings. Indeed, decades of researchers have highlighted how deceptive hackers can pass spam through some of the most sophisticated, opaque algorithms <ref type="bibr" target="#b34">(Xie et al. 2008)</ref>. Instead, more broadly, my findings suggest that the reduction of reputation to a single measure has, in many situations, had the opposite effect of what is currently theorized; rather than providing transparency and accountability, reducing reputation to a single rating has obscured the reasons behind why a particular score is given, thereby favoring users who are adept at gaming the system <ref type="bibr" target="#b10">(Espeland and Sauder 2016)</ref>.</p><p>Consequently, even as the use of ratings continues to grow and encompass almost every sector of our economy and society, my findings highlight a major limitation to how ratings are used in online markets and beyond. In particular, the five-star ratings system pioneered by the first online product markets has been simply reproduced, with limited variations, if any, by a variety of online markets and settings. eBay is credited with being the first, if not the most successful, online market to use a five-star rating system to facilitate interactions and transactions between millions of people around the world <ref type="bibr">(Cohen &amp; Little 2003)</ref>.</p><p>These transactions are comparatively spot transactions, in which a "buyer" has limited information about the product's quality. In such transactions, using ratings to evaluate the transaction's quality works comparatively smoothly, since the nature of the interaction and the product assessment is relatively confined and objective in nature. That is, in many ways, it is much easier to judge the condition of a physical product than the quality of a complex project or a relationship between people. Additionally, product markets can offer additional protections-such as favorable return and refund policies-that mitigate the reliance on rating systems and the ratings inflation problem <ref type="bibr" target="#b19">(Li and Xiao 2014)</ref>. Previous research has shown that complex work, especially project work, often requires changing and adapting initial plans as the project parameters and expectations change, making it more difficult to assess the quality of a project with a single metric and also making it difficult for a market to simply offer additional protections to compensate for unexpected situations <ref type="bibr" target="#b29">(Rahman and Barley 2017)</ref>. Thus, this study calls on future research to experiment with different types of rating systems and additional reputational measures that are varied and particular to the type of market and interactions on the platform.</p><p>Lastly, this study has certain limitations, providing important considerations for future research. This study used an inductive, theoretical building approach. This approach is specifically suited for building grounded theory from case studies <ref type="bibr" target="#b8">(Eisenhardt 1989;</ref><ref type="bibr" target="#b9">Eisenhardt et al. 2016</ref>). As a result, because of the sensitivity of the data StarWorks provided and the methods used in this study, there is limited information that could definitively extend the generalizability of the specific findings in the cases I analyzed. Specifically, it is unclear how other factors such as users experience using the platform, previous history, and similar factors, impacted the circumstances and tactics used to inflate ratings. Similarly, the data does not allow me to specify how prevalent each circumstance and tactic was on the overall platform. Additionally, I studied ratings inflation in a particular online market-an online labor market used to hire higher-skilled workers for extended projects. There is a plethora of other online markets, including different types of online labor markets, that are dealing with ratings inflation <ref type="bibr" target="#b11">(Filippas et al. 2018)</ref>. It is up to future studies to uncover the tactics and different conditions that contribute to ratings inflation in those settings. By comparing and contrasting findings from studies of different settings, we are more likely to develop a more refined theory of rating inflation that is nuanced and encompasses different factors that contribute to this phenomenon.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head>Table 1 . Relational Antecedents Leading to Rating Inflation</head><label>1</label><figDesc></figDesc><table><row><cell>Relational</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Antecedents Leading to Ratings</cell><cell>Rating Inflation Practice</cell><cell>Who Initiates Practice?</cell><cell># of Cases Observed Practice is</cell><cell>Percentage</cell></row><row><cell>Discussion</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Increasing</cell><cell>Segmenting a</cell><cell></cell><cell></cell><cell></cell></row><row><cell>Clients'</cell><cell>Project: Dividing a</cell><cell></cell><cell></cell><cell></cell></row><row><cell>Satisfaction and</cell><cell>project into multiple</cell><cell></cell><cell></cell><cell></cell></row><row><cell>Dependence on</cell><cell>contracts so that the</cell><cell></cell><cell></cell><cell></cell></row><row><cell>Contractor:</cell><cell>contractor receives</cell><cell></cell><cell></cell><cell></cell></row><row><cell>Contractor senses</cell><cell>multiple five-star ratings</cell><cell></cell><cell></cell><cell></cell></row><row><cell>the client is pleased</cell><cell>for a single project</cell><cell>Contractor</cell><cell>19</cell><cell>32%</cell></row><row><cell>with their work and</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>the client's</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>dependence on the</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>contractor to</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>complete the project</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>has increased</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Circumventing</cell><cell>Cancelling Project:</cell><cell></cell><cell></cell><cell></cell></row><row><cell>Potential</cell><cell>Contractor cancels the</cell><cell></cell><cell></cell><cell></cell></row><row><cell>Negative Rating:</cell><cell>project, ensures the</cell><cell></cell><cell></cell><cell></cell></row><row><cell>Client is not pleased</cell><cell>client cannot leave any</cell><cell></cell><cell></cell><cell></cell></row><row><cell>with contractor's</cell><cell>rating, and the project</cell><cell>Contractor</cell><cell>8</cell><cell>13%</cell></row><row><cell>work and if money</cell><cell>will not show up on the</cell><cell></cell><cell></cell><cell></cell></row><row><cell>has been paid, the</cell><cell>contractor's profile</cell><cell></cell><cell></cell><cell></cell></row><row><cell>contractor is willing</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>to refund all wages</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Satisfying</cell><cell>Negotiated exchange:</cell><cell></cell><cell></cell><cell></cell></row><row><cell>Incomplete</cell><cell>Contractors negotiate to</cell><cell></cell><cell></cell><cell></cell></row><row><cell>Projects: Client is</cell><cell>return a portion of the</cell><cell></cell><cell></cell><cell></cell></row><row><cell>not pleased with the</cell><cell>wages and partially</cell><cell></cell><cell></cell><cell></cell></row><row><cell>contractor's work,</cell><cell>completed work in</cell><cell></cell><cell></cell><cell></cell></row><row><cell>but the contractor</cell><cell>exchange for a five-star</cell><cell></cell><cell></cell><cell></cell></row><row><cell>does not want to issue a full refund.</cell><cell>rating</cell><cell>Contractor</cell><cell>9</cell><cell>15%</cell></row><row><cell>Additionally, the</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>contractor has</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>completed a portion</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>of the project the</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>client wants to</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>recuperate</cell><cell></cell><cell></cell><cell></cell><cell></cell></row></table></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="1" xml:id="foot_0"><p>Reputation is broadly defined as the expectation of how someone will act based on previous demonstration of their actions (Podolny</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_1"><p>2010).</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="2" xml:id="foot_2"><p>Due to the sensitivity of the data and agreement with the online labor market, the identity of the online labor market has been kept confidential.</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="3" xml:id="foot_3"><p>For a more extensive discussion of the importance and methods of building grounded theory from cases in management and organizational research, the interested reader can consultEisenhardt et al. 2016 and Glaser &amp; Strauss  </p></note>
+		</body>
+		<back>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">The Market for &apos;Lemons&apos;: Quality Uncertainty and the Market Mechanism</title>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">A</forename><surname>Akerlof</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The Quarterly Journal of Economics</title>
+		<imprint>
+			<biblScope unit="volume">84</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page">488</biblScope>
+			<date type="published" when="1970">1970</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">R</forename><surname>Barley</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Kunda</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Gurus, Hired Guns, and Warm Bodies: Itinerant Experts in a Knowledge Economy</title>
+		<imprint>
+			<date type="published" when="2004">2004</date>
+			<publisher>Princeton University Press</publisher>
+			<pubPlace>Princeton; Ewing</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Engineering Trust: Reciprocity in the Production of Reputation Information</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Bolton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Greiner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Ockenfels</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Science</title>
+		<imprint>
+			<biblScope unit="volume">59</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="265" to="285" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Dispute Resolution or Escalation? The Strategic Gaming of Feedback Withdrawal Options in Online Markets</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Bolton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Greiner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Ockenfels</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Science</title>
+		<imprint>
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Hiring Preferences in Online Labor Markets: Evidence of a Female Hiring Bias</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Chan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Wang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Science</title>
+		<imprint>
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">The Sound of Silence in Online Feedback: Estimating Trading Risks in the Presence of Reporting Bias</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Dellarocas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">A</forename><surname>Wood</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Science</title>
+		<imprint>
+			<biblScope unit="volume">54</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="460" to="476" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<monogr>
+		<title level="m" type="main">Trust and Reputation in Markets</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Diekmann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Przepiorka</surname></persName>
+		</author>
+		<editor>F. Giardini and R. Wittek</editor>
+		<imprint>
+			<date type="published" when="2017">2017</date>
+			<publisher>Oxford University Press</publisher>
+			<pubPlace>Oxford</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<monogr>
+		<title level="m" type="main">The Rating Game: How Uber and Its Peers Turned Us into Horrible Bosses</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Dzieza</surname></persName>
+		</author>
+		<ptr target="http://www.theverge.com/2015/10/28/9625968/rating-system-on-demand-economy-uber-olive-garden" />
+		<imprint>
+			<date type="published" when="2015-10-28">2015. October 28. 2016</date>
+		</imprint>
+	</monogr>
+	<note>The Verge</note>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Building Theories from Case Study Research</title>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">M</forename><surname>Eisenhardt</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The Academy of Management Review</title>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page">532</biblScope>
+			<date type="published" when="1989">1989</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Grand Challenges and Inductive Methods: Rigor without Rigor Mortis</title>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">M</forename><surname>Eisenhardt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">E</forename><surname>Graebner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Sonenshein</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Academy of Management Journal</title>
+		<imprint>
+			<biblScope unit="volume">59</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="1113" to="1123" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<monogr>
+		<author>
+			<persName><forename type="first">W</forename><forename type="middle">N</forename><surname>Espeland</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Sauder</surname></persName>
+		</author>
+		<title level="m">Engines of Anxiety: Academic Rankings, Reputation, and Accountability</title>
+		<meeting><address><addrLine>New York, New York</addrLine></address></meeting>
+		<imprint>
+			<publisher>Russell Sage Foundation</publisher>
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+	<note>1 edition.</note>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<monogr>
+		<title level="m" type="main">Reputation Inflation</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Filippas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Horton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">M</forename><surname>Golden</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">Working Paper</note>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">A</forename><surname>Fradkin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Grewal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Holtz</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The Determinants of Online Review Informativeness: Evidence from Field Experiments on Airbnb</title>
+		<imprint>
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<monogr>
+		<title level="m" type="main">The Discovery of Grounded Theory: Strategies for Qualitative Research</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Glaser</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Strauss</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1999">1999</date>
+			<publisher>Aldine Transaction</publisher>
+			<pubPlace>Chicago</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Bias in Online Freelance Marketplaces: Evidence from TaskRabbit and Fiverr</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Hannak</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Wagner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Garcia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Mislove</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Strohmaier</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Wilson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">20th ACM Conference on Computer-Supported Cooperative Work and Social Computing</title>
+		<meeting><address><addrLine>Portland, OR</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2017-02">2017. 2017. February</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Overcoming the J-Shaped Distribution of Product Reviews</title>
+		<author>
+			<persName><forename type="first">N</forename><surname>Hu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">A</forename><surname>Pavlou</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Communications of the ACM</title>
+		<imprint>
+			<biblScope unit="volume">52</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page">144</biblScope>
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Reputation Transferability in Online Labor Markets</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Kokkodis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">G</forename><surname>Ipeirotis</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Science</title>
+		<imprint>
+			<biblScope unit="volume">62</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="1687" to="1706" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Dilettante or Renaissance Person? How the Order of Job Experiences Affects Hiring in an External Labor Market</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">D</forename><surname>Leung</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">American Sociological Review</title>
+		<imprint>
+			<biblScope unit="volume">79</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="136" to="158" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<monogr>
+		<title level="m" type="main">Buying Reputation as a Signal of Quality: Evidence from an Online Marketplace</title>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">(</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">)</forename><surname>Ivy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Tadelis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Zhou</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2016">2016. 22584. September</date>
+			<publisher>National Bureau of Economic Research</publisher>
+			<pubPlace>Cambridge, MA</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Money Talks: Rebate Mechanisms in Reputation System Design</title>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">(</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">)</forename><surname>Ivy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiao</forename></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Science</title>
+		<imprint>
+			<biblScope unit="volume">60</biblScope>
+			<biblScope unit="issue">8</biblScope>
+			<biblScope unit="page" from="2054" to="2072" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Self-Selection and Information Role of Online Product Reviews</title>
+		<author>
+			<persName><forename type="first">X</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">M</forename><surname>Hitt</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="456" to="474" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Designing Online Marketplaces: Trust and Reputation Mechanisms</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Luca</surname></persName>
+		</author>
+		<ptr target="http://www.hbs.edu/faculty" />
+	</analytic>
+	<monogr>
+		<title level="s">Harvard Business School</title>
+		<imprint>
+			<date type="published" when="2016">2016. Publication%20Files/17-017_ec4ccdc0-4348-4eb9-9f46</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">Working Paper</note>
+	<note>86e1ac696b4f.pdf</note>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<monogr>
+		<title level="m" type="main">The Reputation Society: How Online Opinions Are Reshaping the Offline World</title>
+		<editor>Masum, H., and Tovey, M.</editor>
+		<imprint>
+			<date type="published" when="2011">2011</date>
+			<publisher>MIT Press</publisher>
+			<pubPlace>Cambridge, Mass</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Manifesto for the Reputation Society</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Masum</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y.-C</forename><surname>Zhang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">First Monday</title>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Keeping up Appearances: Reputational Threat and Impression Management after Social Movement Boycotts</title>
+		<author>
+			<persName><forename type="first">M.-H</forename><surname>Mcdonnell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>King</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Administrative Science Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">58</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="387" to="419" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">Doing Business with Strangers: Reputation in Online Service Marketplaces</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Moreno</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Terwiesch</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="865" to="886" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<monogr>
+		<author>
+			<persName><forename type="first">C</forename><surname>Nosko</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Tadelis</surname></persName>
+		</author>
+		<title level="m">The Limits of Reputation in Platform Markets: An Empirical Analysis and Field Experiment</title>
+		<imprint>
+			<publisher>National Bureau of Economic Research</publisher>
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Sociomaterial Practices: Exploring Technology at Work</title>
+		<author>
+			<persName><forename type="first">W</forename><forename type="middle">J</forename><surname>Orlikowski</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Organization Studies</title>
+		<imprint>
+			<biblScope unit="volume">28</biblScope>
+			<biblScope unit="issue">9</biblScope>
+			<biblScope unit="page" from="1435" to="1448" />
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">Inefficient Hiring in Entry-Level Labor Markets</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Pallais</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">American Economic Review</title>
+		<imprint>
+			<biblScope unit="volume">104</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="3565" to="3599" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<monogr>
+		<title level="m" type="main">Situated Redesign in Creative Occupations -An Ethnography of Architects</title>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">A</forename><surname>Rahman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">R</forename><surname>Barley</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2017">2017</date>
+			<publisher>Academy of Management Discoveries</publisher>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="page" from="404" to="424" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">Reputation Systems</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Resnick</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Kuwabara</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Zeckhauser</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Friedman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Communications of the ACM</title>
+		<imprint>
+			<biblScope unit="volume">43</biblScope>
+			<biblScope unit="page" from="45" to="48" />
+			<date type="published" when="2000">2000</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">The Value of Reputation on EBay: A Controlled Experiment</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Resnick</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Zeckhauser</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Swanson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Lockwood</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Experimental Economics</title>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="79" to="101" />
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Reputation and Feedback Systems in Online Platform Markets</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Tadelis</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Annual Review of Economics</title>
+		<imprint>
+			<biblScope unit="issue">8</biblScope>
+			<biblScope unit="page" from="321" to="340" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<monogr>
+		<title level="m" type="main">How Airbnb and Lyft Finally Got Americans to Trust Each Other</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Tanz</surname></persName>
+		</author>
+		<ptr target="https://www.wired.com/2014/04/trust-in-the-share-economy/" />
+		<imprint>
+			<date type="published" when="2014-04-23">2014. April 23. April 10, 2017</date>
+		</imprint>
+	</monogr>
+	<note>WIRED,</note>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<monogr>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Xie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Achan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Panigrahy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Hulten</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Osipkov</surname></persName>
+		</author>
+		<title level="m">Spamming Botnets: Signatures and Characteristics</title>
+		<imprint>
+			<publisher>ACM Press</publisher>
+			<date type="published" when="2008">2008</date>
+			<biblScope unit="page">171</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

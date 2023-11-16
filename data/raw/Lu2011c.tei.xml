@@ -1,0 +1,1161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Online Sourcing: Investigations from Service Clients&apos; Perspective</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Baozhou</forename><surname>Lu</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="institution" key="instit1">ISDS</orgName>
+								<orgName type="institution" key="instit2">Louisiana State University</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Rudy</forename><surname>Hirschheim</surname></persName>
+							<affiliation key="aff1">
+								<orgName type="institution" key="instit1">ISDS</orgName>
+								<orgName type="institution" key="instit2">Louisiana State University</orgName>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Online Sourcing: Investigations from Service Clients&apos; Perspective</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="MD5">2E4CB69AE746DCA250AFBB7293237316</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.7.3" ident="GROBID" when="2023-06-16T09:23+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>Online sourcing</term>
+					<term>outsourcing decisions</term>
+					<term>online sourcing marketplace</term>
+					<term>online sourcing community</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>In this paper we empirically examine a new global phenomenon -online sourcing -with a quantitative research method. The rise of online sourcing not only boosts the emergence of several new business models in current digitalized economy, but also will fundamentally change the way work is done. Thus, gaining a deep understanding of the adoption of online sourcing becomes particularly important. Drawing upon theories of firms including transaction cost theory, we propose an integrative theoretical framework for the understanding of online sourcing decisions from the service clients' perspective. The research model is examined with the data collected from an online sourcing platform. Our findings suggest integrative theoretical framework rather than single perspective in understanding online sourcing decisions. Moreover, the study discloses how different theories are interrelated within an integrative theoretical framework under online sourcing context, as well as the relative importance of each theoretical perspective.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>INTRODUCTION:</head><p>The newest developments in outsourcing recently are to use Internet as the primary sourcing platform to approach the global sourcing of services. Here we term this new phenomenon as online sourcing, manifested in several variants in practice like crowdsourcing <ref type="bibr" target="#b22">(Howe, 2006)</ref>, microsourcing <ref type="bibr" target="#b35">(Obal, 2009)</ref>, open innovation <ref type="bibr" target="#b8">(Chesbrough, 2003)</ref>, online programming marketplace (Carmel and <ref type="bibr" target="#b17">Gefen, 2008)</ref>, online sourcing community etc. Examples of these online platforms include vWorker (former RentACoder), Guru.com, TopCoder, and InnoCentive. So far, online sourcing is still in the early adoption phase but demonstrates a very promising future. Table <ref type="table">1</ref> summarizes the primary statistics of ten major online sourcing platforms, indicating that over 2 million service providers have registered in these 10 websites and over 700 million dollars have been paid in last 10 years. Although small firms and entrepreneurs are the major users currently, we see the potentials of online sourcing to be utilized by big organizations. Indeed, big corporations like Google, GEICO, ESPN, VeriSign, and Polo has begun to adopt online sourcing 1 .</p><p>angle and results in incompatible explanations. Therefore, a comprehensive framework becomes necessary. An integrative perspective will provide us a few benefits. First, executives have to assess a long list of attributes that influence o decisions <ref type="bibr" target="#b11">(Dibbern et al., 2004)</ref>. Second, as Cheron et al. <ref type="bibr">(1995)</ref> and <ref type="bibr" target="#b23">Jayatilaka et al. (2003)</ref> have suggested, different theories do not conflict with each other and various theoretical concepts are inherently interrelated to each other, thus, an integrative perspective provide the opportunity to examine the relationships among the different theoretical concepts. Third and finally, online sourcing is a relatively new research phenomenon and we do not know which theory is more relevant for this phenomenon, therefore, employing multiple theoretical lenses will offer the opportunity to identify the theories that are more relevant for the research phenomenon.</p><p>We adapt the triangular alignment model by <ref type="bibr" target="#b45">Schwarz et al., (2009)</ref> to the study of online sourcing. The model combine four theories to look into outsourcing decisions: transaction cost theory (TCT), resourced-based theory (RBT), resource dependence theory (RDT), and knowledge-based view (KBV). These four theoretical lenses are aligned together to shed a light on outsourcing decisions along three pillars: resource, transaction, and knowledge, as depicted in Figure <ref type="figure" target="#fig_0">1</ref>. Before the adaption, the difference between online sourcing and traditional outsourcing has to be taken into account. While traditional outsourcing focuses on a dyadic relationship, online sourcing follows a triadic structure, consisting of platforms, service clients (SCs), and service providers (SPs). The triangular alignment model evolved from organizational research focuses on organizational perspectives, and thus, cannot cover the governance structure and the role of platform played in online sourcing. Online marketplace literature (e.g., <ref type="bibr" target="#b37">Pavlou and Gefen, 2004)</ref> indicates that trust is the most important element based upon social exchange theory (SET) <ref type="bibr" target="#b3">(Blau, 1964)</ref>. Therefore, we adapt the triangular model by adding one more dimension -relation, as depicted in Figure <ref type="figure" target="#fig_0">1</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Transaction</head><p>TCT <ref type="bibr" target="#b52">(Williamson, 1975)</ref> has been developed as a predominant theoretical explanation of the boundary choice of a firm. TCT argues that decisions about organizational activities are made by balancing the production costs and the transaction costs <ref type="bibr" target="#b23">(Jayatilaka et al., 2003)</ref>. Applied TCT to online sourcing, the economic rationale behind an online sourcing decision is to weigh between the production costs and the transaction costs associated with services <ref type="bibr" target="#b0">(Ang and Straub, 1998)</ref>.Thus, following the TCT perspective of online sourcing, we propose "cost reduction" (CR) as one decision attribute, defined as the perceived cost advantages of the external services in comparison with the internal resources.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Resource</head><p>The resource-related attributes are based on RBT and RDT. While RBT provides an internal analysis framework of a firm, RDT turns the focus to external environment <ref type="bibr" target="#b40">(Pfeffer and Salancik, 1978)</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>RBT-related Attributes</head><p>RBT views the firm as a collection of resources. The competitive advantage of a firm depends on its ability to gain and defend resources <ref type="bibr" target="#b1">(Barney, 1991)</ref>. Applied to outsourcing context, RBT offers a strategic analysis framework of outsourcing decision around three concepts: resources and capabilities, competitive advantage and sustained competitive advantage <ref type="bibr" target="#b23">(Jayatilaka et al. 2003</ref>). To sustain competitive advantage a firm must acquire and deploy critical resources <ref type="bibr" target="#b1">(Barney, 1991)</ref>. When the performance of existing resources falls short of expectation, outsourcing becomes a strategic response <ref type="bibr" target="#b51">(Teng, Cheon and Grover, 1995)</ref>. According to <ref type="bibr" target="#b45">Schwarz et al. (2009)</ref>, three RBT-related attributes spring out:</p><p>• Resource gap (RG): the extent of the disparity between the internal resources and the anticipated resources that are needed. • Resource complementarity (RC): the extent to which the resourced acquired from external environment to complement to existing internal resources. • Resource Utilization (RU): the extent to which external resources can be efficiently and effectively acquired and utilized.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>RDT-related Attributes</head><p>RDT argues that organizational actions are determined by external environment. Within the context of outsourcing, RDT helps to explain "an organization's strategic propensity toward securing access of IS and other critical resources from the external environment" <ref type="bibr" target="#b51">(Teng et al. 1995)</ref>. However, outsourcing also increases the degree of the dependence of firm on external environment. This violates the assumption of "minimizing the dependence" of RDT. Hence, before entering into an exchange relationship, a firm must assess both task environment and the resources <ref type="bibr" target="#b23">(Jayatilaka et al., 2003)</ref>. According to <ref type="bibr" target="#b45">Schwarz et al. (2009)</ref>, RDT suggests two attributes:</p><p>• Task environment (TE): the capabilities of the platform to offer resources;</p><p>• Resource suitability (RS): the degree of availability of both SPs and the IT infrastructures for communication and coordination.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Knowledge</head><p>KBV <ref type="bibr" target="#b20">(Grant, 1996)</ref>, viewing knowledge as a special resource, considering knowledge as the most important strategic resource. KBV can provide a better understanding on outsourcing for two reasons. First, extensive and specialized knowledge is required for the development, deployment, and use of the IT services and applications <ref type="bibr" target="#b23">(Jayatilaka et al., 2003)</ref>. Second, knowledge is socially embedded within organizational culture, routines and polices, as well as IT systems. So when turning over the operation of IT services or the development of IT services to outside providers, a firm will expose itself to knowledge risks. Thus, applying KBV to online sourcing, three attributes emerge out:</p><p>• Knowledge gap (KG): the disparity between the existing knowledge and the expected knowledge;</p><p>• Knowledge availability (KA): the capacity of an online platform in providing the expertise and skills;</p><p>• Knowledge risk (KR): the extent to exposes to the risks associated with knowledge sharing and transferring.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Relation</head><p>Online sourcing follows a triadic governance structure. To encourage online sourcing participations, platform providers must ensure a safe exchange environment <ref type="bibr" target="#b37">(Pavlou and Gefen, 2004</ref>). Thus, while traditional outsourcing relies on the dyadic relationships (Goo, Kishore and Rao, 2009), online sourcing depends more upon the institutional structures provided by the third party. Drawing upon relational governance literature <ref type="bibr" target="#b18">(Goo et al., 2009)</ref> and online marketplace literature <ref type="bibr" target="#b37">(Pavlou and Gefen, 2004)</ref>, we identify trust as the most important relational element for online sourcing. Trust has been viewed as the foundation of e-commerce <ref type="bibr" target="#b24">(Keen, 1999)</ref> and also as a key feature of the quality of relationship in outsourcing <ref type="bibr" target="#b25">(Lee and Kim, 1999)</ref>.</p><p>According to trust literature <ref type="bibr" target="#b37">(Pavlou and Gefen, 2004;</ref><ref type="bibr" target="#b30">McKnight, Cummings and Chervany, 1998)</ref>, two levels of trust are relevant: institutional trust and individual trust. <ref type="bibr" target="#b37">Pavlou and Gefen (2004)</ref> indicated that the way such trust in the collectivity of well-defined community affects people's assessments, beliefs, and behavior. Trust towards a community underwrites the interpersonal trust <ref type="bibr" target="#b12">(Durkheim, 1964)</ref>. In this study, we use "trust in platform" (TIP) to represent the trust at the institutional level. And we use "trust in service providers" (TISP) to represent SCs' trust towards SPs.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>RESEARCH MODEL AND HYPOTHESES</head><p>We propose a research model that describes the interrelations among the decision attributes based on the proposed framework above, depicted in Figure <ref type="figure" target="#fig_1">2</ref>. We arrange the decision attributes into three categories along the online sourcing decision making process: (1) organizational attributes, including cost reduction and gaps; (2) environmental attributes, including the decision attributes associated with platform; and (3) relational attributes, containing the trust-related attributes. Here is the online sourcing decision logic:</p><p>When making an online sourcing decision, a firm first needs to assess its internal resources and capabilities. Once a firm has identified a need to fill its gaps, it has to assess the attributes of its external environment. Finally, it needs to assess the quality of the relationships with the platform and providers.</p><p>The research model also suggests how an integrative perspective sheds light collectively on the sourcing decision: TCT, RBT, and KBV facilitate the understandings an organizational strategic perspective; RBT, RDT and KBV contribute the attributes when assessing the platform; and finally, SET helps to explain the role of the relational governance. Next we discuss the model and hypotheses in detail.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Organizational Attributes</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Cost Reduction</head><p>The challenge for the executives of firms today is to accomplish more with fewer inputs. One means is via dramatic cost savings <ref type="bibr" target="#b50">(Straub, Weill and Schwaig, 2008)</ref>. This trend becomes even more significant for IT investments: senior executives often view IS as a cost burden. According a survey conducted by <ref type="bibr">Ernst &amp; Young (2009)</ref>, IT cost reduction becomes the top priority for CIOs in 2009-2010. Thus, the cost reduction strategy will force executives to prohibit the investment in IT resources. And consequently, firms may suffer a critical shortage in both IS resources and IT talents. Accordingly:</p><p>H1a: Cost reduction strategy increases resource gap.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>H1b: Cost reduction strategy increases knowledge gap.</head><p>Cost reduction strategy will also shape the perceptions of executives towards the external environment. Strategy, according to <ref type="bibr" target="#b33">Mintzberg (1987)</ref>, reflects the collective intention and shared perspective of executives. Therefore, strategy will act as a frame of reference <ref type="bibr" target="#b29">(March and Simon, 1958</ref>) that guides organizational actions. Based on this, cost reduction strategy, will drive executives to look for the cost saving alternatives and shape their perceptions towards the external environment. Accordingly:</p><p>H2: Cost reduction has positive impact on the perception of task environment. H3c: Cost reduction has positive impact on the perception of resource suitability.</p><p>H3d: Cost reduction has positive impact on the perception of knowledge availability.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Resources and Knowledge Gaps</head><p>Extensive knowledge is required for IT services and applications <ref type="bibr" target="#b23">(Jayatilaka et al. 2003)</ref>. The IT products and services in firms are primarily derived from the skills and knowledge of the IS workers. Thus, the degradation of IT resources of a firm will make the internal need for IT staffs dramatically lower. Furthermore, non-IT-related firms will often fall short of IS knowledge because of the volatility of IT and dynamics of IT job market <ref type="bibr" target="#b47">(Slaughter and Ang, 1996)</ref>. Thus, the reduction of IT resource of a firm will cause the loss of the IT staffs, and in turn cause the loss of the IT skills, knowledge, and capabilities. Accordingly:</p><p>H4: Resource gap has positive impact on knowledge gap.</p><p>Both RBT and RDT indicate that, in order to fill the gaps of resources and capabilities, the external acquisition of resources will become necessary for the improvement of company strategy <ref type="bibr" target="#b19">(Grant, 1991)</ref>. With this respect, when the performance of a firm's existing resources is below the expected or desired level, outsourcing can be a strategic response for the firm to cover the difference or gaps. Thus:</p><p>H5a: Resource gap has positive impact on the perception of task environment.</p><p>H5b: Knowledge gap has positive impact on the perception of task environment.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Platform Attributes</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Task Environment</head><p>RDT indicate that when turning to the external environment for resources, a firm first needs to assess the capability of the external environment. Generally, the more competent SPs are available from external environment, the more discretion that a firm will have <ref type="bibr" target="#b50">(Straub et al., 2008)</ref>. A firm will weigh the task environment of an online platform from two aspects: (1) its capacity to provide resources and capabilities; and (2) its capability to provide a safeguarding overarching environment. The first one is usually measured as the number of SCs available from a platform; and the second one is built upon the institutional structures (Pavlou and Gefen, 2004; Mcknight, Choudhury and Kacmar, 2002) of the platform. Institutional structures are mechanisms and rules that are implemented and created by platform provider for the success of online transactions <ref type="bibr" target="#b37">(Pavlou and Gefen, 2004</ref>). Thus, task environment captures the general perceptions of firms towards the institutional context of an online platform. Hence:</p><p>H6a: The perception of the task environment has positive impact the perception of resource utilization.</p><p>H6b: The perception of the task environment has positive impact the perception of resource complementarity.</p><p>H6c: The perception of the task environment has positive impact the perception of resource suitability.</p><p>H6d: The perception of the task environment has positive impact the perception of knowledge availability.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Environmental Attributes and Trust</head><p>Trust H8b: The perception of resource complementarity has positive impact on trust in platform.</p><p>H8c: Service clients' perception of resource suitability has positive impact on trust in platform.</p><p>H8d: The perception of knowledge availability has positive impact on trust in platform.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Relational Attributes</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>TIP and TISP</head><p>Trust transference logic <ref type="bibr" target="#b49">(Stewart, 2003)</ref> indicates that trust transfer may be made from a place, an industry association, or an entity to another individual. Applied to online context, trust in the intermediary could build buyer trust in sellers; that is, buyers who trust the intermediary should also trust the sellers <ref type="bibr" target="#b37">(Pavlou and Gefen, 2004)</ref>. Following the same logic, we argue that trust in platform could build trust in the SPs. Accordingly: H9: Trust in platform increases trust in SPs.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>TIP and Knowledge Risks</head><p>Trust and risk are two closely-interrelated subjective concepts that are embedded in social relations. Without vulnerability to the risk of opportunism, there is no need to trust; and some degree of risk must be present so that there is a test of trust <ref type="bibr" target="#b9">(Dasgupta, 1988)</ref>. Trust can increase one's willingness to be vulnerable to the risk of opportunistic behavior of another <ref type="bibr" target="#b5">(Chiles and McMackin, 1996)</ref>, reduce expectations of opportunistic behavior <ref type="bibr" target="#b44">(Sako and Helper, 1998)</ref>, and diminishes risk perceptions <ref type="bibr" target="#b15">(Gefen, 2000)</ref>. Thus: H10: Trust in platform decreases firms' perception of knowledge risk.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Trust, Knowledge Risk and Engagement</head><p>Trust has been considered as one of the major social mechanisms that lead to purchasing behaviors. Trust leads to the cooperation, active information exchange, and harmonious conflict between two contractual parties (Rai, Maruping and Venkatesh, 2009). In the context of online sourcing, trust is particularly important because firms are faced with overwhelming social uncertainties, not knowing what the other party will do <ref type="bibr" target="#b37">(Pavlou and Gefen, 2004)</ref>. Thus: H11: Trust in platform increases firms' intentions to engage (ITE) in online sourcing.</p><p>H12: Trust in service providers increases firms' intentions to engage in online sourcing.</p><p>Risk perceptions have been shown to erode exchange relationships in general (e.g., Rousseau, Sitkin, Burt and Camerer, 1998), and they have also been proven to negatively influence consumer adoption of e-commerce <ref type="bibr" target="#b36">(Pavlou, 2003)</ref> and online purchasing intentions <ref type="bibr" target="#b37">(Pavlou and Gefen, 2004)</ref>. In this study, we examine the influence of knowledge risk on online sourcing engagement. Following the logic of TRA, the perceived knowledge risks increase negative expectations, leading to a negative attitude that should result in a negative influence on engagement intentions of firms. Therefore: H13: Perceived knowledge risks will decrease firms' insertions to engage in online sourcing activities.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Control Variables</head><p>The research model incorporates three control variables that may influences firm intention to engage in online sourcing: perceived online transaction uncertainty (PTU) (Pavlou, Liang and Xue, 2007), perceived usefulness (PU) of the website and ease of use (EOU) of the website <ref type="bibr" target="#b16">(Gefen, Karahanna and Straub, 2003)</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>RESEARCH METHOD</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Operationalization of Constructs</head><p>Items are summarized via literature review by employing the deductive approach <ref type="bibr" target="#b21">(Hinkin, 1995)</ref>. Following Churchhill </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Data Collection</head><p>The "key informants" data collection method (Segars and Grover, 1998) is used. The targeted respondents assume the role of a key informant and are able to provide information about their organizations. Data was collected from an online sourcing platform between August 2010 and November 2010. A total of 241 valid responses were obtained. Demographic information about the respondents and firms is summarized in Table <ref type="table" target="#tab_0">2</ref>. The average tenure and average outsourcing experiences of respondents are, respectively, 5.4 years and 4.1 years, confirming that they are knowledgeable to provide information about both their firms and online sourcing. Nonresponse bias was assessed by verifying that the distribution of the countries of responding firms is similar to that of firms reported by platform. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Characteristics</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>DATA ANALYSIS AND RESULTS</head><p>We use partial least square (PLS) for data analysis. Minimum sample size check is performed according to the rule of thumb indicated by <ref type="bibr" target="#b6">Chin (1998)</ref>. The sample size for current study is 241, which exceeds the minimum demand of sample size (10*8 = 80).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Measurement Model</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Model Refinement and Assessment</head><p>We first refine the measurement model by deleting the items with low loadings and cross loadings. Finally 47 items, as shown in Table <ref type="table" target="#tab_2">3</ref>, for the 12 principal constructs are retained. The internal consistency reliability is verified with that all composite reliability scores and Cronbach's Alpha of the latent variables exceeded the 0.70 threshold. Convergent validity can be established by examining the item loadings, composite reliability, Cronbach's Alpha, and average variance extracted (AVE). Generally the AVE score should be above .50, indicating that the latent variable can capture much higher constructrelated variance than error variance. Collectively, the results of reliability, AVE, and item loadings of the latent variables in Table <ref type="table" target="#tab_2">3</ref> provide strong evidence for convergent validity. As shown in Table <ref type="table" target="#tab_3">4</ref>, the square root of AVE for each construct (diagonal term) exceed the correlations between the construct and other constructs (off-diagonal terms), indicating that discriminant is established.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Common Method Variance Assessment</head><p>We also assess the effect of common method variance (CMV). We took several procedures to reduce the effects of CMV. First, we followed the instrument design and data collection procedures suggested by <ref type="bibr" target="#b41">Podsakoff et al. (2003)</ref>. Second, we performed an ad-hoc statistical analysis. Following <ref type="bibr" target="#b26">Liang et al. (2007)</ref>, we included in the PLS model a common method construct whose indicators included all the indicators of the principal constructs. Each indicator's variances substantively explained by the principal constructs and by the common method construct were calculated. The average substantively explained variance of the indicators by the principal construct is .731, while the average method based variance is .007. The ratio of substantive variance to method variance is about 98:1. Given the small magnitude of CMV, we contend that the CMV is unlikely to be a serious concern for this study.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Structural Model</head><p>The results of testing the structural model are shown in Figure <ref type="figure" target="#fig_4">3</ref>. The t-values for the path coefficients are estimated via the bootstrapping procedure <ref type="bibr" target="#b6">(Chin, 1998)</ref>. Cost reduction in the model contributes positively and significantly to both resource gap (β = 0.12, P &lt; 0.10) and knowledge gap (β = 0.15, P &lt; 0.01) within an organization, supporting hypotheses 1a and 1b.</p><p>Cost reduction also has significant and positive effects on the task environment (β = 0.45, P &lt; 0.001) and the environmental attributes, including resource utilization (β = 0.21, P &lt; 0.001), resource complementarity (β = 0.40, P &lt; 0.001), resource suitability (β = 0.20, P &lt; 0.01) and knowledge availability (β = 0.25, P &lt; 0.001). Hence, the hypotheses 2 and 3 are supported.</p><p>Resource gap has a significant effect on knowledge gap (β = 0.58, P &lt; 0.001), supporting hypothesis H4. Only resource gap is found to contribute significantly to task environment (β = 0.13, P &lt; 0.10), while resource gap has no significant impact on task environment (β = -0.08, P &gt; 0.10). Therefore, H5a is rejected but H5b is supported.</p><p>Task environment contributes significantly and positively on the perceptions of firms towards the other environmental attributes, respectively, resource utilization (β = 0.65, P &lt; 0.001), resource complementarity (β = 0.40, P &lt; 0.001), resource suitability (β = 0.47, P &lt; 0.01) and knowledge availability (β = 0.51, P &lt; 0.001), supporting H6. Task environment also has a significant effect on trust in platform (β = 0.23, P &lt; 0.05), supporting H7. Three of environmental attributes are found to have significant influences on trust in platform, and they are respectively, resource complementarity (β = 0.14, P &lt; 0.01), resource suitability (β = 0.24, P &lt; 0.001) and knowledge availability (β = 0.26, P &lt; 0.001), supporting H8b, H8c and H8d. However, resource utilization has no significant effect on trust in platform, thereby, H8a is not supported. Collectively task environment and the other four environmental attributes account for 65 percent of the variance explained on trust in platform.</p><p>As hypothesized, trust in platform contributes significantly and positively to trust in providers (β = 0.75, P &lt; 0.001), and significantly and negatively to knowledge risks (β = -0.24, P &lt; 0.01). Thus, both H9 and H10 are supported.</p><p>Finally, intentions to engage online sourcing is found to be significantly influenced by trust in platform (β = 0.48, P &lt; 0.001), supporting H11. However, no evidences show that intentions to engage is significantly influenced by either trust in SPs (β = 0.11, P &gt; 0.10) or knowledge risks (β = 0.03, P &lt; 0.10). Therefore, both H12 and H13 are rejected. Controlling for effects of the control variables, the variance explained on intentions to engage to engage online sourcing is about 58 percent.  </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Constructs # of Items</head><note type="other">Composite</note></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>DISCUSSIONS Key Findings</head><p>This study has several key findings.</p><p>First, the results confirm the important role of trust in platform in online sourcing. Trust in platform not only has a significant positive impact on intentions to engage online sourcing, but also significantly reduces the negative perception of online sourcing -knowledge risks. Furthermore, trust in platform can be transferred to trust in SPs. Unlike the traditional outsourcing relationship, it is hard to develop the same level of social embeddedness under online context <ref type="bibr" target="#b15">(Gefen, 2000)</ref>. However, our study does not confirm the positive role of "trust in service providers" as supposed. The individual level trust does matter when service clients try to discriminate providers from the same platform. And the reason why we have a low coefficient on the impact of trust in SPs on online sourcing engagement is that we define "engagement" more at the platform level than the individual level. Thus, the role of individual level trust deserves more examinations in future studies.</p><p>Second, this study indicates that knowledge risks do not have a significant negative effect on intention to engage online sourcing by firms. The finding contradicts with the negative role of knowledge risks suggested in most of the previous outsourcing literature (e.g. <ref type="bibr" target="#b45">Schwarz et al., 2009)</ref>. Two reasonable interpretations are suggested here. First, firms often divide a big and complex project into many small projects for online sourcing. Thus, a service provider only affords a small part of the whole project, and thereby, can only access the limited information and knowledge of the firm. Second, platform mechanisms (e.g., comments and feedbacks and reputation systems) are in place to protect the firm from knowledge risk.</p><p>Third, the results suggest the sources of trust. The trust in platform relies upon the general task environment of the marketplace, the knowledge available from the marketplace, the availability of communication and coordination channels, and the nature of the external resources to complement the existing resources of the firm. Furthermore, this study confirms the mediating role of trust in platform in online sourcing adoption. As a result, our study suggests the relevance of a relational perspective for online sourcing decisions.</p><p>Finally, this study indicate the relevance of integrative framework for online sourcing decision and discloses the interrelations among different theoretical perspectives as indicated by Cheron et al. <ref type="bibr">(1995)</ref>. Most of decision attributes (except knowledge risk, resource gap, and resource utilization) play significant role in online sourcing decision making, indicating that each theory provides some insights for the understanding of online sourcing phenomenon. However, no one  single theory alone provides full interpretations on online sourcing decision. Among these decision attributes, cost reduction and task environment are particular important, accounting most of variances of their responding variables. Thus the vital roles of TCT and RDT in understanding online sourcing decision are suggested here.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Contributions</head><p>The study's primary contribution is to apply a comprehensive theoretical framework for the understanding of online sourcing decision making based on previous outsourcing research (e.g., <ref type="bibr" target="#b45">Schwarz et al., 2009)</ref>. Although TCT and RDT stand out to play the most important roles, no single theoretical lenses can shed a full light on the understanding of online sourcing engagement. Secondly, the study proposed and testified the interrelations among different theoretical perspectives within an integrative model, confirming the argument of Cheron et al. (1995) various theoretical concepts are inherently interrelated.</p><p>Thirdly, the study extends the body of outsourcing literature to a new landscape of outsourcing -online sourcing. This new outsourcing practice is becoming more important "as the global marketplace dynamics seem to be moving toward greater diversification in sourcing and smaller, more manageable, contracts" <ref type="bibr" target="#b17">(Gefen and Carmel, 2008)</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Practical Implications</head><p>The study also has a few implications for practitioners. For SCs, the findings confirm the existence of the online sourcing practices. Moreover, our findings also indicate the potentiality of online sourcing as an efficient outsourcing option for large firms. For platform providers, our findings indicate that the governance of outsourcing has been partly transferred from firms to platform vendors in online sourcing. Therefore, platform providers should develop useful governance tools and structures. For SPs, the findings indicate that KBV is more suitable than RBT for online sourcing. Therefore, SPs that can better demonstrate the expertise, prior successful projects, and communication capabilities have a better chance to win a project.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Limitations and Research Directions</head><p>This study has a number of limitations. First, the study's findings are based upon a snapshot of the survey and thereby, key processual and contextual information was missed. Second, we have developed and testified 9 theoretically derived decision grounded in four organizational theories. However, we do recognize that other latent attributes may be important. And we leave the opportunity future research. The study also indicates several future research directions. First, this study has suggests that a knowledge-based view is more suitable for online sourcing. Future research can study online sourcing by employing KBV. Second, this study illustrated one research area that has not been examined in traditional e-business research: service rather than the normal product. Then traditional e-business topics like trust can be examined in the new context of service exchanges. Finally, this study only explored online sourcing from the firms' perspective, and thus more research from the perspective of service providers is needed in future.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>CONCLUSIONS</head><p>Drawing upon organizational theories, we applied an integrative theoretical framework to online sourcing. We have proposed and testified the interrelations among the theoretically derived attributes. Our results also indicate the complexities of online sourcing decision, in which many aspects of decision attributes must be taken into account. Thus, in doing so, this study sheds new light on: (1) online sourcing decisions, (2) the role of each theoretical perspective in outsourcing research, (3) the interrelations among theoretically derived decision attributes, and (4) the significant role of online platform in governing and facilitating online sourcing activities and transactions.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>Figure 1 .</head><label>1</label><figDesc>Figure 1. The Integrative Framework (Adapted from Schwarz et al., 2009)</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>H3a:Figure 2 .</head><label>2</label><figDesc>Figure 2. Research Model of Online Sourcing</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head></head><label></label><figDesc>is a multidimensional construct<ref type="bibr" target="#b31">(McKnight et al., 2002)</ref>. Drawing the Theory of Reasoned Action (TRA)<ref type="bibr" target="#b14">(Fishbein and Ajzen, 1975)</ref>,<ref type="bibr" target="#b31">McKnight et al. (2002)</ref> posit that "trusting beliefs (perceptions of specific Web vendor attributes) lead to trusting intentions (intention to engage in trust related behaviors with a specific Web vendor), which in turn result in trustrelated behaviors". Applied to online sourcing, it can be argued that the perceptions SCs towards the attributes of an online platform will lead to their trusting intentions toward the platform. Therefore: H8a: The perception of resource utilization has positive impact on trust in platform.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head></head><label></label><figDesc>(1979)  and<ref type="bibr" target="#b34">Netemeyer et al. (2003)</ref>, three criteria are applied: (1) items should reflect the definition of the construct; (2) items should cover all dimensions of the construct; and (3) items should be located from previous literature. These criteria are applied to promise content validity and face validity<ref type="bibr" target="#b34">(Netemeyer, Bearden and Sharma, 2003)</ref> of the constructs.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4"><head>Figure 3 :</head><label>3</label><figDesc>Figure 3: PLS Results of Structural Model</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head>Table 2 . Demographic Information of Respondents and Firms (n = 241)</head><label>2</label><figDesc></figDesc><table><row><cell>Frequency Percentage</cell><cell>Mean</cell><cell>Std. Dev.</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2"><head>Table 3 . The Assessment of Measurement Model for Principle Constructs Correlations of Latent Variables</head><label>3</label><figDesc></figDesc><table><row><cell></cell><cell>CR</cell><cell>RG</cell><cell>RC</cell><cell>RU</cell><cell>TE</cell><cell>RS</cell><cell>KG</cell><cell>KA</cell><cell>KR</cell><cell>TIM</cell><cell>TIP</cell><cell>ITE</cell></row><row><cell>CR</cell><cell>0.83</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>RG</cell><cell>0.11</cell><cell>0.87</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>RC</cell><cell>0.58</cell><cell>0.07</cell><cell>0.86</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>RU</cell><cell>0.52</cell><cell>-0.03</cell><cell>0.64</cell><cell>0.90</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>TE</cell><cell>0.47</cell><cell>0.05</cell><cell>0.59</cell><cell>0.75</cell><cell>0.87</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>RS</cell><cell>0.42</cell><cell>0.03</cell><cell>0.36</cell><cell>0.53</cell><cell>0.57</cell><cell>0.82</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>KG</cell><cell>0.22</cell><cell>0.60</cell><cell>0.12</cell><cell>0.09</cell><cell>0.18</cell><cell>0.18</cell><cell>0.84</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>KA</cell><cell>0.49</cell><cell>-0.01</cell><cell>0.52</cell><cell>0.64</cell><cell>0.63</cell><cell>0.60</cell><cell>0.10</cell><cell>0.85</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>KR</cell><cell>-0.08</cell><cell>0.22</cell><cell>-0.21</cell><cell>-0.13</cell><cell>-0.13</cell><cell>-0.15</cell><cell>0.16</cell><cell>-0.17</cell><cell>0.84</cell><cell></cell><cell></cell><cell></cell></row><row><cell>TIM</cell><cell>0.45</cell><cell>0.02</cell><cell>0.57</cell><cell>0.67</cell><cell>0.70</cell><cell>0.64</cell><cell>0.18</cell><cell>0.70</cell><cell>-0.22</cell><cell>0.84</cell><cell></cell><cell></cell></row><row><cell>TIP</cell><cell>0.40</cell><cell>0.08</cell><cell>0.46</cell><cell>0.55</cell><cell>0.55</cell><cell>0.51</cell><cell>0.27</cell><cell>0.55</cell><cell>-0.13</cell><cell>0.75</cell><cell>0.85</cell><cell></cell></row><row><cell>ITE</cell><cell>0.46</cell><cell>0.04</cell><cell>0.58</cell><cell>0.65</cell><cell>0.64</cell><cell>0.54</cell><cell>0.21</cell><cell>0.63</cell><cell>-0.12</cell><cell>0.75</cell><cell>0.62</cell><cell>0.90</cell></row><row><cell cols="10">Note: Bolded diagonal elements are the square root of average variance extracted (AVE).</cell><cell></cell><cell></cell><cell></cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_3"><head>Table 4 . Correlations of Latent Variables and Evidence of Discriminant Validity</head><label>4</label><figDesc></figDesc><table /></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_0"><p>Proceedings of the Seventeenth Americas Conference on Information Systems, Detroit, Michigan August 4 th -7 th 2011</p></note>
+		</body>
+		<back>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Production and Transaction Economies and IS Outsourcing: A Study of the U.S. Banking Industry</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Ang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">W</forename><surname>Straub</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">22</biblScope>
+			<biblScope unit="page" from="535" to="552" />
+			<date type="published" when="1998">1998</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Firm Resources and Sustained Competitive Advantage</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">B</forename><surname>Barney</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal &amp; Management</title>
+		<imprint>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="page" from="99" to="120" />
+			<date type="published" when="1991">1991</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">The Moderator-Mediator Variable Distinction in Social Psychological Research: Conceptual, Strategic, and Statistical Considerations</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Baron</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Kenny</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Personality and Social Psychology</title>
+		<imprint>
+			<biblScope unit="volume">51</biblScope>
+			<biblScope unit="page" from="1173" to="1182" />
+			<date type="published" when="1986">1986</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<monogr>
+		<title level="m" type="main">Exchange and Power in Social Life</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Blau</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1964">1964</date>
+			<publisher>Wiley</publisher>
+			<pubPlace>New York</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Theoretical Perspectives on the Outsourcing of Information Systems</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">J</forename><surname>Cheon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Grover</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Teng</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Information Technology</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="page" from="209" to="210" />
+			<date type="published" when="1995">1995</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Integrating variable risk preferences, trust, and transaction cost economics</title>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">H</forename><surname>Chiles</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">F</forename><surname>Mcmackin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Acad. Management Rev</title>
+		<imprint>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="page" from="73" to="99" />
+			<date type="published" when="1996">1996</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">The Partial Least Squares Approach to Structural Equation Modeling</title>
+		<author>
+			<persName><forename type="first">W</forename><forename type="middle">W</forename><surname>Chin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Modern Methods for Business Research</title>
+		<editor>
+			<persName><forename type="first">G</forename><forename type="middle">A</forename><surname>Marcoulides</surname></persName>
+		</editor>
+		<meeting><address><addrLine>London</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="1998">1998</date>
+			<biblScope unit="page" from="295" to="336" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">A Paradigm for Developing Better Measures of Marketing Constructs</title>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">A</forename><surname>Churchill</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Jr</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Marketing Research</title>
+		<imprint>
+			<biblScope unit="volume">16</biblScope>
+			<biblScope unit="page" from="64" to="73" />
+			<date type="published" when="1979">1979</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<monogr>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">W</forename><surname>Chesbrough</surname></persName>
+		</author>
+		<title level="m">Open Innovation: The New Imperative for Creating and Profiting from Technology</title>
+		<meeting><address><addrLine>Cambridge, MA</addrLine></address></meeting>
+		<imprint>
+			<publisher>Harvard Business School Publishing</publisher>
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Trust as a commodity</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Dasgupta</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Trust: Making and Breaking Cooperative Relations</title>
+		<editor>
+			<persName><forename type="first">D</forename><surname>Gambetta</surname></persName>
+		</editor>
+		<meeting><address><addrLine>Basil Blackwell, Oxford, England</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="1988">1988</date>
+			<biblScope unit="page" from="49" to="72" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Perceived Usefulness. Perceived Ease of Use and User Acceptance of Information Technology</title>
+		<author>
+			<persName><forename type="middle">F D</forename><surname>Davis</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="page" from="319" to="340" />
+			<date type="published" when="1989">1989</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<monogr>
+		<title level="m" type="main">Information Systems Outsourcing: A Survey and Analysis of the Literature, Database</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Dibbern</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Goles</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Hirschheim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Jayatilaka</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2004">2004</date>
+			<biblScope unit="volume">35</biblScope>
+			<biblScope unit="page" from="6" to="102" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<monogr>
+		<title level="m" type="main">The Division of Labor in Society</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>Durkheim</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1964">1964</date>
+			<publisher>Free Press</publisher>
+			<pubPlace>New York</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<monogr>
+		<author>
+			<persName><forename type="first">Yong</forename><surname>Ernst</surname></persName>
+		</author>
+		<ptr target="http://d.yimg.com/kq/groups/23182405/2057420994/name/" />
+		<title level="m">Enterprise IT Investment Trends survey</title>
+		<imprint>
+			<date type="published" when="2009">2009. 2009. Trends%2520Survey%2520v1. 10/2011</date>
+		</imprint>
+	</monogr>
+	<note>IT%2520Investment%2520</note>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<monogr>
+		<author>
+			<persName><forename type="first">M</forename><surname>Fishbein</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Ajzen</surname></persName>
+		</author>
+		<title level="m">Belief, Attitude, Intention and Behavior: An Introduction to Theory and Research</title>
+		<meeting><address><addrLine>Reading, MA</addrLine></address></meeting>
+		<imprint>
+			<publisher>Addison-Wesley</publisher>
+			<date type="published" when="1975">1975</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">E-Commerce: The Role of Familiarity and Trust</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Gefen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Qmega</title>
+		<imprint>
+			<biblScope unit="volume">28</biblScope>
+			<biblScope unit="page" from="725" to="737" />
+			<date type="published" when="2000">2000</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Trust and TAM in Online Shopping: An Integrated Model</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Gefen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Karahanna</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">W</forename><surname>Straub</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="page" from="51" to="90" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Is the World Really Flat? A Look at Offshoring at an Online Programming Marketplace</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Gefen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Carmel</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="page" from="367" to="384" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">The Role of Service Level Agreements in Relational Management of Information Technology Outsourcing: An Empirical Study</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Goo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Kishore</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">R</forename><surname>Rao</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS quarterly</title>
+		<imprint>
+			<biblScope unit="volume">33</biblScope>
+			<biblScope unit="page" from="119" to="145" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">The Resource-Based Theory of Competitive Advantage: Implications for Strategy Formulation</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">M</forename><surname>Grant</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">California Management Review</title>
+		<imprint>
+			<biblScope unit="volume">33</biblScope>
+			<biblScope unit="page" from="114" to="135" />
+			<date type="published" when="1991">1991</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Toward Knowledge-based Theory of the Firm</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">M</forename><surname>Grant</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Strategic Management Journal</title>
+		<imprint>
+			<biblScope unit="page" from="109" to="122" />
+			<date type="published" when="1996">1996</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">A review of scale development practices in the study of organizations</title>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">R</forename><surname>Hinkin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Management</title>
+		<imprint>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="page" from="967" to="988" />
+			<date type="published" when="1995">1995</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<monogr>
+		<title level="m" type="main">The rise of crowdsourcing</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Howe</surname></persName>
+		</author>
+		<ptr target="http://www.wired.com/wired/archive/14.06/crowds.html" />
+		<imprint>
+			<date type="published" when="2006">2006. 2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Determinants of ASP Choice: An Integrated Perspective</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Jayatilaka</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Schwarz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Hirschheim</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">European Journal of Information Systems</title>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="page" from="210" to="224" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<monogr>
+		<title level="m" type="main">Electronic Commerce Relationships: Trust by Design</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Keen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">W</forename><surname>Balance</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Chan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Schrump</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1999">1999</date>
+			<publisher>Prentice-Hall</publisher>
+			<pubPlace>Englewood Cliffs, NJ</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">Effect of Partnership Quality on IS Outsourcing: Conceptual Framework and Empirical Validation</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">N</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><forename type="middle">G</forename><surname>Kim</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Management Information Systems</title>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="page" from="29" to="61" />
+			<date type="published" when="1999">1999</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<author>
+			<persName><forename type="first">H</forename><surname>Liang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Saraf</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Q</forename><surname>Hu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Xue</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Assimilation of Enterprise Systems: The Effect of Institutional Pressures and the Mediating Role of Top Management</title>
+		<imprint>
+			<date type="published" when="2007">2007</date>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="page" from="59" to="87" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Reassessing the Fundamentals and Beyond: Ronald Coase, the Transaction Cost and Resourcebased Theories of the Firm and the Institutional Structure of Production</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Madhok</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Strategic Management Journal</title>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="535" to="550" />
+			<date type="published" when="2002">2002</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">The Dawn of the E-Lance Economy</title>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">W</forename><surname>Malone</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">J</forename><surname>Laubacher</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Harvard Business Review</title>
+		<imprint>
+			<biblScope unit="page" from="145" to="152" />
+			<date type="published" when="1998">1998</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<monogr>
+		<title/>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">G</forename><surname>March</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">A</forename><surname>Simon</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1958">1958</date>
+			<publisher>John Wiley &amp; Sons</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<monogr>
+		<title level="m" type="main">Initial trust formation in new organizational relationships</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">H</forename><surname>Mcknight</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">L</forename><surname>Cummings</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><forename type="middle">L</forename><surname>Chervany</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1998">1998</date>
+			<publisher>Academy of Management Review</publisher>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="page" from="473" to="490" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">Developing and Validating Trust measures for E-commerce: an Integrative Typology</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">H</forename><surname>Mcknight</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Choudhury</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Kacmar</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="page" from="334" to="359" />
+			<date type="published" when="2002">2002</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Dispositional Trust and Distrust Distinctions in Predicting High-and Low-Risk Internet Expert Advice Site Perceptions</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">H</forename><surname>Mcknight</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Kacmar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Choudhury</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">e-Service Journal</title>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="35" to="58" />
+			<date type="published" when="2004">2004. 2004</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">Crafting Strategy</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Mintzberg</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Harvard Business Review</title>
+		<imprint>
+			<biblScope unit="volume">65</biblScope>
+			<biblScope unit="page" from="66" to="75" />
+			<date type="published" when="1987">1987</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<monogr>
+		<title level="m" type="main">Scaling procedures: Issues and applications</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">G</forename><surname>Netemeyer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><forename type="middle">O</forename><surname>Bearden</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Sharma</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2003">2003</date>
+			<publisher>Sage Publications</publisher>
+			<pubPlace>Thousand Oaks</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">Microsourcing -Using Information Technology to Create Unexpected Work Relationships and Entrepreneurial Opportunities</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Obal</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Communications of the Association for Information Systems</title>
+		<imprint>
+			<biblScope unit="volume">24</biblScope>
+			<biblScope unit="page" from="161" to="174" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">Consumer acceptance of electronic commerce: Integrating trust and risk with the technology acceptance model</title>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">A</forename><surname>Pavlou</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Internat. J. Electronic Commerce</title>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="69" to="103" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<analytic>
+		<title level="a" type="main">Building Effective Online Marketplaces with Institution-Based Trust</title>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">A</forename><surname>Pavlou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Gefen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="37" to="59" />
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<analytic>
+		<title level="a" type="main">The Nature and Role of Feedback Text Comments in Online Marketplaces: Implications for Trust Building, Price Premiums, and Seller Differentiation</title>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">A</forename><surname>Pavlou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Dimoka</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<imprint>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="page" from="392" to="414" />
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<analytic>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">A</forename><surname>Pavlou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Liang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Xue</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Understanding and Mitigating Uncertainty in Online Exchange Relationships: A Principal-Agent Perspective</title>
+		<imprint>
+			<date type="published" when="2007">2007</date>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="page" from="105" to="136" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<analytic>
+		<title level="a" type="main">A Social Information Processing Approach to Job Attitudes and Task Design</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Pfeffer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">R</forename><surname>Salancik</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Administrative Science Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="224" to="253" />
+			<date type="published" when="1978">1978</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<analytic>
+		<title level="a" type="main">Common Method Biases in Behavioral Research: A Critical Review of the Literature and Recommended Remedies</title>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">B</forename><surname>Podsakoff</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Mackenzie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">Y</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><forename type="middle">P</forename><surname>Podsakoff</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Applied Psychology</title>
+		<imprint>
+			<biblScope unit="volume">88</biblScope>
+			<biblScope unit="page" from="879" to="903" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+	<analytic>
+		<title level="a" type="main">Offshore Information Systems Project Success: The Role of Social Embeddedness and Cultural Characteristics</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Rai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">M</forename><surname>Maruping</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Venkatesh</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">33</biblScope>
+			<biblScope unit="page" from="17" to="641" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b43">
+	<monogr>
+		<title level="m" type="main">Not so different after all: a cross-discipline view of trust</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">M</forename><surname>Rousseau</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">B</forename><surname>Sitkin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">S</forename><surname>Burt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Camerer</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1998">1998</date>
+			<publisher>Academy of Management Review</publisher>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="page" from="393" to="404" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b44">
+	<analytic>
+		<title level="a" type="main">Determinants of trust in supplier relations, evidence from the automotive industry in Japan and the United States</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Sako</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Helper</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Economic Behavior and Organization</title>
+		<imprint>
+			<biblScope unit="volume">34</biblScope>
+			<biblScope unit="page" from="387" to="417" />
+			<date type="published" when="1998">1998</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b45">
+	<analytic>
+		<title level="a" type="main">A Conjoint Approach to Understanding IT Application Services Outsourcing</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Schwarz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Hirschheim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Jayatilaka</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Goles</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of the Association for Information Systems</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="page" from="748" to="781" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b46">
+	<analytic>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">H</forename><surname>Segars</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Grover</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Strategic Information Systems Planning Success: An Investigation of the Construct and its Measurement</title>
+		<imprint>
+			<date type="published" when="1998">1998</date>
+			<biblScope unit="volume">22</biblScope>
+			<biblScope unit="page" from="139" to="163" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b47">
+	<analytic>
+		<title level="a" type="main">Employment Outsourcing in Information Systems</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Slaughter</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Ang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Communications of the ACM</title>
+		<imprint>
+			<biblScope unit="volume">39</biblScope>
+			<biblScope unit="page" from="47" to="54" />
+			<date type="published" when="1996">1996</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b48">
+	<monogr>
+		<title level="m" type="main">Paid crowdsourcing: current state and progress toward mainstream business use</title>
+		<author>
+			<persName><surname>Smartsheet</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Com</surname></persName>
+		</author>
+		<ptr target="http://www.smartsheet.com/paid-crowdsourcing-current-state-and-progress" />
+		<imprint>
+			<date type="published" when="2009-10">2009. 10/2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b49">
+	<analytic>
+		<title level="a" type="main">Trust transfer on the World Wide Web</title>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">L</forename><surname>Stewart</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Organ. Sci</title>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="page" from="5" to="17" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b50">
+	<analytic>
+		<title level="a" type="main">Strategic dependence on the IT resource and outsourcing: A test of the strategic control model</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Straub</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Weill</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">S</forename><surname>Schwaig</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Inf Syst Front</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="page" from="195" to="210" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b51">
+	<analytic>
+		<title level="a" type="main">Decisions to outsource information systems functions: testing a strategytheoretic-discrepancy model</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Teng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Cheon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Grover</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Decision Sciences</title>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="page" from="75" to="103" />
+			<date type="published" when="1995">1995</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b52">
+	<monogr>
+		<title level="m" type="main">Market and Hierarchies: Analysis and Antitrust Implications, A Study in the Economics of Internal Organization</title>
+		<author>
+			<persName><forename type="first">O</forename><forename type="middle">E</forename><surname>Williamson</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1975">1975. 1975</date>
+			<publisher>Free Press</publisher>
+			<pubPlace>New York</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

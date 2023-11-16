@@ -1,0 +1,1192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">CROWDWORK PLATFORMS: JUXTAPOSING CENTRALIZED AND DECENTRALIZED GOVERNANCE Research paper</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Elham</forename><surname>Gol</surname></persName>
+						</author>
+						<author>
+							<persName><surname>Shafiei</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Mari</forename><forename type="middle">-</forename><surname>Stein</surname></persName>
+						</author>
+						<author>
+							<persName><surname>Klara</surname></persName>
+						</author>
+						<author>
+							<affiliation key="aff0">
+								<orgName type="laboratory">Crowdwork Platforms: Centralized &amp; Decentralized Governance Twenty-Seventh European Conference on Information Systems (ECIS2019)</orgName>
+								<address>
+									<settlement>Stockholm-Uppsala</settlement>
+									<country key="SE">Sweden</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff1">
+								<orgName type="department">Copenhagen Business School</orgName>
+								<address>
+									<settlement>Copenhagen</settlement>
+									<country key="DK">Denmark</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff2">
+								<orgName type="department">Copenhagen Business School</orgName>
+								<address>
+									<settlement>Avital, Copenhagen</settlement>
+									<region>Michel</region>
+									<country key="DK">Denmark</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff3">
+								<orgName type="department">Copenhagen Business School</orgName>
+								<address>
+									<settlement>Copenhagen</settlement>
+									<country key="DK">Denmark</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">CROWDWORK PLATFORMS: JUXTAPOSING CENTRALIZED AND DECENTRALIZED GOVERNANCE Research paper</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="MD5">F49FE31D6DC344B3448220601B93893F</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.7.3" ident="GROBID" when="2023-06-16T09:23+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>Crowdwork Governance</term>
+					<term>Creative Crowdwork</term>
+					<term>Centralized Platforms</term>
+					<term>Decentralized Platforms</term>
+					<term>Blockchain</term>
+					<term>Tokenomics</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Crowdwork is a novel form of digitally mediated work arrangement that is managed and organized through online labor platforms. This paper focuses on the governance of platforms that facilitate creative work-that is, complex work tasks that require high-level skill and creative workers. Crowdwork platform governance faces numerous challenges as a result of technology mediation, scalable and distributed workers, and temporary work arrangements. Creative crowdwork platforms, such as Topcoder, typically require additional governance structures to manage complex tasks. However, we know relatively little about creative crowdwork platform governance, as most existing studies focus on routine work platforms, such as Amazon Mechanical Turk. Accordingly, this paper explores how incumbent and insurgent creative crowdwork platforms are governed under centralized and decentralized modes. We conducted a comparative case study based on the analysis of two different cases: Topcoder, a successful commercial platform with a largely centralized governance structure, and CanYa, an emerging innovative platform based on blockchain technology with more decentralized governance. We identified and classified different governance elements related to work control and work coordination. In addition, we explored the characteristics of creative crowdwork platform governance with different degrees of centralization.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1">Introduction</head><p>Paid, online crowdwork refers to different types of remunerated digital work organized by means of online labor platforms, which are responsible for choosing, organizing, assessing and paying crowdworkers <ref type="bibr" target="#b27">(Kittur et al., 2013)</ref>. These platforms act as intermediaries between workers and job providers <ref type="bibr" target="#b27">(Kittur et al., 2013;</ref><ref type="bibr" target="#b9">Deng et al., 2016)</ref>. In order to manage the challenges of a distributed and scalable workforce, a governance structure is essential <ref type="bibr" target="#b9">(Deng et al., 2016;</ref><ref type="bibr" target="#b12">Donini et al., 2017)</ref>. Governance can help organize the relationships among the workers, platform, and job providers and ensure the long-term success of the ecosystem. In general, crowdwork platform governance refers to different policies, rules, and standards maintained on the platform <ref type="bibr">(Deng et al., 2016, p. 281)</ref>. Specifically, crowdwork platform governance includes control and coordination of platform resources and activities to help achieve the desired results <ref type="bibr" target="#b20">(Gol et al., 2019)</ref>. Control includes mechanisms such as quality control, a reputation system of workers and accountability of job providers, whereas coordination includes, for example, task management, incentive management, and contract management <ref type="bibr" target="#b20">(Gol et al., 2019)</ref>.</p><p>Crowdwork platform governance is plagued by many well-known challenges due to technology mediation, scalable and dispersed workers, and impermanent work arrangements <ref type="bibr" target="#b18">(Gillespie, 2017)</ref>. Furthermore, until now, most research on crowdwork platforms governance has focused on micro-task platforms like AMT. Broadly speaking, there are two types of crowdwork platforms: those for routine or micro-task work and those for non-routine or creative work <ref type="bibr" target="#b20">(Gol et al., 2019;</ref><ref type="bibr" target="#b30">Margaryan, 2016)</ref>. Routine work platforms, such as Amazon Mechanical Turk (AMT), involve micro-tasks, which are performed in seconds or minutes and are usually repetitive with no high level of skill requirement and minimal payment (e.g., tagging pictures) <ref type="bibr" target="#b9">(Deng et al., 2016;</ref><ref type="bibr" target="#b11">De Stefano, 2016)</ref>. In contrast, creative work platforms, such as 99designs, Upwork, and Topcoder, involve more professional and creative tasks, such as graphic design and web development. These tasks take longer to accomplish, require a higher level of skill and provide higher compensation for the workers <ref type="bibr" target="#b5">(Buettner, 2015;</ref><ref type="bibr" target="#b30">Margaryan, 2016)</ref>. The evidence suggests that such creative work platforms follow a considerably more complex governance structure than do routine work platforms like AMT <ref type="bibr" target="#b42">(Vakharia &amp; Lease, 2015)</ref>. Meanwhile, with technologies such as blockchain making significant inroads, it has also become evident that crowdwork platform governance may be run in a centralized or a decentralized manner <ref type="bibr" target="#b2">(Atzori, 2015;</ref><ref type="bibr" target="#b20">Gol et al., 2019;</ref><ref type="bibr" target="#b22">Hein et al., 2016)</ref>. This trend may be especially important in creative work platforms where highly-skilled workers offer their services. Creative work inherently requires more discretion, suggesting that platform control mechanisms may need to be adjusted to account for the particular nature of such work. Accordingly, the important question this paper explores is how are creative crowdwork platforms governed under centralized and decentralized modes?</p><p>This paper contributes to a better understanding of creative crowdwork platform governance under centralized and decentralized modes through a comparison of two case studies: Topcoder and CanYa.</p><p>Topcoder is a long-standing (founded in 2001) and successful crowdwork platform that connects job providers with highly-skilled software developers, data scientists, and designers. The platform's governance structure is largely centralized. CanYa is an emerging blockchain-based crowdwork platform (founded in 2015) that seeks to create multiple decentralized exchanges, one of which is CanWork, a marketplace through which highly-skilled freelancers can offer their services. Our findings demonstrate that there are significant differences between centralized and decentralized governance mechanisms related to platform control, work control and work coordination. For example, while centralized Topcoder is owned by shareholders (held by parent companies), decentralized CanYa is owned by CAN token-holders (CanYa community members). The distribution of work in centralized Topcoder is based on competition <ref type="bibr" target="#b19">(Gol et al., 2018)</ref>, while in decentralized CanYa, work is distributed through a marketplace that matches job providers with workers (CanYa Services Pty. Ltd., 2018a). Moreover, Topcoder operates as a commercial company that maintains a community of workers and offers value-adding services to job providers to run complex jobs <ref type="bibr" target="#b19">(Gol et al., 2018)</ref>. Meanwhile, CanYa operates as an open source community and is only able to run relatively less complex jobs <ref type="bibr">(CanYa Services Pty. Ltd., 2018a;</ref><ref type="bibr">CanYa Services Pty. Ltd., 2018b)</ref>. In sum, this paper offers one of the first steps towards developing a systematic understanding of creative crowdwork platform governance under centralized and decentralized modes.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2">Theoretical Background</head><p>Governance has been poorly defined in crowdwork studies, and a review of the literature shows a lack of studies on different crowdwork platform governance mechanisms, especially in the domain of creative work platforms <ref type="bibr" target="#b9">(Deng et al., 2016;</ref><ref type="bibr" target="#b12">Donini et al., 2017;</ref><ref type="bibr" target="#b30">Margaryan, 2016)</ref>. Moreover, the crowdwork phenomenon is still in the early stages of development, the associated practices are still forming, and the governance processes are still flexible <ref type="bibr" target="#b32">(Nickerson, 2014)</ref>. Broadly speaking, crowdwork platform governance refers to the coordination of interactions and the management of dependencies among all parties on the platform (based on <ref type="bibr" target="#b8">Crowston, 1997;</ref><ref type="bibr" target="#b24">Howcroft &amp; Bergvall-Kåreborn, 2018;</ref><ref type="bibr" target="#b34">Schmidt, 2017)</ref>, as well as the control of worker and job provider behaviour and the monitoring of their performance by means of rules, policies and standards <ref type="bibr" target="#b9">(Deng et al., 2016;</ref><ref type="bibr" target="#b29">Manner et al., 2012)</ref>.</p><p>Most research on crowdwork platforms and their governance assumes some degree of centralization is essential for successful governance <ref type="bibr" target="#b42">(Vakharia &amp; Lease, 2015)</ref>. However, a few recent studies have emphasized that crowdwork platforms may be governed in a more decentralized manner-for example, by building on the ideas of worker-owned and -managed platforms <ref type="bibr" target="#b16">(Gaikwad et al., 2015;</ref><ref type="bibr" target="#b35">Scholz, 2016)</ref>. Centralized and decentralized modes of platform governance have different characteristics <ref type="bibr" target="#b22">(Hein et al., 2016)</ref>. Centralized governance can enable smoother coordination of workflows through central direction and a high level of control over workers' behaviors and their submission quality <ref type="bibr" target="#b4">(Brown &amp; Grant, 2005;</ref><ref type="bibr" target="#b26">King, 1983)</ref>, whereas decentralized governance can enable smoother coordination of contracts among parties as well as more efficient and fairer dispute resolution (avoiding a centralized bottleneck) <ref type="bibr" target="#b39">(Tate et al., 2017)</ref>. However, quality control of workers' outputs has to be performed by costly consensus-based evaluation and will most likely depend on difficult-to-achieve, mutually agreed-upon standards <ref type="bibr" target="#b26">(King, 1983)</ref>. However, most of these specific governance mechanisms (e.g., quality control, dispute resolution, etc.) have not been studied across both centrally-and decentrally-governed crowdwork platforms. Thus, most of these advantages and disadvantages are assumed based on the general governance literature and lack empirical support. As such, this paper provides, to our knowledge, one of the first comparative investigations into crowdwork platform governance under centralized and decentralized modes.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.1">Blockchain for crowdwork platforms</head><p>Current platform architectures support centralized governance by the platform owner. Decentralized crowdwork platform governance, thus, will rely not only on a different logic but also on a different technical architecture. Blockchain, a new distributed computing technology that is growing fast across industries, is currently considered the main contender for providing such an architecture. Through decentralized autonomous organizations (DAO), which function as business rules within smart contracts and possession rights listed on a blockchain, the envisioned possibility of decentralized governance (for crowdwork platforms and beyond) seems increasingly possible <ref type="bibr" target="#b37">(Schweizer et al., 2017)</ref>. In the crowdwork context, new forms of decentralized platform infrastructure provided by blockchain technology can enable members to reach consensus on critical issues (e.g., the identity of job providers and workers, job completion and payment conditions, etc.), without the need for a central platform owner or other third parties to function as intermediary and trustworthy arbitrators <ref type="bibr" target="#b37">(Schweizer et al., 2017;</ref><ref type="bibr" target="#b45">Xu et al., 2016)</ref>. Hence, blockchain-based crowdwork platform governance could improve governance efficiency by automating payments through smart contracts (i.e., payments are executed automatically when the conditions stipulated in the contract are met); by managing dispute resolutions decentrally, thus avoiding bottlenecks; and by making it easier to create and manage job-specific smart contracts <ref type="bibr" target="#b39">(Tate et al., 2017)</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3">Research Method</head><p>This paper follows the research design of a comparative case study based on the analysis of two different cases, allowing for a comparison of centralized and decentralized creative crowdwork platform governance. In contrast to a single case study, a comparative case study provides the possibility to perform a comparison across contexts and thus to achieve more robust conclusions <ref type="bibr" target="#b46">(Yin, 2013)</ref>. Specifically, we analyzed the Topcoder 1 and CanYa 2 platforms. We chose Topcoder because it is a successful creative crowdwork platform with a largely centralized governance structure. It works with many large companies such as IBM, Google, and NASA as job providers and attracts a large number of highly skilled workers. Topcoder holds online algorithm competitions as well as software development and software design competitions <ref type="bibr" target="#b1">(Archak, 2010)</ref>. As a comparison, we chose CanYa because it is an innovative platform based on blockchain technology. CanYa is an open ecosystem hosting a peer-to-peer service marketplace and includes decentralized applications using blockchain technologies (CanYa Services Pty. Ltd., 2018a). It is a member-owned, loosely organized entity that aspires to run as a DAO (i.e., decentralized autonomous organization). Consequently, relying on a lean organizational structure, CanYa expects to operate a profitable crowdwork platform with fees that are 20 times lower than those of other crowdwork platforms (CanYa Services Pty. Ltd., 2018a). Therefore, these two cases illustrate two radically different governance modes and form an ideal setting to perform the desired comparison.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.1">Data collection and analysis</head><p>In the Topcoder case, data were collected through 16 open-ended and semi-structured Skype interviews with staff, workers and job providers, conducted in February and March 2018. Each interview lasted approximately 40 to 50 minutes. In addition, online data were gathered from the platform website, from Topcoder forums, and from the Slack community channel which is used by workers and staff. In the CanYa case, data were collected through eight semi-structured Skype interviews with staff and workers. The approximate time for each interview was between 40 and 60 minutes. Moreover, white papers about the platform were used as another important source of data. Furthermore, online data were gathered from the platform website, the CanYa blog and the Telegram community channel which is used by staff and workers. Detailed information regarding the interviewees is presented in Table <ref type="table">1</ref>.</p><p>Table <ref type="table">1</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Overview of Interviewees across Cases</head><p>Building on the case study research strategy, we focused on the two cases to develop a richer insight into the dynamics of crowdwork platform governance in the underlying settings <ref type="bibr" target="#b13">(Eisenhardt 1989</ref>).</p><p>The purpose of the within-case analysis was to attain an understanding of the case stories and to perform analysis and organize data collection across the cases (e.g., making sure that data related to the same governance mechanism were available in each case). The data analysis within the two cases was accomplished using the same approach. We utilized the procedures presented by <ref type="bibr" target="#b25">Huberman and Miles (1994)</ref> to perform qualitative data analysis. We performed iterative coding on the interview, documentary, and online data, initially via open coding and then by categorizing and altering the codes based on both data and theory. We coded for specific governance mechanisms related to control and coordination, as suggested both by the literature and the exploration of the data (e.g., reputation system, quality control, task management, incentive management, contract management, color rating, skill, motivation, complaint handling, rewards, bonuses, and payments). New factors not mentioned in previous literature, such as dispute resolution and payment system, emerged from the data. We grouped the codes according to control and coordination as well as centralized and decentralized modes (see Table <ref type="table" target="#tab_2">2</ref>) to identify the most effective way of categorizing our findings.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4">Findings</head><p>Table <ref type="table" target="#tab_2">2</ref> provides an overview of the identified governance mechanisms at play on creative crowdwork platforms with different degrees of centralization. We used the ideas of work control and work coordination to provide the basis for identifying and classifying different governance elements. In addition, the element of platform control emerged as an important distinguishing characteristic between Topcoder and CanYa. This separation of work governance and platform governance echoes Gillespie ( <ref type="formula">2017</ref>), who argues that platform governance consists of two aspects: governance of and governance by platforms. Governance of platforms refers to the rules that guide platforms in their role as intermediaries (we refer to this as platform control), while governance by platforms refers to the platforms' ability to mediate between sides, moderate content, and generally to coordinate and control the workflow (we refer to this as work control and work coordination).</p><p>Table <ref type="table" target="#tab_2">2</ref> reveals that, overall, remuneration in Topcoder is based on competition, which means that usually only a handful of people among those who work on a project are actually paid for their work <ref type="bibr" target="#b19">(Gol et al., 2018)</ref>. On the other hand, CanYa is a marketplace that matches job providers with workers, where job providers seek desired workers based on the skills advertised on their profiles and make contracts with them (CanYa Services Pty. Ltd., 2018a). Topcoder is a commercial enterprise; its business model relies on nurturing a community of workers and providing value-adding services to job providers by taking over the handling of complex jobs <ref type="bibr" target="#b19">(Gol et al., 2018)</ref>. Conversely, CanYa is an open source community and relies on community members (CAN token holders) to run the marketplace. Thus, it is not able to offer sophisticated or complex job handling services like those of Topcoder (CanYa Services Pty. Ltd., 2018a; CanYa Services Pty. Ltd., 2018b).</p><p>Specific governance elements provided particularly rich insights for comparison. For example, dispute resolution management, payment management and contract management served as rich entry points towards understanding decentralized governance, while task management and quality control served as rich entry points towards understanding centralized governance. As expected, we found that the platform owner plays a vital role in centralized crowdwork platform governance, whilemembers play a critical role in decentralized platform governance. We unpack each of the mechanisms in more detail in the table below. Not offered yet<ref type="foot" target="#foot_2">3</ref> </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Reputation System for Workers</head><p>Seniority-based ranking Stake-based ranking</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Work</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Coordination</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Task Management</head><p>The platform provides end-to-end built-in work process management that is complemented by appointed project managers and co-pilots</p><p>The platform provides only basic matching between job offers and workers</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Task Interdependence Management</head><p>Managed by co-pilots Not offered yet</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Contract Management</head><p>Standard contract between platform and job providers, but no contract between platform and workers Platform-generated smart contracts between job provider and workers</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Dispute Resolution Management</head><p>Arbitration by platform-appointed agent</p><p>Arbitration by platform-appointed third-party community member </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.1">Governance of and by creative crowdwork platforms</head><p>Governance by creative crowdwork platforms refers to the rules and policies that the platform uses to control and coordinate the workflow, user behaviors and content <ref type="bibr" target="#b18">(Gillespie, 2017)</ref>. Work control and coordination are vital for running a crowdwork platform (based on <ref type="bibr" target="#b8">Crowston, 1997;</ref><ref type="bibr" target="#b28">Malone &amp; Crowston, 1994;</ref><ref type="bibr" target="#b27">Kittur et al., 2013)</ref>. Control performs the monitoring and guiding of processes within the platform <ref type="bibr" target="#b36">(Schreieck et al., 2016)</ref> as well as verifying the compliance of workers' and job providers' behavior against standards, policies and platform objectives (based on <ref type="bibr" target="#b44">Wiener et al., 2016)</ref>. Coordination manages the dependencies among crowdwork activities, such as dependencies between tasks or between the parties (based on <ref type="bibr" target="#b8">Crowston, 1997;</ref><ref type="bibr" target="#b28">Malone &amp; Crowston, 1994;</ref><ref type="bibr" target="#b27">Kittur et al., 2013;</ref><ref type="bibr" target="#b14">Fernandes et al., 2018)</ref>. Based on the literature and our data analysis, we suggest that work control includes financial remuneration, payment system, quality control, and the reputation system for workers. Meanwhile, work coordination involves task management, task interdependence management, contract management, and dispute resolution management.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.1.1">Platform control</head><p>As highlighted above, we suggest that platform control consists of platform management, platform development, and equity ownership <ref type="bibr" target="#b4">(Brown &amp; Grant, 2005;</ref><ref type="bibr" target="#b17">Gawer, 2014;</ref><ref type="bibr">Denis et al., 2018)</ref>.</p><p>Platform management refers to the overall control over the platform environment and resources access, as well as the setting of standards and policies that guide all parties' behaviors on the platform <ref type="bibr" target="#b4">(Brown &amp; Grant, 2005;</ref><ref type="bibr" target="#b15">Franke et al., 2011;</ref><ref type="bibr" target="#b7">Chard et al., 2016)</ref>. Our data show that in Topcoder, platform management is performed by platform staff and senior worker community members (e.g., community managers and workers promoted to a co-pilot role). As a community manager described: "I'm the one who interacts with people and finds the issues they are facing on the platform" [P13]. On the other hand, in CanYa, which is an open ecosystem for peer-to-peer services and consists of decentralized applications powered via a DAO (decentralized autonomous organization), all members can be part of the system infrastructure and governance by getting a stake on the platform. Different levels of stakes involve different capabilities and responsibilities, and the members are also paid for doing platform management tasks (CanYa Services Pty. Ltd., 2018a). As explained by one of the platform staff: "What we are trying to do is to create an open ecosystem on the blockchain that allows people to be part of the system. So, if you stake with the CanYa system, then you can be part of the governance and structure. You can also be incentivized to do tasks within the system and get paid"</p><formula xml:id="formula_0">[P20].</formula><p>Platform development refers to who is allowed to develop and improve the platform regularly and to what extent <ref type="bibr" target="#b17">(Gawer, 2014)</ref>. On Topcoder, platform improvement capabilities are restricted to platform-employed developers. As mentioned by a co-pilot: "Topcoder's developer team is working on improving the platform; for example, they are building a new program which is called MVB, for the new members to help them get started on the platform" <ref type="bibr">[P5]</ref>. CanYa also has its own temporary development team, but it is moving towards becoming open-source-developed in the near future [P20, P22, P24] (CanYa Services Pty. Ltd., 2018a). Hence, any developers will be able to easily integrate new components, follow the platform style guide, join their application to the DAO and launch them (CanYa Services Pty. Ltd., 2018a).</p><p>Equity ownership refers to the amount of the business assets owned by the business owner <ref type="bibr">(Denis et al., 2018)</ref>. Topcoder has shareholders, and the equity is held by parent companies. <ref type="foot" target="#foot_3">4</ref> In contrast, CanYa equity is held by the CanYa token holders (i.e., community members who get a stake on the platform through buying CanYa tokens) (CanYa Services Pty. Ltd., 2018b). Accordingly, any decision rights granted to equity owners are distributed differently in each of these platforms, as well as any financial benefits accrued.</p><p>In sum, in centralized platform control, the platform owner plays a vital role in the governance of the platform, answering to shareholders. Conversely, in decentralized platform control, all members with a stake in the platform play a critical role in the governance of the platform and share the responsibility and accountability for its performance.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.1.2">Work control</head><p>As highlighted above, work control involves monitoring and guiding processes within the platform <ref type="bibr" target="#b36">(Schreieck et al., 2016)</ref> as well as verifying the compliance of workers' and job providers' behavior against standards and policies. We suggest that the distinguishing mechanisms of work control include financial remuneration, payment system, quality control, and the reputation system for workers.</p><p>Financial remuneration is a key apparatus of creative crowdwork platform governance that controls workers' behaviors by motivating them to take part in the crowdwork platform and by incentivizing them to deliver quality work <ref type="bibr" target="#b21">(Harris &amp; Wu, 2014;</ref><ref type="bibr" target="#b19">Gol et al., 2018)</ref>. In Topcoder, financial remuneration is competition-based. The platform hosts weekly cash prize competitions in algorithm, design, and software development fields. The prize usually goes to the winner of the competition as well as a few runners-up who also submitted high-quality work <ref type="bibr" target="#b1">(Archak, 2010)</ref>. Thus, creative workers are motivated to participate in these risky competitions by the chance to win a significant prize <ref type="bibr" target="#b1">(Archak, 2010;</ref><ref type="bibr" target="#b19">Gol et al., 2018)</ref>. Further, some of the workers mentioned that the prizes for jobs Moreover, CanYa includes some lightweight decentralized applications that can be used by anyone for free [P20, P22]. These apps are loosely dependent on the CanYa platform and designed to accomplish a particular task; for example, CanInvoice permits users to generate, save and share invoices (CanYa Services Pty. Ltd., 2018a). These apps are intended to share the advantages of decentralized technologies with the broader community [P20, P22], but they also reinforce the attractiveness of the platform by increasing the usefulness of CanYa tokens and attracting new members ("come for the tool, stay for the ecosystem" being the operating slogan; CanYa Services Pty. Ltd., 2018a). Furthermore, CanYa will be run entirely by DAO in the future, which means that users who are token holders will run the platform (CanYa Services Pty. Ltd., 2018a; CanYa Services Pty. Ltd., 2018b). Therefore, they will be financially incentivized to improve their performance within the platform [P20, P24] and get paid with CanYa coin for doing tasks related to the running of the CanYa platform <ref type="bibr" target="#b31">(McLoughlin, 2018)</ref>.</p><p>Just as the rules of financial remuneration differ significantly between the focal platforms, so do the payment systems. Delays in payments due to inefficiencies in the payment system constitute one of the major problems reported in existing crowdwork platforms <ref type="bibr" target="#b47">(Zhang &amp; Van Der Schaar, 2012)</ref>. In Topcoder, the payment system is centralized, and payment for a job is made ahead of delivery by job providers [P4, P13]: "Customers pay us ahead of time" [P13]. The payment to workers is made via the current banking system and via online transfers from Topcoder's account to the workers' accounts. Delays may occur in payment processing due to account verification issues: "It happened one or two times that Topcoder paid us with a delay due to some account verification issues" [P2]. This system also excludes workers without international bank accounts. Conversely, CanYa has a decentralized payment system based on the blockchain technology. CanYa created its own currency called CanYaCoin (CAN) [P20…, P24]. The CanYaCoin improves the platform's payment system, providing a trust-less, decentralized, and hedged escrow service<ref type="foot" target="#foot_4">5</ref> to solve the problem of currency inflation by maintaining the escrow value, regardless of the token price (CanYa Services Pty. Ltd., 2018a; CanYa Services Pty. Ltd., 2018b). Payments from job providers to workers can thus be made without an intermediary and without delays.</p><p>Quality control is necessary to verify the quality of work and in performing corrective actions such as preventing false rejections of work and allowing for the correction of mistakes in a worker's submission <ref type="bibr" target="#b42">(Vakharia &amp; Lease, 2015)</ref>. In Topcoder, there are reviewers for each project that check the quality of work. These reviewers are selected and promoted from the pool of highly skilled workers who have at least one winning submission in their profile [P2…, P6]. Furthermore, Topcoder has developed scorecards to assess the quality of worker's submissions; these are prepared for each project (to cater to different standards and requirements), and the workers' submissions must be checked and assessed against the performance metric in the scorecards. The final score then indicates the winner of the competition [P5, P6]: "The reviewers choose from 1 to 5 for each question. For example, does this design have the Apple design standard? The final score then gives you a score of 98%. This score indicates the winner" [P4]. Therefore, quality control is done in a centralized process via highly professional workers within the platform. By contrast, CanYa does not currently have a quality control system, but they do have a plan to develop a review and feedback system in the future [P20, P22, P24]. Thus, quality control is currently performed by the job providers themselves, creating an environment for potential complaints by workers about unfair rejections.</p><p>The reputation system for workers is used as an informal social control in the creative platforms for verifying the qualifications of workers and motivating them to abide by the rules of conduct <ref type="bibr" target="#b23">(Horton &amp; Golden, 2015)</ref>. In Topcoder, the reputation system includes two parts. The second part of the reputation system involves different roles within the platform, such as co-pilot and reviewer <ref type="bibr" target="#b19">(Gol et al., 2018)</ref>. Workers with sufficient experience (i.e., a few wins) can receive a promotion within Topcoder to a co-pilot role (allowing them to run projects) or to a review role (allowing them to review other workers' submissions) [P3, P4, P6]. In addition, the behavior and profiles of workers are monitored so that they can be assigned to private projects requiring specialized skills. As one co-pilot said: "Sometimes, we have a project where we need machine learning and AI skills, but we have only a few members who have these skills. We reach out to those members and [tell] them, 'hey, we have this project and we need your skills.' So, we don't create a challenge for everyone around the world. We reach out to one or two people who are very good at [the relevant] technology."</p><formula xml:id="formula_1">[P4].</formula><p>Unlike TopCoder, CanYa does not have a ranking system for workers based on stars or colors, but the CanYa DAO includes different member levels: agent, admin, and core. Agents accomplish basic tasks in the DAO after staking a small number of CAN tokens needed for DAO entry. Admins govern agents and accomplish more complicated and higher-level tasks in the DAO, which have results with broad impact such as approvals, curation, and arbitration. Admins need a higher stake and more experience in the DAO, which is demonstrated by passing a reputation threshold to ensure that they have socially proven their commitment to the platform. Finally, core members of the CanYa Team handle complex matters such as funding approvals and changes to the CanYa DAO and CanYa Core.</p><p>As the CanYa DAO develops, admins may want to join the core level by staking a much higher amount. Progressively, this should lead to the CanYa DAO being governed by the DAO members and becoming fully decentralized (CanYa Services Pty. Ltd., 2018a). Members can leave the DAO and retrieve their stake at any time. The stake is held to avoid dishonest actors within the DAO and to motivate long-term commitment (CanYa Services Pty. Ltd., 2018a). Furthermore, in the future, CanYa is planning to run a skill proof decentralized app, which verifies the workers' claims regarding their skills using other workers' votes. Agents are rewarded for voting on the claims, and admins are paid to prove the claims (CanYa Services Pty. Ltd., 2018a). Therefore, members, instead of the platform owner, will play a vital role in the functioning of the reputation system.</p><p>In sum, in centralized work control, the platform owner plays a vital role in setting up the structure and mechanisms through which governance by the platform is done (e.g., in Topcoder, a layered structure of project managers, co-pilots and reviewers performs work control on behalf of the platform owner). Conversely, in decentralized work control, all members with a stake in the platform play a critical role in participating in governance by the platform. Such decentralized control procedures take time to develop; as we can see from our data, many of the essential work control mechanisms in place in Topcoder are still under development in CanYa.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.1.3">Work coordination</head><p>As highlighted above, coordination involves the managing of dependencies among crowdwork activities, such as dependencies between tasks or between parties (based on <ref type="bibr" target="#b8">Crowston, 1997;</ref><ref type="bibr" target="#b28">Malone &amp; Crowston, 1994;</ref><ref type="bibr" target="#b27">Kittur et al., 2013)</ref>. Work coordination involves task management, task interdependence management, contract management, and dispute resolution management.</p><p>Task management refers to the management of a 'job' from the 'offer' stage to 'submission' to 'completion' through a process that facilitates the capturing of workers' knowledge <ref type="bibr" target="#b40">(Vukovi, 2010)</ref>. Topcoder usually runs complex projects in which project managers, sometimes together with co-pilots, create a proposal and a game plan including the number of challenges for running the project and the budget for each challenge. Then, if the job provider approves the proposal and game plan, the platform starts the project, runs the challenges, and integrates deliveries from different challenges. Finally, the completed project is delivered to the job provider [P3, P4, P5..., P7, P10, P11]. Therefore, the task management in Topcoder is centralized and is the key value-adding service Topcoder offers to job providers. In contrast, CanYa lacks a full task facilitation service. Thus, the platform only performs basic matching between job providers' requirements and workers' skills based on their profile information (CanYa Services Pty. Ltd., 2018a). As such, CanYa is only able to run comparatively less complex jobs (CanYa Services Pty. Ltd., 2018a; CanYa Services Pty. Ltd., 2018b) on the platform.</p><p>Task interdependence management is part of task management but is worthy of separate consideration. It manages the interdependencies between tasks, such as splitting the complex task into smaller tasks, managing those subtasks and spreading them among crowdworkers with different skills and capabilities <ref type="bibr" target="#b27">(Kittur et al., 2013)</ref>. In Topcoder, a project manager and a co-pilot are assigned for each project. Together, they cover the task interdependence management based on their knowledge and experience, as described by a co-pilot: "My responsibility as a co-pilot is to take a project and divide it into small pieces and run the challenges. In each challenge, we have to create a very small part of the whole project" [P5]. A project manager explained the rules of breaking projects into smaller tasks: "It's based on experience. As a typical rule, I try to run challenges that I think the developers in their free time might be able to work on and get done in 3 days" [P14]. In contrast, in CanYa there is currently no task interdependence management.</p><p>Contract management is considered another essential governance mechanism and a core platform functionality for managing the interdependencies among workers and job providers and coordinating the work plan, including deadlines, job conditions, and delivery format <ref type="bibr" target="#b0">(Agrawal et al., 2015;</ref><ref type="bibr" target="#b42">Vakharia &amp; Lease, 2015;</ref><ref type="bibr" target="#b24">Howcroft &amp; Bergvall-Kåreborn, 2018)</ref>. In Topcoder, there is no contract between a job provider and a worker; instead, the contract is made between the Topcoder as a platform owner and the job provider for each project. The contract covers worker payments and Topcoder consulting fees [P4, P6, P7]. There can also be a contract between Topcoder and the highly skilled workers in the co-pilot and reviewer roles [ P3, P4, P6, P7, P14] but no contract between regular workers (participants in the competitions) and Topcoder. Such a contract between Topcoder and copilots/reviewers is made to protect the rights of the platform owner only when the project is private: "If the project is open, we don't sign any contract, but when the project is private, we should assign a document, scan it and send it to Topcoder. [The document states] that I cannot take this project as a private job off the platform and I cannot go to another company and say, for example, 'hey, I did this project before for company X'…" [P4]. CanYa uses Can Escrow as a contract between job providers and workers. Can Escrow is a smart contract that is used to hold the payment (secure cryptocurrency)</p><p>for the intended person. Entry currency is transformed to CAN before being held in escrow. The escrow is joined with a hedge that tries to maintain the value of the escrow in case of token price fluctuation <ref type="bibr">(CanYa Services Pty. Ltd., 2018a;</ref><ref type="bibr">CanYa Services Pty. Ltd., 2018b)</ref>. A CanYa member explains the process as follows: "We've just released the escrow contract, which can release the exchange module to pay. So, now what we believe is that the client will come and reach out to the worker and then have a discussion with them [to] agree on the job, and the contract will begin" [P20]. Therefore, contract management is decentralized in this platform. Moreover, in the future CanYa intends to run some new decentralized apps including CanHire and CanJob. The CanHire app is being developed as a platform that allows employers to display their open vacancies. Smart contracts will be used in this app as the escrow of payment <ref type="bibr">(CanYa Services Pty. Ltd., 2018a;</ref><ref type="bibr">CanYa Services Pty. Ltd., 2018b)</ref>. The CanJob app, also in development, will be used for small local jobs (e.g., painting, plumbing, etc.). Job providers will be able to insert job posts, and payments will be held in escrow.</p><p>Any workers who complete the task will receive a review, feedback, and payment <ref type="bibr">(CanYa Services Pty. Ltd., 2018a;</ref><ref type="bibr">CanYa Services Pty. Ltd., 2018b)</ref>.</p><p>Dispute resolution management manages the work behaviors on the platform among workers and job providers regarding solving complaints among them, which usually arise as a result of false rejections of work, low wages, and low work quality <ref type="bibr" target="#b39">(Tate et al., 2017;</ref><ref type="bibr" target="#b24">Howcroft &amp; Bergvall-Kåreborn, 2018)</ref>. Topcoder provides feedback to all workers (even non-winners) to let them know why their submissions were rejected or accepted [P3, P4, P7…, P10]. The platform is responsible for solving any problems between workers and job providers by negotiating with both of them. Moreover, Topcoder dedicates a forum for each project that is managed by one of Topcoder's employees, and workers can talk about their issues regarding the project within that forum [P1, P2]. For example, one worker mentioned that: "Sometimes the project is too big in comparison with the prize. So, the workers complain about that. So, the project manager talks to the client and asks them to run the project in two challenges or increase the prize" [P5]. In higher-level disputes, for example between co-pilots and job providers, the project manager from Topcoder takes the responsibility to try to solve the problem, as one co-pilot mentioned: " . CanYa has created an automatic dispute resolution system using a chatbot. If the chatbot cannot solve the issue, the user is connected to a DAO agent who is able to provide support. At the end of the conversation, the user is able to rate the DAO agent and enhance or diminish his/her reputation score (CanYa Services Pty. Ltd., 2018b). In addition, CanYa is in the process of developing a decentralized dispute resolution system that will operate through a smart contract that holds the payment but allows both workers and job providers to take recourse and negotiate in case they are not satisfied with each other's performance. When the negotiations among parties are unsuccessful, each party can demand arbitration from CanYa DAO, as explained by a CanYa core member: "If two parties [to a dispute] can't come to an agreement themselves, that's when they are able to call app to the DAO and then rent a member of the organization. So, the DAO member can see all the information about the parties, and the job log will be open for him/her, but s/he'll need to be quite an experienced member with our stakes" [P20].</p><p>In sum, in centralized work coordination, the platform owner again plays a vital role in setting up the structure and mechanisms through which governance by the platform is done (e.g., in the layered structure of Topcoder, the project managers, co-pilots and reviewers also perform work coordination on behalf of the platform owner). Conversely, in decentralized work coordination, much of the coordination effort is coded into the platform architecture (e.g., smart contracts), thus reducing the demand for human intervention and increasing efficiency.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5">Discussion</head><p>This study explored centralized and decentralized crowdwork platform governance by investigating Topcoder and CanYa as two examples of creative crowdwork platforms with different degrees of governance centralization. We contribute to a better theoretical and practical understanding of crowdwork platform governance by delineating the mechanisms of platform control, work control and work coordination, combining the ideas of governance of and by platforms <ref type="bibr" target="#b18">(Gillespie, 2017;</ref><ref type="bibr" target="#b20">Gol et al., 2019)</ref>. These mechanisms allow us to distinguish between centralized and decentralized crowdwork platforms. We summarize the insights generated from our study regarding differences in centralized and decentralized governance modes in Table <ref type="table">3</ref>.</p><p>We hope this study can serve as a guide for both researchers and practitioners, especially platform owners, to attract more workers and job providers and, most significantly, to maintain attractiveness in the eyes of job providers and workers to guarantee continued platform success in the market. As this is an emerging field and functioning decentralized crowdwork platforms are rare, a mature case of a decentralized platform does not exist. Thus, our comparison is between a start-up and a mature platform following different business models (matchmaking vs. competition). However, we contend that the key dimensions of governance in each platform (Table <ref type="table">3</ref>) are comparable. While some governance characteristics (e.g., competition-based work culture) may be directly related to the respective business model, other characteristics (e.g., brokered vs. direct work agreements) theoretically make sense for both matchmaking and competition platforms. However, we show that in practice the characteristics differ based on the degree of centralization of governance. In Table <ref type="table">3</ref>, we highlight ten dimensions that allow for a systematic differentiation between creative crowdwork platforms based on the degree of governance centralization. Based on our study, we suggest that in decentralized governance, democracy, fairness, accountability, and self-determination can be improved by diffusing responsibilities, ownership and decision-making rights among community members (based on <ref type="bibr" target="#b3">Azfar et al., 2001;</ref><ref type="bibr" target="#b4">Brown &amp; Grant, 2005)</ref>. As shown in Table <ref type="table">3</ref>, ownership and management are based on community and group consent in a decentralized crowdwork platform and on top-down corporate decisions guided by shareholder interests in a centralized crowdwork platform. Governance of the platforms is, in both cases, conducted according to the interests of the platform owner; however, the ownership is either centralized into the hands of one corporation (e.g., Topcoder) or decentralized among a community (e.g., CanYa token holders).</p><p>Given the prominent role of the platform owner in the governance of the platform, it is perhaps not surprising that the owner also guides the governance done by the platform (i.e., how the platform controls and coordinates worker and job provider behavior). In centralized governance, a high level of control is concentrated in the hands of a few project managers and co-pilots, who oversee and monitor the progress of hundreds of workers <ref type="bibr" target="#b4">(Brown &amp; Grant, 2005)</ref>. This tight control over process usually also leads to greater control over the quality of submissions (based on <ref type="bibr" target="#b26">King, 1983)</ref>. On the other hand, in decentralized governance, control is diffused among community members, complicating the ability to monitor all processes, as much of the monitoring is done in a peer-to-peer manner. While this may reduce misuse of power, it also increases inefficiencies in the monitoring process.</p><p>The prominent role of the platform ownerwhether a corporation or a communityalso translates into distinct working cultures and transaction management in the platforms. In Topcoder, the culture is based on competition, with only one winner per job <ref type="bibr" target="#b19">(Gol et al., 2018)</ref>, while the work culture in CanYa is based on collaboration among members. In centralized platforms, the platform owner plays a vital role as an intermediary to facilitate functions such as task management, dispute resolution, and contract management (based on <ref type="bibr" target="#b26">King, 1983)</ref>. In decentralized platforms, such mediation services are left to the workers job providers themselves. Furthermore, in decentralized platforms, work agreements are created by smart contracts, enabling job providers and workers to negotiate their own prices, work conditions, and job details and to have discussions with each other regarding the job without third party intervention <ref type="bibr" target="#b2">(Atzori, 2015)</ref>. Once a smart contract is in place, transaction management is accomplished by means of following the contract coded into software <ref type="bibr" target="#b2">(Atzori, 2015)</ref>. Subsequently, because of the intermediary services in centralized governance, the transaction cost is much higher than in decentralized governance.</p><p>Despite these potential drawbacks of centralized crowdwork platforms, such platforms are more mature than decentralized crowdwork platforms, as their economic model is based on transaction cost economics, in which the nature of transactions influences the contracts and the allocation of economic functions among platform and markets <ref type="bibr" target="#b43">(Williamson, 2008)</ref>. This provides centralized platforms with a well-established economic model as a basis and allows them to invest in developing value-adding services for the workers and job providers. Meanwhile, in decentralized crowdwork platforms, the economic model is tokenomics. In this model, all users in the ecosystem are motivated to take part and receive financial benefits according to their stakes (CanYa Services Pty. Ltd., 2018a; CanYa Services Pty. Ltd., 2018b). The long-term sustainability of this economic model is unknown, but limited monetization opportunities for specific actors may hinder value-adding service development on such platforms.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6">Conclusion</head><p>In this paper, we explored how creative crowdwork platforms are governed under centralized and decentralized modes through a comparative case study. We gained a deeper insight into centralized and decentralized crowdwork platform governance by utilizing the ideas of work control and work coordination as well as exploring the platform control element as a significant distinguishing characteristic between Topcoder and CanYa. We highlight ten dimensions that allow for a systematic differentiation between centralized and decentralized governance modes. Overall, ownership and management are based on community and group consent in a decentralized crowdwork platform, whereas they are based on top-down corporate decisions guided by shareholder interests in a centralized crowdwork platform. These different ownership models translate into significant differences in both the governance of the platforms and the governance done by the platforms.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2"><head>Table 2 .</head><label>2</label><figDesc></figDesc><table /><note><p>Creative Crowdwork Platforms Governance: Comparison of Topcoder and CanYa</p></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_3"><head></head><label></label><figDesc>on Topcoder are higher than on other platforms, which is one of the leading factors that motivate them to participate in this platform over others [P2...P4, P5, P7, P9...P12]. Per one co-pilot: "If you are an active member, you can earn a lot of money here in comparison with other platforms. I know some members who can earn $20,000 per month, and other members can earn $2000 or $3000 on average" [P4]. In contrast, CanYa incentivizes workers and job providers to join to the platform by reducing fees to 1% (about 20 times lower than the rate of other crowdwork platforms, such as Upwork and 99designs) [P20-P23]. According to one employee of CanYa, "This means a more efficient market with more money in the pockets of our freelance workers" [P21].</figDesc><table /></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="1" xml:id="foot_0"><p>According to Mike Morris, Topcoder CEO, the platform included 1.2 million freelance developers in December</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_1"><p>2017, and thus figure is increasing by a rate of 50,000 software developers every quarter<ref type="bibr" target="#b38">(Talley, 2017)</ref>.2 According to CanYa community manager, the platform included 1300 freelance workers in August 2018 and is growing rapidly.</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="3" xml:id="foot_2"><p>'Not offered yet' describes governance elements that CanYa does not currently provide but plans to offer in the future.</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="4" xml:id="foot_3"><p>Information retrieved from https://www.topcoder.com.</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="5" xml:id="foot_4"><p>"The hedge is a Bancor Array Token that connects with a basket of Ethereum stable coins, such as the Digix gold token and the DAI USD token. This will create an internal pool in order to provide collateral to hedge the amount of cryptocurrency sent to the smart contract. Bancor technology will provide the price oracle for the CAN token. The outcome is that the value of the invoice is stable, despite fluctuations in price. Intended recipients will be paid a fixed value, but not a fixed amount ofCAN tokens" (CanYa Services Pty. Ltd., 2018a, p. 25).</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_5"><p>Twenty-Seventh European Conference on Information Systems (ECIS2019), Stockholm-Uppsala, Sweden.</p></note>
+		</body>
+		<back>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<monogr>
+		<author>
+			<persName><forename type="first">A</forename><surname>Agrawal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Horton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Lacetera</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Lyons</surname></persName>
+		</author>
+		<title level="m">Digitization and the contract labor market: A research agenda</title>
+		<editor>
+			<persName><forename type="first">A</forename><surname>Goldfarb</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">S</forename><forename type="middle">M</forename><surname>Greenstein</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">C</forename><forename type="middle">E</forename><surname>Tucker</surname></persName>
+		</editor>
+		<meeting><address><addrLine>Chicago, IL</addrLine></address></meeting>
+		<imprint>
+			<publisher>University of Chicago Press</publisher>
+			<date type="published" when="2015">2015</date>
+			<biblScope unit="page" from="219" to="250" />
+		</imprint>
+	</monogr>
+	<note>Economic Analysis of the Digital Economy</note>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Money, glory and cheap talk: analyzing strategic behavior of contestants in simultaneous crowdsourcing contests on Topcoder.com</title>
+		<author>
+			<persName><forename type="first">N</forename><surname>Archak</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 19th international conference on World Wide Web</title>
+		<meeting>the 19th international conference on World Wide Web<address><addrLine>Raleigh, North Carolina: USA</addrLine></address></meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2010">2010</date>
+			<biblScope unit="page" from="21" to="30" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<monogr>
+		<title level="m" type="main">Blockchain technology and decentralized governance: Is the state still necessary?</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Atzori</surname></persName>
+		</author>
+		<ptr target="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2709713" />
+		<imprint>
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<monogr>
+		<title level="m" type="main">Conditions for effective decentralized governance: A synthesis of research findings</title>
+		<author>
+			<persName><forename type="first">O</forename><surname>Azfar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Kahkonen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Meagher</surname></persName>
+		</author>
+		<ptr target="http://www1.worldbank.org/publicsector/learningprogram/Decentralization/ConditionsEffective.p-df" />
+		<imprint>
+			<date type="published" when="2001">2001</date>
+		</imprint>
+		<respStmt>
+			<orgName>IRIS Center Working Paper, University of Maryland</orgName>
+		</respStmt>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Framing the frameworks: A review of IT governance research. Comm</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">E</forename><surname>Brown</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">G</forename><surname>Grant</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Communications of the Association for Information Systems</title>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">38</biblScope>
+			<date type="published" when="2005">2005</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">A systematic literature review of crowdsourcing research from a human resource management perspective</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Buettner</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings 48th Hawaii International Conference of System Sciences (HICSS)</title>
+		<meeting>48th Hawaii International Conference of System Sciences (HICSS)<address><addrLine>Washington DC</addrLine></address></meeting>
+		<imprint>
+			<publisher>USA</publisher>
+			<date type="published" when="2015">2015</date>
+			<biblScope unit="page" from="4609" to="4618" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">White Paper</title>
+		<idno type="DOI">10.1097/01.psy.0000529859.93952.b1</idno>
+		<ptr target="https://doi.org/10.1097/01.psy.0000529859.93952.b1" />
+	</analytic>
+	<monogr>
+		<title level="m">CanYa,&quot; the &quot;Company&quot;). (2018b)</title>
+		<imprint>
+			<publisher>CanYa Services Pty. Ltd</publisher>
+			<biblScope unit="volume">80</biblScope>
+			<biblScope unit="page" from="1" to="41" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Globus Nexus: A Platform-as-a-Service Provider of Research Identity, Profile, and Group Management</title>
+		<author>
+			<persName><forename type="first">K</forename><surname>Chard</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Lidman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Mccollam</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Bryan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Ananthakrishnan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Tuecke</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Foster</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.future.2015.09.006</idno>
+		<ptr target="https://doi.org/10.1016/j.future.2015.09.006" />
+	</analytic>
+	<monogr>
+		<title level="j">Future Generations Computer Systems : FGCS</title>
+		<imprint>
+			<biblScope unit="volume">56</biblScope>
+			<biblScope unit="page" from="571" to="583" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">A coordination theory approach to organizational process design</title>
+		<author>
+			<persName><forename type="first">K</forename><surname>Crowston</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Organization Science</title>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="157" to="175" />
+			<date type="published" when="1997">1997</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">The duality of empowerment and marginalization in microtask crowdsourcing: Giving voice to the less powerful through value sensitive design</title>
+		<author>
+			<persName><forename type="first">X</forename><surname>Deng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">D</forename><surname>Joshi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">D</forename><surname>Galliers</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Mis Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">40</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="279" to="302" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Agency problems, equity ownership, and corporate diversification</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">J</forename><surname>Denis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">K</forename><surname>Denis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Sarin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The Journal of Finance</title>
+		<imprint>
+			<biblScope unit="volume">52</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="135" to="160" />
+			<date type="published" when="1997">1997</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">On demand work, crowdwork, and labor protection in the&quot; gig economy</title>
+		<author>
+			<persName><forename type="first">V</forename><surname>De Stefano</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Comparative labor law and policy journal</title>
+		<imprint>
+			<biblScope unit="volume">37</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="461" to="471" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+	<note>The rise of the&quot; just-in-time workforce</note>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Towards collective protections for crowdworkers: Italy, Spain and France in the EU context</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Donini</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">European Review of Labour and Research</title>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="207" to="223" />
+			<date type="published" when="2017">2017</date>
+			<pubPlace>Transfer</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Building theories from case study research</title>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">M</forename><surname>Eisenhardt</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Academy of management review</title>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="532" to="550" />
+			<date type="published" when="1989">1989</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Coordination in temporary organizations: Formal and informal mechanisms at the 2016 Olympics</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Fernandes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Spring</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Tarafdar</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Operations &amp; Production Management</title>
+		<imprint>
+			<biblScope unit="volume">38</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="1340" to="1367" />
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Smart crowds in smart cities: real life, city scale deployments of a smartphone based participatory crowd management platform</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Franke</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Lukowicz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">U</forename><surname>Blanke</surname></persName>
+		</author>
+		<idno type="DOI">10.1186/s13174-015-0040-6</idno>
+		<ptr target="https://doi.org/10.1186/s13174-015-0040-6" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Internet Services and Applications</title>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="page">27</biblScope>
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Daemo: A self-governed crowdsourcing marketplace</title>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">N</forename><surname>Gaikwad</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Morina</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Nistala</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Agarwal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Cossette</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Bhanu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">.</forename><forename type="middle">.</forename><surname>Mithal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 28th Annual ACM Symposium on User Interface Software &amp; Technology</title>
+		<meeting>the 28th Annual ACM Symposium on User Interface Software &amp; Technology<address><addrLine>Charlotte</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2015">2015</date>
+			<biblScope unit="page" from="101" to="102" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Bridging differing perspectives on technological platforms: Toward an integrative framework</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Gawer</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.respol.2014.03.006</idno>
+		<ptr target="https://doi.org/10.1016/j.respol.2014.03.006" />
+	</analytic>
+	<monogr>
+		<title level="j">Research Policy</title>
+		<imprint>
+			<biblScope unit="volume">43</biblScope>
+			<biblScope unit="page" from="1239" to="1249" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Governance of and by platforms</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Gillespie</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">The SAGE Handbook of Social Media</title>
+		<editor>
+			<persName><forename type="first">J</forename><surname>Burgess</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">A</forename><surname>Marwick</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">T</forename><surname>Poell</surname></persName>
+		</editor>
+		<meeting><address><addrLine>Thousand Oaks, CA</addrLine></address></meeting>
+		<imprint>
+			<publisher>USA</publisher>
+			<date type="published" when="2017">2017</date>
+			<biblScope unit="page" from="254" to="278" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Why Take the Risk? Motivations of Highly Skilled Workers to Participate in Crowdworking Platforms</title>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">S</forename><surname>Gol</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">K</forename><surname>Stein</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Avital</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of International conference on Information System (ICIS)</title>
+		<meeting>International conference on Information System (ICIS)<address><addrLine>San Francisco, CA</addrLine></address></meeting>
+		<imprint>
+			<publisher>USA</publisher>
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+	<note>AIS</note>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Crowdwork platform governance toward organizational value creation</title>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">S</forename><surname>Gol</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">K</forename><surname>Stein</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Avital</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.jsis.2019.01.001</idno>
+		<ptr target="https://doi.org/10.1016/j.jsis.2019.01.001" />
+	</analytic>
+	<monogr>
+		<title level="j">The Journal of Strategic Information Systems</title>
+		<imprint>
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Using tri-reference point theory to evaluate risk attitude and the effects of financial incentives in a gamified crowdsourcing task</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Harris</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Wu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Business Economics</title>
+		<imprint>
+			<biblScope unit="volume">84</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="281" to="302" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<monogr>
+		<title level="m" type="main">Multiple-case analysis on governance mechanisms of multi-sided platforms</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Hein</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Schreieck</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Wiesche</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Krcmar</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2016">2016</date>
+			<publisher>Germany</publisher>
+			<pubPlace>Ilmenau</pubPlace>
+		</imprint>
+	</monogr>
+	<note>Presented at Multikonferenz Wirtschaftsinformatik</note>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<monogr>
+		<title level="m" type="main">Reputation inflation: Evidence from an online labor market</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Horton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Golden</surname></persName>
+		</author>
+		<ptr target="https://pdfs.semanticscholar.org/" />
+		<imprint>
+			<date type="published" when="2015">2015. 59d6/e24bf80c01384d5ce8a64e1582208b8b7072</date>
+			<pubPlace>New York University</pubPlace>
+		</imprint>
+	</monogr>
+	<note>Working Paper. pdf</note>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">A typology of crowdwork platforms</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Howcroft</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Bergvall-Kåreborn</surname></persName>
+		</author>
+		<idno type="DOI">10.1177/0950017018760136</idno>
+		<ptr target="https://doi.org/10.1177/0950017018760136" />
+	</analytic>
+	<monogr>
+		<title level="j">Work, Employment and Society. Advanced online publication</title>
+		<imprint>
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<monogr>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">M</forename><surname>Huberman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">B</forename><surname>Miles</surname></persName>
+		</author>
+		<title level="m">Data management and analysis methods</title>
+		<imprint>
+			<date type="published" when="1994">1994</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Centralized versus decentralized computing: organizational considerations and management options</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">L</forename><surname>King</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">ACM Computing Surveys (CSUR)</title>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="319" to="349" />
+			<date type="published" when="1983">1983</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">The future of crowd work</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Kittur</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">V</forename><surname>Nickerson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Bernstein</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Gerber</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Shaw</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Zimmerman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Lease</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Horton</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 2013 Conference on Computer Supported Cooperative Work Companion</title>
+		<meeting>the 2013 Conference on Computer Supported Cooperative Work Companion<address><addrLine>San Antonio, TX</addrLine></address></meeting>
+		<imprint>
+			<publisher>USA</publisher>
+			<date type="published" when="2013">2013</date>
+			<biblScope unit="page" from="1301" to="1318" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">The interdisciplinary study of coordination</title>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">W</forename><surname>Malone</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Crowston</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">ACM Computing Surveys (CSUR)</title>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="87" to="119" />
+			<date type="published" when="1994">1994</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">Governance for mobile service platforms: A literature review and research agenda</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Manner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Nienaber</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Schermann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Krcmar</surname></persName>
+		</author>
+		<ptr target="http://aisel.aisnet.org/icmb" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the International Conference on Mobile Business (ICMB). AIS. Delft: The Netherlands</title>
+		<meeting>the International Conference on Mobile Business (ICMB). AIS. Delft: The Netherlands</meeting>
+		<imprint>
+			<date type="published" when="2012">2012. 2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">Understanding crowdworkers&apos; learning practices</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Margaryan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Presented at the 2016 Internet, Policy and Politics Conference</title>
+		<meeting><address><addrLine>Oxford</addrLine></address></meeting>
+		<imprint>
+			<publisher>UK</publisher>
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<monogr>
+		<title level="m" type="main">Why does CanYa need its own token_ -CanYaCoin -Medium</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Mcloughlin</surname></persName>
+		</author>
+		<ptr target="https://medium.com/canyacoin/why-does-canya-need-its-own-token-eccb068ee540" />
+		<imprint>
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Crowd work and collective learning</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">V</forename><surname>Nickerson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Technology-enhanced professional learning: processes, practices, and tools</title>
+		<editor>
+			<persName><forename type="first">A</forename><surname>Littlejohn</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">A</forename><surname>Margaryan</surname></persName>
+		</editor>
+		<meeting><address><addrLine>New York, NY</addrLine></address></meeting>
+		<imprint>
+			<publisher>Routledge</publisher>
+			<date type="published" when="2014">2014</date>
+			<biblScope unit="page" from="39" to="49" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">Problems, theories, and governing the crowd</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">A</forename><surname>Nickerson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Wuebker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Zenger</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Strategic Organization</title>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="275" to="288" />
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title level="a" type="main">Digital labour markets in the platform economy mapping the political challenges of crowd work and gig work</title>
+		<author>
+			<persName><forename type="first">F</forename><surname>Schmidt</surname></persName>
+		</author>
+		<ptr target="http://library.fes.de/pdf-files/wiso/13164.pdf" />
+	</analytic>
+	<monogr>
+		<title level="m">Friedrich Ebert Stiftung</title>
+		<imprint>
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">Platform cooperativism. Challenging the corporate sharing economy</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Scholz</surname></persName>
+		</author>
+		<ptr target="http://www.rosalux-nyc.org/wp-content/files_mf/scholz_platformcoop_5.9.2016.pdf" />
+	</analytic>
+	<monogr>
+		<title level="m">Rosa Luxemburg Stiftung</title>
+		<imprint>
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">Design and governance of platform ecosystemskey concepts and issues for future research</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Schreieck</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Wiesche</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Krcmar</surname></persName>
+		</author>
+		<ptr target="https://aisel.aisnet.org/ecis" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of European Conference on Information System (ECIS). AIS. Istanbul: Turkey</title>
+		<meeting>European Conference on Information System (ECIS). AIS. Istanbul: Turkey</meeting>
+		<imprint>
+			<date type="published" when="2016">2016. 2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<analytic>
+		<title level="a" type="main">Unchaining Businesses -Blockchain as the Basic Technology of a Crowdlending Platform</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Schweizer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Schlatt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Urbach</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Fridgen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of International conference on Information System (ICIS)</title>
+		<meeting>International conference on Information System (ICIS)</meeting>
+		<imprint>
+			<date type="published" when="2017">2017</date>
+			<biblScope unit="page" from="1" to="21" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<monogr>
+		<title level="m" type="main">Crowdsourced tech solutions drive CEO Mike Morris&apos; Topcoder, FierceCEO</title>
+		<author>
+			<persName><forename type="first">K</forename><surname>Talley</surname></persName>
+		</author>
+		<ptr target="https://www.fierceceo.com/technology/topcoder-ceo-mike-morris-oversees-marketplace-tech-problem-solvers" />
+		<imprint>
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<analytic>
+		<title level="a" type="main">Ethical issues around crowdwork: How can blockchain technology help</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Tate</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Johnstone</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Fielt</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Presented at 2017 Australasian Conference on Information Systems. ACIS</title>
+		<meeting><address><addrLine>Hobart</addrLine></address></meeting>
+		<imprint>
+			<publisher>Australia</publisher>
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<analytic>
+		<title level="a" type="main">Crowdsourcing for Enterprises</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Vukovi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceeding of International Conference on Web Engineering</title>
+		<meeting>eeding of International Conference on Web Engineering</meeting>
+		<imprint>
+			<publisher>Springer</publisher>
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<monogr>
+		<title/>
+		<author>
+			<persName><forename type="first">Heidelberg</forename><surname>Berlin</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/SERVICES-I.2009.56</idno>
+		<ptr target="https://doi.org/10.1109/SERVICES-I.2009.56" />
+		<imprint>
+			<publisher>Germany</publisher>
+			<biblScope unit="page" from="460" to="467" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+	<analytic>
+		<title level="a" type="main">Beyond Mechanical Turk: An analysis of paid crowd work platforms</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Vakharia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Lease</surname></persName>
+		</author>
+		<ptr target="https://www.ideals.illinois.edu/handle/2142/73278" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the iConference</title>
+		<meeting>the iConference<address><addrLine>Newport Beach, CA</addrLine></address></meeting>
+		<imprint>
+			<publisher>USA</publisher>
+			<date type="published" when="2015">2015. 2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b43">
+	<analytic>
+		<title level="a" type="main">Transaction cost economics</title>
+		<author>
+			<persName><forename type="first">O</forename><forename type="middle">E</forename><surname>Williamson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Handbook of new institutional economics</title>
+		<meeting><address><addrLine>Berlin, Heidelberg</addrLine></address></meeting>
+		<imprint>
+			<publisher>Springer</publisher>
+			<date type="published" when="2008">2008</date>
+			<biblScope unit="page" from="41" to="65" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b44">
+	<analytic>
+		<title level="a" type="main">Control Configuration and Control Enactment in Information Systems Projects: Review and Expanded Theoretical Framework</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Wiener</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Mähring</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">U</forename><surname>Remus</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">S</forename><surname>Saunders</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Mis Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">40</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="741" to="774" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b45">
+	<analytic>
+		<title level="a" type="main">E-commerce blockchain consensus mechanism for supporting high-throughput and real-time transaction</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Q</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Min</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Cui</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Xiao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Kong</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the International Conference on Collaborative Computing: Networking, Applications and Worksharing</title>
+		<meeting>the International Conference on Collaborative Computing: Networking, Applications and Worksharing<address><addrLine>Beijing</addrLine></address></meeting>
+		<imprint>
+			<publisher>China</publisher>
+			<date type="published" when="2016">2016</date>
+			<biblScope unit="page" from="490" to="496" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b46">
+	<analytic>
+		<title level="a" type="main">Validity and generalization in future case study evaluations</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">K</forename><surname>Yin</surname></persName>
+		</author>
+		<idno type="DOI">10.1177/1356389013497081</idno>
+		<ptr target="https://doi.org/10.1177/1356389013497081" />
+	</analytic>
+	<monogr>
+		<title level="j">Evaluation</title>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="321" to="332" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b47">
+	<analytic>
+		<title level="a" type="main">Reputation-based Incentive Protocols in Crowdsourcing Applications</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Van Der Schaar</surname></persName>
+		</author>
+		<ptr target="https://arxiv.org/ftp/arxiv/papers/1108/1108.2096.pdf" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceeding of International Conference on Computer Communications INFOCOM. IEEE</title>
+		<meeting>eeding of International Conference on Computer Communications INFOCOM. IEEE<address><addrLine>Orlando, Florida</addrLine></address></meeting>
+		<imprint>
+			<publisher>USA</publisher>
+			<date type="published" when="2012">2012</date>
+			<biblScope unit="page" from="2140" to="2148" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

@@ -1,0 +1,1703 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Trust antecedents, trust and online microsourcing adoption: An empirical study from the resource perspective</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+				<date type="published" when="2016-03-17">17 March 2016</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Baozhou</forename><surname>Lu</surname></persName>
+							<email>bzlu@upc.edu.cn</email>
+							<affiliation key="aff0">
+								<orgName type="department">School of Economics &amp; Management</orgName>
+								<orgName type="institution">China University of Petroleum (East China)</orgName>
+								<address>
+									<addrLine>Changjiang West Rd. 66</addrLine>
+								</address>
+							</affiliation>
+							<affiliation key="aff1">
+								<orgName type="institution">Economic &amp; Technological Development Zone</orgName>
+								<address>
+									<settlement>Qingdao</settlement>
+									<region>Shandong</region>
+									<country key="CN">PR China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Tao</forename><surname>Zhang</surname></persName>
+							<email>zhangtao@upc.edu.cn</email>
+							<affiliation key="aff0">
+								<orgName type="department">School of Economics &amp; Management</orgName>
+								<orgName type="institution">China University of Petroleum (East China)</orgName>
+								<address>
+									<addrLine>Changjiang West Rd. 66</addrLine>
+								</address>
+							</affiliation>
+							<affiliation key="aff1">
+								<orgName type="institution">Economic &amp; Technological Development Zone</orgName>
+								<address>
+									<settlement>Qingdao</settlement>
+									<region>Shandong</region>
+									<country key="CN">PR China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Liangyan</forename><surname>Wang</surname></persName>
+							<affiliation key="aff2">
+								<orgName type="department">Antai College of Economics and Management</orgName>
+								<orgName type="institution">Shanghai JiaoTong University</orgName>
+								<address>
+									<postCode>200052</postCode>
+									<settlement>Shanghai</settlement>
+									<country key="CN">PR China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">L</forename><forename type="middle">Robin</forename><surname>Keller</surname></persName>
+							<email>lrkeller@uci.edu</email>
+							<affiliation key="aff3">
+								<orgName type="department">Paul Merage School of Business</orgName>
+								<orgName type="institution">University of California</orgName>
+								<address>
+									<postCode>92697-3125</postCode>
+									<settlement>Irvine</settlement>
+									<region>CA</region>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Trust antecedents, trust and online microsourcing adoption: An empirical study from the resource perspective</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date type="published" when="2016-03-17">17 March 2016</date>
+						</imprint>
+					</monogr>
+					<idno type="MD5">C4B1853301080EFFAE4671ACB5F4B1A7</idno>
+					<idno type="DOI">10.1016/j.dss.2016.03.004</idno>
+					<note type="submission">Received 1 April 2015 Received in revised form 7 March 2016 Accepted 7 March 2016</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.7.3" ident="GROBID" when="2023-06-16T09:24+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>Microsourcing Institution-based trust Online microsourcing marketplaces Resource theory Marketplace attributes Decision Support Systems 85 (2016) 104-114</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>The online microsourcing marketplace is a new form of outsourcing that is organized over online platforms for the performance of relatively small service tasks. Microsourcing offers a more flexible way to hire contract workers or to outsource. Prior research indicates the importance of individual-level trust when choosing providers in online sourcing marketplaces. We argue that institution-based trust is also crucial for online microsourcing adoptions. Drawing on a trust framework adapted from prior literature, this paper uncovers the trust-building mechanisms in online microsourcing marketplaces, as well as the marketplace-related attributes for online microsourcing adoption. The proposed research model is tested with a data set collected from the clients of a typical marketplace in Chinazhubajie.com. The findings suggest that perceptions of resource-based attributes of a marketplace, together with the perceived effectiveness of its intermediary role, can help to build trust towards the marketplace, enhancing trust towards the community of providers and driving the intent to adopt online microsourcing. Thus, this paper confirms the roles of online marketplaces as both the resource pool and the transaction intermediary from the perspective of clients. Finally, this paper not only indicates the relevance of resource theories in understanding this new trend in outsourcing, but also suggests the importance of trusted relational governance in governing online microsourcing transactions.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.">Introduction</head><p>Online microsourcing is a new form of outsourcing that uses online platforms for making small deals for the provision of globally sourced services, including website development, programming, legal services, and creative design <ref type="bibr" target="#b37">[38,</ref><ref type="bibr" target="#b40">41,</ref><ref type="bibr" target="#b42">43]</ref>. Carmel <ref type="bibr" target="#b5">[6]</ref> viewed this phenomenon as the "commoditization of process" for services from the e-marketplace and termed it "microsourcing", given that most of the outsourcing deals are for small tasks and services <ref type="bibr" target="#b16">[17,</ref><ref type="bibr" target="#b22">23,</ref><ref type="bibr" target="#b35">36]</ref>. It is gradually becoming a mainstream method of outsourcing for personal users, entrepreneurs, small business owners <ref type="bibr" target="#b50">[51]</ref>, and even large companies like Google, GEICO, and ESPN <ref type="bibr" target="#b67">[68]</ref>. There are dozens of well-known online microsourcing platforms, including vWorker.com, E-lance.com, Guru. com, CrowdSpring, InnoCentive, and Odesk. According to Smartsheet. com <ref type="bibr" target="#b64">[65]</ref>, over two million service providers registered on the 10 major online sourcing websites between the years 2000 and 2009, with over $700 million paid to the providers. Another recent industry report indicates an accelerating growth in the global online microsourcing market, noting that over 65 different categories of microsourcing tasks have been deployed by enterprises via online platforms <ref type="bibr" target="#b46">[47]</ref>.</p><p>Although reasons for firms to outsource have been thoroughly explored in the literature <ref type="bibr" target="#b15">[16]</ref>, the underlying mechanism influencing online microsourcing adoption is not yet fully understood. Traditional outsourcing studies leaned heavily towards larger transactions and focused more on the dyadic client-provider relationship when studying outsourcing decisions (e.g., <ref type="bibr" target="#b28">[29,</ref><ref type="bibr" target="#b39">40]</ref>). The current online microsourcing research has also examined the client-provider dimension <ref type="bibr" target="#b57">[58]</ref>, indicating the importance of client-provider trust for online microsourcing decisions (e.g., <ref type="bibr" target="#b22">[23,</ref><ref type="bibr" target="#b23">24]</ref>). Considering the culture of rather low trust online <ref type="bibr" target="#b23">[24]</ref>, marketplaces have become indispensable for online sourcing transactions, providing a reliable and secure environment. Thus, the study of online microsourcing decisions needs to look into the clientmarketplace dimension, especially since institutional trust towards a marketplace deserves special attention <ref type="bibr" target="#b25">[26,</ref><ref type="bibr" target="#b51">52]</ref>.</p><p>In this paper, we attempt to gain a deeper understanding of the influencing mechanisms of online microsourcing decisions by considering the impacts of the marketplace. Two specific research questions are addressed using a trust-based theoretical framework <ref type="bibr" target="#b47">[48]</ref>: <ref type="bibr" target="#b0">(1)</ref> What are the key decisional attributes of the marketplace for microsourcing decisions? and (2) how do these attributes collectively drive clients to use online microsourcing? Since this study concentrates on online microsourcing marketplace (OMM) clients, we rely mainly on the outsourcing literature to identify the key antecedent variables. This paper will attempt to make a number of contributions to existing studies. Firstly, it studies outsourcing decisions from a triadic relationship of clients, providers, and marketplaces. In particular, it considers the influence of the marketplace. Thus, it not only complements traditional outsourcing research but also provides a useful supplement to open sourcing research that focuses on the client-community relationship <ref type="bibr" target="#b0">[1]</ref>. Secondly, it proposes a trust-based framework to uncover the driving mechanisms for online microsourcing decisions. Finally, it extends to service transactions <ref type="bibr" target="#b51">[52]</ref> the findings of current online marketplace studies that focus on product exchanges and illustrates the importance of trust-based relational governance <ref type="bibr" target="#b27">[28]</ref> for sourcing transactions in online marketplaces.</p><p>Next, Section 2 introduces the emergence of online microsourcing and presents a theoretical framework for online microsourcing decisions. Section 3 discusses the research model and hypotheses. Section 4 describes the research methodology. Section 5 presents the results. Section 6 provides key findings and discussion in terms of theoretical contributions, managerial implications and limitations. Finally, Section 7 concludes.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.">Literature review and theoretical development</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.1.">The emergence of online microsourcing practices</head><p>The emergence of online microsourcing is a distinct change in the way services are provided to organizations <ref type="bibr" target="#b42">[43]</ref>. In addition to traditional outsourcing forms like domestic outsourcing and offshoring <ref type="bibr" target="#b60">[61]</ref>, outsourcing can also occur via these small, short-term and discrete services delivered and mediated by online platforms. Table <ref type="table" target="#tab_0">1</ref> summarizes changes in outsourcing features when going from traditional outsourcing to microsourcing. Particular attention is needed on the role of online platforms, which provide both the online exchange environment and governing mechanisms.</p><p>Three types of stakeholders are involved in online microsourcing practices, constituting a triadic outsourcing relationship. Service clients are individuals and/or organizations sourcing their service needs online. They usually publish service needs online, attracting providers to bid, contest or submit quotes. Service providers offer services and expertise online. Service providers participate in online microsourcing by placing a bid, running a contest or sending a quote via an online platform. Finally, online platforms are the online places where both service clients and providers can meet, offer and apply for outsourcing opportunities, carry out service exchanges and manage post-service activities. Current online microsourcing platforms can be further categorized into two major types (see Appendix D in the Supplement file for detail). We focus on the first platform type, the online marketplace, acting as the service exchange intermediary between the very large group of global service providers and potential clients. The online marketplace model allows clients to choose providers for a variety of services by evaluating their quote, experience and expertise. Examples of the online marketplace model are Elance, vWorker, Odesk and Guru. The online programming marketplace described in the studies of Gefen and Carmel <ref type="bibr" target="#b22">[23]</ref><ref type="bibr" target="#b23">[24]</ref> is a prominent example of a microsourcing marketplace dedicated to IT services. We do not focus on the second platform type, the online community, which usually offers services to clients in terms of the whole community of providers. Providers are called to participate in a contest for a simple project or a subtask decomposed from a complex project, concentrating on a few areas of services with the ability to complete complex projects, e.g., CrowdSpring for creative design services and TopCoder for IT services. Our research model could be expanded to the second model.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.2.">Theoretical framework of online microsourcing decisions</head><p>An online marketplace is an online virtual place where buyers (clients) and sellers (providers) make transactions using internet technologies <ref type="bibr" target="#b51">[52]</ref>. Online microsourcing marketplaces (OMMs) are a kind of online sourcing marketplace where buyers post tenders for small sourcing projects and where providers then bid on these projects <ref type="bibr" target="#b23">[24]</ref>. Prior studies indicate that online purchasing decisions within an online marketplace are collectively driven by three broad themesaspects of the technology <ref type="bibr" target="#b24">[25]</ref>, trust-related factors <ref type="bibr" target="#b47">[48]</ref>, and characteristics of the marketplace <ref type="bibr" target="#b51">[52]</ref>. Among them, trust is a key issue in many contractual business relationships and a determining force in OMMs <ref type="bibr" target="#b23">[24]</ref>. OMMs behave in a manner characteristic of a low trust culture where people are reluctant to do business with strangers <ref type="bibr" target="#b23">[24]</ref>. In such circumstances, clients need to rely first on the marketplace to overcome their reluctance to hand over services to unknown providers. Thus, we employ a trust-based framework that is appropriate for studying client decisions in OMMs.</p><p>As shown in Fig. <ref type="figure" target="#fig_0">1</ref>, we adapt the trust framework of McKnight et al. <ref type="bibr" target="#b47">[48]</ref> to OMMs. Their framework is more applicable for e-vendors and individual buyers, whereas this study focuses on the adoption of organizations in OMMs. Thus, the adapted framework should take into account both the impacts of the online marketplace and relevant organizational behavior within the marketplace. This is achieved by combining concepts from both the online marketplace research <ref type="bibr" target="#b51">[52]</ref> and outsourcing research <ref type="bibr" target="#b36">[37,</ref><ref type="bibr" target="#b60">61]</ref> into the framework.</p><p>In Fig. <ref type="figure" target="#fig_0">1</ref>, trusting beliefs lead to trusting intentions, which then lead to trust-related behaviors <ref type="bibr" target="#b47">[48]</ref>. A truster who has trusting intentions is willing to depend, or intends to depend, on the trustee. Two types of trustees (marketplaces and service providers) exist here, suggesting two trusting intentions: Trust in Marketplace and Trust in the Community of Providers.</p><p>Prior outsourcing research has examined the role of trust towards service providers from the perspective of the dyadic client-provider relationship <ref type="bibr" target="#b28">[29,</ref><ref type="bibr" target="#b39">40,</ref><ref type="bibr" target="#b58">59</ref>]. However, in the context of online microsourcing, the third component of the online marketplace plays a critical role in governing online service exchanges between clients and providers. So, attention is needed on individuals' level of trust towards this institutional environmentonline marketplaces. We term this as Trust in the Marketplace, defined as the willingness of a firm to depend on a specific online marketplace to look for resources and capabilities and to make service exchanges with online service providers. Trust in the Marketplace is a type of trusting intention at the institutional level (marketplace). According to the trusting logic specified by McKnight et al. <ref type="bibr" target="#b47">[48]</ref>, trusting intentions lead to behavioral intention. Therefore, clients' intentions to participate in online microsourcing with an online marketplace should depend on their trusting intentions towards the marketplace. Trust in the Community of Providers is a type of institution-based trust according to Pavlou and Gefen <ref type="bibr" target="#b51">[52]</ref>. It represents the trusting intentions towards online service providers, defined as the willingness of a firm to depend on a community of providers from a specific online marketplace to fulfill its service requirements <ref type="bibr" target="#b28">[29,</ref><ref type="bibr" target="#b51">52]</ref>. It reflects the dyadic client-provider relationship but with a concentration on the collectivity of a community of providers endorsed by a marketplace <ref type="bibr" target="#b51">[52]</ref>. This type of one-to-many trust fits with the actual situation of online microsourcing, where clients often need to interact with unknown providers from an online marketplace, thus, their behavioral intention is affected by their trust towards the community <ref type="bibr" target="#b20">[21]</ref>.</p><p>Our emphasis on institutional-based trust makes a good complement to the study of Gefen and Carmel <ref type="bibr" target="#b23">[24]</ref>, which looked at the direct client-provider relationship, noting that in the low trust culture of OMMs, prior contractual relationships (business familiarity) dominate when clients try to choose providers. In the low trust culture of OMMs, institution-based trust is needed to make clients feel comfortable with using online microsourcing, so they can then consider how to choose specific providers.</p><p>A truster who has trusting beliefs believes that the trustee (e.g. a specific online marketplace) has attributes that will benefit the truster <ref type="bibr" target="#b47">[48]</ref>. Trusting beliefs reflect the clients' perceptions of some specific attributes of the marketplace. Among the variety of trusting beliefs in the literature, we focus in the next section on trusting beliefs that are specific to OMMs.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.3.">Trusting beliefs: characteristics of an OMM</head><p>As online sourcing platforms, OMMs, on one hand, provide the necessary environment for safeguarding service exchanges <ref type="bibr" target="#b0">[1,</ref><ref type="bibr" target="#b18">19]</ref>, and on the other hand, act as external resource agents upon which the companies can rely to more easily find flexible service solutions. Following Gefen and Pavlou <ref type="bibr" target="#b25">[26]</ref>, we examine the perceived (not actual) characteristics of OMMs because it is each client's own perceptions of OMMs that shape his/her transaction decision making.</p><p>The first OMM attribute in our research model will be the Perceived Effectiveness of Marketplace (PEM), which, according to the literature <ref type="bibr" target="#b17">[18,</ref><ref type="bibr" target="#b25">26]</ref>, is defined as "the extent to which a client believes that appropriate conditions are in place to facilitate successful transactions with the community of sellers in an online marketplace". Online marketplaces, owned by third parties, act as the intermediaries of online transactions between clients and providers, collecting, processing, and disseminating information via the internet among the community of clients and providers to facilitate online transactions <ref type="bibr" target="#b51">[52]</ref>. The intermediary role of online marketplaces is realized through the establishment of institutional mechanisms, including searching for information, rating systems, comment systems, arbitration services, and escrow payments. These institutional mechanisms, when joined together, constitute a reliable and secure transaction environment, in which fair values and benevolent behavior are encouraged, whereas opportunistic behavior and violation of the community's rules and norms will be restricted or punished. The building of a reliable and secure macro-environment is vital for online transactions. Its importance has also been observed in online service exchanges, e.g., the open source service networks <ref type="bibr" target="#b18">[19]</ref> and the Open Sourcing Service (OSS) community <ref type="bibr" target="#b0">[1,</ref><ref type="bibr" target="#b44">45]</ref>. When service clients perceive that online marketplaces are effective in terms of their intermediary roles <ref type="bibr" target="#b51">[52,</ref><ref type="bibr" target="#b52">53]</ref>, they will feel more confident about online transactions within them. The perceived effectiveness of the institutional environment becomes a vital source for institution-based trust.</p><p>OMMs also provide a resource role, viewed as the external pool of knowledge and resources <ref type="bibr" target="#b41">[42]</ref>. Thus, the capabilities of an OMM in providing relevant resources and knowledge and in facilitating the knowledge transferring processes should also be considered. Our view of an OMM as an external pool of resources and knowledge is in accordance with both OSS research <ref type="bibr" target="#b0">[1,</ref><ref type="bibr" target="#b6">7]</ref> and open service network research <ref type="bibr" target="#b18">[19]</ref>. The former views the online OSS community as a large pool of skilled providers with which firms can collaborate for software development, and the latter views the open service network as the place where the members can access shared strategic resources. Thus, the resource perspective of outsourcing decision <ref type="bibr" target="#b36">[37,</ref><ref type="bibr" target="#b60">61]</ref> suggests the importance of resource-based attributes, and the relevance of two theories for studying online microsourcing decisions: the resource-based theory (RBT) and the resource-dependency theory (RDT). We identify four resource attributes for our model in the following subsections.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.3.1.">RBT-related perceptions</head><p>The RBT <ref type="bibr" target="#b4">[5]</ref> views a firm as a collection of capabilities and resources. When exposed to ever-changing and unpredictable environments, firms often prefer to keep core resources in-house and obtain complementary resources from an external source <ref type="bibr" target="#b30">[31]</ref>. The ability to quickly acquire, deploy and integrate external resources becomes a key determinant to maintaining a competitive posture. Thus, when managers look for resources from the external environment, e.g., an OMM, two RBT-related perceptions emerge <ref type="bibr" target="#b60">[61]</ref>: perception of resource complementarity, labeled as Perceived Resource Complementarity (PRC) and perception of Resource Utilization, labeled as Perceived Resource Utilization (PRU).</p><p>Perceived Resource Complementarity refers to the extent to which a client believes that an OMM can provide complementary resources to current in-house resources. If a firm's resources and capabilities fail to fulfill its needs, it enters into the external environment for the desired heterogeneous resources <ref type="bibr" target="#b32">[33,</ref><ref type="bibr" target="#b38">39]</ref>. These acquired resources from the outsourcing marketplace are often viewed as non-strategic, but necessary, resources that are a good complement to core resources. By sourcing via an OMMrepresenting communities of thousands of providers in many diversified areas -firms can find and obtain their desired complementary resources to fill the resource gap. For instance, over an OMM, a small IT company can find the needed resources of marketing, design and legal services, all of which are not considered the core business. Evidence of these characteristics of OMMs can also be found in the feedback of the clients. For example, "we think of this site as an extension  of our team. Whenever we need some expertise, say with social media, internet marketing, event production, or website development, we go straight to this site." -Quoted from a service client at Elance.com. Perceived Resource Utilization is defined as the extent to which a client believes that resources from an OMM can be efficiently and effectively utilized <ref type="bibr" target="#b60">[61]</ref>. Resource Utilization is one of the important decision attributes in the application sourcing decisions of Application Service Providers (ASPs) and domestic outsourcing <ref type="bibr" target="#b60">[61]</ref>. To maintain a competitive advantage, an organization has to obtain and integrate outside resources efficiently. Since outsourcing involves the processes of knowledge sharing, transferring and integration between firms and providers, the integration of knowledge and capabilities can be key to a firm's competitive advantage <ref type="bibr" target="#b31">[32]</ref>. In traditional outsourcing, the integration can be facilitated by close collaboration and the embedded social relations between firms and providers <ref type="bibr" target="#b58">[59,</ref><ref type="bibr" target="#b70">71]</ref>. However, due to the lean and anonymous nature of online microsourcing, it is impossible to attain the same high degree of social embeddedness as in traditional outsourcing. So, in online microsourcing, Resource Utilization depends on the knowledge sharing and transferring capabilities that the marketplaces provide via their information and communication technologies.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.3.2.">RDT-related perceptions</head><p>RDT argues that actions by organizations are also affected by external conditions in the environment <ref type="bibr" target="#b1">[2,</ref><ref type="bibr" target="#b2">3]</ref>, since a firm must obtain resources from its external environment to be able to survive. This creates dependencies among organizations <ref type="bibr" target="#b68">[69]</ref>, increasing the level of the firm's dependence on the external environment. To avoid the lock-in problem <ref type="bibr" target="#b3">[4]</ref>, firms need to evaluate the available resources and the environment before outsourcing <ref type="bibr" target="#b36">[37]</ref>. According to RDT, two trusting beliefs arise <ref type="bibr" target="#b60">[61]</ref>: Perceived Resource Availability (PRA)the extent to which a client believes that the environment, e.g., an OMM, has sufficient resources and capabilities, and Perceived Resource Suitability (PRS)the extent to which a client believes that the available resources and IT infrastructures are suitable for the needed communication and coordination to carry out the service process.</p><p>Resource Availability reflects the abundance of critical resources offered by the environment <ref type="bibr" target="#b14">[15]</ref>. When making a decision to enter into a resources exchange relationship, one key factor to consider is whether there are enough competent vendors available from the outside environment <ref type="bibr" target="#b60">[61]</ref>. Applied to online microsourcing, the Resource Availability of an OMM reflects the extent of its external resources and its knowledge pool of firms. By connecting with an OMM, companiesespecially the smaller firms and start-ups-are able to access thousands of external service providers, leverage desired resources and capabilities, and therefore, gain the ability to more flexibly respond to their external environment.</p><p>Resource Suitability reflects the nature of the resources and the marketplaces to be used for communication and coordination purposes. Extensive knowledge sharing, transferring and integration between firms and providers require suitable telecommunication technologies and networking structure to be in place to facilitate the knowledge sharing process. Resource Suitability is one of the most important factors when making decisions regarding outsourcing options like the Application Service Provider (ASP), domestic outsourcing and the use of offshore resources <ref type="bibr" target="#b60">[61]</ref>. In the case of online microsourcing, service and information exchanges between firms and the providers are completely remote and virtual, and are mediated by the marketplaces. In traditional outsourcing and offshoring, the effectiveness of exchanges can be reinforced by establishing joint project teams <ref type="bibr" target="#b58">[59]</ref>, day-to-day interaction routines <ref type="bibr" target="#b48">[49]</ref>, or other social mechanisms like shared values, norms, and trust <ref type="bibr" target="#b28">[29,</ref><ref type="bibr" target="#b58">59]</ref>. However, these exchange reinforcement methods become ineffective for online microsourcing, which involves remote providers and temporary relationships. Thus, the effectiveness of exchanges of services, information and knowledge relies heavily on the communication and collaboration IT infrastructure provided by the intermediary, such as status reports, chats, and file versioning. By relying on these remote communication and collaboration tools, firms can monitor and control project activities, enable important information exchanges and facilitate knowledge transfer and integration processes <ref type="bibr" target="#b64">[65]</ref>.</p><p>In sum, we identify five trusting beliefs: beliefs regarding four resource attributes (Perceived Resource Complementarity, Perceived Resource Utilization, Perceived Resource Availability and Perceived Resource Suitability), as well as the Perceived Effectiveness of Marketplace. Their relationship with trust is explored in the research model presented next. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.">Research model and hypotheses</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.1.">Perceptions of marketplaces and institutional trust</head><p>McKnight et al. <ref type="bibr" target="#b47">[48]</ref> indicated that trust-related behaviors follow trusting intentions (Intention to Engage in trust-related behaviors with a Web vendor), which follow trusting beliefs (perceptions of the vendor's attributes). Similar logic is applicable for online microsourcing. Trusting beliefs (perceptions of specific online marketplace attributes) lead to trusting intention towards the marketplace, which in turn results in trust intention towards the community of providers from the marketplace and behavioral intention. As discussed above, the marketplace attributes considered for this study include the perceived Resource Complementarity, Resource Utilization, Resource Availability, Resource Suitability, and Effectiveness of Marketplace.</p><p>RBT indicates that firms enter into the external marketplace for resources <ref type="bibr" target="#b32">[33,</ref><ref type="bibr" target="#b38">39]</ref>. These acquired resources are often viewed as nonstrategic but necessary resources that are a good complement to core resources. Through outsourcing, a firm can integrate and deploy both internal and external resources to maintain or improve its competitive advantage <ref type="bibr" target="#b60">[61]</ref>. By sourcing via OMMs, firms can easily locate and acquire their desired complementary resources to fill the resource gap. Thus, the perception of Resource Complementarity will affect the willingness to depend on the marketplace as a source of the required complementary services. The more a firm perceives an online marketplace to have the ability to supplement its internal resources, the more it is willing to depend on this marketplace to fulfill its sourcing requirements. Accordingly: H1. Perceived Resource Complementarity has a positive impact on Trust in Marketplace.</p><p>Resource Utilization is one key decision attribute in the application sourcing decisions of both the Application Service Provider (ASP) and in domestic outsourcing <ref type="bibr" target="#b60">[61]</ref>. To maintain its competitive advantage, a firm must be able to quickly acquire and integrate resources from the external environment <ref type="bibr" target="#b7">[8,</ref><ref type="bibr" target="#b60">61]</ref>. In online microsourcing, the effectiveness of Resource Utilization depends on the project management tools, collaboration technologies, and knowledge transferring capabilities that the marketplaces provide. An online marketplace must exhibit the ability to improve the effectiveness of the process of Resource Utilization. The more an online marketplace can demonstrate its ability to help increase Resource Utilization, the more firms will come to depend on this marketplace for outsourcing. Accordingly: H2. Perceived Resource Utilization has a positive impact on Trust in the Marketplace.</p><p>Resource Availability reflects the abundance of resources offered by the environment <ref type="bibr" target="#b14">[15]</ref>. When making a decision to enter into an exchange relationship with another firm for resources, one key factor to consider is if the firm can provide enough resources <ref type="bibr" target="#b60">[61]</ref>. Applied to online microsourcing, Resource Availability reflects the capacity of an OMM to offer resources and knowledge. By connecting to an OMM, companies have the ability to gain access to an external group of providers, leverage desired resources and capabilities, and therefore gain the ability to more flexibly respond to their external environment. The more resources an OMM has, the more firms would depend on it for resources. Thus: H3. Perceived Resource Availability has a positive impact on Trust in the Marketplace.</p><p>Extensive knowledge sharing, transferring and integration between firms and providers also require having suitable communication technologies and practices in place to facilitate the knowledge sharing process <ref type="bibr" target="#b31">[32,</ref><ref type="bibr" target="#b60">61]</ref>. For online microsourcing, the service and information exchanges between firms and providers are completely remote and virtual, and are completely mediated by the marketplaces. Thus, the effectiveness of exchanges of services, information and knowledge relies heavily on the communication and collaboration capabilities provided by the online marketplaces. Resource suitability is considered another key attribute for outsourcing options like ASP, domestic and offshore resources <ref type="bibr" target="#b60">[61]</ref>. Thus, the perception of Resource Suitability of an online marketplace will influence the willingness to rely on the marketplace for sourcing of services. Accordingly: H4. Perceived Resource Suitability has a positive impact on Trust in the Marketplace.</p><p>The most basic role of an online marketplace might be that of a transactional intermediary between clients and providers <ref type="bibr" target="#b51">[52]</ref>. Via the established IT-enabled institutional mechanisms, online marketplaces create a reliable and secure macro-environment <ref type="bibr" target="#b18">[19]</ref>, which helps to build an atmosphere of trustworthiness and benevolence <ref type="bibr" target="#b58">[59]</ref>. If an online marketplace or platform is perceived to be effective in facilitating and protecting online transactions, a client will believe that the overall transaction environment will be favorable for doing business. Accordingly:</p><p>H5. Perceived Effectiveness of Marketplace has a positive impact on Trust in the Marketplace.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2.">Institutional trust</head><p>Previous studies did not differentiate trusting towards the marketplace with those towards the providers (sellers) (e.g., <ref type="bibr" target="#b51">[52]</ref>). However, these two constructs are different. The former represent clients' willingness to depend on the third parties that facilitate and mediate online exchanges, and the latter is more about the willingness to depend on another party that is directly involved in a transaction relationship. Trust transference logic <ref type="bibr" target="#b66">[67]</ref> indicates that trust may be transferred to another entity from an industry association, a place, or some other entity. In an online context, trust can transfer from the online medium (i.e. the website), where the buyers and sellers meet, to an individual seller <ref type="bibr" target="#b66">[67]</ref>. By participating in a trusted online marketplace, the seller community signals to buyers their trustworthiness <ref type="bibr" target="#b51">[52,</ref><ref type="bibr" target="#b63">64]</ref>.</p><p>Thus, trust of an OMM can transfer to the community of those providers associated with that marketplace. By providing a framework to facilitate transactions, trustful marketplaces can lower social uncertainty, making it possible to nudge unwilling sellers into socially acceptable behavior <ref type="bibr" target="#b21">[22,</ref><ref type="bibr" target="#b51">52]</ref>. By participating in a trusted OMM, the providers imply that they will abide by the institutional rules imposed by the intermediary, sending buyers positive signals about their benevolent behavior. Thus, H6. Trust in the Marketplace increases a firm's Trust in the Community of Providers.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.3.">Trust and intention to engage in online microsourcing</head><p>Trust can be considered to be a necessary condition of relational governance <ref type="bibr" target="#b28">[29,</ref><ref type="bibr" target="#b29">30]</ref>. Trust-based governance creates an open architecture facilitating needed exchanges of services and information when the exchanges would be hard to contractually specify beforehand <ref type="bibr" target="#b58">[59,</ref><ref type="bibr" target="#b69">70]</ref>. Trust also enables a partnership to adjust to unforeseen challenges by facilitating shared benefits between partners. Thus, trust positively influences the commitment to the client-provider relationship. Trust is viewed as a key social mechanism which helps to overcome exchange problems and enables online interactions <ref type="bibr" target="#b0">[1,</ref><ref type="bibr" target="#b18">19]</ref>. In e-commerce, trust allows the consumer to avoid undesirable potential behaviors of the evendor thereby encouraging online business activities by reducing the social complexity confronting a consumer <ref type="bibr" target="#b21">[22,</ref><ref type="bibr" target="#b53">54]</ref>.</p><p>In an OMM, firms also face extensive social uncertainty, not knowing what to expect of the community <ref type="bibr" target="#b51">[52]</ref>. In addition, the formal controlling mechanisms become ineffective <ref type="bibr" target="#b28">[29]</ref>. Hence, both Trust in the Marketplace and Trust in the Community of Service Providers should mitigate negative perceptions and should encourage online transactions. Therefore, H7. Trust in the Marketplace increases a firm's Intention to Engage in an outsourcing relationship with a specific OMM.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>H8. Trust in the Community of Providers increases a firm's Intention to</head><p>Engage in an outsourcing relationship with a specific OMM.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.4.">Control variables</head><p>The research model incorporates three control variables related to the technology, the website's perceived usefulness and its ease of use, as indicated by the Technology Acceptance Model <ref type="bibr" target="#b10">[11]</ref><ref type="bibr" target="#b11">[12]</ref>, which can</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Perceived Resource Complementarity</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Trust in Marketplace</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Intention to Engage</head><p>Perceived Usefulness</p><p>Ease of Use H1 H2 partly explain online purchase intentions <ref type="bibr" target="#b24">[25]</ref>. Outsourcing experience is also included since it might have an impact on adoption.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Perceived Resource Utilization</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>H3</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Perceived Resource Availability</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Perceived Resource Suitability</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>H4</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Perceived</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.">Research methodology</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.1.">Measurement development</head><p>The resource-based attributes have not been operationalized in the literature yet. However, conceptual discussions are scattered throughout various studies <ref type="bibr" target="#b7">[8,</ref><ref type="bibr" target="#b36">37,</ref><ref type="bibr" target="#b60">61]</ref> and in their referent theories. We adopted a two-phase strategy for scale development. First, we conducted a literature review to deductively identify new items <ref type="bibr" target="#b34">[35]</ref>. To ensure both content validity and face validity <ref type="bibr" target="#b9">[10,</ref><ref type="bibr" target="#b49">50]</ref>, the selected items should: (1) mirror the construct's definition; (2) cover different dimensions of the construct; and (3) appear in previous literature.</p><p>In the second phase, using the items developed in the first phase as the basic theoretical codes, we conducted a qualitative content analysis of the texts of customer feedback collected from 43 clients over 4 platforms. The aims were to: (1) confirm the newly developed items; (2) examine the content validity of items; and (3) identify new items that may have been overlooked in the first phase.</p><p>In the coding process, we first assigned the basic theoretical codes to the customer feedback text line by line; if no existing code could be assigned to a line, we searched for an added new code that could apply to one of the theoretical constructs. To ensure consistency <ref type="bibr" target="#b13">[14]</ref>, the coding was undertaken by two researchers independently at first, followed by a joint discussion to compare findings, clarify discrepancies and reach agreement.</p><p>The final content analysis result is in Table <ref type="table" target="#tab_2">2</ref>. The 22 codes used for content analysis are listed in detail in Appendix A (see the Supplement file). The numbers indicate the total number of times a code was assigned to a platform. As illustrated in Table <ref type="table" target="#tab_2">2</ref>, all items are assigned at least once in the sample, with the majority of items being assigned more than three times. No new codes arose, indicating the content validity of the newly developed items since they sufficiently covered the theoretical constructs. Items which are mentioned very few times may be considered problematic. These asterisked problematic items were still retained within the survey for further analysis. The variables were modeled indirectly with the direct measurement items, so they were latent, reflective constructs.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.2.">Data collection</head><p>We sought out key contacts from firms that have already been involved in online microsourcing. Collecting data from such "key informants" <ref type="bibr" target="#b28">[29,</ref><ref type="bibr" target="#b61">62]</ref> is appropriate, since respondents can provide information on group or organizational properties. Data was collected from the largest OMM in Chinazhubajie.com. Founded in 2006, zhubajie. com now has about 11 million service providers, who have completed about 3.5 million projects that are worth over 5.8 billion RMB (.9 billion US dollars). Hence, zhubajie.com represents a typical OMM and should be a suitable site for data collection.</p><p>A research invitation was published as a project asking clients to respond to the survey via zhubajie.com for two weeks in August 2014. Participants were offered a small monetary reward and a brief report on current research. Respondents provided a screenshot of their site profiles to ensure that they were actual and active company clients. Ultimately, out of all 431 responses, 379 valid responses were obtained after removing invalid responses; the valid response rate is 87.9%.</p><p>Table <ref type="table" target="#tab_3">3</ref> contains the demographic information regarding the respondents and their firms. About 41% of the clients are small firms (less than 50 employees), and 80.7% of the projects are under RMB 1000 (about $160). (The profile of our data is consistent with the study of Gefen and Carmel <ref type="bibr" target="#b22">[23]</ref>, which used a unique data set, provided by RentACoder, yielding an early detailed description of an OMM.) The average tenure and online sourcing experience of respondents was 3.8 years and 2.5 years, respectively, and over 90% of them were senior managers or had managing experience with online microsourcing, confirming they were qualified to respond regarding their firms and their online sourcing decisions. Over 60% of the respondent firms outsourced at least once a month via the site, indicating active involvement in microsourcing. Because the data was collected via publishing a project over the website, we had no control over who received the message, and thus cannot assess the response rate. However, no significant difference was found between the distribution of average project value in our data and that reported by the platform, indicating that non-completion bias is not a major concern. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.">Data analysis and results</head><p>The Partial Least Squares-Structural Equation Model (PLS-SEM), which includes both factor analysis and linear regression, was employed for structural model analysis. It is better suited to theory building research in contrast to covariance-based structural equation modeling (SEM) <ref type="bibr" target="#b8">[9,</ref><ref type="bibr" target="#b26">27]</ref>, placing fewer restrictions on multivariate distributions, residual distributions, and sample size. Thus, considering the relatively small sample size and explorative nature of this study, we used PLS-SEM.</p><p>A minimum sample size check employing the methods indicated by Westland <ref type="bibr" target="#b72">[73]</ref> ensured that our sample size is adequate, enabling accurate estimation and adequate statistical power. Two algorithms were developed to determine the lower bounds on sample size in structural equation modeling, using 1) a function of the ratio of indicator variables to latent variables, or 2) a function of minimum effect, power and significance. Using the sample size calculator for SEM developed by Soper <ref type="bibr" target="#b65">[66]</ref>, we conducted an ex posteriori test by setting the "anticipated effect size" with the minimum observed correlation efficient (0.33) to see whether the sample size is sufficient for the current study. The recommended minimum sample size is 141, which is well below the sample size (n = 379) of the current study.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.1.">Measurement model</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.1.1.">Model assessment</head><p>The model was first refined by omitting the measurement items that had high cross loadings or low loadings. 30 items were retained for the eight principal constructs, as shown in Table <ref type="table" target="#tab_4">4</ref>. Problematic items identified during the scale development phase, the asterisked items in Table <ref type="table" target="#tab_2">2</ref>, deleted via the item refining analysis. Construct internal reliability was assessed by checking the composite reliability scores and Cronbach's alpha. As shown in Table <ref type="table" target="#tab_4">4</ref>, they are all above 0.70, indicating satisfactory internal reliability.</p><p>Convergent validity was established by having adequate internal reliabilities (N.70), high AVE (average variance extracted) scores (N.50), and significant item loadings (N0.7) onto their respective constructs (Table <ref type="table" target="#tab_4">4</ref>). As shown in Table <ref type="table" target="#tab_5">5</ref>, the square root of the AVE for each construct (diagonal term) exceeded the correlation coefficients between the construct and other constructs (off-diagonal terms), establishing discriminant validity, so the construct measures are empirically distinct.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.1.2.">Common method variance assessment</head><p>Since our self-reported data may suffer from common method variance (CMV), several procedures were undertaken to reduce and assess the effects of CMV. First, we followed Podsakoff et al. <ref type="bibr" target="#b55">[56]</ref> for the instrument design and data collection procedures. Second, we performed adhoc statistical analysis to assess the influences of CMV. Two approaches were used: Harman's single factor test <ref type="bibr" target="#b55">[56]</ref> and the marker variable approach <ref type="bibr" target="#b59">[60]</ref>. Both tests indicate that CMV is not a big concern for this study (see Appendix B in the Supplement file for details).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.2.">Structural model</head><p>Fig. <ref type="figure">3</ref> presents the structural model results. The bootstrapping method <ref type="bibr" target="#b8">[9]</ref> was used to test the significance level of each path in the model. Some constructs are relatively highly correlated (see Table <ref type="table" target="#tab_5">5</ref>), so the results may suffer from multicollinearity. The degree of multicollinearity for the independent variable can be measured by the variance inflation factor (VIF), which was calculated via WarpPLS and reported in Appendix C (see the Supplement file). All the VIFs for the concerned constructs are below the rule of thumb of 10 (or the conservative value of 5) <ref type="bibr" target="#b33">[34]</ref>, indicating that multicollinearity is not a serious concern for the study.</p><p>As expected, supporting hypotheses H1-H4, all four resource-based perceptions H8 is supported at the 0.10 significant level. Collectively, these two trust constructs can account for about 59% of the variance explained for Intention to Engage after removing the effects of the control variables.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6.">Discussion</head><p>Our research results indicate that increases in the perception of five key attributes of an OMM -Resource Complementarity, Resource Utilization, Resource Availability, Resource Suitability and Effectiveness of Marketplace-enhance clients' trust in the specific OMM. Thus, the present study confirms the roles of marketplaces in online microsourcing in line with what we have argued above: they not only act as the transaction intermediaryin the intermediary role; but also provide the external pool of resources and knowledge for firmsin their resource role.</p><p>Prior outsourcing research focused on mega-sourcing <ref type="bibr" target="#b22">[23]</ref>, and thus paid considerable attention to the dyadic outsourcing relationship between clients and providers. The interactions between clients and the external outsourcing market were often neglected. However, online microsourcing is typically characterized by small, sometimes one-shot, transactions. Without an OMM, it might be costly, and likely necessary, for a client to maintain a long-term strategic relationship with its providers. Clients tend to rely on the marketplace to manage the relationship with its external providers. Thus, this study shows that the interactions between clients and the online marketplace deserve more attention.</p><p>Second, we extend the use of a trust framework to understanding online microsourcing adoption <ref type="bibr" target="#b47">[48]</ref>. Trust-based frameworks have been widely used for studying e-vendors <ref type="bibr" target="#b21">[22,</ref><ref type="bibr" target="#b47">48]</ref> and online marketplaces <ref type="bibr" target="#b51">[52]</ref><ref type="bibr" target="#b52">[53]</ref><ref type="bibr" target="#b53">[54]</ref>, but not for service exchanges. This study suggests that clients' trusting beliefs (their perceptions of the five attributes of OMMs) help to build up clients' Trust in the Marketplace (institutionbased trust). This in turn leads to Trust in the Community of Providers and their adopting intentions, even when considering the effects of the technology. Thus, our findings suggest that trust is as important for online service exchanges as for online product transactions.</p><p>Third, the findings show that firms' intentions to engage in online microsourcing largely rely on two specific types of trusting intentions at the institutional level, i.e. Trust in the Marketplace and Trust in the Community of Providers. These two types of trust are associated with two kinds of trustees: the marketplaces and the service providers. Our observation on the role of Trust in the Community of Providers is consistent with online e-commerce marketplace studies <ref type="bibr" target="#b51">[52]</ref>. Moreover, this study also suggests the importance of another type of institutionbased trusting intentions -Trust in the Marketplace. Our results show that trust in the marketplace not only enhances Trust in the Community of Providers, but also encourages online microsourcing adoption. Thus, Trust in the Marketplace becomes the most important prerequisite of online transactions. Without the presence of Trust in the Marketplace, Trust in the Community of Providers, who may be new and unknown, will not exist. Our research on these two trusting intentions indicates that institution-based trust is as important as individual-level trust <ref type="bibr" target="#b23">[24]</ref> for client adopting intention in an OMM. So, this complements the OMM research of Gefen and Carmel <ref type="bibr" target="#b22">[23,</ref><ref type="bibr" target="#b23">24]</ref>, now highlighting that trusting intentions towards the marketplace also deserve special attention. However, it should be noted that Trust in the Marketplace and Trust in the Community of Providers are highly correlated (.69) and thus may not be treated as completely independent concepts. Such correlation poses a limitation that needs to be addressed further in the future.</p><p>(When the model was rerun with the H6 arrow reversed so "Trust in the Community of Providers" is an antecedent of "Trust in the Marketplace", the resulting path coefficient was 0.33 (significant at .01 level), compared to 0.69 in the original model, and the variance explained for Trust in the Marketplace was 66.8%. Our original theoretical conception of Trust in the Marketplace preceding Trust in the Community of Providers best matches the context of online provision of small scope services, but the reversed direction might exist in some other contexts.)</p><p>Fourth, outsourcing research <ref type="bibr" target="#b0">[1,</ref><ref type="bibr" target="#b18">19,</ref><ref type="bibr" target="#b27">28,</ref><ref type="bibr" target="#b28">29,</ref><ref type="bibr" target="#b39">40,</ref><ref type="bibr" target="#b58">59]</ref> indicates that trust is one of the most effective social mechanisms available to facilitate cooperation between firms and providers, emphasizing the importance of trust for relational governance of outsourcing in an online context <ref type="bibr" target="#b28">[29,</ref><ref type="bibr" target="#b58">59]</ref>. As for online microsourcing, the client-provider relationship is fully mediated by the marketplace, and therefore is governed by the marketplace. Thus, Trust in the Marketplace combines with Trust in the Community of Service Providers to constitute the foundation of relational governance of online microsourcing, thereby helping to overcome exchange problems and ultimately enabling online microsourcing activities. This trust-based relational governance also deserves more attention.</p><p>Fifth, our results confirm the importance of the marketplace in the triadic outsourcing relationship including clients, providers and marketplace. Due to the lack of trusting conditions between clients and providers online, online marketplaces have become necessary to bridge the gap. Thus, unlike the study of Gefen and Carmel <ref type="bibr" target="#b22">[23,</ref><ref type="bibr" target="#b23">24]</ref> that focused on the dyadic client-provider relationship, this study looks into the triadic outsourcing relationship. We examine the client-marketplace relationship by assessing the attributes of the marketplace and their relationship with Trust in Marketplace, and examine the client-provider relationship with Trust in the Community of Providers. However, this does not imply that the individual level client-provider relationship is not important. A client still needs to assess the relationship with the providers when selecting which one will be used for sourcing services. So, this study is a good complement to the study of Schwarz et al. <ref type="bibr" target="#b60">[61]</ref>, who examine the influences of decision attributes in selecting an outsourcing option from the ASP (Application Service Provider), offshore outsourcing, or domestic outsourcing.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6.1.">Contributions to theory</head><p>The present research makes a few important contributions to the literature. Firstly, we conduct a comprehensive study on client adopting intention in OMMs by concentrating on the impacts of the marketplace and by looking into the triadic sourcing relationship of clients, providers and marketplace. Online marketplaces play a critical role in managing sourcing relationships when "the global (outsourcing) marketplace dynamic seems to be moving toward greater diversification in sourcing and smaller, more manageable, contracts" <ref type="bibr" target="#b22">[23]</ref>. While previous studies focus on mega-outsourcing deals and the dyadic client-provider relationship, this study investigates smaller outsourcing deals from the vantage point of entrepreneurs and small firms and concentrates on the triadic sourcing relationship. Our research notes that beyond the client-provider relationship, the marketplace itself also deserves special attention in OMMs. Thus, this study extends both existing outsourcing research and OMM studies <ref type="bibr" target="#b22">[23,</ref><ref type="bibr" target="#b23">24]</ref>.</p><p>Second, this research outlines a trust-based theoretical framework for understanding clients' adoption of OMMs. The framework is adapted from prior research and applied to a new context -OMMs. This research confirms the effectiveness of this framework in the new service-oriented context. Moreover, in addition to the role as a transaction intermediary, this study indicates four more resource-based attributes of marketplaces that are relevant for online microsourcing decisions, given the resource nature of the marketplaces. Thus, we extended and complemented existing online marketplace studies.</p><p>In particular, our framework makes a clear distinction between trusting beliefs and trusting intentions, and identifies two more types of trust at the institutional level: Trust in the Marketplace and Trust in the Community of Providers. Prior studies restricted institutional trust to the category of trusting beliefs, e.g., structural assurance <ref type="bibr" target="#b47">[48]</ref> and trust in intermediary <ref type="bibr" target="#b51">[52]</ref>, and did not separate out trust towards the marketplace.</p><p>According to the logic of the Theory of Reasoned Action <ref type="bibr" target="#b19">[20]</ref>, trusting beliefs (towards a trustee) lead to trusting intentions (towards the same trustee). Thus, trust in the intermediary and other beliefs in a marketplace should result in trust intentions towards the marketplace, which, in turn, could be transferred to other trustees associated with the marketplace, i.e., the community of providers. Our research also confirms the importance of institution-based trust for client adopting intentions in OMMs. Both institution-based trust and individual-level trust are crucial in online marketplaces. Thus, our framework paints a clearer picture of the trust logic for understanding clients' behavioral intentions in online marketplaces.</p><p>Third, this research has identified and examined four resource-based perceptions of OMMs by applying two theories of resources: the RBT <ref type="bibr" target="#b4">[5]</ref> and RDT <ref type="bibr" target="#b54">[55]</ref>. Both theories have been widely used in previous outsourcing studies which focused on large companies <ref type="bibr" target="#b15">[16,</ref><ref type="bibr" target="#b60">61]</ref>. Both theories are also relevant for the study of online microsourcing decisions, but the resource dependency theory appears to be slightly more relevant. Thus, this study provides several new implications for outsourcing theories. The first implication is for RBT. Our observation is consistent with Wade and Hulland's <ref type="bibr" target="#b71">[72]</ref> call to increase the application of the RBT perspective to firms in the IS community. It indicates that this call is still necessary for online microsourcing decisions. Next, our findings suggest the importance of RDT, contradicting the study of Schwarz et al. <ref type="bibr" target="#b60">[61]</ref>, who declared RDT as the least important theoretical lens for traditional outsourcing decisions. However, RDT might be a suitable theoretical lens for studying global online outsourcing marketplaces. Finally, this study indicates the relevance of resource-based theories for Online Microsourcing Marketplaces. Thus, the application of resource-based theories can also be extended to other forms of online services networks that are similar to OMMs, such as the online microsourcing community, the OSS (Open Sourcing Service) community <ref type="bibr" target="#b0">[1]</ref>, and open source service networks <ref type="bibr" target="#b18">[19]</ref>.</p><p>Fourth, this study indicates the importance of the governance role of marketplaces for online microsourcing. According to Schwarz et al. ( <ref type="bibr" target="#b60">[61]</ref>,pp. 773-4), "the nature of outsourcing has changed in recent years, from a small marketplace with a small number of key competitors, to a global marketplace, where firms are coordinating and collaborating with one another in unprecedented ways. This suggests that more emphasis should be placed on how these collaborations and interactions can be governed, and on the importance of outsourcing governance tools." This study suggests a viable solutiononline marketplacesfor the governance of these small and discrete outsourcing deals. The IT-enabled governance tools (institutional mechanisms) established by online marketplaces, e.g. escrow services, feedback systems and arbitration services, combine two types of institutional trust to create the necessary environment for online service exchanges.</p><p>Fifth, this study also suggests the importance of relational governance for the success of online microsourcing. Relational governance relies on relational elements for the maintenance of exchange relationships between firms, and can be seen as an effective complementary governance mechanism to a formal contract <ref type="bibr" target="#b56">[57]</ref>. Unlike the findings of traditional outsourcing research, which emphasize the direct relationship between clients and providers, we emphasize the importance of the marketplace in governing online service transactions and the need to pay more attention to the interactions between clients and the marketplace. The online marketplace offers resources and knowledge, provides an online transaction environment, and mediates service exchanges between clients and providers. Thus, Trust in the Marketplace becomes the most vital relational element, providing the foundation of relational governance for online microsourcing. Future research could further explore the role of relational governance for other online sourcing practices (e.g., the OSS community or online sourcing community) by including more relational elements.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6.2.">Implications for practice</head><p>For service clients, particularly small firms and start-ups, this research suggests that online microsourcing could be a viable solution for outsourcing. OMMs provide service clients with a more effective, convenient and low-cost way to tap into a large network of previously unknown global workforces, resources and capabilities. As such, senior managers of firms should be aware of the existence and potential of online microsourcing, even if this challenges the biases of their existing mindsets. These decision makers should be prepared to harvest the benefits of this global network of talented providers <ref type="bibr" target="#b37">[38,</ref><ref type="bibr" target="#b43">44]</ref>. Moreover, according to our findings, service clients should carefully assess the five attributes of OMMs when choosing a potential online marketplace for microsourcing: <ref type="bibr" target="#b0">(1)</ref> The ability of the OMM to complement in-house resources; (2) the utilization effectiveness of resources from the marketplace; (3) the resource abundance of the marketplace; (4) the communication and collaboration capabilities; and (5) the existence of a secure and reliable exchange environment.</p><p>For the OMM providers, this research shows that Trust in the Marketplace can not only significantly increase clients' intentions to engage in online microsourcing, but also help build their confidence in the abilities of the community of service providers. This highlights the importance of the governing role of the marketplace for the online client-provider relationship. The governance of online microsourcing is mainly realized through marketplace capabilities: the intermediary role of the marketplace between firms and providers and relational governance based on institution-based Trust in the Marketplace. Trust in the Marketplace largely depends on the Perceived Effectiveness of the Marketplace and the resource-based attributes of the marketplace. Thus, on one hand, OMM providers should increase the effectiveness of their institutional mechanisms to provide a more secure and reliable service exchange environment. On the other hand, they should improve clients' perceptions of their abilities to leverage their network of resources and capabilities, including Resource Suitability, Resource Availability, Resource Utilization, and Resource Complementarity, to build clients' trust in both the marketplace and the community of service providers.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6.3.">Limitations and future research directions</head><p>Like any study, this paper has a few limitations. First, the findings are based on a survey method and therefore, key procedural and contextual information may be missed. Second, the data came from only one OMM. Considering the potential contamination of self-selection, the results may be biased. Third, we mainly considered the resource nature of OMMs by drawing upon the resource-related theoretical perspective. However, other theoretical lenses might be relevant as well, e.g. the knowledge-based view (KBV) <ref type="bibr" target="#b31">[32]</ref> and transaction cost theory <ref type="bibr" target="#b73">[74]</ref>. Fourth, although the common method bias was assessed and the results showed that common method variance was not a major concern, statistically, common method bias cannot be absolutely ruled out. Fifth, high correlation between Trust in the Marketplace and Trust in the Community of Providers needs further examination. Sixth, we mainly considered the positive factors that influence outsourcing decisions; however, other negative factors like knowledge risks <ref type="bibr" target="#b60">[61]</ref> and transaction uncertainty <ref type="bibr" target="#b53">[54]</ref> might be relevant, but were not included in the research model. We also did not deal with another potentially important variableuser satisfaction <ref type="bibr" target="#b12">[13]</ref>. We did assess ease of use and perceived usefulness. User satisfaction is proposed to partially mediate the impacts of the IS-related constructs on "intention to use". Without including user satisfaction, the paths of the two trusting constructs towards "Intention to Engage" might be inflated, thus leading to type II errors.</p><p>Several future research directions are promising. First, most of the sourcing services in an OMM are knowledge extensive, meaning that the transactions between firms and providers will involve extensive knowledge exchanging activities. This might be a challenge for clients to manage providers remotely. Thus, future research could study OMMs by employing a KBV lens. Second, this study focused on business services rather than physical products, which have been examined in traditional e-business research. Using this perspective, we could examine traditional e-business topics such as trust in the new context of service exchanges. Third, this study only examined online microsourcing based on the data obtained from the marketplace model. We have argued that the proposed trust framework is also applicable for the online microsourcing community (e.g., TopCoder). Thus, its application in that arena needs to be examined in a future study. Moreover, future research can also explore how the collective actions of geographically diverse individual providers could be combined to carry out a large and complex IT project <ref type="bibr" target="#b18">[19,</ref><ref type="bibr" target="#b45">46]</ref>. Finally, this study explored online microsourcing from the client perspective. Future research could approach this from the perspective of service providers.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="7.">Conclusions</head><p>This paper investigated a recent addition to the outsourcing arenamicrosourcing with service providers via online marketplaces. We outlined a trust-based theoretical framework to gain a deeper understanding of the factors influencing the success of the service exchanges in OMMs. In sum, this study sheds new light on both outsourcing and online marketplace research. First, it reexamines the institutionalization of trust in OMMs, thereby complementing existing e-commerce studies by examining the marketplaces that focus on service exchanges. Next, it looks into a new type of outsourcingonline microsourcingusing the resource perspective, thereby introducing a new landscape of outsourcing in addition to those covered in previously published studies. Then it suggests an effective way to govern microsourcing relationships in a global marketplace, that is, the combination of IT-enabled institutional mechanisms (in the intermediary role) and trust-based relational governance (institution-based trust). Finally, it indicates that a triadic outsourcing relationship including clients, providers and the marketplace should be considered for online microsourcing instead of only focusing on the dyadic client-provider relationship. Online marketplaces play the most important role within the triadic relationship in governing the service exchanges between clients and providers.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>Fig. 1 .</head><label>1</label><figDesc>Fig. 1. A trust-based framework for online microsourcing adoption.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>Fig. 2</head><label>2</label><figDesc>Fig. 2 depicts our research model based on the theoretical framework discussed above.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>Fig. 2 .</head><label>2</label><figDesc>Fig. 2. Research model of online microsourcing marketplace.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head></head><label></label><figDesc>Fig.3presents the structural model results. The bootstrapping method<ref type="bibr" target="#b8">[9]</ref> was used to test the significance level of each path in the model. Some constructs are relatively highly correlated (see Table5), so the results may suffer from multicollinearity. The degree of multicollinearity for the independent variable can be measured by the variance inflation factor (VIF), which was calculated via WarpPLS and reported in Appendix C (see the Supplement file). All the VIFs for the concerned constructs are below the rule of thumb of 10 (or the conservative value of 5)<ref type="bibr" target="#b33">[34]</ref>, indicating that multicollinearity is not a serious concern for the study.As expected, supporting hypotheses H1-H4, all four resource-based perceptions contribute positively and significantly to Trust in the Marketplace: Perceived Resource Complementarity (β = 0.11, p b 0.05); Perceived Resource Utilization (β = 0.23, p b 0.01); Perceived Resource Availability (β = 0.22, p b 0.01) and Perceived Resource Suitability (β = 0.19, p b 0.01). Further, supporting H5, Perceived Effectiveness of Marketplace has a significant positive effect on Trust in the Marketplace (β = 0.23, p b 0.01). Collectively, these five attributes of online marketplaces account for almost 60% of the variance explained in Trust in the Marketplace. As hypothesized, Trust in the Marketplace contributes significantly and positively to Trust in the Community of Providers (β = 0.69, p b 0.01), confirming the trust transference logic. Almost 48% of the variance of Trust in the Community of Providers can be explained by Trust in the Marketplace, supporting H6. Finally, the Intention to Engage is significantly influenced by Trust in the Marketplace (β = 0.53, p b 0.01), allowing for the control variable effects. H7 is supported. The influence of Trust in the Community of Providers (β = 0.11, p b 0.10) is not as significant as Trust in the Marketplace.H8 is supported at the 0.10 significant level. Collectively, these two trust constructs can account for about 59% of the variance explained for Intention to Engage after removing the effects of the control variables.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head>Table 1</head><label>1</label><figDesc>Traditional outsourcing vs. online microsourcing.</figDesc><table><row><cell>Source: Adapted from [63].</cell><cell></cell><cell></cell></row><row><cell>Outsourcing nature</cell><cell>Traditional outsourcing</cell><cell>Online microsourcing</cell></row><row><cell>Context</cell><cell>Offline and interorganizational</cell><cell>Virtual, open, and online</cell></row><row><cell>Market</cell><cell>Small, with a few large players</cell><cell>Large, with plenty of small players</cell></row><row><cell>Relationship structure</cell><cell>Dyadic: clients &amp; providers</cell><cell>Triadic: clients, providers, &amp; platforms</cell></row><row><cell>Strategic value</cell><cell>Relatively stable and strategic</cell><cell>Flexible and non-strategic</cell></row><row><cell>Contract value</cell><cell>Usually very large</cell><cell>Usually small</cell></row><row><cell>Contract period</cell><cell>Long term: usually a few years</cell><cell>Short term: usually a few weeks or months</cell></row><row><cell>Communication</cell><cell>Meetings, memos, liaisons, email, etc.</cell><cell>Online communication via IT infrastructure</cell></row><row><cell>Governance foundation</cell><cell>Legal contracts</cell><cell>IT-enabled institutional mechanisms</cell></row><row><cell>Relational governance</cell><cell></cell><cell></cell></row></table><note><p>Trust, relational norms, mutual dependence, etc. Trust in the Marketplace, Trust in the Community of Providers, etc.</p></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2"><head>Table 2</head><label>2</label><figDesc>Qualitative content analysis results for item development.</figDesc><table><row><cell>Construct</cell><cell>Items/subject</cell><cell cols="5">Number of times items are assigned</cell></row><row><cell></cell><cell>(see Appendix A)</cell><cell>vWorker</cell><cell>Elance</cell><cell>Guru</cell><cell>Odesk</cell><cell>Sum</cell></row><row><cell></cell><cell></cell><cell>(19)</cell><cell>(12)</cell><cell>(3)</cell><cell>(9)</cell><cell>(43)</cell></row><row><cell>Perceived Resource</cell><cell>PRC1</cell><cell>1</cell><cell>4</cell><cell>0</cell><cell>5</cell><cell>10</cell></row><row><cell>Complementarity</cell><cell>PRC2</cell><cell>3</cell><cell>5</cell><cell>2</cell><cell>6</cell><cell>16</cell></row><row><cell></cell><cell>PRC3 ⁎</cell><cell>2</cell><cell>1</cell><cell>0</cell><cell>1</cell><cell>4</cell></row><row><cell></cell><cell>PRC4</cell><cell>2</cell><cell>3</cell><cell>1</cell><cell>2</cell><cell>7</cell></row><row><cell>Perceived Resource</cell><cell>PRU1</cell><cell>1</cell><cell>0</cell><cell>1</cell><cell>3</cell><cell>5</cell></row><row><cell>Utilization</cell><cell>PRU2</cell><cell>7</cell><cell>3</cell><cell>1</cell><cell>4</cell><cell>15</cell></row><row><cell></cell><cell>PRU3</cell><cell>6</cell><cell>4</cell><cell>1</cell><cell>4</cell><cell>15</cell></row><row><cell></cell><cell>PRU4</cell><cell>6</cell><cell>2</cell><cell>1</cell><cell>4</cell><cell>13</cell></row><row><cell>Perceived Resource</cell><cell>PRA1</cell><cell>2</cell><cell>2</cell><cell>1</cell><cell>5</cell><cell>10</cell></row><row><cell>Availability</cell><cell>PRA2</cell><cell>1</cell><cell>2</cell><cell>1</cell><cell>2</cell><cell>6</cell></row><row><cell></cell><cell>PRA3</cell><cell>0</cell><cell>4</cell><cell>2</cell><cell>3</cell><cell>9</cell></row><row><cell></cell><cell>PRA4</cell><cell>1</cell><cell>0</cell><cell>0</cell><cell>5</cell><cell>6</cell></row><row><cell></cell><cell>PRA5 ⁎</cell><cell>0</cell><cell>1</cell><cell>0</cell><cell>0</cell><cell>1</cell></row><row><cell></cell><cell>PRA6 ⁎</cell><cell>0</cell><cell>1</cell><cell>0</cell><cell>0</cell><cell>1</cell></row><row><cell>Perceived Resource</cell><cell>PRS1</cell><cell>1</cell><cell>0</cell><cell>1</cell><cell>1</cell><cell>3</cell></row><row><cell>Suitability</cell><cell>PRS2</cell><cell>1</cell><cell>0</cell><cell>0</cell><cell>1</cell><cell>2</cell></row><row><cell></cell><cell>PRS3</cell><cell>0</cell><cell>0</cell><cell>2</cell><cell>2</cell><cell>4</cell></row><row><cell></cell><cell>PRS4</cell><cell>0</cell><cell>0</cell><cell>1</cell><cell>1</cell><cell>2</cell></row><row><cell>Perceived</cell><cell>PEM1</cell><cell>3</cell><cell>2</cell><cell>2</cell><cell>0</cell><cell>7</cell></row><row><cell>Effectiveness</cell><cell>PEM2</cell><cell>2</cell><cell>0</cell><cell>1</cell><cell>0</cell><cell>3</cell></row><row><cell>of Marketplace</cell><cell>PEM3</cell><cell>6</cell><cell>0</cell><cell>2</cell><cell>6</cell><cell>14</cell></row><row><cell></cell><cell>PEM4 ⁎</cell><cell>0</cell><cell>1</cell><cell>0</cell><cell>0</cell><cell>1</cell></row></table><note><p>⁎ Problematic items due to few mentions in contrast with other items for the same construct.</p></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_3"><head>Table 3</head><label>3</label><figDesc>Demographic information of respondents and firms (n = 379).</figDesc><table><row><cell>Characteristics</cell><cell cols="4">Frequency Percentage Mean Std. Dev.</cell></row><row><cell>Title of respondents</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Microsourcing liaison/supervisor</cell><cell>243</cell><cell>64.1%</cell><cell></cell><cell></cell></row><row><cell>Middle manager</cell><cell>97</cell><cell>25.6%</cell><cell></cell><cell></cell></row><row><cell cols="2">Senior managers and business owners 32</cell><cell>30.0%</cell><cell></cell><cell></cell></row><row><cell>Not provided</cell><cell>7</cell><cell>0.80%</cell><cell></cell><cell></cell></row><row><cell>Tenure (year)</cell><cell>-</cell><cell>-</cell><cell>3.8</cell><cell>0.9</cell></row><row><cell>Outsourcing Experience (year)</cell><cell>-</cell><cell>-</cell><cell>2.5</cell><cell>1.2</cell></row><row><cell>No. of employees</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>b50</cell><cell>157</cell><cell>41.5%</cell><cell></cell><cell></cell></row><row><cell>50-200</cell><cell>138</cell><cell>36.4%</cell><cell></cell><cell></cell></row><row><cell>N200</cell><cell>69</cell><cell>18.3%</cell><cell></cell><cell></cell></row><row><cell>Not provided</cell><cell>14</cell><cell>3.8%</cell><cell></cell><cell></cell></row><row><cell>Average outsourcing project value (RMB)</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>b200</cell><cell>123</cell><cell>32.5%</cell><cell></cell><cell></cell></row><row><cell>200-1000</cell><cell>183</cell><cell>48.2%</cell><cell></cell><cell></cell></row><row><cell>N1000</cell><cell>61</cell><cell>16.1%</cell><cell></cell><cell></cell></row><row><cell>Not provided</cell><cell>12</cell><cell>3.2%</cell><cell></cell><cell></cell></row><row><cell>Frequency of use</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Several times a week</cell><cell>84</cell><cell>22.1%</cell><cell></cell><cell></cell></row><row><cell>Several times a month</cell><cell>97</cell><cell>25.7%</cell><cell></cell><cell></cell></row><row><cell>Once a month</cell><cell>59</cell><cell>13.5%</cell><cell></cell><cell></cell></row><row><cell>Less than once a month</cell><cell>127</cell><cell>33.6%</cell><cell></cell><cell></cell></row><row><cell>Not mentioned</cell><cell>12</cell><cell>3.1%</cell><cell></cell><cell></cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_4"><head>Table 4</head><label>4</label><figDesc>The assessment of measurement model for principal constructs.</figDesc><table><row><cell>Constructs</cell><cell># of items</cell><cell>Composite reliability</cell><cell>Cronbach's alpha</cell><cell>AVE</cell><cell>Std loadings</cell></row><row><cell>Perceived Resource Complementarity</cell><cell>3</cell><cell>0.87</cell><cell>0.77</cell><cell>0.68</cell><cell>PRC1 (0.87) PRC2 (0.85) PRC4 (0.77)</cell></row><row><cell>Perceived Resource Utilization</cell><cell>4</cell><cell>0.92</cell><cell>0.88</cell><cell>0.73</cell><cell>PRU1 (0.87) PRU2 (0.85) PRU3 (0.86) RU4 (0.85)</cell></row><row><cell>Perceived Resource Availability</cell><cell>4</cell><cell>0.90</cell><cell>0.85</cell><cell>0.70</cell><cell>PRA1 (0.84) PRA2 (0.83) PRA3 (0.87) PRA4 (0.81)</cell></row><row><cell>Perceived Resource Suitability</cell><cell>4</cell><cell>0.90</cell><cell>0.84</cell><cell>0.68</cell><cell>PRS1 (0.84) PRS2 (0.84) PRS3 (0.83) PRS4 (0.79)</cell></row><row><cell>Perceived Effectiveness of Marketplace</cell><cell>3</cell><cell>0.88</cell><cell>0.80</cell><cell>0.71</cell><cell>PEM1 (0.77) PEM2 (0.90) PEM3 (0.86)</cell></row><row><cell>Trust in Marketplace</cell><cell>5</cell><cell>0.91</cell><cell>0.88</cell><cell>0.67</cell><cell>TIM1 (0.85) TIM2 (0.89) TIM3 (0.83) TIM4 (0.84) TIM5 (0.80)</cell></row><row><cell>Trust in the Community of Providers</cell><cell>3</cell><cell>0.92</cell><cell>0.86</cell><cell>0.79</cell><cell>TIC1 (0.88) TIC2 (0.89) TIC3 (0.89)</cell></row><row><cell>Intention to Engage</cell><cell>4</cell><cell>0.92</cell><cell>0.89</cell><cell>0.75</cell><cell>ITE1 (0.85) ITE2 (0.89) ITE3 (0.88) ITE4 (0.84)</cell></row></table><note><p>Note: All item loadings are significant at 0.01. Items are in Appendix A.</p></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_5"><head>Table 5</head><label>5</label><figDesc>Correlations of latent variables and evidence of discriminant validity.</figDesc><table><row><cell></cell><cell></cell><cell>1</cell><cell>2</cell><cell>3</cell><cell>4</cell><cell>5</cell><cell>6</cell><cell>7</cell><cell>8</cell><cell>9</cell><cell>1 0</cell></row><row><cell>Perceived Resource Complementarity</cell><cell>1</cell><cell>.83</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Perceived Resource Utilization</cell><cell>2</cell><cell>.59</cell><cell>.86</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Perceived Resource Availability</cell><cell>3</cell><cell>.50</cell><cell>.61</cell><cell>.83</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Perceived Resource Suitability</cell><cell>4</cell><cell>.34</cell><cell>.46</cell><cell>.49</cell><cell>.83</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Perceived Effectiveness of Marketplace</cell><cell>5</cell><cell>.53</cell><cell>.68</cell><cell>.58</cell><cell>.50</cell><cell>.84</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Trust in Marketplace</cell><cell>6</cell><cell>.54</cell><cell>.67</cell><cell>.73</cell><cell>.55</cell><cell>.66</cell><cell>.82</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Trust in the Community of Providers</cell><cell>7</cell><cell>.46</cell><cell>.54</cell><cell>.56</cell><cell>.42</cell><cell>.54</cell><cell>.69</cell><cell>.89</cell><cell></cell><cell></cell><cell></cell></row><row><cell>Intention to Engage</cell><cell>8</cell><cell>.54</cell><cell>.62</cell><cell>.57</cell><cell>.52</cell><cell>.63</cell><cell>.76</cell><cell>.61</cell><cell>.86</cell><cell></cell><cell></cell></row><row><cell>Ease of Use</cell><cell>9</cell><cell>.33</cell><cell>.46</cell><cell>.42</cell><cell>.41</cell><cell>.39</cell><cell>.43</cell><cell>.41</cell><cell>.46</cell><cell>.92</cell><cell></cell></row><row><cell>Perceived Usefulness</cell><cell>10</cell><cell>.48</cell><cell>.55</cell><cell>.58</cell><cell>.49</cell><cell>.52</cell><cell>.58</cell><cell>.46</cell><cell>.59</cell><cell>.39</cell><cell>.80</cell></row><row><cell cols="5">Note: Bolded diagonal elements are the square root of average variance extracted (AVE).</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row></table><note><p><p><p>* Fig.</p>3</p>. PLS results of structural model.</p></note></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_0"><p>B. Lu et al. / Decision Support Systems 85 (2016) 104-114</p></note>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Acknowledgments</head><p>This research was funded by the Ministry of Education of Humanities and Social Science project (Grant No. 13YJC630105), the Doctoral Fund of Ministry of Education of China (Grant No. 20120133120005), the National Natural Science Foundation of China Grant (71072059, 71572110) and Shanghai Shuguang Program Grant (13SG16).</p></div>
+			</div>
+
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Appendix A. Supplementary data</head><p>Supplementary data to this article can be found online at http://dx. doi.org/10.1016/j.dss.2016.03.004.</p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Outsourcing to an unknown workforce: exploring open sourcing as an offshore sourcing strategy</title>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">J</forename><surname>Ågerfalk</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Fitzgerald</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="385" to="409" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Resource dependence and interorganizational relations: relations between local employment service office and social services sectors organizations</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Aldrich</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Administration and Society</title>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="page" from="419" to="455" />
+			<date type="published" when="1976">1976</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Environments of organizations</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Aldrich</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Pfeffer</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Annual Review of Sociology</title>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="page" from="79" to="105" />
+			<date type="published" when="1976">1976</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">The information technology outsourcing risk: a transaction cost and agency theory-based perspective</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Bahli</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Rivard</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Information Technology</title>
+		<imprint>
+			<biblScope unit="volume">18</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="211" to="221" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Firm resources and sustained competitive advantage</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">B</forename><surname>Barney</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Management</title>
+		<imprint>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="99" to="120" />
+			<date type="published" when="1991">1991</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<monogr>
+		<title level="m" type="main">Micro-sourcing, is this the eventual global sourcing landscape</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>Carmel</surname></persName>
+		</author>
+		<ptr target="http://errancarmel.blogspot.com/2008/07/microsourcing.html" />
+		<imprint>
+			<date type="published" when="2008-07-15">2008. July 15, 2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<monogr>
+		<title level="m" type="main">Offshoring Information Technology: Sourcing and Outsourcing to a Global Workforce</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>Carmel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Tjia</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2005">2005</date>
+			<publisher>Cambridge University Press</publisher>
+			<pubPlace>Cambridge</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Theoretical perspectives on the outsourcing of information systems</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">J</forename><surname>Cheon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Grover</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Teng</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Information Technology</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="209" to="210" />
+			<date type="published" when="1995">1995</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">The partial least squares approach to structural equation modeling</title>
+		<author>
+			<persName><forename type="first">W</forename><forename type="middle">W</forename><surname>Chin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Modern Methods for Business Research</title>
+		<editor>
+			<persName><forename type="first">G</forename><forename type="middle">A</forename><surname>Marcoulises</surname></persName>
+		</editor>
+		<meeting><address><addrLine>NJ</addrLine></address></meeting>
+		<imprint>
+			<publisher>Lawrence Erlbaum Associates</publisher>
+			<date type="published" when="1998">1998</date>
+			<biblScope unit="page" from="295" to="336" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">A paradigm for developing better measures of marketing constructs</title>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">A</forename><surname>Churchill</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">R</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Marketing Research</title>
+		<imprint>
+			<biblScope unit="volume">16</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="64" to="73" />
+			<date type="published" when="1979">1979</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Perceived usefulness, perceived ease of use and user acceptance of information technology</title>
+		<author>
+			<persName><forename type="first">F</forename><forename type="middle">D</forename><surname>Davis</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="319" to="340" />
+			<date type="published" when="1989">1989</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">User acceptance of computer technology: a comparison of two theoretical models</title>
+		<author>
+			<persName><forename type="first">F</forename><forename type="middle">D</forename><surname>Davis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">P</forename><surname>Bagozzi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">R</forename><surname>Warshaw</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Science</title>
+		<imprint>
+			<biblScope unit="volume">35</biblScope>
+			<biblScope unit="issue">8</biblScope>
+			<biblScope unit="page" from="982" to="1003" />
+			<date type="published" when="1989">1989</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">The DeLone and McLean model of information systems success: a ten-year update</title>
+		<author>
+			<persName><forename type="first">W</forename><surname>Delone</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Mclean</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Management Information Systems</title>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="9" to="30" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<monogr>
+		<author>
+			<persName><forename type="first">N</forename><surname>Denzin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Lincoln</surname></persName>
+		</author>
+		<title level="m">Handbook of Qualitative Research</title>
+		<meeting><address><addrLine>Sage, Thousand Oaks</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2000">2000</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Dimensions of organizational task environments</title>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">G</forename><surname>Dess</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">W</forename><surname>Beard</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Administrative Science Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">29</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="52" to="73" />
+			<date type="published" when="1984">1984</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Information systems outsourcing: a survey and analysis of the literature</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Dibbern</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Goles</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Hirschheim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Jayatilaka</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Database</title>
+		<imprint>
+			<biblScope unit="volume">35</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="6" to="102" />
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Towards an integrated crowdsourcing definition</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>Estellés-Arolas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>González-Ladrón-De-Guevara</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Information Science</title>
+		<imprint>
+			<biblScope unit="volume">38</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="189" to="200" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Trust, satisfaction, and online repurchase intention: the moderating role of perceived effectiveness of ecommerce institutional mechanisms</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Fang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Qureshi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Mccole</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Ramsey</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">H</forename><surname>Lim</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">38</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="407" to="427" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">From peer production to productization: a study of social enabled business exchanges in open source service networks</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Feller</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Finnegan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Fitzgerald</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="475" to="593" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<monogr>
+		<author>
+			<persName><forename type="first">M</forename><surname>Fishbein</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Ajzen</surname></persName>
+		</author>
+		<title level="m">Belief, Attitude, Intention and Behavior: An Introduction to Theory and Research</title>
+		<meeting><address><addrLine>Reading, MA</addrLine></address></meeting>
+		<imprint>
+			<publisher>Addison-Wesley</publisher>
+			<date type="published" when="1975">1975</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<monogr>
+		<author>
+			<persName><forename type="first">F</forename><surname>Fukuyama</surname></persName>
+		</author>
+		<title level="m">Trust: The Social Virtues and the Creation of Prosperity</title>
+		<meeting><address><addrLine>New York</addrLine></address></meeting>
+		<imprint>
+			<publisher>The Free Press</publisher>
+			<date type="published" when="1995">1995</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">E-commerce: the role of familiarity and trust</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Gefen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Omega</title>
+		<imprint>
+			<biblScope unit="volume">28</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="725" to="737" />
+			<date type="published" when="2000">2000</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Is the world really flat? A look at offshoring at an online programming marketplace</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Gefen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Carmel</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="367" to="384" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Why the first provider takes it all: the consequences of a low trust culture on pricing and ratings in online sourcing markets</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Gefen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Carmel</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">European Journal of Information Systems</title>
+		<imprint>
+			<biblScope unit="volume">22</biblScope>
+			<biblScope unit="page" from="604" to="618" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<author>
+			<persName><forename type="first">D</forename><surname>Gefen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Karahanna</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">W</forename><surname>Straub</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Trust and TAM in online shopping: an integrated model</title>
+		<imprint>
+			<date type="published" when="2003">2003</date>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="page" from="51" to="90" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">The boundaries of trust and risk: the quadratic moderating role of institutional structures</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Gefen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">A</forename><surname>Pavlou</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="issue">3-2</biblScope>
+			<biblScope unit="page" from="940" to="959" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Structural equation modeling and regression: guidelines for research practice</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Gefen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">W</forename><surname>Straub</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">C</forename><surname>Boudreau</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Communications of the Association for Information Systems</title>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="1" to="70" />
+			<date type="published" when="2000">2000</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Facilitating relational governance through service level agreements in IT outsourcing: an application of the commitment-trust theory</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Goo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">D</forename><surname>Huang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Decision Support Systems</title>
+		<imprint>
+			<biblScope unit="volume">46</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="216" to="232" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">The role of service level agreements in relational management of information technology outsourcing: an empirical study</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Goo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Kishore</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">R</forename><surname>Rao</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">33</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="119" to="145" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<monogr>
+		<title level="m" type="main">The relationship between contracts, relational governance, and vendor profitability in software development outsourcing</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Gopal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">R</forename><surname>Koka</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2009">2009</date>
+			<publisher>Academy of Management Proceedings</publisher>
+			<biblScope unit="page" from="1" to="6" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">The resource-based theory of competitive advantage: implications for strategy formulation</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">M</forename><surname>Grant</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">California Management Review</title>
+		<imprint>
+			<biblScope unit="volume">33</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="114" to="135" />
+			<date type="published" when="1991">1991</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">Toward knowledge-based theory of the firm</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">M</forename><surname>Grant</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Strategic Management Journal</title>
+		<imprint>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="109" to="122" />
+			<date type="published" when="1996">1996</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">An evaluation of the impact of corporate strategy and the role of information technology on IS functional outsourcing</title>
+		<author>
+			<persName><forename type="first">V</forename><surname>Grover</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">J</forename><surname>Cheon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">C</forename><surname>Teng</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">European Journal of Information Systems</title>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="179" to="190" />
+			<date type="published" when="1994">1994</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<monogr>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">F</forename><surname>Hair</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">E</forename><surname>Anderson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">L</forename><surname>Tatham</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><forename type="middle">C</forename><surname>Black</surname></persName>
+		</author>
+		<title level="m">Multivariate Data Analysis</title>
+		<meeting><address><addrLine>Macmillan, NY</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+	<note>seventh ed</note>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title level="a" type="main">A review of scale development practices in the study of organizations</title>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">R</forename><surname>Hinkin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Management</title>
+		<imprint>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="page" from="967" to="988" />
+			<date type="published" when="1995">1995</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">The rise of crowdsourcing</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Howe</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Wired</title>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="176" to="183" />
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">Determinants of ASP choice: an integrated perspective</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Jayatilaka</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Schwarz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Hirschheim</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">European Journal of Information Systems</title>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="210" to="224" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<analytic>
+		<title level="a" type="main">Managing the human cloud</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>Kaganer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Carmel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Hirschheim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Olsen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Sloan Management Review</title>
+		<imprint>
+			<biblScope unit="volume">54</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="23" to="32" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<analytic>
+		<title level="a" type="main">The information systems outsourcing bandwagon</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Lacity</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Hirschheim</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Sloan Management Review</title>
+		<imprint>
+			<biblScope unit="volume">35</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="73" to="86" />
+			<date type="published" when="1993">1993</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<analytic>
+		<title level="a" type="main">Effect of partnership quality on IS outsourcing: conceptual framework and empirical validation</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">N</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><forename type="middle">G</forename><surname>Kim</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Management Information Systems</title>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="29" to="61" />
+			<date type="published" when="1999">1999</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<monogr>
+		<title level="m" type="main">Understanding Online Sourcing Decisions From the Service Clients&apos; Perspective: An Integrative Theoretical Framework(Dissertation)</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Lu</surname></persName>
+		</author>
+		<ptr target="http://etd.lsu.edu/docs/available/etd-07052011-095522/)" />
+		<imprint>
+			<date type="published" when="2011">2011</date>
+		</imprint>
+		<respStmt>
+			<orgName>Louisiana State University</orgName>
+		</respStmt>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<analytic>
+		<title level="a" type="main">Exploring the resource nature of online sourcing marketplace</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Lu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Q</forename><surname>Zeng</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Applied Mechanics and Materials</title>
+		<imprint>
+			<biblScope unit="page" from="2712" to="2719" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+	<analytic>
+		<title level="a" type="main">Examining the antecedent factors of online microsourcing</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Lu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Hirschheim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Scharz</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Frontiers</title>
+		<imprint>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="601" to="617" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b43">
+	<analytic>
+		<title level="a" type="main">The dawn of the e-lance economy</title>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">W</forename><surname>Malone</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">J</forename><surname>Laubacher</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Harvard Business Review</title>
+		<imprint>
+			<biblScope unit="volume">76</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="145" to="152" />
+			<date type="published" when="1998">1998</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b44">
+	<analytic>
+		<title level="a" type="main">What makes a virtual organization work?</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">L</forename><surname>Markus</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Manville</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">C</forename><surname>Agres</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Sloan Management Review</title>
+		<imprint>
+			<biblScope unit="volume">42</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="13" to="26" />
+			<date type="published" when="2000">2000</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b45">
+	<analytic>
+		<title level="a" type="main">The governance of free/open source software projects: monolithic, multidimensional, or configurational?</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">L</forename><surname>Markus</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Management and Governance</title>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="151" to="163" />
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b46">
+	<monogr>
+		<title level="m" type="main">The crowd in the cloud: exploring the future of outsourcing</title>
+		<author>
+			<persName><surname>Massolution</surname></persName>
+		</author>
+		<ptr target="http://www.lionbridge.com/files/2012/11/Lionbridge-White-Paper_The-Crowd-in-the-Cloud-final.pdf" />
+		<imprint>
+			<date type="published" when="2013">2013</date>
+			<biblScope unit="page" from="3" to="15" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b47">
+	<analytic>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">H</forename><surname>Mcknight</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Choudhury</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Kacmar</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Developing and validating trust measures for e-commerce: an integrative typology</title>
+		<imprint>
+			<date type="published" when="2002">2002</date>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="page" from="334" to="359" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b48">
+	<analytic>
+		<title level="a" type="main">Knowledge integration and information technology project performance</title>
+		<author>
+			<persName><forename type="first">V</forename><surname>Mitchell</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="919" to="939" />
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b49">
+	<monogr>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">G</forename><surname>Netemeyer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><forename type="middle">O</forename><surname>Bearden</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Sharma</surname></persName>
+		</author>
+		<title level="m">Scaling Procedures: Issues and Applications</title>
+		<meeting><address><addrLine>Thousand Oaks</addrLine></address></meeting>
+		<imprint>
+			<publisher>Sage Publications</publisher>
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b50">
+	<analytic>
+		<title level="a" type="main">Microsourcing -using information technology to create unexpected work relationships and entrepreneurial opportunities</title>
+		<author>
+			<persName><forename type="first">L</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Communications of the Association for Information Systems</title>
+		<imprint>
+			<biblScope unit="volume">24</biblScope>
+			<biblScope unit="page" from="161" to="174" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b51">
+	<analytic>
+		<title level="a" type="main">Building effective online marketplaces with institution-based trust</title>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">A</forename><surname>Pavlou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Gefen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="37" to="59" />
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b52">
+	<analytic>
+		<title level="a" type="main">Psychological contract violation in online marketplaces: antecedents, consequences, and moderating role</title>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">A</forename><surname>Pavlou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Gefen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<imprint>
+			<biblScope unit="volume">16</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="372" to="399" />
+			<date type="published" when="2005">2005</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b53">
+	<analytic>
+		<title level="a" type="main">Understanding and mitigating uncertainty in online exchange relationships: a principal-agent perspective</title>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">A</forename><surname>Pavlou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Liang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Xue</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="105" to="136" />
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b54">
+	<analytic>
+		<title level="a" type="main">A social information processing approach to job attitudes and task design</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Pfeffer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">R</forename><surname>Salancik</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Administrative Science Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="224" to="253" />
+			<date type="published" when="1978">1978</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b55">
+	<analytic>
+		<title level="a" type="main">Common method biases in behavioral research: a critical review of the literature and recommended remedies</title>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">B</forename><surname>Podsakoff</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Mackenzie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">Y</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><forename type="middle">P</forename><surname>Podsakoff</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The Journal of Applied Psychology</title>
+		<imprint>
+			<biblScope unit="volume">88</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="879" to="903" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b56">
+	<analytic>
+		<title level="a" type="main">Testing alternative theories of the firm: transaction cost, knowledge-based, and measurement explanations for make-or-buy decisions in Information Services</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Poppo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Zenger</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Strategic Management Journal</title>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="issue">9</biblScope>
+			<biblScope unit="page" from="853" to="877" />
+			<date type="published" when="1998">1998</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b57">
+	<analytic>
+		<title level="a" type="main">Portfolios of buyer-supplier exchange relationships in an online marketplace for IT services</title>
+		<author>
+			<persName><forename type="first">U</forename><surname>Radkevitch</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Van Heck</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O</forename><surname>Koppius</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Decision Support Systems</title>
+		<imprint>
+			<biblScope unit="volume">47</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="297" to="306" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b58">
+	<analytic>
+		<title level="a" type="main">Offshore information systems project success: the role of social embeddedness and cultural characteristics</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Rai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">M</forename><surname>Maruping</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Venkatesh</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">33</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="17" to="641" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b59">
+	<analytic>
+		<title level="a" type="main">PLS marker variable approach to diagnosing and controlling for method variance</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Rönkkö</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Ylitalo</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the International Conference on Information Systems (ICIS 2011)</title>
+		<meeting>the International Conference on Information Systems (ICIS 2011)</meeting>
+		<imprint>
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b60">
+	<analytic>
+		<title level="a" type="main">A conjoint approach to understanding IT application services outsourcing</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Schwarz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Hirschheim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Jayatilaka</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Goles</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of the Association for Information Systems</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page" from="748" to="781" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b61">
+	<analytic>
+		<title level="a" type="main">Strategic information systems planning success: an investigation of the construct and its measurement</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">H</forename><surname>Segars</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Grover</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">22</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="139" to="163" />
+			<date type="published" when="1998">1998</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b62">
+	<monogr>
+		<author>
+			<persName><forename type="first">M</forename><surname>Shaikh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Cornford</surname></persName>
+		</author>
+		<title level="m">Open-sourcing: on the road to the ultimate global source? The Second Information Systems Workshop on Global Sourcing: Services, Knowledge and Innovation</title>
+		<meeting><address><addrLine>Val d&apos;Isere, France</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b63">
+	<analytic>
+		<title level="a" type="main">Premiums for high quality products as returns to reputations</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Shapiro</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Quarterly Journal of Economics</title>
+		<imprint>
+			<biblScope unit="volume">98</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="659" to="680" />
+			<date type="published" when="1983">1983</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b64">
+	<monogr>
+		<title level="m" type="main">Paid crowdsourcing: current state and progress toward mainstream business use</title>
+		<author>
+			<persName><surname>Smartsheet</surname></persName>
+		</author>
+		<idno>11-15-2012</idno>
+		<ptr target="http://www.smartsheet.com/paid-crowdsourcing-current-state-and-progress" />
+		<imprint>
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b65">
+	<monogr>
+		<title level="m" type="main">A-priori sample size calculator for multiple regression</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">S</forename><surname>Soper</surname></persName>
+		</author>
+		<ptr target="http://www.danielsoper.com/statcalc" />
+		<imprint>
+			<date type="published" when="2013-02-27">2013. 27 February 2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b66">
+	<analytic>
+		<title level="a" type="main">Trust transfer on the world wide web</title>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">L</forename><surname>Stewart</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Organization Science</title>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="5" to="17" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b67">
+	<analytic>
+		<title level="a" type="main">Future of virtual communities as business</title>
+		<author>
+			<persName><surname>Topcoder</surname></persName>
+		</author>
+		<ptr target="http://www.topcoder.com/tc" />
+	</analytic>
+	<monogr>
+		<title level="m">? module=Static&amp;d1=pressroom&amp;d2=pr_1129062006</title>
+		<imprint>
+			<date type="published" when="2012-07">July 2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b68">
+	<analytic>
+		<author>
+			<persName><forename type="first">D</forename><surname>Ulrich</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">B</forename><surname>Barney</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Perspectives in organizations: resource dependence, efficiency, and population</title>
+		<imprint>
+			<date type="published" when="1984">1984</date>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="page" from="471" to="481" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b69">
+	<analytic>
+		<title level="a" type="main">The sources and consequences of embeddedness for the economic performance of organizations: the network effect</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Uzzi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">American Sociological Review</title>
+		<imprint>
+			<biblScope unit="volume">61</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="674" to="698" />
+			<date type="published" when="1996">1996</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b70">
+	<analytic>
+		<title level="a" type="main">Social structure and competition in interfirm networks: the paradox of embeddedness</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Uzzi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Administrative Science Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">42</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="35" to="67" />
+			<date type="published" when="1997">1997</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b71">
+	<analytic>
+		<title level="a" type="main">Review: the resource-based theory and information systems research: review, extension and suggestions for future research</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Wade</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Hulland</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">28</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="107" to="142" />
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b72">
+	<monogr>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">C</forename><surname>Westland</surname></persName>
+		</author>
+		<title level="m">Lower bounds on sample size in structural equation modeling, Electronic Commerce Research and Applications</title>
+		<imprint>
+			<date type="published" when="2010">2010</date>
+			<biblScope unit="page" from="476" to="487" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b73">
+	<analytic>
+		<title level="a" type="main">The economics of organization: the transaction cost approach</title>
+		<author>
+			<persName><forename type="first">O</forename><forename type="middle">E</forename><surname>Williamson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The American Journal of Sociology</title>
+		<imprint>
+			<biblScope unit="volume">87</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="548" to="577" />
+			<date type="published" when="1981">1981</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b74">
+	<monogr>
+		<title level="m" type="main">University of California, Irvine) is an Associate Professor of Marketing</title>
+		<author>
+			<persName><forename type="first">Liangyan</forename><surname>Wang</surname></persName>
+		</author>
+		<imprint>
+			<date>200052</date>
+			<pubPlace>Shanghai</pubPlace>
+		</imprint>
+		<respStmt>
+			<orgName>Shanghai Jiao Tong University</orgName>
+		</respStmt>
+	</monogr>
+	<note>Ph.D.. WLY@sjtu.edu.cn</note>
+</biblStruct>
+
+<biblStruct xml:id="b75">
+	<monogr>
+		<title level="m" type="main">University of California, Los Angeles) is a Professor of Operations and Decision Technologies in the Paul Merage School of Business at the University of California</title>
+		<author>
+			<persName><forename type="first">L</forename></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Robin</forename><surname>Keller</surname></persName>
+		</author>
+		<imprint>
+			<biblScope unit="page" from="92697" to="93125" />
+			<pubPlace>Irvine, CA</pubPlace>
+		</imprint>
+	</monogr>
+	<note>Ph.D.. LRKeller@uci.edu</note>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

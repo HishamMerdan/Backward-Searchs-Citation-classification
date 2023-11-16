@@ -1,0 +1,747 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Software Gigging: A Grounded Theory of Online Software Development Freelancing Completed Research Paper</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Raymund</forename><surname>Sison</surname></persName>
+							<email>raymund.sison@delasalle.ph</email>
+						</author>
+						<author>
+							<persName><forename type="first">Rabby</forename><surname>Lavilles</surname></persName>
+							<email>rabby_lavilles@dlsu.edu.ph</email>
+						</author>
+						<author>
+							<affiliation key="aff0">
+								<orgName type="laboratory">Grounded Theory of Online Software Freelancing Thirty Ninth International Conference on Information Systems</orgName>
+								<address>
+									<postCode>2018 1</postCode>
+									<settlement>San Francisco</settlement>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff1">
+								<orgName type="department">De La Salle University Manila</orgName>
+								<address>
+									<country key="PH">Philippines</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff2">
+								<orgName type="institution">MSU-Iligan Institute of Technology Iligan City</orgName>
+								<address>
+									<country key="PH">Philippines</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Software Gigging: A Grounded Theory of Online Software Development Freelancing Completed Research Paper</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="MD5">EDECC97B56121A7A4A55A26FC61A4383</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.7.3" ident="GROBID" when="2023-06-16T09:22+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>Online freelancing</term>
+					<term>software development</term>
+					<term>grounded theory</term>
+					<term>gigging</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Despite the rapid growth of online freelancing as an industrial sector, there is a lack of research in it, especially in a country like the Philippines, which, though an important online freelancing destination, belongs to the global south. This study uses the grounded theory method to explore the practices of online software development freelancers, or software e-lancers, in the said country. The result is a substantive theory that views earning flexibly as the main concern of software e-lancers. To resolve this main concern, they engage in what we call software gigging, which is a cyclical process of gig-hunting and gig-executing, each of which has several activities. Software gigging becomes increasingly lucrative and flexible as one advances through the gigging stages of noob, rockstar, and super-rockstar. As they do software gigging, software e-lancers use various strategies such as reputationing or circumtechventing, depending on the specific gigging activity and stage that they are in.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Introduction</head><p>Online outsourcing, which involves the often offshored contracting of business tasks to third-party workers via the Internet, is growing rapidly as an industry, both in the number of projects and tasks posted on online outsourcing platforms <ref type="bibr">(Kässi and Lehdonvirta 2016)</ref> and in the weighted average of the compound annual growth rates of these online labor marketplaces <ref type="bibr" target="#b19">(Kuek et al. 2015)</ref>. Crowdsourcing and online freelancing are two sectors of this industry; but though the former appears to have become a mainstream topic, research in the latter remains nascent <ref type="bibr" target="#b20">(Lacity et al. 2017)</ref>. A recent scoping review of peer-reviewed gig economy articles from January 2000 to July 2017 from six academic databases, including Scopus and WoS, similarly notes that "the biggest (research) gaps are a lack of studies looking at the lived experiences of gig workers" <ref type="bibr">(Bajwa et al. 2018 p. 21)</ref>.</p><p>According to a recent World Bank-commissioned report <ref type="bibr" target="#b19">(Kuek et al. 2015)</ref>, the top three online outsourcing destinations worldwide are the United States, India, and the Philippines, with 23.9%, 21.5%, and 18.6% of global workers coming from these three countries. However, when population size and the size of the labor force are taken into account, the Philippines rises to the top, with 2% and 4.8% of its population and total labor force, respectively, engaged in online outsourcing. Unfortunately, there is a dearth of research in online outsourcing in this country. A recent updated review of IT and business process outsourcing <ref type="bibr" target="#b20">(Lacity et al. 2017</ref>) calls for more studies of other outsourcing destinations besides India, citing as one reason the caveat that practices that are effective in one context (e.g., Western client-Indian provider) might not be as effective in other contexts.</p><p>In order to help address the aforementioned need for more research in online freelancing, especially in a country that has become an important online freelancing destination, this paper looks into the concerns and practices of online freelancers in the Philippines. It focuses on online software development freelancing, which we call software e-lancing for short, which includes web development, mobile development, and game development. Among all categories, web and mobile development had the most earnings in Asia in the Elance-oDesk (now Upwork) freelancing platform in 2014 <ref type="bibr" target="#b6">(Cunningham 2015)</ref>.</p><p>The grounded theory method (GTM) is used in this study to understand the main concern of software elancers, and how they resolve this concern. GTM is recommended when the investigation involves nascent phenomena (Van de Ven as cited in <ref type="bibr" target="#b30">Urquhart and Fernandez 2013)</ref>. Its use in information systems (IS) theory development spans almost three decades, with <ref type="bibr" target="#b23">(Orlikowski 1993)</ref> being among the seminal works. Special issues in major information systems (IS) journals have been devoted to the use of GTM in IS, and papers have been written that provide empirically based guidelines for using GTM in IS research (e.g., <ref type="bibr" target="#b29">Urquhart, Lehmann, and Myers 2010)</ref>.</p><p>The Glaserian approach to GTM (see e.g., <ref type="bibr" target="#b13">Glaser 1998)</ref>, which this study uses, eschews a "literature review in the substantive area and related areas where the research is to be done" <ref type="bibr">(Glaser 1998 p. 67</ref>). This study, therefore, did not begin with any literature review, and consequently, did not have any research questions or theoretical perspectives at the start. Instead, the question that we tried to get answers to was a "grand tour" question <ref type="bibr" target="#b24">(Simmons 2011)</ref>, "designed to convey to the respondent that they are being invited to discuss what is relevant to them about the general topic area, on their terms" (p. 23). Our grand tour question was, "What is your main concern as an online software development freelancer, and how do you resolve it?" A substantive theory that answers these two questions will be presented and discussed in the succeeding chapters.</p><p>The rest of this paper is organized as follows. First, we describe the GTM used in the study. Next, we describe and discuss a substantive theory of online software development freelancing, which we call software gigging. Finally we summarize and provide some implications for practice and for formal theory.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Method</head><p>We begin this section by quoting one of the originators of the grounded theory method (GTM), Barney <ref type="bibr">Glaser (1998, p. 115)</ref>:</p><p>"Grounded theory accounts for the action in a substantive area. In order to accomplish this goal, grounded theory tries to understand the action in a substantive area from the point of view of the actors involved. This understanding revolves around the main concern of the participants whose behavior continually resolves their concern. Their continual resolving is the core variable…It emerges as the overriding pattern. Thus the goal for a research using grounded theory is to discover the core variable as it resolves the main concern."</p><p>The above sentences were quoted verbatim because they contain important GTM keywords that we will be using in the methodological description that follows.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>The Substantive Area</head><p>The substantive area in this study is online software development freelancing, which we call software elancing for short. The actors in this substantive area do software development work online, and they do so as independent contractors, not as employees of a software development company. The study focuses on software e-lancers based in the Philippines and whose clients are abroad. 52 actors meeting these criteria were interviewed. 71% of the study participants turned out to be single; 33% were female. 83% considered themselves full-time online workers; and 60% had bachelor's degrees in computer science or related fields. Their average age was 27 years old, and their average number of years of work experience was 5.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Phase 1: Theory Origination</head><p>GTM can be viewed as having three phases-theory origination, theory saturation, and theory elucidation-each of which can be described in terms of input, process, and output (Figure <ref type="figure">1</ref>, adapted from <ref type="bibr" target="#b26">Sison 2017)</ref>. Glaserian GTM begins with the researcher's laying aside any theories about the substantive area before entering the field. This does not mean forgetting all that one knows about the area, as if that were possible; rather, it means "setting aside known theories for potential future comparison, which are done only if the analysis of the data indicates the relevance of these theories" <ref type="bibr" target="#b30">(Urquhart and Fernandez 2013)</ref>.</p><p>Theory origination is a cyclical process of data collection, coding via constant comparison, and memoing. Data collection in GTM is usually done through interviews. In this study, the interviews, which lasted 1 hour and 29 minutes on the average, were conducted face to face from October 2015 to December 2017. These were followed by clarificatory calls and instant message exchanges that lasted until March 2018. The interviews could be grouped into phases, as shown in the Table <ref type="table" target="#tab_0">1</ref>. The basic questions that were asked in the interviews were: How did you start working online? How would you describe your daily routine? What difficulties have you encountered and how did you deal with them? What do you like or dislike about your online job? In one interview, there would be so much more follow-up questions, which depended on the answers of the participants to the basic questions, and on our growing understanding of their main concern and how they resolve this. GTM data is, however, not limited to field notes or transcripts of interviews; in GTM, all is data <ref type="bibr">(Glaser 2002, p. 145)</ref>. As shown in Table <ref type="table" target="#tab_2">2</ref>, additional sources of data in this study included participant observation and participants' posts in relevant social media (e.g,. GitHub, LinkedIn) and online marketplaces (e.g., Upwork, onlinejobs.ph). All data were obtained and used only upon the informed consent of each participant. The other two components of the cyclical process of theory origination are coding via constant comparison, and memoing, which follow two basic "rules." The first is, "While coding an incident for a category, compare it with the previous incidents in the same and different groups coded in the same category" <ref type="bibr">(Glaser and Strauss 1967, p. 106</ref>). The second is, "When you find yourself musing over theoretical notions, stop coding and record a memo of your ideas" <ref type="bibr">(Glaser and Strauss 1967, p. 107</ref>). These memos not only serve as a very useful tool for analysis; they would also come in handy when writing up the grounded theory in Phase 3.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Participants</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Dates</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Non</head><p>Constant comparison produces concepts and categories of increasingly higher abstraction. Typically, several substantive codes (e.g., "Upwork profile", "onlinejobs.ph profile") are combined under or into a broader concept (e.g., "OLM profile"); several concepts (e.g., "OLM profile," "independent portfolios") are combined under a broader category (e.g., "profiling"); several categories (e.g., "profiling," "applying," and "negotiating") are combined under an even more abstract category (e.g., "gig-hunting"); and so on until the highest-level categories that have been produced so far are combined under or into what is called the core category (e.g., "gigging"). Therefore, the core category and everything under it is a grounded theory of the substantive area. Many substantive grounded theories, including the one in this paper, are processes, though there are many other possible coding families that could be used to guide conceptualization and theory construction (see e.g., <ref type="bibr" target="#b12">Glaser 1978)</ref>.</p><p>The end of Phase 1 is signaled by the emergence of a potential core category (also called core variable) that accounts for most of the variation in the pattern of behavior that has been observed so far. In this study, "transitioning" appeared to be an early potential core category after eight interviews; after the tenth interview, however, it became clear that not all participants viewed their work as merely transitory or temporary. The next potential core category that we saw was "reputationing". However, the 13 th participant (and several others who would be interviewed subsequently) was apparently unconcerned about reputation, saying, for example, "I don't know about reputation. However, I do normally go the extra mile for any job or role that I do." Subsequent interviews confirm that, no matter how sexy reputationing sounds, or that two books have recently appeared bearing the title, The Reputation Economy <ref type="bibr" target="#b7">(Fertik and Thompson 2015;</ref><ref type="bibr" target="#b8">Gandini 2016)</ref>, developing one's reputation is neither the participants' main concern nor the core variable that resolves their main concern, though it certainly is part of the core variable. (Indeed, as will be seen in Table <ref type="table" target="#tab_10">6</ref> later, reputationing turns out to be a strategy for gig-executing.) What eventually emerged as the core category was a cyclical basic social process (BSP) that we called "software gigging," with two main activities, each having three tasks. Several other dimensions of this BSP would emerge in the next phase, theory saturation.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Phase 2: Theory Saturation</head><p>In Phase 2, the cyclical process of data collection, coding, and memoing described earlier continues, but this time, coding becomes selective, i.e., limited "to only those variables that relate to the core variable in sufficiently significant ways as to produce a parsimonious theory" <ref type="bibr" target="#b15">(Glaser 2004</ref>). The cyclical process ends when theoretical saturation is reached, i.e., when "no additional data are being found whereby the [analyst] can develop properties of the category" <ref type="bibr">(Glaser and Strauss 1967, p. 61)</ref>. In this study, the final BSP-a cyclical process with two main activities and three stages-emerged after 33 interviews, after which increasingly less and more minor concepts appeared. Nevertheless, we continued to interview 11 more software e-lancers, bringing the total number of participants to 52.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Phase 3: Theory Elucidation</head><p>There are three activities in Phase 3 or theory elucidation, and they can be performed in any order or in parallel. First is theoretical coding, which conceptualizes relations among the substantive categories generated in the earlier phases. Second is literature enfolding, in which the extant literature is analyzed to determine how it relates to the substantive theory, and vice versa. Third is theoretical sorting, in which the memos are set up in a theoretical outline in preparation for writing. The results of the these activities will be discussed in the next section.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Other Grounded Theory Methods</head><p>There are three major strands of GTM: the Glaserian strand (see e.g., <ref type="bibr" target="#b12">Glaser 1978;</ref><ref type="bibr" target="#b13">Glaser 1998)</ref>, which is closest to that described in <ref type="bibr" target="#b16">(Glaser and Strauss 1967)</ref>; the Straussian strand <ref type="bibr" target="#b27">(Strauss and Corbin 1990;</ref><ref type="bibr" target="#b4">Corbin and Strauss 2008)</ref>, which is more structured (e.g., it uses a coding paradigm involving conditions, context, action/interactional strategies, and consequences), and which some researchers therefore find more comfortable to use than the Glaserian approach; and the constructivist strand <ref type="bibr">(Charmaz 2006</ref>) by a student of both Glaser and Strauss in the early 1970s, the decade during which constructivism rose rapidly as an alternative to objectivism.</p><p>The choice of which grounded theory method to use, which includes the criteria for judging the resulting grounded theory, ultimately depends on the researcher, especially on the researcher's: (1) need to have special structures (e.g., the coding paradigm of Strauss and Corbin) that can assist in, but unnecessarily constrain, the coding and theory-building process; and (2) ontological and epistemological commitments.</p><p>Our familiarity with the process of concept induction in artificial intelligence and machine learning (see e.g., <ref type="bibr" target="#b25">Sison 1998)</ref>, and belief that there are certain realities that exist independently of mental or social constructions, make the Glaserian strand our GTM method of choice.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Results and Discussion</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Online E-Lancers' Main Concern and How They Resolve It</head><p>Though different software e-lancers might have many, different concerns, their main concern, which is what GTM is designed to discover, can be summed up in two words-earning flexibly, i.e., software elancers try out and continue doing software e-lancing work because of their desire to earn in a flexible manner. Income is an important driver, but so is flexibility in, say, time and place, as the following sample incidents indicate. (Each sample incident in this paper has a label with two numbers. The first number refers to the participant being quoted. The second number refers to a particular incident in the field notes of a participant's interview.) How to earn in a flexible manner is, therefore, the main concern of these software e-lancers. This is this grounded theory study's first result.</p><p>The second result is the substantive theory itself of how the software e-lancers resolve their main concern. This theory takes the form of a basic social process, which we call software gigging (Figure <ref type="figure">2</ref>).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Figure 2. The Basic Social Process of Software Gigging</head><p>As Figure <ref type="figure">2</ref> shows, the basic social process of software gigging has two dimensions. In the first dimension, software gigging can be viewed as a cyclical process of gig-hunting and gig-executing. Each of these activities have sub-activities or tasks, and strategies to carry out each task. In the second dimension, software gigging can be viewed as progressing in stages, in which e-lancers move up from being noobs, to being rockstars, and finally, super-rockstars.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Software Gigging: The Cycle</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Software Gig-Hunting</head><p>Gig-hunting is the process of getting a software e-lance job and has three sub-activities or tasks: profiling, applying, and negotiating. (The definitions below of these categories are excerpted from the relevant memos generated during the coding process.)</p><p>Profiling is the process of presenting one's skills and qualifications online. Inherent in profiling is the continuous acquisition of skills that are valued in one's target market. There are two major online profiling mechanisms. One is by registering and creating an account profile in an online labor marketplace (OLM) such as Upwork or onlinejobs.ph (e.g., 3.38, Table <ref type="table" target="#tab_4">3</ref>). Another is by creating and posting on one's webpage or on platforms such as GitHub or LinkedIn one's resumé and portfolio (e.g., 24.53, Table <ref type="table" target="#tab_4">3</ref>).</p><p>Applying is the process of submitting one's interest in a contracting job (e.g., 25.25, Table <ref type="table" target="#tab_4">3</ref>). Though it may be that the simple act of creating a profile in an OLM can result in a job offer, so that all the e-lancer has to do after profiling is wait, this is not the norm. Instead, an e-lancer might have to send out resumés and cover letters tailored to specific jobs. These documents will, of course, have links to one's online profile.</p><p>Negotiating is the process of reaching an agreement in relation to a task, including payment arrangements and other work-related processes. This may or may not involve formal contracts (e.g., 3.17, Table <ref type="table" target="#tab_4">3</ref>). Underbidding in OLMs has been confirmed in quantitative studies such as <ref type="bibr">(Graham, Hjorth, and Lehdonvirta 2017)</ref>. Noobs and the other stages of software gigging, as well as underbidding and other strategies to carry out the aforementioned tasks, are described in a separate sections.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Software Gig-Executing</head><p>Gig-executing is the process of performing and completing a task or project, and has three sub-activities or tasks: tasking, coordinating, and self-managing. (The definitions below of these categories are excerpted from the relevant memos generated during the coding process.)</p><p>Tasking is the process of identifying, prioritizing, updating, executing, and distributing the task or project assignment (e.g., 10.17, Table <ref type="table" target="#tab_6">4</ref>), and receiving (or not receiving) payment for the task or project assignment (e.g., 9.10, Table <ref type="table" target="#tab_6">4</ref>).</p><p>Coordinating refers to the supporting process of communicating various aspects of the work to the client and team members, if any. It can take different forms that could be as simple as a chat (e.g., 18.14, Table <ref type="table" target="#tab_6">14</ref>), or more complex online work management (e.g., 18.15, Table <ref type="table" target="#tab_6">4</ref>).</p><p>Self-managing refers to the process of integrating personal and work boundaries. Self-managing is a result of blurring work boundaries which pertain to coping with task assignments given the setup of work such as working at home (e.g., 28.14, Table <ref type="table" target="#tab_6">4</ref>) or at the beach (e.g., 11.78, Table <ref type="table" target="#tab_6">4</ref>).</p><p>Table <ref type="table" target="#tab_6">4</ref> shows sample incidents in the data, how the incidents were coded, the concepts that the codes indicate, and the categories (gig-executing sub-activities) that the concepts are aspects or components of. As discussed earlier, categories are constructed from concepts, concepts from codes, and codes from the incidents in the data. As in Online freelancers commonly working at home experience the blurring of boundaries of personal and work-related concerns. This blurring of boundaries among freelancers is confirmed in studies such as <ref type="bibr" target="#b5">(Cousins and Robey 2015)</ref> in its exploration of the role of mobile technologies in managing the boundaries between work and non-work domains in the context of the mobile workforce. The extant literature has two major approaches to examining the blurring of personal and work boundaries: segmentation and integration. Segmentation refers to the "preferences to protect the home domain from work intrusions and to protect the work domain from home intrusions" (Methot and LePine 2016) while integration aims to remove the boundaries between the work and personal domains <ref type="bibr" target="#b18">(Kreiner, Hollensbe, and Sheep 2009)</ref>.</p><p>The three major concepts of tasking, coordinating, and self-managing are interrelated processes: tasks are coordinated, and coordination happens due to tasking around the work environment, which in turn requires self-management. Unlike gig-hunting, which is a linear process, gig-executing is non-linear.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Software Gigging: The Stages</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Noob</head><p>Noob (short for newbie) refers to beginners, explorers, or those starting to venture into online freelancing, searching for alternative employment or work opportunities online. They tend to consider an online job as part-time or sideline work at first while seeking local employment. As influenced or heard from experienced online freelancers (rockstars), they are the type of online workers who want to try to have extra income or start to have one. This means a noob can also be an experienced company employee in the stage of exploring.</p><p>"As a newbie I am exploring this type of work because I heard that many have gotten rich from onlinejobs." (1.29) "There is a series of training. I was also required to take English proficiency. After a series of interviews, they hired me, subject to screening, but I was not part of a team. Being new to onlinejobs, I am on probation status, but I have been receiving a minimal salary." (5.10)</p><p>The category of noob covers concepts such as "new" and "exploring" (1.29), "beginner" (4.10), and "starting" (17.3). Also, the major strategies for gig-hunting and gig-executing are different from noobs and rockstars. There are also exit indicators for noobs, which means that they will leave online work as a noob when "there are available jobs locally" (18.39), or "they can't handle the time adjustment" (42.24), which is a common requirement of clients. There are cases of online freelancers coming from the industry where they have done considerable software development work. Since they are new to online work, they are considered noobs; however, they might move more quickly to the rockstar stage compared to those for whom software e-lancing is their first job.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Rockstar</head><p>Rockstar refers to an experienced online freelance software developer. They will normally have higher rates and salaries. They would also have gained a positive reputation in online labor marketplaces (reviews in Upwork, private reviews in onlinejobs.ph). They are software developers looking for continuous employment online or big projects rather than temporary income source in most of the cases for newbies. They are those who have decided to work full time online from part-time online work, or have acquired good clients and are able to assess and stand for the value of their work.</p><p>"When I first started, I think I lowered my rate. Now I set my rate, then it's up to the client to get me or not. Especially if I can show them my portfolio." (23.27) "However I believe my colleagues like working with me because, for one thing, they can learn from me. I always give feedback and suggestions to my team; maybe they value those things as well. I have been with teams where they value me more than the team lead/project manager because they can rely on me to provide direction and support when needed." (13.54) "I will be handling their clients, like dealing. They want me to manage their company including workers. They are a small entrepreneur. I am usually working with executives. I hold proper meetings even at a distance." (25.73) "There are also partnerships with a client. Like if they have an idea project for a client, 65% of the payment will be their part, and the rest is mine. If it's not worth the payment, I will not accept it." (36.15)</p><p>Rockstars are team leads and are known because of the networks of friends or online developers. In addition, rockstars are also considered an "expert" (9.36), "provide great inputs/direction" (13.55) and give "consultancy" (17.55) to teams or clients. The first indicator that an online freelancer has moved from being a newbie towards a rockstar is the non-negotiable rate. Once they had gained enough experience, they realized that they can still find a client willing to pay the salary rate they think they deserved. In the words of the developer itself, "Usually, we underrated ourselves. I don't know, might not be confident, and it's common to Filipinos. If you lower your rate, the impression of the employer is that you might not be good. I need to balance also, not too cheap or too expensive" (23.77).</p><p>Although there are issues with the use of the term rockstar for developers and who they are, there is still a continuous use of the term as people still find it "fashionable" <ref type="bibr" target="#b28">(Tyler 2015)</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Super-Rockstar</head><p>Super-rockstar refers to a rockstar maximizing the opportunities available by extending work to others and getting a profit from it. It also includes freelancers who have learned the business of their clients and develop their own similar business.</p><p>When the online freelancer has a good reputation, it is easier to win a bid or apply for a project. In many cases, they also received job offers. As a result, the practice ofhaving multiple clients is considered by an online freelancer. Super-rockstars can be considered as intermediaries in online work. Since they already established online freelancers, they take projects and distribute it to newbies or other online freelancers. The distribution of tasks allows them to finish it even if there are other tasks at hand. In exchange, they usually get a percentage of the income when they pass it to others.</p><p>As mentioned earlier (Rockstar section), hiring others indicates that a rockstar is moving into the superrockstar stage. It is a defining strategy that differentiates a super-rockstar from rockstar. However, hiring a person to help a rock-star is not enough. The defining concept of hiring includes having an intention to get a percentage of the expected income. In others words, profit. It is also apparent that the prevalent strategies in gig-hunting and gig-executing define what it is to be a super-rockstar.</p><p>The intermediary role of super-rockstars has also been found in a recent study <ref type="bibr">(Graham et al. 2017)</ref> which notes that, "Because of the heavy role that reputational feedback scores play in online gig work platforms, work can flow to intermediaries/middlemen who already have a high score. These intermediaries then reoutsource that work, keeping a part of the client's fee for themselves."</p><p>Since being a super-rockstar appears to be the last stage of the online freelancer's professional life, the question is "What's next?" The answer is a registered local business which defines the entrepreneurial aspects of a super-rockstar. This is evident from the changes of the setup of online freelancer software developers when a follow-up interview was done where some of them are already owners of a registered business entity catering to both local and international clients.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Software Gigging Strategies</head><p>The software gigging cycle and stages are further differentiated by the strategies that e-lancers use for each gigging activity and gigging stage. For instance, noobs use potentializing for gig-hunting, whereas rockstars use transprofiling. It will be noted that whereas all software e-lancers can be viewed as going through the gigging cycle of gig-hunting and gig-executing, not all software e-lancers use the strategies we have discovered, and will be describing, in this section.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Gig-Hunting Strategies</head><p>Noobs, rockstars, and super-rockstars have different gig-hunting strategies. Table <ref type="table" target="#tab_9">5</ref> shows sample incidents in the data, the strategy (a category) that the incident indicates, the gig-hunting activity (another category) in which the strategy is used, and the gigging stage (another category) when it is used. The definitions of these strategies are excerpted from the relevant memos generated during the coding process. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Sample Incident in the Data</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Category (Gig-Hunting</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Gig-Executing Strategies</head><p>Noobs, rockstars, and super-rockstars also have different strategies for gig-executing. Table <ref type="table" target="#tab_10">6</ref> shows sample incidents in the data, the strategy (a category) that the incident indicates, the gig-executing activity (another category) in which the strategy is used, and the gigging stage (another category) when it is used. As in Table <ref type="table" target="#tab_9">5</ref>, the definitions of these strategies are excerpted from the relevant memos generated during the coding process. As mentioned earlier, reputationing, which appears in Table <ref type="table" target="#tab_10">6</ref> as a strategy for gig-hunting, was an early candidate for the core category. Indeed, one can easily see from an analysis of Tables <ref type="table" target="#tab_9">5</ref> and<ref type="table" target="#tab_10">6</ref> that the positive results of reputationing in gig-executing feeds back into gig-hunting (see showcasing, Table <ref type="table" target="#tab_9">5</ref>); in other words, reputationing can actually be viewed as taking place in both the gig-hunting and gigexecuting activities of software gigging. However, as mentioned earlier, some e-lancers (e.g., participant 13) are apparently not concerned about their reputation, though they are concerned about doing their best, bringing to mind the oft-quoted John Wooden maxim, "Be more concerned about your character than your reputation" <ref type="bibr">(Wooden and Jamison 1997 p. 28)</ref>. Moreover, reputation is not the only factor that affects the selection process when gig-hunting; one's rate or price matters as well.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Sample Incident in the</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Circumtechventing Strategies</head><p>Circumtechventing, from "tech" and "circumvent," is the use of technology to find ways around perceived obstacles to one's main concern. It will be recalled that in the substantive theory of software gigging, the main concern of software e-lancers is earning flexibly. In light of this main concern, it would therefore be understandable for software e-lancers to engage in circumtechventing when they perceive the main concern to be too difficult to resolve. In other words, circumventing can be viewed as a way to deal with policies or structures (e.g., platforms) that diminish either earnings or flexibility or both. However, as with all the other strategies previously described in this section, circumventing strategies are not carried out by everyone.</p><p>Table <ref type="table" target="#tab_12">7</ref> shows sample incidents in the data, the circumtechventing strategy (a category) that the incident indicates, the gigging activity (another category) in which the circumtechvention is used, the gigging stage (another category) when it is used, and the aspect of earning flexibly (the main concern), the perceived unnecessary limiting of which might have triggered the circumtechvention. As in Tables <ref type="table" target="#tab_9">5</ref> and<ref type="table" target="#tab_10">6</ref>, the definitions of these strategies are excerpted from the relevant memos generated during the coding process.  Software e-lancers at the rockstar and super-rockstar levels have no need to engage in impostoring, though their strategy of substituting might encourage noobs to engage in impostoring. Rockstars and super-rockstars also demand, and are often given, greater control (flexibility) over their work. In cases where they are not given the degree of control or flexibility that they believe they deserve, some may use technology to circumvent imposed technological constraints, such as platforms (e.g., 14.62, Table <ref type="table" target="#tab_12">7</ref>) or trackers (e.g., 22.25, Table <ref type="table" target="#tab_12">7</ref>).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Sample</head><p>Circumtechventing is related to the theory of workarounds <ref type="bibr" target="#b0">(Alter 2014</ref>). The said theory can be used to analyze the genesis and evolution of each circumtechventing strategy. What the substantive theory of software gigging contributes are: (1) specific strategies actually used by software e-lancers; and (2) the specific gigging activity-gig-hunting or gig-executing-or constraints on these activities with respect to the main concern of earning flexibly that might prompt a circumtechvention, depending on the level (noob, rockstar/super-rockstar) of the e-lancer.</p><p>That circumtechventing has ethical issues should be clear to any reader. For example, when a superrockstar gets a "substitute," i.e., gets a willing third party to do a particular task, must he or she inform his or her client of this arrangement? Is it not enough for the super-rockstar to deliver on a task? Consequentialism suggests that as long as the client's software requirements are met, it does not matter whether the super-rockstar did the coding himself or herself. As another example, does it matter whether a rockstar reuses code he or she wrote for a previous client, as long as this is within the terms of agreement with his or her clients? (See, for example, the discussion of this in <ref type="bibr">Northcutt and Madden 2004 pp. 396-397.)</ref> Space does not permit us to discuss these ethical issues at length. Suffice it to say that the software gigging framework provides conceptual tools for conducting ethical analyses of circumtechventing behaviors.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Evaluating Software Gigging</head><p>In Doing Grounded Theory, Glaser lists "four criteria for judging and doing grounded theory" (1998, pp. 18-19): fit (does the concept adequately express the pattern in the data which it purports to conceptualize?), workability (do the concepts and the way they are related into hypotheses sufficiently account for how the main concern of participants in the substantive area is continually resolved?), relevance or grab (does the research deal with the main concerns of the participants involved), and modifiability.</p><p>The first criterion, validity, nicknamed "fit," is primarily about generating codes from the data, thereby fitting the codes to the data, rather than using categories from the literature and then 'forcing the data' into those categories. Glaser, however, does not forbid getting categories from the literature, as long as the data are not forced to fit such categories. He says, "Since most of the categories of grounded theory are generated directly from the data, the criterion of fit is automatically met." <ref type="bibr">(1978, p. 4</ref>) Because all and not just some of the categories in the theory of software gigging were generated from the data, with no categories coming from the literature, the theory has fit.</p><p>The second criterion, workability, nicknamed "work," is mainly about ensuring that the theory explains what is going on in the data, i.e., it explains how the actors in the substantive area continually resolve their concern. Glaser notes in Theoretical Sensitivity <ref type="bibr">(Glaser 1978, p. 5</ref>) that the notion of a basic social process was developed to aid in this effort. So, software gigging explains how software e-lancers earn flexibly using strategies for gig-hunting and gig-executing, depending on what gigging stage they are in.</p><p>The third criterion, relevance, nicknamed "grab," is about generating a theory that makes sense to the actors in the substantive area, because the theory is, after all, about their concerns because the idea is that if it makes sense to them, then they might use it. This "align(s) with the pragmatist position on theories and knowledge" <ref type="bibr">(Bryant 2017, p. 79)</ref>. After the core category in this study had emerged and its salient features were shared with some of the participants, they quickly recognized our constructs.</p><p>The fourth criterion, modifiability, is a result of GTM (at least one of its three main strands). Therefore, Glaser says, "the theory is not being verified as in verification studies, and thus never right or wrong… it just gets modified by new data to compare it to" <ref type="bibr">(Glaser 1998, pp. 18-19)</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Conclusion</head><p>This paper has put forth a substantive grounded theory of online software development freelancing that views earning flexibly as the main concern of software e-lancers. To resolve this main concern, they engage in software gigging, which is a cyclical process of gig-hunting and gig-executing, each of which has several sub-activities. Software gigging can also become increasingly lucrative and flexible as one advances from noob to rockstar to super-rockstar. Software e-lancers engage in various strategies such as reputationing or circumtechventing, as they do software gigging, depending on the specific gigging activity and stage that they are in.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Implications for Practice</head><p>The substantive grounded theory of software gigging provides a framework for analyzing not only what software e-lancers do (i.e., the gig-hunting and gig-executing activities and strategies), but also why they do what they do. The answer to the latter has to do with their main concern, which, as stated previously, is earning flexibly. So, for example, when a platform or OLM charges fees that workers perceive to be too much, OLMs should expect both clients and e-lancers to do platform bypassing. When clients put too much premium on reputation to the point that no one with no experience ever gets hired, they should not be surprised to hear of impostoring. And when rockstars are treated like noobs so that their every move online is tracked, clients and OLMs should expect all sorts of innovative tracker bypassing mechanisms.</p><p>The substantive grounded theory of software gigging also provides a roadmap for those just starting out.</p><p>It shows them what activities are important and what strategies might (or might not) be of help.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Implications for Formal Theory</head><p>We surmise that the basic software gigging cycle and stages can also be found in the experiences of software e-lancers in other countries; it is after all logical for project search to precede project execution, and for every expert to begin as a novice. It is the gigging strategies, including the strategies for circumtechvention, that will probably differ from one group or society to another, though there could be strategies or meta-strategies that would be common to many if not all groups. The implication of this is that the basic framework of software gigging (i.e., its cycle and stages) could therefore be used to quickly look for and explore gigging strategies in other groups or societies.</p><p>Another implication has to do with other types of gigs. In the previous year, some in our group began exploring, again using GTM, the practices of ride-sharing (e.g., Grab, Uber) drivers/partners. Reflecting now on our work on software e-lancing and on the codes that we have so far generated from data collected from Uber and Grab drivers, it seems that the substantive theory of software gigging might apply, with some modifications, to ride-sharing (driver's side) as well. This suggests that it might be possible for software gigging to be raised to a higher level of abstraction, producing a theory of gigging, which could encompass not only online software development freelancing but all manner of Internet-enabled freelance work, such as ride-sharing, medical transcription, and online tutoring.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head>Table 1 . Interview Phases Figure 1. Three Stages of GTM</head><label>1</label><figDesc></figDesc><table><row><cell>Interview Purpose</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1"><head>-Interview Data Source(s) Purpose</head><label></label><figDesc></figDesc><table><row><cell>Information about</cell><cell>OLMs</cell><cell>Search for potential</cell></row><row><cell>participants</cell><cell>LinkedIn</cell><cell>participants</cell></row><row><cell></cell><cell>Facebook Profile</cell><cell></cell></row><row><cell></cell><cell>Referrals</cell><cell></cell></row><row><cell>Social media posts</cell><cell>Facebook, Instagram</cell><cell>Supplement face-to-face</cell></row><row><cell></cell><cell></cell><cell>interview</cell></row><row><cell>Work samples</cell><cell>GitHub and Bitbucket</cell><cell>Support or confirm</cell></row><row><cell></cell><cell>Participant websites</cell><cell>experiences shared during</cell></row><row><cell></cell><cell>Client websites</cell><cell>the face-to-face interviews</cell></row><row><cell>Work setup</cell><cell cols="2">Participant observation Observe home-based work</cell></row><row><cell></cell><cell></cell><cell>environment</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2"><head>Table 2 . Additional Sources of Data Data</head><label>2</label><figDesc>collection in GTM is guided by the emerging theory, i.e., the decisions of which actor in the substantive area to interview next and what questions to ask him or her are influenced largely by which concepts and categories in the emerging theory need further explication and refinement. This sampling process is called theoretical sampling.</figDesc><table /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_3"><head>"</head><label></label><figDesc>Flexibility-you can work on your own, with no one instructing you, breathing down you neck. Another is location-like I worked in Dakak (beach resort) for a week." (1.31) "Flexibility in terms of attire, time when to start work, no "kulba" (anxiety) because I cannot see my boss. I can work anywhere. I cannot miss family events." (4.68) "It's more of the salary. It is also convenient, especially if you are starting a family." (5.46) "Income. Average income is 20-30K for a beginner, 40-80K for an expert. In local companies, this is not possible." (9.41) "I chose this job because I do not want to leave &lt;place&gt;. And the pay is very good." (15.2) "There are (software development) jobs available locally, like in banks. What is good (about online jobs) is that as long as I'm online, even when, say, I'm with friends, I can work." (18.39) "It's very flexible. I can go to Boracay (beach resort) and work there. Time is also flexible. Salary is very good." (11.78)    </figDesc><table /><note><p><p>"The compensation, because I cannot earn this amount locally.</p>" (22.54)    </p></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_4"><head>Table 3</head><label>3</label><figDesc>shows sample incidents in the data, how the incidents were coded, the concepts that the codes indicate, and the categories (gig-hunting sub-activities) that the concepts are aspects or components of. As discussed earlier, categories are constructed from concepts, concepts from codes, and codes from the incidents in the data. Reading the table from left to right, one therefore sees the increase in conceptual abstraction brought about by GTM's constant comparison.</figDesc><table><row><cell>Sample Incident in the Data</cell><cell>Code(s)</cell><cell>Concept(s)</cell><cell>Category</cell></row><row><cell></cell><cell></cell><cell></cell><cell>(Sub-</cell></row><row><cell></cell><cell></cell><cell></cell><cell>Activity)</cell></row><row><cell>"I created an account and profile at oDesk. I constantly</cell><cell>OLM</cell><cell>Marketplace</cell><cell>Profiling</cell></row><row><cell>add experiences, skills, and other relevant information</cell><cell>Account</cell><cell>Profile</cell><cell></cell></row><row><cell>needed by the platform." (3.38)</cell><cell>and Profile</cell><cell></cell><cell></cell></row><row><cell>"I have my own resumé. I also have a website containing</cell><cell>Resumé;</cell><cell>Independent</cell><cell>Profiling</cell></row><row><cell>my portfolio." (24.53)</cell><cell>Portfolio</cell><cell>Portfolio</cell><cell></cell></row><row><cell>"I applied. There are many job postings that I applied</cell><cell cols="2">Application Submitting</cell><cell>Applying</cell></row><row><cell>for." (25.25)</cell><cell></cell><cell>(Application)</cell><cell></cell></row><row><cell>"I lower my price. For me even if the pay is low, it's okay,</cell><cell>Pricing</cell><cell>Bidding</cell><cell>Applying</cell></row><row><cell>as long as there are reviews." (3.39)</cell><cell></cell><cell></cell><cell></cell></row><row><cell>"No contract. It was just like an informal verbal</cell><cell>Work</cell><cell>Work</cell><cell>Negotiating</cell></row><row><cell>agreement on how to work, on the salary, and on the</cell><cell>Agreement;</cell><cell>Arrangement;</cell><cell></cell></row><row><cell>schedule."(3.17)</cell><cell>Salary</cell><cell>Payment</cell><cell></cell></row><row><cell></cell><cell>Agreement;</cell><cell>Arrangement;</cell><cell></cell></row><row><cell></cell><cell>Schedule</cell><cell>Process</cell><cell></cell></row><row><cell></cell><cell>Agreement</cell><cell>Arrangement</cell><cell></cell></row><row><cell>"I asked for payment upfront to be sure that I will get</cell><cell>Payment</cell><cell>Payment</cell><cell>Negotiating</cell></row><row><cell>paid." (36.43)</cell><cell>Agreement</cell><cell>Arrangement</cell><cell></cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_5"><head>Table 3 . Incidents, Codes, Concepts, and Categories of Software Gig-Hunting Gig</head><label>3</label><figDesc>-hunting is a competitive process, especially for beginners or what we call noobs in the substantive theory. For example: "Actually it's hard. Especially if you are a beginner... I need to look at, like, 20 job postings per I lower my price. For me even if the pay is low, it's okay, as long as there are reviews." (3.39)    </figDesc><table /><note><p>day. Like, I have limited skills, and things which I do not know. So whoever will respond, I will entertain. At the start, I got 10 to 15 rejections of my application, or no response at all" (9.34) Due to fierce competition, digital workers seeking to earn opportunities through online labor platforms engage in practices such as underbidding: "</p></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_6"><head>Table 4 . Incidents, Codes, Concepts, and Categories of Software Gig-Executing</head><label>4</label><figDesc>Table 3, reading the table from left to right, one therefore sees the increase in conceptual abstraction brought about by GTM's constant comparison.</figDesc><table><row><cell>Sample Incident in the Data</cell><cell>Code(s)</cell><cell>Concept(s)</cell><cell>Category</cell></row><row><cell></cell><cell></cell><cell></cell><cell>(Sub-</cell></row><row><cell></cell><cell></cell><cell></cell><cell>Activity)</cell></row><row><cell>"It's like division of labor. When working with a</cell><cell>Identifying</cell><cell>Task Execution</cell><cell>Tasking</cell></row><row><cell>team, I am not assigned to UI, CSS, and styling</cell><cell>Tasks;</cell><cell></cell><cell></cell></row><row><cell>because I don't accept those kinds of jobs. I'm</cell><cell>Distributing</cell><cell></cell><cell></cell></row><row><cell>more on logic, algorithm, that side." (10.17)</cell><cell>Tasks</cell><cell></cell><cell></cell></row><row><cell>"When I finished the work, I could no longer</cell><cell>Non-Payment of</cell><cell>Task Payment</cell><cell>Tasking</cell></row><row><cell>contact (my client)." (9.10)</cell><cell>Work</cell><cell></cell><cell></cell></row><row><cell>"We use Skype to coordinate." (18.14)</cell><cell>Communication</cell><cell cols="2">Communication Coordinating</cell></row><row><cell></cell><cell>Tools</cell><cell></cell><cell></cell></row><row><cell>"We used a lot of software tools before… also</cell><cell>Project</cell><cell>Project</cell><cell>Coordinating</cell></row><row><cell>Trello, a tool that will allow us to, like check if I</cell><cell>Management</cell><cell>Management</cell><cell></cell></row><row><cell>can accomplish it, for the team and the client to</cell><cell>Tools</cell><cell></cell><cell></cell></row><row><cell>know." (18.15)</cell><cell></cell><cell></cell><cell></cell></row><row><cell>"When I was still single, I immediately reported</cell><cell>Work at Home;</cell><cell>Interleaving</cell><cell>Self-</cell></row><row><cell>to work (when I woke up). Now, I cook and do</cell><cell>Flexible</cell><cell>Domestic Task</cell><cell>Managing</cell></row><row><cell>laundry while monitoring for work." (28.14)</cell><cell>Schedule</cell><cell>and Work;</cell><cell></cell></row><row><cell></cell><cell></cell><cell>Flexibility</cell><cell></cell></row><row><cell>"It's very flexible. I can go to Boracay (beach</cell><cell cols="2">Work Anywhere Flexibility</cell><cell>Self-</cell></row><row><cell>resort) and work there." (11.78)</cell><cell></cell><cell></cell><cell>Managing</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_8"><head>Strategy) that the Incident Indicates</head><label></label><figDesc></figDesc><table><row><cell></cell><cell></cell><cell>Category (Gig-</cell><cell>Another Category</cell></row><row><cell></cell><cell></cell><cell>Hunting Activity)</cell><cell>(Gigging Stage)</cell></row><row><cell></cell><cell></cell><cell>that the Strategy</cell><cell>that the Strategy</cell></row><row><cell></cell><cell></cell><cell>Relates To</cell><cell>Relates To</cell></row><row><cell>"I just keep on applying, like</cell><cell>Potentializing -overstating</cell><cell>Profiling</cell><cell>Noob</cell></row><row><cell>what skills I can possibly do,</cell><cell>one's current skills based on</cell><cell></cell><cell></cell></row><row><cell>like 'fake it 'til you make it.'"</cell><cell>an assessment of one's</cell><cell></cell><cell></cell></row><row><cell>(2.36)</cell><cell>potential capability</cell><cell></cell><cell></cell></row><row><cell>"It's really lowering the</cell><cell>Underbidding -Lowering</cell><cell>Applying</cell><cell>Noob</cell></row><row><cell>price. For me even if the</cell><cell>one's asking price for the</cell><cell></cell><cell></cell></row><row><cell>payment is low as long as</cell><cell>purpose of acquiring a job</cell><cell></cell><cell></cell></row><row><cell>there are reviews." (3.39)</cell><cell></cell><cell></cell><cell></cell></row><row><cell>"I also have a website</cell><cell>Transprofiling -Profiling</cell><cell>Profiling</cell><cell>Rockstar</cell></row><row><cell>containing my portfolio."</cell><cell>outside of online labor</cell><cell></cell><cell></cell></row><row><cell>(24.53)</cell><cell>marketplaces</cell><cell></cell><cell></cell></row><row><cell>"Now, I set my rate. It's up</cell><cell>Showcasing -A strategy that</cell><cell>Applying;</cell><cell>Rockstar</cell></row><row><cell>to the company to get me or</cell><cell>allows the e-lancer to</cell><cell>Negotiating</cell><cell></cell></row><row><cell>not. Especially if I can show</cell><cell>present his or her portfolio</cell><cell></cell><cell></cell></row><row><cell>my portfolio." (23.27)</cell><cell>in an impressive manner</cell><cell></cell><cell></cell></row><row><cell>"What is good with Upwork</cell><cell>Agencying -The</cell><cell>Profiling</cell><cell>Super-Rockstar</cell></row><row><cell>is that I can build an agency</cell><cell>presentation of the profile of</cell><cell></cell><cell></cell></row><row><cell>profile. Even before it's a</cell><cell>an online freelancer as a</cell><cell></cell><cell></cell></row><row><cell>team, I can connect and then</cell><cell>group rather than as an</cell><cell></cell><cell></cell></row><row><cell>assign members" (36.27)</cell><cell>individual.</cell><cell></cell><cell></cell></row><row><cell>"My client is an agency in</cell><cell>Agency Targeting -</cell><cell>Applying</cell><cell>Super-Rockstar</cell></row><row><cell>the UK, they also outsource</cell><cell>Identifying and applying to</cell><cell></cell><cell></cell></row><row><cell>here, and they don't know</cell><cell>OLM agencies.</cell><cell></cell><cell></cell></row><row><cell>the development side, so</cell><cell></cell><cell></cell><cell></cell></row><row><cell>they outsource it." (36.14)</cell><cell></cell><cell></cell><cell></cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_9"><head>Table 5 . Gig-Hunting Strategies and their Sample Incidents and Related Categories Software</head><label>5</label><figDesc></figDesc><table /><note><p>Gigging: A Grounded Theory of Online Software Freelancing Thirty Ninth International Conference on Information Systems, San Francisco 2018 12</p></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_10"><head>Table 6 . Gig-Executing Strategies and their Sample Incidents and Related Categories</head><label>6</label><figDesc></figDesc><table><row><cell></cell><cell>Category (Gig-Executing</cell><cell>Category (Gig-</cell><cell>Another Category</cell></row><row><cell>Data</cell><cell>Strategy) that the Incident</cell><cell>Executing Activity)</cell><cell>(Gigging Stage)</cell></row><row><cell></cell><cell>Indicates</cell><cell>that the Strategy</cell><cell>that the Strategy</cell></row><row><cell></cell><cell></cell><cell>Relates To</cell><cell>Relates To</cell></row><row><cell>"I was working almost 16</cell><cell>Reputationing -Working</cell><cell>Tasking;</cell><cell>Noob</cell></row><row><cell>hours a day in my first 2</cell><cell>especially hard so as to</cell><cell>Communicating</cell><cell></cell></row><row><cell>years…Of course, I wanted to</cell><cell>impress the client with</cell><cell></cell><cell></cell></row><row><cell>impress my clients." (14.20)</cell><cell>one's work performance</cell><cell></cell><cell></cell></row><row><cell>"Through Asana -the</cell><cell>Collaborating -Working</cell><cell>Coordinating</cell><cell>Rockstar</cell></row><row><cell>structure is like we are a</cell><cell>with others to accomplish a</cell><cell></cell><cell></cell></row><row><cell>team. I am the full stack</cell><cell>project</cell><cell></cell><cell></cell></row><row><cell>developer; one project</cell><cell></cell><cell></cell><cell></cell></row><row><cell>assigned to me." (1.5)</cell><cell></cell><cell></cell><cell></cell></row><row><cell>"Even before it's a team, I</cell><cell>Delegating -Dividing one's</cell><cell>Tasking</cell><cell>Super-Rockstar</cell></row><row><cell>can connect [proposals] then</cell><cell>tasks and assigning these to</cell><cell></cell><cell></cell></row><row><cell>assign it to members"</cell><cell>others (online or offline)</cell><cell></cell><cell></cell></row><row><cell>(36.27)</cell><cell></cell><cell></cell><cell></cell></row><row><cell>"As the lead in one of the 3</cell><cell>Supervising -Managing</cell><cell>Tasking;</cell><cell>Super-Rockstar</cell></row><row><cell>projects, I make sure that it</cell><cell>tasks or a project from</cell><cell>Coordinating</cell><cell></cell></row><row><cell>is progressing. As manager</cell><cell>recruitment. It includes</cell><cell></cell><cell></cell></row><row><cell>also, I get to supervise other</cell><cell>task distribution and</cell><cell></cell><cell></cell></row><row><cell>workers. I am also given the</cell><cell>monitoring.</cell><cell></cell><cell></cell></row><row><cell>role of determining if a</cell><cell></cell><cell></cell><cell></cell></row><row><cell>person is capable." (32.46)</cell><cell></cell><cell></cell><cell></cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_12"><head>Table 7 . Circumtechventing Strategies and their Sample Incidents and Related Categories Software</head><label>7</label><figDesc></figDesc><table /><note><p>Gigging: A Grounded Theory of Online Software Freelancing Thirty Ninth International Conference on Information Systems, San Francisco 2018 14</p></note></figure>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Acknowledgement</head><p>We thank De La Salle University for its STC Pioneer Professor program and the Commission on Higher Education for its scholarship program. We also thank the anonymous reviewers for their encouraging remarks and constructive feedback.</p></div>
+			</div>
+
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Theory of Workarounds</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Alter</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Communications of the Association for Information Systems</title>
+		<imprint>
+			<biblScope unit="volume">34</biblScope>
+			<biblScope unit="page" from="1041" to="1066" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<monogr>
+		<title level="m" type="main">Towards an understanding of workers&apos; experiences in the global gig economy</title>
+		<author>
+			<persName><forename type="first">U</forename><surname>Bajwa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Knorr</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Di Ruggiero</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Gastaldo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Zendel</surname></persName>
+		</author>
+		<ptr target="https://www.glomhi.org/gigs" />
+		<imprint>
+			<date type="published" when="2018">2018</date>
+			<pubPlace>Toronto</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<monogr>
+		<title level="m" type="main">Grounded Theory and Grounded Theorizing: Pragmatism in Research Practice</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Bryant</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2017">2017</date>
+			<publisher>Oxford</publisher>
+			<pubPlace>New York</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<monogr>
+		<title level="m" type="main">Constructing Grounded Theory: A Practical Guide Through Qualitative Analysis</title>
+		<author>
+			<persName><forename type="first">K</forename><surname>Charmaz</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2014">2014</date>
+			<publisher>Sage</publisher>
+			<pubPlace>Thousand Oaks, CA</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<monogr>
+		<author>
+			<persName><forename type="first">J</forename><surname>Corbin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Strauss</surname></persName>
+		</author>
+		<title level="m">Basics of Qualitative Research: Techniques and Procedures For Developing Grounded Theory</title>
+		<meeting><address><addrLine>Thousand Oaks, CA</addrLine></address></meeting>
+		<imprint>
+			<publisher>Sage</publisher>
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Managing work-lie boundaries with mobile technologies</title>
+		<author>
+			<persName><forename type="first">K</forename><surname>Cousins</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Robey</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Technology &amp; People</title>
+		<imprint>
+			<biblScope unit="volume">28</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="34" to="71" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<author>
+			<persName><forename type="first">S</forename><surname>Cunningham</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Filipinos, Indonesians Top Elance-oDesk Freelancerss in East Asia</title>
+		<imprint>
+			<date type="published" when="2015-03-13">2015. March 13, 2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<monogr>
+		<title level="m" type="main">The Reputation Economy: How to Optimize Your Digital Footprint in a World Where Your Reputation is Your Most Valuable Asset</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Fertik</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Thompson</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2015">2015</date>
+			<publisher>Crown Business</publisher>
+			<pubPlace>New York</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<monogr>
+		<title level="m" type="main">The Reputation Economy: Understanding Knowledge Work in Digital Society</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Gandini</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2016">2016</date>
+			<publisher>Palgrave Macmillan</publisher>
+			<pubPlace>London</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<monogr>
+		<title level="m" type="main">How Pinoy earned P7.5-M from Freelance Work in Just 1 Year</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Garcia</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2014-07-27">2014. July 27, 2014</date>
+			<publisher>ABS-CBN News</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Digital Labour and Development: Impacts of Global Digital Labour Platforms and the Gig Economy on Worker Livelihoods</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Graham</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Hjorth</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Lehdonvirta</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Transfer: European Review of Labour and Research</title>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="135" to="162" />
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<monogr>
+		<title level="m" type="main">The Risks and Rewards of Online Gig Work at the Global Margins</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Graham</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Lehdonvirta</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Wood</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Barnard</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Hjorth</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">P</forename><surname>Simon</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2017">2017</date>
+			<publisher>Oxford Internet Institute</publisher>
+			<pubPlace>Oxford</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<monogr>
+		<title level="m" type="main">Theoretical Sensitivity</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Glaser</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1978">1978</date>
+			<publisher>Sociology Press</publisher>
+			<pubPlace>Mill Valley, CA</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<monogr>
+		<title level="m" type="main">Doing Grounded Theory: Issues and Discussions</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Glaser</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1998">1998</date>
+			<publisher>Sociology Press</publisher>
+			<pubPlace>Mill Valley, CA</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<monogr>
+		<title level="m" type="main">The Grounded Theory Perspective: Conceptualization Contrasted with Description</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Glaser</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2002">2002</date>
+			<publisher>Sociology Press</publisher>
+			<pubPlace>Mill Valley, CA</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Remodeling Grounded Theory</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Glaser</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Qualitative Social Research</title>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<monogr>
+		<title level="m" type="main">The Discovery of Grounded Theory</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Glaser</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Strauss</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1967">1967</date>
+			<publisher>Aldine</publisher>
+			<pubPlace>Chicago</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Online Labor Index: Measuring the Online Gig Economy for Policy and Research</title>
+		<author>
+			<persName><forename type="first">O</forename><surname>Kässi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Lehdonvirta</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Technological Forecasting and Social Change</title>
+		<imprint>
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+	<note>in press</note>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Balancing Borders and Bridges: Negotiating the Work-Home Interface via Boundary Work Tactics</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Kreiner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Hollensbe</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Sheep</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Academy of Management Journal</title>
+		<imprint>
+			<biblScope unit="volume">52</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="704" to="730" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<monogr>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">C</forename><surname>Kuek</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Paradi-Guilford</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Fayomi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Imaizumi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Ipeirotis</surname></persName>
+		</author>
+		<title level="m">The Global Opportunity in Online Outsourcing</title>
+		<meeting><address><addrLine>Washington, D.C.</addrLine></address></meeting>
+		<imprint>
+			<publisher>World Bank Group</publisher>
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Review of the Empirical Business Services Outsourcing Literature: An Update and Future Directions</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Lacity</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Khan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Yan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Outsourcing and Offshoring Business Services</title>
+		<editor>
+			<persName><forename type="first">M</forename><surname>Willcocks</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">C</forename><surname>Lacity</surname></persName>
+		</editor>
+		<editor>
+			<persName><surname>Sauer</surname></persName>
+		</editor>
+		<meeting><address><addrLine>Cham, Switzerland</addrLine></address></meeting>
+		<imprint>
+			<publisher>Palgrave Macmillan</publisher>
+			<date type="published" when="2017">2017</date>
+			<biblScope unit="page" from="499" to="651" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Too Close for Comfort? Investigating the Nature and Functioning of Work and Non-work Role Segmentation Preferences</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">R</forename><surname>Methot</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">A</forename><surname>Lepine</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Business and Psychology</title>
+		<imprint>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="103" to="123" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<monogr>
+		<title level="m" type="main">IT Ethics Handbook: Right and Wrong for IT Professionals</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Northcutt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Madden</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2004">2004</date>
+			<publisher>Syngress</publisher>
+			<pubPlace>Rockland, MA</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">CASE tools as organizational change: investigating incremental and radical changes in systems development</title>
+		<author>
+			<persName><forename type="first">W</forename><surname>Orlikowski</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quarterly</title>
+		<imprint>
+			<biblScope unit="issue">17</biblScope>
+			<biblScope unit="page" from="309" to="340" />
+			<date type="published" when="1993">1993</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Why classic grounded theory?</title>
+		<author>
+			<persName><forename type="first">O</forename><surname>Simmons</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Grounded Theory: The Philosophy</title>
+		<editor>
+			<persName><forename type="first">Barney</forename><surname>Glaser</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">V</forename><surname>Martin</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">A</forename><surname>Gynnild</surname></persName>
+		</editor>
+		<meeting><address><addrLine>Boca Raton, FL</addrLine></address></meeting>
+		<imprint>
+			<publisher>Brown Walker</publisher>
+			<date type="published" when="2011">2011</date>
+			<biblScope unit="page" from="15" to="30" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<monogr>
+		<title level="m" type="main">Multistrategy Detection and Discovery of Novice Programmer Errors</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Sison</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1998">1998</date>
+			<pubPlace>Tokyo, Japan</pubPlace>
+		</imprint>
+		<respStmt>
+			<orgName>Department of Computer Science, Tokyo Institute of Technology</orgName>
+		</respStmt>
+	</monogr>
+	<note>Doctoral Dissertation</note>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<monogr>
+		<title level="m" type="main">Simulchieving Forward: A Grounded Theory of Presidential Leadership of Highly Effective Higher Education Institutions</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Sison</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2017">2017</date>
+			<pubPlace>Manila, Philippines</pubPlace>
+		</imprint>
+		<respStmt>
+			<orgName>Department of Educational Leadership and Management, College of Education, De La Salle University</orgName>
+		</respStmt>
+	</monogr>
+	<note>Doctoral Dissertation</note>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<monogr>
+		<author>
+			<persName><forename type="first">A</forename><surname>Strauss</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Corbin</surname></persName>
+		</author>
+		<title level="m">Basics of Qualitative Research: Grounded Theory Procedures and Techniques</title>
+		<meeting><address><addrLine>London</addrLine></address></meeting>
+		<imprint>
+			<publisher>Sage</publisher>
+			<date type="published" when="1990">1990</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<monogr>
+		<title level="m" type="main">Building Great Software Engineering Teams</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Tyler</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2015">2015</date>
+			<publisher>APress</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">Putting the &apos;Theory&apos; Back into Grounded Theory: Guidelines for Grounded Theory Studies in Information Systems</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Urquhart</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Lehmann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Myers</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Journal</title>
+		<imprint>
+			<biblScope unit="issue">20</biblScope>
+			<biblScope unit="page" from="357" to="381" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">Using Grounded Theory Method in Information Systems: The Researcher as Blank Slate and Other Myths</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Urquhart</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Fernandez</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Information Technology</title>
+		<imprint>
+			<biblScope unit="issue">28</biblScope>
+			<biblScope unit="page" from="224" to="236" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<monogr>
+		<title level="m" type="main">Wooden: A Lifetime of Observations and Reflections On and Off the Court</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Wooden</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Jamison</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1997">1997</date>
+			<publisher>Contemporary Books</publisher>
+			<pubPlace>Chicago</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

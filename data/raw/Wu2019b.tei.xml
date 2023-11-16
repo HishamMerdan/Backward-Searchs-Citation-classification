@@ -1,0 +1,803 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Online Labor Market Signaling with App-based Monitoring Completed Research Paper</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Zhenhua</forename><surname>Wu</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="institution">Nanjing University Nanjing</orgName>
+								<address>
+									<settlement>Jiangsu</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author role="corresp">
+							<persName><forename type="first">Chen</forename><surname>Liang</surname></persName>
+							<email>chenliang@uconn.edu</email>
+							<affiliation key="aff1">
+								<orgName type="institution">University of Connecticut Storrs</orgName>
+								<address>
+									<settlement>Connecticut</settlement>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Online Labor Market Signaling with App-based Monitoring Completed Research Paper</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="MD5">7F6804819566A83536CF63F42CF0E26B</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.7.3" ident="GROBID" when="2023-06-16T09:23+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>App-based monitoring</term>
+					<term>signaling</term>
+					<term>moral hazard</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>App-based monitoring is widely used in online labor markets to reduce information asymmetry between firms and contractors. Such monitoring apps provide employers with detailed information on contractors' work progress and effort level. A unique characteristic of app-based monitoring systems is that, due to online privacy regulations, contractors are informed of their presence and e:xplicitly agree to their installation as a condition for participating in on line labor markets. 'l'his study extends the existing theory on monitoring by analyzing how this awareness of monitoring could affect contractors' strategic behavior. We show that, by providing a new way of signaling to contractors, app-based monitoring can dramatically change contractors' wage quotes and effort level in equilibrium.</head><p>In some cases, the high ability contractor proposes zero wage and the first best effort level, i.e., the effort from the complete information case, to signal his ability. Under certain conditions, market outcome could reach the.first best.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Introduction</head><p>Online labor markets have been increasingly popular during the last decade. According to the annual report from Upwork and Freelancers Union, over 56 million Americans were freelancing in 2018 and the average weekly freelancing hours in the United States reaches more than one billion hours per week. Meanwhile, Freelancer.com reports that it has AU $s2.75 million revenue in 2017, with an annual increase of 37%. The ever-growing prosperity of online labor markets is mainly because they could provide firms the accessibility to a larger pool of candidates and the "global labor arbitrage" while offering contractors high flexibility in work hours and location <ref type="bibr" target="#b0">(Agrawal et al. (2015)</ref>). Given the high openness of platforms and the expanded pool of candidates, the quality of contractors is also becoming more and more diversified, which tends to raise firm's concern about the performance of contractors hired there. For instance, as suggested by industry practice, firms are even afraid of hiring contractors online and think it is painful to hire online contractors because those contractors' behaviors can be unpredictable. In other words, the classical agency problem caused by information asymmetry is still the critical bottlenecks in such an on-demand economy <ref type="bibr" target="#b2">(Autor (2001)</ref>  <ref type="bibr" target="#b2">and Autor (2008)</ref>). To alleviate these market imperfections, we have seen some interesting responses from market players.</p><p>To alleviate these market imperfections, we have seen some interesting responses from market players. First, it is notable that the platforms, such as Freelancer.com and Upwork.com, increasingly provide appbased monitoring to employers to adopt the monitoring technology to observe contractors' effort based on keyboard hits and screenshots <ref type="bibr" target="#b18">(Lin et al. ( 2016 )</ref>and <ref type="bibr" target="#b17">Liang et al. (2017)</ref> ). The growing popularity of a pp-based monitoring is in line with the traditional IS theory that monitoring serves as a vital IT coordination application deployed by the firms to reduce information asymmetry in outsourcing contracts <ref type="bibr" target="#b10">(Ho et al. (2003)</ref>, <ref type="bibr" target="#b8">Hann et al. (2013)</ref> and <ref type="bibr" target="#b19">Liu and Aron (2014)</ref>). App-based monitoring is similar to traditional in-house monitoring in the sense that it is mainly used to provide employers with detailed information on contractors' work progress and effort level. Nevertheless, it has a unique characteristic, due to online privacy regulations, contractors are informed of their presence and explicitly agree to their installation as a condition for participating in online labor markets. With the new awareness of monitoring, contractors can potentially act strategically when their effort information is shared to employers.</p><p>Meanwhile, there is also a counterintuitive trend among contractors. Specifically, with the popularization of app-based monitoring, more and more high ability contractors are willing to work for free instead of requesting a high wage. For instance, according to the survey conducted by the Association for Independent Professionals and the Freelancer Club, a lot of online contractors are willing to work for free in the creative industries. This phenomenon is also in line with the "Free/Open Source Software Puzzle" in which highability contractors contribute to open source software projects without directly getting any commissions. As suggested by the existing empirical literature <ref type="bibr" target="#b26">(Roberts et al. (2006)</ref> and <ref type="bibr" target="#b8">Hann et al. (2013)</ref>), in online labor markets, working at a lower wage or even for free might be a salient self-signaling behavior, which could subsequently increase contractors' future income. Similar to this logic of signaling through wage, given that monitoring can enable firms to notice the difference in various contractors' effort levels, can high-ability contractors signal their ability by exerting a higher effort instead of signaling through a lower wage in online labor markets? In other words, contractors' awareness of the presence of a pp-based monitoring can provide them a new signaling opportunity, i.e., the effort level.</p><p>All these facts bring the following research questions. With the emergence and popularity of app-based monitoring, what are the outcomes, e.g., wage, labor input, and firm performance, of the online labor market? For one thing, how would contractors signal their ability in this new market? Additionally, what is the rationale for high ability contractors to work for free in the online labor market? For another, how would app-based online monitoring influenc•e the market outcome? Can it improve market efficiency? Additionally, wlh.at is the rationale for sophisticated contractors to work for free in the online labor market, such as programmers in the Open Source Society? Answering these research questions can not only deepen our understanding of the prosperity of the Open Source Society, but also have the potential to demonstrate that a pp-based monitoring is interconnected with various aspects of the online labor market.</p><p>To address these questions, we advance the traditional theory on monitoring, which tends to consider monitoring as a specific example of behavior-based IT coordination application in the bounded bilateral client-vendor context, by proposing a new theory with the emphasis on signaling through effort in the labor market platform. We develop our new model by starting with two simple assumptions: 1) The monitoring can perfectly reveal online contractor's effort level; 2) Online contractors want to signal their ability to market and build a reputation as the contractors with high ability. In our two-period model, online contractors are privately informed about their ability in the first period. The contractors propose wage to get themselves hired by the firm on the platform. The proposed wage serves as a signal about a contractor's ability. The potential reputation return from been recognized as high ability contractors gives low ability contractors incentives to mimic. However, since app-based monitoring can perfectly reveal a contractor's effort, this allows the firm to contract or compensate directly based on the observed effort and ability, then the high ability contractors would have incentives to choose a wage in whatever way will be most likely to separate himself from the low ability ones. Moreover, given that the high ability contractor has a lower effort cost, if the high ability contractor cannot separate through wage, he would have an additional incentive to exert more effort with a relatively smaller cost to separate in the second period. This second channel of sig. naling is completely due to app-based monitoring.</p><p>Our first main result indicates that: when monitoring can perfectly reveal a contractor's effort, there exists a large set of equilibria in which contractors in different ability would propose different wage in the first period. In the meantime, the effort level from the complete information case, i.e., the first best effort level, would be implemented in the second period. The crucial conditions to support these equilibria are as Fortieth International Conference on Information Systems, Munich 2019 follows. First, the contractor's reputation return from ibeing recognized as a high ability one should be larger than a high ability contractor's net benefit from pretending to be a low ability contractor. This condition gives the high ability contractor incentives to separate from the low ability one. Second, the reputation return should be bounded above. If the reputation return is too large, the low ability contractor's incentives to mimic the high ability one through wage would be increased; then it would be hard to separate.</p><p>Moreover, we notice that, if the high ability contractor's productivity is large enough, then it would be more costly for the low ability contractors to mimic. It gives the high ability contractors incentives to propose a higher wage than the low ability one. As the first interesting special case of these equilibria, the wage from the complete information case, i.e., the most efficient outcome, can also be supported as an equilibrium. However, when the productivity difference between the high ability contractors and the low ability ones is small, the high ability ones would have incentives to propose a wage lower than the low ability ones. More importantly, to support this equilibrium, the reputation return to the h igh ability contractor needs to be large enough to cover the loss from the reduced wage. In other words, as long as the high ability contractors can afford current loss caused by low wage and get compensated by a future substantial reputation return, they would have incentives to propose wager lower than the low ability ones. As the second special case of this equilibrium, we find conditions to support the equilibrium in which the high ability contractor proposes zero wage. In this special case, we have formally characterized the condition for "strategic complementarities" which has been documented in the existing literature, e.g., <ref type="bibr" target="#b15">Lerner et al. (2006)</ref>. This finding is consistent with the results in <ref type="bibr" target="#b13">Lerner and Tirole (2002)</ref>, <ref type="bibr" target="#b14">Lerner and Tirole (2005)</ref>, <ref type="bibr" target="#b22">Hakim Orman (2008)</ref> and Hann et  al. (2013) which study the wage compensation and programmer's performance in open-source projects.</p><p>Comparing to the environment without perfect monitoring, app-based monitoring extends contractor's action space, it could generate efficient equilibrium, such as the one supporting the first best outcome. However, freedom from the extended action space could also generate multiple equilibria. We find that if the firm has a strong belief that it is very hard for contractors to separate themselves through wage quotes, the firm's expectation of the contractor's productivity is reduced. Thus, the wage could be paid to the contractor would be reduced accordingly. Consequently, the high ability contractors would have less incentives to separate themselves from the low ability ones through the wage but choose to separate only through the effort in the second period.</p><p>Our another set of equilibrium predicts that, in the second period, as long as the high ability contractors can choose some efforts to separate, the low ability contractors would reduce their effort as much as possible to save the cost. However, since the monitoring can perfectly reveal the contractor's effort to the firm, the contractor can only reduce the effort to the first best case; otherwise, the firm would! not pay him. For the high ability contractors, there exists an equilibrium effort which is increasing with the reputation return. Therefore, to separate themselves from the low ability ones, they might have incentives to exert more efforts than the case of complete information in the second period. Consequently, high effort level might generate more outcome for the firm, i.e., better performance. Thus, as long as the cost of using monitoring is small, the firm would also have incentives to facilitate this separation by adopting monitoring. This result demonstrates the following trade-off in the online labor market: To reveal information in the online labor market, the h igh ability contractors have to exert more effort even if the compensation can not cover it.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Literature Review</head><p>Formally, our work is most closely related to the literature on alleviating the agency problem in the IS literature. There is a large number of studies devoted to designing the optimal type of contract. For example, <ref type="bibr" target="#b30">Wu et al. (2012)</ref> explore whether and how multi-stage contract can lead to better project performance and reduce development risks by alleviating agency problems. <ref type="bibr" target="#b3">Dey et al. (2010)</ref> present a theoretical model and investigate how to design software outsourcing contracts conditioning on various project requirement characteristics. <ref type="bibr" target="#b6">Fitoussi and Gurbaxani (2012)</ref> consider the contract design and performance in IT outsourcing projects which have multiple directly measurable obj•ectives and less measurable ones. They model effort as two-dimensional, which is related to cost-reducing and quality-enhancing performance respectively, and investigate how different objectives are associated with incentive strength (e.g., the performance metrics to be monitored or rewarded)</p><p>The empirical aspect of agency problems in IT outsourcing projects is also explored by prior studies, such as <ref type="bibr">Gopal and Sivaramakrishnan (2008)</ref>, <ref type="bibr" target="#b28">Susarla et al. (2009)</ref>, <ref type="bibr" target="#b20">and Mani et al. (2012)</ref>. However, unlike outsourcing projects which tend to be long-tenn and their contract type choices can be very flexible, the available contract types in most online labor markets are very limited. Therefore, instead of focusing on the variation in contract designs, we focus on the signaling channel to emphasize the worker's decisions, i.e., wage or effort, which can deliver more interesting results. <ref type="bibr" target="#b31">Xu et al. (2018)</ref> and <ref type="bibr" target="#b1">Aral et al. (2012)</ref> are the studies most related to our work. <ref type="bibr" target="#b31">Xu et al. (2018)</ref> investigate various potential equilibria in a market when there is an auditor who randomly checks agents' performance and corrects their reputations. To some extent, the auditor in their study shares some similarities with the monitoring in our paper, which tends to help verify agents' (workers') actual effort and performance. Given our focus on the labor market, unlike the study of <ref type="bibr" target="#b31">Xu et al. (2018)</ref>, we emphasize on workers' signaling choices regarding wage and effort and further investigate how the app-based monitoring would improve market efficiency. <ref type="bibr" target="#b21">Mehra and Mookerjee (2012)</ref> characterize the employment contract which combines the participation in open source projects and wage payments as incentive schemes for programmers. Our study differs from this study by focusing on the decision of programmers, i.e., contractors, from a signaling perspective. We further investigate whether the presence of app-enabled monitoring can help the firm to getter better performance and reach a more efficient market outcome. Furthermore, <ref type="bibr" target="#b1">Aral et al. (2012)</ref> examine how information technology, performance pay, and human resource analytics practices can jointly mitigate agency problems. Our study is different from this study by exploring how different signaling channels and information technology can help the firm hire contractors and enhance the project outcome instead of examining how to better incentivize the existing contractors to work harder.</p><p>Topically, our work is related to the growing body of information system and economic research related to the online labor market. Existing research in this field mainly empirically studies the online labor markets, such as <ref type="bibr" target="#b26">Roberts et al. (2006)</ref>, <ref type="bibr" target="#b8">Hann et al. (2013)</ref> and <ref type="bibr" target="#b18">Lin et al. (2016)</ref>. Unlike these prior studies, which attribute their findings to classical signaling mechanism in Spence <ref type="bibr">(1978)</ref>; our research builds a theoretical model to explicitly explore the intrinsic signaling mechanism on this market. Since the app-based monitoring perfectly reveals the contractor's effort level to the firm, the set of the wage for signaling is expanded accordingly, and the signaling process is transferred from one dimension to h-vo-dimension. Then we can find that the high ability contractor could choose an either high or low wage to separate from the low ability one. More importantly, if the wage cannot provide an informative equilibrium, the contractor can choose to signal through effort level which is a productive signal for the firm. Consequently, our study shows that the signaling mechanism on the online labor market with monitoring technology is entirely different from the one characterized in <ref type="bibr" target="#b27">Spence (1978)</ref> which only use effort, i.e., education level, as a non-productive signal. Additionally, our framework generates novel, testable predictions that distinguish it from these existing studies.</p><p>This paper also contributes to the emerging stream ofliterature on the effect of monitoring in labor markets. Given that monitoring is found to effectively deter moral hazard and improve contractors' performance <ref type="bibr" target="#b4">(Duflo et al. (2012)</ref>, <ref type="bibr" target="#b12">Hubbard (2000)</ref>, <ref type="bibr" target="#b23">Pierce et al. (2015)</ref>, and <ref type="bibr" target="#b24">Ranganathan and Benson (2016)</ref>), it is still not clear how the monitoring influences contractors' signaling strategy. Our study provides several new insights. Specifically, the app-based monitoring provides an instrument to allow the firm to contract directly on contractor's effort level. It expands the contractor's action space for signaling his ability. With the intervention of monitoring, a high ability contractor would have an incentive to reduce the wage but increase effort level. Because the firm and the market would reward the contractor through the future reputation return based on whatever he has done. It adds to our understanding of why sometimes contractors are willing to work for free, and broadly why contractors request different wages for the same project.</p><p>Additionally, our paper is also part of a rapidly growing literature of signaling in the online market. Most of the studies in this stand of literature find that sellers on platforms such as eBay andAirbnb have incentives to build a reputation by signaling against fraud. For instance, <ref type="bibr">Waldfogel and Chen (2006)</ref> demonstrate that brands can signal quality in online markets. <ref type="bibr" target="#b16">Lewis (2011)</ref> shows that the voluntary disclosure of private information can help sellers of used cars on eBay to build a reputation and increase the prices. Roberts <ref type="bibr">(2011)</ref> shows that warranties can signal the quality of products. <ref type="bibr" target="#b5">Elfenbein et al. (2012)</ref> show that adding charitable donations to eBay auctions can provide an informative signal on product quality. <ref type="bibr" target="#b9">Haussler et al. (2012)</ref> find that patents may serve as a signal of quality, in particular during the earlier state of financing and when information asymmetry is likely to be high, see <ref type="bibr" target="#b11">Hsu (2004)</ref>. We deviate from these papers in highlighting the intervention of the a pp-based monitoring, which opens a new channel for the wage to serve </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Model</head><p>Let us consider an online labor market, e.g., a platform, in which a firm (employer) interacts with a contractor whose ability is only privately observed. There are two periods, denoted by t = 0, 1. In t = 0, nature first determines a contractor's ability. Then a contractor posts wage on the market. Firm observed the wage and updates belief about the contractor's ability and decides whether to hire the contractor. In t = 1, the contractor exerts an effort to finish the assigned project under the supervision of app-based monitoring. The firm then updates the belief about contractor's ability based on effort. At the end of t=l, the outcome and payoffs are realized. The timing of the game bas been summarized in Figure <ref type="figure">1</ref>.</p><p>To capture the effect of contractor's career or reputation concern, we assume that contractors are heterogeneous in the sense that their ability can be either high (H) or low (L), denoted by i E {H, L} with 2£ &gt; H &gt; L &gt; 0. The ability is only privately revealed to the contractor at the beginning of t = 0, but each contractor and the firm have a common prior belief that a contractor from the market is high ability with p robability Prob{ i = H} = A E (0, 1) and is low ability with probability Prob{ i = L} = 1 -A. A contractor's "ability" can be interpreted more broadly as any characters related to productivity, such as programming skill, experience, expertise, professionalism or coding speed. Under these interpretations a low ability is more likely to he an inexperienced contractor in th e market. The contractor first sends a requirement or proposal of a wage offer, w E [O, w] which will be fulfilled in t = 1.<ref type="foot" target="#foot_0">1</ref> After observing w, the firm updates its prior belief about contractor's ability to the posterior: Prob{i = Hlw} . We denote µ(w) = Prob{i = H lw} .</p><p>I n the meantime, the firm adopts the app-based monitoring by paying a fixed fee m &gt; O. Firm's expected payoff is required to be non-negative.</p><p>In t = 1, the hired contractor with ability i E { H , L} privately chooses effort level e E <ref type="bibr">[O, l ]</ref>, where e -t 0 indicates low effort level and e -t 1 indicates high effort level. One explanation of the effort level is the contractor's work load to finish the assigned project. We assume that the outcome of the firm's project can be publicly observed which is denoted by x E {l , O}, where 2 for any e E [O, l ], Prob{x = l} = &lt;f&gt;(e) &gt; 0 and Prob{x = O} = 1 -&lt;f&gt;(e), with &lt;f&gt;(e) E [O. l ] and &lt;/&gt;'(e) &gt; 0. This induces that the high effort level would generate the high-quality outcome with a high probability; however, the low effort level would induce a high chance to get the low-quality outcome. When x = 1 the project is a "success" or finished with high-quality, and when x = 0 the project is a "failure" or finished with low-quality. This assumption captures the feature that the contractor's effort is the key to determine the outcome of a project. Besides, the effort is costly to contractors, they have to pay a positive cost c,(e) &gt; 0 which is continuously differentiable, with c~( •) &gt; 0, cf(-) &gt; 0, ci{O) = 0 and c~(e) &gt; c~(e) . The last requirement means that it is more costly for low ability contractors to attain the same effort level as high ability contractors. Furthermore, to simplify notation but without loss of generality, we assume that there is no time discount, ci(e) = e 2 /i and ¢(e) = e. In the meantime, there is no commitment problem on the firm side, i.e., the total payment w will be paid entirely by the firm at the end oft = 1.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>App-bas ed monitoring</head><p>In this section, we define an app-based monitoring as a technology that can only perfectly reveal contractor's effort level in t = 1. In the meantime, the outcome of the project is still only determined by the contractor's effort level, i.e., Prob{x = 1} = &lt;f&gt;(e) &gt; O. I n other words, the monitoring will reveal the contractor's effort level to the firm; however, it will not exogenously influence the probability distribution of firm's outcome. The most straightforward interpretation of this assumption is that the current app-based monitoring, such as the evidence documented in <ref type="bibr" target="#b0">Agrawal et al. (2015)</ref> and <ref type="bibr" target="#b18">Lin et al. (2016)</ref>, only provides server log files which tell firms how many hours the contractor has been working on the project. As such, the monitoring itself will not directly influence the probability of getting a high-quality outcome. Note that, according to privacy regulations, contractors are informed of and explicitly required to agree before entering the labor market. Contractors' awareness of monitoring is the key difference between app-based monitoring and traditional in-house monitoring.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Reputation from Online Labor Market</head><p>Finally, since the contractor's effort level can be perfectly revealed by the app-based monitoring, we assume that the market will form a posterior that with probability p(e) = Prob{ i = H ie} E [O. l ] the contractor is of high ability (i.e., posterior based on the revealed effort level). We can explain this specification as follows: Firm first updates the belief on the contractor's ability based on both the wage offer and effort level in the project. Then it passes the posterior belief to the market through a given mechanism or technology.3 One implicit assumption under this explanation is that the firm will "sincerely" reports the information on the contractor's ability tu the market. This assumption helps us focus on the analysis of the impacl of monitoring on contractor's performance. Moreover, the strategical report of the firm would not influence the insight of all the primary results.</p><p>In the meantime, the contractor gets a continuation value or reputation return, V &gt; 0 from the market, if the market believes he is of high ability. Otherwise, the market believes he is oflow ability and the contractor gets zero in the future. Here, V is the expected market return of being a high ability contractor,4 and we use this to capture the contractor's return from building a market reputation. It could be easily derived by assuming a second stage with exactly the same structure as the game we just described. If the market believes that the contractor is oflow ability, then we normalize his future market return to be zero.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Preference</head><p>The firm and contractors are assumed to be risk neutral, and the expected profit of the firm adopting the monitoring is assumed to be</p><formula xml:id="formula_0">7r(w, e) = µ(w)[eHH -w] + (1 -µ(w)][e 1 ,L -w].</formula><p>We assume that the representative firm in the market will get a non-negative profit in equilibrium, both the firm and contractor are risk neutral, and the expected payoff of a contractor with an ability i is e 2 ui(w. e) = w --:-+ p(e)V, i where p(e)V is the expected continuation value from market.</p><p>3For instance, one well-adapted mechanism is the online review system provided by the online labor platform, e.g., Freelancer.com. The online review system could reveal information about contractor's characteristics, such as quality, expertise, and professionalism on the market. We will only consider pure-strategy equilibria in this paper. The solution concept we use is perfect Bayesian Nash equilibrium. It is a combination of contractor's wage offer wi, effort level ei and a belief system µ(w. e) where the following conditions need to be satisfied:</p><p>1. Optimality for the contractor:</p><formula xml:id="formula_1">For i E { H , L}, e 2 ( w., e.) E arg max w ---:--+ p( e) V (w,e) t</formula><p>given the constraints on and off equilibrium path, where wi and ei are sequentially determined at the contractor's two information sets.</p><p>2. Optimality for the firm: For all w and e, the firm will hire the contractor and adopt the monitoring if [(xlw. e) ~ o.s Otherwise, the firm will not hire the contractor.</p><p>3. Bayes' consistency of beliefs: Beliefs are established consistently with contractor's strategies, i.e., wage and effort, in the sense that they follow the Bayes' rule.</p><p>Here, we would only analyze the equilibrium in which the firm hires a contractor from the online labor market. In order to clearly demonstrate the influence of a pp-based monitoring on the outcome of the labor market, we consider three models which are listed in Table <ref type="table" target="#tab_0">1</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Analysis Benchmark 1: Model without Asymmetric Information( No Monitoring)</head><p>In the first benchmark, we consider the complete information analog of the game. We temporarily assume that there is no asymmetric information between the firm and cont ractor, i.e., contractor's ability and effort level are both perfectly observed by the firm, rather than privately known by the contractor. In this case, the contractor of ability i E {H, L} with an effort level of ei would propose the wage equals his ability, i.e., wi = i , which drives the firm's expected profit to zero. A contractor with ability i therefore would choose e e 2</p><p>to solve max 6 ie ---:--. Then. we have i Proposition 1. Jn the equilibrium with complete information.for i E { H, L}, the optimal wage and effort</p><formula xml:id="formula_2">•2 •3 l l(o o • d . db o_i d o _i eve, wi, ei ), are etermme y ei -Zan W; -4 •</formula><p>The proofs of the paper are put in the appendix, and are available upon request.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Benchmark 2: Model with Asymmetric Information (No Monitoring)</head><p>If there does not exist app-based monitoring, contractor's effort level in t = 1 will not be observed. The classical moral hazard problem exists. Then we assume that, in equilibrium, the firm would only accept the wage quote which equals the wage from an optimal contract. Meanwhile, the contractor would also implement the effort level from the optimal contract. The equilibrium characterized in this benchmark is 51be goal of this paper is to emphasize the contractor's equilibrium decisions when there is app-based monitoring, so we simplify the firm's decision problem in this way.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Fortieth International Conference on Information Systems, Munich 2019</head><p>the best outcome which can be obtained by the firm if there is no monitoring. In the later analysis, we will compare our results with this benchmark to argue that the adoption of app-based monitoring could strictly improve contractor's performance and the firm's profit. In this equilibrium, contractor's type is separated in t= 0, then the optimal contract (wf, et) where i E {H, L} will be determined as follows: Comparing to the first benchmark, for i E { H, L}, we immediately have the following result:</p><formula xml:id="formula_3">max eii -eiwi e,,</formula><p>Corollary 1. e? &gt; ei and e~ &gt; ei,.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Results of the General Model</head><p>In this section, we will characterize the set of equilibrium which has some similar features as the classic separating equilibrium defined in economic literature. In our set-up 1 the monitoring perfectly reveals the contractor's effort level, then the contractor could signal h is ability in two decision nodes. The first one is the wage quote in t= 0, and the second is the effort level chosen in t= 1. In the first case, if wH ' :/= wL, then the proposed wage allows the firm to become fully informed of the contractor's ability before choosing the monitoring intensity, i.e., separating in t = 0. In the second case, the ability is not separated in t = 0, i.e., wH = wL . However, int = 1, we have eH ' :/= eL, then the effort level would fully reveal the contractor's ability to the market. We would call all these equilibria as our "separating" equilibria. We will see a large class of possible wage and effort level can arise in these "separating" equilibria. In the meantime, the contractor's incentives might be distorted in any direction.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>S eparating Equilibrium with w L =/= w H</head><p>In the first case, following the definition of perfect Bayesian Nash equilibrium, beliefs are derived from Bayes' rule whenever possible, then the contractor's ability is perfectly revealed to the firm at the end of t = 0. The posterior beliefs turn to be µ(wH) = p(eH ) = 1.</p><p>Lemma 1 . If there exists a separating equilibrium with w L ' :/= w H, then contractor's effort will be: e H = e'7t</p><p>and eL = ei.</p><p>To support the separating equilibria with w L ' :/= w H, we would consider two cases: w 11 &gt; w L and w H &lt; wH . For the case wH &gt; wL, we have the following result:</p><p>Proposition 3. There exists a separating equilibrium with wH &gt; wi and eH = e'7t, ei = e1, if for some w H &gt; w L &gt; 0 such that the set defined below is not empty:</p><formula xml:id="formula_4">D ( - -) { (--)I {O H3 £4 V} --H4 £3 v 1 WH, w L = w H• w L max , 4 -4H - ~ w H -w L ~ 4£ -4 -. H3 H 3 } wH ~ 4 + k(H, eH . ei, 7r) -V and wL ~ 4 + k (L. em ei . 7r) ,</formula><p>where k(i, eH,eL, 7r) = ~ (7reH + (~ -7r)ei )</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>2</head><p>,for i E {H. L}. The choice of the wage is <ref type="bibr">(wH ,wi,)</ref> min D 1 (w 11 , wL) •</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Fortieth International Conference on Information Systems, Munich 2019</head><p>We use Figure <ref type="figure" target="#fig_1">2</ref> to illustrate the idea of the condition: D 1 (wH, wL) =/= 0. From Lemma 1, we know that in a separating equilibrium with wH =/= wL, the firm would implement eH = H 2 / 2 &gt; eL = L 2 /2. </p><formula xml:id="formula_5">= : 3 + k(H ) -V might support the separating equilibrium . • • • H' L 3 1 . ii•11 =il,1.-H 3 -~ -\ ' ~ 4/I U'H U'H=ICL+1L-1-_ ••• • ~~~;-~--~~-------.r-?~f•~~~~ __ .. /~ ,,' ti•11=U•1 .</formula><p>.... ,~: ..... .</p><p>•f' (IL'L.IL'll) ;,/ ~:.-.::, The set D 1 (wH, wL) =/= 0 requires that the area enclosed by the above lines is not empty. Given the set is not empty and the firm has the bargaining power, it would minimize the cost of hiring contractors by choosing the lowest wage, i.e., the point (</p><formula xml:id="formula_6">•••••••••••••••• •••••\•••• • ,'! .• , , ' ' : ,./' 1L111 = Hl +~•(J-1 )-r l .. •••• .. ~••' I . . . •1• ... / ~) //3 ,•' ; &lt;h=1+k(L)</formula><formula xml:id="formula_7">w L• w H) in Figure 2.</formula><p>For the case w H &lt; w L&gt; we have a similar result as the Proposition 3: Proposition 4. There exists a separating equilibrium with w H &lt; wL and eH = e~1, eL = ei, if for some Online Labor Market Signaling with App-based Monitoring w L &gt; w H ~ 0 such that the set defined below is not empty: H , eH, eL . 7r) -V} and wL ~ 4 + k (L, eH• eL, 7r) , <ref type="bibr">L} . Thechoiceofthewageis (wn ,wL)</ref> min Di (wH . wL) • The idea of this result is similar to Proposition 3 where neither type of contractor has the incentive to mimic the other type. We use Figure <ref type="figure" target="#fig_2">3</ref> to demonstrate it. It requires that the set D 1 ( w H, w L) =/= 0 enclosed by the solid lines is not empty. The main difference between these two results is whether the high ability contractor has the incentive to lower his wage quote to separate himself from the low ability contractor. This result tells us that, if the reputation return V to the high ability contractor is larger than the reduced cost of switching from high effort e' J.i to e1, i.e., 4 ~ (H 1 -L 1 ) , then, to separate from the low ability one, the high ability contractor would have the incentive to even lower his wage offer than the low ability contractor's offer. The advantage of introducing a pp-based monitoring is that the firm can contract directly on the contractor's effort level. Therefore, given the ability of a contractor, the corresponding optimal wage would be the upper bound for the firm to pay. In other words, it would not be reasonable for the firm to accept any wage which is larger than the first best wage given the ability. Besides, if there does not exit any other constraints on the off-equilibrium path, there exists a profitable deviation in which the low ability contractor choose o effort level in the second period, but still, get a positive wage quote. However, if the contractor decides not to work, then a rational firm should not pay him. Thus, we introduce the following consistent condition to refine our equilibrium by getting rid of those unreasonable wage-effort pairs.</p><formula xml:id="formula_8">D ( --) {c--)I H3 £ 4 v --. { H 4 £ 3 v} 1WH. WL = WH . WL 4 -4H - &lt;wH-wL&lt; mm0,4L _ 4 _ ' H3 H 3 } wH ~ max{O, 4 + k(</formula><formula xml:id="formula_9">i 3 (ne +(l-7r)e ) 2 wherek(i.en.eL,7i) = 4 - H i L ,Jor i E {H.</formula></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Consistent condition:</head><p>On the off-equilibrium path, the firm would only accept the pair of effort level and wage, such that i) the effort is at least as large as the optimal effort level given the firm's beliefon the contractor's abilityµ; 2) the wage paid to the contractor would be min { w' . w(µ)} .</p><p>Here, w' E [O. w] is the wage proposed by the contractor in the first period; and w(µ) is the optimal wage, given firm's belief µ .</p><p>Taking the consistent condition into consideration, in the next few propositions, we give conditions which ensure the sets defined in above two equilibria are not empty and characterize the corresponding equilibrium.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Fortieth International Conference on Infonnation Systems, Munich 2019</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>p</head><p>. . and eH = ei, eL = ei, where w H = 4 and wL = 4-4 L + V .</p><formula xml:id="formula_10">I'"H4 L J H J V H J £4 h h . -Z-b . . h ropos1tion 5. '.J 4 L -4 -T &lt; &lt; T -4 H, t</formula><p>The intuition of this result is similar to the general result. Here, the lower bound of the reputation return is to guarantee the contractor getting a non-negative expected payoff.</p><p>Let us now examine one specific case to see when the equilibrium implementing the first best outcome:</p><p>( w1. e1} and ( wi, ei), are likely to arise. Our next result characterizes this equilibrium.</p><p>Corollary 2. Ifit is true that ~J (1-~) &lt; V &lt; ~J (1-1), then there exists a separating equilibrium implementing the first best outcome, i.e., w. = w? and e; = e? where i E { H , L}.</p><p>The idea of this result is as follows. In the first best outcome, since the firm can contract directly on the c-0ntractor's effort, then the firm would maximize its profit by only accepting the pair of wage and effort which makes the contractor's payoff equal to the outside option which has been normalized to be zero. Then the only requirement for the high ability contractor not to deviate from the first best result is that: the reputation return V should be larger than the payoff from pretending to be a low ability contractor which is ~3 -f;. Similarly, for the low ability contractor, the requirement on the equilibrium path is that: the payoff from pretending to be a high ability contractor should be less than o. To fulfill this, we need the cost of pretending to be a high ability contractor, :; , is larger than the wage compensation, ~3 , plus the reputation return V . This is equivalent to V &lt; ~3 ( ~ -1). For the off-equilibrium path, we simply assume thatµ ( w) = 1. This equilibrium can also be supported if we assume that for any wage w' E [O. w L), the firm would believe it is from a low ability contractor, and for any wage w' E ( w L• w H ) , it is from a high ability contractor, then the requirement on the equilibrium path would be enough to make neither type to deviate from the first best outcome.</p><p>In the next proposition, we give a condition to ensure the set defined above is not empty and characterize the equilibrium with WH &lt; WL .</p><formula xml:id="formula_11">Pr . . 6 Jrf'H3 £4 V H3 £4 £3 h h . •z•b . . h 0 opos1tion</formula><p>. " 4 -4 H &lt; &lt; 4 -4 H + 4 , t en t ere exists an equi 1 rzum wit wL &gt; wH &gt; ,</p><formula xml:id="formula_12">£3 £4 H 3</formula><p>and eH = et, eL = ei, where wH = 4 -4 H + 4 -V and wL = wi.</p><p>Our next result characterizes the separating equilibrium with wL &gt; wn = 0. This result is broadly consistent with the findings in <ref type="bibr" target="#b13">Lerner and Tirole (2002)</ref>, <ref type="bibr" target="#b14">Lerner and Tirole (2005)</ref>, <ref type="bibr" target="#b15">Lerner et al. (2006)</ref>, Hakim <ref type="bibr" target="#b22">Orman (2008)</ref> and <ref type="bibr" target="#b8">Hann et al. (2013)</ref> about the wage compensation and performance of contractors who contribute to open-source projects.</p><formula xml:id="formula_13">Pr • • Jrl' H J L 4 L J H 4 h h . 'l 'b . . h ( ) opos1tion<label>7</label></formula><p>. '.J 4 -4H + 4 &lt; V:::; 4L' t en we ave a separating equz z rzum wzt wL,wH = (w~. 0) and (eL, eH) = (e~, et).</p><p>Let us explain the intuition of this result. First, the incentive for the high ability contractor to work for free is that the expected return from being recognized as a high ability contractor should be large enough to cover the loss of being recognized as a low ability contractor. Second, the effort level chosen by the high ability contractor should be large enough in a sense that: 1) the outcome of the effort level should be at least the same as the one from the low ability contractor; 2) the low ability contractor cannot mimic it. Third, when the marginal benefit from the marginally increased wage is less than the increased marginal cost, the high ability contractor would reduce the wage to the smallest value, i.e., w H = 0. To support this equilibrium, on the off-equilibrium path, we assume for all the w&lt;/:. {wH, w£l, we assume µ(w) = 0. Furthermore, it is easy to check that the lower bound of V in this result, f~3 + ~1 -f;, is larger than the upper bound of Vin the Corollary (2), ~3 ( ~ -1). Since the reputation return can reward contractor more Fortieth International Conference on Information Systems, Munich 2019 in the future, then the high ability contractor has the incentive to reduce wage to zero. This has characterized the "strategic complementarities" mentioned in the literature, e.g., <ref type="bibr" target="#b15">Lerner et al. (2006)</ref>. It argues that the long-term return from labor market or peers gives contractors incentives to work on open-source software projects. Our result also demonstrates that the incentive oflong-term return, i.e., V, is not enough to help the high ability contractor successfully signal. The high ability contractor also needs to perform better than the low ability contractor, i.e., eu ;::: eL. This is because the low ability contractor has the incentive to mimic the high ability one to get the long-term return. An effort level larger than a threshold will be more costly for the low ability one to mimic, then contractors will separate in equilibrium. These results have explained the key condition supporting separation is that the high ability contractor can 1) finish the same job as the low ability contractor with lower pay or do a better job than the low ability one with a higher pay; 2) afford current loss caused by low wage and get compensated by future large reputation return.</p><p>We use Figure <ref type="figure">4</ref> to summarize the above results and compare them with the results from two benchmarks. Our results indicate that the first best effort for both types of contractors, (wi . ei) and (w~.e~) , can be implemented. For the high ability contractor, there exists a separating equilibrium where he could propose zero wage and choose the first best effort, i.e., point (wH = O,e~1 ), but the low ability one would propose a positive wage and choose the first best effort level, i.e., point ( w L &gt; 0, ei). Besides, there exists a separating equilibrium where both the first best wage and effort can be implemented. It is obvious that these outcomes are all better than the second best result indicated by ( wf, ef) where i E { H , L}.</p><p>To summarize the analysis of equilibrium with w H =/=-w [,• we use Figure s to summarize our equilibrium prediction based on the value of reputation return V. Here, 0 The app-based monitoring could help the firm to perfectly observe online contractor's effort level in the second period; therefore, contractors in different abilities could also choose different effort levels to signal their abilities, given that the wage quotes are the same. Comparing to the case without perfect monitoring, it extends contractor's action space; and as shown in the previous sections, it could generate efficient equilibrium, such as the one supporting the first best outcome. However, freedom from the extended action space could also generate multiple equilibria. In this section, we would characterize another set of separating equilibrium with wL = wH but eL -=F eH.</p><formula xml:id="formula_14">&lt; v• &lt; v•• &lt; v••• &lt; vt, such that H4 £3 H 3 H3 £4 H3 £4 £3 H 4 v• = -----. v•• = ---v••• = ---+ -. and vt = -. 4L 4 4 4 4H, 4<label>4H</label></formula><p>Proposition 8. For any V &gt; 0 there is a separating equilibrium in which w P = ~3 , eH = Jv L + ~4</p><p>L2 and eL = 2</p><p>The idea of this result is as follows. Given that two types of contractors choose the same wage in t = 0, the firm cannot directly implement the first best effort. However, since the presence of the monitoring, the contractors can use the observable effort to signal their abilities and they will be compensated accordingly.</p><p>It could give high ability contractors incentives to choose an effort which might be more than the first best but still only requires the same wage as the first best case.</p><p>As shown in this equilibrium, the high ability contractor would choose effort, J LV + ~4 &gt; O. For any other effort levels, the market would believe only low ability contractors choose them, thus the benefit from these deviations, i.e., r:, would always be less than the reputation return from being recognized as a high ability contractor, i.e., V . Thus, the high ability contractor would not deviate from the equilibrium effort level. For the low ability contractor, any other effort levels would only increase without any benefit. Thus there is no incentive to deviate. In this equilibrium, only the high ability contractor's effort, J LV + ~4 , depends on the reputation return which is increasing with it and the low ability contractor's productivity. Hence, this equilibrium would exist for all the possible values of V and L. Th is result also induces that there exist multiple informative equilibria in the sense that the abilities of contractors could be revealed to the market. Now we go back to the contractor's decision on wage quote. To make every contractor chooses the same wage offer, the equilibrium wage should be limited in a bound. If the wage is too small, then a contractor would not work for the firm no matter what the ability is. Besides, the wage cannot be too large, because the firm will not benefit from a too high wage. For any wage different from the equilibrium one, we have µ (w) = 0, i.e., the contractor is believed to be oflow ability. Then the high ability contractor's wage would be at least as large as ~3 -(1 -~ )V. The first part is the highest wage he could obtain from the deviation, and the second part is the net loss from this deviation. The net loss is composed of the loss of reputation loss V and the reduced cost from being believed as a low ability contractor. The low ability contractor would get zero benefits from any deviation; therefore, the firm needs to pay him a wage which is enough to cover the cost of effort. Since the effort can be perfectly revealed and be contracted, then, at most, the first best wage, ~3 , will be implemented in equilibrium.</p><p>We use Figure <ref type="figure" target="#fig_5">6</ref> to summarize the results of this case and compare them with the results from benchmarks. Similar to the result in Section , the low ability contractor, in this case, would choose the first best effort, i.e., the point ( wp, eV in Figure <ref type="figure" target="#fig_5">6</ref>. That is because a pp-based monitoring allows the firm to contract on contractor's effort, then it would always be optimal for the low ability contractor to choose the first best effort. In the meantime, the h igh ability contractor would choose point (wP. eH = J Lll + ~4 ) . The wage wP would always be less lhan the high ability conlraclor's firsl besl wage wH . The effort level would be increasing with the value of reputation return. It is always larger than the low ability one, and it might be even more than the effort from the first best. However, the magnitude of the difference between these two effort levels depends on the reputation return. High future reputation return gives the high ability contractor more  incentives to increase the effort level. Besides, the outcome would also dominate the second best outcome, ( wi. ei) for any ability i E { H , L}. In other words, in this equilibrium, the monitoring might induce the high ability contractor to reach the first best effort or even make them to overwork.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Discussion and Conclusion</head><p>Hiring contractors from an online labor market may be extremely convenient and valuable for some industries, especially for projects that can be finished remotely, which typically face high market uncertainty, i.e., hidden actions. In this case, employers and platform owners usually requires appropriately designed mechanisms to alleviate these market frictions. Indeed, a platform, such as freelancer.com, could adopt app-based monitoring to provide information about the online contractor's actions and thus help the firm to get more profit. However, the efficiency of the online market with monit oring may not automatically be reached without any conditions.</p><p>In this study, we investigate how app-based monitoring, which is different from traditional in-house monitoring in terms of the contractors' awareness of monitoring, affects contractors' signaling strategy and the market outcome in online labor markets. We explicitly recognize that app-based monitoring provides a new signaling opportunity to contractors as contractors are aware that employers can observe their behavior. We study two types of separating equilibrium wherein high ability contractors separate themselves by the wage quotes in the first period or effort level in the second period. Our theoretical model suggests that, when monitoring can perfectly reveal a contractor's effort, there exists a large set of informative equilibrium, i.e., separating equilibrium, in which contractors of different ability would propose different wage in the first period. Sometimes, high ability contractors are willing to work for low or zero wage. Moreover, with monitoring, the effort level from the complete information case, i.e., the first best effort level in the second period, is also attainable.</p><p>Our study provides a number of insights into the online labor market. For online platforms, our results imply that they could improve market efficiency, e.g., reaching the first best outcome, if they could provide the service of app-based monitoring with a properly designed reward which could influence a contractor's reputation return. For online contractors, our results imply that the high ability contractor could choose to work for free if app-based monitoring can perfectly reveal their effort and the platform can compensate accordingly. For firms, our results imply that app-based monitoring could be beneficial for them. contractors could finish a better job without requiring a higher wage from the firm. Besides, even for the same wage, hiring contractors from a platform with a pp-based monitoring is more likely to generate a highquality outcome, because high ability contractors have the incentive to devote themselves more to projects, i.e., choosing a high effort level.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Fortieth International Conference on Information Systems, Munich 2019</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Implications for Platform Design</head><p>Regarding the question of platform design, in all the characterized equilibria, we notice that the continuation value of market reputation, V, is crucial to our equilibrium characterization. In the traditional labor market, the existence of reputation return is well accepted. It is more conceptually defined and hard to be implemented in the real world because the conventional market is decentralized. However, the advantage of the online labor market is that the platform could centralize a specialized labor market, e.g., market places for programmers and designers. Therefore, as a designer, the platform could change this value through different mechanisms. Platforms can engineer their reputation system or platform policy to adjust reputation return based on their strategic objective.</p><p>For instance, the well-adopted review system is a good example. Besides, the platform could rank the performance of online contractors based on both the review from the firm and the data from app-based monitoring. Then the platform could recommend the top-ranked contractor to firms through many different ways, such as put the contractor's ID in the front page of the platform.</p><p>As shown in Figure <ref type="figure" target="#fig_3">5</ref>, the equilibria are ordered according to the value of V . If the platform wants to implement a specified equilibrium, it could use a lottery to adjust the amount of the return to reach different intervals, which would generate different equilibria. For instance, the platform could randomly order the top-ranked contractors. Therefore, if firms are very price sensitive and facilitating the separation based on wage can attract more business, platforms could reduce reputation return by downplaying contractor reputation a little bit by mainly displaying a short-term reputation or give a lower weight on reputation in their sorting or recommendation algorithms. If firms are more sensitive to project performance and supporting the separation based on effort level is more profitable, platforms could increase reputation return and provide an efficient monitoring system for users to use.</p><p>Additionally, our results predict that with the implementation of monitoring technology, the profit of firms, as well as platforms, could be improved. Specifically, under certain conditions, when high-ability contractors separate by wage quotes, they may propose a low or zero wage; when they separate through the effort level, they could exert an effort level which is higher than the case of complete information. Either a lower labor cost or a high effort level increases the profit of firms and eventually contributes to the prosperity of platforms. For instance, time-tracking Apps, such as Harvest, Time Doctor, and Toggl, which provide the functionality to track contractors' working progress may be a good choice for firms and other organizations. They can perfectly monitor the working hour of contractors, randomly keep screenshots and count keystrokes, automatically generate software usage reports. In line with this, most major online labor market platforms, such as Upwork and Freelancer, have already embedded app-based monitoring into all time-based projects to track down contractors' working hours. Meanwhile, they are keeping improving the precision of monitoring by collecting more detailed information. For instance, instead of just collecting screenshots of workers' computers and tracking keystrokes, Upwork further provides the webcam feature in its app-based monitoring system. In addition, Amazon uses AI to help it effectively monitor workers and fire workers with low productivity, which is in line with our propositions.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Implications for Online contractor</head><p>Specifically, for contractors, our study suggests that, when app-based monitoring is implemented, contractors' choice set would be expanded. In such a case, high ability contractors can have more freedom to separate themselves by wage quotes or effort level. Therefore, high ability contractors should actively adopt monitoring or even increase monitoring efficiency by better tracking working progress (e.g., detailed log files, timely project progress summary, and editing history shown in a shared online folder). For one thing, with monitoring, high ability contractors can strategically choose a low wage or work for free so that they can separate themselves in future projects. For example, in the IT industry, where there is a relatively high variation in contractor's ability, high ability contractors can participate in open source projects or publish their codes on GitHub to signal themselves.<ref type="foot" target="#foot_3">6</ref> For another, if high ability contractors can't separate themselves from low ability ones through wage quotes, they should still spend high effort under monitoring to signal their abilities.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head></head><label></label><figDesc>Figure i: Timing</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>Figure 2 :</head><label>2</label><figDesc>Figure 2: Equilibrium with wH &gt; wL</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>Figure 3 :</head><label>3</label><figDesc>Figure 3: Equilibrium with w L &gt; wH</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head>Figure 5 :</head><label>5</label><figDesc>Figure 5: Reputation Return (V) and Separating Equilibrium with wH =F w[,</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5"><head>Figure 6 :</head><label>6</label><figDesc>Figure 6: Separating Equilibrium:No Monitoring vs. with Monitoring (w H = wL)</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head>Table 1 :</head><label>1</label><figDesc>List of Models</figDesc><table><row><cell></cell><cell>Ability</cell><cell>Effort</cell></row><row><cell>Benchmark 1 (1st Best)</cell><cell>Observable</cell><cell>Observable</cell></row><row><cell>Benchmark 2 (2nd Best)</cell><cell>Observable</cell><cell>Not observable</cell></row><row><cell cols="2">Model with app-based monitoring Not observable</cell><cell>Observable</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1"><head></head><label></label><figDesc>w, subject to e; E arg maxe,e{o,i) wiei -e; /i. Then we have the following result: Proposition 2 . If app-based monitoring does not exist, then, in equilibrium,for i E {H, L }, we have:</figDesc><table><row><cell>i 2 e 8 = -and w 8 = -' = -2e 8 i ' 4 l i 2</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2"><head></head><label></label><figDesc>To make the high ability contractor separate himself from the low ability one, the wage w H should cover what he can earn if he pretended to be the low ability contractor, i.e., w L&gt; plus the reduced cost from decreasing effort from eH to eL, i.e., : Besides, since the high ability contractor could get the reputation return, V, from the market, if he successfully separates himself, then the lower bound of wage w H would be reduced accordingly. Thus, only the points ( w H, w L ) above the line w H = w L + :However, to reduce the low ability contractor's incentive to mimic the high ability one, the wage w J-J cannot be too high. It should be less than what the low ability contractor can get when he reveals his ability, wL, plus the additional cost saved from reducing the effort from eH to eL, i.e.,:; -~3 . Since the low ability contractor would obtain the reputation return V if he were recogillzed as a high ability contractor, then the upper bound of wH could also be reduced accordingly. Therefore, only the points (wH. wL) below the line</figDesc><table><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>3</cell><cell>-~ -V can prevent the high</cell></row><row><cell cols="8">ability contractor from mimicking the low ability one.</cell><cell></cell><cell></cell></row><row><cell>-</cell><cell>-</cell><cell>H</cell><cell>4</cell><cell>L 3</cell><cell>V</cell><cell>th l</cell><cell>b"l"</cell><cell>fr</cell><cell cols="2">. . kin h hi b bill"</cell></row></table><note><p><p><p><p><p>3</p>-~.</p>w H = w L + 4L -4</p>can prevent e ow a I Ity contractor om 1IllD11C g t e g a ty one.</p>The other two boundaries for wi and wy come from the restrictions on the off-equilibrium path, i.e., for any wage w &lt;f. {wL, wH } . After seeing any deviation w &lt;f. (wH, w' hJ, we assume that the firm would keep the prior. Therefore, the high ability contractor's wage, w H, plus the reputation return, V, should be larger than what he can obtain from w E (wH, w~] plus the benefit from reducing the effort. For the low ability contractor, the wage w L should be larger than what he can get from w E ( w fl , w~] minus the cost of increasing the effort. Thus, only the points (wH,wd to the right of line wi = ~3 + k(L) and above line wH</p></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_3"><head></head><label></label><figDesc>en t ere exists an equz 1 1wm wit wH &gt; wL &gt; O,</figDesc><table><row><cell>H J</cell><cell>H J</cell><cell>H 4 -L 4</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_4"><head></head><label></label><figDesc>Separating Equilibrium:No Monitoring vs. with Monitoring ( w H i= w L)</figDesc><table><row><cell cols="2">••(effort) l</cell><cell>Contractor• action &amp;-P,'ICC for separating</cell></row><row><cell>1 •</cell><cell cols="2">&lt;11•H v .... ,,)</cell></row><row><cell cols="2">=~u:'o</cell><cell>(ws &gt; O.r~)</cell></row><row><cell cols="3">.~. "'-..~•</cell></row><row><cell></cell><cell cols="2">without monitoring</cell></row><row><cell>•</cell><cell></cell><cell>w (wager</cell></row><row><cell>Figure 4:</cell><cell></cell></row></table></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="1" xml:id="foot_0"><p>Here, w is the maximal wage that could be proposed by the contractor. In this paper, we let this bound to be the equilibrium wage that the high ability work can obtain if information asymmetry does not exist, i.e., the wage in the first best.</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="2" xml:id="foot_1"><p>Under this assumption, the firm might get a negative revenue if the project returns x = 0. However, this would not influence our results, but it could help us more clearly identify the primary mechanisms of our findings. Moreover, we can assume that firm has enough fund to cover the cost of hiring contractors and all the other expenses, even if the project returns :z; = 0.</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="4" xml:id="foot_2"><p>V is a normalized value. We can ell.'Plain it as the difference between the eA-pected return of being revealed as a high ability contractor and a low ability contractor.</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="6" xml:id="foot_3"><p>https://dev.tofben/why-do-employers-check-github-profiles-1fi4</p></note>
+		</body>
+		<back>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Economic analysis of the digital economy</title>
+		<author>
+			<persName><forename type="first">Ajay</forename><surname>Agrawal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">John</forename><surname>Horton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nicola</forename><surname>Lacetera</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Elizabeth</forename><surname>Lyons</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Digitization and the contract labor market: A research agenda</title>
+		<imprint>
+			<publisher>University of Chicago Press</publisher>
+			<date type="published" when="2015">2015</date>
+			<biblScope unit="page" from="219" to="250" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Three-way complementarities: Performance pay, human resource analytics, and information technology</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Aral</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Erik</forename><surname>:Inan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lynn</forename><surname>Brynjolfsson</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Wu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Science</title>
+		<imprint>
+			<biblScope unit="volume">58</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="913" to="931" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Wiring the labor market</title>
+		<author>
+			<persName><forename type="first">David</forename><forename type="middle">H</forename><surname>Autor</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">The economics of labor market intermediation: An analytic framework</title>
+		<imprint>
+			<publisher>National Bureau of Economic Research</publisher>
+			<date type="published" when="2001">2001. 2008</date>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="page" from="25" to="40" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Design and analysis of contracts for software outsourcing</title>
+		<author>
+			<persName><forename type="first">Debabrata</forename><surname>Dey</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ming</forename><surname>Fan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Conglei</forename><surname>Zhang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Info1mation Systems Research</title>
+		<imprint>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="93" to="114" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Incentives work: Getting teachers to come to school</title>
+		<author>
+			<persName><forename type="first">Esther</forename><surname>Duflo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rema</forename><surname>Hanna</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stephen</forename><forename type="middle">P</forename><surname>Ryan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">American Economic Review</title>
+		<imprint>
+			<biblScope unit="volume">102</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="1241" to="1278" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Cha1ity as a substitute for reputation: Evidence from an online marketplace</title>
+		<author>
+			<persName><forename type="first">Daniel</forename><forename type="middle">W</forename><surname>Elfenbein</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ray</forename><surname>Fisman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Blian</forename><surname>Mcmanus</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Review of Economic Studies</title>
+		<imprint>
+			<biblScope unit="volume">79</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="1441" to="1468" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">IT outsourcing contracts and pe1formance measurement</title>
+		<author>
+			<persName><forename type="first">David</forename><surname>Fitoussi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Vijay</forename><surname>Gurbaxani</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="129" to="143" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Research note-On vendor preferences for contract types in offshore software projects: The case of fixed price vs. time and materials contracts</title>
+		<author>
+			<persName><forename type="first">Anandasivamandkondurusivaramaklishnan</forename><surname>Gopal</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Resem•ch</title>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="202" to="220" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">All are not equal: An examination of the economic returns to different forms of participation in open source software communities</title>
+		<author>
+			<persName><surname>Hann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jeffrey</forename><forename type="middle">A</forename><surname>Horn</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sandra</forename><forename type="middle">A</forename><surname>Robe1ts</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Slaughter</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<imprint>
+			<biblScope unit="volume">24</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="520" to="538" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<monogr>
+		<title level="m" type="main">To Be Financed or Not ... -The Role of Patents for Venture Capital-Financing</title>
+		<author>
+			<persName><forename type="first">Carolin</forename><surname>Haussler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dietmar</forename><surname>Harhoff</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Elisabeth</forename><surname>Miiller</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">When subordinates become IT contractors: Persistent managerial expectations in IT outsourcing</title>
+		<author>
+			<persName><forename type="first">Violet</forename><forename type="middle">T</forename><surname>Ho</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Soon</forename><surname>Ang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Detmar</forename><surname>Straub</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="66" to="86" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">What do entrepreneurs pay for venhire capital affiliation?</title>
+		<author>
+			<persName><forename type="first">Davidh</forename><surname>Hsu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The Journal of Finance</title>
+		<imprint>
+			<biblScope unit="volume">59</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="1805" to="1844" />
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">The demand for monitoring technologies: the case of trucking</title>
+		<author>
+			<persName><forename type="first">Thomas</forename><forename type="middle">N</forename><surname>Hubbard</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The Qum•terly Journal of Economics</title>
+		<imprint>
+			<biblScope unit="volume">115</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="533" to="560" />
+			<date type="published" when="2000">2000</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Some simple economics of open source</title>
+		<author>
+			<persName><forename type="first">Josh</forename><surname>Lerner</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Tirole</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The journal of industrial economics</title>
+		<imprint>
+			<biblScope unit="volume">50</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="197" to="234" />
+			<date type="published" when="2002">2002</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">The economics of technology sharing: Open source and beyond</title>
+		<author>
+			<persName><forename type="first">Josh</forename><surname>Lerner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jean</forename><surname>Tirole</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Economic Perspectives</title>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="99" to="120" />
+			<date type="published" when="2005">2005</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">The dynamics of open-source contiibutors</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Lerner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Parag</forename><forename type="middle">A</forename><surname>Osh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jean</forename><surname>Pathak</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Tirole</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">American Economic Review</title>
+		<imprint>
+			<biblScope unit="volume">96</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="114" to="118" />
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Asymmetric information, adverse selection and online disclosure: The case of eBay motors</title>
+		<author>
+			<persName><forename type="first">Gregory</forename><surname>Lewis</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">American Economic Review</title>
+		<imprint>
+			<biblScope unit="volume">101</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="1535" to="1546" />
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<monogr>
+		<title level="m" type="main">Moral Hazards and Effects of IT-enabled Monitoring Systems in Online Labor Markets</title>
+		<author>
+			<persName><forename type="first">Chen</forename><surname>Liang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yili</forename><surname>Hong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bin</forename><surname>Gu</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Effectiveness of reputation in contracting for customized production: Evidence from online labor markets</title>
+		<author>
+			<persName><forename type="first">Mingfeng</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yong</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Siva</forename><surname>Viswanathan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Science</title>
+		<imprint>
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Organizational control, incentive contracts, and knowledge transfer in offshore business process outsourcing</title>
+		<author>
+			<persName><forename type="first">Ying</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ravi</forename><surname>Aron</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="81" to="99" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">An empirical analysis of the contrach1al and information structures of business process outsourcing relationships</title>
+		<author>
+			<persName><forename type="first">Deepa</forename><surname>Mani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anitesh</forename><surname>Barna</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andrew</forename><forename type="middle">B</forename><surname>Whinston</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systemc; Research</title>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="issue">3-part-1</biblScope>
+			<biblScope unit="page" from="618" to="634" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Human capital development for programmers using open source software</title>
+		<author>
+			<persName><forename type="first">Amit</forename><surname>Mehra</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Vijay</forename><surname>Mookerjee</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS quarterly</title>
+		<imprint>
+			<biblScope unit="volume">36</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="107" to="122" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Giving it away for free? The nature of job-market signaling by open-source software developers</title>
+		<author>
+			<persName><forename type="first">Wafa</forename><surname>Orman</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Hakim</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The BE Joumal of Economic Analysis &amp; Policy</title>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Cleaning house: The impact of information technology monitoring on employee theft and productivity</title>
+		<author>
+			<persName><forename type="first">Lamar</forename><surname>Pierce</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><forename type="middle">C</forename><surname>Snow</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andrew</forename><surname>Mcafee</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Science</title>
+		<imprint>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page" from="2299" to="2319" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<monogr>
+		<title level="m" type="main">Hemming and hawing over Hawthorne: Work complexity and the divergent effects of monitoring on productivity</title>
+		<author>
+			<persName><forename type="first">Aruna</forename><surname>Ranganathan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alan</forename><surname>Benson</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2016">2016</date>
+			<pubPlace>Stanford, CA</pubPlace>
+		</imprint>
+	</monogr>
+	<note type="report_type">Technical Repmt</note>
+	<note>Working paper, Stanford Graduate School of Business</note>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">Can warranties substitute for reputations?</title>
+		<author>
+			<persName><forename type="first">James</forename><forename type="middle">W</forename><surname>Roberts</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">American Economic Journal: Micruecunumics</title>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="69" to="85" />
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Understanding the motivations, pa1ticipation, and performance of open source software developers: A longitudinal study of the Apache projects</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Roberts</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ii-Horn</forename><surname>Hann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sandra</forename><forename type="middle">A</forename><surname>Slaughter</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management science</title>
+		<imprint>
+			<biblScope unit="volume">52</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="984" to="999" />
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<monogr>
+		<title level="m" type="main">Uncertainty in Economiics</title>
+		<author>
+			<persName><forename type="first">Michael</forename><surname>Spence</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1978">1978</date>
+			<publisher>Elsevier</publisher>
+			<biblScope unit="page" from="281" to="306" />
+		</imprint>
+	</monogr>
+	<note>Job market signaling</note>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">A transaction cost perspective of the&quot; software as a service&quot; business model</title>
+		<author>
+			<persName><forename type="first">Anjana</forename><surname>Susarla</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anitesh</forename><surname>Barua</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andrew</forename><forename type="middle">B</forename><surname>Whinston</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Management Information Systems</title>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="205" to="240" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">Does information undermine brand? Information intermediary use and preference for branded web retailers</title>
+		<author>
+			<persName><forename type="first">Joelandluchen</forename><surname>Waldfogel</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The Journal of Industrial Economics</title>
+		<imprint>
+			<biblScope unit="volume">54</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="425" to="449" />
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">IT implementation contract design: Analytical and experimental investigation of IT value, learning, and contract strucrure</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">J</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Min</forename><surname>Ding</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lorin</forename><forename type="middle">M</forename><surname>Hitt</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<imprint>
+			<biblScope unit="volume">24</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="787" to="801" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">Identity management and tradable reputation</title>
+		<author>
+			<persName><forename type="first">Hong</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jianqing</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andrew</forename><forename type="middle">B</forename><surname>Whinston</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Forthcoming in MIS Quarterly</title>
+		<imprint>
+			<date type="published" when="2018-06">June, 2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

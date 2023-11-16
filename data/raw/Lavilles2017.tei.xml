@@ -1,0 +1,909 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">A Thematic Analysis of Software Developers&apos; Experience as Service Provider in Online Sourcing Marketplaces Completed Research Paper</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Rabby</forename><forename type="middle">Q</forename><surname>Lavilles</surname></persName>
+							<email>rabby_lavilles@dlsu.edu.ph</email>
+							<affiliation key="aff0">
+								<address>
+									<addrLine>De La Salle University -Manila Taft Ave</addrLine>
+									<settlement>Manila</settlement>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Raymund</forename><forename type="middle">C</forename><surname>Sison</surname></persName>
+							<email>raymund.sison@delasalle.ph</email>
+							<affiliation key="aff1">
+								<orgName type="department">De La Salle University DLSU-Science and Technology Complex</orgName>
+								<address>
+									<settlement>Laguna</settlement>
+									<country key="PH">Philippines</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">A Thematic Analysis of Software Developers&apos; Experience as Service Provider in Online Sourcing Marketplaces Completed Research Paper</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="MD5">0048DCAB2FD7BA509E96F1B0D911FF65</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.7.3" ident="GROBID" when="2023-06-16T09:24+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>online sourcing</term>
+					<term>software developer</term>
+					<term>online sourcing marketplaces</term>
+					<term>thematic analysis</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Online sourcing marketplaces (OSMs) enable the hiring of skilled workers around the globe. It becomes a significant factor for the increasing recognition of online sourcing as an alternative outsourcing option. Despite the adoption of individuals and small and medium enterprises, there is a dearth of study that looks into the service providers (workers) in OSM. This paper addresses this gap by exploring the experiences of online workers from the Philippines, particularly software developers engaged in independent online work. Findings found at least six themes prevalent to online software developers (OSDs) including uncertainty and transitions, trust and work agreements, reputation and client relationships, accomplishing tasks, platforms and software support, and work practices. The study suggests that by looking at the experiences of software developers, current and future clients (employers) can gain insights in considering this outsourcing option. Moreover, OSMs can consider the needs of OSDs presented in this study as inputs in customizing their services.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Introduction</head><p>Outsourcing to a global workforce opens an opportunity for developing nations (i.e. India, Philippines) to export software services brought about by the convergence of forces such as globalization, wage differentials, software commodification, telecom cost, labor pool, and friendly business climate <ref type="bibr">(Calem and Tjia 2007, p.3)</ref>. This permits participation of a workforce from anywhere in the world as long as they are connected to the internet. While organization-based offshoring has become prevalent in information systems (IS) research <ref type="bibr" target="#b17">(King and</ref><ref type="bibr">Torkzadeh 2008, Lacity et al. 2016)</ref>, an emerging form of outsourcing has become an alternative source of IT labor force for individuals and small and medium enterprises <ref type="bibr" target="#b29">(Obal 2009</ref><ref type="bibr" target="#b26">, Moreno et al. 2014)</ref>. This form of outsourcing through the internet is referred to as online sourcing <ref type="bibr" target="#b23">(Lu and Hirschheim 2011)</ref>. Online sourcing is primarily facilitated by IT-enabled services platforms that support the transmission of digital services through the internet <ref type="bibr" target="#b4">(Beerepoot and Lambregts 2014)</ref>. These platforms are websites designed to handle the entire process of recruitment, selection, training, project oversight, performance feedback, and compensation <ref type="bibr" target="#b1">(Aguinis and Lawal 2013)</ref> among other labor and related processes. This creates a community of micro developers or individuals as a unit of sourcing strategy <ref type="bibr" target="#b30">(Sedera et al. 2014)</ref>.</p><p>Online sourcing has become the subject of interest to IS research focusing on marketplaces and the organizations that outsource through the platforms. Such research includes issues of trust (e.g. <ref type="bibr" target="#b10">Gefen &amp; Carmel, 2013;</ref><ref type="bibr" target="#b25">Lu, Zhang, Wang, &amp; Keller, 2016)</ref>, service trade value chain (e.g. <ref type="bibr" target="#b21">Lehdonvirta, Barnard, Graham, &amp; Hjorth, 2014)</ref>, and competition (e.g. <ref type="bibr" target="#b4">Beerepoot &amp; Lambregts, 2014)</ref>, while on the client side inquiry such as project success (e.g. <ref type="bibr" target="#b11">Gefen et al. 2016)</ref>, providers feedback (e.g. <ref type="bibr" target="#b3">Assemi &amp; Schlagwein, 2016)</ref>, motivations (e.g. <ref type="bibr" target="#b23">Lu &amp; Hirschheim, 2011)</ref> and antecedents (e.g. <ref type="bibr" target="#b24">Lu, Hirschheim, &amp; Schwarz, 2015)</ref> of adopting the internet as a sourcing option were also taken. Studies on the worker's side have been considering microsourcing task <ref type="bibr" target="#b5">(Brawley &amp; Pury 2016)</ref>, turkers experiences <ref type="bibr" target="#b5">(Brawley and Pury 2016)</ref>, flexibility <ref type="bibr" target="#b34">(Süß and Kleiner 2010)</ref>, and learning <ref type="bibr" target="#b31">(Shih et al. 2011)</ref>. Even if there are few studies capturing the experiences of online workers such as coordination practices <ref type="bibr" target="#b2">(Ambe et al. 2016)</ref> and service value chain <ref type="bibr" target="#b22">(Lehdonvirta et al. 2015)</ref>, these studies are considered exploratory.</p><p>In general, prior research on online workers uses frameworks to explore the experiences of workers. For instance, coordination and power <ref type="bibr" target="#b2">(Ambe et al. 2016</ref>) and job satisfaction, turnover, and information sharing <ref type="bibr" target="#b5">(Brawley and Pury 2016)</ref> were considered as lenses in framing experiences. This technique tends to limit the issues and problems experienced by the workers itself. We adhere to the argument of <ref type="bibr" target="#b12">Glaser (1998)</ref> who believed that "for a problem to be relevant, it must come from whom it has significance". By exploring the area of investigation without specific issues and allowing the inquiry to be guided by the concerns opened by the participants, we argue that major themes relevant to the participants will be revealed.</p><p>Sourcing through the internet for software needs creates a notion of the unknown workforce responding to the IT needs of an organization as referred to by <ref type="bibr">Ågerfalk et al. (2008)</ref> to refer to open sourcing strategy. In this study, we uncover this workforce by identifying themes from their work experiences. We formulated themes from the categories of experiences which describes the nature of the work. We argue that recent phenomenon is best explored from the perspective of those working on it rather than framing it on the existing literature. By examining the phenomenon from the perspective of people involved allows us to understand the situation and will direct us to applicable theories or framework as a frame of reference.</p><p>In this study, we give an overview of the concerns of online software developers (OSDs) also called online freelance software developers. Based on experiences, we deduce major concerns for further exploration that will provide insights to clients (employers) and OSM services to address the concerns of online workers. We begin this by detailing out research design, setting, respondents, data collection, and analysis. We then present our results through a subsection for each theme. Lastly, discussion, conclusion, limitations and future work are presented in the remaining parts of the paper.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Research Design</head><p>The research aimed at exploring the experiences of online software developers (OSDs) who acquired their work through online sourcing marketplaces (e.g. Upwork, freelancer, onlinejobs.ph). It is designed to be broad and guided by defining the area of investigation rather than specific questions formulated from the literature review. As a starting point, we began adopting the IS disciplinary perspective <ref type="bibr" target="#b8">(Dey 1999</ref>) and define the scope to include software developers working for an employer or client in the OSMs or hired through ICT without physically seeing each other. Instead of formulating a research question, we adopted the recommendation of <ref type="bibr" target="#b28">Ng and Hase (2008)</ref> to start with a more general question such as "What are the concerns of OSDs and how do they resolve this concerns?". In this manner, we are open for issues and problems of OSDs without the constraints of our preconceived ideas from extant literature but on hunches from the area of investigation <ref type="bibr" target="#b35">(Urquhart et al. 2010)</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Research Setting and Sample Respondents</head><p>The Philippines as a source of OSDs' experiences provides a compelling evidence of the richness of data. First, the WorldBank report entitled "The Global Opportunity in Online Outsourcing" lists the country as one of the top online sourcing destinations in the world <ref type="bibr" target="#b18">(Kuek et al. 2015)</ref> and second from developing country after India. The same report revealed that it has the largest proportion of workforce engaged in online outsourcing work consisting of around 1.6 million workers equivalent to 5% of the working population. These facts motivated us to start the investigation in this area.</p><p>The sets of respondents are divided into three phases of data collection and analysis spanning for around a year of constant comparison and theoretical sampling. This means that insights from the initial data guided the subsequent data collection and analysis <ref type="bibr" target="#b7">(Cho and Lee 2014)</ref>. It is the "where next" in the data collection, and the "for what" of the coding process <ref type="bibr">(Glaser 1998, p.157)</ref>. In determining the criteria, we rely on referrals and search on OSMs.</p><p>The first set of respondents were online software developers with at least three years of working experience. We believed that three years of work will give rich data to describe online software development work. However, during the actual interview, we had included respondent with 2.5 years of working experience, because we were able to confirm the actual years of experience as software developers during the actual face to face interview. As shown in Table <ref type="table" target="#tab_1">1</ref>, phase 1 consists of 8 participants (P1 to P8) with an average age of 27 years old and average online working experience of 5 years and 5 months. The majority are males and singles having varied educational backgrounds from currently pursuing graduate studies to college level related to computer courses. The second phase and third phases included around 3 months to a year of work experience in addition to existing data to elaborate on the new experiences in acquiring work while still gathering more variations such as married and female participants as well as experienced in the different platforms such as onlinejobs.ph and Upwork.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Data Collection</head><p>The primary data collection method employed was face to face interview with supporting observation to some of the participants. 13 participants were observed in their working environment at home or while mobile (i.e. coffee shops) for at least 30 minutes. One participant is living with the researcher.</p><p>All of the participants were added by the researcher on their social media account as part of the observation and captured supporting evidence based on the face to face interview if any, such as posts related to online work.</p><p>The first phase of data collection was based on the number of years of experience of the software developer and the analysis was done after all 8 participants were interviewed. We came up with initial themes and were submitted to a conference. Guided by the concept of theoretical sampling, where we decide on analytical grounds where to sample next <ref type="bibr" target="#b35">(Urquhart et al. 2010)</ref>, we ask referrals or search on online marketplaces or personal networks what type of participants will contribute to the emerging themes. For instance, we observed that there was a concern of blurring boundaries between personal and work concerns due to the practice of working at home, however, we do not have a mother participants. In that case, we prioritized searching for a mother working as an online developer to elaborate the categories and finding variations.</p><p>The second phase was done through a constant comparison of incident to incident which becomes an indicator of a concept <ref type="bibr" target="#b14">(Glaser and Holton 2004</ref>) based on experiences. Every after interview, we coded it immediately and compare experiences with previous categories. We then determine the concept that needs to be elaborated as basis for theoretical sampling.</p><p>A self-made general guide questionnaire was developed to allow respondents to share their experience. Initially, they were asked about four general questions which include: "How did you come to work as online software developer?", "Describe your daily work routine", "Describe an incident where you encounter issues, concerns, or problems about working online", and "What are your likes and dislikes about your work?". We also asked insights of the respondents with regards to the trend of online work. While the respondents were answering, follow-up questions to further clarify the incidents or concepts were employed to elaborate necessary issues and concept that the participants were describing. When the concepts such as transitions and reputation emerge, during the third phase, we also include confirmatory questions and elaborate more of their experience on how they manage or experience the emerging themes. Each interview lasted for around 1 hour to two hours. Interviews were recorded. Notes and verbatim statements were left from the recordings which aid in the analysis and coming up with codes, categories, and themes.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Data Analysis</head><p>Themes were derived through constant comparison and theoretical sampling <ref type="bibr" target="#b35">(Urquhart et al. 2010)</ref>.</p><p>We performed three levels of abstraction through the coding process. As a guide, we adopted the process of <ref type="bibr" target="#b32">Stray et al. (2016)</ref> in their analysis for the different levels of abstraction which they refer to as codes, concepts, and categories. The process of constantly comparing codes to codes, codes to concepts, concepts to concepts, concepts to categories, and categories to categories <ref type="bibr" target="#b32">(Stray et al. 2016)</ref> determine if the existing code, concept, or categories can be used. The levels of abstraction are illustrated in Table <ref type="table">2</ref>. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Statements</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Flexible Schedule Scheduled Meeting</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Table 2. Illustration of levels of abstraction</head><p>The analysis undergoes through two major processes of open coding and clustering. During open coding, we label the statements line by line based on the transcripts. We adhered to the Glaserian grounded theory of open coding <ref type="bibr">(Glaser 1992, p.48)</ref> where no preconceived codes or concepts. Instead, we carefully coded each statement and compared incidents to incidents for each of the interview transcripts. At the early stage of open coding, we treated each of the concepts with similar relevance, while taking note of the common incidents in the succeeding interviews. Through constant comparison, we later consider some of the codes or concepts important to the concerns of OSD.</p><p>The open coding analysis resulted in several categories with their corresponding indicators which are considered concepts or codes. By focusing on comparing categories looking at the similarities of the concepts as an indicator of the categories, we cluster similar categories and labeled it as a theme. We grouped related theme into one to limit the number of different themes. For instance, uncertainties and transitions were two different categories in the initial clusters but later group into Uncertainty and Transitions in Work because of their similarities and coherence in describing circumstances relevant to OSD work.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Results</head><p>The results exhibit at least 6 themes as prevalent concerns of online software developers (OSDs). These are uncertainty and transitions, trust and work agreements, platform and software support, reputation and client relationship, accomplishing tasks, and work practices. We detailed each of this themes in the next subsections.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Uncertainty and Transitions in Work</head><p>The project-based or tasks orientation of OSMs create a notion of temporary and lack of long-term employment options for OSDs. This leads to perceived notion of uncertainty. Uncertainty refers to the hesitations and insecurities of the OSD during application and duration of the project. This stems from the lack of information about the organization they are working with and the assurance of the contract if any. As a result, it is normal for an OSD to experience various transitions in work. Transitions describe the processes that introduce changes to the work arrangement such as from parttime to full-time, project-based to hourly rate, individual to teams, freelancer to having their own business or joining a physical (having an actual office) company.</p><p>Uncertainties are prevalent in the words of the OSDs. For instance, a Participant 18 (P18) shared that working online is "like [a] gamble, you have no assurance". Several of them shared that they were not paid for the service they rendered. A common statement is that they rendered the service but was not paid after they uploaded or submitted the work. For example, a P9 shared that, "It was a $200 project but when I'm done with the work, I was not able to contact him", referring to the client. Moreover, there are also employers (also clients) who suddenly cut the project for several reasons (e.g. change of plans). For example, in the words of P2, "it's online… they might be lost anytime".</p><p>Experiences of uncertainties provide a lesson to OSD we referred to as transitions. Though our examples of uncertainties connote a negative impression, transitions can be both considered as encouraging or discouraging in their decisions to continue working in this type of environment. For example, there are developers who will no longer work for OSMs through project-based payment. Instead, they will work for per-hour basis where they are assured of their payment. Those working at a local company are viewing online work as "raket" -a part-time work for extra income. However, they later work as full-time as they realized that working at home with a much higher income is more advantageous to them especially those who are married. Transition of working outside the OSM is also common. This is a result of working with a client for a certain period of time.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Trust and Work Agreements</head><p>Trust and work arrangements as a theme is derived from categories such as agreements, contracts, employer relationships, application, hiring, screening, monitoring, and fairness. From the codes and statements of the OSDs, these categories indicate incidents of issues and concerns related to trust and agreements.</p><p>Contracts are considered prerequisites for working, however, for OSDs, agreements are rather common. Work agreements are agreed on terms and conditions of working with the employer. This may include salary, duration, terms of payment, when to release, position, schedule of work, when to increase, and the use of tracker (e.g. for monitoring). Though there are instances where a physical contract exists, OSDs perceived it as less relevant and difficult to enforce considering the differing governing laws of their location to the location of employers. It is also evident that contracts were not followed nor updated after a few months of working. For example, Participant 1 mentioned of a contract but later was not followed,"After a week, I was given a contract as a probe for 3 months. I received the salary based on contract for the first 15 days, however, it was increased after that". When asked about changes in the contract he said: "…it is nothing".</p><p>Agreements with the employer (client) consist of formal and informal forms. Informal are verbal or written (chats) agreements that are not explicitly expressed in a document that can be referred to by OSD. Written agreements in a form of contract of services where both parties affixed their signatures are considered formal. Agreed terms and conditions of working with the employer are common components of the contract of services in written form. Although most of the OSMs such as UpWork embeds the amount of salary and hourly rate in the process (e.g. bids), beyond these agreements, OSDs rely on the value of trust as indicated by the statements of Participant 7, "90 percent are no contract, mostly are NDA [nondisclosure agreement]… Contract does not matter because you can do nothing with it. Usually we work with mutual understanding". Another, when Participant 14 was asked, "Do you have contract?" he answered, "No, only trust. The non-disclosure, is for the client… we signed a contract with", referring the contract to the client of the employer. Moreover, instances of power and dependency of OSDs to employers is also a concern. For instance, when we ask about how they agreed with their salary, Participant 4 responded in a short and timid way, "…trust…actually it's hard to demand your rate because it all depends on them".</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Reputation and Client Relationship</head><p>One determining factor common to OSDs who stayed longer with their employers is that they have had a good reputation and relationships. Reputation refers to ratings (quantitative) or reviews (qualitative) from OSMs, while the relationship with clients can be defined in terms of connectedness and mutual dealings. Although reputation at OSMs is a concern for OSDs, it is important for them to establish and maintain good relationships with their employers. In the words of Participant 8, "My Boss is very kind. They treated us well, so we should…, we can't let go. They are so good, so I want to work with them…There are some with better offer but this is how like the shift, they are not equivalent in terms of pay but currently I like the environment, I like my boss and maybe I have loyalty". They even viewed salary as secondary once the relationship is good. They believe that having a good relationship with their employer is a key to reputation in OSMs.</p><p>In gaining reputation, it is important to maintain a good impression and standards in a work outputs. For instance, "I set also a standard, I will deliver as soon as possible because you want to give a good impression", as shared by Participant 9. In hourly rating scheme, there are automated mouse movements that online workers are using to get paid even if they are not working. When asked about this issue, Participant 7 answered: "There are screenshots so I don't want to destroy my name". This indicates the importance of maintaining a good reputation with employers. In fact, Participant 9 also mentioned about the feeling of depriving himself, "If you are starting and you have to build a reputation…I start working with 3 jobs, you will have no time for yourself… because of reputation and also if night shift. Also, more of personal being, it's like if you are working too much…how you manage time. I experience depriving myself, too tired…" Having a good reputation and relationship make an OSD valuable to online employers. In addition, it allows them to create a team to cater to growing needs of their clients, "So I think the client was impressed so he told me, 'Build a team'. So I invited some of the fresh graduates [Participant 14]". Another case of the established relationship with clients is that an OSD can refer to their known developer friends to work with the client. In the words of the Participant 3, "So that we will depend on employers. To be recognized, to hire others. You must have a reputation. We are planning that we will be managing it." As a result, small teams were established into a local business catering to online clients. When this happens, they moved outside of OSMs.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Accomplishing Tasks</head><p>Accomplishing tasks as a theme emerged as a collection of different categories that pertains to activities that relate to making the task or project done. These activities or processes pertains to task (division, priority), coordination, communication, reporting, team, project, and specifications and requirements. This specific concern is part of the everyday routine of an OSD. The categories are factors that influence how they are able to perform the task at hand. Further, it can also be viewed in terms of the extent to which these factors is directly control by the individual or dependent upon the presence of other parties. For instance, communication requires other parties but task assignment is an individual concern. Having a perspective of work control allows an OSD to anticipate what needs to be done to accomplish the tasks.</p><p>It is a common practice that task will be defined by the employer or project manager or leader in case of working with a team. The giving of tasks depend on the ability of the employer to define it before it will be given to the developer. OSDs perceived their employers (clients) as non-technical (also business oriented) or technically oriented person. Business oriented employer defined the main objective of the project and the developer will define the specific tasks needed to achieve the business objectives. For instance, Participant 7 shared, "Most clients have general idea. When I negotiate I will ask bout details but most of them will have no specific idea how to do it. For instance, if they want rental, offering rental... I will ask, do you have an idea how to manage users? In-house or not? So I will give them options". this situation, developers called their client business oriented. On the other hand, technically oriented client specifically define the task to be performed as shared Participant 1, "Client define the task and I will perform the task". In some instance, "…if the client overlooked a task, I will add it…they can also see it… there are functions that might raise when you are coding which might not be included in the <ref type="bibr">[original]</ref> task <ref type="bibr">[list]</ref>". For a project managed by a team leader or manager, there is usually a meeting before the project commences with the client or employer. A separate meeting is also done for developers only. In middle of the project, there are changes and improvements that need to be done. Participant 7 shared that "There are also that will think of improving the project. They will give task then discuss who will be assigned. Sometimes, it's already itemized and assigned to specific talent. Sometimes, the management is not really technical so the technical team will discuss the specifics".</p><p>A balance between a developers' time to focus on assigned individual task and coordination or collaboration for possible dependent task or clarifications has also been raised by a developer. This is possible because they are always online. In the words of Participant 1 referring to his employer, "Sometimes he will chat; if I am annoyed I'll go offline. At the end of the day, I will email: What I have done? What problems did I encounter? What solution did I make? What help I need?"</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Platforms and Software Support</head><p>OSMs are platforms for applying, working, reporting, and even tracking online workers while working. It is the main bridge that connects employers in need of service (usually from developed countries) and the service providers (from developing countries). In addition, working through the internet is paired with support software like communication, tasks, monitoring and related tools to perform job functions.</p><p>Most of the participants found their clients (employer) at onlinejobs.ph and UpWork.com (former oDesk.com and elance.com), with some from easyoutsource.com and freelancer.com. Those working at UpWork.com preferred hourly rate while in onlinejobs.ph are mostly fixed rate, though they said it depends on how the employer preferred to monitor them. This can be attributed to the support of the platforms in monetizing work.</p><p>The use of software to support work from individual to teams is an integral part of online work. From task management to various development tools used to support and accomplish tasks. Table <ref type="table" target="#tab_4">3</ref> presents common tools used by developers as wells as various support for communication and collaboration, monitoring, and task management.</p><p>Although the software has been used to support online works, online marketplaces, monitoring, and distance have been found to be a significant consideration in working as OSD. For instance, the creation of a team to develop a software has been found to be better if the work requires coordination and dependency of tasks. As shared by Participant 23, "if you have clarifications with the task within a team, you can raise it immediately but if remote, you have to wait when he will reply or answer your call". Monitoring through TimeProof or other software that captures screen or through a camera has been mechanisms for clients (employers) to check the work of a developer. However, this practice is opposed by Participant 4. "…it has a tracker, it will also take pictures if the employer will require to enable it. That is also what I don't like about oDesk". Although Participant 4 also used it to discipline himself as he shared "I don't like it at first because I'm doing Facebook from time to time. But now I learned also to minimize Facebook. I learn because I have more time to explore my work and I am disciplined to focus".</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Purpose</head><p>Software Used</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Development Tools</head><p>Notepad++, Browser, Filezilla, XAMPP, codebit, ssh, Emulators, Visual Studio, git tools, Envision, Eclipse</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Communication and Collaboration</head><p>Skype, Slack, Bitbucket, JIRA, Asana, GoToMeeting</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Monitoring</head><p>TimeDoctor, TimeProof, Time tracker software Task Management Trello, Asana, Slack, Kanban, Zendesk</p><p>The majority (31 out of 33) of OSD's preferred to work in onlinejobs.ph platform rather than UpWork or Freelancer. The main reason of working at UpWork is to avoid scammers as Participant 9 shared "Usually at Upwork because I was scammed. It was a 200 dollar project but when I was done with the work, I was not able to contact him". Scammers are already addressed by the Upwork platform through its tracker and agreement with employers. Moreover, the competition of working through UpWork limits the worker to start working, so they resorted to a more open platform such as onlinejobs.ph. For instance, one participant was not able to work through oDesk (now UpWork) because they were detected to exchange Skype account which is prohibited. Most OSDs are also started at onlinejobs.ph which they already gain experiences, their also a tendency to grab opportunities to continue to work that platform.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Work Practices</head><p>Working at home define the basic practices of OSDs. Although some are working in a small office with their team if any, majority are working in a location where they can focus on work and at the same time convenient for them. The flexibility of working time and location also emerged as categories supported by the output-oriented approach in which most of the developers are working. Although there are monitoring tools and work imposed rules by the employer, experienced OSDs are result focused rather than the time-based process of achieving the functionalities they are implementing. In clustering the categories, we define work practices as a set of work routines and related circumstances that are prevalent to OSDs concerns considering their ICT-enabled environment.</p><p>A developer (Participant 1) describes the concept of flexibility in his work as "… you work on your own, no one will instruct. …another is location…example if I want to chill while working, like, I will work for one week at a beach resort to de-stress. I work in the morning then relax in the afternoon. I will also inform the Boss so he will know". It can also refer to the informality of communication such as "Not that strict, you can be absent then make-up.  </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Discussion and Conclusion</head><p>In exploring the experiences of online software developers (OSDs), the thematic analysis suggests several issues of online work and how ICT has become an integral part of it. Such issues support research such as online work as a digital career <ref type="bibr" target="#b18">(Kuek et al. 2015)</ref>, factors to consider in online work (e.g. <ref type="bibr" target="#b26">Moreno et al. 2014)</ref>, and implications to online sourcing (e.g. Brawley and Pury 2016) as a phenomenon in outsourcing strategy.</p><p>For a developing country such as the Philippines, where youth (18 to 24 years old) unemployment is estimated to reach around 50% <ref type="bibr" target="#b9">(Flores 2016)</ref>, a digital career is an option. Given the concerns raise in this study, programs like Digital Malaysia ICT Policy which considers online work as part of economic targets <ref type="bibr" target="#b21">(Lehdonvirta et al. 2014)</ref>, can be considered to promote policy for its implementation and partnership with online sourcing platforms like Freelancer, Upwork, and onlinejobs.ph. In this way, the policy will be guided by the concerns of the online workers so that programs will be developed based on the information from the experiences of those working in this type of environment.</p><p>The theme trust and client relationships strongly support the necessary stage in which an online worker needs to establish itself in online work. This is a consequence of the absence of physical presence and scam happening the online environment. This theme confirms the trust building mechanism as indicated in the study of online sourcing marketplaces <ref type="bibr" target="#b25">(Lu et al. 2016)</ref>, but instead of focusing on the clients (employers) or the OSM, this study provides the perspective of workers. One of the challenges of OSDs is to start providing evidence of its capability to produce the necessary result to gain trust with clients and to maintain and get the next project or employer. This can be one of the reasons why the persistence of network <ref type="bibr" target="#b22">(Lehdonvirta et al. 2015)</ref> exist in this type of marketplace.</p><p>The themes transitions between different projects and reputation are issues related to trust <ref type="bibr" target="#b10">(Gefen and Carmel 2013)</ref> in an online environment. The per project work common to OSM requires the online workers to build its own portfolio and reputation to remain attractive in the platforms. However, reputation records are attached to an account in a particular platform. This situation discourages the online worker to transfer to another platform once they already gained a good reputation in other OSM.</p><p>Online sourcing clients and developers of OSMs can view the themes as additional insights from the viewpoints of OSDs. For instance, developers preferred the output-oriented approach in work monitoring, yet OSMs have not embraced this as part of their platform support. They are developing the time-based monitoring which might limit the potential of developers working on these platforms. This is also why there is a need to used software outside of the platform to support their work. Software support such as communication, monitoring, and task management might be considered by OSMs to be integrated into their working environment to fully support working online in their platform.</p><p>Platform design and workers tasks have been examined in a crowdsourcing market <ref type="bibr" target="#b16">(Jain et al. 2017)</ref>.</p><p>In this study, the worker's analysis provides a more detailed examination that would impact task design. Since aspects of the characterization of workers are viewed from the data, this study provides additional support and elaboration on the workers perspective. Moreover, the context of the individual perspective on digital work supports the study that suggests that IT use in decision making is partly attributed to coordination and tendency to foster more discretion <ref type="bibr" target="#b33">(Sun 2016</ref>). In the perspective of this study, the adoption of IT in households enabled a form of telecommuting work which depends on ICT.</p><p>The mobility of knowledge worker is another perspective supported by this study. ICT mediates mobility of workers <ref type="bibr" target="#b27">(Nelson et al. 2017</ref>) that exhibit practices that support nuances that differentiate it from an office setting. Mobility dimensions as examined in the study of <ref type="bibr" target="#b27">Nelson et al. (2017)</ref> such as spatial, temporal, contextual, and social are examples of concepts that can be seen in the work of online software developers. Though not fully tackled, it provides evidence that this type of work has been in practice enabled by the diffusion and development of ICT in a developing country.</p><p>There are a lot of questions that arise when we look at the overall picture of the digitization of work in general. For instance, <ref type="bibr" target="#b15">Huws (2017)</ref> opens the question of the intensity of work, psychosocial risks, precariousness, working hours and effects on health, and pension in this type of work. Though this study provides evidence of the proliferation of this type of work, these questions raised a challenge in the sustainability of this workforce. Looking at the experiences of OSDs provide partly the answers but the specific examination is needed. Having a starting point through this study illuminates a valid further inquiry in this type of job.</p><p>The themes and specific work practices are also relevant to the investigation of <ref type="bibr" target="#b20">Lee (2016)</ref>  In conclusion, this study presents the experiences of OSDs into six clusters of work concerns. These are uncertainty and transitions in work, trust and work agreements, reputation and client relationship, accomplishing tasks, platforms and software support, and work practices. These themes provide insights to clients (employers), future online workers, and developers of OSMs for possible improvements and strategies in their involvement in online sourcing phenomenon.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Limitations and Future Work</head><p>While this study provides a perspective of online work, there is a wide array of online work available in OSMs that might not exhibit similarities with the experiences of OSDs. We started exploring this work considering a wide variety of available jobs, however, due to the variety, we decided to start our investigation with software developers which is very relevant to the information systems discipline. We, therefore, recommend to consider other types of work such as transcription, animation, or content writing and compare the result to the themes derived in this study.</p><p>Due to the limited sample and location of the research area, culture may affect the result of the thematic analysis. We have not considered the circumstances or situations in which these OSDs consider this option of work. We suggest that considering the environment such as living in a city or rural area or availability of jobs may provide a different perspective that will illuminate concepts not discussed in the thematic analysis.</p><p>Lastly, the research is an overview of the OSDs experiences in online work. A deeper and a focused area of concerns may provide deeper insights. Although this study intends to contribute by uncovering issues of online work, we have a limited discussion of the broader factors such relationships, antecedents, or implications of the themes presented.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head>Phase Participant (P) Average Age (Years) Sex Civil Status Educational Background Years of Experience (Year) 1</head><label></label><figDesc></figDesc><table><row><cell></cell><cell>P1 to P8</cell><cell>27</cell><cell>7 Males</cell><cell>6 Single</cell><cell>3 Pursuing graduate</cell><cell>5. 4</cell></row><row><cell>(Jan</cell><cell>to</cell><cell></cell><cell>1 Female</cell><cell>2</cell><cell>studies</cell><cell></cell></row><row><cell cols="2">April 2015)</cell><cell></cell><cell></cell><cell>Married</cell><cell>2 BS Graduate</cell><cell></cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>3 College level</cell><cell></cell></row><row><cell>2</cell><cell>P9 to 16</cell><cell>28</cell><cell>6 Male</cell><cell>5 Single</cell><cell>4 Pursuing graduate</cell><cell>4.4</cell></row><row><cell>(Sept</cell><cell>-</cell><cell></cell><cell>2 Females</cell><cell>3</cell><cell>studies</cell><cell></cell></row><row><cell cols="2">Nov. 2016)</cell><cell></cell><cell></cell><cell>Married</cell><cell>1 BS graduate</cell><cell></cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>3 College Level</cell><cell></cell></row><row><cell>3</cell><cell>P17 to 33</cell><cell>27</cell><cell>11 Males</cell><cell>12 Single</cell><cell>3 Pursuing graduate</cell><cell>4.9</cell></row><row><cell cols="2">Jan to Feb</cell><cell></cell><cell>6 Females</cell><cell>5</cell><cell>studies</cell><cell></cell></row><row><cell>2017)</cell><cell></cell><cell></cell><cell></cell><cell>Married</cell><cell>13 BS graduate</cell><cell></cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>1 College Level</cell><cell></cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1"><head>Table 1 . Summary profile of sample respondents for each phase of data collection</head><label>1</label><figDesc></figDesc><table /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_3"><head></head><label></label><figDesc>Then it's easy to request. Like you just chat" [Participant 2]. However, flexibility is not always guaranteed. The developer needs to convince the employer of his or her capability to manage flexible work schedule based on earlier work. Participant 5 was asked if he enjoys the advantage of flexibility in work he answered "Actually its' not at the start. You need to stay or part of the team in order to be minimized monitoring. There are times that you need to have extra work that requires you more time. There are also deadlines that need to do, there is overtime, so it's not really that flexible. It depends on how long you are connected to the client".The freedom to work in preferred time and location is also offset by the results-oriented basis of work performance. The statements of two developers are, "Output-based…is the task is done given the time.Like you can finish it in 3 days then you must do it. No screenshots…I don't like monitoring" [Participant 2] and "You need to produce an output before you receive a salary. We have a bonus if you have a good performance like more than your regular salary"[Participant 5]. Working at home also creates blurring boundaries between work and personal life. As describe by Participant 10, "So there is no boundary with work, so it's like working for the whole day since even if it's not your time to work, since you are facing the computer, you think of your problem [in work] so the tendency is you will work on it". Further, although most OSDs are working at home, many are also considering it as mobile work, it so happens that most of their time are spent at home.</figDesc><table><row><cell>Working at home requires self-management and love for work. For instance, Participant 1 explains</cell></row><row><cell>that "In home-based, you have no option not to work. If you like software development, you must</cell></row><row><cell>love it. It is difficult to maintain if you work only for the money. If not, the tendency is you cannot</cell></row><row><cell>sustain".</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_4"><head>Table 3 . Summary of the purpose of software used by OSDs This</head><label>3</label><figDesc>is reflected in one of the accounts of Participant 9, "It's a home-based job. I use my laptop so it's mobile but I normally work at home".</figDesc><table /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_5"><head></head><label></label><figDesc>in exploring the impact of ICT in work. Work practices such as mobility, schedule flexibility, and work at home are examples of the emerging work patterns that emancipate from online workers. Issues related to telecommuting, life-work balance, and virtual teams are topics where data from this study supports.</figDesc><table /></figure>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Acknowledgements</head><p>We would like to thank the participants for their willingness to share their experiences and time during the interview. Also to the Commission on Higher Education (CHED) through the Faculty Development Program of the Philippines for partly funding the research.</p></div>
+			</div>
+
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Outsourcing to an Unknown Workforce: Exploring Opensourcing as a Global Sourcing Strategy</title>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">J</forename><surname>Ågerfalk</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Fitzgerald</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">J</forename><surname>Agerfalk</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Fitzgerald</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="385" to="409" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">eLancing: A review and research agenda for bridging the sciencepractice gap</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Aguinis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">O</forename><surname>Lawal</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.hrmr.2012.06.003</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Human Resource Management Review</title>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="6" to="17" />
+			<date type="published" when="2013">2013</date>
+			<publisher>Elsevier Inc</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Vendors &apos; Perspectives of Coordination in the Information Technology Offshore Outsourcing Industry : An Exploratory Study from the Philippines</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">M</forename><surname>Ambe</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">F</forename><surname>Brereton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Rittenbruch</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/2818048.2819991</idno>
+	</analytic>
+	<monogr>
+		<title level="m">CSCW &apos;16 Proceedings of the 19th ACM Conference on Computer-Supported Cooperative Work &amp; Social Computing</title>
+		<imprint>
+			<date type="published" when="2016">2016</date>
+			<biblScope unit="page" from="319" to="334" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Provider feedback information and customer choice decisions on crowdsourcing marketplaces: Evidence from two discrete choice experiments</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Assemi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Schlagwein</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.dss.2015.11.001</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Decision Support Systems</title>
+		<imprint>
+			<biblScope unit="issue">82</biblScope>
+			<biblScope unit="page" from="1" to="11" />
+			<date type="published" when="2016">2016</date>
+			<publisher>Elsevier B.V</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Competition in online job marketplaces: Towards a global labour market for outsourcing services?</title>
+		<author>
+			<persName><forename type="first">N</forename><surname>Beerepoot</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Lambregts</surname></persName>
+		</author>
+		<idno type="DOI">10.1111/glob.12051</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Global Networks</title>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="236" to="255" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Work experiences on MTurk: Job satisfaction, turnover, and information sharing</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">M</forename><surname>Brawley</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">L S</forename><surname>Pury</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.chb.2015.08.031</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Computers in Human Behavior</title>
+		<imprint>
+			<biblScope unit="issue">54</biblScope>
+			<biblScope unit="page" from="531" to="546" />
+			<date type="published" when="2016">2016</date>
+			<publisher>Elsevier Ltd</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<monogr>
+		<author>
+			<persName><forename type="first">E</forename><surname>Calem</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Tjia</surname></persName>
+		</author>
+		<title level="m">Offshoring Information Technology</title>
+		<meeting><address><addrLine>New York</addrLine></address></meeting>
+		<imprint>
+			<publisher>Cambridge University Press</publisher>
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Reducing Confusion about Grounded Theory and Qualitative Content Analysis : Similarities and Differences</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">Y</forename><surname>Cho</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Lee</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The Qualitative Report</title>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="page" from="1" to="20" />
+			<date type="published" when="2003">2014. 2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<monogr>
+		<title level="m" type="main">Grounding Grounded Theory: Guidelines for Qualitative Inquiry</title>
+		<author>
+			<persName><forename type="first">I</forename><surname>Dey</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1999">1999</date>
+			<publisher>Academic Press</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">9.1 million Pinoys remain unemployed -SWS</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Flores</surname></persName>
+		</author>
+		<ptr target="http://www.philstar.com/headlines/2016/02/10/1551567/9.1-million-pinoys-remain-unemployed-sws" />
+	</analytic>
+	<monogr>
+		<title level="j">Manila</title>
+		<imprint>
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Why the First Provider Takes it All: The Consequences of a Low Trust Culture on Pricing and Ratings in Online Sourcing Markets</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Gefen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Carmel</surname></persName>
+		</author>
+		<idno type="DOI">10.1057/ejis.2012.49)</idno>
+	</analytic>
+	<monogr>
+		<title level="j">European Journal of Information Systems</title>
+		<imprint>
+			<biblScope unit="volume">22</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="604" to="618" />
+			<date type="published" when="2013">2013</date>
+			<publisher>Nature Publishing Group</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">How project description length and expected duration affect bidding and project success in crowdsourcing software development</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Gefen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Gefen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Carmel</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.jss.2015.03.039</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Systems and Software</title>
+		<imprint>
+			<biblScope unit="issue">116</biblScope>
+			<biblScope unit="page" from="75" to="84" />
+			<date type="published" when="2016">2016</date>
+			<publisher>Elsevier Ltd</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<monogr>
+		<title level="m" type="main">Doing Grounded Theory Issues and Discussions</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Glaser</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1998">1998</date>
+			<publisher>USA: Sociology Press</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<monogr>
+		<title level="m" type="main">Emergence vs forcing: Basics of grounded theory analysis</title>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">G</forename><surname>Glaser</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1992">1992</date>
+			<publisher>Sociology Press</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Remodeling Grounded Theory</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Glaser</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Holton</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.clae.2007.06.001</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Qualitative Social Research</title>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Where Did Online Platforms Come From? The Virtualization of Work Organization and the New Policy Challenges it Raises</title>
+		<author>
+			<persName><forename type="first">U</forename><surname>Huws</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-3-319-52057-5)</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Policy Implications of Virtual Work</title>
+		<imprint>
+			<date type="published" when="2017">2017</date>
+			<biblScope unit="page" from="29" to="48" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Understanding workers, developing effective tasks, and enhancing marketplace dynamics: a study of a large crowdsourcing marketplace</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Jain</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Sarma</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Das</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Parameswaran</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Widom</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the VLDB Endowment</title>
+		<meeting>the VLDB Endowment</meeting>
+		<imprint>
+			<date type="published" when="2017">2017</date>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="page" from="829" to="840" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Information systems offshoring: Research status and issues</title>
+		<author>
+			<persName><forename type="first">W</forename><forename type="middle">R</forename><surname>King</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Torkzadeh</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS quarterly</title>
+		<imprint>
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="205" to="225" />
+			<date type="published" when="2008">2008</date>
+			<publisher>JSTOR</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<monogr>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">K</forename><surname>Kuek</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Paradi-Guilford</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Fayomi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Imaizumi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Ipeirotis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Pina</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Singh</surname></persName>
+		</author>
+		<title level="m">The Global Opportunity in Online Outsourcing</title>
+		<meeting><address><addrLine>Washington, DC</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Review of the empirical business services sourcing literature: an update and future directions</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">C</forename><surname>Lacity</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">A</forename><surname>Khan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Yan</surname></persName>
+		</author>
+		<idno type="DOI">10.1057/jit.2016.2)</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Information Technology</title>
+		<imprint>
+			<biblScope unit="page" from="1" to="60" />
+			<date type="published" when="2016">2016</date>
+			<publisher>Nature Publishing Group</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<monogr>
+		<title level="m" type="main">The Impact of ICT on Work</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Lee</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-981-287-612-6</idno>
+		<editor>J. Lee</editor>
+		<imprint>
+			<date type="published" when="2016">2016</date>
+			<publisher>Springer</publisher>
+			<pubPlace>Singapore</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Online labour markets -leveling the playing field for international service markets ?</title>
+		<author>
+			<persName><forename type="first">V</forename><surname>Lehdonvirta</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Barnard</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Graham</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Hjorth</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">IPP2014: Crowdsourcing for Politics and Policy</title>
+		<imprint>
+			<date type="published" when="2014">2014</date>
+			<biblScope unit="page" from="1" to="20" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Online Labour Markets and the Persistence of Personal Networks: Evidence From Workers in Southeast Asia</title>
+		<author>
+			<persName><forename type="first">V</forename><surname>Lehdonvirta</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Hjorth</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Graham</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Barnard</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">American Sosiological Association Conference</title>
+		<imprint>
+			<date type="published" when="2015">2015. 2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Online Sourcing: Investigations from Service Clients&apos; Perspective</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Lu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Hirschheim</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">AMCIS 2011 Proceedings</title>
+		<imprint>
+			<date type="published" when="2011">2011</date>
+			<biblScope unit="page" from="1" to="14" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Examining the antecedent factors of online microsourcing</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Lu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Hirschheim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Schwarz</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s10796-013-9440-y)</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Frontiers</title>
+		<imprint>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="601" to="617" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">Trust antecedents, trust and online microsourcing adoption: An empirical study from the resource perspective</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Lu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">R</forename><surname>Keller</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.dss.2016.03.004</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Decision Support Systems (85)</title>
+		<imprint>
+			<publisher>Elsevier B.V</publisher>
+			<date type="published" when="2016">2016</date>
+			<biblScope unit="page" from="104" to="114" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Doing Business with Strangers : Reputation in Online Service Marketplaces</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Moreno</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Terwiesch</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Moreno</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Terwiesch</surname></persName>
+		</author>
+		<idno type="DOI">10.1287/isre.2014.0549</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="865" to="886" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Mobility of knowledge work and affordances of digital technologies</title>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">B</forename><surname>Nelson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">H</forename><surname>Jarrahi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Thomson</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.ijinfomgt.2016.11.008</idno>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Information Management</title>
+		<imprint>
+			<biblScope unit="volume">37</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="54" to="62" />
+			<date type="published" when="2017">2017</date>
+			<publisher>Elsevier Ltd</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">Grounded suggestions for doing a grounded theory business research</title>
+		<author>
+			<persName><forename type="first">K</forename><surname>Ng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Hase</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Electronic Journal of Business Research Methods</title>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="155" to="170" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">Microsourcing -Using information technology to create unexpected work relationships and entrepreneurial opportunities</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Obal</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/1125170.1125191</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Communications of the Association for Information Systems</title>
+		<imprint>
+			<biblScope unit="volume">24</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="161" to="174" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<author>
+			<persName><forename type="first">D</forename><surname>Sedera</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Lokuge</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Krcmar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Srivastava</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Ravishankar</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">The Future of Outsourcing in the Asia-Pacific Region : Implications for Research and Practice -Panel Report from PACIS 2014</title>
+		<imprint>
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">Learning demand and job autonomy of IT personnel: Impact on turnover intention</title>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">P</forename><surname>Shih</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">J</forename><surname>Jiang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Klein</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Wang</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.chb.2011.07.009</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Computers in Human Behavior</title>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="2301" to="2307" />
+			<date type="published" when="2011">2011</date>
+			<publisher>Elsevier Ltd</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<author>
+			<persName><forename type="first">V</forename><surname>Stray</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">I K</forename><surname>Sjoberg</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Dyba</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.jss.2016.01.004</idno>
+	</analytic>
+	<monogr>
+		<title level="m">The Journal of Systems and Software The daily standup meeting : A grounded theory study</title>
+		<imprint>
+			<date type="published" when="2016">2016</date>
+			<biblScope unit="page" from="101" to="124" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">The effect of information technology on IT-facilitated coordination, IT-facilitated autonomy, and decision-makings at the individual level</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Sun</surname></persName>
+		</author>
+		<idno type="DOI">10.1080/00036846.2016.1192276)</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Applied Economics</title>
+		<imprint>
+			<biblScope unit="page" from="1" to="18" />
+			<date type="published" when="2016-07">2016. July</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title level="a" type="main">Commitment and work-related expectations in flexible employment forms: An empirical study of German IT freelancers</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Süß</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Kleiner</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.emj.2009.02.002</idno>
+	</analytic>
+	<monogr>
+		<title level="j">European Management Journal</title>
+		<imprint>
+			<biblScope unit="volume">28</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="40" to="54" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">Putting the &apos;theory&apos; back into grounded theory: Guidelines for grounded theory studies in information systems</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Urquhart</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Lehmann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">D</forename><surname>Myers</surname></persName>
+		</author>
+		<idno type="DOI">10.1111/j.1365-2575.2009.00328.x)</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Journal</title>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="357" to="381" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

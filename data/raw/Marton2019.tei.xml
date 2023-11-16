@@ -1,0 +1,1770 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">THE POLITICAL GIG-ECONOMY: PLATFORMED WORK AND LABOR</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Research</forename><surname>Paper</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">Attila Marton Copenhagen Business School</orgName>
+								<address>
+									<postCode>60 2000</postCode>
+									<settlement>Howitzvej, Frederiksberg</settlement>
+									<country key="DK">Denmark</country>
+								</address>
+							</affiliation>
+						</author>
+						<author role="corresp">
+							<persName><forename type="first">Hamid</forename><surname>Ekbia</surname></persName>
+							<email>hekbia@indiana.edu</email>
+							<affiliation key="aff1">
+								<orgName type="institution">Indiana University</orgName>
+								<address>
+									<addrLine>Bloomington 919 E. 10th St</addrLine>
+									<postCode>47408</postCode>
+									<settlement>Bloomington</settlement>
+									<region>IN</region>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">THE POLITICAL GIG-ECONOMY: PLATFORMED WORK AND LABOR</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="MD5">E67D13DC2FB2824373BCDAB822ECCF73</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.7.3" ident="GROBID" when="2023-06-16T09:24+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>Political economy</term>
+					<term>work</term>
+					<term>labor</term>
+					<term>gig-economy</term>
+					<term>platforms</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>The notion of work and labor is changing as digital technologies do not only complement and substitute jobs but also decompose them into tasks coordinated by digital labor platforms. We call upon IS research to critically engage with the political economy of platforms and to study them as mechanisms for the extraction of value, distribution of wealth and power, as well as a particular relationship between humans and machines. To this effect, we explore potential conceptual avenues for such engagement by comparing the platforming of work and labor in the gig-economy with the division of labor found in the workshop and the factory. We conclude the distinct characteristics of the political economy of platforms marked by the hidden or invisible work and labor of participants, and new modes of extracting value from their participation.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Introduction</head><p>In the platform economy, one can labor without work and work without having a job. Consider a ride service platform such as Uber, where employees with paid jobs design and maintain systems, analyze data, and create models; but there are also car owners, who work with their vehicles to earn an extra buck or to make a living. There are riders who provide feedback to the company about their "experience" on the ride, but also algorithms that compile this feedback to rank the driver, and to collect and analyze traffic, and navigation data, to price the ride, and to make predictions about future scenarios. A whole ecology, in other words, of employees, drivers, riders, and, of course, vehicles, navigation systems, banking and credit card systems, and computing machinery is at work to make Uber work as a system. One can make similar observations about other systems such as social media, labor marketplaces, online shopping, and mobile platforms: they all thrive on a heterogeneous group of actors laboring on and for digital platforms.</p><p>In this paper, we ask how IS research can conceptualize new divisions of labor between humans and machines brought about by the rise of digital platforms and the platform economy. Hence, we address platforms through the lens of political economy, complementing the mainstream IS discourse on platforms, which is based on engineering notions of product architectures and economic notions of multi-sided markets <ref type="bibr" target="#b32">(Gawer 2014)</ref>. Historically, we approach platforms as a new, archetypical locus for the division of labor distinct from the other two archetypes -the workshop and the factory <ref type="bibr" target="#b70">(Stabell et al. 1998)</ref>. Such an approach is particularly pertinent, as digital platforms are increasingly decomposing work and jobs into highly granular tasks and gigs, thus driving fundamental, structural changes in labor institutions and beyond <ref type="bibr" target="#b1">(Alaimo et al. 2017;</ref><ref type="bibr" target="#b26">Ekbia et al. 2017;</ref><ref type="bibr">Marton et al. 2017b</ref>). These changes contradict the long-held wisdom that, while technological progress will inevitably make some jobs obsolete, it will create new and maybe even better jobs. With the rise of digital platforms and their capabilities for automated coordination at scale, there is a new possibility of distributing only gigs, making obsolete the whole concept of having to provide for jobs in order to get things done. Crucially, the corporations behind these platforms emerge as dominant players in winner-takes-all markets. Such dominance is obviously resulting in quasi-monopolistic positions; however, what is usually disregarded is that these platforms, because of how they deinstitutionalize labor, show signs of monopsony in labor markets as well <ref type="bibr" target="#b7">(Autor et al. 2017;</ref><ref type="bibr" target="#b37">Hill 2015)</ref>.</p><p>Given that the interplay between technology and the organized division of labor and work is one of the cornerstones of the IS field, IS research is well positioned to investigate the platforming of labor <ref type="bibr" target="#b54">(Lucas et al. 1994;</ref><ref type="bibr" target="#b82">Zuboff 1988</ref>). On the one hand, platforms have become a central unit of analysis in the IS field, providing valuable insights about platforms as product architectures, innovation ecosystems, governance regimes, business models and strategies <ref type="bibr" target="#b16">(Constantinides et al. 2018;</ref><ref type="bibr" target="#b81">Yoo et al. 2010)</ref>. On the other hand, IS research has a long-standing tradition of drawing on critical theory, uncovering technologically embedded power asymmetries, which usually fall into the blind spot of mainstream IS research <ref type="bibr" target="#b35">(Greenhill et al. 2013)</ref>. Building on these strengths, we extend the discourse by discussing platforms as expressions of distinct activities and sentiments, resulting in equally distinct ways of organizing work and labor among humans as well as between humans and machines. A corollary of this is that a significant number of people can make a living and/or produce value not only outside employment relationship but also outside of "work" in general. We discuss these matters within the context of the so-called gig-economy as a revelatory example of platformed labor.</p><p>To this effect, we understand work and labor not as what people do but as social institutions and defining features of modernity. That implies, among other things, that performing the same task does not necessarily mean that the same work is done -for instance, repairing a car can be seen as a hobby or as work, depending on the context. As a notion, work and labor have been equally central to the self-worth of modern individuals and to the self-image of modern societies. Socio-economic and technological changes of recent years, however, seem to be transforming the notions of work and labor, with some observers raising the alarm of joblessness in an impending future <ref type="bibr" target="#b27">(Frey et al. 2013)</ref>, and others counselling calm and prescribing training and re-education as solutions <ref type="bibr" target="#b13">(Brynjolfsson et al. 2014</ref>). Our contribution is primarily an exploratory conceptualization of the political economy of platforms for the IS field, taking the gig-economy as a revelatory illustration. By doing so, we suggest an IS research agenda for contributing to the study of the political economy of platforms by addressing three distinct but interconnected domains. (1) The IS field has developed a sophisticated understanding about the distinct attributes of digital artefacts and their product architectures, which give rise to equally distinct logics of organizing and innovation. As a consequence, (2) platform-ecosystems emerge as alternative regulation systems that need to focus on orchestrating developers and users, rather than on honor bound relationships (as was historically the case for crafts governing guilds) and transactional relationships (typical for firms). Finally, (3) IS research understands the increasing importance of data for value creation and capture, particularly when it comes to studying digital technology as operations of informating, datafying, or digitizing. All these three avenues, we argue, would allow the IS field to contribute an understanding of how digital technology matters in today's political economy.</p><p>To that end, we begin with a brief overview of the prototypical models of the division of labor in classical political economy, establishing the distinction between so-called vertical and horizontal divisions of labor. We then deconstruct these models and the particular relationships they engender between humans and machines in the context of the specialization of work and the division of labor. The examination of these relationships leads us to a reexamination of the current debate about platforming labor, especially in connection with automation and AI, complementing and/or substituting humans. In the sections that follow, we bring these concepts into the context of the gig-economy, which is organized around platforms as new sites for the creation, extraction, and capture of value, alongside the workshop and the factory. We then conceptualize the characteristics of the political gig-economy based on an ethos of microentrepreneurship, the colonization of the lifeworld by the logic of capitalism and technology, the mechanisms of heteromating human engagement and networked inclusion. Finally, we conclude by elaborating on three characteristics of platform production that would allow IS researchers points of entry into the study of the political economy of platforms; product architecture, organizational governance, and value configuration.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Divisions of Labor</head><p>In classical political economy, the impact of technological developments were understood and explained in terms of division of labor, which Adam Smith described in terms of two generic stages or ideal types <ref type="bibr" target="#b2">(Ames et al. 1965</ref>). In the vertical division of labor, best exemplified by the crafts, the craftsperson is engaged in all stages of the production. The broad skill sets involved allow easy adaptation to changing circumstance, giving the craftsperson autonomy and power over the process. Technology, in this context, consists of the various tools the craftsperson uses for specific tasks involved in the creation of non-standard or often unique outputs (see Figure <ref type="figure">1</ref>). This type of division of labor is still around in professional services such as law, medicine, or engineering, as well as in small batch handiwork and artistic work but also in housework, where a stay-home spouse (typically the wife) has a broad set of skills, operating specialized tools to wash dishes, dry laundry, reheat food and so forth.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Figure 1. Specialization of work (vertical division of labor)</head><p>The horizontal division of labor, by contrast, produces highly standardized outputs that lend themselves to routinization and, ultimately, automation. In classical terms, the skilled craftsperson is replaced by laborers who only know how to handle one step of the production process by using specialized tools designed to accomplish that step. Such a development, according to Adam Smith, is driven by growing markets and increased mechanization, among other reasons <ref type="bibr" target="#b51">(Langlois 2002)</ref>. Sufficiently large markets demand high production volume and, consequently, the specialization of crafts to such a degree that each craftsperson becomes a specialist for fewer and fewer steps of the production process. By the same token, the continuous development of better machines, along with the mechanization of the production process, enables unskilled workers to replace the craftsperson while increasing productivity at the same time (see Figure <ref type="figure">2</ref>). This provides the historical origin of the deskilling of work that was the hallmark of Fordism <ref type="bibr" target="#b48">(Katz et al. 2014)</ref>, making workers not only replaceable but also vulnerable to changing circumstances as they, lacking the wider skillset of the craftsperson, were less able to adapt. As others have observed, Adam Smith's second, horizontal division of labor may be more of a special, historical case <ref type="bibr" target="#b2">(Ames et al. 1965)</ref>. From late-19th to early-20th century, deskilling was followed by reskilling, as laborers needed more education to be able to operate and oversee complicated machinery, increasingly running entire production processes <ref type="bibr" target="#b27">(Frey et al. 2013)</ref>. In contrast to the mechanization of labor, as envisioned by Smith, a new division of labor emerged between humans and machines qua automation. While automated machinery displaced human activity, humans found new employment by tending (and designing) machines "as a complex set of activities -perhaps more complex than the crafts activities the machine displaced" <ref type="bibr">(Langlois 2002:14)</ref>. This complementary relationship between capital and skill marked a good part of 20th-century manufacturing, increasing the demand for skilled labor <ref type="bibr" target="#b48">(Katz et al. 2014)</ref>. Still, as the actual production process became automated, the sequence of steps were redesigned and rearranged to fit the logic of automation (see Figure <ref type="figure">3</ref>). Such rearrangement reflects an important qualitative difference to crafts production, in which the relationship between humans and machines was such that technology was a tool adapted to the needs of the craftsperson. With automation, machines produce and laborers adapt to the needs of the machine, which requires to be tended and sustained and its environment sufficiently simplified in order for it to work <ref type="bibr">(Kallinikos et al. 2013b;</ref><ref type="bibr" target="#b69">Simon 1960;</ref><ref type="bibr" target="#b82">Zuboff 1988)</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Figure 2. Horizontal division of labor (mechanization)</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Figure 3. Horizontal division of labor (automation)</head><p>These divisions of labor are certainly overly stylized and simplified, and serve our argument only as ideal types <ref type="bibr" target="#b48">(Katz et al. 2014)</ref>. Still, they point towards two issues, which are highly relevant for the current moment and our argument. First, the division of labor does not only address the collaboration among humans but also the relationship between humans and machines. Second, the division of labor between humans and machines is qualitatively different between crafts production and automation (we subsume mechanization under automation). The former is about pooling and coordinating different skills and specializations, which combined result in the kind of small-batch production typical for workshops. In this setting, technology serves the craftsperson and is adapted to his/her needs as a tool. The latter, by contrast, is about pooling labor power and standardizing it for mass production in the factory. As a result, the laborer adopts to technology as an automaton and becomes replaceable (be it by other humans or by machines). To make this important distinction clear, we borrow from <ref type="bibr" target="#b3">Arendt (1958)</ref> and refer to vertical division of labor as specialization of work (see Figure <ref type="figure">1</ref>) and to horizontal division of labor as actual division of labor (see Figures <ref type="figure">2</ref> and<ref type="figure">3</ref>).</p><p>In understanding the current economy, we need to recognize the differences between the specialization of work and the division of labor as flip-sides of the same proverbial coin rather than as historical progression from one stage to another. According to <ref type="bibr">Sennett (2008)</ref>, craftsmanship may have waned with but was hardly replaced by industrialization. Rather it has survived in the desire to do a job well for its own sake and can still be observed in the skilled, specialized craft of the doctor and the software programmer as well as in the care of the parent or even the citizen. From this perspective, craft and labor are existential expressions of the materiality of the human condition. engagement, we suggest, also calls upon IS research to contribute to the understanding of how the division of labor between humans and machines is newly organized on digital platforms and how, as a result, value is created and captured. Within the historically specific circumstances of capitalist economy, labor is performed for the purpose of value-creation, which then is commodified in ways characteristic for capitalism <ref type="bibr" target="#b58">(Marx 1961)</ref>. In this sense, digital automation and AI is expected to not only intensify existing trends of automation and efficiency gains, but to introduce structural changes to the way technology complements and/or substitutes labor and the new divisions of labor that result from those changes. It is against this backdrop that we turn to the IS literature on digital automation and AI.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Information Systems as Complement to and Substitute for Labor</head><p>Unusual as it may be, Arendt's distinction between specialization of work in terms of crafts production (i.e. technology being adapted as a tool by the craftsperson) and division of labor in terms of automation (i.e. the laborer adapting to automatons and, ultimately, becoming one her/himself) is highly relevant for IS research. Take the current discourse about digital automation and AI (which is, by the same token, also essential for our argument). Broadly, the discourse revolves around issues of complementation and substitution, as artificial intelligence can be used for both -to support and to replace humans in their tasks <ref type="bibr" target="#b84">(Zysman et al. 2018)</ref>. The complementation of work, therefore, evokes the notion that automation and AI are intelligent tools meant to relieve humans from the arduous repetition of routine work <ref type="bibr" target="#b51">(Langlois 2002)</ref>.</p><p>They support the specialization of work. Telling examples are professional experts, expected to be better able to focus on practicing their craft and to coordinate with other specialists. Hence, managers are expected to be supported in their decision-making <ref type="bibr" target="#b39">(Jones et al. 2002;</ref><ref type="bibr" target="#b76">Watson 2017</ref>), professionals to be more effective in their practice <ref type="bibr" target="#b4">(Aron et al. 2011)</ref>, and experts to be augmented in their performance <ref type="bibr" target="#b19">(Davis et al. 2007;</ref><ref type="bibr" target="#b57">Marton et al. 2015)</ref>.</p><p>By contrast, automation as a substitute for humans is about replacing, displacing, or even removing labor <ref type="bibr" target="#b27">(Frey et al. 2013;</ref><ref type="bibr" target="#b50">Kristal 2013</ref>). In addition to robot manufacturing (and the extreme cases of so-called lights-out factories), such substitution introduces, for instance, software agents into customer relationship services <ref type="bibr" target="#b80">(Xiao et al. 2007</ref>) and enterprise supply chains <ref type="bibr" target="#b61">(Nissen et al. 2006)</ref>. Likewise, algorithms are taking over tasks and responsibilities of mid-level managers in terms of governing tasks and transactions particularly on digital platforms <ref type="bibr" target="#b18">(Constantiou et al. 2017;</ref><ref type="bibr" target="#b66">Rosenblat et al. 2016)</ref>. Automation, thus conceived, falls under the division of labor, as it aims to reduce human interference to a minimum, which requires skillsets, profiles, organizations, and even entire institutions to be adapted to the machine logic of automation <ref type="bibr">(Kallinikos et al. 2013b;</ref><ref type="bibr" target="#b51">Langlois 2002)</ref>. One may think of the financial sector and algorithmic trading as only one of many examples (Knorr-Cetina 2016; Weber 1999). The typical response is training and reskilling of laborers for new jobs deemed less threatened by automation <ref type="bibr" target="#b13">(Brynjolfsson et al. 2014;</ref><ref type="bibr" target="#b55">Manyika et al. 2017</ref>).</p><p>These developments are, of course, not completely new, nor are they as clear-cut as we may have made them appear so far. For instance, the notion that machines are comparatively better at performing routine tasks, physical and cognitive, goes back to the early days of political economy, as we outlined above, and is one of the founding stones of IS research <ref type="bibr" target="#b54">(Lucas et al. 1994;</ref><ref type="bibr" target="#b82">Zuboff 1988</ref>). By the same token, the impact of technological innovation on labor markets and production processes is only one aspect of broader societal developments of increasing globalization, trade, mobility of capital and labor, new forms of organizational interdependence, and weakened unions, which all have been transforming the institutional landscape since the 1970s <ref type="bibr" target="#b15">(Consoli et al. 2016;</ref><ref type="bibr" target="#b41">Kalleberg 2011)</ref>. Finally, the distinction between specialization of work and division of labor is hardly clear-cut in practice, as they mix and mingle in various degrees and configurations, packaged into bundles of tasks called jobs. Particularly with ICT, it is not a question of either/or but rather how it partly complements as a tool and substitutes as an automaton.</p><p>Take the new forms of labor exemplified in open source software (OSS) production. Viewed against the background of classical political economy discussed above, OSS is very different from pure crafts and mass production, as it is commons-based and produced by self-selected volunteers who participate (and contribute) according to their personal interests, individual skills, and intrinsic motivation <ref type="bibr" target="#b11">(Benkler 2006)</ref>.</p><p>In contrast to the planned production of concatenated tasks (as is the case in an assembly line), any participant in an OSS production can do any task irrespective of whether that task matches the participant's specialization or skill-set, making it possible for tasks to overlap and to run in parallel <ref type="bibr" target="#b30">(Garzarelli et al. 2011)</ref>. Such a "bazaar division of labor" <ref type="bibr" target="#b31">(Garzarelli et al. 2008;</ref><ref type="bibr" target="#b65">Raymond 1999</ref>) is, crucially, a hybrid by default, presenting both specialization of work and division of labor simultaneously, made possible by digital technology's ability to complement work as a tool as well as substitute labor as an automaton. That is, the programmers themselves can self-select to pool their particular expert skills and workmanship in programming (in this case, they engage in the specialization of work pooling and organizing different skills). At the same time, they can self-select to do something that does not require their particular skillset or no special skillset at all, such as testing and bug-spotting (in this case, they engage in the division of labor, pooling the labor power of volunteers) <ref type="bibr" target="#b30">(Garzarelli et al. 2011)</ref>.</p><p>More recently, such mixing has been observed in formal organizations and firms with regards to digital automation as well. For instance, companies are employing big data analytics to automate rule-based services and tailored content-delivery based on the customer's online behavior; at the same time, they support customer service personnel to proactively provide individualized services <ref type="bibr" target="#b53">(Lehrer et al. 2018)</ref>.</p><p>Hence, within the same job, some tasks are complemented while other tasks are substituted. Likewise across jobs, what may be complementary for one job (AI supporting a medical doctor's diagnosis), may be the substitution of another (same AI replacing the medical doctor's lab technician).</p><p>Still, there are also peculiarities and novelties concerning digital automation that need to be taken into account. For instance, automation is a main driver for the polarization of employment. That is, employment is increasing for both high-income, cognitive jobs as well as low-income, manual jobs, because neither are technically feasible or economically viable to (yet) automate <ref type="bibr" target="#b6">(Autor 2015;</ref><ref type="bibr" target="#b25">Ekbia et al. 2014)</ref>. This is not the case for middle-income, routine jobs; as they are increasingly substituted, skilled workers are pushed towards low-income service occupations, resulting in a growing gulf between "lovely" and "lousy" jobs <ref type="bibr" target="#b34">(Goos et al. 2014;</ref><ref type="bibr" target="#b71">Standing 2016)</ref>. Adding to this wide-reaching, structural shift, the long-held wisdom that computers substitute routine tasks, while complementing non-routine tasks, is challenged as well <ref type="bibr" target="#b28">(Frey et al. 2017)</ref>. The capabilities of digital technologies are expanding to such a degree that they also start substituting a wide range of tasks, which would have been categorized as non-routine, highly creative, complex and, therefore, as non-automatable. Driving a car, for instance, used to be the typical example for a non-automatable because non-routine task less than two decades ago <ref type="bibr" target="#b8">(Autor et al. 2003)</ref>. What humans are good at seems to be a shrinking domain.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Decomposing Jobs into Gigs</head><p>Adding to above discussed developments, there is a more drastic development on the way that has yet to receive adequate attention. As the rise of platforms in the digital economy referred to as the gig-economy demonstrates, bundling tasks into stable jobs (and the kind of stable employment that comes with it) is not necessary anymore <ref type="bibr" target="#b18">(Constantiou et al. 2017)</ref>. Platforms, such as Amazon Mechanical Turk, Uber, or Taskrabbit, are examples for how digital technology, particularly digital automation, is a facilitator for decomposing jobs into granular tasks. As a result of this granularization into micro-or even nano-gigs, the growing polarization between lovely and lousy jobs is superimposed by the growing gulf between having a job (and all the privileges that come with it) and becoming a micro-entrepreneur (and the precariousness that comes with that) <ref type="bibr" target="#b37">(Hill 2015;</ref><ref type="bibr" target="#b71">Standing 2016)</ref>. Such decomposition of jobs into tasks, algorithmically assigned to "taskers" via labor platforms, runs against the dominant public discourse about automation. It contradicts the expectations that the current wave of automation will bring the same kind of changes as in the past, as it will merely change the task composition of jobs (i.e. people will keep their jobs as only some tasks will be automated) and the distribution of jobs (i.e. people will learn new skills to fill new jobs, requiring a human touch) <ref type="bibr" target="#b13">(Brynjolfsson et al. 2014)</ref>. The widespread decomposition of jobs, however, breaks with a core sentiment of modernity.</p><p>In modern society, work and labor are bundled into jobs resulting in what <ref type="bibr" target="#b3">Arendt (1958)</ref> referred to as a society of jobholders. The notion of "having a job" is a central institution of modernity, variously linked to privileges such as wage, salary, pension, and other material benefits, but also to social status and identity <ref type="bibr" target="#b40">(Just 2017;</ref><ref type="bibr" target="#b41">Kalleberg 2011)</ref>. This is not to say that all work and labor is bundled into jobs but rather that a specific selection has become socially accepted as productive and valuable. Work and labor not linked to a job, by contrast, has remained largely invisible, in the sense that it is socially acceptable for such work and labor to be unwaged (e.g. housework, caring for children and elderly family-members) and/or to be underprivileged (e.g. temp work or free-lancing bereft of broader labor protections and securities) <ref type="bibr" target="#b71">(Standing 2016)</ref>. This society of jobholders, if not coming to an end, is at least challenged by a new discourse about a "post-job society", most prominently with regards to the gig-economy. Digital automation and AI are important themes of this discourse as they are expected to algorithmically decompose jobs into tasks, distribute and coordinate the fulfilment of those tasks, and to recompose them into a final outcome. As the Economist reported in 2017, the World Bank estimates that 5m people worldwide already participate in such arrangements, offering to work remotely online via marketplaces such as Mechanical Turk, Freelancer.com or UpWork (Economist 2017).</p><p>Proponents of these developments welcome gig-economy platforms as vehicles of freedom and selfdetermination for larger parts of the population, which would not have had access to labor markets otherwise. Rather than working for one employer, supporters propose, one can now assemble a personalized portfolio of tasks and revenue streams (that is, drive for Uber in the morning, task for TaskRabbit in the afternoon, and rent out your guest room via Airbnb overnight). Technology, thus conceived, lowers the barriers for private individuals to become active participants of markets -to be microentrepreneurs and, as their own boss, be able to choose what, when and how to work <ref type="bibr" target="#b73">(Sundararajan 2016)</ref>.</p><p>Likewise, technology enables alternative forms to coordinate production and consumption <ref type="bibr" target="#b12">(Botsman et al. 2011)</ref>. Most importantly, so-called commons-based peer production has become a viable alternative to firms and markets, as non-proprietary regimes of common ownership (exemplified by the scientific community) and non-market, peer production of information goods (exemplified by Wikipedia) has become economically feasible <ref type="bibr" target="#b11">(Benkler 2006)</ref>. Wikipedia, in particular, benefits from pooling large numbers of crowd-sourced (micro-)tasks or gigs, ranging from writing entire articles to correcting only a single typo <ref type="bibr" target="#b0">(Aaltonen et al. 2013)</ref>.</p><p>Critical voices, by contrast, take issue that, aside from a few flagship examples such as Open Source Software and Wikipedia, the gig-economy is dominated by the commercial interests of for-profit businesses and their platforms <ref type="bibr" target="#b68">(Schmidt 2017)</ref>. Due to the "winner-takes-most" dynamics, characteristic of the digital platform economy in general, only a few corporations will appropriate this emerging work and labor market. "Superstar firms" (such as Amazon, Google, Facebook, Uber, etc.) are obviously already in advantageous strategic positions to exploit the gig-economy. Furthermore, their rise is accompanied by a fall in the share of labor in firm value-added and sales (meaning that platforms automate rather than hire labor), which undermines the expectation that digital automation (as mechanized automation before) will inevitably create new, better jobs <ref type="bibr" target="#b7">(Autor et al. 2017)</ref>. Likewise, the gig-economy is criticized to be more of an ideological expression of Silicon Valley capitalism, while the Web 2.0 narrative mystifies "sharing" as the core sentiment and cultural value of contemporary, digital society <ref type="bibr" target="#b38">(John 2012)</ref>. Variously linked to notions of individuality, self-actualization, community and participation, it covers exploitative and unethical practices, as platform owners capitalize on their participants <ref type="bibr" target="#b29">(Fuchs 2010;</ref><ref type="bibr" target="#b66">Rosenblat et al. 2016)</ref>.</p><p>The extent to which the gig-economy has spread is difficult to assess as the collection of statistical data has only recently begun. A study on alternative work arrangements<ref type="foot" target="#foot_0">1</ref> in the USA <ref type="bibr" target="#b46">(Katz et al. 2016)</ref> found that their share in the entire worker-force rose from 10.7% in 2005 to 15.8% in 2015 -a 50% increase in 10 years. By comparison, there was hardly any change in this regard between 1995 and 2005. More telling, 95% of the net employment growth in the US economy <ref type="bibr">(2005)</ref><ref type="bibr">(2006)</ref><ref type="bibr">(2007)</ref><ref type="bibr">(2008)</ref><ref type="bibr">(2009)</ref><ref type="bibr">(2010)</ref><ref type="bibr">(2011)</ref><ref type="bibr">(2012)</ref><ref type="bibr">(2013)</ref><ref type="bibr">(2014)</ref><ref type="bibr">(2015)</ref> occurred in alternative work arrangements, while for standard employment arrangements the growth amounted to only 0.4%. Finally, the study shows that only 0.5% of all workers provided services through online platforms such as Uber or TaskRabbit. Similar numbers are reported in a JPMorgan-Chase study about the "online platform economy" in the USA <ref type="bibr" target="#b27">(Farrell et al. 2016)</ref>. According to this study, 0.5% of adults participate on labor platforms of the gig-economy (e.g. Uber, Taskrabbit) and 0.4% on capital platforms, leasing or selling their assets (e.g. Airbnb, eBay). While a small percentage, it is the result of a remarkable growth, reaching the 400% mark in late 2013 and most of 2014 before slowing down to 102% in mid-2016. Finally, a report by McKinsey Global Institute <ref type="bibr" target="#b55">(Manyika et al. 2017</ref>) on the gig-economy in the USA and the EU-15 shows that only 4% of working-age population has used digital platforms to generate income. By comparison, 15% of independent workers use online marketplaces, out of which 6% provide labor (e.g. on Uber, TaskRabbit), 63% sell goods (e.g. on Etsy, eBay), and 36% lease assets (e.g. on Airbnb, Getaround).</p><p>As these numbers indicate, the gig-economy is still relatively small but growing rapidly. More importantly, it is symptomatic for a structural (rather than cyclical) shift in the institutions of work and labor, mainly driven by rising inequality and technological change <ref type="bibr" target="#b47">(Katz et al. 2017)</ref>. Such structural shift leads to above discussed job polarization in the sense that middle-skilled jobs decline in relation to low-skilled jobs. Labor economists and historians discern in this development a counterpart in the nineteenth-century de-skilling of manufacturing: "There are substantial similarities between […] technical change and labor demand shifts by skill in nineteenth-century manufacturing with those embedded in the application of recent "task-based" models of computerization and skill-biased technical change" <ref type="bibr">(Katz et al. 2014:20)</ref>. In our words, the gigeconomy is indicative of a new political economy organized around platforms as the new loci for value creation and production, alongside the traditional loci of workshop and factory <ref type="bibr" target="#b26">(Ekbia et al. 2017;</ref><ref type="bibr" target="#b70">Stabell et al. 1998)</ref>. It is this new political economy of contemporary society, which does not require jobs (and therefore stable employment) in order to get things done, that we argue is in urgent need to be conceptualized and critiqued.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>A Political Gig-Economy</head><p>To synthesize what we discussed so far, the political economy of the workshop is characterized by the crafts production and organized by the specialization of work (or the vertical division of labor, as referred to in classical political economy). Technology is, in this context, a tool adapted to the needs and, therefore, under the control of the craftsperson, complementing her/his skills. By contrast, the political economy of the factory is characterized by the mass production of consumer goods and organized by the division of labor (or the horizontal division of labor, as referred to in classical political economy). Technology is, therefore, an automaton, to which laborers have to adapt, substituting their labor power. Laborers either become like machines or are replaced by them. Brought into the contemporary context, digital automation continues on this trajectory to some degree, as it again complements certain jobs (of expert crafting) and substitutes others jobs (of laboring). However, as we demonstrated above, there is a third development of decomposing jobs into gigs that are incorporated into labor platforms of the gig-economy. Hence, the important question is how to describe the political economy of platforms in general as well as the specialization of work and/or division of labor in the gig-economy in particular, as these can be expected to significantly differ from the setup of the workshop and the factory. In answering these pertinent questions, IS research can draw on research on the division of labor coming from a branch of informatics on the political economy of computing dealing with so-called "heteromation" as the computerized extraction of value from unemployed and typically invisible labor. Following such an approach, we then suggest an IS research agenda about the political economy of platforms, addressing, what we believe to be, the three main avenues for IS researchers to contribute; (1) layered (modular) product architectures, (2) platform-ecosystems, and (3) the value of data.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Heteromation</head><p>The gig-economy draws inspiration from the open source movement and its modus operandi <ref type="bibr">(Marton et al. 2017a)</ref>. In particular, based on an ethos of entrepreneurship and libertarian ideology, the gig-economy constructs a narrative that everybody has something to contribute <ref type="bibr" target="#b11">(Benkler 2006;</ref><ref type="bibr" target="#b37">Hill 2015)</ref>. One is called upon to not sit on one's idle resources, be it assets, time, or labor, for that is a waste and goes against the spirit of contemporary capitalism for everyone to engage in markets and to transact with other market participants. Hence, rather than wasting time waiting for the bus, one can take up a few tasks on Amazon Mechanical Turk. Rather than wasting an empty seat in one's car, one can chauffeur strangers and earn a few bucks on the side. In this sense, the gig-economy taps into the idle resources of private individuals, engaging a broad range of individuals and their physical assets and resources. Such is the political economy of monetizing everything, as the logic of profit-making and commodification colonizes the lifeworld of the everyday, personal friendships, of home, and so forth <ref type="bibr" target="#b1">(Alaimo et al. 2017;</ref><ref type="bibr" target="#b36">Habermas 1987)</ref>. This is the spirit of platform capitalism <ref type="bibr" target="#b78">(Weber 2007)</ref>, enticing, coercing, or enculturating humans to adapt to the logic of platform production and to become platform "participants", offering their services on Uber, TaskRabbit, or Amazon Mechanical Turk. While the tasks performed by those participants may seem self-selected gigs, the coordination between the provider and the receiver of the service is centrally operated by the platform owner, exerting a high degree of control <ref type="bibr" target="#b18">(Constantiou et al. 2017)</ref>. In other words, while one may have options, with regards to which gig to do, one may not have a choice, as the options one can chose from are the result of centrally operated matchmaking algorithms.</p><p>Viewed against this backdrop of the colonization of the lifeworld, platforms emerge as the core unit of a new political gig-economy, extending into all aspects of sociality by means of informating (or datafying) the everyday. Understanding platforms, therefore, requires an understanding of the value produced by various participants, including waged employees, gig workers, users, and machines within the context of capitalism. After all, the gig-economy is predominantly a capitalist economy in the sense that, like all earlier forms of capitalism, it is a class-based society, with the capitalist class owning and controlling the material and social resources of production, and others providing their labor in exchange for some kind of income that would allow them to survive and make a living. This fundamental fact does not preclude that some of the roots of the gig-economy were non-capitalist (such as OSS production); nor does it preclude the parallel existence of other types of political economy, such as a gifting economy or a real sharing economy <ref type="bibr" target="#b10">(Belk 2014)</ref>. These various forms have coexisted throughout most of human history <ref type="bibr" target="#b45">(Karatani 2014</ref>), but at any given moment and for any given society one form has come to dominate the others.</p><p>The developments of the last few decades forcefully demonstrate not only the predominance of the capitalist political economy with respect to other forms, but also its creative capacity to absorb and appropriate these other forms. Informatics research into the political economy of computation has shown "co-optation" to be a key mechanism. Capitalism continuously reinvents itself in order to leverage and accommodate the alternative arrangements enabled by computing technology and effectively developed in the last few decades <ref type="bibr" target="#b26">(Ekbia et al. 2017)</ref>. That is, because information technology has not changed class structures (defined by polarized relationships to means of production between, e.g. capitalists and laborers). What has changed are class formations; that is the ways collectives organize themselves on the basis of their interests at any given historical moment <ref type="bibr" target="#b79">(Wright 1997)</ref>. The formations change according to the specific stage or "spirit" of capitalism as well as the balance of social and political power in a given society. Class formation in American capitalism of the early 19th century largely consisted of family-owned enterprises and their employees; it shifted to large corporations controlled by non-owner managers in the second half of the century and later to monopolistic cartels of the early 20th century. By contrast, networks embody the class formations of contemporary capitalism, bringing and keeping large segments of the population into its fold in the form of unwaged, unpaid, or minimally compensated labor <ref type="bibr" target="#b26">(Ekbia et al. 2017)</ref>. While earlier eras of capitalism also benefited from the reserve army of labor available on the market <ref type="bibr" target="#b58">(Marx 1961)</ref>, in the networked world, where the cost of entry to networks is rather low, exclusion would eliminate new means of value extraction. Instead, digital inclusion-in the sense of being connected to a network, not being a member of the privileged class-has become the modus operandi of current capitalism <ref type="bibr" target="#b24">(Ekbia 2016)</ref>.</p><p>Regardless of the stage or spirit of capitalism, labor has been, and remains to be, the key source of value creation in capitalist economies. While this has remained a constant, the techniques and mechanisms of extraction of value have changed throughout the eras. As we discussed above, in industrial capitalism, for instance, this largely took the form of industrial labor organized in rather rigid Fordist assembly lines. In the post-industrial capitalism of mid-twentieth century, it adopted the shape of flexible work and labor organized in new arrangements such as project teams. In both these cases, "jobs" in the sense of employed labor was the dominant type of relationship between the producer and extractor of value-that is, between the worker/laborer and the employer. It made sense, therefore, to take "job", "work" and "labor" as equivalents. In the current economy, however, this does not make as much sense because value is also created in arrangements outside employment and work relationships through tasks, resulting from the decomposition of jobs into gigs, as we discussed above. It is created within aforementioned "alternative work arrangements" <ref type="bibr" target="#b46">(Katz et al. 2016</ref>) and other platform arrangements, where "users" create value in the form of content, modding, design competitions, reviews, self-service, etc. through their activities on social media, search engines, and gaming platforms, or simply as customers.</p><p>The mechanisms of value creation in these arrangements are distinct from the earlier mechanisms that traditional Marxist theory formulated as surplus value. <ref type="bibr" target="#b25">Ekbia and Nardi (2014;</ref><ref type="bibr">2017)</ref> refer to this new mechanism as "heteromation." Broadly speaking, heteromation is the extraction of value from human engagement, work and labor, through mechanisms other than employment. These mechanisms vary depending on particular circumstances, but they invariably involve a platform structure and they often work according to the logic of inclusivity, which is at the core of digitally enabled networks. These days, a large number of people are creating economic value for corporations as users, searchers, and gamers, when, for instance, they communicate by email, text, or phone with their family and friends, or simply in the name of customer review or self-service at banks, airports, grocery stores, and elsewhere. This significant contribution is not accounted for, because it is not considered work and it is often unpaid, as enticing user interfaces and experiences hide the value being extracted behind the quasi-voluntary and optional character of participation by people.</p><p>To this effect, the relationship between human and machine differs from the two traditional varieties above (i.e. specialization of work and division of labor). For instance, the craftsperson leaves the tools in the workshop; the laborer leaves the automatons in the factory. By contrast, the user or tasker is expected to always be online in order to participate in the creation of value (Scholz 2013). Crucially, the creation of value does not necessarily require active participation or, in fact, work from the tasker or user, as value can be extracted from the data collected about ones everydayness just as well. That is, digital technologies are not only tools complementing the craftsperson, or automatons substituting the laborer; they also produce information, as the everyday is informated and fed into big data commercialization strategies <ref type="bibr" target="#b17">(Constantiou et al. 2015;</ref><ref type="bibr" target="#b83">Zuboff 2015</ref>). One's everyday becomes the source for value creation and value extraction by means of its comprehensive datafication; and one does not have to even work or labor, in order to be a source for value. Take driving for Uber as an example; the moment one is logged in on the Uber app as a driver, the platform collects valuable data about individual transportation and traffic patterns, which is indispensable in preparation for Uber to run its fleet of self-driving cars in the future. Informated in such a way, humans become the data source sustaining the digital platforms and their artificially intelligent automatons <ref type="bibr" target="#b52">(Lanier 2013)</ref>.</p><p>In broader terms, digital automation in general and the gig-economy in particular demonstrate a new logic of contemporary, digital capitalism, which extracts value from unwaged or token-waged work and labor. Indeed, according to critics, the ways participation is made measurable, computable and profitable is largely unknown to the platform users <ref type="bibr" target="#b9">(Beer 2009)</ref>. Disguised as participation, drawing on social and emotional rewards as well as on token monetary compensation (which is not the same as receiving a salary or wage) and coercion, "[g]enerating this value doesn't cost capital much, yet it summons intelligent human labor from the masses across global networks of billions of nodes" <ref type="bibr">(Ekbia et al. 2017:25)</ref>. In a sense, this is a reversal from the original intent of automation to be closed off from human intervention. For machines to appear autonomous and intelligent, they require human work and labor, especially when it comes to providing data, wittingly or unwittingly, to sustain digital platforms and their algorithmic operations <ref type="bibr" target="#b42">(Kallinikos 2006;</ref><ref type="bibr" target="#b52">Lanier 2013;</ref><ref type="bibr" target="#b83">Zuboff 2015</ref>).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>An Agenda for IS Research</head><p>As we stated above, IS research is particularly well positioned to contribute to the study of the political economy of platforms, because it brings to the table a broad range of conceptual tools for the study of technology as a social phenomenon. In particular, we see three avenues for IS research to make a distinct and original contribution, complementing research from other disciplines, especially sociology, anthropology, media and organization studies <ref type="bibr" target="#b21">(Doorn 2017;</ref><ref type="bibr" target="#b33">Gillespie 2013</ref>). These avenues are conceptualizations of (1) digital artefacts and their product architectures, which leads into (2) digital platforms as alternative regulation systems compared to firms; and (3) mapping new forms of value based on data and its creation and capture qua value networks.</p><p>(1) The political economy of platforms corresponds to and, to some degree, is the product of the networked and distributed nature of digital artefacts, as well as their openness towards continuous editing and reprogramming <ref type="bibr">(Kallinikos et al. 2013a)</ref>. Against this backdrop, IS research can draw on its conceptual toolbox developed to differentiate digital artefacts from other artefacts based on their product architecture. Historically, product design fell into two ideal-types -integral or modular architectures <ref type="bibr" target="#b75">(Ulrich 1995)</ref>. In an integral product architecture, the components are tightly coupled through non-standardized interfaces.</p><p>Changing one component, therefore, results in changes in other components or the entire product design.</p><p>In return, however, the product is typically of high quality and performance (e.g. a F1 racing car). By contrast, modular architecture increases the flexibility of the product design, because the components are loosely coupled through standardized interfaces. In this case, individual components can be easily changed as long as they adhere to the standards of the interface. As a result, modular products can be easily mass produced and incrementally improved (e.g. the Ford Model T).</p><p>Digital technology, however, is based on a layered or, when implemented into physical products, a hybrid product design, combining layered and modular architectures in various degrees <ref type="bibr" target="#b81">(Yoo et al. 2010)</ref>. The characteristics are different, as the various layers of technology (e.g. the internet or a PC) are loosely coupled and products can be designed for each of the layers without having to consider the other layers. One does not need to care about TCP/IP, when creating a website. As a result, when digital and physical components are combined, products can become digital product platforms. They bring together a whole host of developers that complement the core product, offering customers an entire ecosystem of modules and services. A telling example is, of course, the smart phone, which is product and, at the same time, platform for app developers <ref type="bibr" target="#b22">(Eaton et al. 2015)</ref>.</p><p>Importantly, certain product architectures refer to certain organizing logics and production processes that come with them <ref type="bibr" target="#b81">(Yoo et al. 2010</ref>). In our terms, the product architectures map onto our distinction between craft, mass, and platform production (see Table <ref type="table" target="#tab_2">1 below</ref>). An integral product architecture maps onto the specialization of work practiced in a workshop. Likewise, it takes a factory and the division of labor to mass produce products with a modular architecture. Platform production, therefore, refers to a layered (modular) architecture, which requires the careful orchestration of the entire product ecosystem, populated by complementors, competitors, and customers alike. However, the question is not only how production and innovation is organized differently, because of layered modular product architectures; but also how those architectures invoke a different political economy. It is against this question, that IS research can contribute insights, demonstrating how product architectures make a difference, specifically in terms of organizing labor between humans and machines; or in other words, how digital technology, by means of its layered (modular) architecture, matters to political economy.</p><p>(2) As a continuation of above item, digital platform-ecosystems create new challenges for governance. Against this purview, IS research has been studying digital technology as an increasingly important aspect of regulatory practices. Research is directed at questions of how to govern large-scale, complex infrastructures and ecosystems that cannot be tightly regulated in a command-and-control fashion <ref type="bibr" target="#b72">(Star et al. 1996)</ref>. Control, in this context, is about orchestrating platform participants, particularly app developers, and managing a portfolio of formal and informal control mechanisms <ref type="bibr" target="#b74">(Tiwana 2014)</ref> as well as organizational coordination mechanisms <ref type="bibr" target="#b18">(Constantiou et al. 2017)</ref>. By the same token, digital technology is also used as a tool for control and regulation <ref type="bibr">(Kallinikos et al. 2013b)</ref>. In this sense, new regulation systems based on digital technology combine digital artefacts, rules, and practices into new regulatory forms, such as software, that are qualitatively different from traditional forms of organizational regulation and their institutional carriers, such as handbooks or legal contracts <ref type="bibr" target="#b20">(de Vaujany et al. 2018</ref>).</p><p>Digital platforms are not only representative of a particular product architecture but also emerge as new regulation systems that differ significantly from formal organizations or firms (which in turn differ significantly from guilds) in terms of coordination and governance. Take, for instance, the way innovation of digital goods and services is coordinated in platform-ecosystems. Digital platforms invert the notion of the firm, because they distribute innovation across the entire ecosystem, thus moving the locus of value creation from inside the firm to outside <ref type="bibr" target="#b63">(Parker et al. 2017</ref>). Such inversion is having an effect beyond innovation on all aspects of the firm and its formal boundaries. To name but one example, a firm differentiates its internal, hierarchical governance from external, market-based governance in order to minimize transaction costs <ref type="bibr" target="#b67">(Santos et al. 2005)</ref>. By comparison, platform-ecosystems do not make such clear distinctions, as they easily blend firm, market, and clan governance <ref type="bibr" target="#b14">(Ciborra 1983)</ref>. Ultimately, these changes go beyond the level of the organization as the unit of analysis, raising further questions about how a "platformed" society may differ from a formally organized society <ref type="bibr" target="#b42">(Kallinikos 2006)</ref>.</p><p>In cases of governance, we can map the different organizational forms to again crafts, mass, and platform production (see Table <ref type="table" target="#tab_2">1</ref>). According to Sennett (2008), a guild is a federation of autonomous workshops, responsible for the regulation and governance of a craft. Historically, a craftsperson was bound by honor, in particular between master and apprentice, who became a member of the master's family, excepting him as his surrogate father. This setup is fundamentally different from the ideal type of a firm. As a formal organization, a firm is based on hierarchical structures and bureaucratic procedures, establishing a transactional rather than familial relationship between principal and agent. These two are again fundamentally different from a platform-ecosystem, which inverts the exclusivity of being a member of a guild or firm into the inclusivity of platform participation. As we discussed above, the cost of entry to networks is rather low in the platform economy, which allows to include large segments of the population to do unwaged, unpaid, or minimally compensated labor <ref type="bibr" target="#b26">(Ekbia et al. 2017)</ref>. Hence, IS research can contribute to the understanding of the political economy of platforms by studying how digital technology serves as a regulation system (combining digital artefacts, rules, and procedures) and, by extension, how collectives organize themselves for the purpose of class formation.</p><p>(3) We see the changing role of data for value creation and capture as a third avenue for IS contributions.</p><p>In particular, IS research into the political economy of platforms can build on the tradition of studying digital technology as operations of informating, datafying, or digitizing. The digital, in this sense, is not merely a representation of existing processes but rather constitutive of information and, ultimately, of ways of knowing <ref type="bibr" target="#b59">(Monteiro et al. 2019</ref>). Thus conceived, data is increasingly detached from reality (whatever that is) and injected into the algorithmic operations of digital platforms. For instance, social networking sites (SNS) capture user participation, encoding it as calculable data, such as clicks. The data is further processed into aggregations, such as popularity scores, which are compared and profiled, structuring how user participate on these platforms. That is again encoded into data, closing the loop, as SNS platforms extract value from the social everyday they themselves engineer <ref type="bibr" target="#b1">(Alaimo et al. 2017)</ref>.</p><p>These data flows, as they are increasingly connecting and informing not only people and social systems but also the things they surround themselves with, question long held concepts of value in a social, economic, and technical sense <ref type="bibr" target="#b60">(Nicolescu et al. 2018)</ref>. For instance, as data can be hardly treated as a resource in the classical understanding of being scarce or depletable, there is an argument to be made that it is either capital or labor. In case of the former, data is treated as the property of the corporate owners of digital platforms, using it to fuel services and innovation in AI, which will ultimately displace labor. In the latter case, data remains the property of the user, who can benefit by increasing the quality and quantity of the data, which ultimately can be used to enhance labor productivity <ref type="bibr" target="#b5">(Arrieta-Ibarra et al. 2018)</ref>. In this sense, platforms do not extract value from craftsmanship or labor power, but from data captured to drive the digital machinery of platform production (see Table <ref type="table" target="#tab_2">1</ref>).</p><p>Given that data is increasingly used to encode and signal across large scale networks (which themselves are interconnected into large scale infrastructures), the topology of the value configuration differs accordingly.</p><p>In case of platform production, it is more appropriate to think of value networks rather than value chains (complementing mass production) and value shops (complementing crafts production) <ref type="bibr" target="#b70">(Stabell et al. 1998)</ref>.</p><p>That is, value shops are characterized by offering custom-made services or products according to the needs of specific clients and customers. The value, therefore, derives from the information asymmetry between the specialist (e.g. a medical doctor) and the client (e.g. a patient). A value chain, by contrast, is about creating value by transforming inputs into products, which increases when costs are lowered and demand is increased. Finally, the value network refers to the value created by connecting and intermediating between customers as a service. To benefit from such network effects or externalities in the platform economy, platforms need to be able to offer sophisticated match-making services, which perform better the more data is available <ref type="bibr" target="#b62">(Parker et al. 2016)</ref>. In this sense, IS can contribute a sophisticated understanding of value networks and how, based on their configuration, these networks create new forms of data-based value.</p><p>Crucially, different typologies of value networks (e.g. stars, rings, hybrids) may exhibit different political economies. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Conclusion</head><p>In this paper, we argued for IS research to engage in the study of the political economy of platforms. Focusing on the gig-economy, we discussed the wide-reaching repercussions of digital automation, as it does not only complement or substitute labor but, in addition, decomposes jobs into highly granular tasks and gigs. We then called upon the IS field to develop a research agenda to engage with the political economy of platforms. As a conceptual point of departure for developing such agenda, we borrowed from <ref type="bibr" target="#b3">Arendt (1958)</ref> the distinction between specialization of work and division of labor in order to better understand the implications of the relationship between humans and their machines in the production process. We then extended these implications into the domain of platform production by building on the concept of heteromation (a version of hidden and invisible labor) and digital inclusivity that comes with heteromated platform participation. Finally, we compared platforms workshops and factories as loci for the division of labor and value production, which we summarized in Table <ref type="table" target="#tab_2">1</ref> above.</p><p>The political economy of platforms is different as it is dedicated to the tasker, micro-entrepreneur or, more generally, the participant, who may wittingly create value for the platform by obviously working and laboring (e.g. driving for Uber) but also unwittingly through hidden work and labor (e.g. Uber riders quality controlling drivers; Uber drivers as data sources for automation). Hence, in contrast to the pooling of craftsmanship in the workshop and of labor power in the factory, platforms pool data for the sake of operating match-making algorithms, connecting and intermediating between their participants. Most importantly, the relationship between humans and machines is qualitatively different as humans heteromate machines in order to sustain platforms and automated procedures of data processing necessary for their operations. Finally, we suggest that the political economy of platforms is marked by networked inclusion of as many participants as possible, distinguishing it from the specialization of work in the workshop and the division of labor in the factory. This distinction is further supported and expressed by the type of product architecture (i.e. layered modular), form of organizational governance (i.e. platformecosystem), and model of value configuration (value network) that underpin the political economy of platforms.</p><p>Given the already existing dominance of superstar firms, such as Apple, Google, Facebook, Amazon, Alibaba, Tencent, and many more, having a critical discourse is of urgent importance, especially if we compare the revenue and employment numbers of some of these companies with major corporations of the earlier era. The top three companies in Silicon Valley hire a total of less than 200,000 employees. Google, 50,000; Facebook 20,000, and Apple 123,000. To put these figures in perspective, in 1990 the top three carmakers in Detroit, with one fourth of revenue and less than one sixth of capitalization, employed 10 times as many people as Silicon Valley. To give another example, Uber, a company with a market value of roughly $50 billion in urban transportation, does not employ a single driver. These observations illustrate the tight and intricate entanglement between labor, automation, jobs, work and how value is created in the current economy. The dominant discourse on these topics tend to either ignore this relationship or, to the extent that they heed it, cast it in conflated terms that take as equivalents "job," "work," and "labor," on the one hand, and "wage," "income," and "value," on the other. What is needed is to remove the equivalence in order to reveal that relationship. To do this, we needed to step back historically, highlighting the modern origins of the job society and the rather recent, and ongoing, transition to a post-job society, where the key means of making a living are shifting from traditional employment to new forms illustrated by the gigeconomy. This, however, is only half of the story, the other half of which has to do with the significant number of people who contribute labor and value to the economy in contexts outside what is normally perceived as work and labor.</p><p>Our conceptual discussion has important implications for research in information systems and other neighboring disciplines. It invites us to see platforms as much more than product architectures or multisided marketplaces that enable innovation and access, but rather as mechanisms for the extraction of value, distribution of wealth and power, as well as a particular relationship between humans and machines <ref type="bibr" target="#b26">(Ekbia et al. 2017;</ref><ref type="bibr" target="#b35">Greenhill et al. 2013)</ref>. Likewise, the existing discourses on monetization strategies, business models, profit maximization, and economic value creation, and how platforms can be best designed to accomplish these goals <ref type="bibr" target="#b18">(Constantiou et al. 2017;</ref><ref type="bibr" target="#b74">Tiwana 2014)</ref>, need to be complemented by critical questions regarding issues of the worth of the lifeworld and individuals being more than just mere data generators and just-in-time service providers. By the same token, such a complementary critique would open up new avenues for IS research beyond its typical focus on offices and office work as well as its partisanship towards managers and corporations <ref type="bibr" target="#b64">(Rai 2018)</ref>. Our treatment reveals the capacity of the perspective of political economy in dealing with some of the most pressing issues facing us: not only jobs and automation, but social equity, environmental sustainability, legal and ethical integrity, political stability, and so forth and so on. Along with humanist perspectives and moral concerns about privacy and surveillance, the view from political economy can put these issues into perspective, revealing their historical origins and demystifying their invisible mechanisms.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0"><head></head><label></label><figDesc></figDesc><graphic coords="3,106.00,212.89,400.00,162.00" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2"><head>Table 1 . Comparison of Crafts, Mass, and Platform Production Workshop Factory Platform</head><label>1</label><figDesc></figDesc><table><row><cell>Craftsperson</cell><cell>Laborer</cell><cell>Participant</cell></row><row><cell></cell><cell></cell><cell>(Micro-Entrepreneur, Tasker)</cell></row><row><cell>Craftsmanship</cell><cell>Labor Power</cell><cell>Data</cell></row><row><cell>Tools</cell><cell>Automation</cell><cell>Heteromation</cell></row><row><cell>Specialization of Work</cell><cell>Division of Labor</cell><cell>Networked Inclusion</cell></row><row><cell cols="2">Integral Product Architecture Modular Product</cell><cell>Layered (Modular) Product</cell></row><row><cell></cell><cell>Architecture</cell><cell>Architecture</cell></row><row><cell>Guild</cell><cell>Firm</cell><cell>Platform-Ecosystem</cell></row><row><cell></cell><cell>(Formal Organization)</cell><cell></cell></row><row><cell>Value Shop</cell><cell>Value Chain</cell><cell>Value Network</cell></row></table></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="1" xml:id="foot_0"><p>These consist of temporary help agency workers, on-call workers, contract workers, independent contractors, and freelancers.</p></note>
+		</body>
+		<back>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Coordination and learning in Wikipedia: Revisiting the dynamics of exploitation and exploration</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Aaltonen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Kallinikos</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Research in the Sociology of Organizations</title>
+		<editor>
+			<persName><forename type="first">M</forename><surname>Holmqvist</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">A</forename><surname>Spicer</surname></persName>
+		</editor>
+		<imprint>
+			<publisher>Emerald: Bingley, UK</publisher>
+			<date type="published" when="2013">2013</date>
+			<biblScope unit="page" from="161" to="192" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Computing the everyday: Social media as data platforms</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Alaimo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Kallinikos</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The Information Society</title>
+		<imprint>
+			<biblScope unit="volume">33</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="175" to="191" />
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">The progressive division and specialization of industries</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>Ames</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Rosenberg</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Development Studies</title>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="363" to="383" />
+			<date type="published" when="1965">1965</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<monogr>
+		<title level="m" type="main">The human condition</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Arendt</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1958">1958</date>
+			<publisher>The University of Chicago Press</publisher>
+			<pubPlace>Chicago, IL</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">The impact of automation of systems on medical errors: Evidence from field research</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Aron</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Dutta</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Janakiraman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">A</forename><surname>Pathak</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<imprint>
+			<biblScope unit="volume">22</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="429" to="446" />
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<monogr>
+		<author>
+			<persName><forename type="first">I</forename><surname>Arrieta-Ibarra</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Goff</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Jiménez-Hernández</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Lanier</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">G</forename><surname>Weyl</surname></persName>
+		</author>
+		<title level="m">Should we treat data as labor? Moving beyond &quot;free</title>
+		<imprint>
+			<date type="published" when="2018">2018</date>
+			<biblScope unit="page" from="38" to="42" />
+		</imprint>
+	</monogr>
+	<note>AEA Papers and Proceedings</note>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Why are there still so many jobs? The history and future of workplace automation</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">H</forename><surname>Autor</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Economic Perspectives</title>
+		<imprint>
+			<biblScope unit="volume">29</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="3" to="30" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Concentrating on the fall of labor share</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">H</forename><surname>Autor</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Dorn</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">F</forename><surname>Katz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Patterson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Van Reenen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">American Economic Review</title>
+		<imprint>
+			<biblScope unit="volume">107</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="180" to="185" />
+			<date type="published" when="2017">2017. 2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">The skill content of recent technological change: An empirical exploration</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">H</forename><surname>Autor</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Levy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">J</forename><surname>Murnane</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The Quarterly Journal of Economics</title>
+		<imprint>
+			<biblScope unit="volume">118</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="1279" to="1333" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Power through the algorithm? Participatory web cultures and the technological unconscious</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Beer</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">New Media &amp; Society</title>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="985" to="1002" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Sharing versus pseudo-sharing in web 2.0</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Belk</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">The Anthropologist</title>
+		<imprint>
+			<date type="published" when="2014">2014</date>
+			<biblScope unit="volume">18</biblScope>
+			<biblScope unit="page" from="7" to="23" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<monogr>
+		<title level="m" type="main">The wealth of networks. How social production transforms markets and freedom</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Benkler</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2006">2006</date>
+			<publisher>Yale University Press</publisher>
+			<pubPlace>New Haven, CT</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<monogr>
+		<title level="m" type="main">What&apos;s mine is yours. How collaborative consumption is changing the way we live</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Botsman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Rogers</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2011">2011</date>
+			<pubPlace>Harper Collins; London, UK</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<monogr>
+		<title level="m" type="main">The second machine age: Work, progress, and prosperity in a time of brilliant technologies</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>Brynjolfsson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">P</forename><surname>Mcafee</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2014">2014</date>
+			<publisher>W.W. Norton</publisher>
+			<pubPlace>New York, NY</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">An institutional appraisal of the impacts of information technology</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Ciborra</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Economics and Policy</title>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="145" to="160" />
+			<date type="published" when="1983">1983</date>
+		</imprint>
+	</monogr>
+	<note>Markets, bureaucracies and groups in the information society</note>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">That was then, this is now: skills and routinization in the 2000s</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Consoli</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Vona</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Rentocchini</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Industrial and Corporate Change</title>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="847" to="866" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Introduction -Platforms and infrastructures in the digital age</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Constantinides</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O</forename><surname>Henfridsson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">G</forename><surname>Parker</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<imprint>
+			<biblScope unit="volume">29</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="381" to="400" />
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">New games, new rules: Big data and the changing context of strategy</title>
+		<author>
+			<persName><forename type="first">I</forename><surname>Constantiou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Kallinikos</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Information Technology</title>
+		<imprint>
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="44" to="57" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Four models of sharing economy platforms</title>
+		<author>
+			<persName><forename type="first">I</forename><surname>Constantiou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Marton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><forename type="middle">K</forename><surname>Tuunainen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quarterly Executive</title>
+		<imprint>
+			<biblScope unit="volume">16</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="231" to="251" />
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Through the eyes of experts: A socio-cognitive perspective on the automation of fingerprint work</title>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">J</forename><surname>Davis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">M</forename><surname>Hufnagel</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="681" to="703" />
+			<date type="published" when="2007">2007. 2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Rules, Practices, and Information Technology: A Trifecta of Organizational Regulation</title>
+		<author>
+			<persName><forename type="first">F.-X</forename><surname>De Vaujany</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><forename type="middle">V</forename><surname>Fomin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Haefliger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Lyytinen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems …)</title>
+		<imprint>
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Platform labor: on the gendered and racialized exploitation of low-income service work in the &apos;on-demand&apos; economy</title>
+		<author>
+			<persName><forename type="first">N</forename><forename type="middle">V</forename><surname>Doorn</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information, Communication &amp; Society</title>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="898" to="914" />
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Distributed tuning of boundary resources: The case of apple&apos;s iOS service system</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Eaton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Elaluf-Calderwood</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Sorensen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Yoo</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">39</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="217" to="243" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<monogr>
+		<title level="m" type="main">Digital labor. The human cumulus</title>
+		<ptr target="http://www.economist.com/node/15557443" />
+		<imprint>
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Digital inclusion and social exclusion: The political economy of value in a networked world</title>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">R</forename><surname>Ekbia</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The Information Society</title>
+		<imprint>
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="165" to="175" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">Heteromation and its (dis)contents: The invisible division of labor between humans and machines</title>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">R</forename><surname>Ekbia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Nardi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">First Monday</title>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<date type="published" when="2014">2014. 2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<monogr>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">R</forename><surname>Ekbia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">A</forename><surname>Nardi</surname></persName>
+		</author>
+		<title level="m">Heteromation, and other stories of computing and capitalism</title>
+		<meeting><address><addrLine>Cambridge, MA</addrLine></address></meeting>
+		<imprint>
+			<publisher>MIT Press</publisher>
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<monogr>
+		<title level="m" type="main">The future of employment: How susceptible are jobs to computerisation?</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Farrell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Greig</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">B</forename><surname>Frey</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">A</forename><surname>Osborne</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2013">2016. 2013</date>
+		</imprint>
+		<respStmt>
+			<orgName>Oxford Martin Programme on Technology and Employment</orgName>
+		</respStmt>
+	</monogr>
+	<note>The online platform economy. Has growth peaked?</note>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">The future of employment: How susceptible are jobs to computerisation?</title>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">B</forename><surname>Frey</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">A</forename><surname>Osborne</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Technological Forecasting and Social Change</title>
+		<imprint>
+			<biblScope unit="issue">114</biblScope>
+			<biblScope unit="page" from="254" to="280" />
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">Labor in informational capitalism and on the internet</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Fuchs</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The Information Society</title>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="179" to="196" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">Open source software production, spontaneous input, and organizational learning</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Garzarelli</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Fontanella</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">American Journal of Economics and Sociology</title>
+		<imprint>
+			<biblScope unit="volume">70</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="928" to="950" />
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">Open source software and economic growth: A classical division of labor perspective</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Garzarelli</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Limam</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Thomassen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Information Technology for Development</title>
+		<imprint>
+			<date type="published" when="2008">2008</date>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="page" from="116" to="135" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Bridging differing perspectives on technological platforms: Toward an integrative framework</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Gawer</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Research Policy</title>
+		<imprint>
+			<biblScope unit="volume">43</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="1239" to="1249" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<monogr>
+		<title level="m" type="main">The relevance of algorithms</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Gillespie</surname></persName>
+		</author>
+		<editor>Media Technologies, T. Gillespie, P. Boczkowski and K. Foot</editor>
+		<imprint>
+			<date type="published" when="2013">2013</date>
+			<publisher>MIT Press</publisher>
+			<pubPlace>Cambridge, MA</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title level="a" type="main">Explaining job polarization: Routine-biased technological change and offshoring</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Goos</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Manning</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Salomons</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">American Economic Review</title>
+		<imprint>
+			<biblScope unit="volume">104</biblScope>
+			<biblScope unit="issue">8</biblScope>
+			<biblScope unit="page" from="2509" to="2526" />
+			<date type="published" when="2014">2014. 2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">Laboring online: Are there &quot;new&quot; labor processes in virtual game worlds?</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Greenhill</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Fletcher</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of the Association for Information Systems</title>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="672" to="693" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<monogr>
+		<author>
+			<persName><forename type="first">J</forename><surname>Habermas</surname></persName>
+		</author>
+		<title level="m">Theorie des kommunikativen Handelns, Suhrkamp: Frankfurt am Main</title>
+		<imprint>
+			<date type="published" when="1987">1987</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<monogr>
+		<title level="m" type="main">Raw deal: How the &quot;Uber economy&quot; and runaway capitalism are screwing American workers</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Hill</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2015">2015</date>
+			<pubPlace>St. Martin&apos;s Press; New York, NY</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<analytic>
+		<title level="a" type="main">Sharing and web 2.0: The emergence of a keyword</title>
+		<author>
+			<persName><forename type="first">N</forename><forename type="middle">A</forename><surname>John</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">New Media &amp; Society</title>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="167" to="182" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<analytic>
+		<title level="a" type="main">The division of labor between human and computer in the presence of decision support system advice</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">R</forename><surname>Jones</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Brown</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Decision Support Systems</title>
+		<imprint>
+			<biblScope unit="volume">33</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="375" to="388" />
+			<date type="published" when="2002">2002</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<analytic>
+		<author>
+			<persName><forename type="first">D</forename><surname>Just</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marx</forename><surname>Hegel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Weber</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">The invention of work in modernity</title>
+		<imprint>
+			<date type="published" when="2017">2017</date>
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="page" from="435" to="456" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<monogr>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">L</forename><surname>Kalleberg</surname></persName>
+		</author>
+		<title level="m">Good jobs, bad jobs, Russell Sage Foundation</title>
+		<meeting><address><addrLine>New York, NY</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+	<monogr>
+		<title level="m" type="main">The consequences of information: Institutional implications of technological change</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Kallinikos</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2006">2006</date>
+			<pubPlace>Northampton, MA</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b43">
+	<analytic>
+		<title level="a" type="main">The ambivalent ontology of digital artifacts</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Kallinikos</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Aaltonen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Marton</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">37</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="357" to="370" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b44">
+	<analytic>
+		<title level="a" type="main">Governing social practice: Technology and institutional change</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Kallinikos</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Hasselbladh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Marton</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Theory &amp; Society</title>
+		<imprint>
+			<biblScope unit="volume">42</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="395" to="421" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b45">
+	<monogr>
+		<title level="m" type="main">Structure of world history. From modes of production to modes of exchange</title>
+		<author>
+			<persName><forename type="first">K</forename><surname>Karatani</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2014">2014</date>
+			<publisher>Duke University Press</publisher>
+			<pubPlace>Durham, NC</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b46">
+	<monogr>
+		<title level="m" type="main">The rise and nature of alternative work arrangements in the United States</title>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">F</forename><surname>Katz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">B</forename><surname>Krueger</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1995">2016. 1995-2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b47">
+	<analytic>
+		<title level="a" type="main">Income inequality and income risk in the 21st century. The role of unemployment in the rise in alternative work arrangements</title>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">F</forename><surname>Katz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">B</forename><surname>Krueger</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">American Economic Review</title>
+		<imprint>
+			<biblScope unit="volume">107</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="388" to="392" />
+			<date type="published" when="2017">2017. 2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b48">
+	<analytic>
+		<title level="a" type="main">Technical change and the relative demand for skilled labor: The united states in historical perspective</title>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">F</forename><surname>Katz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">A</forename><surname>Margo</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Human capital in history: The American record</title>
+		<editor>
+			<persName><forename type="first">L</forename><forename type="middle">P</forename><surname>Boustan</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">C</forename><surname>Frydman</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">R</forename><forename type="middle">A</forename><surname>Margo</surname></persName>
+		</editor>
+		<meeting><address><addrLine>Chicago, IL</addrLine></address></meeting>
+		<imprint>
+			<publisher>University of Chicago Press</publisher>
+			<date type="published" when="2014">2014</date>
+			<biblScope unit="page" from="15" to="57" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b49">
+	<analytic>
+		<title level="a" type="main">What if the screens went black? The coming of software agents</title>
+		<author>
+			<persName><forename type="first">K</forename><surname>Knorr-Cetina</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Beyond interpretivism? New encounters with technology and organization</title>
+		<meeting><address><addrLine>Cham</addrLine></address></meeting>
+		<imprint>
+			<publisher>Springer</publisher>
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b50">
+	<analytic>
+		<title level="a" type="main">The capitalist machine: Computerization, workers&apos; power, and the decline in labor&apos;s share within U.S. industries</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Kristal</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">American Sociological Review</title>
+		<imprint>
+			<biblScope unit="volume">78</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="361" to="389" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b51">
+	<analytic>
+		<title level="a" type="main">Cognitive comparative advantage and the organization of work: Lessons from Herbert Simon&apos;s vision of the future</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">N</forename><surname>Langlois</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Economics Working Papers)</title>
+		<imprint>
+			<date type="published" when="2002">2002. 2002</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b52">
+	<analytic>
+		<title level="a" type="main">Who owns the future?</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Lanier</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Simon &amp; Schuster</title>
+		<meeting><address><addrLine>New York, NY</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b53">
+	<analytic>
+		<title level="a" type="main">How big data analytics enables service innovation: Materiality, affordance, and the individualization of service</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Lehrer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Wieneke</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">V</forename><surname>Brocke</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Jung</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Seidel</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Management Information Systems:forthcoming)</title>
+		<imprint>
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b54">
+	<analytic>
+		<title level="a" type="main">The role of information technology in organization design</title>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">C</forename><surname>Lucas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Baroudi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Management Information Systems</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="9" to="23" />
+			<date type="published" when="1994">1994. 1994</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b55">
+	<monogr>
+		<title level="m" type="main">A future that works: Automation, employment, and productivity</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Manyika</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Chui</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Miremadi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Bughin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>George</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Willmott</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Dewhurst</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2017">2017</date>
+			<publisher>McKinsey Global Institute</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b56">
+	<analytic>
+		<title level="a" type="main">Openness and legitimacy building in the sharing economy: An exploratory case study about CouchSurfing</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Marton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Constantiou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Lagoudakos</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">50th Hawaii International Conference on System Sciences</title>
+		<meeting><address><addrLine>Waikoloa, HI</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b57">
+	<monogr>
+		<title level="m" type="main">De/Contextualizing information: The digitization of video editing practices at the BBC</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Marton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Kallinikos</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">K</forename><surname>Copenhagen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Marton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J.-C</forename><surname>Mariátegui</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2015">2017. 2015</date>
+			<publisher>The Information Society</publisher>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="page" from="106" to="120" />
+		</imprint>
+	</monogr>
+	<note>When forgetting becomes digital: Social memory in the age of digital reproduction</note>
+</biblStruct>
+
+<biblStruct xml:id="b58">
+	<monogr>
+		<author>
+			<persName><forename type="first">K</forename><surname>Marx</surname></persName>
+		</author>
+		<title level="m">Karl Marx. Selected writings in sociology and social philosophy</title>
+		<imprint>
+			<publisher>Penguin Books: Harmondsworth, UK</publisher>
+			<date type="published" when="1961">1961</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b59">
+	<analytic>
+		<title level="a" type="main">Synthetic knowing: The politics of the internet of things</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>Monteiro</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Parmiggiani</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">43</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="167" to="184" />
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b60">
+	<analytic>
+		<title level="a" type="main">Mapping the values of IoT</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Nicolescu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Huth</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Radanliev</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>De Roure</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Information Technology</title>
+		<imprint>
+			<biblScope unit="volume">33</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="345" to="360" />
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b61">
+	<analytic>
+		<title level="a" type="main">Incorporating software agents into supply chains: Experimental investigation with a procurement task</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">E</forename><surname>Nissen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Sengupta</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="145" to="166" />
+			<date type="published" when="2006">2006. 2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b62">
+	<monogr>
+		<title level="m" type="main">Platform revolution: How networked markets are transforming the economy -And how to make them work for you</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Parker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">P</forename><surname>Choudary</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Van Alstyne</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2016">2016</date>
+			<pubPlace>Norton; New York, NY</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b63">
+	<analytic>
+		<title level="a" type="main">Platform ecosystems: How developers invert the firm</title>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">G</forename><surname>Parker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">W</forename><surname>Van Alstyne</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Jiang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">41</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="255" to="266" />
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b64">
+	<analytic>
+		<title level="a" type="main">Editor&apos;s Comments: Beyond outdated labels: The blending of IS research traditions</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Rai</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">42</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="pp. iii" to="vi" />
+			<date type="published" when="2018">2018. 2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b65">
+	<monogr>
+		<title level="m" type="main">The cathedral and the bazaar: Musings on linux and open source by an accidental revolutionary</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>Raymond</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1999">1999</date>
+			<pubPlace>O&apos;Reilly; Sebastopol, CA</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b66">
+	<analytic>
+		<title level="a" type="main">Algorithmic labor and information asymmetries: A case study of Uber&apos;s drivers</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Rosenblat</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Stark</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Communication</title>
+		<imprint>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page" from="3758" to="3784" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b67">
+	<analytic>
+		<title level="a" type="main">Organizational boundaries and theories of organization</title>
+		<author>
+			<persName><forename type="first">F</forename><forename type="middle">M</forename><surname>Santos</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">M</forename><surname>Eisenhardt</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Organization Science</title>
+		<imprint>
+			<biblScope unit="volume">16</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="491" to="508" />
+			<date type="published" when="2005">2005</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b68">
+	<analytic>
+		<title level="a" type="main">Digital labour markets in the platform economy</title>
+		<author>
+			<persName><forename type="first">F</forename><forename type="middle">A</forename><surname>Schmidt</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Digital labor. The internet as playground and factory</title>
+		<editor>
+			<persName><forename type="first">T</forename><surname>Scholz</surname></persName>
+		</editor>
+		<meeting><address><addrLine>New York, NY; London, UK</addrLine></address></meeting>
+		<imprint>
+			<publisher>Penguin Books</publisher>
+			<date type="published" when="2013">2017. 2013</date>
+		</imprint>
+	</monogr>
+	<note>Sennett, R. 2008. The craftsman</note>
+</biblStruct>
+
+<biblStruct xml:id="b69">
+	<monogr>
+		<title level="m" type="main">The new science of management decision</title>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">A</forename><surname>Simon</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1960">1960</date>
+			<pubPlace>Harper; New York, NY</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b70">
+	<analytic>
+		<title level="a" type="main">Configuring value for competitive advantage: On chains, shops, and networks</title>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">B</forename><surname>Stabell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ø</forename><forename type="middle">D</forename><surname>Fjeldstad</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Strategic Management Journal</title>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="413" to="437" />
+			<date type="published" when="1998">1998</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b71">
+	<monogr>
+		<title level="m" type="main">The precariat. The new dangerous class</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Standing</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2016">2016</date>
+			<pubPlace>Bloomsbury: London, UK</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b72">
+	<analytic>
+		<title level="a" type="main">Steps toward an ecology of infrastructure: Design and access for large information spaces</title>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">L</forename><surname>Star</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Ruhleder</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="111" to="134" />
+			<date type="published" when="1996">1996</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b73">
+	<monogr>
+		<title level="m" type="main">The sharing economy: The end of employment and the rise of crowd-based capitalism</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Sundararajan</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2016">2016</date>
+			<publisher>MIT Press</publisher>
+			<pubPlace>Cambridge, MA</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b74">
+	<monogr>
+		<title level="m" type="main">Platform ecosystems: Aligning architecture, governance, and strategy</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Tiwana</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2014">2014</date>
+			<publisher>Morgan Kaufmann</publisher>
+			<pubPlace>Waltham, MA</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b75">
+	<analytic>
+		<title level="a" type="main">The role of product architecture in the manufacturing firm</title>
+		<author>
+			<persName><forename type="first">K</forename><surname>Ulrich</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Research Policy</title>
+		<imprint>
+			<biblScope unit="volume">24</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="419" to="440" />
+			<date type="published" when="1995">1995</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b76">
+	<analytic>
+		<title level="a" type="main">Preparing for the cognitive generation of decision support</title>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">J</forename><surname>Watson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quarterly Executive</title>
+		<imprint>
+			<biblScope unit="volume">16</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="153" to="169" />
+			<date type="published" when="2017">2017. 2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b77">
+	<analytic>
+		<title level="a" type="main">Next-generation trading in futures markets: A comparison of open outcry and order matching systems</title>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">W</forename><surname>Weber</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Management Information Systems</title>
+		<imprint>
+			<biblScope unit="volume">16</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="29" to="45" />
+			<date type="published" when="1999">1999. 1999</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b78">
+	<monogr>
+		<title level="m" type="main">The protestant ethic and the spirit of capitalism</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Weber</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2007">2007</date>
+			<pubPlace>Routledge: London, UK</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b79">
+	<monogr>
+		<author>
+			<persName><forename type="first">O</forename><surname>Wright</surname></persName>
+		</author>
+		<title level="m">Class counts: Comparative studies in class analysis</title>
+		<meeting><address><addrLine>Cambridge, UK</addrLine></address></meeting>
+		<imprint>
+			<publisher>Cambridge University Press</publisher>
+			<date type="published" when="1997">1997</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b80">
+	<analytic>
+		<title level="a" type="main">E-commerce product recommendation agents: Use, characteristics, and impact</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Xiao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Benbasat</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="137" to="209" />
+			<date type="published" when="2007">2007. 2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b81">
+	<analytic>
+		<title level="a" type="main">The new organizing logic of digital innovation: An agenda for information systems research</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Yoo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O</forename><surname>Henfridsson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Lyytinen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<imprint>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="724" to="735" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b82">
+	<monogr>
+		<title level="m" type="main">In the age of the smart machine: The future of work and power, Heinemann Professional</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Zuboff</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1988">1988</date>
+			<pubPlace>Oxford, UK</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b83">
+	<analytic>
+		<title level="a" type="main">Big other: Surveillance capitalism and the prospect of an information civilization</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Zuboff</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Information Technology</title>
+		<imprint>
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="75" to="89" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b84">
+	<analytic>
+		<title level="a" type="main">The next phase in the digital revolution</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Zysman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Kenney</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Communications of the ACM</title>
+		<imprint>
+			<biblScope unit="volume">61</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="54" to="63" />
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

@@ -1,0 +1,2259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Comparing Open and Sealed Bid Auctions: Evidence from Online Labor Markets</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+				<date type="published" when="2015-12-15">December 15, 2015</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Hong</forename><forename type="middle">W P</forename><surname>Yili</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">School of Business</orgName>
+								<orgName type="institution">Arizona State University</orgName>
+								<address>
+									<postCode>85287</postCode>
+									<settlement>Tempe</settlement>
+									<region>Arizona</region>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><surname>Carey</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">School of Business</orgName>
+								<orgName type="institution">Arizona State University</orgName>
+								<address>
+									<postCode>85287</postCode>
+									<settlement>Tempe</settlement>
+									<region>Arizona</region>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Alex</forename><surname>Wang</surname></persName>
+							<email>alex.wang@cityu.edu.hk</email>
+							<affiliation key="aff1">
+								<orgName type="department" key="dep1">Department of Information Systems</orgName>
+								<orgName type="department" key="dep2">College of Business</orgName>
+								<orgName type="institution">City University of Hong Kong</orgName>
+								<address>
+									<settlement>Kowloon, Hong Kong SAR</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Paul</forename><forename type="middle">A</forename><surname>Pavlou</surname></persName>
+							<email>pavlou@temple.edu</email>
+							<affiliation key="aff1">
+								<orgName type="department" key="dep1">Department of Information Systems</orgName>
+								<orgName type="department" key="dep2">College of Business</orgName>
+								<orgName type="institution">City University of Hong Kong</orgName>
+								<address>
+									<settlement>Kowloon, Hong Kong SAR</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Comparing Open and Sealed Bid Auctions: Evidence from Online Labor Markets</title>
+					</analytic>
+					<monogr>
+						<idno type="ISSN">1047-7047 (print)</idno>
+						<imprint>
+							<date type="published" when="2015-12-15">December 15, 2015</date>
+						</imprint>
+					</monogr>
+					<idno type="MD5">58792CC50BAEFE0933E7DB9F888963B3</idno>
+					<idno type="DOI">10.1287/isre.2015.0606</idno>
+					<note type="submission">received on September 30, 2013, and was with the authors 12.5 months for 3 revisions.</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.7.3" ident="GROBID" when="2023-06-16T09:23+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>auction format</term>
+					<term>auction theory</term>
+					<term>open bids</term>
+					<term>sealed bids</term>
+					<term>valuation uncertainty</term>
+					<term>competition uncertainty</term>
+					<term>online labor markets</term>
+					<term>buyer surplus</term>
+					<term>auction performance History: Gediminas Adomavicius, Senior Editor</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>O nline labor markets are Web-based platforms that enable buyers to identify and contract for information technology (IT) services with service providers using buyer-determined (BD) auctions. BD auctions in online labor markets either follow an open or a sealed bid format. We compare open and sealed bid auctions in online labor markets to identify which format is superior in terms of obtaining more bids and a higher buyer surplus. Our theoretical analysis suggests that the relative advantage of open versus sealed bid auctions hinges on the role of reducing service providers' valuation uncertainty (difficulty in assessing the cost to execute a project) and competition uncertainty (difficulty in assessing the intensity of the competition from other service providers), which largely depend on the relative importance of the common value (versus the private value) component of the auctioned IT services, calling for an empirical investigation to compare open and sealed bid auctions. Based on a unique data set of 71,437 open bid auctions and 7,499 sealed bid auctions posted by 21,799 buyers at a leading online labor market, we find that, on average, although sealed bid auctions attract 18.4% more bids, open bid auctions offer buyers $10.87 higher surplus. Furthermore, open bid auctions are 55.3% more likely to result in a buyer's selection of a certain service provider and 22.1% more likely to reach a contract (conditional on the buyer's making a selection) with a provider, and they generate higher buyer satisfaction. In contrast to conventional wisdom that "the more bids the better" and industry practice of treating sealed bid auctions as a premium feature, our results suggest that the buyer surplus gained from the reduction in valuation uncertainty enabled by open bid auctions outweighs the buyer surplus gained from the higher competition uncertainty in sealed bid auctions, which renders open bid auctions a superior auction design in online labor markets.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.">Introduction</head><p>Labor, traditionally supplied primarily off-line, has also moved onto the Internet. Online labor markets, such as Freelancer, oDesk, and Elance, have emerged as a viable means for identifying and sourcing labor <ref type="bibr" target="#b61">(Malone and Laubacher 1998)</ref>. Nowadays, online labor markets have expanded their reach globally and they attract a large arsenal of professional service providers to offer information technology (IT) services, such as software development <ref type="bibr" target="#b4">(Allon et al. 2012</ref><ref type="bibr" target="#b25">, Cummings et al. 2009</ref><ref type="bibr" target="#b84">, Snir and Hitt 2003)</ref>. Online labor markets are economically and practically important, and they have been touted for their high transaction volume and societal benefits <ref type="bibr" target="#b45">(Howe 2006)</ref>. For example, Elance alone has nearly five million jobs posted and has facilitated transactions worth over $5 billion by August 2014. <ref type="foot" target="#foot_0">1</ref>Another leading online labor marketplace, Freelancer, has connected over 16 million buyers and service providers from over 200 countries since its inception, and buyers on Freelancer have posted over eight million projects worth over $10 billion by August 2015.</p><p>Online labor markets facilitate buyers to identify and hire labor (service providers) with the use of buyerdetermined (BD) reverse auctions 2 <ref type="bibr" target="#b9">(Asker and</ref><ref type="bibr">Cantillon 2008, Engelbrecht-Wiggans et al. 2007)</ref>. Typically, in online BD auctions, a buyer who seeks a given service will create a call for bids (CFB) to elicit bids from service providers who offer to execute the project at a 2 A BD auction is a type of reverse auction in which the winning bid is selected by the buyers rather than determined by a prespecified rule (such as the lowest price). In a reverse auction, the roles of the buyer and the seller are reversed relative to a forward auction, and the sellers (bidders) compete with one another to provide the (IT) services to buyers.</p><p>Information Systems Research 27(1), pp. 49-69, © 2016 INFORMS certain bid price. Buyers make several decisions when posting CFBs, such as project budget, auction duration, and auction design format. Among different auction design features, bid visibility (open versus sealed bid) is a key design option that has major implications for auction performance in online labor markets. Therefore, this paper seeks to answer the following research question: What are the effects of bid visibility (open versus sealed bid) on auction performance (number of bids and buyer surplus) in online labor markets?</p><p>Bid visibility-whether existing bids (bid prices and bidder information) are visible to (open bid) or hidden from (sealed bid) other bidders-shapes the interactions between bidders and buyers <ref type="bibr" target="#b46">(Jap 2002)</ref> and among bidders <ref type="bibr" target="#b69">(Milgrom and</ref><ref type="bibr">Weber 1982, Kannan 2012)</ref>. Bid visibility is a critical design choice for auctions in online labor markets where bidders (service providers) face significant difficulty in assessing the cost to execute a project (termed "valuation uncertainty") and in assessing the intensity of the competition from other service providers (termed "competition uncertainty"). Depending on the assumption concerning bidders' valuation for the auctioned item (independent private value versus common value paradigm 3 ), formal theoretical discussions make different predictions on which auction format (open versus sealed) results in better auction performance. Under the private value paradigm, the revenue equivalence theorem predicts that both auction formats offer the same level of expected surplus to the auctioneer 4 from the same pool of bidders <ref type="bibr" target="#b54">(Krishna 2009)</ref>, and such equivalence could break with riskaverse bidders <ref type="bibr" target="#b43">(Holt 1980)</ref> or heterogeneous bidder valuation <ref type="bibr" target="#b11">(Athey et al. 2011)</ref>. By contrast, under the common value paradigm, the linkage principle <ref type="bibr" target="#b70">(Milgrom and Weber 1982)</ref>, 5 states that surplus to the auctioneer will be higher for open bid auctions by increasing information transparency and allowing bidders to learn from each others' bids <ref type="bibr">(Krishna 2009, Kagel and</ref><ref type="bibr" target="#b50">Levin 2009)</ref>. The competing predictions from the private value versus common value auction theories call for an 3 In independent private value auctions, each bidder has a privately observed signal about the value of the auctioned good, which is independent of the values of other bidders <ref type="bibr" target="#b54">(Krishna 2009)</ref>. By contrast, in common value auctions, the assumption is that the value of the auctioned good is the same to all bidders. Nonetheless, no bidder knows the true value of the good, and each bidder has privately observed information about the item's true value <ref type="bibr">(Kagel and</ref><ref type="bibr">Levin 2009, Krishna 2009</ref>). 4 We use the term "auctioneer" here to avoid confusion because the roles of buyers and sellers are reverse in BD auctions compared to forward auctions. 5 The linkage principle states that the auctioneer has an incentive to reveal all available information on each auctioned item. One implication of the linkage principle is that open bid auctions generally lead to higher expected revenues than sealed bid auctions because bidders are able to reduce their valuation uncertainty in open bid auctions <ref type="bibr" target="#b70">(Milgrom and Weber 1982)</ref>. empirical examination to reveal the superior auction design format.</p><p>Empirical evidence on the role of bid visibility is limited, partly because "many auction markets operate under a given set of rules rather than experimenting with alternative designs" <ref type="bibr">(Athey et al. 2011, p. 207)</ref>. Besides, sealed bids in real-life auctions are typically unobservable to researchers. The few existing studies, mostly lab experiments, are inconclusive about whether open bid or sealed bid auctions would result in the higher buyer surplus. Whereas some studies favor sealed bid auctions (e.g., <ref type="bibr" target="#b47">Jap 2007</ref><ref type="bibr" target="#b11">, Athey et al. 2011</ref><ref type="bibr" target="#b83">, Shachat and Wei 2012</ref><ref type="bibr" target="#b41">, Haruvy and Katok 2013)</ref>, others favor open bid auctions (e.g., <ref type="bibr" target="#b23">Cho et al. 2014</ref><ref type="bibr" target="#b50">, Kagel and Levin 2009</ref><ref type="bibr" target="#b67">, McMillan 1994</ref><ref type="bibr" target="#b78">, Perry and Reny 1999)</ref>. In sum, these competing empirical findings call for an empirical investigation to reveal the preferred auction format for BD auctions for IT services in online labor markets, an increasingly important context for information systems (IS) research, practice, and society in general.</p><p>Besides academic scholars, industry practitioners in online labor markets are also interested in determining the ideal auction format. The current industry practice treats sealed bid format as a premium feature and charges buyers extra fees for using sealed bids. <ref type="foot" target="#foot_2">6</ref> The rationale behind this practice is that sealed bid BD auctions may attract more bids, which offer buyers higher diversity and presumably quality. This intuition is based on the untested assumption that "the more bids, the better." However, it is not clear whether open versus sealed bid BD auctions actually perform better in practice in online labor markets.</p><p>Our empirical study is based on a unique proprietary panel data set obtained from a leading global online labor market with 71,437 open bid BD auctions and 7,499 sealed bid BD auctions posted by 21,799 unique buyers. This online labor market allows CFBs to be auctioned in either an open bid or a sealed bid BD format, hence enabling a within-site comparison between these auction formats. Our data cover the bidding history of projects posted between August 2009 and February 2010, which includes proprietary data of sealed bid BD auctions that are visible to the buyer (auctioneer), yet hidden from other bidders and from the public. Seeking to establish a causal inference of the effect of bid visibility (open bid versus sealed bid) on key auction performance outcomes (number of bids and buyer surplus), in addition to buyer-level fixed effects (FE) analysis, we performed propensity score matching and instrumental variable analyses. Although the intuition of industry practice is empirically verified that sealed bid auctions do attract more bids, we empirically show that open bid auctions may be a superior format in online labor markets because open bid auctions empirically render a higher buyer surplus. More importantly, we quantify the economic effects of auction format on these two auction performance outcomes. Sealed bid BD auctions do attract at least 18.4% more bids compared with open bid BD auctions. However, open bid BD auctions generate at least $10.87 higher buyer surplus, they are 55.3% more likely to result in buyer selection, they are 22.1% more likely to reach a contract (conditional on the buyer making a selection), plus they generate higher buyer satisfaction.</p><p>To our knowledge, this is the first large-scale empirical study to examine the effect of bid visibility on auction performance by using data from an online labor market, extending our understanding of the effects of bid visibility as an auction design <ref type="bibr" target="#b54">(Krishna 2009</ref><ref type="bibr" target="#b11">, Athey et al. 2011</ref><ref type="bibr" target="#b41">, Haruvy and Katok 2013</ref><ref type="bibr" target="#b23">, Cho et al. 2014)</ref>. This study also adds to the emerging literature on online labor markets <ref type="bibr" target="#b84">(Snir and Hitt 2003</ref><ref type="bibr" target="#b4">, Allon et al. 2012</ref><ref type="bibr" target="#b94">, Yoganarasimhan 2013</ref>) and offers actionable guidelines to the major stakeholders in online labor markets. The study also contributes to the broader literature on auctions in the IS literature (e.g., <ref type="bibr" target="#b13">Ba and Pavlou 2002)</ref>.</p><p>This paper proceeds as follows. Section 2 describes the background, related literature, and the context of our study. Section 3 presents the theoretical analysis, which sets the foundations for our empirical testing. Section 4 presents the data, estimation models, key findings and results, and robustness checks. Finally, §5 discusses this study's contributions and implications for theory and practice.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.">Background and Related Literature</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.1.">Research Context-Online Labor Markets</head><p>Online labor markets are Web-based platforms that connect buyers who need IT services (for example, software development) to professional service providers who possess the skills to fulfill these IT services. Many online labor markets have emerged, such as Freelancer, oDesk, and Elance, and they have attracted millions of skilled service providers from all over the globe, who actively bid on projects to win contracts.</p><p>Online labor markets have attracted considerable interest. One stream of research focuses on buyers' hiring decisions. The past performance of service providers, such as their reputation, affects their probability of being hired in the future (e.g., <ref type="bibr" target="#b17">Banker and Hwang 2008</ref><ref type="bibr" target="#b73">, Moreno and Terwiesch 2014</ref><ref type="bibr" target="#b77">, Pallais 2014)</ref>. Yoganarasimhan (2013) estimated the return of reputation in online labor markets and found that buyers are forward looking and primarily focus on reputation (as quality signals) when selecting service providers. Besides reputation, it was also found that buyers prefer service providers with whom they have had prior interactions <ref type="bibr" target="#b32">(Gefen and Carmel 2008)</ref> and whose work experience is independently verified by third parties <ref type="bibr" target="#b3">(Agrawal et al. 2013)</ref>. Service providers are thus motivated to seek third-party certifications <ref type="bibr" target="#b35">(Goes and Lin 2012)</ref>. Another stream of research examined bidders' behavior in online labor markets. <ref type="bibr" target="#b84">Snir and Hitt (2003)</ref> showed that with a nonnegligible bidding cost for service providers, low-quality service providers are more likely to bid on higher-value projects. They showed that higher-value projects attract significantly more bids but of lower quality, making online labor markets unsuitable for large projects. <ref type="bibr" target="#b20">Carr (2003)</ref> modeled the role of bid evaluation cost on the equilibrium bidding strategy and argued that buyers may disregard promising bids simply because they could not evaluate all bids. In summary, the literature on online labor markets has focused on buyer's bid evaluation and hiring decisions and on the bidding behavior of service providers.</p><p>To post a project in online labor markets, buyers can choose between two forms of BD auctions, namely, open bid and sealed bid. Auctions that follow the open bid format prominently show the average bidding price and number of existing bids, and they allow service providers to observe detailed competing bids and the bidders' profiles. By contrast, sealed bid auctions only reveal information on number of bids, but they do not provide information on the average bid price, competing bids, or the bidders' profiles. Figure <ref type="figure" target="#fig_0">1</ref> shows an example project page and information observable to bidders (and the public) under the two auction formats. Please refer to Online Appendix I (available as supplemental material at http://dx.doi.org/10.1287/ isre.2015.0606) for more details of the focal reverse BD auctions mechanism.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.2.">The Auctions Literature</head><p>Auction is an important topic that has been studied extensively in multiple disciplines, such as economics, IS, operations research, and marketing. The seminal works of <ref type="bibr" target="#b54">Krishna (2009</ref><ref type="bibr" target="#b69">), Milgrom (2004)</ref>, and <ref type="bibr" target="#b52">Klemperer (2002)</ref> offer systematic reviews of previous work. Recently, researchers have been focusing on auctions on the Internet platforms that facilitate price discovery in various e-commerce contexts, including ordinary forward auctions such as eBay (e.g., <ref type="bibr">Bajari and</ref><ref type="bibr">Hortaçsu 2004, Bapna et al. 2008)</ref>, keyword auctions such as Google AdWords (e.g., <ref type="bibr" target="#b22">Chen et al. 2009</ref><ref type="bibr" target="#b57">, Liu and Chen 2006</ref><ref type="bibr" target="#b59">, Liu et al. 2010</ref><ref type="bibr">), and combinatorial auctions (e.g., Adomavicius et al. 2012</ref><ref type="bibr" target="#b94">, 2013)</ref>. In summary, there is an emerging interest in the auction mechanism design, bidding behaviors, and buyer surplus in online auctions (e.g., <ref type="bibr" target="#b18">Bapna et al. 2010</ref><ref type="bibr" target="#b36">, Goes et al. 2010</ref><ref type="bibr" target="#b72">, Mithas and Jones 2007</ref><ref type="bibr" target="#b91">, Xu et al. 2011</ref><ref type="bibr" target="#b96">, Zhang and Feng 2011)</ref>.</p><p>Recently, online reverse BD auctions emerged as a common auction design in online labor markets. Downloaded from informs.org by <ref type="bibr">[132.199.43.252</ref>] on 08 April 2016, at 03:41 . For personal use only, all rights reserved. in different auction paradigms (independent private value versus common value), that is, comparisons between different auction formats in terms of bidding behavior and buyer surplus (e.g., <ref type="bibr" target="#b8">Arora et al. 2007</ref><ref type="bibr" target="#b37">, Greenwald et al. 2010</ref><ref type="bibr" target="#b51">, Kannan 2012)</ref>. Under the independent private value paradigm, the seminal revenue equivalence theorem states that the expected revenues from first-price (or second-price) sealed bid and open bid auctions are identical <ref type="bibr" target="#b89">(Vickrey 1961)</ref>. Much theoretical discussion has focused on extending the (in)equivalence under different model settings by relaxing assumptions such as risk preference <ref type="bibr" target="#b39">(Harris and</ref><ref type="bibr">Raviv 1981, Matthews 1987)</ref>, information on the number of bidders <ref type="bibr">(Harstad et al. 1990, McAfee and</ref><ref type="bibr" target="#b65">McMillan 1987)</ref>, and bidding costs <ref type="bibr" target="#b26">(Daniel and</ref><ref type="bibr">Hirshleifer 1998, Samuelson 1985)</ref>. Revenue equivalence is proved to be robust under some of these cases (e.g., <ref type="bibr">Krishna 2009, Maskin and</ref><ref type="bibr" target="#b63">Riley 2000)</ref>, and a general theoretical prediction in independent private value auctions is that the expected revenue is higher in sealed bid auctions (versus open bid auctions) if bidders are risk averse (e.g., <ref type="bibr">Holt 1980, Maskin and</ref><ref type="bibr" target="#b62">Riley 1984)</ref>.</p><p>By contrast, in common value auctions, a different theoretical prediction was made. Theoretical analyses of common value auctions suggested that a higher surplus can be achieved by providing more information to relieve bidders' discovery cost of the auctioned item's value <ref type="bibr" target="#b54">(Krishna 2009)</ref>, which was shown by <ref type="bibr" target="#b48">Kagel and Levin (1986)</ref> in a Nash Equilibrium model. The theoretical finding that open bid auctions generally lead to higher expected revenues for the auctioneers is termed the "linkage principle," and one main explanation for the inequality is that bidders reduce valuation uncertainty about the auctioned item with information from other bidders <ref type="bibr" target="#b70">(Milgrom and Weber 1982)</ref>. <ref type="bibr" target="#b42">Hausch and Li (1993)</ref> used a stylized model to illustrate that the selling price in a common value auction is the expected value of the auctioned item minus aggregate entry and the bidders' cost to acquire information. Furthermore, based on numerical simulations in the common-value second-price auction model, <ref type="bibr" target="#b93">Yin (2006)</ref> established that bidders' uncertainty about the common Downloaded from informs.org by <ref type="bibr">[132.199.43.252</ref>] on 08 April 2016, at 03:41 . For personal use only, all rights reserved. value significantly decreases their bid prices. In sum, the theoretical literature on common value auctions generally suggests the superiority of open bid auctions (compared with sealed bid auctions).</p><p>Taken together, depending on the auction paradigm (independent private value versus common value), the literature has reported competing theoretical findings on the superiority of open versus sealed bid auctions.</p><p>2.3.2. Empirical Work. Formal theoretical predictions concerning the optimality of auction format (bid visibility) depend on model assumptions and often fail to fully capture the complexity of real-life auctions. Research efforts have thus been devoted to establish their empirical validity mostly using lab experiments and field observations.</p><p>With lab experiments, researchers are able to create a private or a common value auction environment. In a private value paradigm, the majority of the evidence from lab experiments points to the conclusion that higher information transparency leads to a lower surplus for auctioneers. <ref type="bibr" target="#b28">Elmaghraby et al. (2012)</ref> found that, in procurement auctions, contrary to the predictions of game theory, rank feedback would lead to lower average prices than full-price feedback because of bidders' impatience, suggesting a higher buyer surplus for auctions with lower information transparency. Similarly, <ref type="bibr" target="#b83">Shachat and Wei (2012)</ref> found that the mean and variance of prices in a first-price sealed bid auction was lower than in an English auction 7 for the procurement of commodities, also suggesting a higher surplus for sealed bid auctions. <ref type="bibr" target="#b41">Haruvy and Katok (2013)</ref> compared open and sealed bid auctions with different information structures, and, again, they found that sealed bid auctions provided a greater buyer surplus. 8  Following the common value paradigm, experimental work comparing open and sealed bid auctions mostly focused on the "winner's curse." It was shown that better-informed bidders are capable of achieving a higher rate of return than less-informed bidders, and public information induces bidders (a common value assumption) to revise their bids upward in a first-price 7 English auction is a type of "open outcry" auction in which the bidding starts with a low (or a high) price and is raised (or reduced) incrementally until the auction is closed or no higher (lower) bids are received <ref type="bibr" target="#b54">(Krishna 2009</ref>). 8 Full information transparency may have other downsides. For example, <ref type="bibr" target="#b47">Jap (2007)</ref> showed that partial price visibility formats (particularly rank format over low price format) better maintains the buyer-seller relationship (e.g., reducing opportunism, ensuring reciprocal satisfaction, and maintaining future expectations) than full price visibility formats. <ref type="bibr" target="#b21">Cason et al. (2011)</ref> found that a complete information revelation policy in sequential procurement auctions could affect the behavior of bidders and lead them to pool with other types to prevent their rivals from learning private information. Similarly, <ref type="bibr" target="#b51">Kannan (2012)</ref> found, under information transparency, that bidders have the incentive to prevent an opponent from gaining the information, which leads to lower social welfare.</p><p>forward auction <ref type="bibr" target="#b49">(Kagel and Levin 1999)</ref>, although overbidding and winner's curse persist despite a different number of bidders <ref type="bibr" target="#b27">(Dyer et al. 1989</ref>). Related to our work, <ref type="bibr" target="#b33">Goeree and Offerman (2002)</ref> showed that in first-price auctions with both private and common value components, low uncertainty about the common value and increased competition raise auction revenues.</p><p>Empirical comparisons between open and sealed bid auctions using observational data are limited. Since researchers have little control over the research context, these studies largely focus on finding the most compelling theoretical mechanism of a specific market. For example, in the context of high-value timber auctions with relatively few bidders, <ref type="bibr" target="#b11">Athey et al. (2011)</ref> found that sealed bid auctions offer a higher surplus than open bid auctions due to the potential of "bidder collusion" in open bid auctions. <ref type="bibr" target="#b23">Cho et al. (2014)</ref> argued that used car auctions have a common value component due to quality uncertainty. They showed that average revenues were significantly higher under an English auction than under a dynamic Internet auction format that revealed less information to bidders. In the context of online procurement auctions, <ref type="bibr" target="#b71">Millet et al. (2004)</ref> did not assume any auction paradigm; still, they empirically demonstrated the benefits of information transparency to auctioneers with data from over 14,000 auctions, revealing that both the lowest bid and bid rank of the bidders can yield greater savings than revealing either the low bid only or the rank bid only.</p><p>In summary, empirical evidence on the effect of bid visibility on the revenue (or surplus) of the auctioneer is inconclusive, and the superiority of the auction format (open versus sealed bid auctions) largely depends on the experimental setting or particular empirical context.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.">Theory</head><p>We theorize the effects of bid visibility on (1) the number of bids and (2) buyer surplus in BD auctions in online labor markets. 9 Below, we first discuss the key features of BD auctions in online labor markets: (a) IT services are proposed to have both an independent private value and a common value component, and (b) service providers face valuation uncertainty and competition uncertainty in online BD auctions.</p><p>Online labor markets facilitate the transaction of IT services, such as software development and graphical design. Compared with commodities, IT services are idiosyncratic, complex <ref type="bibr" target="#b84">(Snir and Hitt 2003)</ref>, and highly variable in their quality <ref type="bibr" target="#b81">(Rust et al. 1999)</ref>. Unlike commodities that can be easily contracted on product 9 Given the empirical focus of this paper, theoretical discussion presented here is based on insights generated from extensive theoretical and empirical auction literature. A separate document that seeks to analytically extend findings from the literature to a BD auction setting is available on request.</p><p>Downloaded from informs.org by <ref type="bibr">[132.199.43.252</ref>] on 08 April 2016, at 03:41 . For personal use only, all rights reserved. descriptions and warranties, IT services have many complex components that cannot be perfectly described or contracted, making it difficult for service providers to estimate the exact cost of providing the IT service based on the ex ante service requirements <ref type="bibr" target="#b90">(Willcocks et al. 2002)</ref>. This introduces a "common value" component to the valuation of the IT service <ref type="bibr" target="#b16">(Bajari and Hortaçsu 2004)</ref>. Thus, on one hand, service providers have private knowledge about their own capabilities and outside options that are independent of other service providers (termed the "private value" component). On the other hand, some costs (such as communication, coordination, requirement specificity, and project complexity) that are common to all service providers are hard to be fully evaluated up front<ref type="foot" target="#foot_4">10</ref> (the "common value" component). In summary, instead of treating IT services as either having a private value or a common value, we adopt the approach of <ref type="bibr">Goeree and Offerman (2003, p. 598</ref>), and we treat the cost evaluation of IT services in online labor markets as "not exclusively common value or private value," but a combination of both.</p><p>Service providers who bid for projects for IT services in BD auctions face two types of uncertainty,<ref type="foot" target="#foot_5">11</ref> valuation uncertainty and competition uncertainty. Specifically, valuation uncertainty refers to the difficulty to assess the cost to execute the project;<ref type="foot" target="#foot_6">12</ref> competition uncertainty refers to the difficulty to assess the intensity of the competition from other service providers. First, the relative importance between the private value component and the common value component has implications for whether bid visibility reduces bidders' valuation uncertainty. For the private value component, each bidder has a privately observed signal of the value of the auction good, which is independent of the assessment of other bidders <ref type="bibr">(Goeree and</ref><ref type="bibr">Offerman 2003, Krishna 2009)</ref>. Thus, for the private value component, information from other bidders enabled by open bid auctions does not alleviate valuation uncertainty. By contrast, albeit the common value component is the same to all bidders, no bidder knows the true valuation of this common value, but each bidder has private information about the true valuation (e.g., <ref type="bibr">Kagel and</ref><ref type="bibr">Levin 2009, Krishna 2009)</ref>. For the common value component, information from other bidders in open bid auctions helps reduce valuation uncertainty. Second, in terms of competition uncertainty, because in open bid (versus sealed bid) auctions bidders could observe the bids and profiles of other bidders, competition uncertainty is always lower, irrespective of the relative importance of the private or the common value component.</p><p>In summary, whether and to what extent bid visibility (open versus sealed bid auctions) reduces bidders' valuation uncertainty depends on the relative importance of the common (versus private) value component; however, competition uncertainty is reduced in open bid auctions irrespective of the relative importance of the private value versus the common value component. This premise guides our theoretical logic below.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.1.">Bid Visibility and Number of Bids</head><p>Buyers in online labor markets prefer to solicit more bids from multiple service providers to expand their consideration set, ceteris paribus. Therefore, the total number of bids represents the set of service providers that a buyer could choose from, and given the variety and diversity of options for service providers, this has been proposed as one measure of auction performance (e.g., <ref type="bibr">Terwiesch and</ref><ref type="bibr">Xu 2008, Yang et al. 2009)</ref>.</p><p>In online BD auctions, making bids visible reduces valuation uncertainty (for the common value component). Reduction in valuation uncertainty increases prospective service providers' expected value and encourages them to submit bids. Meanwhile, the information transparency afforded by open bid (versus sealed bid) auctions reveals the sequential and competitive bidding process to prospective service providers, thereby reducing overall competition uncertainty (e.g., <ref type="bibr" target="#b15">Bajari and Hortaçsu 2003</ref><ref type="bibr" target="#b31">, Gallien and Gupta 2007</ref><ref type="bibr" target="#b88">, Vakrat and Seidmann 2000)</ref>. By revealing the competition to prospective service providers, reduction in competition uncertainty creates a natural screening effect in open bid auctions. Simply put, bidders in open bid auctions observe all existing bids, which is likely to prevent bidders with a lower surplus provision from bidding in the presence of more competitive bids, especially given nonnegligible bidding costs <ref type="bibr" target="#b84">(Snir and Hitt 2003)</ref>. By contrast, in sealed bid auctions, service providers cannot view existing bids, and thus all bidders who ex ante are attracted to the auction are likely to place their bids. Therefore, open bid auctions may attract a smaller number of bids compared to sealed bid auctions because of the screening effect that discourages less competitive service providers from placing bids.</p><p>Taken together, although the reduction in valuation uncertainty from the information transparency of open bid auctions encourages higher participation, revealing the competing bids discourages (weak) service providers from placing bids, making it theoretically difficult to unequivocally predict whether open versus sealed bid auctions would result in a higher number of bids. Accordingly, we do not make a theoretical prediction nor pose a formal hypothesis, and we seek to empirically examine the effect of bid visibility (open Downloaded from informs.org by <ref type="bibr">[132.199.43.252</ref>] on 08 April 2016, at 03:41 . For personal use only, all rights reserved. versus sealed) on the number of bids in the context of online labor markets.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2.">Bid Visibility and Buyer Surplus</head><p>Although buyers seek to increase the number of bids they receive, the ultimate goal is to contract with a bidder who offers a high surplus. Given the large number of service providers in online labor markets <ref type="bibr" target="#b20">(Carr 2003)</ref>, achieving a higher buyer surplus is more important than generating a large number of bids. This ability becomes particularly critical when a large number of bids could be costly to buyers because of high bid evaluation costs <ref type="bibr" target="#b20">(Carr 2003)</ref>. Furthermore, buyer surplus is a fundamental performance measure in the auction literature, whereas the number of bids has received less attention. Therefore, we focus on theorizing how bid visibility (open versus sealed bid) would offer buyers a higher surplus. The key arguments we propose are summarized in Table <ref type="table" target="#tab_0">1</ref>, and they are explained in detail below. BD auctions in online labor markets create significant valuation uncertainty of IT services for bidders, who fear "winning at a suboptimal price" (also known as the "winner's curse"; <ref type="bibr" target="#b70">Milgrom and Weber 1982</ref><ref type="bibr" target="#b10">, Athey and Haile 2002</ref><ref type="bibr" target="#b15">, Bajari and Hortaçsu 2003</ref><ref type="bibr" target="#b50">, Kagel and Levin 2009)</ref>. Hence, if a service provider is not certain about the cost of offering a complex IT service (e.g., developing a customized software), he is unlikely to bid aggressively to win because of the fear of bidding lower than his actual cost to execute the project, particularly if service providers are risk averse. However, buyers can help alleviate the valuation uncertainty that service providers face. As <ref type="bibr" target="#b42">Hausch and Li (1993)</ref> shows, when no information is given to bidders on the auctioned item valuation (for sealed bid auctions), the auctioneer indirectly pays for the bidders' cost to acquire information<ref type="foot" target="#foot_7">13</ref> on the auctioned item's value, which would be reflected in the (higher) bid prices.</p><p>In open bid auctions (compared with sealed bid auctions), although the cost of assessing the private value component could not be reduced by information from other bidders, such information can help service providers assess the cost of the common value component. <ref type="foot" target="#foot_8">14</ref> Notably, the average bid price is prominently shown on the bidding page (Figure <ref type="figure" target="#fig_0">1</ref>). It has been shown, both theoretically <ref type="bibr" target="#b34">(Goeree and Offerman 2003)</ref> and experimentally <ref type="bibr" target="#b33">(Goeree and Offerman 2002)</ref>, that when the auctioned item has a common value component (which we assume true for IT services, as explained above), buyer surplus may be higher when information about the common value is publicly available, consistent with the prediction of the "linkage principle" <ref type="bibr" target="#b70">(Milgrom and Weber 1982)</ref>. In sum, in open bid auctions, service providers can learn from others' bids, which helps them to reduce their valuation uncertainty of the common value component, which in turn reduces their valuation discovery cost and allows them to bid lower, thus offering a higher surplus to the buyer (e.g., <ref type="bibr" target="#b70">Milgrom and Weber 1982</ref><ref type="bibr" target="#b24">, Cramton 1998</ref><ref type="bibr" target="#b50">, Kagel and Levin 2009</ref><ref type="bibr" target="#b54">, Krishna 2009)</ref>. Accordingly, the effect of bid visibility (open bid auctions versus sealed bid auctions) on buyer surplus is expected to be higher if there is a more substantial common value component in IT services.</p><p>In online labor markets, a large number of service providers randomly enter an auction to compete to offer IT services. Service providers face competition uncertainty, irrespective of the importance of the private value or the common value component. Risk-averse bidders seek to mitigate competition uncertainty through more aggressive bidding <ref type="bibr" target="#b43">(Holt 1980)</ref>. In other words, a risk-averse bidder in a reverse auction would prefer to win with a higher probability by sacrificing some profit margin (e.g., <ref type="bibr">Maskin and</ref><ref type="bibr">Riley 1984, Menicucci 2004</ref>). Relative to sealed bid auctions, open bid auctions have lower competition uncertainty, ceteris paribus. Hence, service providers in open bid auctions are more certain about the intensity of competition they face because they can readily observe existing bids, the average bidding price, and other bidders' profiles, especially since they can keep updating their bids as new bids arrive. With reduced competition uncertainty, risk-averse service providers no longer need to lower their bids to improve their chances of winning. Hence, the lower competition uncertainty in open bid auctions is expected to reduce buyer surplus, particularly if we assume that service providers are risk averse (which is a very common assumption in the auctions literature).</p><p>In sum, the literature offers competing theoretical predictions on the effect of bid visibility on buyer surplus, and the net effect of bid visibility on buyer surplus depends on the relative importance of the common value (versus the private value) component. If the private value component is substantial for IT services, reduction in valuation uncertainty would be small, whereas the reduction in competition uncertainty would dominate, and buyer surplus would be lower in open bid auctions versus sealed bid auctions. By contrast, if the common value component dominates, the reduction in valuation uncertainty would be substantial and would dominate the reduction in competition uncertainty; thus buyer surplus would be higher in open bid versus sealed bid auctions.</p><p>Based on the theoretical discussion, it is difficult to unequivocally determine the superior auction format. Therefore, we do not pose a formal hypothesis on whether open or sealed bid auctions would result in higher buyer surplus, but we seek to empirically assess the preferred auction format by examining the importance of the common value versus the private value components in the context of online BD auctions for IT services. While valuation uncertainty and competition uncertainty are proposed as our main theoretical underpinnings, one caveat in our theoretical analysis is that because of the complexity in real-life online BD auctions, there may be alternative theoretical explanations as to whether open or sealed bid BD auctions produce a higher surplus, such as endogenous entry of heterogeneous bidders and bidder collusion across these two auction formats. We discuss and empirically assess these alternative explanations subsequently after reporting the main results.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.">Empirical Methodology</head><p>In this section, we first describe the data used in the empirical analysis and introduce the model and identification strategy. Then, we examine the effects of bid visibility (open versus sealed bid BD auctions) on (1) the number of bids an auction receives and (2) the buyer surplus, as we elaborate in detail below.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.1.">Data and Variables</head><p>Our data include bid-level observations from a proprietary database of a leading online labor market. <ref type="foot" target="#foot_9">15</ref> Our main analysis is carried out at the project (auction) level with data between August 2009 and February 2010. The data set contains 71,503 open bid auctions and 7,433 sealed bid auctions posted by 21,799 unique buyers. We focus on four major project categories, software development, graphic design, content writing, and data coding, which account for more than 90% of all of the projects in the marketplace. 16 For each project, we obtained data on buyer characteristics (e.g., project experience, gold membership, and location and IP addresses), project characteristics (e.g., project budget and project category), auction characteristics (e.g., duration and format), auction outcomes (e.g., number of bids, average bid price, selected bid), and project outcome (e.g., bidder selection, contract and postproject satisfaction). We also obtained bid-and bidder-related data. Observations of auctions and bids were time stamped. To control for heterogeneity in purchasing power across countries, we obtained additional data about the purchasing power parity (PPP)-adjusted gross domestic product (GDP) per capita for all countries (GDP_PPP) combining data sources from the CIA World Factbook. 17 We merged GDP_PPP data with the main transaction data by the buyers' country of residency based on users' self-reported billing addresses when they signed up for the online labor market platform. Finally, to check the accuracy of the reported country of residence, we also recovered the buyers' locations (country) using their login IP addresses, 18  and the results are virtually identical.</p><p>Table <ref type="table" target="#tab_1">2</ref> summarizes the definition and descriptive statistics of key variables (project-level data). The correlation matrix is reported in Online Appendix II. On average, projects in our sample received about 14 bids. About 10% of the auctions in our sample were carried out using the sealed bid auction format. The average length of auction periods was about 11 days. Buyers in our sample completed an average of 18.5 projects before the focal project, and 29% of the buyers held a platform gold membership at the time of posting. 16 Special projects, such as projects that are open only to gold members, trial projects, hourly based long-term (versus fixed-price) contracts, "featured" projects, and nonpublic projects were excluded from the sample. Projects considered submitted by "robots" were also excluded from the sample. 17 The CIA World Factbook is accessible at https://www.cia.gov/ library/publications/the-world-factbook/index.html. Data from this source are largely consistent with data from the International Monetary Fund's World Economic Outlook database (data for 2010) and the World Bank's World Development Indicators database (data for September 2010). 18 We thank one anonymous reviewer for suggesting this approach to verify the self-reported country data.</p><p>Downloaded from informs.org by <ref type="bibr">[132.199.43.252</ref>] on 08 April 2016, at 03:41 . For personal use only, all rights reserved.  <ref type="formula">1</ref>) and (2) outline our empirical models for estimating the effect of auction format on the number of bids received in an auction and the buyer surplus generated. In other models, the effect of auction format is captured by the variable Open Bid i (equal to 0 if the auction is sealed bid and 1 if the auction is open bid). Our observation is at the project level (indexed by i . For ease of reference, we indexed the buyer of the project by u and the time of posting by t. In both equations, we controlled for observed project and auction characteristics, including project budget and auction duration; time-variant buyer characteristics, including project experience and gold membership; year-month dummies ym t ; and project category dummies (Category i . To control for the unobserved buyer characteristics, we added buyer fixed effects ( u to the model. To address nonnormality in the variables, we took natural logarithm of the highly skewed variables (Num Bids, Auction Duration, and Buyer Experience) in the estimation 19   ln Num Bids i u t</p><formula xml:id="formula_0">= 0 + 1 ×Open Bid i + 2-3 × AuctionControls i + 4-5 × BuyerControls u t + u +ym t +Category i + i u t</formula><p>(1) 19 For variables that contain zeroes (Num Bids, Buyer Experience), we added the lowest nonzero value (+1) before the log transformation (McCune and Grace 2002).</p><p>Buyer Surplus i u t</p><formula xml:id="formula_1">= 0 + 1 ×Open Bid i + 2-3 × AuctionControls i + 4-5 × BuyerControls u t + u +ym t +Category i + i u t (2)</formula><p>Note that in the instrumental variable (IV) estimation with GDP_PPP as the IV, buyer fixed effects were not included because there is no variation within a buyer with respect to GDP_PPP.</p><p>Buyer surplus is defined as the difference between a buyer's willingness to pay (WTP) and the actual price paid for the IT service. Whereas we can observe the price bids, the buyer's WTP cannot be observed. Following prior work (e.g., <ref type="bibr">Bapna et al. 2008, Mithas and</ref><ref type="bibr" target="#b72">Jones 2007)</ref>, we used the posted project budget as a proxy for the buyer's WTP. In online labor markets, buyers are required to specify their estimated budget range with a maximum and a minimum value when posting projects. Buyers are motivated to reveal their true budget since they want to inform potential bidders to get more meaningful bids <ref type="bibr" target="#b44">(Hong and Pavlou 2012)</ref>. In the main analysis, we used maximum budget as a proxy for WTP and measured buyer surplus as Max_Budget -Selected_Bid (Buyer Surplus (Max.)). To check the robustness of the results, we included two alternative measures of buyer surplus: (1) the difference between the maximum budget and the average price of all bids in an auction (Buyer Surplus (Avg.)) and ( <ref type="formula">2</ref>) an estimated buyer surplus (Buyer Surplus (Est.)) based on a discrete choice framework (Online Appendix IV). Overall, our results are similar, indicating that our estimation results are robust to alternative surplus measures. Downloaded from informs.org by <ref type="bibr">[132.199.43.252</ref>] on 08 April 2016, at 03:41 . For personal use only, all rights reserved.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.2.2.">Econometric Identification Strategies.</head><p>A major challenge to identify the effect of auction format (Open Bid i from our observational data is that it is the buyer who decides whether to use sealed bid auction or open bid auction when the project is created. As a result, the coefficient we estimated from the model could be biased by the endogenous selection of the auction format. Selection bias could result from unobserved buyer and project characteristics. The budget estimation strategy could also affect the choice of auction format, which may render the auction format endogenous in Equation (2). To strengthen our empirical identification, besides auction-level and buyer-level time variant control variables, we included three sets of fixed effects to control for unobserved heterogeneity-buyer fixed effects (using within transformation), monthly dummies, and project-category dummies.</p><p>The buyer fixed effects model helps us to alleviate the concern caused by unobserved time-invariant buyer characteristics and temporal and category differences. A similar approach was adopted by <ref type="bibr" target="#b23">Cho et al. (2014)</ref>, who compared among different auction formats with observational data. To further strengthen the causal interpretation for the estimated effects of auction format in Equations ( <ref type="formula">1</ref>) and ( <ref type="formula">2</ref>), we considered two alternative identification strategies-propensity score matching (PSM), and IV approaches.</p><p>Matching estimators are commonly used to address self-selection issues by creating a quasi-experimental condition for identification purposes <ref type="bibr" target="#b0">(Abadie and</ref><ref type="bibr">Imbens 2006, Rosenbaum and</ref><ref type="bibr" target="#b80">Rubin 1983)</ref>. The basic idea of the matching estimator is to create a sample of the control group (in our context, sealed bid BD auctions) that is statistically equivalent to the treatment group (i.e., open bid BD auctions) in all relevant observed (static and dynamic) characteristics. In the basic PSM estimation, we first estimated the propensity of each observation to receive the treatment (to be conducted in an open bid format) using the observed (matching) variables. We then matched each treated observation (open bid auctions) with an observation from the untreated group (sealed bid auctions) with a similar propensity score. PSM estimates the average treatment effect on the treated based on a comparison to the matched control group. Estimates from the PSM method are more precise than regression estimates in finite samples <ref type="bibr" target="#b6">(Angrist and Pischke 2008)</ref>. PSM is often used to address selection issues in observational studies with archival data <ref type="bibr" target="#b7">(Aral et al. 2009</ref><ref type="bibr" target="#b74">, Oestreicher-Singer and Zalmanson 2013</ref><ref type="bibr" target="#b79">, Rishika et al. 2013)</ref>. It was also used in the estimation of the effect of bid visibility in U.S. timber auctions <ref type="bibr" target="#b11">(Athey et al. 2011)</ref>. PSM is useful in our context because of the richness of the observed characteristics at the project level, which is preferable for creating matching groups using propensity scores.</p><p>Another strategy commonly adopted to tackle endogeneity is the IV approach. A valid instrument should be correlated with the potentially endogenous independent variable (in our case, auction format), but it should not relate to the dependent variable besides through the endogenous variables. Based on this rationale, we conducted an IV analysis with GDP_PPP (purchasing power parity-adjusted GDP per capita) of the buyer's country of residence as an IV. Purchasing power parity-adjusted GDP per capita is a key economic measure for the relative value of per capita income and often used as a proxy for the "wealth" of a country's average resident (e.g., <ref type="bibr" target="#b32">Gefen and Carmel 2008</ref><ref type="bibr" target="#b55">, Lee and Tang 2000</ref><ref type="bibr" target="#b60">, Lothian and Taylor 1996)</ref>. The detailed rationale for using GDP_PPP as the IV is provided as follows. In the online labor market that we study, open bid auctions are the default option when posting a project. To use sealed bid auctions, which are a premium feature, buyers need to pay an extra fee for posting ($1 per project in the time window of our main analysis). Although the same nominal cost is incurred for all buyers, the real cost of posting a sealed bid auction, and perhaps the psychological perception of $1, depends on the buyer's residing country (more specifically, the purchasing power of the buyer). As such, we expect that, everything else equal, buyers from a wealthier country (with higher GDP_PPP) would be more likely to use sealed bid auctions. Besides its effect on the use of sealed bid auction format, there is no plausible rationale for GDP_PPP to affect auction performance since this information is not shown in any salient manner to potential service providers, and GDP_PPP should thus have little or no impact on service providers' bidding strategy. Results for these additional robustness checks are reported after we discuss the findings from our main analysis in §5.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.">Analyses and Results</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.1.">Main Analysis</head><p>Table <ref type="table" target="#tab_2">3</ref> reports the regression analysis results with buyer fixed effects (columns (2) and ( <ref type="formula">4</ref>)). For comparison, we also report the results from the ordinary least squares (OLS) analysis without buyer fixed effects (columns (1) and ( <ref type="formula" target="#formula_2">3</ref>)). Based on our fixed effects estimation, open bid auctions attract, on average, 22.1% fewer bids (p &lt; 0 01) than sealed bid auctions (column (2) in Table <ref type="table" target="#tab_2">3</ref>; the number is 18.4% according to the estimates without buyer fixed effects). Besides, according to column (4) in Table <ref type="table" target="#tab_2">3</ref>, buyers in open bid BD auctions enjoy $15.76 higher surplus (p &lt; 0 01) than buyers in sealed bid BD auctions (the number is $10.87 according to the estimates without buyer fixed effects). <ref type="foot" target="#foot_10">20</ref> Overall, the signs and the statistical significance of the estimates remain the same when we account for unobserved buyer characteristics. This suggests that our empirical identification is not seriously compromised by the selection of unobserved buyer characteristics. We considered alternative measures of buyer surplus as robustness checks. Table <ref type="table">4</ref> reports the estimation results based on fixed effects estimation with two alternative measures of buyer surplus. Overall, our findings are consistent across different measures. This the estimates <ref type="bibr" target="#b56">(Lin et al. 2013)</ref>. We calculated the margin of errors of the point estimates of our fixed effects estimates. Using 1.96 as the critical value, the margin of error for the point estimate of open bid auction on ln(Num Bids) is 0.055, and the 95% confidence interval of the effect of open bid auction on the number of bids is -0 182 -0 292 . For the effect of open bid auction on buyer surplus, the margin of error is 5.749, and the 95% confidence interval for the effect of open bid auction is 10 011 21 509 .</p><p>suggests that the higher buyer surplus observed in open bid auctions is attributable to actual buyer surplus rather than measurement specifications.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.2.">Results for PSM and Instrumental</head><p>Variable Analysis The results from the fixed effects regression analysis support the superiority of open-bid auctions in online labor markets from the buyer's perspective. Although on average open-bid auctions attract fewer bids, they generate a higher buyer surplus. As discussed in §4, an important issue with the main model is that the auction format is a choice of the buyers, and thus the estimation is susceptible to selection bias. Although we included proper controls (including buyer fixed effects) in the model to address the possibility for self-selection, we cannot completely rule out the endogenous selection of auction format as a potential confounding effect. To further strengthen the identification and establish a causal interpretation for our findings, we report two additional analyses based on two distinct econometric identification strategies.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.2.1.">Propensity Score Matching.</head><p>To implement PSM, we used observed auction, buyer, and project characteristics as matching variables. Specifically, we considered project max budget, auction duration, buyer experience, buyer gold status, buyer country dummies, and project category and year-month pair dummy variables (ym 1-ym 6). We estimated the propensity scores using a probit model on the binary treatment variable (open versus sealed). Specifically, we estimated the conditional probability of receiving a treatment (open bid auction) given a vector of observed covariates. We then matched open bid auctions (treatment observations) to sealed bid auctions (control observations) using the estimated propensity scores. The groups of open bid and sealed bid auctions with similar propensity Downloaded from informs.org by <ref type="bibr">[132.199.43.252</ref>] on 08 April 2016, at 03:41 . For personal use only, all rights reserved. a subsample of buyers whose self-reported countries matched the IP-revealed countries. Table <ref type="table">6</ref> provides further support for the robustness of our findings from the main model. The validity of the IV is assessed with three metrics. First, there is a significant correlation (p &lt; 0 0001) between GDP_PPP and auction format as visualized in Figure AIII.2 in Online Appendix III. Second, the first stage F statistic is significant. Third, the Cragg-Donald Wald F statistics for all of the models were well above <ref type="bibr" target="#b85">Stock and Yogo's (2005)</ref> critical value. Notably, the quantified effect sizes of auction format on both the number of bids and buyer surplus are higher relative to the effect sizes based on fixed effect estimations, which implies that the estimates from both OLS and fixed effect analyses are likely conservative. However, caution should be taken in interpreting the IV estimates because IV estimates may be biased <ref type="bibr" target="#b6">(Angrist and Pischke 2008)</ref>. To offer additional support, we ran another IV analysis using a different instrumental variable (price change of the sealed bid auctions from free to $1), which yielded findings that are consistent with the main analyses (Online Appendix III).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.3.">Additional Analyses</head><p>In this section, we report additional analyses with observational data and a small-scale randomized field experiment that provide evidence to support (a) the existence of a common value component for IT services in online labor markets, (b) the screening effect, (c) higher valuation uncertainty in open bid auctions, and (d) insignificant concern for endogenous bidder entry. Furthermore, we discuss bidder collusion, and finally we analyze project-related outcomesselection/contract probability and buyer satisfaction. 5.3.1. Higher Surplus from Open Bid Auctions-Testing the "Common Value" Assumption. We propose that the reduction in valuation uncertainty over the common value component is the main driver of buyer surplus gain in open bid auctions. In the theoretical discussions, we have discussed the importance of the common value component in the cost of IT services auctioned in online labor markets. We further offer some empirical evidence of the existence of a common value component for IT services.</p><p>Based on prior literature <ref type="bibr" target="#b70">(Milgrom and Weber 1982</ref><ref type="bibr" target="#b76">, Paarsch 1992</ref><ref type="bibr" target="#b38">, Haile et al. 2003)</ref>, summarized by <ref type="bibr" target="#b15">Bajari and Hortaçsu (2003)</ref>, an appropriate empirical test to distinguish between a pure private values model and an auction model with a common value component is the winner's curse test, theoretically proposed by <ref type="bibr" target="#b70">Milgrom and Weber (1982)</ref> and empirically developed by <ref type="bibr" target="#b10">Athey and Haile (2002)</ref> and <ref type="bibr" target="#b38">Haile et al. (2003)</ref>. The logic of the empirical test is that in a common value auction, rational bidders will increase their bids to mitigate the winner's curse in a reverse auction. Because the possibility of a winner's curse is greater in auctions Downloaded from informs.org by <ref type="bibr">[132.199.43.252</ref>] on 08 April 2016, at 03:41 . For personal use only, all rights reserved. with more bidders, the empirical prediction, under the common value assumption, is that the average bid in an N -bidder reverse auction will be lower than the average bid in an auction with N -1 bidders. On the contrary, in pure private value auctions, the number of bids should not have an effect on average bidding prices <ref type="bibr" target="#b10">(Athey and Haile 2002</ref><ref type="bibr" target="#b38">, Haile et al. 2003</ref><ref type="bibr" target="#b15">, Bajari and Hortaçsu 2003)</ref>. Thus, examining how the average bid price<ref type="foot" target="#foot_12">22</ref> responds to different number of bidders shed light on whether a common value component exists for IT services in online labor markets. Specifically, we test the following null hypothesis: auctions in online labor markets are purely independent private value. If a null hypothesis holds, we expect the coefficient of number of bids to be either negative or not different from zero <ref type="bibr" target="#b15">(Bajari and Hortaçsu 2003)</ref>.</p><p>As shown by Table <ref type="table">7</ref>, the budget-weighted average bid (average bid price divided by the maximum project budget) positively correlates with the number of bidders in the auction. Considering the potential endogeneity of the number of bids, we used auction duration as an instrument for the number of bids. Auction duration serves as a valid instrument because it increases the number of bids, but it should not be driving the budget-weighted average bid. The results from the instrumental variable estimation are consistent with the fixed effects estimation. We cautiously interpret the regression results of the winner's curse test as suggestive evidence that IT services in online labor markets are not purely private value, but they involve </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.3.2.">Fewer Bids from</head><p>Open Bid Auctions-Testing the Screening Effect in Open Bid Auctions. One reason that we expect open bid auctions to attract fewer bids is the visibility of existing bids that discourages weaker bidders, i.e., the screening effect. To examine this effect in open bid auctions, we analyzed the relationship between bid sequence and bidders' Downloaded from informs.org by <ref type="bibr">[132.199.43.252</ref>] on 08 April 2016, at 03:41 . For personal use only, all rights reserved. In this analysis, we look at within-auction sequential dynamics of bidder surplus provision. Specifically, we constructed a variable, Bid Sequence, based on the time stamp of each bid submission (the first bid will be recorded as 1, the second bid 2 , , the nth bid n), and linked Bid Sequence and the interaction of Bid Sequence with Open Bid to our dependent variable: the nth bidder's surplus provision. We used the following equation to estimate the relationship between bid sequence and surplus provision, which is suggestive of a screening effect in open bid auctions (relative to sealed bid auctions):</p><formula xml:id="formula_2">Buyer Surplus i n = 1 ×Bid Sequence n + 2 ×Bid Sequence n ×Open Bid i + 3 ×lnbid i n + i + i n<label>(3)</label></formula><p>In Equation ( <ref type="formula" target="#formula_2">3</ref>), i is used to index projects, and i is the project-specific (fixed) effect. A positive and significant estimation of 2 would support the screening effect in open bid auctions. The estimation results (Table <ref type="table">8</ref>) show that, compared with sealed bid auctions, later bids in open bid auctions offer a higher buyer surplus in open bid auctions (positive coefficient for the interaction term Bid Sequence × Open Bid). This result provides evidence for the existence of a screening effect.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.3.3.">A Randomized Field Experiment-Assessing</head><p>Endogenous Entry of Heterogeneous Bidders. We conducted a small-scale field experiment to assess the 23 Surplus provision is the amount of surplus a bid would generate to the buyer, if it is chosen. It is measured at the bid level by Project Max Budget -Bid Price; or estimated with a discrete choice model (see Online Appendix IV).</p><p>endogenous entry of heterogeneous bidders across different auction formats. A one-factor (auction format) randomized experiment was conducted in a large online labor market by posting 28 projects (14 with open bid auctions and 14 with sealed bid auctions) to observe bidding behaviors and bidder characteristics in open bid versus sealed bid auctions. Online Appendix V explains the experimental design, procedures, sample posted projects, and additional details of the results.</p><p>As discussed earlier, the theoretical comparison of buyer surplus in open versus sealed auctions is less clear cut if bidders have heterogeneous ex ante value distributions. If bidders with different characteristics (e.g., cost, quality) self-select to enter different auction formats, the effect of auction format on buyer surplus may be caused by the endogenous entry of heterogeneous bidders<ref type="foot" target="#foot_13">24</ref>  <ref type="bibr" target="#b11">(Athey et al. 2011)</ref>. Although it is difficult to completely rule out the role of endogenous entry of heterogeneous bidders in observational data since we can neither control entry decision nor observe ex ante bidder differences in open versus sealed bid auctions, we can reduce this concern by comparing submitted bids. Following <ref type="bibr" target="#b11">Athey et al. (2011)</ref>, if bidders use equilibrium entry strategies, potential bidders will be similar to the actual bidders in a given auction. Thus, we can assess the severity of bidders' endogenous entry with the field experimental data by comparing whether there are systematic differences in the observed characteristics of bidders (collected from the bidders' profile pages; see Figure AV.1 in Online Appendix V) who bid on open bid auctions versus those who bid on sealed bid auctions.</p><p>Using both t tests of the mean difference and also nonparametric two-sample Kolmogorov-Smirnov (K-S) tests for distributional difference (Table <ref type="table" target="#tab_6">9</ref>), we found no significant difference between bidders in open bid versus sealed bid auctions across all observed characteristics. The overlaid kernel density plots for all of these variables are visualized in Figure AV.2 in Online Appendix V. The results suggest that endogenous entry does not pose a serious concern since the bidders are not different in open bid auctions versus sealed bid auctions, in terms of their observed characteristics.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.3.4.">Additional Robustness Checks with Field</head><p>Experiment Data. Leveraging the experimental data, we validated the main findings from our observational study, which further alleviated concerns caused by the potential endogeneity of the project budget. Furthermore, we provide some evidence on bidders' valuation uncertainty across the two auction formats.</p><p>Even for the same project, buyers may strategically set a different budget according to the auction format they chose to use, which leads to potential budget endogeneity. To assess budget endogeneity, we examined the bid prices from the experimental data in which the project budget is controlled and is thus exogenous. We first used a nonparametric two-sample K-S test for equality of the distribution functions of all bids observed for sealed (532 bids) and open bids auctions (478 bids), and a significant distributional difference was observed (p = 0 012; Figure <ref type="figure" target="#fig_4">2</ref>). We also used independent sample t tests to assess the mean difference of average bid prices in open versus sealed bid auctions (auction level). Average bid price was significantly higher t = 1 983, p = 0 058 in sealed = 76 43, = 21 83 versus open bid auctions = 61 64, = 17 37 . This difference is visualized in Figure <ref type="figure">3</ref>(a). In sum, both the nonparametric and the parametric tests indicate open bid auctions attract lower bids, alleviating the concern about endogenous budget specification as the driver of our findings. A similar analysis was conducted for the observational data (Online Appendix VI).</p><p>We then tested bidders' valuation uncertainty in open versus sealed bid auctions using experimental data. The rationale is that, if valuation uncertainty in sealed bid auctions is the same as in open bid auctions, there should be no significant difference in price dispersion across the two formats. Notably, at the auction level, the nonparametric K-S test showed price dispersion (standard deviation of bid prices) to be significantly higher in sealed bid auctions (p = 0 06). A parametric t test for the mean difference also showed price dispersion to be significantly higher t = 2 756, p = 0 01 in sealed bid auctions = 51 92, = 14 41 than in open bid auctions = 34 48, = 18 78 . This difference is visualized with box plots (Figure <ref type="figure">3(b)</ref>). Given the higher price dispersion, compared with open bid auctions, bidders in sealed bid auctions face higher valuation uncertainty. Bidder collusion in online labor markets is less likely to reduce buyer surplus for several reasons. First, bidders in online labor markets are from geographically dispersed countries, and their communication is restricted to within-site messages that are monitored by the marketplace. Generally, it would be risky for them to collude via communicating through messages because the marketplace could close their accounts. Second, projects auctioned in online labor markets are not like timber auctions that are high in value. Most projects have a maximum budget of $250 and $750, and more than 80% of the projects in online labor markets are between $100 and $2,500. Thus, there may not be enough incentive for bidders to engage in such collusion, which is costly and risky. Also, in the current study, we find that in open bid auctions, bidders bid Downloaded from informs.org by <ref type="bibr">[132.199.43.252</ref>] on 08 April 2016, at 03:41 . For personal use only, all rights reserved. Standard deviation of bids lower and thus offer a higher surplus for buyers, which is opposite to the predictions of collusive bidding. Summarizing these arguments, bidder collusion is unlikely to be the reason that drives the observed effects in this study.</p><p>5.3.6. Additional Performance Outcomes: Selection, Contract Probability, and Buyer Satisfaction. In online labor markets, buyer surplus is only realized after the service is delivered. In reality, many projects are not completed, either because the buyer does not select a bidder, or the buyer and the selected service provider do not agree on a contract. Although our analysis suggested that open bid auctions help buyers to extract a higher surplus, it is important to examine the effects of auction design format on other outcomes that are critical to value creation in online labor markets. Specifically, we examined whether the auction format affects (1) the probability of the buyer finding a satisfactory offer (Selected); (2) conditional on the buyer's selection, the probability that a contract was signed between the buyer and the selected service provider (Contracted); and (3) finally, how satisfied the buyer was with the service delivered (Satisfaction).</p><p>Selection, contract probability, and satisfaction may vary with auction format for several reasons. First, although open bid auctions receive fewer bids, the expected buyer surplus from the submitted bids is higher in open bid auctions. Second, the cost of bid evaluation increases with the number of bids received. High bid evaluation cost may demotivate buyers from carefully evaluating all bids <ref type="bibr" target="#b20">(Carr 2003)</ref>. Therefore, buyers in open bid auctions are likely to face fewer but more attractive bids, and thus have lower evaluation costs. With easier evaluation tasks, buyers have higher confidence in their choice and are less likely to regret their selection. Third, service providers have considerable uncertainty about the cost of serving a contract. Information from other bids may strengthen their confidence in cost assessment, making it more likely that the auction would result in a contract. Similarly, since open bid auctions generate a higher buyer surplus, projects contracted under open bid auctions are more likely to result in higher buyer satisfaction. Besides, buyers in open bid auctions are more likely to make an informed choice in contracting a service provider who, at the same time, is informed about the bids of other service providers and is able to evaluate the cost more precisely before service delivery (lower valuation uncertainty). Being more informed upfront is likely to increase the buyer's satisfaction. Furthermore, sealed bid auctions result in more bids to be evaluated, which may lead to higher buyer's expectation. As a result, even with the same level of service quality, buyers in sealed bid auctions are less likely to have a positive confirmation of their expectations <ref type="bibr" target="#b75">(Oliver 1980)</ref>. Given that the confirmation of expectations is a strong predictor of consumer satisfaction <ref type="bibr" target="#b5">(Anderson and Sullivan 1993)</ref>, we would expect open bid auctions to result in higher buyer satisfaction than sealed bid auctions.</p><p>To examine the effects of auction format on the (postauction) project outcomes, we adopted a similar model specification as in the main analysis. Since selection and contract are binary outcomes, we adopted a fixed effects Logit estimation. Satisfaction was measured by buyer-reported evaluations of the contracted service providers after project completion (integer between 1 and 10). Given the ordinal nature of the measure, we adopted an ordered Logit with fixed effects model, specifically, the consistent and efficient "blow up and cluster" (BUC) estimator <ref type="bibr" target="#b14">(Baetschmann et al. 2015)</ref>.</p><p>Estimation results are shown in columns ( <ref type="formula">1</ref>)-( <ref type="formula" target="#formula_2">3</ref>) in Table <ref type="table" target="#tab_0">10</ref>. Across the three models, we found significant effects of auction format. Using odds ratios to interpret the Logit estimation results, we found that open BD auctions have 55.3% higher odds of having a winning bid selected than sealed bid auctions. Conditional on Downloaded from informs.org by <ref type="bibr">[132.199.43.252</ref>] on 08 April 2016, at 03:41 . For personal use only, all rights reserved.    <ref type="bibr" target="#b23">(Cho et al. 2014</ref><ref type="bibr" target="#b50">, Kagel and Levin 2009</ref><ref type="bibr" target="#b67">, McMillan 1994)</ref>; competition uncertainty, which may lead risk-averse bidders to bid lower <ref type="bibr">(Holt 1980, Maskin and</ref><ref type="bibr" target="#b62">Riley 1984)</ref>; and heterogeneous bidder distribution <ref type="bibr" target="#b11">(Athey et al. 2011</ref>), which may lead to endogenous entry in either open or sealed bid auctions. We show that open bid BD auctions outperform sealed bid BD auctions in terms of buyer surplus, selection probability, contract probability (conditional on buyer selection), and also buyer satisfaction. Our study builds on several seminal empirical studies that compared open versus sealed bid auctions using field observations. Notably, our study extends the work of <ref type="bibr" target="#b11">Athey et al. (2011)</ref>, who compared auction formats in forward U.S. timber auctions, and also the work of <ref type="bibr" target="#b23">Cho et al. (2014)</ref>, who compared auction formats in forward versus reverse auctions for used automobiles. By focusing on BD auctions in a novel context (online labor markets for IT services), which are shown to have a substantial common value component, our study echoes the theoretical findings of <ref type="bibr" target="#b68">Menicucci (2004)</ref>, who showed that even when bidders are risk averse, the Downloaded from informs.org by <ref type="bibr">[132.199.43.252</ref>] on 08 April 2016, at 03:41 . For personal use only, all rights reserved.</p><p>Information Systems Research 27(1), pp. 49-69, © 2016 INFORMS (down-bid) effect of valuation uncertainty dominates the (up-bid) incentive to increase the chance of winning in first-price auctions with a common value component.</p><p>Second, our study has implications for auction format as an important design problem for BD auctions and online labor markets. Auction format is a prime example of an IS design that involves the moderation of the marketplace <ref type="bibr" target="#b4">(Allon et al. 2012)</ref>, and it has a significant role in the bidding strategy of service providers and the resulting surplus for buyers. Despite the proliferation of online labor markets, research on the optimal design and corresponding performance effects of online labor markets is lacking. We theoretically propose that valuation uncertainty and competition uncertainty coexist in auctions in online labor markets. Our findings suggest that auctions for IT services in online labor markets have an important interdependent common value component. With significant valuation uncertainty, service providers benefit from observing others' bids, which allow them to make inferences about the costs of the posted projects, resulting in lower bids and a higher buyer surplus in general. For buyers, since the common value component is substantial, reduction in valuation uncertainty through open bid auctions drives down bid prices, which outweighs the benefit that a buyer can enjoy by maintaining the competition uncertainty high by using sealed bid auctions.</p><p>Third, our empirical examination has implications for important assumptions made in theoretical studies in the auctions literature for online BD auctions, specifically the existence of a common value component. Our results imply that IT services in online labor markets have an interdependent common value component, as opposed to a purely private component. This finding echoes the theoretical and experimental results from <ref type="bibr">Goeree and</ref><ref type="bibr">Offerman (2002, 2003)</ref>, who showed that products with private value and common value components can coexist. Buyer surplus may be higher when the information on the common value is public. (In our case, information transparency enabled by open bid auctions allows service providers to learn the common value (cost) of the IT service from other service providers.) Also, in online labor markets, the service providers' uncertainty mostly comes from the difficulty in valuation rather than the difficulty to assess the competition. This is because although the cost of participating in a BD auction is nonnegligible, it is relatively small compared to the cost of offering an IT service at a loss (due to the winner's curse).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6.3.">Implications for Practice</head><p>This study has some actionable implications for practitioners as well. First, the number of bids has been seen as a measure for auction success because more bids indicate more choices for buyers, which increases buyer surplus. Therefore, online labor market intermediaries commonly charge a fee for sealed bid auctions, which is viewed as a premium (often paid) feature. The direct implication for practitioners is that more bids do not translate into higher buyer surplus. Open bid BD auctions consistently outperform sealed bid BD auctions in terms of buyer surplus, contract probability, and buyer satisfaction, despite fewer bids received. Our study links auction format with the bidding strategy of service providers and offers support for open bid auctions as an increasingly popular auction format in online labor markets. Given that labor markets are usually buyer driven, the intermediary's proper incentives for buyers in terms of designing appropriate auction mechanisms have practical consequences for the sustainability of online labor markets. Accordingly, charging extra fees for sealed bid auctions may be harmful for labor market intermediaries.</p><p>Second, blindly pursuing more bids by using sealed bid auctions may not be a good strategy for buyers. Posting jobs using sealed bid BD auction usually comes at a cost (e.g., Freelancer used to charge $1 for posting a sealed bid BD auction, and the cost recently increased to $9), which can be avoided by using the default open bid format. Moreover, more bids entail a higher evaluation cost. If the buyer cannot afford to evaluate all bids (especially low quality bids), the open bid BD auction format would be a superior choice. Nevertheless, notwithstanding lower buyer surplus, sealed bid BD auctions remain attractive in some cases. For example, the potential for collusive bidding <ref type="bibr" target="#b11">(Athey et al. 2011)</ref> among service providers can be mitigated by sealed bid auctions. Finally, the sealed bid design also offers a higher privacy protection for service providers who are concerned about opening their bids to the public (potentially for privacy reasons).</p><p>Third, this study has implications for other practical auction contexts. We believe our results could be generalized to auctions of goods with a significant common value component where information transparency could increase buyer surplus. For example, a common value component exists when the goods have high uncertainty, such as coins and collectibles <ref type="bibr" target="#b15">(Bajari and Hortaçsu 2003)</ref> or used automobiles <ref type="bibr" target="#b23">(Cho et al. 2014)</ref>, or when goods have a resale value <ref type="bibr" target="#b34">(Goeree and Offerman 2003)</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6.4.">Limitations and Suggestions for</head><p>Future Research First, buyers choose to use either "sealed" or "open" auction formats to post their CFBs, leading to an endogeneity concern. In this paper, a multitude of approaches were utilized to alleviate concerns about empirical identification, including a variety of buyer and project-level controls, buyer fixed effects, PSM, and IV analyses. We also conducted additional analysis and a field experiment to provide evidence of the Downloaded from informs.org by <ref type="bibr">[132.199.43.252</ref>] on 08 April 2016, at 03:41 . For personal use only, all rights reserved. robustness of the key findings. Identification concerns are common in observational studies, and based on various robustness analyses, they should not compromise our findings. Although we are confident that the current study properly identified the effects of bid visibility (open versus sealed bid auctions) on auction performance, future research could use other approaches for identification; for example, large-scale randomized field experiments could be implemented to further confirm and extend our study's findings.</p><p>Second, our theoretical discussion focused on how bid visibility mitigates the service providers' valuation uncertainty and competition uncertainty, and a substantial common value component of the cost of IT services in online BD auctions. We acknowledge that there may be alternative explanations that are at play in online BD auctions. Because of the limitation in our data, it is not possible to completely rule out and fully assess the impact of these alternative explanations, such as the endogenous entry of heterogeneous bidders. Endogenous entry of heterogeneous bidders definitely merits further exploration with richer data and by using alternative empirical methodologies (e.g., structural econometric modeling).</p><p>Finally, we focus our attention on CFBs, where little precontract investment on the project is required. By contrast, significant precontract investment is needed in other types of online labor markets. For example, some platforms, such as 99designs and InnoCentive, employ open innovation contests and tournaments (e.g., <ref type="bibr" target="#b87">Terwiesch and Xu 2008)</ref>, where service providers not only bid with a price quote, but they need to submit a final product along with their bid. The interaction and bidding dynamics on these platforms are likely to be different and call for future research to extend the analysis of bid visibility in open innovations. Interestingly, open bid auctions attract fewer bids, but provide higher surplus to buyers, which makes open bid auction format a superior option for buyers in online labor markets. Given that many other design features are being proposed by practitioners to facilitate the exchange of labor across the globe, our study invites IS scholars and practitioners to look more closely at the effect of bid visibility and other auction design formats on the strategic behavior of bidders and auction performance in online labor markets.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>Figure 1</head><label>1</label><figDesc>Figure 1Open vs. Sealed Auction Format on Freelancer</figDesc><graphic coords="4,64.32,89.82,234.10,252.82" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head></head><label></label><figDesc>Figure 2Kernel Density Plots of All Bids Observed</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head></head><label></label><figDesc>5.3.5. Discussion of an Alternative Explanation-"Bidder Collusion." In our theoretical analysis, we proposed that the comparison between open and sealed bid auctions hinges on the trade-off between valuation uncertainty and competition uncertainty. However, bid visibility may lead to bidder behavior other than those driven by competition uncertainty and valuation uncertainty, such as bidder collusion (e.g., Athey et al. 2011, Fugger et al. 2015). As Cho et al. (2014) observed, the linkage principle may fail when bidders collude since collusion is more likely to occur in open bid auctions. Because more information is available in open bid auctions than in sealed bid auctions, collusion is more likely to happen in open bid auctions. Athey et al. (2011) attributed their finding about higher buyer surplus from sealed bid timber auctions to potential bidder collusion in open bid auctions.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head></head><label></label><figDesc>Figure 3Average Bid Price and Price Dispersion in Open vs. Sealed Bid Auctions</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4"><head>6. 2 .</head><label>2</label><figDesc>Implications for TheoryThis research contributes to literature on (a) auction design format and (b) online labor markets by offering large-scale empirical evidence from a real-life online labor market. Specifically, we seek to fill the gap in the literature on the effect of auction format (open and sealed bid auctions) on auction performance (number of bids and buyer surplus). Our study has the following theoretical implications.First, our study provides insights to the auctions literature with regard to the design choice between open versus sealed bid auctions using large-scale observational data from real-life online labor markets. The design choice is not straightforward for online BD auctions in practice because many countervailing factors might be at play, such as bidder collusion(Haruvy and  Katok 2013, Jap 2007), which may be exacerbated in open bid auctions; valuation uncertainty, which may be mitigated by the information transparency enabled by open bid auctions</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5"><head></head><label></label><figDesc>6.5. Concluding Remarks Online labor markets have changed the way buyers and service providers interact and the way labor is sourced globally. One key issue facing online labor markets today is how the auction format with regard to bid visibility (open versus sealed bid auctions) affects auction performance. Despite recent progress in the auction literature, the effect of bid visibility on auction performance in BD auctions remains inconclusive. By leveraging unique proprietary data on open and sealed (hidden from the public) bid auctions from one of the world's largest labor markets, we demonstrated the advantage of open bid BD auctions on buyer surplus.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head>Table 1</head><label>1</label><figDesc>Comparisons Between Open and Sealed Bid Auctions on Buyer Surplus</figDesc><table><row><cell></cell><cell>Open bid auctions</cell><cell>Sealed bid auctions</cell><cell>Effect on buyer surplus</cell></row><row><cell>Valuation</cell><cell>Low</cell><cell>High</cell><cell>Valuation uncertainty induces service provider's fear of winning at</cell></row><row><cell>uncertainty</cell><cell cols="2">(if a common value component exists)</cell><cell>a suboptimal price and results in overbidding, leading to a lower</cell></row><row><cell></cell><cell></cell><cell></cell><cell>buyer surplus.</cell></row><row><cell>Competition</cell><cell>Low</cell><cell>High</cell><cell>Competition uncertainty encourages risk-averse service providers</cell></row><row><cell>uncertainty</cell><cell></cell><cell></cell><cell>to bid lower to enhance winning probability, leading to a higher</cell></row><row><cell></cell><cell></cell><cell></cell><cell>buyer surplus.</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1"><head>Table 2</head><label>2</label><figDesc>Definition and Summary Statistics of Key Variables (Project-Level Data)    </figDesc><table><row><cell>Variable</cell><cell>Variable definition</cell><cell>Mean</cell><cell>SD</cell><cell>Min.</cell><cell>Max.</cell><cell>Median</cell></row><row><cell>Num Bids</cell><cell>Total number of bids received in an auction</cell><cell>13 6</cell><cell>14 8</cell><cell>1</cell><cell>89</cell><cell>9</cell></row><row><cell>Buyer Surplus (Max.)</cell><cell>Buyer budget upper bound minus selected bid price</cell><cell>194 6</cell><cell>111 3</cell><cell>-1 000</cell><cell>725</cell><cell>202</cell></row><row><cell>Buyer Surplus (Avg.)</cell><cell>Buyer budget upper bound minus average bid price</cell><cell>171 15</cell><cell>132 72</cell><cell>-1 250</cell><cell>650</cell><cell>180.7</cell></row><row><cell>Buyer Surplus (Est.)</cell><cell>Estimated buyer surplus based on discrete choice model</cell><cell>783 11</cell><cell>523 23</cell><cell>-2 474</cell><cell>2,497</cell><cell>789.5</cell></row><row><cell>Selected Bid</cell><cell>Selected bid's price in an auction</cell><cell>127 35</cell><cell>151 85</cell><cell>20</cell><cell>1,500</cell><cell>60</cell></row><row><cell>Selected</cell><cell>Whether the buyer selected any provider</cell><cell>0 67</cell><cell>0 47</cell><cell>0</cell><cell>1</cell><cell>1</cell></row><row><cell>Contracted</cell><cell>Whether a contract is reached</cell><cell>0 60</cell><cell>0 49</cell><cell>0</cell><cell>1</cell><cell>1</cell></row><row><cell>Satisfaction</cell><cell>The satisfaction rating a buyer gives to a provider</cell><cell>9 87</cell><cell>0 77</cell><cell>1</cell><cell>10</cell><cell>9</cell></row><row><cell>Open Bid</cell><cell>Whether the project was posted as an open auction</cell><cell>0 90</cell><cell>0 29</cell><cell>0</cell><cell>1</cell><cell>1</cell></row><row><cell>Buyer GDP_PPP</cell><cell>Buyer's purchasing power parity adjusted GDP per capita</cell><cell>33,718</cell><cell>16,169</cell><cell>370</cell><cell>78,409</cell><cell>38,663</cell></row><row><cell>Control variables</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Project Max Budget</cell><cell>The upper bound of the buyer's budget</cell><cell>347</cell><cell>197</cell><cell>250</cell><cell>750</cell><cell>250</cell></row><row><cell>Auction Duration</cell><cell>Number of days an auction was active</cell><cell>10 58</cell><cell>15 85</cell><cell>1</cell><cell>60</cell><cell>5</cell></row><row><cell>Buyer Experience</cell><cell>Number of projects the buyer has contracted</cell><cell>18 54</cell><cell>64 21</cell><cell>0</cell><cell>1,179</cell><cell>3</cell></row><row><cell>Buyer Goldmember</cell><cell>The buyer was a gold member or not at time of an auction</cell><cell>0 29</cell><cell>0 45</cell><cell>0</cell><cell>1</cell><cell>0</cell></row><row><cell>Project categories</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>PC 1</cell><cell>Website and software development</cell><cell>0 47</cell><cell>0 50</cell><cell>0</cell><cell>1</cell><cell>0</cell></row><row><cell>PC 2</cell><cell>Writing and content</cell><cell>0 19</cell><cell>0 40</cell><cell>0</cell><cell>1</cell><cell>0</cell></row><row><cell>PC 3</cell><cell>Graphical design</cell><cell>0 24</cell><cell>0 43</cell><cell>0</cell><cell>1</cell><cell>0</cell></row><row><cell>PC 4</cell><cell>Data entry and management</cell><cell>0 10</cell><cell>0 30</cell><cell>0</cell><cell>1</cell><cell>0</cell></row><row><cell cols="2">4.2. Empirical Models and Econometric</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Identification</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell cols="2">4.2.1. Empirical Models. Equations (</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2"><head>Table 3</head><label>3</label><figDesc>Effect of Bid Visibility on Auction Outcomes(OLS and FE)    </figDesc><table><row><cell>ln(Num Bids)</cell><cell>Buyer Surplus (Max)</cell></row></table><note><p><p><p><p><p>* * * p &lt; 0 01.</p>Notes. Cluster-robust standard errors are reported in parentheses. The dependent variable, Buyer Surplus (Est.) in column (</p>2</p>) is based on a discrete choice model (details are discussed in Online Appendix IV).</p>* * * p &lt; 0 01.</p></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_3"><head></head><label></label><figDesc>Notes. Cluster-robust standard errors are reported in parentheses.<ref type="bibr" target="#b85">Stock and Yogo (2005)</ref> critical value for relative bias &gt; 10% is 16.38. In all models, the Cragg-Donald Wald F &gt; 16 38, alleviating weak instrument concerns. The R-squared values for IV estimations have no natural interpretation.</figDesc><table><row><cell>Table 6</cell><cell cols="4">Estimation Results Using GDP_PPP as the Instrumental Variable</cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell cols="2">(1) Self-reported country</cell><cell cols="2">(2) IP-revealed country</cell><cell cols="2">(3) Overlapping sample</cell></row><row><cell>DV</cell><cell></cell><cell>ln(Num Bids)</cell><cell>Buyer Surplus</cell><cell>ln(Num Bids)</cell><cell>Buyer Surplus</cell><cell>ln(Num Bids)</cell><cell>Buyer Surplus</cell></row><row><cell>Open Bid</cell><cell></cell><cell>-0 450  *  *  *</cell><cell>19 091  *  *  *</cell><cell>-0 588  *  *  *</cell><cell>25 460  *  *  *</cell><cell>-0 606  *  *  *</cell><cell>26 920  *  *  *</cell></row><row><cell></cell><cell></cell><cell>0 026</cell><cell>2 577</cell><cell>0 0302</cell><cell>3 082</cell><cell>0 034</cell><cell>3 412</cell></row><row><cell cols="2">Project Max Budget</cell><cell>0 0001  *  *  *</cell><cell>0 362  *  *  *</cell><cell>0 00002</cell><cell>0 367  *  *  *</cell><cell>0 00004</cell><cell>0 368  *  *  *</cell></row><row><cell></cell><cell></cell><cell>0 00003</cell><cell>0 005</cell><cell>0 00002</cell><cell>0 005</cell><cell>0 0003</cell><cell>0 006</cell></row><row><cell cols="2">ln(Auction Duration)</cell><cell>0 127  *  *  *</cell><cell>-6 088  *  *  *</cell><cell>0 100  *  *  *</cell><cell>-4 878  *  *  *</cell><cell>0 097  *  *  *</cell><cell>-4 824  *  *  *</cell></row><row><cell></cell><cell></cell><cell>0 006</cell><cell>0 700</cell><cell>0 007</cell><cell>0 772</cell><cell>0 008</cell><cell>0 874</cell></row><row><cell cols="2">ln(Buyer Experience)</cell><cell>-0 186  *  *  *</cell><cell>4 631  *  *  *</cell><cell>-0 199  *  *  *</cell><cell>5 512  *  *  *</cell><cell>-0 218  *  *  *</cell><cell>5 918  *  *  *</cell></row><row><cell></cell><cell></cell><cell>0 004</cell><cell>0 376</cell><cell>0 004</cell><cell>0 426</cell><cell>0 006</cell><cell>0 546</cell></row><row><cell cols="2">Buyer Goldmember</cell><cell>0 043  *  *  *</cell><cell>-4 560  *  *  *</cell><cell>0 065  *  *  *</cell><cell>-4 936  *  *  *</cell><cell>0 0663  *  *  *</cell><cell>-5 444  *  *  *</cell></row><row><cell></cell><cell></cell><cell>0 010</cell><cell>1 091</cell><cell>0 010</cell><cell>1 120</cell><cell>0 0120</cell><cell>1 300</cell></row><row><cell>Constant</cell><cell></cell><cell>2 842  *  *  *</cell><cell>22 81  *  *  *</cell><cell>3 224  *  *  *</cell><cell>4 901</cell><cell>3 314  *  *  *</cell><cell>-1 146</cell></row><row><cell></cell><cell></cell><cell>0 074</cell><cell>7 493</cell><cell>0 086</cell><cell>8 840</cell><cell>0 099</cell><cell>10 10</cell></row><row><cell>Time effect</cell><cell></cell><cell>Yes</cell><cell>Yes</cell><cell>Yes</cell><cell>Yes</cell><cell>Yes</cell><cell>Yes</cell></row><row><cell cols="2">Category effect</cell><cell>Yes</cell><cell>Yes</cell><cell>Yes</cell><cell>Yes</cell><cell>Yes</cell><cell>Yes</cell></row><row><cell cols="2">Observations</cell><cell>78,936</cell><cell>47,413</cell><cell>78,076</cell><cell>46,863</cell><cell>68,520</cell><cell>40,217</cell></row><row><cell>R-squared</cell><cell></cell><cell>0.110</cell><cell>0.293</cell><cell>0.110</cell><cell>0.293</cell><cell>0.111</cell><cell>0.295</cell></row><row><cell cols="2">Cragg-Donald Wald F</cell><cell>123.4</cell><cell>70.64</cell><cell>98.36</cell><cell>50.75</cell><cell>76.02</cell><cell>37.79</cell></row></table><note><p>* * * p &lt; 0 01.</p></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_5"><head></head><label></label><figDesc>Notes. Cluster-robust standard errors are reported in parentheses. We restrict the sample to auctions with at least five bids to estimate the bids' sequential dynamics.* * * p &lt; 0 01.surplus provision to the buyer23 in both sealed and open bid auctions. If the screening effect exists, compared with sealed bid auctions in which bidders cannot observe prior bids, in open bid auctions, weak bidders (measured by lower surplus provision) are less likely to bid in the auction if more competitive bidders have already submitted their bids.</figDesc><table><row><cell>Table 8</cell><cell>Estimation Results</cell><cell></cell></row><row><cell></cell><cell></cell><cell>Buyer Surplus</cell><cell>Buyer Surplus</cell></row><row><cell>DV</cell><cell></cell><cell>(Max)</cell><cell>(Estimated)</cell></row><row><cell cols="2">Bid Sequence (n)</cell><cell>-0 031 (0.082)</cell><cell>-0 677 (0.610)</cell></row><row><cell cols="2">Bid Sequence (n) × Open Bid</cell><cell>0 272  *  *  *  (0.085)</cell><cell>2 124  *  *  *  (0.639)</cell></row><row><cell>Constant</cell><cell></cell><cell>175 693  *  *  *  (0.231)</cell><cell>519 93  *  *  *  (1.156)</cell></row><row><cell>Project FE</cell><cell></cell><cell>Yes</cell><cell>Yes</cell></row><row><cell cols="2">Observations</cell><cell>844,307</cell><cell>844,307</cell></row><row><cell cols="2">Number of projects</cell><cell>58,782</cell><cell>58,782</cell></row><row><cell>F -statistic</cell><cell></cell><cell>48.22  *  *  *</cell><cell>29.31  *  *  *</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_6"><head>Table 9</head><label>9</label><figDesc>Differences in Bidder Characteristics Between Open Bid and Sealed Bid Auctions</figDesc><table><row><cell></cell><cell cols="2">Open Bid Auctions (478 bids)</cell><cell cols="2">Sealed Bid Auctions (532 bids)</cell><cell>t tests</cell><cell></cell><cell>K-S tests</cell></row><row><cell>Bidder variables</cell><cell>Mean</cell><cell>Std. dev.</cell><cell>Mean</cell><cell>Std. dev.</cell><cell>t stat</cell><cell>p value</cell><cell>p value</cell></row><row><cell>Reputation</cell><cell>4 805</cell><cell>0 239</cell><cell>4 809</cell><cell>0 226</cell><cell>-0 239</cell><cell>0 803</cell><cell>1 000</cell></row><row><cell>Project Experience</cell><cell>193 805</cell><cell>487 381</cell><cell>206 269</cell><cell>473 608</cell><cell>-0 412</cell><cell>0 681</cell><cell>0 330</cell></row><row><cell>Earning</cell><cell>5 285</cell><cell>1 724</cell><cell>5 352</cell><cell>1 700</cell><cell>-0 574</cell><cell>0 566</cell><cell>0 750</cell></row><row><cell>Completion Rate</cell><cell>0 818</cell><cell>0 147</cell><cell>0 822</cell><cell>0 137</cell><cell>-0 353</cell><cell>0 725</cell><cell>0 995</cell></row><row><cell>On Budget</cell><cell>0 985</cell><cell>0 045</cell><cell>0 988</cell><cell>0 040</cell><cell>-1 03</cell><cell>0 305</cell><cell>1 000</cell></row><row><cell>On Time</cell><cell>0 958</cell><cell>0 070</cell><cell>0 962</cell><cell>0 057</cell><cell>-1 09</cell><cell>0 273</cell><cell>0 914</cell></row><row><cell>Rehire Rate</cell><cell>0 151</cell><cell>0 100</cell><cell>0 144</cell><cell>0 087</cell><cell>1 042</cell><cell>0 298</cell><cell>0 879</cell></row><row><cell>GDP_PPP</cell><cell>6 229 397</cell><cell>9 158 502</cell><cell>6 018 219</cell><cell>9 045 711</cell><cell>0 350</cell><cell>0 726</cell><cell>0 970</cell></row></table></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="1" xml:id="foot_0"><p>See https://www.elance.com/trends/skills-in-demand (accessed April</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_1"><p>2015).</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="6" xml:id="foot_2"><p>For example, Freelancer charged $1 for a sealed bid format since June 2009, which was raised to $9 in April 2013.Downloaded from informs.org by[132.199.43.252] on 08 April 2016, at 03:41 . For personal use only, all rights reserved.</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_3"><p>Information Systems Research 27(1), pp.49-69, © 2016 INFORMS   </p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="10" xml:id="foot_4"><p>For example, the buyer's own communication style is a common factor for all service providers that determines the cost of interacting with the buyer<ref type="bibr" target="#b53">(Kostamis et al. 2009</ref>).</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="11" xml:id="foot_5"><p>In both open and sealed bid auctions, bidders are uncertain about how many bidders will participate in the future, and this form of uncertainty cannot be alleviated by information transparency.</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="12" xml:id="foot_6"><p>Online BD auctions are reverse auctions. Value in reverse auctions refer to a bidder's cost of providing the service (producing the product), whereas it refers to the value of the auctioned object to the bidder in a forward auction.</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="13" xml:id="foot_7"><p>Empirical evidence supports this conjecture. For example,<ref type="bibr" target="#b86">Stoll and Zöttl (2012)</ref> found that when bidding in a BD auction, service providers consider all sorts of relevant information, trying to form a more accurate estimation about the cost to execute the project. Because of the limited affordance of online platforms to provide cost estimations, costs that are common to all service providers are typically hard to evaluate by bidders individually.</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="14" xml:id="foot_8"><p>Empirical evidence from a different context also supports this argument. For example, it has been shown that existing bids influence potential bidders' decisions in peer-to-peer lending platforms(Zhang  and Liu 2012, Liu et al. 2015).Downloaded from informs.org by[132.199.43.252] on 08 April 2016, at 03:41 . For personal use only, all rights reserved.</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="15" xml:id="foot_9"><p>Our collaboration with the online labor market allowed us to access the data from the server and measure all variables (for both open and sealed bid auctions) without error.</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="20" xml:id="foot_10"><p>Besides statistical significance and quantified effect size, the margin of error is an important consideration in assessing the accuracy of Downloaded from informs.org by[132.199.43.252] on 08 April 2016, at 03:41 . For personal use only, all rights reserved.</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="21" xml:id="foot_11"><p>We checked the records of mismatches. Most of the mismatches are neighboring European countries and neighboring Asian countries. The few mismatches could be because bidders reside in several neighboring countries, or the location of the Internet service provider (ISP) changed between 2009 and 2014 (the IP2Location is based on 2014 ISP data).</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="22" xml:id="foot_12"><p>As in<ref type="bibr" target="#b15">Bajari and Hortaçsu (2003)</ref>, average bid prices are weighted by the project maximum budget.</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="24" xml:id="foot_13"><p>We thank an anonymous reviewer for pointing out this alternative explanation.Downloaded from informs.org by[132.199.43.252] on 08 April 2016, at 03:41 . For personal use only, all rights reserved.</p></note>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Acknowledgments</head><p>The authors would like to thank the senior editor, associate editor, and the three anonymous reviewers for a most constructive and developmental review process. The authors also thank Lorin Hitt, Pei-yu Chen, Gordon Burtch, Sunil Wattal, Xiaoquan (Michael) Zhang, Jianqing Chen, Yixin Lu, Ni Huang, Jason Chan, Juan Feng, and seminar participants at the Workshop on Statistical Challenges in e-Commerce Research (SCECR), the Conference on Information Systems and Technology (CIST), and the City University of Hong Kong, the Hong Kong University of Science and Technology for valuable feedback. The authors acknowledge financial support from the NET Institute [Project 13-05], the Center for International Business Education and Research (CIBER) through the U.S. Department of Education, the Temple University Fox School Young Scholars Forum, and the Research Grants Council of the Hong Kong Special Administrative Region, China [Project CityU 21501014].</p></div>
+			</div>
+
+
+			<div type="availability">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Supplemental Material</head><p>Supplemental material to this paper is available at http://dx .doi.org/10.1287/isre.2015.0606.</p></div>
+			</div>
+
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>scores are expected to have similar values across all observed covariates in aggregate. After matching the propensity scores, we identified the average treatment effect on the treated (sealed bids) versus the control (open bids) on our performance measures. The results of the one-to-one PSM analysis (Table <ref type="table">5</ref>) confirmed our findings from the OLS and fixed effects analyses. We also considered other matching algorithms, such as kernel matching and nearest-neighbor matching (n = 4, with different caliper values), as reported in Table <ref type="table">5</ref>. Different matching algorithms yielded parameter estimates that were qualitatively the same, which further strengthened the robustness of our findings on the effect of bid visibility on the number of bids and on buyer surplus. We report the balance checks in Online Appendix III.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.2.2.">Instrumental Variables.</head><p>We also conducted an IV analysis using the GDP_PPP of the buyer's country of residence as the IV. In our data, we observed a buyer's country of residence from the billing address reported during registration. We further recovered country information from the buyers' login IP addresses using the IP2Location (http://www.ip2location.com) database. In our sample, the self-reported country and IP revealed country match for over 91% of the buyers, suggesting high consistency. 21  The IV model is estimated with the approach suggested by <ref type="bibr" target="#b6">Angrist and Pischke (2008)</ref>. Specifically, we used the standard linear probability approach in the first stage estimation, and we included the estimated probability of using open bid format in the second stage estimation. Estimation results are reported in Table <ref type="table">6</ref> (details about the first stage estimation are provided in Online Appendix III). In column (1), we used GDP_PPP based on buyers' self-reported countries; in column (2), we used the GDP_PPP based on the "IP-revealed" countries; and in column (3), we used Information Systems Research 27(1), pp. <ref type="bibr">49-69, © 2016 INFORMS</ref> </p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Large sample properties of matching estimators for average treatment effects</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Abadie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">W</forename><surname>Imbens</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Econometrica</title>
+		<imprint>
+			<biblScope unit="volume">74</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="235" to="267" />
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Effect of information feedback on bidder behavior in continuous combinatorial auctions</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Adomavicius</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">P</forename><surname>Curley</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Gupta</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Sanyal</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Sci</title>
+		<imprint>
+			<biblScope unit="volume">58</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="811" to="830" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Impact of information feedback in continuous combinatorial auctions: An experimental study of economic performance</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Adomavicius</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">P</forename><surname>Curley</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Gupta</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Sanyal</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quart</title>
+		<imprint>
+			<biblScope unit="volume">37</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="55" to="76" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Does information help or hinder job applicants from less developed countries in online markets? Working paper</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">K</forename><surname>Agrawal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Lacetera</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Lyons</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">National Bureau of Economic Research</title>
+		<imprint>
+			<date type="published" when="2013">2013</date>
+			<pubPlace>Cambridge, MA</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Large-scale service marketplaces: The role of the moderating firm</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Allon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Bassamboo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">B</forename><surname>Çil</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Sci</title>
+		<imprint>
+			<biblScope unit="volume">58</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page" from="1854" to="1872" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">The antecedents and consequences of customer satisfaction for firms</title>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">W</forename><surname>Anderson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">W</forename><surname>Sullivan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Marketing Sci</title>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="125" to="143" />
+			<date type="published" when="1993">1993</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<monogr>
+		<title level="m" type="main">Mostly Harmless Econometrics: An Empiricist&apos;s Companion</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">D</forename><surname>Angrist</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J-S</forename><surname>Pischke</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2008">2008</date>
+			<publisher>Princeton University Press</publisher>
+			<pubPlace>Princeton, NJ</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Distinguishing influencebased contagion from homophily-driven diffusion in dynamic networks</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Aral</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Muchnik</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Sundararajan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Proc. Natl. Acad. Sci. USA</title>
+		<imprint>
+			<biblScope unit="volume">106</biblScope>
+			<biblScope unit="issue">51</biblScope>
+			<biblScope unit="page" from="21544" to="21549" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Effects of information-revelation policies under market-structure uncertainty</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Arora</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Greenwald</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Kannan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Krishnan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Sci</title>
+		<imprint>
+			<biblScope unit="volume">53</biblScope>
+			<biblScope unit="issue">8</biblScope>
+			<biblScope unit="page" from="1234" to="1248" />
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Properties of scoring auctions</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Asker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Cantillon</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">RAND J. Econom</title>
+		<imprint>
+			<biblScope unit="volume">39</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="69" to="85" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Identification of standard auction models</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Athey</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">A</forename><surname>Haile</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Econometrica</title>
+		<imprint>
+			<biblScope unit="volume">70</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="2107" to="2140" />
+			<date type="published" when="2002">2002</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Comparing open and sealed bid auctions: Evidence from timber auctions</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Athey</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Levin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Seira</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Quart. J. Econom</title>
+		<imprint>
+			<biblScope unit="volume">126</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="207" to="257" />
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">For personal use only, all rights reserved</title>
+		<idno>03:41</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Downloaded from informs</title>
+		<imprint>
+			<date type="published" when="2016-04-08">08 April 2016. 2016</date>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="page" from="49" to="69" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Evidence of the effect of trust building technology in electronic markets: Price premium and buyer behavior</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Ba</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">A</forename><surname>Pavlou</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quart</title>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="243" to="268" />
+			<date type="published" when="2002">2002</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Consistent estimation of the fixed effects ordered logit model</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Baetschmann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">E</forename><surname>Staub</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Winkelmann</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Roy. Statist. Soc.: Ser. A Statist. Soc</title>
+		<imprint>
+			<biblScope unit="volume">178</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="685" to="703" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">The winner&apos;s curse, reserve prices, and endogenous entry: Empirical insights from eBay auctions</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Bajari</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Hortaçsu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">RAND J. Econom</title>
+		<imprint>
+			<biblScope unit="volume">34</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="329" to="355" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Economic insights from Internet auctions</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Bajari</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Hortaçsu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Econom. Literature</title>
+		<imprint>
+			<biblScope unit="volume">42</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="457" to="486" />
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Importance of measures of past performance: Empirical evidence on quality of e-service providers</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">D</forename><surname>Banker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Hwang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Contemporary Accounting Res</title>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="307" to="337" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Vertically differentiated simultaneous Vickrey auctions: Theory and experimental evidence</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Bapna</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Dellarocas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Rice</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Sci</title>
+		<imprint>
+			<biblScope unit="volume">56</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="1074" to="1092" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Consumer surplus in online auctions</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Bapna</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Jank</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Shmueli</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Inform. Systems Res</title>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="400" to="416" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Note on online auctions with costly bid evaluation</title>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">M</forename><surname>Carr</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Sci</title>
+		<imprint>
+			<biblScope unit="volume">49</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="1521" to="1528" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">An experimental study of information revelation policies in sequential auctions</title>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">N</forename><surname>Cason</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">N</forename><surname>Kannan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Siebert</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Sci</title>
+		<imprint>
+			<biblScope unit="volume">57</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="667" to="688" />
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Auctioning keywords in online search</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">B</forename><surname>Whinston</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Marketing</title>
+		<imprint>
+			<biblScope unit="volume">73</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="125" to="141" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Is the &quot;linkage principle&quot; valid? Evidence from the field</title>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">J</forename><surname>Cho</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">J</forename><surname>Paarsch</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Rust</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Indust. Econom</title>
+		<imprint>
+			<biblScope unit="volume">62</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="346" to="375" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Ascending auctions</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Cramton</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Eur. Econom. Rev</title>
+		<imprint>
+			<biblScope unit="volume">42</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="745" to="756" />
+			<date type="published" when="1998">1998</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">Crossing spatial and temporal boundaries in globally distributed projects: A relational model of coordination delay</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">N</forename><surname>Cummings</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">A</forename><surname>Espinosa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">K</forename><surname>Pickering</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Inform. Systems Res</title>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="420" to="439" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<monogr>
+		<title level="m" type="main">A theory of costly sequential bidding</title>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">D</forename><surname>Daniel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">A</forename><surname>Hirshleifer</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1998">1998</date>
+			<pubPlace>Ann Arbor</pubPlace>
+		</imprint>
+		<respStmt>
+			<orgName>Ross School of Business, University of Michigan</orgName>
+		</respStmt>
+	</monogr>
+	<note type="report_type">Working Paper 98028</note>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">A comparison of naive and experienced bidders in common value offer auctions: A laboratory analysis</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Dyer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">H</forename><surname>Kagel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Levin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Econom. J</title>
+		<imprint>
+			<biblScope unit="volume">99</biblScope>
+			<biblScope unit="issue">394</biblScope>
+			<biblScope unit="page" from="108" to="115" />
+			<date type="published" when="1989">1989</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">A laboratory investigation of rank feedback in procurement auctions</title>
+		<author>
+			<persName><forename type="first">W</forename><forename type="middle">J</forename><surname>Elmaghraby</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Katok</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Santamaría</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Manufacturing Service Oper. Management</title>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="128" to="144" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">A comparison of buyer-determined and price-based multiattribute mechanisms</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Engelbrecht-Wiggans</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Haruvy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Katok</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Marketing Sci</title>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="629" to="641" />
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">Collusion in dynamic buyerdetermined reverse auctions</title>
+		<author>
+			<persName><forename type="first">N</forename><surname>Fugger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Katok</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Wambach</surname></persName>
+		</author>
+		<idno type="DOI">10.1287/mnsc.2014.2142</idno>
+		<ptr target="http://dx.doi.org/10.1287/mnsc.2014.2142" />
+	</analytic>
+	<monogr>
+		<title level="j">Management Sci., ePub ahead of print August</title>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">Temporary and permanent buyout prices in online auctions</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Gallien</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Gupta</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Sci</title>
+		<imprint>
+			<biblScope unit="volume">53</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="814" to="833" />
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Is the world really flat? A look at offshoring at an online programming marketplace</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Gefen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Carmel</forename><forename type="middle">E</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quart</title>
+		<imprint>
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="367" to="384" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">Efficiency in auctions with private and common values: An experimental study</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">K</forename><surname>Goeree</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Offerman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Amer. Econom. Rev</title>
+		<imprint>
+			<biblScope unit="volume">92</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="625" to="643" />
+			<date type="published" when="2002">2002</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title level="a" type="main">Competitive bidding in auctions with private and common values</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">K</forename><surname>Goeree</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Offerman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Econom. J</title>
+		<imprint>
+			<biblScope unit="volume">113</biblScope>
+			<biblScope unit="issue">489</biblScope>
+			<biblScope unit="page" from="598" to="613" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<monogr>
+		<title level="m" type="main">Does information really &quot;unravel&quot;? Understanding factors that motivate sellers to seek third-party certifications in an online labor market</title>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">B</forename><surname>Goes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Lin</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2012">2012</date>
+			<pubPlace>Tucson</pubPlace>
+		</imprint>
+		<respStmt>
+			<orgName>University of Arizona</orgName>
+		</respStmt>
+	</monogr>
+	<note>Working paper</note>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">Understanding willingnessto-pay formation of repeat bidders in sequential online auctions</title>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">B</forename><surname>Goes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">G</forename><surname>Karuga</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">K</forename><surname>Tripathi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Inform. Systems Res</title>
+		<imprint>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="907" to="924" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<analytic>
+		<title level="a" type="main">On evaluating information revelation policies in procurement auctions: A Markov decision process approach</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Greenwald</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Kannan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Krishnan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Inform. Systems Res</title>
+		<imprint>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="15" to="36" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<analytic>
+		<title level="a" type="main">Nonparametric tests for common values in first-price auctions. Working paper</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Haile</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Shum</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Hong</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">National Bureau of Economic Research</title>
+		<imprint>
+			<date type="published" when="2003">2003</date>
+			<pubPlace>Cambridge, MA</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<analytic>
+		<title level="a" type="main">Allocation mechanisms and the design of auctions</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Harris</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Raviv</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Econometrica</title>
+		<imprint>
+			<biblScope unit="volume">49</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="1477" to="1499" />
+			<date type="published" when="1981">1981</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<analytic>
+		<title level="a" type="main">Equilibrium bid functions for auctions with an uncertain number of bidders</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">M</forename><surname>Harstad</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">H</forename><surname>Kagel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Levin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Econom. Lett</title>
+		<imprint>
+			<biblScope unit="volume">33</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="35" to="40" />
+			<date type="published" when="1990">1990</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<analytic>
+		<title level="a" type="main">Increasing revenue by decreasing information in procurement auctions</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>Haruvy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Katok</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Production Oper. Management</title>
+		<imprint>
+			<biblScope unit="volume">22</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="19" to="35" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+	<analytic>
+		<title level="a" type="main">A common value auction model with endogenous entry and information acquisition</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">B</forename><surname>Hausch</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Li</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Econom. Theory</title>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="315" to="334" />
+			<date type="published" when="1993">1993</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b43">
+	<analytic>
+		<title level="a" type="main">Competitive bidding for contracts under alternative auction procedures</title>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">A</forename><surname>Holt</surname><genName>Jr</genName></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Political Econom</title>
+		<imprint>
+			<biblScope unit="volume">88</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="433" to="445" />
+			<date type="published" when="1980">1980</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b44">
+	<analytic>
+		<title level="a" type="main">An empirical investigation on provider pricing in online crowdsourcing markets for IT services</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Hong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">A</forename><surname>Pavlou</surname></persName>
+		</author>
+		<ptr target="http://aisel.aisnet.org/icis2012/proceedings/EBusinessStrategy/8/" />
+	</analytic>
+	<monogr>
+		<title level="m">Proc. 33rd Internat. Conf. Inform. Systems</title>
+		<meeting>33rd Internat. Conf. Inform. Systems<address><addrLine>Orlando, FL</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b45">
+	<analytic>
+		<title level="a" type="main">The rise of crowdsourcing</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Howe</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Wired</title>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="1" to="4" />
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b46">
+	<analytic>
+		<title level="a" type="main">Online reverse auctions: Issues, themes, and prospects for the future</title>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">D</forename><surname>Jap</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Acad. Marketing Sci</title>
+		<imprint>
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="506" to="525" />
+			<date type="published" when="2002">2002</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b47">
+	<analytic>
+		<title level="a" type="main">The impact of online reverse auction design on buyer-supplier relationships</title>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">D</forename><surname>Jap</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Marketing</title>
+		<imprint>
+			<biblScope unit="volume">71</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="146" to="159" />
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b48">
+	<analytic>
+		<title level="a" type="main">The winner&apos;s curse and public information in common value auctions</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">H</forename><surname>Kagel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Levin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Amer. Econom. Rev</title>
+		<imprint>
+			<biblScope unit="volume">76</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="894" to="920" />
+			<date type="published" when="1986">1986</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b49">
+	<analytic>
+		<title level="a" type="main">Common value auctions with insider information</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">H</forename><surname>Kagel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Levin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Econometrica</title>
+		<imprint>
+			<biblScope unit="volume">67</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="1219" to="1238" />
+			<date type="published" when="1999">1999</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b50">
+	<monogr>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">H</forename><surname>Kagel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Levin</surname></persName>
+		</author>
+		<title level="m">Common Value Auctions and the Winner&apos;s Curse</title>
+		<meeting><address><addrLine>Princeton, NJ</addrLine></address></meeting>
+		<imprint>
+			<publisher>Princeton University Press</publisher>
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b51">
+	<analytic>
+		<title level="a" type="main">Effects of information revelation policies under cost uncertainty</title>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">N</forename><surname>Kannan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Inform. Systems Res</title>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="75" to="92" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b52">
+	<analytic>
+		<title level="a" type="main">What really matters in auction design</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Klemperer</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Econom. Perspect</title>
+		<imprint>
+			<biblScope unit="volume">16</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="169" to="189" />
+			<date type="published" when="2002">2002</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b53">
+	<analytic>
+		<title level="a" type="main">Total-cost procurement auctions: Impact of suppliers&apos; cost adjustments on auction format choice</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Kostamis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">R</forename><surname>Beil</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Duenyas</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Sci</title>
+		<imprint>
+			<biblScope unit="volume">55</biblScope>
+			<biblScope unit="issue">12</biblScope>
+			<biblScope unit="page" from="1985" to="1999" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b54">
+	<monogr>
+		<author>
+			<persName><forename type="first">V</forename><surname>Krishna</surname></persName>
+		</author>
+		<title level="m">Auction Theory</title>
+		<meeting><address><addrLine>San Diego)</addrLine></address></meeting>
+		<imprint>
+			<publisher>Academic Press</publisher>
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+	<note>nd ed.</note>
+</biblStruct>
+
+<biblStruct xml:id="b55">
+	<analytic>
+		<title level="a" type="main">Productivity levels and international competitiveness between Canadian and US industries</title>
+		<author>
+			<persName><forename type="first">F</forename><forename type="middle">C</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Tang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Amer. Econom. Rev</title>
+		<imprint>
+			<biblScope unit="volume">90</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="176" to="179" />
+			<date type="published" when="2000">2000</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b56">
+	<analytic>
+		<title level="a" type="main">Research commentary-Too big to fail: Large samples and the p-value problem</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lucas</forename><surname>Hc</surname><genName>Jr</genName></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Shmueli</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Inform. Systems Res</title>
+		<imprint>
+			<biblScope unit="volume">24</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="906" to="917" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b57">
+	<analytic>
+		<title level="a" type="main">Designing online auctions with past performance information</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Chen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Decision Support Systems</title>
+		<imprint>
+			<biblScope unit="volume">42</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="1307" to="1320" />
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b58">
+	<analytic>
+		<title level="a" type="main">Friendships in online peer-to-peer lending: Pipes, prisms, and relational herding</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">J</forename><surname>Brass</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Chen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quart</title>
+		<imprint>
+			<biblScope unit="volume">39</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="729" to="742" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b59">
+	<analytic>
+		<title level="a" type="main">Ex ante information and the design of keyword auctions</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">B</forename><surname>Whinston</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Inform. Systems Res</title>
+		<imprint>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="133" to="153" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b60">
+	<analytic>
+		<title level="a" type="main">Real exchange rate behavior: The recent float from the perspective of the past two centuries</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">R</forename><surname>Lothian</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">P</forename><surname>Taylor</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Political Econom</title>
+		<imprint>
+			<biblScope unit="volume">104</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="488" to="509" />
+			<date type="published" when="1996">1996</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b61">
+	<analytic>
+		<title level="a" type="main">The dawn of the e-lance economy</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Malone</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Laubacher</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Harvard Bus. Rev</title>
+		<imprint>
+			<biblScope unit="volume">76</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="144" to="152" />
+			<date type="published" when="1998">1998</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b62">
+	<analytic>
+		<title level="a" type="main">Monopoly with incomplete information</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>Maskin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Riley</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">RAND J. Econom</title>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="171" to="196" />
+			<date type="published" when="1984">1984</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b63">
+	<analytic>
+		<title level="a" type="main">Asymmetric auctions</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>Maskin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Riley</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Rev. Econom. Stud</title>
+		<imprint>
+			<biblScope unit="volume">67</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="413" to="438" />
+			<date type="published" when="2000">2000</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b64">
+	<analytic>
+		<title level="a" type="main">Comparing auctions for risk averse buyers: A buyer&apos;s point of view</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Matthews</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Econometrica</title>
+		<imprint>
+			<biblScope unit="volume">55</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="633" to="646" />
+			<date type="published" when="1987">1987</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b65">
+	<analytic>
+		<title level="a" type="main">Auctions and bidding</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">P</forename><surname>Mcafee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Mcmillan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Econom. Literature</title>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="699" to="738" />
+			<date type="published" when="1987">1987</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b66">
+	<monogr>
+		<author>
+			<persName><forename type="first">B</forename><surname>Mccune</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">B</forename><surname>Grace</surname></persName>
+		</author>
+		<title level="m">Analysis of Ecological Communities (MjM Software Design</title>
+		<meeting><address><addrLine>Gleneden Beach, OR</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2002">2002</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b67">
+	<analytic>
+		<title level="a" type="main">Selling spectrum rights</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Mcmillan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Econom. Perspect</title>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="145" to="162" />
+			<date type="published" when="1994">1994</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b68">
+	<analytic>
+		<title level="a" type="main">Risk aversion in first price auctions with common values</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Menicucci</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Econom. Lett</title>
+		<imprint>
+			<biblScope unit="volume">85</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="43" to="46" />
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b69">
+	<monogr>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">R</forename><surname>Milgrom</surname></persName>
+		</author>
+		<title level="m">Putting Auction Theory to Work</title>
+		<meeting><address><addrLine>New York)</addrLine></address></meeting>
+		<imprint>
+			<publisher>Cambridge University Press</publisher>
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b70">
+	<analytic>
+		<title level="a" type="main">A theory of auctions and competitive bidding</title>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">R</forename><surname>Milgrom</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">J</forename><surname>Weber</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Econometrica</title>
+		<imprint>
+			<biblScope unit="volume">50</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="1089" to="1122" />
+			<date type="published" when="1982">1982</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b71">
+	<analytic>
+		<title level="a" type="main">Metrics for managing online procurement auctions</title>
+		<author>
+			<persName><forename type="first">I</forename><surname>Millet</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">H</forename><surname>Parente</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">L</forename><surname>Fizel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">R</forename><surname>Venkataraman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Interfaces</title>
+		<imprint>
+			<biblScope unit="volume">34</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="171" to="179" />
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b72">
+	<analytic>
+		<title level="a" type="main">Do auction parameters affect buyer surplus in e-auctions for procurement?</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Mithas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">L</forename><surname>Jones</surname></persName>
+		</author>
+		<idno>132.199.43.252</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Downloaded from informs</title>
+		<imprint>
+			<date type="published" when="2007">08 April 2016. 2007</date>
+			<biblScope unit="volume">16</biblScope>
+			<biblScope unit="page" from="455" to="470" />
+		</imprint>
+	</monogr>
+	<note>For personal use only, all rights reserved. Production Oper</note>
+</biblStruct>
+
+<biblStruct xml:id="b73">
+	<analytic>
+		<title level="a" type="main">Doing business with strangers: Reputation in online service marketplaces</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Moreno</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Terwiesch</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Inform. Systems Res</title>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="865" to="886" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b74">
+	<analytic>
+		<title level="a" type="main">Content or community? A digital business strategy for content providers in the social age</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Oestreicher-Singer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Zalmanson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quart</title>
+		<imprint>
+			<biblScope unit="volume">37</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="591" to="616" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b75">
+	<analytic>
+		<title level="a" type="main">A cognitive model of the antecedents and consequences of satisfaction decisions</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">L</forename><surname>Oliver</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Marketing Res</title>
+		<imprint>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="460" to="469" />
+			<date type="published" when="1980">1980</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b76">
+	<analytic>
+		<title level="a" type="main">Deciding between the common and private value paradigms in empirical models of auctions</title>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">J</forename><surname>Paarsch</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Econometrics</title>
+		<imprint>
+			<biblScope unit="volume">51</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="191" to="215" />
+			<date type="published" when="1992">1992</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b77">
+	<analytic>
+		<title level="a" type="main">Inefficient hiring in entry-level labor markets</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Pallais</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Amer. Econom. Rev</title>
+		<imprint>
+			<biblScope unit="volume">104</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="3565" to="3599" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b78">
+	<analytic>
+		<title level="a" type="main">On the failure of the linkage principle in multi-unit auctions</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Perry</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">J</forename><surname>Reny</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Econometrica</title>
+		<imprint>
+			<biblScope unit="volume">67</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="895" to="900" />
+			<date type="published" when="1999">1999</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b79">
+	<analytic>
+		<title level="a" type="main">The effect of customers&apos; social media participation on customer visit frequency and profitability: An empirical investigation</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Rishika</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Kumar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Janakiraman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Bezawada</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Inform. Systems Res</title>
+		<imprint>
+			<biblScope unit="volume">24</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="108" to="127" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b80">
+	<analytic>
+		<title level="a" type="main">The central role of the propensity score in observational studies for causal effects</title>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">R</forename><surname>Rosenbaum</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rubin</forename><surname>Db</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Biometrika</title>
+		<imprint>
+			<biblScope unit="volume">70</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="41" to="55" />
+			<date type="published" when="1983">1983</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b81">
+	<analytic>
+		<title level="a" type="main">What you don&apos;t know about customer-perceived quality: The role of customer expectation distributions</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">T</forename><surname>Rust</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">J</forename><surname>Inman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Jia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Zahorik</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Marketing Sci</title>
+		<imprint>
+			<biblScope unit="volume">18</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="77" to="92" />
+			<date type="published" when="1999">1999</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b82">
+	<analytic>
+		<title level="a" type="main">Competitive bidding with entry costs</title>
+		<author>
+			<persName><forename type="first">W</forename><forename type="middle">F</forename><surname>Samuelson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Econom. Lett</title>
+		<imprint>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="53" to="57" />
+			<date type="published" when="1985">1985</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b83">
+	<analytic>
+		<title level="a" type="main">Procuring commodities: First-price sealed-bid or English auctions?</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Shachat</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Wei</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Marketing Sci</title>
+		<imprint>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="317" to="333" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b84">
+	<analytic>
+		<title level="a" type="main">Costly bidding in online markets for IT services</title>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">M</forename><surname>Snir</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">M</forename><surname>Hitt</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Sci</title>
+		<imprint>
+			<biblScope unit="volume">49</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="1504" to="1520" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b85">
+	<analytic>
+		<title level="a" type="main">Testing for weak instruments in linear IV regression</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">H</forename><surname>Stock</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Yogo</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Identification and Inference for Econometric Models: Essays in Honor of Thomas Rothenberg</title>
+		<editor>
+			<persName><forename type="first">Dwk</forename><surname>Andrews</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">J</forename><forename type="middle">H</forename><surname>Stock</surname></persName>
+		</editor>
+		<meeting><address><addrLine>New York</addrLine></address></meeting>
+		<imprint>
+			<publisher>Cambridge University Press</publisher>
+			<date type="published" when="2005">2005</date>
+			<biblScope unit="page" from="80" to="108" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b86">
+	<monogr>
+		<title level="m" type="main">Information disclosure in dynamic buyerdetermined procurement auctions: An empirical study</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Stoll</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Zöttl</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2012">2012</date>
+			<pubPlace>Munich, Germany</pubPlace>
+		</imprint>
+		<respStmt>
+			<orgName>University of Munich</orgName>
+		</respStmt>
+	</monogr>
+	<note>Working paper</note>
+</biblStruct>
+
+<biblStruct xml:id="b87">
+	<analytic>
+		<title level="a" type="main">Innovation contests, open innovation, and multiagent problem solving</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Terwiesch</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Xu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Sci</title>
+		<imprint>
+			<biblScope unit="volume">54</biblScope>
+			<biblScope unit="issue">9</biblScope>
+			<biblScope unit="page" from="1529" to="1543" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b88">
+	<analytic>
+		<title level="a" type="main">Implications of the bidders&apos; arrival process on the design of online auctions</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Vakrat</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Seidmann</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. 33rd Annual Hawaii Internat. Conf. System Sci</title>
+		<editor>
+			<persName><forename type="first">R</forename><surname>Sprague</surname></persName>
+		</editor>
+		<meeting>33rd Annual Hawaii Internat. Conf. System Sci<address><addrLine>Los Alamitos, CA</addrLine></address></meeting>
+		<imprint>
+			<publisher>IEEE Computing Society Press</publisher>
+			<date type="published" when="2000">2000</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b89">
+	<analytic>
+		<title level="a" type="main">Counterspeculation, auctions, and competitive sealed tenders</title>
+		<author>
+			<persName><forename type="first">W</forename><surname>Vickrey</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Finance</title>
+		<imprint>
+			<biblScope unit="volume">16</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="8" to="37" />
+			<date type="published" when="1961">1961</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b90">
+	<analytic>
+		<title level="a" type="main">The winner&apos;s curse in IT outsourcing: Strategies for avoiding relational trauma</title>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">P</forename><surname>Willcocks</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Kern</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Van</forename><surname>Heck</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">California Management Rev</title>
+		<imprint>
+			<biblScope unit="volume">44</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="47" to="69" />
+			<date type="published" when="2002">2002</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b91">
+	<analytic>
+		<title level="a" type="main">Price competition and endogenous valuation in search advertising</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Whinston</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Marketing Res</title>
+		<imprint>
+			<biblScope unit="volume">48</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="566" to="586" />
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b92">
+	<analytic>
+		<title level="a" type="main">Open innovation: An empirical study of online contests</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">Y</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">A</forename><surname>Pavlou</surname></persName>
+		</author>
+		<ptr target="http://aisel.aisnet.org/icis2012/proceedings/EBusinessStrategy/8/" />
+	</analytic>
+	<monogr>
+		<title level="m">Proc. 30th Internat. Conf. Inform. Systems, Phoenix 1-16</title>
+		<meeting>30th Internat. Conf. Inform. Systems, Phoenix 1-16</meeting>
+		<imprint>
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b93">
+	<monogr>
+		<title level="m" type="main">Information dispersion and auction prices</title>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">L</forename><surname>Yin</surname></persName>
+		</author>
+		<idno>02-024</idno>
+		<imprint>
+			<date type="published" when="2006">2006</date>
+			<pubPlace>Stanford, CA</pubPlace>
+		</imprint>
+		<respStmt>
+			<orgName>Stanford Institute for Economic Policy Research, Stanford University</orgName>
+		</respStmt>
+	</monogr>
+	<note type="report_type">Working Paper</note>
+</biblStruct>
+
+<biblStruct xml:id="b94">
+	<analytic>
+		<title level="a" type="main">The value of reputation in an online freelance marketplace</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Yoganarasimhan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Marketing Sci</title>
+		<imprint>
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="860" to="891" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b95">
+	<analytic>
+		<title level="a" type="main">Rational herding in microloan markets</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Liu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Sci</title>
+		<imprint>
+			<biblScope unit="volume">58</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="892" to="912" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b96">
+	<analytic>
+		<title level="a" type="main">Cyclical bid adjustments in search-engine advertising</title>
+		<author>
+			<persName><forename type="first">X</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Feng</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Sci</title>
+		<imprint>
+			<biblScope unit="volume">57</biblScope>
+			<biblScope unit="issue">9</biblScope>
+			<biblScope unit="page" from="1703" to="1719" />
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b97">
+	<monogr>
+		<idno>132.199.43.252</idno>
+		<title level="m">Downloaded from informs</title>
+		<imprint>
+			<date type="published" when="2016-04-08">08 April 2016</date>
+		</imprint>
+	</monogr>
+	<note>at 03:41 . For personal use only, all rights reserved</note>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Are Contests Effective for Online Labor Markets? Emergent Research Forum (ERF)</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Jason</forename><surname>Chan</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="institution">University of Minnesota</orgName>
+							</affiliation>
+						</author>
+						<author role="corresp">
+							<persName><forename type="first">Jiahui</forename><surname>Mo</surname></persName>
+							<email>jhmo@ntu.edu.sg</email>
+							<affiliation key="aff1">
+								<orgName type="institution">Nanyang Technological University</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Nila</forename><surname>Zhang</surname></persName>
+							<affiliation key="aff2">
+								<orgName type="institution">Nanyang Technological University</orgName>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Are Contests Effective for Online Labor Markets? Emergent Research Forum (ERF)</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="MD5">E1798D9B410C28B0E96C2CF762210DA2</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.7.3" ident="GROBID" when="2023-06-16T09:23+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>Online labor markets</term>
+					<term>contests</term>
+					<term>recruiting</term>
+					<term>reward</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>The emergence and growth of online labor markets have enhanced the efficiency in labor sourcing. Online labor markets have two types of job scheme, traditional contract-based scheme and new contest-based scheme. The contest-based scheme is introduced in online labor markets to reduce the risk faced by employers because employers can observe and compare work outcomes from various workers before paying for the final selection. However, a question is whether the use of contests in online labor markets is effective in producing satisfactory work outcomes for employers. This study aims to examine the impact of contests relative to contracts on perceived work quality, using data from a large online labor market that utilizes both types of compensation schemes. Our results suggest that jobs posted under contracts tend to generate higher perceived work quality compared to those posted under contests. Then, we further investigate possible reasons and related moderators.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Introduction</head><p>Nowadays, online labor marketplaces are on a steady growth trajectory since its inception in the mid-2000s. Specifically, industry analysts estimate that a full 40% of the workforce in US alone will be freelancers by the year 2020, represented by a non-trivial population of 60 million workers. As the reliance on online freelancers deepens, companies and employers would need to better understand how best to hire and compensate workers online, as these managerial decisions can influence worker performance and the work quality received.</p><p>Currently, there are two main job schemes used in online labor markets, namely contest-based schemes and contract-based schemes. A core benefit of a contest-based crowdsourcing is that the employer can tap into a large number of experts outside of its organization, and can select the most promising solution from many submissions. Yet, the receipt of a large number of submissions does not necessarily guarantee the highest work quality to an employer. With many competing participants, workers expect their individual chance of winning a contest to be low, which can de-incentivize workers to exert their best effort. Conversely, while projects completed under the traditional contract-based schemes on online labor markets are not subjected to competitive effects, an employer could only receive the work outputs from one selected worker. Studies have shown that hiring biases and the mismatch of workers to tasks on online labor markets are prevalent because of the information asymmetry issues that characterize the online context. In turn, the lack of access to a variety of work submissions from a pool of workers might be sub-optimal for employers who adopt the contract-based schemes. Thus, it is unclear which crowdsourcing scheme would result in higher work quality, and how employers should choose between these competing schemes. At a broad level, this ambiguity represents a fundamental issue that is inherent in all peer-to-peer markets.</p><p>Here, a pertinent question relates to whether the use of contests in online labor markets is effective in producing satisfactory work outcomes for employers. Specifically, it is important to assess whether tasks performed under contests are of a comparable (or superior) work quality relative to tasks governed by contractual schemes that are traditionally used in these online markets (i.e., hourly contract or projectbased contract). Despite its importance, existing literature does not provide much guidance towards this critical question. While a rich set of works have attempted to elucidate the effectiveness of contests for open innovative and problem-solving settings (e.g., <ref type="bibr" target="#b1">Boudreau et al. 2011;</ref><ref type="bibr" target="#b8">Terwiesch and Xu 2008)</ref>, the research on the impact of contests on work quality in online labor markets is scant (or even non-existent), as the use of contests is relatively new in these contexts. In addition, the findings from past settings cannot be easily applied to that of online labor markets, as the contests operationalized in these markets bear critical differences from those in innovation platforms <ref type="bibr" target="#b0">(Bockstedt et al. 2016)</ref>.</p><p>As such, our study seeks to derive insights towards the optimal scheme to utilize on online labor markets such that employers could derive greater utility on these platforms. Specifically, this study has three main objectives. First, the focal research empirically assesses the relative effectiveness of each scheme on a large online labor market, and aim to provide theoretical explanations to justify the phenomenon. Second, given that online labor markets bear significant deviations from that of open innovation platforms, we are interested in examining whether the properties of competition effects and parallel effects exist in contests held in online labor markets. Finally, we aim to further uncover the nuanced conditions by which each scheme would be most suited for enhancing project success. In particular, we examine how number of workers, worker diversity, and reward levels might influence the project outcomes under each scheme.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Theoretical Background</head><p>Buyers and sellers face elevated information gaps when transacting in online markets <ref type="bibr" target="#b6">(Lin et al. 2013)</ref>. Such information asymmetry issues are especially acute in online labor markets, as employers do not get to meet workers in person, making it difficult to ascertain subtle yet important attributes like worker attitudes, motivation, and job-fit. On top of these issues, recruiting decisions on online labor platforms are further complicated by the availability of different reward schemes offered. In particular, the past success seen in open innovation contests (e.g., InnoCentive, Topcoder, Netflix Prize) has spurred major online labor platforms to introduce the use of contests alongside contracts. A key distinguishing feature between two schemes is that contests enable employers to receive work submissions from multiple workers, while contracts restrict employers to having work outputs from one dedicated worker. Choosing between contests and contracts is arguably the most crucial managerial decision, as it is the first decision that employers have to make when soliciting the services of online workers. While employers may be aware that this first decision will have implications for their subsequent interactions and choices, it is not immediately clear which approach works better, and the conditions under which one scheme is superior over the other.</p><p>By using contests to recruit and remunerate workers, an employer can tap into a large number of freelancers outside of its organization, and can select the most promising solution from the numerous work submissions. However, the receipt of a large number of submissions does not necessarily guarantee higher work quality to an employer. With many competing participants, workers expect their individual chance of winning the contest to be low, which can de-incentivize them to exert their best effort. This negative incentive effect has been well documented in past work <ref type="bibr" target="#b1">(Boudreau et al. 2011</ref>). Yet, the prospect of having multiple competitors in a contest may also heighten the likelihood of finding at least one particularly good piece of work ---i.e., an extreme value outcome. Specifically, the simultaneous pursuit of independent approaches, resulting in a parallel paths effect, can offset competitive effects and result in greater overall performance under certain conditions <ref type="bibr" target="#b8">(Terwiesch and Xu 2008)</ref>.</p><p>On the other hand, while projects completed under the traditional contract-based schemes on online labor markets do not impose incentive effects on workers, the employer is forced to shoulder the bulk of transaction risks as he/she is restricted to accepting the work outputs from one selected worker. Having gone through the step of interviewing and selecting a worker from a pool of applicants, employers are expected to bear the responsibility of making bad online hires. However, the shift of risk-bearing to employers may not be reasonable, as these labor intermediating platforms only allow for textual communications between the hirers and prospective applicants. The lean mode of communication does not allow for the assessment of nonverbal cues and multiple interpretations that are common in candidate evaluation <ref type="bibr" target="#b3">(Chapman et al. 2003)</ref>, causing hiring biases and the mismatch of workers to tasks to be prevalent on such platforms <ref type="bibr" target="#b2">(Chan and Wang 2017;</ref><ref type="bibr" target="#b7">Kokkodis and Ipeirotis 2015)</ref>. Moreover, by restricting access to work submissions exclusively to one select worker, the contract-based scheme does not incentivize workers to put in their best effort, as workers are aware that their employer has already incurred a sunk cost upon hiring them and would induce greater costs should they reject the final work deliverable.</p><p>Based on the two competing views, it is unclear which recruiting (contract-based) and reward (contestbased) scheme would result in higher work quality, and how employers should choose between these competing schemes. At the same time, these questions cannot be readily addressed using findings and theories developed from past work on open innovation contests, as the conditions by which the contests are applied in online labor markets bear critical differences from those in previous settings. First, the nature of problems/tasks posted on online labor markets and open innovation platforms are vastly different. Second, it is unclear whether the workers on online labor markets are motivated in the same way as solvers who entered open innovation contests. Third, the contest format and operationalization can be different across online labor markets and open innovation platforms.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Empirical Analysis</head><p>To answer this set of research questions effectively, we have to address several empirical challenges embedded in the study context. First, there could be inter-platform differences if the work quality of projects on a contest-based site is contrasted with that from a contract-based site. We attempt to overcome this estimation challenges by using data from Freelancer, an online labor platform that simultaneously offers contest and contract-based models. Second, even if the platform is able to offer both contest-and contractbased models, there might be inherent project differences across the task types. To reduce this noncomparable issue we focus on tasks posted in the design type jobs. Finally, on top of these concerns, projects posted within the same task type might also bear inter-project differences, making it difficult to attribute the differences in outcomes to the scheme utilized. We utilize propensity score matching techniques to identify and select statistical comparable projects so that inter -project differences can be minimized in our analyses. The design task category has one of the largest numbers of projects posted under the contest model, by which we are able to identify and derive comparable contest-based jobs to contrast with contractbased ones. Our dataset contains a total of 25,890 jobs, spanning from January 2016 to December 2016. In our dataset, we observe the actions of 19,755 employers and 49,606 workers. For each posted job, we have information on attributes of jobs (i.e. required skill sets, payment, job duration, description start/end date), employers (i.e. registration date, country of origin), and workers (i.e. registration date, country of origin, education level, self-suggested hourly rate, employment history, reputation score, number of portfolio items, and number of certifications). For each finished job, we also have employers' final work quality rating for contract-based workers, and employers' rating score on contest winning submissions. We rely on ratings given by employers as a main variable to capture satisfaction towards work quality. Model specification is in equation ( <ref type="formula">1</ref>).</p><p>Modelj is a binary indicator that denotes job j with '1' if it is under the contract-based scheme and by '0' if it is under the contest-based scheme JobAttributesj is a vector of job-related controls, including the number of required skills which is a proxy for job complexity (Num_skills), the payment amount (Payment), job duration (Duration), and the length of the job description (Len_des). We also include worker and employer tenure (W_reg_time and E_reg_time) to account for their work and hiring experience on the platform. Finally, a month fixed effect and a day of week fixed effect are utilized to capture idiosyncratic temporal trends.</p><p>The main results of model ( <ref type="formula">1</ref>) are list in the column (1). Our finding suggests that overall contract-based scheme has better performance than contest-based scheme. In the main analysis, we observe the different effects of two schemes on job performance. In the following analyses, we further evaluate the possible reasons why contests are less effective compared to contracts in the context of online labor markets.</p><p>One major difference between contract-based and contest-based schemes is the number of workers. Contract-based jobs only have one worker, but contest-based jobs can have multiple workers. According to previous researchers, an increased number of workers in a project can lead to two opposite effects on project quality. Therefore, we firstly tested whether payment can increase the number of solvers and the diversity of skillsets in the worker pool for contest-based jobs based, since these factors can enhance competition effects which can in turn lead to higher quality work outputs. To this end, we found that contest payment indeed increases the number of participants and variety of skillsets. Next, we tested whether worker effort decreases as the number of workers increases and find that when there are more competing workers in a project, the worker's effort indeed decreases. We further test how the number of participating workers influences the project quality, and found that as the number of workers increases, project quality decreases first; when the number of workers increases to a high level, project quality then increases. These findings show that only when a contest has a high payment amount, it can attract enough diverse workers and then obtain better solution quality; otherwise, there are not enough diverse workers and each of them may decrease their efforts and then the solution quality will be lower.  By contrasting the amount of feedback received under each scheme, we find that the reduced flow of information between employers and workers in contests is another major difference between contest-based and contract-based schemes. We therefore evaluated whether information volume is driving the differences between the two types of job models. This test is motivated by the fact that the contest-based format limits the amount of communication between employers and workers. We therefore examined the quality difference between these two types of tasks using paired t-tests for all matched samples, low taskcomplexity tasks, and high-complexity tasks as the volume of information in contest-based projects varied. We found support for this mechanism that the difference in ratings diminishes as the volume of information (as measured by the amount of feedback provided in the contest-based jobs) between the two models become comparable. Furthermore, information volume also has different levels of effects on tasks with different levels of complexity. Solvers need more information to better understand jobs with higher levels of complexity. Therefore, the difference of performance rating between contest-and contract-based schemes is larger in high complex job category than in low complex job category.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head>Table 1 . Job Scheme and Work Quality</head><label>1</label><figDesc></figDesc><table><row><cell cols="3">!"#$%&amp; '() = + , + + . /0123 ' + + 4 5067##8$69#2: ' + + &lt; =08&gt;287##8$69#2: ' + + ? @AB30C287##8$69#2: '</cell></row><row><cell>+ /0%#ℎ ( + E"C0F=22&gt; ) + G '</cell><cell>(1).</cell><cell></cell></row><row><cell>Quality Rating</cell><cell>(1)</cell><cell></cell></row><row><cell>Main Variables</cell><cell></cell><cell></cell></row><row><cell cols="2">Model (Contract = 1) 0.18578***</cell><cell>(0.01500)</cell></row><row><cell>Num_skills</cell><cell>0.01327**</cell><cell>(0.00537)</cell></row><row><cell>Payment</cell><cell cols="2">0.00057*** (0.00018)</cell></row><row><cell>Duration</cell><cell>-0.00037</cell><cell>(0.00176)</cell></row><row><cell>DescriptionLength</cell><cell>-0.00017**</cell><cell>(0.00007)</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1"><head>Table 2 . Payment and Participation in the Contest-Based Tasks</head><label>2</label><figDesc></figDesc><table><row><cell></cell><cell>Number of Workers</cell><cell>Workers' Skill Diversity</cell></row><row><cell>Task Attributes</cell><cell></cell><cell></cell></row><row><cell>Payment</cell><cell>0.23333***</cell><cell>0.38966***</cell></row><row><cell></cell><cell>(0.00396)</cell><cell>(0.01016)</cell></row><row><cell>Num_skills</cell><cell>-1.27295***</cell><cell>-1.70887***</cell></row><row><cell></cell><cell>(0.14982)</cell><cell>(0.38487)</cell></row><row><cell>Duration</cell><cell>0.02029</cell><cell>0.09932</cell></row><row><cell></cell><cell>(0.03068)</cell><cell>(0.07882)</cell></row><row><cell>DescriptionLength</cell><cell>-0.01247***</cell><cell>-0.02648***</cell></row><row><cell></cell><cell>(0.00179)</cell><cell>(0.00459)</cell></row><row><cell>Num_feedback</cell><cell>0.10140***</cell><cell>0.25954***</cell></row><row><cell></cell><cell>(0.01076)</cell><cell>(0.02764)</cell></row><row><cell>E_tenure</cell><cell>0.24392***</cell><cell>0.71513***</cell></row><row><cell></cell><cell>(0.06666)</cell><cell>(0.17123)</cell></row><row><cell>Employer time invariant Attributes</cell><cell>√</cell><cell>√</cell></row><row><cell>Time Fixed Effects</cell><cell>√</cell><cell>√</cell></row><row><cell>r2 (r2_a)</cell><cell>0.34 (0.34)</cell><cell>0.18 (0.17)</cell></row><row><cell>Aic</cell><cell>72767.53</cell><cell>89212.16</cell></row><row><cell>Bic</cell><cell>72958.49</cell><cell>89403.13</cell></row><row><cell>N</cell><cell>8715</cell><cell>8715</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_3"><head>Table 3 . The Effect of Number of Workers on Job Quality</head><label>3</label><figDesc></figDesc><table /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_4"><head>Table 4 . Information Volume and Quality Difference</head><label>4</label><figDesc></figDesc><table><row><cell></cell><cell>All</cell><cell></cell><cell></cell><cell></cell><cell cols="3">Low Complexity</cell><cell></cell><cell cols="3">High Complexity</cell><cell></cell></row><row><cell>Information</cell><cell>Mean</cell><cell>of</cell><cell>t-</cell><cell>p-</cell><cell>Mean</cell><cell>of</cell><cell>t-</cell><cell>p-</cell><cell>Mean</cell><cell>of</cell><cell>t-</cell><cell>p-</cell></row><row><cell>volume</cell><cell cols="2">difference</cell><cell>statistic</cell><cell>value</cell><cell cols="2">difference</cell><cell>statistic</cell><cell>value</cell><cell cols="2">difference</cell><cell>statistic</cell><cell>value</cell></row><row><cell>&lt;20%</cell><cell>-0.2241</cell><cell></cell><cell>-7.0917</cell><cell>0.0000</cell><cell>-0.2230</cell><cell></cell><cell>-5.5910</cell><cell>0.0000</cell><cell>-0.2069</cell><cell></cell><cell>-2.6458</cell><cell>0.0085</cell></row><row><cell>20%~40%</cell><cell>-0.2473</cell><cell></cell><cell>-7.8893</cell><cell>0.0000</cell><cell>-0.2097</cell><cell></cell><cell>-5.6541</cell><cell>0.0000</cell><cell>-0.2640</cell><cell></cell><cell>-2.9451</cell><cell>0.0034</cell></row><row><cell>40%-60%</cell><cell>-0.2425</cell><cell></cell><cell>-7.7577</cell><cell>0.0000</cell><cell>-0.2195</cell><cell></cell><cell>-5.3343</cell><cell>0.0000</cell><cell>-0.2488</cell><cell></cell><cell>-3.5158</cell><cell>0.0005</cell></row><row><cell>60%~80%</cell><cell>-0.2018</cell><cell></cell><cell>-6.7853</cell><cell>0.0000</cell><cell>-0.1742</cell><cell></cell><cell>-4.4998</cell><cell>0.0000</cell><cell>-0.2664</cell><cell></cell><cell>-3.9073</cell><cell>0.0001</cell></row><row><cell>&gt;80%</cell><cell>-0.0720</cell><cell></cell><cell>-2.3603</cell><cell>0.0183</cell><cell>-0.0567</cell><cell></cell><cell>-1.2726</cell><cell>0.2035</cell><cell>-0.0667</cell><cell></cell><cell>-1.0936</cell><cell>0.2746</cell></row></table></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_0"><p>Twenty-fifth Americas Conference on Information Systems,Cancun, 2019  </p></note>
+		</body>
+		<back>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<monogr>
+		<title level="m" type="main">Heterogeneous submission behavior and its implications for success in innovation contests with public submissions</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Bockstedt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Druehl</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Mishra</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2016">2016</date>
+			<publisher>Production and Operations Management</publisher>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="page" from="1157" to="1176" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Incentives and problem uncertainty in innovation contests: An empirical analysis</title>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">J</forename><surname>Boudreau</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Lacetera</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">R</forename><surname>Lakhani</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management science</title>
+		<imprint>
+			<biblScope unit="volume">57</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="843" to="863" />
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Hiring preferences in online labor markets: Evidence of a female hiring bias</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Chan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Wang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Science</title>
+		<imprint>
+			<biblScope unit="volume">64</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="2973" to="2994" />
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Applicant reactions to face-to-face and technology-mediated interviews: A field investigation</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">S</forename><surname>Chapman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">L</forename><surname>Uggerslev</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Webster</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Applied Psychology</title>
+		<imprint>
+			<biblScope unit="volume">88</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page">944</biblScope>
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Research note-Are online labor markets spot markets for tasks? A field experiment on the behavioral response to wage cuts</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">L</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">J</forename><surname>Horton</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="403" to="423" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<monogr>
+		<title level="m" type="main">The Next Big Thing in E-Commerce: Online Labor Marketplaces</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Laumeister</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2014">2014</date>
+			<pubPlace>Forbes</pubPlace>
+		</imprint>
+	</monogr>
+	<note>Online</note>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Judging borrowers by the company they keep: Friendship networks and information asymmetry in online peer-to-peer lending</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><forename type="middle">R</forename><surname>Prabhala</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Viswanathan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Science</title>
+		<imprint>
+			<biblScope unit="volume">59</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="17" to="35" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<author>
+			<persName><forename type="first">M</forename><surname>Kokkodis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">G</forename><surname>Ipeirotis</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Reputation transferability in online labor markets</title>
+		<imprint>
+			<date type="published" when="2015">2015</date>
+			<biblScope unit="volume">62</biblScope>
+			<biblScope unit="page" from="1687" to="1706" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Innovation contests, open innovation, and multiagent problem solving</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Terwiesch</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Xu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management science</title>
+		<imprint>
+			<biblScope unit="volume">54</biblScope>
+			<biblScope unit="issue">9</biblScope>
+			<biblScope unit="page" from="1529" to="1543" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

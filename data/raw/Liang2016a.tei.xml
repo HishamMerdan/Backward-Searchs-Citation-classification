@@ -1,0 +1,1189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Effects of IT-enabled Monitoring Systems in Online Labor Markets Completed Research Paper</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Chen</forename><surname>Liang</surname></persName>
+							<email>chen.liang.4@asu.edu</email>
+							<affiliation key="aff0">
+								<orgName type="institution">Arizona State University Tempe</orgName>
+								<address>
+									<settlement>Arizona</settlement>
+									<region>US</region>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Yili</forename><surname>Hong</surname></persName>
+							<email>hong@asu.edu</email>
+							<affiliation key="aff1">
+								<orgName type="institution">Arizona State University Tempe</orgName>
+								<address>
+									<settlement>Arizona</settlement>
+									<region>US</region>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Bin</forename><surname>Gu</surname></persName>
+							<email>bin.gu@asu.edu</email>
+							<affiliation key="aff2">
+								<orgName type="institution">Arizona State University Tempe</orgName>
+								<address>
+									<settlement>Arizona</settlement>
+									<region>US</region>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Effects of IT-enabled Monitoring Systems in Online Labor Markets Completed Research Paper</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="MD5">BAF8FBD746046379E59C1886A7561A2B</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.7.3" ident="GROBID" when="2023-06-16T09:23+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>monitoring systems</term>
+					<term>moral hazard problems</term>
+					<term>reputation systems</term>
+					<term>online labor market</term>
+					<term>market competition</term>
+					<term>IT policy and management</term>
+					<term>contract choice</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>This paper investigates how IT-enabled monitoring systems mitigate moral hazard in an online labor market and their effect on market competition. We exploit a quasi-experiment at Freelancer when it introduced enhanced offline tracking features in 2015. Using a large dataset including 17,827 fixed-price projects and 8,563 hourly projects, we use a difference-indifferences (DID) approach to identify the treatment effect of the implementation of IT-enabled monitoring systems on employer contractor choice, employer surplus and market competition. We found that the IT-enabled monitoring system lowers the employers' preference for highreputable bidders, and thus reduces the reputation premiums. Meanwhile, comparing the trend of fixed-price projects, the implementation of the monitoring systems increased the number of bids by 17.4% and increased employer surplus in hourly projects by 21.5%. Our result suggests that IT-enabled monitoring systems have a significant effect on alleviating moral hazards, reducing agency costs, and facilitating market competition.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Introduction</head><p>Information technology has a profound effect on firm boundaries <ref type="bibr" target="#b7">(Bresnahan, et al. 2002;</ref><ref type="bibr" target="#b12">Dewan and Ren 2011;</ref><ref type="bibr" target="#b29">Hitt 1999)</ref>. As IT reduces transaction costs, firms increasingly resort to market mechanisms such as outsourcing and offshoring for service procurement. Online labor markets are at the forefront of this phenomenon. In the past few decades, online labor markets have undergone a tremendous growth. For example, by December 2015, there were over 9 million projects posted in Freelancer, one of the most prominent online labor markets, and about 17 million registered users have used the platform to look for job opportunities<ref type="foot" target="#foot_0">1</ref> .</p><p>Despite the tremendous growth, online labor markets have their limitations due to information asymmetry and agency problems between contractors and employers, amplified by spatial and temporal separations <ref type="bibr" target="#b31">(Hong and Pavlou 2014;</ref><ref type="bibr" target="#b33">Horton 2015)</ref>. Unlike the traditional temporary employment, monitoring and control mechanisms to ensure work performance <ref type="bibr" target="#b47">(Srivastava and Teo 2012)</ref> are weaker and indirect in online labor markets <ref type="bibr" target="#b33">(Horton et al. 2015)</ref>. Therefore, it's easier for opportunistic contractors to shirk and misrepresent their effort. A common solution to this agency problem is the use of fixed-price contracts, where compensation is outcome-driven. That is, contractors get a fixed payment only when they complete the projects successfully <ref type="bibr" target="#b40">(Mani et al. 2012)</ref>. Consequently, the dominant strategy for contractors is to complete the projects, which mitigates the moral hazard problems <ref type="bibr" target="#b21">(Fama 1991</ref>).</p><p>An alternative to fixed-price contracts in online labor markets is hourly contracts, where compensation is determined based on the amount of hours the contractors have spent and the hourly wages set in the contracts <ref type="bibr" target="#b40">(Mani et al. 2012)</ref>. While hourly contracts provide a stronger incentive for better project performance <ref type="bibr" target="#b40">(Mani et al. 2012</ref>) and have better applicability to complex projects <ref type="bibr" target="#b3">(Bajari and Tadelis 2001;</ref><ref type="bibr" target="#b13">Dey et al. 2010)</ref> , they also offer the contractors monetary incentives to shirk by over-reporting work hours or lowering their effort levels<ref type="foot" target="#foot_1">2</ref> . Therefore, asymmetric information in online labor markets renders moral hazard problems of hourly projects more prominent <ref type="bibr" target="#b3">(Bajari and Tadelis 2001)</ref>.</p><p>To alleviate moral hazard issues in online labor markets, many online labor platforms started to provide online tracking functionality <ref type="bibr" target="#b0">(Agrawal et al. 2013)</ref>. For instance, Freelancer released an enhanced tracking feature in its application since August 2 nd , 2015. In this study, we analyze how such IT-enabled monitoring tools would influence employers' and contractors' behavior in online labor markets. In particular, we address three research questions: First, do IT-enabled monitoring systems help alleviate moral hazard problems, and thus lower employers' preference for bidders with high-reputation? Second, if IT-enabled monitoring systems indeed change employer preference, how does such a change influence the competition between contractors? Third, given its impact on the market competition, how do ITenabled monitoring systems affect employer surplus?</p><p>We propose a number of hypotheses based on the agency theory and we expect IT-enabled monitoring systems to have a significant effect on alleviating the moral hazard problems in hourly contracts relative to fixed-price contracts. We treat the contractors' bidding and employers' contract rewarding decisions as revealed preferences and analyze how the enhanced monitoring feature affect both the demand and the supply sides of the hourly project market. Our econometric identification hinges on a quasi-natural experiment (release of enhanced offline tracking feature in the Freelancer application), in which we consider hourly projects as the treatment group and fixed-price projects as the control group. With a large dataset including 26,390 projects posted on Freelancer, we use a difference-in-differences (DID) approach to identify the treatment effect of the feature change on employer contract decision, employer surplus, and market competition. Our analysis suggests that after the introduction of the enhanced offline tracking features, employers have less preference for bidders with high-reputation, and thus be less willing to pay the reputation premiums. Further, taking fixed-price projects as the control group, the treatment fosters market competition for hourly projects by increasing the number of bids on hourly contracts by 17.4% and increases the employer surplus in hourly projects by 21.5%.</p><p>Our paper makes three key contributions. First, our paper is the first large-scale empirical research to investigate the effect of IT-enabled monitoring systems on employer and contractor choices in online labor markets, which extends prior research on the contract design in labor markets <ref type="bibr" target="#b8">(Chen and Bharadwaj 2009;</ref><ref type="bibr" target="#b9">Clemons and Chen 2011;</ref><ref type="bibr" target="#b21">Fama 1991)</ref>. Second, this paper contributes to research on reputation systems in online platforms. While previous literature focused on the effect of reputation system on agency problems <ref type="bibr" target="#b10">(Dellarocas 2006;</ref><ref type="bibr" target="#b27">Gopal and Koka 2010;</ref><ref type="bibr" target="#b33">Horton and Golden 2015)</ref>. Our paper investigated the effect of monitoring systems and its interaction with reputation systems. Specifically, our study showed that there exists a partial substitution relationship between reputation systems and IT-enabled monitoring systems. Third, numerous studies have attested to the positive role of reputation systems, however, the unintended consequence of reputation systems is that they increase entry barrier for inexperienced contractors who have not established a reputation <ref type="bibr">(Pallais 2014)</ref>, which is yet to receive research attention. Our study suggests that monitoring systems serve to lower the entry barrier for inexperienced contractors and help to address the "cold-start" problem at online labor markets <ref type="bibr">(Pallais 2014</ref>) and provides valuable practical implications. Finally, this study extends our understanding of the design of online labor markets <ref type="bibr" target="#b32">(Hong et al. 2016</ref><ref type="bibr" target="#b33">, Horton 2015)</ref>, specifically, we extend the understanding of designing IT-enabled monitoring systems to alleviate moral hazard problems, reduce agency costs, and facilitate competition in online labor markets. This paper proceeds as follows. Section 2 introduces the theoretical background followed by the hypotheses development section. In the empirical analysis part, the data description and empirical models are presented. Finally, we discussed the overall findings, implications, and limitations.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Theoretical Background</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Online Labor Market</head><p>Online labor markets facilitate the procurement of labor services from all over the world <ref type="bibr" target="#b31">(Hong and Pavlou 2014</ref>) by matching employers with contractors <ref type="bibr" target="#b50">(Zheng et al. 2015)</ref>. During recent years, online labor markets have grown so dramatically that as much as around 25 percentages of workers in the US are hired through online work projects<ref type="foot" target="#foot_2">3</ref> . Because of spatial and temporal separations between employers and contractors, information asymmetry persists in such markets, as contractors' qualities and their actual effort levels are difficult to observe. Therefore, agency problems are prevalent in online labor markets.</p><p>One type of agency problems that has attracted attention from both the practice and academic scholars is the adverse selection problem. Adverse selection problems are driven by the asymmetric distribution of information and the difficulties in evaluating the contractors' abilities and skills <ref type="bibr" target="#b18">(Eisenhardt 1989;</ref><ref type="bibr" target="#b33">Horton 2015)</ref>. In order to address the adverse selection problems, most online labor markets provided the reputation history of contractors by tracking their previous project performance. There is a stream of research investigating the effect of reputation system on alleviating the adverse selection problems and employers' awarding decisions. First, good reputation increases the probability of being awarded. When the contractors are entry-level, the evaluation information posted by previous employers or the platform can significantly help them to get better employment, ceteris paribus <ref type="bibr">(Pallais 2014)</ref>. Additionally, since the technologies are correlated, the previous ratings in related tasks can also indicate contractors' category-specific quality in other similar projects <ref type="bibr" target="#b38">(Kokkodis and Ipeirotis 2015)</ref>. Moreover, owing to the good reputation (comments or ratings), contractors can obtain price premiums, get more employment, and have less intention to exit the platform <ref type="bibr" target="#b42">(Moreno and Terwiesch 2014)</ref>. However, based on an adverseselection model, Horton found that information driven from public feedbacks tends to inflate because of the bilateral public rating platform design <ref type="bibr" target="#b33">(Horton et al. 2015)</ref>. Apart from ratings and reviews information, the third-party certification is also one of the optional signaling mechanisms <ref type="bibr" target="#b25">(Goes and Lin 2012)</ref>. In summary, extant literature suggests that the reputation system and third-party certification system help to address the adverse selection problem.</p><p>Once the contractors are awarded, another type of agency problems, the moral hazard problem follows. Moral hazard problems refer to the situation when the contractor has no intention to maximize the employer's utility and opportunistically lowers his or her effort level <ref type="bibr" target="#b18">(Eisenhardt 1989)</ref>. Such shirking problems are caused by the unobservability of the contractor's actual effort level and the misalignment between the employer's and contractor's interests. Online labor markets are prime examples of markets that are subject to the moral hazard problems due to the spatial and temporal separation of the employers (principals) and contractors (agents) and lack of effective monitoring systems. However, no prior research has examined how the reputation systems and monitoring systems interact to address the moral hazard problems and subsequently influence employers' and contractors' behaviors.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Contract Choice</head><p>In the practice of outsourcing, there are two prevalent contract types, namely, fixed-price contracts and time and materials contracts <ref type="bibr" target="#b4">(Banerjee and Duflo 2000)</ref>. Fixed-price contracts are outcome-driven, and the agent gets a fixed payment according to the billing cycle and the amount of output <ref type="bibr" target="#b40">(Mani et al. 2012</ref>). On the other hand, time and materials contracts, also named as cost-plus contracts, require that the payment should be calculated based on the agent's effort and time in the work process <ref type="bibr" target="#b40">(Mani et al. 2012)</ref>. From the perspective of transaction cost economics, the decision of construal structure depends on the tradeoff between potential renegotiation costs of fixed-price contracts and the cost-efficiency losses of time and materials contracts <ref type="bibr" target="#b49">(Susarla and Krishnan 2014)</ref>. According to the extant literature, many factors influence the contract choice, such as firm size <ref type="bibr" target="#b26">(Gopal and Sivaramakrishnan 2008)</ref>, age of firm, trust, reputation <ref type="bibr" target="#b4">(Banerjee and Duflo 2000)</ref>, task complexity, risk of project <ref type="bibr" target="#b26">(Gopal and Sivaramakrishnan 2008)</ref>, previous collaboration experience, business familiarity <ref type="bibr" target="#b23">(Gefen et al. 2008)</ref>, and to what extent outcome is sensitive to the agent's or the principal's efforts <ref type="bibr" target="#b45">(Roels et al. 2010)</ref>. Compared to time and materials contracts, fixed-price contracts have higher ex-ante costs to collect information and to negotiate the provision, plus higher ex-post maladaptation costs and renegotiation costs <ref type="bibr" target="#b48">(Susarla et al. 2009)</ref>. However, time and materials contracts usually entail higher ex-post monitoring and auditing costs <ref type="bibr" target="#b3">(Bajari and Tadelis 2001;</ref><ref type="bibr" target="#b13">Dey et al. 2010;</ref><ref type="bibr" target="#b48">Susarla et al. 2009;</ref><ref type="bibr" target="#b49">Susarla and Krishnan 2014)</ref>. Some researchers consider the trade-off between two types of contracts as a "make-or-buy" decision <ref type="bibr" target="#b3">(Bajari and Tadelis 2001)</ref>. The "buy" choice, corresponding to the fixed-price contract, means the external contractor takes all the production costs. Therefore, such a choice is preferred when the task is easy to define. And the "make" choice, corresponding to the time and material contract, indicates that the employer bear all the production costs. Therefore, it is similar to the process of self-production. On the incentive side, for the "buy" choice, contractors are contracted for the final outcome of the projects, which provides sufficient motivations for them to spend effort and time on the projects with efficiency. Thus, the moral hazard problems in the "buy" choice are usually less severe <ref type="bibr" target="#b21">(Fama 1991)</ref>. However, for a "make" choice, contractors' payments are based on the amount of time they have spent on the projects. Without an effective monitoring system, contractors might engage in the opportunistic "shirking" behavior, especially when their efforts could not be precisely monitored. Therefore, the moral hazard problems usually are more severe than in the "buy" choice. Meanwhile, a "make" choice could have better performance and higher client validation quality than the other if the monitoring and auditing process is effective and efficient <ref type="bibr" target="#b13">(Dey et al. 2010)</ref>. Apart from these two contract types, there are other optional contract types, including performance-based contracts, profit-sharing contracts <ref type="bibr" target="#b13">(Dey et al. 2010)</ref>, and hybrid contracts <ref type="bibr" target="#b4">(Banerjee and Duflo 2000)</ref>. Our paper focuses on the comparison between the fixedprice and time and materials contracts as these are the only two contract type options in most online labor markets (e.g., Freelancer and Upwork).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Monitoring and Reputation</head><p>Both the monitoring system and the reputation system could be effective mechanisms to alleviate moral hazard problems. Monitoring is a mean of lowering the information asymmetry by collecting more information on the actions of contractors. Reputation serves as a signal of contractors' future performance based on their performance ratings evaluated by previous employers <ref type="bibr" target="#b5">(Banker and Hwang 2008)</ref>. Most of the previous literature suggests that both the monitoring system and the reputation system can independently mitigate moral hazard problems <ref type="bibr" target="#b16">(Drago 1991;</ref><ref type="bibr" target="#b17">Duflo et al. 2012;</ref><ref type="bibr" target="#b33">Hubbard 2000;</ref><ref type="bibr" target="#b44">Pierce et al. 2015)</ref>.</p><p>On the one hand, monitoring transforms the individual information about contractors' actual effort into information that the principals could observe. Therefore, it can lower the probability of "shirking" going unnoticed, and thus increase the contractors' effort <ref type="bibr" target="#b16">(Drago 1991)</ref>. There is a large body of research supporting that, more monitoring increases the contractors' effort and leads to better performance <ref type="bibr" target="#b17">(Duflo et al. 2012;</ref><ref type="bibr" target="#b33">Hubbard 2000;</ref><ref type="bibr" target="#b44">Pierce et al. 2015)</ref>. On the other hand, reputation links contractors' performance in the present project with the probability of getting hired in the future. Therefore, reputation acts as a stimulus to motivate contractors to spend more effort <ref type="bibr" target="#b33">(Horton and Golden 2015)</ref>. In order to avoid getting a bad reputation, the contractor will be less likely to shirk, which implies that reputation system plays a role as a sanctioning mechanism <ref type="bibr" target="#b10">(Dellarocas 2006)</ref>. However, the monitoring system and the reputation system might not work independently, which implies that there might be some unexpected interaction relationship between both mechanisms <ref type="bibr" target="#b11">(Demiroglu and James 2010;</ref><ref type="bibr" target="#b15">Diamond 1991)</ref>. Because both a well-designed reputation system and a precise monitoring system are effective tools to mitigate moral hazard, the introduction of the IT-enabled monitoring system might lower the employers' reliance on the reputation system, and thus weaken the effect of the reputation system. Therefore, we expect that the monitoring system might partially substitute for the reputation system in reducing contractors' shirking behavior. However, none of the previous IS studies has investigated the interaction relationship between the monitoring system and the reputation system. To sum up, both the monitoring system and the reputation system help to alleviate moral hazard <ref type="bibr" target="#b10">(Dellarocas 2006;</ref><ref type="bibr" target="#b17">Duflo et al. 2012;</ref><ref type="bibr" target="#b33">Horton and Golden 2015;</ref><ref type="bibr" target="#b33">Hubbard 2000;</ref><ref type="bibr" target="#b44">Pierce et al. 2015)</ref>, but it's still unclear whether they substitute for each other in online labor markets.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Hypotheses Development</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Substitution between Monitoring and Reputation</head><p>When the risk of moral hazard is high, the employer prefers to choose the contractor with highreputation, because the reviews and feedbacks from previous employers help to alleviate information asymmetry and serves as a signal of contractor's average effort level <ref type="bibr" target="#b5">(Banker and Hwang 2008)</ref>. However, when the IT-enabled monitoring system is available, the function of the reputation system might be partially substituted by the monitoring system because monitoring system can lower the need for reputation signals in term of contractors' effort and cost uncertainty. First, because of the asymmetric information about the contractors' effort, employers regard the contractors' reputation as the signals to identify the types of contractors <ref type="bibr" target="#b38">(Kokkodis and Ipeirotis 2015)</ref>. For example, from the perspective of employers, a contractor with high-reputation usually be thought as an agent with high effort, which implies employers' preference for contractors with high-reputation <ref type="bibr">(Pallais 2014)</ref>. However, when the ITenabled monitoring tool is available, the employers can verify the contractors' actual levels of effort and only continue the employment if they find that the contractors' levels of effort are acceptable. Therefore, by using an efficient monitoring system, the employers don't need to emphasize contractors' reputation too much because they have the capability to ensure the awarded contractor's actual effort <ref type="bibr" target="#b27">(Gopal and Koka 2010)</ref>. Second, monitoring provides better information about the contractors' performance and how to improve it, so that it can help to save time and decrease the cost uncertainty. Before the IT-enabled monitoring tool is introduced, the employers might prefer for contractors with high-reputation not only because of their higher expected effort but also because of the smaller cost uncertainty (variance) <ref type="bibr" target="#b40">(Mani et al. 2012</ref>). However, with the help of the IT-enabled monitoring system, employers can have better information about contractors' performance and instruct them to perform more efficiently. Therefore, no matter the contractors have high-reputation or not, the employers can keep the cost uncertainty at a low level by ensuring that contractors are making satisfactory progress. This improvement suggests that the monitoring system reduces the difference between contractors with high-reputation and those with lowreputation in terms of cost uncertainty. All in all, the monitoring systems lower employers' worries in contractors' shirking behavior and high cost uncertainty, and thus substitute for the signal effect of the reputation systems. Therefore, we propose the following hypothesis and employ a revealed-preferencebased empirical framework to test it: H1: After IT-enabled monitoring tool is available, employers of hourly projects will place a less emphasis on worker reputation.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Monitoring and Employer Surplus</head><p>In the same vein, because of the partial substitution effect between monitoring systems and reputation, employers will be less willing to pay the price premiums, especially the reputation premiums. From the perspective of the supply side (contractors), reputational contractors tend to milk their reputation by charging the price premiums <ref type="bibr" target="#b42">(Moreno and Terwiesch 2014)</ref>. However, such price premiums don't guarantee the higher product quality <ref type="bibr" target="#b36">(Jin and Kato 2006)</ref>. In such cases, reputation helps to foster product differentiation of reputable contractors' service. Meanwhile, from the perspective of the demand side, because of the potential moral hazard problems in the online labor markets, employers are uncertain about the effort level of contractors without the monitoring system. Therefore, employers would pay a price premium to the high-reputation contractors <ref type="bibr" target="#b22">(Fombrun 1996)</ref> and even consider the reputation premiums as the cost of overcoming moral hazard <ref type="bibr" target="#b19">(Esfahani 1991)</ref>. However, since the monitoring system can alleviate the moral hazard problems and partially substitutes for reputation, there is no need for employers of hourly projects to pay such reputation premiums to address moral hazard problems. Moreover, our argument is also supported by <ref type="bibr" target="#b2">Allgulin and Ellingsen's (2002)</ref> finding that when the monitoring system is very precise, efficient and cheap, the agent's utility reaches its minimum level and they become less capable of earning rents. When the agent can be monitored perfectly, any effort level can only be paid at his corresponding reservation wage <ref type="bibr" target="#b2">(Allgulin et al. 2002)</ref>. This argument is also supported by the Efficiency Wage Model, which predicts that more intense monitoring leads to lower wage premiums <ref type="bibr" target="#b20">(Ewing and Payne 1999;</ref><ref type="bibr" target="#b39">Leonard 1987;</ref><ref type="bibr" target="#b46">Shapiro and Stiglitz 1984)</ref>. Since employers no longer need to pay the reputation premiums to overcome moral hazard, we expect that the employer surplus will be higher after a platform implements a monitoring system. So we propose the following hypotheses: H2a: After IT-enabled monitoring tool is available, employers of hourly projects will tend to pay a lower price premium 4 .</p><p>H2b: After IT-enabled monitoring tool is available, employers of hourly projects will enjoy a higher surplus.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Monitoring and Competition</head><p>Now considering the effect of IT-enabled monitoring systems on the supply side, we expect that more contractors will be interested in hourly projects because of the lower entry barrier, as the reputable contractor's past reputation on work efforts becomes substitutable. On one hand, the monitoring system lowers the entry barrier by decreasing the need for reputation to mitigate moral hazard problems. Before the monitoring system is available, the reputation acts as an entry barrier for relatively new contractors who have not yet built their reputation on the platform. Consequently, those contractors with good reputation posted by the employers can obtain better employment with a higher rent <ref type="bibr">(Pallais 2014</ref>). However, after the release of IT-enabled monitoring systems, employers can obtain direct information about contractors' effort from the real track records instead of past performance, which implies the barrier of entry based on reputation prominently drops <ref type="bibr" target="#b11">(Demiroglu and James 2010)</ref>. Therefore, inexperienced contractors are more likely to bid for those hourly projects. On the other hand, based on the logic of partial substitution relationship between the monitoring system and reputation we explained earlier, and the subsequent change in employers' preferences, the difference between contractors with little platform experience and experienced contractors is dramatically narrowed. Hence, the additional value due to high-reputation will be greatly removed, and low-reputational contractors' work will serve as a closer substitute for high-reputable contractors' work. In such case, the price elasticity of demand will rise and the market will become more competitive. On the whole, we expect that the monitoring system facilitates competition, and more contractors will enter the more competitive market. Therefore, we formalize the next hypothesis as follows:</p><p>H3: After IT-enabled monitoring tool is available, the number of bidders of hourly projects will be higher.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Research Methodology</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Date Source</head><p>Our data is collected from www.freelancer.com (Freelancer), which is one of the largest online labor market platforms. This year, it was awarded as 2015 Best Employment Website and 2015 Best 4 One could argue that the implementation of IT-enabled monitoring tool induces changes in both the supply and demand sides. We employ the two following ways to validate the causal relationship between the observed result and the change in employer surplus. First, we create a new price premium measure with the minimum of bid prices as the baseline to take the potential change in the supply side into consideration. Second, we conduct a falsification test by taking the employer surplus evaluated at the average bid price as the dependent variable in the DID model. If the result regarding a lower price premium and a higher employer surplus is caused by the supply side, we expect that the falsification test should fail. On the whole, both the new price premium measure and falsification test support our hypotheses.</p><p>Professional Services Website 5 . In Freelancer, the employer can pose his/her project description, project budget and skills required. By showing the budget of the whole project, the employer indicates that this project adopts a fixed-price contract. If the unit of the project budget is dollars per hour, it implies that the employer will make a time and materials contract and then the contractor will get paid for his or her hourly work.</p><p>Typically, a project will open for bidding for a week and any contractor who is interested can bid to win the project. For fixed price projects, the bidders need to post their expected payment and state how long it would take him to fulfill the project; and for hourly projects, the bidders need to post their expected hourly rate. Before the bidding period expires, the employer can review bidders' basic information, such as their nationality, skills, self-introduction, average hourly wage, etc. Moreover, Freelancer also provides bidders' previous project experience and their former employers' ratings and comments. Just like the traditional hiring process, if the employer is interested in some candidates among all the bidders, he/she could chat with them before hiring. Additionally, some filtering tools are also available and enable an employer to sort bidders according to the number of reviews, average rating, etc. Once the employer finds the candidate who satisfies him/her the most and meets his/her minimum requirements, he or she could award that contractor and send out more detailed instructions. We obtained an archived sample dataset from Freelancer including the project information and user information from Aug 1 st , 2014 to July 1 st , 2016. We follow <ref type="bibr" target="#b34">Lin et al. (2016)</ref> to construct our sample. For example, we limited our sample to awarded projects that reflect realistic labor demand without the contamination of resubmitted projects. Further, we matched fixed-price and hourly projects <ref type="bibr" target="#b30">(Ho et al. 2007</ref>) based on distributions of important covariates suggested by the previous literature using propensity score matching (PSM). Our final sample includes 17,827 fixed-price projects and 8,563 hourly projects. The descriptive information of our dataset is shown in Table <ref type="table" target="#tab_0">1</ref> and<ref type="table" target="#tab_1">Table 2.</ref> The dataset includes the following attributes: 1) project-level information (i.e. project description, project budget, type of contracts, number of bidders and average bid price, who was awarded and so on); 2) userlevel information (i.e. ratings, the amount of reviews, nationality, average hourly wage, etc.). </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Identification: A Quasi-Natural Experiment</head><p>As mentioned before, the information asymmetry problem has been a serious issue, especially for hourly projects. Because the risk allocation of an hourly project is mainly on the principal (the employer), the tradeoff between monitoring costs and the uncertainty or risk of outcome always troubles the employer <ref type="bibr" target="#b40">(Mani et al. 2012</ref>). On August 2 nd , 2015, Freelancer released an enhanced tracking feature to help alleviate the monitoring problem. Such an IT artifact serves as a control tool with the potential to allow employers to effortlessly monitor the freelancers. This monitoring system randomly takes screenshots every ten minutes, and tracks the amount of minutes the contractor has been spent. Therefore, it can confidently keep a record of the project process even with an unstable Internet connection, sparing the employers' efforts to keep checking the project process. Considering the spatial and temporal separations between the employer and contractor, such a monitoring system makes it more convenient for the employer to prevent the contractor from shirking and to track the project progress by reducing monitoring costs. The employer could file a dispute regarding the quality of the contractor's work based on the offline tracking logs. Additionally, after the monitoring tool was released, the tool is mandatory for all the contractors who are awarded hourly projects. Taken together, this monitoring system alleviates the concerns about losing track of the progress for hourly projects and effectively lowers monitoring costs. So it might better serve the interests of the employers of hourly projects, because there are higher ex-post monitoring costs and risk in hourly contracts <ref type="bibr" target="#b3">(Bajari and Tadelis 2001;</ref><ref type="bibr" target="#b13">Dey et al. 2010;</ref><ref type="bibr" target="#b48">Susarla et al. 2009</ref>; Susarla and Krishnan 2014) and such risk is mainly allocated on employers. More importantly, since the monitoring system is mandatory for hourly contractors, it's reasonable to assume that the employers may adjust their hiring preference accordingly. Therefore, given the more essential need for effective monitoring tools and the higher likelihood of a strategic adjustment for the employers of hourly projects, the monitoring system should have a stronger effect on hourly projects than fixed-price projects. Here, we consider fixed-price projects as the control group and examine the effect of the IT-enabled monitoring system on hourly projects.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Empirical Model and Results</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Measures and Models</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Linear Probability Model</head><p>To estimate employer preference for contractors in terms of their observable characteristics, we formulate a model to compare each contractor's winning probability within each project. Specifically, we estimate the probability of one bidder being awarded as Pr (𝑏𝑖𝑑𝑑𝑒𝑟 𝑖𝑗 =1). Denote 𝑈 𝑖𝑗 for the employer's utility from hiring bidder j for project i.</p><formula xml:id="formula_0">𝑈 𝑖𝑗 = 𝛼𝑋 𝑖𝑗 + 𝛽𝐵 𝑗 + 𝛾𝑃 𝑖 + 𝜀 𝑖𝑗 (1)</formula><p>where 𝑋 𝑖𝑗 denotes a set of project-bidder paired characteristics, such as the price premium of each bid. 𝑃 𝑖 indicates a set of time-invariant project characteristics, such as project budget, the length of description, etc. 𝐵 𝑗 means the bidders' related characteristics, such as bidders' employer-entered ratings, whether he or she is from a developed country and so on<ref type="foot" target="#foot_3">6</ref> . 𝜀 𝑖𝑗 is a random error. Based on our aforementioned theoretical background, we extended the latent utility model as follows. This model could be estimated with a linear probability model <ref type="bibr" target="#b24">(Greenwood and Agarwal 2015;</ref><ref type="bibr" target="#b28">Heckman and Snyder 1997)</ref> or a logit model <ref type="bibr" target="#b34">(Lin et al. 2016;</ref><ref type="bibr" target="#b35">Liu et al. 2015)</ref>. Given our interest in interpreting the interaction effects, we opt to use a linear approach for estimation.</p><formula xml:id="formula_1">𝑃𝑟𝑖𝑐𝑒_𝑃𝑟𝑒𝑚𝑖𝑢𝑚 𝑖𝑗 = (𝐵𝑖𝑑_𝑃𝑟𝑖𝑐𝑒 𝑖𝑗 -𝐵𝑖𝑑_𝑀𝑖𝑛 𝑖 ) 𝐵𝑖𝑑_𝑀𝑖𝑛 𝑖</formula><p>(2)</p><formula xml:id="formula_2">𝑈 𝑖𝑗 = 𝛼𝑃𝑟𝑖𝑐𝑒_𝑃𝑟𝑒𝑚𝑖𝑢𝑚 𝑖𝑗 × 𝐴𝑓𝑡𝑒𝑟 × 𝐻𝑜𝑢𝑟𝑙𝑦 + 𝛽𝐵𝑖𝑑𝑑𝑒𝑟_𝑅𝑎𝑡𝑖𝑛𝑔 𝑗 × 𝐴𝑓𝑡𝑒𝑟 × 𝐻𝑜𝑢𝑟𝑙𝑦 +𝛾𝑃 𝑖 + 𝛿𝐶𝑜𝑛𝑡𝑟𝑜𝑙𝑠 + 𝜀 𝑖𝑗 (3)</formula><p>where 𝛼 is a 4X1 matrix of coefficient estimates and each row is corresponding to one of the following four groups: 1) 𝐴𝑓𝑡𝑒𝑟 = 0, 𝐻𝑜𝑢𝑟𝑙𝑦 = 0 ; 2) 𝐴𝑓𝑡𝑒𝑟 = 1, 𝐻𝑜𝑢𝑟𝑙𝑦 = 0 ; 3) 𝐴𝑓𝑡𝑒𝑟 = 0, 𝐻𝑜𝑢𝑟𝑙𝑦 = 1 ; 4) 𝐴𝑓𝑡𝑒𝑟 = 1, 𝐻𝑜𝑢𝑟𝑙𝑦 = 1. Since there exist high linear correlations between the bidders' employer-entered ratings of different dimensions, we employed the Principal Component Analysis (PCA) to reduce the dimensions and generated two components representing four kinds of employer-entered ratings for bidders, including 1) PC1: Quality of Contractor; 2) PC2: Effort at Work<ref type="foot" target="#foot_4">7</ref> . Therefore, 𝛽 is a 42 matrix of coefficient estimates. Each of row represents the coefficient estimates of four components for each group.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>DID Models</head><p>In order to test Hypothesis 2b, we create a relative employer surplus measure Employer_Surplus, which measures the relative percentage of employer surplus with respect to the maximum of the project budget.</p><p>Here, the employer surplus means the gap between the maximum of project budget and the final awarded bid price. If the price is just equal to the employer's Willingness To Pay (WTP), that is, the maximum of the budget, he or she is indifferent between hiring and not hiring and the employer surplus will be zero.</p><formula xml:id="formula_3">𝐸𝑚𝑝𝑙𝑜𝑦𝑒𝑟_𝑆𝑢𝑟𝑝𝑙𝑢𝑠 𝑖 = (𝐵𝑢𝑑𝑔𝑒_𝑚𝑎𝑥 𝑖 -𝐴𝑤𝑎𝑟𝑑_𝐵𝑖𝑑𝑃𝑟𝑖𝑐𝑒 𝑖 ) 𝐵𝑢𝑑𝑔𝑒_𝑚𝑎𝑥 𝑖 ⁄ (4) 8</formula><p>Based on this data set and our research design, we estimated the treatment effect based on the Differencein-Difference (DID) model <ref type="bibr" target="#b6">(Bertrand et al. 2002)</ref>:</p><p>𝐸𝑚𝑝𝑙𝑜𝑦𝑒𝑟_𝑆𝑢𝑟𝑝𝑙𝑢𝑠 𝑖 = 𝛼 + 𝛽 1 𝐴𝑓𝑡𝑒𝑟 𝑖 + 𝛽 2 𝐻𝑜𝑢𝑟𝑙𝑦 𝑖 + 𝛽 3 𝐴𝑓𝑡𝑒𝑟 𝑖 × 𝐻𝑜𝑢𝑟𝑙𝑦 𝑖 + 𝑣 𝑖 + 𝜀 ( <ref type="formula">5</ref>)</p><formula xml:id="formula_4">𝑁𝑢𝑚_𝐵𝑖𝑑𝑠 𝑖 = 𝛼 + 𝛽 1 𝐴𝑓𝑡𝑒𝑟 𝑖 + 𝛽 2 𝐻𝑜𝑢𝑟𝑙𝑦 𝑖 + 𝛽 3 𝐴𝑓𝑡𝑒𝑟 𝑖 × 𝐻𝑜𝑢𝑟𝑙𝑦 𝑖 + 𝑣 𝑖 + 𝜀 (6)</formula><p>In the model, the dependent variable is the total number of bids for each project i, 𝑁𝑢𝑚_𝐵𝑖𝑑𝑠 𝑖 . 𝐴𝑓𝑡𝑒𝑟 𝑖 is the dummy variable indicating whether the project is posted after August 2 nd , 2015<ref type="foot" target="#foot_6">9</ref> . The contract type is indicated by 𝐻𝑜𝑢𝑟𝑙𝑦 𝑖 , which equals to 1 if the project is an hourly project and 0 if it employs fixed-price contract. The interaction term between 𝐴𝑓𝑡𝑒𝑟 𝑖 and 𝐻𝑜𝑢𝑟𝑙𝑦 𝑖 (𝛽 3 ) thus identifies the heterogeneous effect of the availability of the IT-enabled monitoring system on fixed-price projects and hourly ones. To control for the heterogeneity of projects, we also added other project characteristics and employer characteristics (𝑣 𝑖 ) into the DID model and 𝜀 denotes the error term.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Empirical Result</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Employer Preference and Surplus</head><p>Based on the result of the Linear Probability model, we find that before and after the IT-enabled monitoring system was implemented, for Quality_of_contractor, the coefficients remain unchanged at remains at 0.002 (p&lt;0.001), indicating employers' preference towards this dimension of reputation does not change. Interestingly, we observe a different pattern regarding the coefficients for the other dimension of reputation: Effort_at_work. As Table <ref type="table" target="#tab_2">3</ref> shows, for fixed-price projects, the employer preference shows minor increase (from 0.009 to 0.012), however, for hourly projects, the employer preference shows a relatively large decrease (from 0.013 to 0.008), indicating employers show substantially less preference for high reputation contractors regarding the Effert_at_work dimension. Further, we also check how bid price affects employers before and after the implementation of the monitoring system. Interestingly, we found although employers are less price-sensitive for fixed-price projects (maybe due to temporal effects), they became more price sensitive for hourly projects. We also retested Hypothesis 1 with the Conditional Logit model, and the results are qualitatively the same. Clusters(projects) 25,380 R-square within 0.022 R-square between 0.651 Notes: a. Price premium is defined as Price_premium = (Bid_amount -Bid_min )/Bid_min. b. We limit our sample to those projects which are awarded to only one contractor. Therefore, our sample in the fixed-effect model only includes 26,390-582=25,808 projects. c. The result is based on all the contractors who bided for both the fixed-price and hourly projects (named as "dual-typed contractors") <ref type="bibr" target="#b34">(Lin et al. 2016)</ref>. Those projects whose winners all bided for one type of projects were dropped from our sample. Therefore, our final sample includes 25,808-428=25,380 projects. d. Results of dummy variables denoting contractor characteristics (whether the contractor gets a special Preferred Freelancer Badge, etc.) are suppressed for brevity. e. User_count_rating denotes the number of ratings in projects with similar skills. This number is provided by the Freelancer website to help employers to evaluate different bidders' experience in relevant skills. f. Bidder_rank means the bidder's ranking among all the candidates. Freelancer automatically sorts all the bidders according to its own ranking algorithm which is mainly based bidders' employer-entered reviews. g. Bid_order_rank denotes the sequence in which the bidders' bids were submitted. h. Robust standard errors are reported in parentheses; g. p&lt;0.1, ** p&lt;0.05, *** p&lt;0.01.</p><p>In line with the change in employer preference, based on the marginal effect of the interaction term at the mean values of all the covariates, the price premiums paid by employers of hourly projects decline 30.1%. Additionally, we also find that the interaction term in the Equation ( <ref type="formula">5</ref>) is significantly positive, which suggests that on average employers enjoy more surplus in hourly projects than before. Based on the marginal effect of DID model at the mean values, on average, the implementation of monitoring systems (the treatment) increases the employer surplus by 21.5%, which lends support to Hypothesis H2b. On the whole, results of the DID models lend support to Hypothesis 2a and Hypothesis 2b. 0.120 0.160 Notes: a. Dummy variables for various project categories, such as software, design, marketing, data-entry, are included. The results of these dummies are suppressed for brevity; b. Results of dummy variables denoting project characteristics (whether a NDA contract is included, whether the project is featured or sealed, whether the project is a fulltime job, whether the currency is dollar, whether the project is written in English) are suppressed for brevity; c. Robust standard errors are reported in parentheses; d. * p&lt;0.1, ** p&lt;0.05, *** p&lt;0.01.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Bidding Behavior</head><p>According to the result of DID model, we found that the coefficient of After (𝛽 1 ) is positive, which means that there are more contractors bidding for fixed-price projects than before. This increase in Num_Bids might result from multiple reasons, such as the popularity of Freelancer, etc. Taking this into consideration, the interaction term (𝛽 3 ) is still significantly positive, which suggests that after the ITenabled monitoring system was available, the increase in Num_Bids of hourly projects is larger than that of fixed-price projects. This is consistent with our hypothesis that a more homogenous service market will attract more contractors. The finding that the interaction term is 0.160 implies that the number of bids increases 17.4% 10 . Therefore, Hypothesis 3 is also supported.</p><p>Overall, our results of the Conditional Logit model and the DID models support all of our hypotheses. 10 Based on the estimation results in Table <ref type="table" target="#tab_4">5</ref>, before the implementation of monitoring systems, the partial correlation between Hourly dummy and Log_ Num_Bids is -0.023. This partial coefficient becomes 0.137 after the implementation. Since the dependent variable takes the log transformation, we transform the change in the coefficient with the exponential function to obtain the actual increase in the number of bids. Exp(0.160) -1=17.4%. Adj R-squared 0.460 Notes: a. Dummy variables for various project categories, such as software, design, marketing, data-entry, are included. The results of these dummies are suppressed for brevity; b. Results of dummy variables denoting project characteristics (whether a NDA contract is included, whether the project is featured or sealed, whether the project is a fulltime job, whether the currency is dollar, whether the project is written in English) are suppressed for brevity; c. Dummy variables for employers' characteristics (the average rating, number of reviews, employer tenure measured in months, whether the employer is from a developed country) are suppressed for brevity; d. Robust standard errors are reported in parentheses; d. * p&lt;0.1 ** p&lt;0.05 *** p&lt;0.01.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Robustness Check</head><p>To further validate our hypotheses, we performed several robustness checks. First, we tried to balance the distribution across the treatment and control group with multiple matching methods, and then retested our results with the matched sample. Second, we used an alternative measure of price premiums and reran the DID model. We also tested if employer preference for actual bid prices had changed. Third, we also conducted a falsification check in order to rule out the alternative explanation that the change in awarded bid prices came from lower average bid prices rather than the change of employer preference.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Alternative Matching Methods</head><p>In order to balance the distribution of observed characteristics across the treatment and control group, we tried to conduct the Propensity Score Matching and retested the hypotheses with the matched sample. Specifically, we included employers' reputation (employer ratings given by awarded contractors, the number of reviews the employers receive), whether the employer is from a developed country, the number of characters in project description <ref type="bibr" target="#b34">(Lin et al. 2016)</ref>, project type dummies, the month dummies as the pretreatment covariates to match the hourly projects and fixed-price projects. We estimated the coefficient of the interaction term in the DID model with the use of the One-to-one Matching, Radius Matching, Kernel Matching. All the results are consistent with our main results. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Alternative Measurements</head><p>In order to retest the Hypothesis 2b, we created an alternative measure of awarded bid prices, Award_BidPrice, which is the ratio of the bid price of the awarded contractor to the maximum of the project budget. If the awarded bid price is just equal to the employer's willingness-to-pay (WTP), that is, the maximum of the budget, he or she is indifferent between hiring and not hiring and Award_BidPrice will be equal to one. In such case, the employer surplus will be zero. In the main result section, we showed that, after the IT-enabled monitoring system was available, employer surplus of hourly projects is higher than it was before. So when we took 𝐴𝑤𝑎𝑟𝑑_𝐵𝑖𝑑𝑃𝑟𝑖𝑐𝑒_𝑃𝑒𝑟𝑐 as the dependent variable, we still expected that the interaction term in DID model would be negative. And the result of this robustness check is also consistent with our argument and again supports Hypothesis 2a.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>𝐴𝑤𝑎𝑟𝑑_𝐵𝑖𝑑𝑃𝑟𝑖𝑐𝑒_𝑃𝑒𝑟𝑐 𝑖 =</head><p>𝐴𝑤𝑎𝑟𝑑_𝐵𝑖𝑑𝑃𝑟𝑖𝑐𝑒 𝑖 𝐵𝑢𝑑𝑔𝑒𝑡_𝑀𝑎𝑥 𝑖 (7)</p><p>In the main result, we included Price_Premium, a standardized price measurement, in the model to test Hypothesis 1. To further check our argument, we also built the model including the actual bid prices (logtransformed) and tested if the result is still consistent. The estimates of the Linear Probability Model including the actual bid prices (log-transformed) suggests that after the monitoring system was available, employers were more sensitive to Bid_Price and no longer put substantial weights on Effort_at_work component of bidders' employer-entered ratings as before. Hence, the result is consistent with our main results.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Falsification Checks and an Alternative Explanation</head><p>Even though we found that the employer surplus of hourly projects is higher than it was before, it is possible that this is driven by factors other than employer preference. An alternative explanation is that contractors require lower hourly salaries than they did before. In order to rule out this alternative explanation, we tested if the coefficient of the interaction term in the DID model is still significant by taking the employer surplus evaluated at the average bid price as a dependent variable. According to the estimates of the DID model, after the IT-enabled monitoring system was available, the increase in the employer surplus of hourly projects with respect to the average bid prices is not significantly higher than that of fixed-price projects. However, the incremental employer surplus of hourly projects with respect to awarded bid prices is significantly higher than that of the control group (fixed-price projects), which implies that such a change in employer surplus is mainly because of employers' less willingness to pay price premiums, rather than the lower bid prices. Additionally, in order to validate our argument that the introduction of IT-enabled monitoring system facilitates the market competition by lowering the entry barrier, we also employ a DID model to estimate the impact of the IT-enabled monitoring system on the percentage of contractors (Perc_norating) who haven't accumulated any reputation records from employers <ref type="bibr" target="#b34">(Lin et al. 2016)</ref>. Our result suggests that after the IT-enabled monitoring system was introduced, Perc_norating of hourly projects is significantly lower than before. Specifically, based on the result of marginal effect estimates, it (Perc_norating) increases 9.1% after the implementation of monitoring systems. On the whole, the fact that there is relatively more participation of inexperienced contractors in hourly projects supports our argument that IT-enabled monitoring system facilitates market competition by lowering entry barrier.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Discussion</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Key Findings and Implications</head><p>In this research, we show the evidence that the introduction of IT-enabled monitoring systems can lower the employers' preference for contractors with high-reputation, increase employer surplus and facilitate market competition. Our estimation results are based on a quasi-natural experiment design with fixedprice projects as the control group and hourly projects as the treatment group. The results of our DID models and the Linear Probability Model suggest that after the monitoring system was introduced, employers are less willing to pay the premiums for the high reputation in Effort at Work, and thus enjoy a higher surplus. This finding implies that there exists a partial substitution relationship between the monitoring system and the reputation system. Moreover, our results also show that the introduction of IT-enabled monitoring systems facilitates competition by attracting more inexperienced contractors to bid for the projects.</p><p>Additionally, our study also contributes to several strands in the online labor market literature. First, our study is the first large-scale empirical research to examine the effect of IT-enabled monitoring systems on both the demand and supply side of an online labor market. Unlike the previous literature mainly examining the effect of monitoring system within a firm <ref type="bibr" target="#b27">(Gopal and Koka 2010)</ref> or one location <ref type="bibr" target="#b44">(Pierce et al. 2015)</ref>, our large dataset can be leveraged to test the influence of the monitoring system on the whole online labor market within a certain platform. Such an advantage enables us to identify the ripple effect of the IT-enabled monitoring system on the market structure. Second, our study extends previous research on the effect of reputation systems in digital platforms. According to the previous literature on reputation systems, reputation acts as a signal of contractors' future performance <ref type="bibr" target="#b5">(Banker and Hwang 2008)</ref>, and motivates contractors to spend more effort <ref type="bibr" target="#b33">(Horton and Golden 2015)</ref>. However, our results suggest that its effect can be partially substituted by the IT-enabled monitoring system, which alleviates moral hazard by efficiently providing more precise information about contractors' effort <ref type="bibr" target="#b1">(Agrawal et al. 2014;</ref><ref type="bibr" target="#b44">Pierce et al. 2015)</ref>. This implies that future research on reputation systems should also take the availability of monitoring systems as a critical contingency factor. Third, this research suggests that the impact of ITenabled monitoring systems is not limited to mitigating moral hazard problems and improving agents' productivity <ref type="bibr" target="#b17">(Duflo et al. 2012)</ref>. In this study, we show that the IT-enabled monitoring systems can help to reduce agency costs, raise employer surplus, and facilitate market competition. Therefore, our finding implies that IT artifacts can have a prominent effect on the market structure.</p><p>Our study has several important implications. First, this study has implications for the stream of online labor market literature by exploiting a quasi-experiment methodology. Different from the previous literature using the Heckman selection model to address the endogeneity problems <ref type="bibr" target="#b27">(Gopal and Koka 2010)</ref>, we employ a quasi-experiment and investigate the effect of IT-enabled monitoring system on both the demand and supply sides. The DID model doesn't only have the advantage of controlling for selfselection bias, but also well address the time-series heterogeneity issue <ref type="bibr">(Xue et al. 2011)</ref>. Therefore, our quasi-natural experiment approach allows us to provide a full picture of the impact of IT-enabled monitoring system on both the demand and supply sides. Second, our research provides some managerial implications to the platform design of online labor markets. There is a large body of research suggesting that the reputation system helps to mitigate moral hazard by acting as both a stimulus for high effort <ref type="bibr" target="#b33">(Horton and Golden 2015)</ref> and a sanctioning mechanism <ref type="bibr" target="#b10">(Dellarocas 2006)</ref>. Meanwhile, the monitoring system is also found to be highly effective in improving agents' performance <ref type="bibr" target="#b17">(Duflo et al. 2012</ref>). However, our study suggests that there exists a partial substitution relationship between these mechanisms. Hence, our study deepens our understanding of the optimal design of online labor markets <ref type="bibr">(Hong et al. 2015</ref>) by emphasizing the potential interaction effect between the reputation systems and monitoring systems. Finally, our study suggests that monitoring systems lower the entry barrier for inexperienced contractors and help to address the "cold-start" problem at online labor markets <ref type="bibr">(Pallais 2014)</ref>, which provides valuable practical implications.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Limitations and Further Research</head><p>We acknowledge a number of limitations of this research, which opens up avenues for future research. First, we note that complete data on the actual employer monitoring behavior is not available. However, considering there might be only part of the employers adopting the IT-enabled monitoring system, our estimated effect of the IT-enabled monitoring system tend to be conservative. Second, due to data limitations, our research only tested the effect of the IT-enabled monitoring system on the hourly contract market by using the observational data from only one particular crowdsourcing platform. Even though our platform is one of the largest crowdsourcing platforms all over the world, the effect of monitoring systems might still vary as the usefulness and ease-of-use of monitoring systems or platform characteristics change. Further research should retest our hypotheses under the context of other platforms or other monitoring systems. Finally, we only focused on testing the effect of IT-enabled monitoring system on the employer preference and contractors' bidding behaviors. Future research could collect the reviews and ratings data corresponding to these awarded projects in order to explore the effect of the IT-enabled monitoring system on the project final performance.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head>Table 1 Definitions and Summary Statistics of Related Variables</head><label>1</label><figDesc></figDesc><table><row><cell>Variable</cell><cell>Variable definition</cell><cell>Mean</cell><cell>Sd</cell><cell>Min</cell><cell>Max</cell></row><row><cell>Num_Bid</cell><cell>Total number of bids received by the project</cell><cell>13.22</cell><cell>16.87</cell><cell>1</cell><cell>196</cell></row><row><cell>Budget_Min</cell><cell>The minimum budget set by the employer</cell><cell>93.46</cell><cell>933.14</cell><cell>2</cell><cell>75000</cell></row><row><cell>Budget_Max</cell><cell>The maximum budget set by the employer</cell><cell cols="3">262.34 2181.88 2</cell><cell>150000</cell></row><row><cell></cell><cell>A dummy variable(0,1), =1 if the</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Employer_Developed</cell><cell>employer comes from a developed</cell><cell>0.73</cell><cell>0.45</cell><cell>0</cell><cell>1</cell></row><row><cell></cell><cell>country</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Project_title_length</cell><cell>Number of characters in the project title</cell><cell>5.18</cell><cell>3.12</cell><cell>1</cell><cell>43</cell></row><row><cell>Desc Length</cell><cell>The length of project description</cell><cell>87.14</cell><cell>86.88</cell><cell>6</cell><cell>2222</cell></row><row><cell>Num_Employerreview</cell><cell>Total number of reviews received by employers</cell><cell>47.07</cell><cell>107.54</cell><cell>0</cell><cell>1686</cell></row><row><cell>Employer_Rating</cell><cell>Average rating score received by the employer</cell><cell>4.91</cell><cell>0.44</cell><cell>0</cell><cell>5</cell></row><row><cell></cell><cell>A dummy variable(0,1), =1 if the</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>NDA</cell><cell>employer and the bidder have assigned a NDA contract to protect the</cell><cell>0</cell><cell>0.06</cell><cell>0</cell><cell>1</cell></row><row><cell></cell><cell>employer's right</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Featured</cell><cell>A dummy variable(0,1), =1 if the project is a featured project</cell><cell>0.01</cell><cell>0.08</cell><cell>0</cell><cell>1</cell></row><row><cell cols="2">5 https://en.wikipedia.org/wiki/Freelancer.com</cell><cell></cell><cell></cell><cell></cell><cell></cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1"><head>Table 2 . Definitions and Summary Statistics of User-level Variables</head><label>2</label><figDesc></figDesc><table><row><cell>Variable</cell><cell></cell><cell cols="2">Variable definition</cell><cell>Mean</cell><cell>SD</cell><cell>Min</cell><cell>Max</cell></row><row><cell>User_hourly_rate</cell><cell cols="3">Hourly rate set by the contractor</cell><cell>7.95</cell><cell cols="2">22.70 0.00</cell><cell>1500.00</cell></row><row><cell>User_avg_rating</cell><cell>Average</cell><cell>overall</cell><cell>employer-entered</cell><cell>7.56</cell><cell cols="2">4.04 0.00</cell><cell>10.00</cell></row><row><cell></cell><cell cols="3">ratings for the contractor</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>User_earnings</cell><cell cols="3">An earnings proxy provided by</cell><cell>0.08</cell><cell cols="2">0.48 0.00</cell><cell>8.84</cell></row><row><cell></cell><cell cols="3">Freelancer, which increases as projects</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell cols="3">are completed and paid by the employer</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell cols="2">in Freelancer</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>User_tenure_month</cell><cell cols="3">Contractor's tenure at Freelancer</cell><cell>34.67</cell><cell cols="2">30.91 1.00</cell><cell>201.00</cell></row><row><cell></cell><cell cols="2">measured in months</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell cols="4">User_belong_company A dummy variable(0,1), =1 if the</cell><cell>0.47</cell><cell cols="2">0.50 0.00</cell><cell>1.00</cell></row><row><cell></cell><cell cols="3">contractor was hired by a company</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell>before</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>User_developed</cell><cell cols="3">A dummy variable(0,1), =1 if the</cell><cell>0.25</cell><cell cols="2">0.43 0.00</cell><cell>1.00</cell></row><row><cell></cell><cell cols="3">contractor comes from a developed</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell>country</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Quality</cell><cell cols="3">Average quality rating given by all the</cell><cell>4.81</cell><cell>0.54</cell><cell>1.00</cell><cell>5.00</cell></row><row><cell></cell><cell cols="3">employers (ranging from 0 to 5)</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Communication</cell><cell cols="3">Average communication rating given by</cell><cell>4.82</cell><cell>0.55</cell><cell>0.00</cell><cell>5.00</cell></row><row><cell></cell><cell cols="3">all the employers (ranging from 0 to 5)</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Expertise</cell><cell cols="3">Average expertise rating given by all the</cell><cell>4.80</cell><cell>0.55</cell><cell>0.00</cell><cell>5.00</cell></row><row><cell></cell><cell cols="3">employers (ranging from 0 to 5)</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Professionalism</cell><cell cols="3">Average professionalism rating given by</cell><cell>4.83</cell><cell>0.55</cell><cell>0.00</cell><cell>5.00</cell></row><row><cell></cell><cell cols="3">all the employers (ranging from 0 to 5)</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Hire-again rating</cell><cell cols="3">Average hire-again rating given by all</cell><cell>4.81</cell><cell cols="2">0.58 0.00</cell><cell>5.00</cell></row><row><cell></cell><cell cols="3">the employers (ranging from 0 to 5)</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Completion_rate</cell><cell cols="3">Percentage of awarded projects which</cell><cell>0.87</cell><cell>0.21</cell><cell>0.02</cell><cell>1.00</cell></row><row><cell></cell><cell cols="3">were successfully completed</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Overall</cell><cell>Average</cell><cell>overall</cell><cell>employer-entered</cell><cell>4.81</cell><cell>0.52</cell><cell>1.00</cell><cell>5.00</cell></row><row><cell></cell><cell cols="3">ratings for the contractor</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Review_count</cell><cell cols="3">Total number of reviews which were</cell><cell>12.40</cell><cell cols="2">50.51 1.00</cell><cell>3853.00</cell></row><row><cell></cell><cell cols="3">written by previous employers</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell cols="4">Milestone_percentage A special feature at Freelancer, which</cell><cell>73.28</cell><cell cols="2">40.70 0.00</cell><cell>120.00</cell></row><row><cell></cell><cell cols="3">increases as projects are completed, the</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell cols="3">controlled payments have been received</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell cols="3">by the contractors at Freelancer</cell><cell></cell><cell></cell><cell></cell><cell></cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2"><head>Table 3 Estimation Results of the Linear Probability Model</head><label>3</label><figDesc></figDesc><table><row><cell>Variable</cell><cell>Sub-group</cell><cell>Project_awarded</cell></row><row><cell></cell><cell>Fixed_price, Before</cell><cell>0.002***(0.000)</cell></row><row><cell>Quality_of_contractor</cell><cell>Fixed_price, After Hourly, Before</cell><cell>0.002***(0.001) 0.002***(0.000)</cell></row><row><cell></cell><cell>Hourly, After</cell><cell>0.002***(0.001)</cell></row><row><cell></cell><cell>Fixed_price, Before</cell><cell>0.009***(0.001)</cell></row><row><cell>Effort_at_work</cell><cell>Fixed_price, After Hourly, Before</cell><cell>0.012***(0.001) 0.013***(0.002)</cell></row><row><cell></cell><cell>Hourly, After</cell><cell>0.008***(0.002)</cell></row><row><cell></cell><cell>Fixed_price, Before</cell><cell>-0.007***(0.001)</cell></row><row><cell>Price_premium</cell><cell>Fixed_price, After</cell><cell>-0.003***(0.001)</cell></row><row><cell></cell><cell>Hourly, Before</cell><cell>-0.002** (0.001)</cell></row><row><cell></cell><cell>Hourly, After</cell><cell>-0.005***(0.001)</cell></row><row><cell>Log_b_count_rating</cell><cell></cell><cell>0.008***(0.001)</cell></row><row><cell>User_developed</cell><cell></cell><cell>0.027***(0.003)</cell></row><row><cell cols="2">Log_milestone_percentage</cell><cell>-0.009***(0.001)</cell></row><row><cell>User_belong_company</cell><cell></cell><cell>0.005***(0.001)</cell></row><row><cell cols="2">Log_bidder_tenure_month</cell><cell>-0.004***(0.001)</cell></row><row><cell>Log_bidder_rank</cell><cell></cell><cell>-0.012***(0.001)</cell></row><row><cell>Log_bid_order_rank</cell><cell></cell><cell>0.016***(0.001)</cell></row><row><cell>Log_b_hourly_rate</cell><cell></cell><cell>-0.006***(0.001)</cell></row><row><cell>Intercept</cell><cell></cell><cell>0.125***(0.007)</cell></row><row><cell>N</cell><cell></cell><cell>161,994</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_3"><head>Table 4 Differences-in-Differences Estimations of the Impact of the IT- enabled Monitoring System on Employer Surplus</head><label>4</label><figDesc></figDesc><table><row><cell>Dependent Variable</cell><cell>Price_premium</cell><cell>Employer_surplus</cell></row><row><cell>Hourly</cell><cell>-0.333***(0.028)</cell><cell>0.277***(0.012)</cell></row><row><cell>After</cell><cell>0.112***(0.031)</cell><cell>-0.017* (0.009)</cell></row><row><cell>Hourly *After</cell><cell>-0.241***(0.043)</cell><cell>0.031** (0.015)</cell></row><row><cell>Log_paid_amount</cell><cell>0.166***(0.012)</cell><cell>-0.127***(0.005)</cell></row><row><cell>Log_bid_count</cell><cell>0.355***(0.012)</cell><cell>0.048***(0.004)</cell></row><row><cell>Log_budget_max</cell><cell>-0.140***(0.015)</cell><cell>0.193***(0.006)</cell></row><row><cell>Language_en</cell><cell>0.023 (0.035)</cell><cell>0.004 (0.015)</cell></row><row><cell>Log_title_length</cell><cell>-0.025 (0.017)</cell><cell>0.012* (0.007)</cell></row><row><cell>Log_preview_desc_length</cell><cell>-0.006 (0.014)</cell><cell>0.012** (0.006)</cell></row><row><cell>Log_employer_overall_rating</cell><cell>-0.004 (0.011)</cell><cell>0.006 (0.004)</cell></row><row><cell>Log_employer_reviews_count</cell><cell>0.025***(0.007)</cell><cell>-0.012***(0.003)</cell></row><row><cell>Log_employer_tenure_month</cell><cell>-0.019 (0.017)</cell><cell>0.007 (0.006)</cell></row><row><cell>Employer_developed</cell><cell>-0.082***(0.024)</cell><cell>0.031***(0.009)</cell></row><row><cell>Intercept</cell><cell>0.090 (0.077)</cell><cell>-0.364***(0.030)</cell></row><row><cell>N</cell><cell>26,390</cell><cell>26,390</cell></row><row><cell>Adj R-squared</cell><cell></cell><cell></cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_4"><head>Table 5 Differences-in-Differences Estimations of the Impact of the IT-enabled Monitoring System on Num_Bids</head><label>5</label><figDesc></figDesc><table><row><cell>Dependent Variable</cell><cell cols="2">Log_ Num_Bids</cell></row><row><cell>After</cell><cell cols="2">0.088*** (0.021)</cell></row><row><cell>Hourly</cell><cell>-0.023</cell><cell>(0.023)</cell></row><row><cell>Hourly * After</cell><cell cols="2">0.160*** (0.032)</cell></row><row><cell>Log_paid_amount</cell><cell cols="2">-0.026*** (0.007)</cell></row><row><cell>Log_budget_max</cell><cell cols="2">0.155*** (0.009)</cell></row><row><cell>Language_en</cell><cell cols="2">0.291*** (0.030)</cell></row><row><cell>Log_title_length</cell><cell cols="2">0.118*** (0.014)</cell></row><row><cell>Log_preview_desc_length</cell><cell cols="2">0.326*** (0.013)</cell></row><row><cell>Intercept</cell><cell cols="2">-1.233*** (0.068)</cell></row><row><cell>N</cell><cell>26,390</cell><cell></cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_5"><head>Table 6 Estimates of ATT in the Matched Sample</head><label>6</label><figDesc></figDesc><table><row><cell cols="2">Matching algorithms</cell><cell></cell><cell>Price_premium</cell><cell>Employer_surplus</cell><cell>Log_Num_bids</cell></row><row><cell>One-to-one replacement</cell><cell>Matching,</cell><cell>with</cell><cell>-0.229***(0.053)</cell><cell>0.037** (0.017)</cell><cell>0.098***(0.034)</cell></row><row><cell cols="3">Radius Matching, caliper(0.10)</cell><cell>-0.135***(0.028)</cell><cell>0.028** (0.012)</cell><cell>0.130***(0.023)</cell></row><row><cell cols="2">Kernel Matching, caliper(0.10)</cell><cell></cell><cell>-0.137***(0.028)</cell><cell>0.028** (0.012)</cell><cell>0.126***(0.023)</cell></row><row><cell cols="3">Note: * p&lt;0.1, ** p&lt;0.05, *** p&lt;0.01.</cell><cell></cell><cell></cell><cell></cell></row></table></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="1" xml:id="foot_0"><p>https://www.freelancer.com/about</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="2" xml:id="foot_1"><p>http://blog.freelancersunion.org/2014/05/13/hourly-rate-or-project-fee-what-makes-freelancers-more-money/</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="3" xml:id="foot_2"><p>http://www.forbes.com/sites/groupthink/2014/10/21/the-next-big-thing-in-e-commerce-online-labormarketplaces/#5f62eb9c6117</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="6" xml:id="foot_3"><p>Based on our review data, the average rating of each contractor is almost constant during our observational period. Therefore, we didn't treat the contractor rating as a time-variant variable here.</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="7" xml:id="foot_4"><p>Quality of work, communication, expertise, professionalism, would hire again rating items are mainly loaded on the Quality of Contractor component. Additionally, the completion rate item is mainly loaded on the Effort at Work component.</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="8" xml:id="foot_5"><p>Based on the summary statistics of our sample, there are 35.35% projects whose awarded prices are equal to the maximums of budgets. Hence, we believe that the maximum of project budget is a reasonable proxy for employer's Willingness To Pay (WTP). Moreover, since the maximum of the project budget is usually higher than the maximums of bid price in our sample, employer surplus with respect to the maximums of budget actually is a more conservative measure than the surplus with respect to the maximums of bids.</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="9" xml:id="foot_6"><p>The IT-enabled monitoring system has been introduced since August 2 nd , 2015. Since this monitoring system is imperative for all the hourly contractors and usually there is a time lag between project submission date and award date, we consider the "After" of those projects posted after August 2 nd is equal to 1. We also tried to label "After" as 1 if the projects were posted after September 1 st , the result is still highly consistent. Our conclusions remain robust if we adopt different time dummies.</p></note>
+		</body>
+		<back>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<monogr>
+		<author>
+			<persName><forename type="first">A</forename><surname>Agrawal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Horton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Lacetera</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Lyons</surname></persName>
+		</author>
+		<title level="m">Digitization and the contract labor market: A research agenda</title>
+		<imprint>
+			<publisher>National Bureau of Economic Research</publisher>
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<monogr>
+		<title level="m" type="main">Does Standardized Information in Online Markets Disproportionately Benefit Job Applicants from Less Developed Countries?</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Agrawal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Lacetera</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Lyons</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Monitoring and pay</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Allgulin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Ellingsen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Labor Economics</title>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="201" to="216" />
+			<date type="published" when="2002">2002</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Incentives versus transaction costs: A theory of procurement contracts</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Bajari</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Tadelis</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">RAND Journal of Economics</title>
+		<imprint>
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="387" to="407" />
+			<date type="published" when="2001">2001</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Reputation effects and the limits of contracting: A study of the Indian software industry</title>
+		<author>
+			<persName><forename type="first">A V</forename><surname>Banerjee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Duflo</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The Quarterly Journal of Economics</title>
+		<imprint>
+			<biblScope unit="volume">115</biblScope>
+			<biblScope unit="page" from="989" to="1017" />
+			<date type="published" when="2000">2000</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Importance of Measures of Past Performance: Empirical Evidence on Quality of e-Service Providers</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">D</forename><surname>Banker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Hwang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Contemporary Accounting Research</title>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="307" to="337" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<monogr>
+		<title level="m" type="main">How much should we trust differences-indifferences estimates?</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Bertrand</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Duflo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Mullainathan</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2002">2002</date>
+			<publisher>National Bureau of Economic Research</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Pchnology, Organization, and the Demand for Skilled Labor</title>
+		<author>
+			<persName><forename type="first">Timothy</forename><forename type="middle">F</forename><surname>Bresnahan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Erik</forename><surname>Brynjolfsson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lorin</forename><forename type="middle">M</forename><surname>Hitt</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">The new relationship: Human capital in the American corporation</title>
+		<imprint>
+			<date type="published" when="2002">2002</date>
+			<biblScope unit="page">145</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">An empirical analysis of contract structures in IT outsourcing</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Bharadwaj</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="484" to="506" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Making the decision to contract for cloud services: managing the risk of an extreme form of IT outsourcing</title>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">K</forename><surname>Clemons</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Chen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">System Sciences (HICSS), the 44th Hawaii International Conference on</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2011">2011. 2011</date>
+			<biblScope unit="page" from="1" to="10" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Reputation mechanisms</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Dellarocas</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Handbook on Economics and Information Systems</title>
+		<imprint>
+			<date type="published" when="2006">2006</date>
+			<biblScope unit="page" from="629" to="660" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">The role of private equity group reputation in LBO financing</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Demiroglu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">M</forename><surname>James</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Financial Economics</title>
+		<imprint>
+			<biblScope unit="volume">96</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="306" to="330" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Information technology and firm boundaries: Impact on firm risk and return performance</title>
+		<author>
+			<persName><forename type="first">Sanjeev</forename><surname>Dewan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fei</forename><surname>Ren</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<imprint>
+			<biblScope unit="volume">22</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="369" to="388" />
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Design and analysis of contracts for software outsourcing</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Dey</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Fan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Zhang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<imprint>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="93" to="114" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Reputation acquisition in debt markets</title>
+		<author>
+			<persName><forename type="first">Douglas</forename><forename type="middle">W</forename><surname>Diamond</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The Journal of Political Economy</title>
+		<imprint>
+			<biblScope unit="volume">97</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="828" to="862" />
+			<date type="published" when="1989">1989</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Monitoring and reputation: The choice between bank loans and directly placed debt</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">W</forename><surname>Diamond</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of political Economy</title>
+		<imprint>
+			<biblScope unit="volume">99</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="689" to="721" />
+			<date type="published" when="1991">1991</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Incentives, pay, and performance: a study of Australian employees</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Drago</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Applied Economics</title>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="issue">9</biblScope>
+			<biblScope unit="page" from="1433" to="1446" />
+			<date type="published" when="1991">1991</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Incentives work: Getting teachers to come to school</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>Duflo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Hanna</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">P</forename><surname>Ryan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The American Economic Review</title>
+		<imprint>
+			<biblScope unit="volume">102</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="1241" to="1278" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Agency theory: An assessment and review</title>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">M</forename><surname>Eisenhardt</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Academy of management review</title>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="57" to="74" />
+			<date type="published" when="1989">1989</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Reputation and uncertainty Toward an explanation of quality problems in competitive LDC markets</title>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">S</forename><surname>Esfahani</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Development Economics</title>
+		<imprint>
+			<biblScope unit="volume">35</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="1" to="32" />
+			<date type="published" when="1991">1991</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">The trade-off between supervision and wages: evidence of efficiency wages from the NLSY</title>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">T</forename><surname>Ewing</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">E</forename><surname>Payne</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Southern Economic Journal</title>
+		<imprint>
+			<biblScope unit="volume">66</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="424" to="432" />
+			<date type="published" when="1999">1999</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Time, salary, and incentive payoffs in labor contracts</title>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">F</forename><surname>Fama</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Labor Economics</title>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="25" to="44" />
+			<date type="published" when="1991">1991</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<monogr>
+		<author>
+			<persName><forename type="first">C</forename><surname>Fombrun</surname></persName>
+		</author>
+		<title level="m">Reputation</title>
+		<imprint>
+			<publisher>Wiley Online Library</publisher>
+			<date type="published" when="1996">1996</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Business familiarity as risk mitigation in software development outsourcing contracts</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Gefen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Wyss</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Lichtenstein</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="531" to="551" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Matching platforms and HIV incidence: An empirical investigation of race, gender, and socioeconomic status</title>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">N</forename><surname>Greenwood</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Agarwal</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Science</title>
+		<imprint>
+			<biblScope unit="volume">62</biblScope>
+			<biblScope unit="issue">8</biblScope>
+			<biblScope unit="page" from="2281" to="2303" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<monogr>
+		<title level="m" type="main">Does Information Really&apos;Unravel&apos;? Understanding Factors That Motivate Sellers to Seek Third-Party Certifications in an Online Labor Market</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Goes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Lin</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2012-11-01">2012. November 1, 2012</date>
+			<biblScope unit="page" from="12" to="12" />
+		</imprint>
+		<respStmt>
+			<orgName>NET Institute Working Paper</orgName>
+		</respStmt>
+	</monogr>
+	<note>Understanding Factors That Motivate Sellers to Seek Third-Party Certifications in an Online Labor Market</note>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Research Note-On Vendor Preferences for Contract Types in Offshore Software Projects: The Case of Fixed Price vs. Time and Materials Contracts</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Gopal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Sivaramakrishnan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="202" to="220" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">The role of contracts on quality and returns to quality in offshore software development outsourcing</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Gopal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Koka</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Decision Sciences</title>
+		<imprint>
+			<biblScope unit="volume">41</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="491" to="516" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">Linear probability models of the demand for attributes with an empirical application to estimating the preferences of legislators</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">J</forename><surname>Heckman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">M</forename><surname>Snyder</surname><genName>Jr</genName></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">RAND Journal of Economics</title>
+		<imprint>
+			<biblScope unit="page" from="142" to="S189" />
+			<date type="published" when="1997">1997</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">Information technology and firm boundaries: Evidence from panel data</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Hitt</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="134" to="149" />
+			<date type="published" when="1999">1999</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">Matching as nonparametric preprocessing for reducing model dependence in parametric causal inference</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">E</forename><surname>Ho</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Imai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>King</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">A</forename><surname>Stuart</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Political Analysis</title>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="199" to="236" />
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">Is the World Truly &apos;Flat&apos;? Empirical Evidence from Online Labor Markets</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Hong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">A</forename><surname>Pavlou</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Empirical Evidence from Online Labor Markets. Fox School of Business Research Paper</title>
+		<imprint>
+			<biblScope unit="page" from="15" to="045" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Comparing Open and Sealed Bid Auctions: Evidence from Online Labor Markets</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Hong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">A</forename><surname>Pavlou</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="49" to="69" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">Supply Constraints as a Market Friction: Evidence from an Online Labor Market</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">J</forename><surname>Horton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">J</forename><surname>Horton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">M</forename><surname>Golden</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">N</forename><surname>Hubbard</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Quarterly Journal of Economics</title>
+		<imprint>
+			<biblScope unit="volume">115</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="533" to="560" />
+			<date type="published" when="2000">2015. 2015. 2000</date>
+		</imprint>
+	</monogr>
+	<note>The demand for monitoring technologies: the case of trucking</note>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title level="a" type="main">Effectiveness of Reputation in Contracting for Customized Production: Evidence from Online Labor Markets</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Viswanathan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Science</title>
+		<imprint>
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+	<note>forthcoming</note>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">Friendships in online peer-to-peer lending: Pipes, prisms, and relational herding</title>
+		<author>
+			<persName><forename type="first">De</forename><surname>Liu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Mis Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">39</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="729" to="742" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">Price, quality, and reputation: Evidence from an online field experiment</title>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">Z</forename><surname>Jin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Kato</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The RAND Journal of Economics</title>
+		<imprint>
+			<biblScope unit="volume">37</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="983" to="1005" />
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<monogr>
+		<title level="m" type="main">Surviving and Thriving in the Online Labor Markets: A Geoeconomic Analysis</title>
+		<author>
+			<persName><forename type="first">I</forename><surname>Kanat</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Hong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">S</forename><surname>Raghu</surname></persName>
+		</author>
+		<idno>SSRN 2701471</idno>
+		<imprint>
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<analytic>
+		<title level="a" type="main">Reputation Transferability in Online Labor Markets</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Kokkodis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">G</forename><surname>Ipeirotis</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Science</title>
+		<imprint>
+			<biblScope unit="volume">62</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="1687" to="1706" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<analytic>
+		<title level="a" type="main">Carrots and sticks: Pay, supervision and turnover</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">S</forename><surname>Leonard</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">National Bureau of Economic Research</title>
+		<imprint>
+			<date type="published" when="1987">1987</date>
+			<pubPlace>Cambridge, Mass., USA</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<analytic>
+		<title level="a" type="main">An empirical analysis of the contractual and information structures of business process outsourcing relationships</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Mani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Barua</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">B</forename><surname>Whinston</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="618" to="634" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<analytic>
+		<title level="a" type="main">Determinants and outcomes of internet banking adoption</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Xue</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Hitt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Chen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management science</title>
+		<imprint>
+			<biblScope unit="volume">57</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="291" to="307" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+	<analytic>
+		<title level="a" type="main">Doing business with strangers: Reputation in online service marketplaces</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Moreno</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Terwiesch</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="865" to="886" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b43">
+	<analytic>
+		<title level="a" type="main">Inefficient hiring in entry-level labor markets</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Pallais</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The American Economic Review</title>
+		<imprint>
+			<biblScope unit="volume">104</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="3565" to="3599" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b44">
+	<analytic>
+		<title level="a" type="main">Cleaning house: The impact of information technology monitoring on employee theft and productivity</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Pierce</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">C</forename><surname>Snow</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Mcafee</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Science</title>
+		<imprint>
+			<biblScope unit="volume">61</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page" from="2299" to="2319" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b45">
+	<analytic>
+		<title level="a" type="main">Contracting for collaborative services</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Roels</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">U</forename><forename type="middle">S</forename><surname>Karmarkar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Carr</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Science</title>
+		<imprint>
+			<biblScope unit="volume">56</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="849" to="863" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b46">
+	<analytic>
+		<title level="a" type="main">Equilibrium unemployment as a worker discipline device</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Shapiro</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">E</forename><surname>Stiglitz</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The American Economic Review</title>
+		<imprint>
+			<biblScope unit="volume">74</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="433" to="444" />
+			<date type="published" when="1984">1984</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b47">
+	<analytic>
+		<title level="a" type="main">Contract performance in offshore systems development: Role of control mechanisms</title>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">C</forename><surname>Srivastava</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">S</forename><surname>Teo</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Management Information Systems</title>
+		<imprint>
+			<biblScope unit="volume">29</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="115" to="158" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b48">
+	<analytic>
+		<title level="a" type="main">A transaction cost perspective of the</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Susarla</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Barua</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">B</forename><surname>Whinston</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Management Information Systems</title>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="205" to="240" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+	<note>Software as a Service&quot; business model</note>
+</biblStruct>
+
+<biblStruct xml:id="b49">
+	<monogr>
+		<author>
+			<persName><forename type="first">A</forename><surname>Susarla</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Krishnan</surname></persName>
+		</author>
+		<title level="m">Contracting in the Shadow of the Future</title>
+		<imprint>
+			<date type="published" when="2014">2014. 1975215</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b50">
+	<analytic>
+		<title level="a" type="main">Value Uncertainty and Buyer Contracting: Evidence from Online Labor Markets</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Zheng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Hong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Pavlou</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the International Conference on Information Systems</title>
+		<meeting>the International Conference on Information Systems<address><addrLine>Dallas, TX</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

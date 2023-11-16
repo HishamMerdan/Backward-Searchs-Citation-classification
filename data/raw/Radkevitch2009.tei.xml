@@ -1,0 +1,1092 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Portfolios of buyer-supplier exchange relationships in an online marketplace for IT services</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+				<date type="published" when="2009-05-20">20 May 2009</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Uladzimir</forename><surname>Radkevitch</surname></persName>
+							<email>uradkevitch@rsm.nl</email>
+							<affiliation key="aff0">
+								<orgName type="department">Department of Decision and Information Sciences</orgName>
+								<orgName type="institution">RSM Erasmus University</orgName>
+								<address>
+									<postBox>P.O. Box 1738</postBox>
+									<postCode>3000 DR</postCode>
+									<settlement>Rotterdam</settlement>
+									<country key="NL">The Netherlands</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Eric</forename><surname>Van Heck</surname></persName>
+							<email>evanheck@rsm.nl</email>
+							<affiliation key="aff0">
+								<orgName type="department">Department of Decision and Information Sciences</orgName>
+								<orgName type="institution">RSM Erasmus University</orgName>
+								<address>
+									<postBox>P.O. Box 1738</postBox>
+									<postCode>3000 DR</postCode>
+									<settlement>Rotterdam</settlement>
+									<country key="NL">The Netherlands</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Otto</forename><surname>Koppius</surname></persName>
+							<email>okoppius@rsm.nl</email>
+							<affiliation key="aff0">
+								<orgName type="department">Department of Decision and Information Sciences</orgName>
+								<orgName type="institution">RSM Erasmus University</orgName>
+								<address>
+									<postBox>P.O. Box 1738</postBox>
+									<postCode>3000 DR</postCode>
+									<settlement>Rotterdam</settlement>
+									<country key="NL">The Netherlands</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Portfolios of buyer-supplier exchange relationships in an online marketplace for IT services</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date type="published" when="2009-05-20">20 May 2009</date>
+						</imprint>
+					</monogr>
+					<idno type="MD5">29CA1DFCF5F434780EB77E995014EC3E</idno>
+					<idno type="DOI">10.1016/j.dss.2009.05.007</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.7.3" ident="GROBID" when="2023-06-16T09:24+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>Online markets IT services Buyer-supplier relationships Reverse auctions Portfolios of relationships</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Most studies on the role of IT for economic exchange predicted that under a given set of exchange attributes buyers would choose a certain mode of relationship with suppliers. Our study of an online IT services marketplace revealed that buyers do not have a single, uniformly preferred type of relationship, but rather maintain a portfolio of relationships. Furthermore, different buyers arrange their portfolios of exchange relationships in different ways. We found four clusters of buyers' portfolios of relationships labeled Transactional buyers, Recurrent buyers, Small diversifiers and Large diversifiers, that differ in their usage of auction or negotiation mechanism, their supplier relations as well as their usage of preferred suppliers. Our results thus paint a richer picture of how buyers organize their supplier networks online.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.">Introduction</head><p>There are different perspectives on how IT shapes the way buyers deal with suppliers. These perspectives cover an entire spectrum of buyer-supplier relationships from distant and arms-length to closely intertwined and collaborative <ref type="bibr" target="#b11">[12,</ref><ref type="bibr" target="#b25">26,</ref><ref type="bibr" target="#b27">28]</ref>. Early transaction costs analysis of electronic markets and hierarchies saw the main effect of IT as reducing coordination costs of exchange by decreasing asset specificity and complexity of product description <ref type="bibr" target="#b27">[28]</ref>. In a number of exchange situations, IT was predicted to initiate a shift from hierarchical governance of transactions towards market procurement of goods from independent suppliers.</p><p>A different set of arguments focused on explicit coordination of market transactions, which is costly due to the efforts needed to control transaction risks <ref type="bibr" target="#b11">[12]</ref>. IT lowers the costs of explicit coordination by decreasing the specificity of assets required for explicit coordination and diminishing the costs of monitoring. The result is a trend towards long-term outsourcing relationships with a limited number of suppliers, rather than arms-length or hierarchical governance <ref type="bibr" target="#b11">[12]</ref>. A complementary approach stressed the importance of suppliers' investments into non-contractible attributes of exchange, such as quality, supplier responsiveness, information sharing and innovation that are needed to create value in many exchange situations <ref type="bibr" target="#b2">[3,</ref><ref type="bibr" target="#b3">4]</ref>. The supplier is likely to make such investments only when he can expect to appropriate part of the resulting value, which is less likely to happen when buyer plays a large number of suppliers against one another. As a result, in situations where the effect of noncontractible attributes is important for value creation, limiting the number of suppliers to few "partners" is the best strategy <ref type="bibr" target="#b2">[3,</ref><ref type="bibr" target="#b3">4]</ref>.</p><p>Empirical studies into this debate have found mixed results that suggest that in practice, the effects of IT on economic exchange are more nuanced. For instance, Holland and Lockett found that rather than sticking exclusively to market or hierarchical governance, firms use both modes in parallel with several exchange partners, and the degree to which one mode prevails depends on market complexity and asset specificity involved <ref type="bibr" target="#b20">[21]</ref>. This suggests that it may be fruitful to look at the portfolio of supplier relationships maintained by a buyer. In our study we aim to further this line of inquiry by investigating an online market for IT services, to see if even in this almost perfect market setting, we still find added value from a portfolio approach.</p><p>A new impulse into the discussion on the role of suppliers in exchange relationships resulted from the recent wide-spread adoption of online reverse auctions in corporate procurement. A reverse auction is an auction, where suppliers bid for fulfilling buyer's contract <ref type="bibr" target="#b21">[22]</ref>. Reverse auctions enable buyers to boost competition among suppliers and considerably cut contract prices as a result <ref type="bibr" target="#b5">[6]</ref>. What consequences this has for buyer-supplier relationships is subject of hot debate. Not surprisingly, the party that suffers from the new procurement practice is incumbent suppliers: a number of studies report incumbent suppliers losing their buyer accounts to aggressive new suppliers <ref type="bibr" target="#b14">[15,</ref><ref type="bibr" target="#b22">23]</ref>. Reverse auctions do not seem to contribute to good buyer-supplier relationships neither with incumbent suppliers nor with the new onesboth types report increased suspicions of buyer opportunism after taking part in reverse auctions <ref type="bibr" target="#b22">[23]</ref>. For the buyer, instead of savings, switching to a new, barely known supplier may result in problems with contract execution, e.g. low quality level <ref type="bibr" target="#b14">[15,</ref><ref type="bibr" target="#b39">40]</ref>.</p><p>However, other evidence shows that auctions do not necessarily harm buyer-supplier relationships but can be used as a part of sourcing strategy that involves other considerations beyond purchasing price reduction. Jap suggests that buyers often use reverse auctions as a "wake-up call to the complacent supplier base" rather than to obtain a lower price <ref type="bibr" target="#b21">[22]</ref> and can allocate long-term contracts via reverse auctions <ref type="bibr" target="#b13">[14]</ref>. According to recent studies, incumbent suppliers are much more likely to win contracts than new suppliers and also enjoy price premiums over the latter <ref type="bibr" target="#b13">[14,</ref><ref type="bibr" target="#b44">45]</ref>.</p><p>The diverse results of the studies on the effect of reverse auctions on buyer-supplier exchange relationships highlight the lack of a comprehensive picture. In particular, systematic evidence is needed on how buyers use reverse auctions over multiple transactions <ref type="bibr" target="#b23">[24]</ref>. Literature calls for more research in similar directions. For instance, Pinker et al. <ref type="bibr" target="#b30">[31]</ref> ask: "How does that option of saving through auctions compare to the option of building a relationship with a supplier and achieving cost reduction through integration?" <ref type="bibr">[31: 1478]</ref>. A similar question comes from Elmaghraby <ref type="bibr" target="#b13">[14]</ref>: "…if a buyer has used an auction once with success, should she continue to use it regularly, or should auctions be used infrequently and in combination with other procurement mechanisms?" <ref type="bibr">[14: 18-19]</ref>.</p><p>Triggered by the questions posed by the previous studies, we are going to address the following research question: what portfolios of exchange relationships are formed by buyers with their suppliers over multiple transactions involving online reverse auctions?</p><p>In this study we take an exploratory approach to theory-building. We will aim at developing a taxonomy of buyer-supplier exchange relationships and the accompanying use of online reverse auctions by investigating patterns of exchange relationships that form in practice.</p><p>The exploratory approach to empirical research is used along with the confirmatory approach in the literatures on inter-organizational relationships and information systems research. Confirmatory approaches take a taxonomy deduced from extant literature and test for the occurrence of pre-defined constructs and types, whereas exploratory approaches derive the taxonomy inductively from the data and then relate the resulting types back to theory. While traditionally the confirmatory approach has tended to dominate, exploratory approaches have been used effectively as well, particularly, in situations where existing theory was deemed insufficiently detailed to do justice to the richness of the field setting. In the studies on inter-organizational relationships the exploratory approach has been employed to extract and analyze empirical patterns of interorganizational relationships and sometimes to relate them to their antecedents and performance characteristics <ref type="bibr" target="#b6">[7,</ref><ref type="bibr" target="#b8">9]</ref>. In the information systems literature the exploratory approach has been used to develop the taxonomy of eBay bidders and relate buyer types to auction winning likelihood and surplus <ref type="bibr" target="#b4">[5]</ref> as well as to develop a taxonomy of industrial bidders at online reverse auctions <ref type="bibr" target="#b44">[45]</ref>.</p><p>The advantage of the exploratory approach over the confirmatory approach is that the former allows for uncovering empirical patterns that can depict the limits of existing theories, while its disadvantage is that often there is little or no theoretical guidance for the selection of variables <ref type="bibr" target="#b6">[7]</ref>. This disadvantage of the inductive method will be mitigated in our study by drawing on extant theories in selecting taxonomy dimensions as well as in explaining the resulting configurations and their properties.</p><p>By using the exploratory approach in this study we aim at developing an empirical taxonomy of buyers' portfolios of exchange relationships with suppliers at an online marketplace for IT services. Carrying out the empirical study at an online marketplace (specifically, within two categories of services -Web design and Web programming) allows us to control for context factors that are normally believed to affect the boundary of a firm, such as market complexity and asset specificity. This enables us to focus on inherent heterogeneity of buyers' portfolios of supplier relationships.</p><p>The scientific contribution of this study consists in revealing the heterogeneity of buyer-supplier exchange relationships and explaining the empirical types of relationships portfolios and the role of online reverse auctions. This provides a valuable addition to the literature on exchange relationships and exchange governance, as most previous studies predicted exchange relationships to be homogenous under a fixed set of exchange attributes. We also find that online reverse auctions are primarily an attribute of arms-length exchange relationships, where buyer stimulates supplier competition and switches suppliers often. In portfolios with more enduring exchange relationships that recur through multiple transactions and where one supplier gets a considerable proportion of buyer's business, non-competitive negotiations are preferred to auctions. However, our findings do not contradict previous studies that suggested that reverse auctions can be used for supplier screening in long-term relationships and for allocation of long-term contracts.</p><p>From a managerial perspective, we provide insights into how online markets for IT services could serve exchange relationships that rely on longer-term considerations.</p><p>The paper is organized as follows. In the next section, we discuss previous research on buyers' portfolios of supplier relationships. Then, we discuss the taxonomy dimensions as well as antecedents and outcomes of portfolio configurations. This is followed by a discussion of the methodology, data, analytical procedures, and empirical results. Finally, we discuss findings and formulate conclusions and contributions.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.">Portfolios of exchange relationships</head><p>The concept of relationships portfolio has been used in marketing for a comprehensive analysis of supplier or customer base of a firm. The portfolio of relationships "captures the fact that relationships, like products, vary in their intensity and in the role that a firm plays relative to its stakeholders in the relationship" <ref type="bibr" target="#b36">[37]</ref> p. 316. Some of the notable applications of the concept of relationships portfolio (and similar approaches) have been analyzing buyersupplier relationships from the viewpoint of their strategic importance, supplier attractiveness and the strength of supplier relationships <ref type="bibr" target="#b29">[30]</ref>; costs and benefits of firm's customers <ref type="bibr" target="#b24">[25,</ref><ref type="bibr" target="#b40">41]</ref>, management of supplier relationships over time, as well as associated processes and technology <ref type="bibr" target="#b36">[37]</ref>, maximization of the value from supplier relationships through supplier investments into non-contractible exchange attributes <ref type="bibr" target="#b2">[3,</ref><ref type="bibr" target="#b3">4]</ref>, as well as to develop a typology of buyer-supplier relationships based on contextual factors and analyze portfolio properties and performance implications <ref type="bibr" target="#b7">[8]</ref>.</p><p>The objective of this paper is to explore empirical configurations of buyer-supplier relationships and buyers' use of exchange mechanisms. Therefore, focusing on buyer's portfolio of supplier relationships as a unit of analysis is a logical option. Using this concept will enable us to capture key dimensions of interest in the taxonomy development.</p><p>The portfolio properties we intend to analyze need to reflect the characteristics of exchange relationships, exchange mechanism and underlying business transactions. Reliance on these properties makes the taxonomy dimensions theoretically motivated in light of the literature reviewed above <ref type="bibr" target="#b4">[5]</ref>. Below, we discuss the portfolio characteristics used as taxonomy dimensions and elaborate on their theoretical underpinning. We also identify several antecedents of portfolio configurations that are likely to influence portfolio formation and discuss portfolio performance.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.1.">Taxonomy dimensions</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.1.1.">Buyer-supplier exchange relationships</head><p>Our conceptualization of buyer-supplier exchange relationships is rooted in the studies of the effect of IT on the governance and organization of exchange transactions <ref type="bibr" target="#b2">[3,</ref><ref type="bibr" target="#b3">4,</ref><ref type="bibr" target="#b11">12,</ref><ref type="bibr" target="#b20">21]</ref>. One-time exchange transactions with independent suppliers in a market setting represent the case of distant, arms-length exchange relationships. Such transactions are characterized by search for and competition among suppliers, low costs of procurement (due to low production costs of market suppliers) and high costs of coordination. Market exchange is opposite to transactions that take place in hierarchies, i.e. within organizational boundaries or in closely coupled bilateral relationships. Hierarchal form of exchange governance is characterized by low coordination costs that come at the expense of high costs of production.</p><p>Other empirically motivated investigations identified a multitude of intermediate governance forms and structures beyond pure market or hierarchies, where different governance mechanisms can be used in parallel or in combination <ref type="bibr" target="#b12">[13,</ref><ref type="bibr" target="#b20">21,</ref><ref type="bibr" target="#b31">32]</ref>. A number of studies addressed governance forms referred to as "partnerships", "networks" or "close and long-term buyer-supplier relationships" <ref type="bibr" target="#b2">[3,</ref><ref type="bibr" target="#b11">12]</ref>. On the face of it, such relationships are characterized by buyer working with a limited number of stable suppliers for a longer period of time. Such relationships, more so than market relationships, encourage parties' investments in non-contractible attributes of exchange such as quality, responsiveness, information sharing, trust, and innovation <ref type="bibr" target="#b2">[3,</ref><ref type="bibr" target="#b3">4,</ref><ref type="bibr" target="#b11">12]</ref>. Thus, the first dimension consists of the extent to which the buyer employs arm's-length vs. close partnership in governing the exchange relationships.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.1.2.">Exchange mechanism usage</head><p>Auctions and bilateral negotiations are key mechanisms used in economic exchange that are widely discussed in the literature <ref type="bibr" target="#b0">[1,</ref><ref type="bibr" target="#b15">16]</ref>. An auction is defined as "a market institution with an explicit set of rules determining resource allocation and prices on the basis of bids from participants" <ref type="bibr" target="#b28">[29]</ref>. In reverse auctions suppliers compete online for a contract to supply goods or services to the buyer and the prices go down, thus stimulating competition among suppliers <ref type="bibr" target="#b10">[11,</ref><ref type="bibr" target="#b22">23]</ref> but also raising concerns about buyer's opportunistic behavior <ref type="bibr" target="#b22">[23]</ref>. While reverse auctions are argued to be in principle compatible with several dimensions of relational exchange and can be used to source long-term contracts <ref type="bibr" target="#b13">[14,</ref><ref type="bibr" target="#b32">33]</ref> in which collaboration can take place <ref type="bibr" target="#b37">[38]</ref>, empirical evidence suggests that overall, negotiations tend to be used more for complex projects <ref type="bibr" target="#b0">[1]</ref>. Therefore, the extent of the use of reverse auctions (as opposed to bilateral negotiations) by buyers is the second dimension of our taxonomy.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.1.3.">Transaction characteristics</head><p>Transaction cost economics regards transaction characteristics as a determinant of exchange governance <ref type="bibr" target="#b42">[43]</ref>. High level of transaction attributes such as frequency of transactions, asset specificity and technological uncertainty require hierarchical governance to minimize the transaction costs. While hierarchies are efficient in keeping down the costs of coordinating complex transactions, market governance is advantageous when transactions are less complex and exchange efficiency is achieved due to low costs of production <ref type="bibr" target="#b42">[43]</ref>.</p><p>In a similar fashion, transaction attributes become important for the choice of an exchange mechanism. For instance, more complex construction projects, where ex-post negotiations are likely, are found to be more appropriate for negotiations, while less complex contracts with no ex-post negotiations can be subject to competitive bidding <ref type="bibr" target="#b1">[2]</ref>. Therefore, our third dimension is related to the complexity of IT projects.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.2.">Antecedents and outcomes of portfolio taxonomy</head><p>Several other theoretically relevant constructs serve as antecedents and outcomes of the taxonomy of buyers' portfolios of supplier relationships: buyer experience, evaluation costs and portfolio performance. We draw on these constructs to shed more light on the emergence of buyer portfolios of supplier relationships and explain their configurations.</p><p>At the same time, it should be understood that with an exploratory approach, it is not possible to formulate a priori hypotheses regarding the effects of these antecedents or how different clusters will affect the outcomes, since the number and properties of clusters are not known a priori.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.2.1.">Buyer experience</head><p>Taking into account buyer's experience at the marketplace is important as more experience means, ceteris paribus, that a buyer has worked on more projects and with larger overall budget. More experience and time associated with it provides room for the development of close exchange relationships with suppliers.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.2.2.">Evaluation costs</head><p>Several studies addressed the issue of bidding and bid evaluation costs at online markets for IT services. Snir and Hitt found that high value projects attract many low quality bidders, thus driving the overall quality of bidders down <ref type="bibr" target="#b38">[39]</ref>. Carr suggested that when bids are numerous and the buyer expects their quality to be low, she might decide to withdraw from the auction process altogether, without selecting a winner <ref type="bibr" target="#b9">[10]</ref>. Radkevitch et al. identified several evaluation cost reducing tactics that can help buyers bring their evaluation costs down and increase their project award propensity <ref type="bibr" target="#b33">[34]</ref>. In the present study we suggest that buyers who prefer reverse auctions to bilateral negations (and, therefore, have more offers to evaluate) have higher bid evaluation costs, which results in a lower proportion of awarded projects.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.2.3.">Portfolio performance</head><p>Previous studies found a connection between buyer-supplier exchange relationships attributes and exchange performance <ref type="bibr" target="#b18">[19,</ref><ref type="bibr" target="#b31">32]</ref>. Similarly, in the present study we intend to investigate how different configurations of exchange relationships are related to exchange performance.</p><p>The conceptual framework in Fig. <ref type="figure" target="#fig_0">1</ref> summarizes the relationships between portfolio taxonomy dimensions (in the center of the framework) cluster antecedents and performance.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.">Methodology</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.1.">Empirical setting</head><p>According to Elmaghraby, "enterprising adoption of auctions for the procurement of services" is one of the key characteristics of today's landscape of online reverse auctions <ref type="bibr" target="#b13">[14]</ref>. In line with this trend, our investigation focuses on a leading online marketplace for IT services. Such empirical setting is attractive as it is likely to contain both arms-length and close exchange relationships. On one hand, due to the development of Internet and IT outsourcing practices, especially to low-cost locations, many suppliers with similar sets of IT skills are available at the marketplace, which makes it highly competitive <ref type="bibr" target="#b9">[10]</ref>, suggesting arm's-length relationships. Therefore, buyers should be able choose between suppliers on the basis of price rather than other properties. On the other hand, IT services are highly idiosyncratic, quality of suppliers is hard to assess ex-ante <ref type="bibr" target="#b38">[39]</ref>, information asymmetry is present with regards to production costs and there is huge potential to cost-savings due to supplier learning effects <ref type="bibr" target="#b41">[42]</ref>. This means that there is a space for value creation via non-contractible attributes of exchange, such as quality, supplier responsiveness, information sharing and innovation that are more suitable for longterm, close partnerships <ref type="bibr" target="#b2">[3,</ref><ref type="bibr" target="#b3">4]</ref>.</p><p>The range of services transacted at the online marketplace encompasses IT services and other professional services (e.g. translation, accounting, etc). Services related to web site development represent the most popular area. The online marketplace is used by around 60,000 buyers and contains over two thousand active projects at any point of time across all service categories and data on tens of thousands of auctions completed to date. By early 2006 the overall value of transactions facilitated by the marketplace exceeded USD 90 million. Buyers are businesses and individuals predominantly from the US, while suppliers are small/medium-sized IT companies and freelancers located in India, Eastern Europe and Russia. Some of the most active suppliers have turnover over USD 2 million over the time of their presence at the marketplace.</p><p>The exchange process is organized as follows. Before buyers and vendors are able to enter the exchange, they are required to register at the website. Participation for buyers is free of charge while a periodic fee applies to vendors. The buyer starts an auction by posting an RFP (request for proposals). Project allocation mechanism comes in two basic types: open auctions (all suppliers can bid) and invite-only auctions (only invited suppliers can bid). In over 99% of cases there is only one supplier in the invite-only auctions, therefore we consider the invite-only auctions to be bilateral negotiations. In open auctions the different suppliers are bidding and the buyer chooses the winner (which might not necessarily be the one with the lowest price).</p><p>After the auction starts, vendors can bid. Bids specify price and estimated delivery time, contain information on vendor rating and earnings and a text field where the bidder can provide other relevant information. Once a bid has been submitted, it becomes visible to the buyer and other vendors. During the auction, the buyer can decline or shortlist bids and communicate with vendors via message boards.</p><p>There is no obligation for the buyer to allocate the project to any of the vendors, which results in quite a low project allocation rate of 30-40% <ref type="bibr" target="#b38">[39]</ref>. When a project is awarded, the parties can use a virtual "working space" to communicate, exchange documents, track milestones, and settle payments via an escrow account. Upon project completion the buyer is able to rate supplier performance. The accumulated supplier rating is a part of the reputation and trust mechanism at the marketplace.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2.">Quantitative data</head><p>We collected data on buyer activity from the Website Development category of the marketplace. This is the most populated sub-marketplace that allowed us to amass a substantial dataset of buyers busy with relatively homogenous projects. The homogeneity is important in order to isolate potential effects of service type and complexity on exchange relationships. There were several stages in data collection and processing. First, we focused on repeat buyers with a considerable exchange track record at the marketplace to ensure that each buyer had done enough projects to make up a reasonable portfolio. We identified most active buyers using a cut-off level of 20 awarded projects (this included all projects awarded at the marketplace, not only IT-related). This resulted in a sample of 530 buyers that awarded 20 to 300 projects each, starting from the launch of the marketplace in 1999 until May 2006.</p><p>Second, we filtered out projects from non-IT categories and we removed projects with incomplete data, e.g. where buyer feedback on supplier performance was absent. In case the feedback on at least 70% of projects was available (which is the cut-off level we chose to ensure a reasonable amount of data in a portfolio), the portfolio was included in the further analysis.</p><p>The final check was to make sure that portfolios contain data only from either of two subgroups within Web Development: 1) Web Programming or 2) Web Design and Development combined with Simple Website projects. The two latter sub-categories were combined into a single group because an initial examination of the data had shown that the same suppliers tend to be active in both subcategories.</p><p>The procedure resulted in 104 portfolios containing data on 2163 projects worth a total of USD 1,103,213. The data were standardized in order to avoid disproportional impact of nominally higher variables in the cluster analysis. See Table <ref type="table" target="#tab_0">1</ref> below for descriptive statistics and Table <ref type="table" target="#tab_1">2</ref> for correlations between the variables.</p><p>To extract data from the website of the online marketplace we used Kapow RoboSuite, a web data extraction agent; MS Excel and SPSS were employed at the stage of data processing and analysis. As discussed in the section on portfolio dimensions, our conceptualization of buyer-supplier exchange relationships relies on studies of the effects of IT on transaction governance <ref type="bibr" target="#b2">[3,</ref><ref type="bibr" target="#b3">4]</ref>. These studies drew a distinction between market-driven, arms-length transactions and close buyers-supplier relationships based on what can be described as two types of criteria that we refer to as "form" (number of suppliers and relationships duration) and "contents" of exchange relationships (investments in non-contractible exchange attributes and relationship-specificity of other assets, including IT). Our data allow assessing the form of buyer-supplier exchange relationships but do not contain systematic details on their contents. 1  However, knowing whether a buyer allocates a significant portion of business to one or few suppliers or works with a wide range of suppliers as well as about duration of supplier relationships already provides substantial basis to judge about exchange relationships.</p><p>Two variables operationalize the "form" of exchange relationships. We use Share of projects per preferred supplier 2 to assess the extent to which one preferred supplier is important in buyer's portfolio of exchange relationships. We define "preferred" supplier as a supplier who gets the largest proportion of buyer's business in terms of the number of projects compared with other suppliers. A high share of projects allocated to the preferred supplier would indicate that at least one supplier has a high relative importance for the buyer. A low share would indicate that the buyer is likely to use an arms-length approach without favoring any supplier over others. It is important to note that this measure characterizes the whole portfolio of supplier relationships, rather than a buyer-supplier dyad. For instance, a high proportion of projects allocated to the preferred supplier (e.g. 75%) would mean that other suppliers, regardless of their number, have little weight and importance in the portfolio. On the other hand, if the preferred supplier receives a relatively small proportion of projects (e.g. 25%), this would provide an indication that the buyer has an arms-length approach and treats all suppliers in an equally distant way, suggesting a portfolio more towards the arm's-length end of the spectrum.</p><p>The second measure, Duration of relationships with the preferred supplier, provides an indication of a time perspective of the relation-ships with the preferred supplier. Suppliers who are doing business with the buyer for a longer time, are likely to develop closer relationships with the buyer <ref type="bibr" target="#b35">[36]</ref>. Preferred supplier however does not necessarily mean an incumbent supplier. We look at buyer's portfolio of projects over a period of several yearsand the supplier who has been awarded most projects during that time might be not the supplier with whom the buyer was doing projects at the moment of data collection, i.e. an incumbent.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.3.2.">Exchange mechanism</head><p>In order to assess the use of reverse auctions in buyer's portfolio, we use Share of projects procured via open reverse auctions as a straightforward measure. Since a buyer has only two options for the allocation mechanismreverse auction or negotiationsthe converse of this measure accounts for the use of negotiations.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.3.3.">Transaction characteristics</head><p>Two variables account for transaction characteristics. Variables Average project value and Average project length serve as proxies for project size and complexity <ref type="bibr" target="#b38">[39]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.3.4.">Evaluation costs</head><p>We use Number of awarded projects divided by number of posted projects as a proxy for the evaluation costs at the portfolio level, as buyers with lower level of this ratio are more likely to be suffering from higher evaluation costs than buyers who award higher proportion of projects <ref type="bibr" target="#b33">[34]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.3.5.">Buyer experience</head><p>In order to capture different aspects of buyer experience at the online marketplace we operationalize the experience via four variables: Duration of the presence at the marketplace, Portfolio size, Overall number of awarded projects and Overall spent (the volume of transactions).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.3.6.">Portfolio performance</head><p>We proxy portfolio performance as an average of buyer's evaluations of projects performed by suppliers (Average satisfaction rating). This is similar to previous studies that operationalize relationships performance as buyer's overall evaluation of suppliers performance <ref type="bibr" target="#b23">[24,</ref><ref type="bibr" target="#b26">27]</ref>. Data on project evaluation is readily available at the marketplace as a rating the buyer assigns to the supplier after a project has been accomplished.</p><p>Table <ref type="table" target="#tab_3">3</ref> summarizes the variables that operationalize taxonomy dimensions.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.4.">Analysis</head><p>Cluster analysis consists of two stagesidentification of the number of clusters and clustering observations in the sample. While 1 Anecdotal qualitative information about the contents of exchange relationships is available. We will draw on it in the analysis section. 2 An alternative way to operationalize this dimension would be via the number of suppliers used by a buyer. One disadvantage of this measure, however, is that it cannot elicit suppliers that are relatively more import for the buyer when overall number of suppliers is high, e.g. if one supplier has 60% of business. In addition, our analysis showed that the number of suppliers and the percentage of projects allocated to the preferred supplier are highly (and negatively) correlated (-.782⁎⁎). Since only using one of these two highly correlated variables would be appropriate for taxonomy development by means of cluster analysis, we chose to focus on the Share of projects per preferred supplier. there is normally little uncertainty with regard to the second stage, the first one can be realized in a variety of ways. In the present study we chose to apply rather simple and elegant solution suggested in <ref type="bibr" target="#b4">[5]</ref>. First, we applied K-means clustering method to find a number of different cluster solutions for our dataset. The method clusters objects into k partitions based on their attributes. The method assumes that the attributes form a vector space and aims to minimize the total within-cluster variance. It is commonly used in the IS and marketing studies as a part of the procedure to develop taxonomies of actors, e.g. bidders <ref type="bibr" target="#b4">[5]</ref> or buyers <ref type="bibr" target="#b8">[9]</ref>.</p><p>Second, as advised by <ref type="bibr" target="#b4">[5]</ref>, for each cluster solution we calculated average distance from points in a cluster to the relevant cluster center (intra-cluster distance) and minimum distance between cluster centers among all clusters (intercluster distance). Better cluster solutions have smaller intra-cluster distances (the clusters are more homogeneous) and larger intercluster distances (the clusters are situated more apart from each other). Then, we established the optimal solution by dividing the intercluster difference of a cluster by intra-cluster difference of the same cluster, which produces the dissimilarity ratio <ref type="bibr" target="#b4">[5]</ref>, and comparing them. The optimal cluster should have the highest dissimilarity ratio. According to the results in Table <ref type="table" target="#tab_2">4</ref>, the best solution is the one with four clusters containing 47, 32, 13 and 12 portfolios respectively.</p><p>Based on the cluster characteristics, i.e. the means of the variables used for clustering as presented in Table <ref type="table">5</ref>, we interpreted these as overall organizing principles for the different portfolios and assigned the following names for the buyers in these clusters accordingly: Transactional buyers, Recurrent buyers, Small diversifiers, and Large diversifiers.</p><p>Fig. <ref type="figure" target="#fig_1">2</ref> provides an illustration of the four types of buyer's portfolios. The central node of each portfolio represents the buyer. The buyer is connected to other nodesthe suppliers. The connecting lines are either firm or dotted, which means that respectively reverse auctions or negotiations dominate as an exchange mechanism. Thus, for example, most lines belonging to Transactional buyers are firm, while the lines of the relational suppliers are dotted. The size of the buyer nodes illustrates the monetary turnover of the portfolios. Dark color of one of the supplier nodes denotes the preferred supplier. The size of the preferred supplier node relative to other supplier nodes in the same portfolio indicates an approximate proportion of business allocated to the preferred supplier. Thus for instance the size of preferred supplier node in the Recurrent portfolio is larger than that of the preferred supplier in the other three portfolios.</p><p>Cluster 1. Transactional buyers. We label buyers who form the first portfolio cluster "Transactional buyers" because the patterns of behavior displayed in this portfolio are similar to arms-length, market-driven exchange relationships. Most projects in this portfolio are procured via open reverse auctions (65%). Transactional buyers allocate few projects with a single preferred supplier, 33%, which is the lowest level among all clusters and also have the shortest duration of relationships with preferred supplier, 240 days. It is interesting to note that although the average project value here is almost the same as with Recurrent buyers (USD 379 vs. 377), the projects of Transactional buyers take almost twice as long to accomplish (44 days vs. 24 days). A possible explanation is that it takes longer for Transactional buyers to set up sound communication and coordination with new suppliers.</p><p>Cluster 2. Recurrent buyers. The label "Recurrent buyers" was chosen because buyers in this cluster assign high importance to preferred suppliers, with whom they have exchange relationships for a relatively long period of time. A key factor distinguishing Recurrent buyers from the other three clusters is the allocation of a very high Clusters 3 and 4. Small diversifiers and Large diversifiers. The two remaining clusters share a key defining characteristic, therefore we analyze them together. Buyers in these clusters do not demonstrate preferences for one or many suppliers or for exchange mechanisms to the extent Transactional and Recurrent buyers do. Here, buyers use negotiations somewhat more often than auctions, which are used in 47% and 25% of cases respectively. Similarly, they favor single preferred suppliers (allocating to them 52% and 65% of projects), although to a lower extent than Recurrent buyers. Therefore, we label these clusters "diversifiers". The duration of their relationships with the preferred supplier is almost equally long -699 and 787 days respectively (the difference is not significant). The differences between Small and Large diversifiers lie in the average project value, in which Large diversifiers are far ahead any other cluster (USD 1468) and the project length. With regard to the latter, Small diversifiers have the lead with 123 days, which is almost twice as high as the project length of Large diversifiers, whose project value is over three times higher. Although beyond the scope of this paper, we could speculate that small firms perhaps may lack some skills to successfully manage outsourced software development project compared to larger firms.</p><p>In summary, the analysis of the four resulting clusters of buyers' portfolios of supplier relationships showed considerable heterogeneity among buyers in terms of the three taxonomy dimensionsexchange relationships, allocation mechanism and transaction characteristics. Transactional and Recurrent buyers demonstrate opposing approaches towards arranging their portfolios of relationships. Transactional buyers display characteristics of arms-length exchange relationships. Preferred supplier (supplier with the highest proportion of awarded projects) has little weight in their portfolio because of low portion of projects it receives and short relationships duration. Their projects are dispersed among multiple vendors. These buyers allocate projects mostly on a competitive basis, via reverse auctions. Recurrent buyers show a pattern of much closer exchange relationships as they allocate a much higher proportion of their business to preferred suppliers via non-competitive negotiations; their exchange relationship duration is also longer. Two other portfolio clusters are somewhere inbetween Recurrent and Transactional buyers in terms of the preferences for preferred supplier and allocation mechanism use.</p><p>The variation in transaction characteristics does not seem to explain the difference in the way buyers organize exchange relationships in their portfolios. First, the proxy for project value is not significantly different for Recurrent and Transactional buyers, whose ways of organizing exchange relationships are drastically different. Second, the clusters of Small and Large diversifiers have quite different transaction characteristics (the differences in project value and duration are significant), while their relationship patterns are quite similarthere are no significant differences in terms of transaction mechanism use, use of preferred supplier and duration of relationships with the preferred supplier. In other words, transaction characteristics appear to be largely unrelated to the configuration of buyer-supplier relationships, which suggests that the transaction cost economics approach that is traditionally used in this literature stream may have limited applicability in this setting, as other factors seem to be driving the configurations.</p><p>The next step in the analysis is to identify the links between clusters and their antecedents and portfolio performance. We conduct Scheffe test for significance of the pairwise differences between the means of the variables that underlie the antecedents and outcomes (see Table <ref type="table">6</ref>, last column). Scheffe test is a procedure recommended for use in case of unequal groups sizes. With regard to Number of awarded auctions/Number of posted projects, there are significant differences between Transactional and Recurrent buyers. No differences in the Number of awarded projects are significant. Large diversifiers are significantly different from all other clusters in Overall spent and Portfolio size. Finally, Transactional and Recurrent buyers are significantly different with regard to the Duration of presence at the marketplace and Average satisfaction. Below we discuss these results and their implications in more detail.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.4.1.">Evaluation costs</head><p>The analysis shows a significant difference in project award rate between Transactional buyers and Recurrent buyers. For Transactional buyers the award rate is significantly lower than for Recurrent buyers. This result cannot be explained by transaction characteristics such as project size or codifiability (as all projects come from a rather homogenous service category) unless we assume that non-awarded projects have characteristics quite different from the awarded ones. One plausible explanation of the difference in the award rate is that as Transactional buyers deal with more suppliers than the other clusters, Table <ref type="table">6</ref> Antecedents and outcomes of cluster variables.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Transactional buyers</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Recurrent buyers</head><p>Small diversifiers Large diversifiers  they receive more bids and hence bear consistently higher costs to evaluate suppliers and their offerings, and therefore sometimes fail to allocate their projects when evaluation costs become prohibitively high <ref type="bibr" target="#b33">[34]</ref>, whereas Recurrent buyers suffer less from this effect.</p><formula xml:id="formula_0">Scheffe differences p b 0.1 (1)<label>(2) (3) (4)</label></formula></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.4.2.">Buyer experience</head><p>The only significant difference between Transactional and Recurrent buyers in terms of experience is the duration of their presence at the market, 1622 vs. 1345 days. However, it is difficult to see Relational buyers convert into Transactional buyers after they spend more time at the marketplace, as this would essentially throw away the investments that have been made over time in non-contractible exchange attributes <ref type="bibr" target="#b2">[3,</ref><ref type="bibr" target="#b3">4]</ref>. Therefore, we can conclude that experience is unlikely to explain the observed heterogeneity in the portfolios of exchange relationships.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.4.3.">Portfolio performance</head><p>Recurrent buyers enjoy higher performance than Transactional buyers (the levels of the variable that operationalizes portfolio performance, Average satisfaction, are significantly different). 3 This result is in line with the extant literature in that close buyer-supplier relationships and high level of relational attributes (such as trust) lead to higher performance <ref type="bibr" target="#b18">[19,</ref><ref type="bibr" target="#b31">32]</ref>.</p><p>In summary, the results of this analysis enhance the validity of our taxonomy of buyer portfolios of exchange relationships by identifying theoretically sound differences between different clusters of portfolios. So far though, the analysis of the taxonomy has not discussed the mechanisms that underlie close exchange relationships adopted by Recurrent buyers and, to a lesser extent, by Small and Large diversifiers. In other words, we focused more on the form of relationships, rather than on their contents. As it is still somewhat surprising to see close relationships between buyer and supplier in such an open, competitive marketplace, we provide some qualitative evidence on the contents of such close relationships in the following sub-section.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.5.">Qualitative evidence of non-contractible elements</head><p>Previous studies described the contents of close exchange relationships as displaying the properties of cooperation and coordination <ref type="bibr" target="#b11">[12]</ref>, trust and relational norms <ref type="bibr" target="#b16">[17,</ref><ref type="bibr" target="#b19">20,</ref><ref type="bibr" target="#b31">32]</ref> as well as other non-contractible attributes such as quality, responsiveness, information sharing, and innovation <ref type="bibr" target="#b2">[3,</ref><ref type="bibr" target="#b3">4]</ref>. As discussed above, the online marketplace we study provides a favorable environment for the emergence of non-contractible exchange attributes (quality, responsiveness, information sharing, trust and innovation) to manifest themselves, as supplier quality can be hard to determine ex-ante, IT services are idiosyncratic and there is potential for economies based on learning. Although it was not possible to systematically collect large-scale quantitative evidence on these noncontractible attributes of exchange, we were able to find some anecdotal evidence thereof. We studied comments that Recurrent buyers in our sample leave for projects accomplished by their incumbent suppliers. After screening the feedback of several Recurrent buyers we identified a number of quotes, in which buyers refer to one of the five noncontractible attributes. These quotes are not unique but rather typical for the feedback Relational buyers give to their suppliers at this online marketplace.</p><p>The qualitative evidence of the presence of the non-contractible exchange attributes is presented in Table <ref type="table">7</ref>. We argue that these quotes provide support (although anecdotal) for the intuition that at least in some cases recurrent transactions between buyers and incumbent suppliers are motivated by suppliers' investments into non-contractible attributes. This result is in line with Bakos and Brynjolfsson <ref type="bibr" target="#b2">[3,</ref><ref type="bibr" target="#b3">4]</ref>, according to whom a supplier will be willing to invest in non-contractible attributes only if it expects to be able to appropriate a share of the created value. In the case of the online marketplace of IT services such value comes in the form of new business from the same buyer awarded on a non-competitive basis, i.e. via negotiations rather than online reverse auctions. In the next section we discuss theoretical implications of the developed taxonomy and research limitations.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.">Discussion</head><p>The taxonomy development resulted in four types of exchange relationships portfolios -Transactional buyers, Recurrent buyers, Small diversifiers and Large diversifiers. In these portfolios, buyers employ distinct ways of organizing exchange relationships with their suppliers. Clearly, the picture we observe in practice is different from the predictions of the literature <ref type="bibr" target="#b2">[3,</ref><ref type="bibr" target="#b3">4,</ref><ref type="bibr" target="#b11">12]</ref> we find not only portfolios based on close buyer-supplier relationships, but also portfolios of arms-length relationships, as well as mixed portfolios. In other words, within one setting, we observe several forms of organizing buyersupplier relationships. This suggests that the effects of IT on the economic of exchange relations are non-deterministic as there is no uniformly dominating portfolio configuration. Rather each portfolio 3 The small size of the difference in the level of satisfaction between the clusters may be due to the fact that at online markets for IT service supplier performance ranking is used by buyers mostly to reward or punish suppliers for good or bad performance respectively, rather than to objectively rank the performance. Over 90% of ranked projects have the highest possible rating.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Table 7</head><p>Qualitative evidence of non-contractible exchange attributes at the online marketplace for IT services.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Attribute</head><p>Qualitative evidence Quality "A very complex project, multiple flash applications, complex photoshop work, many complex html pages and custom programming. All done on time, within budget. I have now done more than 10 projects with triguns and they are becoming increasingly complex so that must speak for itself" [nippi] "Once again, the team at Onix Systems have excelled themselves.</p><p>What was an excellent site already, has now been added to and with its improved functionality, now becomes one of the premier sites of its class. Well done team, long may our relationship continue."</p><p>[auctionpix] Innovativeness "This project is another perfect example of where the WINIT team was able to go above and beyond by providing not only the solution I was looking for, but also identifying problems with the original scope and coming up with creative solutions to address them that resulted in a much better end result. I have used this team for three years now and I'm very pleased to be able to WIN with WINIT" [gopro] Responsiveness "Sonic Web Graphics did a first rate job designing and coding our project. They were very responsive to comments and turn around work with impressive speed. We will continue to use them extensively. follows its own theoretical logic, presumably in line with the buyer's sourcing strategy.</p><p>Transactional buyers' style of organizing their exchange relationships corresponds to market governance as described in the transaction costs literature. This form of exchange is applied to non-specific transactions and is subject to governance by classical contracts, where all contract contingencies can be explicitly specified <ref type="bibr" target="#b43">[44]</ref>. Parties to this type of exchange have a strong incentive to perform, which is rooted in the availability of market substitutes to the supplier and buyer ability to quickly switch from one supplier to another. This type of exchange is of short-term nature and is characterized by intensive bargaining and competition.</p><p>The pattern of relationships displayed by Recurrent buyers has properties similar to recurrent contracting transactions discussed in <ref type="bibr" target="#b34">[35]</ref>. Recurrent contracting, according to Ring and van de Ven, is contingent on prior performance, contains emerging elements of noncontractible exchange attributes such as trust and is subject to neoclassical contract governance <ref type="bibr" target="#b34">[35]</ref>.</p><p>From the perspective of recurrent exchange, it is likely that reverse auctions that are present in small proportion in the portfolio of Recurrent buyers serve them early in their transactions trajectory to identify suppliers with whom to build closer exchange relationships in further recurrent projects. As supplier quality becomes known after pilot projects, the buyer starts using non-competitive bilateral negotiations to allocate further projects. This explanation is in line with emerging business practices, where online reverse auctions are used to choose long-term partners <ref type="bibr" target="#b22">[23]</ref>. Further, as relationships develop and the level of non-contractible attributes in the exchange increases, buyers become unwilling to jeopardize their relationships with the incumbents by requesting them often to participate in auctions <ref type="bibr" target="#b13">[14]</ref>.</p><p>Finally, Small and Large diversifiers demonstrate properties somewhat close to those described by Holland and Lockett in their empirical investigation of mixed mode networks. In mixed mode networks, buyers can have close relationships with some firms and arms-length relationships with others <ref type="bibr" target="#b20">[21]</ref>. Similarly, in our setting buyers in these two clusters are likely to use different exchange mechanisms for different exchange relationships. This finding also implies that studies that focus solely on a dyadic view of exchange relationships (as is commonly done in the literature, e.g. <ref type="bibr" target="#b35">[36]</ref>), may provide a limited perspective on firm's exchange relationships. The few existing studies at the portfolio level, e.g. <ref type="bibr" target="#b24">[25]</ref> and <ref type="bibr" target="#b17">[18]</ref>, suggest that dyadic relationships make more sense when considered in the context of a portfolio of relationships.</p><p>Finally, this discussion brings us to a key implication of the present study. Although the resulting portfolio clusters are similar to some of the theoretical types discussed in the literature, the extant theory is not capable to explain the diversity of buyers' portfolios of exchange relationships. The drastically different relationships portfolios found in our analysis emerge in an environment characterized by rather homogenous services and in which transaction attributes have no statistically significant effect of the portfolio configurations. This result points to an inherent heterogeneity of buyer preferences for close or arm's-length supplier relationships based on their sourcing strategy or alternatively simply to the existence of some others, unobservable factors that define the nature of exchange relationships.</p><p>An important direction for further research is the analysis of the evolution of portfolios of exchange relationships over time, since it is likely to help gain insights into the sources of the relationships heterogeneity. Another important direction for further research is testing the generalizability of the presented findings across other online marketplaces and industries as well as across firms of larger sizes.</p><p>The present study comes with a number of limitations. First, the online marketplace did not provide an opportunity to collect systematic data on non-contractible attributes of exchange relationships, which limits the depth of the analysis of the contents of exchange relationships. Second, the relationships portfolios were analyzed in an aggregated fashion despite the fact that projects in these portfolios are often conducted years apart. This might result in a somewhat blurred picture of otherwise dynamic and evolving exchange patterns. Third, in this study we focus only on online exchange relationships, which might provide an incomplete picture of buyers' exchange activities; future studies should extend the scope by gathering and analyzing data on offline exchange relationships along with online relationships.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.">Conclusions</head><p>We conducted an exploratory investigation of empirical configurations of buyer-supplier exchange relationships at an online marketplace for IT services and the accompanying use of online reverse auctions. We used buyers' portfolios of supplier relationships as a unit of analysis and employed a clustering technique to develop a taxonomy of relationship portfolios. Further, we analyzed connections between clusters of buyers' portfolios and cluster antecedents and outcomes.</p><p>There are several key findings in the present study. First, the resulting taxonomy of exchange relationships revealed considerable heterogeneity of buyer-supplier exchange relationships at an online marketplace for IT services. This heterogeneity cannot be explained by the variation in transaction attributes, thus suggesting that further theorizing moves beyond a purely transaction cost economics-based approach. Four clusters of portfolios of exchange relationships were identified -Transactional buyers, Recurrent buyers, Small diversifiers and Large diversifiersthat possess distinct mixes of exchange relationships, exchange mechanisms and transaction characteristics. Transactional buyers prefer arms-length relationships and tend to switch suppliers often, while Recurrent buyers have a relational approach as they develop longer and closer exchange relationships with incumbent suppliers that, based on the additional qualitative evidence, exhibit investment in non-contractible exchange attributes. The two other clusters, Small and Large Diversifiers, do not show such strong preferences either for arms-length or for recurrent exchange or for any exchange mechanism. Buyers in these clusters seem to combine arms-length relationships with some suppliers and recurrent relationships with other suppliers.</p><p>The high level of buyer experience across different portfolios indicates that they are not simply intermediary stages of the evolution of one single portfolio type but rather deliberate stances defined by an inherent intention of different buyers to pursue specific exchange relationship strategy. In fact, all buyers exhibited high performance levels, although Recurrent buyers were found to enjoy higher performance of their portfolios than buyers in other clusters, while Transactional buyers have the lowest level of performance (although still high).</p><p>Second, reverse auctions are found to be associated with shortterm, arms-length exchange relationships, while bilateral negotiations support longer-term, recurrent exchange relationships that display non-contractible elements of exchange, which supports some of existing studies on reverse auctions that suggested similar conclusions based on anecdotal evidence <ref type="bibr" target="#b14">[15,</ref><ref type="bibr" target="#b39">40]</ref>.</p><p>Third, the presence of a large cluster of Recurrent buyers can have far-reaching consequences for the online marketplaces. Given their reliance on non-contractible elements, it would mean that buyers in such relational dyads would experience less need for the mechanisms of formal governance (e.g. formal terms and conditions, arbitration, rating systems) <ref type="bibr" target="#b34">[35]</ref> and at some point might choose to abandon the marketplace to avoid service fees. To prevent relational dyads from leaving, online marketplaces need to cater for close buyer-supplier relationships. They must address key characteristics of such relationships, such as their longer-term nature; intensive information exchange and accumulation and re-use of knowledge. One way to address this issue would be by providing more value-added, collaboration-oriented functionality to support project execution,</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>Fig. 1 .</head><label>1</label><figDesc>Fig. 1. Taxonomy dimensions, antecedents and performance.</figDesc><graphic coords="3,158.63,555.65,286.88,172.35" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>Fig. 2 .</head><label>2</label><figDesc>Fig. 2. Clusters of buyers' portfolio of supplier relationships.</figDesc><graphic coords="7,57.71,53.18,221.38,255.57" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head>Table 1</head><label>1</label><figDesc>Cluster dimensions, antecedents, outcomesdescriptive statistics.</figDesc><table><row><cell>Min Max</cell><cell>Mean Median St. Dev.</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1"><head>Table 2</head><label>2</label><figDesc>Correlations (Pearson).</figDesc><table><row><cell>1</cell><cell>2</cell><cell>3</cell><cell>4</cell><cell>5</cell><cell>6</cell><cell>7</cell><cell>8</cell><cell>9</cell><cell>1 0</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2"><head>Table 4</head><label>4</label><figDesc>Dissimilarity ratio.</figDesc><table><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>Table 5</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell cols="2">4-cluster solution (means).</cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>Transactional</cell><cell>Recurrent</cell><cell>Small</cell><cell>Large</cell><cell>Scheffe</cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>buyers</cell><cell>buyers</cell><cell>diversifiers</cell><cell>diversifiers</cell><cell>differences</cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>(1)</cell><cell>(2)</cell><cell>(3)</cell><cell>(4)</cell><cell>p b 0.1</cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>Share of projects</cell><cell>33</cell><cell>83</cell><cell>52</cell><cell>65</cell><cell>(1; 2,3,4)</cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>per preferred</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>(2; 3,4)</cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>supplier, %</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>Duration of</cell><cell>270</cell><cell>647</cell><cell>699</cell><cell>787</cell><cell>(1; 2,3,4)</cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>relationships with</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>preferred supplier (days)</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>Share of reverse</cell><cell>65</cell><cell>14</cell><cell>47</cell><cell>25</cell><cell>(1; 2,3)</cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>auctions, %</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>(2; 3)</cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>Average project</cell><cell>379</cell><cell>377</cell><cell>485</cell><cell>1,468</cell><cell>(4; 1,2,3)</cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>value (USD)</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>Average project</cell><cell>44</cell><cell>24</cell><cell>123</cell><cell>65</cell><cell>(1; 2,3)</cell></row><row><cell>Number of clusters in a solution</cell><cell>2</cell><cell>3</cell><cell>4</cell><cell>5</cell><cell>6</cell><cell>7</cell><cell>length (days)</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>(2; 3,4) (3; 4)</cell></row><row><cell>Dissimilarity ratio</cell><cell>1.583</cell><cell>1.661</cell><cell>1.796</cell><cell>1.478</cell><cell>1.516</cell><cell>1.481</cell><cell>N</cell><cell>47</cell><cell>32</cell><cell>12</cell><cell>13</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_3"><head>Table 3</head><label>3</label><figDesc>Cluster dimensions, antecedents, outcomes, underlying variables and measurements.</figDesc><table><row><cell>Taxonomy dimensions</cell><cell>Variables</cell><cell>Measurements</cell></row><row><cell>Buyer-supplier exchange</cell><cell>Share of projects per preferred supplier (%)</cell><cell>First, a supplier with the higher number of projects is identified in buyer's portfolio. Second,</cell></row><row><cell>relationships</cell><cell></cell><cell>share of this supplier's projects in the portfolio is calculated</cell></row><row><cell></cell><cell>Duration of relationships with preferred supplier</cell><cell>Calculated as a difference between the starting dates of the last and the first projects with</cell></row><row><cell></cell><cell>(days)</cell><cell>the preferred supplier</cell></row><row><cell>Exchange mechanism</cell><cell>Share of projects procured via open reverse auctions</cell><cell>Calculation is straightforward</cell></row><row><cell></cell><cell>(%)</cell><cell></cell></row><row><cell>Transaction</cell><cell>Average project value (USD)</cell><cell>Average of project values in a portfolio. Project value is operationalized as the price paid by</cell></row><row><cell>characteristics</cell><cell></cell><cell>the buyer to the supplier</cell></row><row><cell></cell><cell>Average project length (days)</cell><cell>Difference between the date when buyer's feedback for the project is assigned and the auction</cell></row><row><cell></cell><cell></cell><cell>end date. The feedback is normally supplied right upon the end of a project</cell></row><row><cell>Cluster antecedents</cell><cell></cell><cell></cell></row><row><cell>Buyer experience</cell><cell>Overall spent (USD)</cell><cell>Monetary volume of all projects awarded by the buyer at the marketplace</cell></row><row><cell></cell><cell>Portfolio size (USD)</cell><cell>Monetary volume of all projects in a portfolio</cell></row><row><cell></cell><cell>Overall number of awarded projects</cell><cell>Calculation is straightforward</cell></row><row><cell></cell><cell>Duration of the presence at the marketplace (days)</cell><cell>Difference between the date of data collection and the date of buyer's registration at the</cell></row><row><cell></cell><cell></cell><cell>marketplace</cell></row><row><cell>Cluster outcomes</cell><cell></cell><cell></cell></row><row><cell>Evaluation costs</cell><cell>Number of awarded projects divided by number of</cell><cell>Calculation is straightforward</cell></row><row><cell></cell><cell>posted projects</cell><cell></cell></row><row><cell>Portfolio performance</cell><cell>Average satisfaction rating</cell><cell>Rating available at the marketplace</cell></row></table><note><p>share of projects (83%) to their preferred supplier. The duration of relationships with the preferred supplier is twice as high as that of Transactional buyers. These buyers use open reverse auctions the least of all four types (14% of projects)in 86% of cases they use negotiations.</p></note></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_0"><p>U. Radkevitch et al. / Decision Support Systems 47 (2009) 297-306</p></note>
+		</body>
+		<back>
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>learning, information exchange and communication between longterm partners, which would enable such marketplaces to become a truly multi-functional platform for all stakeholders involved. Otto Koppius is an Assistant Professor of Decision and Information Sciences at RSM Erasmus University, where he also received his Ph.D. His main research interests revolve around the dynamics of social networks, the role of IT in enabling intra-and inter-organizational coordination, electronic auctions, and predictive modeling.</p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Auctions versus negotiations in procurement: an empirical analysis</title>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">L</forename><surname>Bajari</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Mcmillan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Tadelis</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="s">NBER Working Paper No. w9757</title>
+		<imprint>
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Incentives versus transaction costs: a theory of procurement contracts</title>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">L</forename><surname>Bajari</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Tadelis</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Rand Journal of Economics</title>
+		<imprint>
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="287" to="307" />
+			<date type="published" when="2001">2001</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">From vendors to partners: information technology and incomplete contracts in buyer-supplier relationships</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">Y</forename><surname>Bakos</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Brynjolfsson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Organizational Computing</title>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="301" to="328" />
+			<date type="published" when="1993">1993</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Information technology, incentives, and the optimal number of suppliers</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">Y</forename><surname>Bakos</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Brynjolfsson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Management Information Systems</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="37" to="53" />
+			<date type="published" when="1993">1993</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">User heterogeneity and its impact on electronic auction market design: an empirical exploration</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Bapna</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Goes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Gupta</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Jin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MISQ</title>
+		<imprint>
+			<biblScope unit="volume">28</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="21" to="43" />
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<author>
+			<persName><forename type="first">S</forename><surname>Beall</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">R</forename><surname>Carter</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">L</forename><surname>Carter</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Germer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">E</forename><surname>Hendrick</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">D</forename><surname>Jap</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Kaufmann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Maciejewski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">M</forename><surname>Monczka</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Petersen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">The Role of Reverse Auctions in Strategic Sourcing</title>
+		<imprint>
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<author>
+			<persName><forename type="first">M</forename><surname>Bensaou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Venkatraman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Configurations of interorganizational relationships: a comparison between U.S. and Japanese automakers</title>
+		<imprint>
+			<date type="published" when="1995">1995</date>
+			<biblScope unit="volume">41</biblScope>
+			<biblScope unit="page" from="1471" to="1492" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Portfolios of buyer-supplier relationships</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Bensaou</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIT Sloan Management Review</title>
+		<imprint>
+			<biblScope unit="volume">40</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="35" to="44" />
+			<date type="published" when="1999">1999</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Buyer-seller relationships in business markets</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">P</forename><surname>Cannon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><forename type="middle">D</forename><surname>Perreault</surname><genName>Jr</genName></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Marketing Research</title>
+		<imprint>
+			<biblScope unit="page" from="439" to="460" />
+			<date type="published" when="1999-11">1999. November</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Note on online auctions with costly bid evaluation</title>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">M</forename><surname>Carr</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Science</title>
+		<imprint>
+			<biblScope unit="volume">49</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="1521" to="1528" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Reverse auctions -grounded theory from the buyer and supplier perspective</title>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">R</forename><surname>Carter</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Kaufmann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Beall</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">L</forename><surname>Carter</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Logistics &amp; Transportation Review</title>
+		<imprint>
+			<biblScope unit="volume">40</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page">229</biblScope>
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+	<note>Transportation Research. Part E</note>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">The impact of information technology on the organization of economic activity: the &quot;move to the middle&quot; hypothesis</title>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">K</forename><surname>Clemons</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">P</forename><surname>Reddi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Row</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Management Information Systems</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="9" to="36" />
+			<date type="published" when="1993">1993</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Reverse auctions for relationship marketers</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Daly</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Nath</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Industrial Marketing Management</title>
+		<imprint>
+			<biblScope unit="volume">34</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="157" to="166" />
+			<date type="published" when="2005">2005</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<monogr>
+		<title level="m" type="main">Auctions within e-sourcing events, production and operations management</title>
+		<author>
+			<persName><forename type="first">W</forename><surname>Elmaghraby</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+	<note>To appear</note>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Sourcing in the global aerospace supply chain using online reverse auctions</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">L</forename><surname>Emiliani</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Industrial Marketing Management</title>
+		<imprint>
+			<biblScope unit="volume">33</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">65</biblScope>
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">E-sourcing in procurement: theory and behavior in reverse auctions with non-competitive contracts</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Engelbrecht-Wiggans</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Katok</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Science</title>
+		<imprint>
+			<biblScope unit="volume">52</biblScope>
+			<biblScope unit="page" from="581" to="596" />
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Determinants of long-term orientation in buyer-supplier relationships</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Ganesan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Marketing</title>
+		<imprint>
+			<biblScope unit="volume">58</biblScope>
+			<biblScope unit="page" from="1" to="19" />
+			<date type="published" when="1994">1994</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">The effect of alliance network diversity on multinational enterprise performance</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Goerzen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">W</forename><surname>Beamish</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Strategic Management Journal</title>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="333" to="354" />
+			<date type="published" when="2005">2005</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Social exchange in inter-organizational relationships: the resulting benefits of procedural and distributive justice</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">A</forename><surname>Griffith</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">G</forename><surname>Harvey</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">F</forename><surname>Lusch</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Operations Management</title>
+		<imprint>
+			<biblScope unit="volume">24</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="85" to="98" />
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Do norms matter in marketing relationships</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Heide</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>John</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Marketing</title>
+		<imprint>
+			<biblScope unit="volume">56</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="32" to="44" />
+			<date type="published" when="1992">1992</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Mixed mode network structures: the strategic use of electronic communication by organizations</title>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">P</forename><surname>Holland</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">G</forename><surname>Lockett</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Organization Science</title>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="475" to="488" />
+			<date type="published" when="1997">1997</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Online reverse auctions: issues, themes, and prospects for the future</title>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">D</forename><surname>Jap</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of the Academy of Marketing Science</title>
+		<imprint>
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page">506</biblScope>
+			<date type="published" when="2002">2002</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">An exploratory study of the introduction of online reverse auctions</title>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">D</forename><surname>Jap</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Marketing</title>
+		<imprint>
+			<biblScope unit="volume">67</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="96" to="107" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">The impact of online reverse auction design on buyer-supplier relationships</title>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">D</forename><surname>Jap</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Marketing</title>
+		<imprint>
+			<biblScope unit="volume">71</biblScope>
+			<biblScope unit="page" from="146" to="159" />
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Customer portfolio management: toward a dynamic theory of exchange relationships</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Johnson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Selnes</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Marketing</title>
+		<imprint>
+			<biblScope unit="volume">68</biblScope>
+			<biblScope unit="page" from="1" to="17" />
+			<date type="published" when="2004-04">April. 2004</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<monogr>
+		<author>
+			<persName><forename type="first">K</forename><surname>Kumar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Christiaanse</surname></persName>
+		</author>
+		<title level="m">From static supply chains to dynamic supply webs: principles for radical redesign in the age of information, International Conference on Information Systems</title>
+		<imprint>
+			<date type="published" when="1999">1999</date>
+			<biblScope unit="page" from="300" to="306" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Assessing Reseller performance from the perspective of the supplier</title>
+		<author>
+			<persName><forename type="first">N</forename><surname>Kumar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">W</forename><surname>Stern</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">S</forename><surname>Achrol</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Marketing Research</title>
+		<imprint>
+			<biblScope unit="volume">29</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="238" to="253" />
+			<date type="published" when="1992">1992</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<author>
+			<persName><forename type="first">T</forename><surname>Malone</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Yates</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Benjamin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Electronic markets and electronic hierarchies: effects of information technology on market structure and corporate strategies</title>
+		<imprint>
+			<date type="published" when="1987">1987</date>
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="page" from="484" to="497" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">Auctions and bidding</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">P</forename><surname>Mcafee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Mcmillan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Economic Literature</title>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page">699</biblScope>
+			<date type="published" when="1987">1987</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">A portfolio approach to supplier-relationships</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">F</forename><surname>Olsen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">M</forename><surname>Ellram</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Industrial Marketing Management</title>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="page" from="101" to="113" />
+			<date type="published" when="1997">1997</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">Managing online auctions: current business and research issues</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>Pinker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Seidmann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Vakrat</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Science</title>
+		<imprint>
+			<biblScope unit="volume">49</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="1457" to="1484" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">Do formal contracts and relational governance function as substitutes or complements?</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Poppo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">R</forename><surname>Zenger</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Strategic Management Journal</title>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="issue">8</biblScope>
+			<biblScope unit="page" from="707" to="725" />
+			<date type="published" when="2002">2002</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Buying business services through auctions: from a transactional to a relational approach</title>
+		<author>
+			<persName><forename type="first">U</forename><surname>Radkevitch</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Van Der</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Valk</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 14th Annual IPSERA Conference</title>
+		<meeting>the 14th Annual IPSERA Conference<address><addrLine>Archamps, France</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2005">2005</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<monogr>
+		<title level="m" type="main">Coping with costly bid evaluation in online reverse auctions for IT services</title>
+		<author>
+			<persName><forename type="first">U</forename><surname>Radkevitch</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Van Heck</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O</forename><surname>Koppius</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2008">2008</date>
+		</imprint>
+		<respStmt>
+			<orgName>RSM Erasmus University Working Paper</orgName>
+		</respStmt>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title level="a" type="main">Structuring cooperative relationships between organizations</title>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">S</forename><surname>Ring</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Ven</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Strategic Management Journal</title>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="483" to="498" />
+			<date type="published" when="1992">1992</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">Van de Ven, Developmental processes of cooperative interorganizational relationships</title>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">S</forename><surname>Ring</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">H</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Academy of Management Review</title>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="page" from="90" to="118" />
+			<date type="published" when="1994">1994</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">Managing and measuring relational equity in the network economy</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Sawhney</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Zabin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of the Academy of Marketing Science</title>
+		<imprint>
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page">313</biblScope>
+			<date type="published" when="2002">2002</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<analytic>
+		<title level="a" type="main">Online reverse auctions and their role in buyer-supplier relationships</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Smart</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Harrison</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Purchasing and Supply Management</title>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="issue">5-6</biblScope>
+			<biblScope unit="page" from="257" to="268" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<analytic>
+		<title level="a" type="main">Costly bidding in online markets for IT services</title>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">M</forename><surname>Snir</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">M</forename><surname>Hitt</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Science</title>
+		<imprint>
+			<biblScope unit="volume">49</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page">1504</biblScope>
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<analytic>
+		<title level="a" type="main">Reversed auctions or auctions reversed: first experiments by Philips</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">V</forename><surname>Tulder</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Mol</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">European Management Journal</title>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="447" to="456" />
+			<date type="published" when="2002">2002</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<analytic>
+		<title level="a" type="main">Interaction, relationships and networks in business markets: an evolving perspective</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Turnbull</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Ford</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Cunningham</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Business &amp; Industrial Marketing</title>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="issue">3/4</biblScope>
+			<biblScope unit="page" from="44" to="62" />
+			<date type="published" when="1996">1996</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<analytic>
+		<title level="a" type="main">Market provision of custom software: learning effects and low balling</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Whang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Science</title>
+		<imprint>
+			<biblScope unit="volume">41</biblScope>
+			<biblScope unit="issue">8</biblScope>
+			<biblScope unit="page" from="1343" to="1352" />
+			<date type="published" when="1995">1995</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+	<monogr>
+		<title level="m" type="main">The Economic Institutions of Capitalism: Firms, Markets and Relational Contracting</title>
+		<author>
+			<persName><forename type="first">O</forename><forename type="middle">E</forename><surname>Williamson</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1985">1985</date>
+			<publisher>The Free Press</publisher>
+			<pubPlace>New York</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b43">
+	<analytic>
+		<title level="a" type="main">Comparative economic organization: the analysis of discrete structural alternatives</title>
+		<author>
+			<persName><forename type="first">O</forename><forename type="middle">E</forename><surname>Williamson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Administrative Science Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">36</biblScope>
+			<biblScope unit="page" from="269" to="296" />
+			<date type="published" when="1991">1991</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b44">
+	<analytic>
+		<title level="a" type="main">E-sourcing: impact of bidding behavior and non-price attributes</title>
+		<author>
+			<persName><forename type="first">F</forename><surname>Zhong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Wu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 27th International Conference on Information Systems</title>
+		<meeting>the 27th International Conference on Information Systems<address><addrLine>Milwaukee, WI</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b45">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">U</forename><surname>Radkevitch</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Decision Support Systems</title>
+		<imprint>
+			<biblScope unit="volume">47</biblScope>
+			<biblScope unit="page" from="297" to="306" />
+			<date type="published" when="1993">2009. 1993. 2004 Clemons1993</date>
+		</imprint>
+	</monogr>
+	<note>Bakos</note>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

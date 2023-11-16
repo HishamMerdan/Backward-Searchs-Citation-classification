@@ -1,0 +1,885 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Gender Wage Gap in Online Gig Economy and Gender Differences in Job Preferences Completed Research Paper</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Chen</forename><surname>Liang</surname></persName>
+							<email>chen.liang.4@asu.edu</email>
+						</author>
+						<author>
+							<persName><forename type="first">Yili</forename><surname>Hong</surname></persName>
+							<email>hong@asu.edu</email>
+						</author>
+						<author>
+							<persName><forename type="first">Bin</forename><surname>Gu</surname></persName>
+							<email>bin.gu@asu.edu</email>
+						</author>
+						<author>
+							<persName><forename type="first">Jing</forename><surname>Peng</surname></persName>
+							<email>jing.peng@uconn.edu</email>
+						</author>
+						<author>
+							<affiliation key="aff0">
+								<orgName type="laboratory">Gender Differences in Job Preferences and Wage Gap Thirty ninth International Conference on Information Systems</orgName>
+								<address>
+									<postCode>2018 1</postCode>
+									<settlement>San Francisco</settlement>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff1">
+								<orgName type="institution">Arizona State University Tempe</orgName>
+								<address>
+									<settlement>Arizona</settlement>
+									<region>US</region>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff2">
+								<orgName type="institution">Arizona State University Tempe</orgName>
+								<address>
+									<settlement>Arizona</settlement>
+									<region>US</region>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff3">
+								<orgName type="institution">Arizona State University Tempe</orgName>
+								<address>
+									<settlement>Arizona</settlement>
+									<region>US</region>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff4">
+								<orgName type="institution">University of Connecticut Storrs</orgName>
+								<address>
+									<settlement>Connecticut</settlement>
+									<region>US</region>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Gender Wage Gap in Online Gig Economy and Gender Differences in Job Preferences Completed Research Paper</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="MD5">B8D2D4690D2B3C5B4F69C4432135E566</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.7.3" ident="GROBID" when="2023-06-16T09:24+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>gender wage gap</term>
+					<term>job application strategy</term>
+					<term>gig economy</term>
+					<term>quasi-natural experiment</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>We explore whether there exists gender wage gap in the gig economy and examine to what degree gender differences in job application strategy could account for the gap. With a large-scale dataset from a leading online labor market, we show that females only earn around 81.4% of the hourly wage of their male counterparts. We further investigate three main aspects of job application strategy, namely bid timing, job selection, and avoidance of monitoring. After matching males with females using the propensity score matching method, we find that females tend to bid later and prefer jobs with a lower budget. In particular, the observed gender difference in bid timing can explain 7.6% of the difference in hourly wage, which could account for 41% of the gender wage gap (i.e. 18.6%) observed by us. Moreover, taking advantage of a natural experiment wherein the platform rolled out the monitoring system, we find that females are less willing to bid for monitored jobs than males. To further quantify the economic value of the gender difference in avoidance of monitoring, we run a field experiment on Amazon Mechanical Turk (AMT), which suggests that females tend to have a higher willingness to pay (WTP) for the avoidance of monitoring. The gender difference in WTP for the avoidance of monitoring can explain 8.1% of the difference in hourly wage, namely, 44% of the observed gender wage gap. Overall, our study reveals the important role of job application strategies in the persistent gender wage gap.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Introduction</head><p>There is a growing literature documenting the gender wage gap in the labor market. As the previous literature suggests, while employers exhibit less discrimination against females in the hiring process, females still earn a lower wage than males in the same positions <ref type="bibr" target="#b10">(Goldin and Rouse 2000;</ref><ref type="bibr" target="#b19">Kuhn and Shen 2012)</ref>. Therefore, an emerging school of thought is that "gender wage gap is caused mainly by women's choice, not discrimination." 1 In the same vein, more studies are suggesting that the gender wage gap is 1 https://www.campusreform.org/?ID=9827 This report reads "The American Association of University Women (AAUW) has finally admitted that the "gender pay gap" is caused primarily by women's choices, not discrimination. In fact, the AAUW's own research suggests partially attributable to motherhood penalty, gender differences in career plans, or preferences for nonmonetary attributes in a job, such as flexibility <ref type="bibr" target="#b23">(Mas and Pallais 2017)</ref>, work-from-home <ref type="bibr" target="#b23">(Mas and Pallais 2017)</ref>, and workplace competitiveness <ref type="bibr">(Niederle and</ref><ref type="bibr">Vesterlund 2007,2011;</ref><ref type="bibr" target="#b9">Flory et al. 2014)</ref>.</p><p>Given that gender pay gap is a longstanding phenomenon, the new gig economy, which is thriving in many industries (e.g., ridesharing, temporary lodging, outsourcing), seems to provide an efficient way to reduce the gender wage gap. Owing to the market openness and the emphasis on spot-market based short-term employment in gig economy, many scholars predict that gender differences in career development, as well as the gender wage gap, will be smaller in the gig economy (e.g. <ref type="bibr" target="#b10">Goldin and Rouse 2000)</ref>. Specifically, it's predicted but not empirically confirmed that workers tend to have more flexible work hours and locations in the gig economy, making motherhood penalty less likely to become an obstacle to career development. As the booming gig economy is projected to comprise a large portion of the future of work 2 , it is imperative to examine whether there is a gender wage gap in the gig economy. Moreover, given that females tend to have much more flexibility in gig work than in traditional workplace, the gig economy also provides us an unprecedented opportunity to explore factors other than motherhood penalty or compensation differential for flexibility that might influence the gender wage gap, which is critical to policy prescription to further narrow the gender wage gap. In particular, as the gig economy, especially the online gig economy platform, enables workers from all over the world to seek a wider diversity of remote jobs posted by employers from various countries, this provides a unique setting to dig into potential gender differences in job application strategy, which is hitherto little explored. To this end, with the advantage of the availability of large-scale micro-level granular data in the online gig economy <ref type="bibr" target="#b17">(Hong and Pavlou 2017)</ref>, we attempt to explore several critical aspects of gender differences in job application strategy and their impact on the gender wage gap. Specifically, we examine whether there are gender differences in job application strategy and to what extent such gender differences can account for the gender wage gap in the gig economy (if any). In particular, we are interested in the following questions:</p><p>1) Is there a gender wage gap in the gig economy? 2) Whether and to what extent the gender wage gap is driven by gender differences in job application strategy?</p><p>In this paper, we take advantage of a comprehensive dataset from a leading gig economy platform, a quasinatural experiment, and a supporting field experiment to answer the above research questions. First, we infer workers' genders based on their profile images 3 with human labeling. We find that there is a gender wage gap based on the historical hiring data. This result is consistent when we control for various workers' characteristics. We find that, on average, females earn 81.4% of the hourly wage of their male counterparts.</p><p>Second, we recover each worker's consideration set of jobs based on our comprehensive dataset. It is notable that although there are a few studies analyzing employers' preference for workers in the online labor market <ref type="bibr" target="#b6">(Chan and Wang 2017)</ref>, workers' behaviors are yet to be explored, e.g., gender differences in job preference, likely due to the lack of data regarding workers' consideration sets. In our study, because the platform restricts workers to only bid for jobs with at least one skill requirement matched with their own skill sets, we are able to reconstruct the whole list of contemporaneous jobs which were available for workers to bid.</p><p>Based on the recovered consideration sets, we find that females tend to bid later and prefer jobs with a lower hourly wage budget, compared to males. This result is consistent when we only use the matched sample and use an alternative proxy for bid timing. In particular, the result shows that the observed gender difference in bid timing can lead to a decrease of 7.58% in hourly wage, which could roughly account for 40.75% of the observed gender wage gap (i.e. 18.6%).</p><p>Third, we find that females prefer to bid jobs without monitoring based on a quasi-natural experiment and that females tend to have a higher willingness to pay (WTP) for the avoidance of monitoring through a field experiment. Specifically, hinging on the exogenous shock when the platform implemented the monitoring system on all the hourly jobs, we observe that females are less willing to bid for monitored jobs based on a difference-in-differences (DID) estimation and difference-in-difference-in-differences (DDD) estimation.</p><p>that only about 7% of the observed pay gap can be attributed to discrimination, with simple economic factors accounting for the remainder."</p><p>2 "Independent work: Choice, necessity, and the gig economy" https://www.mckinsey.com/featuredinsights/employment-and-growth/independent-work-choice-necessity-and-the-gig-economy 3 We find consistent results when we use the first name of workers to infer gender.</p><p>In particular, we take fixed-price jobs as the control group and incorporate the interaction of the monitoring treatment with contractual forms across jobs and the worker's gender. To further quantify the economic value of the gender difference in WTP for the avoidance of monitoring than males, we conduct a randomized field experiment on Amazon Mechanical Turk (AMT). We randomly provide two hourly jobs for workers on AMT (Turkers), in which only one requires monitoring. We also randomize the wage premium offered by the job with the monitoring requirement, which varies between $-2 and $5. The result suggests that females have a higher WTP for the avoidance of monitoring than males, which lends support to our finding from the quasi-natural experiment. In fact, the gender difference in WTP for the avoidance of monitoring can explain roughly 8.13% of the hourly wage, which is equivalent to 43.71% of the observed gender wage gap.</p><p>Our paper contributes to three related strands of literature. First, our study contributes to the literature on gender wage gap <ref type="bibr" target="#b4">(Blau and Kahn 2017;</ref><ref type="bibr" target="#b23">Mas and Pallais 2017;</ref><ref type="bibr">Wiswall and</ref><ref type="bibr">Zafar 2015, 2017)</ref> by providing new explanations for the gender wage gap that are unrelated to gender discrimination, i.e., gender differences in bid timing, job selection, and the avoidance of monitoring. Second, this study also contributes to the literature on the online labor market by showing the importance of workers' job preferences. Although employers' preference of workers has been recently explored <ref type="bibr" target="#b6">(Chan and Wang 2017;</ref><ref type="bibr" target="#b17">Hong and Pavlou 2017)</ref>, there is little research exploring the preference from the supply side (i.e., workers' preference for jobs). Our study advances the previous literature on online labor markets by documenting gender differences in job application strategy and how they may explain the gender wage gap. Lastly, this paper also contributes to the literature on compensation differential <ref type="bibr" target="#b5">(Bonhomme and Jolivet 2009;</ref><ref type="bibr" target="#b23">Mas and Pallais 2017)</ref>. Our study takes advantage of both a quasi-natural experiment and a field experiment to show the gender difference in WTP for the avoidance of monitoring, a non-wage aspect which has hardly been explored in the compensation differential literature.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Theoretical Background</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Gender Wage Gap</head><p>The gender wage gap has been established long ago. According to the estimates from the Institute for Women's Policy Research, women are still paid 20% less than their male counterparts in the same position in 2015<ref type="foot" target="#foot_0">4</ref> . In fact, based on the statistics from the Census Bureau, the female-to-male earnings ratio, which has not been updated since 2007, is 0.805<ref type="foot" target="#foot_1">5</ref> . The persistence of gender pay gap is difficult to explain because the explanations for the wage gap provided by the previous literature, such as gender differences in occupation choice and preference for flexibility, seem to be less relevant in today's society, especially in gig economy. For instance, even in the IT industry, which tends to provide workers a relatively flexible work schedule, women are still systematically paid less than men and are promoted more slowly. There is a large body of literature exploring the causes of the gender wage gap. First, discrimination from the demand side has found to be one of the key explanations. Regarding the mechanisms of discrimination, the findings from the previous literature are still mixed. Some studies suggest that only statistical discrimination <ref type="bibr">(Gupta and Smith 2012;</ref><ref type="bibr" target="#b7">Castillo et al. 2013</ref>) contributes to the gender wage gap while some other papers lend support to the taste-based discrimination explanation <ref type="bibr" target="#b10">(Goldin and Rouse 2000;</ref><ref type="bibr" target="#b22">Marom et al. 2016)</ref>. Second, a growing literature suggests that gender differences in worker confidence and compensation differential also help to account for the gender wage gap, which will be discussed below.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Gender Wage Gap and the Gig Economy</head><p>The emerging gig economy is expected to help to decrease the gender wage gap by increasing work schedule flexibility and reducing the motherhood penalty <ref type="bibr" target="#b10">(Goldin and Rouse 2000)</ref>. According to a report from Hyperwallet, a gig-work payment platform, 86% of females believe that they can earn equal pay to males in the gig economy, while only 41% of females think so in traditional workplace<ref type="foot" target="#foot_2">6</ref> . Moreover, <ref type="bibr" target="#b6">Chan and Wang (2017)</ref> found that employers prefer to hire female workers in feminine-typed jobs and even gender-neutral jobs in an online gig economy platform, which suggests that discrimination is less likely to be a serious obstacle to females. That being said, females are still found to pay an invisible cost owing to gender differences in preference-based characteristics, such as females' lower willingness to work more hours in the car-hailing service industry when the hourly wage is high <ref type="bibr" target="#b8">(Cook et al. 2018</ref>). However, it is still unknown whether females still earn less than males in online gig economy platforms wherein the hourly wage is less dependent on the working time and location. Given that the effect of discrimination in online gig economy platforms has already been explored in the prior study <ref type="bibr" target="#b6">(Chan and Wang 2017)</ref>, in this paper, we will focus on examining key factors that contribute to the gender wage gap other than the gender discrimination in online gig economy platforms.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Gender Wage Gap and Gender differences in Confidence and Avoiding Uncertainty</head><p>Gender differences in worker confidence and avoidance of uncertainty are found to be key contributing factors of the gender wage gap. First, gender differences in confidence may lead to gender differences in competitiveness and the wage gap. For instance, <ref type="bibr" target="#b24">Niederle and Vesterlund (2007)</ref> identified gender differences in competitiveness in a lab experiment. They found that although there are no significant gender differences in performance, women show less preference for the competitive tournament. Further, they explained that gender differences in competitiveness were caused by the differences in confidence and attitudes toward competition instead of gender differences in risk aversion <ref type="bibr" target="#b25">(Niederle and Vesterlund 2011)</ref>. In line with this study, <ref type="bibr" target="#b9">Flory et al. (2014)</ref> found that gender differences in preferences for uncertainty and competition jointly drive gender differences in job-entry choices. Moreover, some contingent factors influence the size of gender differences, including whether the job involves teamwork or has overt gender associations, and his/her age, etc. <ref type="bibr" target="#b9">(Flory et al. 2014)</ref>. Inspired by this stream of literature, we expect that there might exist gender differences in job application strategy due to gender differences in confidence and avoidance of uncertainty suggested in the previous literature and explore the subsequent impact on the gender wage gap.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Gender Wage Gap and Gender difference in Compensation Differential/Preference</head><p>Meanwhile, the gender wage gap can also be caused by compensation differential. Research in this space has focused on how gender differences in preference for various non-wage job characteristics may account for the gender wage gap. This is also referred to as cross-gender compensation differential. Cross-gender compensation differential means that females and males may have different WTP for different nonwage job attributes <ref type="bibr" target="#b0">(Arnould and Nichols 1983)</ref>, which subsequently leads to their different job choices and wages. For example, gender differences in work flexibility have been found to help to explain the gender wage gap. <ref type="bibr" target="#b21">Marini and Fan (1997)</ref> found that gender differences in worker characteristics (including occupational aspirations, job-related skills, and credentials) explain roughly 30% of the gender wage gap. More recently, <ref type="bibr" target="#b28">Wiswall and Zafar (2017)</ref> found that females show a stronger preference for work flexibility and job stability whereas males prefer potential earnings growth. Moreover, such gender differences in preference also indirectly lead to gender differences in college major choices and subsequent income <ref type="bibr" target="#b28">(Wiswall and Zafar 2017)</ref>. In the same vein, <ref type="bibr" target="#b23">Mas and Pallais (2017)</ref> find a significant gender difference in WTP for working from home but an insignificant gender difference in WTP for scheduling flexibility in their large-scale field experiment. Given that most jobs in the gig economy tend to have high scheduling flexibility and allow working-from-home, we focus on potential gender differences in WTP for the avoidance of monitoring, which has become increasingly important with the popularity of online, IT-enabled monitoring systems.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Research Methodology</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Research Framework</head><p>We first explore whether a gender wage gap exists in the gig economy. Then, we examine whether there are gender differences in job application strategy and how these differences may contribute to the gender wage gap. Table <ref type="table" target="#tab_0">1</ref> summarizes our research framework. Next, we explain them in turn. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Observational Data</head><p>Our data for the main analysis were collected from Freelancer.com, one of the leading online gig economy platforms. In Freelancer, all jobs are awarded based on a reverse auction mechanism wherein employers post jobs first and workers bid for those jobs of their interest. When posting the job, the employer provides the project title, project description, required skills, and project budget. To reduce the potential confounding effects of various job requirements, we limit our sample to the "IT, software &amp; website" category, which is the most popular category in Freelancer, in terms of number of jobs and transactions. Given that we attempt to explore the gender difference in job preference, we focus on jobs that can be done remotely. <ref type="foot" target="#foot_3">7</ref> Our final dataset includes a majority of the IT jobs posted in Freelancer between October 2013 and November 2014. Users of Feelancer.com come from over 100 countries. Before making the first bid on the platform, they are required to list those skills they acquired and upload their profile images. Our dataset includes various job-and user-level characteristics as reported in Table <ref type="table" target="#tab_2">2</ref>. Notes: a) Due to the overdispersion in the "log(max_budget)" variable, we dropped the outliers based on 99 th percentile cutoff; b) Given that the consideration set of each worker's bid decision is very large (close to 200 jobs), the mean value of chosen_bid is relatively low. If chosen_bid is equal to 0.005, it means that the worker chooses one job to bid among all the 200 jobs for which s/he could bid. c)We label the gender of each user based on his/her profile image. we hired student workers and MTurk workers to label workers' genders based on their profile images. For each image, there are at least two persons to label them. For those images we could not identify their genders based on the profile images or there is some inconsistency between the labels of the same image, we label their genders as "unknown". We find consistent results when we use the first name of workers to infer gender.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Table 2. Definitions and Summary Statistics of Related Variables</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Construction of Workers' Consideration Sets</head><p>To explore workers' job application strategy, we compile the whole dataset and reconstruct each worker's consideration set based on the platform regulation policy (Figure <ref type="figure" target="#fig_0">1</ref>). In general, there are two main restrictions imposed on the workers' job selection. First, the job should be open for bids at that time.</p><p>Second, the worker has at least one skill matched with the skill requirements of the project. As such, we take advantage of the comprehensiveness of our dataset, which includes both the detailed auction duration, job skill requirements and all workers' skill sets, and construct workers' consideration sets as follows:</p><p>To begin with, we first find a list of active workers and their bids during our observation window. Specifically, the worker j is considered as an active worker at day t only if s/he bid at least once on that day. Further, we find all the IT jobs which were open to bidding when s/he made the bid decision. Lastly, we check whether the worker has at least one skill matched with the job skill requirements to finalize his/her consideration set. According to the platform regulation, the worker could bid for all the jobs satisfying with these two restrictions. In essence, we examine female and male workers' revealed preference for job characteristics based on the actual bid decisions they made, given all the open jobs fitted with their skills.<ref type="foot" target="#foot_4">8</ref> </p><p>When browsing a job without any matched skills:</p><p>With browsing a job with at least one matched skill, the "bid now" button is displayed: </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Experimental Data for the Analysis of Gender Differences in WTP</head><p>We conduct a field experiment on Amazon Mechanical Turk. In total, we have recruited 300 participants, among which 276 have completed the experiment. The experiment follows a between-subject design with 15 treatments by varying wage premium of the job with monitoring (Table <ref type="table" target="#tab_3">3</ref>). For each treatment group, participants will be provided a short introduction of the monitoring system and two job options shown randomly. When the participant is choosing between two hourly choices with different wages, his/her WTP to avoid monitoring can only be driven by his/her distaste for monitoring. To ensure the internal validity of randomization, we ensure the comparability of participants in different treatment groups across various wage premium cases. Wage premiums ∈[-2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5] Table <ref type="table" target="#tab_3">3</ref>. Treatment Design of the Field Experiment</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Measures and Models</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Measuring the Gender Wage Gap</head><p>To measure the gender wage gap in the gig economy, we explore whether female workers systematically earn a lower hourly wage in all the hourly job transactions made on Freelancer.com. Specifically, we use the log-transformed hourly wage based on those awarded bids as the dependent variable and the 𝐹𝑒𝑚𝑎𝑙𝑒 𝑖 dummy is the key independent variable of our interest. We employ the following linear regression model to estimate the effect of gender on hourly wage:</p><formula xml:id="formula_0">log(𝑤𝑎𝑔𝑒 𝑖𝑡 ) = 𝛼 𝑖𝑡 + 𝛽 1 𝐹𝑒𝑚𝑎𝑙𝑒 𝑖 + 𝑐𝑜𝑛𝑡𝑟𝑜𝑙𝑠(Worker 𝑖 ) + 𝜀 𝑖𝑡<label>(1)</label></formula><p>According to the literature on the gender wage gap, we attempt to calculate the adjusted gender wage gap which needs to be corrected for differences in payment due to country or occupation, differences in period, and differences in human capital <ref type="bibr">(Freeman and Oostendorp 2000;</ref><ref type="bibr">O'Neill 2003;</ref><ref type="bibr">Oostendorp 2004;</ref><ref type="bibr" target="#b4">Blau and Kahn 2017)</ref>. To adjust for the country or period differences, we control for the worker country and month two-way fixed effects and cluster standard errors accordingly. Given that our observations come from the same type of jobs (online IT jobs), the occupation differences among our sample is relatively small. To correct for human capital, we assume that the worker's rating, experience and tenure can serve as good proxies for the worker's human capital. Accordingly, we further add the control for various time-varying covariates regarding worker i, such as the number of reviews entered by previous employers, the average rating, the tenure measured in the month unit, the primary language set by worker i, verification measures and the length of the tagline on worker i's profile, etc. A significant coefficient of the dummy 𝐹𝑒𝑚𝑎𝑙𝑒 𝑖 suggests that there is a gender wage gap in the gig economy.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Gender Differences in Bid Timing and Budget Preference</head><p>To further explore whether there are gender differences in bid timing and budget preference among all hourly IT jobs, we estimated the heterogeneity in female and male workers' preference for jobs' characteristics. Particularly, we examine the impact of the 𝑙𝑜𝑔 (𝑑𝑎𝑦𝑠𝑡𝑜𝑒𝑛𝑑 𝑖𝑗 ) dummy and the 𝑙𝑜𝑔 (𝑚𝑎𝑥𝑏𝑢𝑑𝑔𝑒𝑡 𝑖𝑗 ) dummy on the probability of worker i bidding for the job j. We control for the fixedeffects of the consideration set of each bid with the linear probability model. In particular, the decision of worker i bidding for job j is modeled as follows: </p><formula xml:id="formula_1">𝑊𝑜𝑟𝑘𝑒𝑟 𝑖𝑡 _𝑏𝑖𝑑_𝑓𝑜𝑟_𝑗𝑜𝑏 𝑗 = 𝛼 𝑖𝑡 +</formula><p>where 𝛼 𝑖𝑡 means the fixed effect of the consideration set facing worker i at time t, and 𝐹𝑒𝑚𝑎𝑙𝑒 𝑖 dummy denotes whether worker i is a female inferred based on his/her profile image. 𝑐𝑜𝑛𝑡𝑟𝑜𝑙𝑠(𝑗𝑜𝑏 𝑗 ) include various related characteristics of all the jobs in the consideration set, such as the employer's country dummy, the number of reviews and average rating of the employer of job j, the maximum budget of hourly wage listed by the employer, the length of job title and description, the number of skills required by the job, whether this job is featured. 𝜀 𝑖𝑡𝑗 is the error term clustered at the consideration set faced by worker i at time t. We are interested in the coefficient of two interaction terms (𝛽 3 and 𝛽 4 ) which denote whether females prefer to bid later and bid jobs with a smaller hourly job budget compared to their male counterparts.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Gender Differences in Avoidance of Monitoring in the Quasi-Natural Experiment</head><p>We estimate gender differences in avoidance of monitoring by taking advantage of the exogenous shock when the platform requires all workers hired for hourly jobs need to install and use the monitoring system. And this monitoring system is not available for fixed-price jobs. Specifically, we employ the DID estimation and the DDD estimation to check whether females are less willing to work under monitoring. First, in the DID estimation framework, we are interested in the coefficient of the interaction term (𝛽 2 ), which denotes that whether female workers are less willing to bid for hourly jobs after the implementation of monitoring systems by taking the fixed-price jobs as the control group. Here, we employ the propensity score matching to control for the selection on observables among job types and only use highly comparable fixed-price jobs as the counterfactual.</p><formula xml:id="formula_3">𝑊𝑜𝑟𝑘𝑒𝑟 𝑖𝑡 _𝑐ℎ𝑜𝑖𝑐𝑒_𝑜𝑛_𝑗𝑜𝑏 𝑗 = 𝛼 𝑖𝑡 + 𝛽 1 𝐻𝑜𝑢𝑟𝑙𝑦 𝑗 + 𝛽 2 𝐴𝑓𝑡𝑒𝑟 𝑖𝑡 × 𝐻𝑜𝑢𝑟𝑙𝑦 𝑗 + 𝑐𝑜𝑛𝑡𝑟𝑜𝑙𝑠(𝐽𝑜𝑏 𝑗 ) + 𝜀 𝑖𝑡𝑗<label>(3)</label></formula><p>Further, we also match male and female workers based on their reputation and various profile information.</p><p>Based on the comparable females and males within the matched sample, we explore the difference in the treatment effect of monitoring on males and females in term of job preference:</p><formula xml:id="formula_4">𝑊𝑜𝑟𝑘𝑒𝑟 𝑖𝑡 _𝑐ℎ𝑜𝑖𝑐𝑒_𝑜𝑛_𝑗𝑜𝑏 𝑗 = 𝛼 𝑖𝑡 + 𝛽 1 𝐻𝑜𝑢𝑟𝑙𝑦 𝑗 + 𝛽 2 𝐹𝑒𝑚𝑎𝑙𝑒 𝑖 × 𝐻𝑜𝑢𝑟𝑙𝑦 𝑗 + 𝛽 3 𝐴𝑓𝑡𝑒𝑟 𝑖𝑡 × 𝐻𝑜𝑢𝑟𝑙𝑦 𝑗 + 𝛽 4 𝐹𝑒𝑚𝑎𝑙𝑒 𝑖 × 𝐴𝑓𝑡𝑒𝑟 𝑖𝑡 × 𝐻𝑜𝑢𝑟𝑙𝑦 𝑗 + 𝑐𝑜𝑛𝑡𝑟𝑜𝑙𝑠(𝐽𝑜𝑏 𝑗 ) + 𝜀 𝑖𝑡𝑗<label>(4)</label></formula><p>We compare the difference in preference for hourly jobs for males before and after the implementation of monitoring systems (DD 𝑚𝑎𝑙𝑒 ) with the difference in preference for hourly jobs for females before and after (DD 𝑓𝑒𝑚𝑎𝑙𝑒 ). In other words, DDD = DD 𝑓𝑒𝑚𝑎𝑙𝑒 -DD 𝑚𝑎𝑙𝑒 , which will be captured by the coefficient of the triple interaction (𝛽 4 ). Note that, compared to the traditional DDD estimation, the term 𝐴𝑓𝑡𝑒𝑟 𝑖𝑡 × 𝐹𝑒𝑚𝑎𝑙𝑒 𝑖 is omitted because it is nested in the time-varying fixed effect 𝛼 𝑖𝑡 . If we observe a significantly negative coefficient of DDD (𝛽 4 ), it suggests that females tend to have a stronger avoidance of monitoring than their male counterparts, which means that females prefer to bid for jobs without monitoring.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Gender Differences in WTP for Avoidance of Monitoring in the Field Experiment</head><p>Following the modeling framework of <ref type="bibr" target="#b23">Mas and Pallais (2017)</ref>, the probability of workers choosing a job with monitoring when the wage premium of the monitored job is ∆𝑊 as follows:</p><formula xml:id="formula_5">𝑃(𝑌 𝑖 = 1) = Pr(𝛽∆𝑊 𝑖 + 𝛿𝑋 -𝑍 𝑖 &gt; 0) (1 -𝜂) + 𝜂/2 (5)</formula><p>where represents the probability that the worker is inattentive. 𝜂 denotes the probability that the user is inattentive, in which case the user makes decision randomly. X is a vector of various job characteristics other than the hourly wage and the monitoring condition, 𝑍 𝑖 is the disutility for worker i if s/he works under monitoring. ∆𝑊 𝑖 + 𝛿𝑋 -𝑍 𝑖 is the utility of worker i choosing a monitored job with the utility for a job without monitoring normalized to zero. Further, we can get the likelihood function of the above probability is ln ∏ (𝑃(𝑌 𝑖 = 1)) 𝑌 𝑖 (1 -𝑃(𝑌 𝑖 = 1))</p><p>1-𝑌 𝑖 𝑖 and use the maximum likelihood estimation to identify 𝜇 and 𝜎, which represent the mean and standard deviation of the distribution of WTP, respectively.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Empirical Results Regarding Gender Wage Gap</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>The Existence of Gender Wage Gap</head><p>As Table <ref type="table" target="#tab_5">4</ref> shows, the coefficient of the "female" dummy is significantly negative, which suggests that females systematically earn a lower wage than males. We control for workers' reputation and experience in Model 1 and additional characteristics of their profiles in Model 2. The result is highly consistent. Based on the result of Model 2, on average, females can only earn 81.4% of the wage of their male counterparts, which is very close to the gender wage gap found in the general fulltime job in the US (i.e., 80%)<ref type="foot" target="#foot_5">9</ref> . </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Empirical Results Regarding Gender Differences in Job Application</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Model-free Evidence</head><p>To provide some model-free evidence on gender differences in job application strategy, we summarize the sample statistics of the bid order measure and the maximum of wage budget for male and female worker respectively. As Table <ref type="table" target="#tab_7">5</ref> shows, females tend to have a higher bid order and bid for jobs with smaller hourly wage budgets. "Bid_order" denotes the sequence in which the bidders' bids were submitted. The higher bid order implies the latter bid. To further examine whether there exist gender differences in bidding strategy, we will present our result with econometric models introduced in the previous section. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Sample Matching</head><p>To ensure the similarity between females and males, we employ the propensity score matching method to match females with males, and match fixed-price jobs with hourly jobs. As suggested in Table <ref type="table" target="#tab_9">6</ref>, we match males and females based on their reputation, experience, verification, primary language, primary currency and whether they have the "preferred freelancer" badges, most of which serve as proxies for their human capital and the credibility of their identity or work. The balance check result and the density distribution of the propensity score suggest that after the matching, females and males are highly comparable in most of the observable characteristics displayed to the employers. Similarly, given that we use fixed-price jobs as the control group in our analysis for the quasi-natural experiment wherein Freelancer.com rolled out its monitoring system for hourly jobs, we deploy the propensity score matching method to match two types of jobs. We match two types of jobs based on various characteristics which are suggested to be correlated with the contract type by the previous literature <ref type="bibr" target="#b3">(Banerjee and Duflo 2000;</ref><ref type="bibr" target="#b12">Gopal and Sivaramakrishnan 2008;</ref><ref type="bibr" target="#b20">Lin et al. 2016;</ref><ref type="bibr" target="#b29">Roels et al. 2010)</ref>, such as employers' reputation, project size (the total amount of project), the complexity of job (the number of skills required), whether employers have a concrete idea of the job (the length of job title and description), and so on. As suggested by Figure <ref type="figure">3</ref> and<ref type="figure">Table 7</ref>, the density of the propensity score and the mean of all observable covariates are highly comparable in two groups after matching.  <ref type="formula" target="#formula_0">1</ref>) Matching Method without replace are presented. 2) Due to length limitation, results regarding some covariates are omitted, including the "featured_job", "urgent", "NDA", and "payment_verified" dummies. The means of all these variables are not significantly different across groups. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Results on Gender Differences in Bid Timing and Budget Preference</head><p>After matching male workers with female workers, we explore whether there exist gender differences in job application strategy and how such differences may contribute to the gender wage gap. Specifically, we are interested in whether females prefer to bid later and to bid jobs with a smaller wage budget. To answer these two research questions, we examine the heterogeneity of job preference across genders. As Table <ref type="table" target="#tab_13">8</ref> shows, as the number of days between the bid decision date and the end of the auction increases (i.e. the earlier state of auction duration), male workers are more likely to bid for that job. However, the negative coefficient of the interaction term between log(daystoend) and the female dummy suggests that females tend to bid later than males. Based on the estimation of Column (3) of Table <ref type="table" target="#tab_13">8</ref>, as the number days until the end of auction increases 10% (i.e., the earlier stage of auction), the probability of bidding for this job among female workers is 8% (=10%*0.004/0.005) lower than that among male workers. Moreover, we also observe a negative coefficient of the interaction between log(max_budget) and the female dummy, which implies that females tend to prefer jobs with lower hourly wage budgets compared to their male counterparts. Notes: a) Robust standard errors clustered by the consideration set of each bid decision are reported in parentheses; b) The "NDA" dummy is omitted because of the lack of variation. Among all the hourly jobs in the matched workers' consideration set, all jobs do not require NDA. c)Because we control for the fixed effect of the consideration set of each bid, the worker's fixed effect is omitted. d) The dependent variable, chosen_bid, the dummy denoting whether the worker chose to bid for the job or not) is relatively small (its mean is 0.005). As such, even the magnitude of the coefficient is small, its marginal effect measured with percentage change can be large. e)* p&lt;0.1, ** p&lt;0.05, *** p&lt;0.01.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Table 8. Gender Differences in Job Application Strategy</head><p>Based on the revealed preference indicated by workers' actual bids, we found that females tend to bid later and bid for jobs with a smaller hourly wage budget. Though females' preference for jobs with smaller budgets is intuitively found to contribute to the gender wage gap, the implication of females' late bid behavior on the gender wage gap is still unclear. To this end, we further explore the impact of late bids on the probability of being hired by employers to infer the economic value of late bids. We employed the linear probability model to estimate the effect of bid timing (i.e. late bids) and controlled for the job fixed-effects in Model 1 and controlled for the employer fixed-effects in Model 2. In Table <ref type="table" target="#tab_14">9</ref>, the result shows that employers are less likely to hire the worker as the bidding time becomes later. In addition, the previous model-free evidence suggests that the average bid order of females is 13.61, which is 8.27% higher than the average bid order of males. Based on the result of Model 2 of Table <ref type="table" target="#tab_14">9</ref>, females need to decrease their bid price by 7.58%<ref type="foot" target="#foot_6">10</ref> to compensate the negative effect of bid order increasing 8.27%, which could account for roughly the 40.75% 11 of out of the 18.6% gender wage gap observed by us. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Results on Gender Differences in Avoidance of Monitoring</head><p>Another gender difference of our key interest is workers' avoidance of monitoring. Specifically, if females have a stronger avoidance of monitoring, they may be less willing to bid for hourly jobs or accept a lower wage job which does not require monitoring in other platforms or markets, which subsequently lowers their labor participation or average hourly wage in the gig economy. Based on the result of Model 1 and Model 2 with the DID estimation, females are significantly less willing to bid for hourly jobs after the implementation of the monitoring system, with the trend in their preference of the fixed-price jobs as the counterfactual. Moreover, we further explore gender differences in avoidance of monitoring with the DDD estimation by taking the difference between the differences-in-differences (DD) observed in the female sample and the DD observed male sample. As the result of Model 3 shows, females are less willing to bid for hourly jobs after the implementation of monitoring systems. Given that monitoring systems are mandatory for all hourly jobs on Freelancer.com after the implementation and it is difficult to observe the outside option for most female workers, we turn to a field experiment to observe gender differences in WTP for avoidance of monitoring and infer its impact on the gender wage gap accordingly.  </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Results on Gender Differences in WTP for Avoidance of Monitoring</head><p>To further show that there exist gender differences in avoidance of monitoring, we conducted a field experiment by providing all participants two hourly job options and asking them to choose the one they preferred. Following the previous literature, we took the potential inattentive participants in our experiment into consideration <ref type="bibr" target="#b23">(Mas and Pallais 2017)</ref> and estimated the mean WTP of males and females with a mixture model. Specifically, we assumed that a small proportion of inattentive participants randomly chose one from the two given job options and estimated the inattentive rate and the distribution of WTP among those attentive participants. In particular, based on the difference in the probability of choosing a job with monitoring as the wage premium of the job with monitoring changes, we estimate the mean and standard deviation of female and male participants' willingness to pay for the avoidance of monitoring. As the result of maximum likelihood logit model shows, an average female is willing to pay $1.779 for the avoidance of monitoring while an average male is only willing to pay $1.276. The gender difference in WTP for the avoidance of monitoring is around $0.503, which is significant at the 0.05 significance level based on 1,000 bootstrap samples. In particular, according to the prior study on AMT, the mean hourly wage is $6.19 for all those paid work <ref type="bibr" target="#b14">(Hara et al. 2018)</ref>. Therefore, the gender difference in WTP for the avoidance of monitoring is equivalent to 8.13% of the average hourly wage on AMT. In other words, females are willing to accept an hourly job without monitoring by offering 8.13% discount in their hourly wage. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Robustness Checks</head><p>We conduct several robustness checks to further support our finding. Due to the space limitation, we only summarize the estimation strategies and results.</p><p>First, we use an alternative measure to show females' preference to bid later than males. Specifically, we construct another measure, log(daysfromstart), which represents the number of days between the start date of the auction and the bid decision date. We again find a negative coefficient for the main effect of log(daysfromstart) and a positive coefficient for the interaction term between log(daysfromstart) and the gender dummy, which suggests that females tend to bid later than males.</p><p>Second, instead of merely inferring the workers' genders based on their profile images, we predict each worker's gender based on his/her first names by taking advantage of the Facebook profile name database <ref type="bibr" target="#b31">(Tang et al. 2013;</ref><ref type="bibr" target="#b6">Chan and Wang 2017)</ref>. Following the previous literature (Chan and Wang 2017), we limit to those first names with a gender probability higher or equal to 95%, based on which we can reliably infer the worker's gender. Further, we rerun all the models with the sample of those workers whose genders can be consistently predicted with both profile images and first names. All the results are highly consistent with our main finding.</p><p>Third, we also try to rerun the model with alternative models. For one thing, we explore gender differences in job application strategy by controlling the bidder-day two-way fixed effects instead of the consideration set fixed effects. We still find highly consistent results. For another, we use log(bid_order) as the dependent variable and control for job fixed-effect, worker country fixed-effect and all other related bid characteristics. We find that the coefficient of the "female" dummy is significantly positive, which suggests that females tend to bid later than males.</p><p>Fourth, we test the parallel trend assumption using the approach proposed by <ref type="bibr" target="#b1">Autor (2003)</ref> and find that all the relative time coefficients are not significant prior to the implementation of the monitoring system and most relative time coefficients are significantly negative after the implementation. This implies that the pre-existing treatment trend is not an issue in our study.</p><p>Finally, we employ alternative matching methods, including Coarsened Exact Matching (CEM) and the propensity score matching with five nearest neighbors, to match males with females, and fixed-price jobs with hourly jobs. The result is highly consistent.</p><p>Overall, all the robustness checks lend support to our finding that females tend to bid later, prefer jobs with lower wage budget, and have a higher WTP for the avoidance of monitoring than males.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Discussion</head><p>In this paper, we explore whether there is a gender wage gap in the gig economy and examine whether there are gender differences in job application strategy which could account for the persistent gender wage gap. First, we show that females can only earn around 81.4% of the hourly wage of their male counterparts. Second, we find that females tend to bid later and prefer jobs with a smaller hourly wage budget based on both the model-free evidence and the empirical results of the linear probability model with the consideration set fixed-effect. We further find that the observed gender difference in bid timing can lead to a decrease of 7.58% in hourly wage, which could roughly account for 40.75% of the gender wage gap (i.e. 18.6%) observed by us. Third, we examine the gender difference in avoidance of monitoring with a quasinatural experiment and a field experiment. We find that females are less willing to bid for hourly jobs than males and tend to have a higher willingness to pay for the avoidance of monitoring. The gender difference in WTP for the avoidance of monitoring can explain roughly 8.13% of the hourly wage, which is equivalent to 43.71% of the observed gender wage gap. On the whole, our study underscores the important impact of gender differences in job application strategy on the gender wage gap.</p><p>Our paper contributes to several streams of literature. First, our paper contributes to several streams of literature. First, our study adds to the literature on gender wage gap and highlights new explanatory factors for the gender wage gap other than gender discrimination, i.e. gender differences in bid timing, job selection, and avoidance of monitoring. The existing literature mainly focusing on the traditional employment relationship suggests that discrimination, WTP for flexibility <ref type="bibr" target="#b23">(Mas and Pallais 2017)</ref>, motherhood penalty and career choices <ref type="bibr" target="#b4">(Blau and Kahn 2017)</ref> could help to explain the gender wage gap.</p><p>On top of that, some scholars predict that the gig economy is an emerging labor market design which helps to narrow the gender wage gap owing to the flexibility and remoteness of its on-demand employment relationship <ref type="bibr" target="#b10">(Goldin and Rouse 2000;</ref><ref type="bibr" target="#b11">Goldin 2014)</ref>. In contrast, a recent study on the gig economy suggests that the gender wage gap still exists. Using a large-scale dataset from a gig economy platform which provides offline car-hailing service (i.e. Uber), <ref type="bibr" target="#b8">Cook et al. (2018)</ref> find that, gender differences in experience and willingness to work extra hours when the hourly wage is high, mainly explain the gender wage gap. However, given that workers tend to have limited freedom to choose jobs in the car-hailing platform, the existence and potential impact of gender differences in job application strategy is hitherto little explored in their study. Given that the freedom of choosing jobs based on preference is such a common primary feature shared by most gig economy platforms, our study focuses on potential gender differences in job application strategy and points out that gender differences in bid timing, job selection, and WTP for the avoidance of monitoring help to explain the gender wage gap in gig-economy.</p><p>Second, this paper contributes to the literature on the online labor market by providing a framework to recover workers' consideration sets and underscores the importance of workers' job preference. Though employers' preference of workers has been recently explored <ref type="bibr" target="#b6">(Chan and Wang 2017;</ref><ref type="bibr" target="#b17">Hong and Pavlou 2017)</ref>, there is little research exploring the preference from the supply side (i.e. workers' preference for jobs). We extend this prior work by taking advantage of a comprehensive dataset and the platform policy to recover workers' consideration sets. We further demonstrate gender differences in job application strategy from three aspects, including bid timing, job budget preference and avoidance of monitoring. Our study advances the previous literature on online labor markets by documenting gender differences in job application strategy, which has strong academic and managerial implications for the online labor market.</p><p>Lastly, our study also expands the literature on compensation differential. Prior studies have found compensation differential in several non-wage job amenities in traditional employment relationship <ref type="bibr" target="#b5">(Bonhomme and Jolivet 2009)</ref>, such as flexibility <ref type="bibr" target="#b23">(Mas and Pallais 2017)</ref>, unemployment benefits <ref type="bibr" target="#b15">(Hall and Mueller 2015)</ref>, and non-wage job value <ref type="bibr" target="#b30">(Sorkin 2017)</ref>. Given that online monitoring is prevalent in most online labor markets, we focus on potential compensation differential in avoidance of monitoring, a nonwage aspect which has hardly been explored in the previous compensation differential literature. Taking the implementation of the monitoring system as an exogenous shock, we find that females are less willing to bid for jobs with monitoring, compared to males. We further conduct a field experiment on AMT to explicitly estimate gender differences in WTP for the avoidance of monitoring. Our finding suggests that gender differences in WTP for the avoidance of monitoring is likely to persistently contribute to the gender wage gap.</p><p>Meanwhile, we acknowledge several limitations of this study. For instance, we note that our results are limited by the IT job sample and it should be cautious to generalize the results to other job categories, especially those feminine-typed jobs. Further, it might not be appropriate to generalize the results to other offline labor markets until sufficient evidence is available. Last but not least, although our analysis points to a strong relationship between these gender difference in job preference and the gender wage gap, we admit that we cannot rule out all the possible unobserved factor influencing both the gender difference in job application strategy and the gender wage gap. We believe our study helps to suggest the potential ways to reduce the wage gap instead of concluding the drivers of the gender wage gap.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>Figure 1 .</head><label>1</label><figDesc>Figure 1. A Screenshot from Freelancer.com for Jobs with/without Matched Skills</figDesc><graphic coords="6,108.00,590.86,396.00,54.00" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head>Table 1 . Research Framework and Empirical Identification Strategy</head><label>1</label><figDesc></figDesc><table><row><cell>Key</cell><cell></cell><cell cols="2">Research questions</cell><cell>Data source</cell><cell>Empirical model</cell></row><row><cell cols="2">concepts</cell><cell></cell><cell></cell></row><row><cell>Gender</cell><cell></cell><cell cols="2">Is there a gender wage gap</cell><cell>Observational data</cell><cell>Fixed-effect model with the worker country and</cell></row><row><cell cols="2">wage gap</cell><cell cols="2">in the gig economy?</cell><cell>from Freelancer.com</cell><cell>month two-way fixed effects</cell></row><row><cell>Gender</cell><cell></cell><cell cols="2">1) Do females prefer to bid</cell><cell>Observational data</cell><cell>Propensity score matching between female and</cell></row><row><cell cols="2">differences</cell><cell cols="2">jobs with a smaller</cell><cell>from Freelancer.com</cell><cell>male workers</cell></row><row><cell>in</cell><cell>job</cell><cell cols="2">hourly wage budget?</cell><cell>Linear probability model with fixed effects on</cell></row><row><cell cols="2">application</cell><cell cols="2">2) Do females prefer to bid</cell><cell>the consideration set</cell></row><row><cell>strategy</cell><cell></cell><cell>later?</cell><cell></cell></row><row><cell></cell><cell></cell><cell cols="2">3) Do females prefer to bid</cell><cell>Observational data</cell><cell>Propensity score matching between female and</cell></row><row><cell></cell><cell></cell><cell>jobs</cell><cell>without</cell><cell>from Freelancer.com</cell><cell>male workers; propensity score matching</cell></row><row><cell></cell><cell></cell><cell>monitoring?</cell><cell></cell><cell>with a quasi-natural</cell><cell>between fixed-price and hourly jobs</cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell>experiment</cell><cell>Differences-in-Differences and triple differences</cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell>estimator based on a quasi-natural experiment</cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell>A field experiment</cell><cell>Mixture logit model</cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell>on AMT</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1"><head>Table 1 . Research Framework and Empirical Identification Strategy</head><label>1</label><figDesc></figDesc><table /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2"><head>Table 2 . Definitions and Summary Statistics of Related Variables</head><label>2</label><figDesc></figDesc><table><row><cell>Variable</cell><cell>Variable definition</cell><cell>Mean</cell><cell>SD</cell><cell>Min</cell><cell>Median</cell><cell>Max</cell></row><row><cell>chosen_bid</cell><cell>A dummy variable (0,1); =1 if the worker bids for the job or not</cell><cell>0.005</cell><cell>0.069</cell><cell>0.000</cell><cell>0.000</cell><cell>1.000</cell></row><row><cell></cell><cell>A dummy variable (0,1); =1 if the</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>employer_norating</cell><cell>employer has not any reviews written</cell><cell>0.080</cell><cell>0.272</cell><cell>0.000</cell><cell>0.000</cell><cell>1.000</cell></row><row><cell></cell><cell>by previous workers hired by him/her</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell>The number of reviews for the</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>log(employer_review)</cell><cell>employers entered by previous</cell><cell>3.255</cell><cell>1.207</cell><cell>0.000</cell><cell>3.178</cell><cell>6.071</cell></row><row><cell></cell><cell>workers (log-transformed)</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>employer_overall_ rating</cell><cell>The average overall ratings for the employer (in the range of [0-5])</cell><cell>4.884</cell><cell>0.470</cell><cell>0.000</cell><cell>4.996</cell><cell>5.000</cell></row><row><cell></cell><cell>The maximum of hourly wage for this</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>log(max_budget)</cell><cell>job set by the employer (log-</cell><cell>2.300</cell><cell>1.275</cell><cell>0.000</cell><cell>2.197</cell><cell>5.994</cell></row><row><cell></cell><cell>transformed)</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>female</cell><cell>A dummy variable (0,1); =1 if the worker is a female</cell><cell>0.146</cell><cell>0.353</cell><cell>0.000</cell><cell>0.000</cell><cell>1.000</cell></row><row><cell>log(title_length)</cell><cell>Number of characters in the job title (log-transformed)</cell><cell>3.472</cell><cell>0.412</cell><cell>2.398</cell><cell>3.466</cell><cell>4.796</cell></row><row><cell>log(desc_length)</cell><cell>Number of characters in the job description (log-transformed)</cell><cell>5.312</cell><cell>0.918</cell><cell>2.773</cell><cell>5.242</cell><cell>8.101</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_3"><head>Table 3 . Treatment Design of the Field Experiment</head><label>3</label><figDesc></figDesc><table><row><cell>Single question</cell><cell>choice</cell><cell>Job option design</cell><cell>Wage premium of the job with monitoring</cell></row><row><cell></cell><cell></cell><cell>An hourly job without monitoring or an</cell><cell></cell></row><row><cell></cell><cell></cell><cell>hourly job with monitoring</cell><cell></cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_4"><head></head><label></label><figDesc>𝛽 1 log(𝑑𝑎𝑦𝑠𝑡𝑜𝑒𝑛𝑑 𝑖𝑗 ) + 𝛽 2 log(𝑚𝑎𝑥𝑏𝑢𝑑𝑔𝑒𝑡 𝑖𝑗 ) + 𝛽 3 log (𝑑𝑎𝑦𝑠𝑡𝑜𝑒𝑛𝑑 𝑖𝑗 ) * 𝐹𝑒𝑚𝑎𝑙𝑒 𝑖 + 𝛽 4 log (𝑚𝑎𝑥𝑏𝑢𝑑𝑔𝑒𝑡 𝑖𝑗 ) * 𝐹𝑒𝑚𝑎𝑙𝑒 𝑖 + 𝑐𝑜𝑛𝑡𝑟𝑜𝑙𝑠(𝑗𝑜𝑏 𝑗 ) + 𝜀 𝑖𝑡𝑗</figDesc><table /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_5"><head>Table 4 . Evidence of Gender Wage Gap in the Gig Economy</head><label>4</label><figDesc></figDesc><table><row><cell cols="4">Dependent variable: log(hourly_wage)</cell><cell></cell></row><row><cell>Model</cell><cell>(1)</cell><cell></cell><cell></cell><cell>(2)</cell></row><row><cell>Job type</cell><cell cols="2">hourly</cell><cell cols="2">hourly</cell></row><row><cell>female</cell><cell>-0.208**</cell><cell>(0.099)</cell><cell>-0.205**</cell><cell>(0.101)</cell></row><row><cell>log(bidder_overall_rating)</cell><cell>0.021</cell><cell>(0.094)</cell><cell>0.020</cell><cell>(0.091)</cell></row><row><cell>log(bidder_count_rating)</cell><cell>0.055*</cell><cell>(0.029)</cell><cell>0.055*</cell><cell>(0.032)</cell></row><row><cell>bidder_primary_language_eng</cell><cell>0.020</cell><cell>(0.252)</cell><cell>0.020</cell><cell>(0.248)</cell></row><row><cell>log(bidder_tenure_month)</cell><cell cols="2">0.150*** (0.036)</cell><cell>0.162***</cell><cell>(0.037)</cell></row><row><cell>log(length_tagline)</cell><cell></cell><cell></cell><cell>0.085</cell><cell>(0.059)</cell></row><row><cell>identity_verified</cell><cell></cell><cell></cell><cell>-0.050</cell><cell>(0.068)</cell></row><row><cell>phone_verified</cell><cell></cell><cell></cell><cell>0.024</cell><cell>(0.297)</cell></row><row><cell>preferred_freelancer</cell><cell></cell><cell></cell><cell>0.041</cell><cell>(0.078)</cell></row><row><cell>log(milestone_percentage)</cell><cell></cell><cell></cell><cell>0.009</cell><cell>(0.034)</cell></row><row><cell>Observations</cell><cell cols="2">1,300</cell><cell cols="2">1,288</cell></row><row><cell>R-squared</cell><cell cols="2">0.047</cell><cell cols="2">0.053</cell></row><row><cell>Bidder country dummy</cell><cell cols="2">yes</cell><cell></cell><cell>yes</cell></row><row><cell>Month fixed effects FE</cell><cell cols="2">yes</cell><cell></cell><cell>yes</cell></row></table><note><p>Notes: a) Here, log(length_tagline) denotes the length of the tagline on worker i's profile, which can be considered as the short headline of the self-introduction on the profile page; b) Robust standard errors clustered by the bidder country and month two-way fixed effects are reported in parentheses; c) * p&lt;0.1, ** p&lt;0.05, *** p&lt;0.01.</p></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_6"><head>Table 4 . Evidence of Gender Wage Gap in the Gig Economy</head><label>4</label><figDesc></figDesc><table /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_7"><head>Table 5 . Model-free Evidence of Gender Differences in Job Application Strategy</head><label>5</label><figDesc></figDesc><table><row><cell></cell><cell></cell><cell cols="2">Male workers</cell><cell></cell><cell></cell><cell cols="2">Female workers</cell><cell></cell></row><row><cell>Variable</cell><cell>Mean</cell><cell>SD</cell><cell>Min</cell><cell>Max</cell><cell>Mean</cell><cell>SD</cell><cell>Min</cell><cell>Max</cell></row><row><cell>bid_order</cell><cell>12.57</cell><cell>13.25</cell><cell>1.00</cell><cell>109.00</cell><cell>13.61</cell><cell>13.97</cell><cell>1.00</cell><cell>89.00</cell></row><row><cell>max_budget</cell><cell>13.79</cell><cell>10.48</cell><cell>0.00</cell><cell>50.00</cell><cell>13.25</cell><cell>10.14</cell><cell>0.00</cell><cell>50.00</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_8"><head>Table 5 . Model-free Evidence of Gender Differences in Job Application Strategy</head><label>5</label><figDesc></figDesc><table /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_9"><head>Table 6 . Balance Check for Propensity Score Matching between Females and Males</head><label>6</label><figDesc>Results of Nearest Neighbor (1) Matching Method without replace are presented. 2) Due to length limitation, results regarding some variables are omitted, including the "primary_language_Eng" and "primary_currency_US" dummies. The means of both variables are not significantly different across groups.</figDesc><table><row><cell></cell><cell></cell><cell></cell><cell>Mean</cell><cell></cell><cell>%</cell><cell>t-test</cell><cell></cell></row><row><cell>Variable</cell><cell>Sample</cell><cell>Female</cell><cell>Male</cell><cell>%bias</cell><cell>reduced |bias|</cell><cell>t</cell><cell>p&gt;|t|</cell></row><row><cell>registration_month</cell><cell>Unmatched Matched</cell><cell>635.910 635.910</cell><cell>629.490 636.200</cell><cell>27.400 -1.200</cell><cell>95.500</cell><cell>7.070 -0.300</cell><cell>0.000 0.768</cell></row><row><cell>current_reviews</cell><cell>Unmatched Matched</cell><cell>14.587 14.587</cell><cell>15.650 15.798</cell><cell>-1.500 -1.700</cell><cell>-14.000</cell><cell>-0.430 -0.260</cell><cell>0.669 0.795</cell></row><row><cell>avg_rating</cell><cell>Unmatched Matched</cell><cell>2.082 2.082</cell><cell>2.207 1.953</cell><cell>-5.200 5.400</cell><cell>-3.800</cell><cell>-1.440 1.150</cell><cell>0.149 0.251</cell></row><row><cell>payment_verified</cell><cell>Unmatched Matched</cell><cell>0.006 0.006</cell><cell>0.009 0.006</cell><cell>-4.600 0.000</cell><cell>100.000</cell><cell>-1.770 0.000</cell><cell>0.076 1.000</cell></row><row><cell>identity_verified</cell><cell>Unmatched Matched</cell><cell>0.004 0.004</cell><cell>0.011 0.004</cell><cell>-7.800 0.500</cell><cell>93.100</cell><cell>-2.870 0.240</cell><cell>0.004 0.808</cell></row><row><cell>phone_verified</cell><cell>Unmatched Matched</cell><cell>0.001 0.001</cell><cell>0.001 0.002</cell><cell cols="2">-1.600 -70.600 -2.700</cell><cell>-0.610 -0.820</cell><cell>0.542 0.414</cell></row><row><cell>preferred_freelancer</cell><cell>Unmatched Matched</cell><cell>4.916 4.916</cell><cell>4.940 4.917</cell><cell>-8.300 -0.400</cell><cell>95.500</cell><cell>-3.340 -0.100</cell><cell>0.001 0.918</cell></row><row><cell>Notes: 1)</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_10"><head>Table 6 . Balance Check for Propensity Score Matching between Females and Males Figure 2. Density of Propensity Score of Being Female (before and after Matching)</head><label>6</label><figDesc></figDesc><table /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_11"><head>Table 7 . Balance Check for PSM Between Fixed-Price Jobs and Hourly Jobs</head><label>7</label><figDesc></figDesc><table><row><cell>10 15</cell><cell cols="2">a) before matching</cell><cell></cell><cell>10 15 20</cell><cell></cell><cell cols="2">b) after matching</cell><cell></cell></row><row><cell>0 5</cell><cell></cell><cell></cell><cell></cell><cell>0 5</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell>0</cell><cell>.2</cell><cell>.4</cell><cell>.6</cell><cell>0</cell><cell></cell><cell>.2</cell><cell>.4</cell><cell>.6</cell></row><row><cell></cell><cell></cell><cell>pscore</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>pscore</cell><cell></cell></row><row><cell></cell><cell></cell><cell>female</cell><cell>male</cell><cell></cell><cell></cell><cell></cell><cell>female</cell><cell>male</cell></row><row><cell cols="2">Variable</cell><cell>Sample</cell><cell>Hourly</cell><cell cols="2">Mean Fixed-price</cell><cell>%bias</cell><cell>% reduced |bias|</cell><cell>t</cell><cell>t-test</cell><cell>p&gt;|t|</cell></row><row><cell cols="2">employer_developed</cell><cell>Unmatched Matched</cell><cell>0.381 0.381</cell><cell>0.762 0.379</cell><cell></cell><cell>-83.300 0.600</cell><cell>99.300</cell><cell cols="2">-35.970 0.190</cell><cell>0.000 0.852</cell></row><row><cell cols="2">title length</cell><cell>Unmatched Matched</cell><cell>31.968 31.968</cell><cell>35.346 32.164</cell><cell></cell><cell>-20.400 -1.200</cell><cell>94.200</cell><cell cols="2">-8.100 -0.420</cell><cell>0.000 0.674</cell></row><row><cell cols="2">job_desc length</cell><cell>Unmatched Matched</cell><cell>270.970 270.970</cell><cell>455.200 285.680</cell><cell></cell><cell>-41.600 -3.300</cell><cell>92.000</cell><cell cols="2">-15.500 -1.490</cell><cell>0.000 0.136</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_12"><head>Table 7 . Balance Check for PSM Between Fixed-Price Jobs and Hourly Jobs Figure 3. Density of Propensity Score of Being an Hourly Job (before and after Matching)</head><label>7</label><figDesc></figDesc><table /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_13"><head>Table 8 . Gender Differences in Job Application Strategy Dependent</head><label>8</label><figDesc>variable: whether the worker chose to bid for the job or not</figDesc><table><row><cell>Sample</cell><cell>Female &amp; male matched sample</cell><cell cols="2">Female &amp; male matched sample</cell><cell cols="2">Female &amp; male matched sample</cell><cell>Female &amp; male full sample</cell></row><row><cell>Job type</cell><cell>hourly</cell><cell cols="2">hourly</cell><cell cols="2">hourly</cell><cell>hourly</cell></row><row><cell>Variables</cell><cell>(1)</cell><cell>(2)</cell><cell></cell><cell>(3)</cell><cell>(4)</cell></row><row><cell>log(daystoend)</cell><cell cols="5">0.008*** (0.001) 0.010*** (0.001) 0.010*** (0.001) 0.009*** (0.000)</cell></row><row><cell>log(daystoend)*female</cell><cell></cell><cell cols="4">-0.004*** (0.001) -0.004*** (0.001) -0.003*** (0.001)</cell></row><row><cell>log(max_budget)</cell><cell cols="2">0.000 (0.000) -0.000</cell><cell cols="2">(0.000) 0.000</cell><cell>(0.000) 0.000* (0.000)</cell></row><row><cell>log(max_budget)* female</cell><cell>-0.001** (0.000)</cell><cell></cell><cell></cell><cell cols="2">-0.001** (0.000) -0.001** (0.000)</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_14"><head>Table 9 . The Negative Effect of Late Bids Dependent</head><label>9</label><figDesc>variable: whether the employer awarded the job to the worker or not All the bids submitted by workers having prior collaboration experience with the employer are dropped. Moreover, our sample is only limited to jobs with only one winner. b) Robust standard errors clustered by jobs are reported in parentheses; c) * p&lt;0.1, ** p&lt;0.05, *** p&lt;0.01.</figDesc><table><row><cell>Job type</cell><cell></cell><cell>hourly</cell><cell></cell><cell>hourly</cell></row><row><cell>Model</cell><cell></cell><cell>(1)</cell><cell></cell><cell>(2)</cell></row><row><cell>log(bid_order)</cell><cell cols="2">-0.014*** (0.004)</cell><cell cols="2">-0.033*** (0.004)</cell></row><row><cell>log(bid_amount)</cell><cell cols="2">-0.047*** (0.007)</cell><cell cols="2">-0.036*** (0.006)</cell></row><row><cell>log(milestone_percentage)</cell><cell cols="2">-0.028*** (0.003)</cell><cell cols="2">-0.030*** (0.003)</cell></row><row><cell>log(bidder_current_reviews)</cell><cell>0.003</cell><cell>(0.002)</cell><cell>-0.004**</cell><cell>(0.002)</cell></row><row><cell>log(bidder_avg_rating)</cell><cell>0.004*</cell><cell>(0.002)</cell><cell cols="2">0.010*** (0.002)</cell></row><row><cell>preferred_freelancer</cell><cell cols="2">0.048*** (0.007)</cell><cell cols="2">0.046*** (0.007)</cell></row><row><cell>female</cell><cell>0.000</cell><cell>(0.006)</cell><cell>0.001</cell><cell>(0.006)</cell></row><row><cell>Constant</cell><cell cols="2">0.265*** (0.025)</cell><cell cols="2">0.293*** (0.023)</cell></row><row><cell>Observations</cell><cell></cell><cell>14,447</cell><cell></cell><cell>14,447</cell></row><row><cell>Bidder country dummy</cell><cell></cell><cell>yes</cell><cell></cell><cell>yes</cell></row><row><cell>Employer fixed effects</cell><cell></cell><cell></cell><cell></cell><cell>yes</cell></row><row><cell>Job fixed effects</cell><cell></cell><cell>yes</cell><cell></cell><cell></cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_15"><head>Table 9 . The Negative Effect of Late Bids</head><label>9</label><figDesc></figDesc><table /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_16"><head>Table 10 . Gender Differences in Avoidance of Monitoring Dependent</head><label>10</label><figDesc>variable: whether the worker chose to bid for the job or not</figDesc><table><row><cell>Sample</cell><cell cols="2">Female full sample</cell><cell cols="2">Female matched sample</cell><cell cols="2">Female &amp; male matched sample</cell></row><row><cell>Job type</cell><cell cols="2">All hourly&amp; fixed-price jobs</cell><cell cols="2">Matched hourly&amp; fixed-price jobs</cell><cell cols="2">Matched hourly&amp; fixed-price jobs</cell></row><row><cell>Model</cell><cell></cell><cell>(1)</cell><cell></cell><cell>(2)</cell><cell></cell><cell>(3)</cell></row><row><cell>hourly</cell><cell cols="2">0.003** (0.002)</cell><cell cols="2">0.004** (0.002)</cell><cell>-0.003</cell><cell>(0.002)</cell></row><row><cell>after*hourly</cell><cell cols="2">-0.003** (0.002)</cell><cell cols="2">-0.004** (0.002)</cell><cell>0.002</cell><cell>(0.002)</cell></row><row><cell>hourly*female</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell cols="2">0.007*** (0.003)</cell></row><row><cell>after*hourly*female</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell cols="2">-0.006** (0.003)</cell></row><row><cell>employer_norating</cell><cell>0.001</cell><cell>(0.001)</cell><cell>0.001</cell><cell>(0.001)</cell><cell>-0.000</cell><cell>(0.001)</cell></row><row><cell>log(employer_review)</cell><cell>0.000</cell><cell>(0.000)</cell><cell>0.000</cell><cell>(0.000)</cell><cell>-0.000</cell><cell>(0.000)</cell></row><row><cell>employer_overall_ rating</cell><cell cols="2">0.001** (0.000)</cell><cell>0.001</cell><cell>(0.000)</cell><cell>0.001*</cell><cell>(0.000)</cell></row><row><cell>log(max_budget)</cell><cell cols="2">0.000*** (0.000)</cell><cell>0.000</cell><cell>(0.000)</cell><cell cols="2">0.000*** (0.000)</cell></row><row><cell>log(title_length)</cell><cell>-0.000</cell><cell>(0.001)</cell><cell>-0.001</cell><cell>(0.001)</cell><cell>-0.001*</cell><cell>(0.001)</cell></row><row><cell>log(desc_length)</cell><cell>0.000</cell><cell>(0.000)</cell><cell>0.000</cell><cell>(0.000)</cell><cell>0.001*</cell><cell>(0.000)</cell></row><row><cell>log(skills_count)</cell><cell>-0.001</cell><cell>(0.001)</cell><cell>-0.001</cell><cell>(0.001)</cell><cell>0.000</cell><cell>(0.001)</cell></row><row><cell>featured_job</cell><cell cols="2">-0.011*** (0.004)</cell><cell>-0.01*</cell><cell>(0.004)</cell><cell cols="2">-0.014*** (0.004)</cell></row><row><cell>NDA</cell><cell cols="2">-0.02*** (0.009)</cell><cell cols="2">omitted</cell><cell></cell><cell>omitted</cell></row><row><cell>log(daystoend)</cell><cell cols="2">0.008*** (0.000)</cell><cell cols="2">0.007*** (0.001)</cell><cell cols="2">0.009*** (0.000)</cell></row><row><cell>log(auction_duration)</cell><cell cols="2">-0.009*** (0.001)</cell><cell cols="2">-0.005*** (0.002)</cell><cell cols="2">-0.009*** (0.001)</cell></row><row><cell>consideration set FE</cell><cell></cell><cell>yes</cell><cell></cell><cell>yes</cell><cell></cell><cell>yes</cell></row><row><cell>employer country FE</cell><cell></cell><cell>yes</cell><cell></cell><cell>yes</cell><cell></cell><cell>yes</cell></row><row><cell>Observations</cell><cell cols="2">105,479</cell><cell cols="2">52,221</cell><cell></cell><cell>101,420</cell></row><row><cell>R-squared</cell><cell></cell><cell>0.089</cell><cell></cell><cell>0.188</cell><cell></cell><cell>0.159</cell></row><row><cell>Adjusted R-squared</cell><cell></cell><cell>0.035</cell><cell cols="2">0.092</cell><cell></cell><cell>0.062</cell></row><row><cell>Residual Std. Error</cell><cell></cell><cell>0.064</cell><cell></cell><cell>0.057</cell><cell></cell><cell>0.065</cell></row><row><cell cols="7">Notes: a) Robust standard errors clustered by the consideration set of each bid decision are reported in</cell></row><row><cell cols="3">parentheses; b) * p&lt;0.1, ** p&lt;0.05, *** p&lt;0.01.</cell><cell></cell><cell></cell><cell></cell><cell></cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_17"><head>Table 10 . Gender Differences in Avoidance of Monitoring</head><label>10</label><figDesc></figDesc><table /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_18"><head>Table 11 . Gender Differences in WTP for Avoidance of Monitoring</head><label>11</label><figDesc></figDesc><table><row><cell cols="4">Dependent variable: Willingness to pay for the avoidance of monitoring</cell></row><row><cell>Variables</cell><cell>female</cell><cell>male</cell><cell>Difference</cell></row><row><cell>Mean (𝜇)</cell><cell>$ 1.779 (0.138)</cell><cell>$ 1.276 (0.188)</cell><cell>$0.503 (0.227)</cell></row><row><cell>SD (𝜎)</cell><cell>$ 1.223 (0.135)</cell><cell>$ 0.891 (0.169)</cell><cell></cell></row></table><note><p>Note: Standard errors are calculated based on 1000 bootstrap samples.</p></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_19"><head>Table 11 . Gender Differences in WTP for Avoidance of Monitoring</head><label>11</label><figDesc></figDesc><table /></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="4" xml:id="foot_0"><p>https://iwpr.org/publications/the-gender-wage-gap-2015-annual-earnings-differences-by-gender-raceand-ethnicity</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="5" xml:id="foot_1"><p>5 https://iwpr.org/wp-content/uploads/2017/09/C459_9.11.17_Gender-Wage-Gap-2016-data-update.</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="6" xml:id="foot_2"><p>pdf 6 "The Future of Gig Work is Female," available at www.hyperwallet.com</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="7" xml:id="foot_3"><p>Local jobs only accounts for less than 0.01% of all the jobs posted on the platform.</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="8" xml:id="foot_4"><p>To ensure that workers can bid for all the jobs in the consideration set, we only limit to those jobs which do not use sealed auctions and are described in English. Additionally, since the "hireme" jobs are posted for targeted workers, we also rule out these jobs from our sample.</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="9" xml:id="foot_5"><p>Based on the report from American Association of University Women (AAUW), females working in full-time jobs usually get paid 80% of the wage earned by males (source: https://www.aauw.org/research/the-simple-truth-aboutthe-gender-pay-gap/).</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="10" xml:id="foot_6"><p>(0.033*0.0827/0.036) * 100%=7.58%</p></note>
+		</body>
+		<back>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Wage-risk premiums and workers&apos; compensation: A refinement of estimates of compensating wage differential</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">J</forename><surname>Arnould</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">M</forename><surname>Nichols</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Political Economy</title>
+		<imprint>
+			<biblScope unit="volume">91</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="332" to="340" />
+			<date type="published" when="1983">1983</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Outsourcing at will: The contribution of unjust dismissal doctrine to the growth of employment outsourcing</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">H</forename><surname>Autor</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Labor Economics</title>
+		<imprint>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="1" to="42" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Gender and the labor market: What have we learned from field and lab experiments?</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Azmat</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Petrongolo</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Labour Economics</title>
+		<imprint>
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="page" from="32" to="40" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">V</forename><surname>Banerjee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Duflo</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Reputation Effects and the Limits of Contracting: A Study of the Indian Software Industry</title>
+		<imprint>
+			<date type="published" when="2000">2000</date>
+			<biblScope unit="volume">115</biblScope>
+			<biblScope unit="page" from="989" to="1017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">The gender wage gap: Extent, trends, and explanations</title>
+		<author>
+			<persName><forename type="first">F</forename><forename type="middle">D</forename><surname>Blau</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">M</forename><surname>Kahn</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Economic Literature</title>
+		<imprint>
+			<biblScope unit="volume">55</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="789" to="865" />
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">The pervasive absence of compensating differentials</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Bonhomme</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Jolivet</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Applied Econometrics</title>
+		<imprint>
+			<biblScope unit="volume">24</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="763" to="795" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Hiring preferences in online labor markets: Evidence of a female hiring bias</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Chan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Wang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Science. Articles in Advance</title>
+		<imprint>
+			<biblScope unit="page" from="1" to="22" />
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Gender differences in bargaining outcomes: A field experiment on discrimination</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Castillo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Petrie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Torero</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Vesterlund</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Public Economics</title>
+		<imprint>
+			<biblScope unit="issue">99</biblScope>
+			<biblScope unit="page" from="35" to="48" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<monogr>
+		<title level="m" type="main">The Gender Earnings Gap in the Gig Economy: Evidence from over a Million Rideshare Drivers</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Cook</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Diamond</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Hall</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">A</forename><surname>List</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Oyer</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+	<note>No. repec: ecl: stabus: 3637</note>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Do competitive workplaces deter female workers? A largescale natural field experiment on job entry decisions</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">A</forename><surname>Flory</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Leibbrandt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">A</forename><surname>List</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The Review of Economic Studies</title>
+		<imprint>
+			<biblScope unit="volume">82</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="122" to="155" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Orchestrating impartiality: The impact of &apos;blind&apos; auditions on female musicians</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Goldin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Rouse</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">American Economic Review</title>
+		<imprint>
+			<biblScope unit="volume">90</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="715" to="741" />
+			<date type="published" when="2000">2000</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">A grand gender convergence: Its last chapter</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Goldin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">American Economic Review</title>
+		<imprint>
+			<biblScope unit="volume">104</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="1091" to="1119" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Research Note-On Vendor Preferences for Contract Types in Offshore Software Projects: The Case of Fixed Price vs. Time and Materials Contracts</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Gopal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Sivaramakrishnan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="202" to="220" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Children and career interruptions: The family gap in Denmark</title>
+		<author>
+			<persName><forename type="first">N</forename><forename type="middle">D</forename><surname>Gupta</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Smith</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Economica</title>
+		<imprint>
+			<biblScope unit="volume">69</biblScope>
+			<biblScope unit="page" from="609" to="629" />
+			<date type="published" when="2002">2002</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">A Data-Driven Analysis of Workers&apos; Earnings on Amazon Mechanical Turk</title>
+		<author>
+			<persName><forename type="first">K</forename><surname>Hara</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Adams</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Milland</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Savage</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Callison-Burch</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">P</forename><surname>Bigham</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 2018 CHI Conference on Human Factors in Computing Systems</title>
+		<meeting>the 2018 CHI Conference on Human Factors in Computing Systems</meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2018">2018</date>
+			<biblScope unit="page" from="449" to="463" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<monogr>
+		<author>
+			<persName><forename type="first">R</forename><surname>Hall</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">I</forename><surname>Mueller</surname></persName>
+		</author>
+		<title level="m">Wage Dispersion and Search Behavior (No. 9527)</title>
+		<imprint>
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+	<note>IZA Discussion Papers</note>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Comparing open and sealed bid auctions: Evidence from online labor markets</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Hong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">A</forename><surname>Pavlou</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="49" to="69" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">On Buyer Selection of Service Providers in Online Outsourcing Platforms for IT Services</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Hong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">A</forename><surname>Pavlou</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<imprint>
+			<biblScope unit="volume">28</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="547" to="562" />
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">How competitiveness may cause a gender wage gap: Experimental evidence</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Heinz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">T</forename><surname>Normann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">A</forename><surname>Rau</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">European Economic Review</title>
+		<imprint>
+			<biblScope unit="issue">90</biblScope>
+			<biblScope unit="page" from="336" to="349" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Gender discrimination in job ads: Evidence from china</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Kuhn</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Shen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The Quarterly Journal of Economics</title>
+		<imprint>
+			<biblScope unit="volume">128</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="287" to="336" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Effectiveness of Reputation in Contracting for Customized Production: Evidence from Online Labor Markets</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Viswanathan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Science</title>
+		<imprint>
+			<biblScope unit="volume">64</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="345" to="359" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">The gender gap in earnings at career entry</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">M</forename><surname>Marini</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">L</forename><surname>Fan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">American Sociological Review</title>
+		<imprint>
+			<biblScope unit="page" from="588" to="604" />
+			<date type="published" when="1997">1997</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<monogr>
+		<title level="m" type="main">Gender dynamics in crowdfunding (Kickstarter): Evidence on entrepreneurs, investors, deals and taste-based discrimination</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Marom</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Robb</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O</forename><surname>Sade</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">Working Paper</note>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Valuing alternative work arrangements</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Mas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Pallais</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">American Economic Review</title>
+		<imprint>
+			<biblScope unit="volume">107</biblScope>
+			<biblScope unit="page" from="3722" to="3759" />
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Do women shy away from competition? Do men compete too much?</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Niederle</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Vesterlund</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The Quarterly Journal of Economics</title>
+		<imprint>
+			<biblScope unit="volume">122</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="1067" to="1101" />
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">Gender and competition</title>
+		<author>
+			<persName><forename type="first">Muriel</forename><surname>Niederle</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lise</forename><surname>Vesterlund</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Annual Review of Economics</title>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="601" to="630" />
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Determinants of college major choice: Identification using an information experiment</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Wiswall</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Zafar</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The Review of Economic Studies</title>
+		<imprint>
+			<biblScope unit="volume">82</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="791" to="824" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">How do college students respond to public information about earnings?</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Wiswall</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Zafar</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Human Capital</title>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="117" to="169" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">Preference for the workplace, investment in human capital, and gender</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Wiswall</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Zafar</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The Quarterly Journal of Economics</title>
+		<imprint>
+			<biblScope unit="volume">133</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="457" to="507" />
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">Contracting for collaborative services</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Roels</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">U</forename><forename type="middle">S</forename><surname>Karmarkar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Carr</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Science</title>
+		<imprint>
+			<biblScope unit="volume">56</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="849" to="863" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">Ranking firms using revealed preference</title>
+		<author>
+			<persName><forename type="first">I</forename><surname>Sorkin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The Quarterly Journal of Economics</title>
+		<imprint>
+			<biblScope unit="volume">132</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="1" to="63" />
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">Exploiting homophily effect for trust prediction</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Tang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Gao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Hu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Liu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. 6th ACM Internat. Conf. Web Search Data Mining</title>
+		<meeting>6th ACM Internat. Conf. Web Search Data Mining<address><addrLine>New York</addrLine></address></meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2013">2013</date>
+			<biblScope unit="page" from="53" to="62" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">How do college students form expectations?</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Zafar</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Labor Economics</title>
+		<imprint>
+			<biblScope unit="volume">29</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="301" to="348" />
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

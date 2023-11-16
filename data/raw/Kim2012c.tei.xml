@@ -1,0 +1,1052 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Yield management of workforce for IT service providers</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+				<date type="published" when="2011-10-23">23 October 2011</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Joung</forename><forename type="middle">Yeon</forename><surname>Kim</surname></persName>
+							<email>jyykim@iuk.edu</email>
+							<affiliation key="aff0">
+								<orgName type="department">School of Business</orgName>
+								<orgName type="institution">Indiana University Kokomo</orgName>
+								<address>
+									<postCode>46904</postCode>
+									<settlement>Kokomo</settlement>
+									<region>IN</region>
+									<country key="US">United States</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Kemal</forename><surname>Altinkemer</surname></persName>
+							<affiliation key="aff1">
+								<orgName type="department">Krannert School of Management</orgName>
+								<orgName type="institution">Purdue University</orgName>
+								<address>
+									<postCode>47907</postCode>
+									<settlement>West Lafayette</settlement>
+									<region>IN</region>
+									<country key="US">United States</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Arnab</forename><surname>Bisi</surname></persName>
+							<email>abisi@purdue.edu</email>
+							<affiliation key="aff1">
+								<orgName type="department">Krannert School of Management</orgName>
+								<orgName type="institution">Purdue University</orgName>
+								<address>
+									<postCode>47907</postCode>
+									<settlement>West Lafayette</settlement>
+									<region>IN</region>
+									<country key="US">United States</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff2">
+								<orgName type="institution">MYRA School of Business</orgName>
+								<address>
+									<settlement>Mysore</settlement>
+									<country key="IN">India</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Yield management of workforce for IT service providers</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date type="published" when="2011-10-23">23 October 2011</date>
+						</imprint>
+					</monogr>
+					<idno type="MD5">017D3FB95D9AA64AE52A7D1D35B4EA7D</idno>
+					<idno type="DOI">10.1016/j.dss.2011.10.015</idno>
+					<note type="submission">Received 10 June 2010 Received in revised form 11 April 2011 Accepted 17 October 2011</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.7.3" ident="GROBID" when="2023-06-16T09:23+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>Online service markets IT service providers Yield management IT workforce</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Many IT service firms often suffer inadequate staffing and a possible subsequent profit loss. This may happen for a number of reasons: the high cost of timely adjusting a firm's workforce capacity, the nature of IT projects, fluctuating market demand, etc. This paper proposes a strategic use of the emerging online market mechanism, known as e-lancing, for yield management of workforce for IT service providers. By dynamically controlling admissions of online and conventional orders, a service provider can reach customers in the online channel and increase profits. The proposed model considers an IT service firm, which receives IT project orders through two channels: a conventional procurement channel and an online spot market such as Elance Online. We employ Markov decision theory to obtain optimal admission control policies. The structures of the optimal policy, which is not of threshold type, are analyzed mathematically and examples are presented numerically. The base model and its extended models, which can serve as useful tools for demand control problems of IT service providers, capture the most important characteristic of IT projects, where if a project is admitted, it seizes a random number of workers simultaneously, then it releases the workers either individually or in a group.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.">Introduction</head><p>Improved Internet technology that enables businesses to coordinate jobs and professionals in a global market has introduced new commercial opportunities to e-lancers by providing increased efficiency through reduced transaction costs <ref type="bibr" target="#b22">[23,</ref><ref type="bibr" target="#b23">24]</ref>. This decentralized, individual-oriented electronic market mechanism will become essential for strategic sourcing to design agile organizations by deploying resources quickly and efficiently in response to diverse market changes. Motivated by these factors favoring e-lance markets in the Internet age, this research aims to answer the following research questions: 1) how do we develop an intelligent decision tool to help information technology (IT) service providers utilize their workforce more efficiently by incorporating the e-lance market with the existing conventional channel? and 2) what are the characteristics of the optimal policy for admitting jobs from the two channels?</p><p>IT human capital is the most critical resource for an IT service provider, because there is no notion of physical products, production facilities, inventory, or supply chain in their business processes, unlike those for a physical goods manufacturer. Therefore, an efficient management of human capital is one of the main concerns in IT service firms. Specifically, adequate workforce utilization is directly related to the firm's profit and is a crucial task for an IT service provider. IT human resource has been also acknowledged as a strategic and key asset in the information systems (IS) literature <ref type="bibr" target="#b1">[2,</ref><ref type="bibr" target="#b9">10]</ref>.</p><p>Utilizing workforce at an optimal level is important yet difficult for IT service providers. Many IT service firms often suffer inadequate staffing and subsequent profit loss. IT service firms cannot avoid occasionally retaining excess workforce for a number of reasons: the difficulty of timely adjusting a firm's workforce capacity, the nature of IT projects, demand uncertainty in the market, etc. Labor markets for IT firms behave very differently from standard labor markets <ref type="bibr" target="#b9">[10,</ref><ref type="bibr" target="#b37">38]</ref>. The fluctuating market demand makes it difficult for them to efficiently adjust the headcount to demand. The high demand for IS/IT during the Y2K era and dotcom boom led IT providers to aggressively recruit IT professionals. But after the dotcom boom faded, companies couldn't lay off their excess workers fast enough <ref type="bibr" target="#b12">[13]</ref>. The nature of IT projects is another source of difficulty in optimal staffing. IT service providers want to maintain their workforce capacity at a sufficient level so that they can respond quickly to high market demand or a large project order. On the other hand, since each IT project requires a group of professionals, IT providers face the prospect of a number of idle workers when large projects are over, until they receive new projects. As such, a firm may retain idle workers when it faces low demand or the termination of a large project.</p><p>Maintaining idle workers, however, incurs significant costs to the firm without generating any revenue; the wages of the idle employees and their training costs. Myopic remedies to deal with this challenge can be ad-hoc staffing-up or laying-off. However, these ad-hoc remedies involve high initial costs or potential legal disputes, disabling the firm's agility.</p><p>Furthermore, besides those tangible, direct expenses, underutilization of employees can substantially damage overall organizational performance. Underutilizing employee skills is the worst form of disengagement in an organization. The human resource management literature suggests correlations among employee engagement, work satisfaction, and improved organizational performance and productivity <ref type="bibr" target="#b15">[16,</ref><ref type="bibr" target="#b29">30]</ref>. The improvement in organizational performance is especially enhanced by appropriate utilization of employee's core competency, such as experience and skill <ref type="bibr" target="#b15">[16]</ref>. Employees whose skill and experience are underutilized are likely to feel less useful and less involved in the organization.</p><p>They feel uncertain about their future in the current job and organizations may face losing their competent employees. As such, employee underutilization can potentially impair employee job satisfaction and morale, and overall organizational performance. We believe that IT service providers can gain competitive advantages and enhance productivity and profitability by properly utilizing their most important assets: human capital.</p><p>The workforce utilization problem of an IT service provider has the characteristics shared in the hotel and airline industries where yield management has been successfully employed. IT service firms incur high costs for making any adjustments of initial capacities, like in the hotel and airline industries <ref type="bibr" target="#b19">[20]</ref>. In other words, it is very expensive for them to hire and train new IT professionals or lay off the existing employees. Moreover, the inventory of IT professionals can be seen as perishable just like hotel rooms and airplane seats, in that the excess idle workforce incurs operational costs, including employees' salaries, without generating any revenue and the availability will disappear unless used now. Observing these similarities between the IT service industry and hotel/airline industries, we present a Markov decision model for yield management by effectively utilizing idle workers through e-lancing, the secondary online channel, when the market demand for the conventional channel is low.</p><p>E-lancing was first discussed in <ref type="bibr" target="#b22">[23]</ref> in the management literature and defined as a new market mechanism comprised of freelancers (either individuals or organizations) joined in online networks to provide professional services. The most common type of market mechanism for e-lancing, considered as the secondary channel in the model, is online reverse auctions, where the clients post projects, such as software development and website design, as a form of RFP (Request for Proposal), and then IT service firms bid for them. Online auctions enable firms to efficiently outsource small projects that, mostly, involve less than six person-months of effort <ref type="bibr" target="#b40">[41]</ref>.</p><p>Examples of currently operated Web-based IT service markets include Elance Online (www.elance.com), eWork markets (www.eworkmarkets. com), Rent A Coder (www.rentacoder.com) and Guru (www.guru.com). They provide Web-based project marketplaces that connect small-and medium-sized businesses with a global pool of IT service providers. More information about several e-lancing Web sites is given in Table <ref type="table" target="#tab_0">1</ref>. The e-lancing marketplaces for IT services have been particularly successful among other professional services, because the majority of users are usually Web-savvy and familiar with dealing with auctions in online environments. Moreover, unlike other professional services, a delivery of IT services does not require direct physical interactions among service providers and clients.</p><p>Given growing competition in the IT service industry, the presented optimal policy for sales channel control will provide insights applicable to the management of idle manpower for IT service providers. Among IT service firms that have been already participating in and generating revenue from a popular online marketplace, Elance (www.elance. com), are NixSolutions (www.nixsolutions.com, estimated annual online revenue $1.4 million, Ukraine), SynapseIndia (www.synapseindia. com, estimated annual online revenue $1.3 million, India), XiCom (www.xicom.biz, estimated annual online revenue $1.1 million, India), and WebsiteDesignZ (www.websitedesignz.com, estimated annual online revenue $220,000, Kansas City, US). Their annual revenues and long-time existence in the online marketplace prove the sustainability of the strategy of incorporating online demand in their revenue model. We believe that more companies can benefit from incorporating the online channel in their daily operations. Those companies who haven't exploited the potential opportunities of online markets, as well as those who already utilizing the online markets, will benefit from implementing our job admission model for such two-channel operations and improve the organizational performance.</p><p>In summary, this paper proposes how IT service providers can improve productivity by integrating the e-lancing channel into their traditional business model. The specific focus is on strategic use of online service marketplaces, i.e., e-lancing markets, to manage the excess capacity of an IT service provider's labor pool. The remainder of the paper is composed as follows: We briefly review the related literature in the second section. The third section presents our analytical model for the workforce management problem with two channels, the conventional channel and the online channel, by which an IT service firm can dynamically decide whether to fulfill an incoming order. The fourth section analyzes the structure of optimal policy by defining conditions for a preferred class and proving the submodularity. Then, extended models and related analysis are presented for the case where workers are released together after completing a project. The following section demonstrates the characteristics of the optimal policies, which are obtained by numerical computations. Finally, in the last section we conclude the paper by discussing contributions and future research. Proofs of all the theorems and additional numerical examples are included in an electronic supplementary material.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.">Literature review</head><p>With the growing popularity of using Business-to-Business (B2B) online reverse auctions for procurement, a number of studies have been recently published from various perspectives. Schoenherr and Mabert <ref type="bibr" target="#b38">[39]</ref> offer procurement managers managerial insights and best practices obtained from case study companies which used online reverse auctions for sourcing. Greenwald, Kannan, and Krishnan <ref type="bibr" target="#b14">[15]</ref> examine the procurer's information revelation policy in multiple auction sessions and the influence of the policy on the suppliers' bidding behavior. Radkevitch, van Heck, and Koppius <ref type="bibr" target="#b32">[33]</ref> and Kim and Wulf <ref type="bibr" target="#b18">[19]</ref> study characteristics of buyer-supplier relationships in online service marketplaces. Among the literature on B2B online reverse auction markets, the number of studies considering procurement using a combination of traditional and online channels is limited. Ganeshan, Boone, and Aggarwal <ref type="bibr" target="#b11">[12]</ref> develop a model that enables procurement managers to integrate risk management tools when fulfilling demand either by buying via derivative instrument such as option contracts on B2B marketplaces or by directly trading on the spot market with an uncertain price distribution. Seifert, Thonemann, and Hausman <ref type="bibr" target="#b39">[40]</ref> prove the benefits of using online spot markets for commodity from a supply chain perspective. They develop models that determine the optimal order quantities to purchase via traditional long-term contracts and online spot markets. The goal of yield management is to maximize revenue per unit capacity by efficiently utilizing a given fixed resource <ref type="bibr" target="#b4">[5]</ref> or by price discrimination <ref type="bibr" target="#b42">[43]</ref>. When a manufacturer sells products under uncertain demand, admission control can be used to optimize the firm's long-term profit by rejecting an order and waiting for a more profitable order expected to be available in the future <ref type="bibr" target="#b4">[5,</ref><ref type="bibr" target="#b5">6,</ref><ref type="bibr" target="#b7">8]</ref>. Online auctions have often been used as a secondary channel for yield management to dispose of a firm's excess inventory at a lower price while the firm sells its products through the primary conventional channel at list price <ref type="bibr" target="#b5">[6,</ref><ref type="bibr" target="#b30">31]</ref>.</p><p>Unlike most prior research on revenue management for physical goods, a key distinction of modeling the IT human capital utilization problem lies in the fact that busy workers become available for the next project after a service time. For instance, the airline revenue management problem <ref type="bibr" target="#b3">[4,</ref><ref type="bibr" target="#b4">5]</ref> should be treated differently from ours because the seats for the particular route do not become available once the plane departs. Similar situations to ours have been studied using dynamic and stochastic modeling for various service industries with constrained capacity such as telecommunication networks <ref type="bibr" target="#b34">[35]</ref>, rental car business <ref type="bibr" target="#b28">[29,</ref><ref type="bibr" target="#b36">37]</ref>, and operating room reservations for hospitals <ref type="bibr" target="#b13">[14]</ref>. Table <ref type="table" target="#tab_1">2</ref> summarizes the selected references associated with revenue management and compares the types of the resources studied in them.</p><p>Our problem also resembles the stochastic knapsack problem <ref type="bibr" target="#b33">[34]</ref> with random batch sizes. A stochastic knapsack consists of c identical servers and K arriving job classes. Each class i is characterized by its size j i , the arrival rate λ i , and the mean service time 1/μ i , where i=1,2,…,K. If an arriving class-i job is admitted into the knapsack, it holds j i servers for a service time which is exponentially distributed with mean 1/μ i and releases each of j i servers after the service time generating a reward r i . The objective of the problem is to control admission of jobs into the knapsack in order to maximize total reward. The global optimal policy for the stochastic knapsack problem is obtained by the Markov decision processes to optimize over the set of all policies <ref type="bibr" target="#b31">[32,</ref><ref type="bibr" target="#b33">34,</ref><ref type="bibr" target="#b35">36]</ref>. Such admission policies of a stochastic knapsack problem have been studied with various setups <ref type="bibr" target="#b24">[25,</ref><ref type="bibr" target="#b25">26,</ref><ref type="bibr" target="#b33">34,</ref><ref type="bibr" target="#b35">36]</ref>. To the best of our knowledge, prior models do not capture all the requirements of the presented IT workforce utilization problem. Our model incorporates essential characteristics of IT service firms: a group of workers is rented for a random amount of time for an admitted project and the workers remain available again in the firm to serve the next project after completing the current project. Table <ref type="table" target="#tab_2">3</ref> reviews existing models of a multi-server, multi-class loss system and highlights the distinctive features of our model.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.">Model development</head><p>The workforce management problem of an IT service firm is modeled as a dynamic admission control problem in a two-class Markovian loss system with multi-servers receiving random batches. The assumptions made in the model are as follows:</p><p>1) There is neither staff augmentation nor loss during the period considered in the analysis. That is, the total number of IT workers in the firm remains constant.</p><p>2) The pool of IT workers is composed of homogeneous developers/ programmers both in terms of their skills and performance. That is, IT professional's skills are not narrowly focused on a specific technique, but are flexibly expandable and broadly balanced. We relax this assumption in Section 5.</p><p>3) The effects of employee training and experience on a worker's quality improvement are ignored. 4) The projects of each class arrive according to a Poisson distribution with rate λ i . The arrival rate of new projects in the online market is the posting rate of online auctions with technically feasible projects for the provider to complete. 5) A worker's service completion time follows independent exponential distribution with mean 1/μ i . We modify this assumption to model a case where workers are released as a team in Section 5.</p><p>The summary of notation is given in Table A in the Appendix A. In our model, the IT service firm with c workers receives IT projects through two channels: a conventional procurement channel (class 1) and an online auction market (class 2). The conventional channel consists of projects requiring a random number j 1 of workers, have an arrival rate λ 1 , completion rate 1/μ 1 , and unit price per man-month r 1 . Projects requiring a random number j 2 of workers, having arrival rate λ 2 , completion rate 1/μ 2 , and unit price per man-month r 2 comprise the online channel.</p><p>Upon the arrival of projects in each channel, the firm decides whether to fulfill the orders from the conventional channel or to participate in the online auction, depending on workforce. An arrival of a project implies a batch arrival because each project requires a number of IT workers, j i with probability distribution g i (j i ). Once the project is admitted, each of j i workers are released after a service duration with mean 1/μ i . The unit price per man-month r i allows us to incorporate a channel priority. For example, when r 1 is significantly higher than r 2 , class 1 projects require a higher priority service due to a loss of high-profit orders if the demand in the conventional channel is not satisfied with priority.</p><p>We denote the instantaneous states at arrival epochs by (x 1 , x 2 ,i), which indicates that (x 1 , x 2 ) workers working on class 1 and class 2 projects respectively are observed in the system when a project of class-i arrives. The system is in a state (x 1 , x 2 , 0) if there are (x 1 , x 2 ) busy workers in the system and no arrival. In the state (x 1 , x 2 , 0), the only possible action is to leave the system alone and hence the action a = 0 is the only feasible decision. The state (x 1 , x 2 , i ≠ 0) is observed only at arrival epochs, and the decision maker may admit or reject the incoming project. Therefore, a(x 1 , x 2 , i ≠ 0) ∈ {0, 1} where action 0 corresponds to a rejection and action 1 corresponds to an admission of the arriving project. As soon as the admission and rejection decisions are made upon an arrival, the system moves immediately to another state (x 1 + a j 1 , x 2 ) or (x 1 , x 2 + a j 2 ) depending on the decision made and which class project arrived. The schematic diagram of the two-class channel system is depicted in Fig. <ref type="figure" target="#fig_0">1</ref>.</p><p>The uniformization technique <ref type="bibr" target="#b20">[21,</ref><ref type="bibr" target="#b21">22]</ref> is used to transform the original continuous-time Markov decision process to the equivalent discrete-time process. After applying normalization by setting λ 1 + λ 2 + c max (μ 1 , μ 2 ) + δ = 1, the possible state transitions and the transition probabilities are obtained as shown in Fig. <ref type="figure" target="#fig_1">2</ref>. Although the objective of this work is to study the maximal total expected discounted reward for the infinite horizon problem of a 2-class system, for expositional convenience, it is necessary to first write the optimality equations for the corresponding finite horizon problems. The state is denoted as x =(x 1 , x 2 ) and the state space as E ={x : x 1 + x 2 ≤ c}. Then, based on the Bellman's optimality equation, the maximal total expected discounted reward, V n (x 1 , x 2 ), for the system starting in state x with n  <ref type="bibr" target="#b34">[35]</ref> remaining decision epochs in the horizon for a 2-class system yields the following recursive relation:</p><formula xml:id="formula_0">V n x 1 ; x 2 ð Þ¼ λ 1 max X c-x 1 þx 2 ð Þ j 1 ¼1 g 1 j 1 ð Þ V n-1 x 1 þ j 1 ; x 2 ð Þ þ r 1 j 1 1 μ 1 ; V n-1 x 1 ; x 2 ð Þ 8 &lt; : 9 = ; þ λ 2 max ( X c-x 1 þx 2 ð Þ j 2 ¼1 g 2 j 2 ð Þ " P r 2 ; q ð Þ V n-1 x 1 ; x 2 þ j 2 ð Þ þ r 2 j 2 1 μ 2 þ 1-P r 2 ; q ð Þ ð Þ V n-1 x 1 ; x 2 ð Þ ; V n-1 x 1 ; x 2 ð Þ ) þ x 1 μ 1 V n-1 x 1 -1; x 2 ð Þ þ x 2 μ 2 V n-1 x 1 ; x 2 -1 ð Þ þ c max μ 1 ; μ 2 ð Þ -x 1 μ 1 -x 2 μ 2 ð Þ V n-1 x 1 ; x 2 ð Þ ;<label>ð1Þ</label></formula><formula xml:id="formula_1">where V 0 (x 1 , x 2 )=0 for all (x 1 , x 2 ) ∈ E.</formula><p>The first two terms in Eq. ( <ref type="formula" target="#formula_0">1</ref>) represent the admission controls for incoming class-i projects. When the incoming project is admitted, the reward r i j i /μ i , obtained by (unit-time price per worker) × (number of workers) × (worker's service completion time), is accumulated. 1 The firm's profit from the online spot channel (class 2) depends on the probability of winning the auction, P(r 2 , q). The probability is known as a function of the quality of the service provider, the bid price, the number of bidders and other parameters <ref type="bibr" target="#b40">[41]</ref>. In the next section, this probability's value is set as 1 to better focus our analysis on the nature of admission policies. In Section 6.6, however, we remove this constraint and examine the effect of the probability using numerical examples. The third and fourth terms represent the service completions of class-i projects. The fifth term is due to the uniformization.</p><p>Since both the state and action spaces are finite and rewards are bounded, an optimal deterministic stationary policy (d*) ∞ =(d*,d*,......) exists for the infinite horizon discounted problem. The value function 1 The currently dominant software cost estimation methods are based on the COCOMO model <ref type="bibr" target="#b16">[17]</ref> in which the overall effort required to complete a project is the project duration multiplied by the number of developers required.   The dotted circles represent instantaneous states. Each ending node recursively continues its transition as in state (x 1 , x 2 , 0) in the center.</p><p>V(x) for the infinite horizon can be obtained from V n (x) by letting n →∞ and therefore it satisfies a recursive equation similar to Eq. ( <ref type="formula" target="#formula_0">1</ref>). In the following section we derive the results for the finite horizon because the same results hold for the infinite horizon by applying limiting arguments.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.">Results on the preferred class and submodularity</head><p>In this section, we will derive sufficient conditions for class 1 and class 2 jobs to be preferred. Let e i be the i-th unit vector which has 1 at the i-th position and 0 elsewhere. We denote B n (0i)(x)=V n (x) -V n (x + e i ) as the expected loss (burden) to the system that an additional class i job creates when the system is in state x and there are n remaining transitions. Similarly, we denote B n (ki)(x)=V n (x + e k ) -V n (x + e i ) as the expected burden to the system if a class k job is replaced by a class i job. We say that class i is a preferred class if the following two conditions hold for all x∈ E:</p><formula xml:id="formula_2">B n 0i ð Þ x ð Þ≤r i 1 μ i ; and B n ki ð Þ x ð Þ≤r i 1 μ i -r k 1 μ k ; i≠k; i; k ¼ 1; 2;</formula><p>that is, class i is preferred if it is profitable to admit class i jobs in all states if there are idle workers. We now present a sufficient condition for class 1 to be preferred. Unless specified otherwise, we assume μ 1 ≤ μ 2 throughout this section.</p><formula xml:id="formula_3">Theorem 1. If r 1 1 μ 1 μ 1 þ δ ð Þλ 1 þ λ 2 þ μ 2 þ δ ð Þ ≥r 2 1 μ 2 μ 2 þ δ ð Þλ 1 þ λ 2 þ μ 1 þ δ ð Þ ;</formula><p>then for all x ∈ E,</p><formula xml:id="formula_4">B n 01 ð Þ x ð Þ≤ λ 1 þ λ 2 λ 1 þ λ 2 þ μ 1 þ δ r 1 1 μ 1 ; and B n 21 ð Þ x ð Þ≤r 1 1 μ 1 -r 2 1 μ 2 ;<label>ð2Þ</label></formula><p>that is, class 1 is the preferred class.</p><p>With μ 1 ≤ μ 2 , it is evident from Theorem 1 that class 1 is always preferred if r 1 ≥ r 2 . Moreover, if μ 1 b μ 2 , the condition in Theorem 1 allows class 1 to be preferred for some values of r 1 less than r 2 . This means that when it takes no shorter to complete the projects from the traditional channel than those from the spot market, then the traditional channel contracts are preferred (or profitable) as long as their unit price per man-month is greater than that of online projects. In addition, when the traditional project length is strictly longer than online project length, the traditional projects can be still preferred for some cases even when their unit price is less.</p><p>In the following theorem we present a sufficient condition for class 2 to be preferred.</p><formula xml:id="formula_5">Theorem 2. If r 2 1 μ 2 ≥r 1 1 μ 1 , then for all x ∈ E, B n 02 ð Þ x ð Þ≤ λ 1 þ λ 2 λ 1 þ λ 2 þ μ 2 þ δ r 2 1 μ 2 ; andB n 12 ð Þ x ð Þ≤r 2 1 μ 2 -r 1 1 μ 1 ;<label>ð3Þ</label></formula><p>that is, class 2 is the preferred class.</p><p>Theorem 2 provides the condition when it is more profitable for the IT firm to admit online projects over traditional projects. The condition is satisfied when the unit price ratio of online projects to traditional projects outweighs the project length ratio of the two class projects.</p><formula xml:id="formula_6">Since (μ 1 + δ)(λ 1 + λ 2 + μ 2 + δ) b (μ 2 + δ)(λ 1 + λ 2 + μ 1 + δ) for μ 1 b μ 2 ,</formula><p>the conditions in Theorems 1 and 2 together do not provide any sufficient condition on the parameters so that both classes are preferred at the same time. On the other hand, from the conditions in Theorems 1 and 2, it is observed that for the set of parameter values satisfying r 1</p><formula xml:id="formula_7">1 μ 1 μ 1 þδ ð Þλ 1 þλ 2 þμ 2 þδ ð Þ μ 2 þδ ð Þλ 1 þλ 2 þμ 1 þδ ð Þ br 2 1 μ 2 br 1 1 μ 1</formula><p>; there may or may not be any preferred class. This set is non-empty. For example, if</p><formula xml:id="formula_8">λ 1 = 1, λ 2 = 1.1, μ 1 = 1, μ 2 = 1.</formula><p>2, δ = 0.9, then for all r 1 and any r 2 with 1.14r 1 b r 2 b 1.2r 1 , above inequalities hold.</p><p>For our IT service system, the value function is not concave in general (see Fig. <ref type="figure">6</ref>) because of batch arrivals of jobs and finite number of workers. We also observe that the optimal policy is not of threshold type (see Figs. <ref type="figure" target="#fig_3">4-(a</ref>) and 5-(c)) for our system unlike a stochastic knapsack with two classes of jobs where the result follows due to the submodularity of the value function <ref type="bibr" target="#b0">[1]</ref>. Although submodularity does not guarantee an optimal threshold policy for our system, it gives us some insight into the structure of the optimal policy that we discuss later. First we establish the submodularity of the value function.</p><p>Theorem 3. For all n and x + e 1 + e 2 ∈ E,</p><formula xml:id="formula_9">V n x ð Þ-V n x þ e 1 ð Þ -V n x þ e 2 ð ÞþV n x þ e 1 þ e 2 ð Þ ≤0:<label>ð4Þ</label></formula><p>The implication of Theorem 3 is that the optimal policy favors rejecting class i jobs as the number of class j jobs increases in the system, where i ≠ j. To deduce this, let us recall B n (0i)(x) = V n (x) -V n (x + e i ), the expected burden that an additional class i job brings to the system in state x. From the inequality of Eq. ( <ref type="formula" target="#formula_9">4</ref>) we can write: B n (01)(x) ≤ B n (01)(x + e 2 ) and B n (02)(x) ≤ B n (02)(x + e 1 ). These two inequalities lead to the above implication. Note that since the value function is not necessarily concave, it is not true in general that the optimal policy will tend to reject class i jobs as the number of class i jobs increases in the system. The significance of Theorem 3 is the following technical perspective: While submodularity of the value function guarantees threshold type optimal policy in many systems in the existing literature such as in a stochastic knapsack with two classes of jobs <ref type="bibr" target="#b33">[34]</ref> or the rental systems as in <ref type="bibr" target="#b28">[29,</ref><ref type="bibr" target="#b36">37]</ref>, the same is not true for our problem (see Figs. <ref type="figure" target="#fig_3">4-(a)</ref> and<ref type="figure" target="#fig_4">5-(c)</ref>). Yet we are able to develop a decision model for our problem and garner several insights for the optimal policy as discussed in Section 6.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.">Extended models: when workers in a team are released together</head><p>The model we described so far allows individual workers to complete modularized tasks at their service rate and be released independently. This way, the availability of workers is maximized because workers do not have to wait for others in the team to complete their tasks. Nevertheless, we note that it may not be always feasible to implement this, due to the difficulty of modularizing a project, workers may have to be released together, and consequently a different formulation, which we will describe below, is needed. The model can be further extended to include non-homogeneous workers so that project teams can consist of members with different skills. We use this section to describe the rationale of how the original model can be extended to formulate such cases and present the respective Bellman equations. Since the main structures of the extended models are similar to the base model presented in Section 3, we will keep the discussion short. New parameters specific to this section are summarized in Table A in the Appendix A; otherwise notation remain the same as in the original problem.</p><p>First, we consider the case where all workers of the same project team are released together when the project is completed. To model this problem, we introduce a new parameter, γ i , defined as expected class i project completion rate. When a class 1 project is admitted, the corresponding reward is r 1 j 1 /γ 1 . When a class 1 project is completed, the state changes from (x 1 , x 2 ) to (x 1j 1 , x 2 ) with a transition rate of x 1 γ 1 /α 1 . We formulate class 2 project completions similarly. The Bellman equation for this problem is:</p><formula xml:id="formula_10">V n x 1 ; x 2 ð Þ¼λ 1 max X c-x 1 þx 2 ð Þ j 1 ¼1 g 1 j 1 ð Þ V n-1 x 1 þ j 1 ; x 2 ð Þ þ r 1 j 1 1 γ 1 ; V n-1 x 1 ; x 2 ð Þ 8 &lt; : 9 = ; þλ 2 max X c-x 1 þx 2 ð Þ j 2 ¼1 g 2 j 2 ð Þ P r 2 ; q ð Þ V n-1 x 1 ; x 2 þ j 2 ð Þ þ r 2 j 2 1 γ 2 þ 1-P r 2 ; q ð Þ ð Þ V n-1 x 1 ; x 2 ð Þ 2 4 3 5 ; V n-1 x 1 ; x 2 ð Þ 8 &lt; : 9 = ; þ x 1 α 1 γ 1 X x 1 j 1 ¼1 g 1 j 1 ð ÞV n-1 x 1 -j 1 ; x 2 ð Þ þ x 2 α 2 γ 2 X x 2 j 2 ¼1 g 2 j 2 ð ÞV n-1 x 1 ; x 2 -j 2 ð Þ þ c max γ 1 α 1 ; γ 2 α 2 - x 1 α 1 γ 1 - x 2 α 2 γ 2 V n-1 x 1 ; x 2 ð Þ ;<label>ð5Þ</label></formula><p>where V 0 (x 1 , x 2 ) = 0. Numerical examples, shown in Figs. A.1-3 of the electronic supplementary material, show that the optimal policy for this problem exhibits a similar pattern to that of the original problem discussed in Section 3, including the characteristic of non-threshold type policy.</p><p>We also note that it is possible that, in the online sales channel, the service provider is paid on a per project basis instead of a man-month basis because it is difficult for clients to monitor how much effort (i.e., number of workers) the provider spends on the project. In this case, the payment structure needs to be modified to incur penalties for degraded quality or tardiness due to the provider's insufficient effort. To incorporate the penalty into the model, the online channel reward, r 2 j 2 /γ 2 , in Eq. ( <ref type="formula" target="#formula_10">5</ref>) can be rewritten to R* -π([j*j 2 ] + , [1/γ 2 -1/ γ*] + ), where the provider's bids R* for the entire project promising the effort worth of j* workers and completion time 1/γ* but actually allocate only j 2 workers with delivery time of 1/γ 2 , and π is the penalty function proportional to quality degradation and tardiness, where [x] + denotes max(x, 0). This problem can be further extended to relax the homogeneous workers assumption of the original problem in Section 3 and allow a project team to require a certain number of developers with different skills or experience. We model this problem by dividing the pool of workers into two groups: high-and low-skilled workers, denoted by subscripts h and l, respectively. In fact, the two groups can be web application programmers and database developers, or project managers and programmers, depending on the problem under consideration. In a similar manner that we divide workers into two groups, more than two groups can be easily modeled. When a class i project arrives, it requires j ih and j il numbers of high-and low-skilled workers. When the firm does not have sufficient workers available for both skill levels or decides to wait for a more profitable project expected to arrive in the future, the optimal policy is to reject the incoming project and no reward is generated. When the firm accepts the incoming project, the state transition occurs from (x 1h , x 1l , x 2h , x 2l ) to (x 1h + j 1h , x 1l + j 1l , x 2h , x 2l ) with the associated reward, j 1h r 1h /γ 1h + j 1l r 1l /γ 1l , for an instance of a class-1 project.</p><p>We formulate class 2 project acceptance similarly. The group of highand low-skilled workers in a project can complete and be released from the project with independent rates, γ ih and γ il (However, this can be easily modified to enforce the two groups of workers in the same project team to be released together by using a single completion rate, γ i ). The optimality equation for this problem can be written as:</p><formula xml:id="formula_11">V n x 1 ; x 2 ð Þ¼λ 1 max ( X c h -x 1h þx 2h ð Þ j 1h X c l -x 1l þx 2l ð Þ j 1l g 1 j 1h ; j 1l ð Þ " V n-1 x 1h þ j 1h ; x 1l þ j 1l ; x 2 ð Þ þ j 1h r 1h 1 γ 1h þ j 1l r 1l 1 γ 1l !# ;V n-1 x 1 ; x 2 ð Þ ) þλ2max ( X c h -x 1h þx 2h ð Þ j 2h X c l -x 1l þx 2l ð Þ j 2l g 2 j 2h ; j 2l ð Þ " P r 2h ; r 2l ; q ð Þ V n-1 ðx 1 ; x 2h þ j 2h ; x 2l þj 2l Þ þ j 2h r 2h 1 γ 2h þ j 2l r 2l 1 γ 2l þ 1-P r 2h ; r 2l ; q ð Þ ð Þ V n-1 x 1 ; x 2 ð Þ # ; ×V n-1 x 1 ; x 2 ð Þ ) þ x 1h α 1h γ 1h X x 1h j 1h ¼1 g 1 j 1h ð ÞV n-1 x 1h -j 1h ; x 1l ; x 2 ð Þ þ x 1l α 1l γ 1l X x 1l j 1l ¼1 g 1 j 1l ð Þ V n-1 ðx 1h ; x 1l -j 1l ; x 2 Þ þ x 2h α 2h γ 2h X x 2h j 2h ¼1 g 2 j 2h ð ÞV n-1 x 1 ; x 2h -j 2h ; x 2l ð Þ þ x 2l α 2l γ 2l X x 2l j 2l ¼1 g 2 j 2l ð ÞV n-1 × x 1 ; x 2h ; x 2l -j 2l ð Þ þ c h max γ 1h α 1h ; γ 2h α 2h þ c l max γ 1l α 1l ; γ 2l α 2l - x 1h α 1h γ 1h - x 1l α 1l γ 1l - x 2h α 2h γ 2h - x 2l α 2l γ 2l V n-1 x 1 ; x 2 ð Þ ;<label>ð6Þ</label></formula><p>where V 0 (x 1 , x 2 )=0. Subsequently, the results on preferred class and submodularity of Section 4 can be easily modified for the extended models of this section. In the following we will briefly sketch the changes for the first model in which all workers of the same project team are released together as the project is completed. For this case, the expression for</p><formula xml:id="formula_12">B n (0i)(x) of Section 4 is replaced by Bn 0i ð Þ x ð Þ ¼ V n x ð Þ- P c-x 1 þx 2 ð Þ j i ¼1 g i j i ð ÞV n x þ j i e i ð Þto represent</formula><p>the expected loss (burden) to the system that an additional class i project creates when the system is in state x and there are n remaining transitions. Similarly, the expression for</p><formula xml:id="formula_13">B n (ki)(x) is replaced by Bn ki ð Þ x ð Þ ¼ P c-x 1 þx 2 ð Þ j k ¼1 g k j k ð ÞV n x þ j k e k ð Þ - P c-x 1 þx 2 ð Þ j i ¼1 g i j i ð ÞV n x þ j i e i ð Þ</formula><p>to represent the expected burden to the system if a class k project is replaced by a class i project. Consequently, class i becomes a preferred class if the following conditions hold for all x∈E:</p><formula xml:id="formula_14">Bn 0i ð Þ x ð Þ≤r i α i 1 γ i ; and Bn ki ð Þ x ð Þ≤r i α i 1 γ i -r k α k 1 γ k ; i≠k; i; k ¼ 1; 2:</formula><p>Theorems 1 and 2 continue to hold for this case, the only modification we need to make is to replace r i by r i α i and μ i by γ i , for i = 1,2. The result of Theorem 3 gets modified to as follows: For all n and x + j 1 e 1 + j 2 e 2 ∈ E, with 1 ≤ j 1 , j 2 ≤ c -(x 1 + x 2 ), we have</p><formula xml:id="formula_15">V n x ð Þ- X c-x 1 þx 2 ð Þ j 1 ¼1 g 1 j 1 ð ÞV n x þ j 1 e 1 ð Þ - X c-x 1 þx 2 ð Þ j 2 ¼1 g 2 j 2 ð ÞV n x þ j 2 e 2 ð Þ þ X c-x 1 þx 2 ð Þ j 1 ¼1 X c-x 1 þx 2 þj 1 ð Þ j 2 ¼1 g 1 j 1 ð Þg 2 j 2 ð ÞV n x þ j 1 e 1 þ j 2 e 2 ð Þ ≤0:</formula><p>Similar modifications can be made for the model with nonhomogeneous workers corresponding to Eq. ( <ref type="formula" target="#formula_11">6</ref>).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6.">Numerical computations</head><p>This section examines the structures of the optimal policies for the base problem discussed in Section 3 and presents several numerical solutions obtained by the Value Iteration algorithm <ref type="bibr" target="#b33">[34,</ref><ref type="bibr" target="#b41">42]</ref>. We employ this fundamental Markov decision programming algorithm for its straightforward implementation; proposing or proving faster algorithms is beyond the scope of this work. However, note that recent advances in algorithms for Markov Decision Processes have made many efficient alternative algorithms available such as Topological Value Iteration <ref type="bibr" target="#b8">[9]</ref>. A program for numerical solutions was coded in MATLAB 7.0™ and run on a personal computer with a 2.79 GHz Intel Pentium 4 microprocessor. The computation times were between 1.80 and 2.39 s when the total number of workers, c, was set as 12, which we used throughout the simulations. The algorithm terminates when the difference between the value functions of two consecutive iterations is less than ε = 0.001. Observed iterations to termination were between 80 and 120. Discount factor δ was 0.9. The parameter values specified in the following examples are first normalized and then applied in the code. The optimal policy is to accept all arriving jobs if the incoming traffic is low, i.e., P 2 i¼1 λ i E j i ð Þ≤c⋅ max μ 1 ; μ 2 ð Þ , since this ensures that there is always enough capacity in the system <ref type="bibr" target="#b0">[1]</ref>. Therefore, our numerical solutions consider only high-traffic cases,</p><formula xml:id="formula_16">P 2 i¼1 λ i E j i ð Þ &gt; c⋅ max μ 1 ; μ 2 ð Þ :</formula><p>The numerical solutions confirm that the optimal policies are, in general, not of the threshold type, where a secondary market project (class 2) is admitted if and only if the number of idle workers in the firm is less than a fixed threshold. Rather, the optimal policy is of a more complex form as seen in the figures of this section. Examples of non-threshold policies are Figs. <ref type="figure" target="#fig_3">4-(a</ref>) and 5-(c). This nonthreshold policy is easily proved by observing that the value function is not concave (see Fig. <ref type="figure">6</ref>), especially when there are not sufficient idle workers. The high complexity of the optimal policy implies that manual, ad-hoc decisions on IT professional staffing might cause a frequent surplus or shortage in the available workforce level and a subsequent loss in revenues. Therefore, the presented model can be a useful decision support tool to provide an optimal workforce management policy.</p><p>The presented solutions assume a Poisson distribution of the arriving batch sizes: Arriving class 1 batch sizes follow a Poisson distribution with mean 4 while class 2 batch sizes follow a Poisson distribution with mean 2. Our model can easily accommodate other distributions; solutions using uniform distributions are presented in the electronic supplementary material (Figs. A.4 through A.6). The optimal policy appears to depend on the arrival rate ratio (λ 1 /λ 2 ), worker's service completion rate ratio (μ 1 /μ 2 ), the unit price (per man-month) ratio (r 1 /r 2 ), and the batch sizes of the two channels. A noticeable result is that the effect of arrival rate ratio on the optimal policy is not as significant as the effects of project duration and reward. For example, there are no changes in Figs. A.4-(a) through (d) in the electronic supplementary page. This is due to the nature of the model, in which μ i and r i have stronger impacts on the value function than λ i . The symbols in Figs. <ref type="figure" target="#fig_2">3,</ref><ref type="figure" target="#fig_3">4</ref>, 5, and 7 indicate the admission policy at a given state and are interpreted as in Table <ref type="table">4</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6.1.">The effect of arrival rate</head><p>Keeping other parameters constant, the experiments were performed to examine the effect of arrival rates of projects. As mentioned earlier, the effect of arrival rates is not as significant as that of other parameters. As the relative arrival rate of class 1, λ 1 /λ 2 , increases from Fig. <ref type="figure" target="#fig_2">3-(a</ref>) to (d), the optimal policy accepts more class 1 projects. In Fig. <ref type="figure" target="#fig_2">3-(d)</ref>, the optimal policy shows more circle symbols, indicating that the optimal policy accepts more class 1 projects than in Fig. <ref type="figure" target="#fig_2">3-(a)</ref>, (b), or (c). For example, in the state <ref type="bibr" target="#b4">(5,</ref><ref type="bibr" target="#b2">3)</ref> in which traditional projects occupy 5 workers and online projects 3 workers, the optimal policy prescribes to reject traditional projects and admit more online projects in Fig. <ref type="figure" target="#fig_2">3-(a)</ref>, (b) and (c) but switch to admitting traditional projects too upon arrival in Fig. <ref type="figure" target="#fig_2">3-(d)</ref>. With the increased arrival rate of traditional projects, Fig. <ref type="figure" target="#fig_2">3-(d</ref>) admits more traditional projects because the workers released from traditional projects can be back on duty soon for a new incoming traditional project and therefore the risk of having many idle workers for a long time is reduced.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6.2.">The effect of service rate</head><p>The effect of worker's service rate, μ i , is illustrated in Fig. <ref type="figure" target="#fig_3">4</ref>. The relative service completion rate (μ 1 /μ 2 ) increases from 0.5 in Fig. <ref type="figure" target="#fig_3">4</ref>-(a) to 2 in Fig. <ref type="figure" target="#fig_3">4-(d</ref>). Note that the service completion rate is related to the magnitude of the reward as well as the rate of busy workers being released free in the next epoch. For this reason, its impact appears to be more significant than the impact of the arrival rate. As the value of μ 1 /μ 2 becomes smaller (see Fig. <ref type="figure" target="#fig_3">4-(a)</ref>), the number of diamond symbols decreases and more squares are observed. It implies that when the completion time of traditional project is relatively longer than that of online projects, it is more profitable for the IT firm to admit both class projects if the capacity allows, and in some cases reject online projects and wait for a project coming from the traditional channel even when there are sufficient capacity for incoming online projects, such as the state (4, 4) of Fig. <ref type="figure" target="#fig_3">4-(a)</ref>. It is because the longer completion time of class 1 projects makes the class 1 projects more attractive since they generate greater revenue. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6.3.">The effect of unit-time price per worker</head><p>The magnitude of the unit price of each class is directly related to the attractiveness of the class. It is evident, in Fig. <ref type="figure" target="#fig_4">5</ref>, that as the relative unit price of class 2 projects increases, from r 1 /r 2 = 0.5 in (a) to r 1 /r 2 = 2 in (d), the optimal policy accepts more class 1 projects. For example, in state (5,3) of Fig. <ref type="figure" target="#fig_4">5-(d)</ref>, it is more profitable to admit traditional projects and reject online projects when the unit price of traditional projects is relatively large compared to that of online projects. However, the IT firm will be better off by admitting online projects and rejecting traditional projects at the same state (5,3) if the unit price of online projects becomes more competitive, as shown in Fig. <ref type="figure" target="#fig_4">5-(a)</ref>. Another implication of this analysis is that the decision maker can obtain information about how deep discount to offer to online channel clients compared to the primary channel clients in order to maximize the utilization of its workers depending on other parameters in two channels.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6.4.">Preferred class</head><p>The above numerical solutions can be also explained by the theorems from the Section 4. Preferred classes predicted by Theorems 1 and 2 coincide with those shown in the figures of this section. As an example, we will demonstrate how the preferred classes in Fig. <ref type="figure" target="#fig_4">5</ref> can be predicted by Theorems 1 and 2. In Table <ref type="table" target="#tab_3">5</ref>, the first six columns list the variable values used in the scenarios of Fig. <ref type="figure" target="#fig_4">5</ref>. In the subsequent columns, each side of the inequality constraints is calculated for both theorems. Class 1 is preferred when the left-hand-side is no less than the right-hand-side of Theorem 1. Similarly, Theorem 2 determines whether class 2 is preferred. Fig. <ref type="figure" target="#fig_4">5-(a</ref>) and (b) indicates that the optimal policies admit class 2 jobs whenever there is enough number of free workers. This coincides with the result obtained by the theorems (see (a) and (b) in Table <ref type="table" target="#tab_3">5</ref>). Fig. <ref type="figure" target="#fig_4">5-(b), (c),</ref> and<ref type="figure">(d)</ref> indicates that the optimal policies always accept class 1 jobs as long as there is a sufficient number of free servers to accommodate the batch size of a class 1 job. It is also the same as what the theorems suggest (see (b), (c), and (d) in Table <ref type="table" target="#tab_3">5</ref>). In summary, this result confirms the IT service provider that there is no single class that is always preferred across the different sets of parameter values and the preference depends on the given values of the parameters. Also it should be noted that both classes can be preferred at the same time, which results in admitting any class of jobs as long as the batch size of the job can be accommodated with the current availability of workforce.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6.5.">Non-threshold policy</head><p>The non-threshold policies, seen in Figs. <ref type="figure" target="#fig_3">4-(a</ref>) and 5-(c), can be predicted by observing the value functions. Fig. <ref type="figure">6</ref> illustrates the value functions for the particular case of Fig. <ref type="figure" target="#fig_3">4-(a)</ref>, for various values of x 2 , the number of busy workers of class 2 projects. The horizontal axis of Fig. <ref type="figure">6</ref> represents x 1 , the number of busy workers of class 1 projects. The vertical axis represents the expected discounted reward. The line denoted as -×indicates rewards when no arrival is observed at any given state, i.e., V(.,.|a = 0). The line -□indicates the expected reward when a class 1 job is admitted upon its arrival at a given state, i.e., V(., 1| a = 1). The line -◊represents the reward when a class 2 job is admitted upon its arrival at a given state, i.e., V(., 2|a =1).</p><p>The optimal policy is determined as follows: The optimal policy at a given state is to admit a class 1 or class 2 job, if V(.,. |a =0) is smaller than V(., 1|a =1) or V(., 2|a = 1), respectively. The optimal policy at a given state is to reject a corresponding job if V(.,.|a =0) is greater than V(., 1|a =1) or V(., 2|a = 1). Since none of the three value functions is concave as seen in Fig. <ref type="figure">6</ref>, the three value functions often intersect more than once within the given range. This denies our optimal policy to be of threshold type. For example, in Fig. <ref type="figure">6</ref>-(a), V(., 2|a = 1) is always above V(.,.|a = 0) except when x 1 = 6, within the capacity boundary (x 1 b 10). Therefore we observe, in Fig. <ref type="figure" target="#fig_3">4-(a)</ref>, when x 2 = 0, the optimal policy always accepts class 2 jobs except when x 1 =6. Other figures can be explained in a similar manner. The practical implication of the non-threshold policy is that the IT firm faces a complicated optimal policy which is not defined by threshold: it does not simply admit one type of projects below a certain level of worker availability but switches to rejecting that type of projects above the threshold.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6.6.">The effect of the provider's quality</head><p>In this section, we examine the impact of IT firm's relative quality compared to other service providers participating the online reverse auction on admission policy. We assume that the provider quality is well understood by clients in the market before those clients request a new project. That is, clients agree upon the given quality level of the provider and the given unit price per man-month before requesting a new project. This determines the arrival rate of new projects in the conventional market. By contrast, the arrival rate in the online market is defined as the posting rate of auctions with technically feasible projects for the provider, as mentioned in Section 3. When the provider decides to participate in an online auction, which becomes an admission, the provider's quality level impacts the outcome, the probability of winning the auction. This is modeled by relaxing the earlier assumption P(r 2 , q, F(q), M) = 1. We assume, following <ref type="bibr" target="#b6">[7,</ref><ref type="bibr" target="#b40">41]</ref>, that a bidder's bid price is a strictly increasing function in its quality, i.e., rm = r(qm), and that the provider quality is drawn independently from a well-known provider quality distribution with a cumulative distribution function F(q). This produces the following relationship: P(r 2 , q, F(q), M) = [F(q)] M -1 . This implies that the provider can win the auction only when its quality is the highest among all participating bidders. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Table 4</head><p>Symbols used in the figures (except Fig. <ref type="figure">6</ref>).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Symbols Policy</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>○</head><p>Admit any class project upon its arrival.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>□</head><p>Admit class 1 but reject class 2 upon its arrival.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>◊</head><p>Reject class 1 but admit class 2 upon its arrival. × Reject both classes.</p><p>Fig. <ref type="figure">7</ref> illustrates the admission policy when provider quality affects the probability of winning auctions. The parameter values 2 used are: q = 0.9, the provider quality distribution U [0,1], M = 15, and the arrival ratio = 1. With these constraints, the provider is no longer guaranteed to win every auction, thus reducing expected revenue, and making class 2 projects less attractive (compare Figs. <ref type="figure" target="#fig_3">4-(a</ref>) and 7-(a)). Our simulation results demonstrate when the reduced attractiveness of online projects is mitigated. First, applying higher unit price per man-month for the online channel makes online projects more attractive (or profitable) to the service provider, as the comparison of Fig. <ref type="figure">7-(a</ref>) and (b) shows. Second, shorter completion-time of online projects leads the similar result. When it takes a relatively short period to complete a project, the project can be efficiently assigned to idle workers for a short period without preventing those workers' assignment to more profitable, future projects. Comparison of Fig. <ref type="figure">7-(a</ref>) and (c) supports this finding. Furthermore, service providers may find online projects with sufficiently short durations attractive even with a price discount for such projects, as shown in Fig. <ref type="figure">7-(d)</ref>. This implies the advantage of short completion time of online projects is significant because the short-term occupation of idle workers enables the service provider to avoid the risk of not serving large, future projects but also to utilize current idle workers.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="7.">Discussion and conclusion</head><p>This paper addresses the need for improving workforce utilization in IT service firms in response to the fluctuating market demand. We presented a novel approach in which IT service providers can maximize revenue by taking advantage of the emerging e-lancing marketplaces and dynamically controlling project orders in both traditional and online channels. Our study verifies the effectiveness of the new revenue model and provides optimal policies to successfully implement it.</p><p>Using Markov decision process techniques we developed the twoclass admission control model for an IT service provider that decides whether to admit or reject IT projects from the conventional channel and whether to participate in reverse auctions for additional projects in online markets. The model captures the most essential characteristics of IT projects which were not addressed in the existing revenue management literature which has concentrated mainly on physical goods. When a project is admitted, it seizes a random number of workers simultaneously then releases the workers stochastically according to either the individual worker's service time or the project duration. In addition, implementing two job classes requiring different service rates with random batch arrivals into the standard Markov decision model is a distinct contribution to the literature, providing the benchmark model and its extended versions for different settings such as the case where a project requires a certain number of different skilled groups of workers.</p><p>We also derived the conditions under which the firm would prefer each class of job. We used simulations to examine the effects of arrival rates, project durations, unit price of projects, and the provider's quality on optimal policies. Our results show that these optimal policies are non-threshold policies. This means that the optimal admission policy is not simply one where the IT firm admits jobs below a workforce threshold and rejects them above the threshold.</p><p>The presented model offers providers several benefits. First, service firms can capture online revenue that would have been missed otherwise. Second, the two-channel revenue model enables firms to take versatile and responsive action to a changing market demand without layoffs or wage modulation for temporary relief. Third, the firm will increase overall performance and employee satisfaction by utilizing programmers' skill and experience and providing them a feel of engagement. Finally, the firm is given the opportunity to exploit and acquire new clients through the online market who can potentially bring repeat business.</p><p>This study can serve as a stepping stone for further research. The model can be used for a scenario where traditional projects are always accepted with a high priority. In this case, Eq. ( <ref type="formula" target="#formula_0">1</ref>) applies only to class 2 jobs. In this scenario, optimal policy will be to satisfy class 2 demand as long as there are sufficient workers available for class 1 projects.</p><p>This work considers only one side of the e-lancing application where the IT service provider serves as an e-lancer in order to dispose of its available capacity when the market demand is low. Another interesting research topic would be a flexible staffing model by which an IT service provider contracts individual e-lancers to meet high demand in the traditional channel.</p><p>This study is not without room for improvements. The model does not consider the effect of returning clients. It is natural to expect the relationship established with a client will yield future class 1 jobs such as new projects, support contracts and upgrades over the course of their relationship with the provider. The cross-channel synergy effect is a valuable factor to consider but will impact model complexity.</p><p>One may consider imposing a penalty when demand of a priority class is not satisfied due to insufficient available workers. The priority class may consist of jobs from loyal clients or highly profitable clients requesting services that are related to the services already provided, such as requests for upgrades or patches. For a customer retention perspective, these types of service requests must have a higher priority. 2 Throughout the previous sections, q was 1.</p><p>Fig. <ref type="figure">6</ref>. Value functions of the non-threshold policy. </p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>Fig. 1 .</head><label>1</label><figDesc>Fig. 1. A schematic diagram of the admission control problem for IT providers.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>Fig. 2 .</head><label>2</label><figDesc>Fig. 2. Symbolic representation of the state transition structure: The numbers in brackets represent the transition probability after uniformization and normalization.The dotted circles represent instantaneous states. Each ending node recursively continues its transition as in state (x 1 , x 2 , 0) in the center.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>Fig. 3 .</head><label>3</label><figDesc>Fig. 3. The effect of arrival rate. (c = 12, λ 1 = 4,μ 1 = 1,μ 2 = 1,r 1 = 10 , r 2 = 10 , j 1 ~Poisson(4), j 2 ~Poisson(2)).</figDesc><graphic coords="6,128.13,631.05,330.18,96.15" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head>Fig. 4 .</head><label>4</label><figDesc>Fig. 4. The effect of worker's service completion time. (c = 12, λ 1 = 4, λ 2 = 4 ,μ 1 = 1 , r 1 = 10 , r 2 = 10, j 1 ~Poisson(4), j 2 ~Poisson(2)).</figDesc><graphic coords="7,144.23,634.05,315.79,93.49" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4"><head>Fig. 5 .</head><label>5</label><figDesc>Fig. 5. The effect of unit price. (c = 12, λ 1 = 4, λ 2 = 4 ,μ 1 = 1 , μ 2 = 1 , r 1 = 10 ,j 1 ~Poisson(4), j 2 ~Poisson(2)).</figDesc><graphic coords="8,127.90,53.18,330.93,97.57" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head>Table 1</head><label>1</label><figDesc>Some e-lancing Web sites.</figDesc><table><row><cell></cell><cell>Elance Online</cell><cell>Guru</cell><cell>Rent A Coder</cell></row><row><cell></cell><cell>(www.elance.com)</cell><cell>(www.guru.com)</cell><cell>(www.rentacoder.com)</cell></row><row><cell>Description</cell><cell>Over 120,000 active professionals</cell><cell>Over 100,000 active global professionals</cell><cell>Over 230,000 registered professionals</cell></row><row><cell></cell><cell>around the world and over 20,000</cell><cell>and 93,434 projects posted in 2007.</cell><cell>and 8000 to 9000 projects a</cell></row><row><cell></cell><cell>projects a month posted.</cell><cell></cell><cell>month contracted.</cell></row><row><cell>Client payment method</cell><cell>Clients can divide the project into</cell><cell>Clients pay the entire amount of the</cell><cell>Clients pay the entire amount of the</cell></row><row><cell></cell><cell>stages and pay based on each stage.</cell><cell>project fees into an escrow account.</cell><cell>project fees into an escrow account.</cell></row><row><cell>Fees for clients</cell><cell>Free</cell><cell>Free</cell><cell>Free</cell></row><row><cell>Fees for providers</cell><cell>A project fee of 4 to 6% of each</cell><cell>A 5% or 10% project fee</cell><cell>A commission fee of 8.5% to 15% of</cell></row><row><cell></cell><cell>transaction amount.</cell><cell></cell><cell>final project transaction.</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1"><head>Table 2</head><label>2</label><figDesc>Closely related literature.</figDesc><table><row><cell>Resource characteristics</cell><cell>Type of resource studied</cell><cell>References</cell></row><row><cell>Not reusable</cell><cell>Product inventory</cell><cell>[6,8,11,43]</cell></row><row><cell>(expires after a deadline)</cell><cell>Airplane seats</cell><cell>[3,4,20]</cell></row><row><cell>Reusable</cell><cell>Hospital operating rooms</cell><cell>[14]</cell></row><row><cell>(become available again</cell><cell>Rental cars</cell><cell>[29,37]</cell></row><row><cell>after a service time)</cell><cell>Telecommunication network</cell><cell></cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2"><head>Table 3</head><label>3</label><figDesc>Review of Multi-server Multi-class Loss Systems. The feature is not applicable because a related feature is not considered.</figDesc><table><row><cell></cell><cell>A job requires a</cell><cell>Batch sizes</cell><cell>Jobs depart</cell><cell>Different arrival/departure</cell><cell>Rewards depend on batch</cell><cell>Note</cell></row><row><cell></cell><cell>batch of servers.</cell><cell>are random.</cell><cell>the system.</cell><cell>rates for each class.</cell><cell>size and departure rate.</cell><cell></cell></row><row><cell>Papastavrou [28]</cell><cell>o</cell><cell>o</cell><cell>x</cell><cell>n/a</cell><cell>x</cell><cell>Dynamic and stochastic</cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>knapsack problem</cell></row><row><cell>Keywegt and Papastavrou [18]</cell><cell>o</cell><cell>o</cell><cell>x</cell><cell>n/a</cell><cell>x</cell><cell>Dynamic and stochastic</cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>knapsack problem</cell></row><row><cell>Ross and Tsang [35]</cell><cell>o</cell><cell>x</cell><cell>o</cell><cell>o</cell><cell>x</cell><cell>Coordinate convex policy</cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>(not necessarily a global</cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>optimal policy)</cell></row><row><cell>Ross and Tsang [36]</cell><cell>o</cell><cell>x</cell><cell>o</cell><cell>o</cell><cell>x</cell><cell>Semi Markov decision process</cell></row><row><cell>Ormeci et al. [27]</cell><cell>x</cell><cell>n/a</cell><cell>o</cell><cell>o</cell><cell>x</cell><cell></cell></row><row><cell>Altman et al. [1]</cell><cell>x</cell><cell>n/a</cell><cell>o</cell><cell>o</cell><cell>x</cell><cell></cell></row><row><cell>Ormeci and Burnetas [25,26]</cell><cell>o</cell><cell>o</cell><cell>o</cell><cell>x</cell><cell>x</cell><cell>Partial acceptance policy</cell></row><row><cell>Savin et al. [37]</cell><cell>x</cell><cell>n/a</cell><cell>o</cell><cell>o</cell><cell>x</cell><cell>Rental car problem</cell></row><row><cell>Our model</cell><cell>o</cell><cell>o</cell><cell>o</cell><cell>o</cell><cell>o</cell><cell></cell></row><row><cell cols="2">o -The feature is considered in model.</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell cols="2">x -The feature is not considered in model.</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>n/a -</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_3"><head>Table 5</head><label>5</label><figDesc>Preferred classes in Fig.5(obtained from Theorems 1 and 2).</figDesc><table><row><cell></cell><cell>λ 1</cell><cell>λ 2</cell><cell>μ 1</cell><cell>μ 2</cell><cell>r 1</cell><cell>r 2</cell><cell>Theorem 1</cell><cell></cell><cell>Theorem 2</cell><cell></cell><cell>Class 1 is</cell><cell>Class 2 is</cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>Left-hand</cell><cell>Right-hand</cell><cell>Left-hand</cell><cell>Right-hand</cell><cell>preferred</cell><cell>preferred</cell></row><row><cell>(a)</cell><cell>4</cell><cell>4</cell><cell>1</cell><cell>1</cell><cell>10</cell><cell>20</cell><cell>188.10</cell><cell>376.20</cell><cell>20.00</cell><cell>10.00</cell><cell></cell><cell>Yes</cell></row><row><cell>(b)</cell><cell>4</cell><cell>4</cell><cell>1</cell><cell>1</cell><cell>10</cell><cell>10</cell><cell>188.10</cell><cell>188.10</cell><cell>10.00</cell><cell>10.00</cell><cell>Yes</cell><cell>Yes</cell></row><row><cell>(c)</cell><cell>4</cell><cell>4</cell><cell>1</cell><cell>1</cell><cell>10</cell><cell>6.67</cell><cell>188.10</cell><cell>125.46</cell><cell>6.67</cell><cell>10.00</cell><cell>Yes</cell><cell></cell></row><row><cell>(d)</cell><cell>4</cell><cell>4</cell><cell>1</cell><cell>1</cell><cell>10</cell><cell>5.00</cell><cell>188.10</cell><cell>94.05</cell><cell>5.00</cell><cell>10.00</cell><cell>Yes</cell><cell></cell></row></table></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_0"><p>J.Y. Kim et al. / Decision Support Systems 53 (2012) 23-33</p></note>
+		</body>
+		<back>
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Appendix A Appendix B. Supplementary data</head><p>Supplementary data to this article can be found online at doi:10. 1016/j.dss.2011.10.015.  Project team size or number of workers required in a class-i project</p><p>Number of busy workers working on class-i projects (x 1 , x 2 , i)</p><p>State parameter which indicates that x 1 and x 2 workers are observed in the system when a class i project has arrived</p><p>The maximal total expected reward for the system starting in state (x 1 , x 2 , i) over n remaining decision epochs in the horizon a(x 1 , x 2 , i)</p><p>Action parameter in state (x 1 , x 2 , i); It is 1 for admission and 0 for rejection r i</p><p>Unit price per man-month for class-i projects P(r 2 , q, F(q), M) Probability of winning the auction, given the firm's quality q, bid amount affected by r 2 , bidder quality distribution F(q), and number of bidders M Additional parameters used in the extended models in Section 5 c h , c l Total number of high-and low-skilled workers in the pool.</p><p>Expected completion rate of a class-i project j ih , j il Numbers of high-and low-skilled workers required for a class-i project g i (j ih , j il ) Joint probability distribution function of j ih and j il x i = (x ih , x il ) Number of busy high-and low-skilled workers working on class i projects r ih , r il Unit price per high/low skill man-month for class-i projects</p><p>Expected number of workers required in a class-i project α ih = E(j ih ), α il = E(j il ) Expected number of high/low skill workers required in a class-i project.</p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">On optimal call admission control in a resourcesharing system</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>Altman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Jimenez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Koole</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Communications</title>
+		<imprint>
+			<biblScope unit="volume">49</biblScope>
+			<biblScope unit="issue">9</biblScope>
+			<biblScope unit="page" from="1659" to="1668" />
+			<date type="published" when="2001">2001</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">The missing context of information technology personnel: a review and future directions for research</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Ang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">A</forename><surname>Slaughter</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Framing the Domains of IT Management: Projecting the Future Through the Past</title>
+		<editor>
+			<persName><forename type="first">R</forename><forename type="middle">W</forename><surname>Zmud</surname></persName>
+		</editor>
+		<meeting><address><addrLine>Cincinnati, Ohio</addrLine></address></meeting>
+		<imprint>
+			<publisher>Pinnaflex Educational Resources, Inc</publisher>
+			<date type="published" when="2001">2001</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Staffing a software project: a constraint satisfaction and optimization-based approach</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Barreto</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">O</forename><surname>Barros</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">M</forename><surname>Werner</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Computers and Operations Research</title>
+		<imprint>
+			<biblScope unit="volume">35</biblScope>
+			<biblScope unit="page" from="3073" to="3089" />
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Revenue management in a dynamic network environment</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Bertsimas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Popescu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Transportation Science</title>
+		<imprint>
+			<biblScope unit="volume">37</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="257" to="273" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Dynamic airline revenue management with multiple semi-Markov demand</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Brumelle</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Walczak</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Operations Research</title>
+		<imprint>
+			<biblScope unit="volume">51</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="137" to="148" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Revenue management of a make-to-stock queue</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Caldentey</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">M</forename><surname>Wein</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Operations Research</title>
+		<imprint>
+			<biblScope unit="volume">54</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="859" to="875" />
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Note on online auctions with costly bid evaluation</title>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">M</forename><surname>Carr</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Science</title>
+		<imprint>
+			<biblScope unit="volume">49</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="1521" to="1528" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Optimal admission control and sequencing in a make-tostock/make-to-order production system</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Carr</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Duenyas</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Operations Research</title>
+		<imprint>
+			<biblScope unit="volume">48</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="709" to="721" />
+			<date type="published" when="2000">2000</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Topological value iteration algorithm for Markov decision processes</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Dai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Goldsmith</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the twentieth International Joint Conference on Artificial Intelligence India</title>
+		<meeting>the twentieth International Joint Conference on Artificial Intelligence India</meeting>
+		<imprint>
+			<date type="published" when="2007">2007</date>
+			<biblScope unit="page" from="1860" to="1865" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">IT human resource management configurations and IT turnover: theoretical synthesis and empirical analysis</title>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">W</forename><surname>Ferratt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Agarwal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">V</forename><surname>Brown</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">E</forename><surname>Moore</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<imprint>
+			<biblScope unit="volume">16</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="237" to="255" />
+			<date type="published" when="2005">2005</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Optimal dynamic pricing of inventories with stochastic demand over finite horizons</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Gallego</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Van Ryzin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Science</title>
+		<imprint>
+			<biblScope unit="volume">40</biblScope>
+			<biblScope unit="issue">8</biblScope>
+			<biblScope unit="page" from="999" to="1020" />
+			<date type="published" when="1994">1994</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Optimal procurement portfolios when using B2Bs: a model and analysis</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Ganeshan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Boone</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Aggarwal</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Production Economics</title>
+		<imprint>
+			<biblScope unit="volume">118</biblScope>
+			<biblScope unit="page" from="146" to="151" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<monogr>
+		<title level="m" type="main">Flexible Staffing Models: Breaking the Staff up/Layoff Cycle?</title>
+		<author>
+			<persName><surname>Gartner-Research</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2001-04">April 2001</date>
+			<publisher>Gartner Inc</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Reservation planning for elective surgery under uncertain demand for emergency surgery</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Gerchak</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Gupta</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Henig</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Science</title>
+		<imprint>
+			<biblScope unit="volume">42</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="321" to="335" />
+			<date type="published" when="1996">1996</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">On evaluating information revelation policy in procurement auctions: a Markov decision process approach</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Greenwald</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Kannan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Krishnan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<imprint>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="15" to="38" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<monogr>
+		<author>
+			<persName><forename type="first">F</forename><surname>Heller</surname></persName>
+		</author>
+		<title level="m">Decision Making and Leadership</title>
+		<meeting><address><addrLine>Cambridge</addrLine></address></meeting>
+		<imprint>
+			<publisher>Cambridge University Press</publisher>
+			<date type="published" when="1992">1992</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">A systematic review of software development cost estimation studies</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Jorgensen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Shepperd</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Software Engineering</title>
+		<imprint>
+			<biblScope unit="volume">33</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="33" to="53" />
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">The dynamic and stochastic knapsack problem with random sized items</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">J</forename><surname>Keywegt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">D</forename><surname>Papastavrou</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Operations Research</title>
+		<imprint>
+			<biblScope unit="volume">49</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="26" to="41" />
+			<date type="published" when="2001">2001</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">Y</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Wulf</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Move to depth: buyer-provider interactions in online service marketplaces</title>
+		<imprint>
+			<date type="published" when="2010">2010</date>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="page" from="2" to="14" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Managing capacity through reward programs</title>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">D</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Shi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Srinivasan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Science</title>
+		<imprint>
+			<biblScope unit="volume">50</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="503" to="520" />
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Structural results for the control of queuing systems using eventbased dynamic programming</title>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">M</forename><surname>Koole</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Queueing Systems</title>
+		<imprint>
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="page" from="323" to="339" />
+			<date type="published" when="1998">1998</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Applying a new device in the optimization of exponential queuing systems</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">S</forename><surname>Lippman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Operations Research</title>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="687" to="710" />
+			<date type="published" when="1975">1975</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">The dawn of the e-lance economy</title>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">W</forename><surname>Malone</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">J</forename><surname>Laubacher</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Harvard Business Review</title>
+		<imprint>
+			<biblScope unit="volume">76</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="144" to="152" />
+			<date type="published" when="1998">1998</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Electronic markets and electronic hierarchies</title>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">W</forename><surname>Malone</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Yates</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">I</forename><surname>Benjamin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Communications of the ACM</title>
+		<imprint>
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="484" to="497" />
+			<date type="published" when="1987">1987</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Admission control with batch arrivals</title>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">L</forename><surname>Ormeci</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Burnetas</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Operations Research Letters</title>
+		<imprint>
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="page" from="448" to="454" />
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">Dynamic admission control for loss systems with batch arrivals</title>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">L</forename><surname>Ormeci</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Burnetas</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Advances in Applied Probability</title>
+		<imprint>
+			<biblScope unit="volume">37</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="915" to="938" />
+			<date type="published" when="2005">2005</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Admission policies for a two class loss system</title>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">L</forename><surname>Ormeci</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Burnetas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Van Der Wal</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Stochastic Models</title>
+		<imprint>
+			<date type="published" when="2001">2001</date>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="page" from="513" to="531" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">The dynamic and stochastic knapsack problem with deadlines</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">D</forename><surname>Papastavrou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Rajagopalan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Kleywegt</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Science</title>
+		<imprint>
+			<biblScope unit="volume">42</biblScope>
+			<biblScope unit="issue">12</biblScope>
+			<biblScope unit="page" from="1706" to="1718" />
+			<date type="published" when="1996">1996</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">Capacity rationing in stochastic rental systems with advance demand information</title>
+		<author>
+			<persName><forename type="first">F</forename><surname>Papier</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">U</forename><forename type="middle">W</forename><surname>Thonemann</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Operations Research</title>
+		<imprint>
+			<biblScope unit="volume">58</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="274" to="288" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">Putting people first for organizational success</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Pfeffer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Veiga</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The Academy of Management Executive</title>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="37" to="48" />
+			<date type="published" when="1999">1999</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">Managing online auctions: current business and research issues</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>Pinker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Seidmann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Vakrat</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Science</title>
+		<imprint>
+			<biblScope unit="volume">49</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="1457" to="1484" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<monogr>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">L</forename><surname>Puterman</surname></persName>
+		</author>
+		<title level="m">Markov Decision Processes</title>
+		<meeting><address><addrLine>New York</addrLine></address></meeting>
+		<imprint>
+			<publisher>Wiley-Interscience</publisher>
+			<date type="published" when="1994">1994</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Portfolio of buyer-supplier exchange relationships in an online marketplace for IT services</title>
+		<author>
+			<persName><forename type="first">U</forename><surname>Radkevitch</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Van Heck</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O</forename><surname>Koppius</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Decision Support Systems</title>
+		<imprint>
+			<biblScope unit="volume">47</biblScope>
+			<biblScope unit="page" from="297" to="306" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<monogr>
+		<title level="m" type="main">Multiservice Loss Models for Broadband Telecommunication Networks</title>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">W</forename><surname>Ross</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1995">1995</date>
+			<publisher>Springer</publisher>
+			<pubPlace>Great Britain</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title level="a" type="main">Optimal circuit access policies in an ISDN environment: a Markov decision approach</title>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">W</forename><surname>Ross</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">H K</forename><surname>Tsang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Communications</title>
+		<imprint>
+			<biblScope unit="volume">37</biblScope>
+			<biblScope unit="issue">9</biblScope>
+			<biblScope unit="page" from="934" to="939" />
+			<date type="published" when="1989">1989</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">The stochastic knapsack problem</title>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">W</forename><surname>Ross</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">H K</forename><surname>Tsang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Communications</title>
+		<imprint>
+			<biblScope unit="volume">37</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="740" to="748" />
+			<date type="published" when="1989">1989</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">Capacity management in rental business with two customer bases</title>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">V</forename><surname>Savin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">A</forename><surname>Cohen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Gans</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Katalan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Operations Research</title>
+		<imprint>
+			<biblScope unit="volume">53</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="617" to="631" />
+			<date type="published" when="2005">2005</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<monogr>
+		<title level="m" type="main">Beyond Boundaries: Open Labor Markets and Learning in Silicon Valley</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Saxenian</surname></persName>
+		</author>
+		<editor>M.A. Arthur, D.M. Rousseau</editor>
+		<imprint>
+			<date type="published" when="1996">1996</date>
+			<publisher>Boundaryless Career, University Press</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<analytic>
+		<title level="a" type="main">Online reverse auctions: common myths versus evolving reality</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Schoenherr</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Mabert</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Business Horizons</title>
+		<imprint>
+			<biblScope unit="volume">50</biblScope>
+			<biblScope unit="page" from="373" to="384" />
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<analytic>
+		<title level="a" type="main">Optimal procurement strategies for online spot markets</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Seifert</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">U</forename><surname>Thonemann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Hausman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">European Journal of Operational Research</title>
+		<imprint>
+			<biblScope unit="volume">152</biblScope>
+			<biblScope unit="page" from="781" to="799" />
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<analytic>
+		<title level="a" type="main">Costly bidding in online markets for IT services</title>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">M</forename><surname>Snir</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">M</forename><surname>Hitt</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Science</title>
+		<imprint>
+			<biblScope unit="volume">49</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="1504" to="1520" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<monogr>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">C</forename><surname>Tijms</surname></persName>
+		</author>
+		<title level="m">Stochastic Modeling and Analysis: A Computational Approach</title>
+		<meeting><address><addrLine>Great Britain</addrLine></address></meeting>
+		<imprint>
+			<publisher>John Wiley &amp; Sons</publisher>
+			<date type="published" when="1986">1986</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+	<analytic>
+		<title level="a" type="main">Optimal dynamic auctions for revenue management</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Vulcano</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Van Ryzin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Maglaras</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Science</title>
+		<imprint>
+			<biblScope unit="volume">48</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="1388" to="1407" />
+			<date type="published" when="2002">2002</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b43">
+	<analytic>
+		<title level="a" type="main">Her research focuses on understanding user behavior in online marketplaces, revenue management of IT service firms, and accounting information systems. She holds both master&apos;s and bachelor&apos;s degrees in chemical engineering from Korea Advance Institute of Science Technology. Kemal Altinkemer is an Associate Professor at the Krannert Graduate School of Management at Purdue University. He received his PhD from University of Rochester, Rochester NY. He was a Guest Editor in Telecommunication Systems, Information Technology and Management. He is an Associate Editor in seven journals. His research interests are in Design and analysis of computer networks, infrastructure development, distribution of priorities by using pricing as a tool, infrastructure for E-commerce and pricing of information goods, bidding with intelligent software agents, strategy for Brickandmortar business model. He has published more than 40 articles in journals such as Operations Research</title>
+		<author>
+			<persName><forename type="first">(</forename><forename type="middle">J Y</forename><surname>Joung Yeon</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Kim</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Annals of Operations Research, and more than 40 others in various conference proceedings. He belongs to ACM</title>
+		<title level="s">She received her Ph.D. degree in Management from Purdue University&apos;s Krannert School of Management</title>
+		<imprint/>
+		<respStmt>
+			<orgName>Assistant Professor of Accounting at School of Business, Indiana University Kokomo ; Mathematics and Statistics from Hong Kong University of Science and Technology</orgName>
+		</respStmt>
+	</monogr>
+	<note>Arnab Bisi is an Associate Professor at the MYRA School of Business, India. He has been an Assistant Professor at the Krannert School of Management at Purdue University, USA. His research and teaching interests include stochastic models, statistics, inventory and supply chain management. He received a Ph. an M.Stat degree from Indian Statistical Institute and a B.Sc. in Statistics from the University of Calcutta</note>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

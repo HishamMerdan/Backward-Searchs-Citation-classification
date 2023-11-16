@@ -1,0 +1,880 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">DETERMINANTS OF REVERSE AUCTION RESULTS: AN EMPIRICAL EXAMINATION OF FREELANCER.COM</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Michael</forename><surname>Scholz</surname></persName>
+							<email>michael.scholz@uni-passau.de</email>
+							<affiliation key="aff0">
+								<orgName type="institution">University of Passau</orgName>
+								<address>
+									<addrLine>Innstr. 43</addrLine>
+									<postCode>94032</postCode>
+									<settlement>Passau</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Nicolas</forename><surname>Haas</surname></persName>
+							<email>nicolas.haas@uni-passau.de</email>
+							<affiliation key="aff1">
+								<orgName type="institution">University of Passau</orgName>
+								<address>
+									<addrLine>Innstr. 43</addrLine>
+									<postCode>94032</postCode>
+									<settlement>Passau</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">DETERMINANTS OF REVERSE AUCTION RESULTS: AN EMPIRICAL EXAMINATION OF FREELANCER.COM</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="MD5">E263A2443E38E19947DE56D998FF0AA8</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.7.3" ident="GROBID" when="2023-06-16T09:23+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>reverse auction</term>
+					<term>transaction cost</term>
+					<term>reputation</term>
+					<term>freelancer</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>In recent years, auction mechanisms have been widely implemented in online platforms, leading to the advent of reverse auctions sites on which people can offer small-and medium-sized projects such as craft or information technology (IT) projects. These sites are especially interesting for freelancers who can bid for a particular project. The principal offering the project can make a decision based on the bid amount as well as on other information available about the freelancers. In this paper, we derive factors from transaction cost theory that explain the decision of a principal besides the bid amount. Based on an empirical analysis of bidding information extracted from Freelancer.com, we found that the bid amount has the highest effect on the decision of the principal followed by the number of reviews the freelancer has already received and the number of already conducted transactions between a freelancer and a principal. We also found that principals prefer freelancers who live in the same cultural area. Furthermore our results indicate that a gold membership has no effect on the decision of the principal which is of interest especially for those freelancers who believe they are considered to be more reliable as a gold member.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1">Introduction</head><p>Historically, auctions have had a long tradition and can be dated back to 500 B.C. However, not until the rise of the World Wide Web were auctions adopted as a broad market mechanism. In particular the decreased transaction costs for carrying out auctions can be seen as the reason for this development <ref type="bibr" target="#b2">(Bakos 1997)</ref>. In online auctions it is no longer necessary for all participants to physically participate in the auction at the same time. With the abolishment of these restrictions auctions are no longer limited to a certain kind of products, e.g. paintings, but can now encompass all kinds of products and services as can be observed in the various online auction platforms (e.g. eBay, Freelancer.com).</p><p>The decrease in transaction costs for carrying out auctions has led to an increased problem of information asymmetries which directly influence the probability of an adverse selection <ref type="bibr" target="#b8">(Dewan and Hsu, 2004)</ref>. In online auctions it is easier to operate with a false identity or to refuse the delivery of the goods after receipt of payment. Thus the selection of an appropriate transaction partner in online auctions depends intensely on trust in the transaction partner <ref type="bibr" target="#b30">(Sun, 2010;</ref><ref type="bibr" target="#b3">Bierhoff and Vornefeld, 2004)</ref>. Trust is hereby mostly established by the reputation of the potential transaction partner. Several studies have shown that if a seller has a good reputation, they can achieve higher auction profits. In particular this correlation was analysed on the basis of a Vickrey auction <ref type="bibr" target="#b15">(Houser and Wooders, 2006;</ref><ref type="bibr" target="#b29">Stern and Stafford, 2006)</ref>. However, a transfer of these results to other auction modes seems feasible.</p><p>In recent years reverse auctions have been increasingly used as an online auction mode. There the initiative emanates from the buyer (principal) and the seller (agent, freelancer) who places the bid. Thereby the decision for a certain agent can either be based solely on the bid (e.g. <ref type="bibr">Dubli.com)</ref> or can be decided freely by the agent (e.g. <ref type="bibr">my-hammer.com, eLance.com, Freelancer.com)</ref>. Particularly in the latter it can be assumed that it is important for the agent to know, which factors the principal takes into consideration in awarding the bid. The principals want to reduce their costs as much as possible. A part of these costs are the transaction costs, so the principals have an intention to reduce transaction costs for searching for an appropriate transaction partner. Specifically in online auctions transaction partners are anonymous which provides an avenue for unfair behaviour especially of the agents <ref type="bibr" target="#b5">(Carter and Stevens 2007)</ref>. The possibility of unfair behaviour increases transaction costs of online reverse auctions. The reputation of agents helps to reduce transaction costs of a principal due to its ability to provide an insight into the agents' behaviour. Other variables influencing transactions costs of a principal especially in online reverse auctions have been sparsely researched. The theory of transactions costs has been applied in order to explain the bids of Dutch flower auctions <ref type="bibr" target="#b21">(Koppius and van Heck, 2002)</ref> and the market efficiency in double auctions <ref type="bibr" target="#b27">(Noussair et al., 1998)</ref> though.</p><p>The goal of this study is, based on a theoretical derivation, to confirm empirically influencing factors on the acceptance of a bid in online reverse auctions. In doing so transaction cost theory is applied as a basis for the definition of the influencing factors. The empirical verification of the deduced influencing factors results from data, collected from the online auction platform Freelancer.com.</p><p>Section 2 of the paper introduces transaction cost theory and the derived hypotheses. The empirical verification is carried out in section 3. In section 4 we discuss the implications of our results as well as the limitations of our study and give suggestions for further research.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2">Influencing factors on the bids of reverse auctions</head><p>Online reverse auctions constitute a special kind of transaction, which differs from other transactions in the information and, particularly, in the bargaining phase. Getting information about possible transactions or transaction partners is simplified and does not require the physical presence of the auction parties at a certain place and a certain time. On the other hand, the Web facilitates the use of false information or the hiding of certain information by the transaction partners, particularly the agent.</p><p>Based on the assumptions of transaction cost theory the principal especially has to deal with uncertainty. On the one hand there is parametric uncertainty, which describes the uncertainty about future environmental developments concerning the transaction. On the other hand there is behaviour-related uncertainty, based on the assumption of opportunistic behaviour of the market participants, which occurs on the basis of information asymmetries <ref type="bibr" target="#b33">(Williamson, 1985)</ref>. This results in higher information and control costs. To reduce the behaviour-related uncertainty in reverse auctions, it is of vital importance to build trust between the principal and the agent. Trust is hereby defined as the judgement of the reliability of the agent and the resulting willingness of the principal to conduct transactions, despite the possibility of opportunistic behaviour by the agent <ref type="bibr" target="#b32">(Wang and Benbasat, 2008)</ref>.</p><p>To reduce opportunistic behaviour and to build trust, nearly all big online auction platforms have introduced reputation mechanisms. Principals (and sometimes also agents) can rate the performed transactions and communicate their experiences with specific transaction partners. The reputation mechanisms of the various online auction platforms differ only slightly. Mostly a three-point assessment scale is used: negative, neutral and positive. Furthermore principals can publish comments, which can be seen on the agent's profile. Thus potential principals can judge the reliability of the agent and have a clue as to whether the agent is trustworthy <ref type="bibr" target="#b35">(Ye et al., 2009;</ref><ref type="bibr" target="#b7">Dellarocas, 2005;</ref><ref type="bibr" target="#b20">Koppius et al., 2000)</ref>. <ref type="bibr" target="#b22">Kreps (1990)</ref> argues that on a one-time transaction with a specific principal, selfish and profitmaximizing agents have an incentive to scam. This incentive is reduced through an appropriate reputation mechanism, because the agent has to fear the resulting negative consequences when dealing with other principals. Some empirical studies have analysed the influence of the agent's reputation on the achieved auction price. EBay which is one of the biggest auction platforms was mostly employed as data source <ref type="bibr" target="#b37">(Zhao and Huang, 2008)</ref>. Results showed that reputation has a significant and positive influence on the principal's willingness to conduct a transaction with the agent. Furthermore, agents with negative comments achieved lower prices for the products (Lucking-Reiley, Prasa and Reeves, 2007; <ref type="bibr" target="#b8">Dewan and Hsu, 2004;</ref><ref type="bibr" target="#b4">Bolton et al., 2004;</ref><ref type="bibr" target="#b25">Melnik and Alm, 2002)</ref>. <ref type="bibr" target="#b15">Houser and Wooders (2006)</ref> showed that the agent's reputation represents a significant and economic determinant of the selling price. A 10% increase of positive ratings led to a 0.17% increase of achieved selling prices, whereas a 10% increase in neutral and negative comments led to a 0.24% decrease of achieved selling prices.</p><p>In contrast, there are also studies where reputation has no strong influence on the transactions of the agents <ref type="bibr" target="#b10">(Gilkeson and Reynolds, 2003;</ref><ref type="bibr" target="#b31">Wan and Teo, 2001)</ref>. In particular the negative effects of negative ratings on the agent's outcome was not always confirmed <ref type="bibr" target="#b1">(Bajari and Hortacsu, 2003;</ref><ref type="bibr" target="#b18">Jin and Kato, 2008)</ref>. Based on a meta-analysis <ref type="bibr" target="#b23">Liu et al. (2007)</ref> concluded that reputation influences the agent's outcome, positive ratings lead to significantly higher selling prices, whereas negative ratings lead to lower selling prices and neutral ratings have no significant influence on the selling price.</p><p>In reverse auctions the bidders represent the agents and in the particular reverse auction online platform the principals can choose freely, with which agent they conduct the transaction. So the following hypothesis can be postulated: H1: The better the agent's reputation, the better the agent's possibility of winning the auction.</p><p>Besides the implementation of reputation mechanisms other measures to reduce behaviour-related uncertainty are also possible. In particular this includes singular or regular paid fees to use certain functions of the online auction platform. Such fees represent costs for the agent and only pay off, if the profits from the auctions exceed the fee. As a result the agent has an incentive, to conform to the principal's expectations in order to achieve the profits. If every agent has to pay the same fee, the behaviour-related uncertainty is reduced equally. If fees apply only by choice or for certain functions, it can be argued, that the agent with the willingness to pay those fees, has a higher level of trust, based on the behavioural assumptions underlying the expenses of the fee. So this signalling measure <ref type="bibr" target="#b19">(Kirmani and Rao, 2000)</ref> may lead to a higher willingness of the principal to conduct a transaction with the agent. Hence the following hypothesis can be formulated: H2: Bidders, who invest by choice in special services, have a higher possibility of winning an auction.</p><p>Besides uncertainty, specificity is another reason for increasing costs according to transaction cost theory. Based on the deliberation that during a transaction, transaction-specific investments by one transaction partner are done, one-sided dependences can occur. This can lead to opportunistic behaviour by the other transaction party <ref type="bibr" target="#b13">(Hill, 1990)</ref>. The specificity of online auction transactions is mostly low, because the goods already exist and only an exchange of goods and money takes place. In particular reverse auctions are used to auction off services, whereby the provision of a service can bear a high level of specificity. If transactions, based on a higher level of trust, are repeatedly carried out between the same transaction partners, a higher level of specificity can occur, even in auctions with a usual low level of specificity <ref type="bibr" target="#b33">(Williamson, 1985)</ref>. Specificity affects transaction costs depending on the frequency of the transactions. The more frequently the same transaction occurs, the lower the transaction costs are, based on learning processes regarding the execution of the transaction. Such learning processes can also appear if transactions proceed between the same transaction parties <ref type="bibr" target="#b3">(Bea and Göbel, 2002)</ref>. So the following hypothesis can be derived: H3: The more frequently one bidder was chosen by principal X, the higher their possibility of winning an auction of X.</p><p>According to transaction cost theory there are further transaction influencing factors. These are summarized under the term transaction atmosphere and include, in particular, political, social and legal framework conditions <ref type="bibr" target="#b34">(Williamson, 1975)</ref>. Cultural and linguistic differences between the agent and principal are among the cultural factors <ref type="bibr" target="#b6">(Chen et al. 2002)</ref>. Linguistic and cultural resemblance eases the communication between both transaction parties and thus leads to reduced transaction costs. This coherence is specified in the following hypothesis: H4: The more similar, regarding linguistic and cultural aspects, agent and principal X are, the higher their possibility of winning an auction of X.</p><p>In addition to the transaction costs, production costs also influence the choice of the transaction partner. The costs, which arise from the transformation of the service, form the production costs. At various auction forms, the choice of the bidders is only limited to the production costs, represented by the bid level. At the here observed reverse auctions with free choice of agent, production costs constitute a further influencing factor, besides the transaction costs. At reverse auctions the principal chooses the agent, so the selection will be done by minimizing the costs for the principal. With regard to the transaction costs, the following hypothesis can be derived: H5: The lower the production cost of a bidder, the higher their possibility of winning an auction. Some of the derived influencing factors have already been analysed in several studies, especially the influence of reputation, whereas the influence of the transaction atmosphere is unknown so far. Table <ref type="table">1</ref> summarizes the studies and the investigated influencing factors.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Dependent variable Study</head><p>Table <ref type="table">1</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Variables in previous studies</head><p>According to Table <ref type="table">1</ref>, the dependent variables in previous studies were mostly limited to the auction price and the realized price premium, which is also reflected in the auction price. As independent variables on the auction price, previous studies focused on ratings. Both the influence of positive or negative ratings and the influence of an increase of positive, negative or neutral ratings were analysed. The number of bidders respectively the number of bids, the presence of (transportation) insurance, the length of the auction, the starting respectively the reserve price, the presence of pictures, the product type and shipping factors (shipping costs, shipping provider) were used as control variables. However, not all of the used control variables can be applied to our study. So for example provided pictures and shipping costs are irrelevant in the considered reverse auctions, where services are sold by auction.</p><p>Regarding previous research, one can criticize that on the one hand, in most studies, only influences on the auction price were investigated and that on the other hand the analyses were mostly limited to eBay, whereby the results are restricted to Vickrey auctions and eBay. Only <ref type="bibr" target="#b17">Jap (2007)</ref> has reported a study investigating factors influencing the result of online reverse auctions. Minimizing transaction costs was defined as core premise for principals, but the operationalization of transaction costs was mostly limited to the reduction of behaviour-related uncertainty through the use of reputation mechanisms, insurance offerings or provided information. Recent studies, however, indicate that the auction result depends on multiple factors and reputation is one of the most important factors.</p><p>3 Empirical Evaluation</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.1">Data Collection</head><p>In order to prove the hypotheses derived in the former section we collected data from 2,662 closed auctions from Freelancer.com, which is a web portal for the global outsourcing of small-and mediumsized IT-projects (e.g. development of websites, administration of blogs and newsletters, development of software). More than 1.9 million users worldwide were registered in November 2010 and already more than 850,000 projects have been successfully auctioned and completed using Freelancer.com.</p><p>Potential agents can apply for a listed project with a bid consisting of an amount in costs and an estimated time to delivery. Both bid specifications influence the production costs either directly or indirectly and hence the decision of the principal (H5).</p><p>For selecting an agent, the principal has access to further information such as the reputation and gold membership of each agent. Reputation is expressed as the average current rating, number of posted ratings and the number of incomplete projects. These reputation values are appropriate for estimating the behaviour of an agent and to avoid moral hazard and shirking (H1). Another indicator allowing the pre-evaluation of the behaviour of an agent might be the gold membership. Each agent can become a gold member on Freelancer.com for a monthly fee of US$ 20. The gold membership is intended to signal a high degree of loyalty, because an agent who regularly invests money is willing to seriously bid for and complete projects (H2).</p><p>The rating profile of an agent indicates how often the agent has already conducted a transaction with a particular principal. We thus can prove whether agents having completed projects for a principal are preferred (H3). The country of origin of the principal and the agents is also apparent on their user profile. We operationalized cultural similarity while assigning countries with cultural spaces (H4). If principal and agent are from the same cultural area, we define them as culturally similar.</p><p>There is no common division of the world into cultural areas, though. However, most of the classifications are very close to each other, some define, for example, Europe as a cultural area <ref type="bibr" target="#b26">(Newig, 1995)</ref> while others see no cultural difference between Europe and Northern America <ref type="bibr" target="#b16">(Huntington, 2002)</ref>. In this paper we use the classification of Huntington which is shown in Table <ref type="table">2</ref>. Table <ref type="table">2</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Cultural areas and the number of principals as well as agents originating in the areas</head><p>Taking Table <ref type="table">2</ref> into account, it is striking that approximately 76% of the principals are from Western countries while 61% of the agents are from Islamic or Hindu countries. We can thus manifest that Freelancer.com is an IS supporting to outsource small-and medium-sized IT-projects.</p><p>All variables used in this study as well as their data-level and assignment to the hypotheses derived in the previous section are shown in Table <ref type="table">3</ref>. Cultural similarity is a dichotomous variable stating whether principal and agent are from the same cultural area. Table <ref type="table">3</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Variables used in this study</head><p>All variables shown in Table <ref type="table">3</ref> are independent variables. We used the dichotomous variable decision of the principal for agent a as the dependent variable. The number of agents that can apply for a listed project is not restricted. In order to analyse the effect of transaction costs on our dependent variable, only those projects for which the principal has made a decision were considered. Furthermore we disregarded all projects having only one bid. We collected data of about 20 days from Freelancer.com. This data consists of 2,662 projects and 31,249 bids, so that 11.74 bids were made on average for a project. The bid amount is US$ 218.83 on average (SD=US$ 3249.30) and a maximal US$ 500,000. However, only 11.66% of the bids were higher than US$ 250 while 29.26% were equal to the minimum of US$ 30. We can therefore state that projects offered at Freelancer.com are typically smalland medium-sized. It is striking that the of those agents who have already been reviewed is 9.82 (of 10) in average and that the standard deviation of this variable is only 0.38. We hence expect only a marginal effect of average rating on the decision of a principal. A summary of descriptive statistics about the independent variables is given in Table <ref type="table">4</ref>. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2">Data Analysis</head><p>Since we want to analyse data from several auctions, we must normalize them such that the minimal as well as the maximal value for each independent variable is comparable over all auctions. We set the maximal value of each independent variable to 1 and the minimal value to 0. If, for example, the bid amount of an auction 1 is between US$ 30 and US$ 60 and that of an auction 2 is between US$ 100 and US$ 250 it is not possible to analyse the effect of the bid amount when jointly analysing auction 1 and 2. Such a joint analysis of all project auctions is, however, necessary because we only have one agent per auction for which our decision variable is 1 (winner of the auction).</p><p>We defined datasets consisting of the winner and another agent randomly selected from all nonwinning bidders. These dataset were defined to compensate for the effect of a varying number of bids per auction. We generated a sample of 50,000 datasets using bootstrapping. Using only auctions with two bidders would be an alternative to our approach. However, this alternative is biased, since auctions with more than two bidders are not in the sample. With our sampling approach we can assure that the influence of our independent variable is not moderated by the number of bidding agents.</p><p>We conducted the following logistic regression analysis, since our dependent variable is dichotomous:</p><formula xml:id="formula_0">Prob(Decision) = e Z /(1+e Z )</formula><p>where Z represents the linear combination:</p><formula xml:id="formula_1">Z=β 0 + β 1 X 1 + β 2 X 2 + β 3 X 3 + β 4 X 4 + β 5 X 5 + β 6 X 6 + β 7 X 7 + β 8 X 8</formula><p>We further computed the variance inflation factors in order to quantify the severity of multicollinearity of the logistic regression. The results of these analyses are presented in the next session.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.3">Results</head><p>The results of the logistic regression are shown in Table <ref type="table" target="#tab_3">5</ref>. A first surprising result is that gold membership and the number of aborted projects have no significant influence on the decision of a principal. All other variables are appropriate for explaining the decision. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Quality criteria of the logistic regression analysis</head><p>All variables except gold membership and number of incomplete projects either have a positive or a negative effect, because there is no 95% interval starting on a level lower than 1 and ending up on a level greater than 1. The direction of the effect of the variables gold member and number of incomplete projects is thus not clear. Since these variables have been already identified as not significant, we have to declare them as inappropriate to explain the principals' decisions. A negative influence of the bid amount and project duration, and a positive influence of the average ranking, the number of reviews, the number of joint projects and the cultural similarity are detected with a confidence interval of 95%. There is no evidence for multicollinearity in our model due to very low variance inflation factors (VIF≤5) and moderate low correlations between the variables as shown in Table <ref type="table">7</ref>. Table <ref type="table">8</ref> summarizes the results with respect to the derived hypotheses.</p><p>Bid amount is the most discriminating variable followed by the number of reviews, the number of joint projects, cultural similarity, and the project duration. Average rating significantly explains the decision of a principal but with a little explanation power only. We also estimated the same regression for those 311 projects having only bids higher than US$ 249 and found that the number of reviews is most discriminating for this type of projects, followed by bid amount and cultural similarity.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4">Discussion</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.1">Implications for Research</head><p>In this paper we developed and empirically tested a model for explaining why an agent has won a reverse auction in which the principal is free to make a decision independent from the bid amount. The model was developed upon the assumption that principals act as cost minimisers and want to minimize both production and transaction costs. This assumption also determines other studies. But in contrast to other studies, we first examined other factors than uncertainty influencing the decision of a principal. The model developed here thus represents an extension of existing work, but it also requires further investigations to hedge our findings.</p><p>The findings of this study have also shown that, if available, a principal considers many factors when making a decision about a transaction partner. Since other platforms like Elance.com or peopleperhour.com also provide information facilitating the evaluation of the loyalty of potential agents, it becomes possible to further examine the decision behaviour of principals. We thus hope our findings will not only be hedged, but also extended based on future studies.</p><p>From a statistical point of view we made a suggestion in this paper on how to analyse models with a dichotomous dependent variable which is in most cases 0 and only in one case 1. The proposed normalization and the bootstrapping approach allows many auctions to be subsumed and to avoid a bias based on different numbers of bids per auction and different maximal and minimal levels of our independent variables.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>4.2</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Implications for Practice</head><p>Our findings allow implications to be deduced for both bidders and providers of similar auction platforms. The most impressive implication for Freelancer.com and similar websites is that the revenue model they have implemented is not sustainable from a transaction cost perspective. Users of such a platform must pay a monthly fee in order to become a gold member. For Freelancer.com the most important benefit of the gold membership for a bidder is that "Gold members are often regarded as more reliable ..." (http://www.freelancer.com/faq/view.php). However, project creators do not honour such a membership in terms of a higher probability to be selected as auction winner. There is thus no need to become a gold member when the purpose for a bidder is to increase the bidder's probability of winning an auction. Although some other advantages are associated with a gold membership, our findings indicate that a very important advantage has no evidence.</p><p>Furthermore the results allow a bidding strategy to be extracted that increases the probability of winning an auction. New members have the problem that they have not been reviewed yet and that they have not conducted a transaction with any principal. They hence must compensate these drawbacks with a decreased bid amount and an earlier delivery date. In order to increase their probability of winning the first project they should preferably bid for projects where the principal lives in the same cultural space. Agents might be enticed to generate a shallow identity which is used to offer projects that the agent wins with her true identity. This strategy helps to increase the number of reviews and has to be prevented by the auction platform provider.</p><p>Mature bidders can charge higher prices especially when they have already cooperated with the same principal and/or they have been reviewed by plenty of principals. We thus compared the bid amounts between those agents with the most reviews and those with the least reviews (per project) and found that there is a significant difference (p&lt;0.001). Agents with a high number of reviews demand on average 17.0% more for the same project than those agents with a low number of reviews. Furthermore, agents with a high number of reviews have an estimated project duration which is 7.8% higher than the project duration of agents with a low number of reviews (p&lt;0.001). Significant differences have been also identified when comparing the agent with the highest number of reviews to the average agent of a particular project. Agents with the highest number of reviews have a 3.1% higher bid amount (p&lt;0.001) and 1.6% higher expected project duration (p=0.0366) than the average agents. These results are in line with those presented in section 2 of this paper.</p><p>However, it is worth noting that the average rating of a bidder has only a marginal effect on the decision of the principals. It is therefore not possible to prevent unfair behaviour such as rest-on-thelaurels. Although some information is available in order to make a satisfying agent selection none of this information can reliably assure that any agent is loyal and reliable. The problem of an adverse selection could be, however, alleviated if the principal would also use the number of aborted projects in order to make a selection.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.3">Limitations and Further Research</head><p>As indicated in section 3, all but one hypothesis could be supported. However, there is just space for improvements of the proposed model since the quality criteria are acceptable but not outstanding. This suggests that other factors may exist which also influence the decision of a principal. Since the bids are not binding, renegotiation and private communication might have a strong distorting effect on the auction result. We were not able to observe this data though.</p><p>The investigation carried out in this paper assumes, at least implicitly, that principals are acting as rational deciders. From various source we know, however, that such decisions are sometimes neither rational nor rationally intended <ref type="bibr" target="#b0">(Arkes and Ayton, 1999)</ref>. Against this background, it seems conceivable that the selection of an agent is not rational or rationally intended in all cases.</p><p>As mentioned above cultural similarity is considered to be an influencing factor for transaction costs, but an operationalization of this construct is lacking. In this study we measured cultural similarity based on an assignment of the countries to cultural spaces. Although we believe that such a classification of cultural spaces is superficial, the proposed operationalization can be viewed as a first idea. However, further work is required in order to better measure assumptions and prejudices a principal may have about a bidder based on the country the bidder is living in.</p><p>Although the normalization of data was necessary to make independent variables comparable over all auctions, it prevented the effect of absolute variable levels to be measured. For example, assume a project for which two bids exist. Bidder 1 has been reviewed only once while bidder 2 has never been reviewed. Furthermore assume a second project which also has two bidders, bidder 3 has 100 reviews while bidder 4 has 20 reviews. After normalizing this data, bidder 1 and 3 have the same review value (1) while bidder 2 and 4 have a review value of 0. This allows the relative effect to be extracted that a bidder with more reviews has a higher probability of winning an auction but it does not allow the effect of the absolute number of reviews to be analysed. In this example a principal might make no difference between 0 and only 1 review. Investigating the effect of the absolute number of reviews might provide an avenue for further research.</p><p>Since our findings are based on an examination of only one auction platform, we plan to analyse another online reverse auction platform in order to retest the proposed hypotheses. With the explosive growth of projects auctioned online, research on reverse auctions will have a far-reaching impact.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_3"><head>Table 5 .</head><label>5</label><figDesc>Table 6 presents the quality of the overall model. Based on several criteria we can state that our model has an acceptable Results of the logistic regression analysis</figDesc><table><row><cell>Variable</cell><cell>β</cell><cell>e β</cell><cell cols="2">95 % Interval 2.5 % 97.5 %</cell><cell>Std. Err.</cell><cell>VIF</cell><cell>Wald-z</cell><cell>Sig.</cell></row><row><cell>Intercept</cell><cell cols="2">-0.1715 0.8424</cell><cell>0.8123</cell><cell>0.8737</cell><cell>0.0186</cell><cell>-</cell><cell>-9.23</cell><cell>&lt; 0.001</cell></row><row><cell>Bid Amount</cell><cell cols="2">-1.0802 0.3395</cell><cell>0.3240</cell><cell>0.3558</cell><cell>0.0239</cell><cell>1.2203</cell><cell cols="2">-45.13 &lt; 0.001</cell></row><row><cell>Time to Delivery</cell><cell cols="2">-0.4279 0.6519</cell><cell>0.6262</cell><cell>0.6786</cell><cell>0.0205</cell><cell>1.1642</cell><cell cols="2">-20.87 &lt; 0.001</cell></row><row><cell>Avg. Rating</cell><cell cols="2">0.0791 1.0823</cell><cell>1.0782</cell><cell>1.0865</cell><cell>0.0019</cell><cell>1.6775</cell><cell>40.70</cell><cell>&lt; 0.001</cell></row><row><cell>Number of Reviews</cell><cell cols="2">0.9483 2.5812</cell><cell>2.4715</cell><cell>2.6957</cell><cell>0.0222</cell><cell>1.5912</cell><cell>42.81</cell><cell>&lt; 0.001</cell></row><row><cell>Number of Incomplete Projects</cell><cell cols="2">-0.0010 0.9990</cell><cell>0.9963</cell><cell>1.0017</cell><cell>0.0014</cell><cell>1.2330</cell><cell>-0.74</cell><cell>0.462</cell></row><row><cell>Gold Member</cell><cell cols="2">-0.0315 0.9690</cell><cell>0.9363</cell><cell>1.0029</cell><cell>0.0175</cell><cell>1.5576</cell><cell>-1.80</cell><cell>0.073</cell></row><row><cell>Number of Joint Projects</cell><cell cols="2">0.6747 1.9634</cell><cell>1.8887</cell><cell>2.0410</cell><cell>0.0198</cell><cell>1.0262</cell><cell>34.12</cell><cell>&lt; 0.001</cell></row><row><cell>Cultural Similarity</cell><cell cols="2">0.4516 1.5709</cell><cell>1.5196</cell><cell>1.6238</cell><cell>0.0169</cell><cell>1.0288</cell><cell>26.71</cell><cell>&lt; 0.001</cell></row><row><cell>Criterion</cell><cell></cell><cell>Value</cell><cell></cell><cell cols="2">Acceptance Level</cell><cell></cell><cell></cell></row><row><cell>Likelihood Ratio</cell><cell></cell><cell>19227.89</cell><cell></cell><cell>-</cell><cell></cell><cell></cell><cell></cell></row><row><cell>Degrees of Freedom</cell><cell></cell><cell>8</cell><cell></cell><cell>-</cell><cell></cell><cell></cell><cell></cell></row><row><cell>Sig. Likelihood-Ratio-Test</cell><cell></cell><cell>&lt; 0.001</cell><cell></cell><cell cols="2">≤ 0.05</cell><cell></cell><cell></cell></row><row><cell>Nagelkerke's R²</cell><cell></cell><cell>0.233</cell><cell></cell><cell cols="2">≥ 0.20</cell><cell></cell><cell></cell></row><row><cell>Kendall's τ-α</cell><cell></cell><cell>0.243</cell><cell></cell><cell cols="2">≥ 0.15</cell><cell></cell><cell></cell></row><row><cell>Goodman-Kruskal γ</cell><cell></cell><cell>0.488</cell><cell></cell><cell cols="2">≥ 0.10</cell><cell></cell><cell></cell></row><row><cell>Brier Score</cell><cell></cell><cell>0.205</cell><cell></cell><cell cols="2">lower is better</cell><cell></cell><cell></cell></row><row><cell cols="2">Akaike's Information Criterion</cell><cell>119600</cell><cell></cell><cell cols="2">lower is better</cell><cell></cell><cell></cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_4"><head>Table 6 .</head><label>6</label><figDesc></figDesc><table /></figure>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Auction price <ref type="bibr" target="#b8">Dewan and Hsu, 2004;</ref><ref type="bibr" target="#b25">Melnik and Alm, 2002;</ref><ref type="bibr" target="#b10">Gilkeson and Reynolds, 2003;</ref> Lui et al., 2007;<ref type="bibr" target="#b36">Zhang, 2006;</ref><ref type="bibr" target="#b28">Standifird, 2001;</ref><ref type="bibr" target="#b31">Wan and Teo, 2001;</ref><ref type="bibr" target="#b12">Haruvy and Popkowski Leszczyc, 2010;</ref><ref type="bibr" target="#b9">Easley et al. 2010</ref> Price premium <ref type="bibr" target="#b11">Gregg and Walczak, 2008;</ref><ref type="bibr" target="#b29">Stern and Stafford, 2006</ref>; Hou 2007 Willingness to transact Gregg and Walczak, 2008 Number of bidders Haruvy and Popkowski Leszczyc, 2010 Relationship with principal Jap, 2007 Independent variable Rise of ratings by one Melnik and Alm, 2002; Standifird, 2001 Rise of positive ratings by one Liu et al., 2007; Standifird, 2001; Hou, 2007 Rise of neutral ratings by one Hou, 2007 Rise of negative ratings by one <ref type="bibr" target="#b25">Melnik and Alm, 2002;</ref><ref type="bibr" target="#b23">Liu et al. 2007;</ref><ref type="bibr" target="#b28">Standifird, 2001;</ref><ref type="bibr" target="#b14">Hou, 2007</ref> Positive ratings <ref type="bibr" target="#b8">Dewan and Hsu, 2004;</ref><ref type="bibr" target="#b10">Gilkeson and Reynolds, 2003;</ref><ref type="bibr" target="#b36">Zhang, 2006;</ref><ref type="bibr" target="#b31">Wan and Teo, 2001;</ref><ref type="bibr" target="#b9">Easley et al. 2010</ref> Negative ratings <ref type="bibr" target="#b8">Dewan and Hsu, 2004;</ref><ref type="bibr" target="#b10">Gilkeson and Reynolds, 2003;</ref><ref type="bibr" target="#b36">Zhang, 2006;</ref><ref type="bibr" target="#b31">Wan and Teo, 2001;</ref><ref type="bibr" target="#b9">Easley et</ref> al. 2010 E-Image Gregg and Walczak, 2008 Auction duration Haruvy and Popkowski Leszczyc, 2010 Control variables Number of bidders <ref type="bibr" target="#b29">Stern and Stafford, 2006;</ref><ref type="bibr" target="#b28">Standifird, 2001;</ref><ref type="bibr" target="#b31">Wan and Teo, 2001;</ref><ref type="bibr" target="#b17">Jap, 2007;</ref><ref type="bibr" target="#b9">Easley et al. 2010</ref> Number of bids <ref type="bibr" target="#b29">Stern and Stafford, 2006;</ref><ref type="bibr" target="#b8">Dewan and Hsu, 2004;</ref><ref type="bibr" target="#b6">Chen et al., 2002;</ref> Liu et al.  , 2007  Insurance  Melnik and<ref type="bibr" target="#b25">Alm, 2002;</ref><ref type="bibr" target="#b14">Hou, 2007</ref> Auction length <ref type="bibr" target="#b25">Melnik and Alm, 2002;</ref><ref type="bibr" target="#b23">Liu et al., 2007;</ref><ref type="bibr" target="#b36">Zhang, 2006;</ref> Hou, 2007, Wan and<ref type="bibr" target="#b31">Teo, 2001</ref> Starting price <ref type="bibr" target="#b29">Stern and Stafford, 2006;</ref> Gilkson and Reynolds, 2003;<ref type="bibr" target="#b23">Liu et al., 2007;</ref><ref type="bibr" target="#b36">Zhang, 2006;</ref><ref type="bibr" target="#b31">Wan and</ref> Teo, 2001  Reserved price  Liu et al.,2007;<ref type="bibr" target="#b8">Dewan and Hsu, 2004</ref>; Zhang, 2006 Price visibility Jap, 2007 Picture Stern and Stafford, 2006; Melnik and Alm, 2002; Liu et al., 2007; Easley et al. 2010 Product type (new/used) Gregg and Walczak, 2008 Weekend Wan and Teo, 2001</p><p>Shipping <ref type="bibr" target="#b25">Melnik and Alm, 2002;</ref><ref type="bibr" target="#b10">Gilkeson and Reynolds, 2003;</ref><ref type="bibr" target="#b23">Liu et al. 2007;</ref><ref type="bibr" target="#b28">Standifird, 2001</ref> </p></div>
+			</div>
+
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Summary of the results</head><p>When removing the variables gold member and number of incomplete projects from our model, we got the same results for Nagelkerkes R², Kendall's τ-α, Goodman-Kruskal's γ and Brier Score and only a marginal lower likelihood ratio (19223.01).</p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">The Sunk Cost and Concorde Effects: Are Humans Less Rational Than Lower Animals</title>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">R</forename><surname>Arkes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Ayton</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Psychological Bulletin</title>
+		<imprint>
+			<biblScope unit="volume">125</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="591" to="600" />
+			<date type="published" when="1999">1999</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">The Winner&apos;s Curse, Reserve Prices, and Endogenous Entry: Empirical Insights from eBay Auctions</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Bajari</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Hortacsu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The RAND Journal of Economics</title>
+		<imprint>
+			<biblScope unit="volume">34</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="329" to="355" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Reducing Buyer Search Costs: Implications for Electronic Marketplaces</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Bakos</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Science</title>
+		<imprint>
+			<biblScope unit="volume">43</biblScope>
+			<biblScope unit="issue">12</biblScope>
+			<biblScope unit="page" from="1676" to="1692" />
+			<date type="published" when="1997">1997</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">The Social Psychology of Trust with Applications in the Internet</title>
+		<author>
+			<persName><forename type="first">F</forename><forename type="middle">X</forename><surname>Bea</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Göbel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lucius</forename><forename type="middle">&amp;</forename><surname>Stuttgart</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Lucius</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">W</forename><surname>Bierhoff</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Vornefeld</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Analyse &amp; Kritik: Zeitschrift für Sozialtheorie</title>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="page" from="48" to="62" />
+			<date type="published" when="2002">2002. 2004</date>
+		</imprint>
+	</monogr>
+	<note>Organisation. 2 nd edition</note>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">How Effective are Electronic Reputation mechanisms? An Experimental Investigation</title>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">E</forename><surname>Bolton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Katok</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Ockenfels</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Science</title>
+		<imprint>
+			<biblScope unit="volume">50</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="1587" to="1602" />
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Electronic Reverse Auction Configuration and its Impact on Buyer Price and Supplier Perceptions of Opportunism: A Laboratory Experiment</title>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">R</forename><surname>Carter</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">K</forename><surname>Stevens</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Operations Management</title>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="1035" to="1054" />
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Individualism, Collectivism, and Opportunism: A Cultural Perspective on Transaction Cost Economics</title>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">C</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">W</forename><surname>Peng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">A</forename><surname>Saparito</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Management</title>
+		<imprint>
+			<biblScope unit="volume">28</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="567" to="583" />
+			<date type="published" when="2002">2002</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Reputation Mechanism Design in Online Trading Environments with Pure Moral Hazard</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Dellarocas</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<imprint>
+			<biblScope unit="volume">16</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="209" to="230" />
+			<date type="published" when="2005">2005</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Adverse Selection in Electronic Markets: Evidence from Online Stamp Auctions</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Dewan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Hsu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The Journal of Industrial Economics</title>
+		<imprint>
+			<biblScope unit="volume">52</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="497" to="516" />
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Bidding Patterns, Experience, and Avoiding the Winner&apos;s Curse in Online Auctions</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">F</forename><surname>Easley</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">A</forename><surname>Wood</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Barkataki</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Management Information Systems</title>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="241" to="268" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Determinants of Internet Auction Success and Closing Price: An Exploratory Study</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Gilkeson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Reynolds</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Psychology &amp; Marketing</title>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="537" to="566" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Dressing your Online Auction Business for Success: An Experiment comparing two eBay Businesses</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">G</forename><surname>Gregg</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Walczak</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="653" to="670" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">The Impact of Online Auction Duration</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>Haruvy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">T L</forename><surname>Popkowski Leszczyc</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Decision Analysis</title>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="99" to="106" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Cooperation, Opportunism, and the Invisible Hand: Implications for Transaction Cost Theory</title>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">W L</forename><surname>Hill</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Academy of Management Review</title>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="500" to="513" />
+			<date type="published" when="1990">1990</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Price Determinants in Online Auctions: A Comparative Study of eBay China and US</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Hou</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Electronic Commerce Research</title>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="172" to="183" />
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<author>
+			<persName><forename type="first">D</forename><surname>Houser</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O</forename><surname>Wooders</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Reputation in Auctions: Theory, and Evidence from eBay</title>
+		<imprint>
+			<date type="published" when="2006">2006</date>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="page" from="353" to="369" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<monogr>
+		<title level="m" type="main">The Clash of Civilizations and the Remaking of World Order</title>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">P</forename><surname>Huntington</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2002">2002</date>
+			<pubPlace>London, Simon &amp; Schuster</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">The Impact of Online Reverse Auction Design on Buyer-Supplier Relationships</title>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">D</forename><surname>Jap</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Marketing</title>
+		<imprint>
+			<biblScope unit="volume">71</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="146" to="159" />
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Price, Quality and Reputation: Evidence from an Online Field Experiment</title>
+		<author>
+			<persName><forename type="first">Jin</forename><forename type="middle">G</forename><surname>Kato</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The RAND Journal of Economics</title>
+		<imprint>
+			<biblScope unit="volume">47</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="983" to="1005" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">No Pain, No Gain: A Critical Review of the Literature on Signaling Unobservable Product Quality</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Kirmani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Rao</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Marketing</title>
+		<imprint>
+			<biblScope unit="volume">64</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="66" to="79" />
+			<date type="published" when="2000">2000</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Electronic Multidimensional Auctions and the Role of Information Feedback</title>
+		<author>
+			<persName><forename type="first">O</forename><forename type="middle">R</forename><surname>Koppius</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Van Heck</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Kumar</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">ECIS 2000 Proceedings</title>
+		<imprint>
+			<date type="published" when="2000">2000</date>
+			<biblScope unit="page" from="461" to="468" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<monogr>
+		<title level="m" type="main">The Role of Product Quality Information, Market State Information and Transaction Costs in Electronic Auctions</title>
+		<author>
+			<persName><forename type="first">O</forename><forename type="middle">R</forename><surname>Koppius</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Van Heck</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2002">2002</date>
+			<publisher>Academy of Management Proceedings</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<monogr>
+		<title level="m" type="main">Game Theory and Economic Modelling</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Kreps</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1990">1990</date>
+			<publisher>Clarendon Press</publisher>
+			<pubPlace>Oxford</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Does Reputation System Impact Online Auction Results: A Meta-Analysis</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Wei</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Hui</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">China Journal of Information Systems</title>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="16" to="33" />
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Pennies from eBay: The Determinants of Price in Online Auctions</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Lucking-Reiley</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Prasa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Reeves</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Industrial Economics</title>
+		<imprint>
+			<biblScope unit="volume">55</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="223" to="233" />
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">Does a Seller&apos;s Ecommerce Reputation Matter? Evidence from eBay Auctions</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Melnik</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Alm</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Industrial Economics</title>
+		<imprint>
+			<biblScope unit="volume">50</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="337" to="349" />
+			<date type="published" when="2002">2002</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Weltordnung nach Kulturerdteilen</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Newig</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Geographie Heute</title>
+		<imprint>
+			<biblScope unit="volume">128</biblScope>
+			<biblScope unit="page" from="44" to="45" />
+			<date type="published" when="1995">1995</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">The Effect of Transaction Costs on Double Auction Markets</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Noussair</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Robin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Ruffieux</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Economic Behavior &amp; Organization</title>
+		<imprint>
+			<biblScope unit="volume">36</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="221" to="233" />
+			<date type="published" when="1998">1998</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">Reputation and E-commerce: eBay Auctions and the Asymmetrical Impact of Positive and Negative Ratings</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Standifird</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Management</title>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="page" from="279" to="295" />
+			<date type="published" when="2001">2001</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">Individual and Social Determinants of Winning Bids in Online Auctions</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Stern</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Stafford</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Consumer Behaviour</title>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="page" from="43" to="55" />
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">Sellers&apos; Trust and Continued Use of Online Marketplaces</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Sun</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of the Association for Information Systems</title>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="182" to="211" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">An Examination of Auction Price Determinants on eBay</title>
+		<author>
+			<persName><forename type="first">W</forename><surname>Wan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H.-H</forename><surname>Teo</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">ECIS 2001 Proceedings</title>
+		<imprint>
+			<date type="published" when="2001">2001</date>
+			<biblScope unit="page" from="898" to="908" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Attributions of Trust in Decision Support Technologies: A Study of Recommendation Agents for E-commerce</title>
+		<author>
+			<persName><forename type="first">W</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Benbasat</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Management Information Systems</title>
+		<imprint>
+			<biblScope unit="volume">24</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="249" to="273" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<monogr>
+		<title level="m" type="main">The Economic Institutions of Capitalism</title>
+		<author>
+			<persName><forename type="first">O</forename><forename type="middle">E</forename><surname>Williamson</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1985">1985</date>
+			<publisher>Free Press</publisher>
+			<pubPlace>New York, NY</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<monogr>
+		<title level="m" type="main">Markets and Hierarchies: Analysis and Antitrust Implication</title>
+		<author>
+			<persName><forename type="first">O</forename><forename type="middle">E</forename><surname>Williamson</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1975">1975</date>
+			<publisher>Free Press</publisher>
+			<pubPlace>New York, NY</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">The Impact of Seller Reputation on the Performance of Online Sales: Evidence from TaoBao Buy-It-Now (BIN) Data</title>
+		<author>
+			<persName><forename type="first">Q</forename><surname>Ye</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Kiang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Wu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Advances in Information Systems</title>
+		<imprint>
+			<biblScope unit="volume">40</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="12" to="19" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">The Roles of Players and Reputation: Evidence from eBay</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Zhang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Decision Support Systems</title>
+		<imprint>
+			<biblScope unit="volume">42</biblScope>
+			<biblScope unit="page" from="1800" to="1818" />
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<analytic>
+		<title level="a" type="main">An Empirical Research on Taobao: Seller Reputation&apos;s Impact on Auction Price Premium. Advanced Management of Information for Globalized Enterprises</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Huang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">IEEE Symposium</title>
+		<meeting><address><addrLine>Tianjin, China</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2008-09">2008. September 2008</date>
+			<biblScope unit="page" from="28" to="29" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

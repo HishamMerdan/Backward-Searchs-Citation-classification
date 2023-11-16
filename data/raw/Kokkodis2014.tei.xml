@@ -1,0 +1,960 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">The Utility of Skills in Online Labor Markets Completed Research Paper</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author role="corresp">
+							<persName><forename type="first">Marios</forename><surname>Kokkodis</surname></persName>
+							<email>mkokkodi@stern.nyu.edu</email>
+							<affiliation key="aff0">
+								<orgName type="department">NYU Stern School of Business</orgName>
+								<address>
+									<addrLine>44 W 4 th Street</addrLine>
+									<settlement>New York</settlement>
+									<region>NY</region>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Panagiotis</forename><forename type="middle">G</forename><surname>Ipeirotis</surname></persName>
+							<affiliation key="aff1">
+								<orgName type="department">NYU Stern School of Business</orgName>
+								<address>
+									<addrLine>44 W 4 th Street</addrLine>
+									<settlement>New York</settlement>
+									<region>NY</region>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">The Utility of Skills in Online Labor Markets Completed Research Paper</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="MD5">89EE8B66849B74B33DBBBAFAF1B4EAB5</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.7.3" ident="GROBID" when="2023-06-16T09:24+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>Online labor markets</term>
+					<term>Utility of skills</term>
+					<term>HMM</term>
+					<term>Worker&apos;s expertise</term>
+					<term>Data analysis</term>
+					<term>Empirical analysis</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>In this work we define the utility of having a certain skill in an (OLM), and we propose that this utility is strongly correlated with the level of expertise of a given worker. However, the actual level of expertise for a given skill and a given worker is both latent and dynamic. What is observable is a series of characteristics that are intuitively correlated with the level of expertise of a given skill. We propose to build a Hidden Markov Model (HMM), which estimates the latent and dynamic levels of expertise, based on the observed characteristics. We build and evaluate our approaches on a unique transactional dataset from oDesk.com. Finally, we estimate the utility of a series of skills and discuss how certain skills (e.g. 'editing') provide a higher expected payoff once a person masters them over others (e.g. 'microsoftexcel').</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Introduction</head><p>Online labor marketplaces (OLMs), such as oDesk.com, Elance.com, and Worker.com, allow employers to connect with workers around the globe, to accomplish tasks that span diverse categories such as: web development, writing and translation, accounting, etc. These marketplaces are growing fast and the worker annual earnings are expected to grow from $1 billion in 2012 to $10 billion by 2020 <ref type="bibr" target="#b0">(Agrawal et al. 2013)</ref>. A typical scenario in these workplaces starts with an employer posting a job (which can be a short task, a long-term project, or both). Multiple workers start bidding for the job and eventually the employer chooses to hire one (or several) of them. Finally, the hired worker(s) completes the task and receives a payment.</p><p>As with offline workplaces, work in OLMs is an 'experience good', meaning it is practically impossible to know the quality of the task outcome (or even the expertise of a worker in a given skill) in advance <ref type="bibr" target="#b27">(Nelson 1970)</ref>. A key solution to resolve this uncertainty is the use of online reputation systems, which provide signals about the past performance of workers <ref type="bibr" target="#b7">(Danescu-Niculescu-Mizil et al. 2009;</ref><ref type="bibr" target="#b8">Dellarocas 2003;</ref><ref type="bibr" target="#b22">Liu et al. 2008;</ref><ref type="bibr" target="#b23">Lu et al. 2010)</ref>. However, reputation systems in these marketplaces fail to capture the actual worker quality; they tend to be highly skewed towards high values, and they eventually become uninformative <ref type="bibr" target="#b14">(Hu et al. 2009</ref>).</p><p>The workers' value in OLMs resides in a combination of both observable and latent characteristics. The observed characteristics usually include a list of skills, the educational background, the work history, and the certifications of the applicant. The latent characteristics include the worker's expertise and true ability in the listed qualifications. Very similar to an offline setting, the demand and supply distributions (and as a result, the expected payoff) of each worker, with a given set of skills and a given level of expertise, are very heterogeneous; for example, a Java 'expert' might have a very different expected payoff than an 'expert' in customer service support. Similarly, a c# 'expert' might have a higher expected payoff than a c# 'beginner <ref type="bibr">', etc.</ref> This observation leads to two fundamental questions: (1) how can we estimate the latent level of expertise of a given worker and a given skill? (2) how can we quantify the value of a skill in an online labor marketplace, and how is this value correlated with the level of expertise of a worker?</p><p>In this work, we focus on addressing the abovementioned two questions. We first propose that the utility of each skill is strongly correlated with the level of expertise of a specific worker, an assumption that also holds for offline markets. Based on the intuition that an experienced worker should -on expectationreceive higher compensations than a beginner, we formally define the conditional utility of a skill given a certain level of expertise. However, the actual level of expertise for a given skill and a given worker is latent (not directly observable) and dynamic (evolves over time). To overcome this, we use a series of directly observed characteristics that are intuitively related to the level of expertise of a given skill. Based on these observable characteristics, we propose to build a Hidden Markov Model (HMM), which estimates the latent and dynamic levels of expertise of each worker, in a given skill.</p><p>For the deployment and evaluation of our methodology, we use a unique transactional dataset of 1.5 million job applications from the biggest (in terms of worker earnings) online labor market, oDesk.com. We compare our proposed approach with two baselines, and show that our framework performs significantly better, predicting workers' levels of expertise with an exceptionally high accuracy rate. Once we compute each worker's level of expertise, we estimate the conditional utility of each skill in our dataset. Lastly, we discuss how certain skills appear to have a much higher expected compensation, once someone masters them over others.</p><p>Our study is the first to quantify the value of a series of skills. We strongly believe that both online labor marketplaces and workers can benefit significantly from this analysis. Finally, we acknowledge that this work is the first step in answering a more important question: given a set of skills, with a certain level of expertise, what should the next steps of a utility-optimizing worker in (but also beyond) an online labor marketplace be?</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Background</head><p>Our work is novel in the sense that we are the first to define and study the utility of a skill in an OLM setting. Broadly related previous work has focused on different aspects of OLMs and paid crowdsourcing, as well as on skills assessment and 'expert' findings. We briefly discuss this work in the following paragraphs.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>OLMs &amp; Paid Crowdsourcing</head><p>Past research in Online Labor Markets (OLMs) spans across a variety of problems. John J. Horton <ref type="bibr" target="#b12">(Horton 2010</ref>) explores market creators' choices of price structure, price level and investment in platforms. He further discusses possible productivity and welfare implications that these markets can have. <ref type="bibr" target="#b13">Horton et al. (Horton et al. 2011</ref>) present a model of workers supplying labor to paid crowdsourcing. They find that workers work less when the pay is lower, but they do not work less when the task is more time consuming.</p><p>A different stream of work studies the validity of behavioral experiments in these markets. Rand, D. G. <ref type="bibr" target="#b29">(Rand 2012)</ref> discusses how Mechanical Turk can be used as a tool for behavioral experimentation. Similarly, Horton et al. <ref type="bibr" target="#b13">(Horton et al. 2011)</ref> show that online experiments can be just as valid -both internally and externally-as laboratory field experiments. In addition, <ref type="bibr" target="#b2">Berinsky et al. (Berinsky et al. 2012</ref>) assess the internal and external validity of experiments performed using Mechanical Turk.</p><p>On a different direction, a lot of work focuses on incentivizing workers as well as finding ways to manage the quality of their outcomes. In particular, Shaw et al. <ref type="bibr" target="#b31">(Shaw et al. 2011</ref>) ran an experiment on Mechanical Turk to measure the effectiveness of social and financial incentive schemes on outcome quality. One of their main findings was that when workers had to think about responses of their peers, combined with financial incentives, they provided higher quality results. <ref type="bibr" target="#b25">Mason et al. (Mason et al. 2010)</ref> studied the effect of compensation on performance in the context of two experiments conducted on AMT, and found that increased financial incentives increase the quantity but not the quality of work performed by participants. They also observed an anchoring effect, where workers who were paid more also perceived the value of their work to be greater, and thus were no more motivated than workers who were paid less. Furthermore, Chandler et al. <ref type="bibr" target="#b5">(Chandler et al. 2011</ref>) ran a natural field experiment on Amazon Mechanical Turk and found evidence that the user interface and the cognitive biases of the workers play an important role in OLMs. <ref type="bibr" target="#b32">Sheng et al. (Sheng et al. 2008</ref>) studied repeated-labeling strategies in OLMs. Two of their main findings where that (1) repeated-labeling can improve label quality but not always, and (2) that when processing unlabeled data is not free, even the simple strategy of labeling everything multiple times can give considerable advantage. Ipeirotis et al. <ref type="bibr">(Ipeirotis et al. 2010</ref>) presented algorithms that separate workers' ability errors from errors caused by workers' biases. Finally Ipeirotis et al. <ref type="bibr" target="#b15">(Ipeirotis et al. 2011</ref>) discussed the need of standardization of basic building block tasks that could make crowdsourcing more scalable.</p><p>In 2003, <ref type="bibr" target="#b33">Snir et al. (Snir et al. 2003)</ref> studied costly bidding in online markets and found that higher value projects attract significantly more bids, with lower quality, and that greater number of bids raise the cost to all participants, due to costly bidding and bid evaluation. A. Palais <ref type="bibr" target="#b28">(Pallais 2013</ref>) ran an experiment on the oDesk.com platform to study the cold-start problem (i.e. hiring inexperienced workers) in an OLM. Her experiment showed that both hiring workers and providing more detailed evaluations substantially improves workers' subsequent employment outcomes. Finally, Kokkodis et al. <ref type="bibr" target="#b20">(Kokkodis et al. 2013)</ref> studied what happens when a worker transitions between different task categories. In their study, they provided a static Bayesian approach for quantifying reputation transferability across different categories in OLMs.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Skills Assessment &amp; Expert Search</head><p>In the past, a lot of work has been done that deals with skills assessment and 'expert' search. Hambleton <ref type="bibr" target="#b11">(Hambleton et al. 1991)</ref> described the fundamental concepts of the Item Response Theory (IRT), a theory widely used in Computer Adaptive Testing. Desmarais <ref type="bibr" target="#b9">(Desmarais et al. 1995)</ref> proposed the creation of a network that captures implication relations among knowledge units (KU), and from this network one can learn someone's knowledge state with a limited number of observations or questions. Jurczyk and Agichtein <ref type="bibr" target="#b18">(Jurczyk et al. 2007</ref>) presented an analysis of the link structure of a general-purpose question answering (Q&amp;A) community to discover authoritative users. Similarly, Zhang et al. <ref type="bibr" target="#b36">(Zhang et al. 2007</ref>) tested a set of network-based ranking algorithms, including PageRank <ref type="bibr" target="#b4">(Brin et al. 1998)</ref> and HITS <ref type="bibr" target="#b19">(Kleinberg 1999)</ref>, on a Java forum, in order to identify users with high expertise. Bouguessa et al. <ref type="bibr" target="#b3">(Bouguessa et al. 2008</ref>) took this analysis one step further: they studied the problem of determining the amount of users that one should choose as authoritative from a ranked list. Balog and Rijke <ref type="bibr" target="#b1">(Balog et al. 2007</ref>) proposed a technique for automatically determining the expertise profile of a person by including information from the person's areas of skills and from his/her social profile. Macdonald and Ounis <ref type="bibr" target="#b24">(Macdonald et al. 2008)</ref> proposed an approach for predicting and ranking candidate expertise with respect to a query. Finally, Petkova and Croft (Petkova et al.) proposed a general approach for representing the knowledge of a potential expert as a mixture of language models from associated documents.</p><p>On a different note, Lazear <ref type="bibr">(Lazear)</ref> proposed a 'skill-weight' approach to represent firm-specific human capital. <ref type="bibr">Goes et al. (Goes et al.)</ref> tried to identify factors that motivate sellers to seek certifications in OLMs, and found that certification status can negatively impact some sellers' abilities to obtain contracts, even when certification exams are free. <ref type="bibr" target="#b35">Varshney et al. (Varshney et al. 2013)</ref> proposed a new collaborative filtering approach for skills assessment prediction and recommendation, that accounts for not only HRcollected data, but also for mined data from online technical communities. Handel <ref type="bibr" target="#b11">(Handel 2003)</ref> studied skills mismatch in the labor market. The main concern of his study is the absence of a standardized method of collecting information about the actual skills content of jobs, which is a significant obstacle in answering whether or not job demands are actually exceeding worker's capacities. Next, Cunha et al. <ref type="bibr" target="#b6">(Cunha et al. 2010</ref>) formulated multistage production functions for children's cognitive and non-cognitive skills, and they found that substitutability decreases in later stages of the life cycle of the production of cognitive skills, while it remains constant in the production of non-cognitive skills. Finally, Saito et al. <ref type="bibr" target="#b30">(Saito et al. 2014)</ref> proposed a framework for developing micro-tasking skills, which consisted of three modules: (1) a tutorial producer, (2) a task dispatcher, and (3) a feedback visualizer.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Utility of a skill in an Online Labor Market</head><p>As we discussed in the introduction, the value of each worker in an OLM is strongly connected to the worker's set of skills and the respective level of expertise in these skills. How can we quantify the value of a skill? In this section, we first define the worker's utility in completing a task. Then, by using this definition, we derive the utility of each individual skill, given a certain level of expertise.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>The utility of a task</head><p>Every individual worker who joins an OLM focuses on completing tasks that are relevant, but also on tasks that have the highest possible payoff. As a result, the worker's gained utility from completing a task correlates with the received hourly wage (W), as well as the hourly cost of completing the task. Based on this observation, we define the utility of completing a task to be proportional to the difference between the average hourly wage of a task 𝑊 and the average cost of the worker's hourly effort 𝐶:</p><formula xml:id="formula_0">𝑈 ! = 𝑊 𝑡 -𝐶 𝑡 ∝ 𝑊 -𝐶 = 𝑈 !</formula><p>In the previous equation, 𝑡 is the average duration (in hours) of a task in the marketplace, and 𝑈 ! is the resulting hourly task utility.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>The conditional utility of a skill</head><p>The average expected utility per task is an oversimplification; online labor marketplaces are highly heterogeneous in terms of skills, job categories, workers' abilities, etc. As a result, 𝑈 ! does not contain much information. To clarify this, consider a scenario where we are interested in the expected utility of completing a task that requires knowledge of .net, as well as in the expected utility of completing a task that requires blog-commenting. On oDesk.com, the average hourly wage of a .net task is $18.2, while the average hourly wage of a blog-commenting task is $4.6. It is clear that 𝑈 ! cannot represent both (if any) of these tasks.</p><p>To delve deeper into estimating a more accurate expected utility of a completed task, in this work we focus on the value of skills. Based on intuition, we propose that the utility of a skill is not independent of the worker's latent abilities. For example, we expect that an 'expert' in essay editing will charge significantly more than a 'beginner' in editing<ref type="foot" target="#foot_0">1</ref> . In addition, the utility of each skill is also correlated with the demand for that skill in the OLM. Having these in mind, we define the conditional utility of a skill.</p><p>Definition (Conditional Utility of a skill): Given a skill (𝑠), a worker with a level of expertise in that particular skill (𝐸 ! = 𝑒) and the number of jobs in the marketplace that require this skill (𝐷 ! ), we define the conditional utility of this skill given the level of expertise (e) as follows:</p><formula xml:id="formula_1">𝐔 𝐡 𝐄 𝐬 !𝐞,𝐃 𝐬 = 𝟏 |𝐈| ( 𝐢∈𝐈 𝑾 𝐄 𝐢,𝐬 !𝐞 -𝑪 𝐄 𝐢,𝐬 !𝐞 - 𝟏 𝐄 𝐬 -𝟏 𝑾 𝐄 𝐢,𝐬 !𝐞 ! -𝑪 𝐄 𝐢,𝐬 !𝐞 ! ) 𝐞 ! ∈ 𝐄 𝐢,𝐬 !𝐞 = 𝟏 𝐈 ( 𝐢∈𝐈 𝑾 𝐄 𝐢,𝐬 !𝐞 - 𝟏 𝐄 𝐬 -𝟏 𝑾 𝐄 𝐢,𝐬 !𝐞 ! 𝐞 ! ∈ 𝐄 𝐢,𝐬 !𝐞 ) (𝟏)</formula><p>In the above equation,</p><formula xml:id="formula_2">W ! !,! !! = ! ! !∈! ! !,! ! ! |! ! !,! ! ! |</formula><p>is the average hourly wage on openings (o) that require the given skill s and completed by worker i with a level of expertise 𝐸 !,! = 𝑒. Furthermore, I is the set of workers that have completed tasks with the given skill s in all available levels of expertise. Finally, 𝑪 𝐄 𝐢,𝐬 !𝐞 ! is the average hourly cost of effort of worker i, with a level of expertise s.</p><p>Intuitively, the conditional utility of a skill represents the expected increase in hourly wage that is associated with each level of expertise in the given market. For instance, in the simplest case where</p><formula xml:id="formula_3">𝐸 ! = 2, 𝑒 ∈ 𝑏𝑒𝑔𝑖𝑛𝑛𝑒𝑟, 𝑒𝑥𝑝𝑒𝑟𝑡 , 𝑈 ! ! ! !!"#$%%"&amp;,! !</formula><p>will represent the utility of an entry-level worker in the marketplace, whereas 𝑈 ! ! ! !!"#!$%,! ! will represent the utility of an expert worker in the marketplace.</p><p>The extension to K-levels of expertise is straightforward.</p><p>Thus far, we have not discussed the hourly cost of effort that appears (and disappears) in Equation <ref type="formula">1</ref>.The key assumption we make is that the individual cost of effort 𝑪 𝐄 𝐢,𝐬 !𝐞 ! remains unchanged when a worker changes levels of expertise. To understand the reasoning, consider a case where we have three levels of expertise: 'beginner', 'knowledgeable', and 'expert'. James is a worker who has started learning Python, so he is now a beginner. His average hourly cost of effort is 𝑪 𝐄 𝐣𝐚𝐦𝐞𝐬,𝐩𝐲𝐭𝐡𝐨𝐧 !𝐛𝐞𝐠𝐢𝐧𝐧𝐞𝐫 . After a few months, James becomes knowledgeable in Python.</p><p>His average hourly cost of effort now becomes 𝑪 𝐄 𝐣𝐚𝐦𝐞𝐬,𝐩𝐲𝐭𝐡𝐨𝐧 !𝐤𝐧𝐨𝐰𝐥𝐞𝐝𝐠𝐞𝐚𝐛𝐥𝐞 . Since on average, James puts in the same effort and has the same productivity in both states, we assume that the two costs are approximately equal. The same argument holds when James becomes an expert. Note that by considering the per person and per hour average cost of effort, we avoid the common problem of having different types of workers based on their productivity/effort (e.g. <ref type="bibr" target="#b34">(Spence 1973))</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Estimating workers' level of expertise</head><p>In this section, we present our proposed approach to identify a worker's level of expertise in a given skill. We begin by presenting the set of observable characteristics that are associated with the level of expertise in question. We then propose a framework that uses all these observable signals and predicts a given worker's latent level of expertise in a given skill.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>The clues</head><p>In the previous section, we assumed that the level of expertise for a given skill and worker is known. In practice, the actual knowledge of a skill is latent, and not directly observable. However, in an online labor market, we observe multiple signals of workers' expertise. Assume, for example, that we are dealing with an opening that requires Java and SQL, for which we have three applicants: Chris, Marina, and Praveen. Chris is lazy and does not list his skills and expertise on his profile. However in the past, he has completed a series of tasks that required Java and SQL, and he has received great feedback scores for these. On the other hand, Marina is very meticulous and lists all her skills on her profile, which include Java and SQL. She also appears to have repeatedly completed tasks (that required these two skills) under the same employer. Finally, Praveen just joined the market, and has no previously completed tasks. He has listed the two skills on his profile, and has also succeeded in the tests related to those skills. Taking into account this information, which one of the three candidates should we pick for the task? In other words, which candidate has the highest expertise for the task?</p><p>The point of this hypothetical example is that there is no objective way to assess the level of expertise of an applicant. However, there are multiple observable clues that provide enough information to shape expectations for someone's expertise.</p><p>The first such clue that we observe is whether or not a worker has passed a certification test associated with the skill at hand. oDesk.com, for example, provides a list of tests that are associated with different skills, varying from Social Media Marketing to Microsoft Excel and SQL<ref type="foot" target="#foot_1">2</ref> . The workers can choose whether or not to take a test for a certain skill. If a worker chooses to take a test, the worker's performance is then listed on the worker's profile<ref type="foot" target="#foot_2">3</ref> as a percentile score.</p><p>The second clue, which provides information about a worker's expertise, is the worker's past performance on tasks that required the skill at hand. As discussed before, in OLMs, every time a task is completed, workers receive an integer feedback rating between 1 and 5, for six dimensions: communication, cooperation, deadlines, quality, skills, and availability. It is natural to assume that people -who repeatedly receive good feedback scores for tasks that require a certain skill -have a good level of expertise in that skill. Now one might assume that by itself, a feedback score is a sufficient clue for assessing someone's expertise. This is not particularly true in OLMs: feedback scores appear to be highly skewed towards high values <ref type="bibr" target="#b14">(Hu et al. 2009)</ref>, and hence become uninformative. In particular, on the oDesk.com platform, the median is 5 (even though the highest possible rating is 5). Another possibility that explains this is the 'customer death' phenomenon <ref type="bibr" target="#b17">(Jerath et al. 2011</ref>): workers that receive bad feedback do not survive long enough in the marketplace, because it becomes practically impossible for them to get hired again. Therefore, they decide to either create a new account or just abandon the workplace. The resulting marketplace becomes filled with workers who have really high ratings -hence the highly skewed distributions.</p><p>The third clue that might include information about a worker's expertise in a skill is the worker's hiring rate. We define this rate as the fraction of applications that lead to a hire. The assumption here is based on the intuition that a worker with high hiring rates, for jobs that require a specific skill, must have a high level of expertise in that skill.</p><p>The fourth clue we consider is whether or not the task at hand is a 'rehire', i.e. the employer has hired the same worker before, for a task that required the skill at hand. Hiring someone a second time is the purest evidential signal that the worker did a great job, and as a result we can infer that the worker is an 'expert' in the given skill.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Feature</head><p>Symbol Domain The fifth clue we consider is the worker's compensation wage for the previously completed tasks that required a certain skill. The premise here is that the higher the expertise of a worker in a specific skill, the higher the worker's hourly wage should be. This intuition is based on the correlation between compensation and outcome quality in offline workplaces; the higher the compensation wage of an expert, the higher is the expectation of the outcome quality.</p><formula xml:id="formula_4">Certification C [0,1] Feedback Score F [0,1] Hiring Rate H [0,1] Rehire R {0,1} Wage W [1,50] Mentioned M {0,1}</formula><p>Finally, we include a binary variable that captures whether or not workers list the skill at hand on their profiles, at the time of application. The assumption here is that workers who have some expertise in a skill are also comfortable enough to list that skill on their profiles. We present all these signals in Table <ref type="table" target="#tab_0">1</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>The Framework</head><p>Given all these clues, our goal is to estimate the latent level of expertise for each worker in a given skill. To achieve this, we propose to build a Hidden Markov Model (HMM). Our choice relies on the fact that HMM models are Markov processes that assume the existence of underlying latent states, as well as the ability of transitioning between these latent states. These characteristics fit perfectly with the nature of our problem. Recall that in our scenario, we assume that a given skill's expertise is dynamic and evolves over time; Hence transitioning between latent levels of expertise is required.</p><p>HMM: We first define a set of discrete, unobserved (latent) states of expertise (𝐸). These states emit with different probability distributions observations in the set 𝑋 ∈ 𝑚 ! , 𝑚 ! , … , 𝑚 ! . If we consider that a completion of each job is a unit of time, then we expect that as a worker continues to complete tasks of the given skill, the worker will be transitioning between these unobserved states and will be emitting different observations.</p><p>Algorithm 1: Forwards algorithm for our scenario. It predicts the latent state of a given worker for a given skill, given a sequence of observations.</p><p>Let a sequence of observations of a worker on a given skill at a given time t be 𝑋 !:! . We can estimate the conditional probability of the worker being at state 𝑒 ! , 𝑒 ! ∈ 𝐸 , Pr (𝑒 ! |𝑋 !:! ) , by using the forwards algorithm presented in Algorithm 1 <ref type="bibr" target="#b26">(Murphy 2012</ref>). The algorithm takes as input some prior probability distribution across all the available states, a transition matrix between the available states, as well as some local evidence, which is a vector of the conditional probability distribution over the emitted observations. After the completion of the first task, the algorithm computes the conditional probability of being at each available state, given the observation. As a worker continues to complete new tasks, the algorithm updates the worker's probability of being at each state, by taking into account the input transition matrix between states, as well as the set of observations up to that point. At each iteration, the algorithm returns the most probable state of the worker at hand. Simply put, the algorithm predicts the state of a worker by choosing the state that best explains the worker's sequence of emitted observations.</p><p>Up to this point, we assumed that the input parameters for Algorithm 1 are known. In practice, we estimate these parameters by using a version of the Baum-Welch algorithm <ref type="bibr">(Baum et al. 1970)</ref>. The particular pseudocode that we use is presented in Algorithm 2. The algorithm is a variant of Expectation Maximization (EM): it assumes that we have a total of N workers, each of whom completes 𝑇 ! , 𝑖 ∈ 1, … , 𝑁 number of tasks. In addition, it considers K different levels of expertise, i.e. 𝐸 = {𝑒 ! , 𝑒 ! , … , 𝑒 ! }. At the E-step, the algorithm estimates the expected log-likelihood of the old parameter vector (𝜃 !"# ) . At the M-step, the algorithm finds the new parameters that maximize the previously estimated log-likelihood. Note that the parameter vector 𝜃 = [Pr 𝑒 ! , 𝐴 𝑗, 𝑘 , Pr 𝑋 ! 𝑒 ! ]′. The algorithm keeps iterating until the parameter vector 𝜃 converges <ref type="bibr" target="#b26">(Murphy 2012)</ref>.</p><p>Algorithm 2: Baum-Welch algorithm: estimates the parameter vector 𝜃 HMM example: Suppose that we consider only three latent states: 𝑒 ! , which describes an entry-level (beginner) worker; 𝑒 ! , which describes an intermediate-level worker (knowledgeable); and 𝑒 ! , which represents an expert worker in a given skill. Recall that we consider six different features to identify the expertise of a worker (see Table <ref type="table" target="#tab_0">1</ref>). We can encode the observations of these features into M=64 levels as follows:</p><formula xml:id="formula_5">𝑚 ! ≔ 𝐶 &lt; 0.5 ∧ 𝐹 &lt; 0.5 ∧ 𝐻 &lt; 0.5 ∧ 𝑅 = 0 ∧ 𝑊 &lt; 25 ∧ 𝑀 = 0 , … , 𝑚 !" ≔ {𝐶 &gt; 0.5 ∧ 𝐹 &gt; 0.5 ∧ 𝐻 &gt; 0.5 ∧ 𝑅 = 1 ∧ 𝑊 &gt; 25 ∧ 𝑀 = 1}.</formula><p>The HMM that describes this scenario is presented in Figure <ref type="figure" target="#fig_0">1</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Skills on oDesk.com</head><p>In this section, we provide an empirical analysis of the value of a set of skills that are found on the oDesk.com platform. We start this analysis by describing the data that we use, then we present some implementation details, and finally we evaluate our proposed approaches and compute the estimated conditional utilities of each one of the skills that we study.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Data</head><p>For our study, we use a unique transactional dataset from oDesk.com. oDesk is a global job marketplace with a plethora of tools targeted to businesses that intend to hire and manage remote workers. The company reports more than 500,000 hours of work billed per week, as well as an exponentially growing transaction volume of more than $300 million USD per year.</p><p>The In this work, we use a total of 26 skills from all 5 categories. The selection of the skills was based on two constraints. First, we wanted to limit our analysis to skills for which the oDesk.com platform provides certifications<ref type="foot" target="#foot_3">4</ref> . Second, in order to have sufficient data to train our HMM, we included skills for which we had information about more than 500 workers in our training set. Note that this is the number of workers, but not the number of total instances we use to train the HMM (i.e. the number of completed tasks for a given skill). We split our data into training (66%) and testing (34%) sets based on workers (i.e. the set of completed tasks of each worker belongs to either the training or the test set). For each opening, we extract the required skills. Then for each hiring decision, we have the snapshot of each worker's profile at the time of application, from which we extract the current state of all (if any) available certifications. In order to compute the current hiring rate of each worker, we keep track of the workers' applications, independent of whether or not they lead to a hiring decision. We also keep track of whether a hiring decision is a rehire. Finally, we include the hourly wage of each task, as well as the feedback score that the worker receives on completion of the task. Once the data preprocessing is complete, we use the training set to build the HMM for each skill. We then use the testing set to evaluate our approach.</p><p>The (smoothed) distributions of all the features we used in our training set are shown in Figure <ref type="figure">2</ref>. Starting from left to right, we observe that most of our training instances do not have skills certifications. In addition, we observe an increase of the density in high scores (close to one). This increase depicts the tendency of workers to list certifications for which they achieve high scores (as we discussed earlier). The feedback score distribution is as expected: highly skewed towards high scores. The 'mentioned' distribution shows that about 50% of our instances mention the required skills on their profile. From the 'hiring rate' distribution we see that most of the workers accumulate low rates, while a considerable portion of workers have a rate equal to 1. These workers have either been invited to apply or are getting rehired. Next, we see that very few workers are rehired and finally, we observe that the wage distribution (actual wage/50) is skewed to low wages (between $10 and $20).</p><p>For estimating the level of expertise of a given worker in a given skill, we use an HMM very similar to the one presented in Figure <ref type="figure" target="#fig_0">1</ref>. In particular, we use the presented three latent states: beginner, knowledgeable, and expert. For the emitted symbols, instead of splitting every single feature in half, we compute the per feature percentiles; our 64 emitted symbols now become: </p><formula xml:id="formula_6">𝒎 𝟏 ≔ 𝑪 ∈ 𝑩𝒐𝒕𝒕𝒐𝒎 𝟓𝟎% ∧ 𝑯 ∈ 𝑩𝒐𝒕𝒕𝒐𝒎 𝟓𝟎% ∧ 𝑭 ∈ 𝑩𝒐𝒕𝒕𝒐𝒎 𝟓𝟎% ∧ 𝑹 = 𝟎 ∧ 𝑾 ∈ 𝑩𝒐𝒕𝒕𝒐𝒎 𝟓𝟎% ∧ 𝑴 = 𝟎 … 𝒎 𝟔𝟒 ≔ 𝑪 ∈ 𝑻𝒐𝒑 𝟓𝟎% ∧ 𝑯 ∈ 𝑻𝒐𝒑 𝟓𝟎% ∧ 𝑭 ∈ 𝑻𝒐𝒑 𝟓𝟎% ∧ 𝑹 = 𝟏 ∧ 𝑾 ∈ 𝑻𝒐𝒑 𝟓𝟎% ∧ 𝑴 = 𝟏 (𝟐)</formula></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Evaluation: Level of expertise</head><p>The evaluation of our HMM is not straightforward: our goal is to understand whether the predicted latent states indeed represent the level of expertise of a given worker in a given skill. We propose two evaluating approaches: the first one verifies that our HMM sufficiently separates workers in the three states (beginner, knowledgeable, expert) based on intuition. For the second one, we use the developed HMM as a 'wage' predictor, and compare its accuracy with two other baseline predictors.</p><p>Evaluation 1, experts/beginners separation: In Figure <ref type="figure" target="#fig_2">3</ref>, we present a heat map of the average values of each one of the six dimensions (see Table <ref type="table" target="#tab_0">1</ref>) for experts, knowledgeable, and beginners, for the set of skills that we consider. On the y-axis, we show the Cartesian product of the six dimensions and the three states. Intuitively, if our HMM is correct, we would expect that for every dimension and for every skill, the workers that are predicted to be experts have higher average values (darker shade of blue) than the average values of the workers for which our algorithm predicted to be beginners. On the x-axis is the list of skills we consider in this study. Starting from the bottom horizontal line, we observe that for the majority of the skills, workers that are predicted to be experts have significantly higher certification values (darker shade) than those who are predicted to be knowledgeable or beginners. Similarly, the average expert wages appear to be higher than the average knowledgeable and beginner wages, for all skills. For the 'mentioned' dimension, the graph is more confusing; still, for the majority of skills, experts have higher values than those that are knowledgeable and beginners. The same applies for the feedback score. As discussed earlier, this should not come as a surprise; the reason is the very skewed feedback score distribution. Furthermore, for the 'mentioned' dimension, intuition suggests that workers list their skills independent of how expert they are in these skills. Next, the average hiring rates are either equal between the three states or experts have higher values. Finally, for most of the skills, the average rehire rate is higher for experts than for knowledgeable and beginners.</p><p>The bottom line is that the proposed HMM distinguishes experts from the knowledgeable, and knowledgeable workers from beginners, according to intuition. One can further verify this by looking at  the last column of the heat map ('acrossSkills'), which shows the average values of all skills in each one of the proposed dimensions.</p><p>Evaluation 2, wage predictor: The second method for evaluating our approach draws on our definition of the conditional utility of a skill (see Equation <ref type="formula">1</ref>). We use the fact that the utility of each skill is connected to the average wage of each latent state of the proposed HMM, and we naturally propose to evaluate on the average wage of each predicted latent state. In particular, for each one of the available skills, we compute the average wage of each predicted state. We then compute the mean absolute error between the average wage of the predicted state, and the actual wage of the instance at hand. Formally, the mean absolute error of the HMM is given by the following equation:</p><formula xml:id="formula_7">𝑀𝐴𝐸 !"" = !∈{!"#$%%"&amp;, "#$%&amp;'()'*+&amp;',!"#!$%} 1 |𝐷 ! ! | !∈! ! ! (𝑤 ! ! ! -𝑤 ! ),</formula><p>where 𝑤 ! ! ! is the average wage of the set of instances 𝐷 ! ! , for which the HMM predicted that the worker belongs in state 𝑒 ! .</p><p>Baselines: We propose to compare our approach to two different baselines. The first one computes the average wage for each skill. We name this baseline 'Simple Average' (SA). SA implicitly assumes that the utility of a skill is independent of a worker's level of expertise. The mean absolute error for the simple average is given by the following equation:</p><formula xml:id="formula_8">𝑀𝐴𝐸 !" = 1 |𝐷| (𝑤 -𝑤 ! ) !∈!</formula><p>The second baseline goes one step further. It assumes that a worker is an 'expert' in a certain skill if that skill is listed on the worker's profile. We name this baseline 'Mentioned Average' (MA), and we compute the mean absolute error as follows:</p><formula xml:id="formula_9">𝑀𝐴𝐸 !" = 1 |𝐷 ! ! | (𝑤 ! ! ! -𝑤 ! ) !∈! ! ! + 1 |𝐷 ! ! | (𝑤 ! ! ! -𝑤 ! ) !∈! ! ! ,</formula><p>where 𝑤 ! ! ! (𝑤 ! ! ! ) is the average wage of the set of instances 𝐷 ! ! (𝐷 ! ! ), for which the given skill is not mentioned in the worker's profile. As we mentioned earlier, the intuition here is that if a worker feels comfortable enough to list a skill on his/hers profile, he/she must have some level of expertise in that skill. Finally, note that</p><formula xml:id="formula_10">|𝐷 ! ! | + 𝐷 ! ! = 𝐷 ! ! + 𝐷 ! ! = 𝐷 .</formula><p>To better illustrate the improvement of the proposed HMM over the two baselines, we further define the percentage mean absolute error improvement over the simple average baseline, as follows:</p><formula xml:id="formula_11">𝑀𝐴𝐸 𝐼𝑚𝑝𝑟𝑜𝑣𝑒𝑚𝑒𝑛𝑡 !"#!" = 𝑀𝐴𝐸 !" -𝑀𝐴𝐸 !"#$% 𝑀𝐴𝐸 !" , 𝑚𝑜𝑑𝑒𝑙 ∈ {𝐻𝑀𝑀, 𝑀𝑒𝑛𝑡𝑖𝑜𝑛𝑒𝑑 𝐴𝑣𝑒𝑟𝑎𝑔𝑒}</formula><p>In Figure <ref type="figure" target="#fig_3">4</ref>, we present the average results across all skills. On the x-axis, we show the number of completed tasks needed for each individual worker in our testing dataset to make a wage prediction. On the y-axis, we show the MAE improvement. The Simple Average baseline is at zero. Any positive value on the y-axis shows an improvement over the Simple Average. We can see that the proposed HMM performs up to 35% better than the Simple Average baseline and the Mentioned Average. Additionally, the Mentioned Average baseline performs better (up to 3%) than the Simple Average.</p><p>In Figure <ref type="figure" target="#fig_4">5</ref>, we show the average mean absolute error improvement of our proposed HMM solution over the Mentioned Average baseline on the top, and over the Simple Average baseline on the bottom, for each one of the 26 skills that we study. One thing to notice is that our approach has a positive improvement across all skills. The highest improvement is observed for 'javascript' (40%), while most of the skills appear to have an improvement of around 25%.</p><p>In Figure <ref type="figure" target="#fig_5">6</ref>, we show the actual computed HMM for one of our skills (twitter 5 ). The initial probabilities of being an expert (0.154), knowledgeable (0.285), and a beginner (0.561) represent the distribution of expertise for twitter: 15.4% of workers that complete 'twitter' tasks appear to be experts, 28.5% appear to be knowledgeable, and the rest of them beginners. Furthermore, if a person is a beginner, there is a 24.6% probability of transitioning to knowledgeable, and 75.4% of remaining a beginner. Similarly, if one is knowledgeable, there is a very small probability (2.3%) of transitioning to a beginner, and a decent probability (26.6%) of becoming an expert, and so forth. Each expertise level has different distributions 5 For additional HMMs for other skills: http://people.stern.nyu.edu/mk3539/other/hmms.pdf             </p><formula xml:id="formula_12">• • • • • • • • • 0 10 20 30 1 3 5 7 9</formula><p>Individual contractor observation MAE Improvement (%)</p><p>• HMM Mentioned Average Simple Average across all possible emitted symbols<ref type="foot" target="#foot_4">6</ref> . For example, a beginner is highly likely (24.6%) to emit symbol m1 (all variables in the bottom 50%), while an expert very frequently (38.8%) emits symbol m12 (rehires with feedback scores in the top 50%, and all other features in the bottom 50%). Furthermore, there are certain symbols that are emitted from multiple states with different probabilities; for instance, m4 (rehires=1, everything else in the bottom 50%) is emitted with significant probabilities from both the knowledgeable and the expert states; however, it is almost four times more likely to be emitted from an expert than from a beginner. Finally, note that the graph in Figure <ref type="figure" target="#fig_5">6</ref> is incomplete, since for simplicity we only show emitted symbols with probabilities greater than 0.05.</p><p>In general, we observe that an expert is more likely to emit states that include rehires and feedback in the top 50%; a knowledgeable is more likely to emit states in which wages appear in the top 50% and feedback in the top 50%; and a beginner is more likely to emit states in which the hiring rate is in the top 50% and where the workers list 'twitter' as a skill on their profile. Also note that there are no states with certification in the top 50%. The reason for that is that in our training set, very few (0.1%) of the workers have taken a certification test on Twitter and decided to list it on their profile.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>The utility of skills on oDesk.com</head><p>After evaluating our proposed approach for estimating the level of expertise for each worker in a given skill, we are ready to move forward and estimate the conditional utilities given by Equation <ref type="formula">1</ref>for each one of the skills that we consider in this study.</p><p>In Figure <ref type="figure" target="#fig_6">7</ref>, we present the average hourly wage distribution across all 26 skills. We observe that the experts' distribution is significantly shifted towards higher wages, suggesting that workers that are predicted to be experts by our HMM receive significantly higher compensation. In Figure <ref type="figure" target="#fig_7">8</ref> we show the utility of each one of the 26 skills, estimated by the use of Equation ( <ref type="formula">1</ref>). On the yaxis we have the experts' hourly wage, and on the X-axis, we have the beginners' hourly wage. The utility of each skill is captured by the diameter of each point (the actual utility values are given in the size/color legend). The line is the `equality line' (45 degrees), indicating that any point above that line has a higher expert wage than beginner wage. First, we note that all skills in our set are above the equality line, verifying intuition. Simply put, this shows that a worker has more value in the marketplace if the worker is an expert on a skill, than a beginner. Second, all skills have positive utility, and greater than $2.5. Certain skills appear to provide much higher utilities than others: for instance, `marketing' and `editing' have the highest utilities (around $12.5) while `microsoftexcel' and `java' appear to have the lowest ones (around $3). Intuitively, this means that being a really good editor, pays a lot more than being let's say a "microsoftexcel" expert. To understand why this is happening, we will use the information provided in Table <ref type="table" target="#tab_14">2</ref>, where we show the 50 th and 90 th wage percentile, as well as the variance of the wage distribution for five skills. The first three rows, represent low utility skills (`research', `java',`microsoftexcel'), and the last two high utility skills (`marketing',`editing'). We see that the wage differences between the 90 th and the 50 th percentiles for the low-utility skills are very small, compared to the wage differences of the highutility skills. This higher spread in distributions is also verified by the higher variance of the high-utility skills. Since our HMM explicitly associates high expertise with high wage, it captures the variance of the wage distributions of each skill by identifying those high-paid workers as experts. This behavior results in higher utilities for skills for which the variance is higher.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Implications, limitations, and future directions</head><p>Our study is the first that explicitly quantifies the value of skills in a marketplace. Even though our study has limitations and is constrained by a small set of skills, it clearly communicates a technically sound methodology for analyzing the materialized skills' value.</p><p>Implications: There is a direct impact of our work on the online labor marketplace: the platform can strategically suggest to workers to built up their expertise in certain skills. For example, drawing on our earlier discussion regarding `microsoftexel' and `editing', the marketplace can increase its revenue by acquiring more experts in `editing'. Of course, such a recommendation might change the estimated utility of a skill (e.g., `editing' in our example), and us a result, constant monitoring and system updating is  Average Hourly Wage ($) Density beginner expert knowledgeable required for better results. Furthermore, knowing the actual value of being an expert in a given skill is the first step towards building a framework for recommending skills (discussed later in `Future directions').</p><p>With the deployment of such a recommendation scheme, the marketplace can strategically recommend new skills to workers. If workers start acquiring skills with high utility, both their demand and their income will increase. Since more workers will have skills that have high demand in the marketplace, both the job openings' closing rate and (as a result) the marketplace's revenue will increase. Finally, even though the results of this study are constrained within a given online labor market, and a given set of skills, the methodology is widely applicable. For example, TaskRabbit 7 , could potentially use our approach to identify the value of each one of the skills they consider in their marketplace. Furthermore, networks such as LinkedIn 8 could also use our approach, by simply associating the value of each skill/level of expertise (LinkedIn endorsements) with promotions or new jobs.</p><p>Limitations: Besides the assumption regarding the cost of effort that we discussed earlier, in this work we assume that skills are independent from each other. This assumption is critical in defining the utility of one skill, and not the utility of a set of skills. In the future, we intend to relax this assumption and study the associations between skills, in order to provide utility estimations for any given set of skills. Finally, we assume that employers know exactly what they are looking for, and adequately describe the set of required skills for each task that they post.</p><p>Future directions: In the future, we intend to include the development of a skills recommendation framework. In particular, consider a scenario where at any given time, workers have two options: (1) to exploit their current skillset and expertise by getting hired and completing a task; or (2) invest their time in improving/expanding their skillset and expect future increased returns. What is the optimal decision for each worker? Exploit or improve? We plan to develop a framework that captures this behavior and recommends the optimal decision for the worker. Such a system could be used as a career development adviser.</p><p>7 http://www.taskrabbit.com/ 8 http://www.linkedin.com/ </p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>Figure 1 :</head><label>1</label><figDesc>Figure 1: Example of the proposed HMM (three states).</figDesc><graphic coords="9,113.40,80.91,374.80,161.98" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>Figure</head><label></label><figDesc>Figure 2: Training data feature distributions.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>Figure 3 :</head><label>3</label><figDesc>Figure 3: Heat map of the average value of each one of the six dimensions (wage, rehire, hiring rate, feedback, certification, and mentioned) for experts, knowledgeable, and beginners, for all the skills that we consider in this study.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head>Figure 4 :</head><label>4</label><figDesc>Figure 4: MAE improvement of the HMM over the baselines.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4"><head>Figure 5 :</head><label>5</label><figDesc>Figure 5: Average MAE improvement of the HMM approach over the Mentioned Average (top) and the Simple Average (bottom), for all 26 skills.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5"><head>Figure 6 :</head><label>6</label><figDesc>Figure6: The produced HMM for `twitter'. We observe the transition probabilities between the three states (beginner, knowledgeable and expert), as well as the probability distributions across all the observed symbols (𝒎 𝟏 , … , 𝒎 𝟔𝟒 ) from each one of the three states. Note that for simplicity we don't show symbols that had emission probabilities lower than 0.05.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_6"><head>Figure 7 :</head><label>7</label><figDesc>Figure 7: Average hourly wage distribution for beginners, knowledgeable, and experts.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_7"><head>Figure 8 :</head><label>8</label><figDesc>Figure 8: The utilities of each one of the 26 skills. On the y-axis is the expert's average hourly wage, and on the x-axis is the beginner's hourly wage.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0"><head></head><label></label><figDesc></figDesc><graphic coords="8,104.40,343.55,363.46,294.35" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head>Table 1 : Observed clues associated with the worker's level of expertise in a given skill.</head><label>1</label><figDesc></figDesc><table /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1"><head></head><label></label><figDesc>particular dataset we use for this work was collected between September 1 st of 2012 and December 31st of 2013, and consists of 1,417,387 applications by 29,309 workers, and 147,555 hiring decisions (completed tasks/received feedback) by 50,516 employers. The analyzed tasks span 5 categories: Software Development, Web Development, Writing &amp; Translation, Sales &amp; Marketing, and Design &amp; Multimedia.</figDesc><table /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_14"><head>Table 2 : Wage Percentiles</head><label>2</label><figDesc></figDesc><table><row><cell></cell><cell>0.075</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell>0.050</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell>0.025</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell>0.000</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell>0</cell><cell>10</cell><cell>20</cell><cell>30</cell><cell>40</cell><cell>50</cell></row><row><cell>Skill</cell><cell cols="3">50 th percentile ($)</cell><cell cols="3">90 th percentile ($)</cell><cell>Variance</cell></row><row><cell>`research'</cell><cell>9.0</cell><cell></cell><cell></cell><cell>15.0</cell><cell></cell><cell>20.14</cell></row><row><cell>`java'</cell><cell>14.44</cell><cell></cell><cell></cell><cell cols="2">22.22</cell><cell>44.5</cell></row><row><cell cols="2">`microsoftexcel' 12.34</cell><cell></cell><cell></cell><cell cols="2">16.67</cell><cell>27.45</cell></row><row><cell>`marketing'</cell><cell>13.0</cell><cell></cell><cell></cell><cell cols="2">38.89</cell><cell>136.32</cell></row><row><cell>`editing'</cell><cell>16.67</cell><cell></cell><cell></cell><cell cols="2">35.0</cell><cell>119.9</cell></row></table></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="1" xml:id="foot_0"><p>In fact, the specific example is confirmed empirically (see Figure8).</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="2" xml:id="foot_1"><p>For a full list of the available tests, see: https://www.odesk.com/tests.</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="3" xml:id="foot_2"><p>Workers can decide to hide their test performance on their profile. A thorough analysis of workers' decisions on oDesk.com is presented by Ipeirotis: www.behind-the-enemy-lines.com/2013/10/badges-and-lake-wobegon-effect.html.</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="4" xml:id="foot_3"><p>In the future, we plan to extend our HMM for skills for which certification tests are not provided by the platform.</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="6" xml:id="foot_4"><p>To interpret the emitted symbols, see Equation (2).</p></note>
+		</body>
+		<back>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<monogr>
+		<author>
+			<persName><forename type="first">A</forename><surname>Agrawal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Horton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Lacetera</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Lyons</surname></persName>
+		</author>
+		<title level="m">Digitization and the Contract Labor Market: A Research Agenda</title>
+		<imprint>
+			<publisher>University of Chicago Press</publisher>
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+	<note>Economics of Digitization</note>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Determining Expert Profiles (With an Application to Expert Finding)</title>
+		<author>
+			<persName><forename type="first">K</forename><surname>Balog</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>De Rijke</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Year</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IJCAI</title>
+		<imprint>
+			<biblScope unit="page" from="2657" to="2662" />
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Evaluating online labor markets for experimental research: Amazon. com&apos;s Mechanical Turk</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">J</forename><surname>Berinsky</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">A</forename><surname>Huber</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">S</forename><surname>Lenz</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Political Analysis</title>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="351" to="368" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Identifying authoritative actors in question-answering forums: the case of yahoo! answers</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Bouguessa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Dumoulin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Year</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 14th ACM SIGKDD international conference on Knowledge discovery and data mining</title>
+		<meeting>the 14th ACM SIGKDD international conference on Knowledge discovery and data mining</meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2008">2008</date>
+			<biblScope unit="page" from="866" to="874" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">The anatomy of a large-scale hypertextual Web search engine</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Brin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Page</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Computer networks and ISDN systems</title>
+		<imprint>
+			<date type="published" when="1998">1998</date>
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="page" from="107" to="117" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Labor Allocation in Paid Crowdsourcing: Experimental Evidence on Positioning, Nudges and Prices</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Chandler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">J</forename><surname>Horton</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Human Computation</title>
+		<imprint>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page">11</biblScope>
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Estimating the technology of cognitive and noncognitive skill formation</title>
+		<author>
+			<persName><forename type="first">F</forename><surname>Cunha</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">J</forename><surname>Heckman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">M</forename><surname>Schennach</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Econometrica</title>
+		<imprint>
+			<biblScope unit="volume">78</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="883" to="931" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">How opinions are received by online communities: a case study on amazon. com helpfulness votes</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Danescu-Niculescu-Mizil</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Kossinets</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Kleinberg</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Year</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 18th international conference on World wide web</title>
+		<meeting>the 18th international conference on World wide web</meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2009">2009</date>
+			<biblScope unit="page" from="141" to="150" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">The digitization of word of mouth: Promise and challenges of online feedback mechanisms</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Dellarocas</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management science</title>
+		<imprint>
+			<biblScope unit="volume">49</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page" from="1407" to="1424" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">User-expertise modeling with empirically derived probabilistic implication networks</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">C</forename><surname>Desmarais</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Maluf</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Liu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">User modeling and user-adapted interaction</title>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="page" from="283" to="315" />
+			<date type="published" when="1995">1995</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<monogr>
+		<title level="m" type="main">Does Information Really &quot;Unravel&quot;? Understanding Factors That Motivate Sellers to Seek Third-Party Certifications in an Online Labor Market</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Goes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Lin</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2012-11-01">2012. November 1, 2012</date>
+			<biblScope unit="page" from="12" to="12" />
+		</imprint>
+		<respStmt>
+			<orgName>NET Institute Working Paper</orgName>
+		</respStmt>
+	</monogr>
+	<note>Understanding Factors That Motivate Sellers to Seek Third-Party Certifications in an Online Labor Market</note>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Skills mismatch in the labor market</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">K</forename><surname>Hambleton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Swaminathan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">J</forename><surname>Rogers</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Sage</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">J</forename><surname>Handel</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Fundamentals of item response theory</title>
+		<imprint>
+			<date type="published" when="1991">1991. 2003</date>
+			<biblScope unit="page" from="135" to="165" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<monogr>
+		<title level="m" type="main">Online labor markets</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">J</forename><surname>Horton</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2010">2010</date>
+			<publisher>Springer</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">The online laboratory: Conducting experiments in a real labor market</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">J</forename><surname>Horton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">G</forename><surname>Rand</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">J</forename><surname>Zeckhauser</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Experimental Economics</title>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="399" to="425" />
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Overcoming the J-shaped distribution of product reviews</title>
+		<author>
+			<persName><forename type="first">N</forename><surname>Hu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">A</forename><surname>Pavlou</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Communications of the ACM</title>
+		<imprint>
+			<biblScope unit="volume">52</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page" from="144" to="147" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">The need for standardization in crowdsourcing</title>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">G</forename><surname>Ipeirotis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">J</forename><surname>Horton</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Year</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the CHI</title>
+		<meeting>the CHI</meeting>
+		<imprint>
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Quality management on amazon mechanical turk</title>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">G</forename><surname>Ipeirotis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Provost</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Year</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the ACM SIGKDD workshop on human computation, ACM2010</title>
+		<meeting>the ACM SIGKDD workshop on human computation, ACM2010</meeting>
+		<imprint>
+			<biblScope unit="page" from="64" to="67" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">New Perspectives on Customer &quot;Death&quot; Using a Generalization of the Pareto/NBD Model</title>
+		<author>
+			<persName><forename type="first">K</forename><surname>Jerath</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">S</forename><surname>Fader</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">G</forename><surname>Hardie</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Marketing Science</title>
+		<imprint>
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="866" to="880" />
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Discovering authorities in question answer communities by using link analysis</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Jurczyk</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Agichtein</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Year</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the sixteenth ACM conference on Conference on information and knowledge management</title>
+		<meeting>the sixteenth ACM conference on Conference on information and knowledge management</meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2007">2007</date>
+			<biblScope unit="page" from="919" to="922" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Authoritative sources in a hyperlinked environment</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">M</forename><surname>Kleinberg</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of the ACM (JACM)</title>
+		<imprint>
+			<biblScope unit="volume">46</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="604" to="632" />
+			<date type="published" when="1999">1999</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Have you done anything like that?: predicting performance using intercategory reputation</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Kokkodis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">G</forename><surname>Ipeirotis</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Year</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the sixth ACM international conference on Web search and data mining</title>
+		<meeting>the sixth ACM international conference on Web search and data mining</meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2013">2013</date>
+			<biblScope unit="page" from="435" to="444" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<monogr>
+		<title level="m" type="main">Firm-specific human capital: A skill-weights approach</title>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">P</forename><surname>Lazear</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2003">2003</date>
+			<publisher>National Bureau of Economic Research</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Modeling and predicting the helpfulness of online reviews</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>An</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Year</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Data Mining</title>
+		<imprint>
+			<biblScope unit="page" from="443" to="452" />
+			<date type="published" when="2008">2008. 2008</date>
+		</imprint>
+	</monogr>
+	<note>ICDM&apos;08</note>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Exploiting social context for review quality prediction</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Lu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Tsaparas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Ntoulas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Polanyi</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Year</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 19th international conference on World wide web</title>
+		<meeting>the 19th international conference on World wide web</meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2010">2010</date>
+			<biblScope unit="page" from="691" to="700" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Voting techniques for expert search</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Macdonald</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Ounis</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Knowledge and information systems</title>
+		<imprint>
+			<biblScope unit="volume">16</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="259" to="280" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">Financial incentives and the performance of crowds</title>
+		<author>
+			<persName><forename type="first">W</forename><surname>Mason</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">J</forename><surname>Watts</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">ACM SigKDD Explorations Newsletter</title>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="100" to="108" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<monogr>
+		<title level="m" type="main">Machine learning: a probabilistic perspective</title>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">P</forename><surname>Murphy</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2012">2012</date>
+			<publisher>MIT Press</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Information and consumer behavior</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Nelson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The Journal of Political Economy)</title>
+		<imprint>
+			<biblScope unit="page" from="311" to="329" />
+			<date type="published" when="1970">1970</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">Hierarchical language models for expert finding in enterprise corpora</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Pallais</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Croft</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><forename type="middle">B</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal on Artificial Intelligence Tools</title>
+		<imprint>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="issue">01</biblScope>
+			<biblScope unit="page" from="5" to="18" />
+			<date type="published" when="2008">2013. 2008</date>
+			<publisher>National Bureau of Economic Research</publisher>
+		</imprint>
+	</monogr>
+	<note>Inefficient hiring in entry-level labor markets</note>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">The promise of Mechanical Turk: How online labor markets can help theorists run behavioral experiments</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">G</forename><surname>Rand</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of theoretical biology</title>
+		<imprint>
+			<biblScope unit="issue">299</biblScope>
+			<biblScope unit="page" from="172" to="179" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<monogr>
+		<title level="m" type="main">Skill Development Framework for Micro-Tasking</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Saito</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Watanabe</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Kobayashi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Takagi</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2014">2014</date>
+			<publisher>Springer</publisher>
+			<biblScope unit="page" from="400" to="409" />
+		</imprint>
+		<respStmt>
+			<orgName>Universal Access in Human-Computer Interaction. Universal Access to Information and Knowledge</orgName>
+		</respStmt>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">Designing incentives for inexpert human raters</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">D</forename><surname>Shaw</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">J</forename><surname>Horton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">L</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Year</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the ACM 2011 conference on Computer supported cooperative work</title>
+		<meeting>the ACM 2011 conference on Computer supported cooperative work</meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2011">2011</date>
+			<biblScope unit="page" from="275" to="284" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Get another label? improving data quality and data mining using multiple, noisy labelers</title>
+		<author>
+			<persName><forename type="first">V</forename><forename type="middle">S</forename><surname>Sheng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Provost</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">G</forename><surname>Ipeirotis</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Year</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 14th ACM SIGKDD international conference on Knowledge discovery and data mining</title>
+		<meeting>the 14th ACM SIGKDD international conference on Knowledge discovery and data mining</meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2008">2008</date>
+			<biblScope unit="page" from="614" to="622" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">Costly bidding in online markets for IT services</title>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">M</forename><surname>Snir</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">M</forename><surname>Hitt</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Management Science</title>
+		<imprint>
+			<biblScope unit="volume">49</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="1504" to="1520" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title level="a" type="main">Job market signaling</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Spence</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The quarterly journal of Economics)</title>
+		<imprint>
+			<biblScope unit="page" from="355" to="374" />
+			<date type="published" when="1973">1973</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">Predicting and recommending skills in the social enterprise</title>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">R</forename><surname>Varshney</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Mojsilovic</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Fang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">H</forename><surname>Bauer</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Year</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. Int. AAAI Conf</title>
+		<meeting>Int. AAAI Conf</meeting>
+		<imprint>
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">Expertise networks in online communities: structure and algorithms</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">S</forename><surname>Ackerman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Adamic</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Year</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 16th international conference on World Wide Web</title>
+		<meeting>the 16th international conference on World Wide Web</meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2007">2007</date>
+			<biblScope unit="page" from="221" to="230" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

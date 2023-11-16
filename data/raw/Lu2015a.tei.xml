@@ -1,0 +1,1917 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Examining the antecedent factors of online microsourcing</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+				<date type="published" when="2013-07-16">16 July 2013</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Baozhou</forename><surname>Lu</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Rudy</forename><surname>Hirschheim</surname></persName>
+						</author>
+						<author role="corresp">
+							<persName><forename type="first">Andrew</forename><surname>Schwarz</surname></persName>
+							<email>aschwarz@lsu.edu</email>
+						</author>
+						<author>
+							<persName><forename type="first">:</forename><forename type="middle">A</forename><surname>Schwarz</surname></persName>
+						</author>
+						<author>
+							<affiliation key="aff0">
+								<orgName type="department">School of Economics &amp; Management</orgName>
+								<orgName type="institution">China University of Petroleum</orgName>
+								<address>
+									<addrLine>66 West Chang Jiang Rd</addrLine>
+									<postCode>26655</postCode>
+									<settlement>Qingdao</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff1">
+								<orgName type="department">Information Systems and Decision Sciences Department, E.J. Ourso College of Business</orgName>
+								<orgName type="institution">Louisiana State University</orgName>
+								<address>
+									<postCode>70803</postCode>
+									<settlement>Baton Rouge</settlement>
+									<region>LA</region>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Examining the antecedent factors of online microsourcing</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date type="published" when="2013-07-16">16 July 2013</date>
+						</imprint>
+					</monogr>
+					<idno type="MD5">1E3101FA288111D1F31DDA4A9C9765F8</idno>
+					<idno type="DOI">10.1007/s10796-013-9440-y</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.7.3" ident="GROBID" when="2023-06-16T09:23+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>Online microsourcing, Crowdsourcing</term>
+					<term>Outsourcing decisions</term>
+					<term>Resource-based theory</term>
+					<term>Antecedent factors</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>In this paper, we empirically investigate what motivates firms to engage in the new outsourcing practice known as online microsourcing. Five antecedent factors involved in making online microsourcing decisions, mainly representing economic and strategic considerations, were identified based on prior research. Our research model was tested with data collected from one of the primary online microsourcing platforms. Our findings suggested that online microsourcing decisions are made more for the convenience of management and for strategic reasons than for purposes of cost reduction. Thus, this study indicates the relevance of a resource-based theory for online microsourcing. Because online microsourcing is generally characterized by small outsourcing deals, with small firms as clients, this paper introduces a new outsourcing practice to the current outsourcing landscape. Finally implications for theory and practice are presented.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1">Introduction</head><p>Microsourcing is an emerging outsourcing practice which hands over small, discrete business functions or applications to many small service providers <ref type="bibr" target="#b58">(Obal 2009)</ref>. In contrast to traditional IS outsourcing, microsourcing often involves a broad range of business functions, from website development to programming to legal services to creative design, etc. It typically relies on web-enabled platforms to service the exchanges and arrangements between clients and providers <ref type="bibr" target="#b19">(Doan et al. 2011)</ref>. In fact, the internet has made microsourcing a truly global phenomenon, with its connectivity to a very large network of global providers <ref type="bibr" target="#b28">(Gefen and Carmel 2008)</ref>. In this research, we mainly focus on online microsourcing.</p><p>Online microsourcing is becoming an acceptable outsourcing practice for both personal and business clients, and particularly for small and medium-sized companies <ref type="bibr" target="#b58">(Obal 2009;</ref><ref type="bibr" target="#b28">Gefen and Carmel 2008)</ref>. For example, <ref type="bibr" target="#b28">Gefen and Carmel (2008)</ref> made a detailed description on how small IT projects were outsourced and delivered via an online programming marketplace with the unique data set provided by RentACoder. More recent industry reports <ref type="bibr" target="#b74">(Smartsheet 2009;</ref><ref type="bibr" target="#b53">Massolution 2013)</ref> indicate that the growth of the global enterprise microsourcing market is accelerating and companies have already begun to harness the 'crowd' to deliver cheaper, faster and better work via online platforms. Indeed, online microsourcing has become a new sourcing paradigm that might change the outsourcing landscape in future <ref type="bibr" target="#b40">(Kaganer et al. 2013)</ref>.</p><p>However, the phenomenon is still under-explored in terms of published studies. Specifically, we do not completely understand the antecedent factors which influence a firm's decision to use microsourcing. Although there have been numerous published studies on "why" outsourcing is used <ref type="bibr" target="#b18">(Dibbern et al. 2004)</ref>, the antecedent factors of microsourcing also deserve special attention, particulary given its differences with traditional outsourcing. Firstly, microsourcing focuses on small outsourcing deals, whereas traditional outsourcing often involves mega-deals which require strategic considerations. Secondly, microsourcing is an online practice, while traditional outsourcing often occurs in an offline context. Thirdly, microsourcing clients are usually small and medium-sized companies, while traditional outsourcing often applies to the arrangements of Fortune 500 companies. Thus, this research will mainly uncover the motivations to utilize online microsourcing, more from a small business perspective, which does not traditionally focus on or utilize traditional outsourcing methods. Moreover, gaining a better understanding of the determinants of microsourcing can also help firms to make correct and informed decisions, and to consider the most relevant factors relating to the use of microsourcing. In summary, this research endeavors to make the following contributions to the existing published studies:</p><p>&amp; It considers the unexplored concepts of online microsourcing as opposed to traditional offline outsourcing. Moreover, it explores this new outsourcing landscape which is more relevant to a small business perspective <ref type="bibr" target="#b28">(Gefen and Carmel 2008)</ref>. &amp; Our research identifies the relevant antecedent factors of online microsourcing, and empirically examines their impact on the adoption of outsourcing in a new online context.</p><p>The remainder of this paper is organized as follows: We begin with a literature review of microsourcing by situating it within the context of historical outsourcing practices. Then, we identify the five key antecedent factors of online microsourcing decisions based on the use of previously published outsourcing studies. Next, we articulate a research model and set of hypotheses followed by a description of the research methodology. Our paper then presents the results of our research, followed by a discussion of the findings, and its implications for both theory and practice. Finally, we discuss the limitations of this study, possible future research directions, and offer some concluding remarks.</p><p>2 Literature review and hypothesis development 2.1 Microsourcing-the third wave of outsourcing Looking back at the history of IS outsourcing, we noticed several distinct trends and some important implications of these trends for organizations. We can classify these trends into what we call "three waves of outsourcing." Initially, IS outsourcing consisted of an external vendor providing a single basic function to a customer; this was generally considered a way to supplement a company's IS function <ref type="bibr" target="#b18">(Dibbern et al. 2004)</ref>. In 1963, Electronic Data Systems (EDS) signed an agreement with Blue Cross of Pennsylvania for the handling of its entire data processing services. This was the first time a large business turned over its entire data processing department to a third party, indicating that IS outsourcing had evolved into a new phase. But it was not until 1989, when IBM signed a $1 billion outsourcing mega-deal with Kodak that the world began to take notice of outsourcing. This deal not only signaled the arrival of the IS outsourcing mega-deal, but it also legitimized outsourcing as a viable organizational strategy as a means of handling IS functions. Prior to this point, a company's data processing was generally considered "as a strategic asset and hence could not be turned over to a third party," Once it was shown that IT could effectively be outsourced, it didn't take long for other knowledge-based business functions such as accounting and HR to follow with the concomitant growth of new outsourcing vendors beyond the traditional IT outsourcing vendors. The new trend, which began with the IBM-Kodak deal, began to diffuse to other countries and districts. This became known as the era of Business Process Outsourcing (BPO) <ref type="bibr" target="#b18">(Dibbern et al. 2004</ref>). We term this to be the first wave of outsourcing.</p><p>By the 1990s, companies had begun looking more and more to overseas vendors for the provision of IT services, in order to exploit the cheaper labor costs of overseas countries. This trend was accelerated by airlines and computer service companies during the 1990s, through offshore sourcing of back-office services to service provider companies in India. Then, by the late 1990s, much of the outsourcing impetus came as a result of the Y2K phenomenon, whereby Western companies, faced with a lack of professionals to complete Y2K remediation work, looked to foreign shores for professionals who were capable of doing this work. In particular, new offshore service destinations continued to appear. Although India and Canada are currently the two largest offshore service providing countries, emerging markets such as the Philippines, Mexico, China and Malaysia have made significant headway over the past few years <ref type="bibr" target="#b17">(Davis et al. 2006)</ref>. We deem this to be the second wave of outsourcing.</p><p>More recently, there has been an emergence of new forms of outsourcing, which we term online microsourcing. This form of outsourcing uses the internet as the primary sourcing platform for the global provision and sourcing of services. Some may see this as a quasi extension of eBay, but we feel the development of online microsourcing signals a distinct and definite change in the way services will be provided to organizations in the future. <ref type="bibr" target="#b6">Carmel (2008)</ref> viewed this new practice of outsourcing as the "commoditization of process" of enterprise services from the emarketplace and termed it as "microsourcing" given that most of the outsourcing deals were small tasks and services. To some extent, this is an amalgam of the open source movement <ref type="bibr" target="#b52">(Markus 2007)</ref>, crowdsourcing movement <ref type="bibr" target="#b36">(Howe 2006)</ref>, and e-lancer movement <ref type="bibr" target="#b51">(Malone and Laubacher 1998)</ref>. Our view of online microsourcing would be consistent with Malone's view that businesses are transforming themselves from dense, centralized hierarchies into loosely-federated networks of workers, consultants and specialists. Indeed, a key feature of online microsourcing is that everything is truly global, because clients, platforms, and suppliers may reside anywhere in the world <ref type="bibr" target="#b28">(Gefen and Carmel 2008)</ref>. Nowadays, online microsourcing is gradually becoming a mainstream outsourcing practice. At least 50 mature online microsourcing platforms such as Elance, vWorker, CrowdSpring and TopCoder have been launched, according to a report by <ref type="bibr">Smartsheet.com (2009)</ref>. Table <ref type="table" target="#tab_0">1</ref> summarizes the primary statistics of 10 major online sourcing websites, which indicates that more than 2 million service providers have registered on these 10 websites, and more than $700 million has been paid out in the 10 years leading up to 2009. Moreover, even large corporations like Google, AOL, Philip Morris, GEICO, ESPN, VeriSign, and Polo have begun to consider online microsourcing as a way of outsourcing.<ref type="foot" target="#foot_0">1</ref> A more recent industry report <ref type="bibr" target="#b53">(Massolution 2013)</ref> indicates an accelerating trend in the growth of the global enterprise microsourcing market. The growth rate in 2011 was 75 %, exceeding 2010's market growth of 53 %, and the industry revenue based on 15 leading websites had amounted to $375 million in 2011. There are now over 65 different categories of microsourcing tasks deployed by enterprises including software services, micro-tasks, expertise-based work, etc. This signals a new era of online microsourcing, and we deem this to be the third wave of outsourcing.</p><p>These three waves of outsourcing are summarized in Table <ref type="table" target="#tab_1">2</ref>, including their definitions and key characteristics. As indicated by Table <ref type="table" target="#tab_1">2</ref>, some consistent patterns can be observed in these three waves of outsourcing:</p><p>(1) The boundary practice of outsourcing has evolved from a closed inter-organizational boundary to more open and virtual online boundaries which involve multiple organizations.</p><p>(2) Outsourcing has evolved from a local phenomenon to a global phenomenon.</p><p>(3) The bilateral client-provider relationship <ref type="bibr" target="#b47">(Lee et al. 2008</ref>) has evolved from one of physical and face to face interactions, to a triadic relationship that involves virtual service exchanges mediated by a third party. (4) Outsourcing contracts have evolved from long-term mega-deals between larger companies, to short term, small and more manageable deals built around smaller businesses.</p><p>Due to these significant changes, a new research agenda is required for online microsourcing. The theories and concepts applied to traditional outsourcing must be reevaluated for online microsourcing. Since very few published studies regarding microsourcing exist, we mainly relied on prior outsourcing research to identify the relevant antecedent factors.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.2">Determinants of online microsourcing</head><p>An examination of the determinants of outsourcing has always been one of the most important topics of outsourcing research. Previous studies have investigated the research question of "why to conduct outsourcing" at different levels of analysis, including industrial level, firm level, and IS function level <ref type="bibr" target="#b18">(Dibbern et al. 2004)</ref>. At the industrial level, research interests mainly focused on the diffusion process of outsourcing in the social system <ref type="bibr" target="#b49">(Loh and Venkatraman 1992;</ref><ref type="bibr" target="#b37">Hu et al. 1997</ref>) and how external institutional pressures could influence outsourcing decisions <ref type="bibr" target="#b1">(Ang and Cummings 1997)</ref>. Research at this level relied upon social theories, such as diffusion theory and institutional theory, to explain firms' attitudes to outsourcing. Research at the firm level mainly investigated outsourcing decisions based on financial and strategic considerations (e.g., <ref type="bibr" target="#b1">Ang and Cummings 1997;</ref><ref type="bibr" target="#b75">Smith et al. 1998;</ref><ref type="bibr" target="#b78">Teng et al. 1995)</ref>. At the IS function level, research tested the impacts of those IS-related factors associated with outsourcing decisions <ref type="bibr" target="#b18">(Dibbern et al. 2004</ref>). Constructs at both the firm level and IS function level were primarily derived from economic and strategic reference theories that could be summarized as "theories of the firm," including transaction cost theory, agency theory, resource-based theory, resource-dependency theory, and strategic lenses <ref type="bibr" target="#b69">(Schwarz et al. 2009;</ref><ref type="bibr" target="#b18">Dibbern et al. 2004;</ref><ref type="bibr" target="#b71">Seth and Thomas 1994;</ref><ref type="bibr" target="#b7">Cheon et al. 1995)</ref>.</p><p>A very long list has been put forward in previously published studies of the determinants of outsourcing <ref type="bibr" target="#b69">(Schwarz et al. 2009;</ref><ref type="bibr" target="#b18">Dibbern et al. 2004)</ref>, grounded both in theories and in experiences of IS outsourcing. In this research, we selected the determinants of online microsourcing by considering the nature of online sourcing platforms and by relying on previous studies. As indicated in the literature, two economic and strategic theories -transaction cost theory and resource-based theory-are considered here to form the basis of the determinants of online microsourcing decisions, as presented in Table <ref type="table" target="#tab_2">3</ref>.</p><p>In the case of microsourcing, online platforms not only provide the necessary service exchange environment, but they also provide large networks of thousands of service providers. For example, vWorker, an online sourcing platform, claims to be able to offer clients a network of more than 370,000 remote professionals in hundreds of fields. On that basis, in the eyes of clients, an online sourcing platform acts as an external pool of resources, capabilities and expertise. By collaborating with an online sourcing platform, clients gain access to a very large network of global service providers at a relatively low cost. In these cases, client decisions on the use of online microsourcing will be driven by the ability of online sourcing platforms to provide cheap service solutions, complement current resources, fill a resource gap, and to give access to a large pool of resources and expertise. Next, we will discuss these factors and their hypotheses in detail.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.2.1">Cost reduction</head><p>Cost reduction might be the most dominant factor for companies making a decision to outsource <ref type="bibr" target="#b24">(Fisher et al. 2008</ref>). Traditionally, a decision to outsource was based on cost reduction, and therefore, this is also one of the primary criteria for evaluating the outcome of outsourcing after the fact. Many studies have been published which investigated cost reduction as one of the primary reasons for outsourcing, both empirically (e.g., <ref type="bibr" target="#b75">Smith et al. 1998;</ref><ref type="bibr" target="#b56">McLellan et al. 1995)</ref> and conceptually (e.g., <ref type="bibr" target="#b3">Apte et al. 1997)</ref>. The underpinning theory of cost reduction is transaction cost theory (TCT) <ref type="bibr" target="#b13">(Coase 1937;</ref><ref type="bibr" target="#b80">Williamson 1975</ref><ref type="bibr" target="#b81">Williamson , 1985))</ref>. The TCT perspective suggests that outsourcing will reduce production costs due to the economies of scale achieved through the use of a service provider, but tends to increase transaction costs due to opportunistic behavior in the marketplace <ref type="bibr" target="#b69">(Schwarz et al. 2009</ref>). Thus, the economic rationale behind The handing over of assets, resources, activities and/or people to third party management to achieve agreed performance outcomes. <ref type="bibr" target="#b45">(Lacity and Willcocks 2006)</ref> Domestic; closed organizational boundary; mega-deals; proximity in culture and language; long-term relationship; big companies Offshoring (1990s -)</p><p>The provision of organizational products and services from locations in other countries <ref type="bibr" target="#b17">(Davis et al. 2006)</ref> Global, closed organizational boundary; mega-deals; long-term relationship; disparity in culture and language, big companies Microsourcing (2000s -)</p><p>The provision of micro-tasks and other small enterprise services from an online community of providers residing in an online microsourcing platform <ref type="bibr" target="#b50">(Lu and Zeng 2011;</ref><ref type="bibr" target="#b28">Gefen and Carmel 2008)</ref> Global, open boundary; online platforms; remote and virtual work; micro-deals; short-term relationship, mostly small and medium companies, entrepreneurs and personal clients The nature of online Microsourcing platform to complement current resources <ref type="bibr" target="#b73">Slaughter and Ang (1996)</ref>, <ref type="bibr" target="#b69">Schwarz et al. (2009)</ref>, <ref type="bibr" target="#b38">Huang et al. (2009)</ref> Accessing resources and expertise (+)</p><p>As an external pool of resources and knowledge <ref type="bibr" target="#b11">Clark et al. (1995)</ref>, <ref type="bibr" target="#b3">Apte et al. (1997)</ref>, <ref type="bibr" target="#b76">Sobol and Apte (1995)</ref>, <ref type="bibr" target="#b48">Loh (1994</ref><ref type="bibr" target="#b24">), Fisher et al. (2008)</ref> Knowledge risk (-) IP protection, knowledge disclosure, lack of control Knowledgebased view <ref type="bibr" target="#b69">Schwarz et al. (2009)</ref>, <ref type="bibr" target="#b39">Jayatilaka et al. (2003)</ref> +positive influence; -negative influence an IT outsourcing decision based on TCT must weigh the differences between the savings in production costs and the increased transaction costs associated with IT services <ref type="bibr" target="#b2">(Ang and Straub 1998;</ref><ref type="bibr" target="#b39">Jayatilaka et al. 2003)</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.2.2">Resource-based factors</head><p>More recently, managers have begun to realize that making decisions solely on the basis of cost savings could be risky.</p><p>The desired cost savings may be difficult to realize <ref type="bibr" target="#b44">(Lacity and Willcocks 1995)</ref>, due to unexpected increases in transaction costs and the uncertainty surrounding the transactions.</p><p>On the other hand, the pursuit of cost savings could lead to a poorer quality of service and ultimately to the failure of outsourcing. Thus, more and more companies now appear to outsource not so much as a means to reduce costs, but for the convenience of management and for strategic reasons <ref type="bibr" target="#b35">(Halvey et al. 1996)</ref>. Thus, the resource-based theory (RBT) <ref type="bibr" target="#b5">(Barney 1991</ref>) may be seen as a more suitable theoretical lens. RBT views a firm as a collection of resources. To gain and sustain a competitive advantage, a firm must acquire and deploy resources that are rare, valuable, difficult to immitate and which are relatively immobile and non-substitutable <ref type="bibr" target="#b5">(Barney 1991)</ref>. When a firm finds that its internal resources and capabilities cannot satisfy the company's strategic objectives, the external acquisition of complementary resources and capabilities becomes necessary <ref type="bibr" target="#b31">(Grant 1991)</ref>. This external acquisition is seen as a strategic response to fill a resource gap <ref type="bibr" target="#b77">(Stevensen 1976;</ref><ref type="bibr" target="#b78">Teng et al. 1995)</ref>. Especially when confronting a competitive market and uncertain environment, firms tend to increase their concentration on core competencies. They also acquire non-strategic resources from outside sources in order to sustain their competitive advantages <ref type="bibr" target="#b64">(Prahalad and Hamel 1990)</ref>. Outsourcing enables firms to access external resources and capabilities that are internally unavailable, and then to increase their ability to leverage these resources to complement their core competencies <ref type="bibr" target="#b57">(Nohria and Garcia-Pont 1991;</ref><ref type="bibr" target="#b82">Yasuda 2005)</ref>. Thus, RBT suggests that the motivations to use outsourcing would be to fill gaps in resources and knowledge <ref type="bibr" target="#b78">(Teng et al. 1995;</ref><ref type="bibr">Lacity and Hirschheim 1993a, b)</ref> to obtain complementary resources to supplement existing core competencies <ref type="bibr" target="#b10">(Chung et al. 2000;</ref><ref type="bibr" target="#b69">Schwarz et al. 2009</ref><ref type="bibr" target="#b38">, Huang et al. 2009)</ref>, and to gain access to external resources and expertise <ref type="bibr" target="#b16">(Currie and Willcocks 1998;</ref><ref type="bibr" target="#b82">Yasuda 2005)</ref>. <ref type="bibr">et al. (2004)</ref> indicated that outsourcing may be considered as a decision which involves risk, and therefore, the potential negative outcomes of outsourcing need to identified and evaluated when deciding on whether or not to utilize outsourcing. Although many negative factors of outsourcing, such as opportunistic risk and uncertainty, have been identified in previously published studies <ref type="bibr" target="#b18">(Dibbern et al. 2004)</ref>, in this research we focus on a specific type of risk, i.e. knowledge risk. This is due to the fact that an extensive integration and tranference of knowledge between clients and providers is often required during the process of outsourcing. The ability to leverage knowledge, both internally and externally, can be a critical source of a competitive advantage <ref type="bibr" target="#b32">(Grant 1996)</ref>. However, the sharing or revealing of any organization-specific knowledge to an external service provider might put the firm at risk if the external service provider discloses that knowledge <ref type="bibr" target="#b69">(Schwarz et al. 2009)</ref>. Firms could lose their competitive advantage if competitors acquire key knowledge through external service providers. Furthermore, the risk of knowledge being disclosed by service providers will be exacerbated in the context of online microsourcing, given the difficulty in monitoring and controlling the behavior of providers. Thus, firms should be particularly aware of the inherent risks of sharing knowledge in an outsourcing service application when making an outsourcing decision <ref type="bibr" target="#b69">(Schwarz et al. 2009</ref>). The construct of knowledge risk is grounded in the knowledge-based view of a firm.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.2.3">Knowledge risk-the negative factor</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Dibbern</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3">Research model and hypothesis</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.1">Research model</head><p>The focus of this study is to investigate the antecedent factors which lead firms to use online microsourcing as an outsourcing option. Online communities of firms and the thousands of service providers which make up online microsourcing platforms provide firms a simple and convenient way to access external resources and expertise. By relying on the online tools and functions provided by the platforms, i.e. the bidding system and provider profile system, firms are able to quickly locate the appropriate service providers in a marketplace by considering the price, desired service quality and the profiles of those providers. For example, a bidding request on RentACoder (currently vWorker.com) could receive an average of 13 bids from service providers <ref type="bibr" target="#b28">(Gefen and Carmel 2008)</ref>. A firm could then choose a service provider by considering the bidding price, experience, skills, past working relationships and ratings of past work done for other clients. Moreover, online marketplaces also provide the necessary institutional mechanisms <ref type="bibr" target="#b61">(Pavlou and Gefen 2004</ref>), like escrow services, arbitration services and feedback mechanisms, which eliminate potential transaction problems and facilitate secure online service exchanges. Thus, online microsourcing platforms provide a secure and reliable place in which firms can locate the desired resources and expertise, and then complete the necessary service exchanges. By considering the resource nature of online platforms, we have identified the five determinants to be considered when making microsourcing decisions, based on previously published outsourcing research. They are, respectively, cost reduction, filling a resource gap, obtaining complementary resources, accessing resources and expertise, and knowledge risk. The hypothesized influences of these antecedent factors on online microsourcing adoption are presented in Fig. <ref type="figure" target="#fig_1">1</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2">Cost reduction and online microsourcing adoption</head><p>One of the most significant motivations that drive firms to outsource is perhaps to reduce costs. For example, <ref type="bibr" target="#b16">Currie and Willcocks (1998)</ref> found that the key motivations in the use of total outsourcing were to reduce IS costs, focus on core business, eliminate a problematic IS function, gain access to managerial/technical expertise, and to retain strategic control. Although the reported importance of cost reduction when making outsourcing decisions are inconsistent in previously published studies <ref type="bibr" target="#b18">(Dibbern et al. 2004</ref>), we felt this factor still merited specific attention in the context of online microsourcing. By outsourcing to global service providers via online platforms like vWorker.com, firms can take advantage of the relatively lower labor costs by using the concept known as "global labor arbitrage" <ref type="bibr" target="#b66">(Roach 2003;</ref><ref type="bibr" target="#b28">Gefen and Carmel 2008)</ref>. Moreover, competition among service providers on online platforms often drives bidding prices down. If other transaction costs relating to distance and cultural differences could be overcome <ref type="bibr">(Economist 2004</ref><ref type="bibr">(Economist , 2005))</ref>, firms might realize that online microsourcing could be a good way for them to locate qualified providers at a relatively low cost. Thus: H1: Cost reduction has a positive impact on a firm's decision to engage in online microsourcing.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.3">Resource-based factors and the adoption of online microsourcing</head><p>Resource-based theory indicates that the competitive advantage of any firm depends on its ability to gain and defend resources that are rare, valuable, immobile and non-substitutable <ref type="bibr" target="#b5">(Barney 1991;</ref><ref type="bibr" target="#b31">Grant 1991;</ref><ref type="bibr" target="#b68">Rumelt 1974</ref>). To gain a competitive advantage and strategic flexibility, firms must focus on their core competences and obtain complementary resources from an external environment. Thus, outsourcing becomes a viable way for firms to fill their gaps in resources, capabilities and knowledge. The application of RBT to online microsourcing is also evident. In the case of microsourcing, online platforms provide firms, particularly small and medium-sized firms, a reliable and secure place in which to find the desired resources at a relatively low cost, due to the ability firms have through the use of these platforms to connect to a large network of global providers. The availability of rich resources and expertise in diversified fields of online platforms can also increase the online platform's ability to supplement other firms' core competences. By plugging into an online sourcing platform, firms can easily find the desired resources and expertise to fill their resource gaps, or to complement their current core resources in a "pay-by-demand" mode, thereby increasing their abilities to respond to the business environment more flexibly and quickly. This RBT view of online microsourcing platforms is apparent when reviewing clients' feedback found on several online platform websites. We thus propose the following three hypotheses, based on RBT: H2: The need to fill a resource gap will drive a firm to engage in online microsourcing. H3: The need to obtain complementary resources will drive a firm to engage in online microsourcing. H4: The need to obtain access to external resources and expertise will drive a firm to engage in online microsourcing.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.4">Knowledge risk and the adoption of online microsourcing</head><p>Risk is one party's subjective probability of suffering a loss <ref type="bibr" target="#b8">(Chiles and McMackin 1996)</ref> when participating in an exchange relationship with another party. Risk perceptions have</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Cost Reduction</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Online Microsourcing Adoption</head><p>Perceived Service Uncertainty been shown to erode exchange relationships in general (e.g., <ref type="bibr" target="#b67">Rousseau et al. 1998)</ref>, and in particular, they negatively influence consumer adoption of e-commerce <ref type="bibr" target="#b59">(Pavlou 2003</ref>) and consumers' online purchasing intentions <ref type="bibr" target="#b61">(Pavlou and Gefen 2004)</ref>. As a specific type of risk, knowledge risk reflects a firm's perceived risks associated with sharing or revealing organization-specific knowledge to service providers. This could be an important factor which inhibits firms from outsourcing. In the case of online microsourcing, the negative influence of knowledge risk on outsourcing decisions becomes even more significant, given the lean nature of the online medium <ref type="bibr" target="#b61">(Pavlou and Gefen 2004</ref>) and the difficulty in monitoring the behavior of providers. Accordingly:</p><p>H5: Knowledge risk has a negative impact on a firm's engagement in online microsourcing.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.5">Control variables</head><p>The research model incorporates two control variables that may influence a firm's intention to engage in online sourcing, i.e. perceived uncertainty <ref type="bibr" target="#b62">(Pavlou et al. 2007</ref>) and trust in the community of providers <ref type="bibr" target="#b61">(Pavlou and Gefen 2004)</ref>. Perceived uncertainty refers to the degree by which the outcome of a transaction cannot be accurately predicted by buyers <ref type="bibr" target="#b62">(Pavlou et al. 2007</ref>). Uncertainty is one of the most frequently mentioned determinations that make buyers reluctant to engage in online exchange relationships with sellers <ref type="bibr" target="#b62">(Pavlou et al. 2007;</ref><ref type="bibr" target="#b27">Gefen 2000)</ref>. Trust in the community of providers is a type of trust associated with online marketplaces, whereby a client often interacts with unknown service providers <ref type="bibr" target="#b61">(Pavlou and Gefen 2004</ref>). Thus, trust in the community of providers, reflecting a generalized trust in the identifiable population of a specific marketplace <ref type="bibr" target="#b61">(Pavlou and Gefen 2004)</ref>, is a major determinant of an individual's intentions to interact with the community's members (Fukuyama 1995). In the context of an online marketplace, trust in the community of sellers can help to eliminate social uncertainties, thereby encouraging online transactions <ref type="bibr" target="#b61">(Pavlou and Gefen 2004</ref>).</p><p>4 Research method</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.1">Measurement development</head><p>All constructs in this study were measured as latent, reflective constructs that are captured indirectly through direct measurement items. The measurement items are summarized and adapted from the prior studies. The preliminary instrument was reviewed by faculty and by doctoral students from the authors' department for purposes of clarity and content validity before data collection. All items were seven-point, Likert-type scales anchored at (1) "strongly disagree," (7) "strongly agree" and (4), "neither agree nor disagree." The measurement items and their statistical properties are presented in Appendix 1.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.2">Survey administration</head><p>The "key informants" data collection methodology (e.g., <ref type="bibr" target="#b70">Segars and Grover 1998;</ref><ref type="bibr" target="#b30">Goo et al. 2009</ref>) is used in this study, because the respondents are responsible for providing information regarding their organizations. The targeted respondents assumed the role of a key informant and were able to provide information on a particular unit of analysis by reporting on group or organizational properties <ref type="bibr" target="#b30">(Goo et al. 2009)</ref>. As the purpose of the study was to understand the motivations that drive the adoption of online microsourcing, we sought key contacts of firms that have already been involved in online microsourcing as our primary research subjects. Bearing this in mind, we first contacted several major online platforms, including TopCoder, Guru, and vWorker, to request their help in data collection. Five of them responded but only vWorker agreed to support the research. Thus, the survey was administrated with the collaboration of vWorker between July and November 2010. A research invitation message, which contained a short statement about the study and a link to an online survey instrument, was broadcast over the website. Respondents were asked to evaluate the antecedent factors and their intentions to engage in online microsourcing through the platform. They were also required to provide their vWorker.com IDs in order to assure they were legitimate service clients. A total of 240 valid responses were attained after a data cleaning process, which involved deleting careless responses, responses with significant missing values and inconsistent responses.</p><p>Demographic information about the respondents and their firms is summarized in Table <ref type="table" target="#tab_3">4</ref>. The clients who responded are located in 51 different countries, and a large proportion of these (71 %) are from developed countries, including the United States, the United Kingdom, Canada and Australia. Most of the responding clients were from small firms (78 % were from firms with fewer than 50 employees), and most of the outsourcing projects (74 %) were valued at less than US $1,000. The observations regarding the respondents of this study are consistent with the research of <ref type="bibr" target="#b28">Gefen and Carmel (2008)</ref> and <ref type="bibr" target="#b58">Obal (2009)</ref>, who suggested that the primary landscape of online microsourcing was characterized as small to medium-sized firms participating in small outsourcing deals.</p><p>The average tenure and online microsourcing experience of respondents were, respectively, 5.6 years and 4.2 years, which confirms that they are knowledgeable and qualified to offer information about both their firms and the online microsourcing activities of their firms. Non-response bias was assessed by verifying that the distribution of the respondent firms' home countries was consistent with the countries and firms reported by the microsourcing platform.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5">Data analysis and results</head><p>This study represents the first attempt to understand the reasons why firms use online microsourcing to fulfill their service needs. Considering the study's exploratory nature and the relatively small sample size, we determined the partial least square (PLS) approach was appropriate for this study. PLS is a componentbased approach that combines factor analysis with linear regression, which is more appropriate for predictive applications and theory building <ref type="bibr" target="#b9">(Chin 1998;</ref><ref type="bibr" target="#b29">Gefen et al. 2000)</ref>. SmartPLS2.0 <ref type="bibr" target="#b65">(Ringle et al. 2005</ref>)-one of the PLS software packages-was used for the data analysis in this study.</p><p>To ensure accurate estimation and adequate statistical power, a minimum sample size check was performed. <ref type="bibr" target="#b9">Chin (1998)</ref> suggests that the sample size should be equal to the larger of the following: ten times the scale with the largest number of formative indicators, or ten times the largest number of structural paths directed at a particular construct in the structural model. The sample size for the current study was 240, which exceeds the minimum demand (7×10=70) for the sample size. Therefore, our sample size is adequate for the purposes of scale measurement and model testing.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.1">Measurement model</head><p>The collected data was first analyzed with a principal components factor analysis to examine the factorial validity of the scales <ref type="bibr" target="#b61">(Pavlou and Gefen 2004)</ref>. Appendix 2 presents the results of this analysis. Four items with crossing loadings (CR3-5, OCR3) were eliminated from the measurement model. There were eight factors, extracting 77 % of the variance. All items from each construct were loaded highly on a single common factor and loaded with low coefficients on all other factors, showing a good loading pattern <ref type="bibr" target="#b34">(Hair et al. 1998)</ref>. We then further examined the measurement model with a confirmatory factor analysis by using the component part of PLS. A set of 29 items was finally retained for the eight constructs after dropping KR1, which had a relatively low loading (.63). The final analysis result is shown in Table <ref type="table" target="#tab_4">5</ref>.</p><p>Internal reliability is verified with all composite reliability scores and Cronbach's Alpha of the latent variables exceeding the 0.70 threshold, as shown in Table <ref type="table" target="#tab_4">5</ref>. Each one of the constructs in the structural model exhibited both convergent validity and discriminant validity. Convergent validity is adequate when constructs have an Average Variance Extracted (AVE) value of at least 0.5, and when items load highly (loading&gt;0.7) on their respective factors as well. Table <ref type="table" target="#tab_4">5</ref> shows that all the measures have significant (at 0.001) loadings that are much higher than the suggested threshold. As shown in Table <ref type="table" target="#tab_5">6</ref>, the square root of AVE for each construct (diagonal term) exceeded the correlations between the construct and other constructs (off-diagonal terms), indicating that discriminant validity has also been established. The extent of common method bias was assessed using Harman's one-factor test <ref type="bibr" target="#b63">(Podsakoff et al. 2003)</ref>. Evidence for CMV exists when one factor accounts for most of the covariance. The one factor extracted from all items accounts for about 31 % of the total variance, which should not be considered as a major concern, considering that the resourcebased constructs were assumed to be theoretically interrelated. The eight principal constructs each accounted for about 9.6 % of the variance (first factor 12 %, eighth factor 6 %), also indicating that our data does not suffer from high common method variance.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.2">Structural model</head><p>The results of testing the structural model are shown in Fig. <ref type="figure">2</ref>. The T-values of the path coefficients were estimated via the bootstrapping procedure suggested by <ref type="bibr" target="#b9">Chin (1998)</ref>. The results show that online microsourcing engagement is, as hypothesized, significantly affected by the three resource- based motivations indicated by resource-based theory, even when controlling the effects of the control variables: Filling Resource Gap (β=0.10, P&lt;0.05), Obtaining Complementary Resources (β = 0.26, P &lt; 0.01), and Accessing Resources and Expertise (β=0.29, P&lt;0.01). These three constructs even account for about 20 % of the variance explained by Intention to Engage in Online Microsourcing, in addition to the effects of the two control variables. Therefore, H2, H3 and H4 are supported. However, the influences of both Cost Reduction (β=0.08, P&gt;0.10) and Knowledge Risk (β=-0.01, P&gt;0.10) on Intention to Engage were not significant, as indicated by the results, and thereby, H1 and H5 were both rejected.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6">Discussion</head><p>Firstly, the findings above indicate that the three antecedent factors derived from the resource-based theory <ref type="bibr" target="#b5">(Barney 1991)</ref> are the primary reasons which lead firms to engage in online microsourcing activities within a specific platform. The strongest predictor of intention to engage in online microsourcing is access to resources and expertise, followed by the ability to obtain complementary resources, followed by the ability of the platform to fill resource gaps. Because most respondents were small firms or were entrepreneurs, this study actually reveals an outsourcing landscape different than any found in previous studies, as those studies focused more on the perspectives of larger companies. Small and mediums firms, particularly those in a start-up situation, are, generally not able to justify the expense of all the necessary in-house resources and capabilities. To maintain a competitive advantage, firms must focus on their core resources and capabilities and acquire any additional resource requirements from an external environment <ref type="bibr" target="#b31">(Grant 1991;</ref><ref type="bibr" target="#b78">Teng et al. 1995)</ref>. Online microsourcing platforms, relying on the internet and other communication technologies, provide firms a more convenient way to access global resources and capabilities, thereby filling the firms' gaps in resources and knowledge. Furthermore, when using online microsouring, firms should pay particular attention to the nature of the acquired resource and its ability to complement the firm's internal resources and capabilities. This study also confirms the relevance of resource-based theory in understanding a firm's decision to participate in online microsourcing. Firms' decisions to use online microsourcing are more based on strategic considerations than on economic considerations.</p><p>Secondly, this research suggests that cost reduction might not be that important an antecedent factor for firms when considering whether or not to use online microsourcing. These results seem to contradict the fact that online microsourcing platforms offer much cheaper resources and labor <ref type="bibr" target="#b28">(Gefen and Carmel 2008;</ref><ref type="bibr" target="#b36">Howe 2006)</ref>. Some online microsourcing users have even suggested that they are able to reduce costs by outsourcing to online providers as opposed to relying on local providers. For instance, one client of vWorker stated that "workers hired through the site cost me about 80-90 % less than what I would spend locally." However, the realization of cost savings might be more complex than first appears to be the case when conducting online microsourcing. Even though the cost for each project is relatively low, the hidden cost of using online microsourcing could increase, given the need to combine multiple service contracts, coordination costs, and other transaction costs. Thus, firms need to consider more than just the initial cost factor when making online microsourcing decisions, including the relationship with a specific provider, any cultural differences and language differences <ref type="bibr" target="#b28">(Gefen and Carmel 2008)</ref>. As is the case with traditional outsourcing, online microsourcing clients also appear to outsource more for the convenience of management and for strategic purposes <ref type="bibr" target="#b35">(Halvey et al. 1996)</ref>. In such circumstances, the influence of cost reductions will become insignificant when considering the strategic motivations derived from the resource-based theory in the research model <ref type="bibr" target="#b38">(Huang et al. 2009;</ref><ref type="bibr" target="#b22">Espino-Rodríguez and Gil-Padilla 2005)</ref>.</p><p>Thirdly, the negative impact of knowledge risk on online microsourcing decisions is not supported by the data collected in this research. Our finding in this matter is inconsistent with the negative role of knowledge risks suggested in previous outsourcing studies (e.g. <ref type="bibr" target="#b69">Schwarz et al. 2009;</ref><ref type="bibr" target="#b39">Jayatilaka et al. 2003</ref>). Concerns about knowledge-related risks have been ranked as one the most important attributes when considering sourcing options, including domestic outsourcing, ASP and offshore options <ref type="bibr" target="#b69">(Schwarz et al. 2009)</ref>. A few plausible interpretations for this outcome are suggested here. Firstly, in order to use online microsourcing, firms are often required to divide a large and complex project into a number of smaller projects that are more suitable for online providers. Thus, a service provider only affects a small part of the overall project, and therefore only has Fig. <ref type="figure">2</ref> PLS results of structural model access to limited information and knowledge pertaining to the firm. Thus, the risk that organization-specific knowledge could be disclosed to competitors by the vendor is better controlled. Secondly, according to resource-based theory, firms often utilize online sourcing to source complementary and non-strategic resources and capabilities. Generally, very little organizational-specific knowledge resides in the complementary resources and processes of firms. Therefore, knowledge risks become negligible in terms of online sourcing. Finally, institutional mechanisms <ref type="bibr" target="#b60">(Pavlou and Dimoka 2006)</ref> including feedback systems and arbitration services are provided to protect firms from unauthorized access and disclosure. These mechanisms also include such things as non-disclosure agreements, online feedback systems, and rating systems. Therefore, our results indicate that firms are not necessarily hesitant to outsource projects or applications to unknown online service providers, given the facilitation and protective mechanisms of online platforms.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6.1">Contributions to theory</head><p>This research makes several important contributions to existing outsourcing and online marketplaces literature. Firstly, we looked into the relatively new phenomenon of outsourcing by examining the motivations for a firm to adopt online microsourcing. Thus, the study extends the existing body of outsourcing literature to that of a new landscape of outsourcing, i.e. online microsourcing. This new outsourcing practice is gaining in popularity and importance "as the global marketplace dynamics seem to be moving toward greater diversification in sourcing, and smaller, more manageable, contracts" <ref type="bibr" target="#b28">(Gefen and Carmel 2008)</ref>. Most of the respondent firms were small businesses and start-up situations. This study focused on smaller outsourcing deals in a global marketplace, mainly from the perspective of small firms and entrepreneurs <ref type="bibr" target="#b58">(Obal 2009)</ref>, whereas most previous studies concentrated on mega-outsourcing deals in a relative small marketplace populated mainly by Fortune 500 companies <ref type="bibr" target="#b28">(Gefen and Carmel 2008)</ref>. Thus, this study sheds new light on outsourcing by focusing on the small and medium business perspective. In doing so, we introduced a new form of outsourcing to the existing outsourcing landscape.</p><p>Secondly, this research investigated the key drivers of online microsourcing decisions. We mainly considered, through the findings of previously published studies, the economic reasons (cost reductions) and strategic motivations (filling resource gaps, accessing external resources and expertise, and obtaining complementary resources) that motivate firms to use online microsourcing. Following the call to include the potential negative outcomes of outsourcing when deciding on outsourcing <ref type="bibr" target="#b18">(Dibbern et al. 2004</ref>), knowledge risk was considered in our research model as one negative factor, given the nature of online service exchanges. Our findings on the antecedent factors of online microsourcing decisions are in accordance with what has been suggested in previous studies, i.e. outsourcing decisions are conditioned more by strategic considerations <ref type="bibr" target="#b38">(Huang et al. 2009;</ref><ref type="bibr" target="#b22">Espino-Rodríguez and Gil-Padilla 2005;</ref><ref type="bibr" target="#b44">Lacity and Willcocks 1995)</ref> or other factors like cultures <ref type="bibr" target="#b28">(Gefen and Carmel 2008)</ref> than by cost reduction. Thus, this study indicates that even for decision makers of small and medium firms, more attention is given to management focus <ref type="bibr" target="#b18">(Dibbern et al. 2004</ref>) around strategic values and competitive advantage than to cost savings, when making online microsourcing decisions. While knowledge risk was indicated as a key negative determinant when making outsourcing decisions <ref type="bibr" target="#b69">(Schwarz et al. 2009;</ref><ref type="bibr" target="#b39">Jayatilaka et al. 2003)</ref>, the results of this study suggest the role of knowledge risk in online microsourcing is not significant. Knowledge risk becomes more manageable when clients only outsource a small business function or application to online providers. Therefore, this research offers a desirable complement to previously published outsourcing studies, by disclosing the relevant reasons for using online microsourcing, mainly from the a small business perspective.</p><p>Thirdly, this study confirms that resource-based theory is a suitable theoretical lens for online microsourcing decisions. A firm's decision to engage in online microsourcing largely depends on its need to access external resources and expertise; to fill their internal resource gap, and to obtain complementary resources from external sources. A rich body of outsourcing literature based on RBT already exists <ref type="bibr" target="#b18">(Dibbern et al. 2004;</ref><ref type="bibr" target="#b69">Schwarz et al. 2009)</ref>. The findings of this study suggest that RBT is still applicable in understanding how and why online microsourcing decisions are made. Our observations with respect to RBT are consistent with <ref type="bibr" target="#b79">Wade and Hulland's (2004)</ref> call to increase the application of the RBT perspective on firms in the IS community. RBT can also be a relevant theoretical lens in understanding other forms of online services similar to online microsourcing, such as ASP <ref type="bibr" target="#b69">(Schwarz et al. 2009)</ref>, cloud computing, the community-based development <ref type="bibr" target="#b0">(Ågerfalk and Fitzgerald 2008;</ref><ref type="bibr" target="#b26">Gebauer et al. 2013)</ref>, and open source service networks <ref type="bibr" target="#b23">(Feller et al. 2008)</ref>.</p><p>Finally, this study indicates that online microsourcing can be a viable solution for firms, and particularly as it relates to small firms and entrepreneurs, as one outsourcing option. By connecting to an online microsourcing platform, firms can seamlessly blend internally and externally delivered services from an optimal set of internal and external providers, not just to cut costs or gain efficiencies, but to maximize growth, agility, and bottom-line results <ref type="bibr" target="#b14">(Cohen and Young 2005)</ref>. Thus, future research should pay greater attention to this specific outsourcing phenomenon.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6.2">Implications for practice</head><p>The study has several implications in practical terms. For client firms, especially small and medium-sized firms, this research suggests that online microsourcing can be a viable outsourcing solution. In addition, senior managers of firms should be aware of the existence of online microsourcing platforms, even when these resources challenge the biases of their existing mindsets. Managers should be prepared to harvest the benefits of this global network of talented service providers <ref type="bibr" target="#b51">(Malone and Laubacher 1998;</ref><ref type="bibr" target="#b28">Gefen and Carmel 2008)</ref>. Secondly, this study suggests that online microsourcing decisions should be made based on a management and strategic focus, rather than purely on cost reduction opportunities. Cost reduction seems to be the most evident beneficial outcome of online microsourcing. However, it is possible that these savings might only be achieved on one project. Clients of online microsourcing are often required to integrate multiple projects and multiple providers. They must also integrate external resources and internal resources. In the long run, the overall cost structure could become complex and difficult to predict <ref type="bibr" target="#b44">(Lacity and Willcocks 1995)</ref>. Thus, there is a risk associated with using online microsourcing solely for cost saving purposes. Firms should also consider strategic motivations when making online microsourcing decisions. Attention should be given to the integration and coordination of resources in order to increase strategic values, improve and increase corporate flexibility and to maintain competitive advantage. Thirdly, the findings show that knowledge risk is not a major concern for online microsourcing adoption. Risks associated with knowledge sharing are either well controlled via the division of the outsourcing project or mitigated by the institutional mechanisms (e.g., arbitration service feedback mechanisms) provided by the online platform. Although our findings require further validation, the study at least suggests that senior managers should not consider knowledge risk as a major barrier to engaging in online microsourcing.</p><p>This study also has numerous implications for online microsourcing platform vendors. In the eyes of many firms, online sourcing platforms act as an external pool of resources, capabilities and expertise, due to their ability to provide access to a large quantity of global providers. Because the major concerns of a firm are the need to leverage internal and external resources and to maintain its competitive advantage, online microsourcing platforms should help firms to manage the outsourcing of contracts while retaining relationships with providers, and to seamlessly integrate multiple resources and capabilities. Thus, effective online microsourcing governance tools, such as project management, provider management, and effective institutional mechanisms <ref type="bibr" target="#b61">(Pavlou and Gefen 2004</ref>) should be available to facilitate online service exchanges and to manage online microsourcing activities.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6.3">Limitations and future research directions</head><p>This study has a number of limitations which should be taken into consideration when analyzing our results. Firstly, the data used to reach our conclusions came from the service clients of just one online microsourcing platform, and therefore, the influences created by self-selection could lead to biased results. Although vWorker is a typical online microsourcing platform, the generalizability of this study will be affected, and thus, the research findings of this study need to be further validated via data collected from other platforms in the future. Secondly, in this research, we mainly considered cost factors and the resource-based attributes coming from an RBT perspective. However, managers do have a very long list of determinants to consider when making outsourcing decisions. Thus, other theoretical lenses may also be relevant, e.g. the knowledge-based view <ref type="bibr" target="#b32">(Grant 1996)</ref> and agency theory <ref type="bibr" target="#b28">(Gefen and Carmel 2008)</ref>, etc. We leave these opportunities for future research. Thirdly, although the common method bias was assessed using Harman's onefactor test <ref type="bibr" target="#b63">(Podsakoff et al. 2003)</ref> and showed that common method variance was not a major concern, statistically, common method bias cannot be absolutely ruled out.</p><p>Several future research directions are also suggested here.</p><p>Firstly, although this study shows that knowledge risk may be not a significant concern when considering online microsourcing, other factors based on a knowledge-based view (KBV) deserve specific attention in future research. Service exchanges between firms and providers involve the extensive transfer and integration of knowledge. The ability to leverage knowledge both internally and externally can also be a critical source of competitive advantage <ref type="bibr" target="#b15">(Collison 1997</ref>). However, this might be a challenge in online microsourcing, because communications and interactions are fully mediated by information technology. Thus, future researchers could study online microsourcing by employing KBV. Secondly, we only considered a limited number of key determinants of outsourcing decisions, mainly based on resource-based theory, in this study. Future studies could further explore the impacts of other determinants derived from other theoretical lenses, including transaction cost theory, agency theory, social exchange theory, etc. Thirdly, this study indicates the importance of the governance role of marketplaces in online microsourcing. "The nature of outsourcing has changed in recent years from a small marketplace with a small number of key competitors to a global marketplace, where firms are coordinating and collaborating with one another in unprecedented ways" <ref type="bibr" target="#b69">(Schwarz et al. 2009)</ref>. This suggests that more emphasis should be placed on studying how these collaborations and interactions can be governed, and on the importance of outsourcing governance tools. Finally, this study shows new ways in which firms can organize their work <ref type="bibr" target="#b51">(Malone and Laubacher 1998)</ref>. This could signal the emergence of online virtual service networks spanning organizational boundaries. Thus, online microsourcing might provide researchers with a good opportunity to observe virtual organizations and the collective actions of a distributed work force <ref type="bibr" target="#b23">(Feller et al. 2008;</ref><ref type="bibr" target="#b52">Markus 2007)</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="7">Conclusions</head><p>This paper investigated the antecedent factors that drive firms to engage in the new outsourcing practice of online microsourcing. Drawing on previously published outsourcing studies; we identified and examined the five key determinants of online microsourcing, mainly based on resource-based theory. They are: (i) Economic motivation, or cost reduction; (ii) Resourcebased factors; (iii) Filling a resource gap; (iv) Accessing resources and expertise; and (v) Obtaining complementary resources.</p><p>We also found one inhibiting factor-knowledge risk. Our findings suggest that even for small businesses and entrepreneurs (who were the major research respondents in this study), online microsourcing decisions are driven more by the strategic motivation to enhance strategic competence and to maintain competitive advantage, than by the prospect of cost reductions. This research also indicates that the impact of knowledge risk in online microsourcing engagements is insignificant. In summary, this study:</p><p>(1) Confirms the relevance of resource-based theory in understanding motivations that enable firms to use online microsourcing;</p><p>(2) Sheds light on the new phenomenon of outsourcing by examining the key determinants of outsourcing decisions, thereby introducing a new option in the landscape of outsourcing, while at the same time pointing out a number of both theoretical and practical implications; (3) Acts as a desirable complement to previously published outsourcing studies by examining microsourcing deals from the viewpoint of small firms and entrepreneurs.</p><p>Our findings indicate that firms adopt online microsourcing mainly for the convenience of management and to focus on the implementation of corporate strategy, rather than for purposes of cost reduction. These findings are consistent with the conclusions reached in previously published outsourcing studies <ref type="bibr" target="#b18">(Dibbern et al. 2004</ref>).  Accessing to resources and expertise <ref type="bibr" target="#b0">(Ågerfalk and Fitzgerald 2008;</ref><ref type="bibr" target="#b69">Schwarz et al. 2009)</ref> ARE1 This site is a large network of providers.</p><p>5.72</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>1.39</head><p>.87</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>ARE2</head><p>There are many diversified providers in this site. .84</p><p>Knowledge risk <ref type="bibr" target="#b69">(Schwarz et al. 2009;</ref><ref type="bibr" target="#b72">Shi 2007;</ref><ref type="bibr" target="#b4">Balaji and Ahuja 2005)</ref> KR1 a We worry about the inside knowledge of our company is exposed via this site.</p><p>4.00</p><p>1.81 -</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>KR2</head><p>We feel risky to share my company's routing, policy, or ideas with providers via this site.</p><p>4.11 1.74</p><p>.82</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>KR3</head><p>The intellectual property is not under good protected by using this site.  .86</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>TIC2</head><p>We can always rely on providers of this site to fulfill our service needs.</p><p>4.85 1.45</p><p>.86</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>TIC3</head><p>We feel that we could count on providers of this site to help with a sourcing problem.</p><p>5.15 1.55</p><p>.89</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>TIC4</head><p>If we had a challenging internal problem, we would want to use providers of this site again.</p><p>5.37 1.42</p><p>.84</p><p>Perceived uncertainty <ref type="bibr" target="#b62">(Pavlou et al. 2007</ref>) PU1 We feel that using online sourcing from this site involves a high degree of uncertainty.</p><p>3.51 1.71</p><p>.95</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>PU2</head><p>We feel uncertainty associated with the online service exchanges for our firm.</p><p>3.63</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>1.58</head><p>.87</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>PU3</head><p>There is a high degree of uncertainty when relying on online providers for our firm.</p><p>3.71 1.77</p><p>.97</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>PU4</head><p>Our firm is exposed to many transaction uncertainties if we use online sourcing from this site.</p><p>3.49 1.80</p><p>.81</p><p>Dependent variables Intention to engage <ref type="bibr" target="#b30">(Goo et al. 2009</ref>) ITE1 We will consider using this site for future outsourcing needs.</p><p>5.97 1.38</p><p>.91</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>ITE2</head><p>We want to remain a customer of this site because we genuinely value our relationship with it.</p><p>5.73 1.43</p><p>.94</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>ITE3</head><p>The continuation of a relationship with this site is very important to us.</p><p>5.64 1.45</p><p>.93</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>ITE4</head><p>We are willing to put more effort and investment in building business relationship with this site.</p><p>5.54 1.43</p><p>.88 a Item dropped from final analysis [R]-reverse coded item. All scales anchored by: 1-strongly disagree, 7-strongly agree </p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head></head><label></label><figDesc>A few examples are given below: &amp; Your site is where we find experts quickly and costeffectively.-a service client from Elance.com &amp; The site provides a fantastic way to quickly expand my development team on an ad-hoc basis to meet the peaks in custom software demands from the business.-a service client from vWorker.com &amp; We think of this site as an extension of our team. Whenever we need some expertise, say with social media, internet marketing, event production, or website development, we go straight to this site.-a service client from Elance.com &amp; The site literally opens up an entire world of talented professionals. I can supplement my full-time staff with the expertise I need-when I need it.-a service client from Elance.com</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>Fig. 1</head><label>1</label><figDesc>Fig. 1 Research model of microsourcing adoption</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head></head><label></label><figDesc>to this site to look for non-strategic resources. our firm to focus on the core competence and activities.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4"><head></head><label></label><figDesc>about the loss of key knowledge abilities by relying on external providers. the knowledge integration problems between my firm and external providers.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5"><head></head><label></label><figDesc>in the community of providers<ref type="bibr" target="#b61">(Pavlou and Gefen 2004;</ref> McKnight et al. 2002a, b)   TIC1 Generally, we would feel comfortable depending on the service providers from this site.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head>Table 1</head><label>1</label><figDesc>Statistics of Online Microsourcing (Adapted fromSmartsheet.com, 2009)    </figDesc><table><row><cell>Vendors</cell><cell>Registered providers</cell><cell>Gross payments</cell></row><row><cell>Elance</cell><cell>97,500</cell><cell>$210,000,000</cell></row><row><cell>LiveOps</cell><cell>40,000</cell><cell>$150,000,000</cell></row><row><cell>Rent a coder</cell><cell>266,754</cell><cell>$140,000,000</cell></row><row><cell>Guru</cell><cell>1,000,000</cell><cell>$100,000,000</cell></row><row><cell>oDesk</cell><cell>331,000</cell><cell>$90,000,000</cell></row><row><cell>Amazon mechanical Turk</cell><cell>200,000</cell><cell>-</cell></row><row><cell>GetAFreelancer</cell><cell>-</cell><cell>$41,000,000</cell></row><row><cell>TopCoder</cell><cell>217,145</cell><cell>$7,000,000</cell></row><row><cell>99designs</cell><cell>45,000</cell><cell>$6,531,977</cell></row><row><cell>Innocentive</cell><cell>180,000</cell><cell>$4,420,000</cell></row><row><cell>Totals</cell><cell>2,377,399</cell><cell>$748,951,977</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1"><head>Table 2</head><label>2</label><figDesc>Three Waves of Outsourcing</figDesc><table><row><cell>Terms</cell><cell>Definitions</cell><cell>Characteristics</cell></row><row><cell>Outsourcing</cell><cell></cell><cell></cell></row><row><cell>(1980s -)</cell><cell></cell><cell></cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2"><head>Table 3</head><label>3</label><figDesc>Determinants of Microsourcing</figDesc><table><row><cell>Construct</cell><cell>Reason for consideration</cell><cell>Reference</cell><cell></cell></row><row><cell></cell><cell></cell><cell>theory</cell><cell></cell></row><row><cell></cell><cell></cell><cell></cell><cell>2008), Kang</cell></row><row><cell></cell><cell></cell><cell></cell><cell>et al. (2012)</cell></row><row><cell>Filling resource</cell><cell>Lack of necessary resources</cell><cell>Resource-</cell><cell>Teng et al. (1995), Grover et al. (1994), Cheon et al. (1995)</cell></row><row><cell>gap (+)</cell><cell></cell><cell>based</cell><cell></cell></row><row><cell></cell><cell></cell><cell>Theory</cell><cell></cell></row><row><cell>Obtaining</cell><cell></cell><cell></cell><cell></cell></row><row><cell>complementary</cell><cell></cell><cell></cell><cell></cell></row><row><cell>resources (+)</cell><cell></cell><cell></cell><cell></cell></row></table><note><p>Literature Cost reduction (+) Global labor arbitrage and cheap labor Transaction Cost Theory McLellan et al. (1995), Apte et al. (1997), Clark et al. (1995), Smith et al. (1998), Gefen and Carmel (2008), Fisher et al. (</p></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_3"><head>Table 4</head><label>4</label><figDesc></figDesc><table><row><cell>Demographic Informa-</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>tion of Respondents and Firms</cell><cell>Characteristics</cell><cell>Frequency</cell><cell>Percentage</cell><cell>Mean</cell><cell>Std. Dev.</cell></row><row><cell>(n=240)</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell>Title of respondents</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell>Microsourcing liaison/supervisor</cell><cell>81</cell><cell>33.8 %</cell><cell></cell><cell></cell></row><row><cell></cell><cell>Senior &amp; middle manager</cell><cell>85</cell><cell>35.4 %</cell><cell></cell><cell></cell></row><row><cell></cell><cell>Others(Owner, founder, or entrepreneur)</cell><cell>72</cell><cell>30.0 %</cell><cell></cell><cell></cell></row><row><cell></cell><cell>Not provided</cell><cell>2</cell><cell>0.80 %</cell><cell></cell><cell></cell></row><row><cell></cell><cell>Tenure (year)</cell><cell>-</cell><cell>-</cell><cell>5.6</cell><cell>.35</cell></row><row><cell></cell><cell>Outsourcing experience (year)</cell><cell>-</cell><cell>-</cell><cell>4.2</cell><cell>.21</cell></row><row><cell></cell><cell>No. of employees</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell>&lt;50</cell><cell>187</cell><cell>77.9 %</cell><cell></cell><cell></cell></row><row><cell></cell><cell>50-500</cell><cell>20</cell><cell>8.30 %</cell><cell></cell><cell></cell></row><row><cell></cell><cell>&gt;500</cell><cell>18</cell><cell>7.50 %</cell><cell></cell><cell></cell></row><row><cell></cell><cell>Not provided</cell><cell>15</cell><cell>6.30 %</cell><cell></cell><cell></cell></row><row><cell></cell><cell>Location of firm</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell>United States</cell><cell>89</cell><cell>37.1 %</cell><cell></cell><cell></cell></row><row><cell></cell><cell>United Kingdom, Canada, or Australia</cell><cell>57</cell><cell>23.8 %</cell><cell></cell><cell></cell></row><row><cell></cell><cell>India, Pakistan, or Romania</cell><cell>25</cell><cell>10.4 %</cell><cell></cell><cell></cell></row><row><cell></cell><cell>Other countries (44)</cell><cell>63</cell><cell>26.3 %</cell><cell></cell><cell></cell></row><row><cell></cell><cell>Not provided</cell><cell>6</cell><cell>2.50 %</cell><cell></cell><cell></cell></row><row><cell></cell><cell>Average outsourcing project value (U.S. Dollar)</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell>&lt;200</cell><cell>77</cell><cell>32.1 %</cell><cell></cell><cell></cell></row><row><cell></cell><cell>200-1000</cell><cell>101</cell><cell>42.1 %</cell><cell></cell><cell></cell></row><row><cell></cell><cell>&gt;1000</cell><cell>40</cell><cell>16.6 %</cell><cell></cell><cell></cell></row><row><cell></cell><cell>Not provided</cell><cell>22</cell><cell>9.20 %</cell><cell></cell><cell></cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_4"><head>Table 5</head><label>5</label><figDesc>The Assessment of Measurement Model for Principle Constructs</figDesc><table><row><cell>Constructs</cell><cell># of Items</cell><cell>Composite Reliability a</cell><cell>Cronbach's Alpha</cell><cell>AVE</cell><cell>Std Loadings b</cell></row><row><cell>Cost reduction</cell><cell>2</cell><cell>0.93</cell><cell>0.86</cell><cell>0.88</cell><cell>CR1 (0.95) CR2 (0.93)</cell></row><row><cell>Filling resource gap</cell><cell>4</cell><cell>0.91</cell><cell>0.86</cell><cell>0.71</cell><cell>FRG1 (0.88) FRG2 (0.79)</cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>FRG3 (0.86) FRG4 (0.82)</cell></row><row><cell>Obtaining complementary resources</cell><cell>3</cell><cell>0.91</cell><cell>0.85</cell><cell>0.76</cell><cell>OCR1 (0.89) OCR2 (0.86)</cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>OCR4 (0.88)</cell></row><row><cell>Accessing resources and expertise</cell><cell>4</cell><cell>0.92</cell><cell>0.89</cell><cell>0.75</cell><cell>ARE1 (0.87) ARE2 (0.83)</cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>ARE3 (0.91) ARE4 (0.84)</cell></row><row><cell>Knowledge risk</cell><cell>4</cell><cell>0.90</cell><cell>0.86</cell><cell>0.69</cell><cell>KR2 (0.82) KR3 (0.88)</cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>KR4 (0.81) KR5 (0.81)</cell></row><row><cell>Trust in the community of providers</cell><cell>4</cell><cell>0.92</cell><cell>0.88</cell><cell>0.74</cell><cell>TIC1 (0.85) TIC2 (0.85)</cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>TIC3 (0.80) TIC4 (0.84)</cell></row><row><cell>Perceived uncertainty</cell><cell>4</cell><cell>0.93</cell><cell>0.90</cell><cell>0.76</cell><cell>PU1 (0.95) PU2 (0.87)</cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>PU3 (0.87) PU4 (0.81)</cell></row><row><cell>Intention to engage</cell><cell>4</cell><cell>0.95</cell><cell>0.93</cell><cell>0.84</cell><cell>ITE1 (0.90) ITE2 (0.94)</cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>ITE3 (0.93) ITE4 (0.88)</cell></row></table><note><p><p><p>a The composite reliability score is:</p>(∑λ i ) 2 /[(∑λ i ) 2 +∑Var(ε i )]</p>, where λ i is the indicator loading, and Var(ε i )=1-λ i 2 b All item loadings are significant at 0.001</p></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_5"><head>Table 6</head><label>6</label><figDesc>Correlations of latent variables and evidence of discriminant validity</figDesc><table><row><cell></cell><cell></cell><cell>1</cell><cell>2</cell><cell>3</cell><cell>4</cell><cell>5</cell><cell>6</cell><cell>7</cell><cell>8</cell></row><row><cell>Cost reduction</cell><cell>1</cell><cell>.93</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Filling resource gap</cell><cell>2</cell><cell>.21</cell><cell>.86</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Obtaining complementary resources</cell><cell>3</cell><cell>.56</cell><cell>.13</cell><cell>.91</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>accessing resources and expertise</cell><cell>4</cell><cell>.50</cell><cell>.12</cell><cell>.51</cell><cell>.83</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Knowledge risk</cell><cell>5</cell><cell>-.09</cell><cell>.15</cell><cell>-.22</cell><cell>-.17</cell><cell>.87</cell><cell></cell><cell></cell><cell></cell></row><row><cell>Trust in the community of providers</cell><cell>7</cell><cell>.36</cell><cell>.28</cell><cell>.44</cell><cell>.53</cell><cell>-.11</cell><cell>.87</cell><cell></cell><cell></cell></row><row><cell>Perceived uncertainty</cell><cell>8</cell><cell>-.09</cell><cell>.27</cell><cell>-.18</cell><cell>-.19</cell><cell>.52</cell><cell>-.18</cell><cell>.87</cell><cell></cell></row><row><cell>Intention to engage</cell><cell>6</cell><cell>.48</cell><cell>.26</cell><cell>.58</cell><cell>.62</cell><cell>-.13</cell><cell>.60</cell><cell>-.14</cell><cell>.84</cell></row></table><note><p>Bolded diagonal elements are the square root of average variance extracted (AVE)</p></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_7"><head>Table 7</head><label>7</label><figDesc>(continued)    </figDesc><table><row><cell>Loading</cell></row><row><cell>Std dev</cell></row><row><cell>Mean</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_8"><head>Table 8</head><label>8</label><figDesc>Principal components factor analysis with varimax rotation</figDesc><table><row><cell>1</cell><cell></cell><cell>2</cell><cell>3</cell><cell>4</cell><cell>5</cell><cell>6</cell><cell>7</cell><cell>8</cell><cell>Communality</cell></row><row><cell>CR1</cell><cell>.022</cell><cell>.181</cell><cell>.090</cell><cell>-.111</cell><cell>.149</cell><cell>.047</cell><cell>.223</cell><cell>.834</cell><cell>.823</cell></row><row><cell>CR2</cell><cell>.085</cell><cell>.094</cell><cell>.282</cell><cell>-.078</cell><cell>.049</cell><cell>.189</cell><cell>.264</cell><cell>.754</cell><cell>.778</cell></row><row><cell>FRG1</cell><cell>.078</cell><cell>.062</cell><cell>.043</cell><cell>.055</cell><cell>.148</cell><cell>.867</cell><cell>.206</cell><cell>-.044</cell><cell>.833</cell></row><row><cell>FRG2</cell><cell>.041</cell><cell>.153</cell><cell>.091</cell><cell>.092</cell><cell>.106</cell><cell>.693</cell><cell>-.104</cell><cell>.346</cell><cell>.664</cell></row><row><cell>FRG3</cell><cell>.112</cell><cell>.009</cell><cell>.020</cell><cell>.049</cell><cell>.063</cell><cell>.893</cell><cell>.023</cell><cell>.034</cell><cell>.819</cell></row><row><cell>FRG4</cell><cell>.009</cell><cell>.128</cell><cell>-.025</cell><cell>.129</cell><cell>.083</cell><cell>.832</cell><cell>-.016</cell><cell>.011</cell><cell>.734</cell></row><row><cell>LCR1</cell><cell>-.144</cell><cell>.244</cell><cell>.278</cell><cell>-.078</cell><cell>.211</cell><cell>.000</cell><cell>.661</cell><cell>.310</cell><cell>.740</cell></row><row><cell>LCR2</cell><cell>-.041</cell><cell>.238</cell><cell>.194</cell><cell>.027</cell><cell>.174</cell><cell>.057</cell><cell>.795</cell><cell>.111</cell><cell>.775</cell></row><row><cell>LCR4</cell><cell>-.023</cell><cell>.249</cell><cell>.195</cell><cell>-.002</cell><cell>.154</cell><cell>.055</cell><cell>.759</cell><cell>.184</cell><cell>.738</cell></row><row><cell>ARE1</cell><cell>-.095</cell><cell>.165</cell><cell>.796</cell><cell>-.072</cell><cell>.218</cell><cell>.078</cell><cell>.089</cell><cell>.235</cell><cell>.793</cell></row><row><cell>ARE2</cell><cell>-.006</cell><cell>.184</cell><cell>.780</cell><cell>-.013</cell><cell>.255</cell><cell>-.035</cell><cell>.137</cell><cell>.083</cell><cell>.734</cell></row><row><cell>ARE3</cell><cell>.002</cell><cell>.344</cell><cell>.762</cell><cell>-.048</cell><cell>.232</cell><cell>.018</cell><cell>.215</cell><cell>.095</cell><cell>.810</cell></row><row><cell>ARE4</cell><cell>-.025</cell><cell>.270</cell><cell>.752</cell><cell>-.084</cell><cell>.132</cell><cell>.057</cell><cell>.201</cell><cell>.022</cell><cell>.709</cell></row><row><cell>KR1</cell><cell>.800</cell><cell>-.001</cell><cell>.083</cell><cell>.167</cell><cell>-.017</cell><cell>.008</cell><cell>.026</cell><cell>.167</cell><cell>.703</cell></row><row><cell>KR2</cell><cell>.853</cell><cell>-.055</cell><cell>.029</cell><cell>.179</cell><cell>.067</cell><cell>-.033</cell><cell>-.049</cell><cell>-.016</cell><cell>.772</cell></row><row><cell>KR3</cell><cell>.759</cell><cell>-.170</cell><cell>-.071</cell><cell>.156</cell><cell>-.009</cell><cell>.147</cell><cell>.024</cell><cell>.015</cell><cell>.658</cell></row><row><cell>KR4</cell><cell>.793</cell><cell>.073</cell><cell>-.072</cell><cell>.197</cell><cell>-.011</cell><cell>.119</cell><cell>-.089</cell><cell>-.090</cell><cell>.708</cell></row></table></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="1" xml:id="foot_0"><p>Information was accessed from the website of TopCoder: http://www. topcoder.com/tc?module=Static&amp;d1=pressroom&amp;d2=pr_112906, accessed on 11 July</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="2012" xml:id="foot_1"><p></p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_2"><p>Inf Syst Front (2015) 17:601-617   </p></note>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Acknowledgments This work is supported by the Doctoral Fund of Ministry of Education of China (Grant No. 20120133120005) and the Ministry of education of Humanities and Social Science project (Grant No. 13YJC630105). The authors are also very grateful to the editors and the three anonymous reviewers for their excellent comments and invaluable suggestions that have tremendously improved the quality this paper.</p></div>
+			</div>
+
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Appendix</head><p>Obtaining complementary resources <ref type="bibr" target="#b69">(Schwarz et al. 2009;</ref><ref type="bibr" target="#b38">Huang et al. 2009)</ref> </p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Outsourcing to an unknown workforce: exploring opensourcing as an offshore sourcing strategy</title>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">J</forename><surname>Ågerfalk</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Fitzgerald</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="385" to="409" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Strategic response to institutional influences on informational systems outsourcing</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Ang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Cummings</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Organizational Science</title>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="235" to="256" />
+			<date type="published" when="1997">1997</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Production and transaction economies and IS outsourcing: a study of the U.S. banking industry</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Ang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">W</forename><surname>Straub</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">22</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="535" to="552" />
+			<date type="published" when="1998">1998</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">IS outsourcing practices in the USA, Japan and Finland: a comparative study</title>
+		<author>
+			<persName><forename type="first">U</forename><forename type="middle">M</forename><surname>Apte</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">G</forename><surname>Sobol</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Hanaoka</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Shimada</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Saarinen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Salmela</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">P J</forename><surname>Vepsalainen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Information Technology</title>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="289" to="304" />
+			<date type="published" when="1997">1997</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Critical team-level success factors of offshore outsourced projects: a knowledge integration perspective</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Balaji</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">K</forename><surname>Ahuja</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 38th Hawaii International Conference on System Sciences</title>
+		<meeting>the 38th Hawaii International Conference on System Sciences<address><addrLine>Hawaii</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2005">2005</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Firm resources and sustained competitive advantage</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">B</forename><surname>Barney</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Management</title>
+		<imprint>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="99" to="120" />
+			<date type="published" when="1991">1991</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<monogr>
+		<title level="m" type="main">Micro-sourcing, Is this the eventual global sourcing landscape?</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>Carmel</surname></persName>
+		</author>
+		<ptr target="http://errancarmel.blogspot.com/2008/07/microsourcing.html" />
+		<imprint>
+			<date type="published" when="2008-07-15">2008. July 15, 2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Theoretical perspectives on the Outsourcing of information systems</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">J</forename><surname>Cheon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Grover</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Teng</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Information Technology</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="209" to="210" />
+			<date type="published" when="1995">1995</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Integrating variable risk preferences, trust, and transaction cost economics</title>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">H</forename><surname>Chiles</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">F</forename><surname>Mcmackin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Academy of Management Review</title>
+		<imprint>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="73" to="99" />
+			<date type="published" when="1996">1996</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">The partial least squares approach to structural equation modeling</title>
+		<author>
+			<persName><forename type="first">W</forename><forename type="middle">W</forename><surname>Chin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Modern methods for business research</title>
+		<editor>
+			<persName><forename type="first">G</forename><forename type="middle">A</forename><surname>Marcoulides</surname></persName>
+		</editor>
+		<meeting><address><addrLine>Mahwah</addrLine></address></meeting>
+		<imprint>
+			<publisher>Lawrence</publisher>
+			<date type="published" when="1998">1998</date>
+			<biblScope unit="page" from="295" to="336" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Complementarity, status similarity and social capital as drivers of alliance formation</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Chung</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Singh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Lee</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Strategic Management Journal</title>
+		<imprint>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="1" to="22" />
+			<date type="published" when="2000">2000</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<monogr>
+		<title level="m" type="main">The outsourcing of information services: transforming the nature of business in the</title>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">D</forename><surname>Clark</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">W</forename><surname>Zmud</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">E</forename><surname>Mccray</surname></persName>
+		</author>
+		<idno>KR5 .769 .087 -.094 .283 -.142 .012 -.070 .008 .713 TIC1 -.097 .226 .227 -.046 .783 .032 .153 .121 .765 TIC2 -.027 .147 .188 -.077 .807 .236 .134 -.009 .789 TIC3 .040 .228 .228 -.009 .823 .084 .108 .118 .816 TIC4 -.024 .397 .218 -.146 .632 .167 .157 .047 .681 PU1 .248 -.055 -.044 .869 -.039 .026 -.096 -.035 .834 PU2 .231 -.029 -.013 .842 -.078 .105 .005 .047 .782 PU3 .269 -.022 -.080 .837 -.075 .074 .050 -.089 .802 PU4 .209 .042 -.048 .819 -.008 .115 .006 -.102 .742 ITE1 .009 .684 .331 -.026 .337 -.020 .214 .223 .787 ITE2 -.019 .770 .322 -.024 .294 .101 .164 .086 .829 ITE3 -.072 .803 .256 .001 .228 .175 .229 .104 .861 ITE4 -7.3E-5 .810 .221 .001 .193 .156 .223 .062 .821 Eigenvalue</idno>
+		<imprint>
+			<date type="published" when="1995">1995</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title/>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Information Technology</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="221" to="237" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">The nature of the firm</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">H</forename><surname>Coase</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Economica</title>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="issue">16</biblScope>
+			<biblScope unit="page" from="386" to="405" />
+			<date type="published" when="1937">1937</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<monogr>
+		<title level="m" type="main">Multisourcing: Moving beyond outsourcing to growth and agility</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Cohen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Young</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2005">2005</date>
+			<publisher>Harvard Business School Press</publisher>
+			<pubPlace>Boston</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Knowledge management in British petroleum</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Collison</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Knowledge Management</title>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="1" to="5" />
+			<date type="published" when="1997">1997</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Analyzing four types of IT sourcing decisions in the context of scale, client/supplier interdependency and risk Mmtigation</title>
+		<author>
+			<persName><forename type="first">W</forename><forename type="middle">L</forename><surname>Currie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">P</forename><surname>Willcocks</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Journal</title>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="119" to="143" />
+			<date type="published" when="1998">1998</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">IT offshoring: history, prospects and challenges</title>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">B</forename><surname>Davis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Ein-Dor</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><forename type="middle">R</forename><surname>King</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Torkzadeh</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of the Association for Information Systems</title>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="770" to="795" />
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Information systems outsourcing: a survey and analysis of the literature</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Dibbern</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Goles</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Hirschheim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Jayatilaka</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Database</title>
+		<imprint>
+			<biblScope unit="volume">35</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="6" to="102" />
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Crowdsourcing systems on the World Wide Web</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Doan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Ramakrishnan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">Y</forename><surname>Halevy</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Communiations of the ACM</title>
+		<imprint>
+			<biblScope unit="volume">54</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="86" to="96" />
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Survey: outsourcing: a world of work</title>
+		<ptr target="http://www.economist.com/surveys/displayStory.cfm?story_id=3351416" />
+	</analytic>
+	<monogr>
+		<title level="j">The Economist</title>
+		<imprint>
+			<date type="published" when="2004-11-11">2004. November 11. July 15 2012</date>
+		</imprint>
+	</monogr>
+	<note>Economist</note>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Outsourcing in eastern Europe: the rise of nearshoring</title>
+		<ptr target="http://www.economist.com/business/PrinterFriendly.cfm?story_id=5246203" />
+	</analytic>
+	<monogr>
+		<title level="j">The Economist</title>
+		<imprint>
+			<date type="published" when="2005-12-01">2005. December 1. 25 July 2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">A resource-based view of outsourcing and its implications for organizational performance in the hotel sector</title>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">F</forename><surname>Espino-Rodríguez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">M</forename><surname>Gil-Padilla</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Tourism Management</title>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="707" to="721" />
+			<date type="published" when="2005">2005</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">From peer production to productization: a study of social enabled business exchanges in open source service networks</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Feller</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Finnegan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Fitzgerald</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="475" to="593" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Understanding the outsourcing learning curve: a longitudinal analysis of a large Australian company</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Fisher</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Hirschheim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Jacobs</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Frontiers</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="165" to="178" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<monogr>
+		<title level="m" type="main">Trust: The social virtues and the creation of prosperity</title>
+		<author>
+			<persName><forename type="first">F</forename><surname>Fukuyama</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1995">1995</date>
+			<publisher>The Free Press</publisher>
+			<pubPlace>New York</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">The dark and the bright side of co-creation: Triggers of member behavior in online innovation communities</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Gebauer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Füller</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Pezzei</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Business Research</title>
+		<imprint>
+			<biblScope unit="volume">66</biblScope>
+			<biblScope unit="issue">99</biblScope>
+			<biblScope unit="page" from="1516" to="1527" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">E-commerce: the role of familiarity and trust</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Gefen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Qmega</title>
+		<imprint>
+			<biblScope unit="volume">28</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="725" to="737" />
+			<date type="published" when="2000">2000</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">Is the world really flat? A look at offshoring at an online programming marketplace</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Gefen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Carmel</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="367" to="384" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">Structural equation modeling and regression: guidelines for research practice</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Gefen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">W</forename><surname>Straub</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">C</forename><surname>Boudreau</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Community Association Information Systems</title>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="1" to="70" />
+			<date type="published" when="2000">2000</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">The role of service level agreements in relational management of information technology outsourcing: an empirical study</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Goo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Kishore</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">R</forename><surname>Rao</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">33</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="119" to="145" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">The resource-based theory of competitive advantage: implications for strategy formulation</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">M</forename><surname>Grant</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">California Management Review</title>
+		<imprint>
+			<biblScope unit="volume">33</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="114" to="135" />
+			<date type="published" when="1991">1991</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Toward knowledge-based theory of the firm</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">M</forename><surname>Grant</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Strategic Management Journal</title>
+		<imprint>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="page" from="109" to="122" />
+			<date type="published" when="1996">1996</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">An evaluation of the impact of corporate strategy and the role of information technology on IS functional outsourcing</title>
+		<author>
+			<persName><forename type="first">V</forename><surname>Grover</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Cheon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">T C</forename><surname>Teng</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">European Journal of Information Systems</title>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="179" to="190" />
+			<date type="published" when="1994">1994</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<monogr>
+		<title level="m" type="main">Multivariate data analysis with readings</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">F</forename><surname>Hair</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">E</forename><surname>Anderson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">L</forename><surname>Tatham</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><forename type="middle">C</forename><surname>Black</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1998">1998</date>
+			<publisher>Prentice Hall</publisher>
+			<pubPlace>Englewood Cliffs</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<monogr>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">K</forename><surname>Halvey</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">H</forename><surname>Halvey</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">M</forename><surname>Melby</surname></persName>
+		</author>
+		<title level="m">Information technology outsourcing transactions: Process, strategies, and contracts</title>
+		<meeting><address><addrLine>New York</addrLine></address></meeting>
+		<imprint>
+			<publisher>John Wiley &amp; Sons</publisher>
+			<date type="published" when="1996">1996</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">The rise of crowdsourcing</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Howe</surname></persName>
+		</author>
+		<ptr target="http://www.wired.com/wired/archive/14.06/crowds.html" />
+	</analytic>
+	<monogr>
+		<title level="j">Wired</title>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="176" to="183" />
+			<date type="published" when="2006-07-15">2006. July 15, 2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<analytic>
+		<title level="a" type="main">Research report: diffusion of information systems outsourcing: a reevaluation of influence sources</title>
+		<author>
+			<persName><forename type="first">Q</forename><surname>Hu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Saunders</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Gebelt</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="288" to="301" />
+			<date type="published" when="1997">1997</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<analytic>
+		<author>
+			<persName><forename type="first">Y</forename><forename type="middle">A</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">J</forename><surname>Chung</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Lin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">R&amp;D Sourcing Strategies: Determinants and Consequences</title>
+		<imprint>
+			<date type="published" when="2009">2009</date>
+			<biblScope unit="volume">29</biblScope>
+			<biblScope unit="page" from="155" to="169" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<analytic>
+		<title level="a" type="main">Determinants of ASP choice: an integrated perspective</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Jayatilaka</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Schwarz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Hirschheim</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">European Journal of Information Systems</title>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="210" to="224" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<analytic>
+		<title level="a" type="main">Managing the human cloud</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>Kaganer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Carmel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Hirschheim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Olsen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Sloan Management Review</title>
+		<imprint>
+			<biblScope unit="page" from="23" to="32" />
+			<date type="published" when="2013">2013</date>
+			<pubPlace>Winter</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<analytic>
+		<title level="a" type="main">Aligning organizational control practices with competitive outsourcing performance</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Kang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Hong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Park</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Business Research</title>
+		<imprint>
+			<biblScope unit="volume">65</biblScope>
+			<biblScope unit="issue">8</biblScope>
+			<biblScope unit="page" from="1195" to="1201" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+	<analytic>
+		<title level="a" type="main">The information systems outsourcing bandwagon</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Lacity</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Hirschheim</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Sloan Management Review</title>
+		<imprint>
+			<biblScope unit="volume">35</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="73" to="86" />
+			<date type="published" when="1993">1993a</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b43">
+	<monogr>
+		<author>
+			<persName><forename type="first">M</forename><surname>Lacity</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Hirschheim</surname></persName>
+		</author>
+		<title level="m">Information systems outsourcing: Myths, metaphors and realities</title>
+		<meeting><address><addrLine>Chichester</addrLine></address></meeting>
+		<imprint>
+			<publisher>John Wiley &amp; Sons</publisher>
+			<date type="published" when="1993">1993b</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b44">
+	<analytic>
+		<title level="a" type="main">Interpreting information technology sourcing decisions from a transaction cost perspective: findings and critique</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Lacity</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Willcocks</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Accounting, Management and Information Technology</title>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="issue">3/4</biblScope>
+			<biblScope unit="page" from="203" to="244" />
+			<date type="published" when="1995">1995</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b45">
+	<analytic>
+		<title level="a" type="main">Transforming back offices through outsourcing</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">C</forename><surname>Lacity</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">P</forename><surname>Willcocks</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Global sourcing of business and It services</title>
+		<editor>
+			<persName><forename type="first">L</forename><forename type="middle">P</forename><surname>Willcocks</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">M</forename><forename type="middle">C</forename><surname>Lacity</surname></persName>
+		</editor>
+		<meeting><address><addrLine>Basingstoke</addrLine></address></meeting>
+		<imprint>
+			<publisher>Palgrave Macmillan</publisher>
+			<date type="published" when="2006">2006</date>
+			<biblScope unit="page" from="1" to="34" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b46">
+	<analytic>
+		<title level="a" type="main">Realizing outsourcing expectations. Incredible expectations, credible outcomes</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Lacity</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Hirschheim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Willcocks</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Management</title>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="7" to="18" />
+			<date type="published" when="1994">1994</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b47">
+	<analytic>
+		<title level="a" type="main">An integrative model of trust on IT outsourcing: examining a bilateral perspective</title>
+		<author>
+			<persName><forename type="first">J.-N</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Huynh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Hirschheim</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Frontiers</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="145" to="164" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b48">
+	<analytic>
+		<title level="a" type="main">An organizational-economic blueprint for information technology outsourcing: concepts and evidence</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Loh</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 15th International Conference on Information Systems</title>
+		<meeting>the 15th International Conference on Information Systems<address><addrLine>Vancouver, Canada</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="1994">1994</date>
+			<biblScope unit="page" from="73" to="89" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b49">
+	<analytic>
+		<title level="a" type="main">Diffusion of information technology outsourcing: influence sources and the Kodak Effect</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Loh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Venkatraman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="334" to="358" />
+			<date type="published" when="1992">1992</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b50">
+	<analytic>
+		<title level="a" type="main">Global delivery of service via online platforms: Service models, challenges and research agenda</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Lu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Q</forename><surname>Zeng</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of International Conference on Management and Service Science</title>
+		<meeting>International Conference on Management and Service Science<address><addrLine>Wuhan, China</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2011">2011</date>
+			<biblScope unit="page" from="1" to="6" />
+		</imprint>
+		<respStmt>
+			<orgName>MASS</orgName>
+		</respStmt>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b51">
+	<analytic>
+		<title level="a" type="main">The dawn of the E-lance economy</title>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">W</forename><surname>Malone</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">J</forename><surname>Laubacher</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Harvard Business Review</title>
+		<imprint>
+			<biblScope unit="volume">76</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="145" to="152" />
+			<date type="published" when="1998">1998</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b52">
+	<monogr>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">L</forename><surname>Markus</surname></persName>
+		</author>
+		<title level="m">The governance of free/open source software projects: monolithic, multidimensional, or configurational? Journal of Management and Governance</title>
+		<imprint>
+			<date type="published" when="2007">2007</date>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="page" from="151" to="163" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b53">
+	<monogr>
+		<author>
+			<persName><surname>Massolution</surname></persName>
+		</author>
+		<ptr target="http://www.lionbridge.com/files/2012/11/Lionbridge-White-Paper_The-Crowd-in-the-Cloud-final.pdf" />
+		<title level="m">The crowd in the cloud: Exploring the future of outsourcing</title>
+		<imprint>
+			<date type="published" when="2013-03">2013. March 2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b54">
+	<analytic>
+		<title level="a" type="main">Developing and validating trust measures for E-commerce: an integrative typology</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">H</forename><surname>Mcknight</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Choudhury</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Kacmar</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="334" to="359" />
+			<date type="published" when="2002">2002a</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b55">
+	<analytic>
+		<title level="a" type="main">The impact of initial consumer trust on intentions to transact with a web site: a trust building model</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">H</forename><surname>Mcknight</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Choudhury</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Kacmar</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The Journal of Strategic Information Systems</title>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="issue">3/4</biblScope>
+			<biblScope unit="page" from="297" to="323" />
+			<date type="published" when="2002">2002b</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b56">
+	<analytic>
+		<title level="a" type="main">Financial and strategic motivations behind IS outsourcing</title>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">L</forename><surname>Mclellan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">L</forename><surname>Marcolin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">W</forename><surname>Beamish</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Information Technology</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="299" to="321" />
+			<date type="published" when="1995">1995</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b57">
+	<analytic>
+		<title level="a" type="main">Global strategic linkages and industry structure</title>
+		<author>
+			<persName><forename type="first">N</forename><surname>Nohria</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Garcia-Pont</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Strategic Management Journal</title>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="issue">S1</biblScope>
+			<biblScope unit="page" from="105" to="124" />
+			<date type="published" when="1991">1991</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b58">
+	<analytic>
+		<title level="a" type="main">Microsourcing-using information technology to create unexpected work relationships and entrepreneurial opportunities</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Obal</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Communications of the Association for Information Systems</title>
+		<imprint>
+			<biblScope unit="volume">24</biblScope>
+			<biblScope unit="page" from="161" to="174" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b59">
+	<analytic>
+		<title level="a" type="main">Consumer acceptance of electronic commerce: integrating trust and risk with the technology acceptance model</title>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">A</forename><surname>Pavlou</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Electronic Commerce</title>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="69" to="103" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b60">
+	<analytic>
+		<title level="a" type="main">The nature and role of feedback text comments in online marketplaces: implications for trust building, price premiums, and seller differentiation</title>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">A</forename><surname>Pavlou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Dimoka</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<imprint>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="392" to="414" />
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b61">
+	<analytic>
+		<title level="a" type="main">Building effective online marketplaces with institution-based trust</title>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">A</forename><surname>Pavlou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Gefen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="37" to="59" />
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b62">
+	<analytic>
+		<title level="a" type="main">Understanding and mitigating uncertainty in online exchange relationships: a principal-agent perspective</title>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">A</forename><surname>Pavlou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Liang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Xue</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="105" to="136" />
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b63">
+	<analytic>
+		<title level="a" type="main">Common method biases in behavioral research: a critical review of the literature and recommended remedies</title>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">B</forename><surname>Podsakoff</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Mackenzie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">Y</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><forename type="middle">P</forename><surname>Podsakoff</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Applied Psychology</title>
+		<imprint>
+			<biblScope unit="volume">88</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="879" to="903" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b64">
+	<analytic>
+		<title level="a" type="main">The core competence of the corporation</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Prahalad</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Hamel</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Harvard Business Review</title>
+		<imprint>
+			<biblScope unit="volume">68</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="79" to="91" />
+			<date type="published" when="1990">1990</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b65">
+	<monogr>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">M</forename><surname>Ringle</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Wende</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Will</surname></persName>
+		</author>
+		<ptr target="http://www.smartpls.de" />
+		<title level="m">SmartPLS 2.0 (M3) Beta</title>
+		<meeting><address><addrLine>Hamburg</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2005">2005</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b66">
+	<monogr>
+		<title level="m" type="main">Coping with the Global Labor Arbitrage</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Roach</surname></persName>
+		</author>
+		<ptr target="http://www.morganstanley.com" />
+		<imprint>
+			<date type="published" when="2003-07-20">2003. 20 July 2012</date>
+			<publisher>Morgan Stanley Global Economic Forum</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b67">
+	<monogr>
+		<title level="m" type="main">Not so different after all: a cross-discipline view of trust</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">M</forename><surname>Rousseau</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">B</forename><surname>Sitkin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">S</forename><surname>Burt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Camerer</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1998">1998</date>
+			<publisher>Academy of Management Review</publisher>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="page" from="393" to="404" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b68">
+	<monogr>
+		<author>
+			<persName><forename type="first">R</forename><surname>Rumelt</surname></persName>
+		</author>
+		<title level="m">Strategy, structure, and economic performance</title>
+		<meeting><address><addrLine>Cambridge</addrLine></address></meeting>
+		<imprint>
+			<publisher>Harvard University Press</publisher>
+			<date type="published" when="1974">1974</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b69">
+	<analytic>
+		<title level="a" type="main">A conjoint approach to understanding IT application services outsourcing</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Schwarz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Hirschheim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Jayatilaka</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Goles</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of the Association for Information Systems</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page" from="748" to="781" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b70">
+	<analytic>
+		<title level="a" type="main">Strategic information systems planning success: an investigation of the construct and its measurement</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">H</forename><surname>Segars</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Grover</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">22</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="139" to="163" />
+			<date type="published" when="1998">1998</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b71">
+	<analytic>
+		<title level="a" type="main">Theories of the firm implications for strategy research</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Seth</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Thomas</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Management Studies</title>
+		<imprint>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="165" to="191" />
+			<date type="published" when="1994">1994</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b72">
+	<analytic>
+		<title level="a" type="main">Today&apos;s solution and tomorrow&apos;s problem: the business process outsourcing risk management puzzle</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Shi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">California Management Review</title>
+		<imprint>
+			<biblScope unit="volume">49</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="28" to="44" />
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b73">
+	<analytic>
+		<title level="a" type="main">Employment outsourcing in information systems</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Slaughter</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Ang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Communications of the ACM</title>
+		<imprint>
+			<biblScope unit="volume">39</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="47" to="54" />
+			<date type="published" when="1996">1996</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b74">
+	<monogr>
+		<author>
+			<persName><surname>Smartsheet</surname></persName>
+		</author>
+		<ptr target="http://www.smartsheet.com/paid-crowdsourcing-current-state-and-progress" />
+		<title level="m">Paid Crowdsourcing: Current State and Progress Toward Mainstream Business Use</title>
+		<imprint>
+			<date type="published" when="2009">2009. 2011</date>
+			<biblScope unit="volume">15</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b75">
+	<analytic>
+		<title level="a" type="main">Information systems outsourcing: a study of pre-event firm characteristics</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">A</forename><surname>Smith</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">A</forename><surname>Mitra</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Narasimhan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Management Information Systems</title>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="61" to="93" />
+			<date type="published" when="1998">1998</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b76">
+	<analytic>
+		<title level="a" type="main">Domestic and global outsourcing practices of America&apos;s most effective IS users</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">G</forename><surname>Sobol</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">U</forename><forename type="middle">M</forename><surname>Apte</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Information Technology</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="269" to="280" />
+			<date type="published" when="1995">1995</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b77">
+	<analytic>
+		<title level="a" type="main">Defining corporate strengths and weaknesses</title>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">H</forename><surname>Stevensen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Sloan Management Review</title>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="51" to="68" />
+			<date type="published" when="1976">1976</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b78">
+	<analytic>
+		<title level="a" type="main">Decisions to outsource information systems functions: testing a strategy-theoretic-discrepancy model</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Teng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Cheon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Grover</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Decision Sciences</title>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="75" to="103" />
+			<date type="published" when="1995">1995</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b79">
+	<analytic>
+		<title level="a" type="main">Review: the resource-based view and information systems research: review, extension and suggestions for future research</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Wade</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Hulland</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">28</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="107" to="142" />
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b80">
+	<monogr>
+		<title level="m" type="main">Market and hierarchies: Analysis and antitrust implications, a study in the economics of internal organization</title>
+		<author>
+			<persName><forename type="first">O</forename><forename type="middle">E</forename><surname>Williamson</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1975">1975</date>
+			<publisher>Free Press</publisher>
+			<pubPlace>New York</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b81">
+	<monogr>
+		<title level="m" type="main">The economic institutions of capitalism</title>
+		<author>
+			<persName><forename type="first">O</forename><forename type="middle">E</forename><surname>Williamson</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1985">1985</date>
+			<publisher>Free Press</publisher>
+			<pubPlace>New York</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b82">
+	<analytic>
+		<title level="a" type="main">Formation of strategic alliances in high-technology industries: comparative study of the resource-based theory and the transaction-cost theory</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Yasuda</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Technovation</title>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="763" to="770" />
+			<date type="published" when="2005">2005</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b83">
+	<monogr>
+		<title level="m" type="main">Baozhou Lu is an associate professor at China University of Petroleum. He earned his PhD in Information Systems from Louisiana State University. His primary research interests focus on outsourcing, online marketplaces, IT innovations and emerging technologies</title>
+		<imprint/>
+	</monogr>
+	<note>His publications appear on international conferences of Information Systems and journals</note>
+</biblStruct>
+
+<biblStruct xml:id="b84">
+	<monogr>
+		<title level="m">His PhD is in Information Systems from the University of London. He was the founding Editor of the John Wiley Series in Information Systems in 1985. He is Senior Editor for the journal Information &amp; Organization</title>
+		<imprint/>
+		<respStmt>
+			<orgName>Rudy Hirschheim is the Ourso Family Distinguished Professor of Information Systems at Louisiana State University. He previously was on the faculties of the University of Houston, the London School of Economics (University of London), and Templeton College (University of Oxford ; Information Systems Journal; Journal of Strategic Information Systems; Journal of Management Information Systems; Journal of Information Technology; Wirtschaftsinformatik/Business &amp; Information Systems Engineering; and Strategic Outsourcing</orgName>
+		</respStmt>
+	</monogr>
+	<note>and on the editorial boards of the journals</note>
+</biblStruct>
+
+<biblStruct xml:id="b85">
+	<analytic>
+		<title level="a" type="main">Andrew Schwarz is an associate professor of IS and the Milton Womack Developing Scholar in the E. J. Ourso College of Business at Louisiana State University. His research interests include acceptance of new technology, IT-business alignment, IT governance, IT outsourcing, and emerging technologies</title>
+	</analytic>
+	<monogr>
+		<title level="m">European Journal of Information Systems, and Database for Advances in Information Systems</title>
+		<imprint/>
+		<respStmt>
+			<orgName>University of Houston</orgName>
+		</respStmt>
+	</monogr>
+	<note>Journal of the AIS. among others. He earned his Ph.D. from the</note>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

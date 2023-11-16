@@ -1,0 +1,2051 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Investigating the antecedents of organizational task crowdsourcing</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+				<date type="published" when="2014-11-04">4 November 2014</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Jonathan</forename><surname>Ye</surname></persName>
+							<email>jonathan.ye@auckland.ac.nz</email>
+							<affiliation key="aff0">
+								<orgName type="department">Department of Information Systems and Operations Management</orgName>
+								<orgName type="institution">The University of Auckland</orgName>
+								<address>
+									<country key="NZ">New Zealand</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Atreyi</forename><surname>Kankanhalli</surname></persName>
+							<email>atreyi@comp.nus.e-du.sg</email>
+							<affiliation key="aff1">
+								<orgName type="department">Department of Information Systems</orgName>
+								<orgName type="institution">National University of Singapore</orgName>
+								<address>
+									<country key="SG">Singapore</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Investigating the antecedents of organizational task crowdsourcing</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date type="published" when="2014-11-04">4 November 2014</date>
+						</imprint>
+					</monogr>
+					<idno type="MD5">169820CE0F38036E000F5019BEB8E968</idno>
+					<idno type="DOI">10.1016/j.im.2014.10.007</idno>
+					<note type="submission">Received 18 May 2013 Received in revised form 6 October 2014 Accepted 12 October 2014</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.7.3" ident="GROBID" when="2023-06-16T09:23+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>Crowdsourcing Transaction cost theory Resource-based view Intention to crowdsource TaskCN</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Crowdsourcing is increasingly recognized as a potential approach to organizational task solving. However, few studies have explored and statistically tested the antecedents underlying the crowdsourcing intentions of organizations. This paper examines the antecedents of firms' crowdsourcing intentions based on transaction cost theory and the resource-based view and validates these antecedents using survey data from 161 organizations. The results indicated that the perceived benefits of cost reduction, brand visibility, and access to specialized skills positively affect firms' intention to crowdsource, while codification costs and proposal evaluation costs negatively influence firms' crowdsourcing intentions, both directly and indirectly, by diminishing perceptions of cost reduction.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.">Introduction</head><p>Crowdsourcing is a phenomenon in which an organization (i.e., seeker) recruits a large group of undefined individuals (i.e., solvers), referred to as the crowd, to work on organizational tasks via Internet-based platforms <ref type="bibr" target="#b43">[44]</ref>. As these crowds become more connected and informed <ref type="bibr" target="#b70">[71]</ref>, they can contribute their distinct expertise to solve organizational problems <ref type="bibr" target="#b43">[44,</ref><ref type="bibr" target="#b23">24]</ref>. Thus, firms are starting to leverage the wisdom of the crowd and realize the benefits of a crowdsourcing strategy <ref type="bibr" target="#b93">[94]</ref>.</p><p>This trend is evident in the emergence of crowdsourcing platforms, such as Amazon Mechanical Turk, InnoCentive, and TaskCN <ref type="bibr" target="#b49">[50,</ref><ref type="bibr" target="#b87">88]</ref>. For example, Amazon Mechanical Turk hosts more than 100,000 tasks daily. 1 TaskCN is one of the largest crowdsourcing platforms in China for performing tasks such as website development, advertisement posting, and business proposal writing. Even established market leaders such as Google and Dell have recognized the potential of crowdsourcing. In 2008, Google funded a $10 million crowdsourcing project (Project 10^100) that called for ideas from the crowd to change the world <ref type="bibr" target="#b88">[89]</ref>. Dell launched the IdeaStorm platform in 2007 to collect innovation ideas from the public <ref type="bibr" target="#b8">[9]</ref>. As of September 2014, more than 548 ideas have been implemented. 2  However, seeker firms encounter challenges in conducting crowdsourcing activities, including selecting the tasks to crowdsource and appropriately formulating these tasks to obtain satisfactory solutions. Ambiguously defined tasks can mislead solvers, resulting in the return of unsatisfactory solutions to seeker firms <ref type="bibr" target="#b1">[2,</ref><ref type="bibr" target="#b20">21]</ref>. Crowdsourcing requires that the employees of a firm work with crowdsourcing platforms to specify task requirements, provide feedback for further improvement of solvers' proposals, and select final solutions <ref type="bibr" target="#b73">[74]</ref>. For certain tasks, transferring specifications from seeker firms to solvers to allow the latter to provide solutions through crowdsourcing may be arduous <ref type="bibr" target="#b11">[12]</ref>. These activities may incur costs for seekers (e.g., in terms of employee time and effort), in opposition to the purpose of crowdsourcing, i.e., lowering the cost of solving organizational tasks. Thus, there is a need to examine and understand the costs that firms may perceive when deciding to crowdsource tasks.</p><p>Prior research in this area <ref type="bibr" target="#b11">[12,</ref><ref type="bibr" target="#b71">72]</ref> has primarily examined the factors that motivate firms to crowdsource tasks through conceptual or case studies. In a conceptual paper, Schenk and Guittard <ref type="bibr" target="#b71">[72]</ref> proposed that crowdsourcing enables firms to mobilize external competencies for internal tasks at lower cost.</p><p>A descriptive study of Mechanical Turk <ref type="bibr" target="#b51">[52]</ref> suggested that crowdsourcing can be a less expensive way to solve firms' problems and a viable approach to obtain creative solutions. However, previous research on seekers' crowdsourcing behavior has consisted mainly of conceptual <ref type="bibr" target="#b11">[12,</ref><ref type="bibr" target="#b71">72]</ref> or case studies <ref type="bibr" target="#b51">[52,</ref><ref type="bibr" target="#b86">87]</ref> proposing the benefits of crowdsourcing for seekers. Thus, there is an absence of theoretically driven empirical research to explain the antecedents (including the costs) of seeker participation in crowdsourcing (for a thorough review, see <ref type="bibr" target="#b90">[91]</ref>). These research gaps are the motivation for this study.</p><p>This paper aims to address this knowledge gap by developing a model to answer the following research question: what drives (or inhibits) firms to crowdsource internal tasks? Drawing on the resource-based view and transaction cost theory, a contextspecific model was developed to explain seeker firms' intention to crowdsource. The model proposes perceived obtainable resources that enhance firms' intention to crowdsource and costs that reduce their intention to crowdsource. The model is tested using a field survey of 161 seeker firms in TaskCN, one of the largest crowdsourcing platforms in China. The results are expected to contribute to research and practice by further elucidating the determinants of a firm's intention to crowdsource internal tasks.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.">Conceptual background</head><p>This section reviews and identifies theories, i.e., the resourcebased view and transaction cost theory, that could shed light on a firm's intention to crowdsource. Informed by these theories and the related literature, relevant constructs for the model are subsequently conceptualized.</p><p>Similarities have been noted between crowdsourcing and outsourcing <ref type="bibr" target="#b1">[2,</ref><ref type="bibr" target="#b71">72]</ref>; both employ external talents to work on organizational tasks. For both strategies, the process of managing external parties and the final outcomes are subject to uncertainty. Given these similarities, the theories applied in the outsourcing literature could be applicable in the context of crowdsourcing <ref type="bibr" target="#b71">[72]</ref>. Thus, we review theories employed in the outsourcing literature and examine their relevance to understanding crowdsourcing behavior. Three broad perspectives have been commonly used to explain the determinants of outsourcing: strategic, economic, and relational <ref type="bibr" target="#b40">[41]</ref>. The strategic perspective concerns the strategies organizations formulate for outsourcing and how they allocate resources to pursue these strategies and obtain desirable performance. This perspective includes lenses such as the resource-based view <ref type="bibr" target="#b6">[7]</ref>, the knowledge-based view <ref type="bibr" target="#b32">[33]</ref>, resource-dependency theory <ref type="bibr" target="#b61">[62]</ref>, firm strategy theory <ref type="bibr" target="#b69">[70]</ref>, and game theory <ref type="bibr" target="#b82">[83]</ref>. The economic perspective is related to the strategic view and considers how the benefits of outsourcing can be achieved efficiently with minimal costs. This perspective includes lenses, such as transaction cost theory <ref type="bibr" target="#b15">[16]</ref>, agency theory <ref type="bibr" target="#b22">[23]</ref>, and incomplete contracts theory <ref type="bibr" target="#b38">[39]</ref>. The relational perspective focuses on how organizations develop relationships with external partners and the implications of these relationships for outsourcing <ref type="bibr" target="#b19">[20]</ref>. The relational perspective includes lenses such as social exchange theory <ref type="bibr" target="#b9">[10]</ref>, social capital theory <ref type="bibr" target="#b58">[59]</ref>, and institutional theory <ref type="bibr" target="#b65">[66]</ref>.</p><p>Crowdsourcing is considered both a strategic and an economic choice for organizations <ref type="bibr" target="#b86">[87]</ref>. Firms must weigh strategic and economic benefits against costs before deciding to engage in crowdsourcing activities. Thus, we consider the strategic and economic perspectives relevant to this study. Further, in the context of crowdsourcing, the relationship between solvers and seekers is transaction-based and short term <ref type="bibr" target="#b86">[87,</ref><ref type="bibr" target="#b78">79]</ref>. Seekers may not be able to form a relationship with particular solvers because there are usually a large number of solvers for each task and the same solvers may not participate across tasks. <ref type="foot" target="#foot_0">3</ref> Therefore, compared to the strategic and economic perspectives, the relational perspective may be less relevant in this context (cf. <ref type="bibr" target="#b78">[79]</ref>). Crowdsourcing involves leveraging the crowd to solve organizational problems rather than solving them internally <ref type="bibr" target="#b43">[44]</ref> and is therefore similar to a firm's decision to make vs. buy. Among the theories under the economic perspective, transaction cost theory concerns the decisions of organizations to buy particular products/services from external sources or produce them internally <ref type="bibr" target="#b85">[86]</ref>. Thus, we consider it appropriate to include costs in our model.</p><p>In addition, crowdsourcing serves as a means for firms to access resources that are unavailable within the organization <ref type="bibr" target="#b53">[54]</ref> and to obtain novel solutions from the crowd <ref type="bibr" target="#b11">[12,</ref><ref type="bibr" target="#b71">72]</ref>. Given these characteristics, we consider the resource-based view a suitable theoretical lens to understand a firm's crowdsourcing decision because it posits that a firm will look to external sources for resources that are lacking internally <ref type="bibr" target="#b6">[7]</ref>. As a complementary lens, the resource-based view (RBV) together with transaction cost theory is used here to explain a seeker's intention to crowdsource.</p><p>However, several characteristics differentiate crowdsourcing from outsourcing. First, crowdsourcing aims to recruit undefined individuals to work on organizational tasks <ref type="bibr" target="#b43">[44]</ref> rather than recruit selected external vendors in outsourcing. All solvers in the crowdsourcing platform are invited to tackle problems through an open call, in contrast to outsourcing, providing an opportunity for firms to advertise their brands <ref type="bibr" target="#b56">[57]</ref> (e.g., brand visibility). Second, the quality of solutions obtained from crowdsourcing is less susceptible to control or guarantee than outsourcing. Solvers in crowdsourcing platforms may not be specialized in a particular area, and some solutions, even if novel, may be difficult to implement <ref type="bibr" target="#b64">[65]</ref>. By contrast, in outsourcing, the firm can carefully monitor the development and implementation of the solution to ensure desired quality. Third, in general, multiple solution providers simultaneously work on the same task in crowdsourcing (e.g., solution diversity) but not outsourcing. As a result, firms have more choices of solutions in crowdsourcing and need to expend resources to select the best solution (e.g., proposal evaluation cost). Overall, these differences indicate that firm crowdsourcing requires investigation in its own right. In this study, we have adapted the theories used in the outsourcing literature to crowdsourcing by theorizing the effects of context specific factors (i.e., solution diversity, brand visibility, and proposal evaluation cost), which will be explained next.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.1.">Transaction and production costs in crowdsourcing</head><p>Transaction cost theory (TCT), which was initially developed by Coase <ref type="bibr" target="#b15">[16]</ref> and extended by Williamson <ref type="bibr" target="#b85">[86,</ref><ref type="bibr" target="#b84">85]</ref>, is mainly used to identify the conditions under which firms will decide whether to perform certain tasks internally (e.g., make a product or service) or let them be performed by the market (buy). It argues that these decisions are made by balancing two types of costs, production costs and transaction costs, to achieve efficiency, which is important for organizations to sustain competitive advantage in the market <ref type="bibr" target="#b84">[85]</ref>. Production costs are the costs required to make a product or provide a service, such as the cost of capital, labor, and materials. Transaction costs are the coordination costs for the activity, such as searching and planning, information communication, negotiating and process monitoring, and performance evaluation. TCT proposes that firms should perform tasks internally when transactions costs exceed external production savings and outsource tasks when internal production costs are high and present comparative disadvantage <ref type="bibr" target="#b54">[55]</ref>.</p><p>Transaction costs are proposed to depend on various contingencies, such as asset specificity and uncertainty <ref type="bibr" target="#b85">[86]</ref>. Asset specificity refers to durable investments that are undertaken in support of particular transactions, the opportunity cost of which investment is much lower in best alternative uses or by alternative users <ref type="bibr" target="#b85">[86]</ref>. The party who has invested in the asset will incur a loss if the party who has not invested withdraws from the transaction. Transactions that are supported by high asset specificity should be governed by hierarchical structures (make internally), whereas transactions that require only general-purpose investments are most efficiently conducted over markets (buy). Uncertainty refers to the cost associated with unexpected outcomes and information asymmetry <ref type="bibr" target="#b54">[55]</ref>. Greater uncertainty of a transaction generally implies a higher transaction cost, indicating that the activity should be conducted internally. This premise has been supported by empirical findings that projects with lower uncertainty are outsourced (e.g., <ref type="bibr" target="#b5">[6,</ref><ref type="bibr" target="#b31">32]</ref>).</p><p>In the context of crowdsourcing, seeker firms are also concerned about the costs of solving their tasks. When making decisions about crowdsourcing, firms consider the efficiency of the decision, i.e., whether production costs are saved and transaction costs are outweighed by the benefits of crowdsourcing. Specifically, the price paid to solve the task in crowdsourcing is the production cost for the seeker. Overall, firms want to ensure that crowdsourcing results in cost reduction. Therefore, we include cost reduction as a salient motivator of intention to crowdsource in our model. In addition, transaction costs are incurred during crowdsourcing due to asset specificity and uncertainty. In crowdsourcing, asset specificity is manifested in the form of codification costs. Specifically, firms must expend time and effort to transfer contextual knowledge related to the tasks through careful task requirement codification. We term this codification cost, which is tied to the transaction. Codification cost is incurred in support of the transaction and is an opportunity cost if firms fail to obtain satisfactory solutions from crowdsourcing. Furthermore, because uncertainty exists regarding the quality of solutions obtained from crowdsourcing <ref type="bibr" target="#b66">[67]</ref>, firms may need to expend time and effort to evaluate the proposals from solvers and select winners <ref type="bibr" target="#b1">[2]</ref>. We refer to this cost as the proposal evaluation cost. Therefore, deriving from TCT and the related literature, we identify and include cost reduction, codification cost, and proposal evaluation cost as antecedents of intention to crowdsource in our model.</p><p>While TCT is theoretically and empirically useful, it has been criticized by strategic management researchers <ref type="bibr" target="#b25">[26]</ref>. One salient criticism of TCT is that it neglects differential capabilities of firms, i.e., firm heterogeneity <ref type="bibr" target="#b52">[53]</ref>. Under the assumption of bounded rationality (as also acknowledged in TCT), the RBV argues that the differential capabilities and resources of firms result in different production costs and that such cost differences influence a firm's decision to make or buy <ref type="bibr" target="#b6">[7]</ref>. Thus, firms may internalize activities because they can conduct these activities in a more production (not transaction) cost-efficient way than other firms <ref type="bibr" target="#b25">[26]</ref> and buy if needed resources are unavailable within the firm. Therefore, the RBV can complement TCT in explaining a firm's decision to make or buy, and we use these theories in concert in our model to explain a seeker's intention to crowdsource.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.2.">Resources in crowdsourcing</head><p>The resource-based view (RBV) argues that valuable resources determine firm performance and competitive advantage in the market <ref type="bibr" target="#b6">[7,</ref><ref type="bibr" target="#b60">61]</ref>. According to this theory <ref type="bibr" target="#b6">[7]</ref>, resources include assets, firm attributes, and information that can contribute to the enhancement of the efficiency and effectiveness of firms' strategies. Valuable resources are neither perfectly imitable nor substitutable without great effort. Thus, sustained competitive advantage can be achieved when firms are able to protect against resource imitation, transfer, or substitution.</p><p>The value creation capability of different resources affects the boundary decisions of a firm <ref type="bibr" target="#b60">[61,</ref><ref type="bibr" target="#b76">77]</ref>. Firms will attempt to retain activities in-house that take advantage of their strategic resources. Outsourcing these activities would deprive organizations of their competitive advantage and subsequent abnormal returns <ref type="bibr" target="#b21">[22]</ref>. However, when needed resources are not available for the activities, firms will look to alternative sources <ref type="bibr" target="#b14">[15,</ref><ref type="bibr" target="#b16">17]</ref>. This phenomenon forms the basis for applying the RBV to examine outsourcing decisions in previous studies (e.g., <ref type="bibr" target="#b3">[4,</ref><ref type="bibr" target="#b30">31,</ref><ref type="bibr" target="#b36">37,</ref><ref type="bibr" target="#b67">68]</ref>).</p><p>In the context of our study, we expect that firms will crowdsource if it provides access to certain beneficial resources that are unavailable internally. A valuable resource that firms can access through crowdsourcing is brand visibility, i.e., a reputational resource (cf. <ref type="bibr" target="#b57">[58]</ref>). It has been noted that firms may be able to use the crowdsourcing website as a platform to promote the awareness of their brand <ref type="bibr" target="#b86">[87]</ref>. In addition, open sourcing can potentially increase customer familiarity with the firm's brand and lead them to accept the brand <ref type="bibr" target="#b2">[3]</ref>. Additional knowledge-based resources that seekers can access through crowdsourcing are explained using the resource-based view.</p><p>According to the RBV, we expect that firms will consider crowdsourcing if it can fill the gap between the knowledge resources required for solving tasks and the resources available in the firm. The knowledge resources can occur in the form of specialized skills for task solution <ref type="bibr" target="#b11">[12,</ref><ref type="bibr" target="#b71">72]</ref> as well as heterogeneity in solutions from a crowd <ref type="bibr" target="#b51">[52,</ref><ref type="bibr" target="#b64">65]</ref>. Because crowdsourcing can provide firms access to specialists in various fields, we term this benefit access to specialized skills. We term the perceived benefit that crowdsourcing may provide firms with heterogeneous ideas as solution diversity. In sum, we include the constructs of access to specialized skills, solution diversity, and brand visibility in our model as drivers of a seeker's intention to crowdsource.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.">Research model and hypotheses</head><p>As discussed above, we consider both production-and transaction cost-related factors, i.e., cost reduction, codification cost, and proposal evaluation cost, as well as resources accessible through crowdsourcing, i.e., brand visibility, access to specialized skills, and solution diversity, as antecedents of a seeker's intention to crowdsource in our model (see Fig. <ref type="figure" target="#fig_0">1</ref>). Beyond direct effects, we also hypothesize that codification costs and proposal evaluation costs will indirectly impact the dependent variable by diminishing the perceived cost reduction associated with crowdsourcing. In this study, brand visibility refers to the extent to which seekers believe that their brands or products will be seen and made aware to a large audience through crowdsourcing. The marketing literature suggests that for an unknown brand, building the brand's knowledge in consumers' minds is a crucial task for a firm <ref type="bibr" target="#b12">[13,</ref><ref type="bibr" target="#b75">76]</ref>. Because consumers have limited cognitive capacity and memory for brands <ref type="bibr" target="#b29">[30]</ref>, they tend to purchase products from familiar brands <ref type="bibr" target="#b75">[76]</ref>. The exposure of product information to potential consumers should improve brand familiarity and thus increase purchases <ref type="bibr" target="#b12">[13]</ref>. For example, when users are involved in designing a particular product, they are more familiar with and likely to buy it <ref type="bibr" target="#b26">[27,</ref><ref type="bibr" target="#b81">82]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Cod ification Cost</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Proposal</head><p>In the context of our study, seeker firms can expect that solvers who perform tasks for the firms in crowdsourcing platforms will be more likely to become aware of and possibly purchase their products/services <ref type="bibr" target="#b92">[93]</ref>. Firms believe that the more people are involved in solving tasks for a firm, the more likely they will be able to form an impression about the firm and have a better awareness of their brand <ref type="bibr" target="#b56">[57]</ref>. As suggested in the marketing literature, brand image and brand visibility are reputational resources for organizational long-term success <ref type="bibr" target="#b57">[58,</ref><ref type="bibr" target="#b0">1,</ref><ref type="bibr" target="#b44">45]</ref>. Because firms believe that crowdsourcing will allow them to reach a large pool of potential solvers and increase brand visibility, according to the RBV, firms may adopt crowdsourcing to acquire the resource (brand visibility) to perform. Following the discussion above, the expected brand visibility could increase a seeker's intention to crowdsource. Thus, we hypothesize the following: H1. Brand visibility positively affects a seeker's intention to crowdsource.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2.">Access to specialized skills</head><p>We define access to specialized skills as the extent to which firms expect to acquire knowledge or skills related to specific domains through crowdsourcing. Firms can obtain access to a broader range of knowledge, skills, abilities, and opinions through crowdsourcing <ref type="bibr" target="#b72">[73,</ref><ref type="bibr" target="#b74">75]</ref>. By leveraging the specialized knowledge and skills of the crowd, firms should be able to tackle internal tasks more effectively. For example, Wilogo taps approximately 13,000 logo design talents to work on tasks proposed by seekers. Through this platform, seekers can approach skilled workers around the world and invite them to design specialized and potentially valuable logos that cannot be obtained from internal employees. Based on a case study in the SAP community, Leimeister et al. <ref type="bibr" target="#b53">[54]</ref> suggested that firms could obtain better access to experts through crowdsourcing.</p><p>In general, crowdsourcing can allow seeker firms to access the crowd's specialized abilities, which may be unavailable internally, to effectively solve their tasks. As per the RBV, the gap between the knowledge required for task solving and the knowledge available leads firms to believe that they can acquire knowledge externally <ref type="bibr" target="#b60">[61]</ref>, e.g., through crowdsourcing. Therefore, we expect the following:</p><p>H2. Access to specialized skills positively affects a seeker's intention to crowdsource.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.3.">Solution diversity</head><p>In this study, solution diversity refers to a seeker firm's perception of the range of different solutions proposed by solvers in crowdsourcing. The basic premise of crowdsourcing is to tap the wisdom of crowds <ref type="bibr" target="#b43">[44]</ref>. The heterogeneous skills and knowledge of solvers will contribute to the diversity and innovativeness of solutions obtained from crowdsourcing <ref type="bibr" target="#b8">[9]</ref>. The crowd may provide more diverse and novel ideas for problem solving than the relatively homogeneous professional employees in seeker firms <ref type="bibr" target="#b74">[75]</ref>. For example, in an experiment involving the design of new products for babies <ref type="bibr" target="#b64">[65]</ref>, external solvers generated ideas of significantly higher novelty than employees in the firm.</p><p>This potential solution diversity provides firms with more choices for solving their problems <ref type="bibr" target="#b43">[44,</ref><ref type="bibr" target="#b92">93]</ref>, greater potential for innovation <ref type="bibr" target="#b13">[14]</ref>, and more resources for organizational performance <ref type="bibr" target="#b17">[18]</ref>. We argue that these choices will make seeker firms believe they have control of and are satisfied with crowdsourcing. In addition, diverse perspectives from the crowd can allow firms to better understand their needs, reduce the cost of identifying multiple possibilities, and find the best-fit solution. These are invisible resources for organizational superior performance <ref type="bibr" target="#b44">[45]</ref>. Thus, as per the RBV, the potential benefit of solution diversity should motivate firms to crowdsource tasks. We propose the following: H3. Solution diversity positively affects a seeker's intention to crowdsource.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.4.">Cost reduction</head><p>We define cost reduction as the perceived cost savings to seeker firms of solving tasks externally through crowdsourcing rather than internally. Cost reduction is a key strategy by which firms improve profitability and maintain competitiveness in the market <ref type="bibr" target="#b15">[16]</ref> and has been found to positively impact a firm's decision to outsource <ref type="bibr" target="#b19">[20]</ref>.</p><p>It has been suggested that solving tasks through crowdsourcing can reduce costs <ref type="bibr" target="#b43">[44,</ref><ref type="bibr" target="#b11">12]</ref>. Although solvers must be compensated, Brabham's <ref type="bibr" target="#b10">[11]</ref> case study of iStockPhoto found that the cost of crowdsourcing was usually lower than that of solving the task internally. Furthermore, an experimental study <ref type="bibr" target="#b42">[43]</ref> reported that firms only need to pay a median wage of USD 1.38/h to workers in Amazon Mechanical Turk. If seeker firms perceive a cost advantage of crowdsourcing (lower production cost), as per TCT <ref type="bibr" target="#b85">[86]</ref>, this advantage should motivate them to crowdsource. Thus, we expect that the perception of cost reduction through crowdsourcing will enhance a firm's intention to adopt this approach. Therefore, we hypothesize the following: H4. Cost reduction positively affects a seeker's intention to crowdsource.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.5.">Codification cost</head><p>Various costs arise for seekers from activities in the crowdsourcing process <ref type="bibr" target="#b1">[2]</ref>. In addition to the economic cost of rewarding solvers, we propose that transferring specific knowledge to solvers through clear codification of task requirements is a cost incurred by firms <ref type="bibr" target="#b1">[2]</ref>. We define codification cost as the cost to the seeker to codify and describe tasks clearly in crowdsourcing. The codification cost includes the time and effort required to transform the tacit knowledge of the task requirements into explicit information to enable solvers to understand the types of solutions expected.</p><p>Clearly defined tasks may produce better solutions from the crowd by reducing the likelihood of irrelevant submissions <ref type="bibr" target="#b74">[75]</ref>. In addition, clear task requirements reduce the potential for conflicts between solvers and seekers about solutions that were not selected. However, to clearly define and codify tasks, firms may need to expend both time and effort, i.e., codification costs. The previous literature on knowledge contribution has revealed that individuals will refuse to share knowledge if this action requires a high codification cost <ref type="bibr" target="#b48">[49]</ref>.</p><p>Some tasks require more time and effort for codification if substantial tacit knowledge must be transformed into explicit knowledge. This time and effort could become a sunk cost if firms fail to obtain satisfactory results from crowdsourcing. Thus, as per TCT, a high perceived codification cost indicates a high perceived transaction cost for crowdsourcing <ref type="bibr" target="#b1">[2]</ref>, which should inhibit firms from adopting the crowdsourcing strategy. Hence, H5. Codification cost negatively affects a seeker's intention to crowdsource.</p><p>The codification cost incurred in crowdsourcing may make firms perceive that crowdsourcing for task solving is not cost-effective. In this sense, codification costs will decrease a firm's perception of cost reduction in crowdsourcing <ref type="bibr" target="#b1">[2]</ref>. As per TCT, asset specificity will increase the perception of transaction costs, which will decrease the intention of the target behavior <ref type="bibr" target="#b84">[85,</ref><ref type="bibr" target="#b54">55]</ref>. Thus, codification costs should decrease the overall perception of cost reduction as well as behavioral intention. Therefore, we expect the following: H6. Codification cost negatively affects cost reduction.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.6.">Proposal evaluation cost</head><p>We define proposal evaluation cost as the cost associated with assessing submissions and selecting the winners from all solutions obtained from crowdsourcing. An advantage of crowdsourcing is its ability to attract a large number of problem solvers and ideas through an open call <ref type="bibr" target="#b43">[44]</ref>. However, this large number of problem solvers and ideas incurs the cost of screening and evaluating these submissions <ref type="bibr" target="#b1">[2]</ref>. When a number of proposals are obtained from solvers, seekers believe that they will need to expend considerable time and effort in evaluating those proposals <ref type="bibr" target="#b62">[63]</ref>. Given the uncertainty in solution quality, proposal evaluation costs could be a transaction risk or an opportunity cost of solving tasks via crowdsourcing. The transaction risk may become salient to firms when they do not receive a satisfactory submission <ref type="bibr" target="#b89">[90]</ref>. If it is costly to evaluate these proposals (high transaction risk), firms may prefer to solve tasks internally to reduce the transaction cost. As per TCT <ref type="bibr" target="#b85">[86]</ref>, a high perceived proposal evaluation cost will decrease the attractiveness of crowdsourcing for seeker firms. Thus, we expect the following: H7. Proposal evaluation cost negatively affects a seeker's intention to crowdsource.</p><p>As discussed above, the incurred or expected proposal evaluation cost will add to the overall costs of crowdsourcing. Thus, the proposal evaluation cost should decrease the perception of cost reduction of task solving through crowdsourcing. Further, if the solution is highly specific to the firm's application, only the firm can evaluate it. This will further decrease a firm's perception of cost reduction <ref type="bibr" target="#b1">[2]</ref>. Therefore, we expect the following H8. Proposal evaluation cost negatively affects cost reduction.</p><p>As explained later in Section 4.3, we also include various control variables in our model because they may partially explain the dependent variable.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.">Research methodology</head><p>Survey methodology was employed to test the research model. The survey was conducted in TaskCN.com, one of the most popular and established crowdsourcing websites in China. By the end of September 2014, TaskCN had more than 3.4 million registered solvers and 56 thousand tasks. <ref type="foot" target="#foot_1">4</ref> In contrast to other crowdsourcing platforms, e.g., InnoCentive, solvers in TaskCN interact with crowdsourcing companies to receive additional information via the public online community, private email, or instant messaging <ref type="bibr" target="#b92">[93]</ref>. In this context, the company often delivers feedback, including brand-related information, to solvers.</p><p>This platform has been recognized as successful for facilitating solutions of a variety of tasks and has received extensive attention from the media in China as well as researchers <ref type="bibr" target="#b87">[88,</ref><ref type="bibr" target="#b88">89,</ref><ref type="bibr" target="#b86">87]</ref>. The selection of this platform provides a sufficiently large pool of solvers to test our models. In addition, the availability of previous studies on this platform enables a cumulation of research in this area.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.1.">Instrument development</head><p>Because all the construct items in our model were adapted from their original source to the study context, we conducted a systematic procedure of instrument development <ref type="bibr" target="#b18">[19]</ref>. First, items for each construct were generated based on the previous literature and refined through interviews with seekers. Second, all items for each construct were validated through unlabeled and labeled sorting exercises. In the two rounds of item sorting, the survey instrument had a high Kappa score, agreement level, and hit ratio, i.e., greater than 0.8, suggesting sufficient construct validity <ref type="bibr" target="#b45">[46]</ref>. Finally, prior to the main survey, the instrument was pilot tested with another similar Chinese crowdsourcing website, Zhubajie.com. The final instrument is shown in Table <ref type="table" target="#tab_0">1</ref>. All constructs were reflective, and the items were scored on a 7-point Likert scale anchored from Strongly Disagree to Strongly Agree.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.2.">Control variables</head><p>To rule out confounding effects of differences in seeker firm and task characteristics, we also include them as controls in the model that may affect the intention to crowdsource. These variables include a seeker's firm age, firm size, previous experience, task type crowdsourced, and industry. For instance, smaller and younger firms may be more likely to crowdsource because they lack resources to solve tasks internally and are more concerned with costs <ref type="bibr" target="#b20">[21,</ref><ref type="bibr" target="#b33">34]</ref>. A firm's age is measured by the years elapsed since its foundation, while firm size refers to the number of employees. Industry is classified by the type of products or services the firm provides. The type of industry was coded as dummy variables in the model. Previous experience refers to whether the firm has crowdsourced task(s) to the platform previously. Previous experience is coded as a dummy variable with a value of 0 if the firm has not crowdsourced a task before and 1 otherwise. Task type was coded as dummy variables in the model. The demographic information about the respondent firms is listed in Table <ref type="table">2</ref>. Among 112 firms crowdsourced in TaskCN, each crowdsourced an average of 1.21 tasks in TaskCN (Min = 1 task, Max = 4 tasks, STD. = 0.72). Only one firm has proposed two types of tasks, i.e., logo design and laborious tasks.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.3.">Data collection</head><p>To survey the seeker firms in TaskCN, we obtained a list of registered firms with the assistance of a TaskCN website administrator and randomly selected 500 seekers from the list. We invited these seekers to participate in the survey via email. As a token of appreciation for their participation, a $10 voucher was given to respondents. A total of 161 valid responses were received, representing a 32.2% response rate. The respondents included project managers (20.5%), IT managers (17.4%), individual entrepreneurs (37.3%), systems analyst (9.3%), system developers (7.5%), and sales supervisors (8.1%) in charge of the crowdsourcing activities for their respective firms. We verified with the website administrator that this distribution of respondents was representative of the seeker population on the platform.</p><p>Because a web-based survey design may suffer from nonresponse bias <ref type="bibr" target="#b68">[69]</ref>, we tested for such bias by comparing the early and late respondents <ref type="bibr" target="#b4">[5]</ref>. T-tests of demographic differences between the earliest 10% respondents and the last 10% respondents revealed no systematic difference. Thus, non-response bias is not expected in this study. We also conducted a Chow's test to check sample homogeneity (Chow 1960). Our results supported sample homogeneity, F(6, 142) = 1.65, p &gt; 0.05, indicated that different groups of respondents did not answer the questions differently.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.">Data analysis and results</head><p>For this study, structural equation modeling (SEM) was chosen to simultaneously analyze all paths among latent variables in one analysis <ref type="bibr" target="#b28">[29]</ref>. Within SEM, Partial Least Squares (PLS) was chosen over co-variance-based SEM because single-item constructs (e.g., control variables) are included in the model, which could result in a low model fit in co-variance based SEM. SmartPLS 2.0 software was used to conduct the statistical analyses. All constructs in the model were measured using reflective indicators.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.1.">Instrument validity</head><p>To validate our instrument, convergent and discriminant validity tests were conducted <ref type="bibr" target="#b34">[35]</ref>. We assessed convergent validity by examining Cronbach's a (CA), composite reliability (CR), average extracted variance (AVE), and factor analysis results <ref type="bibr" target="#b77">[78]</ref>. The factor analysis results are shown in Table <ref type="table" target="#tab_1">3</ref>; the factor loading of each item on its own construct was greater than 0.7, as desired. The results in Table <ref type="table" target="#tab_2">4</ref> demonstrate that each reflective construct in the model has values of CA and CR greater than 0.7 and a value of AVE greater than 0.5. Thus, all constructs satisfied the criteria, demonstrating sufficient convergent validity <ref type="bibr" target="#b34">[35]</ref>. Discriminant validity was assessed by examining the indicatorfactor loadings and comparing the square root of AVEs with interconstruct correlations <ref type="bibr" target="#b27">[28]</ref>. The results in Table <ref type="table" target="#tab_1">3</ref> show that all indicators loaded more strongly on their corresponding constructs than on other constructs in the model. The results in Table <ref type="table" target="#tab_2">4</ref> demonstrate that the square root of AVE was larger than the interconstruct correlations. Thus, the constructs demonstrate adequate discriminant validity.</p><p>Because the data were collected from a single source, we tested for common method bias. For this purpose, Harman's single-factor test was conducted by performing an exploratory factor analysis with all variables included <ref type="bibr" target="#b63">[64]</ref>. The factor analysis produced neither a single factor nor one general factor that accounted for the majority of the variance (21.86% &lt; 50%), as desired. We further included a common method factor in the structural regression model <ref type="bibr" target="#b63">[64]</ref> using a PLS approach documented in the literature <ref type="bibr" target="#b55">[56,</ref><ref type="bibr" target="#b83">84]</ref>. Additional details and the results are reported in Table <ref type="table" target="#tab_0">A1</ref> in the Appendix. The analysis results show that only 5 of the 30 paths from the common method factor were significant, providing further evidence that the study results were not affected by common method bias.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.2.">Results of hypothesis testing</head><p>After validating the measurement model as reported in the previous section, the path (structural) model was tested using SmartPLS 2.0 software. The bootstrapping approach was used, with cases of 161 and samples of 5000 <ref type="bibr" target="#b35">[36]</ref>.</p><p>The hypothesis testing results are shown in Table <ref type="table" target="#tab_3">5</ref>. The path coefficients of the model are shown in Fig. <ref type="figure" target="#fig_1">2</ref> (the coefficients of the control variables are not included and can be found in Table <ref type="table" target="#tab_3">5</ref>). As shown in Table <ref type="table" target="#tab_3">5</ref>, the model explains 47% of the variance in seekers' intention to crowdsource, indicating an acceptable predictive capability of our model in explaining the dependent variable. As expected, cost reduction, brand visibility, and access to specialized skills are positively related to a seeker firm's intention to crowdsource (H1, H2, and H4 are supported), while codification cost and proposal evaluation cost are negatively related to the dependent variable (H5 and H7 are supported). Codification cost and proposal evaluation cost have significant negative impacts on cost reduction, indicating that H6 and H8 are supported. Contrary to our prediction, solution diversity has no impact on a firm's intention to crowdsource (H3 not supported), possibly due to the nature of the crowdsourced tasks in our sample. The crowdsourced tasks may not have required high creativity to solve, and thus the firms did not consider solution diversity an important driver for crowdsourcing. Among the control variables, firm age (marginally) and education industry were positively related to seeker firms' intention to crowdsource. This suggests that older firms tend to have a higher intention to crowdsource and that firms in the education industry are more likely to crowdsource their tasks than those in traditional services industries (the baseline).</p><p>We also conducted the Sobel test to examine the mediation effects of cost reduction for codification and proposal evaluation costs following <ref type="bibr" target="#b7">[8]</ref> method. Two additional PLS models were evaluated: one containing only direct paths from the independent variables to the mediator and one containing paths from both independent variables and the mediator to the dependent variable. As indicated in Table <ref type="table" target="#tab_4">6</ref>, cost reduction partially mediates the relationship between codification cost and intention to crowdsource as well as between proposal evaluation cost and the dependent variable.</p><p>We also tested the mediation effects following <ref type="bibr" target="#b39">[40]</ref> bootstrapping method, as shown in Table <ref type="table" target="#tab_5">7</ref>. The bootstrapping b for the mediating effect of the relationship between codification cost and intention to crowdsource was À0.07 (CI = À0.13 to À0.03), while the value for the relationship between proposal evaluation cost and intention to crowdsource was À0.05 (CI = À0.10 to À0.04). The value of 0 was not included in the 95% confidence interval for both mediating b. These results are consistent with those shown in Table <ref type="table" target="#tab_4">6</ref>. Therefore, the mediation effects of cost reduction are further confirmed.   </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.3.">Post hoc analysis</head><p>Because the surveyed seeker firms included those who have crowdsourced a task to TaskCN in the past and those who have not, this study post hoc tested for a difference in the antecedents of future intention to crowdsource between the two groups of seeker firms. Of the 161 firms in our sample, 49 seeker firms have registered but have not submitted a task in TaskCN (inexperienced seeker firms), while 112 seeker firms have prior experience in crowdsourcing through TaskCN (experienced seeker firms). We split the sample into these two groups and tested the hypotheses separately for each group. The approach of Keil et al. <ref type="bibr" target="#b50">[51]</ref> was adopted to statistically compare the corresponding path coefficients for the two groups and compute the T-values shown in Table <ref type="table" target="#tab_6">8</ref>.</p><p>Table <ref type="table" target="#tab_6">8</ref> shows that significant differences exist between inexperienced and experienced seeker firms in the antecedents of intention to crowdsource. Inexperienced seekers pay more attention to cost reduction, codification cost and proposal evaluation cost, while experienced seeker firms give more importance to brand visibility and access to specialized skills. We did not compare the coefficients for solution diversity because neither was significant.</p><p>The differences between the two groups could be due to changes in beliefs as seekers gain experience with crowdsourcing. According to the belief-adjustment model <ref type="bibr" target="#b41">[42]</ref>, people revise their beliefs over time. Specifically, they will first develop a general perception of an action. Their beliefs will then be revised as new information is received. Positive information will result in a relatively small increase in the strength of current beliefs, while negative information will result in a considerable decrease in the strength of existing beliefs. Similar arguments are found in cognitive dissonance theory <ref type="bibr" target="#b24">[25]</ref>; as individuals gain first-hand experience, they evaluate the extent to which their initial cognition (or beliefs) is consonant or dissonant with actual experience and revise their cognition or behavior to achieve greater consonance.</p><p>In the context of our study, seekers have a general perception of crowdsourcing before their participation. Their beliefs will be revised based on their actual experience and information gained from crowdsourcing. Seekers will evaluate whether their initial cognition is consonant with actual experience and revise their cognition and behaviors accordingly. Thus, it is possible that the feedback from the crowdsourcing experience significantly changed seekers' beliefs such that cost-related factors became less salient (cost reduction, codification cost and proposal evaluation cost) and resource factors became more salient (brand visibility and access to specialized skills). Our interviews with a few experienced seekers confirm an overall positive experience, in that the resources from crowdsourcing were apparent to them and the costs were not too burdensome. However, the extent of cost reduction they expected may not have materialized. We refrain from generalizing these results because the samples may not be sufficiently large; the differences between the groups need to be investigated in greater depth in the future.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6.">Discussion and implications</head><p>With the emergence of new Internet-based technologies, firms are starting to leverage the wisdom of the crowd to solve internal tasks. To increase firm participation, crowdsourcing platforms should understand what motivates firms to crowdsource <ref type="bibr" target="#b90">[91]</ref>. This understanding is essential because not every crowdsourcing platform has been successful in attracting and retaining firms to crowdsource their tasks, as exemplified by the failure of CrowdSpirit. 5 Furthermore, studies of theoretical modeling and empirical testing of the antecedents (including costs) of firms' intention to crowdsource (see a thorough review by Zhao and Zhu <ref type="bibr" target="#b90">[91]</ref>) have been limited. Therefore, researchers and practitioners alike are interested in understanding how to encourage firms to crowdsource tasks <ref type="bibr" target="#b43">[44,</ref><ref type="bibr" target="#b79">80]</ref>. From the perspective of seeker firms, participation in crowdsourcing may allow them to obtain benefits. Deriving from the RBV and TCT and following the call of Zhao and Zhu <ref type="bibr" target="#b90">[91]</ref> for additional research, this study developed a model to explain firms' intention to crowdsource. Cost reduction, brand visibility, and access to specialized skills were found to positively affect the intention to crowdsource, while codification cost and proposal evaluation cost negatively affect this intention. In addition, cost reduction was found to partially mediate the influences of codification cost and proposal evaluation cost on the intention to crowdsource.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6.1.">Limitations and future research</head><p>The findings of this study should be interpreted in light of its limitations. First, our study is restricted in its ability to make broad generalizations because only one type of crowdsourcing platform was studied. In other websites such as InnoCentive, seeker firms crowdsource tasks that require greater creativity and expertise to solve, e.g., R&amp;D problems. Future research could examine seeker firms in crowdsourcing platforms such as InnoCentive <ref type="bibr" target="#b47">[48]</ref> to determine if similar results hold or factors such as solution diversity become salient. Nevertheless, this study has established some degree of generalization because similar results have been obtained in both a pilot test in another Chinese crowdsourcing platform (zhubajie.com) and the main study in TaskCN. Thus, the findings may be generalizable to platforms that are similar in the types of tasks to be solved, incentives provided, and crowdsourcing mechanism used, e.g., Wilogo.com, TopCoder.com, and Netflix.com.</p><p>Second, while this paper studied the influence of cost and resource factors on firms' intention to crowdsource within a platform, future work could explore the influence of the characteristics of different crowdsourcing platforms on seeker firms' crowdsourcing behavior. In particular, researchers could investigate the performance of crowdsourcing platforms in facilitating the process of crowdsourcing. For example, crowdsourcing platforms could be considered knowledge brokers in the framework of knowledge brokering theory <ref type="bibr" target="#b37">[38]</ref> to explore the performance of crowdsourcing platforms. Furthermore, researchers should conduct longitudinal research on the antecedents of organizations' actual crowdsourcing behaviors by collecting the number of tasks crowdsourced by companies in future. Third, we found a partial mediating effect of cost reduction on the influence of codification cost and proposal evaluation cost on the intention to crowdsource. Future research should theoretically explore the underlying (both cost-and non-cost-related) mechanisms that link proposal evaluation cost and codification cost to intention to crowdsource. Furthermore, future studies should explore the relationship between solution diversity and proposal evaluation cost because diverse solutions may increase the workload for firms to select a winning solution.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6.2.">Theoretical contributions</head><p>This paper contributes to the crowdsourcing literature by developing a holistic model to explain firms' intention to crowdsource and empirically testing it with survey data. This study contributes to research in several ways. First, the understanding of seeker firms' crowdsourcing behavior in the previous literature has been mainly based on conceptual or case studies (e.g., <ref type="bibr" target="#b11">[12,</ref><ref type="bibr" target="#b71">72,</ref><ref type="bibr" target="#b86">87,</ref><ref type="bibr" target="#b80">81]</ref>). Following the call by Zhao and Zhu <ref type="bibr" target="#b90">[91]</ref> for additional research, this paper fills the literature gap by theoretically and empirically exploring the antecedents of firms' intention to crowdsource. This study found that cost reduction, brand visibility, and access to specialized skills positively affect firms' intention to crowdsource. This study adds to the crowdsourcing literature by validating these considerations as important for firms' crowdsourcing decisions.</p><p>Second, previous studies mainly suggested an influence of benefit factors on firms' crowdsourcing behavior <ref type="bibr" target="#b20">[21,</ref><ref type="bibr" target="#b51">52]</ref>. There has been a lack of investigation of the influences of costs on crowdsourcing <ref type="bibr" target="#b1">[2]</ref>. This paper identified the cost constructs for this context and tested them in the TaskCN platform, finding that codification cost and proposal evaluation cost negatively affect firms' intention to crowdsource. These findings contribute to the crowdsourcing literature by enriching our understanding of the cost concerns that thwart firms' intention to crowdsource.</p><p>Third, this study found that certain antecedents of crowdsourcing intention, i.e., cost reduction and access to specialized skills, are similar to the determinants of outsourcing decisions (cf. <ref type="bibr" target="#b46">[47]</ref>). However, several antecedents differ and are specific to firms' intention to crowdsource, i.e., brand visibility, codification cost, and proposal evaluation cost. These context-specific findings contribute to previous research by enabling a comparison of the two forms of sourcing. Furthermore, this study facilitates future research by developing and validating an instrument for studying firms' crowdsourcing behavior.</p><p>Fourth, this study contributes to the literature on TCT and the RBV. It extends the applicability of transaction cost theory and the resource-based view to the context of crowdsourcing. The explanatory power and support for the model indicate that the complementary perspectives of TCT and the RBV provide an appropriate theoretical lens to explain firms' intention to crowdsource, i.e., our results suggest that both cost and resource factors affect firms' intention to crowdsource. Furthermore, we modified the standard TCT and RBV formulations to account for firms' intention to crowdsource by modeling the influence of context-specific constructs, i.e., brand visibility, codification cost, and proposal evaluation cost.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6.3.">Practical implications</head><p>From a pragmatic perspective, this study provides crowdsourcing platform administrators insights on how to attract firms to crowdsource their tasks in two main ways. First, this study provides guidelines for crowdsourcing platforms to enhance firms' intention to crowdsource. In particular, the results of this study suggest that crowdsourcing platforms should heighten the perceptions of the benefits of cost reduction, brand visibility, and access to specialized skills to promote firms' participation in crowdsourcing. Crowdsourcing platforms should take the initiative to attract and retain a large and diverse pool of solvers to participate in crowdsourcing so that firms can access their specialized skills in multiple areas. In addition, crowdsourcing platforms should communicate to firms the cost-effective advantage of solving tasks through crowdsourcing. Inviting experienced seeker firms to share their crowdsourcing experience could be a viable approach for crowdsourcing platforms to advertise the benefits of crowdsourcing. A forum could also be established to obtain feedback and comments from firms on their crowdsourcing experience.</p><p>Second, crowdsourcing platforms should seek ways to reduce the costs of firm participation while maintaining profitability. Crowdsourcing platforms should identify approaches to facilitate the codification of requirements and provide firms with appropriate tools to support task codification. In particular, crowdsourcing platforms could help firms define their problems by providing specific advice and improve the process of requirement submission by offering tools to support firms, e.g., providing samples and training for requirement codification. In addition to reducing codification effort, crowdsourcing platforms should strive to mitigate firms' proposal evaluation costs by providing appropriate tools for firms to filter out irrelevant proposals, e.g., by refined searching. Crowdsourcing platforms can also offer services to assist firms with the selection of relevant solutions according to the task requirements.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="7.">Conclusion</head><p>Considering the importance of seeker firm participation to the survival of crowdsourcing platforms, practitioners have expressed substantial interest and concerns about encouraging firms to crowdsource <ref type="bibr" target="#b20">[21]</ref>. Moreover, research on and understanding of the factors that influence a firm's intention to crowdsource have been lacking. To this end, we developed a model based on transaction cost theory and the resourcebased view to examine drivers and inhibitors of firms' intention to crowdsource. Our findings indicate that cost reduction, access to specialized skills, and brand visibility enhance a firm's intention to crowdsource, while proposal evaluation costs and codification costs reduce a firm's intention to crowdsource, both directly and indirectly. These findings add to the limited but growing body of research on crowdsourcing. They also offer suggestions for practitioners to provide appropriate motivators and help reduce participation cost to promote crowdsourcing by firms. </p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>Fig. 1 .</head><label>1</label><figDesc>Fig. 1. Research model for a seeker's intention to crowdsource.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>Fig. 2 .</head><label>2</label><figDesc>Fig. 2. Path coefficients.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head>Table 1</head><label>1</label><figDesc>List of survey items.</figDesc><table><row><cell>Table 2</cell><cell></cell><cell></cell></row><row><cell>Respondent information.</cell><cell></cell><cell></cell></row><row><cell>Variables</cell><cell>Frequency</cell><cell>Percentage</cell></row><row><cell></cell><cell>(N = 161)</cell><cell></cell></row><row><cell>Firm age (years)</cell><cell></cell><cell></cell></row><row><cell>&lt;1</cell><cell>1</cell><cell>0.62</cell></row><row><cell>1-5</cell><cell>100</cell><cell>62.11</cell></row><row><cell>6-10</cell><cell>33</cell><cell>20.50</cell></row><row><cell>&gt;10</cell><cell>27</cell><cell>16.77</cell></row><row><cell>Firm size (number of employees)</cell><cell></cell><cell></cell></row><row><cell>&lt;50</cell><cell>87</cell><cell>54.04</cell></row><row><cell>50-100</cell><cell>38</cell><cell>23.60</cell></row><row><cell>101-500</cell><cell>22</cell><cell>13.66</cell></row><row><cell>&gt;500</cell><cell>14</cell><cell>8.70</cell></row><row><cell>Industry</cell><cell></cell><cell></cell></row><row><cell>Advertising and public relations</cell><cell>12</cell><cell>7.45</cell></row><row><cell>Education</cell><cell>17</cell><cell>10.56</cell></row><row><cell>Financial service and insurance</cell><cell>16</cell><cell>9.94</cell></row><row><cell>IT service</cell><cell>42</cell><cell>26.09</cell></row><row><cell>Manufacturing</cell><cell>33</cell><cell>20.50</cell></row><row><cell>Retailing</cell><cell>16</cell><cell>9.94</cell></row><row><cell>Traditional services (e.g., haircut, restaurant)</cell><cell>25</cell><cell>15.52</cell></row><row><cell>Previous experience</cell><cell></cell><cell></cell></row><row><cell>0</cell><cell>49</cell><cell>30.44</cell></row><row><cell>1</cell><cell></cell><cell></cell></row><row><cell>1 task</cell><cell>95</cell><cell>59.01</cell></row><row><cell>2 tasks</cell><cell>12</cell><cell>7.45</cell></row><row><cell>3 tasks</cell><cell>4</cell><cell>2.48</cell></row><row><cell>4 tasks</cell><cell>1</cell><cell>0.62</cell></row><row><cell>Task type</cell><cell></cell><cell></cell></row><row><cell>Website design and programming</cell><cell>21</cell><cell>13.04</cell></row><row><cell>Logo design</cell><cell>53</cell><cell>32.92</cell></row><row><cell>Writing and translation</cell><cell>43</cell><cell>26.71</cell></row><row><cell>Laborious tasks (e.g., post ads in communities)</cell><cell>30</cell><cell>18.01</cell></row><row><cell>Others</cell><cell>15</cell><cell>9.32</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1"><head>Table 3</head><label>3</label><figDesc>Exploratory factor analysis.</figDesc><table><row><cell></cell><cell>1</cell><cell>2</cell><cell>3</cell><cell>4</cell><cell>6</cell><cell>7</cell><cell>8</cell></row><row><cell>EVA1</cell><cell>0.84</cell><cell>À0.09</cell><cell>0.07</cell><cell>0.08</cell><cell>0.00</cell><cell>À0.29</cell><cell>À0.08</cell></row><row><cell>EVA2</cell><cell>0.80</cell><cell>À0.16</cell><cell>0.06</cell><cell>0.10</cell><cell>0.11</cell><cell>À0.29</cell><cell>À0.05</cell></row><row><cell>EVA3</cell><cell>0.75</cell><cell>0.06</cell><cell>À0.12</cell><cell>0.02</cell><cell>À0.02</cell><cell>0.08</cell><cell>0.07</cell></row><row><cell>EVA4</cell><cell>0.86</cell><cell>0.14</cell><cell>À0.05</cell><cell>À0.02</cell><cell>À0.07</cell><cell>À0.13</cell><cell>À0.07</cell></row><row><cell>COD1</cell><cell>À0.04</cell><cell>0.81</cell><cell>0.14</cell><cell>0.07</cell><cell>0.12</cell><cell>À0.05</cell><cell>0.10</cell></row><row><cell>COD2</cell><cell>À0.03</cell><cell>0.82</cell><cell>0.12</cell><cell>À0.02</cell><cell>0.14</cell><cell>À0.03</cell><cell>0.10</cell></row><row><cell>COD3</cell><cell>0.01</cell><cell>0.83</cell><cell>0.13</cell><cell>0.07</cell><cell>0.14</cell><cell>À0.07</cell><cell>0.14</cell></row><row><cell>COD4</cell><cell>0.18</cell><cell>0.90</cell><cell>À0.02</cell><cell>0.03</cell><cell>À0.01</cell><cell>À0.08</cell><cell>À0.01</cell></row><row><cell>COS1</cell><cell>À0.07</cell><cell>0.12</cell><cell>0.86</cell><cell>0.13</cell><cell>0.12</cell><cell>0.18</cell><cell>0.02</cell></row><row><cell>COS2</cell><cell>À0.04</cell><cell>0.17</cell><cell>0.83</cell><cell>0.25</cell><cell>0.22</cell><cell>0.02</cell><cell>0.02</cell></row><row><cell>COS3</cell><cell>À0.06</cell><cell>0.02</cell><cell>0.87</cell><cell>0.08</cell><cell>0.20</cell><cell>0.08</cell><cell>0.12</cell></row><row><cell>COS4</cell><cell>À0.03</cell><cell>0.09</cell><cell>0.87</cell><cell>0.02</cell><cell>0.20</cell><cell>0.13</cell><cell>0.18</cell></row><row><cell>BRD1</cell><cell>0.03</cell><cell>0.09</cell><cell>0.13</cell><cell>0.85</cell><cell>0.07</cell><cell>0.12</cell><cell>0.12</cell></row><row><cell>BRD2</cell><cell>0.01</cell><cell>0.09</cell><cell>0.11</cell><cell>0.88</cell><cell>0.20</cell><cell>0.22</cell><cell>0.06</cell></row><row><cell>BRD3</cell><cell>0.12</cell><cell>0.00</cell><cell>0.10</cell><cell>0.89</cell><cell>0.11</cell><cell>0.20</cell><cell>0.11</cell></row><row><cell>BRD4</cell><cell>0.04</cell><cell>À0.01</cell><cell>0.17</cell><cell>0.81</cell><cell>0.07</cell><cell>0.28</cell><cell>0.33</cell></row><row><cell>DIV1</cell><cell>À0.01</cell><cell>0.12</cell><cell>0.12</cell><cell>0.15</cell><cell>0.85</cell><cell>0.24</cell><cell>0.22</cell></row><row><cell>DIV2</cell><cell>0.01</cell><cell>0.11</cell><cell>0.26</cell><cell>0.12</cell><cell>0.85</cell><cell>0.13</cell><cell>0.13</cell></row><row><cell>DIV3</cell><cell>0.12</cell><cell>À0.01</cell><cell>0.26</cell><cell>0.04</cell><cell>0.88</cell><cell>À0.05</cell><cell>0.23</cell></row><row><cell>DIV4</cell><cell>À0.12</cell><cell>0.21</cell><cell>0.18</cell><cell>0.16</cell><cell>0.75</cell><cell>0.06</cell><cell>À0.03</cell></row><row><cell>INT1</cell><cell>À0.09</cell><cell>À0.15</cell><cell>0.24</cell><cell>0.24</cell><cell>0.12</cell><cell>0.91</cell><cell>0.11</cell></row><row><cell>INT2</cell><cell>À0.05</cell><cell>À0.07</cell><cell>0.13</cell><cell>0.32</cell><cell>0.18</cell><cell>0.94</cell><cell>0.20</cell></row><row><cell>INT3</cell><cell>À0.06</cell><cell>À0.07</cell><cell>0.10</cell><cell>0.28</cell><cell>0.11</cell><cell>0.93</cell><cell>0.19</cell></row><row><cell>ACC1</cell><cell>À0.01</cell><cell>0.09</cell><cell>0.07</cell><cell>0.09</cell><cell>0.43</cell><cell>0.14</cell><cell>0.77</cell></row><row><cell>ACC2</cell><cell>À0.08</cell><cell>0.11</cell><cell>0.12</cell><cell>0.17</cell><cell>0.23</cell><cell>0.22</cell><cell>0.81</cell></row><row><cell>ACC3</cell><cell>0.01</cell><cell>0.18</cell><cell>0.13</cell><cell>0.23</cell><cell>0.01</cell><cell>0.12</cell><cell>0.87</cell></row><row><cell>Eigenvalue</cell><cell>8.05</cell><cell>4.27</cell><cell>3.34</cell><cell>2.22</cell><cell>1.60</cell><cell>1.22</cell><cell>1.03</cell></row><row><cell>% of variance</cell><cell>25.16</cell><cell>13.35</cell><cell>10.44</cell><cell>6.92</cell><cell>5.01</cell><cell>3.81</cell><cell>3.21</cell></row><row><cell>Cumulative %</cell><cell>25.16</cell><cell>38.51</cell><cell>48.95</cell><cell>55.87</cell><cell>66.80</cell><cell>70.61</cell><cell>73.82</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2"><head>Table 4</head><label>4</label><figDesc>Descriptive statistics and correlations.</figDesc><table><row><cell></cell><cell>Mean</cell><cell>STD</cell><cell>CA</cell><cell>CR</cell><cell>AVE</cell><cell>Age</cell><cell>Size</cell><cell>EXP</cell><cell>DIV</cell><cell>ACC</cell><cell>BRD</cell><cell>COD</cell><cell>COS</cell><cell>EVA</cell><cell>INT</cell></row><row><cell>Age</cell><cell>7.04</cell><cell>8.28</cell><cell>-</cell><cell>-</cell><cell>-</cell><cell>-</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Size</cell><cell>302.4</cell><cell>1060.9</cell><cell>-</cell><cell>-</cell><cell>-</cell><cell>0.40</cell><cell>-</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>EXP</cell><cell>0.69</cell><cell>0.87</cell><cell>-</cell><cell>-</cell><cell>-</cell><cell>À0.24</cell><cell>À0.15</cell><cell>-</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>DIV</cell><cell>5.42</cell><cell>1.19</cell><cell>0.85</cell><cell>0.89</cell><cell>0.69</cell><cell>0.10</cell><cell>0.13</cell><cell>0.08</cell><cell>0.83 a</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>ACC</cell><cell>5.99</cell><cell>0.99</cell><cell>0.75</cell><cell>0.86</cell><cell>0.67</cell><cell>0.12</cell><cell>0.54</cell><cell>0.07</cell><cell>0.54</cell><cell>0.82 a</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>BRD</cell><cell>5.25</cell><cell>1.26</cell><cell>0.88</cell><cell>0.93</cell><cell>0.81</cell><cell>0.12</cell><cell>0.37</cell><cell>0.07</cell><cell>0.39</cell><cell>0.47</cell><cell>0.90 a</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>COD</cell><cell>5.16</cell><cell>1.17</cell><cell>0.88</cell><cell>0.90</cell><cell>0.70</cell><cell>0.09</cell><cell>0.22</cell><cell>À0.01</cell><cell>À0.24</cell><cell>À0.09</cell><cell>À0.24</cell><cell>0.84 a</cell><cell></cell><cell></cell><cell></cell></row><row><cell>COS</cell><cell>5.85</cell><cell>1.06</cell><cell>0.88</cell><cell>0.91</cell><cell>0.78</cell><cell>0.10</cell><cell>0.51</cell><cell>À0.02</cell><cell>0.51</cell><cell>0.41</cell><cell>0.36</cell><cell>À0.40</cell><cell>0.88 a</cell><cell></cell><cell></cell></row><row><cell>EVA</cell><cell>4.61</cell><cell>1.44</cell><cell>0.81</cell><cell>0.89</cell><cell>0.73</cell><cell>0.00</cell><cell>À0.01</cell><cell>À0.01</cell><cell>0.01</cell><cell>À0.14</cell><cell>0.03</cell><cell>À0.09</cell><cell>À0.12</cell><cell>0.85 a</cell><cell></cell></row><row><cell>INT</cell><cell>5.81</cell><cell>1.39</cell><cell>0.92</cell><cell>0.95</cell><cell>0.86</cell><cell>0.15</cell><cell>0.31</cell><cell>0.04</cell><cell>0.33</cell><cell>0.48</cell><cell>0.53</cell><cell>À0.28</cell><cell>0.48</cell><cell>À0.15</cell><cell>0.93 a</cell></row></table><note><p><p><p>Notes: COS, cost reduction; BRD, brand visibility; ACC, access to specialized skills; DIV, solution diversity; COD, codification cost; EVA, proposal evaluation cost; INT, intention to crowdsource; age, firm age; size, firm size; EXP, previous experience; STD, Std Dev.; CA, Cronbach's a; CR, composite reliability; AVE, average variance extracted.</p>-, Excluded because it was a single measure.</p>a Diagonal elements are the square root of AVE. + Dummy variables, i.e., task type and industry, are not included in the correlation table.</p></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_3"><head>Table 5</head><label>5</label><figDesc>Results of hypothesis testing.</figDesc><table><row><cell></cell><cell cols="2">DV = intention to crowdsource</cell><cell>DV = cost reduction</cell><cell>Result</cell></row><row><cell></cell><cell>Control</cell><cell>Main effect</cell><cell>Main model</cell></row><row><cell>Firm age</cell><cell>0.11 *</cell><cell>0.08 y</cell><cell></cell><cell>Sig.</cell></row><row><cell>Firm size</cell><cell>0.04</cell><cell>0.01</cell><cell></cell><cell>N.S.</cell></row><row><cell>Industry (baseline traditional service)</cell><cell></cell><cell></cell><cell></cell></row><row><cell>Advertising and public relations</cell><cell>0.004</cell><cell>0.09</cell><cell></cell><cell>N.S.</cell></row><row><cell>Education</cell><cell>0.21 *</cell><cell>0.14 *</cell><cell></cell><cell>Sig.</cell></row><row><cell>Financial service and insurance</cell><cell>À0.07</cell><cell>À0.07</cell><cell></cell><cell>N.S.</cell></row><row><cell>IT service</cell><cell>0.15</cell><cell>0.08</cell><cell></cell><cell>N.S.</cell></row><row><cell>Manufacturing</cell><cell>0.19</cell><cell>0.13</cell><cell></cell><cell>N.S.</cell></row><row><cell>Retailing</cell><cell>0.13</cell><cell>0.11</cell><cell></cell><cell>N.S.</cell></row><row><cell>Previous experience</cell><cell>0.05</cell><cell>0.04</cell><cell></cell><cell>N.S.</cell></row><row><cell>Task type (baseline others)</cell><cell></cell><cell></cell><cell></cell></row><row><cell>Website design and programming</cell><cell>0.01</cell><cell>0.01</cell><cell></cell><cell>N.S.</cell></row><row><cell>Logo design</cell><cell>0.02</cell><cell>0.03</cell><cell></cell><cell>N.S.</cell></row><row><cell>Writing and translation</cell><cell>0.03</cell><cell>0.01</cell><cell></cell><cell>N.S.</cell></row><row><cell>Laborious tasks</cell><cell>À0.08</cell><cell>À0.07</cell><cell></cell><cell>N.S.</cell></row><row><cell>Brand visibility (BRD)</cell><cell></cell><cell>0.35 ***</cell><cell></cell><cell>H1 supported</cell></row><row><cell>Access to specialized skills (ACC)</cell><cell></cell><cell>0.19 **</cell><cell></cell><cell>H2 supported</cell></row><row><cell>Solution diversity (DIV)</cell><cell></cell><cell>À0.04</cell><cell></cell><cell>H3 not supported</cell></row><row><cell>Cost reduction (COS)</cell><cell></cell><cell>0.21 **</cell><cell></cell><cell>H4 supported</cell></row><row><cell>Codification cost (COD)</cell><cell></cell><cell>À0.10 *</cell><cell></cell><cell>H5 supported</cell></row><row><cell></cell><cell></cell><cell></cell><cell>À0.40 ***</cell><cell>H6 supported</cell></row><row><cell>Proposal evaluation cost (EVA)</cell><cell></cell><cell>À0.19 ***</cell><cell></cell><cell>H7 supported</cell></row><row><cell></cell><cell></cell><cell></cell><cell>À0.11 *</cell><cell>H8 supported</cell></row><row><cell>R 2</cell><cell>0.09</cell><cell>0.47</cell><cell>0.17</cell></row><row><cell>Observations</cell><cell></cell><cell></cell><cell>161</cell></row></table><note><p>y p &lt; 0.1. * p &lt; 0.05. ** p &lt; 0.01. *** p &lt; 0.001. Rsquare = 0.17</p></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_4"><head>Table 6</head><label>6</label><figDesc>Sobel test for mediating effects.</figDesc><table><row><cell>Path</cell><cell>Coefficient</cell><cell>Standard error</cell><cell>Sobel test</cell></row><row><cell></cell><cell></cell><cell>of coefficient</cell><cell>(T-value)</cell></row><row><cell>COS ! INT</cell><cell>0.43 ***</cell><cell>0.049</cell><cell>N.A.</cell></row><row><cell>COD ! COS</cell><cell>À0.42 ***</cell><cell>0.038</cell><cell>6.87 ***</cell></row><row><cell>EVA ! COS</cell><cell>À0.15 *</cell><cell>0.066</cell><cell>3.37 ***</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_5"><head>Table 7</head><label>7</label><figDesc>Bootstrapping test for mediating effects.</figDesc><table><row><cell>Relations</cell><cell cols="3">Coefficient T-value Bootstrapping b Confidence</cell></row><row><cell></cell><cell></cell><cell></cell><cell>interval</cell></row><row><cell></cell><cell></cell><cell></cell><cell>(95%)</cell></row><row><cell></cell><cell></cell><cell></cell><cell>Lower Upper</cell></row><row><cell cols="3">Independent variable ! mediator (a path)</cell></row><row><cell>COD ! COS</cell><cell>À0.42</cell><cell>6.20 ***</cell></row><row><cell>EVA ! COS</cell><cell>À0.11</cell><cell>2.12 *</cell></row><row><cell cols="3">Mediator ! dependent variable (b path)</cell></row><row><cell>COS ! INT</cell><cell>0.43</cell><cell>5.35 ***</cell></row><row><cell cols="3">Independent variable ! dependent variable (c path)</cell></row><row><cell>COD ! INT</cell><cell>À0.18</cell><cell>2.78 **</cell></row><row><cell>EVA ! INT</cell><cell>À0.23</cell><cell>2.67 **</cell></row><row><cell cols="3">Independent variable ! dependent variable (c 0 path)</cell></row><row><cell>COD ! INT</cell><cell>À0.10</cell><cell>2.13 *</cell></row><row><cell>EVA ! INT</cell><cell>À0.19</cell><cell>2.02 *</cell></row><row><cell>Mediating effects</cell><cell></cell><cell></cell></row><row><cell>COD ! COS ! INT</cell><cell></cell><cell>À0.07</cell><cell>À0.13 À0.03</cell></row><row><cell>EVA ! COS ! INT</cell><cell></cell><cell>À0.05</cell><cell>À0.10 À0.04</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_6"><head>Table 8</head><label>8</label><figDesc>Post hoc comparison.</figDesc><table><row><cell></cell><cell>COS ! INT</cell><cell>BRD ! INT</cell><cell>ACC ! INT</cell><cell>COD ! INT</cell><cell>EVA ! INT</cell></row><row><cell>Path coefficient (standard error)</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Inexperienced</cell><cell>0.25 (0.060)</cell><cell>0.28 (0.065)</cell><cell>0.24 (0.066)</cell><cell>À0.26 (0.078)</cell><cell>À0.20 (0.040)</cell></row><row><cell>Experienced</cell><cell>0.08 (0.052)</cell><cell>0.42 (0.056)</cell><cell>0.30 (0.063)</cell><cell>À0.23 (0.053)</cell><cell>À0.18 (0.034)</cell></row><row><cell>S pooled</cell><cell>0.057</cell><cell>0.061</cell><cell>0.064</cell><cell>0.062</cell><cell>0.326</cell></row><row><cell>T-test across groups</cell><cell>18.02 ***</cell><cell>À13.72 ***</cell><cell>À5.60 ***</cell><cell>À2.84 **</cell><cell>À3.25 **</cell></row><row><cell>** p &lt; 0.01.</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row></table><note><p>*** p &lt; 0.001.</p></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_7"><head></head><label></label><figDesc>T-value Method path/loading (original sample) Method squared loading (R 2 ) T-value</figDesc><table><row><cell>Table A1</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell cols="2">Common method bias analysis.</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell cols="2">Items Factor path/loading</cell><cell>Factor squared</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell>(original sample)</cell><cell>loading (R 2 )</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Brand visibility</cell><cell cols="2">BRD1 0.84</cell><cell>0.71</cell><cell>20.13</cell><cell>0.03</cell><cell>0.00</cell><cell>0.52</cell></row><row><cell></cell><cell cols="2">BRD2 0.94</cell><cell>0.88</cell><cell>18.39</cell><cell>À0.08</cell><cell>0.01</cell><cell>1.63</cell></row><row><cell></cell><cell cols="2">BRD3 0.98</cell><cell>0.96</cell><cell>32.33</cell><cell>À0.12</cell><cell>0.01</cell><cell>2.94</cell></row><row><cell></cell><cell cols="2">BRD4 0.64</cell><cell>0.41</cell><cell>10.37</cell><cell>0.21</cell><cell>0.04</cell><cell>3.01</cell></row><row><cell>Cost reduction</cell><cell cols="2">COS1 0.84</cell><cell>0.71</cell><cell>18.13</cell><cell>0.00</cell><cell>0.00</cell><cell>0.06</cell></row><row><cell></cell><cell cols="2">COS2 0.86</cell><cell>0.74</cell><cell>19.55</cell><cell>0.01</cell><cell>0.00</cell><cell>0.17</cell></row><row><cell></cell><cell cols="2">COS3 0.92</cell><cell>0.85</cell><cell>31.82</cell><cell>À0.01</cell><cell>0.00</cell><cell>1.65</cell></row><row><cell></cell><cell cols="2">COS4 0.82</cell><cell>0.67</cell><cell>16.65</cell><cell>0.07</cell><cell>0.00</cell><cell>1.43</cell></row><row><cell cols="3">Access to specialized skills ACC1 0.54</cell><cell>0.29</cell><cell>4.13</cell><cell>0.14</cell><cell>0.02</cell><cell>1.16</cell></row><row><cell></cell><cell cols="2">ACC2 0.97</cell><cell>0.94</cell><cell>17.91</cell><cell>À0.16</cell><cell>0.03</cell><cell>2.61</cell></row><row><cell></cell><cell cols="2">ACC3 0.91</cell><cell>0.83</cell><cell>21.82</cell><cell>À0.04</cell><cell>0.00</cell><cell>0.64</cell></row><row><cell>Solution diversity</cell><cell cols="2">DIV1 0.81</cell><cell>0.66</cell><cell>13.58</cell><cell>0.02</cell><cell>0.00</cell><cell>0.36</cell></row><row><cell></cell><cell cols="2">DIV2 0.79</cell><cell>0.62</cell><cell>13.51</cell><cell>0.06</cell><cell>0.00</cell><cell>0.92</cell></row><row><cell></cell><cell cols="2">DIV3 0.92</cell><cell>0.85</cell><cell>18.29</cell><cell>À0.05</cell><cell>0.00</cell><cell>0.79</cell></row><row><cell></cell><cell cols="2">DIV4 0.81</cell><cell>0.66</cell><cell>13.61</cell><cell>À0.03</cell><cell>0.00</cell><cell>0.48</cell></row><row><cell>Proposal evaluation cost</cell><cell cols="2">EVA1 0.80</cell><cell>0.64</cell><cell>21.25</cell><cell>À0.05</cell><cell>0.00</cell><cell>0.99</cell></row><row><cell></cell><cell cols="2">EVA2 0.86</cell><cell>0.74</cell><cell>32.81</cell><cell>0.03</cell><cell>0.00</cell><cell>0.71</cell></row><row><cell></cell><cell cols="2">EVA3 0.84</cell><cell>0.71</cell><cell>27.39</cell><cell>0.01</cell><cell>0.00</cell><cell>0.06</cell></row><row><cell></cell><cell cols="2">EVA4 0.82</cell><cell>0.67</cell><cell>25.52</cell><cell>0.01</cell><cell>0.00</cell><cell>0.26</cell></row><row><cell>Codification cost</cell><cell cols="2">COD1 0.91</cell><cell>0.83</cell><cell>47.48</cell><cell>À0.07</cell><cell>0.00</cell><cell>0.45</cell></row><row><cell></cell><cell cols="2">COD2 0.92</cell><cell>0.85</cell><cell>41.06</cell><cell>0.06</cell><cell>0.00</cell><cell>0.53</cell></row><row><cell></cell><cell cols="2">COD3 0.88</cell><cell>0.77</cell><cell>31.79</cell><cell>À0.02</cell><cell>0.00</cell><cell>1.54</cell></row><row><cell></cell><cell cols="2">COD4 0.76</cell><cell>0.58</cell><cell>14.17</cell><cell>0.01</cell><cell>0.00</cell><cell>1.25</cell></row><row><cell>Intention to crowdsource</cell><cell>INT1</cell><cell>0.93</cell><cell>0.86</cell><cell>28.02</cell><cell>À0.03</cell><cell>0.00</cell><cell>0.88</cell></row><row><cell></cell><cell>INT2</cell><cell>0.91</cell><cell>0.83</cell><cell>39.31</cell><cell>0.05</cell><cell>0.00</cell><cell>1.66</cell></row><row><cell></cell><cell>INT3</cell><cell>0.94</cell><cell>0.88</cell><cell>31.41</cell><cell>À0.02</cell><cell>0.00</cell><cell>0.51</cell></row></table></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="3" xml:id="foot_0"><p>Firms are rewarded with credibility based on the monetary value of transactions in TaskCN. Although the credibility of firms may affect whether solvers take their tasks, it may be less relevant to a firm's intention to crowdsource.</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="4" xml:id="foot_1"><p>www.taskcn.com. H.J. Ye, A. Kankanhalli / Information &amp; Management</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="52" xml:id="foot_2"><p>(2015)  [98][99][100][101][102][103][104][105][106][107][108][109][110] </p></note>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>INT1: We will use this platform for crowdsourcing in the future. INT2: We will crowdsource tasks using this platform in the future. INT3: We intend to use this platform to crowdsource tasks in the future.</p><p>Adapted from Zheng et al. <ref type="bibr" target="#b91">[92]</ref> </p></div>
+			</div>
+
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Appendix A. Common method bias analysis</head><p>Following the PLS approach of Liang et al. <ref type="bibr" target="#b55">[56]</ref> and Wells et al. <ref type="bibr" target="#b83">[84]</ref>, an unmeasured latent method construct (ULMC) was included in the structural regression model to assess common method bias (CMB). The analysis results are shown in Table <ref type="table">A1</ref>. The results suggest that all original factor loadings (from the measurement items to the related latent construct) remained significant, as did the hypothesized paths in the structural regression model. Only 5 of the 30 paths from the ULMC to the measurement items were significant. The loading magnitude of 5 significant paths was substantially smaller than the corresponding loading to the related latent construct. This provides further evidence that the study results were not affected by CMB.</p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Managing assets and skills: the key to sustainable competitive advantage</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">A</forename><surname>Aaker</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Calif. Manage. Rev</title>
+		<imprint>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="91" to="106" />
+			<date type="published" when="1989">1989</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Crowdsourcing as a solution to distant search</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Afuah</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Tucci</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Acad. Manage. Rev</title>
+		<imprint>
+			<biblScope unit="volume">37</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="355" to="375" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Outsourcing to an unknown workplace: exploring open sourcing as a global sourcing strategy</title>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">J</forename><surname>Agerfalk</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Fitzgerald</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Q</title>
+		<imprint>
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="385" to="409" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Testing resource-based propositions about IS sourcing decisions</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>Alvarez-Suescun</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Ind. Manage. Data Syst</title>
+		<imprint>
+			<biblScope unit="volume">107</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="762" to="779" />
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Estimating non-response bias in mail surveys</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">S</forename><surname>Armstrong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">S</forename><surname>Overton</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Market. Res</title>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="396" to="402" />
+			<date type="published" when="1997">1997</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">A transaction cost model of IT outsourcing</title>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">A</forename><surname>Aubert</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Rivard</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Patry</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Inf. Manage</title>
+		<imprint>
+			<biblScope unit="volume">41</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="921" to="932" />
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Firm resources and sustained competitive advantage</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">B</forename><surname>Barney</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Manage</title>
+		<imprint>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="99" to="120" />
+			<date type="published" when="1991">1991</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">The moderator-mediator variable distinction in social psychological research: conceptual, strategic and statistical considerations</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">M</forename><surname>Baron</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Kenny</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Pers. Soc. Psychol</title>
+		<imprint>
+			<biblScope unit="volume">51</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="1173" to="1182" />
+			<date type="published" when="1986">1986</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Crowdsourcing new product ideas over time: an analysis of the Dell IdeaStorm community</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Bayus</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Manage. Sci</title>
+		<imprint>
+			<biblScope unit="volume">59</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="226" to="244" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<monogr>
+		<title level="m" type="main">Exchange and Power in Social Life</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Blau</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1964">1964</date>
+			<publisher>Wiley</publisher>
+			<pubPlace>New York</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Moving the crowd at iStockphoto: the composition of the crowd and motivations for participation in a crowdsourcing application</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">C</forename><surname>Brabham</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">First Monday</title>
+		<imprint>
+			<biblScope unit="issue">13</biblScope>
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<monogr>
+		<title level="m" type="main">The limits of crowdsourcing inventive activities: what do transaction cost theory and the evolutionary theories of the firm teach us</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Burger-Helmchen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Penin</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2010">2010</date>
+			<publisher>AIMS Workshop on Open Innovation</publisher>
+			<pubPlace>Caen, France</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Brand familiarity and advertising repetition effects</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">C</forename><surname>Campell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">L</forename><surname>Keller</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Consum. Res</title>
+		<imprint>
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="292" to="304" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">The effects of diversity on group productivity and member withdrawal in online volunteer groups</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Ren</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Riedl</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">International Conference on Human Factors in Computing Systems</title>
+		<meeting><address><addrLine>Atlanta, GA, USA</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<monogr>
+		<author>
+			<persName><forename type="first">H</forename><surname>Chesbrough</surname></persName>
+		</author>
+		<title level="m">Open Innovation</title>
+		<meeting><address><addrLine>Cambridge, MA</addrLine></address></meeting>
+		<imprint>
+			<publisher>Harvard University Press</publisher>
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">The nature of the firm</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">H</forename><surname>Coase</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Economica</title>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="386" to="405" />
+			<date type="published" when="1937">1937</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">A resource-based theory of the firm: knowledge versus opportunism</title>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">R</forename><surname>Conner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">K</forename><surname>Prahalad</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Organ. Sci</title>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="477" to="501" />
+			<date type="published" when="1996">1996</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Combinative effects of innovation types and organizational performance: a longitudinal study of service organizations</title>
+		<author>
+			<persName><forename type="first">F</forename><surname>Damanpour</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">M</forename><surname>Walker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">N</forename><surname>Avellaneda</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Manage. Stud</title>
+		<imprint>
+			<biblScope unit="volume">46</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="650" to="675" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<monogr>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">F</forename><surname>Devellis</surname></persName>
+		</author>
+		<title level="m">Scale Development: Theory and Applications</title>
+		<meeting><address><addrLine>Sage, Thousand Oaks, CA</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Information systems outsourcing: a survey and analysis of the literature, DATA BASE Adv</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Dibbern</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Goles</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">A</forename><surname>Hirschheim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Jayatilaka</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Inf. Syst</title>
+		<imprint>
+			<biblScope unit="volume">35</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="6" to="102" />
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">A</forename><surname>Doan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Ramakrishnan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">Y</forename><surname>Halevy</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Crowdsourcing systems on the World-Wide Web, CACM</title>
+		<imprint>
+			<biblScope unit="volume">51</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="86" to="96" />
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Beyond opportunism: a resource-based view of outsourcing risk</title>
+		<author>
+			<persName><forename type="first">N</forename><surname>Duncan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Hawaii International Conference on System Sciences</title>
+		<meeting><address><addrLine>Waston, HI, USA</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="1998">1998</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Agency theory: an assessment and review</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">K</forename><surname>Eisenhardt</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Acad. Manage. Rev</title>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="57" to="74" />
+			<date type="published" when="1989">1989</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Gonza ´lez-Ladro ´n-de-Guevara, Towards an integrated crowdsourcing definition</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>Estelle ´s-Arolas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Inf. Sci</title>
+		<imprint>
+			<biblScope unit="volume">38</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="189" to="200" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<monogr>
+		<author>
+			<persName><forename type="first">L</forename><surname>Festinger</surname></persName>
+		</author>
+		<title level="m">A Theory of Cognitive Dissonance</title>
+		<meeting><address><addrLine>Stanford, CA</addrLine></address></meeting>
+		<imprint>
+			<publisher>Stanford University Press</publisher>
+			<date type="published" when="1957">1957</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">Critiques of transaction cost economics: an overview</title>
+		<author>
+			<persName><forename type="first">N</forename><forename type="middle">J</forename><surname>Foss</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">G</forename><surname>Klein</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">The Elgar Companion to Transaction Cost Economics</title>
+		<editor>
+			<persName><forename type="first">P</forename><forename type="middle">G</forename><surname>Klein</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">M</forename><forename type="middle">E</forename><surname>Sykuta</surname></persName>
+		</editor>
+		<meeting><address><addrLine>Cheltenham</addrLine></address></meeting>
+		<imprint>
+			<publisher>Edward Elgar Publishing</publisher>
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">The &apos;&apos;I designed it myself&apos;&apos; effect in mass customization</title>
+		<author>
+			<persName><forename type="first">N</forename><surname>Franke</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Schreier</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">U</forename><surname>Kaiser</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Manage. Sci</title>
+		<imprint>
+			<biblScope unit="volume">56</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="125" to="140" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">A practical guide to factorial validity using PLSgraph: tutorial and annotated example</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Gefen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">W</forename><surname>Straub</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Commun. Assoc. Inf. Syst</title>
+		<imprint>
+			<biblScope unit="volume">16</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="91" to="109" />
+			<date type="published" when="2005">2005</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<monogr>
+		<title level="m" type="main">An update and extensions to SEM guidelines for administrative and social science research</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Gefen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">E</forename><surname>Rigdon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">W</forename><surname>Straub</surname></persName>
+		</author>
+		<idno>MIS Q. 35</idno>
+		<imprint>
+			<date type="published" when="2011">2011</date>
+			<biblScope unit="page" from="iii" to="xiv" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">The antecedents, consequences, and mediating role of organizational ambidexterity</title>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">B</forename><surname>Gibson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Birkinshaw</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Acad. Manage. J</title>
+		<imprint>
+			<biblScope unit="volume">47</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="209" to="226" />
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">Information systems outsourcing: a literature analysis</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Gonzalez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Gasco</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Llopis</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Inf. Manage</title>
+		<imprint>
+			<biblScope unit="volume">43</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="821" to="834" />
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">An investigation of factors that influence the duration of IT outsourcing relationships</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Goo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Kishore</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Nam</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">R</forename><surname>Rao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Song</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Decis. Support Syst</title>
+		<imprint>
+			<biblScope unit="volume">42</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="2107" to="2125" />
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">The resource-based theory of competitive advantage: implications for strategy formulation</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">M</forename><surname>Grant</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Calif. Manage. Rev</title>
+		<imprint>
+			<biblScope unit="volume">33</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="114" to="135" />
+			<date type="published" when="1991">1991</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">Following the crowd</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Greengard</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Commun. ACM</title>
+		<imprint>
+			<biblScope unit="volume">54</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="20" to="22" />
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<monogr>
+		<author>
+			<persName><forename type="first">H</forename><surname>Hair</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Seo</surname></persName>
+		</author>
+		<title level="m">Multivariate Data Analysis</title>
+		<meeting><address><addrLine>New Jersey</addrLine></address></meeting>
+		<imprint>
+			<publisher>Pearson Education</publisher>
+			<date type="published" when="2006">2006</date>
+			<biblScope unit="volume">6</biblScope>
+		</imprint>
+	</monogr>
+	<note>th ed.</note>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">PLS-SEM: indeed a silver bullet</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">F</forename><surname>Hair</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">M</forename><surname>Ringle</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Sarstedt</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Market. Theory Practice</title>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="139" to="151" />
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">Analyzing the impact of a firm&apos;s capability on outsourcing success: a process perspective</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Han</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Seo</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Inf. Manage</title>
+		<imprint>
+			<biblScope unit="volume">45</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="31" to="42" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<monogr>
+		<title level="m" type="main">How Breakthroughs Happen: The Surprising Truth About How Companies Innovate</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">B</forename><surname>Hargadon</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2003">2003</date>
+			<publisher>Harvard Business School Press</publisher>
+			<pubPlace>Cambridge, MA</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<analytic>
+		<title level="a" type="main">Incomplete contracts and the Theory of the Firm</title>
+		<author>
+			<persName><forename type="first">O</forename><surname>Hart</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Law Econ. Organ</title>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="11" to="139" />
+			<date type="published" when="1988">1988</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<monogr>
+		<title level="m" type="main">Introduction to Mediation, Moderation, and Conditional Process Analysis: A Regression-Based Approach</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">F</forename><surname>Hayes</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2013">2013</date>
+			<publisher>Guilford Press</publisher>
+			<pubPlace>New York, NY</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<analytic>
+		<title level="a" type="main">Investigating vendors&apos; intention to terminate IT outsourcing contracts</title>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">S</forename><surname>Heng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><forename type="middle">Y</forename><surname>Du</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><forename type="middle">Y</forename><surname>Feng</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">International Conference on Information Systems</title>
+		<meeting><address><addrLine>Phoenix, AZ</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<analytic>
+		<author>
+			<persName><forename type="first">R</forename><surname>Hogarth</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Einhorn</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Order effects in belief updating: the belief-adjustment model</title>
+		<imprint>
+			<date type="published" when="1992">1992</date>
+			<biblScope unit="volume">24</biblScope>
+			<biblScope unit="page" from="1" to="55" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+	<analytic>
+		<title level="a" type="main">The labor economics of paid crowdsourcing</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">J</forename><surname>Horton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">B</forename><surname>Chilton</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">ACM Conference on Electronic Commerce</title>
+		<imprint>
+			<date type="published" when="2010">2010</date>
+			<pubPlace>Cambridge, MA, USA</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b43">
+	<monogr>
+		<title level="m" type="main">Crowdsourcing: Why the Power of the Crowd is Driving the Future of Business</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Howe</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2008">2008</date>
+			<publisher>Crown Business</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b44">
+	<monogr>
+		<author>
+			<persName><forename type="first">H</forename><surname>Itami</surname></persName>
+		</author>
+		<title level="m">Mobilizing Invisible Assets</title>
+		<meeting><address><addrLine>Cambridge, MA</addrLine></address></meeting>
+		<imprint>
+			<publisher>Harvard University Press</publisher>
+			<date type="published" when="1987">1987</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b45">
+	<analytic>
+		<title level="a" type="main">Is anybody out there? Antecedents of trust in global virtual teams</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Jarvenpaa</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">JMIS</title>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="29" to="65" />
+			<date type="published" when="1998">1998</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b46">
+	<analytic>
+		<title level="a" type="main">Determinants of ASP choice: an integrated perspective</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Jarvenpaa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Schwartz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">A</forename><surname>Hirschheim</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Eur. J. Inf. Syst</title>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="210" to="224" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b47">
+	<analytic>
+		<title level="a" type="main">Marginality and problem solving effectiveness in broadcast search</title>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">B</forename><surname>Jeppesen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">R</forename><surname>Lakhani</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Organ. Sci</title>
+		<imprint>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="1016" to="1033" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b48">
+	<analytic>
+		<author>
+			<persName><forename type="first">A</forename><surname>Kankanhalli</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">C Y</forename><surname>Tan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">K</forename><surname>Wei</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Contributing knowledge to electronic knowledge repositories: an empirical investigation</title>
+		<imprint>
+			<date type="published" when="2005">2005</date>
+			<biblScope unit="volume">29</biblScope>
+			<biblScope unit="page" from="113" to="143" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b49">
+	<analytic>
+		<title level="a" type="main">More than fun and money. Worker motivation in crowdsourcing -a study on Mechanical Turk</title>
+		<author>
+			<persName><forename type="first">N</forename><surname>Kaufman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Schulze</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Veit</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Americas Conference on Information Systems</title>
+		<meeting><address><addrLine>Detroit, MI</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b50">
+	<analytic>
+		<title level="a" type="main">Why software projects escalate: an empirical analysis and test of four theoretical models</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Keil</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Mann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Rai</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Q</title>
+		<imprint>
+			<biblScope unit="volume">24</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="631" to="664" />
+			<date type="published" when="2000">2000</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b51">
+	<analytic>
+		<title level="a" type="main">Crowdsourcing, collaboration, and creativity</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Kittur</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">XRDS</title>
+		<imprint>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="22" to="26" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b52">
+	<analytic>
+		<title level="a" type="main">Knowledge of the firm, combinative capabilities, and the replication of technology</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Kogut</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">U</forename><surname>Zander</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Organ. Sci</title>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="383" to="397" />
+			<date type="published" when="1992">1992</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b53">
+	<analytic>
+		<title level="a" type="main">Leveraging crowdsourcing -theory-driven design, implementation and evaluation of activation-supporting components for IT-based idea competitions</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">M</forename><surname>Leimeister</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Huber</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">U</forename><surname>Bretschneider</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Krcmar</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">JMIS</title>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="197" to="224" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b54">
+	<analytic>
+		<title level="a" type="main">An empirical study on consumer acceptance of products in electronic markets: a transaction cost model</title>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">P</forename><surname>Liang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">S</forename><surname>Huang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Decis. Support Syst</title>
+		<imprint>
+			<biblScope unit="volume">24</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="29" to="43" />
+			<date type="published" when="1998">1998</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b55">
+	<analytic>
+		<title level="a" type="main">Assimilation of enterprise systems: the effect of institutional pressures and the mediating role of top management</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Liang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Saraf</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Q</forename><surname>Hu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Xu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Q</title>
+		<imprint>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="59" to="87" />
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b56">
+	<monogr>
+		<title level="m" type="main">Crowdsourcing Your Brand: How to Tap Customer Desire</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Libert</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Spector</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2010">2010</date>
+			<publisher>Pearson Education</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b57">
+	<analytic>
+		<author>
+			<persName><forename type="first">N</forename><forename type="middle">A</forename><surname>Morgan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">H</forename><surname>Clark</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Gooner</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Marketing productivity, marketing audits, and systems for marketing performance assessment. Integrating multiple perspectives</title>
+		<imprint>
+			<date type="published" when="2002">2002</date>
+			<biblScope unit="volume">55</biblScope>
+			<biblScope unit="page" from="363" to="375" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b58">
+	<analytic>
+		<title level="a" type="main">Social capital, intellectual capital, and the organizational advantage</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Nahapiet</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Acad. Manage. Rev</title>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="242" to="266" />
+			<date type="published" when="1998">1998</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b59">
+	<analytic>
+		<title level="a" type="main">The effect of performance measurability on the relationship between careerist attitudes and career success</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Orpen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Soc. Psychol</title>
+		<imprint>
+			<biblScope unit="volume">138</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="128" to="130" />
+			<date type="published" when="1998">1998</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b60">
+	<monogr>
+		<title level="m" type="main">The Theory of the Growth of the Firm</title>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">P</forename><surname>Penrose</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1959">1959</date>
+			<publisher>John Wiley</publisher>
+			<pubPlace>New York</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b61">
+	<monogr>
+		<title level="m" type="main">The External Control of Organizations: A Resource Dependence Perspective</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Pfeffer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Salancik</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1978">1978</date>
+			<publisher>Harper &amp; Row</publisher>
+			<pubPlace>New York</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b62">
+	<analytic>
+		<title level="a" type="main">Which kind of collaboration is right for you?</title>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">P</forename><surname>Pisano</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Verganti</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Harv. Bus. Rev</title>
+		<imprint>
+			<biblScope unit="volume">86</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="79" to="86" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b63">
+	<analytic>
+		<title level="a" type="main">Common method biases in behavioral research: a critical review of the literature and recommended remedies</title>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">M</forename><surname>Podsakoff</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Mackenzie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><forename type="middle">P</forename><surname>Podsakoff</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Appl. Psychol</title>
+		<imprint>
+			<biblScope unit="volume">88</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="879" to="903" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b64">
+	<analytic>
+		<title level="a" type="main">The value of crowdsourcing: can users really compete with professionals in generating new product ideas?</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">K</forename><surname>Poetz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Schreier</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Prod. Innov. Manage</title>
+		<imprint>
+			<biblScope unit="volume">29</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="245" to="256" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b65">
+	<monogr>
+		<title level="m" type="main">The New Institutionalism in Organizational Analysis</title>
+		<author>
+			<persName><forename type="first">W</forename><forename type="middle">W</forename><surname>Powell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">J</forename><surname>Dimaggio</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1991">1991</date>
+			<publisher>University of Chicago Press</publisher>
+			<pubPlace>Chicago</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b66">
+	<analytic>
+		<title level="a" type="main">Crowdsourcing and the question of expertise</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Roman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">CACM</title>
+		<imprint>
+			<biblScope unit="volume">52</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">12</biblScope>
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b67">
+	<analytic>
+		<title level="a" type="main">Resource-based analysis of IT sourcing, DATA BASE Adv</title>
+		<author>
+			<persName><forename type="first">V</forename><surname>Roy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">A</forename><surname>Aubert</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Inf. Syst</title>
+		<imprint>
+			<biblScope unit="volume">33</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="29" to="40" />
+			<date type="published" when="2002">2002</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b68">
+	<analytic>
+		<title level="a" type="main">Using Internet-based surveys for academic research: opportunities and problems</title>
+		<author>
+			<persName><forename type="first">N</forename><surname>Roztocki</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">ASEM) National Conference</title>
+		<meeting><address><addrLine>Huntsville, AL</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2001">2001</date>
+			<biblScope unit="page" from="290" to="295" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b69">
+	<analytic>
+		<title level="a" type="main">Toward a strategic theory of the firm</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">P</forename><surname>Rumelt</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Competitive Strategic Management</title>
+		<editor>
+			<persName><forename type="first">R</forename><surname>Lamb</surname></persName>
+		</editor>
+		<meeting><address><addrLine>Englewood Cliffs, NJ</addrLine></address></meeting>
+		<imprint>
+			<publisher>Prentice Hall</publisher>
+			<date type="published" when="1984">1984</date>
+			<biblScope unit="page" from="556" to="570" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b70">
+	<analytic>
+		<title level="a" type="main">Collaborating to create: the internet as a platform for customer engagement in product innovation</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Sawhney</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Verona</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Prandelli</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Interact. Market</title>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="4" to="17" />
+			<date type="published" when="2005">2005</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b71">
+	<analytic>
+		<title level="a" type="main">Towards a characterization of crowdsourcing practices</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>Schenk</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Guittard</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Innov. Econ</title>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="93" to="107" />
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b72">
+	<analytic>
+		<title level="a" type="main">Exploring task properties in crowdsourcing -an empirical study on Mechanical Turk</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Schulze</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Seedorf</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Geiger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Kaufman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">European Conference on Information Systems</title>
+		<meeting><address><addrLine>Helsinki, Finland</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b73">
+	<monogr>
+		<title level="m" type="main">Managerial challenges in open innovation: a study of innovation intermediation in the chemical industry</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">H</forename><surname>Sieg</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Wallin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Krogh</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2010">2010</date>
+			<biblScope unit="volume">40</biblScope>
+			<biblScope unit="page" from="281" to="291" />
+		</imprint>
+		<respStmt>
+			<orgName>R&amp;D Manage</orgName>
+		</respStmt>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b74">
+	<analytic>
+		<title level="a" type="main">Sourcing, filtering, and evaluating new product ideas: an empirical exploration of the performance of idea markets</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Soukhoroukova</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Spann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Skiera</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Prod. Innov. Manage</title>
+		<imprint>
+			<biblScope unit="volume">29</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="100" to="112" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b75">
+	<analytic>
+		<title level="a" type="main">The importance of a general measure of brand engagement on market behavior: development and validation of a scale</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Sprott</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Czellar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Spangenberg</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Market. Res</title>
+		<imprint>
+			<biblScope unit="volume">46</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="92" to="104" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b76">
+	<analytic>
+		<title level="a" type="main">Defining corporate strengths and weakness</title>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">H</forename><surname>Stevensen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Sloan Manage. Rev</title>
+		<imprint>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="51" to="68" />
+			<date type="published" when="1976">1976</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b77">
+	<analytic>
+		<title level="a" type="main">Validating guidelines for IS positivist research</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">W</forename><surname>Straub</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">J</forename><surname>Boudreau</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Gefen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Commun. Assoc. Inf. Syst</title>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="380" to="427" />
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b78">
+	<analytic>
+		<title level="a" type="main">Understanding sustained participation in transactional virtual communities</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Fang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">H</forename><surname>Lim</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Decis. Support Syst</title>
+		<imprint>
+			<biblScope unit="volume">53</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="12" to="22" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b79">
+	<monogr>
+		<author>
+			<persName><forename type="first">C</forename><surname>Terwiesch</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">T</forename><surname>Ulrich</surname></persName>
+		</author>
+		<title level="m">Innovation Tournaments</title>
+		<imprint>
+			<publisher>Harvard Business School Press</publisher>
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b80">
+	<analytic>
+		<title level="a" type="main">Innovation contests, open innovation, and multiagent problem solving</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Terwiesch</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Xu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Manage. Sci</title>
+		<imprint>
+			<biblScope unit="volume">54</biblScope>
+			<biblScope unit="issue">9</biblScope>
+			<biblScope unit="page" from="1529" to="1543" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b81">
+	<analytic>
+		<title level="a" type="main">Innovation by user communities: learning from Open-Source Software</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>Hippel</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">MIT Sloan Manage. Rev</title>
+		<imprint>
+			<biblScope unit="volume">42</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="82" to="86" />
+			<date type="published" when="2001">2001</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b82">
+	<monogr>
+		<author>
+			<persName><forename type="first">J</forename><surname>Neumann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O</forename><surname>Morgenstern</surname></persName>
+		</author>
+		<title level="m">Theory of Games and Economic Behavior</title>
+		<meeting><address><addrLine>Princeton</addrLine></address></meeting>
+		<imprint>
+			<publisher>Princeton University Press</publisher>
+			<date type="published" when="1944">1944</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b83">
+	<monogr>
+		<title level="m" type="main">What signal are you sending? How website quality influences perceptions of product quality and purchase intentions MIS Q</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">D</forename><surname>Wells</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">S</forename><surname>Valacich</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">J</forename><surname>Hess</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2011">2011</date>
+			<biblScope unit="volume">35</biblScope>
+			<biblScope unit="page" from="373" to="396" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b84">
+	<analytic>
+		<title level="a" type="main">The economics of organization: the transaction cost approach</title>
+		<author>
+			<persName><forename type="first">O</forename><forename type="middle">E</forename><surname>Williamson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Am. J. Sociol</title>
+		<imprint>
+			<biblScope unit="volume">87</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="548" to="577" />
+			<date type="published" when="1981">1981</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b85">
+	<monogr>
+		<author>
+			<persName><forename type="first">O</forename><forename type="middle">E</forename><surname>Williamson</surname></persName>
+		</author>
+		<title level="m">The Economic Institutions of Capitalism: Firms, Markets, Relational Contracting</title>
+		<meeting><address><addrLine>New York</addrLine></address></meeting>
+		<imprint>
+			<publisher>Free Press</publisher>
+			<date type="published" when="1985">1985</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b86">
+	<analytic>
+		<title level="a" type="main">Crowdsourcing and knowledge sharing: strategic user behavior on TaskCN</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Adamic</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Ackerman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">ACM Conference on Electronic Commerce</title>
+		<imprint>
+			<biblScope unit="page" from="246" to="255" />
+			<date type="published" when="2008">2008</date>
+			<pubPlace>Chicago</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b87">
+	<analytic>
+		<title level="a" type="main">Open innovation: an empirical study of online contests</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">Y</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Pavlou</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">International Conference on Information Systems</title>
+		<meeting><address><addrLine>Phoenix</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b88">
+	<analytic>
+		<title level="a" type="main">Impact of past performance and strategic bidding on winner determination of open innovation contest</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">Y</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Banker</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Workshop on Information Systems and Economics</title>
+		<imprint>
+			<date type="published" when="2010">2010</date>
+			<pubPlace>St. Louis</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b89">
+	<analytic>
+		<title level="a" type="main">Leveraging crowdsourcing for organizational value cocreation</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Ye</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Kankanhalli</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Commun. Assoc. Inf. Syst</title>
+		<imprint>
+			<biblScope unit="volume">33</biblScope>
+			<biblScope unit="page" from="225" to="244" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b90">
+	<analytic>
+		<title level="a" type="main">Evaluation on crowdsourcing research: current status and future direction</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Q</forename><surname>Zhu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Inf. Syst. Front</title>
+		<imprint>
+			<biblScope unit="page" from="1" to="18" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b91">
+	<analytic>
+		<title level="a" type="main">Task design, motivation, and participation in crowdsourcing contests</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Zheng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Hou</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Int. J. Electron. Commerce</title>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="57" to="88" />
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b92">
+	<analytic>
+		<title level="a" type="main">Antecedents of solution quality in crowdsourcing: the sponsor&apos;s perspective</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Zheng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Xie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Hou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Li</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">JECR</title>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="212" to="224" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b93">
+	<analytic>
+		<title level="a" type="main">Co-creation: toward a taxonomy and an integrated research perspective</title>
+		<author>
+			<persName><forename type="first">V</forename><surname>Zwass</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Int. J. Electron. Commerce</title>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="11" to="48" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b94">
+	<analytic>
+		<title level="a" type="main">His research interests include open innovation, service innovation, and crowdsourcing. His research has been or will be published in Pacific Asian Journal of the AIS, Communications of the AIS, and Electronic Commerce Research and Applications</title>
+		<author>
+			<persName><forename type="first">Jonathan</forename><surname>Hua</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">His research has also appeared in the proceedings of premium IS conferences such as International Conference on Information Systems (ICIS), European Conference on Information Systems (ECIS), and Pacific Asian Conference on Information Systems (PACIS)</title>
+		<imprint/>
+		<respStmt>
+			<orgName>Department of Information Systems and Operations Management at the University of Auckland Business School. He obtained his Ph.D. from National University of Singapore ; National University of Singapore (NUS</orgName>
+		</respStmt>
+	</monogr>
+	<note>She is also the Coordinator of the Service Systems Innovation Research Laboratory at NUS. Her research interests are in knowledge management and IT enabled. innovation in service sectors (e.g., eGovernment and eHealthcare</note>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>
